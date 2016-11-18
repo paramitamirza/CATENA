@@ -1,7 +1,5 @@
 package catena.parser;
 
-import eu.fbk.textpro.api.*;
-
 public class TextProParser {
 	
 	public TextProParser() {
