@@ -3,6 +3,7 @@ package catena.parser;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +22,7 @@ import javax.xml.bind.JAXBException;
 public class TextProParser {
 	
 	private String textProPath;
+	private String language;
 	
 	public TextProParser() {
 		
@@ -28,6 +30,12 @@ public class TextProParser {
 	
 	public TextProParser(String textProPath) {
 		setTextProPath(textProPath);
+		setLanguage("eng");
+	}
+	
+	public TextProParser(String textProPath, String lang) {
+		setTextProPath(textProPath);
+		setLanguage(lang);
 	}
 
 	public String getTextProPath() {
@@ -37,14 +45,19 @@ public class TextProParser {
 	public void setTextProPath(String textProPath) {
 		this.textProPath = textProPath;
 	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
 	
-	public void run(String language, String[] annotations, String inputFilePath, String outputFilePath) throws IOException, InterruptedException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, JAXBException {
+	public void run(String[] annotations) throws IOException, InterruptedException {
 		List<String> annotationList = Arrays.asList(annotations);
-		
-		Files.copy(new File(inputFilePath).toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
-		
 		ProcessBuilder pb = new ProcessBuilder("/bin/sh", "textpro.sh", "-v", 
-				"-l", language, 
+				"-l", getLanguage(), 
 				"-c", String.join("+", annotationList), 
 //				"-n", outputFilePath,
 				"-y",
@@ -53,6 +66,37 @@ public class TextProParser {
 		pb.directory(new File(getTextProPath()));
 		Process p = pb.start();
 		p.waitFor();
+	}
+	
+	public String run(String[] annotations, String inputText) throws IOException, InterruptedException {
+		FileWriter fileStream = new FileWriter(new File(getTextProPath() + "temp"));
+		BufferedWriter out = new BufferedWriter(fileStream);
+		out.write(inputText);
+		out.close();
+		
+		run(annotations);
+		
+		StringBuilder sb = new StringBuilder();
+		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		while(fileScanner.hasNextLine()) {
+		    String next = fileScanner.nextLine();
+		    sb.append(next);
+	        sb.append(System.lineSeparator());
+		}
+		
+		return sb.toString();
+	}
+	
+	public void run(String[] annotations, File inputFile, File outputFile) throws IOException, InterruptedException {
+		
+		
+		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
+		
+		run(annotations);
 		
 		//Copy the output file as it is
 //		Files.copy(new File(getTextProPath() + "temp.txp").toPath(), new File(outputFilePath).toPath(), StandardCopyOption.REPLACE_EXISTING);
@@ -63,7 +107,7 @@ public class TextProParser {
 		fileScanner.nextLine();
 		fileScanner.nextLine();
 		fileScanner.nextLine();
-		FileWriter fileStream = new FileWriter(new File(outputFilePath));
+		FileWriter fileStream = new FileWriter(outputFile);
 		BufferedWriter out = new BufferedWriter(fileStream);
 		while(fileScanner.hasNextLine()) {
 		    String next = fileScanner.nextLine();
@@ -77,39 +121,18 @@ public class TextProParser {
 		try {
 			TextProParser textpro = new TextProParser("./tools/TextPro2.0/");
 			String[] annotations = {"token", "pos", "chunk"};
-			textpro.run("eng", annotations, "./data/sample.txt", "./data/sample.txt.txp");
+			textpro.run(annotations, new File("./data/sample.txt"), new File("./data/sample.txt.txp"));
+			
+			String result = textpro.run(annotations, "Cat is angry.");
+			System.out.println(result);
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		} 
 		
 	}
 
