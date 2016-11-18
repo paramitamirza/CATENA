@@ -15,6 +15,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
@@ -77,6 +78,31 @@ public class TimeMLParser {
 			}
 		}
 		return arrEvents;
+	}
+	
+	public static String nodeToString(Node node) throws TransformerFactoryConfigurationError, TransformerException 
+	{
+		Transformer t = TransformerFactory.newInstance().newTransformer();
+		t.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+		t.setOutputProperty(OutputKeys.INDENT, "yes");
+		StringWriter sw = new StringWriter();
+		t.transform(new DOMSource(node), new StreamResult(sw));
+		return sw.toString();
+	}
+	
+	public String getText(TimeMLDoc tmlDoc) throws TransformerFactoryConfigurationError, TransformerException {
+		List<String> arrEvents = new ArrayList<String>();
+		Node text = tmlDoc.getDoc().getElementsByTagName("TEXT").item(0);
+		String nodeStr = nodeToString(text);
+		nodeStr = nodeStr.replaceAll("<TEXT>", "");
+		nodeStr = nodeStr.replaceAll("</TEXT>", "");
+		return nodeStr.trim();
+	}
+	
+	public String getTextOnly(TimeMLDoc tmlDoc) throws TransformerFactoryConfigurationError, TransformerException {
+		List<String> arrEvents = new ArrayList<String>();
+		Node text = tmlDoc.getDoc().getElementsByTagName("TEXT").item(0);
+		return text.getTextContent();
 	}
 	
 	public void setTlinks(TimeMLDoc tmlDoc, Doc d) {
@@ -184,6 +210,32 @@ public class TimeMLParser {
 		}		
 	}
 	
-	
+	public static void main(String[] args) {
+		
+		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
+		
+		try {
+			TimeMLDoc tmlDoc = new TimeMLDoc("./data/example_TML/wsj_1014.tml");
+			
+//			//List all events
+//			List<String> events = tmlParser.getEvents(tmlDoc);
+//			for (String s : events)
+//				System.out.println(s);
+			
+			//Text content
+			System.out.println(tmlParser.getText(tmlDoc));
+			
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (TransformerFactoryConfigurationError e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (TransformerException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 
 }
