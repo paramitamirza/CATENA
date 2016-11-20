@@ -14,11 +14,9 @@
 	<classpathentry kind="lib" path="lib/jython.jar"/>
 	<classpathentry kind="lib" path="lib/liblinear-java-1.95.jar"/>
 	<classpathentry kind="lib" path="lib/libsvm.jar"/>
-	<classpathentry kind="lib" path="lib/stanford-parser-3.5.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/stanford-parser-3.5.2-models.jar"/>
-	<classpathentry kind="lib" path="lib/stanford-parser-3.5.2-sources.jar"/>
-	<classpathentry kind="lib" path="lib/stanford-parser.jar"/>
 	<classpathentry kind="lib" path="lib/weka.jar"/>
 	<classpathentry kind="lib" path="lib/ws4j-1.0.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/StanfordLibs"/>
+	<classpathentry kind="lib" path="lib/anna-3.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

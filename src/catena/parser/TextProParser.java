@@ -19,6 +19,8 @@ import java.util.Scanner;
 
 import javax.xml.bind.JAXBException;
 
+import catena.parser.entities.EntityEnum;
+
 public class TextProParser {
 	
 	private String textProPath;
@@ -29,13 +31,17 @@ public class TextProParser {
 	}
 	
 	public TextProParser(String textProPath) {
-		setTextProPath(textProPath);
-		setLanguage("eng");
+		this.setTextProPath(textProPath);
+		this.setLanguage("eng");
 	}
 	
-	public TextProParser(String textProPath, String lang) {
+	public TextProParser(String textProPath, EntityEnum.Language lang) {
 		setTextProPath(textProPath);
-		setLanguage(lang);
+		switch(lang) {
+			case EN: this.setLanguage("eng"); break;
+			case IT: this.setLanguage("it"); break;
+			default: this.setLanguage("eng"); break;
+		}		
 	}
 
 	public String getTextProPath() {
@@ -56,7 +62,9 @@ public class TextProParser {
 	
 	public void run(String[] annotations) throws IOException, InterruptedException {
 		List<String> annotationList = Arrays.asList(annotations);
-		ProcessBuilder pb = new ProcessBuilder("/bin/sh", "textpro.sh", "-v", 
+//		ProcessBuilder pb = new ProcessBuilder("/bin/sh",
+		ProcessBuilder pb = new ProcessBuilder("C:\\cygwin64\\bin\\bash.exe",
+				"textpro.sh", "-v", 
 				"-l", getLanguage(), 
 				"-c", String.join("+", annotationList), 
 //				"-n", outputFilePath,
