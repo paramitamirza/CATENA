@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0026</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0167 = 891102 891102-0167.
+Duty-Free Status Cleared @ For Certain Watch Imports 11/02/89 WALL STREET JOURNAL (J) MONETARY NEWS, FOREIGN EXCHANGE, TRADE (MON) EXECUTIVE (EXE) WASHINGTON
+</EXTRAINFO>
+
+<TEXT>
+The White House <EVENT class="REPORTING" eid="e1">said</EVENT> President Bush has <EVENT class="I_ACTION" eid="e2">approved</EVENT> duty-free <EVENT class="STATE" eid="e25">treatment</EVENT> for imports of certain types of watches that aren't <EVENT class="OCCURRENCE" eid="e3">produced</EVENT> in "significant quantities" in the U.S., the Virgin Islands and other U.S. possessions.
+
+The <EVENT class="OCCURRENCE" eid="e26">action</EVENT> <EVENT class="OCCURRENCE" eid="e5">came</EVENT> in response to a petition <EVENT class="OCCURRENCE" eid="e6">filed</EVENT> by Timex Inc. for changes in the U.S. Generalized System of Preferences for imports from developing nations. Previously, watch imports were <EVENT class="I_ACTION" eid="e10">denied</EVENT> such duty-free <EVENT class="STATE" eid="e29">treatment</EVENT>.
+
+Timex had <EVENT class="OCCURRENCE" eid="e11">requested</EVENT> duty-free treatment for many types of watches, covered by 58 different U.S. tariff classifications. The White House <EVENT class="REPORTING" eid="e13">said</EVENT> Mr. Bush <EVENT class="I_ACTION" eid="e14">decided</EVENT> to <EVENT class="OCCURRENCE" eid="e15">grant</EVENT> duty-free status for 18 categories, but <EVENT class="I_ACTION" eid="e16">turned</EVENT> down such <EVENT class="STATE" eid="e31">treatment</EVENT> for other types of watches "because of the potential for material injury to watch producers located in the U.S. and the Virgin Islands."
+
+Timex is a major U.S. <EVENT class="STATE" eid="e32">producer</EVENT> and <EVENT class="STATE" eid="e33">seller</EVENT> of watches, including low-priced battery-operated watches assembled in the Philippines and other developing nations covered by the U.S. tariff preferences.
+
+U.S. trade officials <EVENT class="REPORTING" eid="e22">said</EVENT> the Philippines and Thailand would be the main <EVENT class="STATE" eid="e123">beneficiaries</EVENT> of the president's <EVENT class="OCCURRENCE" eid="e34">action</EVENT>.
+
+Imports of the types of watches that <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t38" type="DATE" value="PRESENT_REF">now</TIMEX3> will be <EVENT class="STATE" eid="e39">eligible</EVENT> for duty-free treatment <EVENT class="I_ACTION" eid="e23">totaled</EVENT> about $37.3 million in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t37" type="DATE" value="1988">1988</TIMEX3>, a relatively small share of the $1.5 billion in U.S. watch imports <TIMEX3 anchorTimeID="t37" functionInDocument="NONE" temporalFunction="true" tid="t1000" type="DATE" value="1988">that year</TIMEX3>, <EVENT class="REPORTING" eid="e40">according</EVENT> to an aide to U.S. Trade Representative Carla Hills.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1989" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei1990" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e25" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e3" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1993" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1994" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1995" eventID="e6" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1997" eventID="e29" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei1998" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1999" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e15" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2002" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2003" eventID="e31" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2004" eventID="e32" polarity="POS" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2005" eventID="e33" polarity="POS" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2006" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2007" eventID="e123" modality="would" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2008" eventID="e34" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2009" eventID="e39" polarity="POS" pos="ADJECTIVE" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2010" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2011" eventID="e40" polarity="POS" pos="VERB" tense="PRESPART" />
+<TLINK eventInstanceID="ei2011" lid="l25" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2002" lid="l24" relType="BEFORE" relatedToEventInstance="ei1999" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei1989" timeID="t0" />
+<TLINK eventInstanceID="ei2008" lid="l3" relType="IDENTITY" relatedToEventInstance="ei1993" />
+<TLINK eventInstanceID="ei1999" lid="l5" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1993" lid="l7" relType="IDENTITY" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei1993" lid="l8" relType="BEGUN_BY" relatedToEventInstance="ei1994" />
+<TLINK eventInstanceID="ei2009" lid="l9" relType="BEGUN_BY" relatedToTime="t38" />
+<TLINK eventInstanceID="ei1994" lid="l10" relType="AFTER" relatedToEventInstance="ei1995" />
+<TLINK eventInstanceID="ei2006" lid="l11" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1996" lid="l12" relType="BEFORE" relatedToEventInstance="ei1993" />
+<TLINK eventInstanceID="ei2008" lid="l13" relType="BEFORE" relatedToEventInstance="ei2007" />
+<TLINK eventInstanceID="ei1998" lid="l14" relType="BEFORE" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei2010" lid="l15" relType="IS_INCLUDED" relatedToTime="t37" />
+<SLINK eventInstanceID="ei1989" lid="l16" relType="EVIDENTIAL" subordinatedEventInstance="ei1990" />
+<SLINK eventInstanceID="ei1990" lid="l17" relType="MODAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei2006" lid="l18" relType="EVIDENTIAL" subordinatedEventInstance="ei2007" />
+<SLINK eventInstanceID="ei2002" lid="l19" relType="COUNTER_FACTIVE" subordinatedEventInstance="ei2003" />
+<SLINK eventInstanceID="ei2000" lid="l20" relType="MODAL" subordinatedEventInstance="ei2001" />
+<SLINK eventInstanceID="ei1999" lid="l21" relType="EVIDENTIAL" subordinatedEventInstance="ei2000" />
+<SLINK eventInstanceID="ei2011" lid="l22" relType="EVIDENTIAL" subordinatedEventInstance="ei2010" />
+<SLINK eventInstanceID="ei1996" lid="l23" relType="NEG_EVIDENTIAL" subordinatedEventInstance="ei1997" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1989" relatedToEventInstance="ei2011" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei1993" /><TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei1990" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1990" relatedToEventInstance="ei1995" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1990" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1990" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToEventInstance="ei2007" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1993" relatedToEventInstance="ei1995" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1993" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1993" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1993" relatedToEventInstance="ei2007" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1993" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1994" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1994" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToEventInstance="ei2007" /><TLINK deduced="true" relType="BEGINS" eventInstanceID="ei1994" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1995" relatedToEventInstance="ei2007" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1995" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1996" relatedToEventInstance="ei2007" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1996" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1998" relatedToEventInstance="ei2008" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1999" relatedToEventInstance="ei2002" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1999" relatedToEventInstance="ei2011" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2002" relatedToEventInstance="ei2011" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2002" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2006" relatedToEventInstance="ei2011" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2007" relatedToEventInstance="ei2008" /></TimeML>

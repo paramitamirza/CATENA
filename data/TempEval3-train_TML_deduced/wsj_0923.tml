@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0923</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0136 = 891026 891026-0136.
+Kyle Technology Plans Sale 10/26/89 WALL STREET JOURNAL (J) KYLE TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) ROISEBURG, Ore.
+</EXTRAINFO>
+
+<TEXT>
+Kyle Technology Corp. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> a Seattle investor has <EVENT class="OCCURRENCE" eid="e2" stem="sign">signed</EVENT> a letter of intent to <EVENT class="OCCURRENCE" eid="e6" stem="buy">buy</EVENT> the company for about $3.1 million, or $1.20 a share.
+
+The investor, Donald A. Wright, <EVENT class="I_STATE" eid="e7" stem="plan">plans</EVENT> to <EVENT class="OCCURRENCE" eid="e9" stem="run">run</EVENT> the company, <EVENT class="REPORTING" eid="e10" stem="say">said</EVENT> a spokesman for Kyle.
+
+The <EVENT class="OCCURRENCE" eid="e11" stem="transaction">transaction</EVENT> has been <EVENT class="I_ACTION" eid="e12" stem="approve">approved</EVENT> by Kyle's board, but <EVENT class="I_STATE" eid="e13" stem="require">requires</EVENT> the approval of the company's shareholders. Kyle manufactures electronic components.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei83" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei84" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei86" eventID="e6" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei88" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei89" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei90" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei91" eventID="e12" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei92" eventID="e13" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei83" lid="l1" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei84" lid="l2" origin="USER" relType="BEFORE" relatedToEventInstance="ei83" />
+<TLINK eventInstanceID="ei87" lid="l3" origin="USER" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei89" lid="l4" origin="USER" relType="IDENTITY" relatedToEventInstance="ei83" />
+<TLINK eventInstanceID="ei90" lid="l5" origin="USER" relType="INCLUDES" relatedToEventInstance="ei86" />
+<TLINK eventInstanceID="ei91" lid="l6" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei92" lid="l7" origin="USER" relType="INCLUDES" relatedToTime="t0" />
+<SLINK eventInstanceID="ei83" lid="l9" relType="EVIDENTIAL" subordinatedEventInstance="ei84" />
+<SLINK eventInstanceID="ei87" lid="l12" relType="MODAL" subordinatedEventInstance="ei88" />
+<SLINK eventInstanceID="ei89" lid="l13" relType="EVIDENTIAL" subordinatedEventInstance="ei87" />
+<SLINK eventInstanceID="ei91" lid="l14" relType="MODAL" subordinatedEventInstance="ei90" />
+
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei83" relatedToEventInstance="ei84" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei83" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei84" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei84" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei86" relatedToEventInstance="ei90" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei89" relatedToTime="t0" /></TimeML>

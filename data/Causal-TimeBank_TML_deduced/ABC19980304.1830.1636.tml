@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>ABC19980304.1830.1636</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-03-04">1998-03-04</TIMEX3></DCT>
+<TEXT>
+ Finally <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t1" type="DATE" value="1998-03-04">today</TIMEX3>, we <EVENT class="REPORTING" eid="e2">learned</EVENT> that the space agency has finally <EVENT class="OCCURRENCE" eid="e3">taken</EVENT> a giant leap forward.
+ Air Force Lieutenant Colonel Eileen Collins will be <EVENT class="I_ACTION" eid="e4">named</EVENT> <EVENT class="STATE" eid="e5">commander</EVENT> of the Space Shuttle Columbia for a <EVENT class="OCCURRENCE" eid="e6">mission</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t7" type="DATE" value="1998-12">December</TIMEX3>.
+ Colonel Collins has been the <EVENT class="STATE" eid="e8">co-pilot</EVENT> before, but this time she's the <EVENT class="STATE" eid="e9">boss</EVENT>.
+ Here's ABC's Ned Potter.
+ Even two hundred miles up in space, there has been a glass ceiling.
+ It wasn't until <TIMEX3 functionInDocument="NONE" tid="t10" type="DURATION" value="P20Y">twenty years</TIMEX3> after the first astronauts were <EVENT class="OCCURRENCE" eid="e11">chosen</EVENT> that NASA finally <EVENT class="OCCURRENCE" eid="e12">included</EVENT> six women, and they were all scientists, not pilots.
+ No woman has actually been <EVENT class="STATE" eid="e13">in</EVENT> charge of a mission until <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t14" type="DATE" value="PRESENT_REF">now</TIMEX3>.
+ Just the fact that we 're <EVENT class="OCCURRENCE" eid="e15">doing</EVENT> the job that we 're doing <EVENT class="OCCURRENCE" eid="e16">makes</EVENT> us <EVENT class="STATE" eid="e17">role models</EVENT>.
+ That was Eileen Collins, after she <EVENT class="OCCURRENCE" eid="e18">flew</EVENT> as the first ever co-pilot.
+ Being commander is different.
+ It means supervising the rest of the crew in training and leading them in flight.
+ It is, in short, the kind of management job many American women say they 've had to fight for.
+ In space, some say female pilots were <EVENT class="OCCURRENCE" eid="e19">held</EVENT> up until <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t20" type="DATE" value="PRESENT_REF">now</TIMEX3> <C-SIGNAL cid="c21">by</C-SIGNAL> the <EVENT class="STATE" eid="e22">lack</EVENT> of piloting opportunities for them in the military.
+ Once Colonel Collins was <EVENT class="I_ACTION" eid="e23">picked</EVENT> as a NASA <EVENT class="STATE" eid="e24">astronaut</EVENT>, she <EVENT class="OCCURRENCE" eid="e25">followed</EVENT> a normal progression within NASA.
+ Nobody <EVENT class="OCCURRENCE" eid="e26">hurried</EVENT> her up.
+ No one <EVENT class="OCCURRENCE" eid="e27">held</EVENT> her back.
+ Many NASA watchers <EVENT class="REPORTING" eid="e28">say</EVENT> female astronauts have <EVENT class="OCCURRENCE" eid="e29">become</EVENT> part of the agency's routine.
+ But they still have <EVENT class="I_ACTION" eid="e30">catching</EVENT> up to do two hundred and thirty four Americans have <EVENT class="OCCURRENCE" eid="e31">flown</EVENT> in space, only twenty six of them women.
+ Ned Potter, ABC News.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei29" eventID="e29" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei8" eventID="e8" polarity="POS" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei13" eventID="e13" polarity="POS" pos="PREPOSITION" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei31" eventID="e31" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK lid="l1" relType="BEFORE" relatedToEventInstance="ei31" timeID="t0" />
+<TLINK eventInstanceID="ei2" lid="l2" relType="IS_INCLUDED" relatedToTime="t1" />
+<TLINK eventInstanceID="ei4" lid="l3" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei5" lid="l4" relType="SIMULTANEOUS" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei5" lid="l5" relType="IDENTITY" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei6" lid="l6" relType="IS_INCLUDED" relatedToTime="t7" />
+<TLINK eventInstanceID="ei8" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei11" lid="l8" relType="BEGINS" relatedToTime="t10" />
+<TLINK eventInstanceID="ei12" lid="l9" relType="ENDS" relatedToTime="t10" />
+<TLINK eventInstanceID="ei12" lid="l10" relType="AFTER" relatedToEventInstance="ei11" />
+<TLINK eventInstanceID="ei13" lid="l11" relType="BEFORE" relatedToTime="t14" />
+<TLINK eventInstanceID="ei15" lid="l12" relType="IDENTITY" relatedToEventInstance="ei16" />
+<TLINK eventInstanceID="ei19" lid="l14" relType="ENDED_BY" relatedToTime="t20" />
+<TLINK eventInstanceID="ei22" lid="l15" relType="DURING" relatedToEventInstance="ei19" />
+<TLINK eventInstanceID="ei23" lid="l17" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei23" lid="l18" relType="BEGINS" relatedToEventInstance="ei24" />
+<TLINK eventInstanceID="ei25" lid="l19" relType="AFTER" relatedToEventInstance="ei23" />
+<TLINK eventInstanceID="ei28" lid="l20" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei29" lid="l21" relType="BEFORE" relatedToEventInstance="ei30" />
+<CLINK eventInstanceID="ei15" lid="l13" relatedToEventInstance="ei17" />
+<CLINK c-signalID="c21" eventInstanceID="ei22" lid="l16" relatedToEventInstance="ei19" />
+<TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei24" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei5" relatedToTime="t7" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei4" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei6" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei9" relatedToTime="t7" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei31" relatedToTime="t0" /></TimeML>

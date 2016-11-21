@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0660</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0037 = 891030 891030-0037.
+International Brief -- Erbamont N.V.: @ Montedison Agrees to Buy @ Rest of Stock for $37 Each 10/30/89 WALL STREET JOURNAL (J) MNT ERB TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+Montedison S.p.A. definitively <EVENT class="I_STATE" eid="e1">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e3">buy</EVENT> all of the publicly held shares of Erbamont N.V. for $37 each.
+
+Montedison <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t29" type="DATE" value="PRESENT_REF">now</TIMEX3> <EVENT class="STATE" eid="e4">owns</EVENT> about 72% of Erbamont's shares outstanding.
+
+The companies <EVENT class="REPORTING" eid="e5">said</EVENT> the accord was unanimously <EVENT class="I_ACTION" eid="e6">approved</EVENT> by a special committee of Erbamont directors unaffiliated with Montedison.
+
+Under the pact, Montedision will <EVENT class="OCCURRENCE" eid="e8">make</EVENT> a $37-a-share tender <EVENT class="OCCURRENCE" eid="e9">offer</EVENT> for Erbamont stock outstanding. The tender <EVENT class="OCCURRENCE" eid="e10">offer</EVENT> will be followed by the <EVENT class="OCCURRENCE" eid="e12">sale</EVENT> of all of Erbamont's assets, subject to all of its liabilities, to Montedison. Erbamont will then be <EVENT class="OCCURRENCE" eid="e14">liquidated</EVENT>, with any remaining Erbamont holders <EVENT class="OCCURRENCE" eid="e16">receiving</EVENT> a distribution of $37 a share.
+
+The companies <EVENT class="REPORTING" eid="e17">said</EVENT> the transaction is being <EVENT class="OCCURRENCE" eid="e19">structured</EVENT> this way because the laws of the Netherlands Antilles, under which Erbamont is organized, don't <EVENT class="I_STATE" eid="e23">provide</EVENT> for merger transactions.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei152" eventID="e23" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei147" eventID="e14" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei143" eventID="e8" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei146" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei139" eventID="e4" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei142" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei138" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei151" eventID="e19" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei144" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei137" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei150" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei145" eventID="e10" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei140" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei149" eventID="e16" polarity="POS" pos="VERB" tense="PRESPART" />
+<TLINK eventInstanceID="ei152" lid="l1" relType="BEFORE" relatedToEventInstance="ei151" />
+<TLINK eventInstanceID="ei137" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l3" relType="INCLUDES" relatedToEventInstance="ei139" timeID="t29" />
+<TLINK lid="l4" relType="INCLUDES" relatedToEventInstance="ei137" timeID="t29" />
+<TLINK eventInstanceID="ei139" lid="l5" relType="BEFORE" relatedToEventInstance="ei138" />
+<TLINK eventInstanceID="ei140" lid="l6" relType="AFTER" relatedToEventInstance="ei137" />
+<TLINK eventInstanceID="ei140" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei143" lid="l9" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei143" lid="l10" relType="IDENTITY" relatedToEventInstance="ei144" />
+<TLINK eventInstanceID="ei145" lid="l11" relType="IDENTITY" relatedToEventInstance="ei144" />
+<TLINK eventInstanceID="ei145" lid="l12" relType="BEFORE" relatedToEventInstance="ei146" />
+<TLINK eventInstanceID="ei146" lid="l13" relType="BEFORE" relatedToEventInstance="ei147" />
+<TLINK eventInstanceID="ei146" lid="l14" relType="BEGUN_BY" relatedToEventInstance="ei149" />
+<TLINK eventInstanceID="ei150" lid="l17" relType="IDENTITY" relatedToEventInstance="ei140" />
+<SLINK eventInstanceID="ei137" lid="l18" relType="MODAL" subordinatedEventInstance="ei138" />
+<SLINK eventInstanceID="ei140" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei142" />
+<SLINK eventInstanceID="ei150" lid="l20" relType="EVIDENTIAL" subordinatedEventInstance="ei151" />
+
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei146" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei144" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei137" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei147" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei143" relatedToEventInstance="ei146" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei143" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei143" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToEventInstance="ei144" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToEventInstance="ei137" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei146" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei139" relatedToTime="t29" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToEventInstance="ei137" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei144" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei144" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei137" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei137" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei137" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei137" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei137" relatedToTime="t29" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei150" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei150" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei150" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei145" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei140" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei149" relatedToTime="t0" /></TimeML>

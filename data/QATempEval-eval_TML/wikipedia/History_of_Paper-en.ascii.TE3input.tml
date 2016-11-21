@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+Paper was <EVENT eid="e1001">invented</EVENT> in ancient China during the Han Dynasty (206 BC - 220 AD) and spread slowly to the west via the Silk Road. Papermaking and manufacturing in Europe was started by Muslims living on the Iberian Peninsula, (today's Portugal and Spain) and Sicily in the <TIMEX3 tid="t1001">10th century</TIMEX3>, and slowly <EVENT eid="e1002">spread</EVENT> to Italy and Southern France reaching Germany by 1400. Earlier, other paper-like materials were in use including papyrus, parchment, palm leaves and vellum, but all of these were derived from raw materials which were expensive or in limited supply, or required extensive hand-processing to produce a satisfactory finish. Paper, being made from wood or rags, could be produced anywhere, and once large scale production techniques had been developed it could be manufactured in almost any quantity at moderate cost.
+
+In medieval Europe, the hitherto handcraft of papermaking was mechanized by the use of waterpower, the first water papermill in the Iberian Peninsula having been built in the Portuguese city of Leiria in 1411, and other processes. The rapid expansion of European paper production was truly <EVENT eid="e1003">enhanced</EVENT> by the <EVENT eid="e1004">invention</EVENT> of the printing press and the beginning of the Printing Revolution in the 15th century.
+
+The word "paper" is etymologically derived from papyros, Ancient Greek for the Cyperus papyrus plant. Papyrus is a thick, paper-like material produced from the pith of the Cyperus papyrus plant which was used in ancient Egypt and other Mediterranean cultures for writing long before the making of paper in China. Papyrus however is a "lamination of natural plants, while paper is manufactured from fibres whose properties have been changed by maceration or disintegration.
+
+Contents.
+
+Early papermaking in China.
+
+Papermaking has traditionally been traced to China when Cai Lun, an official attached to the Imperial court during the Han Dynasty <TIMEX3 tid="t1002">(202 BC-AD 220)</TIMEX3>, <EVENT eid="e1005">created</EVENT> a sheet of paper using mulberry and other bast fibres along with fishnets, old rags, and hemp waste, though the earliest piece of paper <EVENT eid="e1006">found</EVENT>, at Fangmatan in Gansu province inscribed with a map, dates from 179-41 BC.
+
+Techniques.
+
+During the Shang (1600 - 1050 BC) and Zhou (1050-256 BC) dynasties of ancient China, documents were ordinarily <EVENT eid="e1007">written</EVENT> on bone or bamboo (on tablets or on bamboo strips sewn and rolled together into scrolls), making them very heavy, awkward, and hard to transport. The light material of silk was sometimes used, but was normally too expensive to consider. While the Han Dynasty Chinese court official Cai Lun is widely regarded to have invented the modern method of papermaking (inspired from wasps and bees) from rags and other plant fibers in AD 105, the discovery of specimens bearing written Chinese characters in 2006 at north-east China's Gansu province suggest that paper was in use by the ancient Chinese military more than 100 years before Cai, in 8 BC. It therefore would appear that "Cai Lun's contribution was to improve this skill systematically and scientifically, fixing a recipe for papermaking".
+
+The record in the standard history says
+
+The manufacture may have originated from the practice of <EVENT eid="e1008">pounding</EVENT> and stirring rags in water, after which the matted fibres were <EVENT eid="e1009">collected</EVENT> on a mat. The bark of Paper Mulberry was particularly valued and high quality paper was developed in the late Han period, which used the bark of the than wood. In the Eastern Jin period paper began to be made on a fine bamboo screen-mould, treated with insecticidal dye for permanence. After printing became popular in the Song dynasty the demand grew more. Paper was often used as a levy, with one prefecture sending some 1.5m sheets of paper to the capital as tribute up to the year 1101.
+
+Uses.
+
+The first use of paper has been excavated in China dating to the reign of Emperor Wu of Han from the 2nd century BC, used for purposes of <EVENT eid="e1010">wrapping</EVENT> or padding protection for delicate bronze mirrors. It was also used for safety, such as the padding of poisonous 'medicine' as mentioned in the official history of the period. Although paper <EVENT eid="e1011">used</EVENT> for writing became widespread by the 3rd century AD, paper continued to be used for wrapping (and other) purposes. Toilet paper was used in China from around 875 C.E. In 589, the Chinese scholar-official Yan Zhitui (531-591) wrote: "Paper on which there are quotations or commentaries from Five Classics or the names of sages, I dare not use for toilet purposes". An Arab traveler to China once wrote of the curious Chinese tradition of toilet paper in 851, writing: "...they [the Chinese] do not wash themselves with water when they have done their necessities; but they only wipe themselves with paper".
+
+During the Tang Dynasty <TIMEX3 tid="t1003">(618 - 907)</TIMEX3> paper was folded and sewn into square bags to <EVENT eid="e1012">preserve</EVENT> the flavor of tea. During the same period, it was written that tea was served from baskets with multi-colored paper cups and paper napkins of different size and shape. During the Chinese Song Dynasty (960 - 1279) not only did the government <EVENT eid="e1013">produce</EVENT> the world's first known paper-printed money, or banknote (see Jiaozi and Huizi), but paper money bestowed as gifts to deserving government officials were wrapped in special paper envelopes.
+
+Diffusion of paper.
+
+After its origin in central China, the production and use of paper spread steadily. It is clear that paper was used at Dunhuang by AD 150, in Loulan in the modern-day province of Xinjiang by 200, and in Turpan by 399. Paper was concurrently <EVENT eid="e1014">introduced</EVENT> in Japan sometime between the years 280 and 610.
+
+</TEXT>
+
+</TimeML>

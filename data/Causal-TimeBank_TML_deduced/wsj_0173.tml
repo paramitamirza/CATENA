@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0173</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">1989-11-02</TIMEX3></DCT>
+<TEXT>
+ Coleco Industries Inc., a <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t1" type="DATE" value="PAST_REF">once</TIMEX3> high-flying toy maker whose stock <EVENT class="OCCURRENCE" eid="e2">peaked</EVENT> at $ 65 a share in <TIMEX3 functionInDocument="NONE" tid="t3" type="DATE" value="198">the early 1980s</TIMEX3>, <EVENT class="OCCURRENCE" eid="e4">filed</EVENT> a Chapter 11 reorganization plan that <EVENT class="OCCURRENCE" eid="e5">provides</EVENT> just 1.125 cents a share for common stockholders.
+ Under the plan, unsecured creditors, who are <EVENT class="STATE" eid="e6">owed</EVENT> about $ 430 million, would <EVENT class="OCCURRENCE" eid="e7">receive</EVENT> about $ 92 million, or 21 cents for each dollar they are <EVENT class="STATE" eid="e8">owed</EVENT>.
+ In addition, they will <EVENT class="OCCURRENCE" eid="e9">receive</EVENT> stock in the reorganized company, which will be <EVENT class="OCCURRENCE" eid="e10">named</EVENT> Ranger Industries Inc.
+ After these <EVENT class="OCCURRENCE" eid="e11">payments</EVENT>, about $ 225,000 will be <EVENT class="STATE" eid="e12">available</EVENT> for the 20 million common shares outstanding.
+ The Avon, Conn., company's stock <EVENT class="OCCURRENCE" eid="e13">hit</EVENT> a high in <TIMEX3 functionInDocument="NONE" tid="t14" type="DATE" value="1983">1983</TIMEX3> after it <EVENT class="OCCURRENCE" eid="e15">unveiled</EVENT> its Adam home computer, but the product was <EVENT class="STATE" eid="e16">plagued</EVENT> with glitches and the company's fortunes <EVENT class="OCCURRENCE" eid="e17">plunged</EVENT>.
+ But Coleco <EVENT class="OCCURRENCE" eid="e18">bounced</EVENT> back with the <EVENT class="OCCURRENCE" eid="e19">introduction</EVENT> of the Cabbage Patch dolls, whose sales <EVENT class="OCCURRENCE" eid="e20">hit</EVENT> $ 600 million in <TIMEX3 functionInDocument="NONE" tid="t21" type="DATE" value="1985">1985</TIMEX3>.
+ But as the craze <EVENT class="OCCURRENCE" eid="e22">died</EVENT>, Coleco <EVENT class="OCCURRENCE" eid="e23">failed</EVENT> to <EVENT class="OCCURRENCE" eid="e24">come</EVENT> up with another winner and <EVENT class="OCCURRENCE" eid="e25">filed</EVENT> for bankruptcy-law protection in <TIMEX3 functionInDocument="NONE" tid="t26" type="DATE" value="1988-07">July 1988</TIMEX3>.
+ The plan was <EVENT class="OCCURRENCE" eid="e27">filed</EVENT> jointly with unsecured creditors in federal bankruptcy court in New York <C-SIGNAL cid="c28">and</C-SIGNAL> must be <EVENT class="OCCURRENCE" eid="e29">approved</EVENT> by the court.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eventID="e29" modality="must" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="ADJECTIVE" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK lid="l1" relType="BEFORE" relatedToTime="t0" timeID="t1" />
+<TLINK eventInstanceID="ei2" lid="l2" relType="IS_INCLUDED" relatedToTime="t3" />
+<TLINK eventInstanceID="ei4" lid="l3" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei4" lid="l4" relType="BEFORE" relatedToEventInstance="ei10" />
+<TLINK eventInstanceID="ei5" lid="l5" relType="DURING" relatedToEventInstance="ei4" />
+<TLINK eventInstanceID="ei6" lid="l6" relType="BEFORE" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei6" lid="l7" relType="BEFORE" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei8" lid="l8" relType="IDENTITY" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei9" lid="l9" relType="AFTER" relatedToEventInstance="ei10" />
+<TLINK eventInstanceID="ei11" lid="l10" relType="INCLUDES" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei11" lid="l11" relType="INCLUDES" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei12" lid="l12" relType="AFTER" relatedToEventInstance="ei11" />
+<TLINK eventInstanceID="ei13" lid="l13" relType="IS_INCLUDED" relatedToTime="t14" />
+<TLINK eventInstanceID="ei13" lid="l14" relType="AFTER" relatedToEventInstance="ei15" />
+<TLINK eventInstanceID="ei16" lid="l15" relType="AFTER" relatedToEventInstance="ei15" />
+<TLINK eventInstanceID="ei17" lid="l16" relType="AFTER" relatedToEventInstance="ei16" />
+<TLINK eventInstanceID="ei18" lid="l17" relType="AFTER" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei18" lid="l18" relType="AFTER" relatedToEventInstance="ei19" />
+<TLINK eventInstanceID="ei20" lid="l19" relType="AFTER" relatedToEventInstance="ei19" />
+<TLINK eventInstanceID="ei20" lid="l20" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei22" lid="l21" relType="AFTER" relatedToEventInstance="ei20" />
+<TLINK eventInstanceID="ei23" lid="l22" relType="AFTER" relatedToEventInstance="ei22" />
+<TLINK eventInstanceID="ei25" lid="l23" relType="IS_INCLUDED" relatedToTime="t26" />
+<TLINK eventInstanceID="ei27" lid="l24" relType="IDENTITY" relatedToEventInstance="ei25" />
+<TLINK eventInstanceID="ei27" lid="l25" relType="BEFORE" relatedToEventInstance="ei29" />
+<CLINK c-signalID="c28" eventInstanceID="ei27" lid="l26" relatedToEventInstance="ei29" />
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei25" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei29" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei27" relatedToTime="t26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei20" relatedToEventInstance="ei22" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei20" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei22" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei22" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei23" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei7" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei7" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei7" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei7" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei6" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei9" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei9" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei15" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei15" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei15" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei17" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei16" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei19" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t1" /></TimeML>

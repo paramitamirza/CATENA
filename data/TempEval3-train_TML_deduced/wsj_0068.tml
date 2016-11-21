@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0068</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0124 = 891102 891102-0124.
+Dividend News: @ Goody Products Inc. 11/02/89 WALL STREET JOURNAL (J) GOOD DIVIDENDS (DIV)
+</EXTRAINFO>
+
+<TEXT>
+GOODY PRODUCTS Inc. <EVENT class="OCCURRENCE" eid="e9">cut</EVENT> its quarterly dividend to five cents a share from 11.5 cents a share. The reduced dividend is <EVENT class="OCCURRENCE" eid="e15">payable</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t18" type="DATE" value="1990-01-02">Jan. 2</TIMEX3> to stock of record <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t17" type="DATE" value="1989-12-15">Dec. 15</TIMEX3>. The Kearny, N.J.-based maker of hair accessories and other cosmetic products <EVENT class="REPORTING" eid="e3">said</EVENT> it <EVENT class="OCCURRENCE" eid="e4">cut</EVENT> the dividend due to its <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t26" type="DATE" value="1989-Q3">third-quarter</TIMEX3> <EVENT class="OCCURRENCE" eid="e5">loss</EVENT> of $992,000, or 15 cents a share. In <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t134" type="DATE" value="1988-Q3">the year-ago quarter</TIMEX3>, the company <EVENT class="REPORTING" eid="e6">reported</EVENT> net income of $1.9 million, or 29 cents a share. The company also <EVENT class="I_ACTION" eid="e7">adopted</EVENT> an anti-takeover plan.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei135" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei139" eventID="e15" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei141" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei142" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei143" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei144" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei145" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei144" lid="l19" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei135" timeID="t0" />
+<TLINK eventInstanceID="ei139" lid="l4" relType="IS_INCLUDED" relatedToTime="t18" />
+<TLINK lid="l7" relType="AFTER" relatedToTime="t0" timeID="t18" />
+<TLINK lid="l8" relType="AFTER" relatedToTime="t17" timeID="t18" />
+<TLINK eventInstanceID="ei141" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei142" lid="l10" relType="IDENTITY" relatedToEventInstance="ei135" />
+<TLINK eventInstanceID="ei143" lid="l11" relType="BEFORE" relatedToEventInstance="ei142" />
+<TLINK eventInstanceID="ei143" lid="l12" relType="ENDS" relatedToTime="t26" />
+<TLINK eventInstanceID="ei145" lid="l13" relType="BEFORE" relatedToTime="t0" />
+<SLINK eventInstanceID="ei141" lid="l15" relType="EVIDENTIAL" subordinatedEventInstance="ei142" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei135" relatedToEventInstance="ei139" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei135" relatedToEventInstance="ei142" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei135" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei135" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei135" relatedToTime="t18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei135" relatedToTime="t26" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToEventInstance="ei141" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToEventInstance="ei142" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToEventInstance="ei144" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToTime="t17" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei139" relatedToTime="t26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei141" relatedToTime="t18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei142" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei142" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei142" relatedToTime="t18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei142" relatedToTime="t26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei143" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei143" relatedToTime="t18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei144" relatedToTime="t18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei145" relatedToTime="t18" /><TLINK deduced="true" relType="BEFORE" timeID="t0" relatedToTime="t18" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t26" /><TLINK deduced="true" relType="AFTER" timeID="t18" relatedToTime="t26" /></TimeML>

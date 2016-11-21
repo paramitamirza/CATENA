@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0798</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-27">10/27/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891027-0097 = 891027 891027-0097.
+Hudson's Bay Gives @ Terms of Rights Offer @ To Raise $337 Million 10/27/89 WALL STREET JOURNAL (J) T.HBC BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) TORONTO
+</EXTRAINFO>
+
+<TEXT>
+Hudson's Bay Co. <EVENT class="OCCURRENCE" eid="e1" stem="announce">announced</EVENT> terms of a previously proposed rights issue that is <EVENT class="I_STATE" eid="e2" stem="expect">expected</EVENT> to <EVENT class="OCCURRENCE" eid="e4" stem="raise">raise</EVENT> about 396 million Canadian dollars (US$337 million) net of expenses.
+
+Proceeds of the offering will be <EVENT class="OCCURRENCE" eid="e7" stem="use">used</EVENT> to <EVENT class="OCCURRENCE" eid="e9" stem="redeem">redeem</EVENT> C$264 million of preferred shares and to <EVENT class="OCCURRENCE" eid="e11" stem="reduce">reduce</EVENT> short-term debt, the company <EVENT class="REPORTING" eid="e12" stem="say">said</EVENT>.
+
+Canada's largest department store operator <EVENT class="REPORTING" eid="e13" stem="say">said</EVENT> the rights offering will <EVENT class="I_STATE" eid="e15" stem="entitle">entitle</EVENT> holders of its ordinary shares, except residents in the U.S. and Britain, to <EVENT class="OCCURRENCE" eid="e17" stem="subscribe">subscribe</EVENT> for two additional shares for every five shares held at a price of C$31.25 a share. The record date is <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t50" type="DATE" value="1989-11-09">Nov. 9</TIMEX3>.
+
+The company <EVENT class="STATE" eid="e21" stem="have">has</EVENT> about 31 million ordinary shares outstanding. On the Toronto Stock Exchange, Hudson's Bay shares <EVENT class="OCCURRENCE" eid="e22" stem="close">closed</EVENT> at C$35, up 12.5 cents.
+
+Hudson's Bay <EVENT class="REPORTING" eid="e23" stem="say">said</EVENT> that Woodbridge Co., which <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t51" type="DATE" value="PRESENT_REF">currently</TIMEX3> <EVENT class="STATE" eid="e24" stem="hold">holds</EVENT> about 77% of the ordinary shares, will <EVENT class="OCCURRENCE" eid="e25" stem="subscribe">subscribe</EVENT> for all the shares to which it is entitled and for any shares that aren't otherwise taken up. Woodbridge is a holding company owned by Toronto's Thomson family.
+
+Hudson's Bay <EVENT class="REPORTING" eid="e30" stem="say">said</EVENT> it will <EVENT class="OCCURRENCE" eid="e31" stem="redeem">redeem</EVENT> 9.5 million Series H preferred shares on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t52" type="DATE" value="1989-10-31">Oct. 31</TIMEX3> at a price of C$27.75 each. The <EVENT class="OCCURRENCE" eid="e33" stem="move">move</EVENT> was <EVENT class="I_ACTION" eid="e34" stem="approve">approved</EVENT> at a special shareholders' <EVENT class="OCCURRENCE" eid="e35" stem="meet">meeting</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t53" type="DATE" value="1989-10-26">yesterday</TIMEX3>.
+
+Gary Lukassen, chief financial officer, <EVENT class="REPORTING" eid="e36" stem="say">said</EVENT> <EVENT class="OCCURRENCE" eid="e188" stem="redemption">redemption</EVENT> of the preferred shares, originally <EVENT class="OCCURRENCE" eid="e38" stem="issue">issued</EVENT> at C$25 each, will <EVENT class="ASPECTUAL" eid="e39" stem="eliminate">eliminate</EVENT> dividend <EVENT class="OCCURRENCE" eid="e40" stem="payment">payments</EVENT> of C$17.9 million <TIMEX3 tid="t1000" type="SET" value="XXXX">annually</TIMEX3>.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei231" eventID="e30" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei216" eventID="e7" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei222" eventID="e15" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei226" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei239" eventID="e39" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei218" eventID="e11" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei234" eventID="e34" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei213" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei238" eventID="e38" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei228" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei237" eventID="e188" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei229" eventID="e24" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei230" eventID="e25" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei220" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei217" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei223" eventID="e17" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei235" eventID="e35" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei225" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei215" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei219" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei233" eventID="e33" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei240" eventID="e40" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei214" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei232" eventID="e31" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei236" eventID="e36" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei240" lid="l39" relType="AFTER" relatedToEventInstance="ei237" />
+<TLINK eventInstanceID="ei220" lid="l38" relType="IDENTITY" relatedToEventInstance="ei213" />
+<TLINK eventInstanceID="ei219" lid="l37" relType="IDENTITY" relatedToEventInstance="ei213" />
+<TLINK eventInstanceID="ei213" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei229" lid="l2" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei213" lid="l4" relType="IS_INCLUDED" relatedToEventInstance="ei214" />
+<TLINK eventInstanceID="ei229" lid="l5" relType="DURING" relatedToTime="t51" />
+<TLINK lid="l6" relType="IS_INCLUDED" relatedToEventInstance="ei214" timeID="t0" />
+<TLINK eventInstanceID="ei226" lid="l8" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei225" lid="l9" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei216" lid="l10" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei231" lid="l11" relType="IDENTITY" relatedToEventInstance="ei228" />
+<TLINK eventInstanceID="ei232" lid="l12" relType="IS_INCLUDED" relatedToTime="t52" />
+<TLINK eventInstanceID="ei238" lid="l13" relType="BEFORE" relatedToEventInstance="ei239" />
+<TLINK eventInstanceID="ei237" lid="l14" relType="BEFORE" relatedToEventInstance="ei239" />
+<TLINK eventInstanceID="ei238" lid="l15" relType="BEFORE" relatedToEventInstance="ei237" />
+<TLINK eventInstanceID="ei235" lid="l17" relType="IS_INCLUDED" relatedToTime="t53" />
+<TLINK eventInstanceID="ei236" lid="l18" relType="SIMULTANEOUS" relatedToEventInstance="ei231" />
+<TLINK eventInstanceID="ei235" lid="l19" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei222" lid="l21" relType="BEFORE" relatedToEventInstance="ei223" />
+<TLINK eventInstanceID="ei234" lid="l22" relType="IS_INCLUDED" relatedToEventInstance="ei235" />
+<TLINK eventInstanceID="ei234" lid="l23" relType="BEFORE" relatedToEventInstance="ei233" />
+<TLINK eventInstanceID="ei233" lid="l24" relType="INCLUDES" relatedToEventInstance="ei232" />
+<SLINK eventInstanceID="ei234" lid="l35" relType="MODAL" subordinatedEventInstance="ei233" />
+<SLINK eventInstanceID="ei228" lid="l25" relType="EVIDENTIAL" subordinatedEventInstance="ei230" />
+<SLINK eventInstanceID="ei214" lid="l26" relType="MODAL" subordinatedEventInstance="ei215" />
+<SLINK eventInstanceID="ei216" lid="l27" relType="MODAL" subordinatedEventInstance="ei217" />
+<SLINK eventInstanceID="ei216" lid="l28" relType="MODAL" subordinatedEventInstance="ei218" />
+<SLINK eventInstanceID="ei219" lid="l29" relType="EVIDENTIAL" subordinatedEventInstance="ei216" />
+<SLINK eventInstanceID="ei236" lid="l30" relType="EVIDENTIAL" subordinatedEventInstance="ei239" />
+<SLINK eventInstanceID="ei220" lid="l31" relType="EVIDENTIAL" subordinatedEventInstance="ei222" />
+<SLINK eventInstanceID="ei231" lid="l32" relType="EVIDENTIAL" subordinatedEventInstance="ei232" />
+<SLINK eventInstanceID="ei222" lid="l33" relType="MODAL" subordinatedEventInstance="ei223" />
+<ALINK eventInstanceID="ei239" lid="l34" relType="TERMINATES" relatedToEventInstance="ei240" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei231" relatedToEventInstance="ei236" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei226" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei234" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei213" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei220" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei235" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei216" relatedToEventInstance="ei219" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei239" relatedToEventInstance="ei238" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei239" relatedToEventInstance="ei237" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei234" relatedToEventInstance="ei232" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei213" relatedToEventInstance="ei220" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei213" relatedToEventInstance="ei219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei238" relatedToEventInstance="ei240" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei228" relatedToEventInstance="ei236" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei237" relatedToEventInstance="ei240" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei220" relatedToEventInstance="ei219" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei220" relatedToEventInstance="ei214" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei220" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei219" relatedToEventInstance="ei214" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei219" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei214" relatedToTime="t0" /></TimeML>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0135</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0056 = 891102 891102-0056.
+Business Brief -- Elco Industries Inc.: @ Fastener Maker Expects Net @ In '90 to Be Below Forecast 11/02/89 WALL STREET JOURNAL (J) ELCN
+</EXTRAINFO>
+
+<TEXT>
+Elco Industries Inc. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="I_STATE" eid="e2">expects</EVENT> net income in <TIMEX3 endPoint="t27" functionInDocument="NONE" temporalFunction="true" tid="t28" type="DURATION" value="P1Y">the year</TIMEX3> <EVENT class="OCCURRENCE" eid="e26">ending</EVENT> <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t27" type="DATE" value="1990-06-30">June 30, 1990</TIMEX3>, to <EVENT class="OCCURRENCE" eid="e19">fall</EVENT> below a recent analyst's estimate of $1.65 a share.
+
+The Rockford, Ill., maker of fasteners also <EVENT class="REPORTING" eid="e5">said</EVENT> it <EVENT class="I_STATE" eid="e6">expects</EVENT> to <EVENT class="REPORTING" eid="e8">post</EVENT> sales in <TIMEX3 anchorTimeID="t28" functionInDocument="NONE" temporalFunction="true" tid="t30" type="DATE" value="1989">the current fiscal year</TIMEX3> that are " slightly above" <TIMEX3 anchorTimeID="t30" functionInDocument="NONE" temporalFunction="true" tid="t32" type="DATE" value="1989">fiscal 1989</TIMEX3> sales of $155 million. The company <EVENT class="REPORTING" eid="e10">said</EVENT> its industrial unit <EVENT class="ASPECTUAL" eid="e11">continues</EVENT> to <EVENT class="STATE" eid="e33">face</EVENT> margin pressures and lower demand.
+
+In <TIMEX3 anchorTimeID="t32" functionInDocument="NONE" temporalFunction="true" tid="t35" type="DATE" value="1989">fiscal 1989</TIMEX3>, Elco <EVENT class="OCCURRENCE" eid="e15">earned</EVENT> $7.8 million, or $1.65 a share. The company's stock <EVENT class="OCCURRENCE" eid="e16">fell</EVENT> $1.125 to $13.625 in over-the-counter trading <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t37" type="DATE" value="1989-11-01">yesterday</TIMEX3>.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e26" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1993" eventID="e19" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2004" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1990" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1999" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1995" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e8" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e33" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2005" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1994" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e11" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK lid="l1" relType="BEFORE" relatedToTime="t0" timeID="t37" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei1990" timeID="t0" />
+<TLINK eventInstanceID="ei1993" lid="l3" relType="IS_INCLUDED" relatedToTime="t28" />
+<TLINK lid="l4" relType="ENDED_BY" relatedToEventInstance="ei1992" timeID="t28" />
+<TLINK eventInstanceID="ei1992" lid="l5" relType="ENDED_BY" relatedToTime="t27" />
+<TLINK eventInstanceID="ei1994" lid="l6" relType="SIMULTANEOUS" relatedToEventInstance="ei1990" />
+<TLINK lid="l7" relType="AFTER" relatedToTime="t0" timeID="t27" />
+<TLINK eventInstanceID="ei1996" lid="l8" relType="IS_INCLUDED" relatedToTime="t30" />
+<TLINK lid="l9" relType="AFTER" relatedToTime="t32" timeID="t30" />
+<TLINK lid="l10" relType="INCLUDES" relatedToTime="t0" timeID="t30" />
+<TLINK eventInstanceID="ei1999" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei2004" lid="l14" relType="SIMULTANEOUS" relatedToTime="t35" />
+<TLINK lid="l15" relType="IDENTITY" relatedToTime="t32" timeID="t35" />
+<TLINK eventInstanceID="ei2005" lid="l16" relType="IS_INCLUDED" relatedToTime="t37" />
+<SLINK eventInstanceID="ei1990" lid="l18" relType="EVIDENTIAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei1991" lid="l19" relType="MODAL" subordinatedEventInstance="ei1993" />
+<SLINK eventInstanceID="ei1994" lid="l20" relType="EVIDENTIAL" subordinatedEventInstance="ei1995" />
+<SLINK eventInstanceID="ei1995" lid="l21" relType="MODAL" subordinatedEventInstance="ei1996" />
+<SLINK eventInstanceID="ei1999" lid="l22" relType="EVIDENTIAL" subordinatedEventInstance="ei2000" />
+<ALINK eventInstanceID="ei2000" lid="l23" relType="CONTINUES" relatedToEventInstance="ei2001" />
+
+<TLINK deduced="true" relType="ENDS" eventInstanceID="ei1992" relatedToTime="t28" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2004" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2004" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2004" relatedToTime="t27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2004" relatedToTime="t30" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2004" relatedToTime="t32" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei1999" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToTime="t27" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1999" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1999" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1999" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1996" relatedToTime="t32" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1996" relatedToTime="t35" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2005" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2005" relatedToTime="t27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToTime="t27" /><TLINK deduced="true" relType="BEFORE" timeID="t0" relatedToTime="t27" /><TLINK deduced="true" relType="IS_INCLUDED" timeID="t0" relatedToTime="t30" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t32" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t35" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t37" /><TLINK deduced="true" relType="ENDED_BY" timeID="t28" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" timeID="t27" relatedToTime="t32" /><TLINK deduced="true" relType="AFTER" timeID="t27" relatedToTime="t35" /><TLINK deduced="true" relType="AFTER" timeID="t27" relatedToTime="t37" /><TLINK deduced="true" relType="AFTER" timeID="t30" relatedToTime="t35" /><TLINK deduced="true" relType="IDENTITY" timeID="t32" relatedToTime="t35" /></TimeML>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_1011</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0045 = 891026 891026-0045.
+Delta Air Net Rose @ By 33% to Record @ In Fiscal 1st Period @ ---- @ By Bridget O'Brian @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) DAL AWAL EARNINGS (ERN) AIRLINES (AIR)
+</EXTRAINFO>
+
+<TEXT>
+Delta Air Lines earnings <EVENT class="OCCURRENCE" eid="e1">soared</EVENT> 33% to a record in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t58" type="DATE" value="1989-Q1">the fiscal first quarter</TIMEX3>, <EVENT class="OCCURRENCE" eid="e3">bucking</EVENT> the industry trend toward declining profits.
+
+The Atlanta-based airline, the third largest in the U.S., <EVENT class="OCCURRENCE" eid="e5">attributed</EVENT> the <EVENT class="OCCURRENCE" eid="e6">increase</EVENT> to higher passenger traffic, new international routes and reduced service by rival Eastern Airlines, which is in bankruptcy <EVENT class="OCCURRENCE" eid="e9">proceedings</EVENT> in the wake of a <EVENT class="OCCURRENCE" eid="e12">strike</EVENT> that <EVENT class="I_ACTION" eid="e13">began</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t60" type="DATE" value="1988-SP">last spring</TIMEX3>.
+
+For <TIMEX3 anchorTimeID="t63" functionInDocument="NONE" temporalFunction="true" tid="t65" type="DATE" value="1989-QX">the quarter</TIMEX3> ended <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t63" type="DATE" value="1989-09-30">Sept. 30</TIMEX3>, Delta <EVENT class="OCCURRENCE" eid="e15">posted</EVENT> net income of $133.1 million, or $2.53 a share, up from $100 million, or $2.03 a share, <TIMEX3 anchorTimeID="t63" functionInDocument="NONE" temporalFunction="true" tid="t64" type="DATE" value="1988-09-30">a year earlier</TIMEX3>.
+
+Revenue <EVENT class="OCCURRENCE" eid="e16">rose</EVENT> 15% to $2.17 billion from $1.89 billion. During <TIMEX3 anchorTimeID="t65" functionInDocument="NONE" temporalFunction="true" tid="t70" type="DATE" value="1989-QX">the quarter</TIMEX3>, Delta <EVENT class="OCCURRENCE" eid="e17">issued</EVENT> 2.5 million shares of common stock to Swissair, and <EVENT class="OCCURRENCE" eid="e18">repurchased</EVENT> 1.1 million shares for <EVENT class="OCCURRENCE" eid="e19">use</EVENT> in a company employee stock ownership plan.
+
+"The key to Delta's record earnings <EVENT class="ASPECTUAL" eid="e21">continued</EVENT> to be excellent passenger revenue <EVENT class="OCCURRENCE" eid="e95">growth</EVENT>," <EVENT class="REPORTING" eid="e23">said</EVENT> Thomas Roeck, chief financial officer. Passenger traffic <EVENT class="OCCURRENCE" eid="e25">jumped</EVENT> 14% in the quarter, while profit per passenger <EVENT class="OCCURRENCE" eid="e27">grew</EVENT> 2%.
+
+Delta has <EVENT class="OCCURRENCE" eid="e28">benefited</EVENT> more than other carriers from the weakness of Eastern Airlines, which <EVENT class="OCCURRENCE" eid="e29">shares</EVENT> the Atlanta hub. Although Eastern is back to about 80% of its pre-strike schedule <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t73" type="DATE" value="PRESENT_REF">now</TIMEX3>, the Texas Air Corp. subsidiary was only <EVENT class="ASPECTUAL" eid="e31">beginning</EVENT> to <EVENT class="OCCURRENCE" eid="e33">get</EVENT> back on its feet during <TIMEX3 anchorTimeID="t70" functionInDocument="NONE" temporalFunction="true" tid="t74" type="DATE" value="1989-QX">the quarter</TIMEX3>.
+
+Separately, America West Airlines, Phoenix, Ariz., <EVENT class="REPORTING" eid="e34">reported</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t79" type="DATE" value="1989-Q3">third-quarter</TIMEX3> profit <EVENT class="OCCURRENCE" eid="e35">jumped</EVENT> 45% to $5.8 million, or 28 cents a share, from $4 million, or 24 cents a share, <TIMEX3 anchorTimeID="t79" functionInDocument="NONE" temporalFunction="true" tid="t88" type="DATE" value="1988-Q3">a year earlier</TIMEX3>. The latest results include a $2.6 million one-time <EVENT class="OCCURRENCE" eid="e77">payment</EVENT> from a "foreign entity." America West wouldn't <EVENT class="OCCURRENCE" eid="e38">identify</EVENT> the entity, but <EVENT class="REPORTING" eid="e41">said</EVENT> the <EVENT class="OCCURRENCE" eid="e42">payment</EVENT> was for the foreign company's <EVENT class="OCCURRENCE" eid="e43">use</EVENT> of certain tax benefits in connection with America West plane purchases. <TIMEX3 anchorTimeID="t79" functionInDocument="NONE" temporalFunction="true" tid="t80" type="DATE" value="1988-Q3">Year-earlier</TIMEX3> <EVENT class="OCCURRENCE" eid="e44">results</EVENT> included an extraordinary <EVENT class="OCCURRENCE" eid="e82">gain</EVENT> of $1.6 million from a buy-back of convertible subordinated debentures.
+
+Revenue <EVENT class="OCCURRENCE" eid="e48">rose</EVENT> 21% to $243.4 million from $201.2 million. For <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t87" type="DURATION" value="P9M">the nine months</TIMEX3>, America West <EVENT class="OCCURRENCE" eid="e49">posted</EVENT> earnings of $18.9 million, or 97 cents a share, compared with a <EVENT class="OCCURRENCE" eid="e51">loss</EVENT> of $9.7 million, or 74 cents a share, <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t89" type="DATE" value="1988">a year earlier</TIMEX3>. Revenue <EVENT class="OCCURRENCE" eid="e52">rose</EVENT> 27% to $715.1 million from $563.8 million.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2013" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2014" eventID="e3" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2016" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2017" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2020" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2021" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2022" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2024" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2027" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2030" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2031" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2032" eventID="e19" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2033" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2035" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2037" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2038" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2039" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2040" eventID="e29" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2042" eventID="e31" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2043" eventID="e33" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2044" eventID="e34" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2045" eventID="e35" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2049" eventID="e77" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2050" eventID="e38" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2051" eventID="e41" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2052" eventID="e42" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2053" eventID="e43" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2054" eventID="e44" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2055" eventID="e82" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2057" eventID="e48" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2060" eventID="e49" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2061" eventID="e51" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2062" eventID="e52" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2065" eventID="e95" polarity="POS" pos="OTHER" tense="NONE" />
+<TLINK eventInstanceID="ei2043" lid="l67" relType="IS_INCLUDED" relatedToTime="t74" />
+<TLINK eventInstanceID="ei2065" lid="l66" relType="INCLUDES" relatedToEventInstance="ei2033" />
+<TLINK eventInstanceID="ei2035" lid="l65" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2031" lid="l1" relType="IS_INCLUDED" relatedToTime="t70" />
+<TLINK eventInstanceID="ei2044" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2013" lid="l6" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l10" relType="INCLUDES" relatedToEventInstance="ei2013" timeID="t58" />
+<TLINK eventInstanceID="ei2024" lid="l11" relType="ENDS" relatedToTime="t65" />
+<TLINK eventInstanceID="ei2021" lid="l13" relType="BEFORE" relatedToEventInstance="ei2020" />
+<TLINK eventInstanceID="ei2038" lid="l14" relType="SIMULTANEOUS" relatedToEventInstance="ei2037" />
+<TLINK eventInstanceID="ei2014" lid="l15" relType="SIMULTANEOUS" relatedToEventInstance="ei2013" />
+<TLINK eventInstanceID="ei2027" lid="l17" relType="SIMULTANEOUS" relatedToEventInstance="ei2013" />
+<TLINK eventInstanceID="ei2038" lid="l19" relType="SIMULTANEOUS" relatedToEventInstance="ei2039" />
+<TLINK eventInstanceID="ei2017" lid="l20" relType="IDENTITY" relatedToEventInstance="ei2013" />
+<TLINK lid="l21" relType="IS_INCLUDED" relatedToEventInstance="ei2040" timeID="t0" />
+<TLINK lid="l22" relType="INCLUDES" relatedToEventInstance="ei2022" timeID="t60" />
+<TLINK eventInstanceID="ei2016" lid="l23" relType="AFTER" relatedToEventInstance="ei2013" />
+<TLINK eventInstanceID="ei2017" lid="l24" relType="BEFORE" relatedToEventInstance="ei2016" />
+<TLINK eventInstanceID="ei2030" lid="l25" relType="IS_INCLUDED" relatedToTime="t70" />
+<TLINK lid="l27" relType="SIMULTANEOUS" relatedToTime="t0" timeID="t73" />
+<TLINK lid="l29" relType="INCLUDES" relatedToEventInstance="ei2042" timeID="t74" />
+<TLINK lid="l30" relType="BEFORE" relatedToEventInstance="ei2044" timeID="t79" />
+<TLINK eventInstanceID="ei2045" lid="l31" relType="ENDS" relatedToTime="t79" />
+<TLINK eventInstanceID="ei2051" lid="l34" relType="SIMULTANEOUS" relatedToEventInstance="ei2050" />
+<TLINK eventInstanceID="ei2053" lid="l35" relType="BEFORE" relatedToEventInstance="ei2052" />
+<TLINK eventInstanceID="ei2054" lid="l36" relType="ENDS" relatedToTime="t80" />
+<TLINK eventInstanceID="ei2055" lid="l37" relType="IS_INCLUDED" relatedToTime="t80" />
+<TLINK lid="l39" relType="AFTER" relatedToEventInstance="ei2057" timeID="t0" />
+<TLINK lid="l45" relType="AFTER" relatedToTime="t87" timeID="t0" />
+<TLINK eventInstanceID="ei2060" lid="l46" relType="ENDS" relatedToTime="t87" />
+<TLINK eventInstanceID="ei2061" lid="l47" relType="BEFORE" relatedToTime="t87" />
+<TLINK lid="l48" relType="ENDED_BY" relatedToEventInstance="ei2061" timeID="t89" />
+<TLINK lid="l49" relType="ENDS" relatedToEventInstance="ei2062" timeID="t89" />
+<SLINK eventInstanceID="ei2051" lid="l60" relType="MODAL" subordinatedEventInstance="ei2052" />
+<SLINK eventInstanceID="ei2016" lid="l56" relType="FACTIVE" subordinatedEventInstance="ei2017" />
+<SLINK eventInstanceID="ei2031" lid="l50" relType="MODAL" subordinatedEventInstance="ei2032" />
+<SLINK eventInstanceID="ei2035" lid="l51" relType="EVIDENTIAL" subordinatedEventInstance="ei2033" />
+<ALINK eventInstanceID="ei2033" lid="l55" relType="CONTINUES" relatedToEventInstance="ei2065" />
+<ALINK eventInstanceID="ei2022" lid="l53" relType="INITIATES" relatedToEventInstance="ei2021" />
+<ALINK eventInstanceID="ei2042" lid="l54" relType="INITIATES" relatedToEventInstance="ei2043" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2013" relatedToEventInstance="ei2014" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2013" relatedToEventInstance="ei2016" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2013" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2013" relatedToEventInstance="ei2027" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2013" relatedToTime="t58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2013" relatedToTime="t73" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2014" relatedToEventInstance="ei2016" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2014" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2014" relatedToEventInstance="ei2027" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2014" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2014" relatedToTime="t58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2014" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2016" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2016" relatedToEventInstance="ei2027" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2017" relatedToEventInstance="ei2027" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2017" relatedToTime="t58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2017" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2020" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2022" relatedToTime="t60" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2027" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2027" relatedToTime="t58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2027" relatedToTime="t73" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2033" relatedToEventInstance="ei2065" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2035" relatedToTime="t73" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2037" relatedToEventInstance="ei2038" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2037" relatedToEventInstance="ei2039" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2040" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2040" relatedToTime="t73" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2042" relatedToTime="t74" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2044" relatedToEventInstance="ei2045" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2044" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2044" relatedToTime="t79" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2045" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2045" relatedToTime="t73" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2050" relatedToEventInstance="ei2051" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2052" relatedToEventInstance="ei2053" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2057" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2057" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2060" relatedToEventInstance="ei2061" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2060" relatedToEventInstance="ei2062" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2060" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2060" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2060" relatedToTime="t89" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei2061" relatedToEventInstance="ei2062" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2061" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2061" relatedToTime="t73" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei2061" relatedToTime="t89" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2062" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2062" relatedToTime="t73" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2062" relatedToTime="t87" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei2062" relatedToTime="t89" /><TLINK deduced="true" relType="IDENTITY" timeID="t0" relatedToTime="t73" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t79" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t89" /><TLINK deduced="true" relType="AFTER" timeID="t73" relatedToTime="t79" /><TLINK deduced="true" relType="AFTER" timeID="t73" relatedToTime="t87" /><TLINK deduced="true" relType="AFTER" timeID="t73" relatedToTime="t89" /><TLINK deduced="true" relType="AFTER" timeID="t87" relatedToTime="t89" /></TimeML>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>NYT19980424.0421</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-04-24T21:49:00">04/24/1998 21:49:00</TIMEX3></DCT>
+
+<EXTRAINFO>
+NYT19980424.0421 NEWS STORY 04/24/1998 21:49:00
+A3813 Cx1f taf-z u k Cx13 Cx11 BC-EDIT-GENDER-STEREOTYP 04-24 0430
+BC-EDIT-GENDER-STEREOTYPES-NYT
+EDITORIAL: THE COURT RETREATS ON STEREOTYPES
+UR (af) LR QL UR c.1998 N.Y. Times News Service QC LR QL
+</EXTRAINFO>
+
+<TEXT>
+The New York Times <EVENT class="REPORTING" eid="e1">said</EVENT> in an editorial on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t74" type="DATE" value="1998-04-25">Saturday, April 25</TIMEX3>: The Supreme Court <EVENT class="OCCURRENCE" eid="e4">took</EVENT> a detour <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t75" type="DATE" value="1998-W17">this week</TIMEX3> from the core principle of gender fairness it <EVENT class="OCCURRENCE" eid="e5">vindicated</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t76" type="DATE" value="1996">two years ago</TIMEX3> in its <EVENT class="OCCURRENCE" eid="e2031">ruling</EVENT> <EVENT class="I_ACTION" eid="e8">invalidating</EVENT> the <EVENT class="OCCURRENCE" eid="e2040">use</EVENT> of sexual stereotypes to justify denying women admission to the Virginia Military Institute. By a 6-3 vote, the court <EVENT class="OCCURRENCE" eid="e11">upheld</EVENT> a discriminatory immigration law that gives a child born overseas to an unmarried American woman a better chance at citizenship than a child born to an unmarried American man. Under the statute, a child born abroad to an unwed American mother is automatically considered a U.S. citizen. But the child of an unwed American father has no citizenship rights unless the father takes the affirmative step of acknowledging paternity and formally agrees to provide support until the child turns 18. The majority's views were <EVENT class="OCCURRENCE" eid="e24">expressed</EVENT> in three separate opinions, the most disquieting of which was <EVENT class="OCCURRENCE" eid="e25">written</EVENT> by a liberal member, Justice John Paul Stevens, and <EVENT class="OCCURRENCE" eid="e26">joined</EVENT> by a conservative, Chief Justice William Rehnquist. The opinion, which <EVENT class="I_STATE" eid="e27">found</EVENT> the gender distinction reasonable, <EVENT class="I_STATE" eid="e28">relied</EVENT> heavily on outmoded generalities about family roles, including the flawed presumption that mothers have a closer relationship to their children than fathers do. As Justice Stephen Breyer <EVENT class="OCCURRENCE" eid="e32">asked</EVENT> in a strong <EVENT class="OCCURRENCE" eid="e33">dissent</EVENT>, ``what sense does it make'' to apply citizenship barriers ``only to fathers and not to mothers in today's world _ where paternity can readily be proved and where women and men both are likely to earn a living in the workplace?''. Justices Sandra Day O'Connor and Anthony Kennedy seemed to <EVENT class="I_ACTION" eid="e43">agree</EVENT> that the law <EVENT class="OCCURRENCE" eid="e44">amounted</EVENT> to unconstitutional sex discrimination. Butinstead of <EVENT class="I_ACTION" eid="e45">providing</EVENT> the votes to <EVENT class="OCCURRENCE" eid="e46">strike</EVENT> it down, they <EVENT class="I_ACTION" eid="e47">chose</EVENT> to <EVENT class="OCCURRENCE" eid="e48">uphold</EVENT> it on the flimsy ground that because the sex of the parent and not the child made the difference under the law, the plaintiff did not have standing to <EVENT class="OCCURRENCE" eid="e52">bring</EVENT> the case. The Justice Department, which <EVENT class="OCCURRENCE" eid="e53">supported</EVENT> the statute, did not <EVENT class="OCCURRENCE" eid="e54">cover</EVENT> itself with glory either. The department <EVENT class="OCCURRENCE" eid="e56">retreated</EVENT> from its position in the VMI case when it <EVENT class="OCCURRENCE" eid="e59">argued</EVENT> that the government could not <EVENT class="OCCURRENCE" eid="e60">make</EVENT> <EVENT class="OCCURRENCE" eid="e2004">policy</EVENT> based on stereotypes ``even when those stereotypes <EVENT class="OCCURRENCE" eid="e65">reflect</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t77" type="DATE" value="PRESENT_REF">current</TIMEX3> realities.'' As for the court, it <EVENT class="I_ACTION" eid="e66">managed</EVENT> with its splintered ruling to <EVENT class="OCCURRENCE" eid="e67">cast</EVENT> doubt both on the constitutionality of the immigration provisions it upheld and on its true commitment to fighting gender stereotypes.
+</TEXT>
+
+<LASTEXTRAINFO>
+NYT-04-24-98 2149EDT
+</LASTEXTRAINFO>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2115" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2116" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2117" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2118" eventID="e2031" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2119" eventID="e8" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2120" eventID="e2040" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2121" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2122" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2123" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2124" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2126" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2128" eventID="e28" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2129" eventID="e32" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2130" eventID="e33" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2131" eventID="e43" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2132" eventID="e44" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2133" eventID="e45" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2134" eventID="e46" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2135" eventID="e47" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2136" eventID="e48" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2138" eventID="e52" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2139" eventID="e53" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2140" eventID="e54" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2141" eventID="e56" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2142" eventID="e59" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2143" eventID="e60" modality="could" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2144" eventID="e2004" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2145" eventID="e65" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2146" eventID="e66" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2147" eventID="e67" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<TLINK eventInstanceID="ei2146" lid="l33" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2139" lid="l32" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2140" lid="l31" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2133" lid="l29" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2135" lid="l28" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2131" lid="l27" relType="IS_INCLUDED" relatedToTime="t75" />
+<TLINK eventInstanceID="ei2126" lid="l24" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2123" lid="l23" relType="IDENTITY" relatedToEventInstance="ei2122" />
+<TLINK eventInstanceID="ei2122" lid="l22" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2124" lid="l21" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2121" lid="l20" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2120" lid="l19" relType="IS_INCLUDED" relatedToTime="t76" />
+<TLINK eventInstanceID="ei2143" lid="l1" relType="IDENTITY" relatedToEventInstance="ei2144" />
+<TLINK eventInstanceID="ei2143" lid="l2" relType="SIMULTANEOUS" relatedToEventInstance="ei2145" />
+<TLINK eventInstanceID="ei2115" lid="l3" relType="IS_INCLUDED" relatedToTime="t74" />
+<TLINK eventInstanceID="ei2116" lid="l4" relType="IS_INCLUDED" relatedToTime="t75" />
+<TLINK eventInstanceID="ei2117" lid="l5" relType="IS_INCLUDED" relatedToTime="t76" />
+<TLINK eventInstanceID="ei2118" lid="l6" relType="SIMULTANEOUS" relatedToEventInstance="ei2116" />
+<TLINK eventInstanceID="ei2119" lid="l7" relType="IDENTITY" relatedToEventInstance="ei2118" />
+<TLINK eventInstanceID="ei2129" lid="l8" relType="IS_INCLUDED" relatedToEventInstance="ei2130" />
+<TLINK eventInstanceID="ei2141" lid="l9" relType="SIMULTANEOUS" relatedToEventInstance="ei2142" />
+<SLINK eventInstanceID="ei2142" lid="l18" relType="MODAL" subordinatedEventInstance="ei2143" />
+<SLINK eventInstanceID="ei2119" lid="l17" relType="FACTIVE" subordinatedEventInstance="ei2120" />
+<SLINK eventInstanceID="ei2146" lid="l10" relType="FACTIVE" subordinatedEventInstance="ei2147" />
+<SLINK eventInstanceID="ei2115" lid="l11" relType="EVIDENTIAL" subordinatedEventInstance="ei2116" />
+<SLINK eventInstanceID="ei2131" lid="l13" relType="MODAL" subordinatedEventInstance="ei2132" />
+<SLINK eventInstanceID="ei2133" lid="l14" relType="MODAL" subordinatedEventInstance="ei2134" />
+<SLINK eventInstanceID="ei2135" lid="l15" relType="MODAL" subordinatedEventInstance="ei2136" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2116" relatedToEventInstance="ei2118" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2116" relatedToEventInstance="ei2119" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2118" relatedToEventInstance="ei2119" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2118" relatedToTime="t75" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2122" relatedToEventInstance="ei2123" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2144" relatedToEventInstance="ei2145" /></TimeML>

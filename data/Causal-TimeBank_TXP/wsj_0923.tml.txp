@@ -1,0 +1,82 @@
+# FILE: wsj_0923.tml.txp
+# DATE: 1989-10-26T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	coevent		tlink	clink	csignal
+
+DCT_1989-10-26	O	O	O	O	O	tmx0	B-DATE	1989-10-26	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O
+
+Kyle	t1	1	NP0	kyle	O	O	O	O	organization	O	O	O	O	O	say	A0	B-NP	O	O	O	O	O	O	O	O
+Technology	t2	1	NP0	technology	t1:NAME||t3:POSTHON	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	technology+n+sing	O	O	O	O	O
+Corp.	t3	1	NP0	corp.	O	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	O	O	O	O	O	O
+said	t4	1	VVD	say	t2:SBJ||t8:OBJ||t29:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e10	e1:tmx0:BEFORE||e1:e6:NONE	O	O
+a	t5	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	O	O	O
+Seattle	t6	1	NP0	seattle	O	O	O	O	location	O	O	O	O	O	say	A1	I-NP	O	O	seattle+pn	O	O	O	O	O
+investor	t7	1	NN1	investor	t5:NMOD||t6:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	investor+n+sing	O	O	O	O	O
+has	t8	1	NN0	have	t7:SBJ||t9:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	have+v+indic+pres+sing3	PRESENT+PERFECTIVE+pos	O	O	O	O
+signed	t9	1	VVN	sign	t11:OBJ	O	O	O	O	OCCURRENCE	e2	A0	A1	O	say	A1	I-VP	O	O	sign+v+part+past	PRESENT+PERFECTIVE+pos	O	e2:e1:BEFORE||e2:e6:NONE||e2:tmx0:NONE	O	O
+a	t10	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	O	O	O
+letter	t11	1	NN1	letter	t10:NMOD||t12:NMOD	O	O	O	O	O	O	A0	A1	O	say	A1	I-NP	O	O	letter+n+sing	O	O	O	O	O
+of	t12	1	PRF	of	t13:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	O	O	O
+intent	t13	1	NN1	intent	t14:NMOD	O	O	O	O	O	O	A0	A1	O	say	A1	B-NP	O	O	intent+n+sing	O	O	O	O	O
+to	t14	1	TO0	to	t15:IM	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	to+prep	O	O	O	O	O
+buy	t15	1	VVB	buy	t17:OBJ||t18:ADV	O	O	O	O	OCCURRENCE	e6	A1	A3	O	say	A1	I-VP	O	O	buy+v+indic+pres+no3sing	INFINITIVE+NONE+pos	O	O	O	O
+the	t16	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O
+company	t17	1	NN1	company	t16:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	company+n+sing	O	O	O	O	O
+for	t18	1	PRP	for	t20:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	for+prep	O	O	O	O	O
+about	t19	1	PRP	about	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	about+prep	O	O	O	O	O
+$	t20	1	PUN	$	t19:DEP||t21:DEP||t22:DEP||t23:P||t24:COORD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	$+punc	O	O	O	O	O
+3.1	t21	1	CRD	3.1	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	O	O	O
+million	t22	1	CRD	million	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	million+adj+zero	O	O	O	O	O
+,	t23	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	O	O	O
+or	t24	1	CJC	or	t25:CONJ	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	or+conj	O	O	O	O	O
+$	t25	1	PUN	$	t26:NMOD||t28:ADV	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	$+punc	O	O	O	O	O
+1.20	t26	1	CRD	1.20	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	O	O	O
+a	t27	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	O	O	O
+share	t28	1	NN1	share	t27:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	share+n+sing	O	O	O	O	O
+.	t29	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+The	t30	2	AT0	the	O	O	O	O	O	O	O	O	O	O	plan	A0	B-NP	O	O	the+art	O	O	O	O	O
+investor	t31	2	NN1	investor	t30:NMOD||t32:P||t35:APPO||t36:P	O	O	O	O	O	O	O	O	O	plan	A0	I-NP	O	O	investor+n+sing	O	O	O	O	O
+,	t32	2	PUN	,	O	O	O	O	O	O	O	O	O	O	plan	A0	O	O	O	punc	O	O	O	O	O
+Donald	t33	2	NP0	donald	O	O	O	O	person	O	O	O	O	O	plan	A0	B-NP	O	O	donald+pn	O	O	O	O	O
+A.	t34	2	NP0	a.	O	O	O	O	person	O	O	O	O	O	plan	A0	I-NP	O	O	O	O	O	O	O	O
+Wright	t35	2	NP0	wright	t33:NAME||t34:NAME	O	O	O	person	O	O	O	O	O	plan	A0	I-NP	O	O	wright+n+sing	O	O	O	O	O
+,	t36	2	PUN	,	O	O	O	O	O	O	O	O	O	O	plan	A0	O	O	O	punc	O	O	O	O	O
+plans	t37	2	NN0	plan	t31:SBJ||t38:OPRD	O	O	O	O	I_STATE	e7	A0	A1	O	say	A1	B-VP	O	O	plan+v+indic+pres+sing3	PRESENT+NONE+pos	O	e7:tmx0:INCLUDES||e7:e9:NONE||e7:e10:NONE	O	O
+to	t38	2	TO0	to	t39:IM	O	O	O	O	O	O	O	O	O	plan	A1	I-VP	O	O	to+prep	INFINITIVE+NONE+pos	O	O	O	O
+run	t39	2	VVB	run	t41:OBJ	O	O	O	O	OCCURRENCE	e9	A0	A1	O	plan	A1	I-VP	O	O	run+v+part+past	INFINITIVE+NONE+pos	O	e9:e10:NONE	O	O
+the	t40	2	AT0	the	O	O	O	O	O	O	O	O	O	O	plan	A1	B-NP	O	O	the+art	O	O	O	O	O
+company	t41	2	NN1	company	t40:NMOD	O	O	O	O	O	O	O	O	O	plan	A1	I-NP	O	O	company+n+sing	O	O	O	O	O
+,	t42	2	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	O	O
+said	t43	2	VVD	say	t37:OBJ||t42:P||t45:SBJ||t48:P	O	O	O	O	REPORTING	e10	A1	A0	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e1	e10:tmx0:NONE||e10:e1:NONE	O	O
+a	t44	2	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	a+art	O	O	O	O	O
+spokesman	t45	2	NN1	spokesman	t44:NMOD||t46:NMOD	O	O	O	O	O	O	A0	A2	O	say	A0	I-NP	O	O	spokesman+n+sing	O	O	O	O	O
+for	t46	2	PRP	for	t47:PMOD	O	O	O	O	O	O	O	O	O	say	A0	B-PP	O	O	for+prep	O	O	O	O	O
+Kyle	t47	2	NP0	kyle	O	O	O	O	person	O	O	O	O	O	say	A0	B-NP	O	O	O	O	O	O	O	O
+.	t48	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+The	t49	3	AT0	the	O	O	O	O	O	O	O	O	O	O	approve	A1	B-NP	O	O	the+art	O	O	O	O	O
+transaction	t50	3	NN1	transaction	t49:NMOD	O	O	O	O	OCCURRENCE	e11	O	O	O	approve	A1	I-NP	O	O	transaction+n+sing	O	O	e11:e6:INCLUDES||e11:e12:NONE||e11:e13:NONE	O	O
+has	t51	3	NN0	have	t50:SBJ||t52:VC||t58:P||t59:COORD||t68:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	have+v+indic+pres+sing3	PRESENT+PERFECTIVE+pos	O	O	O	O
+been	t52	3	VVN	be	t53:VC	O	O	O	O	O	O	O	O	O	O	O	I-VP	mainVb	O	be+v+part+past	PRESENT+PERFECTIVE+pos	O	O	O	O
+approved	t53	3	VVN	approve	t54:LGS	O	O	O	O	I_ACTION	e12	A1	A0	O	O	O	I-VP	mainVb	O	approve+v+part+past	PRESENT+PERFECTIVE+pos	O	e12:tmx0:BEFORE||e12:e13:NONE||e12:e10:NONE	O	O
+by	t54	3	PRP	by	t57:PMOD	O	O	O	O	O	O	O	O	O	approve	A0	B-PP	O	O	by+prep	O	O	O	O	O
+Kyle	t55	3	NP0	kyle	t56:SUFFIX	O	O	O	person	O	O	O	O	O	approve	A0	B-NP	O	O	O	O	O	O	O	O
+'s	t56	3	POS	's	O	O	O	O	O	O	O	O	O	O	approve	A0	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	O	O
+board	t57	3	NN1	board	t55:NMOD	O	O	O	O	O	O	A2	O	O	approve	A0	I-NP	O	O	board+n+sing	O	O	O	O	O
+,	t58	3	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	O	O
+but	t59	3	CJC	but	t60:CONJ	O	O	O	O	O	O	O	O	O	O	O	I-VP	O	O	but+conj	O	O	O	O	O
+requires	t60	3	NN0	require	t62:OBJ	O	O	O	O	I_STATE	e13	A0	A1	O	O	O	I-VP	O	O	require+v+indic+pres+sing3	PRESENT+NONE+pos	O	e13:tmx0:INCLUDES	O	O
+the	t61	3	AT0	the	O	O	O	O	O	O	O	O	O	O	require	A1	B-NP	O	O	the+art	O	O	O	O	O
+approval	t62	3	NN1	approval	t61:NMOD||t63:NMOD	O	O	O	O	O	O	A0	O	O	require	A1	I-NP	O	O	approval+n+sing	O	O	O	O	O
+of	t63	3	PRF	of	t67:PMOD	O	O	O	O	O	O	O	O	O	require	A1	B-PP	O	O	of+prep	O	O	O	O	O
+the	t64	3	AT0	the	O	O	O	O	O	O	O	O	O	O	require	A1	B-NP	O	O	the+art	O	O	O	O	O
+company	t65	3	NN1	company	t64:NMOD||t66:SUFFIX	O	O	O	O	O	O	O	O	O	require	A1	I-NP	O	O	company+n+sing	O	O	O	O	O
+'s	t66	3	POS	's	O	O	O	O	O	O	O	O	O	O	require	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	O	O
+shareholders	t67	3	NN2	shareholder	t65:NMOD	O	O	O	O	O	O	A1	A0	O	require	A1	I-NP	O	O	shareholder+n+plur	O	O	O	O	O
+.	t68	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+Kyle	t69	4	NP0	kyle	O	O	O	O	person	O	O	O	O	O	manufacture	A0	B-NP	O	O	O	O	O	O	O	O
+manufactures	t70	4	NN0	manufacture	t69:SBJ||t72:OBJ||t73:P	O	O	O	O	O	O	A0	A1	O	O	O	B-VP	mainVb	O	manufacture+v+indic+pres+sing3	PRESENT+NONE+pos	O	O	O	O
+electronic	t71	4	AJ0	electronic	O	O	O	O	O	O	O	O	O	O	manufacture	A1	B-NP	O	O	electronic+adj+zero	O	O	O	O	O
+components	t72	4	NN2	component	t71:NMOD	O	O	O	O	O	O	O	O	O	manufacture	A1	I-NP	O	O	component+n+plur	O	O	O	O	O
+.	t73	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O

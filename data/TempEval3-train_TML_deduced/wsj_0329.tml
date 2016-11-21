@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0329</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">11/01/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891101-0035 = 891101 891101-0035.
+Business Brief -- Coda Energy Inc.: @ Oil and Gas Firm Arranges @ $50 Million Credit Facility 11/01/89 WALL STREET JOURNAL (J) CODA BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+Coda Energy Inc. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2">arranged</EVENT> a $50 million credit facility with NCNB Texas National Bank, a unit of NCNB Corp., of Charlotte, N.C. The Dallas oil and gas concern <EVENT class="REPORTING" eid="e4">said</EVENT> that $10 million of the facility would be <EVENT class="OCCURRENCE" eid="e5">used</EVENT> to <EVENT class="OCCURRENCE" eid="e7">consolidate</EVENT> the company's $8.1 million of existing bank debt, to <EVENT class="OCCURRENCE" eid="e9">repurchase</EVENT> 4 million of its 4.9 million shares outstanding of Series D convertible preferred stock, and to <EVENT class="OCCURRENCE" eid="e10">purchase</EVENT> a 10% net-profits interest in certain oil and gas properties from one of its existing lenders, National Canada Corp. The remaining $40 million can be <EVENT class="OCCURRENCE" eid="e12">used</EVENT> over <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t21" type="DURATION" value="P3Y">three years</TIMEX3> for oil and gas acquisitions, the company <EVENT class="REPORTING" eid="e14">said</EVENT>.
+
+Ted Eubank, Coda's president, <EVENT class="REPORTING" eid="e15">said</EVENT> the loan carries an interest rate of prime plus one percentage point, with 85% of the company's net oil and gas revenue <TIMEX3 functionInDocument="NONE" quant="each" temporalFunction="false" tid="t22" type="SET" value="P1M">each month</TIMEX3> <EVENT class="OCCURRENCE" eid="e17">dedicated</EVENT> to repayment. The company <EVENT class="OCCURRENCE" eid="e23">put</EVENT> up "virtually all" of its oil and gas properties as collateral, he <EVENT class="REPORTING" eid="e18">said</EVENT>.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei63" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei54" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei66" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei59" eventID="e7" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei58" eventID="e5" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei62" eventID="e12" modality="can" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei60" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei67" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei64" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei61" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei55" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei65" eventID="e17" polarity="POS" pos="VERB" tense="PASTPART" />
+<TLINK eventInstanceID="ei67" lid="l18" relType="IDENTITY" relatedToEventInstance="ei64" />
+<TLINK eventInstanceID="ei64" lid="l17" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei65" lid="l16" relType="IS_INCLUDED" relatedToTime="t22" />
+<TLINK eventInstanceID="ei58" lid="l15" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei60" lid="l14" relType="SIMULTANEOUS" relatedToEventInstance="ei59" />
+<TLINK eventInstanceID="ei57" lid="l13" relType="IDENTITY" relatedToEventInstance="ei54" />
+<TLINK eventInstanceID="ei63" lid="l12" relType="IDENTITY" relatedToEventInstance="ei54" />
+<TLINK eventInstanceID="ei61" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei60" />
+<TLINK eventInstanceID="ei59" lid="l10" relType="AFTER" relatedToEventInstance="ei55" />
+<TLINK eventInstanceID="ei54" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei62" lid="l1" relType="IS_INCLUDED" relatedToTime="t21" />
+<SLINK eventInstanceID="ei57" lid="l8" relType="EVIDENTIAL" subordinatedEventInstance="ei58" />
+<SLINK eventInstanceID="ei58" lid="l7" relType="MODAL" subordinatedEventInstance="ei61" />
+<SLINK eventInstanceID="ei58" lid="l6" relType="MODAL" subordinatedEventInstance="ei60" />
+<SLINK eventInstanceID="ei58" lid="l5" relType="MODAL" subordinatedEventInstance="ei59" />
+<SLINK eventInstanceID="ei54" lid="l2" relType="EVIDENTIAL" subordinatedEventInstance="ei55" />
+<SLINK eventInstanceID="ei63" lid="l3" relType="EVIDENTIAL" subordinatedEventInstance="ei62" />
+<SLINK eventInstanceID="ei67" lid="l4" relType="EVIDENTIAL" subordinatedEventInstance="ei66" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei63" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei63" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei54" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei59" relatedToEventInstance="ei60" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei59" relatedToEventInstance="ei61" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei57" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei60" relatedToEventInstance="ei61" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei60" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei67" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei61" relatedToEventInstance="ei55" /></TimeML>

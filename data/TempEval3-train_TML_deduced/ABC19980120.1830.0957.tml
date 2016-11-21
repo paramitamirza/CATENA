@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>ABC19980120.1830.0957</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-01-20">19980120</TIMEX3></DCT>
+
+<EXTRAINFO>
+ABC19980120.1830.0957 NEWS STORY
+</EXTRAINFO>
+
+<TEXT>
+For his part, Fidel Castro is the ultimate political survivor. People have <EVENT class="I_ACTION" eid="e1">predicted</EVENT> his <EVENT class="OCCURRENCE" eid="e86">demise</EVENT> so many times, and the US has <EVENT class="I_ACTION" eid="e2">tried</EVENT> to <EVENT class="OCCURRENCE" eid="e4">hasten</EVENT> it on several occasions. Time and again, he <EVENT class="OCCURRENCE" eid="e87">endures</EVENT>. He has <EVENT class="OCCURRENCE" eid="e7">outlasted</EVENT> and sometimes <EVENT class="OCCURRENCE" eid="e8">outsmarted</EVENT> eight American presidents. Fidel Castro <EVENT class="OCCURRENCE" eid="e9">invited</EVENT> John Paul to <EVENT class="OCCURRENCE" eid="e11">come</EVENT> for a reason. This is clearly an opportunity for Cuba to look good internationally.
+
+The entire world will <EVENT class="PERCEPTION" eid="e15">see</EVENT> images of the Pope in Cuba. They'll <EVENT class="PERCEPTION" eid="e16">see</EVENT> images of the Pope with Fidel Castro. It will <EVENT class="OCCURRENCE" eid="e18">give</EVENT> the rest of the world the view that Cuba is like any other nation, something the US has, of course, <EVENT class="I_ACTION" eid="e22">tried</EVENT> to <EVENT class="I_ACTION" eid="e24">persuade</EVENT> the world that it is not.
+
+For <TIMEX3 functionInDocument="NONE" mod="EQUAL_OR_LESS" temporalFunction="false" tid="t94" type="DURATION" value="P40Y">nearly forty years</TIMEX3>, the United States has <EVENT class="REPORTING" eid="e26">said</EVENT> categorically it would not <EVENT class="I_ACTION" eid="e99">tolerate</EVENT> totalitarian rule in its own backyard. It is the US economic and political <EVENT class="OCCURRENCE" eid="e240">embargo</EVENT> which has <EVENT class="ASPECTUAL" eid="e30">kept</EVENT> Cuba in a box.
+
+The main positive for Castro to <EVENT class="OCCURRENCE" eid="e32">invite</EVENT> the Pope is international, to be <EVENT class="I_STATE" eid="e100">able</EVENT> to <EVENT class="REPORTING" eid="e35">say</EVENT> to the rest of the world, this government is not as closed, as intolerant, uh as totalitarian as some <EVENT class="I_ACTION" eid="e38">make</EVENT> it out to be.
+
+One of the scenarios widely <EVENT class="REPORTING" eid="e103">advanced</EVENT> before the <EVENT class="OCCURRENCE" eid="e42">visit</EVENT> is that through the Pope, Cuba, still <EVENT class="OCCURRENCE" eid="e44">led</EVENT> by Castro, can <EVENT class="ASPECTUAL" eid="e45">begin</EVENT> a more productive relationship with the world. That will, in turn, <EVENT class="OCCURRENCE" eid="e48">bring</EVENT> pressure on Washington to <EVENT class="OCCURRENCE" eid="e50">change</EVENT>.
+
+Those observers <EVENT class="I_ACTION" eid="e51">looking</EVENT> for a <EVENT class="OCCURRENCE" eid="e52">battle</EVENT> between uncompromising representatives and very different ideologies will, in all likelihood, be <EVENT class="STATE" eid="e53">disappointed</EVENT>.
+
+Castro has said that you can be a Communist and still be a Christian. He <EVENT class="REPORTING" eid="e56">says</EVENT> he and the Pope both <EVENT class="I_STATE" eid="e57">want</EVENT> to <EVENT class="ASPECTUAL" eid="e59">end</EVENT> the <EVENT class="OCCURRENCE" eid="e60">exploitation</EVENT> of man by man. The question is who will Cubans <EVENT class="STATE" eid="e378">believe</EVENT>?
+
+The main negative is the risk that the Pope's <EVENT class="OCCURRENCE" eid="e63">visit</EVENT> will <EVENT class="I_ACTION" eid="e64">persuade</EVENT> a great many more Cubans to <EVENT class="OCCURRENCE" eid="e66">break</EVENT> loose of the Cuban government. If so, then the Pope's <EVENT class="OCCURRENCE" eid="e67">visit</EVENT> would really <EVENT class="ASPECTUAL" eid="e112">open</EVENT> up a new chapter in the government's relations with its own society. For the Cuban government, that is the risk.
+
+At the end of the broadcast <TIMEX3 tid="t1000" type="TIME" value="1998-01-20TEV">this evening</TIMEX3>, one more trip around Havana to see what it's been like since the last time. And in just a moment Diane Sawyer will have some other news.
+</TEXT>
+
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei415" eventID="e1" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei416" eventID="e86" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei417" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei418" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei419" eventID="e87" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei420" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei421" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei422" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei423" eventID="e11" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei424" eventID="e15" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei425" eventID="e16" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei426" eventID="e18" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei429" eventID="e22" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei430" eventID="e24" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei431" eventID="e26" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei432" eventID="e99" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei434" eventID="e240" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei435" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei437" eventID="e32" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei438" eventID="e100" polarity="POS" pos="ADJECTIVE" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei439" eventID="e35" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei441" eventID="e38" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei442" eventID="e103" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei443" eventID="e42" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei444" eventID="e44" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei445" eventID="e45" modality="can" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei447" eventID="e48" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei448" eventID="e50" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei449" eventID="e51" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei450" eventID="e52" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei451" eventID="e53" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei452" eventID="e56" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei453" eventID="e57" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei454" eventID="e59" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei455" eventID="e60" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei456" eventID="e378" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei458" eventID="e63" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei459" eventID="e64" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei460" eventID="e66" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei461" eventID="e67" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei462" eventID="e112" modality="would" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<TLINK eventInstanceID="ei455" lid="l65" relType="BEFORE" relatedToEventInstance="ei454" />
+<TLINK eventInstanceID="ei415" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei417" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei419" lid="l3" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei419" lid="l4" relType="INCLUDES" relatedToEventInstance="ei415" />
+<TLINK eventInstanceID="ei419" lid="l5" relType="INCLUDES" relatedToEventInstance="ei417" />
+<TLINK eventInstanceID="ei420" lid="l6" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei421" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei420" lid="l8" relType="IS_INCLUDED" relatedToEventInstance="ei419" />
+<TLINK eventInstanceID="ei421" lid="l9" relType="IS_INCLUDED" relatedToEventInstance="ei419" />
+<TLINK eventInstanceID="ei422" lid="l10" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei423" lid="l11" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei424" lid="l12" relType="AFTER" relatedToEventInstance="ei423" />
+<TLINK eventInstanceID="ei425" lid="l13" relType="SIMULTANEOUS" relatedToEventInstance="ei424" />
+<TLINK eventInstanceID="ei426" lid="l14" relType="AFTER" relatedToEventInstance="ei423" />
+<TLINK eventInstanceID="ei429" lid="l16" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei431" lid="l17" relType="DURING" relatedToTime="t94" />
+<TLINK eventInstanceID="ei434" lid="l18" relType="DURING" relatedToEventInstance="ei435" />
+<TLINK eventInstanceID="ei437" lid="l19" relType="IDENTITY" relatedToEventInstance="ei422" />
+<TLINK eventInstanceID="ei438" lid="l20" relType="AFTER" relatedToEventInstance="ei437" />
+<TLINK eventInstanceID="ei441" lid="l21" relType="BEFORE" relatedToEventInstance="ei439" />
+<TLINK eventInstanceID="ei442" lid="l22" relType="BEFORE" relatedToEventInstance="ei443" />
+<TLINK eventInstanceID="ei443" lid="l23" relType="AFTER" relatedToEventInstance="ei437" />
+<TLINK eventInstanceID="ei443" lid="l24" relType="INCLUDES" relatedToEventInstance="ei423" />
+<TLINK eventInstanceID="ei445" lid="l25" relType="IS_INCLUDED" relatedToEventInstance="ei444" />
+<TLINK eventInstanceID="ei447" lid="l27" relType="BEFORE" relatedToEventInstance="ei448" />
+<TLINK eventInstanceID="ei449" lid="l28" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei449" lid="l29" relType="BEFORE" relatedToEventInstance="ei443" />
+<TLINK eventInstanceID="ei449" lid="l30" relType="BEFORE" relatedToEventInstance="ei451" />
+<TLINK eventInstanceID="ei451" lid="l31" relType="AFTER" relatedToEventInstance="ei443" />
+<TLINK eventInstanceID="ei452" lid="l32" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei456" lid="l33" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei459" lid="l34" relType="AFTER" relatedToEventInstance="ei458" />
+<TLINK eventInstanceID="ei462" lid="l35" relType="AFTER" relatedToEventInstance="ei460" />
+<TLINK eventInstanceID="ei462" lid="l36" relType="AFTER" relatedToEventInstance="ei461" />
+<SLINK eventInstanceID="ei459" lid="l59" relType="CONDITIONAL" subordinatedEventInstance="ei462" />
+<SLINK eventInstanceID="ei447" lid="l58" relType="MODAL" subordinatedEventInstance="ei448" />
+<SLINK eventInstanceID="ei415" lid="l37" relType="MODAL" subordinatedEventInstance="ei416" />
+<SLINK eventInstanceID="ei417" lid="l38" relType="MODAL" subordinatedEventInstance="ei418" />
+<SLINK eventInstanceID="ei422" lid="l39" relType="MODAL" subordinatedEventInstance="ei423" />
+<SLINK eventInstanceID="ei429" lid="l40" relType="MODAL" subordinatedEventInstance="ei430" />
+<SLINK eventInstanceID="ei431" lid="l41" relType="EVIDENTIAL" subordinatedEventInstance="ei432" />
+<SLINK eventInstanceID="ei438" lid="l43" relType="MODAL" subordinatedEventInstance="ei439" />
+<SLINK eventInstanceID="ei442" lid="l44" relType="EVIDENTIAL" subordinatedEventInstance="ei445" />
+<SLINK eventInstanceID="ei449" lid="l45" relType="MODAL" subordinatedEventInstance="ei450" />
+<SLINK eventInstanceID="ei452" lid="l46" relType="EVIDENTIAL" subordinatedEventInstance="ei453" />
+<SLINK eventInstanceID="ei453" lid="l47" relType="MODAL" subordinatedEventInstance="ei454" />
+<SLINK eventInstanceID="ei459" lid="l49" relType="MODAL" subordinatedEventInstance="ei460" />
+<ALINK eventInstanceID="ei435" lid="l53" relType="CONTINUES" relatedToEventInstance="ei434" />
+<ALINK eventInstanceID="ei454" lid="l52" relType="TERMINATES" relatedToEventInstance="ei455" />
+
+<TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei415" relatedToEventInstance="ei419" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei423" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei415" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei417" relatedToEventInstance="ei419" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei423" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei417" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei419" relatedToEventInstance="ei420" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei419" relatedToEventInstance="ei421" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei423" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei420" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei423" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei421" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei423" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei422" relatedToEventInstance="ei437" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei438" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei422" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei423" relatedToEventInstance="ei424" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei423" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei423" relatedToEventInstance="ei426" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei423" relatedToEventInstance="ei429" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei423" relatedToEventInstance="ei437" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei423" relatedToEventInstance="ei442" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei423" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei423" relatedToEventInstance="ei449" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei423" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei424" relatedToEventInstance="ei425" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei424" relatedToEventInstance="ei429" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei424" relatedToEventInstance="ei442" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei424" relatedToEventInstance="ei449" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei424" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei424" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToEventInstance="ei429" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToEventInstance="ei437" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToEventInstance="ei442" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToEventInstance="ei449" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei425" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToEventInstance="ei429" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToEventInstance="ei437" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToEventInstance="ei442" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToEventInstance="ei449" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei426" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei429" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei429" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei429" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei437" relatedToEventInstance="ei438" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei437" relatedToEventInstance="ei443" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei437" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei437" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei437" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei439" relatedToEventInstance="ei441" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei442" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei443" relatedToEventInstance="ei449" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei443" relatedToEventInstance="ei451" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei443" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei443" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei444" relatedToEventInstance="ei445" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei451" relatedToEventInstance="ei452" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei451" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei452" relatedToEventInstance="ei456" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei454" relatedToEventInstance="ei455" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei458" relatedToEventInstance="ei459" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei460" relatedToEventInstance="ei462" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei461" relatedToEventInstance="ei462" /></TimeML>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_1013</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">1989-10-26</TIMEX3></DCT>
+<TEXT>
+ Columbia Savings amp Loan Association, <EVENT class="OCCURRENCE" eid="e1">reeling</EVENT> <C-SIGNAL cid="c2">from</C-SIGNAL> thrift-accounting <EVENT class="OCCURRENCE" eid="e3">changes</EVENT> <EVENT class="OCCURRENCE" eid="e4">mandated</EVENT> by Congress and the recent <EVENT class="OCCURRENCE" eid="e5">collapse</EVENT> of the junk-bond market, <EVENT class="REPORTING" eid="e6">announced</EVENT> a <EVENT class="OCCURRENCE" eid="e7">loss</EVENT> for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t8" type="DATE" value="1989-Q3">the third quarter</TIMEX3> of $ 226.3 million, or $ 11.57 a share.
+ For <TIMEX3 anchorTimeID="t8" functionInDocument="NONE" tid="t9" type="DATE" value="1988-Q3">the quarter a year ago</TIMEX3>, Columbia <EVENT class="REPORTING" eid="e10">reported</EVENT> earnings of $ 16.3 million, or 37 cents a share.
+ Total assets <EVENT class="OCCURRENCE" eid="e11">increased</EVENT> to $ 12.7 billion in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t12" type="DATE" value="1989-QX">the latest quarter</TIMEX3> from $ 12.4 billion <TIMEX3 anchorTimeID="t12" functionInDocument="NONE" tid="t13" type="DATE" value="1988-QX">a year earlier</TIMEX3>.
+ The <EVENT class="OCCURRENCE" eid="e14">loss</EVENT> <EVENT class="OCCURRENCE" eid="e15">stems</EVENT> from $ 357.5 million of <EVENT class="OCCURRENCE" eid="e16">write-downs</EVENT> on Columbia's $ 4.4 billion high-yield investment securities portfolio, which includes about $ 3.7 billion of junk bonds, $ 400 million of preferred stock, and Treasury securities.
+ Columbia <EVENT class="OCCURRENCE" eid="e17">owes</EVENT> its spectacular <EVENT class="OCCURRENCE" eid="e18">growth</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t19" type="DATE" value="PAST_REF">recent years</TIMEX3> to its junk-bond portfolio, the largest of any U.S. thrift.
+ Much of Columbia's junk-bond <EVENT class="OCCURRENCE" eid="e20">trading</EVENT> has been <EVENT class="OCCURRENCE" eid="e21">done</EVENT> through the high-yield department of its Beverly Hills neighbor, Drexel Burnham Lambert Inc.
+ For <TIMEX3 functionInDocument="NONE" tid="t22" type="DURATION" value="P9M">the nine months</TIMEX3>, losses <EVENT class="OCCURRENCE" eid="e23">totaled</EVENT> $ 212 million, or $ 10.83 a share, compared with net income of $ 48.7 million, or $ 1.11 a share, <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t24" type="DATE" value="1988">a year earlier</TIMEX3>.
+ The results include a $ 130.2 million write-down of the securities in the high-yield portfolio to the lower of their cost or market value.
+ Columbia also <EVENT class="OCCURRENCE" eid="e25">added</EVENT> $ 227.3 million to reserves for <EVENT class="OCCURRENCE" eid="e26">losses</EVENT> on the portfolio, <EVENT class="OCCURRENCE" eid="e27">increasing</EVENT> general reserves to $ 300 million, or about 6.7 % of the total portfolio, as of <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t28" type="DATE" value="1989-09-30">Sept. 30</TIMEX3>.
+ On <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t29" type="DATE" value="1989-06-30">June 30</TIMEX3>, loss reserves <EVENT class="OCCURRENCE" eid="e30">stood</EVENT> at $ 108.3 million.
+ Thrift officials <EVENT class="REPORTING" eid="e31">said</EVENT> the $ 300 million reserve will be <EVENT class="OCCURRENCE" eid="e32">adjusted</EVENT> quarterly and will <EVENT class="OCCURRENCE" eid="e33">reflect</EVENT> the rate of dispositions and market conditions.
+ The adjustments <EVENT class="OCCURRENCE" eid="e34">result</EVENT> from the recently <EVENT class="OCCURRENCE" eid="e35">passed</EVENT> thrift-industry bailout legislation, which <EVENT class="OCCURRENCE" eid="e36">requires</EVENT> thrifts to <EVENT class="OCCURRENCE" eid="e37">divest</EVENT> all high-yield bond investments by <TIMEX3 functionInDocument="NONE" tid="t38" type="DATE" value="1994">1994</TIMEX3>.
+ Previously, Columbia didn't have to <EVENT class="OCCURRENCE" eid="e39">adjust</EVENT> the book value of its junk-bond holdings to <EVENT class="OCCURRENCE" eid="e40">reflect</EVENT> <EVENT class="OCCURRENCE" eid="e41">declines</EVENT> in market prices, <C-SIGNAL cid="c42">because</C-SIGNAL> it <EVENT class="OCCURRENCE" eid="e43">held</EVENT> the bonds as long-term investments.
+ <C-SIGNAL cid="c44">Because</C-SIGNAL> Columbia <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t45" type="DATE" value="PRESENT_REF">now</TIMEX3> must <EVENT class="OCCURRENCE" eid="e46">sell</EVENT> the bonds within <TIMEX3 functionInDocument="NONE" tid="t47" type="DURATION" value="P5Y">five years</TIMEX3>, accounting rules <EVENT class="OCCURRENCE" eid="e48">require</EVENT> the thrift to <EVENT class="OCCURRENCE" eid="e49">value</EVENT> the bonds at the lower of cost or market prices.
+ For its future strategy, Columbia officials <EVENT class="REPORTING" eid="e50">said</EVENT> the thrift may <EVENT class="OCCURRENCE" eid="e51">branch</EVENT> out into commercial lending or managing outside investments, as well as <EVENT class="OCCURRENCE" eid="e52">beefing</EVENT> up more traditional thrift activities.
+ The quarterly results also <EVENT class="OCCURRENCE" eid="e53">reflected</EVENT> $ 21.4 million in non-recurring losses from commercial real-estate activities in California.
+ Thomas Spiegel, Columbia's chairman, <EVENT class="REPORTING" eid="e54">said</EVENT> in a statement that the thrift was " <EVENT class="OCCURRENCE" eid="e55">disappointed</EVENT> " by the effects of the accounting <EVENT class="OCCURRENCE" eid="e56">changes</EVENT>.
+ But he <EVENT class="REPORTING" eid="e57">said</EVENT> Columbia <EVENT class="STATE" eid="e58">remains</EVENT> " one of the most strongly capitalized thrifts in the industry, " based on the economic value of its assets and tangible capital.
+ Columbia <EVENT class="REPORTING" eid="e59">announced</EVENT> the results after the <EVENT class="OCCURRENCE" eid="e60">close</EVENT> of the stock market.
+ Its shares <EVENT class="OCCURRENCE" eid="e61">closed</EVENT> at $ 5.125 each in composite New York Stock Exchange trading, down 37.5 cents.
+ The price of Columbia shares has been <EVENT class="OCCURRENCE" eid="e62">cut</EVENT> nearly in half since <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t63" type="DATE" value="1989-08">August</TIMEX3>, when they <EVENT class="OCCURRENCE" eid="e64">traded</EVENT> at about $ 10, <C-SIGNAL cid="c65">as</C-SIGNAL> investors apparently <EVENT class="OCCURRENCE" eid="e66">realized</EVENT> that the thrift would be <EVENT class="OCCURRENCE" eid="e67">forced</EVENT> to <EVENT class="OCCURRENCE" eid="e68">take</EVENT> a big write-down.
+ The stock's <EVENT class="OCCURRENCE" eid="e69">decline</EVENT> <EVENT class="OCCURRENCE" eid="e70">accelerated</EVENT> in <TIMEX3 functionInDocument="NONE" tid="t71" type="DURATION" value="P2W">the past two weeks</TIMEX3>, from a price of $ 8 a share on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t72" type="DATE" value="1989-10-09">Oct. 9</TIMEX3>.
+ Columbia officials <EVENT class="REPORTING" eid="e73">said</EVENT> they don't <EVENT class="OCCURRENCE" eid="e74">know</EVENT> how quickly they will <EVENT class="OCCURRENCE" eid="e75">dispose</EVENT> of the thrift's junk bonds, <C-SIGNAL cid="c76">because</C-SIGNAL> federal regulations, such as those that would <EVENT class="OCCURRENCE" eid="e77">allow</EVENT> thrifts to <EVENT class="ASPECTUAL" eid="e78">continue</EVENT> <EVENT class="OCCURRENCE" eid="e79">holding</EVENT> the bonds in separately capitalized subsidiaries, haven't yet been <EVENT class="ASPECTUAL" eid="e80">completed</EVENT>.
+ Columbia officials also <EVENT class="REPORTING" eid="e81">said</EVENT> the thrift shouldn't <EVENT class="OCCURRENCE" eid="e82">face</EVENT> problems meeting regulatory capital requirements, despite the large reserves and write-downs and stiffer regulatory requirements that should be in place by <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t83" type="DATE" value="1989">year's end</TIMEX3>.
+ Its ratio of tangible equity to total assets as of <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t84" type="DATE" value="1989-09-30">Sept. 30</TIMEX3> was 3.6 %, and total equity was $ 457.9 million.
+ The thrift <EVENT class="REPORTING" eid="e85">emphasized</EVENT> that it <EVENT class="STATE" eid="e86">has</EVENT> a large portfolio of equity securities <EVENT class="OCCURRENCE" eid="e87">issued</EVENT> in connection with corporate restructurings and leveraged <EVENT class="OCCURRENCE" eid="e88">buy-outs</EVENT>, which <EVENT class="STATE" eid="e89">has</EVENT> a book value of $ 90 million.
+ Although many of the transactions related to those securities haven't been <EVENT class="OCCURRENCE" eid="e90">completed</EVENT>, Columbia <EVENT class="REPORTING" eid="e91">said</EVENT> the ultimate gain on the <EVENT class="OCCURRENCE" eid="e92">sale</EVENT> of those assets will <EVENT class="STATE" eid="e93">range</EVENT> from $ 200 million to $ 300 million.
+ Columbia also <EVENT class="STATE" eid="e94">has</EVENT> unrealized gains in its public equity securities portfolio of more than $ 70 million.
+ David B. Hilder in New York <EVENT class="OCCURRENCE" eid="e95">contributed</EVENT> to this article.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei56" eventID="e56" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei81" eventID="e81" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei54" eventID="e54" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei51" eventID="e51" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50" eventID="e50" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei60" eventID="e60" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei61" eventID="e61" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei62" eventID="e62" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei89" eventID="e89" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei64" eventID="e64" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei49" eventID="e49" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei66" eventID="e66" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei67" eventID="e67" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei68" eventID="e68" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei69" eventID="e69" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei80" eventID="e80" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei52" eventID="e52" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei86" eventID="e86" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei53" eventID="e53" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei85" eventID="e85" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei48" eventID="e48" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei46" eventID="e46" modality="must" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei82" eventID="e82" modality="should" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei43" eventID="e43" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei40" eventID="e40" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei41" eventID="e41" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei78" eventID="e78" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e87" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei77" eventID="e77" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei75" eventID="e75" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei74" eventID="e74" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei73" eventID="e73" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei70" eventID="e70" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei91" eventID="e91" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei59" eventID="e59" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei93" eventID="e93" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei92" eventID="e92" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei95" eventID="e95" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei94" eventID="e94" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei79" eventID="e79" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei58" eventID="e58" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei39" eventID="e39" modality="have to" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei33" eventID="e33" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei31" eventID="e31" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei37" eventID="e37" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei36" eventID="e36" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei35" eventID="e35" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei34" eventID="e34" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei55" eventID="e55" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei88" eventID="e88" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei32" eventID="e32" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eventID="e57" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei90" eventID="e90" polarity="NEG" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1" lid="l2" relType="INCLUDES" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei3" lid="l3" relType="BEFORE" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei4" lid="l5" relType="BEFORE" relatedToEventInstance="ei3" />
+<TLINK eventInstanceID="ei5" lid="l6" relType="BEFORE" relatedToEventInstance="ei1" />
+<TLINK lid="l7" relType="ENDED_BY" relatedToEventInstance="ei7" timeID="t8" />
+<TLINK lid="l8" relType="BEFORE" relatedToTime="t8" timeID="t9" />
+<TLINK eventInstanceID="ei10" lid="l9" relType="AFTER" relatedToTime="t9" />
+<TLINK eventInstanceID="ei11" lid="l10" relType="ENDS" relatedToTime="t12" />
+<TLINK eventInstanceID="ei15" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei14" />
+<TLINK eventInstanceID="ei16" lid="l12" relType="BEFORE" relatedToEventInstance="ei14" />
+<TLINK eventInstanceID="ei17" lid="l14" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei18" lid="l15" relType="IS_INCLUDED" relatedToTime="t19" />
+<TLINK eventInstanceID="ei20" lid="l16" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei20" lid="l17" relType="SIMULTANEOUS" relatedToEventInstance="ei21" />
+<TLINK lid="l18" relType="ENDED_BY" relatedToEventInstance="ei23" timeID="t22" />
+<TLINK eventInstanceID="ei25" lid="l19" relType="AFTER" relatedToEventInstance="ei26" />
+<TLINK eventInstanceID="ei27" lid="l20" relType="SIMULTANEOUS" relatedToEventInstance="ei25" />
+<TLINK eventInstanceID="ei30" lid="l21" relType="IS_INCLUDED" relatedToTime="t29" />
+<TLINK eventInstanceID="ei31" lid="l22" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei36" lid="l24" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei37" lid="l25" relType="BEFORE" relatedToTime="t38" />
+<TLINK eventInstanceID="ei41" lid="l26" relType="BEFORE" relatedToEventInstance="ei40" />
+<TLINK eventInstanceID="ei43" lid="l27" relType="BEFORE" relatedToEventInstance="ei39" />
+<TLINK eventInstanceID="ei46" lid="l29" relType="DURING" relatedToTime="t45" />
+<TLINK eventInstanceID="ei46" lid="l30" relType="IS_INCLUDED" relatedToTime="t47" />
+<TLINK lid="l32" relType="BEGUN_BY" relatedToTime="t0" timeID="t47" />
+<TLINK eventInstanceID="ei48" lid="l33" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50" lid="l34" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei51" lid="l35" relType="BEFORE" relatedToEventInstance="ei52" />
+<TLINK eventInstanceID="ei56" lid="l36" relType="BEFORE" relatedToEventInstance="ei55" />
+<TLINK eventInstanceID="ei59" lid="l37" relType="AFTER" relatedToEventInstance="ei60" />
+<TLINK eventInstanceID="ei61" lid="l38" relType="IDENTITY" relatedToEventInstance="ei60" />
+<TLINK eventInstanceID="ei62" lid="l39" relType="AFTER" relatedToTime="t63" />
+<TLINK lid="l40" relType="INCLUDES" relatedToEventInstance="ei64" timeID="t63" />
+<TLINK eventInstanceID="ei66" lid="l41" relType="BEFORE" relatedToEventInstance="ei62" />
+<TLINK eventInstanceID="ei67" lid="l43" relType="AFTER" relatedToTime="t63" />
+<TLINK eventInstanceID="ei69" lid="l44" relType="INCLUDES" relatedToEventInstance="ei70" />
+<TLINK eventInstanceID="ei70" lid="l45" relType="IS_INCLUDED" relatedToTime="t71" />
+<TLINK eventInstanceID="ei73" lid="l46" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei75" lid="l47" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei77" lid="l48" relType="IS_INCLUDED" relatedToEventInstance="ei79" />
+<TLINK eventInstanceID="ei79" lid="l49" relType="INCLUDES" relatedToEventInstance="ei78" />
+<TLINK eventInstanceID="ei80" lid="l50" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei87" lid="l52" relType="BEFORE" relatedToEventInstance="ei86" />
+<TLINK eventInstanceID="ei88" lid="l53" relType="BEFORE" relatedToEventInstance="ei86" />
+<TLINK eventInstanceID="ei89" lid="l54" relType="DURING" relatedToEventInstance="ei85" />
+<TLINK eventInstanceID="ei91" lid="l55" relType="IDENTITY" relatedToEventInstance="ei81" />
+<TLINK eventInstanceID="ei94" lid="l56" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei95" lid="l57" relType="BEFORE" relatedToTime="t0" />
+<CLINK c-signalID="c2" eventInstanceID="ei3" lid="l4" relatedToEventInstance="ei1" />
+<CLINK eventInstanceID="ei16" lid="l13" relatedToEventInstance="ei14" />
+<CLINK eventInstanceID="ei35" lid="l23" relatedToEventInstance="ei32" />
+<CLINK c-signalID="c42" eventInstanceID="ei43" lid="l28" relatedToEventInstance="ei39" />
+<CLINK c-signalID="c44" eventInstanceID="ei46" lid="l31" relatedToEventInstance="ei48" />
+<CLINK c-signalID="c65" eventInstanceID="ei66" lid="l42" relatedToEventInstance="ei62" />
+<CLINK c-signalID="c76" eventInstanceID="ei80" lid="l51" relatedToEventInstance="ei74" />
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei81" relatedToEventInstance="ei91" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei80" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei46" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToTime="t47" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei60" relatedToEventInstance="ei61" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei60" relatedToEventInstance="ei59" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei61" relatedToEventInstance="ei59" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei62" relatedToEventInstance="ei64" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei62" relatedToEventInstance="ei66" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei64" relatedToEventInstance="ei67" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei64" relatedToTime="t63" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei1" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei80" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei95" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei80" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei80" relatedToTime="t47" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei86" relatedToEventInstance="ei87" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei86" relatedToEventInstance="ei88" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei25" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei23" relatedToTime="t22" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei1" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei95" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei46" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei40" relatedToEventInstance="ei41" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToTime="t47" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei3" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToTime="t47" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToTime="t47" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToTime="t47" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei7" relatedToTime="t8" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei7" relatedToTime="t9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToEventInstance="ei75" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToTime="t47" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei78" relatedToEventInstance="ei79" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei75" relatedToEventInstance="ei73" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei75" relatedToEventInstance="ei95" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei75" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei75" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei73" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei73" relatedToTime="t47" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei95" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei95" relatedToTime="t47" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei15" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei14" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei31" relatedToEventInstance="ei36" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei31" relatedToTime="t47" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei36" relatedToTime="t47" /><TLINK deduced="true" relType="BEGINS" timeID="t0" relatedToTime="t47" /><TLINK deduced="true" relType="AFTER" timeID="t8" relatedToTime="t9" /></TimeML>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_1042</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0014 = 891026 891026-0014.
+Dividend News: @ Avon Rent-a-Car amp Truck Corp. 10/26/89 WALL STREET JOURNAL (J) AVON DIVIDENDS (DIV)
+</EXTRAINFO>
+
+<TEXT>
+AVON RENT-A-CAR amp TRUCK Corp. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2" stem="declare">declared</EVENT> a dividend of one warrant for each three shares of common stock. Currently, Avon, based in Santa Monica, Calif., <EVENT class="OCCURRENCE" eid="e5" stem="have">has</EVENT> 3.3 million common shares outstanding. About 1.1 million Class C warrants were <EVENT class="OCCURRENCE" eid="e7" stem="issue">issued</EVENT>, the company <EVENT class="REPORTING" eid="e8" stem="say">said</EVENT>. Each of the Class C warrants will <EVENT class="OCCURRENCE" eid="e10" stem="enable">enable</EVENT> the holders to <EVENT class="OCCURRENCE" eid="e12" stem="purchase">purchase</EVENT> one share of common stock at $5.50. The warrants may be <EVENT class="OCCURRENCE" eid="e14" stem="exercise">exercised</EVENT> until <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t31" type="DURATION" value="P90D">90 days</TIMEX3> after their issue date. Avon also said it will <EVENT class="OCCURRENCE" eid="e18" stem="issue">issue</EVENT> an additional 243,677 of the Class C warrants to holders of its Class A, Class B and unclassified warrants. Issuance of those warrants will be at the rate of one-third warrant for each warrant exercised.
+</TEXT>
+
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei88" eventID="e14" modality="may" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei84" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei91" eventID="e18" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei85" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e12" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei82" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei86" eventID="e10" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei81" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei83" eventID="e5" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei85" lid="l11" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei81" timeID="t0" />
+<TLINK eventInstanceID="ei83" lid="l3" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei88" lid="l5" relType="BEFORE" relatedToTime="t31" />
+<SLINK eventInstanceID="ei81" lid="l7" relType="EVIDENTIAL" subordinatedEventInstance="ei82" />
+<SLINK eventInstanceID="ei85" lid="l8" relType="EVIDENTIAL" subordinatedEventInstance="ei84" />
+<SLINK eventInstanceID="ei86" lid="l9" relType="MODAL" subordinatedEventInstance="ei87" />
+
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei85" relatedToEventInstance="ei81" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei81" relatedToEventInstance="ei83" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei81" relatedToTime="t0" /></TimeML>

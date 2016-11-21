@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0811</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-27">10/27/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891027-0084 = 891027 891027-0084.
+Financing Business: @ Blockbuster Entertainment Corp. 10/27/89 WALL STREET JOURNAL (J) BV BOND MARKET NEWS (BON)
+</EXTRAINFO>
+
+<TEXT>
+BLOCKBUSTER ENTERTAINMENT CORP. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2">raised</EVENT> $92 million from an <EVENT class="OCCURRENCE" eid="e3">offering</EVENT> of liquid yield option notes. The gross proceeds from the <EVENT class="OCCURRENCE" eid="e6">sale</EVENT> of the notes, which will be <EVENT class="OCCURRENCE" eid="e38">due</EVENT> on <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t42" type="DATE" value="2004-11-01">Nov. 1, 2004</TIMEX3>, will be <EVENT class="OCCURRENCE" eid="e9">used</EVENT> to <EVENT class="OCCURRENCE" eid="e11">reduce</EVENT> existing debt and for general corporate purposes, the company <EVENT class="REPORTING" eid="e13">said</EVENT>. The debt <EVENT class="OCCURRENCE" eid="e14">reduction</EVENT> is <EVENT class="I_STATE" eid="e15">expected</EVENT> to <EVENT class="OCCURRENCE" eid="e17">save</EVENT> the Fort Lauderdale, Fla. home video concern about $2 million a year in interest expense. The zero-coupon subordinated notes have no periodic interest <EVENT class="OCCURRENCE" eid="e21">payments</EVENT>. Each note is being <EVENT class="I_ACTION" eid="e24">offered</EVENT> at $308.32 per $1,000 principal amount at maturity, representing an 8% yield to maturity. In addition, each note can be <EVENT class="OCCURRENCE" eid="e29">converted</EVENT> into Blockbuster Entertainment common stock at a rate of 13.851 shares per note. Merrill Lynch Capital Markets Inc. is the sole underwriter for the offering. The notes will <EVENT class="STATE" eid="e44">have</EVENT> a principal amount of $300 million at maturity. Blockbuster shares <EVENT class="OCCURRENCE" eid="e35">closed</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t45" type="DATE" value="1989-10-26">yesterday</TIMEX3> at $18.75, down $1.125, in New York Stock Exchange trading.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei152" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei166" eventID="e35" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei162" eventID="e24" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei159" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei155" eventID="e9" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei163" eventID="e29" modality="can" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei165" eventID="e44" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei153" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei154" eventID="e38" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei158" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei160" eventID="e17" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei151" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei156" eventID="e11" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei157" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei161" eventID="e21" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei150" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei159" lid="l21" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei166" lid="l1" relType="IS_INCLUDED" relatedToTime="t45" />
+<TLINK eventInstanceID="ei150" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei151" lid="l3" relType="AFTER" relatedToEventInstance="ei152" />
+<TLINK eventInstanceID="ei153" lid="l4" relType="AFTER" relatedToEventInstance="ei152" />
+<TLINK eventInstanceID="ei154" lid="l5" relType="ENDS" relatedToEventInstance="ei153" />
+<TLINK eventInstanceID="ei154" lid="l6" relType="IS_INCLUDED" relatedToTime="t42" />
+<TLINK eventInstanceID="ei153" lid="l7" relType="BEFORE" relatedToEventInstance="ei155" />
+<TLINK eventInstanceID="ei155" lid="l8" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei157" lid="l9" relType="IDENTITY" relatedToEventInstance="ei150" />
+<TLINK eventInstanceID="ei158" lid="l10" relType="BEFORE" relatedToEventInstance="ei160" />
+<TLINK eventInstanceID="ei158" lid="l11" relType="IDENTITY" relatedToEventInstance="ei156" />
+<TLINK eventInstanceID="ei161" lid="l12" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei162" lid="l13" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei163" lid="l14" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei165" lid="l16" relType="AFTER" relatedToTime="t0" />
+<SLINK eventInstanceID="ei150" lid="l17" relType="EVIDENTIAL" subordinatedEventInstance="ei151" />
+<SLINK eventInstanceID="ei155" lid="l18" relType="MODAL" subordinatedEventInstance="ei156" />
+<SLINK eventInstanceID="ei157" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei155" />
+<SLINK eventInstanceID="ei159" lid="l20" relType="MODAL" subordinatedEventInstance="ei160" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei152" relatedToEventInstance="ei155" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei152" relatedToEventInstance="ei153" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei152" relatedToEventInstance="ei154" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei152" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei162" relatedToEventInstance="ei159" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei159" relatedToEventInstance="ei155" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei159" relatedToEventInstance="ei163" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei159" relatedToEventInstance="ei165" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei159" relatedToEventInstance="ei157" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei159" relatedToEventInstance="ei161" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei159" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei155" relatedToEventInstance="ei153" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei155" relatedToEventInstance="ei154" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei155" relatedToEventInstance="ei157" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei155" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToEventInstance="ei157" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei153" relatedToEventInstance="ei154" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToEventInstance="ei156" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei157" relatedToTime="t0" /></TimeML>

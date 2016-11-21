@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0533</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0168 = 891030 891030-0168.
+Two Rival Bidders @ Extend Offers @ To Buy Connaught @ ---- @ By Suzanne McGee @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) CSESF F.INM Z.CIG CHIR EUROP RHPOY CANDA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDICAL AND BIOTECHNOLOGY (MTC) TORONTO
+</EXTRAINFO>
+
+<TEXT>
+Two rival bidders for Connaught BioSciences <EVENT class="OCCURRENCE" eid="e1">extended</EVENT> their <EVENT class="I_ACTION" eid="e2">offers</EVENT> to <EVENT class="OCCURRENCE" eid="e4">acquire</EVENT> the Toronto-based vaccine manufacturer <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t102" type="DATE" value="1989-10-27">Friday</TIMEX3>.
+
+Institut Merieux S.A., which <EVENT class="OCCURRENCE" eid="e5">offered</EVENT> 942 million Canadian dollars (US$801.2 million), or C$37 a share for Connaught, <EVENT class="REPORTING" eid="e6">said</EVENT> it would <EVENT class="OCCURRENCE" eid="e7">extend</EVENT> its <EVENT class="OCCURRENCE" eid="e9">bid</EVENT>, due to <EVENT class="OCCURRENCE" eid="e109">expire</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t103" type="DATE" value="1989-10-26">last Thursday</TIMEX3>, to <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t104" type="DATE" value="1989-11-06">Nov. 6</TIMEX3>.
+
+A C$30-a-share <EVENT class="OCCURRENCE" eid="e12">bid</EVENT> by Ciba-Geigy Ltd., a pharmaceutical company based in Basel, Switzerland, and California-based Chiron Corp., a bioresearch concern, was <EVENT class="OCCURRENCE" eid="e14">extended</EVENT> to <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t107" type="DATE" value="1989-11-16">Nov. 16</TIMEX3>. It had been due to <EVENT class="OCCURRENCE" eid="e111">expire</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t112" type="TIME" value="1989-10-27TEV">Friday evening</TIMEX3>.
+
+Merieux previously <EVENT class="REPORTING" eid="e17">said</EVENT> it would <EVENT class="I_ACTION" eid="e18">ensure</EVENT> its bid <EVENT class="ASPECTUAL" eid="e21">remained</EVENT> open pending a final <EVENT class="I_ACTION" eid="e118">decision</EVENT> by Canadian regulators on whether to <EVENT class="I_ACTION" eid="e119">approve</EVENT> the <EVENT class="OCCURRENCE" eid="e26">takeover</EVENT>. Merieux, a vaccine and bioresearch firm based in Lyon, France, is controlled 50.1% by state-owned Rhone Poulenc S.A.
+
+The Canadian government previously <EVENT class="REPORTING" eid="e30">said</EVENT> Merieux's bid didn't <EVENT class="I_STATE" eid="e32">offer</EVENT> enough "net benefit" to Canada to be approved, and <EVENT class="OCCURRENCE" eid="e36">gave</EVENT> Merieux an until <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="MID" temporalFunction="true" tid="t122" type="DATE" value="1989-11">mid-November</TIMEX3> to <EVENT class="OCCURRENCE" eid="e38">submit</EVENT> additional information.
+
+Merieux officials <EVENT class="REPORTING" eid="e40">said</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t124" type="DATE" value="1989-WXX">last week</TIMEX3> that they are "highly confident" the offer will be <EVENT class="OCCURRENCE" eid="e42">approved</EVENT> once it <EVENT class="OCCURRENCE" eid="e43">submits</EVENT> details of its proposed investments to federal regulators.
+
+Both offers are conditional on regulatory approvals and enough shares being tendered to give the bidders a majority of Connaught's shares outstanding.
+
+Institut Merieux, which already holds a 12.5% stake in Connaught, <EVENT class="REPORTING" eid="e54">said</EVENT> that at the <EVENT class="ASPECTUAL" eid="e55">close</EVENT> of business <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t127" type="DATE" value="1989-10-26">Thursday</TIMEX3>, 5,745,188 shares of Connaught and C$44.3 million face amount of debentures, convertible into 1,826,596 common shares, had been <EVENT class="OCCURRENCE" eid="e60">tendered</EVENT> to its <EVENT class="OCCURRENCE" eid="e61">offer</EVENT>. At the <EVENT class="ASPECTUAL" eid="e62">close</EVENT> of business <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t128" type="DATE" value="1989-10-26">Thursday</TIMEX3>, Ciba-Geigy and Chiron <EVENT class="REPORTING" eid="e64">said</EVENT> 11,580 common shares had been <EVENT class="OCCURRENCE" eid="e65">tendered</EVENT> to their <EVENT class="OCCURRENCE" eid="e66">offer</EVENT>. At last <EVENT class="REPORTING" eid="e67">report</EVENT>, Connaught <EVENT class="STATE" eid="e129">had</EVENT> 21.8 million shares outstanding.
+
+Separately, the Ontario Supreme Court <EVENT class="REPORTING" eid="e68">said</EVENT> it will <EVENT class="I_ACTION" eid="e69">postpone</EVENT> indefinitely a <EVENT class="STATE" eid="e70">ruling</EVENT> on the lawsuit <EVENT class="OCCURRENCE" eid="e73">launched</EVENT> by the University of Toronto against Connaught in connection with the Merieux bid.
+
+In a statement prepared by lawyers for the university and Connaught, the parties <EVENT class="REPORTING" eid="e78">said</EVENT> they <EVENT class="I_ACTION" eid="e79">agreed</EVENT> that as a result of <EVENT class="I_STATE" eid="e81">reaching</EVENT> a C415 million research accord, "It is unnecessary that there be a judgment on the merits {of the case} at this time."
+
+Lawyers for the two sides weren't immediately available for comment.
+
+The university had <EVENT class="I_ACTION" eid="e88">sought</EVENT> an injunction blocking Connaught's board from <EVENT class="I_ACTION" eid="e92">recommending</EVENT> or <EVENT class="I_ACTION" eid="e93">supporting</EVENT> an <EVENT class="OCCURRENCE" eid="e94">offer</EVENT> for the company by Merieux.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" cardinality="2" eiid="ei478" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" cardinality="2" eiid="ei479" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei480" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei481" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei482" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei483" eventID="e7" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei484" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei486" eventID="e109" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei487" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei488" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei490" eventID="e111" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei491" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei492" eventID="e18" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei493" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei495" eventID="e118" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei496" eventID="e119" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei497" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei498" eventID="e30" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei499" eventID="e32" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei501" eventID="e36" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei502" eventID="e38" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei503" eventID="e40" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei505" eventID="e42" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei506" eventID="e43" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei508" eventID="e54" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei509" eventID="e55" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei511" eventID="e60" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei512" eventID="e61" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei513" eventID="e62" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei515" eventID="e64" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei516" eventID="e65" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei517" eventID="e66" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei518" eventID="e67" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei519" eventID="e129" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei521" eventID="e68" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei522" eventID="e69" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei523" eventID="e70" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei524" eventID="e73" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei525" eventID="e78" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei526" eventID="e79" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei527" eventID="e81" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei529" eventID="e88" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei531" eventID="e92" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei532" eventID="e93" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei533" eventID="e94" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei529" lid="l76" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei525" lid="l75" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei521" lid="l73" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei518" lid="l72" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei508" lid="l71" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei478" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei478" lid="l2" relType="IS_INCLUDED" relatedToTime="t102" />
+<TLINK eventInstanceID="ei481" lid="l3" relType="IS_INCLUDED" relatedToEventInstance="ei479" />
+<TLINK eventInstanceID="ei482" lid="l4" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei481" lid="l5" relType="BEFORE" relatedToEventInstance="ei482" />
+<TLINK eventInstanceID="ei483" lid="l6" relType="IS_INCLUDED" relatedToEventInstance="ei478" />
+<TLINK eventInstanceID="ei484" lid="l7" relType="IDENTITY" relatedToEventInstance="ei481" />
+<TLINK eventInstanceID="ei486" lid="l9" relType="IS_INCLUDED" relatedToTime="t103" />
+<TLINK eventInstanceID="ei484" lid="l10" relType="ENDED_BY" relatedToEventInstance="ei486" />
+<TLINK eventInstanceID="ei486" lid="l11" relType="IS_INCLUDED" relatedToTime="t104" />
+<TLINK eventInstanceID="ei487" lid="l12" relType="IS_INCLUDED" relatedToEventInstance="ei479" />
+<TLINK eventInstanceID="ei488" lid="l13" relType="IS_INCLUDED" relatedToEventInstance="ei478" />
+<TLINK eventInstanceID="ei490" lid="l15" relType="IS_INCLUDED" relatedToTime="t112" />
+<TLINK eventInstanceID="ei490" lid="l16" relType="IS_INCLUDED" relatedToTime="t107" />
+<TLINK eventInstanceID="ei491" lid="l21" relType="BEFORE" relatedToEventInstance="ei482" />
+<TLINK eventInstanceID="ei498" lid="l23" relType="BEFORE" relatedToEventInstance="ei491" />
+<TLINK eventInstanceID="ei498" lid="l24" relType="SIMULTANEOUS" relatedToEventInstance="ei501" />
+<TLINK eventInstanceID="ei502" lid="l25" relType="BEFORE" relatedToTime="t122" />
+<TLINK eventInstanceID="ei503" lid="l26" relType="IS_INCLUDED" relatedToTime="t124" />
+<TLINK eventInstanceID="ei505" lid="l27" relType="AFTER" relatedToEventInstance="ei506" />
+<TLINK eventInstanceID="ei511" lid="l29" relType="SIMULTANEOUS" relatedToEventInstance="ei509" />
+<TLINK eventInstanceID="ei513" lid="l31" relType="IS_INCLUDED" relatedToTime="t128" />
+<TLINK eventInstanceID="ei509" lid="l32" relType="IS_INCLUDED" relatedToTime="t127" />
+<TLINK eventInstanceID="ei515" lid="l34" relType="IS_INCLUDED" relatedToEventInstance="ei513" />
+<TLINK eventInstanceID="ei522" lid="l35" relType="AFTER" relatedToEventInstance="ei524" />
+<TLINK eventInstanceID="ei526" lid="l36" relType="AFTER" relatedToEventInstance="ei527" />
+<SLINK eventInstanceID="ei531" lid="l37" relType="MODAL" subordinatedEventInstance="ei533" />
+<SLINK eventInstanceID="ei478" lid="l38" relType="FACTIVE" subordinatedEventInstance="ei479" />
+<SLINK eventInstanceID="ei479" lid="l39" relType="MODAL" subordinatedEventInstance="ei480" />
+<SLINK eventInstanceID="ei482" lid="l40" relType="EVIDENTIAL" subordinatedEventInstance="ei483" />
+<SLINK eventInstanceID="ei483" lid="l41" relType="FACTIVE" subordinatedEventInstance="ei484" />
+<SLINK eventInstanceID="ei488" lid="l42" relType="FACTIVE" subordinatedEventInstance="ei487" />
+<SLINK eventInstanceID="ei491" lid="l47" relType="EVIDENTIAL" subordinatedEventInstance="ei492" />
+<SLINK eventInstanceID="ei492" lid="l48" relType="MODAL" subordinatedEventInstance="ei493" />
+<SLINK eventInstanceID="ei495" lid="l49" relType="MODAL" subordinatedEventInstance="ei496" />
+<SLINK eventInstanceID="ei496" lid="l50" relType="MODAL" subordinatedEventInstance="ei497" />
+<SLINK eventInstanceID="ei498" lid="l51" relType="EVIDENTIAL" subordinatedEventInstance="ei499" />
+<SLINK eventInstanceID="ei501" lid="l53" relType="MODAL" subordinatedEventInstance="ei502" />
+<SLINK eventInstanceID="ei508" lid="l56" relType="EVIDENTIAL" subordinatedEventInstance="ei511" />
+<SLINK eventInstanceID="ei511" lid="l57" relType="FACTIVE" subordinatedEventInstance="ei512" />
+<SLINK eventInstanceID="ei515" lid="l58" relType="EVIDENTIAL" subordinatedEventInstance="ei516" />
+<SLINK eventInstanceID="ei516" lid="l59" relType="FACTIVE" subordinatedEventInstance="ei517" />
+<SLINK eventInstanceID="ei518" lid="l60" relType="EVIDENTIAL" subordinatedEventInstance="ei519" />
+<SLINK eventInstanceID="ei521" lid="l61" relType="EVIDENTIAL" subordinatedEventInstance="ei522" />
+<SLINK eventInstanceID="ei522" lid="l62" relType="MODAL" subordinatedEventInstance="ei523" />
+<SLINK eventInstanceID="ei525" lid="l63" relType="EVIDENTIAL" subordinatedEventInstance="ei526" />
+<SLINK eventInstanceID="ei532" lid="l67" relType="FACTIVE" subordinatedEventInstance="ei533" />
+
+<TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei478" relatedToEventInstance="ei483" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei478" relatedToEventInstance="ei488" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei479" relatedToEventInstance="ei481" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei479" relatedToEventInstance="ei484" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei479" relatedToEventInstance="ei486" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei479" relatedToEventInstance="ei487" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei481" relatedToEventInstance="ei484" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei481" relatedToEventInstance="ei486" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei481" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei482" relatedToEventInstance="ei484" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei482" relatedToEventInstance="ei486" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei482" relatedToEventInstance="ei491" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei482" relatedToEventInstance="ei498" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei482" relatedToEventInstance="ei501" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei483" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei483" relatedToTime="t102" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei484" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei486" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei488" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei488" relatedToTime="t102" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei491" relatedToEventInstance="ei498" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei491" relatedToEventInstance="ei501" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei491" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei498" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei501" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei509" relatedToEventInstance="ei511" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei511" relatedToTime="t127" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei513" relatedToEventInstance="ei515" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei515" relatedToTime="t128" /></TimeML>

@@ -1,0 +1,125 @@
+# FILE: wsj_0709.tml.txp
+# DATE: 1989-10-27T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1989-10-27	O	O	O	O	O	tmx0	B-DATE	1989-10-27	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+Service	t1	1	NP0	service	t2:POSTHON||t3:P	O	O	O	organization	O	O	O	O	O	O	O	B-NP	O	O	service+n+plur	O	O	
+Corp.	t2	1	NP0	corp.	O	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	O	O	O	
+.	t3	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	.+punc	O	O	
+
+International	t4	2	NP0	international	O	O	O	O	organization	O	O	O	O	O	say	A0	B-NP	O	O	international+n+sing	O	O	
+said	t5	2	VVD	say	t4:SBJ||t7:OBJ||t21:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e1:tmx0:BEFORE||e1:e2:NONE||e1:e4:NONE||e1:e18:NONE||e1:tmx26:NONE	
+it	t6	2	PNP	it	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	it+pron	O	O	
+expects	t7	2	NN0	expect	t6:SBJ||t8:OPRD	O	O	O	O	I_STATE	e2	A0	A1	O	say	A1	B-VP	O	O	expect+v+indic+pres+sing3	PRESENT+NONE+pos	e2:e4:NONE||e2:e18:NONE||e2:tmx26:NONE||e2:tmx0:NONE	
+to	t8	2	TO0	to	t9:IM	O	O	O	O	O	O	O	O	O	say	A1	I-VP	O	O	to+prep	INFINITIVE+NONE+pos	O	
+report	t9	2	VVB	report	t11:OBJ	O	O	O	O	REPORTING	e4	A0	A1	O	say	A1	I-VP	O	O	report+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e4:e18:NONE||e4:tmx26:NONE||e4:tmx0:NONE	
+net	t10	2	AJ0	net	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	net+adj+zero	O	O	
+income	t11	2	NN1	income	t10:NMOD||t12:NMOD	O	O	O	O	STATE	e18	AM-MNR	A1	A1	say	A1	I-NP	O	O	income+n+sing	O	e18:tmx26:IS_INCLUDED||e18:tmx0:NONE	
+of	t12	2	PRF	of	t14:PMOD||t17:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+15	t13	2	CRD	15	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	15+n+sing	O	O	
+cents	t14	2	NN2	cent	t13:NMOD||t16:ADV	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	cent+n+plur	O	O	
+a	t15	2	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	
+share	t16	2	NN1	share	t15:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	share+n+sing	O	O	
+for	t17	2	PRP	for	t20:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	for+prep	O	O	
+the	t18	2	AT0	the	O	tmx26	B-DATE	1989-Q3	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+third	t19	2	AJ0	3	O	tmx26	I-DATE	1989-Q3	O	O	O	O	O	O	say	A1	I-NP	O	O	third+adv	O	O	
+quarter	t20	2	NN1	quarter	t18:NMOD||t19:NMOD	tmx26	I-DATE	1989-Q3	O	O	O	O	O	O	say	A1	I-NP	O	O	quarter+n+sing	O	O	
+.	t21	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t22	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	
+company	t23	3	NN1	company	t22:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	company+n+sing	O	O	
+said	t24	3	VVD	say	t23:SBJ||t26:OBJ||t33:P	O	O	O	O	REPORTING	e5	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e5:tmx0:BEFORE||e5:e6:NONE||e5:e8:NONE||e5:tmx27:NONE||e5:e1:NONE	
+it	t25	3	PNP	it	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	it+pron	O	O	
+expects	t26	3	NN0	expect	t25:SBJ||t27:OPRD	O	O	O	O	I_STATE	e6	A0	A1	O	say	A1	B-VP	O	O	expect+v+indic+pres+sing3	PRESENT+NONE+pos	e6:tmx27:BEFORE||e6:e8:NONE||e6:tmx0:NONE	
+to	t27	3	TO0	to	t28:IM	O	O	O	O	O	O	O	O	O	say	A1	I-VP	O	O	to+prep	INFINITIVE+NONE+pos	O	
+release	t28	3	VVB	release	t30:OBJ||t31:LOC	O	O	O	O	OCCURRENCE	e8	A0	A1	AM-LOC	say	A1	I-VP	O	O	release+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e8:tmx27:IS_INCLUDED||e8:tmx0:NONE	
+third-quarter	t29	3	AJ0	third-quarter	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	O	O	O	
+results	t30	3	NN2	result	t29:NMOD	O	O	O	O	O	O	AM-MNR	A2	O	say	A1	I-NP	O	O	result+n+plur	O	O	
+in	t31	3	PRP	in	t32:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	in+prep	O	O	
+mid-November	t32	3	NP0	mid-november	O	tmx27	B-DATE	1989-11	O	O	O	O	O	O	say	A1	B-NP	O	O	mid-november+n+sing	O	O	
+.	t33	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t34	4	AT0	the	O	O	O	O	O	O	O	O	O	O	operator	A0	B-NP	O	O	the+art	O	O	
+funeral	t35	4	AJ0	funeral	O	O	O	O	O	O	O	O	O	O	operator	AM-MNR	I-NP	O	O	funeral+n+sing	O	O	
+home	t36	4	NN1	home	t37:COORD	O	O	O	O	O	O	O	O	O	operator	A1	I-NP	O	O	home+n+sing	O	O	
+and	t37	4	CJC	and	t38:CONJ	O	O	O	O	O	O	O	O	O	operator	A1	I-NP	O	O	and+conj	O	O	
+cemetery	t38	4	NN1	cemetery	O	O	O	O	O	O	O	O	O	O	operator	A1	I-NP	O	O	cemetery+n+sing	O	O	
+operator	t39	4	NN1	operator	t34:NMOD||t35:NMOD||t36:NMOD	O	O	O	O	O	O	AM-MNR	A1	A1	operator	A0	I-NP	O	O	operator+n+sing	O	O	
+changed	t40	4	VVD	change	t39:SBJ||t41:ADV||t45:ADV||t49:TMP||t51:P	O	O	O	O	OCCURRENCE	e10	A1	A3	A2	O	O	B-VP	mainVb	O	change+v+indic+past	PAST+NONE+pos	e10:tmx28:IS_INCLUDED||e10:tmx0:NONE||e10:e5:NONE	
+from	t41	4	PRP	from	t44:PMOD	O	O	O	O	O	O	O	O	O	change	A3	B-PP	O	O	from+prep	O	O	
+a	t42	4	AT0	a	O	O	O	O	O	O	O	O	O	O	change	A3	B-NP	O	O	a+art	O	O	
+fiscal	t43	4	AJ0	fiscal	O	O	O	O	O	O	O	O	O	O	change	A3	I-NP	O	O	fiscal+adj+zero	O	O	
+year	t44	4	NN1	year	t42:NMOD||t43:NMOD	O	O	O	O	O	O	O	O	O	change	A3	I-NP	O	O	year+n+sing	O	O	
+to	t45	4	TO0	to	t48:PMOD	O	O	O	O	O	O	O	O	O	change	A2	B-PP	O	O	to+prep	O	O	
+a	t46	4	AT0	a	O	O	O	O	O	O	O	O	O	O	change	A2	B-NP	O	O	a+art	O	O	
+calendar	t47	4	NN1	calendar	O	O	O	O	O	O	O	O	O	O	change	A2	I-NP	O	O	calendar+n+sing	O	O	
+year	t48	4	NN1	year	t46:NMOD||t47:NMOD	O	O	O	O	O	O	O	O	O	change	A2	I-NP	O	O	year+n+sing	O	O	
+in	t49	4	PRP	in	t50:PMOD	O	O	O	O	O	O	O	O	O	change	AM-TMP	B-PP	O	O	in+prep	O	O	
+December	t50	4	NP0	december	O	tmx28	B-DATE	1988-12	O	O	O	O	O	O	change	AM-TMP	B-NP	O	O	december+n+sing	O	O	
+.	t51	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+In	t52	5	PRP	in	t56:PMOD	O	O	O	O	O	O	O	O	O	have	AM-TMP	B-PP	O	O	in+prep	O	O	
+the	t53	5	AT0	the	O	tmx30	B-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	B-NP	O	O	the+art	O	O	
+comparable	t54	5	AJ0	comparable	O	tmx30	I-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	comparable+adj+zero	O	O	
+year-ago	t55	5	AJ0	year-ago	O	tmx30	I-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	O	O	O	
+quarter	t56	5	NN1	quarter	t53:NMOD||t54:NMOD||t55:NMOD||t57:P||t61:APPO	tmx30	I-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	quarter+n+sing	O	O	
+,	t57	5	PUN	,	O	O	O	O	O	O	O	O	O	O	have	AM-TMP	O	O	O	punc	O	O	
+the	t58	5	AT0	the	O	O	O	O	O	O	O	O	O	O	have	AM-TMP	B-NP	O	O	the+art	O	O	
+second	t59	5	AJ0	2	O	tmx31	B-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	second+n+sing	O	O	
+quarter	t60	5	NN1	quarter	t58:NMOD||t59:NMOD	tmx31	I-DATE	1988-Q2	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	quarter+n+sing	O	O	
+ended	t61	5	VVD	end	t60:SBJ||t63:TMP	O	O	O	O	O	O	A1	A1	AM-TMP	have	AM-TMP	B-VP	O	O	end+v+indic+past	PAST+NONE+pos	O	
+Oct.	t62	5	NP0	oct.	O	tmx32	B-DATE	1988-10-31	O	O	O	O	O	O	have	AM-TMP	B-NP	O	O	O	O	O	
+31	t63	5	CRD	31	t62:NMOD	tmx32	I-DATE	1988-10-31	O	O	O	O	O	O	have	AM-TMP	I-NP	O	O	O	O	O	
+,	t64	5	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	
+Service	t65	5	NP0	service	O	O	O	O	organization	O	O	O	O	O	have	A0	B-NP	O	O	service+n+plur	O	O	
+Corp.	t66	5	NP0	corp.	t65:NAME	O	O	O	organization	O	O	O	O	O	have	A0	I-NP	O	O	O	O	O	
+had	t67	5	VVD	have	t52:TMP||t64:P||t66:SBJ||t69:OBJ||t81:P||t82:ADV||t88:P	O	O	O	O	OCCURRENCE	e21	AM-TMP	A0	A1	O	O	B-VP	mainVb	O	have+v+indic+past	PAST+NONE+pos	e21:e13:NONE||e21:tmx30:NONE||e21:tmx31:NONE||e21:tmx32:NONE||e21:tmx0:NONE||e21:e10:NONE	
+a	t68	5	AT0	a	O	O	O	O	O	O	O	O	O	O	have	A1	B-NP	O	O	a+art	O	O	
+loss	t69	5	NN1	loss	t68:NMOD||t70:NMOD	O	O	O	O	OCCURRENCE	e13	A1	O	O	have	A1	I-NP	O	O	loss+n+sing	O	e13:tmx0:BEFORE||e13:tmx32:ENDED_BY||e13:tmx30:IS_INCLUDED||e13:tmx31:IS_INCLUDED	
+of	t70	5	PRF	of	t72:PMOD	O	O	O	O	O	O	O	O	O	have	A1	B-PP	O	O	of+prep	O	O	
+about	t71	5	PRP	about	O	O	O	O	O	O	O	O	O	O	have	A1	B-NP	O	O	about+prep	O	O	
+$	t72	5	PUN	$	t71:DEP||t73:DEP||t74:DEP||t75:P||t76:COORD	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	$+punc	O	O	
+12.5	t73	5	CRD	12.5	O	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	O	O	O	
+million	t74	5	CRD	million	O	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	million+adj+zero	O	O	
+,	t75	5	PUN	,	O	O	O	O	O	O	O	O	O	O	have	A1	O	O	O	punc	O	O	
+or	t76	5	CJC	or	t78:CONJ	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	or+conj	O	O	
+26	t77	5	CRD	26	O	O	O	O	O	O	O	O	O	O	have	A1	B-NP	O	O	26+n+sing	O	O	
+cents	t78	5	NN2	cent	t77:NMOD||t80:ADV	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	cent+n+plur	O	O	
+a	t79	5	AT0	a	O	O	O	O	O	O	O	O	O	O	have	A1	B-NP	O	O	a+art	O	O	
+share	t80	5	NN1	share	t79:NMOD	O	O	O	O	O	O	O	O	O	have	A1	I-NP	O	O	share+n+sing	O	O	
+,	t81	5	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	
+on	t82	5	PRP	on	t83:PMOD	O	O	O	O	O	O	O	O	O	have	AM-LOC	B-PP	O	O	on+prep	O	O	
+revenue	t83	5	NN1	revenue	t84:NMOD	O	O	O	O	O	O	A1	O	O	have	AM-LOC	B-NP	O	O	revenue+n+sing	O	O	
+of	t84	5	PRF	of	t85:PMOD	O	O	O	O	O	O	O	O	O	have	AM-LOC	B-PP	O	O	of+prep	O	O	
+$	t85	5	PUN	$	t86:DEP||t87:DEP	O	O	O	O	O	O	O	O	O	have	AM-LOC	B-NP	O	O	$+punc	O	O	
+175.4	t86	5	CRD	175.4	O	O	O	O	O	O	O	O	O	O	have	AM-LOC	I-NP	O	O	O	O	O	
+million	t87	5	CRD	million	O	O	O	O	O	O	O	O	O	O	have	AM-LOC	I-NP	O	O	million+adj+zero	O	O	
+.	t88	5	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+Results	t89	6	NN2	result	t90:NMOD	O	O	O	O	O	O	A2	AM-TMP	O	result	A2	B-NP	O	O	result+n+plur	O	O	
+for	t90	6	PRP	for	t92:PMOD	O	O	O	O	O	O	O	O	O	result	A2	B-PP	O	O	for+prep	O	O	
+that	t91	6	CJT	that	O	tmx33	B-DATE	1988-Q2	O	O	O	O	O	O	result	A2	B-NP	O	O	that+conj	O	O	
+quarter	t92	6	NN1	quarter	t91:NMOD	tmx33	I-DATE	1988-Q2	O	O	O	O	O	O	result	A2	I-NP	O	O	quarter+n+sing	O	O	
+included	t93	6	VVD	include	t89:SBJ||t105:OBJ||t113:P	O	O	O	O	O	O	A2	A1	O	O	O	B-VP	mainVb	O	include+v+indic+past	PAST+NONE+pos	O	
+a	t94	6	AT0	a	O	O	O	O	O	O	O	O	O	O	include	A1	B-NP	O	O	a+art	O	O	
+$	t95	6	PUN	$	t96:DEP||t97:DEP||t98:P||t99:COORD	O	O	O	O	O	O	O	O	O	include	A1	B-ADJP	O	O	$+punc	O	O	
+30	t96	6	CRD	30	O	O	O	O	O	O	O	O	O	O	include	A1	I-ADJP	O	O	30+n+sing	O	O	
+million	t97	6	CRD	million	O	O	O	O	O	O	O	O	O	O	include	A1	I-ADJP	O	O	million+adj+zero	O	O	
+,	t98	6	PUN	,	O	O	O	O	O	O	O	O	O	O	include	A1	O	O	O	punc	O	O	
+or	t99	6	CJC	or	t101:CONJ	O	O	O	O	O	O	O	O	O	include	A1	I-ADJP	O	O	or+conj	O	O	
+40	t100	6	CRD	40	O	O	O	O	O	O	O	O	O	O	include	A1	B-NP	O	O	40+n+sing	O	O	
+cents	t101	6	NN2	cent	t100:NMOD||t103:ADV	O	O	O	O	O	O	O	O	O	include	A1	I-NP	O	O	cent+n+plur	O	O	
+a	t102	6	AT0	a	O	O	O	O	O	O	O	O	O	O	include	A1	B-NP	O	O	a+art	O	O	
+share	t103	6	NN1	share	t102:NMOD	O	O	O	O	O	O	O	O	O	include	A1	I-NP	O	O	share+n+sing	O	O	
+,	t104	6	PUN	,	O	O	O	O	O	O	O	O	O	O	include	A1	O	O	O	punc	O	O	
+write-down	t105	6	NN1	write-down	t94:NMOD||t95:NMOD||t104:P||t106:APPO	O	O	O	O	OCCURRENCE	e23	A1	O	O	include	A1	I-NP	O	O	write-down+n+sing	O	e23:tmx33:IS_INCLUDED||e23:tmx0:NONE	
+associated	t106	6	VVN	associate	t107:ADV	O	O	O	O	O	O	A1	A2	O	include	A1	B-VP	O	O	associate+v+part+past	PASTPART+NONE+pos	O	
+with	t107	6	PRP	with	t109:PMOD	O	O	O	O	O	O	O	O	O	include	A1	B-PP	O	O	with+prep	O	O	
+the	t108	6	AT0	the	O	O	O	O	O	O	O	O	O	O	include	A1	B-NP	O	O	the+art	O	O	
+consolidation	t109	6	NN1	consolidation	t108:NMOD||t110:NMOD	O	O	O	O	O	O	A1	O	O	include	A1	I-NP	O	O	consolidation+n+sing	O	O	
+of	t110	6	PRF	of	t112:PMOD	O	O	O	O	O	O	O	O	O	include	A1	B-PP	O	O	of+prep	O	O	
+a	t111	6	AT0	a	O	O	O	O	O	O	O	O	O	O	include	A1	B-NP	O	O	a+art	O	O	
+facility	t112	6	NN1	facility	t111:NMOD	O	O	O	O	O	O	O	O	O	include	A1	I-NP	O	O	facility+n+sing	O	O	
+.	t113	6	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

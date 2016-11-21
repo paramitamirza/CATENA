@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>APW19980501.0480</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-05-01T09:13:00">05/01/1998 09:13:00</TIMEX3></DCT>
+
+<EXTRAINFO>
+APW19980501.0480 NEWS STORY 05/01/1998 09:13:00
+w2844 Cx1f wstmr w Cx13 Cx11 SETTING-THE-STAGEsked 05-01 0665
+SETTING-THE-STAGE sked
+MALAYSIA Setting the stage for Net convergence, NEW STRAITS TIMES-MANAGEMENT TIMES QL xfdws SETTING-THE-STAGE sked Emerging Markets Datafile April 30, 1998 NEW STRAITS TIMES-MANAGEMENT TIMES ENGLISH COPYRIGHT 1998 BY WORLDSOURCES, INC., A JOINT VENTURE OF FDCH, INC.
+AND WORLD TIMES, INC.
+NO PORTION OF THE MATERIALS CONTAINED HEREIN MAY BE USED IN ANY MEDIA WITHOUT ATTRIBUTION TO WORLDSOURCES, INC.
+</EXTRAINFO>
+
+<TEXT>
+MALAYSIA's aggressive <EVENT class="OCCURRENCE" eid="e1">move</EVENT> into the information age could not <EVENT class="OCCURRENCE" eid="e3">come</EVENT> in a more opportune time. With the <EVENT class="OCCURRENCE" eid="e8">convergence</EVENT> of communications and information technologies (IT) coupled with the <EVENT class="OCCURRENCE" eid="e139">coming</EVENT> of age for the Internet and its related technologies, the stage is <EVENT class="OCCURRENCE" eid="e13">set</EVENT> for Malaysians to <EVENT class="OCCURRENCE" eid="e15">seize</EVENT> the chance to <EVENT class="OCCURRENCE" eid="e17">transform</EVENT> into a knowledge society and <EVENT class="ASPECTUAL" eid="e18">become</EVENT> worthy opponents/players in the global market space. The Internet, the global network of computers, is now far <EVENT class="OCCURRENCE" eid="e20">reaching</EVENT> into the country - <EVENT class="OCCURRENCE" eid="e21">extending</EVENT> its embrace to <EVENT class="OCCURRENCE" eid="e24">include</EVENT> every nook and cranny of the nation - <EVENT class="OCCURRENCE" eid="e154">opening</EVENT> doors to not only a diverse range of information sources but also an exhaustive list of possibilities to <EVENT class="OCCURRENCE" eid="e28">create</EVENT> new applications which <EVENT class="OCCURRENCE" eid="e30">add</EVENT> value to people's lives. In the business world, the Internet - through intranet and extranet solutions - has <EVENT class="ASPECTUAL" eid="e32">become</EVENT> an invaluable tool for companies to harness so as to <EVENT class="OCCURRENCE" eid="e35">gain</EVENT> a competitive edge. The solutions are also vital components in <EVENT class="OCCURRENCE" eid="e38">developing</EVENT> the borderless marketing flagship application which is a vital element for <EVENT class="OCCURRENCE" eid="e40">spearheading</EVENT> the <EVENT class="OCCURRENCE" eid="e41">development</EVENT> of the Multimedia Super Corridor (MSC) project. The application will <EVENT class="OCCURRENCE" eid="e44">create</EVENT> the necessary framework and infrastructure to <EVENT class="OCCURRENCE" eid="e46">support</EVENT> electronic commerce (e-commerce) <EVENT class="OCCURRENCE" eid="e48">initiatives</EVENT> in the country. However, it is important to note that <EVENT class="OCCURRENCE" eid="e51">installing</EVENT> or <EVENT class="OCCURRENCE" eid="e52">implementing</EVENT> Internet technologies for technology's sake would not <EVENT class="OCCURRENCE" eid="e55">ensure</EVENT> instant <EVENT class="OCCURRENCE" eid="e58">success</EVENT>. For e-commerce to <EVENT class="OCCURRENCE" eid="e157">flourish</EVENT> with full-blown end-to-end business <EVENT class="OCCURRENCE" eid="e155">transactions</EVENT>, strategic <EVENT class="OCCURRENCE" eid="e156">planning</EVENT> which incorporates both business and technology plans that are complementary is necessary for an organisation to <EVENT class="PERCEPTION" eid="e159">see</EVENT> feasible returns on investment. Intranets, through the use of Internet technology, are <EVENT class="STATE" eid="e142">positioned</EVENT> as a platform for companies to <EVENT class="OCCURRENCE" eid="e143">optimise</EVENT>, <EVENT class="OCCURRENCE" eid="e144">expand</EVENT> and <EVENT class="OCCURRENCE" eid="e145">transform</EVENT> new channels of business. When strategically <EVENT class="OCCURRENCE" eid="e146">implemented</EVENT>, an intranet solution will <EVENT class="OCCURRENCE" eid="e147">provide</EVENT> the ability to <EVENT class="OCCURRENCE" eid="e149">mediate</EVENT> mission-critical, decision support functions in organisations. It will also <EVENT class="OCCURRENCE" eid="e86">help</EVENT> further <EVENT class="OCCURRENCE" eid="e150">improve</EVENT> communications and collaboration at all levels in an organisation. With intranets in place, it is only logical for organisations to respectively <EVENT class="OCCURRENCE" eid="e151">link</EVENT> the network to other companies' for extended business purposes through extranets. While this will <EVENT class="OCCURRENCE" eid="e91">enable</EVENT> the sharing of information among enterprises, security issues such as firewalls and encryption as well as access and control procedures, and the trust levels that enterprises have with each other will <EVENT class="OCCURRENCE" eid="e99">emerge</EVENT> and there will be a need to <EVENT class="OCCURRENCE" eid="e101">address</EVENT> them. Other than <EVENT class="OCCURRENCE" eid="e102">usage</EVENT> in business, Internet technology is also <EVENT class="I_ACTION" eid="e105">beginning</EVENT> to <EVENT class="OCCURRENCE" eid="e107">infiltrate</EVENT> the lifestyle domain. ``Smart homes'' have <EVENT class="OCCURRENCE" eid="e108">emerged</EVENT> <EVENT class="OCCURRENCE" eid="e109">bringing</EVENT> a wealth of information and entertainment to families over telecommunications lines. The art of socialising is also <EVENT class="OCCURRENCE" eid="e114">experiencing</EVENT> a <EVENT class="OCCURRENCE" eid="e115">change</EVENT> where Net/virtual relationships are fast <EVENT class="OCCURRENCE" eid="e116">overtaking</EVENT> or <EVENT class="OCCURRENCE" eid="e117">becoming</EVENT> parallel with the normal human relationships. Whether this would <EVENT class="OCCURRENCE" eid="e118">prove</EVENT> positive or otherwise towards society in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t153" type="DATE" value="FUTURE_REF">the future</TIMEX3> is yet to be <EVENT class="PERCEPTION" eid="e121">seen</EVENT>. All in all, the Internet <EVENT class="OCCURRENCE" eid="e122">has</EVENT> a lot to <EVENT class="OCCURRENCE" eid="e123">offer</EVENT>. However, its value and benefits are only as good as how we <EVENT class="OCCURRENCE" eid="e124">use</EVENT> it.
+</TEXT>
+
+<LASTEXTRAINFO>
+Copyright 1998 NEW STRAITS TIMES-MANAGEMENT TIMES all rights reserved as distributed by WorldSources, Inc.
+(PROFILE (WS SL:SETTING-THE-STAGE sked; CT:w; (REG:ENGL;) (LANG:ENGLISH;)) )
+AP-NY-05-01-98 0913EDT
+</LASTEXTRAINFO>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei243" eventID="e1" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei244" eventID="e3" modality="could" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei245" eventID="e8" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei246" eventID="e139" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei247" eventID="e13" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei248" eventID="e15" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei249" eventID="e17" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei250" eventID="e18" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei252" eventID="e20" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei253" eventID="e21" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei254" eventID="e24" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei255" eventID="e154" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei256" eventID="e28" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei257" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei258" eventID="e32" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei260" eventID="e35" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei261" eventID="e38" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei262" eventID="e40" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei263" eventID="e41" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei264" eventID="e44" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei265" eventID="e46" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei266" eventID="e48" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei267" eventID="e51" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei268" eventID="e52" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei269" eventID="e55" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei270" eventID="e58" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei271" eventID="e157" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei272" eventID="e155" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei273" eventID="e156" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei275" eventID="e159" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei276" eventID="e142" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei277" eventID="e143" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei278" eventID="e144" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei279" eventID="e145" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei280" eventID="e146" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei281" eventID="e147" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei282" eventID="e149" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei283" eventID="e86" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei284" eventID="e150" polarity="POS" pos="NOUN" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei288" eventID="e151" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei289" eventID="e91" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei290" eventID="e99" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei292" eventID="e101" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei293" eventID="e102" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei294" eventID="e105" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei295" eventID="e107" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei296" eventID="e108" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei297" eventID="e109" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei298" eventID="e114" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei299" eventID="e115" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei300" eventID="e116" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei301" eventID="e117" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei302" eventID="e118" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei303" eventID="e121" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei304" eventID="e122" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei305" eventID="e123" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei306" eventID="e124" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei295" lid="l74" relType="IS_INCLUDED" relatedToEventInstance="ei294" />
+<TLINK eventInstanceID="ei283" lid="l73" relType="INCLUDES" relatedToEventInstance="ei284" />
+<TLINK eventInstanceID="ei268" lid="l72" relType="IDENTITY" relatedToEventInstance="ei267" />
+<TLINK eventInstanceID="ei258" lid="l71" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l1" relType="AFTER" relatedToEventInstance="ei243" timeID="t0" />
+<TLINK eventInstanceID="ei244" lid="l4" relType="BEGINS" relatedToEventInstance="ei243" />
+<TLINK eventInstanceID="ei246" lid="l5" relType="BEFORE" relatedToEventInstance="ei247" />
+<TLINK eventInstanceID="ei245" lid="l6" relType="BEFORE" relatedToEventInstance="ei247" />
+<TLINK eventInstanceID="ei249" lid="l7" relType="AFTER" relatedToEventInstance="ei248" />
+<TLINK eventInstanceID="ei250" lid="l8" relType="AFTER" relatedToEventInstance="ei249" />
+<TLINK eventInstanceID="ei252" lid="l9" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei253" lid="l10" relType="SIMULTANEOUS" relatedToEventInstance="ei252" />
+<TLINK eventInstanceID="ei254" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei253" />
+<TLINK eventInstanceID="ei255" lid="l12" relType="SIMULTANEOUS" relatedToEventInstance="ei254" />
+<TLINK eventInstanceID="ei256" lid="l13" relType="AFTER" relatedToEventInstance="ei254" />
+<TLINK eventInstanceID="ei256" lid="l14" relType="DURING" relatedToEventInstance="ei257" />
+<TLINK eventInstanceID="ei261" lid="l15" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei262" lid="l16" relType="AFTER" relatedToEventInstance="ei261" />
+<TLINK eventInstanceID="ei263" lid="l17" relType="BEGUN_BY" relatedToEventInstance="ei262" />
+<TLINK lid="l18" relType="BEFORE" relatedToEventInstance="ei264" timeID="t0" />
+<TLINK eventInstanceID="ei306" lid="l19" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei305" lid="l20" relType="DURING" relatedToEventInstance="ei304" />
+<TLINK eventInstanceID="ei304" lid="l21" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei303" lid="l22" relType="AFTER" relatedToTime="t0" />
+<TLINK lid="l23" relType="INCLUDES" relatedToEventInstance="ei302" timeID="t153" />
+<TLINK eventInstanceID="ei301" lid="l24" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei300" lid="l25" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei299" lid="l26" relType="SIMULTANEOUS" relatedToEventInstance="ei298" />
+<TLINK eventInstanceID="ei298" lid="l27" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei297" lid="l28" relType="SIMULTANEOUS" relatedToEventInstance="ei296" />
+<TLINK lid="l29" relType="BEFORE" relatedToEventInstance="ei296" timeID="t0" />
+<TLINK eventInstanceID="ei294" lid="l30" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei293" lid="l31" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei292" lid="l32" relType="AFTER" relatedToEventInstance="ei290" />
+<TLINK eventInstanceID="ei290" lid="l34" relType="AFTER" relatedToEventInstance="ei289" />
+<TLINK eventInstanceID="ei281" lid="l38" relType="AFTER" relatedToEventInstance="ei280" />
+<TLINK eventInstanceID="ei279" lid="l39" relType="AFTER" relatedToEventInstance="ei276" />
+<TLINK eventInstanceID="ei278" lid="l40" relType="AFTER" relatedToEventInstance="ei276" />
+<TLINK eventInstanceID="ei277" lid="l41" relType="AFTER" relatedToEventInstance="ei276" />
+<TLINK eventInstanceID="ei272" lid="l43" relType="IS_INCLUDED" relatedToEventInstance="ei271" />
+<TLINK eventInstanceID="ei266" lid="l44" relType="DURING" relatedToEventInstance="ei264" />
+<TLINK eventInstanceID="ei267" lid="l45" relType="BEFORE" relatedToEventInstance="ei269" />
+<SLINK eventInstanceID="ei304" lid="l69" relType="MODAL" subordinatedEventInstance="ei305" />
+<SLINK eventInstanceID="ei303" lid="l68" relType="MODAL" subordinatedEventInstance="ei302" />
+<SLINK eventInstanceID="ei298" lid="l67" relType="FACTIVE" subordinatedEventInstance="ei299" />
+<SLINK eventInstanceID="ei276" lid="l63" relType="MODAL" subordinatedEventInstance="ei279" />
+<SLINK eventInstanceID="ei276" lid="l62" relType="MODAL" subordinatedEventInstance="ei278" />
+<SLINK eventInstanceID="ei276" lid="l61" relType="MODAL" subordinatedEventInstance="ei277" />
+<SLINK eventInstanceID="ei262" lid="l60" relType="FACTIVE" subordinatedEventInstance="ei263" />
+<SLINK eventInstanceID="ei255" lid="l59" relType="MODAL" subordinatedEventInstance="ei256" />
+<SLINK eventInstanceID="ei253" lid="l58" relType="MODAL" subordinatedEventInstance="ei254" />
+<SLINK eventInstanceID="ei248" lid="l57" relType="MODAL" subordinatedEventInstance="ei249" />
+<SLINK eventInstanceID="ei247" lid="l46" relType="MODAL" subordinatedEventInstance="ei248" />
+<SLINK eventInstanceID="ei283" lid="l47" relType="MODAL" subordinatedEventInstance="ei284" />
+<SLINK eventInstanceID="ei281" lid="l48" relType="MODAL" subordinatedEventInstance="ei282" />
+<SLINK eventInstanceID="ei269" lid="l50" relType="MODAL" subordinatedEventInstance="ei270" />
+<SLINK eventInstanceID="ei264" lid="l51" relType="MODAL" subordinatedEventInstance="ei265" />
+<ALINK eventInstanceID="ei294" lid="l56" relType="INITIATES" relatedToEventInstance="ei295" />
+
+<TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei243" relatedToEventInstance="ei244" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei258" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei264" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei296" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei297" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei303" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToEventInstance="ei306" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei243" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei258" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei264" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei296" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei297" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei303" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToEventInstance="ei306" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei244" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei248" relatedToEventInstance="ei249" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei248" relatedToEventInstance="ei250" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei249" relatedToEventInstance="ei250" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei252" relatedToEventInstance="ei253" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei252" relatedToEventInstance="ei254" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei252" relatedToEventInstance="ei255" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei252" relatedToEventInstance="ei256" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei253" relatedToEventInstance="ei254" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei253" relatedToEventInstance="ei255" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei253" relatedToEventInstance="ei256" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei254" relatedToEventInstance="ei255" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei254" relatedToEventInstance="ei256" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei255" relatedToEventInstance="ei256" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei258" relatedToEventInstance="ei264" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei258" relatedToEventInstance="ei296" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei258" relatedToEventInstance="ei297" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei258" relatedToEventInstance="ei303" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei258" relatedToEventInstance="ei306" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei261" relatedToEventInstance="ei262" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei261" relatedToEventInstance="ei263" /><TLINK deduced="true" relType="BEGINS" eventInstanceID="ei262" relatedToEventInstance="ei263" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei264" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei267" relatedToEventInstance="ei268" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei268" relatedToEventInstance="ei269" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei271" relatedToEventInstance="ei272" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei276" relatedToEventInstance="ei277" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei276" relatedToEventInstance="ei278" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei276" relatedToEventInstance="ei279" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei280" relatedToEventInstance="ei281" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei289" relatedToEventInstance="ei290" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei289" relatedToEventInstance="ei292" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei290" relatedToEventInstance="ei292" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei294" relatedToEventInstance="ei295" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei296" relatedToEventInstance="ei297" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei296" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei297" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei298" relatedToEventInstance="ei299" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei302" relatedToTime="t153" /></TimeML>

@@ -1,0 +1,70 @@
+# FILE: wsj_0685.tml.txp
+# DATE: 1989-10-30T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	coevent		tlink	clink	csignal
+
+DCT_1989-10-30	O	O	O	O	O	tmx0	B-DATE	1989-10-30	O	O	O	O	O	O	O	O	O	O	O	O	O	O	tmx0:e1:AFTER	O	O
+
+CNW	t1	1	NP0	cnw	t2:POSTHON	O	O	O	organization	O	O	O	O	O	say	A0	B-NP	O	O	O	O	O	O	O	O
+Corp.	t2	1	NP0	corp.	O	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	O	O	O	O	O	O
+said	t3	1	VVD	say	t1:SBJ||t13:OBJ||t31:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	O	e1:e3:NONE||e1:e5:NONE||e1:e6:NONE	O	O
+the	t4	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O
+final	t5	1	AJ0	final	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	final+adj+zero	O	O	O	O	O
+step	t6	1	NN1	step	t4:NMOD||t5:NMOD||t7:LOC	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	step+n+sing	O	O	O	O	O
+in	t7	1	PRP	in	t9:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	in+prep	O	O	O	O	O
+the	t8	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O
+acquisition	t9	1	NN1	acquisition	t8:NMOD||t10:NMOD	O	O	O	O	OCCURRENCE	e3	A1	O	O	say	A1	I-NP	O	O	acquisition+n+sing	O	O	e3:e6:INCLUDES||e3:e5:NONE	O	O
+of	t10	1	PRF	of	t12:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	O	O	O
+the	t11	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O
+company	t12	1	NN1	company	t11:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	company+n+sing	O	O	O	O	O
+has	t13	1	NN0	have	t6:SBJ||t14:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	have+v+indic+pres+sing3	PRESENT+PERFECTIVE+pos	O	O	O	O
+been	t14	1	VVN	be	t15:VC	O	O	O	O	O	O	O	O	O	say	A1	I-VP	O	O	be+v+part+past	PRESENT+PERFECTIVE+pos	O	O	O	O
+completed	t15	1	VVN	complete	t16:ADV	O	O	O	O	ASPECTUAL	e5	A1	AM-ADV	O	say	A1	I-VP	O	O	complete+v+part+past	PRESENT+PERFECTIVE+pos	O	e5:e6:NONE||e5:tmx0:NONE	O	O
+with	t16	1	PRP	with	t18:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	with+prep	O	O	O	O	O
+the	t17	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O
+merger	t18	1	NN1	merger	t17:NMOD||t19:NMOD||t21:NMOD	O	O	O	O	OCCURRENCE	e6	A1	A2	O	say	A1	I-NP	O	O	merger+n+sing	O	O	O	O	O
+of	t19	1	PRF	of	t20:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	O	O	O
+CNW	t20	1	NP0	cnw	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	O	O	O	O	O	O
+with	t21	1	PRP	with	t23:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	with+prep	O	O	O	O	O
+a	t22	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	O	O	O
+subsidiary	t23	1	NN1	subsidiary	t22:NMOD||t24:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	subsidiary+n+sing	O	O	O	O	O
+of	t24	1	PRF	of	t29:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	O	O	O
+Chicago	t25	1	NP0	chicago	O	O	O	O	location	O	O	O	O	O	say	A1	B-NP	O	O	chicago+pn	O	O	O	O	O
+amp	t26	1	AJ0	amp	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	amp+n+sing	O	O	O	O	O
+North	t27	1	NP0	north	O	O	O	O	organization	O	O	O	O	O	say	A1	I-NP	O	O	north+n+sing	O	O	O	O	O
+Western	t28	1	NP0	western	t27:NAME	O	O	O	organization	O	O	O	O	O	say	A1	I-NP	O	O	western+n+sing	O	O	O	O	O
+Holdings	t29	1	NP0	holdings	t25:NAME||t26:NMOD||t28:NAME||t30:POSTHON	O	O	O	organization	O	O	O	O	O	say	A1	I-NP	O	O	holding+n+plur	O	O	O	O	O
+Corp.	t30	1	NP0	corp.	O	O	O	O	organization	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	O	O	O
+.	t31	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+As	t32	2	AV0	as	O	O	O	O	O	O	O	O	O	O	report	AM-MNR	B-SBAR	O	Temporal	as+adv	O	O	O	O	O
+reported	t33	2	VVN	report	t32:AMOD	O	O	O	O	REPORTING	e13	AM-MNR	O	O	O	O	B-VP	O	O	report+v+part+past	PASTPART+NONE+pos	O	e13:tmx0:BEFORE||e13:e7:NONE||e13:e9:NONE	O	O
+,	t34	2	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	O	O
+CNW	t35	2	NP0	cnw	O	O	O	O	O	O	O	O	O	O	agree	A0	B-NP	O	O	O	O	O	O	O	O
+agreed	t36	2	VVD	agree	t33:ADV||t34:P||t35:SBJ||t37:OPRD||t63:P	O	O	O	O	I_ACTION	e7	A0	A1	O	O	O	B-VP	mainVb	O	agree+v+indic+past	PAST+NONE+pos	O	e7:e9:NONE||e7:tmx0:NONE||e7:e1:NONE	O	O
+to	t37	2	TO0	to	t38:IM	O	O	O	O	O	O	O	O	O	agree	A1	I-VP	mainVb	O	to+prep	INFINITIVE+NONE+pos	O	O	O	O
+be	t38	2	VVB	be	t39:VC	O	O	O	O	O	O	O	O	O	agree	A1	I-VP	mainVb	O	be+v+infin+pres	INFINITIVE+NONE+pos	O	O	O	O
+acquired	t39	2	VVN	acquire	t40:LGS||t52:ADV	O	O	O	O	OCCURRENCE	e9	A1	A0	A3	agree	A1	I-VP	mainVb	O	acquire+v+part+past	INFINITIVE+NONE+pos	O	e9:e7:NONE	O	O
+by	t40	2	PRP	by	t42:PMOD	O	O	O	O	O	O	O	O	O	agree	A1	B-PP	O	O	by+prep	O	O	O	O	O
+a	t41	2	AT0	a	O	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	a+art	O	O	O	O	O
+group	t42	2	NN1	group	t41:NMOD||t43:NMOD||t45:APPO	O	O	O	O	O	O	A1	O	O	agree	A1	I-NP	O	O	group+n+sing	O	O	O	O	O
+of	t43	2	PRF	of	t44:PMOD	O	O	O	O	O	O	O	O	O	agree	A1	B-PP	O	O	of+prep	O	O	O	O	O
+investors	t44	2	NN2	investor	O	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	investor+n+plur	O	O	O	O	O
+led	t45	2	VVN	lead	t46:LGS	O	O	O	O	O	O	A1	A0	O	agree	A1	B-VP	O	O	lead+v+part+past	PASTPART+NONE+pos	O	O	O	O
+by	t46	2	PRP	by	t51:PMOD	O	O	O	O	O	O	O	O	O	agree	A1	B-PP	O	O	by+prep	O	O	O	O	O
+Blackstone	t47	2	NP0	blackstone	O	O	O	O	organization	O	O	O	O	O	agree	A1	B-NP	O	O	O	O	O	O	O	O
+Capital	t48	2	NP0	capital	O	O	O	O	organization	O	O	O	O	O	agree	A1	I-NP	O	O	capital+n+sing	O	O	O	O	O
+Partners	t49	2	NP0	partners	O	O	O	O	organization	O	O	O	O	O	agree	A1	I-NP	O	O	partner+n+plur	O	O	O	O	O
+Limited	t50	2	NP0	limited	O	O	O	O	organization	O	O	O	O	O	agree	A1	I-NP	O	O	limited+adj+zero	O	O	O	O	O
+Partnership	t51	2	NP0	partnership	t47:NAME||t48:NAME||t49:NAME||t50:NAME	O	O	O	organization	O	O	O	O	O	agree	A1	I-NP	O	O	partnership+n+sing	O	O	O	O	O
+for	t52	2	PRP	for	t53:PMOD	O	O	O	O	O	O	O	O	O	agree	A1	B-PP	O	O	for+prep	O	O	O	O	O
+$	t53	2	PUN	$	t54:NMOD||t56:ADV||t57:P||t58:COORD	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	$+punc	O	O	O	O	O
+50	t54	2	CRD	50	O	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	50+n+sing	O	O	O	O	O
+a	t55	2	AT0	a	O	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	a+art	O	O	O	O	O
+share	t56	2	NN1	share	t55:NMOD	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	share+n+sing	O	O	O	O	O
+,	t57	2	PUN	,	O	O	O	O	O	O	O	O	O	O	agree	A1	O	O	O	punc	O	O	O	O	O
+or	t58	2	CJC	or	t60:CONJ	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	or+conj	O	O	O	O	O
+about	t59	2	PRP	about	O	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	about+prep	O	O	O	O	O
+$	t60	2	PUN	$	t59:DEP||t61:DEP||t62:DEP	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	$+punc	O	O	O	O	O
+950	t61	2	CRD	950	O	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	O	O	O	O	O	O
+million	t62	2	CRD	million	O	O	O	O	O	O	O	O	O	O	agree	A1	I-NP	O	O	million+adj+zero	O	O	O	O	O
+.	t63	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O

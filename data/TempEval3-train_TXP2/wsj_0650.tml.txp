@@ -1,0 +1,91 @@
+# FILE: wsj_0650.tml.txp
+# DATE: 1989-10-30T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1989-10-30	O	O	O	O	O	tmx0	B-DATE	1989-10-30	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+Sun	t1	1	NP0	sun	O	O	O	O	organization	O	O	O	O	O	announce	A0	B-NP	O	O	sun+n+sing	O	O	
+Microsystems	t2	1	NP0	microsystems	t1:NAME||t3:POSTHON||t4:P||t7:APPO||t8:P	O	O	O	organization	O	O	O	O	O	announce	A0	I-NP	O	O	O	O	O	
+Inc.	t3	1	NP0	inc.	O	O	O	O	organization	O	O	O	O	O	announce	A0	I-NP	O	O	O	O	O	
+,	t4	1	PUN	,	O	O	O	O	O	O	O	O	O	O	announce	A0	O	O	O	punc	O	O	
+a	t5	1	AT0	a	O	O	O	O	O	O	O	O	O	O	announce	A0	B-NP	O	O	a+art	O	O	
+computer	t6	1	NN1	computer	O	O	O	O	O	O	O	O	O	O	announce	A0	I-NP	O	O	computer+n+sing	O	O	
+maker	t7	1	NN1	maker	t5:NMOD||t6:NMOD	O	O	O	O	O	O	A1	A0	O	announce	A0	I-NP	O	O	maker+n+sing	O	O	
+,	t8	1	PUN	,	O	O	O	O	O	O	O	O	O	O	announce	A0	O	O	O	punc	O	O	
+announced	t9	1	VVD	announce	t2:SBJ||t11:OBJ||t31:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	announce+v+indic+past	PAST+NONE+pos	e1:tmx0:BEFORE||e1:e12:NONE||e1:tmx14:NONE	
+the	t10	1	AT0	the	O	O	O	O	O	O	O	O	O	O	announce	A1	B-NP	O	O	the+art	O	O	
+effectiveness	t11	1	NN1	effectiveness	t10:NMOD||t12:NMOD	O	O	O	O	O	O	A1	O	O	announce	A1	I-NP	O	O	effectiveness+n+sing	O	O	
+of	t12	1	PRF	of	t15:PMOD	O	O	O	O	O	O	O	O	O	announce	A1	B-PP	O	O	of+prep	O	O	
+its	t13	1	DPS	its	O	O	O	O	O	O	O	O	O	O	announce	A1	B-NP	O	O	its+adj+zero	O	O	
+registration	t14	1	NN1	registration	O	O	O	O	O	O	O	O	O	O	announce	A1	I-NP	O	O	registration+n+sing	O	O	
+statement	t15	1	NN1	statement	t13:NMOD||t14:NMOD||t16:NMOD	O	O	O	O	O	O	A0	A1	A1	announce	A1	I-NP	O	O	statement+n+sing	O	O	
+for	t16	1	PRP	for	t17:PMOD	O	O	O	O	O	O	O	O	O	announce	A1	B-PP	O	O	for+prep	O	O	
+$	t17	1	PUN	$	t18:DEP||t19:DEP||t20:NMOD||t26:APPO	O	O	O	O	O	O	O	O	O	announce	A1	B-NP	O	O	$+punc	O	O	
+125	t18	1	CRD	125	O	O	O	O	O	O	O	O	O	O	announce	A1	I-NP	O	O	O	O	O	
+million	t19	1	CRD	million	O	O	O	O	O	O	O	O	O	O	announce	A1	I-NP	O	O	million+adj+zero	O	O	
+of	t20	1	PRF	of	t25:PMOD	O	O	O	O	O	O	O	O	O	announce	A1	B-PP	O	O	of+prep	O	O	
+6 3/8	t21	1	CRD	6 3/8	O	O	O	O	O	O	O	O	O	O	announce	A1	B-ADJP	O	O	O	O	O	
+%	t22	1	NN1	%	t21:NMOD	O	O	O	O	O	O	O	O	O	announce	A1	I-ADJP	O	O	O	O	O	
+convertible	t23	1	AJ0	convertible	O	O	O	O	O	O	O	O	O	O	announce	A1	O	O	O	convertible+adj+zero	O	O	
+subordinated	t24	1	AJ0	subordinated	O	O	O	O	O	O	O	O	O	O	announce	A1	I-NP	O	O	subordinate+v+indic+past	O	O	
+debentures	t25	1	NN2	debentures	t22:NMOD||t23:NMOD||t24:NMOD	O	O	O	O	O	O	A2	O	O	announce	A1	I-NP	O	O	debenture+n+plur	O	O	
+due	t26	1	AJ0	due	t30:TMP	O	O	O	O	STATE	e12	O	O	O	announce	A1	B-ADJP	O	O	due+adj+zero	O	e12:tmx14:ENDED_BY||e12:tmx0:NONE	
+Oct.	t27	1	NP0	oct.	t28:NMOD	tmx14	B-DATE	1999-10-15	O	O	O	O	O	O	announce	A1	B-NP	O	O	O	O	O	
+15	t28	1	CRD	15	O	tmx14	I-DATE	1999-10-15	O	O	O	O	O	O	announce	A1	I-NP	O	O	15+n+sing	O	O	
+,	t29	1	PUN	,	O	tmx14	I-DATE	1999-10-15	O	O	O	O	O	O	announce	A1	I-NP	O	O	punc	O	O	
+1999	t30	1	CRD	1999	t27:NMOD||t29:P	tmx14	I-DATE	1999-10-15	O	O	O	O	O	O	announce	A1	I-NP	O	O	O	O	O	
+.	t31	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t32	2	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	
+company	t33	2	NN1	company	t32:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	company+n+sing	O	O	
+said	t34	2	VVD	say	t33:SBJ||t37:OBJ||t71:P	O	O	O	O	REPORTING	e3	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e3:e5:NONE||e3:e17:NONE||e3:e16:NONE||e3:tmx0:NONE||e3:e1:NONE	
+the	t35	2	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+debentures	t36	2	NN2	debentures	t35:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	debenture+n+plur	O	O	
+are	t37	2	VVI	be	t36:SBJ||t38:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	be+v+indic+pres+no3sing	PRESENT+PROGRESSIVE+pos	O	
+being	t38	2	VVG	be	t39:VC	O	O	O	O	O	O	O	O	O	say	A1	I-VP	O	O	be+v+gerund+pres	PRESENT+PROGRESSIVE+pos	O	
+issued	t39	2	VVN	issue	t40:ADV||t53:COORD	O	O	O	O	OCCURRENCE	e5	A1	A3	O	say	A1	I-VP	O	O	issue+v+part+past	PRESENT+PROGRESSIVE+pos	e5:e17:NONE||e5:e16:NONE||e5:tmx0:NONE	
+at	t40	2	PRP	at	t43:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	at+prep	O	O	
+an	t41	2	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	an+n+sing	O	O	
+issue	t42	2	NN1	issue	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	issue+n+sing	O	O	
+price	t43	2	NN1	price	t41:NMOD||t42:NMOD||t44:NMOD	O	O	O	O	O	O	A1	A2	O	say	A1	I-NP	O	O	price+n+sing	O	O	
+of	t44	2	PRF	of	t45:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+$	t45	2	PUN	$	t46:NMOD||t47:NMOD	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	$+punc	O	O	
+849	t46	2	CRD	849	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	
+for	t47	2	PRP	for	t52:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	for+prep	O	O	
+each	t48	2	AT0	each	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	each+adj+zero	O	O	
+$	t49	2	PUN	$	t50:NMOD	O	O	O	O	O	O	O	O	O	say	A1	B-ADJP	O	O	$+punc	O	O	
+1,000	t50	2	CRD	1,000	O	O	O	O	O	O	O	O	O	O	say	A1	I-ADJP	O	O	O	O	O	
+principal	t51	2	NN1	principal	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	principal+n+sing	O	O	
+amount	t52	2	NN1	amount	t48:NMOD||t49:NMOD||t51:NMOD	O	O	O	O	O	O	A2	O	O	say	A1	I-NP	O	O	amount+n+sing	O	O	
+and	t53	2	CJC	and	t54:CONJ	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	and+conj	O	O	
+are	t54	2	VVI	be	t55:PRD||t56:TMP||t62:ADV	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	be+v+indic+pres+no3sing	PRESENT+NONE+pos	O	
+convertible	t55	2	AJ0	convertible	O	O	O	O	O	STATE	e17	O	O	O	say	A1	B-ADJP	O	O	convertible+adj+zero	O	e17:e16:BEFORE||e17:tmx0:NONE	
+at	t56	2	PRP	at	t58:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	at+prep	O	O	
+any	t57	2	AT0	any	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	any+pron	O	O	
+time	t58	2	NN1	time	t57:NMOD||t59:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	time+n+sing	O	O	
+prior	t59	2	AV0	prior	t60:AMOD	O	O	O	O	O	O	O	O	O	say	A1	B-ADVP	O	O	prior+adj+zero	O	O	
+to	t60	2	TO0	to	t61:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	to+prep	O	O	
+maturity	t61	2	NN1	maturity	O	O	O	O	O	STATE	e16	O	O	O	say	A1	B-NP	O	O	maturity+n+sing	O	e16:tmx0:NONE	
+at	t62	2	PRP	at	t65:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	at+prep	O	O	
+a	t63	2	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	
+conversion	t64	2	NN1	conversion	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	conversion+n+sing	O	O	
+price	t65	2	NN1	price	t63:NMOD||t64:NMOD||t66:NMOD	O	O	O	O	O	O	A2	O	O	say	A1	I-NP	O	O	price+n+sing	O	O	
+of	t66	2	PRF	of	t67:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+$	t67	2	PUN	$	t68:NMOD||t70:ADV	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	$+punc	O	O	
+25	t68	2	CRD	25	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	25+n+sing	O	O	
+a	t69	2	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	
+share	t70	2	NN1	share	t69:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	share+n+sing	O	O	
+.	t71	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t72	3	AT0	the	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	the+art	O	O	
+debentures	t73	3	NN2	debentures	t72:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	debenture+n+plur	O	O	
+are	t74	3	VVI	be	t73:SBJ||t75:PRD||t76:LOC||t82:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+pres+no3sing	PRESENT+NONE+pos	O	
+available	t75	3	AJ0	available	O	O	O	O	O	O	O	O	O	O	O	O	B-ADJP	O	O	available+adj+zero	O	O	
+through	t76	3	PRP	through	t79:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	through+prep	O	O	
+Goldman	t77	3	NP0	goldman	O	O	O	O	organization	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	
+,	t78	3	PUN	,	O	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	punc	O	O	
+Sachs	t79	3	NP0	sachs	t77:NMOD||t78:P||t80:VC||t81:POSTHON	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	O	O	O	
+amp	t80	3	VVI	amp	O	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O		O	O	
+Co.	t81	3	NP0	co.	O	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	O	O	O	
+.	t82	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

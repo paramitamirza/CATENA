@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0171</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0019 = 891102 891102-0019.
+Business Brief -- Valley Federal SampL: @ California SampL Had Charge, @ Loss in the Third Quarter 11/02/89 WALL STREET JOURNAL (J) VFED EARNINGS (ERN)
+</EXTRAINFO>
+
+<TEXT>
+Valley Federal Savings amp Loan Association <EVENT class="OCCURRENCE" eid="e1">took</EVENT> an $89.9 million <EVENT class="OCCURRENCE" eid="e1994">charge</EVENT> as it <EVENT class="REPORTING" eid="e2">reported</EVENT> a <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t28" type="DATE" value="1989-Q3">third-quarter</TIMEX3> <EVENT class="OCCURRENCE" eid="e1995">loss</EVENT> of $70.7 million, or $12.09 a share.
+
+The Van Nuys, Calif., thrift <EVENT class="OCCURRENCE" eid="e3">had</EVENT> net income of $132,000, or three cents a share, <TIMEX3 anchorTimeID="t28" functionInDocument="NONE" temporalFunction="true" tid="t29" type="DATE" value="1988-Q3">a year ago</TIMEX3>.
+
+The bulk of the pretax charge is a $62 million write-off of capitalized servicing at the mobile home financing subsidiary, which the company <EVENT class="REPORTING" eid="e5">said</EVENT> had been a big <EVENT class="OCCURRENCE" eid="e6">drain</EVENT> on earnings. The company <EVENT class="REPORTING" eid="e7">said</EVENT> the one-time <EVENT class="OCCURRENCE" eid="e1999">provision</EVENT> would substantially <EVENT class="OCCURRENCE" eid="e8">eliminate</EVENT> all <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t30" type="DATE" value="FUTURE_REF">future</TIMEX3> <EVENT class="OCCURRENCE" eid="e2000">losses</EVENT> at the unit. Valley Federal also <EVENT class="OCCURRENCE" eid="e10">added</EVENT> $18 million to realestate loan reserves and <EVENT class="OCCURRENCE" eid="e12">eliminated</EVENT> $9.9 million of good will.
+
+The thrift <EVENT class="REPORTING" eid="e14">said</EVENT> that "after these <EVENT class="OCCURRENCE" eid="e15">charges</EVENT> and <EVENT class="I_ACTION" eid="e2126">assuming</EVENT> no dramatic <EVENT class="OCCURRENCE" eid="e1997">fluctuation</EVENT> in interest rates, the association <EVENT class="I_STATE" eid="e2001">expects</EVENT> to <EVENT class="OCCURRENCE" eid="e20">achieve</EVENT> near record <EVENT class="OCCURRENCE" eid="e1998">earnings</EVENT> in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t31" type="DATE" value="1990">1990</TIMEX3>."
+
+Valley Federal is <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t2003" type="DATE" value="PRESENT_REF">currently</TIMEX3> being <EVENT class="OCCURRENCE" eid="e21">examined</EVENT> by regulators. New loans <EVENT class="ASPECTUAL" eid="e22">continue</EVENT> to <EVENT class="OCCURRENCE" eid="e23">slow</EVENT>; they were $6.6 million in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t32" type="DATE" value="1989-Q3">the quarter</TIMEX3> compared with $361.8 million <TIMEX3 anchorTimeID="t32" functionInDocument="NONE" temporalFunction="true" tid="t33" type="DATE" value="1988-Q3">a year ago</TIMEX3>. The thrift <EVENT class="STATE" eid="e25">has</EVENT> assets of $3.2 billion.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2202" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2203" eventID="e1994" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2204" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2205" eventID="e1995" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2206" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2210" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2211" eventID="e6" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2213" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2214" eventID="e1999" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2215" eventID="e8" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2216" eventID="e2000" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2217" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2218" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2219" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2220" eventID="e15" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2221" eventID="e2126" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2222" eventID="e1997" polarity="NEG" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2223" eventID="e2001" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2224" eventID="e20" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2225" eventID="e1998" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2226" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2227" eventID="e22" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2228" eventID="e23" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2229" eventID="e25" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei2228" lid="l40" relType="DURING" relatedToEventInstance="ei2227" />
+<TLINK eventInstanceID="ei2229" lid="l1" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l3" relType="IDENTITY" relatedToTime="t29" timeID="t33" />
+<TLINK lid="l4" relType="IDENTITY" relatedToTime="t28" timeID="t32" />
+<TLINK lid="l5" relType="INCLUDES" relatedToEventInstance="ei2227" timeID="t2003" />
+<TLINK lid="l6" relType="INCLUDES" relatedToEventInstance="ei2226" timeID="t2003" />
+<TLINK eventInstanceID="ei2223" lid="l7" relType="AFTER" relatedToEventInstance="ei2220" />
+<TLINK lid="l9" relType="INCLUDES" relatedToTime="t0" timeID="t2003" />
+<TLINK eventInstanceID="ei2213" lid="l10" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2219" lid="l11" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2218" lid="l12" relType="SIMULTANEOUS" relatedToEventInstance="ei2217" />
+<TLINK eventInstanceID="ei2217" lid="l13" relType="SIMULTANEOUS" relatedToEventInstance="ei2202" />
+<TLINK eventInstanceID="ei2224" lid="l14" relType="IS_INCLUDED" relatedToTime="t31" />
+<TLINK lid="l15" relType="INCLUDES" relatedToEventInstance="ei2216" timeID="t30" />
+<TLINK eventInstanceID="ei2202" lid="l16" relType="IDENTITY" relatedToEventInstance="ei2203" />
+<TLINK lid="l17" relType="AFTER" relatedToTime="t0" timeID="t30" />
+<TLINK eventInstanceID="ei2215" lid="l18" relType="BEFORE" relatedToTime="t30" />
+<TLINK eventInstanceID="ei2202" lid="l19" relType="SIMULTANEOUS" relatedToEventInstance="ei2204" />
+<TLINK eventInstanceID="ei2204" lid="l20" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l21" relType="INCLUDES" relatedToEventInstance="ei2205" timeID="t28" />
+<TLINK eventInstanceID="ei2206" lid="l23" relType="SIMULTANEOUS" relatedToTime="t29" />
+<TLINK lid="l24" relType="BEFORE" relatedToTime="t0" timeID="t29" />
+<TLINK eventInstanceID="ei2213" lid="l28" relType="SIMULTANEOUS" relatedToEventInstance="ei2210" />
+<SLINK eventInstanceID="ei2219" lid="l29" relType="EVIDENTIAL" subordinatedEventInstance="ei2221" />
+<SLINK eventInstanceID="ei2215" lid="l30" relType="COUNTER_FACTIVE" subordinatedEventInstance="ei2216" />
+<SLINK eventInstanceID="ei2221" lid="l31" relType="MODAL" subordinatedEventInstance="ei2222" />
+<SLINK eventInstanceID="ei2219" lid="l32" relType="EVIDENTIAL" subordinatedEventInstance="ei2223" />
+<SLINK eventInstanceID="ei2224" lid="l33" relType="FACTIVE" subordinatedEventInstance="ei2225" />
+<SLINK eventInstanceID="ei2204" lid="l34" relType="EVIDENTIAL" subordinatedEventInstance="ei2205" />
+<SLINK eventInstanceID="ei2210" lid="l36" relType="EVIDENTIAL" subordinatedEventInstance="ei2211" />
+<SLINK eventInstanceID="ei2213" lid="l37" relType="EVIDENTIAL" subordinatedEventInstance="ei2215" />
+<SLINK eventInstanceID="ei2223" lid="l38" relType="MODAL" subordinatedEventInstance="ei2224" />
+<ALINK eventInstanceID="ei2227" lid="l39" relType="CONTINUES" relatedToEventInstance="ei2228" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToEventInstance="ei2210" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToEventInstance="ei2213" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToEventInstance="ei2216" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2202" relatedToEventInstance="ei2217" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2202" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2202" relatedToTime="t30" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2203" relatedToEventInstance="ei2204" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2210" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2213" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2216" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2203" relatedToEventInstance="ei2217" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2203" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToTime="t30" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToEventInstance="ei2210" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToEventInstance="ei2213" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToEventInstance="ei2216" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2204" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2204" relatedToTime="t30" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2205" relatedToTime="t28" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2205" relatedToTime="t32" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToEventInstance="ei2210" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToEventInstance="ei2213" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToEventInstance="ei2216" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2206" relatedToTime="t30" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2206" relatedToTime="t33" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2210" relatedToEventInstance="ei2213" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToEventInstance="ei2217" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToTime="t29" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2210" relatedToTime="t33" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2213" relatedToEventInstance="ei2217" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2213" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2213" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2213" relatedToTime="t29" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2213" relatedToTime="t33" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2215" relatedToEventInstance="ei2216" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToEventInstance="ei2217" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToTime="t29" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2216" relatedToTime="t30" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2216" relatedToTime="t33" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2217" relatedToEventInstance="ei2218" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2217" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2217" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2217" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2217" relatedToTime="t30" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2218" relatedToEventInstance="ei2219" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2218" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2218" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2218" relatedToTime="t30" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2219" relatedToEventInstance="ei2229" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2219" relatedToTime="t29" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2219" relatedToTime="t33" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2220" relatedToEventInstance="ei2223" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2226" relatedToTime="t2003" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2227" relatedToTime="t2003" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2229" relatedToTime="t29" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2229" relatedToTime="t30" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2229" relatedToTime="t2003" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2229" relatedToTime="t33" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t29" /><TLINK deduced="true" relType="BEFORE" timeID="t0" relatedToTime="t30" /><TLINK deduced="true" relType="IS_INCLUDED" timeID="t0" relatedToTime="t2003" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t33" /><TLINK deduced="true" relType="IDENTITY" timeID="t28" relatedToTime="t32" /><TLINK deduced="true" relType="BEFORE" timeID="t29" relatedToTime="t30" /><TLINK deduced="true" relType="IDENTITY" timeID="t29" relatedToTime="t33" /><TLINK deduced="true" relType="AFTER" timeID="t30" relatedToTime="t33" /></TimeML>

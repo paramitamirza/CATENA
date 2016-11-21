@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0570</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">1989-10-30</TIMEX3></DCT>
+<TEXT>
+ Crane Co. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="STATE" eid="e2">holds</EVENT> an 8.9 % stake in Milton Roy Corp., an analytical-instruments maker, and may <EVENT class="I_STATE" eid="e3">seek</EVENT> control of the company.
+ Crane, a maker of engineered products for aerospace, construction, defense and other uses, <EVENT class="OCCURRENCE" eid="e4">made</EVENT> the <EVENT class="REPORTING" eid="e5">disclosure</EVENT> in a Securities and Exchange Commission <EVENT class="OCCURRENCE" eid="e6">filing</EVENT>.
+ In the <EVENT class="OCCURRENCE" eid="e7">filing</EVENT>, Crane <EVENT class="REPORTING" eid="e8">said</EVENT> that in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t9" type="DATE" value="PAST_REF">the past</TIMEX3> it <EVENT class="I_STATE" eid="e10">considered</EVENT> <EVENT class="I_ACTION" eid="e11">seeking</EVENT> control of Milton Roy, of St. Petersburg, Fla., through a <EVENT class="OCCURRENCE" eid="e12">merger</EVENT> or tender <EVENT class="OCCURRENCE" eid="e13">offer</EVENT> and that it <EVENT class="I_STATE" eid="e14">expects</EVENT> to <EVENT class="ASPECTUAL" eid="e15">continue</EVENT> to <EVENT class="I_ACTION" eid="e16">evaluate</EVENT> an <EVENT class="OCCURRENCE" eid="e17">acquisition</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t18" type="DATE" value="FUTURE_REF">from time to time</TIMEX3>.
+ Crane officials didn't <EVENT class="OCCURRENCE" eid="e19">return</EVENT> phone <EVENT class="OCCURRENCE" eid="e20">calls</EVENT> seeking comment.
+ Crane holds 504,200 Milton Roy shares, including 254,200 <EVENT class="OCCURRENCE" eid="e21">bought</EVENT> from <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t22" type="DATE" value="1989-09-14">Sept. 14</TIMEX3> to <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t23" type="DATE" value="1989-10-26">Thursday</TIMEX3> for $ 15.50 to $ 16.75 each.
+ In New York Stock Exchange composite trading <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t24" type="DATE" value="1989-10-27">Friday</TIMEX3>, Milton Roy shares <EVENT class="OCCURRENCE" eid="e25">leaped</EVENT> $ 2, to $ 18.375 each, while Crane <EVENT class="OCCURRENCE" eid="e26">sank</EVENT> $ 1.125, to $ 21.125 a share.
+ John M. McNamara, chief financial officer of Milton Roy, <EVENT class="REPORTING" eid="e27">said</EVENT> the company <EVENT class="STATE" eid="e28">has</EVENT> no <EVENT class="I_STATE" eid="e29">comment</EVENT> on Crane's <EVENT class="OCCURRENCE" eid="e30">filing</EVENT>.
+ Milton Roy <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t31" type="DATE" value="PAST_REF">recently</TIMEX3> <EVENT class="OCCURRENCE" eid="e32">fended</EVENT> off unsolicited overtures from Thermo Electron Corp., a Waltham, Mass., maker of biomedical products.
+ Milton Roy <EVENT class="REPORTING" eid="e33">disclosed</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t34" type="DATE" value="1989-05">May</TIMEX3> that it was <EVENT class="I_ACTION" eid="e35">approached</EVENT> for a possible <EVENT class="OCCURRENCE" eid="e36">acquisition</EVENT> by Thermo Electron, which <EVENT class="I_ACTION" eid="e37">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e38">purchase</EVENT> Milton Roy's liquid-chromatography line for $ 22 million in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t39" type="DATE" value="1990-02">February</TIMEX3>.
+ Thermo Electron <EVENT class="OCCURRENCE" eid="e40">acquired</EVENT> some 6 % of Milton Roy's common stock before <EVENT class="OCCURRENCE" eid="e41">throwing</EVENT> in the towel and <EVENT class="OCCURRENCE" eid="e42">reducing</EVENT> its stake in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t43" type="DATE" value="1989-09">early September</TIMEX3>.
+ Gabelli Group <EVENT class="ASPECTUAL" eid="e44">began</EVENT> <EVENT class="OCCURRENCE" eid="e45">raising</EVENT> its Milton Roy stake in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t46" type="DATE" value="1989-07">July</TIMEX3>, and <EVENT class="STATE" eid="e47">holds</EVENT> 14.6 %, <EVENT class="REPORTING" eid="e48">according</EVENT> to a <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t49" type="DATE" value="PAST_REF">recent</TIMEX3> SEC filing.
+ It hasn't <EVENT class="OCCURRENCE" eid="e50">made</EVENT> merger <EVENT class="I_ACTION" eid="e51">overtures</EVENT> to the board.
+ <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t52" type="DATE" value="1989-10">Earlier this month</TIMEX3>, Milton Roy <EVENT class="OCCURRENCE" eid="e53">signed</EVENT> a letter of intent to <EVENT class="OCCURRENCE" eid="e54">acquire</EVENT> Automated Custom Systems Inc., Orange, Calif., and its sister operation, Environmental Testing Co., in Aurora, Colo.
+ The companies are automotive-emissions-testing concerns.
+ Under the terms, Milton Roy will <EVENT class="OCCURRENCE" eid="e55">pay</EVENT> an initial $ 4 million for the <EVENT class="OCCURRENCE" eid="e56">operations</EVENT> and additional <EVENT class="OCCURRENCE" eid="e57">payments</EVENT> during <TIMEX3 functionInDocument="NONE" tid="t58" type="DURATION" value="P4Y">the next four years</TIMEX3> based on the earnings performance of the businesses.
+ In <TIMEX3 functionInDocument="NONE" tid="t59" type="DURATION" value="P9M">the nine months</TIMEX3>, Milton Roy <EVENT class="OCCURRENCE" eid="e60">earned</EVENT> $ 6.6 million, or $ 1.18 a share, on <EVENT class="OCCURRENCE" eid="e61">sales</EVENT> of $ 94.3 million.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei56" eventID="e56" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei42" eventID="e42" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50" eventID="e50" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei60" eventID="e60" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei61" eventID="e61" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei53" eventID="e53" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei48" eventID="e48" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei47" eventID="e47" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei44" eventID="e44" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei45" eventID="e45" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eventID="e29" polarity="NEG" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei40" eventID="e40" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei41" eventID="e41" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" modality="may" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei51" eventID="e51" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei38" eventID="e38" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei32" eventID="e32" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eventID="e57" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei37" eventID="e37" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei36" eventID="e36" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei35" eventID="e35" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei33" eventID="e33" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei55" eventID="e55" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei54" eventID="e54" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei4" lid="l2" relType="IDENTITY" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei5" lid="l3" relType="IDENTITY" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei5" lid="l4" relType="IS_INCLUDED" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei7" lid="l5" relType="IDENTITY" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei8" lid="l6" relType="IDENTITY" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei8" lid="l7" relType="IS_INCLUDED" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei10" lid="l8" relType="IS_INCLUDED" relatedToTime="t9" />
+<TLINK eventInstanceID="ei11" lid="l9" relType="BEGUN_BY" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei11" lid="l10" relType="BEGUN_BY" relatedToEventInstance="ei13" />
+<TLINK eventInstanceID="ei16" lid="l11" relType="IS_INCLUDED" relatedToTime="t18" />
+<TLINK lid="l12" relType="AFTER" relatedToEventInstance="ei8" timeID="t18" />
+<TLINK eventInstanceID="ei20" lid="l13" relType="BEFORE" relatedToEventInstance="ei19" />
+<TLINK eventInstanceID="ei21" lid="l14" relType="BEGUN_BY" relatedToTime="t22" />
+<TLINK eventInstanceID="ei21" lid="l15" relType="ENDED_BY" relatedToTime="t23" />
+<TLINK eventInstanceID="ei25" lid="l16" relType="IS_INCLUDED" relatedToTime="t24" />
+<TLINK eventInstanceID="ei25" lid="l17" relType="SIMULTANEOUS" relatedToEventInstance="ei26" />
+<TLINK eventInstanceID="ei27" lid="l18" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei28" lid="l19" relType="IDENTITY" relatedToEventInstance="ei29" />
+<TLINK eventInstanceID="ei32" lid="l20" relType="IS_INCLUDED" relatedToTime="t31" />
+<TLINK eventInstanceID="ei33" lid="l21" relType="IS_INCLUDED" relatedToTime="t34" />
+<TLINK eventInstanceID="ei37" lid="l22" relType="SIMULTANEOUS" relatedToEventInstance="ei35" />
+<TLINK eventInstanceID="ei38" lid="l23" relType="IS_INCLUDED" relatedToTime="t39" />
+<TLINK eventInstanceID="ei40" lid="l24" relType="BEFORE" relatedToEventInstance="ei41" />
+<TLINK eventInstanceID="ei40" lid="l25" relType="BEFORE" relatedToEventInstance="ei42" />
+<TLINK eventInstanceID="ei41" lid="l26" relType="SIMULTANEOUS" relatedToEventInstance="ei42" />
+<TLINK eventInstanceID="ei42" lid="l27" relType="IS_INCLUDED" relatedToTime="t43" />
+<TLINK eventInstanceID="ei44" lid="l28" relType="IS_INCLUDED" relatedToTime="t46" />
+<TLINK eventInstanceID="ei45" lid="l29" relType="BEGUN_BY" relatedToTime="t46" />
+<TLINK eventInstanceID="ei47" lid="l30" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei48" lid="l31" relType="IS_INCLUDED" relatedToTime="t49" />
+<TLINK eventInstanceID="ei50" lid="l32" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50" lid="l33" relType="IDENTITY" relatedToEventInstance="ei51" />
+<TLINK eventInstanceID="ei53" lid="l34" relType="IS_INCLUDED" relatedToTime="t52" />
+<TLINK eventInstanceID="ei55" lid="l35" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei55" lid="l36" relType="BEFORE" relatedToEventInstance="ei56" />
+<TLINK eventInstanceID="ei57" lid="l37" relType="AFTER" relatedToEventInstance="ei55" />
+<TLINK eventInstanceID="ei57" lid="l38" relType="DURING" relatedToTime="t58" />
+<TLINK eventInstanceID="ei60" lid="l39" relType="DURING" relatedToTime="t59" />
+<TLINK eventInstanceID="ei60" lid="l40" relType="AFTER" relatedToEventInstance="ei61" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei50" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei1" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei51" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei56" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei42" relatedToEventInstance="ei40" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei42" relatedToEventInstance="ei41" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei26" relatedToTime="t24" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei44" relatedToEventInstance="ei45" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei41" relatedToTime="t43" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToTime="t18" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei5" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToTime="t18" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei4" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei4" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei4" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToTime="t18" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei7" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei6" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToTime="t18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei51" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei51" relatedToEventInstance="ei55" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei51" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei57" relatedToTime="t0" /></TimeML>

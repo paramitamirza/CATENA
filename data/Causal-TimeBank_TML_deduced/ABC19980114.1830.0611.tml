@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>ABC19980114.1830.0611</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-01-14">1998-01-14</TIMEX3></DCT>
+<TEXT>
+ In Washington <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t1" type="DATE" value="1998-01-14">today</TIMEX3>, the Federal Aviation Administration <EVENT class="OCCURRENCE" eid="e2">released</EVENT> air traffic control tapes from the night the TWA Flight eight hundred <EVENT class="OCCURRENCE" eid="e3">went</EVENT> down.
+ There's nothing new on why the plane <EVENT class="OCCURRENCE" eid="e4">exploded</EVENT>, but you can not miss the moment.
+ ABC's Lisa Stark has more.
+ There was no hint of trouble in the last <EVENT class="OCCURRENCE" eid="e5">conversation</EVENT> between controllers and TWA pilot Steven Snyder TWA eight hundred climb <EVENT class="OCCURRENCE" eid="e6">maintain</EVENT> one five thousand.
+ TWA's eight hundred heavy climb and <EVENT class="OCCURRENCE" eid="e7">maintain</EVENT> one five thousand leavin - three thousand.
+ But <TIMEX3 functionInDocument="NONE" tid="t8" type="DURATION" value="PT1M30S">a minute and a half</TIMEX3> later, a pilot from a nearby flight <EVENT class="REPORTING" eid="e9">calls</EVENT> in.
+ Ah, we just <EVENT class="PERCEPTION" eid="e10">saw</EVENT> an <EVENT class="OCCURRENCE" eid="e11">explosion</EVENT> up ahead of us here about sixteen thousand feet or something like that.
+ It just <EVENT class="OCCURRENCE" eid="e12">went</EVENT> down.
+ The controller at Boston center <EVENT class="I_ACTION" eid="e13">tries</EVENT> to <EVENT class="OCCURRENCE" eid="e14">raise</EVENT> TWA eight hundred.
+ TWA eight hundred, if you <EVENT class="PERCEPTION" eid="e15">hear</EVENT> center, <EVENT class="OCCURRENCE" eid="e16">ident</EVENT>.
+ There is no <EVENT class="OCCURRENCE" eid="e17">response</EVENT>.
+ Later, the controller <EVENT class="OCCURRENCE" eid="e18">asks</EVENT> the Eastwind pilot for more details.
+ Ah yes, sir.
+ It - It just <EVENT class="OCCURRENCE" eid="e19">blew</EVENT> up in the air, and then we <EVENT class="PERCEPTION" eid="e20">saw</EVENT> two fireballs <EVENT class="OCCURRENCE" eid="e21">go</EVENT> down to the, to the water, and there was a big small, ah, smoke, from ah, <EVENT class="OCCURRENCE" eid="e22">coming</EVENT> up from that.
+ At one point, when it <EVENT class="I_STATE" eid="e23">became</EVENT> clear controllers could not <EVENT class="OCCURRENCE" eid="e24">contact</EVENT> the plane, someone <EVENT class="OCCURRENCE" eid="e25">said</EVENT> a prayer.
+ TWA eight hundred center, I think that was him.
+ I think so.
+ God bless him.
+ Lisa Stark ABC news Washington
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" modality="could" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="NEG" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK lid="l1" relType="IDENTITY" relatedToTime="t0" timeID="t1" />
+<TLINK lid="l2" relType="INCLUDES" relatedToEventInstance="ei2" timeID="t1" />
+<TLINK eventInstanceID="ei2" lid="l3" relType="AFTER" relatedToEventInstance="ei3" />
+<TLINK eventInstanceID="ei3" lid="l4" relType="IDENTITY" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei4" lid="l5" relType="IS_INCLUDED" relatedToEventInstance="ei3" />
+<TLINK eventInstanceID="ei5" lid="l6" relType="BEGINS" relatedToTime="t8" />
+<TLINK eventInstanceID="ei7" lid="l7" relType="AFTER" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei9" lid="l8" relType="AFTER" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei9" lid="l9" relType="ENDS" relatedToTime="t8" />
+<TLINK eventInstanceID="ei11" lid="l10" relType="IDENTITY" relatedToEventInstance="ei4" />
+<TLINK eventInstanceID="ei11" lid="l11" relType="IS_INCLUDED" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei13" lid="l12" relType="AFTER" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei16" lid="l13" relType="AFTER" relatedToEventInstance="ei15" />
+<TLINK eventInstanceID="ei17" lid="l14" relType="AFTER" relatedToEventInstance="ei13" />
+<TLINK eventInstanceID="ei18" lid="l15" relType="AFTER" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei19" lid="l16" relType="IDENTITY" relatedToEventInstance="ei11" />
+<TLINK eventInstanceID="ei19" lid="l17" relType="IS_INCLUDED" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei19" lid="l18" relType="BEFORE" relatedToEventInstance="ei20" />
+<TLINK eventInstanceID="ei22" lid="l19" relType="AFTER" relatedToEventInstance="ei21" />
+<TLINK eventInstanceID="ei24" lid="l20" relType="IBEFORE" relatedToEventInstance="ei25" />
+<TLINK eventInstanceID="ei25" lid="l21" relType="AFTER" relatedToEventInstance="ei23" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei20" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei20" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei20" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei21" relatedToEventInstance="ei22" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToEventInstance="ei2" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2" relatedToTime="t1" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei4" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei4" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei4" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei11" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei13" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei13" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToTime="t8" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei12" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei15" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei17" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei17" relatedToTime="t8" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei18" relatedToTime="t8" /><TLINK deduced="true" relType="IDENTITY" timeID="t0" relatedToTime="t1" /></TimeML>

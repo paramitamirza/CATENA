@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0346</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">11/01/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891101-0018 = 891101 891101-0018.
+Business Brief -- Cilcorp Inc.: @ Some Assets to Be Acquired @ From Hunter Environmental 11/01/89 WALL STREET JOURNAL (J) CER HESI BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+Cilcorp Inc., Peoria, Ill., <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it <EVENT class="I_ACTION" eid="e2" stem="agree">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e3" stem="acquire">acquire</EVENT> the environmental consulting and analytical service businesses of Hunter Environmental Services Inc. of Southport, Conn. The utility holding company <EVENT class="REPORTING" eid="e6" stem="say">said</EVENT> Hunter will <EVENT class="OCCURRENCE" eid="e7" stem="receive">receive</EVENT> 390,000 shares of a new series of Cilcorp convertible preferred stock with a face value of $39 million for the businesses. Cilcorp will also <EVENT class="I_ACTION" eid="e8" stem="assume">assume</EVENT> $22 million of Hunter's existing debt. As part of the agreement, Cilcorp <EVENT class="REPORTING" eid="e10" stem="say">said</EVENT> it will <EVENT class="OCCURRENCE" eid="e11" stem="pay">pay</EVENT> Hunter $4 million in exchange for agreements not to compete.
+
+Cilcorp <EVENT class="REPORTING" eid="e15" stem="say">said</EVENT> the businesses to be <EVENT class="OCCURRENCE" eid="e16" stem="acquire">acquired</EVENT> <EVENT class="OCCURRENCE" eid="e38" stem="have">had</EVENT> revenue of $76 million for <TIMEX3 endPoint="t32" functionInDocument="NONE" temporalFunction="true" tid="t33" type="DURATION" value="P1Y">the year</TIMEX3> ended <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t32" type="DATE" value="1989-03-31">March 31</TIMEX3>.
+
+Separately, Cilcorp <EVENT class="REPORTING" eid="e18" stem="say">said</EVENT> it <EVENT class="I_STATE" eid="e19" stem="plan">plans</EVENT> to <EVENT class="OCCURRENCE" eid="e20" stem="purchase">purchase</EVENT> as many as 1.4 million shares, or 10% of its common stock outstanding from time to time on the open market and through privately negotiated transactions.
+
+The company, which <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t34" type="DATE" value="PRESENT_REF">currently</TIMEX3> <EVENT class="OCCURRENCE" eid="e26" stem="have">has</EVENT> 13.5 million common shares outstanding, <EVENT class="REPORTING" eid="e27" stem="say">said</EVENT> it <EVENT class="OCCURRENCE" eid="e28" stem="have">has</EVENT> no specific plans for the shares.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei211" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei212" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei213" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei215" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei216" eventID="e7" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei217" eventID="e8" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei220" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei221" eventID="e11" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei222" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei223" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei224" eventID="e38" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei226" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei227" eventID="e19" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei228" eventID="e20" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei229" eventID="e26" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei230" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei231" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei220" lid="l28" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei230" lid="l1" origin="USER" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l2" origin="USER" relType="SIMULTANEOUS" relatedToEventInstance="ei229" timeID="t34" />
+<TLINK eventInstanceID="ei222" lid="l3" origin="USER" relType="SIMULTANEOUS" relatedToEventInstance="ei211" />
+<TLINK lid="l4" origin="USER" relType="INCLUDES" relatedToTime="t0" timeID="t34" />
+<TLINK eventInstanceID="ei213" lid="l6" origin="USER" relType="IDENTITY" relatedToEventInstance="ei223" />
+<TLINK eventInstanceID="ei226" lid="l8" origin="USER" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l9" origin="USER" relType="ENDED_BY" relatedToTime="t32" timeID="t33" />
+<TLINK eventInstanceID="ei211" lid="l12" origin="USER" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei215" lid="l14" origin="USER" relType="SIMULTANEOUS" relatedToEventInstance="ei211" />
+<SLINK eventInstanceID="ei222" lid="l16" relType="EVIDENTIAL" subordinatedEventInstance="ei223" />
+<SLINK eventInstanceID="ei230" lid="l17" relType="EVIDENTIAL" subordinatedEventInstance="ei231" />
+<SLINK eventInstanceID="ei215" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei216" />
+<SLINK eventInstanceID="ei220" lid="l20" relType="EVIDENTIAL" subordinatedEventInstance="ei221" />
+<SLINK eventInstanceID="ei227" lid="l21" relType="MODAL" subordinatedEventInstance="ei228" />
+<SLINK eventInstanceID="ei226" lid="l22" relType="EVIDENTIAL" subordinatedEventInstance="ei227" />
+<SLINK eventInstanceID="ei211" lid="l23" relType="EVIDENTIAL" subordinatedEventInstance="ei212" />
+<SLINK eventInstanceID="ei212" lid="l24" relType="MODAL" subordinatedEventInstance="ei213" />
+<SLINK eventInstanceID="ei222" lid="l25" relType="EVIDENTIAL" subordinatedEventInstance="ei224" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei211" relatedToEventInstance="ei215" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei211" relatedToEventInstance="ei220" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei211" relatedToEventInstance="ei222" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei211" relatedToEventInstance="ei229" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei211" relatedToTime="t34" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei215" relatedToEventInstance="ei220" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei215" relatedToEventInstance="ei222" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei215" relatedToEventInstance="ei229" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei215" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei215" relatedToTime="t34" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei220" relatedToEventInstance="ei222" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei220" relatedToEventInstance="ei226" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei220" relatedToEventInstance="ei230" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei222" relatedToEventInstance="ei229" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei222" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei222" relatedToTime="t34" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei226" relatedToEventInstance="ei229" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei226" relatedToTime="t34" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei229" relatedToEventInstance="ei230" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei229" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei229" relatedToTime="t34" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei230" relatedToTime="t34" /><TLINK deduced="true" relType="IS_INCLUDED" timeID="t0" relatedToTime="t34" /></TimeML>

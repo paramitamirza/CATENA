@@ -1,0 +1,94 @@
+# FILE: wsj_0122.tml.txp
+# DATE: 1989-11-02T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1989-11-02	O	O	O	O	O	tmx0	B-DATE	1989-11-02	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+Young	t1	1	NP0	young	t2:SUFFIX	O	O	O	organization	O	O	O	O	O	say	A0	B-NP	O	O	young+n+sing	O	O	
+'s	t2	1	POS	's	O	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	have+v+indic+pres+sing3	O	O	
+Market	t3	1	NP0	market	O	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	market+n+sing	O	O	
+Co.	t4	1	NP0	co.	t1:NMOD||t3:NAME||t5:P||t7:APPO||t15:P	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	O	O	O	
+,	t5	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A0	O	O	O	punc	O	O	
+a	t6	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	a+art	O	O	
+wholesaler	t7	1	NN1	wholesaler	t6:NMOD||t8:NMOD	O	O	O	O	O	O	A0	A1	O	say	A0	I-NP	O	O	wholesaler+n+sing	O	O	
+of	t8	1	PRF	of	t9:PMOD	O	O	O	O	O	O	O	O	O	say	A0	B-PP	O	O	of+prep	O	O	
+spirits	t9	1	NN2	spirit	t10:P||t11:COORD	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	spirit+n+plur	O	O	
+,	t10	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A0	O	O	O	punc	O	O	
+wines	t11	1	NN2	wine	t12:COORD	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	wine+n+plur	O	O	
+and	t12	1	CJC	and	t14:CONJ	O	O	O	O	O	O	O	O	O	say	A0	O	O	O	and+conj	O	O	
+other	t13	1	AJ0	other	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	other+adj+zero	O	O	
+goods	t14	1	NN2	good	t13:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	goods+n+plur	O	O	
+,	t15	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A0	O	O	O	punc	O	O	
+said	t16	1	VVD	say	t4:SBJ||t18:OBJ||t34:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e1:tmx0:BEFORE||e1:e2:NONE||e1:e3:NONE	
+it	t17	1	PNP	it	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	it+pron	O	O	
+will	t18	1	VM0	will	t17:SBJ||t19:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	will+v+indic+pres+no3sing	FUTURE+NONE+pos	O	
+merge	t19	1	VVB	merge	t20:ADV	O	O	O	O	OCCURRENCE	e2	A1	AM-MOD	A2	say	A1	I-VP	O	O	merge+v+indic+pres+no3sing	FUTURE+NONE+pos	e2:e3:AFTER||e2:tmx0:NONE	
+with	t20	1	PRP	with	t23:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	with+prep	O	O	
+a	t21	1	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	a+art	O	O	
+new	t22	1	AJ0	new	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	new+adj+zero	O	O	
+corporation	t23	1	NN1	corporation	t21:NMOD||t22:NMOD||t24:APPO	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	corporation+n+sing	O	O	
+formed	t24	1	VVN	form	t25:LGS	O	O	O	O	OCCURRENCE	e3	A1	A0	O	say	A1	B-VP	O	O	form+v+part+past	PASTPART+NONE+pos	e3:tmx0:NONE	
+by	t25	1	PRP	by	t28:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	by+prep	O	O	
+the	t26	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+Underwood	t27	1	NP0	underwood	O	O	O	O	person	O	O	O	O	O	say	A1	I-NP	O	O	underwood+n+sing	O	O	
+family	t28	1	NN1	family	t26:NMOD||t27:NMOD||t29:P||t31:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	family+n+sing	O	O	
+,	t29	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	
+which	t30	1	DTQ	which	O	O	O	O	O	O	O	O	O	O	say	A1	B-SBAR	O	O	which+pron	O	O	
+controls	t31	1	NN0	control	t30:SBJ||t32:OBJ	O	O	O	O	O	O	A0	R-A0	A1	say	A1	B-VP	O	O	control+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+Young	t32	1	NP0	young	t33:SUFFIX	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	young+n+sing	O	O	
+'s	t33	1	POS	's	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	
+.	t34	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+Under	t35	2	PRP	under	t36:PMOD	O	O	O	O	O	O	O	O	O	receive	AM-LOC	B-PP	O	O	under+prep	O	O	
+terms	t36	2	NN2	term	t37:NMOD	O	O	O	O	O	O	A1	O	O	receive	AM-LOC	B-NP	O	O	term+n+plur	O	O	
+of	t37	2	PRF	of	t39:PMOD	O	O	O	O	O	O	O	O	O	receive	AM-LOC	B-PP	O	O	of+prep	O	O	
+the	t38	2	AT0	the	O	O	O	O	O	O	O	O	O	O	receive	AM-LOC	B-NP	O	O	the+art	O	O	
+agreement	t39	2	NN1	agreement	t38:NMOD	O	O	O	O	OCCURRENCE	e11	O	O	O	receive	AM-LOC	I-NP	O	O	agreement+n+sing	O	e11:tmx0:IS_INCLUDED||e11:e5:NONE||e11:e6:NONE||e11:e8:NONE||e11:tmx13:NONE	
+,	t40	2	PUN	,	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	O	O	O	punc	O	O	
+shareholders	t41	2	NN2	shareholder	t42:APPO	O	O	O	O	O	O	O	O	O	receive	A0	B-NP	O	O	shareholder+n+plur	O	O	
+other	t42	2	AJ0	other	t43:AMOD	O	O	O	O	O	O	O	O	O	receive	A0	B-ADJP	O	O	other+adj+zero	O	O	
+than	t43	2	PRP	than	t45:PMOD	O	O	O	O	O	O	O	O	O	receive	A0	B-PP	O	O	than+conj	O	O	
+the	t44	2	AT0	the	O	O	O	O	O	O	O	O	O	O	receive	A0	B-NP	O	O	the+art	O	O	
+Underwoods	t45	2	NP0	underwoods	t44:NMOD	O	O	O	O	O	O	O	O	O	receive	A0	I-NP	O	O	underwood+n+plur	O	O	
+will	t46	2	VM0	will	t35:LOC||t40:P||t41:SBJ||t47:VC||t60:P	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-VP	mainVb	O	will+v+indic+pres+no3sing	FUTURE+NONE+pos	O	
+receive	t47	2	VVB	receive	t48:OBJ||t52:TMP	O	O	O	O	OCCURRENCE	e5	AM-LOC	A0	AM-MOD	receive	AM-MOD	I-VP	mainVb	O	receive+v+indic+pres+no3sing	FUTURE+NONE+pos	e5:e6:AFTER||e5:e8:NONE||e5:tmx13:NONE||e5:tmx0:NONE||e5:e1:NONE	
+$	t48	2	PUN	$	t49:NMOD||t51:ADV	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	$+punc	O	O	
+3,500	t49	2	CRD	3,500	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	O	O	O	
+a	t50	2	AT0	a	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	a+art	O	O	
+share	t51	2	NN1	share	t50:NMOD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	share+n+sing	O	O	
+at	t52	2	PRP	at	t53:PMOD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-PP	O	O	at+prep	O	O	
+closing	t53	2	NN1	closing	t54:P||t56:NMOD	O	O	O	O	OCCURRENCE	e6	O	O	O	receive	AM-MOD	B-NP	O	O	closing+n+sing	O	e6:e8:NONE||e6:tmx0:NONE	
+,	t54	2	PUN	,	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	O	O	O	punc	O	O	
+which	t55	2	DTQ	which	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-SBAR	O	O	which+pron	O	O	
+is	t56	2	NN0	be	t55:SBJ||t57:VC	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-VP	O	O	be+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+expected	t57	2	VVN	expect	t58:TMP	O	O	O	O	OCCURRENCE	e8	A1	R-A1	AM-TMP	receive	AM-MOD	I-VP	O	O	expect+v+part+past	PRESENT+NONE+pos	e8:tmx0:IS_INCLUDED||e8:tmx13:NONE	
+in	t58	2	PRP	in	t59:PMOD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-PP	O	O	in+prep	O	O	
+December	t59	2	NP0	december	O	tmx13	B-DATE	1989-12	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	december+n+sing	O	tmx13:e6:INCLUDES	
+.	t60	2	PUN	.	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	O	O	O	.+punc	O	O	
+
+The	t61	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	
+Underwood	t62	3	NP0	underwood	O	O	O	O	person	O	O	O	O	O	family	A1	I-NP	O	O	underwood+n+sing	O	O	
+family	t63	3	NN1	family	t61:NMOD||t62:NMOD	O	O	O	O	O	O	A1	O	O	say	A0	I-NP	O	O	family+n+sing	O	O	
+said	t64	3	VVD	say	t63:SBJ||t65:OBJ||t85:P	O	O	O	O	REPORTING	e9	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e9:e1:SIMULTANEOUS||e9:e14:NONE||e9:tmx0:NONE||e9:e5:NONE	
+that	t65	3	CJT	that	t78:SUB	O	O	O	O	O	O	O	O	O	say	A1	B-SBAR	O	O	that+conj	O	O	
+holders	t66	3	NN2	holder	t67:NMOD	O	O	O	O	O	O	A0	A1	O	say	A1	B-NP	O	O	holder+n+plur	O	O	
+of	t67	3	PRF	of	t68:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+more	t68	3	AJC	more	t69:NMOD	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	more+adj+zero	O	O	
+than	t69	3	PRP	than	t71:PMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	than+conj	O	O	
+a	t70	3	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	a+art	O	O	
+majority	t71	3	NN1	majority	t70:NMOD||t72:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	majority+n+sing	O	O	
+of	t72	3	PRF	of	t74:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+the	t73	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+stock	t74	3	NN1	stock	t73:NMOD||t75:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	stock+n+sing	O	O	
+of	t75	3	PRF	of	t77:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+the	t76	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+company	t77	3	NN1	company	t76:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	company+n+sing	O	O	
+have	t78	3	VVI	have	t66:SBJ||t79:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	have+v+indic+pres+no3sing	PRESENT+PERFECTIVE+pos	O	
+approved	t79	3	VVN	approve	t81:OBJ||t82:LGS	O	O	O	O	OCCURRENCE	e10	A0	A1	A0	say	A1	I-VP	O	O	approve+v+part+past	PRESENT+PERFECTIVE+pos	e10:e9:BEFORE||e10:e14:NONE||e10:tmx0:NONE	
+the	t80	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+transaction	t81	3	NN1	transaction	t80:NMOD	O	O	O	O	OCCURRENCE	e14	A0	A0	O	say	A1	I-NP	O	O	transaction+n+sing	O	e14:e2:SIMULTANEOUS||e14:tmx0:NONE	
+by	t82	3	PRP	by	t84:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	by+prep	O	O	
+written	t83	3	AJ0	written	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	written+adj+zero	O	O	
+consent	t84	3	NN1	consent	t83:NMOD	O	O	O	O	O	O	AM-MNR	O	O	say	A1	I-NP	O	O	consent+n+sing	O	O	
+.	t85	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

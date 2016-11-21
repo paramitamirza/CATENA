@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0344</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">11/01/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891101-0020 = 891101 891101-0020.
+Publishing Firm Hires @ Financial Adviser @ To Weigh Alternatives 11/01/89 WALL STREET JOURNAL (J) PSSP EARNINGS (ERN) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) LOS ANGELES
+</EXTRAINFO>
+
+<TEXT>
+Price Stern Sloan Inc. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2">hired</EVENT> an investment banking firm to <EVENT class="I_ACTION" eid="e4">assist</EVENT> in <EVENT class="OCCURRENCE" eid="e5">evaluating</EVENT> restructuring or merger alternatives and <EVENT class="REPORTING" eid="e6">reported</EVENT> a net <EVENT class="STATE" eid="e7">loss</EVENT> of $8.1 million, or $2.14 a share, for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t41" type="DATE" value="1989-Q3">the third quarter</TIMEX3> ended <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t42" type="DATE" value="1989-09-30">Sept. 30</TIMEX3>.
+
+These results <EVENT class="STATE" eid="e62">compare</EVENT> with net income of $1.8 million, or 44 cents a share, for <TIMEX3 anchorTimeID="t41" functionInDocument="NONE" temporalFunction="true" tid="t46" type="DATE" value="1988-Q3">the corresponding period last year</TIMEX3>. <TIMEX3 anchorTimeID="t41" functionInDocument="NONE" temporalFunction="true" tid="t47" type="DATE" value="1989-Q3">This quarter</TIMEX3>'s <EVENT class="STATE" eid="e11">loss</EVENT> includes pretax <EVENT class="OCCURRENCE" eid="e13">charges</EVENT> of $4.9 million on the proposed discontinuation of the company's troubled British subsidiary, and $3.7 million of other write-offs the company <EVENT class="REPORTING" eid="e17">said</EVENT> were non-recurring and principally related to inventory, publishing advances and pre-publication costs. The publishing concern <EVENT class="REPORTING" eid="e21">said</EVENT> it <EVENT class="OCCURRENCE" eid="e22">retained</EVENT> the investment banking firm of Donaldson, Lufkin amp Jenrette Securities Inc. to <EVENT class="OCCURRENCE" eid="e23">act</EVENT> as its financial adviser, <EVENT class="I_ACTION" eid="e24">assisting</EVENT> in the <EVENT class="OCCURRENCE" eid="e25">evaluation</EVENT> of various financial and strategic alternatives, including debt refinancing, raising capital, recapitalization, a merger or sale of the company.
+
+The company also <EVENT class="OCCURRENCE" eid="e30">retained</EVENT> attorney Martin P. Levin, a director of the company and former head of the Times-Mirror Publishing Group, as an adviser.
+
+Net sales for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t49" type="DATE" value="1989-Q3">this year's third quarter</TIMEX3> were $14 million, down from $21.4 million <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t53" type="DATE" value="1988">last year</TIMEX3>. The company <EVENT class="I_ACTION" eid="e31">attributed</EVENT> the <EVENT class="OCCURRENCE" eid="e32">decrease</EVENT> in part to the exclusion of the company's British sales from the current year's figures as a result of the subsidiary's status as a proposed discontinued operation and, in part, to lower sales in certain key foreign and domestic accounts. U.K. <EVENT class="STATE" eid="e3000">sales</EVENT> for <TIMEX3 anchorTimeID="t41" functionInDocument="NONE" temporalFunction="true" tid="t58" type="DATE" value="1988-Q3">last year's quarter</TIMEX3> were about $3 million.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2141" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2142" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2143" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2144" eventID="e5" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2145" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2146" eventID="e7" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2148" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2149" eventID="e13" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2150" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2151" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2152" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2153" eventID="e23" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2154" eventID="e24" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2155" eventID="e25" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2156" eventID="e30" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2159" eventID="e31" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2160" eventID="e32" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2170" eventID="e62" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei2159" lid="l28" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2170" lid="l25" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2141" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2141" lid="l2" relType="SIMULTANEOUS" relatedToEventInstance="ei2145" />
+<TLINK eventInstanceID="ei2146" lid="l3" relType="DURING" relatedToTime="t41" />
+<TLINK eventInstanceID="ei2146" lid="l4" relType="ENDED_BY" relatedToTime="t42" />
+<TLINK lid="l5" relType="DURING" relatedToEventInstance="ei2148" timeID="t47" />
+<TLINK eventInstanceID="ei2148" lid="l6" relType="IDENTITY" relatedToEventInstance="ei2146" />
+<TLINK eventInstanceID="ei2148" lid="l7" relType="INCLUDES" relatedToEventInstance="ei2149" />
+<TLINK eventInstanceID="ei2150" lid="l8" relType="INCLUDES" relatedToEventInstance="ei2148" />
+<TLINK eventInstanceID="ei2151" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2153" lid="l10" relType="INCLUDES" relatedToEventInstance="ei2154" />
+<TLINK eventInstanceID="ei2156" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei2152" />
+<SLINK eventInstanceID="ei2141" lid="l15" relType="EVIDENTIAL" subordinatedEventInstance="ei2142" />
+<SLINK eventInstanceID="ei2142" lid="l16" relType="MODAL" subordinatedEventInstance="ei2143" />
+<SLINK eventInstanceID="ei2143" lid="l17" relType="MODAL" subordinatedEventInstance="ei2144" />
+<SLINK eventInstanceID="ei2145" lid="l18" relType="EVIDENTIAL" subordinatedEventInstance="ei2146" />
+<SLINK eventInstanceID="ei2151" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei2152" />
+<SLINK eventInstanceID="ei2152" lid="l20" relType="MODAL" subordinatedEventInstance="ei2153" />
+<SLINK eventInstanceID="ei2154" lid="l21" relType="MODAL" subordinatedEventInstance="ei2155" />
+<SLINK eventInstanceID="ei2159" lid="l22" relType="FACTIVE" subordinatedEventInstance="ei2160" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2141" relatedToEventInstance="ei2170" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2145" relatedToEventInstance="ei2170" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2145" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2146" relatedToEventInstance="ei2148" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2146" relatedToEventInstance="ei2149" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2146" relatedToEventInstance="ei2150" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2148" relatedToEventInstance="ei2150" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei2148" relatedToTime="t42" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2149" relatedToEventInstance="ei2150" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2150" relatedToTime="t42" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2151" relatedToEventInstance="ei2170" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2152" relatedToEventInstance="ei2156" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2159" relatedToEventInstance="ei2170" /></TimeML>

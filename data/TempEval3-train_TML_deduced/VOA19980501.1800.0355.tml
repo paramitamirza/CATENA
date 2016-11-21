@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>VOA19980501.1800.0355</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-05-01">19980501</TIMEX3></DCT>
+
+<EXTRAINFO>
+VOA19980501.1800.0355 NEWS STORY
+</EXTRAINFO>
+
+<TEXT>
+Israeli Prime Minister Benjamin Netanyahu <EVENT class="REPORTING" eid="e1" stem="say">says</EVENT> considerable gaps <EVENT class="ASPECTUAL" eid="e2" stem="remain">remain</EVENT> between Israeli and Palestinian positions before <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t19" type="DATE" value="1998-W19">next week</TIMEX3>'s <EVENT class="OCCURRENCE" eid="e22" stem="talk">talks</EVENT> in London. He and Palestinian leader Yasser Arafat <EVENT class="OCCURRENCE" eid="e3" stem="meet">meet</EVENT> separately <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t20" type="DATE" value="1998-05-04">Monday</TIMEX3> with US Secretary of State Madeleine Albright. At a news <EVENT class="OCCURRENCE" eid="e61" stem="conference">conference</EVENT> with US Vice President Al Gore in Jerusalem, Mr. Netanyahu <EVENT class="I_ACTION" eid="e4" stem="suggest">suggested</EVENT> Israel might be <EVENT class="I_STATE" eid="e24" stem="will">willing</EVENT> to <EVENT class="OCCURRENCE" eid="e25" stem="move">move</EVENT> a little on issues <EVENT class="I_STATE" eid="e6" stem="hold">holding</EVENT> up peace, but he <EVENT class="REPORTING" eid="e7" stem="say">said</EVENT> he <EVENT class="I_STATE" eid="e8" stem="expect">expects</EVENT> an equal <EVENT class="OCCURRENCE" eid="e27" stem="effort">effort</EVENT> from the Palestinians.
+
+If Israel is <EVENT class="I_ACTION" eid="e9" stem="ask">asked</EVENT> to uh <EVENT class="OCCURRENCE" eid="e10" stem="stretch">stretch</EVENT> itself on matters that are vital to its security concerns, then we must <EVENT class="PERCEPTION" eid="e12" stem="see">see</EVENT> an equal effort on the other side.
+
+Mr. Gore <EVENT class="I_ACTION" eid="e15" stem="call">called</EVENT> on Israel to <EVENT class="ASPECTUAL" eid="e16" stem="continue">continue</EVENT> <EVENT class="OCCURRENCE" eid="e17" stem="take">taking</EVENT> risks for peace.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei160" eventID="e1" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei162" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei163" eventID="e22" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei164" eventID="e3" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei165" eventID="e61" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei166" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei167" eventID="e24" modality="might" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei168" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei169" eventID="e6" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei171" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei172" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei173" eventID="e27" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei174" eventID="e9" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei175" eventID="e10" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei176" eventID="e12" modality="must" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei177" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei178" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei179" eventID="e17" polarity="POS" pos="VERB" tense="PRESPART" />
+<TLINK eventInstanceID="ei163" lid="l1" origin="USER" relType="IS_INCLUDED" relatedToTime="t19" />
+<TLINK eventInstanceID="ei164" lid="l2" origin="USER" relType="IS_INCLUDED" relatedToTime="t20" />
+<TLINK eventInstanceID="ei166" lid="l4" origin="USER" relType="IS_INCLUDED" relatedToEventInstance="ei165" />
+<TLINK eventInstanceID="ei162" lid="l5" origin="USER" relType="BEFORE" relatedToEventInstance="ei163" />
+<TLINK eventInstanceID="ei174" lid="l6" origin="USER" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei177" lid="l7" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei171" lid="l9" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei169" lid="l10" origin="USER" relType="INCLUDES" relatedToEventInstance="ei168" />
+<TLINK eventInstanceID="ei160" lid="l11" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<SLINK eventInstanceID="ei174" lid="l12" relType="CONDITIONAL" subordinatedEventInstance="ei176" />
+<SLINK eventInstanceID="ei166" lid="l13" relType="MODAL" subordinatedEventInstance="ei167" />
+<SLINK eventInstanceID="ei167" lid="l14" relType="MODAL" subordinatedEventInstance="ei168" />
+<SLINK eventInstanceID="ei177" lid="l16" relType="MODAL" subordinatedEventInstance="ei178" />
+<SLINK eventInstanceID="ei174" lid="l17" relType="MODAL" subordinatedEventInstance="ei175" />
+<SLINK eventInstanceID="ei160" lid="l18" relType="EVIDENTIAL" subordinatedEventInstance="ei162" />
+<SLINK eventInstanceID="ei171" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei172" />
+<SLINK eventInstanceID="ei172" lid="l20" relType="MODAL" subordinatedEventInstance="ei173" />
+<ALINK eventInstanceID="ei178" lid="l22" relType="CONTINUES" relatedToEventInstance="ei179" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei160" relatedToEventInstance="ei174" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei165" relatedToEventInstance="ei166" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei168" relatedToEventInstance="ei169" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei171" relatedToEventInstance="ei174" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei174" relatedToEventInstance="ei177" /></TimeML>

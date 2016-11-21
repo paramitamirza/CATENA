@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0150</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0041 = 891102 891102-0041.
+Business Brief -- Primerica Corp.: @ A.L. Williams Corp.
+Merges @ Into Firm on Holders' Vote 11/02/89 WALL STREET JOURNAL (J) PA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+A.L. Williams Corp. was <EVENT class="OCCURRENCE" eid="e1">merged</EVENT> into Primerica Corp., New York, after a special <EVENT class="OCCURRENCE" eid="e2">meeting</EVENT> of Williams shareholders <EVENT class="I_ACTION" eid="e4">cleared</EVENT> the <EVENT class="OCCURRENCE" eid="e23">transaction</EVENT>, the companies <EVENT class="REPORTING" eid="e5">said</EVENT>.
+
+Primerica, which had <EVENT class="STATE" eid="e6">owned</EVENT> nearly 70% of Williams, will <EVENT class="OCCURRENCE" eid="e7">pay</EVENT> about 16.7 million shares, <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t25" type="DATE" value="PRESENT_REF">currently</TIMEX3> <EVENT class="STATE" eid="e8">valued</EVENT> at almost $472 million, for the rest of Williams. The financial-services company will <EVENT class="OCCURRENCE" eid="e9">pay</EVENT> 0.82 share for each Williams share.
+
+Williams shares, which were to be <EVENT class="OCCURRENCE" eid="e10">delisted</EVENT> from the New York Stock Exchange after the <EVENT class="OCCURRENCE" eid="e26">close</EVENT> of composite trading <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t21" type="DATE" value="1989-11-01">yesterday</TIMEX3>, <EVENT class="OCCURRENCE" eid="e11">closed</EVENT> at $23.25, off 12.5 cents. Primerica <EVENT class="I_ACTION" eid="e12">closed</EVENT> at $28.25, down 50 cents.
+
+Williams, Duluth, Ga., is an insurance and financial-services holding company. Its subsidiaries' services are marketed by closely held A.L. Williams amp Associates. Primerica, as expected, also <EVENT class="OCCURRENCE" eid="e27">acquired</EVENT> certain assets of the agency and <EVENT class="OCCURRENCE" eid="e17">assumed</EVENT> certain of its liabilities. Terms weren't <EVENT class="REPORTING" eid="e18">disclosed</EVENT>.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei137" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei138" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei139" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei140" eventID="e23" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei141" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei142" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei143" eventID="e7" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei144" eventID="e8" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei145" eventID="e9" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei146" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei147" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei148" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei149" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei150" eventID="e27" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei151" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei152" eventID="e18" polarity="NEG" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei143" lid="l1" relType="AFTER" relatedToTime="t0" />
+<TLINK lid="l2" relType="INCLUDES" relatedToTime="t0" timeID="t25" />
+<TLINK eventInstanceID="ei144" lid="l3" relType="IS_INCLUDED" relatedToTime="t25" />
+<TLINK eventInstanceID="ei138" lid="l4" relType="INCLUDES" relatedToEventInstance="ei139" />
+<TLINK eventInstanceID="ei145" lid="l5" relType="SIMULTANEOUS" relatedToEventInstance="ei143" />
+<TLINK eventInstanceID="ei145" lid="l6" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei146" lid="l7" relType="AFTER" relatedToEventInstance="ei147" />
+<TLINK eventInstanceID="ei147" lid="l9" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK lid="l10" relType="IBEFORE" relatedToTime="t0" timeID="t21" />
+<TLINK eventInstanceID="ei148" lid="l11" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei149" lid="l12" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei141" lid="l13" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei150" lid="l14" relType="SIMULTANEOUS" relatedToEventInstance="ei140" />
+<TLINK eventInstanceID="ei140" lid="l15" relType="IDENTITY" relatedToEventInstance="ei137" />
+<TLINK eventInstanceID="ei142" lid="l16" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei137" lid="l17" relType="AFTER" relatedToEventInstance="ei138" />
+<TLINK eventInstanceID="ei151" lid="l18" relType="SIMULTANEOUS" relatedToEventInstance="ei140" />
+<TLINK eventInstanceID="ei152" lid="l19" relType="IS_INCLUDED" relatedToTime="t0" />
+<SLINK eventInstanceID="ei139" lid="l20" relType="MODAL" subordinatedEventInstance="ei140" />
+<SLINK eventInstanceID="ei141" lid="l21" relType="EVIDENTIAL" subordinatedEventInstance="ei137" />
+
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei137" relatedToEventInstance="ei139" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei137" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei137" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei137" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei138" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei138" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei138" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei139" relatedToEventInstance="ei140" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei139" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei139" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei140" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei140" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei141" relatedToEventInstance="ei142" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei141" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei141" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei141" relatedToEventInstance="ei147" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei141" relatedToEventInstance="ei148" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei141" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei141" relatedToTime="t25" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei141" relatedToTime="t21" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei142" relatedToEventInstance="ei143" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei142" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei142" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei143" relatedToEventInstance="ei145" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei147" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei148" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei143" relatedToTime="t21" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToEventInstance="ei147" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToEventInstance="ei148" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToEventInstance="ei149" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei145" relatedToTime="t21" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei147" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei147" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei148" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei148" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei149" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei149" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei150" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei152" relatedToTime="t25" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei152" relatedToTime="t21" /><TLINK deduced="true" relType="IS_INCLUDED" timeID="t0" relatedToTime="t25" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t21" /></TimeML>

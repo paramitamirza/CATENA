@@ -1,0 +1,101 @@
+# FILE: ea980120.1830.0456.tml.txp
+# DATE: 1998-01-20T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	coevent		tlink	supersense	ss_ner	clink	csignal
+
+DCT_1998-01-20	O	O	O	O	O	tmx0	B-DATE	1998-01-20	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O
+
+The	t1	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	O	O	O	O	O
+Pentagon	t2	1	NP0	pentagon	t1:NMOD	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	pentagon+n+sing	O	O	O	noun.person	E:ORGANIZATION:GOVERNMENT	O	O
+said	t3	1	VVD	say	t2:SBJ||t4:TMP||t6:OBJ||t28:P	O	O	O	O	REPORTING	e1	A0	AM-TMP	A1	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	O	e1:tmx14:IS_INCLUDED||e1:tmx0:IS_INCLUDED||e1:e2:NONE||e1:e5:NONE	verb.communication	O	O	O
+today	t4	1	NN1	today	O	tmx14	B-DATE	1998-01-20	O	O	O	O	O	O	say	AM-TMP	B-NP	O	O	today+n+sing	O	O	O	noun.time	T:DATE:DATE	O	O
+it	t5	1	PNP	it	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	it+pron	O	O	O	O	O	O	O
+will	t6	1	VM0	will	t5:SBJ||t7:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	will+v+indic+pres+_	PRESENT+NONE+pos	O	O	O	O	O	O
+re-examine	t7	1	VVB	re-examine	t9:OBJ||t10:OPRD||t23:P||t24:ADV	O	O	O	O	I_ACTION	e2	A0	AM-MOD	A1	say	A1	I-VP	O	O	O	PRESENT+NONE+pos	O	e2:e5:NONE||e2:tmx14:NONE||e2:tmx0:NONE	verb.communication	O	O	O
+the	t8	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+question	t9	1	NN1	question	t8:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	question+n+sing	O	O	O	noun.communication	O	O	O
+are	t10	1	VVI	be	t12:PRD||t13:LOC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	be+v+indic+pres+no3sing	PRESENT+NONE+pos	O	O	verb.stative	O	O	O
+the	t11	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+remains	t12	1	NN2	remains	t11:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	remains+n+sing	O	O	O	noun.object	O	O	O
+inside	t13	1	PRP	inside	t15:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	inside+prep	O	O	O	O	O	O	O
+the	t14	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+Tomb	t15	1	NP0	tomb	t14:NMOD||t16:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	tomb+n+sing	O	O	O	noun.artifact	E:ORGANIZATION:MUSEUM	O	O
+of	t16	1	PRF	of	t18:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	O	O	O	O	O
+the	t17	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+Unknown	t18	1	NP0	unknown	t17:NMOD||t19:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	unknown+n+sing	O	O	O	noun.location	E:ORGANIZATION:OTHER	O	O
+from	t19	1	PRP	from	t22:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	from+prep	O	O	O	O	O	O	O
+the	t20	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+Vietnam	t21	1	NP0	vietnam	O	O	O	O	misc	O	O	O	O	O	say	A1	I-NP	O	O	vietnam+pn	O	O	O	noun.act	E:EVENT:WAR	O	O
+War	t22	1	NP0	war	t20:NMOD||t21:NAME	O	O	O	misc	O	O	O	O	O	say	A1	I-NP	O	O	war+n+sing	O	O	O	noun.act	E:EVENT:WAR	O	O
+,	t23	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	O	O	O	O	O
+in	t24	1	PRP	in	t25:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	Expansion	in+prep	O	O	O	adv.all	O	O	O
+fact	t25	1	NN1	fact	t26:P||t27:APPO	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	Expansion	fact+n+sing	O	O	O	adv.all	O	O	O
+,	t26	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	O	O	O	O	O
+known	t27	1	VVN	know	O	O	O	O	O	OCCURRENCE	e5	A1	O	O	say	A1	B-VP	O	O	know+v+part+past	PASTPART+NONE+pos	O	e5:tmx0:IS_INCLUDED||e5:tmx14:NONE	adj.all	O	O	O
+?	t28	1	PUN	?	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O
+
+CBS	t29	2	NP0	cbs	O	O	O	O	organization	O	O	O	O	O	report	A0	B-NP	O	O	O	O	O	O	O	E:ORGANIZATION:CORPORATION	O	O
+News	t30	2	NP0	news	t29:NAME	O	O	O	organization	O	O	O	O	O	report	A0	I-NP	O	O	news+n+sing	O	O	O	noun.communication	E:ORGANIZATION:CORPORATION	O	O
+first	t31	2	AV0	first	O	O	O	O	O	O	O	O	O	O	report	AM-TMP	B-ADVP	O	O	first+adv	O	O	O	adv.all	O	O	O
+reported	t32	2	VVD	report	t30:SBJ||t31:TMP||t34:TMP||t35:OBJ||t48:P	O	O	O	O	REPORTING	e6	A0	AM-TMP	AM-TMP	O	O	B-VP	mainVb	O	report+v+indic+past	PAST+NONE+pos	O	e6:tmx15:IS_INCLUDED||e6:e1:BEFORE||e6:e7:NONE||e6:tmx0:NONE	verb.communication	O	O	O
+last	t33	2	AJ0	last	O	tmx15	B-TIME	1998-01-19TNI	O	O	O	O	O	O	report	AM-TMP	B-NP	O	O	last+adj+zero	O	O	O	adj.all	T:TIME	O	O
+night	t34	2	NN1	night	t33:NMOD	tmx15	I-TIME	1998-01-19TNI	O	O	O	O	O	O	report	AM-TMP	I-NP	O	O	night+n+sing	O	O	O	noun.time	T:TIME	O	O
+that	t35	2	CJT	that	t38:SUB	O	O	O	O	O	O	O	O	O	report	A1	B-SBAR	O	O	that+pron	O	O	O	O	O	O	O
+the	t36	2	AT0	the	O	O	O	O	O	O	O	O	O	O	report	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+tomb	t37	2	NN1	tomb	t36:NMOD	O	O	O	O	O	O	O	O	O	report	A1	I-NP	O	O	tomb+n+sing	O	O	O	noun.artifact	O	O	O
+may	t38	2	VM0	may	t37:SBJ||t39:VC	O	O	O	O	O	O	O	O	O	report	A1	B-VP	O	O	may+v+indic+pres+_	PRESENT+NONE+pos	O	O	O	O	O	O
+contain	t39	2	VVB	contain	t41:OBJ	O	O	O	O	OCCURRENCE	e7	A0	AM-MOD	A1	report	A1	I-VP	O	O	contain+v+indic+pres+no3sing	PRESENT+NONE+pos	O	e7:tmx15:NONE||e7:tmx0:NONE	verb.stative	O	O	O
+the	t40	2	AT0	the	O	O	O	O	O	O	O	O	O	O	report	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+remains	t41	2	NN2	remains	t40:NMOD||t42:NMOD	O	O	O	O	O	O	A1	O	O	report	A1	I-NP	O	O	remains+n+sing	O	O	O	noun.object	O	O	O
+of	t42	2	PRF	of	t45:PMOD	O	O	O	O	O	O	O	O	O	report	A1	B-PP	O	O	of+prep	O	O	O	O	O	O	O
+Air	t43	2	NP0	air	O	O	O	O	organization	O	O	O	O	O	report	A1	B-NP	O	O	air+n+sing	O	O	O	noun.group	E:ORGANIZATION:GOVERNMENT	O	O
+Force	t44	2	NP0	force	t43:NAME	O	O	O	organization	O	O	O	O	O	report	A1	I-NP	O	O	force+n+sing	O	O	O	noun.group	E:ORGANIZATION:GOVERNMENT	O	O
+pilot	t45	2	NN1	pilot	t44:NMOD||t47:APPO	O	O	O	O	O	O	A2	A0	A1	report	A1	I-NP	O	O	pilot+n+sing	O	O	O	noun.person	E:PER_DESC	O	O
+Michael	t46	2	NP0	michael	O	O	O	O	person	O	O	O	O	O	report	A1	I-NP	O	O	michael+pn	O	O	O	noun.person	E:PERSON	O	O
+Blassie	t47	2	NP0	blassie	t46:NAME	O	O	O	person	O	O	O	O	O	report	A1	I-NP	O	O	O	O	O	O	noun.person	E:PERSON	O	O
+.	t48	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O	O	O
+
+There	t49	3	EX0	there	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	there+n+sing	O	O	O	O	O	O	O
+was	t50	3	VVD	be	t49:SBJ||t52:PRD||t57:PRP||t70:P	O	O	O	O	STATE	e20	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	e20:e9:NONE||e20:tmx0:NONE||e20:e6:NONE	verb.stative	O	O	O
+a	t51	3	AT0	a	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	a+art	O	O	O	O	O	O	O
+suspicion	t52	3	NN1	suspicion	t51:NMOD||t55:NMOD	O	O	O	O	OCCURRENCE	ec8	O	O	O	O	O	I-NP	O	O	suspicion+n+sing	NONE+NONE+pos	O	O	noun.cognition	O	O	O
+the	t53	3	AT0	the	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	the+art	O	O	O	O	O	O	O
+body	t54	3	NN1	body	t53:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	body+n+sing	O	O	O	noun.body	E:PER_DESC	O	O
+was	t55	3	VVD	be	t54:SBJ||t56:PRD	O	O	O	O	STATE	ec9	O	O	O	O	O	B-VP	O	O	be+v+indic+past	PAST+NONE+pos	O	O	verb.stative	O	O	O
+Blassie	t56	3	NP0	blassie	O	O	O	O	person	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	O	noun.location	E:PERSON	O	O
+because	t57	3	PRP	because	t63:SUB	O	O	O	O	O	O	O	O	O	O	O	B-SBAR	O	Contingency	because+conj	O	O	O	O	O	O	cs10
+his	t58	3	DPS	his	O	O	O	O	O	O	O	O	O	O	find	A1	B-NP	O	O	hi+n+plur	O	O	O	O	O	O	O
+uniform	t59	3	NN1	uniform	t58:NMOD||t60:COORD	O	O	O	O	O	O	O	O	O	find	A1	I-NP	O	O	uniform+n+sing	O	O	O	noun.artifact	O	O	O
+and	t60	3	CJC	and	t62:CONJ	O	O	O	O	O	O	O	O	O	find	A1	I-NP	O	O	and+conj	O	O	O	O	O	O	O
+ID	t61	3	AJ0	id	O	O	O	O	O	O	O	O	O	O	find	A1	I-NP	O	O	id+n+sing	O	O	O	O	O	O	O
+card	t62	3	NN1	card	t61:NMOD	O	O	O	O	O	O	O	O	O	find	A1	I-NP	O	O	card+n+sing	O	O	O	noun.artifact	O	O	O
+were	t63	3	VVD	be	t59:SBJ||t64:VC	O	O	O	O	O	O	O	O	O	O	O	B-VP	O	O	be+v+indic+past	PAST+NONE+pos	O	O	O	O	O	O
+found	t64	3	VVN	find	t65:LOC||t68:LOC	O	O	O	O	OCCURRENCE	e9	A1	AM-LOC	AM-LOC	O	O	I-VP	O	O	find+v+part+past	PAST+NONE+pos	O	e9:tmx0:BEFORE	verb.possession	O	e9:ec8:cs10	O
+near	t65	3	PRP	near	t67:PMOD	O	O	O	O	O	O	O	O	O	find	AM-LOC	B-PP	O	O	near+prep	O	O	O	O	O	O	O
+the	t66	3	AT0	the	O	O	O	O	O	O	O	O	O	O	find	AM-LOC	B-NP	O	O	the+art	O	O	O	O	O	O	O
+body	t67	3	NN1	body	t66:NMOD	O	O	O	O	O	O	O	O	O	find	AM-LOC	I-NP	O	O	body+n+sing	O	O	O	noun.body	E:ORG_DESC:GOVERNMENT	O	O
+in	t68	3	PRP	in	t69:PMOD	O	O	O	O	O	O	O	O	O	find	AM-LOC	B-PP	O	O	in+prep	O	O	O	O	O	O	O
+Vietnam	t69	3	NP0	vietnam	O	O	O	O	location	O	O	O	O	O	find	AM-LOC	B-NP	O	O	vietnam+pn	O	O	O	noun.location	E:GPE:COUNTRY	O	O
+.	t70	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O	O	O
+
+But	t71	4	CJC	but	O	O	O	O	O	O	O	O	O	O	lose	AM-DIS	O	O	Comparison	but+conj	O	O	O	O	O	O	O
+subsequently	t72	4	AV0	subsequently	O	O	O	O	O	O	O	O	O	O	lose	AM-TMP	B-ADVP	O	O	subsequently+adv	O	O	O	adv.all	O	O	O
+,	t73	4	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	O	O	O	O
+they	t74	4	PNP	they	O	O	O	O	O	O	O	O	O	O	lose	A1	B-NP	O	O	they+pron	O	O	O	O	O	O	O
+were	t75	4	VVD	be	t71:DEP||t72:TMP||t73:P||t74:SBJ||t76:VC||t77:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	O	O	O	O	O
+lost	t76	4	VVN	lose	O	O	O	O	O	OCCURRENCE	e10	AM-DIS	AM-TMP	A1	O	O	I-VP	mainVb	O	lose+v+part+past	PAST+NONE+pos	O	e10:e9:AFTER||e10:tmx0:NONE||e10:e20:NONE	verb.possession	O	O	O
+.	t77	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O	O	O
+
+Blassie	t78	5	NP0	blassie	t79:SUFFIX	O	O	O	person	O	O	O	O	O	mother	A1	B-NP	O	O	O	O	O	O	noun.person	E:ORGANIZATION:CORPORATION	O	O
+'s	t79	5	POS	's	O	O	O	O	O	O	O	O	O	O	mother	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	O	O	O	O
+mother	t80	5	NN1	mother	t78:NMOD	O	O	O	O	O	O	A1	A0	O	mother	A0	I-NP	O	O	mother+n+sing	O	O	O	noun.person	E:PER_DESC	O	O
+now	t81	5	AV0	now	O	tmx16	B-DATE	PRESENT_REF	O	O	O	O	O	O	want	AM-TMP	B-ADVP	O	O	now+adv	O	O	tmx16:e11:INCLUDES	adv.all	O	O	O
+wants	t82	5	NN0	want	t80:SBJ||t81:TMP||t84:OBJ||t91:P	O	O	O	O	I_STATE	e11	A0	AM-TMP	A1	O	O	B-VP	mainVb	O	want+v+indic+pres+sing3	PRESENT+NONE+pos	O	e11:tmx0:IS_INCLUDED||e11:tmx15:AFTER||e11:e12:NONE||e11:e10:NONE	verb.emotion	O	O	O
+the	t83	5	AT0	the	O	O	O	O	O	O	O	O	O	O	want	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+remains	t84	5	NN2	remains	t83:NMOD||t85:LOC	O	O	O	O	O	O	O	O	O	want	A1	I-NP	O	O	remains+n+sing	O	O	O	noun.object	O	O	O
+in	t85	5	PRP	in	t87:PMOD	O	O	O	O	O	O	O	O	O	want	A1	B-PP	O	O	in+prep	O	O	O	O	O	O	O
+the	t86	5	AT0	the	O	O	O	O	O	O	O	O	O	O	want	A1	B-NP	O	O	the+art	O	O	O	O	O	O	O
+tomb	t87	5	NN1	tomb	t86:NMOD||t88:APPO	O	O	O	O	O	O	O	O	O	want	A1	I-NP	O	O	tomb+n+sing	O	O	O	noun.artifact	O	O	O
+tested	t88	5	VVN	test	t89:ADV	O	O	O	O	OCCURRENCE	e12	A1	A2	O	want	A1	B-VP	O	O	test+v+part+past	PASTPART+NONE+pos	O	e12:tmx16:NONE	verb.social	O	O	O
+for	t89	5	PRP	for	t90:PMOD	O	O	O	O	O	O	O	O	O	want	A1	B-PP	O	O	for+prep	O	O	O	O	O	O	O
+DNA	t90	5	NP0	dna	O	O	O	O	O	O	O	O	O	O	want	A1	B-NP	O	O	dna+n+sing	O	O	O	noun.substance	E:SUBSTANCE:OTHER	O	O
+.	t91	5	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O	O	O

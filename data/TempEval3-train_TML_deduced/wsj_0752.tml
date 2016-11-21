@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0752</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-27">10/27/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891027-0143 = 891027 891027-0143.
+Dividend News: @ AEP Industries Inc. 10/27/89 WALL STREET JOURNAL (J) AEPI DIVIDENDS (DIV)
+</EXTRAINFO>
+
+<TEXT>
+AEP INDUSTRIES Inc. directors <EVENT class="I_ACTION" eid="e1">authorized</EVENT> a 3-for-2 <EVENT class="OCCURRENCE" eid="e2">split</EVENT> of the common, payable <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t18" type="DATE" value="1989-12-07">Dec. 7</TIMEX3> to stock of record <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t19" type="DATE" value="1989-11-22">Nov. 22</TIMEX3>. The <EVENT class="OCCURRENCE" eid="e4">split</EVENT> was <EVENT class="I_STATE" eid="e5">aimed</EVENT> at <EVENT class="I_ACTION" eid="e7">boosting</EVENT> the stock's liquidity, <EVENT class="REPORTING" eid="e8">said</EVENT> Brendan Barba, chairman of the Moonachie, N.J., maker of plastic film products. After the <EVENT class="OCCURRENCE" eid="e9">split</EVENT>, the company will <EVENT class="STATE" eid="e14">have</EVENT> more than 4.7 million shares outstanding. In national over-the-counter <EVENT class="OCCURRENCE" eid="e10">trading</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t20" type="DATE" value="1989-10-26">yesterday</TIMEX3>, AEP shares <EVENT class="OCCURRENCE" eid="e11">closed</EVENT> at $21.25, down 50 cents.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei95" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei96" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei99" eventID="e4" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei100" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei101" eventID="e7" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei103" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei104" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei105" eventID="e14" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei106" eventID="e10" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei107" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei103" lid="l18" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei95" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei96" lid="l2" relType="IDENTITY" relatedToEventInstance="ei99" />
+<TLINK eventInstanceID="ei99" lid="l3" relType="IDENTITY" relatedToEventInstance="ei104" />
+<TLINK eventInstanceID="ei106" lid="l4" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei99" lid="l9" relType="IS_INCLUDED" relatedToEventInstance="ei100" />
+<TLINK eventInstanceID="ei106" lid="l11" relType="ENDED_BY" relatedToEventInstance="ei107" />
+<TLINK eventInstanceID="ei106" lid="l12" relType="IS_INCLUDED" relatedToTime="t20" />
+<TLINK eventInstanceID="ei105" lid="l13" relType="AFTER" relatedToEventInstance="ei104" />
+<SLINK eventInstanceID="ei95" lid="l14" relType="MODAL" subordinatedEventInstance="ei96" />
+<SLINK eventInstanceID="ei100" lid="l15" relType="MODAL" subordinatedEventInstance="ei101" />
+<SLINK eventInstanceID="ei103" lid="l16" relType="EVIDENTIAL" subordinatedEventInstance="ei100" />
+
+<TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei96" relatedToEventInstance="ei100" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei96" relatedToEventInstance="ei104" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei96" relatedToEventInstance="ei105" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei99" relatedToEventInstance="ei105" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei100" relatedToEventInstance="ei104" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei104" relatedToEventInstance="ei105" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei107" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei107" relatedToTime="t20" /></TimeML>

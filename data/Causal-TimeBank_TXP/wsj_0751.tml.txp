@@ -1,0 +1,103 @@
+# FILE: wsj_0751.tml.txp
+# DATE: 1989-10-27T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	coevent		tlink	clink	csignal
+
+DCT_1989-10-27	O	O	O	O	O	tmx0	B-DATE	1989-10-27	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O
+
+Dime	t1	1	NP0	dime	O	O	O	O	O	O	O	O	O	O	clear	A1	B-NP	O	O	dime+n+sing	O	O	O	O	O
+Savings	t2	1	NP0	savings	O	O	O	O	O	O	O	O	O	O	clear	A1	I-NP	O	O	savings+n+sing	O	O	O	O	O
+Bank	t3	1	NP0	bank	O	O	O	O	O	O	O	O	O	O	clear	A1	I-NP	O	O	bank+n+sing	O	O	O	O	O
+of	t4	1	PRF	of	O	O	O	O	O	O	O	O	O	O	clear	A1	B-PP	O	O	of+prep	O	O	O	O	O
+New	t5	1	NP0	new	O	O	O	O	location	O	O	O	O	O	clear	A1	B-NP	O	O	new+adv	O	O	O	O	O
+York	t6	1	NP0	york	t1:NAME||t2:NAME||t3:NAME||t4:NAME||t5:NAME	O	O	O	location	O	O	O	O	O	clear	A1	I-NP	O	O	york+pn	O	O	O	O	O
+was	t7	1	VVD	be	t6:SBJ||t8:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	be+v+indic+past	PAST+NONE+pos	O	O	O	O
+cleared	t8	1	VVN	clear	t9:LGS||t15:OPRD	O	O	O	O	I_ACTION	e1	A1	A0	C-A1	say	A1	I-VP	O	O	clear+v+part+past	PAST+NONE+pos	e9:e3	e1:tmx0:BEFORE||e1:e3:NONE||e1:e4:NONE	O	O
+by	t9	1	PRP	by	t13:PMOD	O	O	O	O	O	O	O	O	O	clear	A0	B-PP	O	O	by+prep	O	O	O	O	O
+the	t10	1	AT0	the	O	O	O	O	O	O	O	O	O	O	clear	A0	B-NP	O	O	the+art	O	O	O	O	O
+Federal	t11	1	NP0	federal	O	O	O	O	organization	O	O	O	O	O	clear	A0	I-NP	O	O	federal+pn	O	O	O	O	O
+Deposit	t12	1	NP0	deposit	O	O	O	O	organization	O	O	O	O	O	clear	A0	I-NP	O	O	deposit+n+sing	O	O	O	O	O
+Insurance	t13	1	NP0	insurance	t10:NMOD||t11:NAME||t12:NAME||t14:POSTHON	O	O	O	organization	O	O	O	O	O	clear	A0	I-NP	O	O	insurance+n+sing	O	O	O	O	O
+Corp.	t14	1	NP0	corp.	O	O	O	O	organization	O	O	O	O	O	clear	A0	I-NP	O	O	O	O	O	O	O	O
+to	t15	1	TO0	to	t16:IM	O	O	O	O	O	O	O	O	O	clear	C-A1	B-VP	O	O	to+prep	O	O	O	O	O
+acquire	t16	1	VVB	acquire	t19:OBJ	O	O	O	O	OCCURRENCE	e3	A0	A1	O	clear	C-A1	I-VP	O	O	acquire+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e1:e9	e3:e4:NONE	O	O
+Starpointe	t17	1	NP0	starpointe	O	O	O	O	organization	O	O	O	O	O	clear	C-A1	B-NP	O	O	O	O	O	O	O	O
+Savings	t18	1	NP0	savings	O	O	O	O	organization	O	O	O	O	O	clear	C-A1	I-NP	O	O	savings+n+sing	O	O	O	O	O
+Bank	t19	1	NP0	bank	t17:NAME||t18:NAME||t20:NMOD	O	O	O	organization	O	O	O	O	O	clear	C-A1	I-NP	O	O	bank+n+sing	O	O	O	O	O
+of	t20	1	PRF	of	t23:PMOD	O	O	O	organization	O	O	O	O	O	clear	C-A1	B-PP	O	O	of+prep	O	O	O	O	O
+Somerset	t21	1	NP0	somerset	O	O	O	O	organization	O	O	O	O	O	clear	C-A1	B-NP	O	O	somerset+pn	O	O	O	O	O
+,	t22	1	PUN	,	O	O	O	O	O	O	O	O	O	O	clear	C-A1	O	O	O	punc	O	O	O	O	O
+N.J.	t23	1	NP0	n.j.	t21:NMOD||t22:P||t24:P	O	O	O	location	O	O	O	O	O	clear	C-A1	B-NP	O	O	O	O	O	O	O	O
+,	t24	1	PUN	,	O	O	O	O	O	O	O	O	O	O	clear	C-A1	O	O	O	punc	O	O	O	O	O
+the	t25	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	O	O	O
+banks	t26	1	NN2	bank	t25:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	bank+n+plur	O	O	O	O	O
+said	t27	1	VVD	say	t7:OBJ||t26:SBJ||t28:P	O	O	O	O	REPORTING	e4	A1	A0	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	O	e4:tmx0:BEFORE	O	O
+.	t28	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+Starpointe	t29	2	NP0	starpointe	O	O	O	O	O	O	O	O	O	O	holder	A1	B-NP	O	O	O	O	O	O	O	O
+holders	t30	2	NN2	holder	t29:NMOD||t31:P||t33:NMOD||t38:P	O	O	O	O	O	O	A1	A0	O	holder	A0	I-NP	O	O	holder+n+plur	O	O	O	O	O
+,	t31	2	PUN	,	O	O	O	O	O	O	O	O	O	O	holder	A0	O	O	O	punc	O	O	O	O	O
+who	t32	2	PNQ	who	O	O	O	O	O	O	O	O	O	O	holder	A0	B-SBAR	O	O	who+pron	O	O	O	O	O
+approved	t33	2	VVD	approve	t32:SBJ||t35:OBJ||t37:TMP	O	O	O	O	I_ACTION	e5	A0	R-A0	A1	holder	A0	B-VP	O	O	approve+v+indic+past	PAST+NONE+pos	O	e5:tmx24:IS_INCLUDED||e5:e6:NONE||e5:tmx0:NONE	O	O
+the	t34	2	AT0	the	O	O	O	O	O	O	O	O	O	O	holder	A0	B-NP	O	O	the+art	O	O	O	O	O
+plan	t35	2	NN1	plan	t34:NMOD	O	O	O	O	O	O	O	O	O	holder	A0	I-NP	O	O	plan+n+sing	O	O	O	O	O
+last	t36	2	AJ0	last	O	tmx24	B-DATE	1989-04	O	O	O	O	O	O	holder	A0	B-NP	O	O	last+adj+zero	O	O	O	O	O
+April	t37	2	NP0	april	t36:NMOD	tmx24	I-DATE	1989-04	O	O	O	O	O	O	holder	A0	I-NP	O	O	april+n+sing	O	O	O	O	O
+,	t38	2	PUN	,	O	O	O	O	O	O	O	O	O	O	holder	A0	O	O	O	punc	O	O	O	O	O
+will	t39	2	VM0	will	t30:SBJ||t40:VC||t54:P	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-VP	mainVb	O	will+v+indic+pres+_	FUTURE+NONE+pos	O	O	O	O
+receive	t40	2	VVB	receive	t41:OBJ	O	O	O	O	OCCURRENCE	e6	A0	AM-MOD	A1	receive	AM-MOD	I-VP	mainVb	O	receive+v+indic+pres+no3sing	FUTURE+NONE+pos	O	e6:tmx0:AFTER||e6:tmx24:NONE||e6:e4:NONE	O	O
+$	t41	2	PUN	$	t42:NMOD||t43:NMOD||t46:ADV||t47:P||t48:COORD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	$+punc	O	O	O	O	O
+21	t42	2	CRD	21	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	21+n+sing	O	O	O	O	O
+in	t43	2	PRP	in	t44:PMOD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-PP	O	O	in+prep	O	O	O	O	O
+cash	t44	2	NN1	cash	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	cash+n+sing	O	O	O	O	O
+a	t45	2	AT0	a	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	a+art	O	O	O	O	O
+share	t46	2	NN1	share	t45:NMOD	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	share+n+sing	O	O	O	O	O
+,	t47	2	PUN	,	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	O	O	O	punc	O	O	O	O	O
+or	t48	2	CJC	or	t51:CONJ	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	or+conj	O	O	O	O	O
+a	t49	2	AT0	a	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	B-NP	O	O	a+art	O	O	O	O	O
+total	t50	2	AJ0	total	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	total+adj+zero	O	O	O	O	O
+$	t51	2	PUN	$	t49:NMOD||t50:NMOD||t52:DEP||t53:DEP	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	$+punc	O	O	O	O	O
+63	t52	2	CRD	63	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	O	O	O	O	O	O
+million	t53	2	CRD	million	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	I-NP	O	O	million+adj+zero	O	O	O	O	O
+.	t54	2	PUN	.	O	O	O	O	O	O	O	O	O	O	receive	AM-MOD	O	O	O	.+punc	O	O	O	O	O
+
+The	t55	3	AT0	the	O	O	O	O	O	O	O	O	O	O	clear	A0	B-NP	O	O	the+art	O	O	O	O	O
+FDIC	t56	3	NP0	fdic	t55:NMOD	O	O	O	organization	O	O	O	O	O	clear	A0	I-NP	O	O	fdic+n+sing	O	O	O	O	O
+cleared	t57	3	VVD	clear	t56:SBJ||t59:OBJ||t60:TMP||t61:P||t62:COORD||t75:P	O	O	O	O	I_ACTION	e9	A0	A1	AM-TMP	O	O	B-VP	mainVb	O	clear+v+indic+past	PAST+NONE+pos	e1:e3	e9:tmx25:IS_INCLUDED||e9:e10:NONE||e9:e11:NONE||e9:e14:NONE||e9:e15:NONE||e9:tmx26:NONE||e9:tmx0:NONE||e9:e6:NONE	O	O
+the	t58	3	AT0	the	O	O	O	O	O	O	O	O	O	O	clear	A1	B-NP	O	O	the+art	O	O	O	O	O
+move	t59	3	NN1	move	t58:NMOD	O	O	O	O	OCCURRENCE	e10	O	O	O	clear	A1	I-NP	O	O	move+n+sing	O	O	e10:e11:NONE||e10:e14:NONE||e10:e15:NONE||e10:tmx25:NONE||e10:tmx26:NONE	O	O
+yesterday	t60	3	NN1	yesterday	O	tmx25	B-DATE	1989-10-26	O	O	O	O	O	O	clear	AM-TMP	B-NP	O	O	yesterday+n+sing	O	O	O	O	O
+,	t61	3	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	O	O
+and	t62	3	CJC	and	t65:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	Expansion	and+conj	O	O	O	O	O
+the	t63	3	AT0	the	O	O	O	O	O	O	O	O	O	O	wait	A1	B-NP	O	O	the+art	O	O	O	O	O
+banks	t64	3	NN2	bank	t63:NMOD	O	O	O	O	O	O	O	O	O	wait	A1	I-NP	O	O	bank+n+plur	O	O	O	O	O
+must	t65	3	VM0	must	t64:SBJ||t66:VC	O	O	O	O	O	O	O	O	O	wait	AM-MOD	B-VP	O	O	must+v+indic+pres+_	PRESENT+NONE+pos	O	O	O	O
+wait	t66	3	VVB	wait	t70:TMP||t71:TMP	O	O	O	O	OCCURRENCE	e11	A1	AM-MOD	AM-TMP	wait	AM-MOD	I-VP	O	O	wait+v+indic+pres+no3sing	PRESENT+NONE+pos	O	e11:e14:ENDED_BY||e11:tmx26:IS_INCLUDED||e11:e15:NONE||e11:tmx25:NONE||e11:tmx0:NONE	O	O
+at	t67	3	PRP	at	O	tmx26	B-DURATION	P30D	O	O	O	O	O	O	wait	AM-MOD	B-NP	O	O	at+prep	O	O	O	O	O
+least	t68	3	NN0	little	O	tmx26	I-DURATION	P30D	O	O	O	O	O	O	wait	AM-MOD	I-NP	O	O	least+adv	O	O	O	O	O
+30	t69	3	CRD	30	t67:DEP||t68:DEP	tmx26	I-DURATION	P30D	O	O	O	O	O	O	wait	AM-MOD	I-NP	O	O	30+n+sing	O	O	O	O	O
+days	t70	3	NN2	day	t69:NMOD	tmx26	I-DURATION	P30D	O	O	O	O	O	O	wait	AM-MOD	I-NP	O	O	day+n+plur	O	O	O	O	O
+before	t71	3	PRP	before	t72:PMOD	O	O	O	O	O	O	O	O	O	wait	AM-MOD	B-PP	O	Temporal	before+prep	O	O	O	O	O
+closing	t72	3	VVG	close	t74:OBJ	O	O	O	O	ASPECTUAL	e14	A0	A1	O	wait	AM-MOD	B-VP	O	O	close+v+gerund+pres	PRESPART+NONE+pos	O	e14:e15:NONE||e14:tmx25:NONE||e14:tmx26:NONE	O	O
+the	t73	3	AT0	the	O	O	O	O	O	O	O	O	O	O	wait	AM-MOD	B-NP	O	O	the+art	O	O	O	O	O
+purchase	t74	3	NN1	purchase	t73:NMOD	O	O	O	O	OCCURRENCE	e15	O	O	O	wait	AM-MOD	I-NP	O	O	purchase+n+sing	O	O	e15:tmx25:NONE||e15:tmx26:NONE	O	O
+.	t75	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+A	t76	4	AT0	a	O	O	O	O	O	O	O	O	O	O	set	A1	B-NP	O	O	a+art	O	O	O	O	O
+closing	t77	4	NN1	closing	O	O	O	O	O	O	O	O	O	O	date	A1	I-NP	O	O	closing+n+sing	O	O	O	O	O
+date	t78	4	NN1	date	t76:NMOD||t77:NMOD	O	O	O	O	O	O	A1	O	O	set	A1	I-NP	O	O	date+n+sing	O	O	O	O	O
+has	t79	4	NN0	have	t78:SBJ||t80:ADV||t81:VC||t83:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	have+v+indic+pres+sing3	PRESENT+PERFECTIVE+neg	O	O	O	O
+n't	t80	4	XX0	not	O	O	O	O	O	O	O	O	O	O	set	AM-NEG	I-VP	mainVb	O	not+adv	O	O	O	O	O
+been	t81	4	VVN	be	t82:VC	O	O	O	O	O	O	O	O	O	O	O	I-VP	mainVb	O	be+v+part+past	PRESENT+PERFECTIVE+neg	O	O	O	O
+set	t82	4	VVN	set	O	O	O	O	O	OCCURRENCE	e16	A1	AM-NEG	O	O	O	I-VP	mainVb	O	set+v+part+past	PRESENT+PERFECTIVE+neg	O	e16:tmx0:INCLUDES||e16:e9:NONE	O	O
+.	t83	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O
+
+The	t84	5	AT0	the	O	O	O	O	O	O	O	O	O	O	agree	A0	B-NP	O	O	the+art	O	O	O	O	O
+thrifts	t85	5	NN2	thrift	t84:NMOD	O	O	O	O	O	O	O	O	O	agree	A0	I-NP	O	O	thrift+n+plur	O	O	O	O	O
+agreed	t86	5	VVD	agree	t85:SBJ||t87:ADV||t90:TMP||t93:P	O	O	O	O	I_ACTION	e18	A0	A1	AM-TMP	O	O	B-VP	mainVb	O	agree+v+indic+past	PAST+NONE+pos	O	e18:tmx27:IS_INCLUDED||e18:e5:INCLUDES||e18:tmx0:BEFORE||e18:e19:NONE||e18:e16:NONE	O	O
+to	t87	5	TO0	to	t89:PMOD	O	O	O	O	O	O	O	O	O	agree	A1	B-PP	O	O	to+prep	O	O	O	O	O
+the	t88	5	AT0	the	O	O	O	O	O	O	O	O	O	O	agree	A1	B-NP	O	O	the+art	O	O	O	O	O
+transaction	t89	5	NN1	transaction	t88:NMOD	O	O	O	O	OCCURRENCE	e19	O	O	O	agree	A1	I-NP	O	O	transaction+n+sing	O	O	e19:e3:INCLUDES||e19:tmx27:NONE	O	O
+in	t90	5	PRP	in	t92:PMOD	O	O	O	O	O	O	O	O	O	agree	AM-TMP	B-PP	O	O	in+prep	O	O	O	O	O
+August	t91	5	NP0	august	O	tmx27	B-DATE	1988-08	O	O	O	O	O	O	agree	AM-TMP	B-NP	O	O	august+n+sing	O	O	O	O	O
+1988	t92	5	CRD	1988	t91:NMOD	tmx27	I-DATE	1988-08	O	O	O	O	O	O	agree	AM-TMP	I-NP	O	O	O	O	O	O	O	O
+.	t93	5	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	O	O

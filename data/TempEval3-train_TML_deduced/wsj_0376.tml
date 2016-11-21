@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0376</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-31">10/31/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891031-0138 = 891031 891031-0138.
+International: @ Courtaulds PLC @ Plans to Spin Off @ Textiles Business @ ---- @ By Craig Forman @ Staff Reporter of The Wall Street Journal 10/31/89 WALL STREET JOURNAL (J) COU DIVIDENDS (DIV) STOCK MARKET, OFFERINGS (STK) TEXTILES AND APPAREL (TEX) LONDON
+</EXTRAINFO>
+
+<TEXT>
+Courtaulds PLC <EVENT class="I_ACTION" eid="e1">announced</EVENT> <EVENT class="I_STATE" eid="e85">plans</EVENT> to <EVENT class="OCCURRENCE" eid="e3">spin</EVENT> off its textiles operations to existing shareholders in a <EVENT class="OCCURRENCE" eid="e86">restructuring</EVENT> to <EVENT class="OCCURRENCE" eid="e8">boost</EVENT> shareholder value.
+
+The British chemical and textile company's plan, which requires shareholder approval, would <EVENT class="OCCURRENCE" eid="e11">create</EVENT> a new, listed U.K. stock with a probable market capitalization between #300 million ($473 million) and #400 million, analysts <EVENT class="REPORTING" eid="e15">said</EVENT>. The <EVENT class="OCCURRENCE" eid="e16">establishment</EVENT> of the separate company, to be called Courtaulds Textiles, could be effective as early as <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t90" type="DATE" value="1990-Q1">next year's first quarter</TIMEX3>.
+
+Investors <EVENT class="OCCURRENCE" eid="e20">welcomed</EVENT> the <EVENT class="OCCURRENCE" eid="e21">move</EVENT>. Courtaulds' shares <EVENT class="OCCURRENCE" eid="e22">rose</EVENT> 15 pence to 362 pence, valuing the entire company at about #1.44 billion.
+
+Courtaulds' <EVENT class="OCCURRENCE" eid="e93">spinoff</EVENT> reflects pressure on British industry to boost share prices beyond the reach of corporate raiders. Courtaulds' <EVENT class="OCCURRENCE" eid="e94">restructuring</EVENT> is among the largest thus far in Britain, though it is dwarfed by B.A.T Industries PLC's <EVENT class="I_STATE" eid="e95">plans</EVENT> to <EVENT class="OCCURRENCE" eid="e31">spin</EVENT> roughly off #4 billion in assets to <EVENT class="I_ACTION" eid="e33">help</EVENT> <EVENT class="OCCURRENCE" eid="e34">fend</EVENT> off a takeover bid from Anglo-French financier Sir James Goldsmith. The divested Courtaulds textile operations <EVENT class="STATE" eid="e96">had</EVENT> operating <EVENT class="STATE" eid="e97">profit</EVENT> of #50 million on #980 million in revenue in <TIMEX3 endPoint="t100" functionInDocument="NONE" temporalFunction="true" tid="t99" type="DURATION" value="P1Y">the year</TIMEX3> ended <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t100" type="DATE" value="1989-03-31">March 31</TIMEX3>.
+
+Some analysts have <EVENT class="REPORTING" eid="e37">said</EVENT> Courtaulds' <EVENT class="OCCURRENCE" eid="e38">moves</EVENT> could <EVENT class="OCCURRENCE" eid="e39">boost</EVENT> the company's value by 5% to 10%, because the two entities separately will <EVENT class="OCCURRENCE" eid="e41">carry</EVENT> a higher price earnings multiple than they did <EVENT class="STATE" eid="e103">combined</EVENT>. In addition, Courtaulds <EVENT class="REPORTING" eid="e45">said</EVENT> the <EVENT class="OCCURRENCE" eid="e46">moves</EVENT> are logical because they will <EVENT class="I_STATE" eid="e47">allow</EVENT> both the chemicals and textile businesses to <EVENT class="OCCURRENCE" eid="e104">focus</EVENT> more closely on core activities.
+
+Courtaulds has been <EVENT class="STATE" eid="e119">under</EVENT> pressure to <EVENT class="OCCURRENCE" eid="e54">enhance</EVENT> shareholder value since takeover speculators -- including Australian financier Kerry Packer -- <EVENT class="OCCURRENCE" eid="e55">surfaced</EVENT> holding small stakes <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t108" type="DATE" value="1988">last year</TIMEX3>. Though Mr. Packer has since <EVENT class="OCCURRENCE" eid="e58">sold</EVENT> his stake, Courtaulds is <EVENT class="OCCURRENCE" eid="e60">moving</EVENT> to <EVENT class="ASPECTUAL" eid="e62">keep</EVENT> its institutional shareholders happy. Even without a specific takeover threat, Courtaulds is <EVENT class="OCCURRENCE" eid="e64">giving</EVENT> shareholders "choice and value," <EVENT class="REPORTING" eid="e66">said</EVENT> Julia Blake, an analyst at London stockbrokers Barclays de Zoete Wedd.
+
+In a statement, the company said: "Both parts can only realize their full potential and be appropriately valued by the market if they are separately quoted companies. The sharper definition and the autonomy which each will thereby gain will benefit shareholders, customers and employees."
+
+Courtaulds Chairman and Chief Executive Sir Christopher Hogg will <EVENT class="STATE" eid="e77">remain</EVENT> in both posts at the surviving chemical company after the spinoff.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1989" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1990" eventID="e85" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e86" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1993" eventID="e8" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1994" eventID="e11" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1995" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e16" modality="none" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1997" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1998" eventID="e21" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1999" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e93" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2002" eventID="e94" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2003" eventID="e95" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2004" eventID="e31" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2005" eventID="e33" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2006" eventID="e34" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2007" eventID="e96" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2008" eventID="e97" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2009" eventID="e37" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2010" eventID="e38" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2011" eventID="e39" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2013" eventID="e41" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2015" eventID="e103" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2016" eventID="e45" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2017" eventID="e46" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2018" eventID="e47" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2019" eventID="e104" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2021" eventID="e54" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2022" eventID="e55" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2023" eventID="e58" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2024" eventID="e60" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2025" eventID="e62" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2028" eventID="e64" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2030" eventID="e66" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2031" eventID="e77" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2033" eventID="e119" polarity="POS" pos="PREPOSITION" tense="PRESENT" />
+<TLINK eventInstanceID="ei2033" lid="l50" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1999" lid="l49" relType="AFTER" relatedToEventInstance="ei1989" />
+<TLINK eventInstanceID="ei1995" lid="l47" relType="AFTER" relatedToEventInstance="ei1989" />
+<TLINK eventInstanceID="ei1989" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1991" lid="l2" relType="IS_INCLUDED" relatedToEventInstance="ei1992" />
+<TLINK eventInstanceID="ei1996" lid="l3" relType="IS_INCLUDED" relatedToTime="t90" />
+<TLINK eventInstanceID="ei1997" lid="l4" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2001" lid="l5" relType="IDENTITY" relatedToEventInstance="ei1991" />
+<TLINK eventInstanceID="ei2002" lid="l6" relType="IDENTITY" relatedToEventInstance="ei1992" />
+<TLINK eventInstanceID="ei2003" lid="l7" relType="SIMULTANEOUS" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei2007" lid="l8" relType="IDENTITY" relatedToEventInstance="ei2008" />
+<TLINK eventInstanceID="ei2007" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2007" lid="l10" relType="DURING" relatedToTime="t99" />
+<TLINK eventInstanceID="ei2007" lid="l11" relType="ENDED_BY" relatedToTime="t100" />
+<TLINK eventInstanceID="ei2009" lid="l12" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2010" lid="l13" relType="BEFORE" relatedToEventInstance="ei2011" />
+<TLINK eventInstanceID="ei2013" lid="l14" relType="AFTER" relatedToEventInstance="ei2010" />
+<TLINK eventInstanceID="ei2013" lid="l15" relType="BEFORE" relatedToEventInstance="ei2011" />
+<TLINK eventInstanceID="ei2016" lid="l19" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2017" lid="l20" relType="SIMULTANEOUS" relatedToEventInstance="ei2010" />
+<TLINK eventInstanceID="ei2018" lid="l21" relType="BEFORE" relatedToEventInstance="ei2019" />
+<TLINK eventInstanceID="ei2017" lid="l22" relType="IDENTITY" relatedToEventInstance="ei2018" />
+<TLINK eventInstanceID="ei2022" lid="l23" relType="IS_INCLUDED" relatedToTime="t108" />
+<TLINK eventInstanceID="ei2023" lid="l24" relType="BEGUN_BY" relatedToEventInstance="ei2022" />
+<TLINK eventInstanceID="ei2024" lid="l25" relType="SIMULTANEOUS" relatedToEventInstance="ei2023" />
+<TLINK eventInstanceID="ei2030" lid="l28" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2031" lid="l29" relType="INCLUDES" relatedToTime="t0" />
+<SLINK eventInstanceID="ei2018" lid="l46" relType="MODAL" subordinatedEventInstance="ei2019" />
+<SLINK eventInstanceID="ei1989" lid="l31" relType="EVIDENTIAL" subordinatedEventInstance="ei1990" />
+<SLINK eventInstanceID="ei1990" lid="l32" relType="MODAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei1992" lid="l33" relType="MODAL" subordinatedEventInstance="ei1993" />
+<SLINK eventInstanceID="ei1995" lid="l34" relType="EVIDENTIAL" subordinatedEventInstance="ei1994" />
+<SLINK eventInstanceID="ei1997" lid="l35" relType="FACTIVE" subordinatedEventInstance="ei1998" />
+<SLINK eventInstanceID="ei2003" lid="l36" relType="MODAL" subordinatedEventInstance="ei2004" />
+<SLINK eventInstanceID="ei2004" lid="l37" relType="MODAL" subordinatedEventInstance="ei2005" />
+<SLINK eventInstanceID="ei2005" lid="l38" relType="MODAL" subordinatedEventInstance="ei2006" />
+<SLINK eventInstanceID="ei2009" lid="l39" relType="EVIDENTIAL" subordinatedEventInstance="ei2011" />
+<SLINK eventInstanceID="ei2016" lid="l40" relType="EVIDENTIAL" subordinatedEventInstance="ei2017" />
+<SLINK eventInstanceID="ei2016" lid="l41" relType="EVIDENTIAL" subordinatedEventInstance="ei2018" />
+<SLINK eventInstanceID="ei2024" lid="l42" relType="MODAL" subordinatedEventInstance="ei2025" />
+<SLINK eventInstanceID="ei2030" lid="l43" relType="EVIDENTIAL" subordinatedEventInstance="ei2028" />
+<SLINK eventInstanceID="ei2033" lid="l44" relType="MODAL" subordinatedEventInstance="ei2021" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1989" relatedToEventInstance="ei1995" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1989" relatedToEventInstance="ei1999" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei2003" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1991" relatedToEventInstance="ei2001" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1991" relatedToEventInstance="ei2002" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1992" relatedToEventInstance="ei2001" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1992" relatedToEventInstance="ei2002" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2001" relatedToEventInstance="ei2002" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2008" relatedToTime="t0" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei2008" relatedToTime="t100" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2010" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2010" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2010" relatedToEventInstance="ei2018" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2010" relatedToEventInstance="ei2019" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2011" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2011" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2011" relatedToEventInstance="ei2018" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2013" relatedToEventInstance="ei2017" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2013" relatedToEventInstance="ei2018" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2017" relatedToEventInstance="ei2019" /><TLINK deduced="true" relType="BEGINS" eventInstanceID="ei2022" relatedToEventInstance="ei2023" /><TLINK deduced="true" relType="BEGINS" eventInstanceID="ei2022" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2023" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t100" /></TimeML>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0356</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">11/01/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891101-0008 = 891101 891101-0008.
+Business Brief -- Rally's Inc.: @ Shareholder Rights Program @ Is Set by Fast-Food Firm 11/01/89 WALL STREET JOURNAL (J) RLLY
+</EXTRAINFO>
+
+<TEXT>
+Rally's Inc. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2" stem="adopt">adopted</EVENT> a shareholders rights plan to <EVENT class="OCCURRENCE" eid="e4" stem="protect">protect</EVENT> shareholders from an inadequately priced takeover offer.
+
+The plan provides for the distribution of one common stock-purchase right as a dividend for each share of common outstanding. Each right entitles shareholders to buy one-half share of common for $30.
+
+<TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="START" temporalFunction="true" tid="t23" type="DATE" value="1989-11">Earlier this month</TIMEX3>, a group led by three of the company's directors, Burt Sugarman, James M. Trotter III and Willam E. Trotter II, <EVENT class="REPORTING" eid="e12" stem="indicate">indicated</EVENT> it <EVENT class="STATE" eid="e24" stem="have">had</EVENT> a 45.2% stake in the Louisville, Ky., fast-food company and that it <EVENT class="I_STATE" eid="e14" stem="plan">planned</EVENT> to <EVENT class="I_ACTION" eid="e16" stem="seek">seek</EVENT> a majority of seats on Rally's nine-member board.
+
+The company <EVENT class="REPORTING" eid="e17" stem="say">said</EVENT> it was " <EVENT class="I_STATE" eid="e18" stem="concern">concerned</EVENT> about the announced intent to <EVENT class="I_ACTION" eid="e21" stem="acquire">acquire</EVENT> control of the company" by a Sugarman-led group.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei97" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei94" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei91" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei92" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei99" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei96" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei90" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei93" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei100" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei102" eventID="e21" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<TLINK eventInstanceID="ei91" lid="l15" relType="BEFORE" relatedToEventInstance="ei90" />
+<TLINK eventInstanceID="ei90" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l2" relType="INCLUDES" relatedToEventInstance="ei93" timeID="t23" />
+<TLINK eventInstanceID="ei99" lid="l4" relType="IDENTITY" relatedToEventInstance="ei90" />
+<SLINK eventInstanceID="ei90" lid="l14" relType="EVIDENTIAL" subordinatedEventInstance="ei91" />
+<SLINK eventInstanceID="ei91" lid="l5" relType="MODAL" subordinatedEventInstance="ei92" />
+<SLINK eventInstanceID="ei93" lid="l6" relType="EVIDENTIAL" subordinatedEventInstance="ei94" />
+<SLINK eventInstanceID="ei93" lid="l7" relType="EVIDENTIAL" subordinatedEventInstance="ei96" />
+<SLINK eventInstanceID="ei96" lid="l8" relType="MODAL" subordinatedEventInstance="ei97" />
+<SLINK eventInstanceID="ei99" lid="l10" relType="EVIDENTIAL" subordinatedEventInstance="ei100" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei91" relatedToEventInstance="ei99" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei91" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei99" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei93" relatedToTime="t23" /></TimeML>

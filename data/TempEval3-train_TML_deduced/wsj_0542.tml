@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0542</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0159 = 891030 891030-0159.
+Dow Jones Extends @ Tender Offer for Rest @ Of Telerate to Nov. 6 10/30/89 WALL STREET JOURNAL (J) DJ TLR TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED) NEW YORK
+</EXTRAINFO>
+
+<TEXT>
+Dow Jones amp Co. <EVENT class="I_ACTION" eid="e1">extended</EVENT> its tender <EVENT class="OCCURRENCE" eid="e2">offer</EVENT> of $18 a share, or about $576 million, for the 33% of Telerate Inc. that it doesn't already own until <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t87" type="TIME" value="1989-11-06T17">5 p.m. EST, Nov. 6</TIMEX3>.
+
+The <EVENT class="OCCURRENCE" eid="e5">offer</EVENT>, which Telerate's two independent directors have <EVENT class="I_ACTION" eid="e6">rejected</EVENT> as inadequate, previously had been <EVENT class="OCCURRENCE" eid="e7">scheduled</EVENT> to <EVENT class="OCCURRENCE" eid="e9">expire</EVENT> at <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t90" type="TIME" value="1989-10-27T24">midnight Friday</TIMEX3>. Dow Jones <EVENT class="REPORTING" eid="e10">said</EVENT> it <EVENT class="I_ACTION" eid="e11">extended</EVENT> the <EVENT class="OCCURRENCE" eid="e12">offer</EVENT> to <EVENT class="I_STATE" eid="e14">allow</EVENT> shareholders time to <EVENT class="OCCURRENCE" eid="e17">review</EVENT> a supplement to the Dow Jones tender offer circular that it <EVENT class="OCCURRENCE" eid="e19">mailed</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t91" type="DATE" value="1989-10-27">last Friday</TIMEX3>.
+
+The supplement contains various information that has been <EVENT class="OCCURRENCE" eid="e23">filed</EVENT> with the Securities and Exchange Commission since Dow Jones <EVENT class="OCCURRENCE" eid="e24">launched</EVENT> the <EVENT class="OCCURRENCE" eid="e25">offer</EVENT> on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t94" type="DATE" value="1989-09-26">Sept. 26</TIMEX3>, but it doesn't <EVENT class="OCCURRENCE" eid="e26">change</EVENT> the terms and conditions of the <EVENT class="OCCURRENCE" eid="e28">offer</EVENT> except to <EVENT class="OCCURRENCE" eid="e30">extend</EVENT> its expiration date.
+
+In Delaware Chancery Court litigation, Telerate has <EVENT class="OCCURRENCE" eid="e31">criticized</EVENT> Dow Jones for not <EVENT class="I_ACTION" eid="e32">disclosing</EVENT> that Telerate's management <EVENT class="I_STATE" eid="e34">expects</EVENT> the company's revenue to <EVENT class="OCCURRENCE" eid="e36">increase</EVENT> by 20% annually, while Dow Jones <EVENT class="OCCURRENCE" eid="e38">based</EVENT> its projections of Telerate's performance on a 12% revenue growth forecast. In the tender offer supplement, Dow Jones <EVENT class="I_ACTION" eid="e44">discloses</EVENT> the different growth <EVENT class="OCCURRENCE" eid="e45">forecasts</EVENT> but <EVENT class="REPORTING" eid="e46">says</EVENT> it <EVENT class="I_STATE" eid="e47">views</EVENT> the 20% growth rate "as a hoped-for goal" of Telerate's management "and not as a realistic basis on which to project the company's likely future performance."
+
+Telerate shares <EVENT class="OCCURRENCE" eid="e52">fell</EVENT> 50 cents on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t98" type="DATE" value="1989-10-27">Friday</TIMEX3> to <EVENT class="OCCURRENCE" eid="e54">close</EVENT> at $20 each in New York Stock Exchange composite trading. Dow Jones shares also <EVENT class="OCCURRENCE" eid="e55">fell</EVENT> 50 cents to <EVENT class="OCCURRENCE" eid="e57">close</EVENT> at $36.125 in Big Board composite trading.
+
+Dow Jones has <EVENT class="REPORTING" eid="e58">said</EVENT> it <EVENT class="I_STATE" eid="e59">believes</EVENT> the $18-a-share price is <EVENT class="STATE" eid="e101">fair</EVENT> to Telerate's minority shareholders. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="END" temporalFunction="true" tid="t102" type="DATE" value="1989-WXX">Late last week</TIMEX3>, representatives of Dow Jones and Telerate <EVENT class="ASPECTUAL" eid="e60">began</EVENT> <EVENT class="OCCURRENCE" eid="e61">negotiations</EVENT> about the terms of the <EVENT class="OCCURRENCE" eid="e103">offer</EVENT>, but those <EVENT class="OCCURRENCE" eid="e63">talks</EVENT> didn't result in any <EVENT class="OCCURRENCE" eid="e66">changes</EVENT> in the offer.
+
+Telerate provides information about financial markets through an electronic network. Dow Jones, which owns 67% of Telerate, publishes The Wall Street Journal, Barron's magazine, community newspapers and operates financial news services and computer data bases.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei357" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei358" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei360" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei361" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei362" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei363" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei364" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei365" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei366" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei367" eventID="e14" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei368" eventID="e17" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei369" eventID="e19" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei370" eventID="e23" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei371" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei372" eventID="e25" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei373" eventID="e26" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei374" eventID="e28" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei375" eventID="e30" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei376" eventID="e31" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei377" eventID="e32" polarity="NEG" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei378" eventID="e34" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei379" eventID="e36" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei380" eventID="e38" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei381" eventID="e44" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei382" eventID="e45" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei383" eventID="e46" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei384" eventID="e47" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei386" eventID="e52" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei387" eventID="e54" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei389" eventID="e55" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei390" eventID="e57" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei392" eventID="e58" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei393" eventID="e59" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei394" eventID="e101" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei395" eventID="e60" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei396" eventID="e61" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei397" eventID="e103" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei398" eventID="e63" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei399" eventID="e66" polarity="NEG" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei392" lid="l58" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei361" lid="l57" relType="AFTER" relatedToEventInstance="ei357" />
+<TLINK eventInstanceID="ei357" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei360" lid="l5" relType="IDENTITY" relatedToEventInstance="ei358" />
+<TLINK eventInstanceID="ei360" lid="l6" relType="ENDED_BY" relatedToEventInstance="ei363" />
+<TLINK eventInstanceID="ei363" lid="l7" relType="IS_INCLUDED" relatedToTime="t90" />
+<TLINK eventInstanceID="ei362" lid="l8" relType="BEFORE" relatedToEventInstance="ei357" />
+<TLINK eventInstanceID="ei364" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei364" lid="l10" relType="AFTER" relatedToEventInstance="ei357" />
+<TLINK eventInstanceID="ei366" lid="l11" relType="IDENTITY" relatedToEventInstance="ei358" />
+<TLINK eventInstanceID="ei369" lid="l12" relType="BEFORE" relatedToEventInstance="ei365" />
+<TLINK eventInstanceID="ei369" lid="l13" relType="BEFORE" relatedToEventInstance="ei364" />
+<TLINK eventInstanceID="ei369" lid="l14" relType="IS_INCLUDED" relatedToTime="t91" />
+<TLINK eventInstanceID="ei370" lid="l15" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei370" lid="l16" relType="AFTER" relatedToEventInstance="ei371" />
+<TLINK eventInstanceID="ei371" lid="l17" relType="BEGINS" relatedToEventInstance="ei372" />
+<TLINK eventInstanceID="ei371" lid="l18" relType="IS_INCLUDED" relatedToTime="t94" />
+<TLINK eventInstanceID="ei370" lid="l19" relType="BEFORE" relatedToEventInstance="ei373" />
+<TLINK eventInstanceID="ei370" lid="l20" relType="BEFORE" relatedToEventInstance="ei375" />
+<TLINK eventInstanceID="ei373" lid="l21" relType="SIMULTANEOUS" relatedToEventInstance="ei375" />
+<TLINK eventInstanceID="ei380" lid="l22" relType="BEFORE" relatedToEventInstance="ei379" />
+<TLINK eventInstanceID="ei381" lid="l23" relType="AFTER" relatedToEventInstance="ei376" />
+<TLINK eventInstanceID="ei383" lid="l24" relType="SIMULTANEOUS" relatedToEventInstance="ei381" />
+<TLINK eventInstanceID="ei386" lid="l25" relType="IS_INCLUDED" relatedToTime="t98" />
+<TLINK eventInstanceID="ei386" lid="l26" relType="ENDED_BY" relatedToEventInstance="ei387" />
+<TLINK eventInstanceID="ei389" lid="l28" relType="IS_INCLUDED" relatedToTime="t98" />
+<TLINK eventInstanceID="ei389" lid="l29" relType="ENDED_BY" relatedToEventInstance="ei390" />
+<TLINK lid="l31" relType="INCLUDES" relatedToEventInstance="ei395" timeID="t102" />
+<TLINK eventInstanceID="ei397" lid="l32" relType="IDENTITY" relatedToEventInstance="ei358" />
+<TLINK eventInstanceID="ei398" lid="l33" relType="INCLUDES" relatedToEventInstance="ei396" />
+<TLINK eventInstanceID="ei398" lid="l34" relType="IS_INCLUDED" relatedToTime="t102" />
+<TLINK eventInstanceID="ei398" lid="l35" relType="BEFORE" relatedToEventInstance="ei399" />
+<SLINK eventInstanceID="ei373" lid="l56" relType="FACTIVE" subordinatedEventInstance="ei374" />
+<SLINK eventInstanceID="ei371" lid="l55" relType="FACTIVE" subordinatedEventInstance="ei372" />
+<SLINK eventInstanceID="ei357" lid="l36" relType="FACTIVE" subordinatedEventInstance="ei358" />
+<SLINK eventInstanceID="ei361" lid="l37" relType="FACTIVE" subordinatedEventInstance="ei360" />
+<SLINK eventInstanceID="ei362" lid="l38" relType="MODAL" subordinatedEventInstance="ei363" />
+<SLINK eventInstanceID="ei364" lid="l39" relType="EVIDENTIAL" subordinatedEventInstance="ei365" />
+<SLINK eventInstanceID="ei365" lid="l40" relType="FACTIVE" subordinatedEventInstance="ei366" />
+<SLINK eventInstanceID="ei365" lid="l41" relType="MODAL" subordinatedEventInstance="ei367" />
+<SLINK eventInstanceID="ei367" lid="l42" relType="MODAL" subordinatedEventInstance="ei368" />
+<SLINK eventInstanceID="ei375" lid="l43" relType="FACTIVE" subordinatedEventInstance="ei374" />
+<SLINK eventInstanceID="ei376" lid="l44" relType="FACTIVE" subordinatedEventInstance="ei377" />
+<SLINK eventInstanceID="ei377" lid="l45" relType="FACTIVE" subordinatedEventInstance="ei378" />
+<SLINK eventInstanceID="ei378" lid="l46" relType="MODAL" subordinatedEventInstance="ei379" />
+<SLINK eventInstanceID="ei381" lid="l47" relType="FACTIVE" subordinatedEventInstance="ei382" />
+<SLINK eventInstanceID="ei383" lid="l48" relType="EVIDENTIAL" subordinatedEventInstance="ei384" />
+<SLINK eventInstanceID="ei392" lid="l49" relType="EVIDENTIAL" subordinatedEventInstance="ei393" />
+<SLINK eventInstanceID="ei393" lid="l50" relType="MODAL" subordinatedEventInstance="ei394" />
+<SLINK eventInstanceID="ei396" lid="l51" relType="FACTIVE" subordinatedEventInstance="ei397" />
+<ALINK eventInstanceID="ei371" lid="l54" relType="INITIATES" relatedToEventInstance="ei372" />
+<ALINK eventInstanceID="ei395" lid="l53" relType="INITIATES" relatedToEventInstance="ei396" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei357" relatedToEventInstance="ei361" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei357" relatedToEventInstance="ei362" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei357" relatedToEventInstance="ei364" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei358" relatedToEventInstance="ei360" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei358" relatedToEventInstance="ei363" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei358" relatedToEventInstance="ei366" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei358" relatedToEventInstance="ei397" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei360" relatedToEventInstance="ei366" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei360" relatedToEventInstance="ei397" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei361" relatedToEventInstance="ei362" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei362" relatedToEventInstance="ei364" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei362" relatedToTime="t0" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei363" relatedToEventInstance="ei366" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei363" relatedToEventInstance="ei397" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei364" relatedToEventInstance="ei369" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei365" relatedToEventInstance="ei369" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei366" relatedToEventInstance="ei397" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei369" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei371" relatedToEventInstance="ei373" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei371" relatedToEventInstance="ei375" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei371" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei376" relatedToEventInstance="ei381" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei376" relatedToEventInstance="ei383" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei379" relatedToEventInstance="ei380" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei381" relatedToEventInstance="ei383" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei387" relatedToTime="t98" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei390" relatedToTime="t98" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei395" relatedToTime="t102" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei396" relatedToEventInstance="ei398" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei396" relatedToEventInstance="ei399" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei396" relatedToTime="t102" /></TimeML>

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+Sumer was an ancient civilization and historical region in southern Mesopotamia, modern-day southern Iraq, during the Chalcolithic and Early Bronze Age. Although the earliest forms of writing in the region do not go back much further than c. 3500 BCE, modern historians have suggested that Sumer was first permanently settled between c. 5500 and 4000 BCE by a non-Semitic people who may or may not have spoken the Sumerian language (pointing to the names of cities, rivers, basic occupations, etc. as evidence). These conjectured, prehistoric people are now called "proto-Euphrateans" or "Ubaidians", and are theorized to have evolved from the Samarra culture of northern Mesopotamia (Assyria). The Ubaidians were the first civilizing force in Sumer, draining the marshes for agriculture, developing trade, and establishing industries, including weaving, leatherwork, metalwork, masonry, and pottery. However, some scholars such as Piotr Michalowski and Gerd Steiner, contest the idea of a Proto-Euphratean language or one substrate language. It has been suggested by them and others, that the Sumerian language was originally that of the hunter and fisher peoples, who lived in the marshland and the Eastern Arabia littoral region, and were part of the Arabian bifacial culture. Reliable historical records begin much later; there are none in Sumer of any kind that have been dated before Enmebaragesi (c. 26th century BCE). Professor Juris Zarins believes the Sumerians were <EVENT eid="e1001">settled</EVENT> along the coast of Eastern Arabia, today's Persian Gulf region, before it <EVENT eid="e1002">flooded</EVENT> at the end of the Ice Age. Sumerian literature speaks of their homeland being Dilmun.
+
+Sumerian civilization <EVENT eid="e1003">took form</EVENT> in the Uruk period <TIMEX3 tid="t1001">(4th millennium BCE)</TIMEX3>, continuing into the Jemdat Nasr and Early Dynastic periods. During the 3rd millennium BCE, a close cultural symbiosis <EVENT eid="e1004">developed</EVENT> between the Sumerians (who spoke a language isolate) and the Semitic Akkadian speakers, which included widespread bilingualism. The influence of Sumerian on Akkadian (and vice versa) is evident in all areas, from lexical borrowing on a massive scale, to syntactic, morphological, and phonological convergence. This has prompted scholars to refer to Sumerian and Akkadian in the 3rd millennium BCE as a Sprachbund. Sumer was <EVENT eid="e1005">conquered</EVENT> by the Semitic-speaking kings of the Akkadian Empire around 2270 BCE (short chronology), but Sumerian <EVENT eid="e1006">continued</EVENT> as a sacred language. Native Sumerian rule <EVENT eid="e1007">re-emerged</EVENT> for about a century in the Third Dynasty of Ur (Sumerian Renaissance) of the 21st to 20th centuries BCE, but the Akkadian language also remained in use. The Sumerian city of Eridu, on the coast of the Persian Gulf, was the world's first city, where three separate cultures fused  -  that of peasant Ubaidian farmers, living in mud-brick huts and practicing irrigation; that of mobile nomadic Semitic pastoralists living in black tents and following herds of sheep and goats; and that of fisher folk, living in reed huts in the marshlands, who may have been the ancestors of the Sumerians.
+
+The irrigated farming together with annual replenishment of soil fertility and the surplus of storable food in temple granaries created by this economy allowed the population of this region to rise to levels never before seen, unlike those found in earlier cultures of shifting cultivators. This much greater population density in turn created and required an extensive labour force and division of labour with many specialised arts and crafts. At the same time, historic <EVENT eid="e1008">overuse</EVENT> of the irrigated soils led to progressive salinisation, and a Malthusian crisis which led to <EVENT eid="e1009">depopulation</EVENT> of the Sumerian region over time, leading to its progressive eclipse by the Akkadians of middle Mesopotamia.
+
+Sumer was also the site of early development of writing, progressing from a stage of <EVENT eid="e1010">proto-writing</EVENT> in the mid 4th millennium BCE to writing proper in the <TIMEX3 tid="t1003">3rd millennium BCE</TIMEX3> (see Jemdet Nasr period).
+
+Contents.
+
+City-states in Mesopotamia.
+
+By the <TIMEX3 tid="t1004">late 4th millennium BCE</TIMEX3>, Sumer was <EVENT eid="e1011">divided</EVENT> into about a dozen independent city-states, which were divided by canals and boundary stones. Each was centered on a temple dedicated to the particular patron god or goddess of the city and ruled over by a priestly governor (ensi) or by a king (lugal) who was intimately tied to the city's religious rites.
+
+The five "first" cities said to have exercised pre-dynastic kingship:
+
+Other principal cities:
+
+(location uncertain) (an outlying city in northern Mesopotamia)
+
+Minor cities (from south to north):
+
+(an outlying city in northern Mesopotamia)
+
+Apart from Mari, which lies full 330 km (205 mi) northwest of Agade, but which is credited in the king list as having "exercised kingship" in the Early Dynastic II period, and Nagar, an outpost, these cities are all in the Euphrates-Tigris alluvial plain, south of Baghdad in what are now the Babil, Diyala, Wasit, Dhi Qar, Basra, Al-Muthanna and Al-Qadisiyyah governorates of Iraq.
+
+History.
+
+The Sumerian city-states rose to power during the prehistoric Ubaid and Uruk periods. Sumerian written history reaches back to the 27th century BCE and before, but the historical record remains obscure until the Early Dynastic III period, c. the 23rd century BCE, when a now deciphered syllabary writing system was developed, which has allowed archaeologists to read contemporary records and inscriptions. Classical Sumer <EVENT eid="e1012">ends</EVENT> with the <EVENT eid="e1013">rise</EVENT> of the Akkadian Empire in the 23rd century BC. Following the Gutian period, there is a brief Sumerian Renaissance in the 21st century BCE, cut short in the 20th century BCE by Semitic Amorite invasions. The Amorite "dynasty of Isin" persisted until c. 1700 BCE, when Mesopotamia was united under Babylonian rule. The Sumerians were eventually <EVENT eid="e1014">absorbed</EVENT> into the Akkadian (Assyro-Babylonian) population.
+
+</TEXT>
+
+</TimeML>

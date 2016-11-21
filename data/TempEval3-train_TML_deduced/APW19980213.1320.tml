@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>APW19980213.1320</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-02-13T14:35:00">02/13/1998 14:35:00</TIMEX3></DCT>
+
+<EXTRAINFO>
+APW19980213.1320 NEWS STORY 02/13/1998 14:35:00
+w2122 Cx1f wstmr f Cx13 Cx11 BC-Australia-India-Qanta 02-13 0223
+BC-Australia-India-Qantas,0225
+Qantas to run daily flights between Australia and India
+</EXTRAINFO>
+
+<TEXT>
+CANBERRA, Australia (AP)_ Qantas will almost <EVENT class="OCCURRENCE" eid="e1" stem="double">double</EVENT> its flights between Australia and India by <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t43" type="DATE" value="1998-08">August</TIMEX3> in the <EVENT class="OCCURRENCE" eid="e2" stem="search">search</EVENT> for new markets untouched by the crippling Asian financial <EVENT class="OCCURRENCE" eid="e26" stem="crisis">crisis</EVENT>. This <EVENT class="OCCURRENCE" eid="e28" stem="move">move</EVENT> comes barely <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t44" type="DURATION" value="P1M">a month</TIMEX3> after Qantas <EVENT class="ASPECTUAL" eid="e5" stem="suspend">suspended</EVENT> a number of services between Australia, Indonesia, Thailand and Malaysia in the wake of the Asian economic <EVENT class="OCCURRENCE" eid="e30" stem="crisis">crisis</EVENT>. The airline has also <EVENT class="ASPECTUAL" eid="e7" stem="cut">cut</EVENT> all flights to South Korea. Qantas <EVENT class="I_ACTION" eid="e8" stem="plan">plans</EVENT> daily flights between Sydney and Bombay, up from the <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t46" type="DATE" value="PRESENT_REF">current</TIMEX3> four flights a week, to <EVENT class="I_ACTION" eid="e9" stem="boost">boost</EVENT> business and tourism ties with India, the airline <EVENT class="REPORTING" eid="e10" stem="announce">announced</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t47" type="DATE" value="1998-02-13">Friday</TIMEX3>. In a joint statement with Tourism Minister Andrew Thomson, it <EVENT class="REPORTING" eid="e11" stem="say">said</EVENT> two new flights would <EVENT class="OCCURRENCE" eid="e12" stem="leave">leave</EVENT> Bombay on <TIMEX3 anchorTimeID="t189" freq="7D" functionInDocument="NONE" quant="" temporalFunction="true" tid="t190" type="SET" value="XXXX-WXX-1TNI">Monday</TIMEX3> and <TIMEX3 freq="7D" functionInDocument="NONE" quant="" temporalFunction="false" tid="t189" type="SET" value="XXXX-WXX-2TNI">Tuesday nights</TIMEX3> from <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t56" type="DATE" value="1998-03-30">March 30</TIMEX3>, with the third <EVENT class="OCCURRENCE" eid="e65" stem="depart">departing</EVENT> <TIMEX3 freq="1W" functionInDocument="NONE" quant="each" temporalFunction="false" tid="t54" type="SET" value="XXXX-WXX-4">each Thursday</TIMEX3> from <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t55" type="DATE" value="1998-08-06">August 6</TIMEX3>. This will <EVENT class="OCCURRENCE" eid="e14" stem="add">add</EVENT> nearly 700 seats a week on the route. Thomson, in India to <EVENT class="OCCURRENCE" eid="e16" stem="talk">talk</EVENT> to tourism leaders, <EVENT class="REPORTING" eid="e17" stem="say">said</EVENT> the flights would <EVENT class="I_STATE" eid="e18" stem="provide">provide</EVENT> extra support to the growing tourism market. Qantas' India manager Khursheed Lam <EVENT class="REPORTING" eid="e20" stem="say">said</EVENT> the airline was <EVENT class="OCCURRENCE" eid="e21" stem="work">working</EVENT> closely with the Australian Tourist Commission to <EVENT class="I_ACTION" eid="e22" stem="develop">develop</EVENT> greater awareness of Australia in the Indian market. Qantas will also <EVENT class="OCCURRENCE" eid="e25" stem="appoint">appoint</EVENT> a Bombay-based public relations consultant.
+</TEXT>
+
+<LASTEXTRAINFO>
+(PROFILE (WS SL:BC-Australia-India-Qantas; CT:f; (REG:MEST;) (REG:INDI;) (REG:ENGL;) (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (LANG:ENGLISH;)) )
+AP-NY-02-13-98 1435EST
+</LASTEXTRAINFO>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei321" eventID="e1" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei322" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei324" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei325" eventID="e28" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei326" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei328" eventID="e30" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei329" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei331" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei334" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei336" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei338" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei340" eventID="e12" modality="would" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei341" eventID="e65" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei342" eventID="e14" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei344" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei345" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei346" eventID="e18" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei348" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei349" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei350" eventID="e22" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei352" eventID="e25" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei354" eventID="e12" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<TLINK eventInstanceID="ei321" lid="l1" origin="USER" relType="ENDED_BY" relatedToTime="t43" />
+<TLINK eventInstanceID="ei324" lid="l3" origin="USER" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei325" lid="l4" origin="USER" relType="IDENTITY" relatedToEventInstance="ei321" />
+<TLINK eventInstanceID="ei325" lid="l5" origin="USER" relType="AFTER" relatedToEventInstance="ei326" />
+<TLINK eventInstanceID="ei326" lid="l6" origin="USER" relType="AFTER" relatedToEventInstance="ei328" />
+<TLINK eventInstanceID="ei329" lid="l7" origin="USER" relType="IS_INCLUDED" relatedToEventInstance="ei326" />
+<TLINK eventInstanceID="ei336" lid="l10" origin="USER" relType="IS_INCLUDED" relatedToTime="t47" />
+<TLINK eventInstanceID="ei340" lid="l13" origin="USER" relType="BEGUN_BY" relatedToTime="t56" />
+<TLINK eventInstanceID="ei354" lid="l14" origin="USER" relType="BEGUN_BY" relatedToTime="t56" />
+<TLINK eventInstanceID="ei341" lid="l20" origin="USER" relType="IS_INCLUDED" relatedToTime="t54" />
+<TLINK eventInstanceID="ei341" lid="l21" origin="USER" relType="BEGUN_BY" relatedToTime="t55" />
+<TLINK eventInstanceID="ei342" lid="l22" origin="USER" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei348" lid="l25" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei352" lid="l26" origin="USER" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei326" lid="l27" origin="USER" relType="BEGINS" relatedToTime="t44" />
+<TLINK eventInstanceID="ei325" lid="l28" origin="USER" relType="ENDS" relatedToTime="t44" />
+<SLINK eventInstanceID="ei338" lid="l43" relType="EVIDENTIAL" subordinatedEventInstance="ei341" />
+<SLINK eventInstanceID="ei321" lid="l30" relType="MODAL" subordinatedEventInstance="ei322" />
+<SLINK eventInstanceID="ei331" lid="l31" relType="MODAL" subordinatedEventInstance="ei334" />
+<SLINK eventInstanceID="ei336" lid="l33" relType="EVIDENTIAL" subordinatedEventInstance="ei331" />
+<SLINK eventInstanceID="ei338" lid="l34" relType="EVIDENTIAL" subordinatedEventInstance="ei340" />
+<SLINK eventInstanceID="ei345" lid="l36" relType="EVIDENTIAL" subordinatedEventInstance="ei346" />
+<SLINK eventInstanceID="ei348" lid="l38" relType="EVIDENTIAL" subordinatedEventInstance="ei349" />
+<SLINK eventInstanceID="ei349" lid="l39" relType="MODAL" subordinatedEventInstance="ei350" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei321" relatedToEventInstance="ei325" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei321" relatedToEventInstance="ei326" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei321" relatedToEventInstance="ei328" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei321" relatedToEventInstance="ei329" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei321" relatedToTime="t44" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei324" relatedToEventInstance="ei348" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei325" relatedToEventInstance="ei328" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei325" relatedToEventInstance="ei329" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei325" relatedToTime="t43" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei326" relatedToEventInstance="ei329" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei326" relatedToTime="t43" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei328" relatedToEventInstance="ei329" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei328" relatedToTime="t43" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei328" relatedToTime="t44" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei329" relatedToTime="t43" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei329" relatedToTime="t44" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei342" relatedToEventInstance="ei348" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei348" relatedToEventInstance="ei352" /><TLINK deduced="true" relType="ENDS" timeID="t43" relatedToTime="t44" /><TLINK deduced="true" relType="INCLUDES" timeID="t54" relatedToTime="t55" /></TimeML>

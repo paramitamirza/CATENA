@@ -1,0 +1,84 @@
+# FILE: wsj_0555.tml.txp
+# DATE: 1989-10-30T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1989-10-30	O	O	O	O	O	tmx0	B-DATE	1989-10-30	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+Waxman	t1	1	NP0	waxman	O	O	O	O	organization	O	O	O	O	O	say	A0	B-NP	O	O	O	O	O	
+Industries	t2	1	NP0	industries	t1:NAME||t3:POSTHON	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	industry+n+plur	O	O	
+Inc.	t3	1	NP0	inc.	O	O	O	O	organization	O	O	O	O	O	say	A0	I-NP	O	O	O	O	O	
+said	t4	1	VVD	say	t2:SBJ||t25:OBJ||t36:P	O	O	O	O	REPORTING	e1	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e1:tmx0:BEFORE||e1:e11:NONE||e1:e4:NONE||e1:tmx13:NONE	
+holders	t5	1	NN2	holder	t6:NMOD	O	O	O	O	O	O	A0	A1	O	say	A1	B-NP	O	O	holder+n+plur	O	O	
+of	t6	1	PRF	of	t10:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+$	t7	1	PUN	$	t8:NMOD	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	$+punc	O	O	
+6,542,000	t8	1	CRD	6,542,000	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	
+face	t9	1	NN1	face	O	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	face+n+sing	O	O	
+amount	t10	1	NN1	amount	t7:NMOD||t9:NMOD||t11:NMOD	O	O	O	O	O	O	A2	A1	O	say	A1	I-NP	O	O	amount+n+sing	O	O	
+of	t11	1	PRF	of	t17:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+its	t12	1	DPS	its	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	its+adj+zero	O	O	
+6 1/4	t13	1	CRD	6 1/4	O	O	O	O	O	O	O	O	O	O	say	A1	B-ADJP	O	O	O	O	O	
+%	t14	1	NN1	%	t13:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-ADJP	O	O	O	O	O	
+convertible	t15	1	AJ0	convertible	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	convertible+adj+zero	O	O	
+subordinated	t16	1	AJ0	subordinated	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	subordinate+v+indic+past	O	O	
+debentures	t17	1	NN2	debentures	t12:NMOD||t14:NMOD||t15:NMOD||t16:NMOD||t18:P||t19:APPO||t24:P	O	O	O	O	O	O	A0	O	O	say	A1	I-NP	O	O	debenture+n+plur	O	O	
+,	t18	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	
+due	t19	1	AJ0	due	t23:TMP	O	O	O	O	STATE	e11	O	O	O	say	A1	B-ADJP	O	O	due+adj+zero	O	e11:tmx13:ENDED_BY||e11:e2:NONE||e11:e4:NONE||e11:tmx0:NONE	
+March	t20	1	NP0	march	t21:NMOD	tmx13	B-DATE	2007-03-15	O	O	O	O	O	O	say	A1	B-NP	O	O	march+pn	O	O	
+15	t21	1	CRD	15	O	tmx13	I-DATE	2007-03-15	O	O	O	O	O	O	say	A1	I-NP	O	O	15+n+sing	O	O	
+,	t22	1	PUN	,	O	tmx13	I-DATE	2007-03-15	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	
+2007	t23	1	CRD	2007	t20:NMOD||t22:P	tmx13	I-DATE	2007-03-15	O	O	O	O	O	O	say	A1	B-NP	O	O	O	O	O	
+,	t24	1	PUN	,	O	O	O	O	O	O	O	O	O	O	say	A1	O	O	O	punc	O	O	
+have	t25	1	VVI	have	t5:SBJ||t26:VC	O	O	O	O	O	O	O	O	O	say	A1	B-VP	O	O	have+v+indic+pres+no3sing	PRESENT+PERFECTIVE+pos	O	
+elected	t26	1	VVN	elect	t27:OPRD	O	O	O	O	I_ACTION	e2	A0	A2	O	say	A1	I-VP	O	O	elect+v+part+past	PRESENT+PERFECTIVE+pos	e2:e1:BEFORE||e2:e4:NONE||e2:tmx13:NONE||e2:tmx0:NONE	
+to	t27	1	TO0	to	t28:IM	O	O	O	O	O	O	O	O	O	say	A1	I-VP	O	O	to+prep	INFINITIVE+NONE+pos	O	
+convert	t28	1	VVB	convert	t30:OBJ||t31:ADV	O	O	O	O	OCCURRENCE	e4	A0	A1	A2	say	A1	I-VP	O	O	convert+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e4:tmx13:NONE||e4:tmx0:NONE	
+the	t29	1	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+debt	t30	1	NN1	debt	t29:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	debt+n+sing	O	O	
+into	t31	1	PRP	into	t35:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	into+prep	O	O	
+about	t32	1	PRP	about	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	about+prep	O	O	
+683,000	t33	1	CRD	683,000	t32:DEP	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	O	O	O	
+common	t34	1	AJ0	common	O	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	common+adj+zero	O	O	
+shares	t35	1	NN2	share	t33:NMOD||t34:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	share+n+plur	O	O	
+.	t36	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t37	2	AT0	the	O	O	O	O	O	O	O	O	O	O	price	A2	B-NP	O	O	the+art	O	O	
+conversion	t38	2	NN1	conversion	O	O	O	O	O	O	O	O	O	O	price	A1	I-NP	O	O	conversion+n+sing	O	O	
+price	t39	2	NN1	price	t37:NMOD||t38:NMOD	O	O	O	O	O	O	A1	A2	O	price	A2	I-NP	O	O	price+n+sing	O	O	
+is	t40	2	NN0	be	t39:SBJ||t41:PRD||t45:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+$	t41	2	PUN	$	t42:NMOD||t44:ADV	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	$+punc	O	O	
+9.58	t42	2	CRD	9.58	O	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	O	O	O	
+a	t43	2	AT0	a	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	a+art	O	O	
+share	t44	2	NN1	share	t43:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	share+n+sing	O	O	
+.	t45	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t46	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	the+art	O	O	
+company	t47	3	NN1	company	t46:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	company+n+sing	O	O	
+said	t48	3	VVD	say	t47:SBJ||t51:OBJ||t61:P	O	O	O	O	REPORTING	e6	A0	A1	O	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e6:e7:NONE||e6:tmx0:NONE||e6:e1:NONE	
+the	t49	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+holders	t50	3	NN2	holder	t49:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	holder+n+plur	O	O	
+represent	t51	3	VVI	represent	t50:SBJ||t53:OBJ	O	O	O	O	STATE	e7	A0	A1	O	say	A1	B-VP	O	O	represent+v+indic+pres+no3sing	PRESENT+NONE+pos	e7:tmx0:NONE	
+52	t52	3	CRD	52	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	O	O	O	
+%	t53	3	NN1	%	t52:NMOD||t54:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	O	O	O	
+of	t54	3	PRF	of	t57:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+the	t55	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+face	t56	3	NN1	face	O	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	face+n+sing	O	O	
+amount	t57	3	NN1	amount	t55:NMOD||t56:NMOD||t58:NMOD	O	O	O	O	O	O	A1	O	O	say	A1	I-NP	O	O	amount+n+sing	O	O	
+of	t58	3	PRF	of	t60:PMOD	O	O	O	O	O	O	O	O	O	say	A1	B-PP	O	O	of+prep	O	O	
+the	t59	3	AT0	the	O	O	O	O	O	O	O	O	O	O	say	A1	B-NP	O	O	the+art	O	O	
+debentures	t60	3	NN2	debentures	t59:NMOD	O	O	O	O	O	O	O	O	O	say	A1	I-NP	O	O	debenture+n+plur	O	O	
+.	t61	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+Waxman	t62	4	NP0	waxman	O	O	O	O	person	O	O	O	O	O	sell	A0	B-NP	O	O	O	O	O	
+sells	t63	4	NN0	sell	t62:SBJ||t65:OBJ||t74:P	O	O	O	O	O	O	A0	A1	O	O	O	B-VP	mainVb	O	sell+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+a	t64	4	AT0	a	O	O	O	O	O	O	O	O	O	O	sell	A1	B-NP	O	O	a+art	O	O	
+variety	t65	4	NN1	variety	t64:NMOD||t66:NMOD	O	O	O	O	O	O	A1	O	O	sell	A1	I-NP	O	O	variety+n+sing	O	O	
+of	t66	4	PRF	of	t68:PMOD	O	O	O	O	O	O	O	O	O	sell	A1	B-PP	O	O	of+prep	O	O	
+hardware	t67	4	NN1	hardware	O	O	O	O	O	O	O	O	O	O	sell	A1	B-NP	O	O	hardware+n+sing	O	O	
+products	t68	4	NN2	product	t67:NMOD||t69:NMOD	O	O	O	O	O	O	A1	A1	A3	sell	A1	I-NP	O	O	product+n+plur	O	O	
+for	t69	4	PRP	for	t73:PMOD	O	O	O	O	O	O	O	O	O	sell	A1	B-PP	O	O	for+prep	O	O	
+the	t70	4	AT0	the	O	O	O	O	O	O	O	O	O	O	sell	A1	B-NP	O	O	the+art	O	O	
+home	t71	4	NN1	home	O	O	O	O	O	O	O	O	O	O	sell	A1	I-NP	O	O	home+n+sing	O	O	
+repair	t72	4	NN1	repair	t71:NMOD	O	O	O	O	O	O	A1	O	O	sell	A1	I-NP	O	O	repair+n+sing	O	O	
+market	t73	4	NN1	market	t70:NMOD||t72:NMOD	O	O	O	O	O	O	O	O	O	sell	A1	I-NP	O	O	market+n+sing	O	O	
+.	t74	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

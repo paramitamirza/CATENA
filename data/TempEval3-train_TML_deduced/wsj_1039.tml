@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_1039</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0017 = 891026 891026-0017.
+Business Brief -- Amdahl Corp.: @ Computer Firm's Earnings @ Fell 37% in Third Quarter 10/26/89 WALL STREET JOURNAL (J) AMH EARNINGS (ERN) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
+</EXTRAINFO>
+
+<TEXT>
+Amdahl Corp., a maker of mainframe computers, <EVENT class="REPORTING" eid="e1">reported</EVENT> a sharp <EVENT class="OCCURRENCE" eid="e16">decline</EVENT> in net <EVENT class="OCCURRENCE" eid="e31">income</EVENT> for its <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t17" type="DATE" value="1989-Q3">third quarter</TIMEX3>, <EVENT class="OCCURRENCE" eid="e2">citing</EVENT> <EVENT class="OCCURRENCE" eid="e18">pricecutting</EVENT> by competitors and adverse effects from a strong U.S. dollar.
+
+Net income <EVENT class="OCCURRENCE" eid="e3">fell</EVENT> 37% to $32.9 million, or 30 cents a share, from $52.2 million, or 48 cents a share, in <TIMEX3 anchorTimeID="t17" functionInDocument="NONE" temporalFunction="true" tid="t21" type="DATE" value="1988-Q3">the year-ago period</TIMEX3>. Revenue <EVENT class="OCCURRENCE" eid="e4">rose</EVENT> 15% to $534.3 million from $464.7 million.
+
+Amdahl's <EVENT class="OCCURRENCE" eid="e5">results</EVENT> were somewhat worse than expected. Jay Stevens, an analyst with Dean Witter Reynolds, said he <EVENT class="I_STATE" eid="e8">expected</EVENT> the Sunnyvale, Calif., company to earn 35 cents a share for <TIMEX3 anchorTimeID="t17" functionInDocument="NONE" temporalFunction="true" tid="t22" type="DATE" value="1989-Q3">the quarter</TIMEX3> and <EVENT class="REPORTING" eid="e11">said</EVENT> the firm's weaker profit was partly the <EVENT class="OCCURRENCE" eid="e12">result</EVENT> of increased competition from International Business Machines Corp., Amdahl's principal competitor for mainframe sales.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei124" eventID="e2" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei123" eventID="e31" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei121" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei135" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei126" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei132" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei139" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei137" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei129" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei125" eventID="e18" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei122" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei129" lid="l18" relType="DURING" relatedToTime="t21" />
+<TLINK eventInstanceID="ei126" lid="l17" relType="DURING" relatedToTime="t21" />
+<TLINK eventInstanceID="ei121" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei123" lid="l3" relType="ENDS" relatedToTime="t17" />
+<TLINK eventInstanceID="ei124" lid="l4" relType="AFTER" relatedToEventInstance="ei125" />
+<TLINK eventInstanceID="ei124" lid="l5" relType="SIMULTANEOUS" relatedToEventInstance="ei121" />
+<TLINK eventInstanceID="ei132" lid="l6" relType="INCLUDES" relatedToEventInstance="ei123" />
+<SLINK eventInstanceID="ei137" lid="l14" relType="EVIDENTIAL" subordinatedEventInstance="ei139" />
+<SLINK eventInstanceID="ei121" lid="l11" relType="EVIDENTIAL" subordinatedEventInstance="ei122" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei124" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei123" relatedToEventInstance="ei132" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei121" relatedToEventInstance="ei125" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToTime="t0" /></TimeML>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>VOA19980303.1600.0917</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-03-03">1998-03-03</TIMEX3></DCT>
+<TEXT>
+ Nigerian security forces <EVENT class="OCCURRENCE" eid="e1">clashed</EVENT> in Lagos with anti-government demonstrators who were <EVENT class="OCCURRENCE" eid="e2">protesting</EVENT> calls for military leader Sani Abacha to <EVENT class="I_ACTION" eid="e3">run</EVENT> for president.
+ Meanwhile, as VOA West Africa Correspondent Purnell Murdock <EVENT class="REPORTING" eid="e4">reports</EVENT>, General Abacha's supporters <EVENT class="ASPECTUAL" eid="e5">began</EVENT> a <TIMEX3 functionInDocument="NONE" tid="t6" type="DURATION" value="P2D">two day</TIMEX3> <EVENT class="OCCURRENCE" eid="e7">rally</EVENT> in the capital, Abuja, to <EVENT class="OCCURRENCE" eid="e8">urge</EVENT> him to <EVENT class="OCCURRENCE" eid="e9">compete</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t10" type="DATE" value="1998">this year</TIMEX3>'s election.
+ Nigeria state radio <EVENT class="REPORTING" eid="e11">says</EVENT> thousands of people <EVENT class="ASPECTUAL" eid="e12">began</EVENT> <EVENT class="OCCURRENCE" eid="e13">gathering</EVENT> in the capital Abuja <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t14" type="DATE" value="1998-03-03">early Tuesday</TIMEX3> for the <TIMEX3 functionInDocument="NONE" tid="t15" type="DURATION" value="P2D">two day</TIMEX3> <EVENT class="OCCURRENCE" eid="e16">rally</EVENT> <EVENT class="I_ACTION" eid="e17">supporting</EVENT> General Sani Abacha's <EVENT class="STATE" eid="e18">candidacy</EVENT>.
+ Organizers <EVENT class="REPORTING" eid="e19">state</EVENT> the <TIMEX3 functionInDocument="NONE" tid="t20" type="DURATION" value="P2D">two days</TIMEX3> of music, dancing, and speeches is <EVENT class="I_STATE" eid="e21">expected</EVENT> to <EVENT class="OCCURRENCE" eid="e22">draw</EVENT> some two million people.
+ But as supporters of the military leader <EVENT class="OCCURRENCE" eid="e23">gathered</EVENT> in the north, riot police <EVENT class="OCCURRENCE" eid="e24">deployed</EVENT> in Nigeria's southern commercial capital Lagos, to <EVENT class="ASPECTUAL" eid="e25">break</EVENT> up a protest <EVENT class="OCCURRENCE" eid="e26">rally</EVENT> <EVENT class="OCCURRENCE" eid="e27">called</EVENT> by the political opposition.
+ Although General Abacha had not publicly <EVENT class="REPORTING" eid="e28">announced</EVENT> his <EVENT class="STATE" eid="e29">candidacy</EVENT>, many people <EVENT class="I_STATE" eid="e30">believe</EVENT> an Abacha <EVENT class="STATE" eid="e31">presidency</EVENT> is a foregone conclusion.
+ Some analysts <EVENT class="REPORTING" eid="e32">say</EVENT> the <EVENT class="STATE" eid="e33">outcome</EVENT> of a <EVENT class="OCCURRENCE" eid="e34">face</EVENT> off between the police and anti Abacha political groups will be a <EVENT class="STATE" eid="e35">test</EVENT> of the opposition's resolve.
+ Purnell Murdock, VOA News.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei28" eventID="e28" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eventID="e29" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei31" eventID="e31" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei35" eventID="e35" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei34" eventID="e34" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei33" eventID="e33" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei32" eventID="e32" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="IS_INCLUDED" relatedToEventInstance="ei2" />
+<TLINK eventInstanceID="ei4" lid="l2" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei7" lid="l3" relType="DURING" relatedToTime="t6" />
+<TLINK eventInstanceID="ei9" lid="l4" relType="IS_INCLUDED" relatedToTime="t10" />
+<TLINK eventInstanceID="ei11" lid="l5" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei13" lid="l6" relType="IDENTITY" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei16" lid="l7" relType="IDENTITY" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei16" lid="l8" relType="DURING" relatedToTime="t15" />
+<TLINK eventInstanceID="ei16" lid="l9" relType="INCLUDES" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei19" lid="l10" relType="BEFORE" relatedToTime="t20" />
+<TLINK eventInstanceID="ei23" lid="l11" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei24" lid="l12" relType="SIMULTANEOUS" relatedToEventInstance="ei23" />
+<TLINK eventInstanceID="ei26" lid="l13" relType="BEFORE" relatedToEventInstance="ei24" />
+<TLINK eventInstanceID="ei27" lid="l14" relType="BEFORE" relatedToEventInstance="ei26" />
+<TLINK eventInstanceID="ei28" lid="l15" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei32" lid="l16" relType="SIMULTANEOUS" relatedToEventInstance="ei30" />
+<TLINK eventInstanceID="ei33" lid="l17" relType="IDENTITY" relatedToEventInstance="ei35" />
+<TLINK eventInstanceID="ei34" lid="l18" relType="ENDED_BY" relatedToEventInstance="ei33" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei24" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei24" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei28" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei28" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei7" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei7" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei7" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei13" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei13" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei17" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei30" relatedToEventInstance="ei32" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei35" relatedToEventInstance="ei34" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei35" relatedToEventInstance="ei33" /></TimeML>

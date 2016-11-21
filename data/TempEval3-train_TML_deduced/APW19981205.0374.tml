@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>APW19981205.0374</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-12-05T09:42">12/05/1998 09:42:00</TIMEX3></DCT>
+
+<TITLE>Poland to participate in preparations for NATO summit</TITLE>
+
+
+<EXTRAINFO>
+APW19981205.0374 <DOCTYPE> NEWS STORY </DOCTYPE><DATE_TIME> 12/05/1998 09:42:00 </DATE_TIME><HEADER>w1008 &amp;Cx1f; wstm-
+r i &amp;Cx13;  &amp;Cx11;  BC-Poland-Germany-NATO     12-05 0152</HEADER><SLUG> BC-Poland-Germany-NATO </SLUG><HEADLINE>Poland to participate in preparations for NATO summit</HEADLINE> &amp;UR; AP Photos WAR150-1 &amp;QL;
+</EXTRAINFO>
+
+
+<TEXT>
+
+WARSAW, Poland (AP) _
+
+Poland, Hungary and the Czech Republic can now <EVENT class="OCCURRENCE" eid="e1">participate</EVENT> in NATO strategy <EVENT class="OCCURRENCE" eid="e24">planning</EVENT>, because all NATO member states have <EVENT class="I_ACTION" eid="e2">approved</EVENT> their <EVENT class="STATE" eid="e3">joining</EVENT> the alliance, German defense minister Rudolf Scharping <EVENT class="REPORTING" eid="e4">said</EVENT> <TIMEX3 functionInDocument="NONE" temporalFunction="true" tid="t2" type="DATE" value="1998-12-05">Saturday</TIMEX3>.
+
+The Netherlands <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t3" type="DATE" value="1998-12-XX">early this week</TIMEX3> <EVENT class="STATE" eid="e5">became</EVENT> the last country to <EVENT class="OCCURRENCE" eid="e7">ratify</EVENT> NATO expansion to include the three former Warsaw Pact nations.
+
+The three are <EVENT class="I_STATE" eid="e8">expected</EVENT> to <EVENT class="OCCURRENCE" eid="e10">join</EVENT> <SIGNAL sid="s3">in</SIGNAL> <TIMEX3 functionInDocument="NONE" temporalFunction="true" tid="t4" type="DATE" value="1999-04">April</TIMEX3>, as part of <EVENT class="OCCURRENCE" eid="e11">marking</EVENT> NATO's 50th anniversary. With their membership secure, they also can <EVENT class="OCCURRENCE" eid="e12">participate</EVENT> in <EVENT class="I_ACTION" eid="e13">planning</EVENT> for the NATO <EVENT class="OCCURRENCE" eid="e14">summit</EVENT> <SIGNAL sid="s4">in</SIGNAL> <TIMEX3 functionInDocument="NONE" temporalFunction="true" tid="t5" type="DATE" value="1999-04">April</TIMEX3>.
+
+Scharping, <EVENT class="ASPECTUAL" eid="e15">ending</EVENT> a <TIMEX3 functionInDocument="NONE" temporalFunction="true" tid="t6" type="DURATION" value="P2D">two-day</TIMEX3>  <EVENT class="OCCURRENCE" eid="e16">visit</EVENT>, <EVENT class="REPORTING" eid="e17">said</EVENT> Poland was well <EVENT class="I_STATE" eid="e18">prepared</EVENT> to <EVENT class="OCCURRENCE" eid="e19">join</EVENT> the alliance. Germany has <EVENT class="STATE" eid="e21">been</EVENT> a strong advocate of Poland's access to NATO, <EVENT class="REPORTING" eid="e22">saying</EVENT> it will <EVENT class="OCCURRENCE" eid="e23">serve</EVENT> European security and stability.
+
+</TEXT>
+
+
+<EXTRAINFO>
+&amp;UR; (ms-aet)  (PROFILE (WS SL:BC-Poland-Germany-NATO; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (LANG:ENGLISH;)) )
+<TRAILER> AP-NY-12-05-98 0942EST </TRAILER>
+</EXTRAINFO>
+
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" modality="can" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2" eventID="e2" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e8" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e12" modality="can" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e13" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e15" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e17" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e18" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e19" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei23" eventID="e21" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e22" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e23" polarity="POS" pos="UNKNOWN" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e24" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK lid="l2" origin="USER" relType="INCLUDES" relatedToEventInstance="ei1" timeID="t0" />
+<TLINK eventInstanceID="ei2" lid="l3" origin="USER" relType="BEFORE" relatedToEventInstance="ei1" />
+<TLINK lid="l5" origin="USER" relType="AFTER" relatedToEventInstance="ei2" timeID="t0" />
+<TLINK lid="l6" origin="USER" relType="INCLUDES" relatedToEventInstance="ei4" timeID="t2" />
+<TLINK lid="l7" origin="USER" relType="INCLUDES" relatedToEventInstance="ei4" timeID="t2" />
+<TLINK eventInstanceID="ei4" lid="l8" origin="USER" relType="AFTER" relatedToEventInstance="ei2" />
+<TLINK lid="l9" origin="USER" relType="INCLUDES" relatedToEventInstance="ei5" timeID="t3" />
+<TLINK eventInstanceID="ei5" lid="l11" origin="USER" relType="SIMULTANEOUS" relatedToEventInstance="ei7" />
+<TLINK lid="l12" origin="USER" relType="INCLUDES" relatedToEventInstance="ei9" timeID="t0" />
+<TLINK lid="l14" origin="USER" relType="INCLUDES" relatedToEventInstance="ei12" signalID="s3" timeID="t4" />
+<TLINK lid="l15" origin="USER" relType="INCLUDES" relatedToEventInstance="ei13" timeID="t4" />
+<TLINK lid="l16" origin="USER" relType="BEFORE" relatedToEventInstance="ei13" timeID="t0" />
+<TLINK lid="l17" origin="USER" relType="INCLUDES" relatedToEventInstance="ei14" timeID="t0" />
+<TLINK lid="l20" origin="USER" relType="INCLUDES" relatedToEventInstance="ei16" signalID="s4" timeID="t5" />
+<TLINK lid="l21" origin="USER" relType="INCLUDES" relatedToEventInstance="ei18" timeID="t6" />
+<TLINK lid="l23" origin="USER" relType="INCLUDES" relatedToEventInstance="ei19" timeID="t2" />
+<TLINK lid="l24" origin="USER" relType="DURING" relatedToEventInstance="ei19" timeID="t6" />
+<TLINK eventInstanceID="ei3" lid="l26" origin="USER" relType="INCLUDES" relatedToTime="t4" />
+<TLINK lid="l27" origin="USER" relType="BEFORE" relatedToEventInstance="ei26" timeID="t0" />
+<TLINK lid="l28" origin="USER" relType="BEFORE" relatedToEventInstance="ei15" timeID="t0" />
+<TLINK lid="l29" origin="USER" relType="AFTER" relatedToEventInstance="ei17" timeID="t2" />
+<TLINK lid="l32" origin="USER" relType="INCLUDES" relatedToEventInstance="ei21" timeID="t4" />
+<TLINK lid="l33" origin="USER" relType="AFTER" relatedToEventInstance="ei20" timeID="t0" />
+<TLINK lid="l35" origin="USER" relType="AFTER" relatedToEventInstance="ei23" timeID="t0" />
+<TLINK lid="l36" origin="USER" relType="AFTER" relatedToEventInstance="ei24" timeID="t0" />
+<TLINK lid="l38" origin="USER" relType="BEFORE" relatedToEventInstance="ei25" timeID="t0" />
+<SLINK eventInstanceID="ei2" lid="l1" relType="MODAL" subordinatedEventInstance="ei3" />
+<SLINK eventInstanceID="ei1" lid="l10" relType="MODAL" subordinatedEventInstance="ei26" />
+<SLINK eventInstanceID="ei9" lid="l13" relType="MODAL" subordinatedEventInstance="ei12" />
+<SLINK eventInstanceID="ei14" lid="l18" relType="MODAL" subordinatedEventInstance="ei15" />
+<SLINK eventInstanceID="ei15" lid="l19" relType="MODAL" subordinatedEventInstance="ei16" />
+<SLINK eventInstanceID="ei19" lid="l30" relType="EVIDENTIAL" subordinatedEventInstance="ei20" />
+<SLINK eventInstanceID="ei20" lid="l31" relType="MODAL" subordinatedEventInstance="ei21" />
+<SLINK eventInstanceID="ei24" lid="l37" relType="EVIDENTIAL" subordinatedEventInstance="ei25" />
+<ALINK eventInstanceID="ei18" lid="l22" relType="CULMINATES" relatedToEventInstance="ei17" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei2" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei20" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei24" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei14" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei3" relatedToEventInstance="ei21" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei4" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei4" relatedToTime="t2" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei5" relatedToTime="t3" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei7" relatedToTime="t3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei9" relatedToEventInstance="ei20" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei9" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei9" relatedToEventInstance="ei24" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei9" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei12" relatedToTime="t4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToEventInstance="ei14" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToEventInstance="ei20" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToEventInstance="ei24" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei13" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei13" relatedToTime="t4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei14" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei14" relatedToEventInstance="ei20" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei14" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei14" relatedToEventInstance="ei24" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei14" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei14" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei14" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei15" relatedToEventInstance="ei20" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei15" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei15" relatedToEventInstance="ei24" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei15" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei16" relatedToTime="t5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei17" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei17" relatedToTime="t2" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei18" relatedToTime="t6" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei19" relatedToTime="t2" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei20" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei20" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei20" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei21" relatedToTime="t4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei23" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei25" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToTime="t0" /></TimeML>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0981</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0077 = 891026 891026-0077.
+MGM Grand to Pay @ $93 Million, Stock @ For Resort Site @ ---- @ By David J. Jefferson @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) MGMG RAM TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) REAL ESTATE, REITS, LAND DEVELOPMENT (REL) CASINOS AND GAMBLING (CNO) STOCK MARKET, OFFERINGS (STK) BEVERLY HILLS, Calif.
+</EXTRAINFO>
+
+<TEXT>
+MGM Grand Inc. has <EVENT class="I_STATE" eid="e1">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e3">pay</EVENT> $93 million and nearly 1.8 million common shares to <EVENT class="OCCURRENCE" eid="e5">buy</EVENT> 117 acres of land along the Las Vegas, Nev., Strip as a site for its planned movie-studio and theme-park resort.
+
+Of the total purchase price, $50 million cash and $30 million in stock (nearly 1.8 million shares) would be <EVENT class="OCCURRENCE" eid="e8">paid</EVENT> to <EVENT class="OCCURRENCE" eid="e11">buy</EVENT> the existing 700-room Marina Hotel amp Casino from Southwest Securities, a Nevada limited partnership. The remaining properties to be <EVENT class="OCCURRENCE" eid="e13">acquired</EVENT> are the Tropicana Country Club amp Golf Course, a facility jointly owned by Ramada Inc., of Phoenix, Ariz., and the Jaffe family, and a small parcel owned by MGM Grand director James D. Aljian.
+
+The purchase price was <EVENT class="OCCURRENCE" eid="e17">disclosed</EVENT> in a preliminary prospectus <EVENT class="OCCURRENCE" eid="e18">issued</EVENT> in connection with MGM Grand's planned offering of six million common shares. The luxury airline and casino company, 98.6%-owned by investor Kirk Kerkorian and his Tracinda Corp., earlier <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t95" type="DATE" value="1989-10">this month</TIMEX3> <EVENT class="I_ACTION" eid="e22">announced</EVENT> its <EVENT class="I_STATE" eid="e23">agreements</EVENT> to <EVENT class="OCCURRENCE" eid="e25">acquire</EVENT> the properties, but didn't <EVENT class="OCCURRENCE" eid="e26">disclose</EVENT> the purchase price.
+
+The proposed stock <EVENT class="I_ACTION" eid="e28">offering</EVENT> and <EVENT class="OCCURRENCE" eid="e29">issuance</EVENT> of nearly 1.8 million common shares in connection with the land purchase will <EVENT class="OCCURRENCE" eid="e32">bring</EVENT> MGM Grand's total shares outstanding to 28.7 million, of which 72% will be <EVENT class="STATE" eid="e33">owned</EVENT> by Mr. Kerkorian and Tracinda, <EVENT class="REPORTING" eid="e100">according</EVENT> to the prospectus.
+
+In over-the-counter <EVENT class="OCCURRENCE" eid="e34">trading</EVENT>, MGM Grand was <EVENT class="OCCURRENCE" eid="e35">bid</EVENT> at $17.50 a share.
+
+Proceeds from the offering are <EVENT class="I_STATE" eid="e38">expected</EVENT> to be <EVENT class="OCCURRENCE" eid="e40">used</EVENT> for <EVENT class="OCCURRENCE" eid="e41">remodeling</EVENT> the company's Desert Inn resort in Las Vegas, <EVENT class="OCCURRENCE" eid="e101">refurbishing</EVENT> certain aircraft of the MGM Grand Air unit, and to <EVENT class="OCCURRENCE" eid="e43">acquire</EVENT> the property for the new resort. The company <EVENT class="REPORTING" eid="e44">said</EVENT> it <EVENT class="I_STATE" eid="e45">estimates</EVENT> the Desert Inn remodeling will <EVENT class="STATE" eid="e46">cost</EVENT> about $32 million, and the <EVENT class="OCCURRENCE" eid="e103">refurbishment</EVENT> of the three DC-8-62 aircraft, made by McDonnell Douglas Corp., will <EVENT class="OCCURRENCE" eid="e48">cost</EVENT> around $24.5 million.
+
+MGM Grand <EVENT class="REPORTING" eid="e49">said</EVENT> the latest stock offering won't <EVENT class="OCCURRENCE" eid="e51">cover</EVENT> the $600 million or more cost of <EVENT class="OCCURRENCE" eid="e2188">building</EVENT> the proposed resort and theme park, and <EVENT class="REPORTING" eid="e54">added</EVENT> it will <EVENT class="I_STATE" eid="e55">need</EVENT> to <EVENT class="I_ACTION" eid="e57">seek</EVENT> additional financing, either through bank borrowings or debt and equity offerings, at <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t104" type="DATE" value="FUTURE_REF">a later date</TIMEX3>. <EVENT class="OCCURRENCE" eid="e63">Construction</EVENT> is <EVENT class="STATE" eid="e64">set</EVENT> to <EVENT class="ASPECTUAL" eid="e66">begin</EVENT> in <TIMEX3 functionInDocument="NONE" mod="START" temporalFunction="false" tid="t105" type="DATE" value="1991">early 1991</TIMEX3>.
+
+The resort will include the MGM Grand Hotel, a multi-spired, castle-like facility that will include 5,000 rooms and 85,000 square feet of casino space. The facility will be <EVENT class="OCCURRENCE" eid="e69">marketed</EVENT> toward families, and room rates will be between $35 and $55 a night, MGM Grand <EVENT class="REPORTING" eid="e70">said</EVENT>.
+
+The prospectus didn't <EVENT class="STATE" eid="e71">include</EVENT> many details about the studio and theme park, although conceptual drawings, <EVENT class="OCCURRENCE" eid="e75">released</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t108" type="DATE" value="1989-10">this month</TIMEX3>, <EVENT class="REPORTING" eid="e76">show</EVENT> that it may <EVENT class="STATE" eid="e77">feature</EVENT> several "themed" areas similar to those found at parks built by Walt Disney Co.
+</TEXT>
+
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2275" eventID="e1" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2276" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2277" eventID="e5" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2278" eventID="e8" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2279" eventID="e11" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2280" eventID="e13" modality="none" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2281" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2282" eventID="e18" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2283" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2284" eventID="e23" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2285" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2286" eventID="e26" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2287" eventID="e28" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2288" eventID="e29" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2289" eventID="e32" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2291" eventID="e33" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2292" eventID="e100" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2293" eventID="e34" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2294" eventID="e35" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2295" eventID="e38" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2296" eventID="e40" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2297" eventID="e41" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2298" eventID="e101" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2299" eventID="e43" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2300" eventID="e44" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2301" eventID="e45" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2303" eventID="e46" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2304" eventID="e103" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2306" eventID="e48" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2307" eventID="e49" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2308" eventID="e51" polarity="NEG" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2310" eventID="e2188" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2311" eventID="e54" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2312" eventID="e55" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2313" eventID="e57" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2314" eventID="e63" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2315" eventID="e64" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2316" eventID="e66" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2317" eventID="e69" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2319" eventID="e70" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2320" eventID="e71" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2321" eventID="e75" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2322" eventID="e76" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2323" eventID="e77" modality="may" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei2314" lid="l58" relType="DURING" relatedToTime="t105" />
+<TLINK lid="l1" relType="AFTER" relatedToEventInstance="ei2275" timeID="t0" />
+<TLINK eventInstanceID="ei2278" lid="l2" relType="IDENTITY" relatedToEventInstance="ei2276" />
+<TLINK eventInstanceID="ei2279" lid="l3" relType="IS_INCLUDED" relatedToEventInstance="ei2277" />
+<TLINK eventInstanceID="ei2280" lid="l4" relType="IS_INCLUDED" relatedToEventInstance="ei2277" />
+<TLINK eventInstanceID="ei2281" lid="l5" relType="IS_INCLUDED" relatedToEventInstance="ei2282" />
+<TLINK eventInstanceID="ei2282" lid="l6" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2283" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2283" lid="l8" relType="IS_INCLUDED" relatedToTime="t95" />
+<TLINK eventInstanceID="ei2285" lid="l9" relType="IDENTITY" relatedToEventInstance="ei2277" />
+<TLINK eventInstanceID="ei2284" lid="l10" relType="IDENTITY" relatedToEventInstance="ei2275" />
+<TLINK eventInstanceID="ei2286" lid="l11" relType="BEFORE" relatedToEventInstance="ei2281" />
+<TLINK eventInstanceID="ei2286" lid="l12" relType="IS_INCLUDED" relatedToTime="t95" />
+<TLINK eventInstanceID="ei2287" lid="l13" relType="IDENTITY" relatedToEventInstance="ei2289" />
+<TLINK eventInstanceID="ei2288" lid="l14" relType="IDENTITY" relatedToEventInstance="ei2289" />
+<TLINK eventInstanceID="ei2292" lid="l15" relType="SIMULTANEOUS" relatedToEventInstance="ei2282" />
+<TLINK eventInstanceID="ei2292" lid="l16" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2293" lid="l17" relType="INCLUDES" relatedToEventInstance="ei2294" />
+<TLINK eventInstanceID="ei2295" lid="l18" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2306" lid="l20" relType="AFTER" relatedToEventInstance="ei2304" />
+<TLINK eventInstanceID="ei2307" lid="l22" relType="SIMULTANEOUS" relatedToEventInstance="ei2300" />
+<TLINK eventInstanceID="ei2307" lid="l23" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2311" lid="l26" relType="IS_INCLUDED" relatedToEventInstance="ei2307" />
+<TLINK eventInstanceID="ei2312" lid="l27" relType="IS_INCLUDED" relatedToTime="t104" />
+<TLINK eventInstanceID="ei2315" lid="l28" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2316" lid="l29" relType="IS_INCLUDED" relatedToTime="t105" />
+<TLINK eventInstanceID="ei2317" lid="l30" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2319" lid="l32" relType="IDENTITY" relatedToEventInstance="ei2307" />
+<TLINK eventInstanceID="ei2320" lid="l33" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2322" lid="l34" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2321" lid="l35" relType="IS_INCLUDED" relatedToTime="t108" />
+<SLINK eventInstanceID="ei2322" lid="l36" relType="EVIDENTIAL" subordinatedEventInstance="ei2323" />
+<SLINK eventInstanceID="ei2275" lid="l37" relType="MODAL" subordinatedEventInstance="ei2276" />
+<SLINK eventInstanceID="ei2276" lid="l38" relType="MODAL" subordinatedEventInstance="ei2277" />
+<SLINK eventInstanceID="ei2278" lid="l39" relType="MODAL" subordinatedEventInstance="ei2279" />
+<SLINK eventInstanceID="ei2283" lid="l40" relType="EVIDENTIAL" subordinatedEventInstance="ei2284" />
+<SLINK eventInstanceID="ei2284" lid="l41" relType="MODAL" subordinatedEventInstance="ei2285" />
+<SLINK eventInstanceID="ei2292" lid="l42" relType="EVIDENTIAL" subordinatedEventInstance="ei2291" />
+<SLINK eventInstanceID="ei2295" lid="l43" relType="MODAL" subordinatedEventInstance="ei2296" />
+<SLINK eventInstanceID="ei2296" lid="l44" relType="MODAL" subordinatedEventInstance="ei2297" />
+<SLINK eventInstanceID="ei2296" lid="l45" relType="MODAL" subordinatedEventInstance="ei2298" />
+<SLINK eventInstanceID="ei2296" lid="l46" relType="MODAL" subordinatedEventInstance="ei2299" />
+<SLINK eventInstanceID="ei2300" lid="l47" relType="EVIDENTIAL" subordinatedEventInstance="ei2301" />
+<SLINK eventInstanceID="ei2301" lid="l48" relType="MODAL" subordinatedEventInstance="ei2303" />
+<SLINK eventInstanceID="ei2301" lid="l49" relType="MODAL" subordinatedEventInstance="ei2306" />
+<SLINK eventInstanceID="ei2307" lid="l50" relType="EVIDENTIAL" subordinatedEventInstance="ei2308" />
+<SLINK eventInstanceID="ei2311" lid="l51" relType="EVIDENTIAL" subordinatedEventInstance="ei2312" />
+<SLINK eventInstanceID="ei2312" lid="l52" relType="MODAL" subordinatedEventInstance="ei2313" />
+<SLINK eventInstanceID="ei2315" lid="l53" relType="MODAL" subordinatedEventInstance="ei2316" />
+<SLINK eventInstanceID="ei2319" lid="l54" relType="EVIDENTIAL" subordinatedEventInstance="ei2317" />
+<ALINK eventInstanceID="ei2316" lid="l56" relType="INITIATES" relatedToEventInstance="ei2314" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2275" relatedToEventInstance="ei2284" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2275" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2275" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2276" relatedToEventInstance="ei2278" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2277" relatedToEventInstance="ei2279" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2277" relatedToEventInstance="ei2280" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2277" relatedToEventInstance="ei2285" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2279" relatedToEventInstance="ei2285" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2280" relatedToEventInstance="ei2285" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2281" relatedToEventInstance="ei2286" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2281" relatedToEventInstance="ei2292" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2281" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2282" relatedToEventInstance="ei2292" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2282" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2283" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2284" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2286" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2286" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2287" relatedToEventInstance="ei2288" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2292" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2300" relatedToEventInstance="ei2307" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2300" relatedToEventInstance="ei2311" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2300" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2300" relatedToEventInstance="ei2319" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2300" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2304" relatedToEventInstance="ei2306" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2307" relatedToEventInstance="ei2311" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2307" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2307" relatedToEventInstance="ei2319" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2311" relatedToEventInstance="ei2317" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2311" relatedToEventInstance="ei2319" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2311" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2317" relatedToEventInstance="ei2319" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2319" relatedToTime="t0" /></TimeML>

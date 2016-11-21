@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0324</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">11/01/89 </TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891101-0040 = 891101 891101-0040.
+Business Brief -- QVC Network Inc.: @ Acquisition of CVN Cos. @ Is Completed by Company
+11/01/89 
+WALL STREET JOURNAL (J) QVCN CAVN TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED) RETAILING (RET)
+</EXTRAINFO>
+
+<TEXT>
+QVC Network Inc. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2" stem="complete">completed</EVENT> its <EVENT class="OCCURRENCE" eid="e10" stem="acquisition">acquisition</EVENT> of CVN Cos. for about $423 million.
+
+QVC <EVENT class="I_ACTION" eid="e3" stem="agree">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e4" stem="pay">pay</EVENT> $19 and one-eighth QVC share for each of CVN's 20 million fully diluted shares.
+
+The <EVENT class="OCCURRENCE" eid="e11" stem="acquisition">acquisition</EVENT> <EVENT class="OCCURRENCE" eid="e5" stem="bring">brings</EVENT> together the two largest competitors to Home Shopping Network Inc., which <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t49" type="DATE" value="PRESENT_REF">now</TIMEX3> <EVENT class="STATE" eid="e59" stem="reach">reaches</EVENT> more viewers than any other company in the video shopping industry. Among them, Home Shopping, QVC and CVN already <EVENT class="STATE" eid="e12" stem="control">control</EVENT> most of that young and fast-growing market, which <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t64" type="DATE" value="1988">last year</TIMEX3> <EVENT class="OCCURRENCE" eid="e13" stem="have">had</EVENT> <EVENT class="OCCURRENCE" eid="e14" stem="sale">sales</EVENT> of about $1.4 billion.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e10" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1997" eventID="e59" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1993" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1990" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1999" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1995" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e5" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1994" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1998" eventID="e12" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei1996" lid="l15" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1994" lid="l14" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1990" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1992" lid="l2" relType="IDENTITY" relatedToEventInstance="ei1995" />
+<TLINK lid="l3" relType="IDENTITY" relatedToEventInstance="ei1990" timeID="t49" />
+<TLINK eventInstanceID="ei1998" lid="l4" relType="IS_INCLUDED" relatedToTime="t49" />
+<TLINK eventInstanceID="ei1997" lid="l5" relType="IS_INCLUDED" relatedToTime="t49" />
+<TLINK lid="l6" relType="INCLUDES" relatedToEventInstance="ei1999" timeID="t64" />
+<TLINK eventInstanceID="ei1999" lid="l7" relType="IDENTITY" relatedToEventInstance="ei2000" />
+<SLINK eventInstanceID="ei1993" lid="l13" relType="MODAL" subordinatedEventInstance="ei1994" />
+<SLINK eventInstanceID="ei1990" lid="l8" relType="EVIDENTIAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei1990" lid="l9" relType="EVIDENTIAL" subordinatedEventInstance="ei1993" />
+<ALINK eventInstanceID="ei1991" lid="l10" relType="CULMINATES" relatedToEventInstance="ei1992" />
+
+<TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1997" relatedToEventInstance="ei1990" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1997" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1997" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1997" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1990" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToTime="t49" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1999" relatedToTime="t64" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1996" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1996" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1996" relatedToTime="t49" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1994" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1994" relatedToTime="t49" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1998" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2000" relatedToTime="t64" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t49" /></TimeML>

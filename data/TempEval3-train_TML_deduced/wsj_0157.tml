@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0157</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0034 = 891102 891102-0034.
+Business Brief -- Tony Lama Co.: @ Equus Investment II Seeks @ To Change Offer for Firm 11/02/89 WALL STREET JOURNAL (J) TLAM TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+Tony Lama Co. <EVENT class="REPORTING" eid="e1">said</EVENT> that Equus Investment II Limited Partnership has <EVENT class="I_ACTION" eid="e2">proposed</EVENT> <EVENT class="OCCURRENCE" eid="e2030">changing</EVENT> the <EVENT class="I_ACTION" eid="e1995">offer</EVENT> for the company to $13.65 in cash and stock from an all-cash <EVENT class="I_ACTION" eid="e4">transaction</EVENT>.
+
+Under terms of the new <EVENT class="I_ACTION" eid="e2046">proposal</EVENT>, Equus, managed by Equus Capital Corp., Houston, would <EVENT class="OCCURRENCE" eid="e7">pay</EVENT> $12 cash and one new preferred share with a liquidation preference of $1.65 a share for each of Tony Lama's 2.1 million shares outstanding. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t1999" type="DATE" value="PAST_REF">Previously</TIMEX3>, it <EVENT class="I_ACTION" eid="e9">offered</EVENT> $13.65 a share in cash, or $29 million.
+
+The El Paso, Texas, maker of Western boots and leather accessories <EVENT class="REPORTING" eid="e10">said</EVENT> the preferred stock would <EVENT class="OCCURRENCE" eid="e11">accrue</EVENT> dividends at a 12% rate, but wouldn't be <EVENT class="OCCURRENCE" eid="e14">paid</EVENT> for <TIMEX3 beginPoint="t0" functionInDocument="NONE" temporalFunction="true" tid="t28" type="DURATION" value="P2Y">the first two years</TIMEX3>. The stock would be <EVENT class="OCCURRENCE" eid="e17">redeemed</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t29" type="DATE" value="1994">five years</TIMEX3>, subject to terms of the surviving company's debt.
+
+Neither Equus nor Tony Lama <EVENT class="REPORTING" eid="e19">gave</EVENT> a reason for the changed <EVENT class="I_ACTION" eid="e2000">offer</EVENT> and Tony Lama couldn't be reached for comment. However, Tony Lama <EVENT class="REPORTING" eid="e23">said</EVENT> it would promptly <EVENT class="OCCURRENCE" eid="e24">submit</EVENT> the offer to a special committee of the company's board.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2195" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2196" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2197" eventID="e2030" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2198" eventID="e1995" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2199" eventID="e4" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2200" eventID="e2046" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2201" eventID="e7" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2202" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2203" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2204" eventID="e11" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2205" eventID="e14" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2206" eventID="e17" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2207" eventID="e19" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2209" eventID="e2000" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2211" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2212" eventID="e24" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<TLINK eventInstanceID="ei2199" lid="l26" relType="BEFORE" relatedToEventInstance="ei2197" />
+<TLINK eventInstanceID="ei2198" lid="l25" relType="BEFORE" relatedToEventInstance="ei2196" />
+<TLINK eventInstanceID="ei2206" lid="l1" relType="AFTER" relatedToEventInstance="ei2201" />
+<TLINK eventInstanceID="ei2206" lid="l2" relType="SIMULTANEOUS" relatedToTime="t29" />
+<TLINK eventInstanceID="ei2203" lid="l4" relType="SIMULTANEOUS" relatedToEventInstance="ei2195" />
+<TLINK lid="l8" relType="SIMULTANEOUS" relatedToEventInstance="ei2202" timeID="t1999" />
+<TLINK lid="l9" relType="BEFORE" relatedToEventInstance="ei2197" timeID="t1999" />
+<TLINK eventInstanceID="ei2200" lid="l10" relType="IDENTITY" relatedToEventInstance="ei2196" />
+<TLINK eventInstanceID="ei2195" lid="l11" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2212" lid="l13" relType="AFTER" relatedToTime="t0" />
+<SLINK eventInstanceID="ei2197" lid="l23" relType="FACTIVE" subordinatedEventInstance="ei2198" />
+<SLINK eventInstanceID="ei2211" lid="l14" relType="EVIDENTIAL" subordinatedEventInstance="ei2212" />
+<SLINK eventInstanceID="ei2203" lid="l15" relType="EVIDENTIAL" subordinatedEventInstance="ei2205" />
+<SLINK eventInstanceID="ei2203" lid="l16" relType="EVIDENTIAL" subordinatedEventInstance="ei2204" />
+<SLINK eventInstanceID="ei2196" lid="l17" relType="MODAL" subordinatedEventInstance="ei2197" />
+<SLINK eventInstanceID="ei2200" lid="l18" relType="MODAL" subordinatedEventInstance="ei2201" />
+<SLINK eventInstanceID="ei2195" lid="l19" relType="EVIDENTIAL" subordinatedEventInstance="ei2196" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2195" relatedToEventInstance="ei2203" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2195" relatedToEventInstance="ei2212" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2196" relatedToEventInstance="ei2198" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2196" relatedToEventInstance="ei2200" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2197" relatedToEventInstance="ei2199" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2197" relatedToEventInstance="ei2202" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2197" relatedToTime="t1999" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2198" relatedToEventInstance="ei2200" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2201" relatedToEventInstance="ei2206" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2201" relatedToTime="t29" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2202" relatedToTime="t1999" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToEventInstance="ei2212" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2203" relatedToTime="t0" /></TimeML>

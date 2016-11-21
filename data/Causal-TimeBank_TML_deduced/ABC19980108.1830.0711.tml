@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>ABC19980108.1830.0711</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-01-08">1998-01-08</TIMEX3></DCT>
+<TEXT>
+ On the other hand, it's <EVENT class="OCCURRENCE" eid="e1">turning</EVENT> out to be another very bad financial <TIMEX3 functionInDocument="NONE" tid="t2" type="DURATION" value="P1W">week</TIMEX3> for Asia.
+ The financial <EVENT class="OCCURRENCE" eid="e3">assistance</EVENT> from the World Bank and the International Monetary Fund are not <EVENT class="OCCURRENCE" eid="e4">helping</EVENT>.
+ In <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t5" type="DURATION" value="P1D">the last twenty four hours</TIMEX3>, the value of the Indonesian stock market has <EVENT class="OCCURRENCE" eid="e6">fallen</EVENT> by twelve percent.
+ The Indonesian currency has <EVENT class="OCCURRENCE" eid="e7">lost</EVENT> twenty six percent of its value.
+ In Singapore, stocks <EVENT class="OCCURRENCE" eid="e8">hit</EVENT> a <TIMEX3 functionInDocument="NONE" tid="t9" type="DURATION" value="P5Y">five year</TIMEX3> low.
+ In the Philippines, a <TIMEX3 functionInDocument="NONE" tid="t10" type="DURATION" value="P4Y">four year</TIMEX3> low.
+ And in Hong Kong, a three percent <EVENT class="OCCURRENCE" eid="e11">drop</EVENT>.
+ More problems in Hong Kong for a place, for an economy, that many experts <EVENT class="I_STATE" eid="e12">thought</EVENT> was once <EVENT class="STATE" eid="e13">invincible</EVENT>.
+ Here's ABC's Jim Laurie.
+ Not that long ago, before the Chinese <EVENT class="OCCURRENCE" eid="e14">takeover</EVENT>, the news about real estate here <EVENT class="STATE" eid="e15">was</EVENT> that the sky was the limit the highest prices in the world.
+ <C-SIGNAL cid="c16">So</C-SIGNAL> when Wong Kwan <EVENT class="OCCURRENCE" eid="e17">spent</EVENT> seventy million dollars for this house, he <EVENT class="I_STATE" eid="e18">thought</EVENT> it was a great <EVENT class="OCCURRENCE" eid="e19">deal</EVENT>.
+ He <EVENT class="OCCURRENCE" eid="e20">sold</EVENT> the property to five buyers and <EVENT class="REPORTING" eid="e21">said</EVENT> he 'd <EVENT class="OCCURRENCE" eid="e22">double</EVENT> his money.
+ In Hong Kong, is always belongs to the seller's market.
+ <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t23" type="DATE" value="PRESENT_REF">Now</TIMEX3> with new <EVENT class="OCCURRENCE" eid="e24">construction</EVENT> under way, three of his buyers have <EVENT class="OCCURRENCE" eid="e25">backed</EVENT> out.
+ And Wong Kwan will be lucky to <EVENT class="OCCURRENCE" eid="e26">break</EVENT> even.
+ All across Hong Kong, the property market has <EVENT class="OCCURRENCE" eid="e27">crashed</EVENT>.
+ Pamela Pak <EVENT class="OCCURRENCE" eid="e28">owns</EVENT> eight condominiums here.
+ Pak can't <EVENT class="OCCURRENCE" eid="e29">find</EVENT> buyers.
+ She <EVENT class="REPORTING" eid="e30">estimates</EVENT> her properties, <EVENT class="STATE" eid="e31">worth</EVENT> a hundred thirty million dollars in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t32" type="DATE" value="1997-10">October</TIMEX3>, are <EVENT class="STATE" eid="e33">worth</EVENT> only half that <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t34" type="DATE" value="PRESENT_REF">now</TIMEX3>.
+ They <EVENT class="I_STATE" eid="e35">believe</EVENT> ah it will be always up <EVENT class="OCCURRENCE" eid="e36">going</EVENT> up and up ah forever.
+ Nobody <EVENT class="I_STATE" eid="e37">believe</EVENT> this any more.
+ Of all of Asia's economies, Hong Kong is the most robust.
+ But in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t38" type="DURATION" value="P3M">the past three months</TIMEX3>, stocks have <EVENT class="OCCURRENCE" eid="e39">plunged</EVENT>, interest rates have <EVENT class="OCCURRENCE" eid="e40">soared</EVENT> and the <EVENT class="OCCURRENCE" eid="e41">downturn</EVENT> all across Asia <EVENT class="OCCURRENCE" eid="e42">means</EVENT> that people are not <EVENT class="OCCURRENCE" eid="e43">spending</EVENT> here.
+ Hotels are only thirty percent full.
+ You can <EVENT class="OCCURRENCE" eid="e44">get</EVENT> seventy percent <EVENT class="OCCURRENCE" eid="e45">discounts</EVENT> at the shopping malls.
+ Three thousand dollar pearls for eight hundred dollars.
+ A two hundred dollar wool jacket for fifty dollars.
+ Still, there are few buyers.
+ And at the big brokerage houses, after <TIMEX3 functionInDocument="NONE" tid="t46" type="DURATION" value="P10Y">ten years</TIMEX3> of <EVENT class="OCCURRENCE" eid="e47">boom</EVENT>, they 're <EVENT class="OCCURRENCE" eid="e48">talking</EVENT> about <EVENT class="OCCURRENCE" eid="e49">layoffs</EVENT>.
+ I <EVENT class="I_STATE" eid="e50">think</EVENT> that the mood is fairly <EVENT class="STATE" eid="e51">gloomy</EVENT>, and I <EVENT class="I_STATE" eid="e52">think</EVENT> it's not going to <EVENT class="OCCURRENCE" eid="e53">change</EVENT> for <TIMEX3 functionInDocument="NONE" tid="t54" type="DURATION" value="P2Y">a couple of years</TIMEX3>.
+ <C-SIGNAL cid="c55">So</C-SIGNAL> for Hong Kong, it's time, as investment bankers like to say, to <EVENT class="OCCURRENCE" eid="e56">reposition</EVENT>.
+ To either <EVENT class="OCCURRENCE" eid="e57">hold</EVENT> on tight or <EVENT class="OCCURRENCE" eid="e58">get</EVENT> out, as much of Asia <EVENT class="OCCURRENCE" eid="e59">goes</EVENT> into <EVENT class="OCCURRENCE" eid="e60">recession</EVENT>.
+ Jim Laurie, ABC News, Hong Kong.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei56" eventID="e56" modality="delete" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei42" eventID="e42" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei43" eventID="e43" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei60" eventID="e60" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei53" eventID="e53" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei27" eventID="e27" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" modality="'d" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei49" eventID="e49" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei47" eventID="e47" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei44" eventID="e44" modality="can" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei45" eventID="e45" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eventID="e29" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei40" eventID="e40" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei41" eventID="e41" polarity="NEG" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei4" eventID="e4" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei39" eventID="e39" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei59" eventID="e59" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei58" eventID="e58" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei51" eventID="e51" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="ADJECTIVE" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei31" eventID="e31" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei37" eventID="e37" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei36" eventID="e36" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei35" eventID="e35" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei52" eventID="e52" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei33" eventID="e33" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei48" eventID="e48" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eventID="e57" polarity="POS" pos="NOUN" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50" eventID="e50" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei3" lid="l2" relType="BEFORE" relatedToEventInstance="ei4" />
+<TLINK lid="l3" relType="ENDED_BY" relatedToTime="t0" timeID="t5" />
+<TLINK lid="l4" relType="INCLUDES" relatedToEventInstance="ei6" timeID="t5" />
+<TLINK lid="l5" relType="INCLUDES" relatedToEventInstance="ei8" timeID="t5" />
+<TLINK eventInstanceID="ei7" lid="l6" relType="IS_INCLUDED" relatedToTime="t5" />
+<TLINK lid="l7" relType="BEFORE" relatedToTime="t0" timeID="t9" />
+<TLINK lid="l8" relType="BEFORE" relatedToTime="t0" timeID="t10" />
+<TLINK eventInstanceID="ei11" lid="l9" relType="IS_INCLUDED" relatedToTime="t5" />
+<TLINK eventInstanceID="ei18" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei20" lid="l12" relType="AFTER" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei21" lid="l13" relType="SIMULTANEOUS" relatedToEventInstance="ei20" />
+<TLINK eventInstanceID="ei24" lid="l14" relType="INCLUDES" relatedToEventInstance="ei25" />
+<TLINK eventInstanceID="ei26" lid="l15" relType="ENDED_BY" relatedToTime="t0" />
+<TLINK eventInstanceID="ei27" lid="l16" relType="ENDED_BY" relatedToTime="t0" />
+<TLINK eventInstanceID="ei28" lid="l17" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei29" lid="l18" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei30" lid="l19" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei31" lid="l20" relType="IS_INCLUDED" relatedToTime="t32" />
+<TLINK eventInstanceID="ei33" lid="l21" relType="DURING" relatedToTime="t34" />
+<TLINK eventInstanceID="ei35" lid="l22" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei37" lid="l23" relType="DURING" relatedToTime="t0" />
+<TLINK lid="l24" relType="INCLUDES" relatedToEventInstance="ei39" timeID="t38" />
+<TLINK lid="l25" relType="INCLUDES" relatedToEventInstance="ei40" timeID="t38" />
+<TLINK eventInstanceID="ei41" lid="l26" relType="BEFORE" relatedToEventInstance="ei43" />
+<TLINK eventInstanceID="ei44" lid="l28" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei44" lid="l29" relType="SIMULTANEOUS" relatedToEventInstance="ei45" />
+<TLINK lid="l30" relType="INCLUDES" relatedToEventInstance="ei47" timeID="t46" />
+<TLINK eventInstanceID="ei48" lid="l31" relType="ENDS" relatedToTime="t46" />
+<TLINK eventInstanceID="ei48" lid="l32" relType="BEFORE" relatedToEventInstance="ei49" />
+<TLINK eventInstanceID="ei50" lid="l33" relType="DURING" relatedToTime="t2" />
+<TLINK eventInstanceID="ei51" lid="l34" relType="DURING" relatedToTime="t2" />
+<TLINK eventInstanceID="ei52" lid="l35" relType="SIMULTANEOUS" relatedToEventInstance="ei50" />
+<TLINK eventInstanceID="ei57" lid="l37" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei58" lid="l38" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei59" lid="l39" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei59" lid="l40" relType="BEGINS" relatedToEventInstance="ei60" />
+<CLINK c-signalID="c16" eventInstanceID="ei15" lid="l10" relatedToEventInstance="ei18" />
+<CLINK eventInstanceID="ei41" lid="l27" relatedToEventInstance="ei43" />
+<CLINK c-signalID="c55" eventInstanceID="ei53" lid="l36" relatedToEventInstance="ei56" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei43" relatedToEventInstance="ei41" /><TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei60" relatedToEventInstance="ei59" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei26" relatedToEventInstance="ei1" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei27" relatedToEventInstance="ei1" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei27" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei20" relatedToEventInstance="ei21" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei20" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei21" relatedToEventInstance="ei17" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei21" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei49" relatedToEventInstance="ei47" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei49" relatedToEventInstance="ei48" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei49" relatedToTime="t46" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei47" relatedToTime="t46" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei40" relatedToTime="t38" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei35" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToTime="t9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToTime="t10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei7" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei7" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei6" relatedToTime="t5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei58" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei8" relatedToTime="t5" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei39" relatedToTime="t38" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei58" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei58" relatedToEventInstance="ei35" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei58" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei58" relatedToTime="t9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei58" relatedToTime="t10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei17" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei35" relatedToEventInstance="ei57" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei57" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei57" relatedToTime="t9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei57" relatedToTime="t10" /><TLINK deduced="true" relType="ENDS" timeID="t0" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t9" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t10" /></TimeML>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980213.1380</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-02-13T15:44:00">1998-02-13T15:44:00</TIMEX3></DCT>
+<TEXT>
+ CAGUAS, Puerto Rico ( AP ) _ Kidnappers <EVENT class="ASPECTUAL" eid="e1">kept</EVENT> their promise to <EVENT class="OCCURRENCE" eid="e2">kill</EVENT> a store owner they <EVENT class="OCCURRENCE" eid="e3">took</EVENT> hostage and police <EVENT class="OCCURRENCE" eid="e4">found</EVENT> the man's dismembered and decapitated body <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t5" type="DATE" value="1998-02-13">Friday</TIMEX3> <EVENT class="OCCURRENCE" eid="e6">wrapped</EVENT> in plastic garbage bags.
+ Police <EVENT class="REPORTING" eid="e7">confirmed</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t8" type="DATE" value="1998-02-13">Friday</TIMEX3> that the body <EVENT class="OCCURRENCE" eid="e9">found</EVENT> along a highway in this municipality 15 miles south of San Juan <EVENT class="STATE" eid="e10">belonged</EVENT> to Jorge Hernandez, 49.
+ Hernandez was <EVENT class="OCCURRENCE" eid="e11">kidnapped</EVENT> from his small, neighborhood store in the town of Trujillo Alto at <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t12" type="TIME" value="1998-02-11T22:00">10 p.m. Wednesday</TIMEX3>, police <EVENT class="REPORTING" eid="e13">said</EVENT>.
+ His kidnappers <EVENT class="I_ACTION" eid="e14">demanded</EVENT> a ransom of dlrs 1 million, but <EVENT class="OCCURRENCE" eid="e15">negotiations</EVENT> <EVENT class="ASPECTUAL" eid="e16">broke</EVENT> off at <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t17" type="TIME" value="1998-02-12T12:00">noon Thursday</TIMEX3>.
+ Police <EVENT class="REPORTING" eid="e18">gave</EVENT> no details about the <EVENT class="I_ACTION" eid="e19">negotiations</EVENT> with the kidnappers for the <EVENT class="OCCURRENCE" eid="e20">return</EVENT> of Hernandez.
+ The store owner's body was <EVENT class="OCCURRENCE" eid="e21">found</EVENT> with the arms and head <EVENT class="OCCURRENCE" eid="e22">cut</EVENT> off and the parts <EVENT class="OCCURRENCE" eid="e23">stuffed</EVENT> in separate garbage bags.
+ A passerby <EVENT class="OCCURRENCE" eid="e24">called</EVENT> police to <EVENT class="OCCURRENCE" eid="e25">report</EVENT> the body alongside the road.
+ Puerto Rico Police Superintendent Pedro Toledo <EVENT class="I_ACTION" eid="e26">urged</EVENT> people who might be <EVENT class="OCCURRENCE" eid="e27">targeted</EVENT> by kidnappers to be <EVENT class="STATE" eid="e28">alert</EVENT>.
+ " There has been an <EVENT class="OCCURRENCE" eid="e29">increase</EVENT> in Puerto Rico in this kind of thing and some of these bands of kidnappers are <EVENT class="STATE" eid="e30">made</EVENT> up of foreigners, " Toledo <EVENT class="REPORTING" eid="e31">said</EVENT>.
+ While some Latin American countries such as Mexico and Colombia have <EVENT class="OCCURRENCE" eid="e32">suffered</EVENT> from a rash of <EVENT class="OCCURRENCE" eid="e33">kidnappings</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t34" type="DURATION" value="PXY">recent years</TIMEX3>, the crime has not been common in this U.S. commonwealth.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" modality="might" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eventID="e28" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eventID="e29" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei31" eventID="e31" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei33" eventID="e33" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei32" eventID="e32" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei6" lid="l2" relType="AFTER" relatedToEventInstance="ei22" />
+<TLINK eventInstanceID="ei7" lid="l3" relType="IS_INCLUDED" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei9" lid="l4" relType="IDENTITY" relatedToEventInstance="ei4" />
+<TLINK eventInstanceID="ei9" lid="l5" relType="IDENTITY" relatedToTime="t5" />
+<TLINK eventInstanceID="ei10" lid="l6" relType="BEFORE" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei11" lid="l7" relType="IS_INCLUDED" relatedToTime="t12" />
+<TLINK eventInstanceID="ei13" lid="l8" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei14" lid="l9" relType="AFTER" relatedToEventInstance="ei11" />
+<TLINK eventInstanceID="ei15" lid="l10" relType="AFTER" relatedToEventInstance="ei14" />
+<TLINK eventInstanceID="ei16" lid="l11" relType="SIMULTANEOUS" relatedToTime="t17" />
+<TLINK eventInstanceID="ei18" lid="l12" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei19" lid="l13" relType="IDENTITY" relatedToEventInstance="ei15" />
+<TLINK eventInstanceID="ei21" lid="l14" relType="IDENTITY" relatedToEventInstance="ei9" />
+<TLINK eventInstanceID="ei23" lid="l15" relType="IDENTITY" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei24" lid="l16" relType="BEFORE" relatedToEventInstance="ei21" />
+<TLINK eventInstanceID="ei25" lid="l17" relType="BEFORE" relatedToEventInstance="ei21" />
+<TLINK eventInstanceID="ei26" lid="l18" relType="AFTER" relatedToEventInstance="ei21" />
+<TLINK eventInstanceID="ei27" lid="l19" relType="AFTER" relatedToEventInstance="ei26" />
+<TLINK eventInstanceID="ei31" lid="l20" relType="SIMULTANEOUS" relatedToEventInstance="ei26" />
+<TLINK eventInstanceID="ei32" lid="l21" relType="INCLUDES" relatedToEventInstance="ei33" />
+<TLINK eventInstanceID="ei32" lid="l22" relType="IS_INCLUDED" relatedToTime="t34" />
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei24" relatedToTime="t5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei26" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei25" relatedToTime="t5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei26" relatedToEventInstance="ei27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei26" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei26" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei21" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei27" relatedToTime="t5" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei21" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei21" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei21" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei21" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei21" relatedToTime="t5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei22" relatedToEventInstance="ei23" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei22" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei13" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei18" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei4" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei4" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei4" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei4" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei4" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei7" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei7" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei7" relatedToTime="t5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei9" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei14" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToEventInstance="ei31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToTime="t5" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei15" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei14" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei31" relatedToTime="t5" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei33" relatedToEventInstance="ei32" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei33" relatedToTime="t34" /></TimeML>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<Title>2337816.male.23.Communications-Media.Sagittarius.xml</Title>
+<DCT><TIMEX3 tid="t0" type="TIME" value="2004-05-13" temporalFunction="false" functionInDocument="CREATION_TIME">13,May,2004</TIMEX3></DCT>
+<TEXT>
+Tick Tock... Well I'm pretty much all set for this <TIMEX3 tid="t1">Saturday</TIMEX3>'s <EVENT eid="e1">exam</EVENT>...at least that's how I see it... Already done my pre-exam <EVENT eid="e2">ritual</EVENT> of watching a movie...Caught Kill Bill Vol.2 with Clarisse...after that the usual <EVENT eid="e3">talk</EVENT> about her favorite topic...her visions of my future <EVENT eid="e4">life</EVENT> with Rina... I decided to entertain her 'visions'...but then again she's the one who <EVENT eid="e5">introduced</EVENT> us in the first place... So I think if we really <EVENT eid="e6">hook up</EVENT> in the end then she'll see that her match-making venture did bear fruit in the end... I've one more day to go before I fully get the books out of my way... Remember I do not open my textbooks on exam eve... Maybe I'll <EVENT eid="e7">sneak</EVENT> a peak <TIMEX3 tid="t2">tomorrow</TIMEX3>...it's <TIMEX3 tid="t3">Thursday</TIMEX3>...just to clarify some of the things that have yet to be fully understood... Of course I have some doubts about my study and pre-exam rituals...but then again there's always the case of the pre-exam jitters setting in... Well as I always say... Whateva Floats Your Boat... 
+</TEXT>
+</TimeML>

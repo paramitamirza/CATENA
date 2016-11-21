@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_1033</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">1989-10-26</TIMEX3></DCT>
+<TEXT>
+ Esselte AB, the Stockholm office supplies company, as <EVENT class="I_STATE" eid="e1">expected</EVENT>, <EVENT class="I_ACTION" eid="e2">proposed</EVENT> to <EVENT class="OCCURRENCE" eid="e3">acquire</EVENT> the 22 % it doesn't <EVENT class="STATE" eid="e4">own</EVENT> of its U.S. unit, Esselte Business Systems Inc.
+ The price in the <EVENT class="OCCURRENCE" eid="e5">proposal</EVENT> is $ 43.50 for each of the 4.9 million shares the parent doesn't <EVENT class="STATE" eid="e6">own</EVENT>, or $ 213.2 million.
+ In New York Stock Exchange composite <EVENT class="OCCURRENCE" eid="e7">trading</EVENT>, Esselte <EVENT class="OCCURRENCE" eid="e8">closed</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t9" type="DATE" value="1989-10-25">yesterday</TIMEX3> at $ 43.50 a share, up $ 1.
+ A committee of outside directors for the Garden City, N.Y., unit is <EVENT class="OCCURRENCE" eid="e10">evaluating</EVENT> the <EVENT class="OCCURRENCE" eid="e11">proposal</EVENT>;
+ the parent <EVENT class="I_ACTION" eid="e12">asked</EVENT> it to <EVENT class="OCCURRENCE" eid="e13">respond</EVENT> by <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t14" type="DATE" value="1989-10-31">Oct. 31</TIMEX3>.
+ The unit <EVENT class="REPORTING" eid="e15">said</EVENT> it can <EVENT class="OCCURRENCE" eid="e16">provide</EVENT> no assurance a <EVENT class="OCCURRENCE" eid="e17">transaction</EVENT> will <EVENT class="OCCURRENCE" eid="e18">occur</EVENT>.
+ Esselte AB <EVENT class="OCCURRENCE" eid="e19">sold</EVENT> the minority stake <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t20" type="DATE" value="1984">five years ago</TIMEX3> in a $ 40 million international share <EVENT class="OCCURRENCE" eid="e21">offering</EVENT>.
+ The unit, which is the holding company for Esselte's non-Swedish units, <EVENT class="OCCURRENCE" eid="e22">accounted</EVENT> for 58 % of sales and 71 % of operating profit <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t23" type="DATE" value="1988">last year</TIMEX3>.
+ Separately, Esselte Business Systems <EVENT class="REPORTING" eid="e24">reported</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t25" type="DATE" value="1989-Q3">third-quarter</TIMEX3> net income <EVENT class="OCCURRENCE" eid="e26">fell</EVENT> 5.9 % to $ 9.5 million, or 46 cents a share, from $ 10.1 million, or 49 cents a share, in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t27" type="DATE" value="1988-Q3">the year-ago period</TIMEX3>.
+ Sales <EVENT class="OCCURRENCE" eid="e28">rose</EVENT> 2.9 % to $ 329.2 million from $ 320 million.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eventID="e21" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eventID="e28" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" modality="can" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="FUTURE" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="BEFORE" relatedToEventInstance="ei2" />
+<TLINK eventInstanceID="ei5" lid="l2" relType="IDENTITY" relatedToEventInstance="ei2" />
+<TLINK eventInstanceID="ei7" lid="l3" relType="ENDED_BY" relatedToEventInstance="ei8" />
+<TLINK eventInstanceID="ei8" lid="l4" relType="IS_INCLUDED" relatedToTime="t9" />
+<TLINK eventInstanceID="ei10" lid="l5" relType="DURING" relatedToTime="t0" />
+<TLINK eventInstanceID="ei11" lid="l6" relType="IDENTITY" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei12" lid="l7" relType="AFTER" relatedToEventInstance="ei10" />
+<TLINK eventInstanceID="ei13" lid="l8" relType="BEFORE" relatedToTime="t14" />
+<TLINK eventInstanceID="ei15" lid="l9" relType="AFTER" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei17" lid="l10" relType="SIMULTANEOUS" relatedToEventInstance="ei18" />
+<TLINK eventInstanceID="ei19" lid="l11" relType="IS_INCLUDED" relatedToTime="t20" />
+<TLINK eventInstanceID="ei21" lid="l12" relType="INCLUDES" relatedToEventInstance="ei19" />
+<TLINK eventInstanceID="ei22" lid="l13" relType="IS_INCLUDED" relatedToTime="t23" />
+<TLINK eventInstanceID="ei24" lid="l14" relType="AFTER" relatedToEventInstance="ei26" />
+<TLINK lid="l15" relType="IS_INCLUDED" relatedToEventInstance="ei26" timeID="t25" />
+<TLINK eventInstanceID="ei28" lid="l16" relType="IS_INCLUDED" relatedToTime="t25" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei24" relatedToEventInstance="ei28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei24" relatedToTime="t25" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei26" relatedToEventInstance="ei28" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei26" relatedToTime="t25" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei12" relatedToEventInstance="ei15" /></TimeML>

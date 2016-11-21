@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0557</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0143 = 891030 891030-0143.
+RJR Is Selling @ Candy Brands @ For $370 Million @ ---- @ By Peter Waldman @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) RJR Z.NES TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) FOOD PRODUCTS (FOD)
+</EXTRAINFO>
+
+<TEXT>
+RJR Nabisco Inc. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="I_STATE" eid="e2">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e4">sell</EVENT> its Baby Ruth, Butterfinger and Pearson candy businesses to Nestle S.A.'s Nestle Foods unit for $370 million.
+
+The <EVENT class="OCCURRENCE" eid="e5">sale</EVENT>, at a higher price than some analysts had <EVENT class="I_STATE" eid="e7">expected</EVENT>, <EVENT class="I_ACTION" eid="e8">helps</EVENT> the food and tobacco giant <EVENT class="OCCURRENCE" eid="e72">raise</EVENT> funds to <EVENT class="OCCURRENCE" eid="e10">pay</EVENT> debt and <EVENT class="OCCURRENCE" eid="e11">boosts</EVENT> Nestle's 7% share of the U.S. candy market to about 12%.
+
+The candy businesses <EVENT class="STATE" eid="e75">had</EVENT> <EVENT class="STATE" eid="e76">sales</EVENT> of about $154 million <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t79" type="DATE" value="1988">last year</TIMEX3>, which was roughly 12% of total revenue for RJR's Planters LifeSavers unit, <EVENT class="REPORTING" eid="e80">according</EVENT> to a memorandum <EVENT class="OCCURRENCE" eid="e14">distributed</EVENT> by RJR's owner, Kohlberg Kravis Roberts amp Co., to bankers <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t82" type="DATE" value="1988-12">last December</TIMEX3>.
+
+The Nestle acquisition includes a candy plant in Franklin Park, Ill., which employs about 800 workers.
+
+The <EVENT class="OCCURRENCE" eid="e17">sale</EVENT>, which had been <EVENT class="I_STATE" eid="e18">expected</EVENT>, is part of KKR's <EVENT class="I_STATE" eid="e83">program</EVENT> to <EVENT class="OCCURRENCE" eid="e20">pay</EVENT> down $5 billion of a $6 billion bridge loan by <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t85" type="DATE" value="1990-02">February</TIMEX3>. Roughly $2 billion of that debt has already been <EVENT class="OCCURRENCE" eid="e21">repaid</EVENT> from previous asset sales, and RJR <EVENT class="I_STATE" eid="e23">expects</EVENT> to <EVENT class="OCCURRENCE" eid="e24">use</EVENT> another $2 billion from the pending, two-part <EVENT class="OCCURRENCE" eid="e25">sale</EVENT> of most of its Del Monte unit. That <EVENT class="OCCURRENCE" eid="e26">sale</EVENT>, however, could still <EVENT class="OCCURRENCE" eid="e89">fall</EVENT> through if financing problems <EVENT class="OCCURRENCE" eid="e29">develop</EVENT>. Thus, it remains crucial for RJR to obtain top dollar for its smaller assets like the candy brands.
+
+Louis Gerstner Jr., chairman and chief executive officer of New York-based RJR, called the sale a "significant step" in the company's divestiture program, as well as a "a strategic divestiture." Since KKR <EVENT class="OCCURRENCE" eid="e38">bought</EVENT> RJR in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t91" type="DATE" value="1989-02">February</TIMEX3> for $25 billion of debt, it has <EVENT class="I_STATE" eid="e39">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e41">sell</EVENT> nearly $5 billion of RJR assets. RJR's executives have <EVENT class="REPORTING" eid="e42">said</EVENT> they will <EVENT class="OCCURRENCE" eid="e43">dispense</EVENT> with certain brands, in particular, that aren't <EVENT class="STATE" eid="e93">leaders</EVENT> in their markets. "RJR Nabisco and Planters LifeSavers will <EVENT class="OCCURRENCE" eid="e94">concentrate</EVENT> more on our own core businesses," Mr. Gerstner <EVENT class="REPORTING" eid="e50">said</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t95" type="DATE" value="1989-10-27">Friday</TIMEX3>.
+
+Baby Ruth and Butterfinger are both among the top-selling 15 chocolate bars in the U.S., but RJR's overall share of the roughly $5.1 billion market is less than 5%. Nestle's share of 7% before <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t99" type="DATE" value="1989-10-27">Friday</TIMEX3>'s <EVENT class="OCCURRENCE" eid="e52">purchases</EVENT> is far below the shares of market leaders Hershey Foods Corp. and Mars Inc., which have about 40% and 36% of the market, respectively.
+
+"This means Nestle is now in the candybar business in a big way," <EVENT class="REPORTING" eid="e61">said</EVENT> Lisbeth Echeandia, publisher of Orlando, Fla.-based Confectioner Magazine. "For them, it makes all kinds of sense. They've been <EVENT class="OCCURRENCE" eid="e64">given</EVENT> a mandate from Switzerland" to <EVENT class="I_ACTION" eid="e67">expand</EVENT> their U.S. chocolate operations. Nestle S.A. is based in Vevey, Switzerland.
+
+The new candy bars, "<EVENT class="OCCURRENCE" eid="e69">make</EVENT> an important <EVENT class="OCCURRENCE" eid="e70">contribution</EVENT> to our Nestle Foods commitment to this very important strategic unit," <EVENT class="REPORTING" eid="e71">said</EVENT> C. Alan MacDonald, president of Nestle Foods in Purchase, N.Y.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1989" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1990" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei1994" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1995" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e72" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1997" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1998" eventID="e11" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e75" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e76" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2002" eventID="e80" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2003" eventID="e14" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2004" eventID="e17" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2005" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2006" eventID="e83" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2007" eventID="e20" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2008" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2009" eventID="e23" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2010" eventID="e24" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2011" eventID="e25" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2012" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2013" eventID="e89" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2014" eventID="e29" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2015" eventID="e38" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2016" eventID="e39" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2017" eventID="e41" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2018" eventID="e42" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2019" eventID="e43" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2020" eventID="e93" polarity="NEG" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2021" eventID="e94" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2022" eventID="e50" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2024" eventID="e52" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2025" eventID="e61" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2026" eventID="e64" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2027" eventID="e67" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2029" eventID="e69" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2030" eventID="e70" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2031" eventID="e71" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei2002" lid="l54" relType="IS_INCLUDED" relatedToTime="t82" />
+<TLINK eventInstanceID="ei1989" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1992" lid="l2" relType="IDENTITY" relatedToEventInstance="ei1991" />
+<TLINK eventInstanceID="ei1994" lid="l3" relType="BEFORE" relatedToEventInstance="ei1992" />
+<TLINK eventInstanceID="ei1994" lid="l4" relType="BEFORE" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei1992" lid="l5" relType="BEFORE" relatedToEventInstance="ei1995" />
+<TLINK eventInstanceID="ei1992" lid="l6" relType="BEFORE" relatedToEventInstance="ei1998" />
+<TLINK eventInstanceID="ei1995" lid="l7" relType="SIMULTANEOUS" relatedToEventInstance="ei1998" />
+<TLINK eventInstanceID="ei2000" lid="l9" relType="IDENTITY" relatedToEventInstance="ei2001" />
+<TLINK eventInstanceID="ei2000" lid="l10" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2000" lid="l11" relType="IS_INCLUDED" relatedToTime="t79" />
+<TLINK eventInstanceID="ei2003" lid="l12" relType="IS_INCLUDED" relatedToTime="t82" />
+<TLINK eventInstanceID="ei2004" lid="l13" relType="IDENTITY" relatedToEventInstance="ei1992" />
+<TLINK eventInstanceID="ei2005" lid="l14" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2004" lid="l15" relType="IS_INCLUDED" relatedToEventInstance="ei2006" />
+<TLINK eventInstanceID="ei2007" lid="l16" relType="ENDED_BY" relatedToTime="t85" />
+<TLINK eventInstanceID="ei2008" lid="l17" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2009" lid="l18" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2011" lid="l19" relType="BEFORE" relatedToEventInstance="ei2010" />
+<TLINK eventInstanceID="ei2012" lid="l20" relType="IDENTITY" relatedToEventInstance="ei2011" />
+<TLINK eventInstanceID="ei2013" lid="l21" relType="AFTER" relatedToEventInstance="ei2014" />
+<TLINK eventInstanceID="ei2013" lid="l22" relType="BEFORE" relatedToEventInstance="ei2012" />
+<TLINK eventInstanceID="ei2015" lid="l23" relType="IS_INCLUDED" relatedToTime="t91" />
+<TLINK eventInstanceID="ei2016" lid="l24" relType="AFTER" relatedToEventInstance="ei2015" />
+<TLINK eventInstanceID="ei2018" lid="l25" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2020" lid="l26" relType="BEFORE" relatedToEventInstance="ei2019" />
+<TLINK eventInstanceID="ei2021" lid="l27" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2022" lid="l28" relType="IS_INCLUDED" relatedToTime="t95" />
+<TLINK eventInstanceID="ei2024" lid="l30" relType="IS_INCLUDED" relatedToTime="t99" />
+<TLINK eventInstanceID="ei2024" lid="l31" relType="SIMULTANEOUS" relatedToEventInstance="ei1991" />
+<TLINK eventInstanceID="ei2025" lid="l32" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2026" lid="l33" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2026" lid="l34" relType="BEFORE" relatedToEventInstance="ei2025" />
+<TLINK eventInstanceID="ei2031" lid="l35" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2029" lid="l36" relType="IDENTITY" relatedToEventInstance="ei2030" />
+<SLINK eventInstanceID="ei2014" lid="l37" relType="CONDITIONAL" subordinatedEventInstance="ei2013" />
+<SLINK eventInstanceID="ei1989" lid="l38" relType="EVIDENTIAL" subordinatedEventInstance="ei1990" />
+<SLINK eventInstanceID="ei1990" lid="l39" relType="MODAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei1995" lid="l41" relType="MODAL" subordinatedEventInstance="ei1996" />
+<SLINK eventInstanceID="ei1996" lid="l42" relType="FACTIVE" subordinatedEventInstance="ei1997" />
+<SLINK eventInstanceID="ei2002" lid="l43" relType="EVIDENTIAL" subordinatedEventInstance="ei2000" />
+<SLINK eventInstanceID="ei2005" lid="l44" relType="MODAL" subordinatedEventInstance="ei2004" />
+<SLINK eventInstanceID="ei2006" lid="l45" relType="MODAL" subordinatedEventInstance="ei2007" />
+<SLINK eventInstanceID="ei2009" lid="l46" relType="MODAL" subordinatedEventInstance="ei2010" />
+<SLINK eventInstanceID="ei2016" lid="l47" relType="MODAL" subordinatedEventInstance="ei2017" />
+<SLINK eventInstanceID="ei2018" lid="l48" relType="EVIDENTIAL" subordinatedEventInstance="ei2019" />
+<SLINK eventInstanceID="ei2022" lid="l49" relType="EVIDENTIAL" subordinatedEventInstance="ei2021" />
+<SLINK eventInstanceID="ei2026" lid="l50" relType="MODAL" subordinatedEventInstance="ei2027" />
+<SLINK eventInstanceID="ei2025" lid="l52" relType="EVIDENTIAL" subordinatedEventInstance="ei2026" />
+<SLINK eventInstanceID="ei2031" lid="l53" relType="EVIDENTIAL" subordinatedEventInstance="ei2029" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1989" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1990" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1991" relatedToEventInstance="ei1992" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1991" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1991" relatedToEventInstance="ei1995" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1991" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1991" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1991" relatedToEventInstance="ei2006" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1991" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1992" relatedToEventInstance="ei1994" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1992" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1992" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1992" relatedToTime="t99" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToEventInstance="ei1995" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1994" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1995" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1995" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1998" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1998" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2000" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2001" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2001" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2001" relatedToTime="t79" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2004" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2004" relatedToTime="t99" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2005" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2006" relatedToEventInstance="ei2024" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2008" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2010" relatedToEventInstance="ei2011" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2010" relatedToEventInstance="ei2012" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2010" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2010" relatedToEventInstance="ei2014" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2011" relatedToEventInstance="ei2012" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2011" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2011" relatedToEventInstance="ei2014" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2012" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2012" relatedToEventInstance="ei2014" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2015" relatedToEventInstance="ei2016" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2018" relatedToEventInstance="ei2021" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2019" relatedToEventInstance="ei2020" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2021" relatedToEventInstance="ei2025" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2021" relatedToEventInstance="ei2026" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2021" relatedToEventInstance="ei2031" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2025" relatedToEventInstance="ei2026" /></TimeML>

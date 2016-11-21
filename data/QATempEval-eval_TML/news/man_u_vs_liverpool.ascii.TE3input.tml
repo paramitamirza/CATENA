@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<Title>Manchester United to face Liverpool in International Champions Cup final</Title>
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-04T21:30" temporalFunction="false" functionInDocument="CREATION_TIME">Aug 4, 2014 21:30:00</TIMEX3></DCT>
+
+<TEXT>
+
+The two north-west rivals will <EVENT eid="e1001">go</EVENT> head-to-head in Miami after both did enough to <EVENT eid="e1002">top</EVENT> their respective groups in the prestigious pre-season tournament in the US
+
+Manchester United and Liverpool will <EVENT eid="e1003">play</EVENT> each other in the International Champions Cup final on Tuesday after <EVENT eid="e1004">coming out</EVENT> on top in the group stage of the competition.
+
+Liverpool's qualification for the match in Miami was <EVENT eid="e1005">confirmed</EVENT> after Manchester City's defeat on penalties to Olympiakos while the Red Devils' 3-1 <EVENT eid="e1006">win</EVENT> over Real Madrid proved enough for them to also go through.
+
+The match will <EVENT eid="e1007">mark</EVENT> a first chance for Louis van Gaal to secure a victory over his new team's oldest rivals while also <EVENT eid="e1008">picking up</EVENT> some silverware following an impressive first month in charge.
+
+Van Gaal has <EVENT eid="e1009">led</EVENT> the Old Trafford outfit to wins over Madrid and Roma while victory on penalties over Inter proved to be the defining result of their group campaign.
+
+Brendan Rodgers' side, meanwhile, were victorious against Olympiakos in their opening match before beating Manchester City on penalties. The Reds <EVENT eid="e1010">complete</EVENT> their opening fixtures against AC Milan early on <TIMEX3 tid="t1001">Sunday</TIMEX3>.
+
+The final will <EVENT eid="e1011">kick-off</EVENT> at <TIMEX3 tid="t1002">02:00 CET on Tuesday August 5</TIMEX3> and you can follow LIVE minute-by-minute
+
+Copyright Goal.com
+</TEXT>
+
+</TimeML>

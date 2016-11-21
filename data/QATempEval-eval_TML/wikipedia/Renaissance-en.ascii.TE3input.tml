@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+The Renaissance was a cultural movement that spanned the period roughly from the 14th to the 17th century, <EVENT eid="e1001">beginning</EVENT> in Italy in the Late Middle Ages and later <EVENT eid="e1002">spreading</EVENT> to the rest of Europe. Though availability of paper and the invention of metal movable type sped the dissemination of ideas from the later 15th century, the changes of the Renaissance were not uniformly experienced across Europe.
+
+As a cultural movement, it encompassed innovative flowering of Latin and vernacular literatures, beginning with the 14th-century resurgence of learning based on classical sources, which contemporaries credited to Petrarch, the development of linear perspective and other techniques of rendering a more natural reality in painting, and gradual but widespread educational reform.
+
+In politics, the Renaissance contributed the development of the conventions of diplomacy, and in science an increased reliance on observation. Historians often argue this intellectual transformation was a bridge between the Middle Ages and Modern history. Although the Renaissance saw revolutions in many intellectual pursuits, as well as social and political upheaval, it is perhaps best known for its artistic developments and the contributions of such polymaths as Leonardo da Vinci and Michelangelo, who inspired the term "Renaissance man".
+
+There is a consensus that the Renaissance began in Florence, Italy, in the <TIMEX3 tid="t1001">14th century</TIMEX3>. Various theories have been proposed to account for its origins and characteristics, focusing on a variety of factors including the social and civic peculiarities of Florence at the time; its political structure; the patronage of its dominant family, the Medici; and the <EVENT eid="e1003">migration</EVENT> of Greek scholars and texts to Italy following the <EVENT eid="e1004">Fall</EVENT> of Constantinople at the hands of the Ottoman Turks.
+
+The Renaissance has a long and complex historiography, and in line with general scepticism of discrete periodizations, there has been much debate among historians reacting to the 19th-century glorification of the "Renaissance" and individual culture heroes as "Renaissance men", questioning the usefulness of Renaissance as a term and as a historical delineation. The art historian Erwin Panofsky observed of this resistance to the concept of Renaissance:
+
+It is perhaps no accident that the factuality of the Italian Renaissance has been most vigorously questioned by those who are not obliged to take a professional interest in the aesthetic aspects of civilization - historians of economic and social developments, political and religious situations, and, most particularly, natural science - but only exceptionally by students of literature and hardly ever by historians of Art.
+
+Some have called into question whether the Renaissance was a cultural "advance" from the Middle Ages, instead seeing it as a period of pessimism and nostalgia for classical antiquity, while social and economic historians of the longue duree especially have instead focused on the continuity between the two eras, linked, as Panofsky himself observed, "by a thousand ties".
+
+The word Renaissance, whose literal translation from French into English is "Rebirth", appears in English writing from the 1830s. The word occurs in Jules Michelet's 1855 work, Histoire de France. The word Renaissance has also been extended to other historical and cultural movements, such as the Carolingian Renaissance and the Renaissance of the 12th century.
+
+Contents.
+
+Overview.
+
+The Renaissance was a cultural movement that profoundly affected European intellectual life in the early modern period. Beginning in Italy, and spreading to the rest of Europe by the 16th century, its influence was felt in literature, philosophy, art, music, politics, science, religion, and other aspects of intellectual inquiry. Renaissance scholars employed the humanist method in study, and searched for realism and human emotion in art.
+
+Renaissance humanists such as Poggio Bracciolini sought out in Europe's monastic libraries the Latin literary, historical, and oratorical texts of Antiquity, while the Fall of Constantinople (1453) generated a wave of emigre Greek scholars bringing precious manuscripts in ancient Greek, many of which had fallen into obscurity in the West. It is in their new focus on literary and historical texts that Renaissance scholars differed so markedly from the medieval scholars of the Renaissance of the <TIMEX3 tid="t1002">12th century</TIMEX3>, who had focused on <EVENT eid="e1005">studying</EVENT> Greek and Arabic works of natural sciences, philosophy and mathematics, rather than on such cultural texts.
+
+In the revival of neo-Platonism Renaissance humanists did not reject Christianity; quite the contrary, many of the Renaissance's greatest works were devoted to it, and the Church patronized many works of Renaissance art. However, a subtle shift took place in the way that intellectuals approached religion that was reflected in many other areas of cultural life. In addition, many Greek Christian works, including the Greek New Testament, were brought back from Byzantium to Western Europe and engaged Western scholars for the first time since late antiquity. This new <EVENT eid="e1006">engagement</EVENT> with Greek Christian works, and particularly the return to the original Greek of the New Testament promoted by humanists Lorenzo Valla and Erasmus, would help pave the way for the Protestant <EVENT eid="e1007">Reformation</EVENT>.
+
+Well after the first artistic return to classicism had been <EVENT eid="e1008">exemplified</EVENT> in the sculpture of Nicola Pisano, Florentine painters led by Masaccio <EVENT eid="e1009">strove</EVENT> to portray the human form realistically, developing techniques to render perspective and light more naturally. Political philosophers, most famously Niccolo Machiavelli, sought to describe political life as it really was, that is to understand it rationally. A critical contribution to Italian Renaissance humanism Pico della Mirandola wrote the famous text "De hominis dignitate" (Oration on the Dignity of Man, 1486), which consists of a series of theses on philosophy, natural thought, faith and magic defended against any opponent on the grounds of reason. In addition to studying classical Latin and Greek, Renaissance authors also began increasingly to use vernacular languages; combined with the introduction of printing, this would <EVENT eid="e1010">allow</EVENT> many more people access to books, especially the Bible.
+
+In all, the Renaissance could be viewed as an attempt by intellectuals to study and improve the secular and worldly, both through the revival of ideas from antiquity, and through novel approaches to thought. Some scholars, such as Rodney Stark, play down the Renaissance in favor of the earlier innovations of the Italian city states in the High Middle Ages, which married responsive government, Christianity and the birth of capitalism. This analysis argues that, whereas the great European states (France and Spain) were absolutist monarchies, and others were under direct Church <EVENT eid="e1011">control</EVENT>, the independent city republics of Italy <EVENT eid="e1012">took over</EVENT> the principles of capitalism invented on monastic estates and set off a vast unprecedented commercial revolution which preceded and financed the Renaissance.
+
+</TEXT>
+
+</TimeML>

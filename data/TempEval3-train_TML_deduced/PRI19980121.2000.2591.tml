@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>PRI19980121.2000.2591</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-01-21">19980121</TIMEX3></DCT>
+
+<EXTRAINFO>
+PRI19980121.2000.2591 NEWS STORY
+</EXTRAINFO>
+
+<TEXT>
+Now for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t33" type="DATE" value="1998-01-21">today</TIMEX3>'s geography <EVENT class="OCCURRENCE" eid="e1985">quiz</EVENT>.
+
+We're off in <EVENT class="OCCURRENCE" eid="e2">search</EVENT> of an ancient and exotic city.
+
+An officially <EVENT class="OCCURRENCE" eid="e4">sanctioned</EVENT> one, too. UNESCO <EVENT class="I_ACTION" eid="e5">declared</EVENT> it a protected site for its beauty and its historical significance.
+
+The city could have <EVENT class="I_ACTION" eid="e6">used</EVENT> some special protection in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t34" type="DATE" value="1979">nineteen seventy-nine</TIMEX3> when the Soviet Union <EVENT class="OCCURRENCE" eid="e10">invaded</EVENT> Afghanistan. Most of the city's monuments were <EVENT class="OCCURRENCE" eid="e11">destroyed</EVENT>, including a magnificent tiled mosque, which <EVENT class="OCCURRENCE" eid="e12">dominated</EVENT> the skyline for <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t1982" type="DURATION" value="PXC">centuries</TIMEX3>.
+
+The people here are famous throughout central Asia for their skill in fashioning pottery and tile, glass too. Some families have <EVENT class="OCCURRENCE" eid="e1989">kept</EVENT> their glass working secrets for <TIMEX3 functionInDocument="NONE" mod="MORE_THAN" temporalFunction="false" tid="t1991" type="DURATION" value="P2L">more than two thousand years</TIMEX3>.
+
+Even though this city is in Afghanistan, most people here <EVENT class="I_ACTION" eid="e19">speak</EVENT> a dialect of the Persian language, and <EVENT class="STATE" eid="e22">have</EVENT> long standing cultural ties with neighboring Iran.
+
+<EVENT class="I_STATE" eid="e25">Think</EVENT> you <EVENT class="OCCURRENCE" eid="e26">got</EVENT> it? Well, frankly, I don't, but the answer is <EVENT class="OCCURRENCE" eid="e30">coming</EVENT> up in just <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t1986" type="DURATION" value="PXM">a few minutes</TIMEX3>.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1998" eventID="e1985" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e4" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2002" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE_PROGRESSIVE" eiid="ei2004" eventID="e6" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2006" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2007" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2008" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2009" eventID="e1989" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2010" eventID="e19" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2013" eventID="e22" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2015" eventID="e25" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2016" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2019" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei2015" lid="l26" relType="IS_INCLUDED" relatedToTime="t33" />
+<TLINK eventInstanceID="ei2013" lid="l24" relType="IS_INCLUDED" relatedToTime="t33" />
+<TLINK eventInstanceID="ei2010" lid="l23" relType="IS_INCLUDED" relatedToTime="t33" />
+<TLINK eventInstanceID="ei2004" lid="l20" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2000" lid="l18" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK lid="l1" relType="DURING" relatedToEventInstance="ei2008" timeID="t1982" />
+<TLINK lid="l2" relType="IS_INCLUDED" relatedToEventInstance="ei2006" timeID="t34" />
+<TLINK eventInstanceID="ei2001" lid="l3" relType="IS_INCLUDED" relatedToEventInstance="ei2002" />
+<TLINK lid="l4" relType="BEFORE" relatedToEventInstance="ei2002" timeID="t0" />
+<TLINK lid="l5" relType="BEFORE" relatedToEventInstance="ei2001" timeID="t0" />
+<TLINK lid="l7" relType="SIMULTANEOUS" relatedToEventInstance="ei1998" timeID="t33" />
+<TLINK lid="l8" relType="IS_INCLUDED" relatedToEventInstance="ei2007" timeID="t34" />
+<TLINK lid="l9" relType="AFTER" relatedToEventInstance="ei2019" timeID="t1986" />
+<TLINK eventInstanceID="ei2006" lid="l10" relType="DURING" relatedToEventInstance="ei2007" />
+<TLINK eventInstanceID="ei2009" lid="l11" relType="DURING" relatedToTime="t1991" />
+<SLINK eventInstanceID="ei2015" lid="l12" relType="MODAL" subordinatedEventInstance="ei2016" />
+
+<TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1998" relatedToEventInstance="ei2010" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1998" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1998" relatedToEventInstance="ei2015" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1998" relatedToTime="t33" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2000" relatedToEventInstance="ei2001" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2000" relatedToEventInstance="ei2002" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2000" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2001" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2001" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2002" relatedToEventInstance="ei2004" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2002" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2006" relatedToTime="t34" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2007" relatedToTime="t34" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2019" relatedToTime="t1986" /></TimeML>

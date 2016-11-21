@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0760</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-27">10/27/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891027-0135 = 891027 891027-0135.
+Norton Net Declined @ 6% in Third Quarter 10/27/89 WALL STREET JOURNAL (J) NRT EARNINGS (ERN) INDUSTRIAL EQUIPMENT, MACHINE TOOLS (IND) WORCESTER, Mass.
+</EXTRAINFO>
+
+<TEXT>
+Norton Co. <EVENT class="REPORTING" eid="e1">said</EVENT> net income for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t50" type="DATE" value="1989-Q3">the third quarter</TIMEX3> <EVENT class="OCCURRENCE" eid="e2">fell</EVENT> 6% to $20.6 million, or 98 cents a share, from $22 million, or $1.03 a share.
+
+Operating profit for the abrasives, engineering materials and petroleum services concern was $19.2 million, or 91 cents a share, up 3% from $18.7 million, or 87 cents a share.
+
+The company had a tax credit of $1.4 million. In <TIMEX3 anchorTimeID="t50" functionInDocument="NONE" temporalFunction="true" tid="t53" type="DATE" value="1988-Q3">the year-earlier quarter</TIMEX3>, the tax credit was $3.3 million. Sales <EVENT class="OCCURRENCE" eid="e7">rose</EVENT> 8% to $368.5 million from $340.7 million.
+
+Operating profit in the company's abrasives segment <EVENT class="OCCURRENCE" eid="e8">rose</EVENT> 16% while operating profit in the engineering materials segment <EVENT class="OCCURRENCE" eid="e11">rose</EVENT> 2%. However, the company's petroleum services segment, while profitable, was <EVENT class="OCCURRENCE" eid="e13">hurt</EVENT> by high financing costs associated with the company's <EVENT class="OCCURRENCE" eid="e35">buy-out</EVENT> of a 50% stake in Eastman Christensen Co. from Texas Eastern Corp. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t55" type="DATE" value="1989-06">last June</TIMEX3>. Norton and Texas Eastern had each held a 50% stake in Eastman in a joint venture.
+
+Norton <EVENT class="REPORTING" eid="e21">announced</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="START" temporalFunction="true" tid="t56" type="DATE" value="1989-10">earlier this month</TIMEX3> that it was <EVENT class="I_ACTION" eid="e22">exploring</EVENT> the possible <EVENT class="OCCURRENCE" eid="e23">sale</EVENT> of all or part of Eastman Christensen.
+
+For <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t57" type="DURATION" value="P9M">the nine months</TIMEX3>, Norton had net of $81.2 million, or $3.87 a share, and a tax credit of $4.4 million. In <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t60" type="DURATION" value="P9M">the year-earlier period</TIMEX3>, the company had net of $77.2 million, or $3.68 a share, and a tax credit of $7.7 million.
+
+Norton had operating profit of $76.8 million, or $3.66 a share, up 11% from $69.5 million, or $3.31 a share.
+
+Sales <EVENT class="OCCURRENCE" eid="e29">rose</EVENT> 8% to $1.15 billion from $1.06 billion.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei195" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei196" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei200" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei203" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei204" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei205" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei206" eventID="e35" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei207" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei208" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei209" eventID="e23" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei214" eventID="e29" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei214" lid="l22" relType="IS_INCLUDED" relatedToTime="t60" />
+<TLINK lid="l1" relType="AFTER" relatedToEventInstance="ei195" timeID="t0" />
+<TLINK lid="l2" relType="DURING" relatedToEventInstance="ei196" timeID="t50" />
+<TLINK eventInstanceID="ei200" lid="l3" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei203" lid="l4" relType="SIMULTANEOUS" relatedToEventInstance="ei204" />
+<TLINK eventInstanceID="ei206" lid="l5" relType="IS_INCLUDED" relatedToTime="t55" />
+<TLINK eventInstanceID="ei206" lid="l6" relType="BEFORE" relatedToEventInstance="ei205" />
+<TLINK eventInstanceID="ei207" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei207" lid="l8" relType="IS_INCLUDED" relatedToTime="t56" />
+<SLINK eventInstanceID="ei195" lid="l13" relType="EVIDENTIAL" subordinatedEventInstance="ei196" />
+<SLINK eventInstanceID="ei207" lid="l14" relType="EVIDENTIAL" subordinatedEventInstance="ei208" />
+<SLINK eventInstanceID="ei208" lid="l15" relType="MODAL" subordinatedEventInstance="ei209" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei195" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei205" relatedToEventInstance="ei206" /></TimeML>

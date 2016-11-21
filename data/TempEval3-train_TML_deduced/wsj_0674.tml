@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0674</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0022 = 891030 891030-0022.
+Jim Pattison to Seek @ Control of Innopac 10/30/89 WALL STREET JOURNAL (J) T.INA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) EARNINGS (ERN) VANCOUVER, British Columbia
+</EXTRAINFO>
+
+<TEXT>
+Jim Pattison Industries Ltd., one of a group of closely held companies owned by entrepreneur James Pattison, <EVENT class="REPORTING" eid="e2">said</EVENT> it "<EVENT class="I_STATE" eid="e3">intends</EVENT> to <EVENT class="I_ACTION" eid="e5">seek</EVENT> control" of 30%-owned Innopac Inc., a Toronto packaging concern.
+
+Jim Pattison Industries, a holding company with annual sales of about C$1.9 billion, largely from car dealerships and grocery stores, didn't <EVENT class="REPORTING" eid="e7">elaborate</EVENT> on the statement, and a company official <EVENT class="I_ACTION" eid="e11">declined</EVENT> further <EVENT class="OCCURRENCE" eid="e12">comment</EVENT>.
+
+The company <EVENT class="REPORTING" eid="e13">said</EVENT> it <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t42" type="DATE" value="PRESENT_REF">currently</TIMEX3> <EVENT class="STATE" eid="e14">holds</EVENT> about 4.2 million of Innopac's 13.8 million common shares outstanding, which <EVENT class="STATE" eid="e43">have</EVENT> an aggregate market value of about 137.8 million Canadian dollars (US$117.3 million).
+
+Separately, Innopac <EVENT class="REPORTING" eid="e15">reported</EVENT> a <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t44" type="DATE" value="1989-Q4">fourth-quarter</TIMEX3> <EVENT class="STATE" eid="e16">loss</EVENT> of about C$2.6 million, or 18 Canadian cents a share, reflecting inventory <EVENT class="OCCURRENCE" eid="e45">write-downs</EVENT>. The <EVENT class="STATE" eid="e18">results</EVENT> <EVENT class="OCCURRENCE" eid="e19">made</EVENT> net income for <TIMEX3 endPoint="t50" functionInDocument="NONE" temporalFunction="true" tid="t49" type="DURATION" value="P1Y">the year</TIMEX3> ended <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t50" type="DATE" value="1989-08-31">Aug. 31</TIMEX3> C$2.7 million, or 20 Canadian cents a share, down from C$9.7 million, or 70 Canadian cents a share <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t52" type="DATE" value="1988">last year</TIMEX3>. <EVENT class="STATE" eid="e56">Revenue</EVENT> was C$291.6 million, up from C$252 million in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t58" type="DATE" value="1988">1988</TIMEX3>.
+
+Martin Fabi, Innopac's president and chief executive, <EVENT class="REPORTING" eid="e21">said</EVENT> Innopac <EVENT class="I_STATE" eid="e22">viewed</EVENT> Mr. Pattison's <EVENT class="OCCURRENCE" eid="e23">decision</EVENT> to <EVENT class="I_ACTION" eid="e25">seek</EVENT> control as a "very positive" <EVENT class="OCCURRENCE" eid="e26">move</EVENT>. "I'm <EVENT class="I_STATE" eid="e63">happy</EVENT> that he <EVENT class="STATE" eid="e64">feels</EVENT> positively about our company," he <EVENT class="REPORTING" eid="e28">said</EVENT>. Mr. Fabi wouldn't <EVENT class="REPORTING" eid="e29">say</EVENT> directly whether Mr. Pattison has <EVENT class="REPORTING" eid="e30">disclosed</EVENT> potential terms for his planned <EVENT class="OCCURRENCE" eid="e31">bid</EVENT> for control.
+
+Among other things, Innopac is involved in recycling polystyrene foam products that are often used by fast food chains, such as McDonald's Corp., for food packaging. A joint venture involving units of Innopac and Mobil Corp. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="START" temporalFunction="true" tid="t69" type="DATE" value="1989">earlier this year</TIMEX3> <EVENT class="OCCURRENCE" eid="e37">opened</EVENT> the first U.S. polystyrene recycling plant, in Leominster, Mass.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1990" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1991" eventID="e3" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1992" eventID="e5" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1994" eventID="e7" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1996" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1997" eventID="e12" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1998" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1999" eventID="e14" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eventID="e43" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2001" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2002" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2003" eventID="e45" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2004" eventID="e18" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2005" eventID="e19" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2008" eventID="e56" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2010" eventID="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2011" eventID="e22" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2012" eventID="e23" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2013" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2015" eventID="e26" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2016" eventID="e63" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2017" eventID="e64" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2018" eventID="e28" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2019" eventID="e29" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2020" eventID="e30" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2022" eventID="e31" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2023" eventID="e37" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei2019" lid="l48" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2001" lid="l47" relType="IS_INCLUDED" relatedToTime="t44" />
+<TLINK eventInstanceID="ei2023" lid="l1" relType="IS_INCLUDED" relatedToTime="t69" />
+<TLINK eventInstanceID="ei1990" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1991" lid="l3" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei1991" lid="l4" relType="INCLUDES" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei1996" lid="l7" relType="AFTER" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei1998" lid="l8" relType="IDENTITY" relatedToEventInstance="ei1990" />
+<TLINK eventInstanceID="ei1999" lid="l9" relType="IS_INCLUDED" relatedToTime="t42" />
+<TLINK eventInstanceID="ei2000" lid="l10" relType="IS_INCLUDED" relatedToTime="t42" />
+<TLINK eventInstanceID="ei2002" lid="l11" relType="IS_INCLUDED" relatedToTime="t44" />
+<TLINK eventInstanceID="ei2003" lid="l12" relType="BEFORE" relatedToEventInstance="ei2002" />
+<TLINK eventInstanceID="ei2004" lid="l13" relType="IDENTITY" relatedToEventInstance="ei2005" />
+<TLINK lid="l16" relType="ENDED_BY" relatedToTime="t50" timeID="t49" />
+<TLINK eventInstanceID="ei2010" lid="l22" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2013" lid="l24" relType="IDENTITY" relatedToEventInstance="ei1992" />
+<TLINK eventInstanceID="ei2015" lid="l26" relType="IDENTITY" relatedToEventInstance="ei2012" />
+<TLINK eventInstanceID="ei2018" lid="l27" relType="IDENTITY" relatedToEventInstance="ei2010" />
+<SLINK eventInstanceID="ei2011" lid="l46" relType="FACTIVE" subordinatedEventInstance="ei2012" />
+<SLINK eventInstanceID="ei1990" lid="l30" relType="EVIDENTIAL" subordinatedEventInstance="ei1991" />
+<SLINK eventInstanceID="ei1991" lid="l31" relType="MODAL" subordinatedEventInstance="ei1992" />
+<SLINK eventInstanceID="ei1996" lid="l33" relType="COUNTER_FACTIVE" subordinatedEventInstance="ei1997" />
+<SLINK eventInstanceID="ei1998" lid="l34" relType="EVIDENTIAL" subordinatedEventInstance="ei1999" />
+<SLINK eventInstanceID="ei2001" lid="l35" relType="EVIDENTIAL" subordinatedEventInstance="ei2002" />
+<SLINK eventInstanceID="ei2010" lid="l36" relType="EVIDENTIAL" subordinatedEventInstance="ei2011" />
+<SLINK eventInstanceID="ei2012" lid="l37" relType="MODAL" subordinatedEventInstance="ei2013" />
+<SLINK eventInstanceID="ei2018" lid="l39" relType="EVIDENTIAL" subordinatedEventInstance="ei2016" />
+<SLINK eventInstanceID="ei2016" lid="l40" relType="FACTIVE" subordinatedEventInstance="ei2017" />
+<SLINK eventInstanceID="ei2019" lid="l41" relType="EVIDENTIAL" subordinatedEventInstance="ei2020" />
+<SLINK eventInstanceID="ei2020" lid="l42" relType="EVIDENTIAL" subordinatedEventInstance="ei2022" />
+<SLINK eventInstanceID="ei2011" lid="l44" relType="MODAL" subordinatedEventInstance="ei2015" />
+
+<TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1990" relatedToEventInstance="ei1991" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1990" relatedToEventInstance="ei1996" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1990" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei1991" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1992" relatedToEventInstance="ei2013" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1996" relatedToEventInstance="ei1998" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1998" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2002" relatedToEventInstance="ei2003" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2010" relatedToEventInstance="ei2018" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2012" relatedToEventInstance="ei2015" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2018" relatedToTime="t0" /></TimeML>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0169</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0021 = 891102 891102-0021.
+Business Brief -- Ratners Group PLC: @ Bid for Another Jeweler @ Is Raised to $62.1 Million 11/02/89 WALL STREET JOURNAL (J) RATNY WEIS TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+
+<TEXT>
+Ratners Group PLC, a fast-growing, acquisition-minded London-based jeweler, <EVENT class="OCCURRENCE" eid="e1">raised</EVENT> its price for Seattle-based specialty jeweler Weisfield's Inc. to $57.50 a share, or $62.1 million, from $50 a share, or $55 million, after another concern <EVENT class="REPORTING" eid="e3">said</EVENT> it would be prepared to <EVENT class="OCCURRENCE" eid="e7">outbid</EVENT> Ratners's initial <EVENT class="OCCURRENCE" eid="e8">offer</EVENT>. The other concern wasn't identified.
+
+Ratners's chairman, Gerald Ratner, <EVENT class="REPORTING" eid="e11">said</EVENT> the deal remains of "substantial benefit to Ratners." In London at <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="MID" temporalFunction="true" tid="t28" type="TIME" value="1989-11-01TAF">mid-afternoon yesterday</TIMEX3>, Ratners's shares were <EVENT class="STATE" eid="e34">up</EVENT> 2 pence (1.26 cents), at 260 pence ($1.64).
+
+The sweetened <EVENT class="OCCURRENCE" eid="e14">offer</EVENT> <EVENT class="STATE" eid="e15">has</EVENT> acceptances from more than 50% of Weisfield's shareholders, and it is <EVENT class="I_STATE" eid="e17">scheduled</EVENT> for <EVENT class="OCCURRENCE" eid="e18">completion</EVENT> by <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t36" type="DATE" value="1989-12-10">Dec. 10</TIMEX3>.
+
+The <EVENT class="OCCURRENCE" eid="e19">acquisition</EVENT> of 87-store Weisfield's <EVENT class="OCCURRENCE" eid="e38">raises</EVENT> Ratners's U.S. presence to 450 stores. About 30% of Ratners's profit <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t101" type="DATE" value="PRESENT_REF">already</TIMEX3> is <EVENT class="OCCURRENCE" eid="e20">derived</EVENT> from the U.S.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei166" eventID="e38" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei155" eventID="e8" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei163" eventID="e17" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei165" eventID="e19" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei153" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei154" eventID="e7" modality="would" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei164" eventID="e18" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei158" eventID="e34" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei160" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei167" eventID="e20" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei156" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei161" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei150" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK lid="l1" relType="SIMULTANEOUS" relatedToEventInstance="ei167" timeID="t101" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei150" timeID="t0" />
+<TLINK eventInstanceID="ei150" lid="l5" relType="AFTER" relatedToEventInstance="ei153" />
+<TLINK eventInstanceID="ei154" lid="l6" relType="AFTER" relatedToEventInstance="ei155" />
+<TLINK eventInstanceID="ei156" lid="l7" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei156" lid="l8" relType="IAFTER" relatedToEventInstance="ei150" />
+<TLINK lid="l9" relType="INCLUDES" relatedToEventInstance="ei158" timeID="t28" />
+<TLINK eventInstanceID="ei160" lid="l12" relType="BEFORE" relatedToEventInstance="ei161" />
+<TLINK lid="l14" relType="IS_INCLUDED" relatedToEventInstance="ei163" timeID="t0" />
+<TLINK eventInstanceID="ei164" lid="l15" relType="ENDED_BY" relatedToTime="t36" />
+<TLINK eventInstanceID="ei165" lid="l16" relType="IDENTITY" relatedToEventInstance="ei160" />
+<TLINK eventInstanceID="ei165" lid="l17" relType="IBEFORE" relatedToEventInstance="ei166" />
+<TLINK eventInstanceID="ei167" lid="l18" relType="BEFORE" relatedToEventInstance="ei165" />
+<TLINK lid="l19" relType="INCLUDES" relatedToTime="t0" timeID="t101" />
+<SLINK eventInstanceID="ei154" lid="l23" relType="FACTIVE" subordinatedEventInstance="ei155" />
+<SLINK eventInstanceID="ei153" lid="l20" relType="EVIDENTIAL" subordinatedEventInstance="ei154" />
+<SLINK eventInstanceID="ei163" lid="l22" relType="MODAL" subordinatedEventInstance="ei164" />
+<ALINK eventInstanceID="ei164" lid="l24" relType="TERMINATES" relatedToEventInstance="ei160" />
+
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToEventInstance="ei165" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToEventInstance="ei153" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToEventInstance="ei160" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToEventInstance="ei167" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToEventInstance="ei156" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei166" relatedToTime="t101" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei155" relatedToEventInstance="ei154" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei163" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToEventInstance="ei153" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToEventInstance="ei167" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToEventInstance="ei156" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei165" relatedToEventInstance="ei161" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei165" relatedToTime="t101" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei153" relatedToEventInstance="ei160" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei153" relatedToEventInstance="ei156" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei153" relatedToEventInstance="ei161" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei153" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei153" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei158" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToEventInstance="ei167" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToEventInstance="ei156" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei160" relatedToTime="t101" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei167" relatedToEventInstance="ei161" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei167" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei167" relatedToTime="t101" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei156" relatedToEventInstance="ei161" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei161" relatedToEventInstance="ei150" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei161" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei161" relatedToTime="t101" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei150" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" timeID="t0" relatedToTime="t101" /></TimeML>

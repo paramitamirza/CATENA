@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0161</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0030 = 891102 891102-0030.
+Business Brief -- Hadson Corp.: @ Company Expects to Report @ Deficit for Third Quarter 11/02/89 WALL STREET JOURNAL (J) HAD
+</EXTRAINFO>
+
+<TEXT>
+Hadson Corp. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="I_STATE" eid="e2">expects</EVENT> to <EVENT class="REPORTING" eid="e4">report</EVENT> a <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t28" type="DATE" value="1989-Q3">third-quarter</TIMEX3> net <EVENT class="OCCURRENCE" eid="e5">loss</EVENT> of $17 million to $19 million because of special reserves and continued low natural-gas prices.
+
+The Oklahoma City energy and defense concern <EVENT class="REPORTING" eid="e7">said</EVENT> it will <EVENT class="OCCURRENCE" eid="e8">record</EVENT> a $7.5 million reserve for its defense group, including a $4.7 million <EVENT class="OCCURRENCE" eid="e65">charge</EVENT> related to problems under a fixed-price development contract and $2.8 million in overhead <EVENT class="OCCURRENCE" eid="e66">costs</EVENT> that won't be <EVENT class="OCCURRENCE" eid="e12">reimbursed</EVENT>.
+
+In addition, Hadson <EVENT class="REPORTING" eid="e15">said</EVENT> it will <EVENT class="OCCURRENCE" eid="e16">write</EVENT> off about $3.5 million in costs related to international exploration leases where exploration efforts have been unsuccessful.
+
+The company also cited interest costs and <EVENT class="OCCURRENCE" eid="e21">amortization</EVENT> of goodwill as factors in the <EVENT class="OCCURRENCE" eid="e23">loss</EVENT>.
+
+<TIMEX3 anchorTimeID="t28" functionInDocument="NONE" temporalFunction="true" tid="t31" type="DATE" value="1988-Q3">A year earlier</TIMEX3>, net <EVENT class="STATE" eid="e32">income</EVENT> was $2.1 million, or six cents a share, on revenue of $169.9 million.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei141" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei142" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei143" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei144" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei145" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei146" eventID="e8" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei148" eventID="e65" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei149" eventID="e66" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei150" eventID="e12" polarity="NEG" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei151" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei152" eventID="e16" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei157" eventID="e21" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei158" eventID="e23" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei159" eventID="e32" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei141" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei144" lid="l2" relType="SIMULTANEOUS" relatedToTime="t28" />
+<TLINK eventInstanceID="ei141" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei145" />
+<TLINK eventInstanceID="ei149" lid="l6" relType="BEFORE" relatedToEventInstance="ei150" />
+<TLINK eventInstanceID="ei151" lid="l7" relType="SIMULTANEOUS" relatedToEventInstance="ei141" />
+<TLINK eventInstanceID="ei152" lid="l9" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei152" lid="l12" relType="IS_INCLUDED" relatedToEventInstance="ei146" />
+<TLINK eventInstanceID="ei158" lid="l13" relType="IDENTITY" relatedToEventInstance="ei144" />
+<TLINK eventInstanceID="ei157" lid="l15" relType="IS_INCLUDED" relatedToEventInstance="ei158" />
+<TLINK lid="l16" relType="BEFORE" relatedToTime="t28" timeID="t31" />
+<TLINK lid="l17" relType="SIMULTANEOUS" relatedToEventInstance="ei159" timeID="t31" />
+<SLINK eventInstanceID="ei141" lid="l18" relType="EVIDENTIAL" subordinatedEventInstance="ei142" />
+<SLINK eventInstanceID="ei142" lid="l19" relType="MODAL" subordinatedEventInstance="ei143" />
+<SLINK eventInstanceID="ei143" lid="l20" relType="EVIDENTIAL" subordinatedEventInstance="ei144" />
+<SLINK eventInstanceID="ei145" lid="l21" relType="EVIDENTIAL" subordinatedEventInstance="ei146" />
+<SLINK eventInstanceID="ei151" lid="l22" relType="EVIDENTIAL" subordinatedEventInstance="ei152" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei141" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei141" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei144" relatedToEventInstance="ei157" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei144" relatedToEventInstance="ei158" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToEventInstance="ei159" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei144" relatedToTime="t31" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei145" relatedToEventInstance="ei151" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei145" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei145" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei146" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei151" relatedToEventInstance="ei152" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei151" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei157" relatedToEventInstance="ei159" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei157" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei157" relatedToTime="t31" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei158" relatedToEventInstance="ei159" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei158" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei158" relatedToTime="t31" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei159" relatedToTime="t28" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei159" relatedToTime="t31" /><TLINK deduced="true" relType="AFTER" timeID="t28" relatedToTime="t31" /></TimeML>

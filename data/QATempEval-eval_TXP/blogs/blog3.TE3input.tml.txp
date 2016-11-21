@@ -1,0 +1,283 @@
+# FILE: blog3.TE3input.naf.txp
+# DATE: 2003-05-09
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	coevent	pairs	
+
+DCT_2003-05-09	O	O	O	O	O	tmx0	B-DATE	2003-05-09	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+Mindless	t1	1	NP0	mindless	O	O	O	O	person	O	O	O	O	O	have	A0	B-NP	O	O	mindless+adj+zero	O	O	O	
+Mush	t2	1	NP0	mush	t1:NAME	O	O	O	person	O	O	O	O	O	have	A0	I-NP	O	O	mush+n+sing	O	O	O	
+I	t3	1	PNP	i	O	O	O	O	O	O	O	O	O	O	have	A0	B-NP	O	O	i+pron	O	O	O	
+had	t4	1	VVD	have	t2:SBJ||t3:SBJ||t8:OBJ||t9:P	O	O	O	O	STATE	e4	A0	A0	A1	O	O	B-VP	mainVb	O	have+v+indic+past	PAST+NONE+pos	e173:e11:e120:e194:e250:e30:e40:e145:e196:e225:e235	e4:tmx1:NONE||e4:tmx0:NONE	
+a	t5	1	AT0	a	O	O	O	O	O	O	O	O	O	O	have	A1	B-NP	O	O	a+art	O	O	O	
+really	t6	1	AV0	really	O	O	O	O	O	O	O	O	O	O	have	A1	B-ADJP	O	O	really+adv	O	O	O	
+great	t7	1	AJ0	great	t6:AMOD	tmx1	B-DATE	2003-W18-WE	O	O	O	O	O	O	have	A1	I-ADJP	O	O	great+adj+zero	O	O	O	
+weekend	t8	1	NN1	weekend	t5:NMOD||t7:NMOD	tmx1	I-DATE	2003-W18-WE	O	O	O	O	O	O	have	A1	B-NP	O	O	weekend+n+sing	O	O	O	
+.	t9	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+I	t10	2	PNP	i	O	O	O	O	O	O	O	O	O	O	get	A0	B-NP	O	O	i+pron	O	O	O	
+got	t11	2	VVD	get	t10:SBJ||t12:OPRD||t28:P	O	O	O	O	I_ACTION	e11	A0	A1	O	O	O	B-VP	mainVb	O	get+v+indic+past	PAST+NONE+pos	e4:e173:e120:e194:e250:e30:e40:e145:e196:e225:e235	e11:tmx0:NONE||e11:e4:NONE	
+to	t12	2	TO0	to	t13:IM	O	O	O	O	O	O	O	O	O	get	A1	I-VP	mainVb	O	to+prep	INFINITIVE+NONE+pos	O	O	
+see	t13	2	VVB	see	t15:OBJ	O	O	O	O	PERCEPTION	e13	A0	A1	O	get	A1	I-VP	mainVb	O	see+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e44	e13:e15:NONE||e13:e22:NONE||e13:tmx0:NONE||e13:e11:NONE	
+a	t14	2	AT0	a	O	O	O	O	O	O	O	O	O	O	get	A1	B-NP	O	O	a+art	O	O	O	
+lot	t15	2	NN1	lot	t14:NMOD||t16:NMOD	O	O	O	O	OCCURRENCE	e15	A1	O	O	get	A1	I-NP	O	O	lot+n+sing	NONE+NONE+pos	O	e15:e22:NONE||e15:tmx0:NONE	
+of	t16	2	PRF	of	t17:PMOD	O	O	O	O	O	O	O	O	O	get	A1	B-PP	O	O	of+prep	O	O	O	
+people	t17	2	NN2	person	t19:NMOD	O	O	O	O	O	O	O	O	O	get	A1	B-NP	O	O	people+v+indic+pres+no3sing	O	O	O	
+I	t18	2	PNP	i	O	O	O	O	O	O	O	O	O	O	get	A1	B-NP	O	O	i+pron	O	O	O	
+do	t19	2	VVI	do	t18:SBJ||t20:ADV||t21:ADV||t22:VC	O	O	O	O	O	O	O	O	O	get	A1	B-VP	O	O	do+v+indic+pres+no3sing	PRESENT+NONE+neg	O	O	
+n't	t20	2	XX0	not	O	O	O	O	O	O	O	O	O	O	get	A1	I-VP	O	O	not+adv	PRESENT+NONE+neg	O	O	
+normally	t21	2	AV0	normally	O	O	O	O	O	O	O	O	O	O	get	A1	B-ADVP	O	O	normally+adv	O	O	O	
+hang	t22	2	VVB	hang	t23:PRT||t24:ADV	O	O	O	O	OCCURRENCE	e22	A1	A0	AM-NEG	get	A1	B-VP	O	O	hang+v+indic+pres+no3sing	NONE+NONE+pos	O	e22:tmx0:NONE	
+out	t23	2	AV0	out	O	O	O	O	O	O	O	O	O	O	get	A1	B-PRT	O	O	out+adv	O	O	O	
+with	t24	2	PRP	with	t26:PMOD	O	O	O	O	O	O	O	O	O	get	A1	B-PP	O	O	with+prep	O	O	O	
+which	t25	2	DTQ	which	O	O	O	O	O	O	O	O	O	O	get	A1	B-SBAR	O	O	which+pron	O	O	O	
+was	t26	2	VVD	be	t25:SBJ||t27:PRD	O	O	O	O	O	O	O	O	O	get	A1	B-VP	O	O	be+v+indic+past	PAST+NONE+pos	O	O	
+great	t27	2	AJ0	great	O	O	O	O	O	O	O	O	O	O	get	A1	B-ADJP	O	O	great+adj+zero	O	O	O	
+.	t28	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+I	t29	3	PNP	i	O	O	O	O	O	O	O	O	O	O	take	A0	B-NP	O	O	i+pron	O	O	O	
+took	t30	3	VVD	take	t29:SBJ||t32:OBJ||t33:ADV||t38:P	O	O	O	O	OCCURRENCE	e30	A0	A1	A2	O	O	B-VP	mainVb	O	take+v+indic+past	PAST+NONE+pos	e4:e173:e11:e120:e194:e250:e40:e145:e196:e225:e235	e30:tmx0:NONE||e30:e13:NONE	
+my	t31	3	DPS	my	O	O	O	O	O	O	O	O	O	O	take	A1	B-NP	O	O	my+adj+zero	O	O	O	
+mom	t32	3	NN1	mom	t31:NMOD	O	O	O	O	OCCURRENCE	e32	A0	A0	O	take	A1	I-NP	O	O	mom+n+sing	NONE+NONE+pos	O	e32:tmx0:NONE	
+out	t33	3	PRP	out	t34:PMOD	O	O	O	O	O	O	O	O	O	take	A2	B-PRT	O	O	out+prep	O	O	O	
+for	t34	3	PRP	for	t37:PMOD	O	O	O	O	O	O	O	O	O	take	A2	B-PP	O	O	for+prep	O	O	O	
+Mother	t35	3	NP0	mother	t36:SUFFIX	O	O	O	O	O	O	O	O	O	take	A2	B-NP	O	O	mother+n+sing	O	O	O	
+'s	t36	3	POS	's	O	O	O	O	O	O	O	O	O	O	take	A2	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	
+Day	t37	3	NP0	day	t35:NMOD	O	O	O	O	O	O	O	O	O	take	A2	I-NP	O	O	day+n+sing	O	O	O	
+.	t38	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+We	t39	4	PNP	we	O	O	O	O	O	O	O	O	O	O	go	A0	B-NP	O	O	we+pron	O	O	O	
+went	t40	4	VVD	go	t39:SBJ||t41:DIR||t43:COORD||t55:P	O	O	O	O	OCCURRENCE	e40	A0	A2	O	O	O	B-VP	mainVb	O	go+v+indic+past	PAST+NONE+pos	e4:e173:e11:e120:e194:e250:e30:e145:e196:e225:e235	e40:e44:NONE||e40:tmx0:NONE||e40:e30:NONE	
+into	t41	4	PRP	into	t42:PMOD	O	O	O	O	O	O	O	O	O	go	A2	B-PP	O	O	into+prep	O	O	O	
+Manhattan	t42	4	NP0	manhattan	O	O	O	O	location	O	O	O	O	O	go	A2	B-NP	O	O	manhattan+n+sing	O	O	O	
+and	t43	4	CJC	and	t44:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	O	and+conj	O	O	O	
+saw	t44	4	VVD	see	t46:OBJ	O	O	O	O	PERCEPTION	e44	A0	A1	O	O	O	B-VP	O	O	see+v+indic+past	PAST+NONE+pos	e13	e44:tmx0:NONE	
+``	t45	4	AJ0	``	O	O	O	O	O	O	O	O	O	O	see	A1	I-VP	O	O	O	O	O	O	
+Movin	t46	4	NP0	movin	t45:NMOD||t47:SUFFIX||t48:NMOD||t50:P||t54:APPO	O	O	O	O	O	O	O	O	O	see	A1	B-NP	O	O	O	O	O	O	
+'	t47	4	POS	'	O	O	O	O	O	O	O	O	O	O	see	A1	I-NP	O	O	'+punc	O	O	O	
+Out	t48	4	PRP	out	t49:P	O	O	O	O	O	O	O	O	O	see	A1	I-NP	O	O	out+prep	O	O	O	
+''	t49	4	NN0	''	O	O	O	O	O	O	O	O	O	O	see	A1	O	O	O	O	O	O	O	
+,	t50	4	PUN	,	O	O	O	O	O	O	O	O	O	O	see	A1	I-NP	O	O	punc	O	O	O	
+the	t51	4	AT0	the	O	O	O	O	O	O	O	O	O	O	see	A1	B-NP	O	O	the+art	O	O	O	
+Billy	t52	4	NP0	billy	O	O	O	O	person	O	O	O	O	O	see	A1	I-NP	O	O	billy+n+sing	O	O	O	
+Joel	t53	4	NP0	joel	t52:NAME	O	O	O	person	O	O	O	O	O	see	A1	I-NP	O	O	O	O	O	O	
+musical	t54	4	NN1	musical	t51:NMOD||t53:NMOD	O	O	O	O	O	O	O	O	O	see	A1	I-NP	O	O	musical+n+sing	O	O	O	
+.	t55	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+It	t56	5	PNP	it	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	it+pron	O	O	O	
+was	t57	5	VVD	be	t56:SBJ||t58:ADV||t59:ADV||t60:P||t61:ADV||t62:PRD||t63:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	O	
+actually	t58	5	AV0	actually	O	O	O	O	O	O	O	O	O	O	O	O	B-ADVP	O	O	actually+adv	O	O	O	
+really	t59	5	AV0	really	O	O	O	O	O	O	O	O	O	O	O	O	I-ADVP	O	O	really+adv	O	O	O	
+,	t60	5	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	
+REALLY	t61	5	AV0	really	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	really+adv	O	O	O	
+good	t62	5	AV0	good	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	good+adv	O	O	O	
+!	t63	5	PUN	!	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	!+punc	O	O	O	
+
+Then	t64	6	AV0	then	O	O	O	O	O	O	O	O	O	O	steaks	AM-TMP	B-ADVP	O	Temporal	then+adv	O	O	O	
+my	t65	6	DPS	my	O	O	O	O	O	O	O	O	O	O	steaks	A1	B-NP	O	O	my+adj+zero	O	O	O	
+brother	t66	6	NN1	brother	t65:NMOD||t67:APPO	O	O	O	O	OCCURRENCE	e66	A1	A0	O	steaks	A1	I-NP	O	O	brother+n+sing	NONE+NONE+pos	e135	e66:e67:NONE||e66:e75:NONE||e66:tmx0:NONE	
+treated	t67	6	VVN	treat	t68:OBJ||t71:ADV	O	O	O	O	OCCURRENCE	e67	A1	A1	A2	steaks	A1	B-VP	O	O	treat+v+part+past	PASTPART+NONE+pos	O	e67:e75:NONE||e67:tmx0:NONE	
+her	t68	6	DPS	her	t69:COORD	O	O	O	O	O	O	O	O	O	steaks	A1	B-NP	O	O	her+pron	O	O	O	
+and	t69	6	CJC	and	t70:CONJ	O	O	O	O	O	O	O	O	O	steaks	A1	O	O	Expansion	and+conj	O	O	O	
+I	t70	6	PNP	i	O	O	O	O	O	O	O	O	O	O	steaks	A1	B-NP	O	O	i+pron	O	O	O	
+to	t71	6	TO0	to	t74:PMOD	O	O	O	O	O	O	O	O	O	steaks	A1	B-PP	O	O	to+prep	O	O	O	
+Ruth	t72	6	NP0	ruth	t73:SUFFIX	O	O	O	person	O	O	O	O	O	steaks	A1	B-NP	O	O	ruth+pn	O	O	O	
+'s	t73	6	POS	's	O	O	O	O	O	O	O	O	O	O	steaks	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	
+Chris	t74	6	NP0	chris	t72:NMOD	O	O	O	person	O	O	O	O	O	steaks	A1	I-NP	O	O	chris+pn	O	O	O	
+steaks	t75	6	NN0	steaks	t64:ADV||t66:SBJ||t76:ADV||t78:P	O	O	O	O	OCCURRENCE	e75	AM-TMP	A1	A2	O	O	B-VP	mainVb	O	steak+n+plur	NONE+NONE+pos	O	e75:tmx0:NONE||e75:e40:NONE	
+for	t76	6	PRP	for	t77:PMOD	O	O	O	O	O	O	O	O	O	steaks	A2	B-PP	O	O	for+prep	O	O	O	
+dinner	t77	6	NN1	dinner	O	O	O	O	O	O	O	O	O	O	steaks	A2	B-NP	O	O	dinner+n+sing	O	O	O	
+.	t78	6	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+That	t79	7	AT0	that	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	that+pron	O	O	O	
+was	t80	7	VVD	be	t79:SBJ||t82:PRD||t83:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	O	
+extremely	t81	7	AV0	extremely	O	O	O	O	O	O	O	O	O	O	O	O	I-VP	mainVb	O	extremely+adv	O	O	O	
+yum	t82	7	NN1	yum	t81:NMOD	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	O	
+.	t83	7	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+It	t84	8	PNP	it	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	it+pron	O	O	O	
+was	t85	8	VVD	be	t84:SBJ||t87:PRD||t88:PRP||t110:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	O	
+so	t86	8	AV0	so	O	O	O	O	O	O	O	O	O	O	O	O	B-ADJP	O	O	so+adv	O	O	O	
+cute	t87	8	AJ0	cute	t86:AMOD	O	O	O	O	O	O	O	O	O	O	O	I-ADJP	O	O	cute+adj+zero	O	O	O	
+because	t88	8	PRP	because	t96:SUB	O	O	O	O	O	O	O	O	O	O	O	B-SBAR	O	Contingency	because+conj	O	O	O	
+at	t89	8	PRP	at	t91:PMOD	O	O	O	O	O	O	O	O	O	start	AM-TMP	B-PP	O	O	at+prep	O	O	O	
+the	t90	8	AT0	the	O	tmx2	B-DATE	2003-05-08TNI	O	O	O	O	O	O	start	AM-TMP	B-NP	O	O	the+art	O	O	O	
+end	t91	8	NN1	end	t90:NMOD||t92:NMOD	tmx2	I-DATE	2003-05-08TNI	O	ASPECTUAL	e91	A1	O	O	start	AM-TMP	I-NP	O	O	end+n+sing	NONE+NONE+pos	O	e91:e97:NONE||e91:e99:NONE||e91:e107:NONE||e91:tmx2:NONE||e91:tmx0:NONE	
+of	t92	8	PRF	of	t94:PMOD	tmx2	I-DATE	2003-05-08TNI	O	O	O	O	O	O	start	AM-TMP	B-PP	O	O	of+prep	O	O	O	
+the	t93	8	AT0	the	O	tmx2	I-DATE	2003-05-08TNI	O	O	O	O	O	O	start	AM-TMP	B-NP	O	O	the+art	O	O	O	
+night	t94	8	NN1	night	t93:NMOD	tmx2	I-DATE	2003-05-08TNI	O	O	O	O	O	O	start	AM-TMP	I-NP	O	O	night+n+sing	O	O	O	
+she	t95	8	PNP	she	O	O	O	O	O	O	O	O	O	O	start	A0	B-NP	O	O	she+pron	O	O	O	
+started	t96	8	VVD	start	t89:TMP||t95:SBJ||t97:OPRD	O	O	O	O	ASPECTUAL	e96	AM-TMP	A0	A1	O	O	B-VP	O	O	start+v+indic+past	PAST+NONE+pos	O	e96:e99:NONE||e96:e107:NONE||e96:tmx2:NONE||e96:tmx0:NONE	
+crying	t97	8	VVG	cry	t98:COORD	O	O	O	O	OCCURRENCE	e97	A0	A1	O	start	A1	I-VP	O	O	cry+v+gerund+pres	PRESPART+NONE+pos	O	e97:e107:NONE||e97:tmx2:NONE||e97:tmx0:NONE	
+and	t98	8	CJC	and	t99:CONJ	O	O	O	O	O	O	O	O	O	start	A1	O	O	O	and+conj	O	O	O	
+thanking	t99	8	VVG	thank	t100:OBJ||t101:TMP	O	O	O	O	I_ACTION	e99	A1	AM-TMP	O	start	A1	B-VP	O	O	thank+v+gerund+pres	PRESPART+NONE+pos	O	e99:tmx2:NONE||e99:tmx0:NONE	
+us	t100	8	PNP	we	O	O	O	O	O	O	O	O	O	O	start	A1	B-NP	O	O	u+n+plur	O	O	O	
+for	t101	8	PRP	for	t107:PMOD	O	O	O	O	O	O	O	O	O	start	A1	B-PP	O	O	for+prep	O	O	O	
+``	t102	8	NN0	``	O	O	O	O	O	O	O	O	O	O	start	A1	I-PP	O	O	O	O	O	O	
+the	t103	8	AT0	the	O	O	O	O	O	O	O	O	O	O	start	A1	B-NP	O	O	the+art	O	O	O	
+best	t104	8	NN0	good	O	O	O	O	O	O	O	O	O	O	start	A1	I-NP	O	O	best+adv	O	O	O	
+mother	t105	8	NN1	mother	t103:NMOD||t104:NMOD||t106:SUFFIX	O	O	O	O	O	O	O	O	O	start	A1	I-NP	O	O	mother+n+sing	O	O	O	
+'s	t106	8	POS	's	O	O	O	O	O	O	O	O	O	O	start	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	O	
+day	t107	8	NN1	day	t102:NMOD||t105:NMOD||t108:TMP	O	O	O	O	OCCURRENCE	e107	A1	A1	O	start	A1	I-NP	O	O	day+n+sing	NONE+NONE+pos	O	e107:tmx2:NONE||e107:tmx0:NONE	
+ever	t108	8	AV0	ever	t109:P	O	O	O	O	O	O	O	O	O	start	A1	B-ADVP	O	O	ever+adv	O	O	O	
+''	t109	8	NN0	''	O	O	O	O	O	O	O	O	O	O	start	A1	O	O	O	O	O	O	O	
+.	t110	8	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+It	t111	9	PNP	it	O	O	O	O	O	O	O	O	O	O	cute	A1	B-NP	O	O	it+pron	O	O	O	
+was	t112	9	VVD	be	t111:SBJ||t114:PRD||t115:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	O	
+tres	t113	9	NN2	tres	O	O	O	O	O	O	O	O	O	O	cute	A0	B-NP	O	O	O	O	O	O	
+cute	t114	9	VVB	cute	t113:SBJ	O	O	O	O	STATE	e114	A1	A0	O	O	O	B-ADJP	O	O		NONE+NONE+pos	O	e114:tmx0:NONE	
+.	t115	9	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+I'	t116	10	NP0	i'	O	O	O	O	O	O	O	O	O	O	m	A0	B-NP	O	O	O	O	O	O	
+m	t117	10	NN1	m	t116:NMOD||t118:OBJ||t139:P	O	O	O	O	OCCURRENCE	e117	A0	A1	O	O	O	I-NP	O	O	m+n+sing	NONE+NONE+pos	O	e117:e118:NONE||e117:e120:NONE||e117:e122:NONE||e117:e130:NONE||e117:e135:NONE||e117:tmx3:NONE||e117:tmx0:NONE	
+thinking	t118	10	NN1	thinking	t119:NMOD	O	O	O	O	I_STATE	e118	A1	O	O	m	A1	I-NP	O	O	thinking+n+sing	NONE+NONE+pos	O	e118:e120:NONE||e118:e122:NONE||e118:e130:NONE||e118:e135:NONE||e118:tmx3:NONE||e118:tmx0:NONE	
+of	t119	10	PRF	of	t120:PMOD	O	O	O	O	O	O	O	O	O	m	A1	B-PP	O	O	of+prep	O	O	O	
+getting	t120	10	VVG	get	t122:OBJ	O	O	O	O	I_ACTION	e120	A1	O	O	m	A1	B-VP	O	O	get+v+gerund+pres	PRESPART+NONE+pos	e4:e173:e11:e194:e250:e30:e40:e145:e196:e225:e235	e120:tmx3:NONE||e120:tmx0:NONE	
+an	t121	10	AT0	a	O	O	O	O	O	O	O	O	O	O	m	A1	B-NP	O	O	an+n+sing	O	O	O	
+apartment	t122	10	NN1	apartment	t121:NMOD||t123:NMOD	O	O	O	O	OCCURRENCE	e122	A1	O	O	m	A1	I-NP	O	O	apartment+n+sing	NONE+NONE+pos	O	e122:e130:NONE||e122:e135:NONE||e122:tmx3:NONE||e122:tmx0:NONE	
+about	t123	10	PRP	about	t125:PMOD	O	O	O	O	O	O	O	O	O	m	A1	B-PP	O	O	about+prep	O	O	O	
+20	t124	10	CRD	20	O	O	O	O	O	O	O	O	O	O	m	A1	B-NP	O	O	20+n+sing	O	O	O	
+mins	t125	10	NN2	min	t124:NMOD||t126:NMOD	O	O	O	O	O	O	O	O	O	m	A1	I-NP	O	O	min+n+plur	O	O	O	
+away	t126	10	AV0	away	t127:AMOD	O	O	O	O	O	O	O	O	O	m	A1	B-ADVP	O	O	away+adv	O	O	O	
+from	t127	10	PRP	from	t130:PMOD	O	O	O	O	O	O	O	O	O	m	A1	B-PP	O	O	from+prep	O	O	O	
+where	t128	10	AVQ	where	O	O	O	O	O	O	O	O	O	O	m	A1	B-SBAR	O	O	where+pron	O	O	O	
+I	t129	10	PNP	i	O	O	O	O	O	O	O	O	O	O	m	A1	B-NP	O	O	i+pron	O	O	O	
+live	t130	10	VVI	live	t128:LOC||t129:SBJ||t131:TMP||t132:ADV	O	O	O	O	STATE	e130	R-AM-LOC	A0	AM-TMP	m	A1	B-VP	O	O	live+v+indic+pres+no3sing	PRESENT+NONE+pos	e158	e130:e135:NONE||e130:tmx3:NONE||e130:tmx0:NONE	
+now	t131	10	AV0	now	O	tmx3	B-DATE	PRESENT_REF	O	O	O	O	O	O	m	A1	B-ADVP	O	O	now+adv	O	O	O	
+with	t132	10	PRP	with	t135:PMOD	O	O	O	O	O	O	O	O	O	m	A1	B-PP	O	O	with+prep	O	O	O	
+my	t133	10	DPS	my	O	O	O	O	O	O	O	O	O	O	m	A1	B-NP	O	O	my+adj+zero	O	O	O	
+best	t134	10	NN0	good	O	O	O	O	O	O	O	O	O	O	m	A1	I-NP	O	O	best+adv	O	O	O	
+friend	t135	10	NN1	friend	t133:NMOD||t134:NMOD||t136:NMOD	O	O	O	O	OCCURRENCE	e135	A1	A0	A1	m	A1	I-NP	O	O	friend+n+sing	NONE+NONE+pos	e66	e135:tmx3:NONE||e135:tmx0:NONE	
+from	t136	10	PRP	from	t138:PMOD	O	O	O	O	O	O	O	O	O	m	A1	B-PP	O	O	from+prep	O	O	O	
+high	t137	10	AJ0	high	O	O	O	O	O	O	O	O	O	O	m	A1	B-NP	O	O	high+adj+zero	O	O	O	
+school	t138	10	NN1	school	t137:NMOD	O	O	O	O	O	O	O	O	O	m	A1	I-NP	O	O	school+n+sing	O	O	O	
+.	t139	10	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+I	t140	11	PNP	i	O	O	O	O	O	O	O	O	O	O	dunno	A0	B-NP	O	O	i+pron	O	O	O	
+dunno	t141	11	VVI	dunno	t140:SBJ||t144:OBJ||t147:P||t148:COORD||t169:P	O	O	O	O	REPORTING	e141	A0	A1	O	O	O	B-VP	mainVb	O	O	NONE+NONE+pos	O	e141:e145:NONE||e141:e158:NONE||e141:e165:NONE||e141:tmx0:NONE||e141:e75:NONE	
+how	t142	11	AVQ	how	O	O	O	O	O	O	O	O	O	O	dunno	A1	B-SBAR	O	O	how+adv	O	O	O	
+it	t143	11	PNP	it	O	O	O	O	O	O	O	O	O	O	dunno	A1	B-NP	O	O	it+pron	O	O	O	
+will	t144	11	VM0	will	t143:SBJ||t145:VC	O	O	O	O	O	O	O	O	O	dunno	A1	B-VP	O	O	will+v+indic+pres+_	FUTURE+NONE+pos	O	O	
+work	t145	11	VVB	work	t142:MNR||t146:PRT	O	O	O	O	OCCURRENCE	e145	R-AM-MNR	A0	AM-MOD	dunno	A1	I-VP	O	O	work+v+indic+pres+no3sing	FUTURE+NONE+pos	e4:e173:e11:e120:e194:e250:e30:e40:e196:e225:e235	e145:e158:NONE||e145:e165:NONE||e145:tmx0:NONE	
+out	t146	11	AV0	out	O	O	O	O	O	O	O	O	O	O	dunno	A1	B-PRT	O	O	out+adv	O	O	O	
+,	t147	11	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	
+but	t148	11	CJC	but	t150:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	Comparison	but+conj	O	O	O	
+we	t149	11	PNP	we	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	we+pron	O	O	O	
+'re	t150	11	VVI	be	t149:SBJ||t154:PRD||t155:COORD	O	O	O	O	O	O	O	O	O	O	O	B-VP	O	O	be+v+indic+pres+no3sing	PRESENT+NONE+pos	O	O	
+both	t151	11	AT0	both	O	O	O	O	O	O	O	O	O	O	O	O	I-VP	O	O	both+adv	O	O	O	
+employed	t152	11	AJ0	employed	O	O	O	O	O	O	O	O	O	O	O	O	I-VP	O	O	employed+adj+zero	O	O	O	
+full	t153	11	AJ0	full	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	full+adj+zero	O	O	O	
+time	t154	11	NN1	time	t151:NMOD||t152:NMOD||t153:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	time+n+sing	O	O	O	
+and	t155	11	CJC	and	t157:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	Expansion	and+conj	O	O	O	
+we	t156	11	PNP	we	O	O	O	O	O	O	O	O	O	O	live	A0	B-NP	O	O	we+pron	O	O	O	
+'ve	t157	11	VVI	have	t156:SBJ||t158:VC	O	O	O	O	O	O	O	O	O	O	O	B-VP	O	O	have+v+indic+pres+no3sing	PRESENT+PERFECTIVE+pos	O	O	
+lived	t158	11	VVN	live	t159:ADV||t160:TMP||t161:P||t162:COORD	O	O	O	O	STATE	e158	A0	AM-MNR	AM-TMP	O	O	I-VP	O	O	live+v+part+past	PRESENT+PERFECTIVE+pos	e130	e158:e165:NONE||e158:tmx0:NONE	
+together	t159	11	AV0	together	O	O	O	O	O	O	O	O	O	O	live	AM-MNR	B-ADVP	O	O	together+adv	O	O	O	
+before	t160	11	AV0	before	O	O	O	O	O	O	O	O	O	O	live	AM-TMP	I-ADVP	O	O	before+adv	O	O	O	
+,	t161	11	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	I-ADVP	O	O	punc	O	O	O	
+so	t162	11	PRP	so	t163:AMOD||t165:SUB	O	O	O	O	O	O	O	O	O	O	O	I-ADVP	O	O	so+pron	O	O	O	
+hopefully	t163	11	AV0	hopefully	O	O	O	O	O	O	O	O	O	O	O	O	I-ADVP	O	O	hopefully+adv	O	O	O	
+it	t164	11	PNP	it	O	O	O	O	O	O	O	O	O	O	wont	A0	B-NP	O	O	it+pron	O	O	O	
+wont	t165	11	VVD	wont	t164:SBJ||t166:OBJ	O	O	O	O	I_STATE	e165	A0	A1	O	O	O	B-VP	O	O		NONE+NONE+pos	O	e165:tmx0:NONE	
+be	t166	11	VVB	be	t168:PRD	O	O	O	O	O	O	O	O	O	wont	A1	I-VP	O	O	be+v+infin+pres	O	O	O	
+that	t167	11	CJT	that	O	O	O	O	O	O	O	O	O	O	wont	A1	B-ADJP	O	O	that+pron	O	O	O	
+bad	t168	11	AJ0	bad	t167:NMOD	O	O	O	O	O	O	O	O	O	wont	A1	I-ADJP	O	O	bad+adj+zero	O	O	O	
+.	t169	11	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+Plus	t170	12	CJC	plus	O	O	O	O	O	O	O	O	O	O	have	AM-DIS	O	O	Expansion	plus+prep	O	O	O	
+we	t171	12	PNP	we	O	O	O	O	O	O	O	O	O	O	have	A0	B-NP	O	O	we+pron	O	O	O	
+would	t172	12	VM0	will	t170:DEP||t171:SBJ||t173:VC||t182:P	O	O	O	O	O	O	O	O	O	have	AM-MOD	B-VP	mainVb	O	will+v+indic+past	PAST+NONE+pos	O	O	
+have	t173	12	VVB	have	t181:OBJ	O	O	O	O	STATE	e173	AM-DIS	A0	AM-MOD	have	AM-MOD	I-VP	mainVb	O	have+v+indic+pres+no3sing	PRESENT+NONE+pos	e4:e11:e120:e194:e250:e30:e40:e145:e196:e225:e235	e173:tmx0:NONE||e173:e141:NONE	
+the	t174	12	AT0	the	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	B-NP	O	O	the+art	O	O	O	
+cutest	t175	12	NN1	cutest	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	cute+adj+sup	O	O	O	
+,	t176	12	PUN	,	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	punc	O	O	O	
+best	t177	12	AV0	best	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	best+adv	O	O	O	
+,	t178	12	PUN	,	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	punc	O	O	O	
+most	t179	12	NN0	much	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	most+n+sing	O	O	O	
+awesome	t180	12	AJ0	awesome	t179:AMOD	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	awesome+adj+zero	O	O	O	
+apartment	t181	12	NN1	apartment	t174:NMOD||t175:NMOD||t176:P||t177:NMOD||t178:P||t180:NMOD	O	O	O	O	O	O	O	O	O	have	AM-MOD	I-NP	O	O	apartment+n+sing	O	O	O	
+.	t182	12	PUN	.	O	O	O	O	O	O	O	O	O	O	have	AM-MOD	O	O	O	.+punc	O	O	O	
+
+Woo	t183	13	NP0	woo	O	O	O	O	O	O	O	O	O	O	hoo	A0	B-NP	O	O	woo+v+indic+pres+no3sing	O	O	O	
+hoo	t184	13	NN1	hoo	t183:NMOD||t185:NMOD||t187:P	O	O	O	O	I_ACTION	e184	A0	A1	O	O	O	I-NP	O	O	hoo+pn	NONE+NONE+pos	O	e184:e186:NONE||e184:tmx0:NONE	
+to	t185	13	TO0	to	t186:PMOD	O	O	O	O	O	O	O	O	O	hoo	A1	B-PP	O	O	to+prep	O	O	O	
+that	t186	13	CJT	that	O	O	O	O	O	OCCURRENCE	e186	O	O	O	hoo	A1	B-NP	O	O	that+pron	NONE+NONE+pos	O	e186:tmx0:NONE	
+.	t187	13	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+I'	t188	14	NP0	i'	O	O	O	O	O	O	O	O	O	O	stoke	A0	B-NP	O	O	O	O	O	O	
+m	t189	14	NN1	m	t188:NMOD	O	O	O	O	O	O	O	O	O	stoke	A0	I-NP	O	O	m+n+sing	O	O	O	
+also	t190	14	AV0	also	O	O	O	O	O	O	O	O	O	O	stoke	AM-DIS	B-ADVP	O	Expansion	also+adv	O	O	O	
+stoked	t191	14	VVD	stoke	t189:SBJ||t190:ADV||t192:PRP||t200:P	O	O	O	O	I_ACTION	e191	A0	AM-DIS	AM-CAU	O	O	B-VP	mainVb	O	stoke+v+indic+past	PAST+NONE+pos	O	e191:e194:NONE||e191:e196:NONE||e191:e199:NONE||e191:tmx0:NONE||e191:e173:NONE	
+because	t192	14	PRP	because	t194:SUB	O	O	O	O	O	O	O	O	O	stoke	AM-CAU	B-SBAR	O	Contingency	because+conj	O	O	O	
+I	t193	14	PNP	i	O	O	O	O	O	O	O	O	O	O	stoke	AM-CAU	B-NP	O	O	i+pron	O	O	O	
+get	t194	14	VVI	get	t193:SBJ||t195:OPRD	O	O	O	O	I_ACTION	e194	A0	A2	O	stoke	AM-CAU	B-VP	O	O	get+v+indic+pres+no3sing	PRESENT+NONE+pos	e4:e173:e11:e120:e250:e30:e40:e145:e196:e225:e235	e194:tmx0:NONE	
+to	t195	14	TO0	to	t196:IM	O	O	O	O	O	O	O	O	O	stoke	AM-CAU	I-VP	O	O	to+prep	INFINITIVE+NONE+pos	O	O	
+do	t196	14	VVB	do	t199:OBJ	O	O	O	O	OCCURRENCE	e196	A0	A1	O	stoke	AM-CAU	I-VP	O	O	do+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e4:e173:e11:e120:e194:e250:e30:e40:e145:e225:e235	e196:tmx0:NONE	
+a	t197	14	AT0	a	O	O	O	O	O	O	O	O	O	O	stoke	AM-CAU	B-NP	O	O	a+art	O	O	O	
+focus	t198	14	NN1	focus	O	O	O	O	O	O	O	O	O	O	stoke	AM-CAU	I-NP	O	O	focus+n+sing	O	O	O	
+group	t199	14	NN1	group	t197:NMOD||t198:NMOD	O	O	O	O	I_STATE	e199	A1	O	O	stoke	AM-CAU	I-NP	O	O	group+n+sing	NONE+NONE+pos	O	e199:tmx0:NONE	
+.	t200	14	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+Its	t201	15	DPS	its	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	its+adj+zero	O	O	O	
+like	t202	15	PRP	like	t201:DEP||t205:PMOD||t211:COORD||t220:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	like+prep	O	O	O	
+only	t203	15	AV0	only	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	only+adv	O	O	O	
+an	t204	15	AT0	a	O	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	an+n+sing	O	O	O	
+hour	t205	15	NN1	hour	t203:NMOD||t204:NMOD||t206:COORD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	hour+n+sing	O	O	O	
+and	t206	15	CJC	and	t208:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	Expansion	and+conj	O	O	O	
+its	t207	15	DPS	its	O	O	O	O	O	O	O	O	O	O	cleanser	A0	B-NP	O	O	its+adj+zero	O	O	O	
+about	t208	15	PRP	about	t210:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	about+prep	O	O	O	
+facial	t209	15	AJ0	facial	O	O	O	O	O	O	O	O	O	O	cleanser	A2	B-NP	O	O	facial+adj+zero	O	O	O	
+cleansers	t210	15	NN2	cleanser	t207:NMOD||t209:NMOD	O	O	O	O	OCCURRENCE	e210	A0	A2	O	O	O	I-NP	O	O	cleanser+n+plur	NONE+NONE+pos	O	e210:e216:NONE||e210:tmx0:NONE	
+and	t211	15	CJC	and	t213:CONJ	O	O	O	O	O	O	O	O	O	O	O	O	O	O	and+conj	O	O	O	
+they	t212	15	PNP	they	O	O	O	O	O	O	O	O	O	O	pay	A0	B-NP	O	O	they+pron	O	O	O	
+'re	t213	15	VVI	be	t212:SBJ||t214:VC	O	O	O	O	O	O	O	O	O	O	O	B-VP	O	O	be+v+indic+pres+no3sing	PRESENT+NONE+pos	O	O	
+gon	t214	15	VVG	gon	t215:OPRD	O	O	O	O	O	O	O	O	O	O	O	I-VP	O	O	O	PRESENT+NONE+pos	O	O	
+na	t215	15	TO0	na	t216:IM	O	O	O	O	O	O	O	O	O	O	O	I-VP	O	O	na+n+sing	O	O	O	
+pay	t216	15	VVB	pay	t217:OBJ||t218:OBJ	O	O	O	O	OCCURRENCE	e216	A0	A2	A1	O	O	I-VP	O	O	pay+v+indic+pres+no3sing	NONE+NONE+pos	O	e216:tmx0:NONE	
+me	t217	15	PNP	i	O	O	O	O	O	O	O	O	O	O	pay	A2	B-NP	O	O	me+pron	O	O	O	
+$	t218	15	PUN	$	t219:NMOD	O	O	O	O	O	O	O	O	O	pay	A1	B-NP	O	O	$+punc	O	O	O	
+50	t219	15	CRD	50	O	O	O	O	O	O	O	O	O	O	pay	A1	I-NP	O	O	50+n+sing	O	O	O	
+.	t220	15	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+Suhweet	t221	16	NP0	suhweet	t222:P	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	O	
+!	t222	16	PUN	!	O	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	!+punc	O	O	O	
+
+She	t223	17	PNP	she	O	O	O	O	O	O	O	O	O	O	tell	A0	B-NP	O	O	she+pron	O	O	O	
+also	t224	17	AV0	also	O	O	O	O	O	O	O	O	O	O	tell	AM-DIS	B-ADVP	O	Expansion	also+adv	O	O	O	
+told	t225	17	VVD	tell	t223:SBJ||t224:ADV||t226:OBJ||t228:OBJ||t241:P	O	O	O	O	REPORTING	e225	A0	AM-DIS	A2	O	O	B-VP	mainVb	O	tell+v+indic+past	PAST+NONE+pos	e4:e173:e11:e120:e194:e250:e30:e40:e145:e196:e235	e225:e229:NONE||e225:e233:NONE||e225:e235:NONE||e225:e239:NONE||e225:tmx0:NONE||e225:e191:NONE	
+me	t226	17	PNP	i	O	O	O	O	O	O	O	O	O	O	tell	A2	B-NP	O	O	me+pron	O	O	O	
+she	t227	17	PNP	she	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	she+pron	O	O	O	
+would	t228	17	VM0	will	t227:SBJ||t229:VC	O	O	O	O	O	O	O	O	O	tell	A1	B-VP	O	O	will+v+indic+past	PAST+NONE+pos	O	O	
+keep	t229	17	VVB	keep	t230:OBJ||t231:LOC||t234:COORD	O	O	O	O	OCCURRENCE	e229	A0	AM-MOD	A1	tell	A1	I-VP	O	O	keep+v+indic+pres+no3sing	PRESENT+NONE+pos	O	e229:e233:NONE||e229:e235:NONE||e229:e239:NONE||e229:tmx0:NONE	
+me	t230	17	PNP	i	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	me+pron	O	O	O	
+on	t231	17	PRP	on	t233:PMOD	O	O	O	O	O	O	O	O	O	tell	A1	B-PP	O	O	on+prep	O	O	O	
+the	t232	17	AT0	the	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	the+art	O	O	O	
+list	t233	17	NN1	list	t232:NMOD	O	O	O	O	OCCURRENCE	e233	A0	O	O	tell	A1	I-NP	O	O	list+n+sing	NONE+NONE+pos	O	e233:e235:NONE||e233:e239:NONE||e233:tmx0:NONE	
+and	t234	17	CJC	and	t235:CONJ	O	O	O	O	O	O	O	O	O	tell	A1	O	O	O	and+conj	O	O	O	
+call	t235	17	VVB	call	t236:OBJ||t239:TMP	O	O	O	O	I_ACTION	e235	A0	AM-MOD	A1	tell	A1	B-VP	O	O	call+v+indic+pres+no3sing	PRESENT+NONE+pos	e4:e173:e11:e120:e194:e250:e30:e40:e145:e196:e225	e235:e239:NONE||e235:tmx0:NONE	
+me	t236	17	PNP	i	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	me+pron	O	O	O	
+when	t237	17	AVQ	when	O	O	O	O	O	O	O	O	O	O	tell	A1	B-SBAR	O	Temporal	when+pron	O	O	O	
+she	t238	17	PNP	she	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	she+pron	O	O	O	
+needed	t239	17	VVD	need	t237:TMP||t238:SBJ||t240:OBJ	O	O	O	O	I_STATE	e239	R-AM-TMP	A0	A1	tell	A1	B-VP	O	O	need+v+indic+past	PAST+NONE+pos	O	e239:tmx0:NONE	
+people	t240	17	NN2	person	O	O	O	O	O	O	O	O	O	O	tell	A1	B-NP	O	O	people+v+indic+pres+no3sing	O	O	O	
+.	t241	17	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+W00t	t242	18	NP0	w00t	t243:P||t244:DEP||t245:P	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	O	
+,	t243	18	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	
+w00tarini	t244	18	ITJ	w00tarini	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	O	O	O	O	
+!	t245	18	PUN	!	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	!+punc	O	O	O	
+
+Oh	t246	19	NP0	oh	O	O	O	O	O	O	O	O	O	O	get	A0	B-INTJ	O	O	O	O	O	O	
+,	t247	19	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	O	
+I	t248	19	PNP	i	O	O	O	O	O	O	O	O	O	O	get	A0	B-NP	O	O	i+pron	O	O	O	
+also	t249	19	AV0	also	O	O	O	O	O	O	O	O	O	O	get	AM-DIS	B-ADVP	O	Expansion	also+adv	O	O	O	
+got	t250	19	VVD	get	t246:TMP||t247:P||t248:SBJ||t249:ADV||t254:OBJ||t255:P	O	O	O	O	OCCURRENCE	e250	A0	A0	AM-DIS	O	O	B-VP	mainVb	O	get+v+indic+past	PAST+NONE+pos	e4:e173:e11:e120:e194:e30:e40:e145:e196:e225:e235	e250:tmx0:NONE||e250:e225:NONE	
+new	t251	19	AJ0	new	O	O	O	O	O	O	O	O	O	O	get	A1	B-NP	O	O	new+adj+zero	O	O	O	
+emo/ashleigh	t252	19	NN1	emo/ashleigh	O	O	O	O	O	O	O	O	O	O	get	A1	I-NP	O	O	O	O	O	O	
+banfield	t253	19	NN1	banfield	t252:NMOD	O	O	O	O	O	O	O	O	O	get	A1	I-NP	O	O	O	O	O	O	
+glasses	t254	19	NN2	glass	t251:NMOD||t253:NMOD	O	O	O	O	OCCURRENCE	e254	A0	AM-TMP	A1	get	A1	I-NP	O	O	glass+n+plur	NONE+NONE+pos	O	e254:tmx0:NONE	
+.	t255	19	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	O	
+
+Yay	t256	20	NP0	yay	t257:P	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	yay+n+sing	O	O	O	
+!	t257	20	PUN	!	O	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	!+punc	O	O	O	
+

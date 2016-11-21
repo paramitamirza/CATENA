@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>APW19980807.0261</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-08-07">1998-08-07</TIMEX3></DCT>
+
+<TITLE>Explosions rock U.S. embassies in Tanzania, Kenya</TITLE>
+
+
+<EXTRAINFO>
+APW19980807.0261  NEWS STORY  08/07/1998 06:18:00
+w2213 &amp;Cx1f; wstm-
+u i &amp;Cx13;  &amp;Cx11;  URGENT     08-07 0122
+URGENT
+BC-Kenya-Explosion, 5th Ld-Writethru
+&amp;UR; Explosions rock U.S. embassies in Tanzania, Kenya &amp;QL;  &amp;UR; Eds: UPDATES with explosion near U.S. Embassy in Tanzania. &amp;QL;  &amp;UR; AP Photos Planned &amp;QL;  &amp;UR; By CHEGE MBITIRU &amp;QC;  &amp;UR; Associated Press Writer &amp;QC;
+</EXTRAINFO>
+
+
+<TEXT>
+
+NAIROBI, Kenya (AP) _
+
+Suspected bombs <EVENT class="OCCURRENCE" eid="e1">exploded</EVENT> outside the U.S. embassies in the Kenyan and Tanzanian capitals <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t1" type="DATE" value="1998-08-07">Friday</TIMEX3>, <EVENT class="OCCURRENCE" eid="e2">killing</EVENT> dozens of people, witnesses <EVENT class="REPORTING" eid="e3">said</EVENT>.
+
+The American ambassador to Kenya was among hundreds <EVENT class="OCCURRENCE" eid="e12">injured</EVENT>, a local TV <EVENT class="REPORTING" eid="e4">said</EVENT>.
+
+``It was definitely a bomb,'' <EVENT class="REPORTING" eid="e5">said</EVENT> a U.S. Embassy official in Nairobi, who <EVENT class="OCCURRENCE" eid="e6">refused</EVENT> to <EVENT class="OCCURRENCE" eid="e7">identify</EVENT> himself. ``You can <EVENT class="PERCEPTION" eid="e8">see</EVENT> a huge crater behind the building, and a bomb <EVENT class="OCCURRENCE" eid="e9">went</EVENT> off at the embassy in Tanzania at the same time,'' he <EVENT class="REPORTING" eid="e10">said</EVENT>.
+
+</TEXT>
+
+
+<EXTRAINFO>
+&amp;UR; MORE
+(PROFILE (WS SL:URGENT; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
+AP-NY-08-07-98 0618EDT
+</EXTRAINFO>
+
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<TLINK eventInstanceID="ei1" lid="l2" origin="USER" relType="IS_INCLUDED" relatedToTime="t1" />
+<TLINK eventInstanceID="ei1" lid="l3" origin="USER" relType="IBEFORE" relatedToEventInstance="ei2" />
+<TLINK eventInstanceID="ei2" lid="l4" origin="USER" relType="BEFORE" relatedToEventInstance="ei3" />
+<TLINK eventInstanceID="ei3" lid="l5" origin="USER" relType="AFTER" relatedToEventInstance="ei12" />
+<TLINK eventInstanceID="ei12" lid="l6" origin="USER" relType="BEFORE" relatedToEventInstance="ei4" />
+<TLINK eventInstanceID="ei1" lid="l7" origin="USER" relType="BEFORE" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei5" lid="l8" origin="USER" relType="BEFORE" relatedToEventInstance="ei6" />
+<TLINK lid="l9" origin="USER" relType="IS_INCLUDED" relatedToEventInstance="ei9" timeID="t1" />
+<TLINK eventInstanceID="ei9" lid="l10" origin="USER" relType="BEFORE" relatedToEventInstance="ei10" />
+<TLINK eventInstanceID="ei1" lid="l11" origin="USER" relType="BEFORE" relatedToEventInstance="ei8" />
+<TLINK eventInstanceID="ei12" lid="l12" origin="USER" relType="AFTER" relatedToEventInstance="ei1" />
+<SLINK eventInstanceID="ei6" lid="l1" relType="MODAL" subordinatedEventInstance="ei7" syntax="USER" />
+
+<TLINK eventInstanceID="ei3" lid="l301" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei4" lid="l302" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei5" lid="l303" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei6" lid="l304" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei10" lid="l305" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei1" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei10" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei4" relatedToEventInstance="ei12" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei9" relatedToTime="t1" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei10" relatedToTime="t1" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei12" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t1" /></TimeML>

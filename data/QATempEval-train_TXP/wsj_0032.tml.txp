@@ -1,0 +1,102 @@
+# FILE: wsj_0032.tml.txp
+# DATE: 1989-11-02T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1989-11-02	O	O	O	O	O	tmx0	B-DATE	1989-11-02	O	O	O	O	O	O	O	O	O	O	O	O	O	tmx0:e1:AFTER	
+
+Italian	t1	1	AJ0	italian	O	O	O	O	O	O	O	O	O	O	begin	A0	B-NP	O	O	italian+adj+zero	O	O	
+chemical	t2	1	NN1	chemical	O	O	O	O	O	O	O	O	O	O	begin	A0	I-NP	O	O	chemical+n+sing	O	O	
+giant	t3	1	NN1	giant	t1:NMOD||t2:NMOD||t5:APPO	O	O	O	O	O	O	O	O	O	begin	A0	I-NP	O	O	giant+n+sing	O	O	
+Montedison	t4	1	NP0	montedison	O	O	O	O	person	O	O	O	O	O	begin	A0	I-NP	O	O	O	O	O	
+S.p.A.	t5	1	NP0	s.p.a.	t4:NAME	O	O	O	person	O	O	O	O	O	begin	A0	I-NP	O	O	O	O	O	
+,	t6	1	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	
+through	t7	1	PRP	through	t13:PMOD	O	O	O	O	O	O	O	O	O	begin	AM-MNR	B-PP	O	O	through+prep	O	O	
+its	t8	1	DPS	its	O	O	O	O	O	O	O	O	O	O	begin	AM-MNR	B-NP	O	O	its+adj+zero	O	O	
+Montedison	t9	1	NP0	montedison	O	O	O	O	O	O	O	O	O	O	begin	AM-MNR	I-NP	O	O	O	O	O	
+Acquisition	t10	1	NP0	acquisition	t9:NAME	O	O	O	O	O	O	O	O	O	begin	AM-MNR	I-NP	O	O	acquisition+n+sing	O	O	
+N.V.	t11	1	NP0	n.v.	t10:NAME	O	O	O	O	O	O	O	O	O	begin	AM-MNR	I-NP	O	O	O	O	O	
+indirect	t12	1	AJ0	indirect	O	O	O	O	O	O	O	O	O	O	begin	AM-MNR	I-NP	O	O	indirect+adj+zero	O	O	
+unit	t13	1	NN1	unit	t8:NMOD||t11:NMOD||t12:NMOD	O	O	O	O	O	O	A1	O	O	begin	AM-MNR	I-NP	O	O	unit+n+sing	O	O	
+,	t14	1	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	
+began	t15	1	VVD	begin	t3:SBJ||t6:P||t7:ADV||t14:P||t20:OBJ||t39:P	O	O	O	O	ASPECTUAL	e1	A0	AM-MNR	A1	O	O	B-VP	mainVb	O	begin+v+indic+past	PAST+NONE+pos	e1:e2:BEGINS	
+its	t16	1	DPS	its	O	O	O	O	O	O	O	O	O	O	begin	A1	B-NP	O	O	its+adj+zero	O	O	
+$	t17	1	PUN	$	t18:NMOD	O	O	O	O	O	O	O	O	O	begin	A1	B-ADJP	O	O	$+punc	O	O	
+37-a-share	t18	1	AJ0	37-a-share	O	O	O	O	O	O	O	O	O	O	begin	A1	I-ADJP	O	O	O	O	O	
+tender	t19	1	NN1	tender	O	O	O	O	O	O	O	A0	A2	A1	begin	A1	B-NP	O	O	tender+n+sing	O	O	
+offer	t20	1	NN1	offer	t16:NMOD||t17:NMOD||t19:NMOD||t21:NMOD	O	O	O	O	OCCURRENCE	e2	A0	A1	O	begin	A1	I-NP	O	O	offer+n+sing	O	e2:tmx0:NONE	
+for	t21	1	PRP	for	t25:PMOD	O	O	O	O	O	O	O	O	O	begin	A1	B-PP	O	O	for+prep	O	O	
+all	t22	1	AT0	all	O	O	O	O	O	O	O	O	O	O	begin	A1	B-NP	O	O	all+adj+zero	O	O	
+the	t23	1	AT0	the	O	O	O	O	O	O	O	O	O	O	begin	A1	I-NP	O	O	the+art	O	O	
+common	t24	1	AJ0	common	O	O	O	O	O	O	O	O	O	O	begin	A1	I-NP	O	O	common+adj+zero	O	O	
+shares	t25	1	NN2	share	t22:NMOD||t23:NMOD||t24:NMOD||t26:APPO||t27:NMOD	O	O	O	O	O	O	A1	A1	O	begin	A1	I-NP	O	O	share+n+plur	O	O	
+outstanding	t26	1	AJ0	outstanding	O	O	O	O	O	O	O	O	O	O	begin	A1	B-ADJP	O	O	outstanding+adj+zero	O	O	
+of	t27	1	PRF	of	t29:PMOD	O	O	O	O	O	O	O	O	O	begin	A1	B-PP	O	O	of+prep	O	O	
+Erbamont	t28	1	NP0	erbamont	O	O	O	O	person	O	O	O	O	O	begin	A1	B-NP	O	O	O	O	O	
+N.V.	t29	1	NP0	n.v.	t28:NAME||t30:P||t32:APPO	O	O	O	person	O	O	O	O	O	begin	A1	I-NP	O	O	O	O	O	
+,	t30	1	PUN	,	O	O	O	O	O	O	O	O	O	O	begin	A1	O	O	O	punc	O	O	
+a	t31	1	AT0	a	O	O	O	O	O	O	O	O	O	O	begin	A1	B-NP	O	O	a+art	O	O	
+maker	t32	1	NN1	maker	t31:NMOD||t33:NMOD||t35:APPO	O	O	O	O	O	O	A0	A1	O	begin	A1	I-NP	O	O	maker+n+sing	O	O	
+of	t33	1	PRF	of	t34:PMOD	O	O	O	O	O	O	O	O	O	begin	A1	B-PP	O	O	of+prep	O	O	
+pharmaceuticals	t34	1	NN2	pharmaceutical	O	O	O	O	O	O	O	O	O	O	begin	A1	B-NP	O	O	pharmaceutical+n+plur	O	O	
+incorporated	t35	1	VVN	incorporate	t36:LOC	O	O	O	O	O	O	A1	AM-LOC	O	begin	A1	B-VP	O	O	incorporate+v+part+past	PASTPART+NONE+pos	O	
+in	t36	1	PRP	in	t38:PMOD	O	O	O	O	O	O	O	O	O	begin	A1	B-PP	O	O	in+prep	O	O	
+the	t37	1	AT0	the	O	O	O	O	O	O	O	O	O	O	begin	A1	B-NP	O	O	the+art	O	O	
+Netherlands	t38	1	NP0	netherlands	t37:NMOD	O	O	O	O	O	O	O	O	O	begin	A1	I-NP	O	O	netherlands+pn	O	O	
+.	t39	1	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t40	2	AT0	the	O	O	O	O	O	O	O	O	O	O	advertise	A1	B-NP	O	O	the+art	O	O	
+offer	t41	2	NN1	offer	t40:NMOD||t42:P||t43:APPO||t53:P	O	O	O	O	OCCURRENCE	e4	O	O	O	advertise	A1	I-NP	O	O	offer+n+sing	O	e4:e5:BEFORE||e4:e8:BEFORE||e4:e6:NONE||e4:tmx19:NONE||e4:tmx18:NONE||e4:tmx0:NONE	
+,	t42	2	PUN	,	O	O	O	O	O	O	O	O	O	O	advertise	A1	O	O	O	punc	O	O	
+advertised	t43	2	VVN	advertise	t44:LOC	O	O	O	O	OCCURRENCE	e5	A1	AM-LOC	O	advertise	A1	B-VP	O	O	advertise+v+part+past	PASTPART+NONE+pos	e5:tmx19:IS_INCLUDED||e5:e6:NONE||e5:e8:NONE||e5:tmx18:NONE||e5:tmx0:NONE	
+in	t44	2	PRP	in	t47:PMOD	O	O	O	O	O	O	O	O	O	advertise	A1	B-PP	O	O	in+prep	O	O	
+today	t45	2	NN1	today	t46:SUFFIX	tmx19	B-DATE	1989-11-02	O	O	O	O	O	O	advertise	A1	B-NP	O	O	today+n+sing	O	O	
+'s	t46	2	POS	's	O	O	O	O	O	O	O	O	O	O	advertise	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	
+editions	t47	2	NN2	edition	t45:NMOD||t48:NMOD	O	O	O	O	O	O	AM-TMP	A1	O	advertise	A1	I-NP	O	O	edition+n+plur	O	O	
+of	t48	2	PRF	of	t52:PMOD	O	O	O	O	O	O	O	O	O	advertise	A1	B-PP	O	O	of+prep	O	O	
+The	t49	2	AT0	the	O	O	O	O	organization	O	O	O	O	O	advertise	A1	B-NP	O	O	the+art	O	O	
+Wall	t50	2	NP0	wall	O	O	O	O	organization	O	O	O	O	O	advertise	A1	I-NP	O	O	wall+n+sing	O	O	
+Street	t51	2	NP0	street	t50:NAME	O	O	O	organization	O	O	O	O	O	advertise	A1	I-NP	O	O	street+pn	O	O	
+Journal	t52	2	NP0	journal	t49:NMOD||t51:NAME	O	O	O	organization	O	O	O	O	O	advertise	A1	I-NP	O	O	journal+n+sing	O	O	
+,	t53	2	PUN	,	O	O	O	O	O	O	O	O	O	O	advertise	A1	O	O	O	punc	O	O	
+is	t54	2	NN0	be	t41:SBJ||t55:VC||t64:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+scheduled	t55	2	VVN	schedule	t56:OPRD	O	O	O	O	I_ACTION	e6	A1	A2	O	O	O	I-VP	mainVb	O	schedule+v+part+past	PRESENT+NONE+pos	e6:tmx0:IS_INCLUDED||e6:e8:NONE||e6:tmx19:NONE||e6:tmx18:NONE||e6:e1:NONE	
+to	t56	2	TO0	to	t57:IM	O	O	O	O	O	O	O	O	O	schedule	A2	I-VP	mainVb	O	to+prep	INFINITIVE+NONE+pos	O	
+expire	t57	2	VVB	expire	t58:TMP	O	O	O	O	OCCURRENCE	e8	A1	AM-TMP	O	schedule	A2	I-VP	mainVb	O	expire+v+indic+pres+no3sing	INFINITIVE+NONE+pos	e8:tmx18:ENDED_BY||e8:tmx19:NONE||e8:tmx0:NONE||e8:e6:NONE	
+at	t58	2	PRP	at	t61:PMOD	O	O	O	O	O	O	O	O	O	schedule	A2	B-PP	O	O	at+prep	O	O	
+the	t59	2	AT0	the	O	O	O	O	O	O	O	O	O	O	schedule	A2	B-NP	O	O	the+art	O	O	
+the	t60	2	AT0	the	O	tmx18	B-TIME	1989-11	O	O	O	O	O	O	schedule	A2	I-NP	O	O	the+art	O	O	
+end	t61	2	NN1	end	t59:NMOD||t60:NMOD||t62:NMOD	tmx18	I-TIME	1989-11	O	O	O	A1	O	O	schedule	A2	I-NP	O	O	end+n+sing	O	O	
+of	t62	2	PRF	of	t63:PMOD	tmx18	I-TIME	1989-11	O	O	O	O	O	O	schedule	A2	B-PP	O	O	of+prep	O	O	
+November	t63	2	NP0	november	O	tmx18	I-TIME	1989-11	O	O	O	O	O	O	schedule	A2	B-NP	O	O	november+pn	O	O	
+.	t64	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+Montedison	t65	3	NN1	montedison	O	O	O	O	organization	O	O	O	O	O	own	A0	B-NP	O	O	O	O	O	
+currently	t66	3	AV0	currently	O	tmx17	B-DATE	PRESENT_REF	O	O	O	O	O	O	own	AM-TMP	B-ADVP	O	O	currently+adv	O	tmx17:tmx0:INCLUDES||tmx17:e20:INCLUDES	
+owns	t67	3	NN0	own	t65:SBJ||t66:TMP||t70:OBJ||t77:P	O	O	O	O	STATE	e20	A0	AM-TMP	A1	O	O	B-VP	mainVb	O	own+v+indic+pres+sing3	PRESENT+NONE+pos	e20:tmx0:NONE||e20:e8:NONE	
+about	t68	3	PRP	about	O	O	O	O	O	O	O	O	O	O	own	A1	B-NP	O	O	about+prep	O	O	
+72	t69	3	CRD	72	t68:DEP	O	O	O	O	O	O	O	O	O	own	A1	I-NP	O	O	O	O	O	
+%	t70	3	NN1	%	t69:NMOD||t71:NMOD	O	O	O	O	O	O	A1	O	O	own	A1	I-NP	O	O	O	O	O	
+of	t71	3	PRF	of	t75:PMOD	O	O	O	O	O	O	O	O	O	own	A1	B-PP	O	O	of+prep	O	O	
+Erbamont	t72	3	NP0	erbamont	t73:SUFFIX	O	O	O	organization	O	O	O	O	O	own	A1	B-NP	O	O	O	O	O	
+'s	t73	3	POS	's	O	O	O	O	O	O	O	O	O	O	own	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	
+common	t74	3	AJ0	common	O	O	O	O	O	O	O	O	O	O	own	A1	O	O	O	common+adj+zero	O	O	
+shares	t75	3	NN2	share	t72:NMOD||t74:NMOD||t76:APPO	O	O	O	O	O	O	A2	A1	A3	own	A1	I-NP	O	O	share+n+plur	O	O	
+outstanding	t76	3	AJ0	outstanding	O	O	O	O	O	O	O	O	O	O	own	A1	B-ADJP	O	O	outstanding+adj+zero	O	O	
+.	t77	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t78	4	AT0	the	O	O	O	O	O	O	O	O	O	O	launch	A1	B-NP	O	O	the+art	O	O	
+offer	t79	4	NN1	offer	t78:NMOD	O	O	O	O	OCCURRENCE	e10	O	O	O	launch	A1	I-NP	O	O	offer+n+sing	O	e10:e11:BEGUN_BY||e10:e22:NONE||e10:e12:NONE||e10:tmx21:NONE||e10:tmx0:NONE	
+is	t80	4	NN0	be	t79:SBJ||t81:VC||t92:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+pres+sing3	PRESENT+PROGRESSIVE+pos	O	
+being	t81	4	VVG	be	t82:VC	O	O	O	O	O	O	O	O	O	O	O	I-VP	mainVb	O	be+v+gerund+pres	PRESENT+PROGRESSIVE+pos	O	
+launched	t82	4	VVN	launch	t83:OBJ	O	O	O	O	I_ACTION	e11	A1	A1	O	O	O	I-VP	mainVb	O	launch+v+part+past	PRESENT+PROGRESSIVE+pos	e11:tmx0:IS_INCLUDED||e11:e12:AFTER||e11:e22:NONE||e11:tmx21:NONE||e11:e20:NONE	
+pursuant	t83	4	AJ0	pursuant	t84:AMOD	O	O	O	O	O	O	O	O	O	launch	A1	B-NP	O	O	pursuant+adj+zero	O	O	
+to	t84	4	TO0	to	t88:PMOD	O	O	O	O	O	O	O	O	O	launch	A1	B-PP	O	O	to+prep	O	O	
+a	t85	4	AT0	a	O	O	O	O	O	O	O	O	O	O	launch	A1	B-NP	O	O	a+art	O	O	
+previously	t86	4	AV0	previously	O	tmx21	B-TIME	PAST_REF	O	O	O	O	O	O	launch	A1	B-ADJP	O	O	previously+adv	O	tmx21:tmx0:BEFORE	
+announced	t87	4	VVN	announce	t86:AMOD	O	O	O	O	REPORTING	e22	AM-TMP	A1	O	launch	A1	I-ADJP	O	O	announce+v+part+past	O	e22:tmx21:SIMULTANEOUS||e22:tmx0:NONE	
+agreement	t88	4	NN1	agreement	t85:NMOD||t87:NMOD||t89:NMOD	O	O	O	O	OCCURRENCE	e12	A0	O	O	launch	A1	B-NP	O	O	agreement+n+sing	O	e12:e22:BEFORE||e12:tmx21:NONE||e12:tmx0:NONE	
+between	t89	4	PRP	between	t91:PMOD	O	O	O	O	O	O	O	O	O	launch	A1	B-PP	O	O	between+prep	O	O	
+the	t90	4	AT0	the	O	O	O	O	O	O	O	O	O	O	launch	A1	B-NP	O	O	the+art	O	O	
+companies	t91	4	NN2	company	t90:NMOD	O	O	O	O	O	O	O	O	O	launch	A1	I-NP	O	O	company+n+plur	O	O	
+.	t92	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

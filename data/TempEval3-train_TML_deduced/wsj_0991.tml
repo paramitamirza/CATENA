@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0991</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0066 = 891026 891026-0066.
+Total Assets Protection Inc. 10/26/89 WALL STREET JOURNAL (J) TAPP ARLINGTON, Texas
+</EXTRAINFO>
+
+<TEXT>
+Total Assets Protection Inc., <EVENT class="OCCURRENCE" eid="e1" stem="rebound">rebounding</EVENT> from its earlier <EVENT class="OCCURRENCE" eid="e2" stem="loss">loss</EVENT>, <EVENT class="I_STATE" eid="e4" stem="expect">expects</EVENT> to <EVENT class="REPORTING" eid="e6" stem="report">report</EVENT> <EVENT class="STATE" eid="e17" stem="earnings">earnings</EVENT> from operations of about $200,000 for <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t20" type="DATE" value="1989-Q3">the third quarter</TIMEX3>, J.C. Matlock, chairman, <EVENT class="REPORTING" eid="e9" stem="say">said</EVENT>.
+
+Net income includes an extraordinary <EVENT class="STATE" eid="e21" stem="gain">gain</EVENT> of about $100,000 from the <EVENT class="OCCURRENCE" eid="e11" stem="reversal">reversal</EVENT> of bad debt and interest income. Revenue was about $4.5 million. In <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t23" type="DATE" value="1988-Q3">the 1988 third quarter</TIMEX3>, the company <EVENT class="REPORTING" eid="e13" stem="post">posted</EVENT> a net loss of $876,706, or 22 cents a share, on revenue of about $5.1 million.
+
+Total Assets plans and designs computer centers, computer security systems and computer backup systems.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei88" eventID="e6" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei94" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei91" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei85" eventID="e1" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e4" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei92" eventID="e21" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei86" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei93" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei89" eventID="e17" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei94" lid="l14" relType="DURING" relatedToTime="t23" />
+<TLINK eventInstanceID="ei87" lid="l1" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei87" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei85" />
+<TLINK eventInstanceID="ei85" lid="l4" relType="AFTER" relatedToEventInstance="ei86" />
+<TLINK eventInstanceID="ei89" lid="l5" relType="DURING" relatedToTime="t20" />
+<TLINK eventInstanceID="ei92" lid="l6" relType="AFTER" relatedToEventInstance="ei93" />
+<TLINK eventInstanceID="ei91" lid="l8" relType="BEFORE" relatedToTime="t0" />
+<SLINK eventInstanceID="ei85" lid="l13" relType="FACTIVE" subordinatedEventInstance="ei86" />
+<SLINK eventInstanceID="ei91" lid="l9" relType="EVIDENTIAL" subordinatedEventInstance="ei87" />
+<SLINK eventInstanceID="ei87" lid="l10" relType="MODAL" subordinatedEventInstance="ei88" />
+<SLINK eventInstanceID="ei88" lid="l11" relType="EVIDENTIAL" subordinatedEventInstance="ei89" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei85" relatedToEventInstance="ei87" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei85" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei87" relatedToEventInstance="ei86" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei86" relatedToTime="t0" /></TimeML>

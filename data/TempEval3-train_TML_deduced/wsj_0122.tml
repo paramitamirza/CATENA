@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0122</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89 </TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0069 = 891102 891102-0069.
+Young's Market Co. to Merge
+11/02/89 
+WALL STREET JOURNAL (J) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) LOS ANGELES
+</EXTRAINFO>
+
+<TEXT>
+Young's Market Co., a wholesaler of spirits, wines and other goods, <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it will <EVENT class="OCCURRENCE" eid="e2" stem="merge">merge</EVENT> with a new corporation <EVENT class="OCCURRENCE" eid="e3" stem="form">formed</EVENT> by the Underwood family, which controls Young's.
+
+Under terms of the <EVENT class="OCCURRENCE" eid="e11" stem="agreement">agreement</EVENT>, shareholders other than the Underwoods will <EVENT class="OCCURRENCE" eid="e5" stem="receive">receive</EVENT> $3,500 a share at <EVENT class="OCCURRENCE" eid="e6" stem="close">closing</EVENT>, which is <EVENT class="OCCURRENCE" eid="e8" stem="expect">expected</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t13" type="DATE" value="1989-12">December</TIMEX3>. The Underwood family <EVENT class="REPORTING" eid="e9" stem="say">said</EVENT> that holders of more than a majority of the stock of the company have <EVENT class="OCCURRENCE" eid="e10" stem="approve">approved</EVENT> the <EVENT class="OCCURRENCE" eid="e14" stem="transaction">transaction</EVENT> by written consent.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei88" eventID="e9" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei84" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei85" eventID="e5" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e8" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei82" eventID="e2" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei90" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei86" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei81" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei83" eventID="e3" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei89" eventID="e10" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei84" lid="l15" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei87" lid="l14" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei90" lid="l1" relType="SIMULTANEOUS" relatedToEventInstance="ei82" />
+<TLINK eventInstanceID="ei89" lid="l2" relType="BEFORE" relatedToEventInstance="ei88" />
+<TLINK eventInstanceID="ei88" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei81" />
+<TLINK eventInstanceID="ei81" lid="l4" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l5" relType="INCLUDES" relatedToEventInstance="ei86" timeID="t13" />
+<TLINK eventInstanceID="ei85" lid="l6" relType="IAFTER" relatedToEventInstance="ei86" />
+<TLINK eventInstanceID="ei82" lid="l7" relType="AFTER" relatedToEventInstance="ei83" />
+<SLINK eventInstanceID="ei88" lid="l13" relType="EVIDENTIAL" subordinatedEventInstance="ei89" />
+<SLINK eventInstanceID="ei87" lid="l12" relType="MODAL" subordinatedEventInstance="ei86" />
+<SLINK eventInstanceID="ei89" lid="l8" relType="MODAL" subordinatedEventInstance="ei90" />
+<SLINK eventInstanceID="ei84" lid="l10" relType="MODAL" subordinatedEventInstance="ei85" />
+<SLINK eventInstanceID="ei81" lid="l11" relType="EVIDENTIAL" subordinatedEventInstance="ei82" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei88" relatedToEventInstance="ei84" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei88" relatedToEventInstance="ei87" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei88" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei88" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei84" relatedToEventInstance="ei81" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei84" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei87" relatedToEventInstance="ei81" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei87" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei82" relatedToEventInstance="ei90" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei90" relatedToEventInstance="ei83" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei86" relatedToTime="t13" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei81" relatedToEventInstance="ei89" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei89" relatedToTime="t0" /></TimeML>

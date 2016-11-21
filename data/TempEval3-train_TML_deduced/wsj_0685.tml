@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0685</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0010 = 891030 891030-0010.
+CNW Acquisition Completed 10/30/89 WALL STREET JOURNAL (J) CNW TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA) CHICAGO
+</EXTRAINFO>
+
+<TEXT>
+CNW Corp. <EVENT class="REPORTING" eid="e1">said</EVENT> the final step in the <EVENT class="OCCURRENCE" eid="e3">acquisition</EVENT> of the company has been <EVENT class="ASPECTUAL" eid="e5">completed</EVENT> with the <EVENT class="OCCURRENCE" eid="e6">merger</EVENT> of CNW with a subsidiary of Chicago amp North Western Holdings Corp.
+
+As <EVENT class="REPORTING" eid="e13">reported</EVENT>, CNW <EVENT class="I_ACTION" eid="e7">agreed</EVENT> to be <EVENT class="OCCURRENCE" eid="e9">acquired</EVENT> by a group of investors led by Blackstone Capital Partners Limited Partnership for $50 a share, or about $950 million.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei54" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei53" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei56" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei59" eventID="e9" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei55" eventID="e5" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eventID="e13" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei58" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei57" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l2" relType="AFTER" relatedToEventInstance="ei53" timeID="t0" />
+<TLINK eventInstanceID="ei54" lid="l3" relType="INCLUDES" relatedToEventInstance="ei56" />
+<TLINK eventInstanceID="ei59" lid="l4" relType="IDENTITY" relatedToEventInstance="ei54" />
+<SLINK eventInstanceID="ei53" lid="l5" relType="EVIDENTIAL" subordinatedEventInstance="ei55" />
+<SLINK eventInstanceID="ei57" lid="l6" relType="EVIDENTIAL" subordinatedEventInstance="ei58" />
+<SLINK eventInstanceID="ei58" lid="l7" relType="MODAL" subordinatedEventInstance="ei59" />
+<ALINK eventInstanceID="ei55" lid="l8" relType="CULMINATES" relatedToEventInstance="ei54" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei54" relatedToEventInstance="ei59" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei53" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei56" relatedToEventInstance="ei59" /></TimeML>

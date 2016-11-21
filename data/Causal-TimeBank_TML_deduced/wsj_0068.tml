@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0068</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">1989-11-02</TIMEX3></DCT>
+<TEXT>
+ GOODY PRODUCTS Inc. <EVENT class="OCCURRENCE" eid="e1">cut</EVENT> its quarterly dividend to five cents a share from 11.5 cents a share.
+ The reduced dividend is <EVENT class="OCCURRENCE" eid="e2">payable</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t3" type="DATE" value="1990-01-02">Jan. 2</TIMEX3> to stock of record <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t4" type="DATE" value="1989-12-15">Dec. 15</TIMEX3>.
+ The Kearny, N.J.-based maker of hair accessories and other cosmetic products <EVENT class="REPORTING" eid="e5">said</EVENT> it <EVENT class="OCCURRENCE" eid="e6">cut</EVENT> the dividend <C-SIGNAL cid="c7">due to</C-SIGNAL> its <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t8" type="DATE" value="1989-Q3">third-quarter</TIMEX3> <EVENT class="OCCURRENCE" eid="e9">loss</EVENT> of $ 992,000, or 15 cents a share.
+ In <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t10" type="DATE" value="1988-Q3">the year-ago quarter</TIMEX3>, the company <EVENT class="REPORTING" eid="e11">reported</EVENT> net income of $ 1.9 million, or 29 cents a share.
+ The company also <EVENT class="I_ACTION" eid="e12">adopted</EVENT> an anti-takeover plan.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK lid="l1" relType="AFTER" relatedToEventInstance="ei1" timeID="t0" />
+<TLINK eventInstanceID="ei2" lid="l2" relType="IS_INCLUDED" relatedToTime="t3" />
+<TLINK lid="l3" relType="AFTER" relatedToTime="t0" timeID="t3" />
+<TLINK lid="l4" relType="AFTER" relatedToTime="t4" timeID="t3" />
+<TLINK eventInstanceID="ei5" lid="l5" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei6" lid="l6" relType="IDENTITY" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei9" lid="l7" relType="BEFORE" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei9" lid="l8" relType="ENDS" relatedToTime="t8" />
+<TLINK eventInstanceID="ei11" lid="l10" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei12" lid="l11" relType="BEFORE" relatedToTime="t0" />
+<CLINK c-signalID="c7" eventInstanceID="ei9" lid="l9" relatedToEventInstance="ei6" />
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToEventInstance="ei2" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei11" relatedToTime="t3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei12" relatedToEventInstance="ei2" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei12" relatedToTime="t3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToEventInstance="ei2" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei1" relatedToTime="t3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToTime="t8" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToTime="t4" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2" relatedToTime="t8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei5" relatedToTime="t3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei6" relatedToEventInstance="ei9" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei6" relatedToTime="t3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei6" relatedToTime="t8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei9" relatedToTime="t3" /><TLINK deduced="true" relType="BEFORE" timeID="t0" relatedToTime="t3" /><TLINK deduced="true" relType="AFTER" timeID="t0" relatedToTime="t8" /><TLINK deduced="true" relType="AFTER" timeID="t3" relatedToTime="t8" /></TimeML>

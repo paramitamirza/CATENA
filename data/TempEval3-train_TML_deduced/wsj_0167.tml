@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0167</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0023 = 891102 891102-0023.
+Business Brief -- RMS International Inc.: @ Financing Sources, Waivers @ On Debt Are Being Sought 11/02/89 WALL STREET JOURNAL (J) RMS EARNINGS (ERN)
+</EXTRAINFO>
+
+<TEXT>
+RMS International Inc., Hasbrouk Heights, N.J., <EVENT class="I_ACTION" eid="e1">facing</EVENT> a cash-flow <EVENT class="STATE" eid="e1989">squeeze</EVENT>, <EVENT class="REPORTING" eid="e2">said</EVENT> it is <EVENT class="OCCURRENCE" eid="e3">seeking</EVENT> other financing sources and waivers from debenture holders.
+
+The company <EVENT class="REPORTING" eid="e4">said</EVENT> that because of softening sales it isn't <EVENT class="STATE" eid="e1999">in</EVENT> compliance with requirements that it <EVENT class="STATE" eid="e7">maintain</EVENT> $3 million in working capital. RMS distributes electronic devices and produces power supplies and plastic literature displays.
+
+RMS <EVENT class="REPORTING" eid="e12">said</EVENT> it <EVENT class="STATE" eid="e1994">had</EVENT> a <EVENT class="STATE" eid="e3000">loss</EVENT> of $158,666, or 10 cents a share, in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t21" type="DATE" value="1989-Q3">the third quarter</TIMEX3>, compared with a <TIMEX3 anchorTimeID="t21" functionInDocument="NONE" temporalFunction="true" tid="t22" type="DATE" value="1988-Q3">year-earlier</TIMEX3> loss of $26,956, or two cents a share. Sales <EVENT class="OCCURRENCE" eid="e15">rose</EVENT> to $3 million from $2.9 million.
+
+For <TIMEX3 endPoint="t21" functionInDocument="NONE" temporalFunction="true" tid="t23" type="DURATION" value="P9M">the nine months</TIMEX3>, the company <EVENT class="REPORTING" eid="e16">reported</EVENT> a net <EVENT class="STATE" eid="e1997">loss</EVENT> of $608,413, or 39 cents a share, compared with <TIMEX3 anchorTimeID="t21" functionInDocument="NONE" temporalFunction="true" tid="t24" type="DATE" value="1988">year-earlier</TIMEX3> net <EVENT class="STATE" eid="e1998">income</EVENT> of $967,809, or 62 cents a share. Sales <EVENT class="OCCURRENCE" eid="e18">rose</EVENT> to $9.8 million from $8.9 million.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2090" eventID="e1" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2091" eventID="e1989" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2092" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2093" eventID="e3" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2094" eventID="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2097" eventID="e7" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2098" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2099" eventID="e1994" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2101" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2102" eventID="e16" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2103" eventID="e1997" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2104" eventID="e1998" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2105" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2106" eventID="e1999" polarity="NEG" pos="OTHER" tense="PRESENT" />
+<TLINK eventInstanceID="ei2102" lid="l20" relType="IS_INCLUDED" relatedToTime="t23" />
+<TLINK eventInstanceID="ei2106" lid="l18" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2105" lid="l1" relType="IS_INCLUDED" relatedToTime="t23" />
+<TLINK eventInstanceID="ei2104" lid="l2" relType="IS_INCLUDED" relatedToTime="t24" />
+<TLINK eventInstanceID="ei2098" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei2094" />
+<TLINK eventInstanceID="ei2103" lid="l4" relType="IS_INCLUDED" relatedToTime="t23" />
+<TLINK eventInstanceID="ei2101" lid="l5" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei2099" lid="l7" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei2090" lid="l8" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2092" lid="l9" relType="IS_INCLUDED" relatedToEventInstance="ei2090" />
+<TLINK eventInstanceID="ei2092" lid="l10" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2094" lid="l11" relType="SIMULTANEOUS" relatedToEventInstance="ei2092" />
+<SLINK eventInstanceID="ei2094" lid="l17" relType="EVIDENTIAL" subordinatedEventInstance="ei2106" />
+<SLINK eventInstanceID="ei2098" lid="l12" relType="EVIDENTIAL" subordinatedEventInstance="ei2099" />
+<SLINK eventInstanceID="ei2102" lid="l14" relType="EVIDENTIAL" subordinatedEventInstance="ei2103" />
+<SLINK eventInstanceID="ei2090" lid="l15" relType="FACTIVE" subordinatedEventInstance="ei2091" />
+<SLINK eventInstanceID="ei2092" lid="l16" relType="EVIDENTIAL" subordinatedEventInstance="ei2093" />
+
+<TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2090" relatedToEventInstance="ei2092" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2090" relatedToEventInstance="ei2094" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2090" relatedToEventInstance="ei2098" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2090" relatedToEventInstance="ei2106" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2092" relatedToEventInstance="ei2094" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2092" relatedToEventInstance="ei2098" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2092" relatedToEventInstance="ei2106" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2094" relatedToEventInstance="ei2098" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2094" relatedToEventInstance="ei2106" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2094" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2098" relatedToEventInstance="ei2106" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2098" relatedToTime="t0" /></TimeML>

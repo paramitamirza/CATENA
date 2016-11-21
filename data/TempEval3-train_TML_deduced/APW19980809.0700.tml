@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>APW19980809.0700</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-08-09">1998-08-09</TIMEX3></DCT>
+
+<TITLE>Solid construction may have kept toll low in Tanzania embassy bombing</TITLE>
+
+
+<EXTRAINFO>
+APW19980809.0700  NEWS STORY  08/09/1998 16:30:00
+w1195 &amp;Cx1f; wstm-
+u i &amp;Cx13;  &amp;Cx11;  BC-Tanzania-EmbassyBombi 1stLd   08-09 0145
+BC-Tanzania-Embassy Bombing, 1st Ld
+Solid construction may have kept toll low in Tanzania embassy
+bombing &amp;UR; Eds: CORRECTS 4th graf to drop extraneous word &amp;QL;  &amp;UR; With Kenya-Embassy Bombings &amp;QL;  &amp;UR; By VIJAY JOSHI &amp;QC;  &amp;UR; Associated Press Writer &amp;QC;
+</EXTRAINFO>
+
+
+<TEXT>
+
+DAR ES SALAAM, Tanzania (AP) _
+
+The bomb outside the U.S. Embassy in Tanzania was so powerful that it <EVENT class="OCCURRENCE" eid="e1">shook</EVENT> furniture in homes a mile away.
+
+But the solid construction of the Israeli-built embassy may have <EVENT class="I_ACTION" eid="e3">prevented</EVENT> the carnage of a similar bomb in Kenya, an official <EVENT class="REPORTING" eid="e4">said</EVENT> <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t1" type="DATE" value="1998-08-08">Saturday</TIMEX3>.
+
+Another reason was the location _ a quiet tree-lined neighborhood.
+
+The embassy away from the center of Dar es Salaam, Tanzania's laid-back capital of <EVENT class="OCCURRENCE" eid="e7">swaying</EVENT> palms and sparse traffic, is largely free from the congestion that <EVENT class="STATE" eid="e8">plagues</EVENT> most other major African cities.
+
+</TEXT>
+
+
+<EXTRAINFO>
+In comparison, 5th graf
+(vj/dmc/cph)
+(PROFILE (WS SL:BC-Tanzania-Embassy Bombing, 1st Ld; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
+AP-NY-08-09-98 1630EDT
+</EXTRAINFO>
+
+
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei3" eventID="e3" modality="MAY" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="UNKNOWN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="UNKNOWN" tense="PRESENT" />
+<TLINK eventInstanceID="ei1" lid="l2" origin="USER" relType="IS_INCLUDED" relatedToTime="t1" />
+<TLINK eventInstanceID="ei3" lid="l3" origin="USER" relType="BEFORE" relatedToTime="t1" />
+<TLINK lid="l4" origin="USER" relType="INCLUDES" relatedToEventInstance="ei4" timeID="t1" />
+<TLINK eventInstanceID="ei7" lid="l5" origin="USER" relType="BEFORE" relatedToTime="t1" />
+<TLINK eventInstanceID="ei8" lid="l6" origin="USER" relType="BEFORE" relatedToTime="t1" />
+<TLINK eventInstanceID="ei3" lid="l7" origin="USER" relType="BEFORE" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei3" lid="l8" origin="USER" relType="AFTER" relatedToEventInstance="ei7" />
+<TLINK eventInstanceID="ei4" lid="l9" origin="USER" relType="AFTER" relatedToEventInstance="ei8" />
+
+<TLINK eventInstanceID="ei1" lid="l310" origin="user" relType="BEFORE" relatedToTime="t0" />
+<TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei1" relatedToEventInstance="ei8" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToEventInstance="ei4" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei4" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei4" relatedToTime="t1" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei7" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei8" relatedToTime="t0" /></TimeML>

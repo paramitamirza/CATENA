@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>VOA19980303.1600.2745</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1998-03-03">19980303</TIMEX3></DCT>
+
+<EXTRAINFO>
+VOA19980303.1600.2745 NEWS STORY
+</EXTRAINFO>
+
+<TEXT>
+While the <EVENT class="OCCURRENCE" eid="e1">expansion</EVENT> of the Internet has been a <EVENT class="OCCURRENCE" eid="e2">blessing</EVENT> for researchers, students and the just plain curious, the new opportunities <EVENT class="REPORTING" eid="e3">mentioned</EVENT> by Mr. Gates are also being <EVENT class="OCCURRENCE" eid="e4">used</EVENT> by some rather unsavory characters. A new report <EVENT class="REPORTING" eid="e6">says</EVENT> there has been a dramatic <EVENT class="OCCURRENCE" eid="e7">rise</EVENT> in the <EVENT class="OCCURRENCE" eid="e102">growth</EVENT> of hate groups in the United States over <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t168" type="DATE" value="1997">the past year</TIMEX3>. And many of them are <EVENT class="OCCURRENCE" eid="e10">using</EVENT> the Internet to <EVENT class="OCCURRENCE" eid="e12">spread</EVENT> their messages of racial superiority. VOA's Jim Teple has details from our southeast news bureau.
+
+The Southern Poverty Law Center, a civil rights monitoring group based in Montgomery, Alabama, has long <EVENT class="OCCURRENCE" eid="e107">monitored</EVENT> such groups as the Ku Klux Klan. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t109" type="DATE" value="PAST_REF">More recently</TIMEX3> it has <EVENT class="I_ACTION" eid="e18">followed</EVENT> the <EVENT class="OCCURRENCE" eid="e110">growth</EVENT> of the militia movement and church groups that preach a message of white supremacy and anti-semitism. The new study written by Mark Potach, who edits the Southern Poverty Law Center's Intelligence Report, <EVENT class="I_ACTION" eid="e25">warns</EVENT> that such groups <EVENT class="OCCURRENCE" eid="e26">grew</EVENT> rapidly <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t111" type="DATE" value="1997">last year</TIMEX3>, mostly by <EVENT class="OCCURRENCE" eid="e27">recruiting</EVENT> younger members. Mr. Potach <EVENT class="REPORTING" eid="e28">says</EVENT> the <EVENT class="OCCURRENCE" eid="e113">growth</EVENT> is <EVENT class="STATE" eid="e112">surprising</EVENT> since membership in hate groups usually declines during periods of economic prosperity.
+
+We in fact have <EVENT class="PERCEPTION" eid="e34">seen</EVENT> hate group numbers <EVENT class="OCCURRENCE" eid="e37">dropping</EVENT> through <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t115" type="DATE" value="199">the nineties</TIMEX3>, uh but <TIMEX3 anchorTimeID="t111" functionInDocument="NONE" temporalFunction="true" tid="t116" type="DATE" value="1998">this year</TIMEX3> they <EVENT class="OCCURRENCE" eid="e38">jumped</EVENT> up uh twenty percent, quite a dramatic <EVENT class="OCCURRENCE" eid="e39">rise</EVENT>.
+
+Mark Potach <EVENT class="REPORTING" eid="e40">says</EVENT> over four hundred hate groups have been <EVENT class="OCCURRENCE" eid="e42">identified</EVENT> and many are <EVENT class="I_STATE" eid="e43">becoming</EVENT> increasingly <EVENT class="I_STATE" eid="e118">successful</EVENT> at recruiting younger members through the <EVENT class="OCCURRENCE" eid="e46">use</EVENT> of Internet web pages and the promotion of racist rock music.
+
+The Internet has certainly <EVENT class="I_STATE" eid="e49">helped</EVENT> uh hate mongers to <EVENT class="OCCURRENCE" eid="e52">organize</EVENT> and uh to <EVENT class="STATE" eid="e54">feel</EVENT> that they are part of a larger community, even if uh they are essentially uh, you know, angry people sitting in their bedrooms uh all alone. Uh, in addition, white power racist music has <EVENT class="I_STATE" eid="e60">become</EVENT> uh quite popular in certain sectors. Uh, there are over fifty thousand CDs <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t120" type="SET" value="P1Y">a year</TIMEX3> <EVENT class="OCCURRENCE" eid="e61">sold</EVENT> with uh lyrics that are quite uh unbelievable.
+
+Many of these new members are <EVENT class="OCCURRENCE" eid="e63">joining</EVENT> chapters of the so called Christian Identity Movement which cites Biblical scripture as a foundation for a belief in white supremacy and anti-semitism. Mark Potach <EVENT class="REPORTING" eid="e67">says</EVENT> such members are also intensely <EVENT class="OCCURRENCE" eid="e68">attracted</EVENT> to apocalyptical fantasies.
+
+The <EVENT class="I_STATE" eid="e72">approach</EVENT> of <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t121" type="DATE" value="2000">the year two thousand</TIMEX3> has many of these groups in a kind of millennial frenzy. Uh, uh a- they <EVENT class="I_STATE" eid="e74">believe</EVENT>, or at least many of them <EVENT class="I_STATE" eid="e75">believe</EVENT>, uh that they are <EVENT class="I_STATE" eid="e76">approaching</EVENT> the Battle of Armageddon in which they will be pitted against the uh kind of Satanic forces <EVENT class="I_ACTION" eid="e77">trying</EVENT> to <EVENT class="OCCURRENCE" eid="e80">take</EVENT> over the world.
+
+Mr. Potach <EVENT class="REPORTING" eid="e81">notes</EVENT> older, more traditional groups like the Ku Klux Klan are also <EVENT class="OCCURRENCE" eid="e82">opening</EVENT> new chapters, thanks in part to their <EVENT class="I_STATE" eid="e124">ability</EVENT> to <EVENT class="OCCURRENCE" eid="e87">use</EVENT> new technologies like the Internet. The Federal Bureau of Investigation <EVENT class="REPORTING" eid="e89">says</EVENT> it <EVENT class="OCCURRENCE" eid="e90">received</EVENT> more than eight thousand <EVENT class="REPORTING" eid="e125">reports</EVENT> of hate group <EVENT class="OCCURRENCE" eid="e93">crimes</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t126" type="DATE" value="1997">last year</TIMEX3>. Law enforcement authorities <EVENT class="REPORTING" eid="e94">say</EVENT> such reports are likely to <EVENT class="OCCURRENCE" eid="e97">increase</EVENT> as police departments are <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t129" type="DATE" value="PRESENT_REF">now</TIMEX3> <EVENT class="ASPECTUAL" eid="e98">beginning</EVENT> to more accurately <EVENT class="REPORTING" eid="e130">report</EVENT> hate <EVENT class="OCCURRENCE" eid="e100">crimes</EVENT> than they <EVENT class="REPORTING" eid="e101">have</EVENT> in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t133" type="DATE" value="PAST_REF">the past</TIMEX3>. Jim Teple, VOA News, Miami.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei50001" eventID="e1" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50002" eventID="e2" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50003" eventID="e3" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50004" eventID="e4" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50005" eventID="e6" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50006" eventID="e7" polarity="POS" pos="NOUN" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50007" eventID="e102" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50008" eventID="e10" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50009" eventID="e12" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50010" eventID="e107" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50011" eventID="e18" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50012" eventID="e110" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50013" eventID="e25" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50014" eventID="e26" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50015" eventID="e27" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50016" eventID="e28" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50017" eventID="e113" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50018" eventID="e112" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50019" eventID="e34" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50020" eventID="e37" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50021" eventID="e38" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50022" eventID="e39" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50023" eventID="e40" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50024" eventID="e42" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50025" eventID="e43" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50026" eventID="e118" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50028" eventID="e46" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50030" eventID="e49" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50031" eventID="e52" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50032" eventID="e54" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50033" eventID="e60" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" cardinality="50000" eiid="ei50035" eventID="e61" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50036" eventID="e63" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50037" eventID="e67" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50038" eventID="e68" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50039" eventID="e72" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50041" eventID="e74" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50042" eventID="e75" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50043" eventID="e76" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50045" eventID="e77" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50046" eventID="e80" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50047" eventID="e81" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50048" eventID="e82" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50049" eventID="e124" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50050" eventID="e87" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50051" eventID="e89" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50052" eventID="e90" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50053" eventID="e125" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50054" eventID="e93" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50055" eventID="e94" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50056" eventID="e97" modality="none" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei50057" eventID="e98" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50058" eventID="e130" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei50059" eventID="e100" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei50060" eventID="e101" polarity="POS" pos="VERB" tense="PRESENT" />
+<TLINK eventInstanceID="ei50053" lid="l70" relType="BEFORE" relatedToEventInstance="ei50052" />
+<TLINK eventInstanceID="ei50060" lid="l1" relType="IS_INCLUDED" relatedToTime="t133" />
+<TLINK eventInstanceID="ei50001" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50002" lid="l3" relType="IDENTITY" relatedToEventInstance="ei50001" />
+<TLINK eventInstanceID="ei50003" lid="l4" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50004" lid="l5" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50005" lid="l6" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50006" lid="l7" relType="IS_INCLUDED" relatedToEventInstance="ei50007" />
+<TLINK eventInstanceID="ei50006" lid="l8" relType="DURING" relatedToTime="t168" />
+<TLINK eventInstanceID="ei50004" lid="l9" relType="IDENTITY" relatedToEventInstance="ei50008" />
+<TLINK eventInstanceID="ei50010" lid="l10" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50010" lid="l11" relType="BEFORE" relatedToEventInstance="ei50005" />
+<TLINK lid="l12" relType="INCLUDES" relatedToEventInstance="ei50011" timeID="t109" />
+<TLINK eventInstanceID="ei50013" lid="l13" relType="SIMULTANEOUS" relatedToEventInstance="ei50005" />
+<TLINK eventInstanceID="ei50014" lid="l14" relType="IS_INCLUDED" relatedToTime="t111" />
+<TLINK eventInstanceID="ei50015" lid="l15" relType="BEFORE" relatedToEventInstance="ei50014" />
+<TLINK eventInstanceID="ei50016" lid="l16" relType="IDENTITY" relatedToEventInstance="ei50005" />
+<TLINK eventInstanceID="ei50017" lid="l17" relType="IDENTITY" relatedToEventInstance="ei50014" />
+<TLINK eventInstanceID="ei50020" lid="l18" relType="DURING" relatedToTime="t115" />
+<TLINK lid="l19" relType="DURING" relatedToEventInstance="ei50021" timeID="t116" />
+<TLINK eventInstanceID="ei50022" lid="l20" relType="IDENTITY" relatedToEventInstance="ei50021" />
+<TLINK eventInstanceID="ei50023" lid="l21" relType="IDENTITY" relatedToEventInstance="ei50016" />
+<TLINK eventInstanceID="ei50025" lid="l22" relType="ENDED_BY" relatedToEventInstance="ei50026" />
+<TLINK eventInstanceID="ei50030" lid="l25" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50033" lid="l26" relType="SIMULTANEOUS" relatedToEventInstance="ei50030" />
+<TLINK eventInstanceID="ei50035" lid="l27" relType="IS_INCLUDED" relatedToTime="t120" />
+<TLINK eventInstanceID="ei50036" lid="l28" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50037" lid="l29" relType="IDENTITY" relatedToEventInstance="ei50023" />
+<TLINK eventInstanceID="ei50039" lid="l30" relType="BEFORE" relatedToEventInstance="ei50041" />
+<TLINK eventInstanceID="ei50041" lid="l31" relType="INCLUDES" relatedToEventInstance="ei50042" />
+<TLINK eventInstanceID="ei50045" lid="l34" relType="SIMULTANEOUS" relatedToEventInstance="ei50046" />
+<TLINK eventInstanceID="ei50047" lid="l35" relType="IS_INCLUDED" relatedToEventInstance="ei50037" />
+<TLINK eventInstanceID="ei50049" lid="l36" relType="BEFORE" relatedToEventInstance="ei50048" />
+<TLINK eventInstanceID="ei50051" lid="l37" relType="SIMULTANEOUS" relatedToEventInstance="ei50037" />
+<TLINK eventInstanceID="ei50052" lid="l38" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei50054" lid="l39" relType="IS_INCLUDED" relatedToTime="t126" />
+<TLINK eventInstanceID="ei50055" lid="l40" relType="SIMULTANEOUS" relatedToEventInstance="ei50051" />
+<TLINK eventInstanceID="ei50057" lid="l41" relType="BEFORE" relatedToEventInstance="ei50056" />
+<TLINK eventInstanceID="ei50057" lid="l42" relType="IS_INCLUDED" relatedToTime="t129" />
+<TLINK eventInstanceID="ei50060" lid="l43" relType="BEFORE" relatedToEventInstance="ei50058" />
+<TLINK eventInstanceID="ei50060" lid="l44" relType="BEFORE" relatedToTime="t129" />
+<SLINK eventInstanceID="ei50018" lid="l68" relType="FACTIVE" subordinatedEventInstance="ei50017" />
+<SLINK eventInstanceID="ei50005" lid="l45" relType="EVIDENTIAL" subordinatedEventInstance="ei50006" />
+<SLINK eventInstanceID="ei50008" lid="l46" relType="MODAL" subordinatedEventInstance="ei50009" />
+<SLINK eventInstanceID="ei50011" lid="l47" relType="FACTIVE" subordinatedEventInstance="ei50012" />
+<SLINK eventInstanceID="ei50013" lid="l48" relType="MODAL" subordinatedEventInstance="ei50014" />
+<SLINK eventInstanceID="ei50016" lid="l49" relType="EVIDENTIAL" subordinatedEventInstance="ei50018" />
+<SLINK eventInstanceID="ei50016" lid="l50" relType="EVIDENTIAL" subordinatedEventInstance="ei50019" />
+<SLINK eventInstanceID="ei50019" lid="l51" relType="EVIDENTIAL" subordinatedEventInstance="ei50020" />
+<SLINK eventInstanceID="ei50023" lid="l52" relType="EVIDENTIAL" subordinatedEventInstance="ei50024" />
+<SLINK eventInstanceID="ei50023" lid="l53" relType="EVIDENTIAL" subordinatedEventInstance="ei50025" />
+<SLINK eventInstanceID="ei50030" lid="l55" relType="MODAL" subordinatedEventInstance="ei50031" />
+<SLINK eventInstanceID="ei50030" lid="l56" relType="MODAL" subordinatedEventInstance="ei50032" />
+<SLINK eventInstanceID="ei50037" lid="l57" relType="EVIDENTIAL" subordinatedEventInstance="ei50038" />
+<SLINK eventInstanceID="ei50042" lid="l58" relType="MODAL" subordinatedEventInstance="ei50043" />
+<SLINK eventInstanceID="ei50045" lid="l59" relType="MODAL" subordinatedEventInstance="ei50046" />
+<SLINK eventInstanceID="ei50047" lid="l60" relType="EVIDENTIAL" subordinatedEventInstance="ei50048" />
+<SLINK eventInstanceID="ei50049" lid="l61" relType="MODAL" subordinatedEventInstance="ei50050" />
+<SLINK eventInstanceID="ei50051" lid="l62" relType="EVIDENTIAL" subordinatedEventInstance="ei50052" />
+<SLINK eventInstanceID="ei50053" lid="l63" relType="EVIDENTIAL" subordinatedEventInstance="ei50054" />
+<SLINK eventInstanceID="ei50055" lid="l64" relType="EVIDENTIAL" subordinatedEventInstance="ei50056" />
+<SLINK eventInstanceID="ei50058" lid="l65" relType="EVIDENTIAL" subordinatedEventInstance="ei50059" />
+<ALINK eventInstanceID="ei50057" lid="l67" relType="INITIATES" relatedToEventInstance="ei50058" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50001" relatedToEventInstance="ei50002" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50002" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50005" relatedToEventInstance="ei50010" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50013" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50016" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50023" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50037" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50005" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50005" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50008" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50013" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50016" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50023" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50037" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50010" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei50011" relatedToTime="t109" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50013" relatedToEventInstance="ei50016" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50013" relatedToEventInstance="ei50023" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50013" relatedToEventInstance="ei50037" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50013" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50013" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50013" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50013" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50014" relatedToEventInstance="ei50015" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50014" relatedToEventInstance="ei50017" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50015" relatedToEventInstance="ei50017" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50016" relatedToEventInstance="ei50023" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50016" relatedToEventInstance="ei50037" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50016" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50016" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50016" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50016" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei50017" relatedToTime="t111" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50021" relatedToEventInstance="ei50022" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50023" relatedToEventInstance="ei50037" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50023" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50023" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50023" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50023" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50030" relatedToEventInstance="ei50033" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50033" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei50037" relatedToEventInstance="ei50047" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50037" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50037" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50037" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50039" relatedToEventInstance="ei50042" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei50047" relatedToEventInstance="ei50051" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei50047" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50047" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50048" relatedToEventInstance="ei50049" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei50051" relatedToEventInstance="ei50055" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50051" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50052" relatedToEventInstance="ei50053" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50053" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei50055" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50056" relatedToEventInstance="ei50057" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50056" relatedToEventInstance="ei50060" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50057" relatedToEventInstance="ei50060" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei50058" relatedToEventInstance="ei50060" /></TimeML>

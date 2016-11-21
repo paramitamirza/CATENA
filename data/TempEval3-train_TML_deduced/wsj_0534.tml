@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0534</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0167 = 891030 891030-0167.
+Conseco to Redeem Preferred 10/30/89 WALL STREET JOURNAL (J) CNC BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) CARMEL, Ind.
+</EXTRAINFO>
+
+<TEXT>
+Conseco Inc. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it is <EVENT class="I_ACTION" eid="e2" stem="call">calling</EVENT> for the <EVENT class="OCCURRENCE" eid="e3" stem="redemption">redemption</EVENT> on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t15" type="DATE" value="1989-12-07">Dec. 7</TIMEX3> of all the 800,000 remaining shares outstanding of its $1.875 Series A convertible preferred stock at $26.805 a share.
+
+The insurance concern <EVENT class="REPORTING" eid="e5" stem="say">said</EVENT> all conversion rights on the stock will <EVENT class="ASPECTUAL" eid="e7" stem="terminate">terminate</EVENT> on <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t18" type="DATE" value="1989-11-30">Nov. 30</TIMEX3>. Until <TIMEX3 anchorTimeID="t18" functionInDocument="NONE" temporalFunction="true" tid="t22" type="DATE" value="1989-11-30">then</TIMEX3>, Conseco <EVENT class="REPORTING" eid="e8" stem="say">said</EVENT> the stock <EVENT class="STATE" eid="e9" stem="remains">remains</EVENT> convertible into common stock at the rate of 1.439 shares of common stock for each share of preferred stock, which is equivalent to a conversion price of $17.50 a common share. In New York Stock Exchange trading <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t19" type="DATE" value="1989-10-27">Friday</TIMEX3>, Conseco <EVENT class="OCCURRENCE" eid="e12" stem="close">closed</EVENT> at $19.50, down 25 cents.
+</TEXT>
+
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei88" eventID="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei94" eventID="e9" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei87" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei92" eventID="e7" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei90" eventID="e5" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei93" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei95" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei89" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei93" lid="l15" relType="IDENTITY" relatedToEventInstance="ei90" />
+<TLINK eventInstanceID="ei90" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei87" lid="l2" relType="IDENTITY" relatedToEventInstance="ei90" />
+<TLINK eventInstanceID="ei92" lid="l3" relType="IS_INCLUDED" relatedToTime="t18" />
+<TLINK eventInstanceID="ei94" lid="l5" relType="ENDED_BY" relatedToTime="t22" />
+<TLINK eventInstanceID="ei95" lid="l6" relType="IS_INCLUDED" relatedToTime="t19" />
+<TLINK eventInstanceID="ei89" lid="l8" relType="IS_INCLUDED" relatedToTime="t15" />
+<TLINK eventInstanceID="ei87" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<SLINK eventInstanceID="ei90" lid="l10" relType="EVIDENTIAL" subordinatedEventInstance="ei92" />
+<SLINK eventInstanceID="ei93" lid="l11" relType="EVIDENTIAL" subordinatedEventInstance="ei94" />
+<SLINK eventInstanceID="ei88" lid="l12" relType="MODAL" subordinatedEventInstance="ei89" />
+<SLINK eventInstanceID="ei87" lid="l13" relType="EVIDENTIAL" subordinatedEventInstance="ei88" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei87" relatedToEventInstance="ei93" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei90" relatedToEventInstance="ei93" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei93" relatedToTime="t0" /></TimeML>

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+The Constitution of the United States is the supreme law of the United States of America. The Constitution, originally comprising seven articles, delineates the national frame of government. Its first three articles entrench the doctrine of the separation of powers, whereby the federal government is divided into three branches: the legislative, consisting of the bicameral Congress; the executive, consisting of the President; and the judicial, consisting of the Supreme Court and other federal courts. Articles Four, Five and Six entrench concepts of federalism, describing the rights and responsibilities of state governments and of the states in relationship to the federal government. Article Seven establishes the procedure subsequently used by the thirteen States to ratify it.
+
+Since the Constitution was <EVENT eid="e1">put</EVENT> into effect in <TIMEX3 tid="t1">1789</TIMEX3>, it has been amended twenty-seven times. Amendments to the Constitution, unlike ones made to many constitutions world-wide, are appended to the end of the document. Structurally, the Constitution's original text and all prior amendments remain untouched. The precedent for this practice was set in 1789, when Congress considered and <EVENT eid="e2">proposed</EVENT> the first several Constitutional amendments, known collectively as the Bill of Rights. At seven articles and twenty-seven amendments, it is the shortest written constitution in force.
+
+The Constitution is interpreted, supplemented, and <EVENT eid="e3">implemented</EVENT> by a large body of constitutional law. The Constitution of the United States was the first constitution of its kind, and has influenced the constitutions of other nations.
+
+Contents.
+
+History.
+
+First government.
+
+The government of the First and Second Continental Congress, the period from September 1774 to March 1, 1781 is referred to as the Revolutionary Congress. Prior to the Articles of Confederation, and the Articles Congress, the Supreme Court in Ware v. Hylton and again in Penhallow v. Doane's Administrators, perceived Congress as exercising powers derived from the people, expressly conferred through the medium of state conventions or legislatures, and, once exercised, "impliedly ratified by the acquiescence and obedience of the people." The process created the United States "by the people in collectivity, rather than by the individual states." because only four had state constitutions at the time of the Declaration of Independence founding the nation, and three of those were provisional.
+
+Articles of Confederation.
+
+The Articles of Confederation and Perpetual Union was the first constitution of the United States. It was drafted by the Second Continental Congress from mid-1776 through late-1777, and <EVENT eid="e4">ratification</EVENT> by all 13 states was completed in early 1781. Under the Articles of Confederation, the central government's power was <EVENT eid="e5">kept</EVENT> quite limited. The Confederation Congress could make decisions, but lacked enforcement powers. Implementation of most decisions, including modifications to the Articles, required unanimous approval of all thirteen state legislatures.
+
+Although in a way, the Congressional powers in Article 9 made the "league of states as cohesive and strong as any similar sort of republican confederation in history," the chief problem with the new government under the Articles of Confederation was, in the words of George Washington, "no money." The Continental Congress could print money; but, by 1786, the currency was <EVENT eid="e6">worthless</EVENT>. (A popular phrase of the times chimed that a useless object or person was .. not worth a Continental, referring to the Continental dollar.) Congress could borrow money, but couldn't pay it back. No state paid all their U.S. taxes; Georgia paid nothing, as did New Jersey in 1785. Some few paid an amount equal to interest on the national debt owed to their citizens, but no more. No interest was paid on debt owed foreign governments. By 1786, the United States would default on outstanding debts as their dates came due.
+
+Internationally, the Articles of Confederation did little to enhance the United States' ability to defend its sovereignty as an independent nation. Most of the troops in the 625-man U.S. Army were deployed facing - but not threatening - British forts being maintained on American soil. Those troops had not been paid; some were deserting and others threatening mutiny. Spain closed New Orleans to American commerce; U.S. officials protested, to no effect. Barbary Pirates began seizing American ships of commerce; the Treasury had no funds to pay the pirates' extortionate demands. If any extant or new military crisis required action the Congress had no credit or taxing power to finance a response.
+
+Domestically, the Articles of Confederation was proving inadequate to the task of bringing unity to the diverse sentiments and interests of the various states. Although the Treaty of Paris (1783) was <EVENT eid="e7">signed</EVENT> between Great Britain and the United States and each of the states by name, the various individual states proceeded blithely to violate it. New York and South Carolina repeatedly prosecuted Loyalists for wartime activity and redistributed their lands over the protests of both Great Britain and the Confederation Congress. Individual state legislatures independently laid embargoes, negotiated directly with foreigners, raised armies and made war, all violating the letter and the spirit of the Articles.
+
+During Shays' Rebellion in Massachusetts, Congress could provide no money to support an endangered constituent state. Nor could Massachusetts pay for its own internal defense; General Benjamin Lincoln was obliged to raise funds from Boston merchants to pay for a volunteer army. During the next Convention, James Madison angrily questioned whether the Articles of Confederation was a binding compact or even a viable government. Connecticut paid nothing and "positively refused" to pay U.S. assessments for two years. A rumor had it that a "seditious party" of New York legislators had opened a conversation with the Viceroy of Canada. To the south, the British were said to be openly funding Creek Indian raids on white settlers in Georgia and adjacent territory. Savannah was fortified and the State of Georgia was under martial law.
+
+Congress was <EVENT eid="e8">paralyzed</EVENT>. It could do nothing significant without nine states, and some legislation required all thirteen. When a state produced only one member in attendance, its vote was not counted. If a state's delegation were evenly divided, its vote could not be counted towards the nine-count requirement. The Articles Congress had "virtually ceased trying to govern." The vision of a "respectable nation" among nations seemed to be fading in the eyes of revolutionaries such as George Washington, Benjamin Franklin and Rufus King. Their dream of a republic, a nation without hereditary rulers, with power derived from the people in frequent elections, was in doubt.
+
+Constitutional Convention.
+
+On February 21, 1787, the Articles Congress <EVENT eid="e9">called</EVENT> a <EVENT eid="e10">convention</EVENT> of state delegates at Philadelphia to propose a plan of government. Unlike earlier attempts, the convention was not meant for new laws or piecemeal alterations, but for the "sole and express purpose of revising the Articles of Confederation". The convention was not limited to commerce; rather, it was intended to "render the federal constitution adequate to the exigencies of government and the preservation of the Union." The proposal might take effect when approved by Congress and the states.
+
+On the appointed day, <TIMEX3 tid="t3">May 14, 1787</TIMEX3>, only the Virginia and Pennsylvania delegations were <EVENT eid="e12">present</EVENT>. A quorum of seven states <EVENT eid="e11">met</EVENT> on May 25. Eventually twelve states were represented; 74 delegates were named, 55 attended and 39 signed. The delegates arrived with backgrounds in local and state government and Congress. They were judges and merchants, war veterans and revolutionary patriots, native-born and immigrant, establishment easterners and westward-looking adventurers. The participating delegates are honored as the Constitution's "Framers".
+
+</TEXT>
+
+</TimeML>
+

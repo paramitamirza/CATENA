@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<Title>Ex-Reagan Press Secretary James Brady Dies at 73</Title>
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-04T17:07" temporalFunction="false" functionInDocument="CREATION_TIME">Aug. 4, 2014 17:07</TIMEX3></DCT>
+
+<TEXT>
+
+James Brady, a former White House press secretary who was <EVENT eid="e1001">shot</EVENT> in the head during the 1981 <EVENT eid="e1002">assassination</EVENT> attempt on President Ronald Reagan and who went on to <EVENT eid="e1003">become</EVENT> an unwavering gun-control advocate, has <EVENT eid="e1004">died</EVENT> at age 73, his family said Monday.
+
+Mr. Brady was <EVENT eid="e1005">injured</EVENT> on <TIMEX3 tid="t1001">March 30, 1981</TIMEX3>, when a mentally troubled man, John Hinckley Jr. , <EVENT eid="e1006">opened</EVENT> fire at the Washington Hilton Hotel seeking to impress actress Jodie Foster. Mr. Brady, 40 years old at the time, was one of four men shot, including the president, a Secret Service officer and a District of Columbia police officer. Mr. Brady's injuries proved the longest-lasting and left him in a wheelchair for much of the rest of his life.
+
+For the remainder of the Reagan administration, Mr. Brady <EVENT eid="e1007">retained</EVENT> his press-secretary title while deputies took over daily operations. Mr. Brady would appear at the White House about once a week, allowing him to provide strategic advice to Larry Speakes, who took over daily press-secretary duties, and maintain social ties to the administration.
+
+In 1987, Mr. Brady's wife, Sarah, <EVENT eid="e1008">initiated</EVENT> an effort to require purchasers of handguns to undergo criminal background checks before taking possession of a gun. Mr. Hinckley wasn't screened before buying his gun from a licensed dealer and used a false address on a required federal firearms-purchase form.
+
+Mr. Brady first spoke out in favor of what became known as the Brady bill in November 1989, saying he was disgusted by Congress's inaction on the issue when faced with gun-violence statistics. "Well, this statistic has decided to break his silence," he told the Senate Judiciary Committee.
+
+He described the physical difficulties he had faced since the shooting, requiring assistance to get out of bed, to eat, to get dressed. "I even need help to go to the bathroom," he said.
+
+The Brady Handgun Violence Prevention Act was <EVENT eid="e1009">signed</EVENT> into law in <TIMEX3 tid="t1002">1993</TIMEX3> by President Bill Clinton, after several years of <EVENT eid="e1010">debate</EVENT> and opposition from the National Rifle Association.
+
+"He would patrol the halls of Congress, his wife pushing his wheelchair, persuading members of Congress that this was the right thing to do," said Sen. Chuck Schumer (D., N.Y), a leading sponsor of the Brady bill.
+
+"I was deeply saddened to learn of Jim Brady's passing today," former first lady Nancy Reagan said in a written statement. "Thinking of him brings back so many memories-happy and sad-of a time in all of our lives when we learned what it means to 'play the hand we're dealt.' " She added, "I still remember vividly that day in March 1981, when Sarah and I sat together in a tiny room near the emergency room at George Washington University Hospital, trying to comfort each other while we both were gripped with unspeakable fear."
+
+In <TIMEX3 tid="t1003">1997</TIMEX3>, Mr. Clinton <EVENT eid="e1011">awarded</EVENT> Mr. Brady the Presidential Medal of Freedom, the nation's highest civilian honor. In 2000, the White House press briefing room was <EVENT eid="e1012">renamed</EVENT> in his honor.
+
+In recent months, Mr. Brady's health began a steep <EVENT eid="e1013">decline</EVENT>, with bouts of pneumonia and other ailments, said Gail Hoffman, a family spokeswoman. The cause of death wasn't yet clear.
+
+"Life was very difficult for him-he was in a lot of pain every day," said Ms. Hoffman, who served as the legislative director of Handgun Control Inc., the Bradys' organization fighting to pass the gun-control legislation. The group was later renamed the Brady Campaign to Prevent Gun Violence.
+
+Mr. Brady, who served as press secretary for the first two months of the Reagan administration, is remembered by colleagues and friends as a skilled and evenhanded arbiter between the press and the administration.
+
+"He really set-in those two short months-the gold standard for being press secretary," said Ken Duberstein, a former Reagan chief of staff who at the time was the president's congressional liaison. "Open, honest, straight, but with humor, with dignity, with grace."
+
+Mr. Brady is survived by his wife and two children.
+
+Copyright Wall Street Journal.
+</TEXT>
+
+</TimeML>

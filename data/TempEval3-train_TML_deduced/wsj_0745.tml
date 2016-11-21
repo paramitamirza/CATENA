@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0745</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-27">10/27/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891027-0150 = 891027 891027-0150.
+GM Seeks to Buy Up to 15% of Jaguar, @ Heating Up Its Skirmishing With Ford @ ---- @ By Joann S. Lublin @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) GM JAGRY F EUROP TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) AUTOMOBILES (AUT) LONDON
+</EXTRAINFO>
+
+<TEXT>
+General Motors Corp. <EVENT class="I_STATE" eid="e1">wants</EVENT> to <EVENT class="OCCURRENCE" eid="e3">buy</EVENT> as much as 15% of Jaguar PLC, <EVENT class="OCCURRENCE" eid="e4">marking</EVENT> its first salvo in a possible full-scale <EVENT class="OCCURRENCE" eid="e6">battle</EVENT> against Ford Motor Co. for <EVENT class="STATE" eid="e147">control</EVENT> of the British car maker.
+
+GM <EVENT class="I_ACTION" eid="e8">sought</EVENT> U.S. antitrust <EVENT class="I_STATE" eid="e159">clearance</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t158" type="DATE" value="1989-W42">last week</TIMEX3> to <EVENT class="OCCURRENCE" eid="e10">purchase</EVENT> more than $15 million worth of Jaguar shares but doesn't <EVENT class="STATE" eid="e11">own</EVENT> any <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t161" type="DATE" value="PRESENT_REF">yet</TIMEX3>, <EVENT class="REPORTING" eid="e149">according</EVENT> to GM officials here and at the company's Detroit headquarters. The No. 1 U.S. auto maker then <EVENT class="REPORTING" eid="e13">wrote</EVENT> Jaguar that it <EVENT class="I_STATE" eid="e14">intends</EVENT> "to <EVENT class="OCCURRENCE" eid="e16">go</EVENT> to that 15%" level once it <EVENT class="OCCURRENCE" eid="e17">wins</EVENT> the U.S. <EVENT class="I_STATE" eid="e152">clearance</EVENT> to <EVENT class="OCCURRENCE" eid="e19">go</EVENT> beyond $15 million, a Jaguar spokesman <EVENT class="REPORTING" eid="e20">said</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t163" type="DATE" value="1989-10-26">yesterday</TIMEX3>.
+
+The GM <EVENT class="OCCURRENCE" eid="e154">move</EVENT> follows <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t164" type="DATE" value="1989-10-24">Tuesday</TIMEX3>'s <EVENT class="REPORTING" eid="e22">declaration</EVENT> by Ford, which holds an unwelcome 12.45% stake in Jaguar, that it is <EVENT class="I_STATE" eid="e25">prepared</EVENT> to <EVENT class="OCCURRENCE" eid="e27">bid</EVENT> for the entire company. GM is close to <EVENT class="ASPECTUAL" eid="e29">completing</EVENT> a friendly <EVENT class="OCCURRENCE" eid="e30">deal</EVENT> with Jaguar that is likely to <EVENT class="I_STATE" eid="e2073">involve</EVENT> an eventual 30% stake and joint manufacturing ventures. Speculative investors, <EVENT class="OCCURRENCE" eid="e35">betting</EVENT> on an imminent <EVENT class="OCCURRENCE" eid="e36">clash</EVENT> between Ford and GM, <EVENT class="OCCURRENCE" eid="e38">pushed</EVENT> up Jaguar's share price five pence (eight U.S. cents) to a near-record 720 pence ($11.60) in late <EVENT class="OCCURRENCE" eid="e39">trading</EVENT> on London's stock exchange <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t313" type="DATE" value="1989-10-26">yesterday</TIMEX3>. Since <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t314" type="DATE" value="1989-10-24">Tuesday</TIMEX3>, the shares have <EVENT class="OCCURRENCE" eid="e42">gained</EVENT> nearly 4%.
+
+But an all-out bidding <EVENT class="OCCURRENCE" eid="e2091">war</EVENT> between the world's top auto giants for Britain's leading luxury-car maker seems unlikely. "We will not <EVENT class="OCCURRENCE" eid="e46">go</EVENT> over a certain level," <EVENT class="REPORTING" eid="e48">said</EVENT> David N. McCammon, Ford's vice president for finance, at a news <EVENT class="OCCURRENCE" eid="e316">conference</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t315" type="DATE" value="1989-10-26">yesterday</TIMEX3> in Dearborn, Mich. "There's some price at which we'd <EVENT class="ASPECTUAL" eid="e50">stop</EVENT> <EVENT class="OCCURRENCE" eid="e52">bidding</EVENT>." He wouldn't <EVENT class="OCCURRENCE" eid="e53">specify</EVENT> what it was.
+
+And powerful political <EVENT class="STATE" eid="e318">pressures</EVENT> may <EVENT class="I_ACTION" eid="e56">convince</EVENT> the Conservative government to <EVENT class="OCCURRENCE" eid="e59">keep</EVENT> its so-called golden share, which limits any individual holding to 15%, until the restriction <EVENT class="ASPECTUAL" eid="e63">expires</EVENT> on <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t325" type="DATE" value="1990-12-31">Dec. 31, 1990</TIMEX3>.
+
+"I really don't <EVENT class="I_STATE" eid="e64">see</EVENT> the government <EVENT class="OCCURRENCE" eid="e66">doing</EVENT> something that Jaguar doesn't <EVENT class="I_STATE" eid="e67">want</EVENT> over <TIMEX3 beginPoint="t0" functionInDocument="NONE" temporalFunction="true" tid="t327" type="DURATION" value="P14M">the next 14 months</TIMEX3>," <EVENT class="REPORTING" eid="e69">said</EVENT> Kenneth Warren, a Conservative member of Parliament and chairman of the Select Committee on Trade and Industry in Britain's House of Commons. "The golden share is a single share, but it is the magic share."
+
+The government <EVENT class="OCCURRENCE" eid="e70">retained</EVENT> the single share after <EVENT class="OCCURRENCE" eid="e72">selling</EVENT> its stake in Jaguar in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t330" type="DATE" value="1984">1984</TIMEX3> -- part of a nationalistic practice of protecting former government-owned enterprises to deflect criticism of privatization. The 15% restriction covers any would-be suitor, British or foreign.
+
+Ford is <EVENT class="I_STATE" eid="e1988">willing</EVENT> to <EVENT class="OCCURRENCE" eid="e82">bid</EVENT> for 100% of Jaguar's shares if both the government and Jaguar shareholders <EVENT class="I_ACTION" eid="e84">agree</EVENT> to <EVENT class="OCCURRENCE" eid="e86">relax</EVENT> the anti-takeover barrier prematurely. As Jaguar's biggest holder and Britain's biggest car maker, Ford could <EVENT class="OCCURRENCE" eid="e87">turn</EVENT> up the heat by <EVENT class="I_ACTION" eid="e89">convening</EVENT> a special shareholders' <EVENT class="OCCURRENCE" eid="e90">meeting</EVENT> and <EVENT class="I_ACTION" eid="e91">urging</EVENT> holders to <EVENT class="OCCURRENCE" eid="e1985">drop</EVENT> the limits early. Ford might <EVENT class="OCCURRENCE" eid="e92">succeed</EVENT> because many shareholders are speculators <EVENT class="I_STATE" eid="e1986">keen</EVENT> for a full <EVENT class="OCCURRENCE" eid="e94">bid</EVENT> or institutional investors <EVENT class="I_STATE" eid="e1987">unhappy</EVENT> over Jaguar management's <EVENT class="I_ACTION" eid="e95">handling</EVENT> of its <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t1992" type="DATE" value="PRESENT_REF">current</TIMEX3> financial <EVENT class="STATE" eid="e1994">difficulties</EVENT>.
+
+The government probably wouldn't <EVENT class="OCCURRENCE" eid="e97">give</EVENT> in readily to a hostile foray by Ford, however. It has <EVENT class="OCCURRENCE" eid="e101">relinquished</EVENT> a golden share only once before -- during British Petroleum Co.'s #2.5 billion ( $4 billion ) <EVENT class="OCCURRENCE" eid="e103">takeover</EVENT> of Britoil PLC in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t1998" type="DATE" value="1988">1988</TIMEX3>.
+
+In <EVENT class="OCCURRENCE" eid="e104">wooing</EVENT> British lawmakers, GM has <EVENT class="I_ACTION" eid="e105">pointed</EVENT> out that its willingness to <EVENT class="OCCURRENCE" eid="e107">settle</EVENT> for a minority stake would <EVENT class="ASPECTUAL" eid="e109">keep</EVENT> Jaguar <EVENT class="STATE" eid="e2000">British-owned</EVENT> and <EVENT class="STATE" eid="e2001">independent</EVENT>. <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t2007" type="DATE" value="1989-WXX">This week</TIMEX3>, the U.S. auto giant <EVENT class="OCCURRENCE" eid="e111">paid</EVENT> for 10 House of Commons members and two House of Lords members to <EVENT class="OCCURRENCE" eid="e113">fly</EVENT> to Detroit and <EVENT class="OCCURRENCE" eid="e114">tour</EVENT> its operations there. While the <EVENT class="OCCURRENCE" eid="e116">visit</EVENT> was unrelated to Jaguar, GM Chairman Roger Smith <EVENT class="OCCURRENCE" eid="e117">answered</EVENT> the legislators' <EVENT class="OCCURRENCE" eid="e118">questions</EVENT> about it over <EVENT class="OCCURRENCE" eid="e2385">lunch</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t2386" type="DATE" value="1989-10-24">Tuesday</TIMEX3>. He <EVENT class="REPORTING" eid="e119">said</EVENT> Jaguar "shouldn't be <EVENT class="OCCURRENCE" eid="e120">smothered</EVENT> by anyone else, " <EVENT class="REPORTING" eid="e123">recalled</EVENT> one participant.
+
+Politics also influences the government's thinking on the anti-takeover restriction. The Conservatives don't dare jeopardize marginal Tory seats in Coventry, where Jaguar has headquarters, nor can the government easily back down on promised protection for a privatized company while it proceeds with controversial plans to privatize most of Britain's water and electricity industries.
+
+Prime Minister Margaret Thatcher might, however, be <EVENT class="I_STATE" eid="e2011">receptive</EVENT> to any <EVENT class="I_ACTION" eid="e138">request</EVENT> by Jaguar Chairman Sir John Egan for the restriction's early <EVENT class="OCCURRENCE" eid="e139">removal</EVENT> to let GM <EVENT class="OCCURRENCE" eid="e142">amass</EVENT> more than 15% or <EVENT class="I_ACTION" eid="e143">mount</EVENT> a friendly suitor <EVENT class="OCCURRENCE" eid="e2012">bid</EVENT> against Ford. In the end, Sir John -- rather than the government or Jaguar shareholders -- may hold the key that unlocks the golden share.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2451" eventID="e1" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2452" eventID="e3" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2453" eventID="e4" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2455" eventID="e6" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2456" eventID="e147" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2457" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2458" eventID="e159" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2459" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2460" eventID="e11" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2461" eventID="e149" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2462" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2463" eventID="e14" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2464" eventID="e16" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2466" eventID="e17" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2467" eventID="e152" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2468" eventID="e19" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2470" eventID="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2471" eventID="e154" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2472" eventID="e22" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2473" eventID="e25" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2474" eventID="e27" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2475" eventID="e29" modality="close" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2476" eventID="e30" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2477" eventID="e2073" modality="none" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2479" eventID="e35" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2480" eventID="e36" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2481" eventID="e38" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2484" eventID="e39" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2485" eventID="e42" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2486" eventID="e2091" modality="unlikely" polarity="NEG" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2487" eventID="e46" polarity="NEG" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2488" eventID="e48" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2489" eventID="e316" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2490" eventID="e50" modality="'d" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2491" eventID="e52" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2492" eventID="e53" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2493" eventID="e318" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2494" eventID="e56" modality="may" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2495" eventID="e59" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2497" eventID="e63" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2498" eventID="e64" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2499" eventID="e66" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2500" eventID="e67" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2501" eventID="e69" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2502" eventID="e70" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2503" eventID="e72" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2504" eventID="e1988" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2505" eventID="e82" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2506" eventID="e84" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2507" eventID="e86" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2508" eventID="e87" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2509" eventID="e89" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2510" eventID="e90" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2511" eventID="e91" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2512" eventID="e1985" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2513" eventID="e92" modality="might" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2514" eventID="e1986" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2515" eventID="e94" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2516" eventID="e1987" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2517" eventID="e95" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2518" eventID="e1994" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2519" eventID="e97" modality="would" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2520" eventID="e101" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2521" eventID="e103" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2522" eventID="e104" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2523" eventID="e105" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2525" eventID="e107" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2526" eventID="e109" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2527" eventID="e2000" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2528" eventID="e2001" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2529" eventID="e111" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2530" eventID="e113" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2531" eventID="e114" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2532" eventID="e116" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2533" eventID="e117" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2534" eventID="e118" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2535" eventID="e2385" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2536" eventID="e119" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2537" eventID="e120" modality="should" polarity="NEG" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2538" eventID="e123" polarity="POS" pos="ADJECTIVE" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2539" eventID="e2011" modality="might" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2540" eventID="e138" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2541" eventID="e139" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2543" eventID="e142" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2544" eventID="e143" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2545" eventID="e2012" polarity="POS" pos="NOUN" tense="NONE" />
+<TLINK eventInstanceID="ei2539" lid="l112" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2527" lid="l110" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2519" lid="l109" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2501" lid="l108" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2500" lid="l107" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2492" lid="l106" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2490" lid="l105" relType="ENDS" relatedToEventInstance="ei2491" />
+<TLINK eventInstanceID="ei2491" lid="l104" relType="IDENTITY" relatedToEventInstance="ei2486" />
+<TLINK eventInstanceID="ei2486" lid="l103" relType="AFTER" relatedToTime="t314" />
+<TLINK eventInstanceID="ei2475" lid="l101" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2467" lid="l100" relType="IDENTITY" relatedToEventInstance="ei2458" />
+<TLINK eventInstanceID="ei2461" lid="l99" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2544" lid="l1" relType="BEGINS" relatedToEventInstance="ei2545" />
+<TLINK eventInstanceID="ei2451" lid="l2" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2451" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei2453" />
+<TLINK eventInstanceID="ei2457" lid="l6" relType="IS_INCLUDED" relatedToTime="t158" />
+<TLINK eventInstanceID="ei2460" lid="l7" relType="IS_INCLUDED" relatedToTime="t161" />
+<TLINK eventInstanceID="ei2462" lid="l8" relType="AFTER" relatedToEventInstance="ei2457" />
+<TLINK eventInstanceID="ei2463" lid="l10" relType="AFTER" relatedToEventInstance="ei2466" />
+<TLINK eventInstanceID="ei2470" lid="l11" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2471" lid="l12" relType="INCLUDES" relatedToEventInstance="ei2451" />
+<TLINK eventInstanceID="ei2471" lid="l13" relType="AFTER" relatedToEventInstance="ei2472" />
+<TLINK eventInstanceID="ei2472" lid="l14" relType="IS_INCLUDED" relatedToTime="t164" />
+<TLINK eventInstanceID="ei2479" lid="l15" relType="INCLUDES" relatedToEventInstance="ei2481" />
+<TLINK eventInstanceID="ei2481" lid="l16" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2481" lid="l17" relType="IS_INCLUDED" relatedToEventInstance="ei2484" />
+<TLINK eventInstanceID="ei2484" lid="l18" relType="IS_INCLUDED" relatedToTime="t313" />
+<TLINK lid="l19" relType="BEGINS" relatedToEventInstance="ei2485" timeID="t314" />
+<TLINK eventInstanceID="ei2488" lid="l20" relType="IS_INCLUDED" relatedToEventInstance="ei2489" />
+<TLINK eventInstanceID="ei2489" lid="l21" relType="IS_INCLUDED" relatedToTime="t315" />
+<TLINK eventInstanceID="ei2489" lid="l22" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2476" lid="l23" relType="INCLUDES" relatedToEventInstance="ei2477" />
+<TLINK eventInstanceID="ei2493" lid="l24" relType="BEFORE" relatedToEventInstance="ei2494" />
+<TLINK eventInstanceID="ei2495" lid="l25" relType="ENDED_BY" relatedToEventInstance="ei2497" />
+<TLINK eventInstanceID="ei2497" lid="l27" relType="IS_INCLUDED" relatedToTime="t325" />
+<TLINK eventInstanceID="ei2499" lid="l28" relType="IS_INCLUDED" relatedToTime="t327" />
+<TLINK eventInstanceID="ei2502" lid="l29" relType="AFTER" relatedToEventInstance="ei2503" />
+<TLINK eventInstanceID="ei2503" lid="l30" relType="IS_INCLUDED" relatedToTime="t330" />
+<TLINK eventInstanceID="ei2504" lid="l31" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2506" lid="l32" relType="BEFORE" relatedToEventInstance="ei2505" />
+<TLINK eventInstanceID="ei2508" lid="l33" relType="AFTER" relatedToEventInstance="ei2509" />
+<TLINK eventInstanceID="ei2508" lid="l34" relType="AFTER" relatedToEventInstance="ei2511" />
+<TLINK eventInstanceID="ei2511" lid="l35" relType="IS_INCLUDED" relatedToEventInstance="ei2510" />
+<TLINK eventInstanceID="ei2514" lid="l37" relType="BEFORE" relatedToEventInstance="ei2513" />
+<TLINK eventInstanceID="ei2514" lid="l38" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2514" lid="l39" relType="SIMULTANEOUS" relatedToEventInstance="ei2516" />
+<TLINK lid="l40" relType="INCLUDES" relatedToEventInstance="ei2518" timeID="t1992" />
+<TLINK eventInstanceID="ei2520" lid="l41" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2520" lid="l42" relType="IS_INCLUDED" relatedToEventInstance="ei2521" />
+<TLINK eventInstanceID="ei2521" lid="l43" relType="IS_INCLUDED" relatedToTime="t1998" />
+<TLINK eventInstanceID="ei2522" lid="l44" relType="SIMULTANEOUS" relatedToEventInstance="ei2523" />
+<TLINK lid="l46" relType="IS_INCLUDED" relatedToEventInstance="ei2529" timeID="t2007" />
+<TLINK eventInstanceID="ei2532" lid="l47" relType="INCLUDES" relatedToEventInstance="ei2530" />
+<TLINK eventInstanceID="ei2532" lid="l48" relType="INCLUDES" relatedToEventInstance="ei2531" />
+<TLINK eventInstanceID="ei2532" lid="l49" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2533" lid="l50" relType="AFTER" relatedToEventInstance="ei2534" />
+<TLINK eventInstanceID="ei2534" lid="l51" relType="AFTER" relatedToEventInstance="ei2532" />
+<TLINK eventInstanceID="ei2533" lid="l52" relType="IS_INCLUDED" relatedToEventInstance="ei2535" />
+<TLINK eventInstanceID="ei2535" lid="l53" relType="IS_INCLUDED" relatedToTime="t2386" />
+<TLINK eventInstanceID="ei2536" lid="l54" relType="IS_INCLUDED" relatedToEventInstance="ei2533" />
+<TLINK eventInstanceID="ei2538" lid="l55" relType="AFTER" relatedToEventInstance="ei2533" />
+<SLINK eventInstanceID="ei2533" lid="l98" relType="FACTIVE" subordinatedEventInstance="ei2534" />
+<SLINK eventInstanceID="ei2506" lid="l56" relType="CONDITIONAL" subordinatedEventInstance="ei2505" />
+<SLINK eventInstanceID="ei2451" lid="l57" relType="MODAL" subordinatedEventInstance="ei2452" />
+<SLINK eventInstanceID="ei2455" lid="l58" relType="MODAL" subordinatedEventInstance="ei2456" />
+<SLINK eventInstanceID="ei2457" lid="l59" relType="MODAL" subordinatedEventInstance="ei2458" />
+<SLINK eventInstanceID="ei2458" lid="l60" relType="MODAL" subordinatedEventInstance="ei2459" />
+<SLINK eventInstanceID="ei2461" lid="l61" relType="EVIDENTIAL" subordinatedEventInstance="ei2457" />
+<SLINK eventInstanceID="ei2461" lid="l62" relType="EVIDENTIAL" subordinatedEventInstance="ei2460" />
+<SLINK eventInstanceID="ei2462" lid="l63" relType="EVIDENTIAL" subordinatedEventInstance="ei2463" />
+<SLINK eventInstanceID="ei2463" lid="l64" relType="MODAL" subordinatedEventInstance="ei2464" />
+<SLINK eventInstanceID="ei2467" lid="l65" relType="MODAL" subordinatedEventInstance="ei2468" />
+<SLINK eventInstanceID="ei2470" lid="l66" relType="EVIDENTIAL" subordinatedEventInstance="ei2462" />
+<SLINK eventInstanceID="ei2472" lid="l67" relType="EVIDENTIAL" subordinatedEventInstance="ei2473" />
+<SLINK eventInstanceID="ei2473" lid="l68" relType="MODAL" subordinatedEventInstance="ei2474" />
+<SLINK eventInstanceID="ei2479" lid="l69" relType="MODAL" subordinatedEventInstance="ei2480" />
+<SLINK eventInstanceID="ei2488" lid="l70" relType="EVIDENTIAL" subordinatedEventInstance="ei2487" />
+<SLINK eventInstanceID="ei2494" lid="l72" relType="MODAL" subordinatedEventInstance="ei2495" />
+<SLINK eventInstanceID="ei2498" lid="l73" relType="EVIDENTIAL" subordinatedEventInstance="ei2499" />
+<SLINK eventInstanceID="ei2500" lid="l74" relType="MODAL" subordinatedEventInstance="ei2499" />
+<SLINK eventInstanceID="ei2501" lid="l75" relType="EVIDENTIAL" subordinatedEventInstance="ei2498" />
+<SLINK eventInstanceID="ei2504" lid="l76" relType="MODAL" subordinatedEventInstance="ei2505" />
+<SLINK eventInstanceID="ei2506" lid="l77" relType="MODAL" subordinatedEventInstance="ei2507" />
+<SLINK eventInstanceID="ei2509" lid="l78" relType="MODAL" subordinatedEventInstance="ei2510" />
+<SLINK eventInstanceID="ei2511" lid="l79" relType="MODAL" subordinatedEventInstance="ei2512" />
+<SLINK eventInstanceID="ei2514" lid="l80" relType="MODAL" subordinatedEventInstance="ei2515" />
+<SLINK eventInstanceID="ei2516" lid="l81" relType="FACTIVE" subordinatedEventInstance="ei2517" />
+<SLINK eventInstanceID="ei2517" lid="l82" relType="FACTIVE" subordinatedEventInstance="ei2518" />
+<SLINK eventInstanceID="ei2523" lid="l83" relType="MODAL" subordinatedEventInstance="ei2526" />
+<SLINK eventInstanceID="ei2529" lid="l85" relType="MODAL" subordinatedEventInstance="ei2530" />
+<SLINK eventInstanceID="ei2529" lid="l86" relType="MODAL" subordinatedEventInstance="ei2531" />
+<SLINK eventInstanceID="ei2536" lid="l87" relType="EVIDENTIAL" subordinatedEventInstance="ei2537" />
+<SLINK eventInstanceID="ei2538" lid="l88" relType="EVIDENTIAL" subordinatedEventInstance="ei2536" />
+<SLINK eventInstanceID="ei2539" lid="l89" relType="FACTIVE" subordinatedEventInstance="ei2540" />
+<SLINK eventInstanceID="ei2540" lid="l90" relType="MODAL" subordinatedEventInstance="ei2541" />
+<ALINK eventInstanceID="ei2475" lid="l94" relType="CULMINATES" relatedToEventInstance="ei2476" />
+<ALINK eventInstanceID="ei2490" lid="l95" relType="TERMINATES" relatedToEventInstance="ei2491" />
+<ALINK eventInstanceID="ei2526" lid="l96" relType="CONTINUES" relatedToEventInstance="ei2527" />
+<ALINK eventInstanceID="ei2526" lid="l97" relType="CONTINUES" relatedToEventInstance="ei2528" />
+
+<TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2451" relatedToEventInstance="ei2461" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2451" relatedToEventInstance="ei2471" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2451" relatedToEventInstance="ei2472" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2451" relatedToEventInstance="ei2475" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2451" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2451" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2453" relatedToEventInstance="ei2461" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2453" relatedToEventInstance="ei2471" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2453" relatedToEventInstance="ei2472" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2453" relatedToEventInstance="ei2475" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2453" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2453" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2453" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2457" relatedToEventInstance="ei2462" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2458" relatedToEventInstance="ei2467" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2470" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2461" relatedToEventInstance="ei2471" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2472" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2481" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2488" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2489" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2492" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2501" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2461" relatedToEventInstance="ei2504" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2461" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2461" relatedToEventInstance="ei2514" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2461" relatedToEventInstance="ei2516" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2461" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2520" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2461" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2461" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2475" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2470" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2471" relatedToEventInstance="ei2475" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2471" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2471" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2471" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2475" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2472" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2481" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2488" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2489" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2492" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2501" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2475" relatedToEventInstance="ei2504" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2475" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2475" relatedToEventInstance="ei2514" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2475" relatedToEventInstance="ei2516" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2475" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2520" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2475" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2475" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2481" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2481" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2481" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2481" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2481" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2481" relatedToTime="t313" /><TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei2485" relatedToTime="t314" /><TLINK deduced="true" relType="ENDED_BY" eventInstanceID="ei2486" relatedToEventInstance="ei2490" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2486" relatedToEventInstance="ei2491" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2488" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2488" relatedToTime="t315" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2489" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2489" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2489" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2489" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2489" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2490" relatedToTime="t314" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2491" relatedToTime="t314" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2492" relatedToEventInstance="ei2500" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2492" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2492" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2492" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2492" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2500" relatedToEventInstance="ei2501" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2500" relatedToEventInstance="ei2504" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2500" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2500" relatedToEventInstance="ei2514" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2500" relatedToEventInstance="ei2516" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2500" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2500" relatedToEventInstance="ei2520" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2500" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2500" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2500" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2500" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2501" relatedToEventInstance="ei2513" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2501" relatedToEventInstance="ei2519" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2501" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2501" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2504" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2505" relatedToEventInstance="ei2506" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2510" relatedToEventInstance="ei2511" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2514" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2516" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2520" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2513" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2514" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2516" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2516" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2518" relatedToTime="t1992" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2519" relatedToEventInstance="ei2520" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2519" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2519" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2519" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2519" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2520" relatedToEventInstance="ei2527" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2520" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2520" relatedToTime="t1998" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2527" relatedToEventInstance="ei2530" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2527" relatedToEventInstance="ei2531" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2527" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2527" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2529" relatedToTime="t2007" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2530" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToEventInstance="ei2533" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToEventInstance="ei2534" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2530" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2531" relatedToEventInstance="ei2532" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToEventInstance="ei2533" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToEventInstance="ei2534" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2531" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2532" relatedToEventInstance="ei2533" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2532" relatedToEventInstance="ei2534" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2532" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2532" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2532" relatedToEventInstance="ei2539" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2533" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2533" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2533" relatedToTime="t2386" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2534" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2534" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2535" relatedToEventInstance="ei2536" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2536" relatedToEventInstance="ei2538" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2536" relatedToTime="t2386" /></TimeML>

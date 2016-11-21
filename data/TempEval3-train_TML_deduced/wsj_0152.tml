@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0152</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-02">11/02/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891102-0039 = 891102 891102-0039.
+Business Brief -- Dow Jones amp Co.: @ Offer for Telerate Common @ Is Extended Until Nov. 9 11/02/89 WALL STREET JOURNAL (J) DJ TLR TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED)
+</EXTRAINFO>
+
+<TEXT>
+Dow Jones amp Co. <EVENT class="REPORTING" eid="e1" stem="say">said</EVENT> it <EVENT class="I_ACTION" eid="e2" stem="extend">extended</EVENT> its $18-a-share <EVENT class="OCCURRENCE" eid="e3" stem="offer">offer</EVENT> for Telerate Inc. common stock until <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t27" type="TIME" value="1989-11-09T17:00">5 p.m. EST Nov. 9</TIMEX3>.
+
+The <EVENT class="OCCURRENCE" eid="e4" stem="offer">offer</EVENT>, valued at about $576 million for the 33% of Telerate that Dow Jones doesn't already own, had been <EVENT class="I_ACTION" eid="e8" stem="set">set</EVENT> to <EVENT class="OCCURRENCE" eid="e10" stem="expire">expire</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t28" type="DATE" value="1989-11-06">Nov. 6</TIMEX3>.
+
+Dow Jones, which owns about 64 million of Telerate's 95 million common shares outstanding, <EVENT class="REPORTING" eid="e12" stem="say">said</EVENT> that about 24,000 shares have been <EVENT class="OCCURRENCE" eid="e13" stem="tender">tendered</EVENT> under its <EVENT class="OCCURRENCE" eid="e14" stem="offer">offer</EVENT>.
+
+Telerate's two independent directors have <EVENT class="OCCURRENCE" eid="e15" stem="reject">rejected</EVENT> the <EVENT class="OCCURRENCE" eid="e16" stem="offer">offer</EVENT> as inadequate. In composite trading on the New York Stock Exchange, Telerate shares <EVENT class="OCCURRENCE" eid="e18" stem="close">closed</EVENT> at $19.50, up 12.5 cents.
+
+Telerate provides an electronic financial information network. Dow Jones publishes The Wall Street Journal, Barron's magazine, and community newspapers and operates financial news services and computer data bases.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei120" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei121" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei122" eventID="e3" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei123" eventID="e4" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei124" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei125" eventID="e10" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei126" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei127" eventID="e13" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei128" eventID="e14" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei129" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei130" eventID="e16" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei131" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei124" lid="l17" relType="BEFORE" relatedToEventInstance="ei121" />
+<TLINK eventInstanceID="ei131" lid="l1" origin="USER" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei120" lid="l2" origin="USER" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei122" lid="l3" origin="USER" relType="IDENTITY" relatedToEventInstance="ei123" />
+<TLINK eventInstanceID="ei125" lid="l4" origin="USER" relType="SIMULTANEOUS" relatedToTime="t28" />
+<TLINK lid="l5" origin="USER" relType="BEFORE" relatedToTime="t27" timeID="t28" />
+<TLINK lid="l6" origin="USER" relType="ENDED_BY" relatedToEventInstance="ei122" timeID="t27" />
+<TLINK eventInstanceID="ei126" lid="l7" origin="USER" relType="SIMULTANEOUS" relatedToEventInstance="ei120" />
+<TLINK eventInstanceID="ei127" lid="l8" origin="USER" relType="IS_INCLUDED" relatedToEventInstance="ei128" />
+<TLINK eventInstanceID="ei128" lid="l9" origin="USER" relType="IDENTITY" relatedToEventInstance="ei122" />
+<TLINK eventInstanceID="ei130" lid="l10" origin="USER" relType="IDENTITY" relatedToEventInstance="ei122" />
+<TLINK eventInstanceID="ei129" lid="l11" origin="USER" relType="AFTER" relatedToEventInstance="ei127" />
+<SLINK eventInstanceID="ei120" lid="l12" relType="EVIDENTIAL" subordinatedEventInstance="ei121" />
+<SLINK eventInstanceID="ei121" lid="l13" relType="FACTIVE" subordinatedEventInstance="ei122" />
+<SLINK eventInstanceID="ei124" lid="l14" relType="MODAL" subordinatedEventInstance="ei125" />
+<SLINK eventInstanceID="ei126" lid="l15" relType="EVIDENTIAL" subordinatedEventInstance="ei127" />
+<SLINK eventInstanceID="ei129" lid="l16" relType="FACTIVE" subordinatedEventInstance="ei130" />
+
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei120" relatedToEventInstance="ei126" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei120" relatedToEventInstance="ei131" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei121" relatedToEventInstance="ei124" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei122" relatedToEventInstance="ei125" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei122" relatedToEventInstance="ei127" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei122" relatedToEventInstance="ei128" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei122" relatedToEventInstance="ei130" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei122" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei122" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei123" relatedToEventInstance="ei125" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei123" relatedToEventInstance="ei127" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei123" relatedToEventInstance="ei128" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei123" relatedToEventInstance="ei130" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei123" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei123" relatedToTime="t28" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToEventInstance="ei127" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToEventInstance="ei128" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToEventInstance="ei129" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToEventInstance="ei130" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei125" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei126" relatedToEventInstance="ei131" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei126" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei127" relatedToEventInstance="ei129" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei127" relatedToEventInstance="ei130" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei127" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei127" relatedToTime="t28" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei128" relatedToEventInstance="ei130" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei128" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei128" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei129" relatedToTime="t28" /><TLINK deduced="true" relType="ENDS" eventInstanceID="ei130" relatedToTime="t27" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei130" relatedToTime="t28" /><TLINK deduced="true" relType="AFTER" timeID="t27" relatedToTime="t28" /></TimeML>

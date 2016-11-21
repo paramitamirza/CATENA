@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_0584</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-30">10/30/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891030-0115 = 891030 891030-0115.
+BellSouth, LIN @ Sweeten Plan @ To Merge Lines @ --- @ Accord Involves Huge Debt @ And May Fail to Thwart @ Rival Suitor McCaw @ ---- @ By Julie Amparano Lopez @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) BLS LINB MCAWA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) TELEPHONE SYSTEMS (TLS) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED)
+</EXTRAINFO>
+
+<TEXT>
+The bolstered cellular agreement between BellSouth Corp. and LIN Broadcasting Corp. carries heightened risks and could <EVENT class="I_STATE" eid="e4">fail</EVENT> to <EVENT class="OCCURRENCE" eid="e7">fend</EVENT> off McCaw Cellular Communications Inc., the rival suitor for LIN.
+
+Moreover, the amended pact shows how McCaw's persistence has <EVENT class="OCCURRENCE" eid="e10">pushed</EVENT> LIN and BellSouth into a corner, <EVENT class="OCCURRENCE" eid="e12">forcing</EVENT> huge debt on the proposed new company. The debt, <EVENT class="I_STATE" eid="e13">estimated</EVENT> at $4.7 billion, could <EVENT class="OCCURRENCE" eid="e14">mortgage</EVENT> the cellular company's future earning power in order to <EVENT class="OCCURRENCE" eid="e19">placate</EVENT> some LIN holders in <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t287" type="DATE" value="FUTURE_REF">the short term</TIMEX3>.
+
+The plan still <EVENT class="I_STATE" eid="e21">calls</EVENT> for LIN to <EVENT class="OCCURRENCE" eid="e23">combine</EVENT> its cellular telephone properties with BellSouth's and to <EVENT class="OCCURRENCE" eid="e25">spin</EVENT> off its broadcasting operations. But under new terms of the agreement, <EVENT class="I_ACTION" eid="e28">announced</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t288" type="DATE" value="1989-10-27">Friday</TIMEX3>, LIN holders would <EVENT class="OCCURRENCE" eid="e29">receive</EVENT> a special cash dividend of $42 a share, representing a payout of about $2.23 billion, shortly before the proposed <EVENT class="OCCURRENCE" eid="e32">merger</EVENT>. LIN <EVENT class="REPORTING" eid="e34">said</EVENT> it <EVENT class="I_STATE" eid="e35">expects</EVENT> to <EVENT class="OCCURRENCE" eid="e37">borrow</EVENT> the money to <EVENT class="OCCURRENCE" eid="e40">pay</EVENT> the dividend, but <EVENT class="STATE" eid="e41">commitments</EVENT> from banks still haven't been <EVENT class="I_STATE" eid="e43">obtained</EVENT>. Under previous terms, holders would have <EVENT class="OCCURRENCE" eid="e45">received</EVENT> a dividend of only $20 a share.
+
+In addition, New York-based LIN would <EVENT class="OCCURRENCE" eid="e48">exercise</EVENT> its right to <EVENT class="OCCURRENCE" eid="e51">buy</EVENT> out for $1.9 billion the 55% equity interest of its partner, Metromedia Co., in a New York cellular franchise. That money also would have to be <EVENT class="OCCURRENCE" eid="e56">borrowed</EVENT>. In effect, McCaw has <EVENT class="OCCURRENCE" eid="e57">forced</EVENT> LIN's hand by <EVENT class="OCCURRENCE" eid="e58">bidding</EVENT> $1.9 billion for the stake <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" mod="START" temporalFunction="true" tid="t292" type="DATE" value="1989-10">earlier this month</TIMEX3>.
+
+"We're <EVENT class="OCCURRENCE" eid="e60">taking</EVENT> on more debt than we would have <EVENT class="I_STATE" eid="e61">liked</EVENT> to," <EVENT class="I_ACTION" eid="e63">acknowledged</EVENT> Michael Plouf, LIN's vice president and treasurer. Although he <EVENT class="REPORTING" eid="e65">expressed</EVENT> confidence that the proposed new company's cash flow would be <EVENT class="I_STATE" eid="e294">sufficient</EVENT> to <EVENT class="OCCURRENCE" eid="e69">cover</EVENT> interest payments on the debt, he <EVENT class="I_STATE" eid="e71">estimated</EVENT> that the company wouldn't be <EVENT class="STATE" eid="e295">profitable</EVENT> until <TIMEX3 functionInDocument="NONE" mod="ON_OR_AFTER" temporalFunction="false" tid="t299" type="DATE" value="1994">1994 or later</TIMEX3>.
+
+Analyst <EVENT class="I_STATE" eid="e74">estimate</EVENT> the value of the BellSouth proposal at about $115 to $125 a share. They <EVENT class="STATE" eid="e301">value</EVENT> McCaw's <EVENT class="OCCURRENCE" eid="e76">bid</EVENT> at $112 to $118 a share. The previous BellSouth pact was <EVENT class="I_STATE" eid="e77">valued</EVENT> at about $98 to $110 a share.
+
+McCaw, the largest provider of cellular telephone service in the U.S., already owns about 9.4% of LIN's stock. In response to BellSouth's amended pact, the Kirkland, Wash., company <EVENT class="I_ACTION" eid="e81">extended</EVENT> its own <EVENT class="OCCURRENCE" eid="e82">offer</EVENT> to <EVENT class="OCCURRENCE" eid="e84">buy</EVENT> 22 million LIN shares for $125 apiece, which would <EVENT class="OCCURRENCE" eid="e85">give</EVENT> McCaw a 50.3% controlling interest. Over <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t307" type="DATE" value="1989-W43-WE">the weekend</TIMEX3>, McCaw <EVENT class="OCCURRENCE" eid="e88">continued</EVENT> to <EVENT class="OCCURRENCE" eid="e90">call</EVENT> for an auction of LIN. Analysts <EVENT class="REPORTING" eid="e91">said</EVENT> they <EVENT class="I_STATE" eid="e92">expect</EVENT> McCaw to <EVENT class="OCCURRENCE" eid="e94">escalate</EVENT> the bidding again.
+
+"This game isn't over yet, " <EVENT class="REPORTING" eid="e98">said</EVENT> Joel D. Gross, a vice president at Donaldson, Lufkin amp Jenrette Securities Corp. "At some point, it will <EVENT class="I_STATE" eid="e100">become</EVENT> non-economical for one company. But I don't <EVENT class="I_STATE" eid="e101">think</EVENT> we're at that point yet."
+
+Under its revised <EVENT class="OCCURRENCE" eid="e104">proposal</EVENT>, Atlanta-based BellSouth would <EVENT class="STATE" eid="e316">have</EVENT> a 50% interest in the new cellular company and would be <EVENT class="STATE" eid="e317">responsible</EVENT> for half of its debt. To <EVENT class="OCCURRENCE" eid="e107">sweeten</EVENT> the pact further -- and to <EVENT class="I_STATE" eid="e110">ease</EVENT> concerns of institutional investors -- BellSouth <EVENT class="REPORTING" eid="e111">added</EVENT> a provision designed to <EVENT class="OCCURRENCE" eid="e115">give</EVENT> extra protection to holders if the regional Bell company ever <EVENT class="I_ACTION" eid="e118">decides</EVENT> to <EVENT class="OCCURRENCE" eid="e120">buy</EVENT> the rest of the new cellular company. The provision, described as "back-end" protection, would <EVENT class="I_ACTION" eid="e125">require</EVENT> BellSouth to <EVENT class="OCCURRENCE" eid="e128">pay</EVENT> a price equivalent to what an outside party might have to pay.
+
+McCaw's bid also has a similar clause. Only McCaw's proposal <EVENT class="I_STATE" eid="e138">requires</EVENT> the company to <EVENT class="ASPECTUAL" eid="e140">begin</EVENT> an auction <EVENT class="OCCURRENCE" eid="e141">process</EVENT> in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t322" type="DATE" value="1994-06">June 1994</TIMEX3> for remaining shares at third-party prices.
+
+To <EVENT class="OCCURRENCE" eid="e144">mollify</EVENT> shareholders <EVENT class="OCCURRENCE" eid="e145">concerned</EVENT> about the long-term value of the company under the BellSouth-LIN agreement, BellSouth also <EVENT class="I_ACTION" eid="e147">agreed</EVENT> to <EVENT class="OCCURRENCE" eid="e149">pay</EVENT> as much as $10 a share, or $540 million, if, after <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t326" type="DURATION" value="P5Y">five years</TIMEX3>, the trading value of the new cellular company isn't as high as the value that shareholders would have realized from the McCaw offer.
+
+"We're very <EVENT class="STATE" eid="e329">pleased</EVENT> with the new deal. We didn't <EVENT class="I_STATE" eid="e154">expect</EVENT> BellSouth to be so <EVENT class="STATE" eid="e330">responsive</EVENT>," <EVENT class="REPORTING" eid="e157">said</EVENT> Frederick A. Moran, president of Moran Asset Management Inc., which holds 500,000 LIN shares. BellSouth's "back-end protection was flawed previously. We <EVENT class="I_STATE" eid="e161">think</EVENT> this is a superior deal to McCaw's. We're surprised. We didn't <EVENT class="I_STATE" eid="e164">think</EVENT> a sleeping {Bell} mentality would be <EVENT class="I_STATE" eid="e332">willing</EVENT> to <EVENT class="OCCURRENCE" eid="e168">take</EVENT> on dilution."
+
+But Kenneth Leon, a telecommunications analyst with Bear, Stearns amp Co., <EVENT class="I_STATE" eid="e170">finds</EVENT> the BellSouth proposal still <EVENT class="STATE" eid="e171">flawed</EVENT> because the company doesn't have to <EVENT class="STATE" eid="e2025">wait</EVENT> five years to begin buying more LIN shares. "How many shares will be around in 1995?" he asked. "There's nothing preventing BellSouth from buying up shares in the meanwhile."
+
+BellSouth's revised <EVENT class="OCCURRENCE" eid="e183">proposal</EVENT> <EVENT class="OCCURRENCE" eid="e184">surprised</EVENT> many industry analysts, especially because of the company's willingness to <EVENT class="I_ACTION" eid="e187">accept</EVENT> some dilution of future earnings. William O. McCoy, president of the company's BellSouth Enterprises Inc. unit, <EVENT class="REPORTING" eid="e189">said</EVENT> the revised <EVENT class="OCCURRENCE" eid="e190">agreement</EVENT> with LIN would <EVENT class="OCCURRENCE" eid="e191">dilute</EVENT> BellSouth earnings by about 9% in both <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t351" type="DATE" value="1990">1990</TIMEX3> and <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t352" type="DATE" value="1991">1991</TIMEX3> and by significantly less thereafter. Indeed, BellSouth's cellular operations were among the first in the country to become profitable.
+
+For <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t358" type="DATE" value="1988">1988</TIMEX3>, BellSouth <EVENT class="OCCURRENCE" eid="e196">earned</EVENT> $1.7 billion, or $3.51 a share, on revenue of $13.6 billion. Analysts were <EVENT class="I_ACTION" eid="e197">predicting</EVENT> <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t359" type="DATE" value="1990">1990</TIMEX3> BellSouth earnings in the range of $3.90 a share, or $1.9 billion, but <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t361" type="DATE" value="PRESENT_REF">now</TIMEX3> those <EVENT class="STATE" eid="e362">estimates</EVENT> are being <EVENT class="OCCURRENCE" eid="e200">scaled</EVENT> back.
+
+In composite <EVENT class="OCCURRENCE" eid="e363">trading</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t364" type="DATE" value="1989-10-27">Friday</TIMEX3> on the New York Stock Exchange, BellSouth shares <EVENT class="OCCURRENCE" eid="e201">fell</EVENT> 87.5 cents to $52.125.
+
+In national over-the-counter <EVENT class="OCCURRENCE" eid="e202">trading</EVENT>, LIN shares <EVENT class="OCCURRENCE" eid="e203">soared</EVENT> $4.625 to closed at $112.625, while McCaw <EVENT class="OCCURRENCE" eid="e206">fell</EVENT> $2.50 a share to $37.75.
+
+The proposed BellSouth-LIN cellular company, including the newly acquired Metromedia stake, would <EVENT class="OCCURRENCE" eid="e207">give</EVENT> the new entity 55 million potential customers, including about 35 million in the nation's top 10 markets.
+
+Mr. Leon of Bear Stearns <EVENT class="I_STATE" eid="e211">speculated</EVENT> that McCaw, in an <EVENT class="I_STATE" eid="e212">attempt</EVENT> to <EVENT class="OCCURRENCE" eid="e215">buy</EVENT> time, might <EVENT class="I_STATE" eid="e217">consider</EVENT> <EVENT class="OCCURRENCE" eid="e219">filing</EVENT> an antitrust suit against BellSouth with the Justice Department and U.S. District Judge Harold Greene, who oversees enforcement of the consent decree that <EVENT class="OCCURRENCE" eid="e224">broke</EVENT> up the Bell system in <TIMEX3 functionInDocument="NONE" temporalFunction="false" tid="t370" type="DATE" value="1984">1984</TIMEX3>.
+
+Indeed, McCaw <EVENT class="I_STATE" eid="e225">seemed</EVENT> to <EVENT class="OCCURRENCE" eid="e227">hint</EVENT> at that option in a brief <EVENT class="OCCURRENCE" eid="e230">statement</EVENT>. Urging LIN directors to conduct "a fair auction on a level playing field," McCaw asked how well the public interest would be served "with the Bell operating companies controlling over 94% of all cellular {potential customers} in the nation's top 10 markets."
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei2575" eventID="e4" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2576" eventID="e7" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2578" eventID="e10" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2579" eventID="e12" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2580" eventID="e13" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2582" eventID="e14" modality="could" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2583" eventID="e19" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2584" eventID="e21" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2585" eventID="e23" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2586" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2588" eventID="e28" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2589" eventID="e29" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2591" eventID="e32" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2592" eventID="e34" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2593" eventID="e35" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2594" eventID="e37" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2595" eventID="e40" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2596" eventID="e41" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2597" eventID="e43" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2598" eventID="e45" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2599" eventID="e48" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2600" eventID="e51" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2602" eventID="e56" modality="have to" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2603" eventID="e57" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2604" eventID="e58" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2605" eventID="e60" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2606" eventID="e61" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2607" eventID="e63" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2608" eventID="e65" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2610" eventID="e294" modality="would" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2611" eventID="e69" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2612" eventID="e71" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2613" eventID="e295" modality="would" polarity="NEG" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2614" eventID="e74" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2616" eventID="e301" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2617" eventID="e76" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2619" eventID="e77" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2621" eventID="e81" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2622" eventID="e82" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2623" eventID="e84" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2624" eventID="e85" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2625" eventID="e88" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2626" eventID="e90" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2627" eventID="e91" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2628" eventID="e92" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2629" eventID="e94" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2631" eventID="e98" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2632" eventID="e100" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2634" eventID="e101" polarity="NEG" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2637" eventID="e104" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2638" eventID="e316" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2639" eventID="e317" modality="would" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2640" eventID="e107" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2641" eventID="e110" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2643" eventID="e111" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2644" eventID="e115" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2646" eventID="e118" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2647" eventID="e120" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2648" eventID="e125" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2649" eventID="e128" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2650" eventID="e138" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2651" eventID="e140" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2652" eventID="e141" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2653" eventID="e144" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2654" eventID="e145" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2657" eventID="e147" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2658" eventID="e149" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2660" eventID="e329" polarity="POS" pos="ADJECTIVE" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2662" eventID="e154" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2663" eventID="e330" polarity="POS" pos="ADJECTIVE" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2664" eventID="e157" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2665" eventID="e161" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2667" eventID="e164" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2668" eventID="e332" modality="would" polarity="POS" pos="ADJECTIVE" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2669" eventID="e168" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2670" eventID="e170" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2671" eventID="e171" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2672" eventID="e183" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2673" eventID="e184" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2675" eventID="e187" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2677" eventID="e189" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2678" eventID="e190" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2679" eventID="e191" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2680" eventID="e196" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2681" eventID="e197" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2683" eventID="e362" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei2684" eventID="e200" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2685" eventID="e363" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2686" eventID="e201" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2688" eventID="e202" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2689" eventID="e203" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2690" eventID="e206" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2692" eventID="e207" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2693" eventID="e211" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2694" eventID="e212" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2695" eventID="e215" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2696" eventID="e217" modality="might" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2697" eventID="e219" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2698" eventID="e224" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2699" eventID="e225" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2700" eventID="e227" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2701" eventID="e230" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2703" eventID="e2025" modality="have_to" polarity="NEG" pos="VERB" tense="NONE" />
+<TLINK eventInstanceID="ei2692" lid="l162" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2703" lid="l161" relType="AFTER" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2652" lid="l160" relType="IS_INCLUDED" relatedToTime="t322" />
+<TLINK eventInstanceID="ei2626" lid="l158" relType="IS_INCLUDED" relatedToEventInstance="ei2625" />
+<TLINK eventInstanceID="ei2617" lid="l157" relType="IDENTITY" relatedToEventInstance="ei2604" />
+<TLINK eventInstanceID="ei2699" lid="l1" relType="IS_INCLUDED" relatedToEventInstance="ei2701" />
+<TLINK eventInstanceID="ei2579" lid="l9" relType="AFTER" relatedToEventInstance="ei2578" />
+<TLINK lid="l11" relType="BEFORE" relatedToEventInstance="ei2580" timeID="t0" />
+<TLINK eventInstanceID="ei2579" lid="l12" relType="BEFORE" relatedToEventInstance="ei2582" />
+<TLINK lid="l13" relType="IS_INCLUDED" relatedToEventInstance="ei2583" timeID="t287" />
+<TLINK lid="l14" relType="IS_INCLUDED" relatedToEventInstance="ei2584" timeID="t0" />
+<TLINK lid="l16" relType="INCLUDES" relatedToEventInstance="ei2588" timeID="t288" />
+<TLINK eventInstanceID="ei2591" lid="l18" relType="IAFTER" relatedToEventInstance="ei2589" />
+<TLINK lid="l20" relType="BEFORE" relatedToEventInstance="ei2591" timeID="t0" />
+<TLINK lid="l21" relType="AFTER" relatedToEventInstance="ei2592" timeID="t0" />
+<TLINK lid="l22" relType="INCLUDES" relatedToEventInstance="ei2597" timeID="t0" />
+<TLINK eventInstanceID="ei2594" lid="l23" relType="AFTER" relatedToEventInstance="ei2596" />
+<TLINK eventInstanceID="ei2599" lid="l25" relType="AFTER" relatedToEventInstance="ei2602" />
+<TLINK lid="l26" relType="AFTER" relatedToEventInstance="ei2603" timeID="t0" />
+<TLINK eventInstanceID="ei2604" lid="l27" relType="SIMULTANEOUS" relatedToEventInstance="ei2603" />
+<TLINK lid="l28" relType="INCLUDES" relatedToEventInstance="ei2604" timeID="t292" />
+<TLINK lid="l29" relType="AFTER" relatedToEventInstance="ei2607" timeID="t0" />
+<TLINK eventInstanceID="ei2607" lid="l30" relType="AFTER" relatedToEventInstance="ei2606" />
+<TLINK eventInstanceID="ei2607" lid="l31" relType="SIMULTANEOUS" relatedToEventInstance="ei2608" />
+<TLINK eventInstanceID="ei2612" lid="l32" relType="SIMULTANEOUS" relatedToEventInstance="ei2608" />
+<TLINK lid="l33" relType="BEGINS" relatedToEventInstance="ei2613" timeID="t299" />
+<TLINK lid="l34" relType="AFTER" relatedToEventInstance="ei2612" timeID="t0" />
+<TLINK lid="l35" relType="IS_INCLUDED" relatedToEventInstance="ei2614" timeID="t0" />
+<TLINK eventInstanceID="ei2614" lid="l36" relType="SIMULTANEOUS" relatedToEventInstance="ei2616" />
+<TLINK eventInstanceID="ei2616" lid="l40" relType="AFTER" relatedToEventInstance="ei2619" />
+<TLINK eventInstanceID="ei2624" lid="l45" relType="AFTER" relatedToEventInstance="ei2623" />
+<TLINK eventInstanceID="ei2625" lid="l46" relType="DURING" relatedToTime="t307" />
+<TLINK eventInstanceID="ei2627" lid="l47" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2631" lid="l48" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2637" lid="l52" relType="BEFORE" relatedToEventInstance="ei2638" />
+<TLINK eventInstanceID="ei2637" lid="l53" relType="BEFORE" relatedToEventInstance="ei2639" />
+<TLINK eventInstanceID="ei2644" lid="l55" relType="IAFTER" relatedToEventInstance="ei2646" />
+<TLINK eventInstanceID="ei2648" lid="l56" relType="AFTER" relatedToEventInstance="ei2643" />
+<TLINK eventInstanceID="ei2650" lid="l57" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2651" lid="l58" relType="IS_INCLUDED" relatedToTime="t322" />
+<TLINK eventInstanceID="ei2657" lid="l59" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2653" lid="l63" relType="AFTER" relatedToEventInstance="ei2654" />
+<TLINK eventInstanceID="ei2664" lid="l65" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2670" lid="l66" relType="INCLUDES" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2667" lid="l67" relType="BEFORE" relatedToEventInstance="ei2664" />
+<TLINK lid="l68" relType="IS_INCLUDED" relatedToEventInstance="ei2671" timeID="t0" />
+<TLINK eventInstanceID="ei2672" lid="l69" relType="BEFORE" relatedToEventInstance="ei2673" />
+<TLINK eventInstanceID="ei2673" lid="l71" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2677" lid="l72" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2678" lid="l73" relType="BEFORE" relatedToEventInstance="ei2679" />
+<TLINK eventInstanceID="ei2678" lid="l74" relType="BEFORE" relatedToEventInstance="ei2677" />
+<TLINK eventInstanceID="ei2679" lid="l75" relType="IS_INCLUDED" relatedToTime="t351" />
+<TLINK eventInstanceID="ei2679" lid="l76" relType="IS_INCLUDED" relatedToTime="t352" />
+<TLINK eventInstanceID="ei2680" lid="l78" relType="IS_INCLUDED" relatedToTime="t358" />
+<TLINK eventInstanceID="ei2681" lid="l79" relType="BEFORE" relatedToTime="t0" />
+<TLINK lid="l81" relType="INCLUDES" relatedToEventInstance="ei2684" timeID="t361" />
+<TLINK eventInstanceID="ei2683" lid="l82" relType="IDENTITY" relatedToEventInstance="ei2681" />
+<TLINK eventInstanceID="ei2685" lid="l83" relType="IS_INCLUDED" relatedToTime="t364" />
+<TLINK eventInstanceID="ei2686" lid="l84" relType="IS_INCLUDED" relatedToEventInstance="ei2685" />
+<TLINK eventInstanceID="ei2688" lid="l86" relType="INCLUDES" relatedToEventInstance="ei2689" />
+<TLINK eventInstanceID="ei2689" lid="l87" relType="SIMULTANEOUS" relatedToEventInstance="ei2690" />
+<TLINK eventInstanceID="ei2688" lid="l89" relType="IS_INCLUDED" relatedToTime="t364" />
+<TLINK eventInstanceID="ei2693" lid="l90" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei2696" lid="l91" relType="SIMULTANEOUS" relatedToEventInstance="ei2694" />
+<TLINK eventInstanceID="ei2698" lid="l92" relType="IS_INCLUDED" relatedToTime="t370" />
+<TLINK eventInstanceID="ei2657" lid="l93" relType="BEGINS" relatedToTime="t326" />
+<SLINK eventInstanceID="ei2673" lid="l155" relType="FACTIVE" subordinatedEventInstance="ei2672" />
+<SLINK eventInstanceID="ei2646" lid="l95" relType="CONDITIONAL" subordinatedEventInstance="ei2644" />
+<SLINK eventInstanceID="ei2575" lid="l97" relType="COUNTER_FACTIVE" subordinatedEventInstance="ei2576" />
+<SLINK eventInstanceID="ei2582" lid="l98" relType="MODAL" subordinatedEventInstance="ei2583" />
+<SLINK eventInstanceID="ei2584" lid="l99" relType="MODAL" subordinatedEventInstance="ei2585" />
+<SLINK eventInstanceID="ei2584" lid="l100" relType="MODAL" subordinatedEventInstance="ei2586" />
+<SLINK eventInstanceID="ei2592" lid="l103" relType="EVIDENTIAL" subordinatedEventInstance="ei2593" />
+<SLINK eventInstanceID="ei2593" lid="l104" relType="MODAL" subordinatedEventInstance="ei2594" />
+<SLINK eventInstanceID="ei2594" lid="l105" relType="MODAL" subordinatedEventInstance="ei2595" />
+<SLINK eventInstanceID="ei2597" lid="l106" relType="FACTIVE" subordinatedEventInstance="ei2596" />
+<SLINK eventInstanceID="ei2599" lid="l108" relType="MODAL" subordinatedEventInstance="ei2600" />
+<SLINK eventInstanceID="ei2607" lid="l109" relType="EVIDENTIAL" subordinatedEventInstance="ei2605" />
+<SLINK eventInstanceID="ei2610" lid="l112" relType="MODAL" subordinatedEventInstance="ei2611" />
+<SLINK eventInstanceID="ei2612" lid="l113" relType="MODAL" subordinatedEventInstance="ei2613" />
+<SLINK eventInstanceID="ei2621" lid="l115" relType="FACTIVE" subordinatedEventInstance="ei2622" />
+<SLINK eventInstanceID="ei2622" lid="l116" relType="MODAL" subordinatedEventInstance="ei2623" />
+<SLINK eventInstanceID="ei2621" lid="l117" relType="MODAL" subordinatedEventInstance="ei2623" />
+<SLINK eventInstanceID="ei2627" lid="l118" relType="EVIDENTIAL" subordinatedEventInstance="ei2628" />
+<SLINK eventInstanceID="ei2628" lid="l119" relType="MODAL" subordinatedEventInstance="ei2629" />
+<SLINK eventInstanceID="ei2631" lid="l121" relType="EVIDENTIAL" subordinatedEventInstance="ei2632" />
+<SLINK eventInstanceID="ei2631" lid="l122" relType="EVIDENTIAL" subordinatedEventInstance="ei2634" />
+<SLINK eventInstanceID="ei2643" lid="l123" relType="EVIDENTIAL" subordinatedEventInstance="ei2640" />
+<SLINK eventInstanceID="ei2643" lid="l124" relType="EVIDENTIAL" subordinatedEventInstance="ei2641" />
+<SLINK eventInstanceID="ei2643" lid="l126" relType="EVIDENTIAL" subordinatedEventInstance="ei2644" />
+<SLINK eventInstanceID="ei2646" lid="l127" relType="MODAL" subordinatedEventInstance="ei2647" />
+<SLINK eventInstanceID="ei2648" lid="l128" relType="MODAL" subordinatedEventInstance="ei2649" />
+<SLINK eventInstanceID="ei2650" lid="l129" relType="MODAL" subordinatedEventInstance="ei2651" />
+<SLINK eventInstanceID="ei2657" lid="l130" relType="MODAL" subordinatedEventInstance="ei2658" />
+<SLINK eventInstanceID="ei2657" lid="l131" relType="MODAL" subordinatedEventInstance="ei2653" />
+<SLINK eventInstanceID="ei2664" lid="l133" relType="EVIDENTIAL" subordinatedEventInstance="ei2660" />
+<SLINK eventInstanceID="ei2664" lid="l135" relType="EVIDENTIAL" subordinatedEventInstance="ei2662" />
+<SLINK eventInstanceID="ei2662" lid="l136" relType="MODAL" subordinatedEventInstance="ei2663" />
+<SLINK eventInstanceID="ei2664" lid="l137" relType="EVIDENTIAL" subordinatedEventInstance="ei2665" />
+<SLINK eventInstanceID="ei2667" lid="l139" relType="MODAL" subordinatedEventInstance="ei2668" />
+<SLINK eventInstanceID="ei2668" lid="l140" relType="MODAL" subordinatedEventInstance="ei2669" />
+<SLINK eventInstanceID="ei2670" lid="l141" relType="MODAL" subordinatedEventInstance="ei2671" />
+<SLINK eventInstanceID="ei2677" lid="l144" relType="EVIDENTIAL" subordinatedEventInstance="ei2679" />
+<SLINK eventInstanceID="ei2693" lid="l146" relType="MODAL" subordinatedEventInstance="ei2696" />
+<SLINK eventInstanceID="ei2696" lid="l147" relType="MODAL" subordinatedEventInstance="ei2697" />
+<SLINK eventInstanceID="ei2694" lid="l148" relType="MODAL" subordinatedEventInstance="ei2695" />
+<SLINK eventInstanceID="ei2699" lid="l149" relType="MODAL" subordinatedEventInstance="ei2700" />
+<ALINK eventInstanceID="ei2625" lid="l151" relType="CONTINUES" relatedToEventInstance="ei2626" />
+<ALINK eventInstanceID="ei2651" lid="l152" relType="INITIATES" relatedToEventInstance="ei2652" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2578" relatedToEventInstance="ei2579" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2578" relatedToEventInstance="ei2582" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2592" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2597" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2603" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2604" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2606" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2607" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2608" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2617" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2627" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2631" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2657" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2664" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2667" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2672" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2673" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2677" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2678" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2681" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2683" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2580" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2583" relatedToTime="t287" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2584" relatedToEventInstance="ei2597" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2584" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2584" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2588" relatedToTime="t288" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2589" relatedToEventInstance="ei2591" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2592" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2597" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2603" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2604" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2606" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2607" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2608" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2617" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2619" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2627" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2631" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2657" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2664" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2667" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2672" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2673" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2677" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2678" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2681" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2683" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2591" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2592" relatedToEventInstance="ei2597" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2592" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2592" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2592" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2592" relatedToTime="t0" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2603" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2604" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2606" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2607" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2608" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToEventInstance="ei2614" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToEventInstance="ei2616" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2617" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2619" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2627" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2631" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToEventInstance="ei2650" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2657" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2664" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2667" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToEventInstance="ei2670" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToEventInstance="ei2671" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2672" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2673" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2677" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2678" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2681" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2597" relatedToEventInstance="ei2683" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2597" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2597" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2597" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2603" relatedToEventInstance="ei2604" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2603" relatedToEventInstance="ei2617" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2603" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2603" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2603" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2603" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2603" relatedToTime="t292" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2604" relatedToEventInstance="ei2617" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2604" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2604" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2604" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2604" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2604" relatedToTime="t292" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2607" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2608" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2606" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2607" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2607" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2607" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2607" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2607" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2608" relatedToEventInstance="ei2612" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2608" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2608" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2608" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2608" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2612" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2612" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2612" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2612" relatedToTime="t0" /><TLINK deduced="true" relType="BEGUN_BY" eventInstanceID="ei2613" relatedToTime="t299" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2614" relatedToEventInstance="ei2619" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2614" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2614" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2616" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2616" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2617" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2617" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2617" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2617" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2617" relatedToTime="t292" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2619" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2619" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2619" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2619" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2623" relatedToEventInstance="ei2624" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2625" relatedToEventInstance="ei2626" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2627" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2627" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2627" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2631" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2631" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2631" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2643" relatedToEventInstance="ei2648" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2650" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2657" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2657" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2657" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2664" relatedToEventInstance="ei2667" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2664" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2664" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2664" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2667" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2667" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2667" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2667" relatedToTime="t0" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2670" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2671" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2671" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2672" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2672" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2672" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2672" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2673" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2673" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2673" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2677" relatedToEventInstance="ei2678" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2677" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2677" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2677" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2678" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2678" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2678" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2678" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2681" relatedToEventInstance="ei2683" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2681" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2681" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2681" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2683" relatedToEventInstance="ei2692" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2683" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2683" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2683" relatedToTime="t0" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2684" relatedToTime="t361" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2685" relatedToEventInstance="ei2686" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2686" relatedToTime="t364" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei2688" relatedToEventInstance="ei2690" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2689" relatedToTime="t364" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei2690" relatedToTime="t364" /><TLINK deduced="true" relType="AFTER" eventInstanceID="ei2692" relatedToEventInstance="ei2693" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2693" relatedToEventInstance="ei2703" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei2694" relatedToEventInstance="ei2696" /></TimeML>

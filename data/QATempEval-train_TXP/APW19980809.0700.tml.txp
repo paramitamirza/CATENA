@@ -1,0 +1,113 @@
+# FILE: APW19980809.0700.tml.txp
+# DATE: 1998-08-09T00:00:00
+# FIELDS: token	tokenid	sentid	POS	lemma	dep	timex_id	timex_type	timex_value	entity	pred_class	event_id	role1	role2	role3	is_arg_pred	has_semrole	chunk	main_verb	connectives	morpho	tense+aspect+pol	O	
+
+DCT_1998-08-09	O	O	O	O	O	tmx0	B-TIME	1998-08-09	O	O	O	O	O	O	O	O	O	O	O	O	O	O	
+
+DAR	t1	1	NP0	dar	O	O	O	O	O	O	O	O	O	O	_	A0	B-NP	O	O	O	O	O	
+ES	t2	1	NP0	es	O	O	O	O	O	O	O	O	O	O	_	A0	I-NP	O	O	es+n+sing	O	O	
+SALAAM	t3	1	NP0	salaam	t1:NAME||t2:NAME||t4:P||t7:COORD	O	O	O	O	O	O	O	O	O	_	A0	I-NP	O	O	salaam+n+sing	O	O	
+,	t4	1	PUN	,	O	O	O	O	O	O	O	O	O	O	_	A0	O	O	O	punc	O	O	
+Tanzania	t5	1	NP0	tanzania	O	O	O	O	O	O	O	O	O	O	_	A0	B-NP	O	O	tanzania+pn	O	O	
+(	t6	1	PUL	(	O	O	O	O	O	O	O	O	O	O	_	A0	O	O	O	(+punc	O	O	
+AP	t7	1	NP0	ap	t5:NAME||t6:P||t8:P	O	O	O	O	O	O	O	O	O	_	A0	B-NP	O	O	O	O	O	
+)	t8	1	PUR	)	O	O	O	O	O	O	O	O	O	O	_	A0	O	O	O	)+punc	O	O	
+_	t9	1	NN1	_	t3:SBJ	O	O	O	O	O	O	A0	O	O	O	O	B-NP	O	O	O	O	O	
+
+The	t10	2	AT0	the	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	the+art	O	O	
+bomb	t11	2	NN1	bomb	t10:NMOD||t12:LOC	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	bomb+n+sing	O	O	
+outside	t12	2	PRP	outside	t15:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	outside+prep	O	O	
+the	t13	2	AT0	the	O	O	O	O	organization	O	O	O	O	O	O	O	B-NP	O	O	the+art	O	O	
+U.S.	t14	2	NP0	u.s.	O	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	u.s.+pn	O	O	
+Embassy	t15	2	NP0	embassy	t13:NMOD||t14:NAME||t16:LOC	O	O	O	organization	O	O	O	O	O	O	O	I-NP	O	O	embassy+n+sing	O	O	
+in	t16	2	PRP	in	t17:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	in+prep	O	O	
+Tanzania	t17	2	NP0	tanzania	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	tanzania+pn	O	O	
+was	t18	2	VVD	be	t11:SBJ||t20:PRD||t30:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	
+so	t19	2	AV0	so	O	O	O	O	O	O	O	O	O	O	O	O	B-ADJP	O	O	so+adv	O	O	
+powerful	t20	2	AJ0	powerful	t19:AMOD||t21:AMOD	O	O	O	O	O	O	O	O	O	O	O	I-ADJP	O	O	powerful+adj+zero	O	O	
+that	t21	2	CJT	that	t23:SUB	O	O	O	O	O	O	O	O	O	O	O	B-SBAR	O	O	that+conj	O	O	
+it	t22	2	PNP	it	O	O	O	O	O	O	O	O	O	O	shake	A0	B-NP	O	O	it+pron	O	O	
+shook	t23	2	VVD	shake	t22:SBJ||t24:OBJ||t25:LOC||t29:LOC	O	O	O	O	OCCURRENCE	e1	A0	A1	AM-LOC	O	O	B-VP	O	O	shake+v+indic+past	PAST+NONE+pos	e1:tmx1:IS_INCLUDED||e1:tmx0:BEFORE	
+furniture	t24	2	NN1	furniture	O	O	O	O	O	O	O	O	O	O	shake	A1	B-NP	O	O	furniture+n+sing	O	O	
+in	t25	2	PRP	in	t26:PMOD	O	O	O	O	O	O	O	O	O	shake	AM-LOC	B-PP	O	O	in+prep	O	O	
+homes	t26	2	NN2	home	O	O	O	O	O	O	O	O	O	O	shake	AM-LOC	B-NP	O	O	home+n+plur	O	O	
+a	t27	2	AT0	a	O	O	O	O	O	O	O	O	O	O	shake	AM-LOC	B-NP	O	O	a+art	O	O	
+mile	t28	2	NN1	mile	t27:NMOD	O	O	O	O	O	O	O	O	O	shake	AM-LOC	I-NP	O	O	mile+n+sing	O	O	
+away	t29	2	AV0	away	t28:AMOD	O	O	O	O	O	O	O	O	O	shake	AM-LOC	O	O	O	away+adv	O	O	
+.	t30	2	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+But	t31	3	CJC	but	O	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	O	O	Comparison	but+conj	O	O	
+the	t32	3	AT0	the	O	O	O	O	O	O	O	O	O	O	prevent	A0	B-NP	O	O	the+art	O	O	
+solid	t33	3	AJ0	solid	O	O	O	O	O	O	O	O	O	O	construction	AM-MNR	I-NP	O	O	solid+adj+zero	O	O	
+construction	t34	3	NN1	construction	t32:NMOD||t33:NMOD||t35:NMOD	O	O	O	O	O	O	AM-MNR	A1	O	prevent	A0	I-NP	O	O	construction+n+sing	O	O	
+of	t35	3	PRF	of	t38:PMOD	O	O	O	O	O	O	O	O	O	construction	A1	B-PP	O	O	of+prep	O	O	
+the	t36	3	AT0	the	O	O	O	O	O	O	O	O	O	O	construction	A1	B-NP	O	O	the+art	O	O	
+Israeli-built	t37	3	AJ0	israeli-built	O	O	O	O	O	O	O	O	O	O	construction	A1	I-NP	O	O	O	O	O	
+embassy	t38	3	NN1	embassy	t36:NMOD||t37:NMOD	O	O	O	O	O	O	O	O	O	construction	A1	I-NP	O	O	embassy+n+sing	O	O	
+may	t39	3	VM0	may	t31:DEP||t34:SBJ||t40:VC	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-VP	O	O	may+v+infin+pres	NONE+PERFECTIVE+pos	O	
+have	t40	3	VVB	have	t41:VC	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	I-VP	O	O	have+v+indic+pres+no3sing	NONE+PERFECTIVE+pos	O	
+prevented	t41	3	VVN	prevent	t43:OBJ	O	O	O	O	I_ACTION	e3	A0	AM-MOD	A1	prevent	AM-MOD	I-VP	O	O	prevent+v+part+past	NONE+PERFECTIVE+pos	e3:tmx1:BEFORE||e3:e1:BEFORE||e3:e7:AFTER||e3:e4:NONE||e3:tmx0:NONE	
+the	t42	3	AT0	the	O	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-NP	O	O	the+art	O	O	
+carnage	t43	3	NN1	carnage	t42:NMOD||t44:NMOD	O	O	O	O	O	O	A1	O	O	prevent	AM-MOD	I-NP	O	O	carnage+n+sing	O	O	
+of	t44	3	PRF	of	t47:PMOD	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-PP	O	O	of+prep	O	O	
+a	t45	3	AT0	a	O	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-NP	O	O	a+art	O	O	
+similar	t46	3	AJ0	similar	O	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	I-NP	O	O	similar+adj+zero	O	O	
+bomb	t47	3	NN1	bomb	t45:NMOD||t46:NMOD||t48:LOC	O	O	O	O	O	O	AM-MNR	AM-LOC	O	prevent	AM-MOD	I-NP	O	O	bomb+n+sing	O	O	
+in	t48	3	PRP	in	t49:PMOD	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-PP	O	O	in+prep	O	O	
+Kenya	t49	3	NP0	kenya	O	O	O	O	O	O	O	O	O	O	prevent	AM-MOD	B-NP	O	O	kenya+pn	O	O	
+,	t50	3	PUN	,	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	punc	O	O	
+an	t51	3	AT0	a	O	O	O	O	O	O	O	O	O	O	say	A0	B-NP	O	O	an+n+sing	O	O	
+official	t52	3	NN1	official	t51:NMOD	O	O	O	O	O	O	O	O	O	say	A0	I-NP	O	O	official+n+sing	O	O	
+said	t53	3	VVD	say	t39:OBJ||t50:P||t52:SBJ||t54:TMP||t55:P	O	O	O	O	REPORTING	e4	A1	A0	AM-TMP	O	O	B-VP	mainVb	O	say+v+indic+past	PAST+NONE+pos	e4:e8:AFTER||e4:tmx0:NONE	
+Saturday	t54	3	NP0	saturday	O	tmx1	B-DATE	1998-08-08	O	O	O	O	O	O	say	AM-TMP	B-NP	O	O	saturday+n+sing	O	tmx1:e4:INCLUDES	
+.	t55	3	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+Another	t56	4	AT0	another	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	another+pron	O	O	
+reason	t57	4	NN1	reason	t56:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	reason+n+sing	O	O	
+was	t58	4	VVD	be	t57:SBJ||t61:VC||t66:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+past	PAST+NONE+pos	O	
+the	t59	4	AT0	the	O	O	O	O	O	O	O	O	O	O	_	A0	B-NP	O	O	the+art	O	O	
+location	t60	4	NN1	location	t59:NMOD	O	O	O	O	O	O	O	O	O	_	A0	I-NP	O	O	location+n+sing	O	O	
+_	t61	4	VVD	_	t60:SBJ||t65:OBJ	O	O	O	O	O	O	A0	A1	O	O	O	B-PP	O	O	O	O	O	
+a	t62	4	AT0	a	O	O	O	O	O	O	O	O	O	O	_	A1	B-NP	O	O	a+art	O	O	
+quiet	t63	4	AJ0	quiet	O	O	O	O	O	O	O	O	O	O	_	A1	I-NP	O	O	quiet+adj+zero	O	O	
+tree-lined	t64	4	AJ0	tree-lined	O	O	O	O	O	O	O	O	O	O	_	A1	I-NP	O	O	O	O	O	
+neighborhood	t65	4	NN1	neighbourhood	t62:NMOD||t63:NMOD||t64:NMOD	O	O	O	O	O	O	AM-MNR	A1	O	_	A1	I-NP	O	O	neighborhood+n+sing	O	O	
+.	t66	4	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+
+The	t67	5	AT0	the	O	O	O	O	O	O	O	O	O	O	O	O	B-NP	O	O	the+art	O	O	
+embassy	t68	5	NN1	embassy	t67:NMOD||t69:NMOD	O	O	O	O	O	O	O	O	O	O	O	I-NP	O	O	embassy+n+sing	O	O	
+away	t69	5	AV0	away	t70:AMOD	O	O	O	O	O	O	O	O	O	O	O	B-ADVP	O	O	away+adv	O	O	
+from	t70	5	PRP	from	t72:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	from+prep	O	O	
+the	t71	5	AT0	the	O	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	the+art	O	O	
+center	t72	5	NN1	center	t71:NMOD||t73:NMOD	O	O	O	O	O	O	A1	A3	O	center	A1	I-NP	O	O	center+n+sing	O	O	
+of	t73	5	PRF	of	t76:PMOD	O	O	O	O	O	O	O	O	O	center	A1	B-PP	O	O	of+prep	O	O	
+Dar	t74	5	NP0	dar	O	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	O	O	O	
+es	t75	5	NN0	es	O	O	O	O	O	O	O	O	O	O	center	A1	B-VP	O	O	e+n+plur	O	O	
+Salaam	t76	5	NP0	salaam	t74:NAME||t75:NAME||t77:P||t81:APPO||t88:P	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	salaam+n+sing	O	O	
+,	t77	5	PUN	,	O	O	O	O	O	O	O	O	O	O	center	A1	O	O	O	punc	O	O	
+Tanzania	t78	5	NP0	tanzania	t79:SUFFIX	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	tanzania+pn	O	O	
+'s	t79	5	POS	's	O	O	O	O	O	O	O	O	O	O	center	A1	I-NP	O	O	have+v+indic+pres+sing3	O	O	
+laid-back	t80	5	AJ0	laid-back	O	O	O	O	O	O	O	O	O	O	center	A1	O	O	O	laid-back+adj+zero	O	O	
+capital	t81	5	NN1	capital	t78:NMOD||t80:NMOD||t82:NMOD	O	O	O	O	O	O	A1	A1	A0	center	A1	I-NP	O	O	capital+n+sing	O	O	
+of	t82	5	PRF	of	t83:PMOD	O	O	O	O	O	O	O	O	O	center	A1	B-PP	O	O	of+prep	O	O	
+swaying	t83	5	VVG	sway	t84:OBJ	O	O	O	O	OCCURRENCE	e7	A1	O	O	center	A1	B-VP	O	O	sway+v+gerund+pres	PRESPART+NONE+pos	e7:tmx1:BEFORE||e7:e8:NONE||e7:tmx0:NONE	
+palms	t84	5	NN2	palm	t85:COORD	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	palm+n+plur	O	O	
+and	t85	5	CJC	and	t87:CONJ	O	O	O	O	O	O	O	O	O	center	A1	O	O	O	and+conj	O	O	
+sparse	t86	5	AJ0	sparse	O	O	O	O	O	O	O	O	O	O	center	A1	B-NP	O	O	sparse+adj+zero	O	O	
+traffic	t87	5	NN1	traffic	t86:NMOD	O	O	O	O	O	O	A0	O	O	center	A1	I-NP	O	O	traffic+n+sing	O	O	
+,	t88	5	PUN	,	O	O	O	O	O	O	O	O	O	O	center	A1	O	O	O	punc	O	O	
+is	t89	5	NN0	be	t68:SBJ||t91:PRD||t102:P	O	O	O	O	O	O	O	O	O	O	O	B-VP	mainVb	O	be+v+indic+pres+sing3	PRESENT+NONE+pos	O	
+largely	t90	5	AV0	largely	O	O	O	O	O	O	O	O	O	O	O	O	B-ADJP	O	O	largely+adv	O	O	
+free	t91	5	AJ0	free	t90:AMOD||t92:AMOD	O	O	O	O	O	O	O	O	O	O	O	I-ADJP	O	O	free+adj+zero	O	O	
+from	t92	5	PRP	from	t94:PMOD	O	O	O	O	O	O	O	O	O	O	O	B-PP	O	O	from+prep	O	O	
+the	t93	5	AT0	the	O	O	O	O	O	O	O	O	O	O	plague	A0	B-NP	O	O	the+art	O	O	
+congestion	t94	5	NN1	congestion	t93:NMOD||t96:NMOD	O	O	O	O	O	O	O	O	O	plague	A0	I-NP	O	O	congestion+n+sing	O	O	
+that	t95	5	CJT	that	O	O	O	O	O	O	O	O	O	O	plague	A0	B-SBAR	O	O	that+conj	O	O	
+plagues	t96	5	NN0	plague	t95:SBJ||t101:OBJ	O	O	O	O	STATE	e8	A0	R-A0	A1	plague	A0	B-VP	O	O	plague+v+indic+pres+sing3	PRESENT+NONE+pos	e8:tmx1:BEFORE||e8:tmx0:NONE	
+most	t97	5	NN0	much	O	O	O	O	O	O	O	O	O	O	plague	A0	B-NP	O	O	most+n+sing	O	O	
+other	t98	5	AJ0	other	O	O	O	O	O	O	O	O	O	O	plague	A0	I-NP	O	O	other+adj+zero	O	O	
+major	t99	5	AJ0	major	O	O	O	O	O	O	O	O	O	O	plague	A0	I-NP	O	O	major+adj+zero	O	O	
+African	t100	5	AJ0	african	O	O	O	O	O	O	O	O	O	O	plague	A0	I-NP	O	O	african+adj+zero	O	O	
+cities	t101	5	NN2	city	t97:NMOD||t98:NMOD||t99:NMOD||t100:NMOD	O	O	O	O	O	O	O	O	O	plague	A0	I-NP	O	O	city+n+plur	O	O	
+.	t102	5	PUN	.	O	O	O	O	O	O	O	O	O	O	O	O	O	O	O	.+punc	O	O	
+

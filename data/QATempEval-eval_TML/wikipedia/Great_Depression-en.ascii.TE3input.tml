@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+The <EVENT eid="e1001">Great Depression</EVENT> was a severe worldwide economic depression in the decade preceding <EVENT eid="e1002">World War II</EVENT>. The timing of the Great Depression varied across nations, but in most countries it <EVENT eid="e1003">started</EVENT> in <TIMEX3 tid="t1001">1930</TIMEX3> and lasted until the <TIMEX3 tid="t1002">late 1930s</TIMEX3> or <TIMEX3 tid="t1003">middle 1940s</TIMEX3>. It was the longest, deepest, and most widespread depression of the 20th century.
+
+In the 21st century, the Great Depression is commonly used as an example of how far the world's economy can decline. The depression <EVENT eid="e1004">originated</EVENT> in the U.S., after the <EVENT eid="e1005">fall</EVENT> in stock prices that <EVENT eid="e1006">began</EVENT> around <TIMEX3 tid="t1004">September 4, 1929</TIMEX3>, and became worldwide news with the stock market <EVENT eid="e1007">crash</EVENT> of <TIMEX3 tid="t1005">October 29, 1929</TIMEX3> (known as Black Tuesday).
+
+The Great Depression had devastating effects in countries rich and poor. Personal income, tax revenue, profits and prices dropped, while international trade plunged by more than 50%. Unemployment in the U.S. rose to 25%, and in some countries rose as high as 33%.
+
+Cities all around the world were hit hard, especially those dependent on heavy industry. Construction was virtually halted in many countries. Farming and rural areas suffered as crop prices fell by approximately 60%. Facing plummeting demand with few alternate sources of jobs, areas dependent on primary sector industries such as cash cropping, mining and logging suffered the most.
+
+Some economies started to recover by the mid-1930s. In many countries, the negative effects of the Great Depression lasted until after the end of World War II.
+
+Start.
+
+Economic historians usually attribute the start of the Great Depression to the sudden devastating <EVENT eid="e1008">collapse</EVENT> of US stock market prices on October 29, 1929, known as Black Tuesday; some dispute this conclusion, and see the stock crash as a symptom, rather than a cause, of the Great Depression.
+
+Even after the Wall Street Crash of 1929, optimism persisted for some time; John D. Rockefeller said that "These are days when many are discouraged. In the 93 years of my life, depressions have come and gone. Prosperity has always returned and will again." The stock market <EVENT eid="e1009">turned</EVENT> upward in early 1930, returning to early 1929 levels by <TIMEX3 tid="t1006">April</TIMEX3>. This was still almost 30% below the peak of September 1929.
+
+Together, government and business spent more in the first half of 1930 than in the corresponding period of the previous year. On the other hand, consumers, many of whom had suffered severe losses in the stock market the previous year, cut back their expenditures by ten percent. Likewise, beginning in mid-1930, a severe drought ravaged the agricultural heartland of the US.
+
+By mid-1930, interest rates had dropped to low levels, but expected deflation and the continuing reluctance of people to borrow meant that consumer spending and investment were depressed. By May 1930, automobile sales had <EVENT eid="e1010">declined</EVENT> to below the levels of <TIMEX3 tid="t1007">1928</TIMEX3>. Prices in general began to decline, although wages held steady in 1930; but then a deflationary spiral <EVENT eid="e1011">started</EVENT> in 1931. Conditions were worse in farming areas, where commodity prices plunged, and in mining and logging areas, where unemployment was high and there were few other jobs.
+
+The decline in the US economy was the factor that pulled down most other countries at first, then internal weaknesses or strengths in each country made conditions worse or better. Frantic attempts to shore up the economies of individual nations through protectionist policies, such as the 1930 U.S. Smoot - Hawley Tariff Act and retaliatory tariffs in other countries, exacerbated the collapse in global trade. By late 1930, a steady decline in the world economy had set in, which did not <EVENT eid="e1012">reach</EVENT> bottom until 1933.
+
+Change in economic indicators 1929 - 32
+
+There were multiple causes for the first downturn in 1929. These include the structural weaknesses and specific events that turned it into a major depression and the manner in which the downturn spread from country to country. In relation to the 1929 downturn, historians emphasize structural factors like major bank failures and the stock market crash. In contrast, monetarist economists (such as Barry Eichengreen, Milton Friedman and Peter Temin) point to monetary factors such as actions by the US Federal Reserve that contracted the money supply, as well as Britain's decision to return to the gold standard at pre - World War I parities (USD 4.86: GBP 1).
+
+Recessions and business cycles are thought to be a normal part of living in a world of inexact balances between supply and demand. What turns a normal recession or 'ordinary' business cycle into a depression is a subject of much debate and concern. Scholars have not agreed on the exact causes and their relative importance. The search for causes is closely connected to the issue of avoiding future depressions. A related question is whether the Great Depression was primarily a failure on the part of free markets or a failure of government efforts to regulate interest rates, curtail widespread bank failures, and control the money supply.
+
+Current theories may be broadly classified into two main points of view and several heterodox points of view. There are demand-driven theories, most importantly Keynesian economics, but also including those who point to the breakdown of international trade, and Institutional economists who point to underconsumption and over-investment (causing an economic bubble), malfeasance by bankers and industrialists, or incompetence by government officials. The consensus among demand-driven theories is that a large-scale loss of confidence led to a sudden reduction in consumption and investment spending. Once panic and deflation set in, many people believed they could avoid further losses by keeping clear of the markets. Holding money became profitable as prices dropped lower and a given amount of money bought ever more goods, exacerbating the drop in demand.
+
+There are the monetarists, who believe that the Great Depression started as an ordinary recession, but that significant policy mistakes by monetary authorities (especially the Federal Reserve), caused a shrinking of the money supply which greatly exacerbated the economic situation, causing a recession to descend into the Great Depression. Related to this explanation are those who point to debt deflation causing those who borrow to owe ever more in real terms.
+
+There are also various heterodox theories that downplay or reject the explanations of the Keynesians and monetarists. For example, some new classical macroeconomists have argued that various labor market policies imposed at the start caused the length and severity of the Great Depression. The Austrian school of economics focuses on the macroeconomic effects of money supply, and how central banking decisions can lead to over-investment (economic bubble).
+
+
+Turning point and recovery.
+
+In most countries of the world, recovery from the Great Depression <EVENT eid="e1013">began</EVENT> in 1933. In the U.S., recovery began in early 1933, but the U.S. did not return to 1929 GNP for over a decade and still had an unemployment rate of about 15% in <TIMEX3 tid="t1008">1940</TIMEX3>, albeit down from the high of 25% in 1933. The measurement of the unemployment rate in this time period was unsophisticated and complicated by the presence of massive underemployment, in which employers and workers engaged in rationing of jobs.
+
+There is no consensus among economists regarding the motive force for the U.S. economic expansion that continued through most of the Roosevelt years (and the 1937 recession that interrupted it). The common view among most economists is that Roosevelt's New Deal policies either caused or accelerated the recovery, although his policies were never aggressive enough to bring the economy completely out of recession. Some economists have also called attention to the positive effects from expectations of reflation and rising nominal interest rates that Roosevelt's words and actions portended. It was the rollback of those same reflationary policies that led to the interrupting <EVENT eid="e1014">recession</EVENT> of <TIMEX3 tid="t1009">1937</TIMEX3>. One contributing policy that reversed reflation was the Banking Act of <TIMEX3 tid="t1010">1935</TIMEX3>, which effectively raised reserve requirements, causing a monetary contraction that helped to thwart the recovery. GDP <EVENT eid="e1015">returned</EVENT> to its upward trend in <TIMEX3 tid="t1011">1938</TIMEX3>.
+
+According to Christina Romer, the money supply growth caused by huge international gold inflows was a crucial source of the recovery of the United States economy, and that the economy showed little sign of self-correction. The gold inflows were partly due to devaluation of the U.S. dollar and partly due to deterioration of the political situation in Europe. In their book, A Monetary History of the United States, Milton Friedman and Anna J. Schwartz also attributed the recovery to monetary factors, and contended that it was much slowed by poor management of money by the Federal Reserve System. Current Chairman of the Federal Reserve Ben Bernanke agrees that monetary factors played important roles both in the worldwide economic decline and eventual recovery. Bernanke also sees a strong role for institutional factors, particularly the rebuilding and restructuring of the financial system, and points out that the Depression needs to be examined in international perspective.
+
+Gold standard.
+
+Some economic studies have indicated that just as the downturn was spread worldwide by the rigidities of the Gold Standard, it was suspending gold convertibility (or devaluing the currency in gold terms) that did the most to make recovery possible.
+
+Every major currency left the gold standard during the Great Depression. Great Britain was the first to do so. Facing speculative attacks on the pound and depleting gold reserves, in September 1931 the Bank of England ceased exchanging pound notes for gold and the pound was floated on foreign exchange markets.
+
+Great Britain, Japan, and the Scandinavian countries <EVENT eid="e1016">left</EVENT> the gold standard in <TIMEX3 tid="t1012">1931</TIMEX3>. Other countries, such as Italy and the U.S., remained on the gold standard into 1932 or 1933, while a few countries in the so-called "gold bloc", led by France and including Poland, Belgium and Switzerland, stayed on the standard until 1935 - 1936.
+
+According to later analysis, the earliness with which a country left the gold standard reliably predicted its economic recovery. For example, Great Britain and Scandinavia, which left the gold standard in 1931, recovered much earlier than France and Belgium, which remained on gold much longer. Countries such as China, which had a silver standard, almost avoided the depression entirely. The connection between leaving the gold standard as a strong predictor of that country's severity of its depression and the length of time of its recovery has been shown to be consistent for dozens of countries, including developing countries. This partly explains why the experience and length of the depression differed between national economies.
+
+World War II and recovery.
+
+The common view among economic historians is that the Great Depression ended with the advent of World War II. Many economists believe that government spending on the war caused or at least accelerated recovery from the Great Depression, though some consider that it did not play a very large role in the recovery. It did help in reducing unemployment.
+
+The rearmament policies leading up to World War II helped stimulate the economies of Europe in 1937 - 39. By 1937, unemployment in Britain had <EVENT eid="e1017">fallen</EVENT> to 1.5 million. The mobilisation of manpower following the <EVENT eid="e1018">outbreak</EVENT> of war in 1939 ended unemployment.
+
+The US' <EVENT eid="e1019">entry</EVENT> into the war in <TIMEX3 tid="t1013">1941</TIMEX3> finally eliminated the last effects from the Great Depression and brought the U.S. unemployment rate down below 10%. In the U.S., massive war spending doubled economic growth rates, either masking the effects of the Depression or essentially ending the Depression. Businessmen ignored the mounting national debt and heavy new taxes, redoubling their efforts for greater output to take advantage of generous government contracts.
+
+</TEXT>
+
+</TimeML>
+

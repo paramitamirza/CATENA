@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DCT><TIMEX3 tid="t0" type="TIME" value="2014-08-22" temporalFunction="false" functionInDocument="CREATION_TIME">2014</TIMEX3></DCT>
+
+<TEXT>
+The Black Death was one of the most devastating pandemics in human history, resulting in the deaths of an estimated 75 to 200 million people and peaking in Europe in the years 1346 - 53. Although there were several competing theories as to the etiology of the Black Death, analysis of DNA from victims in northern and southern Europe published in 2010 and 2011 indicates that the pathogen responsible was the Yersinia pestis bacterium, probably causing several forms of plague.
+
+The Black Death is thought to have originated in the arid plains of central Asia, where it then travelled along the Silk Road, <EVENT eid="e1004">reaching</EVENT> the Crimea by <TIMEX3 tid="t1002">1343</TIMEX3>. From there, it was most likely carried by Oriental rat fleas living on the black rats that were regular passengers on merchant ships. Spreading throughout the Mediterranean and Europe, the Black Death is estimated to have killed 30 - 60% of Europe's total population. All in all, the plague reduced the world population from an estimated 450 million down to 350 - 375 million in the 14th century.
+
+The aftermath of the plague created a series of religious, social, and economic upheavals, which had profound effects on the course of European history. It took 150 years for Europe's population to recover. The plague recurred occasionally in Europe until the 19th century.
+
+Chronology.
+
+Origins of the disease.
+
+The plague disease, caused by Yersinia pestis, is enzootic (commonly present) in populations of fleas carried by ground rodents, including marmots, in various areas including Central Asia, Kurdistan, Western Asia, Northern India and Uganda. Nestorian graves dating to 1338 - 9 near Lake Issyk Kul in Kyrgizstan have inscriptions referring to plague and are thought by many epidemiologists to mark the outbreak of the epidemic, from which it could easily have spread to China and India. In October 2010, medical geneticists suggested that all three of the great waves of the plague originated in China. In China, the 13th century Mongol conquest caused a decline in farming and trading. However, economic recovery had been observed at the beginning of the 14th century. In the 1330s a large number of natural disasters and plagues led to widespread famine, starting in 1331, with a deadly plague arriving soon after. The 14th-century plague killed an estimated 25 million Chinese and other Asians during the 15 years before it reached Constantinople in 1347. However, according to George Sussman, the first obvious medical description of plague in China dates to <TIMEX3 tid="t1005">1644</TIMEX3>.
+
+The disease may have travelled along the Silk Road with Mongol armies and traders or it could have come via ship. By the end of 1346, reports of plague had reached the seaports of Europe: "India was depopulated, Tartary, Mesopotamia, Syria, Armenia were covered with dead bodies".
+
+Plague was reportedly first <EVENT eid="e1001">introduced</EVENT> to Europe at the trading city of Caffa in the Crimea in 1347. After a protracted siege, during which the Mongol army under Jani Beg was suffering the disease, the army catapulted the infected corpses over the city walls to infect the inhabitants. The Genoese traders fled, taking the plague by ship into Sicily and the south of Europe, whence it spread north. Whether or not this hypothesis is accurate, it is clear that several existing conditions such as war, famine, and weather contributed to the severity of the Black Death.
+
+European outbreak.
+
+The seventh year after it began, it came to England and first began in the towns and ports joining on the seacoasts, in Dorsetshire, where, as in other counties, it made the country quite void of inhabitants so that there were almost none left alive. ... But at length it came to Gloucester, yea even to Oxford and to London, and finally it spread over all England and so wasted the people that scarce the tenth person of any sort was left alive.
+
+There appear to have been several introductions into Europe. The plague <EVENT eid="e1003">reached</EVENT> Sicily in October 1347, carried by twelve Genoese galleys, and rapidly spread all over the island. Galleys from Caffa reached Genoa and Venice in January 1348, but it was the <EVENT eid="e1006">outbreak</EVENT> in Pisa a few weeks later that was the entry point to northern Italy. Towards the end of January, one of the galleys expelled from Italy arrived in Marseille.
+
+From Italy, the disease <EVENT eid="e1007">spread</EVENT> northwest across Europe, striking France, Spain, Portugal and England by June 1348, then turned and spread east through Germany and Scandinavia from 1348 - 50. It was introduced in Norway in 1349 when a ship landed at Askoy, then spread to Bjorgvin (modern Bergen) and Iceland. Finally it spread to northwestern Russia in 1351. The plague spared some parts of Europe, including the Kingdom of Poland, the majority of the Basque Country and isolated parts of Belgium and the Netherlands.
+
+Middle Eastern outbreak.
+
+The plague struck various countries in the Middle East during the pandemic, leading to serious depopulation and permanent change in both economic and social structures. As it spread to western Europe, the disease entered the region from southern Russia also. By autumn 1347, the plague reached Alexandria in Egypt, probably through the port's trade with Constantinople, and ports on the Black Sea. During 1347, the disease travelled eastward to Gaza, and north along the eastern coast to cities in Lebanon, Syria and Palestine, including Ashkelon, Acre, Jerusalem, Sidon, Damascus, Homs, and Aleppo. In 1348 - 49, the disease reached Antioch. The city's residents fled to the north, most of them dying during the journey, but the infection had been spread to the people of Asia Minor.
+
+Mecca became infected in 1349. During the same year, records show the city of Mawsil (Mosul) suffered a massive epidemic, and the city of Baghdad experienced a second round of the disease. In 1351 Yemen experienced an outbreak of the plague, coinciding with the return of King Mujahid of Yemen from imprisonment in Cairo. His party may have brought the disease with them from Egypt.
+
+</TEXT>
+
+</TimeML>

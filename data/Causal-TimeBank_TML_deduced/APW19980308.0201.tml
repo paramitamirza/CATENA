@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980308.0201</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="TIME" value="1998-03-08T06:26:00">1998-03-08T06:26:00</TIMEX3></DCT>
+<TEXT>
+ ISTANBUL, Turkey ( AP ) _ Some 1,500 ethnic Albanians <EVENT class="OCCURRENCE" eid="e1">marched</EVENT> <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" tid="t2" type="DATE" value="1998-03-08">Sunday</TIMEX3> in downtown Istanbul, <EVENT class="I_ACTION" eid="e3">burning</EVENT> Serbian flags to <EVENT class="I_STATE" eid="e4">protest</EVENT> the <EVENT class="OCCURRENCE" eid="e5">killings</EVENT> of ethnic Albanians by Serb police in southern Serb Kosovo province.
+ The police <EVENT class="I_ACTION" eid="e6">barred</EVENT> the crowd from <EVENT class="OCCURRENCE" eid="e7">reaching</EVENT> the Yugoslavian consulate in downtown Istanbul, but <EVENT class="I_ACTION" eid="e8">allowed</EVENT> them to <EVENT class="STATE" eid="e9">demonstrate</EVENT> on nearby streets.
+ " <EVENT class="ASPECTUAL" eid="e10">Stop</EVENT> the <EVENT class="OCCURRENCE" eid="e11">bloodshed</EVENT> in Kosovo, " the protesters <EVENT class="REPORTING" eid="e12">chanted</EVENT>.
+ Meanwhile in the capital, Ankara, a few hundred ethnic Albanians <EVENT class="OCCURRENCE" eid="e13">laid</EVENT> a black wreath at the gate of Yugoslavian embassy.
+ Ethnic Albanians comprise 90 percent of the population in Kosovo, but Serbs maintain control through a large military and police presence.
+ Serbian police <EVENT class="REPORTING" eid="e14">say</EVENT> they are <EVENT class="I_ACTION" eid="e15">trying</EVENT> to <EVENT class="ASPECTUAL" eid="e16">eliminate</EVENT> the pro-independence Kosovo Liberation Army and <EVENT class="ASPECTUAL" eid="e17">restore</EVENT> order.
+ At least 51 people were <EVENT class="REPORTING" eid="e18">reported</EVENT> <EVENT class="OCCURRENCE" eid="e19">killed</EVENT> in <EVENT class="OCCURRENCE" eid="e20">clashes</EVENT> between Serb police and ethnic Albanians in the troubled region in <TIMEX3 anchorTimeID="t2" functionInDocument="NONE" tid="t21" type="DATE" value="PAST_REF">recent days</TIMEX3>.
+ Turkey, <EVENT class="I_STATE" eid="e22">worried</EVENT> about civil war in Kosovo <EVENT class="ASPECTUAL" eid="e23">spilling</EVENT> to the whole Balkans, <EVENT class="I_ACTION" eid="e24">urged</EVENT> all Balkan states to <EVENT class="OCCURRENCE" eid="e25">sign</EVENT> a joint declaration that the Kosovo crisis be <EVENT class="OCCURRENCE" eid="e26">solved</EVENT> peacefully and without any <EVENT class="OCCURRENCE" eid="e27">change</EVENT> of borders.
+ Turks feel they have special ties to the whole region, which they ruled for hundreds of years during the Ottoman Empire.
+ They also share Islam with the ethnic Albanians.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eventID="e24" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eventID="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei26" eventID="e26" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei27" eventID="e27" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eventID="e20" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eventID="e22" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eventID="e23" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eventID="e9" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="NOUN" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PROGRESSIVE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eventID="e17" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eventID="e16" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eventID="e19" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eventID="e18" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="IS_INCLUDED" relatedToTime="t2" />
+<TLINK eventInstanceID="ei1" lid="l2" relType="SIMULTANEOUS" relatedToEventInstance="ei3" />
+<TLINK eventInstanceID="ei6" lid="l3" relType="SIMULTANEOUS" relatedToEventInstance="ei8" />
+<TLINK eventInstanceID="ei11" lid="l4" relType="IDENTITY" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei12" lid="l5" relType="DURING" relatedToEventInstance="ei4" />
+<TLINK eventInstanceID="ei14" lid="l6" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei16" lid="l7" relType="SIMULTANEOUS" relatedToEventInstance="ei17" />
+<TLINK eventInstanceID="ei18" lid="l8" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei19" lid="l9" relType="IS_INCLUDED" relatedToEventInstance="ei20" />
+<TLINK eventInstanceID="ei20" lid="l10" relType="IS_INCLUDED" relatedToTime="t21" />
+<TLINK eventInstanceID="ei22" lid="l11" relType="INCLUDES" relatedToEventInstance="ei24" />
+<TLINK eventInstanceID="ei26" lid="l12" relType="INCLUDES" relatedToEventInstance="ei27" />
+<TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei24" relatedToEventInstance="ei22" /><TLINK deduced="true" relType="INCLUDES" eventInstanceID="ei20" relatedToEventInstance="ei19" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei3" relatedToTime="t2" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei11" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei17" relatedToEventInstance="ei16" /><TLINK deduced="true" relType="IS_INCLUDED" eventInstanceID="ei19" relatedToTime="t21" /></TimeML>

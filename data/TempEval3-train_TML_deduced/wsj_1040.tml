@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>wsj_1040</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-10-26">10/26/89</TIMEX3></DCT>
+
+<EXTRAINFO>
+WSJ891026-0016 = 891026 891026-0016.
+Dividend News: @ Oneida Ltd. 10/26/89 WALL STREET JOURNAL (J) OCQ DIVIDENDS (DIV)
+</EXTRAINFO>
+
+<TEXT>
+ONEIDA Ltd. <EVENT class="OCCURRENCE" eid="e1" stem="declare">declared</EVENT> a 10% stock dividend, payable <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t16" type="DATE" value="1989-12-15">Dec. 15</TIMEX3> to stock of record <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t17" type="DATE" value="1989-11-17">Nov. 17</TIMEX3>. The Oneida, N.Y., maker of consumer, food-service and industrial products also <EVENT class="OCCURRENCE" eid="e3" stem="declare">declared</EVENT> a quarterly cash dividend of 12 cents a share, with the same payable and record dates. The cash dividend <EVENT class="OCCURRENCE" eid="e4" stem="pay">paid</EVENT> on the common stock also will <EVENT class="OCCURRENCE" eid="e6" stem="apply">apply</EVENT> to the new shares, the company <EVENT class="REPORTING" eid="e7" stem="say">said</EVENT>. The move rewards shareholders and should <EVENT class="OCCURRENCE" eid="e8" stem="improve">improve</EVENT> the stock's liquidity, Oneida <EVENT class="REPORTING" eid="e10" stem="say">said</EVENT>. The company <EVENT class="OCCURRENCE" eid="e11" stem="have">has</EVENT> about 8.8 million shares outstanding. In New York Stock Exchange composite trading <TIMEX3 anchorTimeID="t0" functionInDocument="NONE" temporalFunction="true" tid="t63" type="DATE" value="1989-10-25">yesterday</TIMEX3>, Oneida's shares <EVENT class="OCCURRENCE" eid="e12" stem="close">closed</EVENT> at $18.375 a share, unchanged.
+</TEXT>
+
+<MAKEINSTANCE aspect="NONE" eiid="ei68" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei66" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei71" eventID="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei73" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei69" eventID="e4" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei70" eventID="e6" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei74" eventID="e11" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei72" eventID="e8" modality="should" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei75" eventID="e12" polarity="POS" pos="VERB" tense="PAST" />
+<TLINK eventInstanceID="ei73" lid="l12" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei71" lid="l11" relType="IS_INCLUDED" relatedToTime="t0" />
+<TLINK eventInstanceID="ei75" lid="l1" relType="IS_INCLUDED" relatedToTime="t63" />
+<TLINK eventInstanceID="ei66" lid="l2" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei68" lid="l5" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei69" lid="l6" relType="SIMULTANEOUS" relatedToEventInstance="ei70" />
+<TLINK eventInstanceID="ei74" lid="l7" relType="IS_INCLUDED" relatedToTime="t0" />
+<SLINK eventInstanceID="ei71" lid="l8" relType="EVIDENTIAL" subordinatedEventInstance="ei70" />
+<SLINK eventInstanceID="ei71" lid="l9" relType="EVIDENTIAL" subordinatedEventInstance="ei69" />
+<SLINK eventInstanceID="ei73" lid="l10" relType="EVIDENTIAL" subordinatedEventInstance="ei72" />
+
+<TLINK deduced="true" relType="BEFORE" eventInstanceID="ei68" relatedToEventInstance="ei71" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei68" relatedToEventInstance="ei73" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei68" relatedToEventInstance="ei74" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei66" relatedToEventInstance="ei71" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei66" relatedToEventInstance="ei73" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei66" relatedToEventInstance="ei74" /></TimeML>

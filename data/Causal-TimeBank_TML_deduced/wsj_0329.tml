@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0329</DOCID>
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="1989-11-01">1989-11-01</TIMEX3></DCT>
+<TEXT>
+ Coda Energy Inc. <EVENT class="REPORTING" eid="e1">said</EVENT> it <EVENT class="OCCURRENCE" eid="e2">arranged</EVENT> a $ 50 million credit facility with NCNB Texas National Bank, a unit of NCNB Corp., of Charlotte, N.C.
+ The Dallas oil and gas concern <EVENT class="REPORTING" eid="e3">said</EVENT> that $ 10 million of the facility would be <EVENT class="OCCURRENCE" eid="e4">used</EVENT> to <EVENT class="OCCURRENCE" eid="e5">consolidate</EVENT> the company's $ 8.1 million of existing bank debt, to <EVENT class="OCCURRENCE" eid="e6">repurchase</EVENT> 4 million of its 4.9 million shares outstanding of Series D convertible preferred stock, and to <EVENT class="OCCURRENCE" eid="e7">purchase</EVENT> a 10 % net-profits interest in certain oil and gas properties from one of its existing lenders, National Canada Corp.
+ The remaining $ 40 million can be <EVENT class="OCCURRENCE" eid="e8">used</EVENT> over <TIMEX3 functionInDocument="NONE" tid="t9" type="DURATION" value="P3Y">three years</TIMEX3> for oil and gas acquisitions, the company <EVENT class="REPORTING" eid="e10">said</EVENT>.
+ Ted Eubank, Coda's president, <EVENT class="REPORTING" eid="e11">said</EVENT> the loan carries an interest rate of prime plus one percentage point, with 85 % of the company's net oil and gas revenue <TIMEX3 functionInDocument="NONE" tid="t12" type="SET" value="P1M">each month</TIMEX3> <EVENT class="OCCURRENCE" eid="e13">dedicated</EVENT> to repayment.
+ The company <EVENT class="OCCURRENCE" eid="e14">put</EVENT> up " virtually all " of its oil and gas properties as collateral, he <EVENT class="REPORTING" eid="e15">said</EVENT>.
+</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eventID="e11" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eventID="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eventID="e13" polarity="POS" pos="VERB" tense="PASTPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eventID="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eventID="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eventID="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eventID="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2" eventID="e2" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei5" eventID="e5" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eventID="e4" modality="would" polarity="POS" pos="VERB" tense="NONE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eventID="e7" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eventID="e6" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eventID="e8" modality="can" polarity="POS" pos="VERB" tense="NONE" />
+<TLINK eventInstanceID="ei1" lid="l1" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei3" lid="l2" relType="IDENTITY" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei4" lid="l3" relType="IS_INCLUDED" relatedToTime="t9" />
+<TLINK eventInstanceID="ei5" lid="l4" relType="AFTER" relatedToEventInstance="ei2" />
+<TLINK eventInstanceID="ei6" lid="l5" relType="SIMULTANEOUS" relatedToEventInstance="ei5" />
+<TLINK eventInstanceID="ei7" lid="l6" relType="SIMULTANEOUS" relatedToEventInstance="ei6" />
+<TLINK eventInstanceID="ei8" lid="l7" relType="IS_INCLUDED" relatedToTime="t9" />
+<TLINK eventInstanceID="ei10" lid="l8" relType="IDENTITY" relatedToEventInstance="ei1" />
+<TLINK eventInstanceID="ei11" lid="l9" relType="BEFORE" relatedToTime="t0" />
+<TLINK eventInstanceID="ei13" lid="l10" relType="IS_INCLUDED" relatedToTime="t12" />
+<TLINK eventInstanceID="ei15" lid="l11" relType="IDENTITY" relatedToEventInstance="ei11" />
+<TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei11" relatedToEventInstance="ei15" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei10" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei10" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei15" relatedToTime="t0" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei1" relatedToEventInstance="ei3" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei3" relatedToTime="t0" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei5" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="BEFORE" eventInstanceID="ei2" relatedToEventInstance="ei6" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei7" /><TLINK deduced="true" relType="IDENTITY" eventInstanceID="ei5" relatedToEventInstance="ei6" /></TimeML>
