@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,9 +35,20 @@ import catena.parser.entities.TimeMLDoc;
 
 public class TimeMLParser {
 	
+	private String timeMLPath;
 	private EntityEnum.Language language;
 	
 	public TimeMLParser(EntityEnum.Language lang) {
+		this.setLanguage(lang);
+	}
+	
+	public TimeMLParser(String filepath) {
+		this.setTimeMLPath(filepath);
+		this.setLanguage(EntityEnum.Language.EN);
+	}
+	
+	public TimeMLParser(String filepath, EntityEnum.Language lang) {
+		this.setTimeMLPath(filepath);
 		this.setLanguage(lang);
 	}
 
@@ -46,6 +58,14 @@ public class TimeMLParser {
 
 	public void setLanguage(EntityEnum.Language language) {
 		this.language = language;
+	}
+
+	public String getTimeMLPath() {
+		return timeMLPath;
+	}
+
+	public void setTimeMLPath(String timeMLPath) {
+		this.timeMLPath = timeMLPath;
 	}
 	
 	public Document getTimeML(String filepath) throws ParserConfigurationException, SAXException, IOException {
@@ -78,6 +98,30 @@ public class TimeMLParser {
 			}
 		}
 		return arrEvents;
+	}
+	
+	public Map<String, String> getEventTenseAspectPolarity(TimeMLDoc tmlDoc) {
+		Map<String, String> mapInstances = new HashMap<String, String>();
+		NodeList instances = tmlDoc.getDoc().getElementsByTagName("MAKEINSTANCE");
+		String eid = "", tense = "", aspect = "", polarity = "";
+		for (int index = 0; index < instances.getLength(); index++) {
+			Node event = instances.item(index);
+			NamedNodeMap attrs = event.getAttributes();			
+			for (int i = 0; i < attrs.getLength(); i++) {
+				if (attrs.item(i).getNodeName().equals("eventID")) {
+					eid = attrs.item(i).getNodeValue();
+				} else if (attrs.item(i).getNodeName().equals("tense")) {
+					tense = attrs.item(i).getNodeValue();
+				} else if (attrs.item(i).getNodeName().equals("aspect")) {
+					aspect = attrs.item(i).getNodeValue();
+				} else if (attrs.item(i).getNodeName().equals("polarity")) {
+					polarity = attrs.item(i).getNodeValue();
+				}  
+				if (!eid.equals(""))
+					mapInstances.put(eid, tense + "+" + aspect + "+" + polarity);
+			}
+		}
+		return mapInstances;
 	}
 	
 	public static String nodeToString(Node node) throws TransformerFactoryConfigurationError, TransformerException 
