@@ -257,31 +257,61 @@ public class TimeMLToColumns {
 		out.close();
 	}
 	
+	public Map<String, List<String>> getDependencies(List<String> timeMLCols, List<String> mateToolsCols) {
+		Map<String, List<String>> dependencies = new HashMap<String, List<String>>();
+		
+		int sentIdx;
+		String gov, dep;
+		for (int i=0; i<timeMLCols.size(); i++) {
+			String[] tmlcols = timeMLCols.get(i).split("\t");
+			String[] mateCols = mateToolsCols.get(i).split("\t");
+			
+			if (!timeMLCols.get(i).equals("")) {
+				if (tmlcols[2].equals("O")) sentIdx = 0;
+				else sentIdx = Integer.parseInt(tmlcols[2]);
+				
+				if (sentIdx > 0) {
+					gov = "t" + (Integer.parseInt(mateCols[9]) + startOfSentences.get(sentIdx) - 1);
+					dep = tmlcols[1];
+					if (!dependencies.containsKey(gov))
+						dependencies.put(gov, new ArrayList<String>());
+					dependencies.get(gov).add(dep + ":" + mateCols[11]);
+				}		
+			} 
+		}
+		
+		for (String key : dependencies.keySet()) {
+			System.out.print(key + ": ");
+			for (String s : dependencies.get(key)) System.out.print(s + " ");
+			System.out.println();
+		}
+		
+		return dependencies;
+	}
+	
 	public List<String> mergeColumns(List<String> timeMLCols, List<String> textProCols, List<String> mateToolsCols) {
 		List<String> columns = new ArrayList<String>();
+		
+		Map<String, List<String>> dependencies = getDependencies(timeMLCols, mateToolsCols);
 		
 		for (int i=0; i<timeMLCols.size(); i++) {
 			String[] tmlcols = timeMLCols.get(i).split("\t");
 			String[] txpCols = textProCols.get(i).split("\t");
 			String[] mateCols = mateToolsCols.get(i).split("\t");
 			
-			int sentIdx;
 			if (!timeMLCols.get(i).equals("")) {
-				if (tmlcols[2].equals("O")) sentIdx = 0;
-				else sentIdx = Integer.parseInt(tmlcols[2]);
-				
-				String depRel = "O";
-				if (sentIdx > 0) {
-					int dependent = Integer.parseInt(mateCols[9]) + startOfSentences.get(sentIdx);
-					depRel = "t" + dependent + ":" + mateCols[11];
-				}
 			
+				String depRel = "O";
+				if (dependencies.containsKey(tmlcols[1])) {
+					depRel = String.join("||", dependencies.get(tmlcols[1]));
+				}
+				
 				columns.add(timeMLCols.get(i) 
 						+ "\t" + txpCols[1]		// TextPro - PoS tag
 						+ "\t" + txpCols[2]		// TextPro - Chunk (shallow parsing)
 						+ "\t" + mateCols[3]	// Mate tools - lemma		
 						+ "\t" + mateCols[5]	// Mate tools - PoS tag
-						+ "\t" + depRel			// Mate tools - PoS tag
+						+ "\t" + depRel			// Mate tools - dependency relations
 						);		
 			} else {
 				columns.add("");
@@ -294,25 +324,23 @@ public class TimeMLToColumns {
 	public List<String> mergeColumns(List<String> timeMLCols, List<String> mateToolsCols) {
 		List<String> columns = new ArrayList<String>();
 		
+		Map<String, List<String>> dependencies = getDependencies(timeMLCols, mateToolsCols);
+		
 		for (int i=0; i<timeMLCols.size(); i++) {
 			String[] tmlcols = timeMLCols.get(i).split("\t");
 			String[] mateCols = mateToolsCols.get(i).split("\t");
 			
-			int sentIdx;
 			if (!timeMLCols.get(i).equals("")) {
-				if (tmlcols[2].equals("O")) sentIdx = 0;
-				else sentIdx = Integer.parseInt(tmlcols[2]);
 				
 				String depRel = "O";
-				if (sentIdx > 0) {
-					int dependent = Integer.parseInt(mateCols[9]) + startOfSentences.get(sentIdx);
-					depRel = "t" + dependent + ":" + mateCols[11];
+				if (dependencies.containsKey(tmlcols[1])) {
+					depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
-			
+				
 				columns.add(timeMLCols.get(i)
 						+ "\t" + mateCols[3]	// Mate tools - lemma		
 						+ "\t" + mateCols[5]	// Mate tools - PoS tag
-						+ "\t" + depRel			// Mate tools - PoS tag
+						+ "\t" + depRel			// Mate tools - dependency relations
 						);		
 			} else {
 				columns.add("");
@@ -397,7 +425,8 @@ public class TimeMLToColumns {
 		TimeMLToColumns tmlToCol = new TimeMLToColumns();		
 		
 		try {					
-			List<String> columns = tmlToCol.convert("./data/example_TML/wsj_1014.tml", true);
+			List<String> columns = tmlToCol.convert("./data/example_TML/wsj_1014.tml", false);
+			for (String s : columns) System.out.println(s);
 			System.out.println(columns.get(0).split("\t").length);
 			
 		} catch (Exception e) {

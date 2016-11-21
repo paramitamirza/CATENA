@@ -80,7 +80,7 @@ public class MateToolsParser {
 		    result.add(next);
 		}
 		
-		Files.delete(new File(inputFile + ".dep").toPath());
+//		Files.delete(new File(inputFile + ".dep").toPath());
 		
 		return result;
 	}
