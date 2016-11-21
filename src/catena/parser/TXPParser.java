@@ -14,8 +14,8 @@ import catena.parser.entities.*;
 public class TXPParser {
 	
 	public static enum Field {
-		token, token_id, sent_id, pos, lemma, 
-		deps, tmx_id, tmx_type, tmx_value, ner, ev_class, 
+		token, token_id, sent_id, pos, lemma, mate_pos,
+		deps, mate_deps, tmx_id, tmx_type, tmx_value, ner, ev_class, 
 		ev_id, role1, role2, role3, is_arg_pred, has_semrole, 
 		chunk, main_verb, connective, morpho, supersense, ss_ner,
 		tense_aspect_pol, tense, aspect, pol, coref_event, 

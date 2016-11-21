@@ -5,16 +5,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
 import catena.parser.entities.EntityEnum;
-
-import is2.lemmatizer.*;
-import is2.tag.*;
-import is2.parser.*;
 
 public class MateToolsParser {
 
@@ -51,29 +48,41 @@ public class MateToolsParser {
 		this.language = language;
 	}
 	
-	public void run(String inputFile) throws Exception {
-		run (inputFile, inputFile + ".dep");
-	}
-	
-	public void run(String inputFile, String outputFile) throws Exception {
+	public void run(File inputFile, File outputFile) throws Exception {
 		
 		String[] lemmatizerArgs = {"-model", this.getMateToolsPath() + "models/lemmatizer-eng-4M-v36.mdl",
-				"-test", inputFile,
+				"-test", inputFile.getPath(),
 				"-out", "./data/temp"};
-		Lemmatizer.main(lemmatizerArgs);
+		is2.lemmatizer.Lemmatizer.main(lemmatizerArgs);
 		
 		String[] taggerArgs = {"-model", this.getMateToolsPath() + "models/tagger-eng-4M-v36.mdl",
 				"-test", "./data/temp",
 				"-out", "./data/temp2"};
-		Tagger.main(taggerArgs);
+		is2.tag.Tagger.main(taggerArgs);
 		
 		String[] parserArgs = {"-model", this.getMateToolsPath() + "models/parser-eng-12M-v36.mdl",
 				"-test", "./data/temp2",
-				"-out", outputFile};
-		Parser.main(parserArgs);
+				"-out", outputFile.getPath()};
+		is2.parser.Parser.main(parserArgs);
 		
 		Files.delete(new File("./data/temp").toPath());
 		Files.delete(new File("./data/temp2").toPath());
+	}
+	
+	public List<String> run(File inputFile) throws Exception {
+		List<String> result = new ArrayList<String>();
+		
+		run (inputFile, new File(inputFile.getPath() + ".dep"));
+		
+		Scanner fileScanner = new Scanner(new File(inputFile.getPath() + ".dep"));
+		while(fileScanner.hasNextLine()) {
+		    String next = fileScanner.nextLine();
+		    result.add(next);
+		}
+		
+		Files.delete(new File(inputFile + ".dep").toPath());
+		
+		return result;
 	}
 	
 	public static void main(String[] args) {
@@ -81,13 +90,11 @@ public class MateToolsParser {
 		try {
 			
 			MateToolsParser mateTools = new MateToolsParser("./tools/MateTools/");
-			mateTools.run("./data/example_CoNLL/wsj_1014.conll");
+			List<String> mateToolsColumns = mateTools.run(new File("./data/example_CoNLL/wsj_1014.conll"));
+			for (String s : mateToolsColumns) System.out.println(s);
 			
-		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			// Auto-generated catch block
 			e.printStackTrace();
 		}
 		

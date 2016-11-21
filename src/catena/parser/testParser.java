@@ -14,7 +14,7 @@ public class testParser {
 				Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
 				Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
 				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
-				Field.main_verb, Field.connective, Field.morpho, 
+				Field.main_verb, Field.connective, Field.morpho,
 				Field.tense_aspect_pol, Field.coref_event, Field.tlink};
 		TXPParser parser = new TXPParser(EntityEnum.Language.EN, fields);
 		

@@ -22,6 +22,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -32,6 +33,7 @@ import catena.parser.entities.Doc;
 import catena.parser.entities.EntityEnum;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.TimeMLDoc;
+import catena.parser.entities.Timex;
 
 public class TimeMLParser {
 	
@@ -85,19 +87,15 @@ public class TimeMLParser {
 		return d;
 	}
 	
-	public List<String> getEvents(TimeMLDoc tmlDoc) {
-		List<String> arrEvents = new ArrayList<String>();
+	public Map<String, String> getEvents(TimeMLDoc tmlDoc) {
+		Map<String, String> mapEvents = new HashMap<String, String>();
 		NodeList events = tmlDoc.getDoc().getElementsByTagName("EVENT");
 		for (int index = 0; index < events.getLength(); index++) {
 			Node event = events.item(index);
-			NamedNodeMap attrs = event.getAttributes();			
-			for (int i = 0; i < attrs.getLength(); i++) {
-				if (attrs.item(i).getNodeName().equals("eid")) {
-					arrEvents.add(attrs.item(i).getNodeValue());
-				}
-			}
+			Element e = (Element)event;
+			mapEvents.put(e.getAttribute("eid"), e.getAttribute("class"));
 		}
-		return arrEvents;
+		return mapEvents;
 	}
 	
 	public Map<String, String> getEventTenseAspectPolarity(TimeMLDoc tmlDoc) {
@@ -105,21 +103,14 @@ public class TimeMLParser {
 		NodeList instances = tmlDoc.getDoc().getElementsByTagName("MAKEINSTANCE");
 		String eid = "", tense = "", aspect = "", polarity = "";
 		for (int index = 0; index < instances.getLength(); index++) {
-			Node event = instances.item(index);
-			NamedNodeMap attrs = event.getAttributes();			
-			for (int i = 0; i < attrs.getLength(); i++) {
-				if (attrs.item(i).getNodeName().equals("eventID")) {
-					eid = attrs.item(i).getNodeValue();
-				} else if (attrs.item(i).getNodeName().equals("tense")) {
-					tense = attrs.item(i).getNodeValue();
-				} else if (attrs.item(i).getNodeName().equals("aspect")) {
-					aspect = attrs.item(i).getNodeValue();
-				} else if (attrs.item(i).getNodeName().equals("polarity")) {
-					polarity = attrs.item(i).getNodeValue();
-				}  
-				if (!eid.equals(""))
-					mapInstances.put(eid, tense + "+" + aspect + "+" + polarity);
-			}
+			Node event = instances.item(index);			
+			Element e = (Element)event;
+			eid = e.getAttribute("eventID");
+			tense = e.getAttribute("tense");
+			aspect = e.getAttribute("aspect");
+			polarity = e.getAttribute("polarity");
+			if (!eid.equals(""))
+				mapInstances.put(eid, tense + "+" + aspect + "+" + polarity);
 		}
 		return mapInstances;
 	}
@@ -149,6 +140,20 @@ public class TimeMLParser {
 		return text.getTextContent();
 	}
 	
+	public Timex getDCT(TimeMLDoc tmlDoc) {
+		Timex dct = new Timex("tmx0", "", "");
+		
+		Node nodeDct = tmlDoc.getDoc().getElementsByTagName("DCT").item(0);
+		Node nodeTmx = nodeDct.getFirstChild();
+		Element e = (Element)nodeTmx;
+		String type = e.getAttribute("type");
+		String value = e.getAttribute("value");
+		dct.setAttributes(type, value);
+		dct.setDct(true);
+		
+		return dct;
+	}
+	
 	public void setTlinks(TimeMLDoc tmlDoc, Doc d) {
 		NodeList tlinks = tmlDoc.getDoc().getElementsByTagName("TLINK");
 		ArrayList<TemporalRelation> tlinkArr = d.getTlinks();
@@ -160,7 +165,7 @@ public class TimeMLParser {
 			Node tlink = tlinks.item(index);
 			NamedNodeMap attrs = tlink.getAttributes();			
 			for (int i = 0; i < attrs.getLength(); i++) {
-				switch(attrs.item(i).getNodeName()) {
+				switch (attrs.item(i).getNodeName()) {
 					case "eventInstanceID": 
 						source = attrs.item(i).getNodeValue();
 						sourceType = "Event";
@@ -261,24 +266,37 @@ public class TimeMLParser {
 		try {
 			TimeMLDoc tmlDoc = new TimeMLDoc("./data/example_TML/wsj_1014.tml");
 			
-//			//List all events
+//			// List all events
 //			List<String> events = tmlParser.getEvents(tmlDoc);
 //			for (String s : events)
 //				System.out.println(s);
 			
-			//Text content
+			// Text content -- with tags
 			System.out.println(tmlParser.getText(tmlDoc));
 			
-		} catch (ParserConfigurationException | SAXException | IOException e) {
-			// TODO Auto-generated catch block
+			// Text content
+			System.out.println(tmlParser.getTextOnly(tmlDoc));
+			
+			// Events
+			Map<String, String> events = tmlParser.getEvents(tmlDoc);
+			for (String key : events.keySet()) {
+				System.out.println(key + " : " + events.get(key));
+			}
+			
+			// Events -- tense, aspect, polarity
+			Map<String, String> eventTenseAspectPol = tmlParser.getEventTenseAspectPolarity(tmlDoc);
+			for (String key : eventTenseAspectPol.keySet()) {
+				System.out.println(key + " : " + eventTenseAspectPol.get(key));
+			}
+			
+			// DCT
+			Timex dct = tmlParser.getDCT(tmlDoc);
+			System.out.println("DCT: " + dct.getID() + " - " + dct.getType() + " - " + dct.getValue());
+			
+		} catch (ParserConfigurationException | SAXException | IOException | TransformerFactoryConfigurationError | TransformerException e) {
+			// Auto-generated catch block
 			e.printStackTrace();
-		} catch (TransformerFactoryConfigurationError e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (TransformerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		} 
 		
 	}
 

@@ -60,29 +60,40 @@ public class TextProParser {
 		this.language = language;
 	}
 	
-	public void run(String[] annotations) throws IOException, InterruptedException {
+	public void run(String[] annotations, boolean tokenized) throws IOException, InterruptedException {
 		List<String> annotationList = Arrays.asList(annotations);
-//		ProcessBuilder pb = new ProcessBuilder("/bin/sh",
-		ProcessBuilder pb = new ProcessBuilder("C:\\cygwin64\\bin\\bash.exe",
-				"textpro.sh", "-v", 
-				"-l", getLanguage(), 
-				"-c", String.join("+", annotationList), 
-//				"-n", outputFilePath,
-				"-y",
-				"temp");
+		ProcessBuilder pb;
+		if (tokenized) {
+			pb = new ProcessBuilder("/bin/sh",
+					"textpro.sh", "-v", 
+					"-l", getLanguage(), 
+					"-c", String.join("+", annotationList), 
+	//				"-n", outputFilePath,
+					"-d", "tokenization+sentence",
+					"-y",
+					"temp");
+		} else {
+			pb = new ProcessBuilder("/bin/sh",
+					"textpro.sh", "-v", 
+					"-l", getLanguage(), 
+					"-c", String.join("+", annotationList), 
+	//				"-n", outputFilePath,
+					"-y",
+					"temp");
+		}
 		Map<String, String> env = pb.environment();
 		pb.directory(new File(getTextProPath()));
 		Process p = pb.start();
 		p.waitFor();
 	}
 	
-	public String run(String[] annotations, String inputText) throws IOException, InterruptedException {
+	public String run(String[] annotations, String inputText, boolean tokenized) throws IOException, InterruptedException {
 		FileWriter fileStream = new FileWriter(new File(getTextProPath() + "temp"));
 		BufferedWriter out = new BufferedWriter(fileStream);
 		out.write(inputText);
 		out.close();
 		
-		run(annotations);
+		run(annotations, tokenized);
 		
 		StringBuilder sb = new StringBuilder();
 		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
@@ -99,12 +110,11 @@ public class TextProParser {
 		return sb.toString();
 	}
 	
-	public void run(String[] annotations, File inputFile, File outputFile) throws IOException, InterruptedException {
-		
+	public void run(String[] annotations, File inputFile, File outputFile, boolean tokenized) throws IOException, InterruptedException {
 		
 		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
-		run(annotations);
+		run(annotations, tokenized);
 		
 		//Copy the output file as it is
 //		Files.copy(new File(getTextProPath() + "temp.txp").toPath(), new File(outputFilePath).toPath(), StandardCopyOption.REPLACE_EXISTING);
@@ -124,21 +134,40 @@ public class TextProParser {
 		out.close();
 	}
 	
+	public List<String> run(String[] annotations, File inputFile, boolean tokenized) throws IOException, InterruptedException {
+		List<String> result = new ArrayList<String>();
+		
+		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
+		
+		run(annotations, tokenized);
+		
+		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		fileScanner.nextLine();
+		while(fileScanner.hasNextLine()) {
+		    String next = fileScanner.nextLine();
+		    result.add(next);
+		}
+		
+		return result;
+	}
+	
 	public static void main(String[] args) {
 		
 		try {
 			TextProParser textpro = new TextProParser("./tools/TextPro2.0/");
 			String[] annotations = {"token", "pos", "chunk"};
-			textpro.run(annotations, new File("./data/sample.txt"), new File("./data/sample.txt.txp"));
 			
-			String result = textpro.run(annotations, "Cat is angry.");
+			textpro.run(annotations, new File("./data/example_TXP/sample.txt"), new File("./data/example_TXP/sample.txt.txp"), false);
+			textpro.run(annotations, new File("./data/example_TXP/sample_tokenized.txt"), new File("./data/example_TXP/sample_tokenized.txt.txp"), true);
+			
+			String result = textpro.run(annotations, "Cat is angry.", false);
 			System.out.println(result);
 			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+		} catch (IOException | InterruptedException e) {
+			// Auto-generated catch block
 			e.printStackTrace();
 		} 
 		
