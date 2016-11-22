@@ -118,6 +118,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 			List<String> ttPerFile = getTimexTimexTlinksPerFile(doc, goldCandidate);
 			tt.addAll(ttPerFile);
 			
+			// Evaluate the results...
 			PairEvaluator pe = new PairEvaluator(ttPerFile);
 			pe.printIncorrectAndSentence(doc);
 		}		
@@ -126,14 +127,17 @@ public class TestTimexTimexRelationRuleTempEval3 {
 
 	public static void main(String [] args) throws Exception {
 		
+		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns();
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
+		// Apply timex-timex rules to the TimeML (.tml) files...
 		String tmlDirpath = "./data/TempEval3-eval_TML/";
 		boolean goldCandidate = false;
 		TestTimexTimexRelationRuleTempEval3 test = new TestTimexTimexRelationRuleTempEval3();
 		List<String> ttResult = test.getTimexTimexTlinks(tmlDirpath, tmlToCol, colParser, goldCandidate);
 
+		// Evaluate the results...
 		PairEvaluator pe = new PairEvaluator(ttResult);
 		pe.evaluatePerLabel(); 
 		
