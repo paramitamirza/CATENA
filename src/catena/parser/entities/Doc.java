@@ -21,6 +21,7 @@ public class Doc {
 	private Map<String, String> instances;
 	private Map<String, String> instancesInv;
 	private Map<String, String> tlinkTypes;
+	private ArrayList<TemporalRelation> candidateTlinks;
 	
 	private int tokIdx;
 	private int sentIdx;
@@ -43,6 +44,7 @@ public class Doc {
 		setInstances(new HashMap<String, String>());
 		setInstancesInv(new HashMap<String, String>());
 		setTlinkTypes(new HashMap<String, String>());
+		setCandidateTlinks(new ArrayList<TemporalRelation>());
 	}
 	
 	public Doc(EntityEnum.Language lang) {
@@ -62,6 +64,7 @@ public class Doc {
 		setInstances(new HashMap<String, String>());
 		setInstancesInv(new HashMap<String, String>());
 		setTlinkTypes(new HashMap<String, String>());
+		setCandidateTlinks(new ArrayList<TemporalRelation>());
 	}
 	
 	public Doc(EntityEnum.Language lang, String filename) {
@@ -82,6 +85,7 @@ public class Doc {
 		setInstances(new HashMap<String, String>());
 		setInstancesInv(new HashMap<String, String>());
 		setTlinkTypes(new HashMap<String, String>());
+		setCandidateTlinks(new ArrayList<TemporalRelation>());
 	}
 
 	public String getFilename() {
@@ -226,5 +230,13 @@ public class Doc {
 
 	public void setTlinkTypes(Map<String, String> tlinkTypes) {
 		this.tlinkTypes = tlinkTypes;
+	}
+
+	public ArrayList<TemporalRelation> getCandidateTlinks() {
+		return candidateTlinks;
+	}
+
+	public void setCandidateTlinks(ArrayList<TemporalRelation> candidateTlinks) {
+		this.candidateTlinks = candidateTlinks;
 	}
 }

@@ -10,6 +10,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
 import catena.parser.ColumnParser.Field;
 import catena.parser.entities.*;
 
@@ -45,7 +49,7 @@ public class ColumnParser {
 				Field.ev_id, Field.ev_class, Field.tense_aspect_pol,
 				Field.tmx_id, Field.tmx_type, Field.tmx_value,
 				Field.tsignal, Field.csignal,
-				Field.pos, Field.chunk,
+//				Field.pos, Field.chunk,
 				Field.mate_lemma, Field.mate_pos, Field.deps, Field.main_verb};
 		this.fields = fields;
 	}
@@ -53,6 +57,62 @@ public class ColumnParser {
 	public ColumnParser(EntityEnum.Language lang, Field[] fields) {
 		this.language = lang;
 		this.fields = fields;
+	}
+	
+	private static String getTlinkType(String sourceId, String targetId, Doc doc) {
+		if (doc.getTlinkTypes().containsKey(sourceId + "," + targetId)) {
+			return doc.getTlinkTypes().get(sourceId + "," + targetId);
+		} 
+		return "NONE";
+	}
+	
+	public static void setCandidateTlinks(Doc doc) {
+		ArrayList<TemporalRelation> tlinkArr = doc.getCandidateTlinks();
+		
+		Timex dct = doc.getDct();
+		String mainEid = "", mainEType = "";
+		for (String sid : doc.getSentenceArr()) {
+			Sentence sent = doc.getSentences().get(sid);
+			for (int i = 0; i < sent.getEntityArr().size(); i ++) {
+				String eid = sent.getEntityArr().get(i);
+				Entity e = doc.getEntities().get(eid);
+				String eType = "Event";
+				if (e instanceof Timex) eType = "Timex";
+						
+				// TLINK: (entity, DCT)
+				TemporalRelation tl = new TemporalRelation(eid, dct.getID());
+				tl.setSourceType(eType); tl.setTargetType("Timex");
+				tl.setRelType(getTlinkType(eid, dct.getID(), doc));
+				tlinkArr.add(tl);
+				
+				//TLINKs between entities in the same sentence
+				for (int j = i+1; j < sent.getEntityArr().size(); j ++) {
+					String eeid = sent.getEntityArr().get(j);
+					Entity ee = doc.getEntities().get(eid);
+					String eeType = "Event";
+					if (ee instanceof Timex) eeType = "Timex";
+					
+					TemporalRelation tll = new TemporalRelation(eid, eeid);
+					tll.setSourceType(eType); tll.setTargetType(eeType);
+					tll.setRelType(getTlinkType(eid, eeid, doc));
+					tlinkArr.add(tll);
+				}
+				
+				//TLINK with the main event in previous sentence
+				if (!mainEid.equals("")) {
+					Token tok = doc.getTokens().get(e.getStartTokID());
+					if (tok.isMainVerb()) {
+						TemporalRelation tll = new TemporalRelation(eid, mainEid);
+						tll.setSourceType(eType); tll.setTargetType(mainEType);
+						tll.setRelType(getTlinkType(eid, mainEid, doc));
+						tlinkArr.add(tll);
+						
+						mainEid = eid;
+						mainEType = eType;
+					}
+				}
+			}
+		}
 	}
 	
 	public Doc parseDocument(File columnFile) throws IOException {
@@ -443,10 +503,16 @@ public class ColumnParser {
 			            	if (tlink_str.length == 3) {
 			            		TemporalRelation tlink = new TemporalRelation(tlink_str[0], tlink_str[1]);
 			            		tlink.setRelType(tlink_str[2]);
-			            		if (!doc.getTlinks().contains(tlink)) {
-			            			doc.getTlinks().add(tlink);
+			            		
+			            		// deprecated! put tlinks into candidate array instead of gold array
+//			            		if (!doc.getTlinks().contains(tlink)) {
+//			            			doc.getTlinks().add(tlink);
+//			            		}
+//			            		doc.getTlinkTypes().put(tlink_str[0]+","+tlink_str[1], tlink_str[2]);
+			            		
+			            		if (!doc.getCandidateTlinks().contains(tlink)) {
+			            			doc.getCandidateTlinks().add(tlink);
 			            		}
-			            		doc.getTlinkTypes().put(tlink_str[0]+","+tlink_str[1], tlink_str[2]);
 			            	}
 			            }
 					}
@@ -539,6 +605,13 @@ public class ColumnParser {
 					"\t" + tlink.getRelType());
 		}
 		
+		//array of candidate-TLINKs
+		System.out.println("*** Candidate-TLINKs - TLINK per line ***");
+		for (TemporalRelation tlink : doc.getCandidateTlinks()) {
+			System.out.println(tlink.getSourceID() + "\t" + tlink.getTargetID() + 
+					"\t" + tlink.getRelType());
+		}
+		
 		System.out.println();
 	}
 	
@@ -555,9 +628,13 @@ public class ColumnParser {
 			ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
 			
 			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"));
+			
+			//TimeML instances and links (parsed direcly from TimeML format)
+			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc);
+			
 			colParser.printParseResult(doc);
 						
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -565,12 +642,15 @@ public class ColumnParser {
 		// Parse a list of string in column format (directly converted from a TimeML document)
 		try {
 			TimeMLToColumns tmlToCol = new TimeMLToColumns();
-			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
+			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
 			ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN);
 			Doc doc2 = colParser2.parseLines(columns);
 			
 			//TimeML instances and links (parsed direcly from TimeML format)
 			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc2);
+			
+			//Add the TLINK candidates
+			setCandidateTlinks(doc2);
 			
 			colParser2.printParseResult(doc2);
 			

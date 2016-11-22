@@ -45,7 +45,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 							new TimexTimexRelationRule(((Timex)doc.getEntities().get(entArr[i])), 
 							((Timex)doc.getEntities().get(entArr[j])), doc.getDct(), false);
 					if (!timextimex.getRelType().equals("O")) {
-						pair = ((String) entArr[i]) + "-" + ((String) entArr[j]);
+						pair = ((String) entArr[i]) + "," + ((String) entArr[j]);
 						ttlinks.put(pair, timextimex.getRelType());
 					}
 				}
@@ -54,7 +54,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		return ttlinks;
 	}
 	
-	public List<String> getTimexTimexTlinksPerFile(Doc doc) throws Exception {
+	public List<String> getTimexTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
 		List<String> tt = new ArrayList<String>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -63,7 +63,11 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		//Determine the relation type of every timex-timex pair in the document via rules 
 		Map<String,String> ttlinks = getTimexTimexRuleRelation(doc);
 		
-		for (TemporalRelation tlink : doc.getTlinks()) {	//for every TLINK in TML file: gold annotated pairs
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+		
+		for (TemporalRelation tlink : candidateTlinks) {
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
 					&& doc.getEntities().containsKey(tlink.getSourceID())
 					&& doc.getEntities().containsKey(tlink.getTargetID())
@@ -75,8 +79,8 @@ public class TestTimexTimexRelationRuleTempEval3 {
 				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
 				
 				if (fv.getPairType().equals(PairType.timex_timex)) {
-					String st = tlink.getSourceID() + "-" + tlink.getTargetID();
-					String ts = tlink.getTargetID() + "-" + tlink.getSourceID();
+					String st = tlink.getSourceID() + "," + tlink.getTargetID();
+					String ts = tlink.getTargetID() + "," + tlink.getSourceID();
 					if (ttlinks.containsKey(st)) {
 						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
 								tlink.getRelType() + "\t" + ttlinks.get(st));
@@ -94,7 +98,8 @@ public class TestTimexTimexRelationRuleTempEval3 {
 	}
 	
 	public List<String> getTimexTimexTlinks(String tmlDirpath, 
-			TimeMLToColumns tmlToCol, ColumnParser colParser) throws Exception {
+			TimeMLToColumns tmlToCol, ColumnParser colParser, 
+			boolean goldCandidate) throws Exception {
 		
 		List<String> tt = new ArrayList<String>();
 		
@@ -103,11 +108,14 @@ public class TestTimexTimexRelationRuleTempEval3 {
 			
 			System.out.println("Processing " + tmlFile.getPath());
 			
-			List<String> columns = tmlToCol.convert(tmlFile, true);
+			// File pre-processing...
+			List<String> columns = tmlToCol.convert(tmlFile, false);
 			Doc doc = colParser.parseLines(columns);
 			TimeMLParser.parseTimeML(tmlFile, doc);
+			ColumnParser.setCandidateTlinks(doc);
 			
-			List<String> ttPerFile = getTimexTimexTlinksPerFile(doc);
+			// Applying rules...
+			List<String> ttPerFile = getTimexTimexTlinksPerFile(doc, goldCandidate);
 			tt.addAll(ttPerFile);
 			
 			PairEvaluator pe = new PairEvaluator(ttPerFile);
@@ -122,8 +130,9 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		String tmlDirpath = "./data/TempEval3-eval_TML/";
+		boolean goldCandidate = false;
 		TestTimexTimexRelationRuleTempEval3 test = new TestTimexTimexRelationRuleTempEval3();
-		List<String> ttResult = test.getTimexTimexTlinks(tmlDirpath, tmlToCol, colParser);
+		List<String> ttResult = test.getTimexTimexTlinks(tmlDirpath, tmlToCol, colParser, goldCandidate);
 
 		PairEvaluator pe = new PairEvaluator(ttResult);
 		pe.evaluatePerLabel(); 

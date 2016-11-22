@@ -211,6 +211,9 @@ public class TimeMLParser {
 			tl.setRelType(relType);
 			tl.setDeduced(deduced);
 			tlinkArr.add(tl);
+			
+			d.getTlinkTypes().put(source+","+target, relType);
+			d.getTlinkTypes().put(target+","+source, TemporalRelation.getInverseRelation(relType));
 		}
 	}
 	

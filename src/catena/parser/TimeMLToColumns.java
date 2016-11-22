@@ -492,7 +492,7 @@ public class TimeMLToColumns {
 		TimeMLToColumns tmlToCol = new TimeMLToColumns();		
 		
 		try {					
-			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
+			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
 			for (String s : columns) System.out.println(s);
 			System.out.println(columns.get(0).split("\t").length);
 			

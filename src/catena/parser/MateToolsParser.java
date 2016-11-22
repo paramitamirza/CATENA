@@ -94,6 +94,7 @@ public class MateToolsParser {
 		    String next = fileScanner.nextLine();
 		    result.add(next);
 		}
+		fileScanner.close();
 		
 		Files.delete(new File(inputFile + ".dep").toPath());
 		
