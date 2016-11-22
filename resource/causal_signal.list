@@ -1,0 +1,66 @@
+1|||in such a way that|||so that
+2|||for the reason that|||so that
+3|||to ensure that|||so that
+4|||on ([athe]+\\s)?([a-z]+\\s)?grounds of|||because of
+5|||on ([athe]+\\s)?([a-z]+\\s)?ground of|||because of
+6|||on ([athe]+\\s)?([a-z]+\\s)?basis of|||because of
+7|||in ([a-z]+\\s)?light of|||because of
+8|||in ([a-z]+\\s)?pursuance of|||because of
+9|||on ([athe]+\\s)?([a-z]+\\s)?background of|||because of
+10|||on ([a-z]+\\s)?account of|||because of
+11|||for ([athe]+\\s)?sake of|||because of
+12|||by ([a-z]+\\s)?virtue of|||because of
+13|||by ([a-z]+\\s)?reason of|||because of
+14|||by ([a-z]+\\s)?cause of|||because of
+15|||because of|||because of
+16|||attributable to|||due to
+17|||because of the ([a-z]+\\s)?need to|||due to
+18|||due to the ([a-z]+\\s)?need to|||due to
+19|||due ([a-z]+\\s)?to|||due to
+20|||owing ([a-z]+\\s)?to|||due to
+21|||thanks ([in]+\\s)?([a-z]+\\s)?to|||due to
+22|||thanks ([a-z]+\\s)?to|||due to
+23|||under the ([a-z]+\\s)?influence of|||in consequence of
+24|||in ([athe]+\\s)?([a-z]+\\s)?wake of|||in consequence of
+25|||in ([anthe]+\\s)?([a-z]+\\s)?aftermath of|||in consequence of
+26|||in ([athe]+\\s)?([a-z]+\\s)?wake|||in consequence
+27|||in ([athe]+\\s)?([a-z]+\\s)?aftermath|||in consequence
+28|||in ([a-z]+\\s)?answer to|||in response to
+29|||in ([a-z]+\\s)?response to|||in response to
+30|||in ([a-z]+\\s)?responding to|||in response to
+31|||in ([a-z]+\\s)?replying to|||in response to
+32|||in ([a-z]+\\s)?reaction to|||in response to
+33|||in ([a-z]+\\s)?retaliation for|||in exchange for
+34|||in ([a-z]+\\s)?exchange for|||in exchange for
+35|||in return|||in response
+36|||in response|||in response
+37|||in such a way as to|||in order to
+38|||in ([a-z]+\\s)?order to|||in order to
+39|||as ([athe]+\\s)?([a-z]+\\s)?result of|||as a result of
+40|||as ([athe]+\\s)?([a-z]+\\s)?reaction to|||as a result of
+41|||as ([anthe]+\\s)?([a-z]+\\s)?outcome of|||as a result of
+42|||as ([athe]+\\s)?([a-z]+\\s)?follow-up to|||as a result of
+43|||as ([anthe]+\\s)?([a-z]+\\s)?effect of|||as a result of
+44|||as ([athe]+\\s)?([a-z]+\\s)?consequence of|||as a result of
+45|||as ([athe]+\\s)?([a-z]+\\s)?result|||as a result
+46|||as ([athe]+\\s)?([a-z]+\\s)?reaction|||as a result
+47|||as ([anthe]+\\s)?([a-z]+\\s)?outcome|||as a result
+48|||as ([athe]+\\s)?([a-z]+\\s)?follow-up|||as a result
+49|||as ([anthe]+\\s)?([a-z]+\\s)?effect|||as a result
+50|||as ([athe]+\\s)?([a-z]+\\s)?consequence|||as a result
+51|||for th[eioa][st]e* ([a-z]+\\s)?reasons*|||for reason
+52|||it [i']s ([a-z]+\\s)*why|||is why
+53|||th[ai][st] (, ([a-z]+\\s)+, )*[i']s ([a-z]+\\s)*why|||is why
+54|||such that|||so that
+55|||so that|||so that
+56|||thus|||therefore
+57|||therefore|||therefore
+58|||thereby|||therefore
+59|||hence|||therefore
+60|||consequently|||therefore
+61|||because|||because
+62|||since|||since
+63|||as|||as
+64|||so|||so
+65|||by|||by
+66|||from|||from

@@ -1,0 +1,9183 @@
+shield	VBD	shielded
+sneak	VBP	sneak
+shield	VBG	shielding
+simmer	VBG	simmering
+shield	VBN	shielded
+ask	VBZ	asks
+sneak	VBG	sneaking
+afford	VBN	afforded
+ask	VBG	asking
+ask	VBD	asked
+afford	VBP	afford
+fancy	VBZ	fancies
+ask	VBN	asked
+reformulate	VBN	reformulated
+ask	VBP	ask
+worry	VBZ	worries
+sneak	VBD	sneaked
+chalk	VBG	chalking
+chalk	VBN	chalked
+cover	VBZ	covers
+cover	VBP	cover
+cover	VBN	covered
+cover	VBG	covering
+cover	VBD	covered
+pyramid	VBG	pyramiding
+bloody	VBN	bloodied
+strap	VBN	strapped
+clamp	VBG	clamping
+strap	VBD	strapped
+pin	VBG	pinning
+usher	VBZ	ushers
+hound	VBD	hounded
+pin	VBN	pinned
+unravel	VBD	unraveled
+nurture	VBD	nurtured
+usher	VBD	ushered
+disembark	VBP	disembark
+usher	VBG	ushering
+usher	VBN	ushered
+compel	VBN	compelled
+earn	VBZ	earns
+unravel	VBG	unraveling
+earn	VBD	earned
+judge	VBG	judging
+earn	VBG	earning
+unravel	VBN	unraveled
+earn	VBN	earned
+judge	VBP	judge
+chastise	VBZ	chastises
+judge	VBN	judged
+seed	VBN	seeded
+earn	VBP	earn
+base	VBD	based
+take	VBZ	takes
+catch	VBN	caught
+state	VBD	stated
+present	VBD	presented
+state	VBG	stating
+present	VBG	presenting
+base	VBG	basing
+worry	VBP	worry
+catch	VBD	caught
+word	VBN	worded
+worry	VBN	worried
+catch	VBG	catching
+present	VBN	presented
+present	VBP	present
+worry	VBG	worrying
+worry	VBD	worried
+present	VBZ	presents
+catch	VBP	catch
+tour	VBZ	tours
+shop	VBN	shopped
+anchor	VBN	anchored
+reflect	VBZ	reflects
+shop	VBG	shopping
+base	VBZ	bases
+outpace	VBG	outpacing
+reflect	VBP	reflect
+state	VBZ	states
+reflect	VBN	reflected
+outpace	VBD	outpaced
+tour	VBG	touring
+reflect	VBG	reflecting
+tour	VBD	toured
+take	VBD	took
+take	VBG	taking
+muscle	VBG	muscling
+take	VBP	take
+reflect	VBD	reflected
+state	VBP	state
+base	VBN	based
+muscle	VBD	muscled
+take	VBN	taken
+state	VBN	stated
+base	VBP	base
+bedevil	VBN	bedeviled
+castigate	VBN	castigated
+prepare	VBZ	prepares
+retrieve	VBD	retrieved
+castigate	VBG	castigating
+blend	VBG	blending
+retrieve	VBN	retrieved
+retrieve	VBP	retrieve
+hearten	VBN	heartened
+notice	VBN	noticed
+catapult	VBP	catapult
+notice	VBP	notice
+pirate	VBN	pirated
+squat	VBN	squatted
+notice	VBD	noticed
+dare	VBD	dared
+constrain	VBZ	constrains
+prepare	VBG	preparing
+prepare	VBD	prepared
+resolve	VBG	resolving
+constrain	VBN	constrained
+resolve	VBN	resolved
+prepare	VBN	prepared
+transform	VBZ	transforms
+resolve	VBD	resolved
+prepare	VBP	prepare
+tower	VBG	Towering
+renew	VBZ	renews
+stem	VBZ	stems
+renew	VBN	renewed
+customize	VBN	customized
+bequeath	VBD	bequeathed
+stem	VBN	stemmed
+renew	VBG	renewing
+stem	VBP	stem
+plow	VBZ	plows
+stem	VBG	stemming
+renew	VBD	renewed
+stem	VBD	stemmed
+scan	VBG	scanning
+crimp	VBG	crimping
+clank	VBG	clanking
+plow	VBN	plowed
+relent	VBP	relent
+scan	VBZ	scans
+outbid	VBP	outbid
+endorse	VBD	endorsed
+endorse	VBG	endorsing
+endorse	VBN	endorsed
+endorse	VBP	endorse
+swivel	VBG	swiveling
+count	VBG	counting
+count	VBD	counted
+ordain	VBN	ordained
+average	VBD	averaged
+average	VBG	averaging
+nullify	VBP	nullify
+average	VBN	averaged
+wrap	VBG	wrapping
+average	VBP	average
+wrap	VBD	wrapped
+wrap	VBN	wrapped
+ascribe	VBN	ascribed
+relent	VBD	relented
+relent	VBG	relenting
+wrap	VBZ	wraps
+ticket	VBG	ticketing
+penalize	VBZ	penalizes
+ticket	VBN	ticketed
+count	VBZ	counts
+side	VBN	sided
+penalize	VBN	penalized
+count	VBN	counted
+count	VBP	count
+side	VBD	sided
+eye	VBG	eyeing
+flare	VBG	flaring
+seethe	VBG	seething
+weave	VBG	weaving
+fight	VBZ	fights
+spread	VBG	spreading
+influence	VBZ	influences
+fight	VBN	fought
+computerize	VBG	computerizing
+bombard	VBN	bombarded
+spread	VBD	spread
+fight	VBP	fight
+influence	VBN	influenced
+influence	VBP	influence
+quit	VBD	quit
+pockmark	VBN	pockmarked
+loosen	VBN	loosened
+weave	VBN	woven
+stall	VBN	stalled
+reopen	VBZ	reopens
+redo	VBG	redoing
+snipe	VBD	sniped
+loosen	VBG	loosening
+quit	VBN	quit
+quit	VBP	quit
+stall	VBZ	stalls
+reopen	VBN	reopened
+croon	VBZ	croons
+quit	VBZ	quits
+fight	VBD	fought
+reopen	VBG	reopening
+fight	VBG	fighting
+croon	VBD	crooned
+flare	VBN	flared
+stall	VBD	stalled
+reopen	VBD	reopened
+pulverize	VBG	pulverizing
+stall	VBG	stalling
+raid	VBD	raided
+ridicule	VBZ	ridicules
+raid	VBN	raided
+ply	VBG	plying
+ban	VBZ	bans
+bribe	VBG	bribing
+make	VBP	make
+make	VBN	made
+ply	VBZ	plies
+ban	VBP	ban
+mop	VBG	mopping
+ban	VBN	banned
+bribe	VBD	bribed
+make	VBZ	makes
+triple	VBN	tripled
+pour	VBD	poured
+ban	VBD	banned
+ban	VBG	banning
+pour	VBN	poured
+pour	VBG	pouring
+ripple	VBG	rippling
+pour	VBP	pour
+triple	VBD	tripled
+triple	VBG	tripling
+pour	VBZ	pours
+dispense	VBP	dispense
+brighten	VBG	brightening
+chop	VBG	chopping
+propose	VBD	proposed
+propose	VBG	proposing
+propose	VBN	proposed
+dispense	VBD	dispensed
+propose	VBZ	proposes
+brighten	VBN	brightened
+dispense	VBG	dispensing
+speak	VBG	speaking
+speak	VBD	spoke
+bid	VBG	bidding
+speak	VBP	speak
+speak	VBN	spoken
+net	VBG	netting
+smooth	VBN	smoothed
+make	VBG	making
+make	VBD	made
+bid	VBD	bid
+tamper	VBG	tampering
+ridicule	VBN	ridiculed
+bid	VBZ	bids
+net	VBZ	nets
+speak	VBZ	speaks
+bid	VBN	bid
+bid	VBP	bid
+net	VBN	netted
+tire	VBN	tired
+write	VBD	wrote
+write	VBG	writing
+bias	VBN	biased
+write	VBN	written
+write	VBP	write
+huddle	VBD	huddled
+write	VBZ	writes
+blackmail	VBN	blackmailed
+overlap	VBP	overlap
+inaugurate	VBN	inaugurated
+spread	VBZ	spreads
+blackmail	VBG	blackmailing
+overlap	VBG	overlapping
+spread	VBP	spread
+transform	VBG	transforming
+transform	VBN	transformed
+bombard	VBD	bombarded
+transform	VBD	transformed
+spread	VBN	spread
+summon	VBG	summoning
+violate	VBN	violated
+violate	VBP	violate
+summon	VBD	summoned
+summon	VBN	summoned
+violate	VBG	violating
+violate	VBD	violated
+don	VBD	donned
+include	VBZ	includes
+ratify	VBG	ratifying
+ratify	VBD	ratified
+expire	VBZ	expires
+even	VBZ	evens
+ratify	VBN	ratified
+expire	VBP	expire
+expire	VBN	expired
+squeak	VBG	squeaking
+highlight	VBD	highlighted
+even	VBN	evened
+expire	VBD	expired
+don	VBZ	dons
+guess	VBP	guess
+expire	VBG	expiring
+waddle	VBZ	waddles
+guess	VBD	guessed
+guess	VBG	guessing
+violate	VBZ	violates
+disdain	VBG	disdaining
+conceive	VBG	conceiving
+retool	VBZ	retools
+highlight	VBG	highlighting
+highlight	VBN	highlighted
+conceive	VBN	conceived
+highlight	VBZ	highlights
+overturn	VBD	overturned
+overturn	VBG	overturning
+boat	VBG	boating
+include	VBP	include
+include	VBN	included
+cobble	VBN	cobbled
+overturn	VBN	overturned
+sip	VBG	sipping
+include	VBG	including
+sip	VBD	sipped
+boil	VBG	boiling
+include	VBD	included
+restart	VBD	restarted
+jeopardize	VBZ	jeopardizes
+lay	VBD	lay
+lay	VBG	laying
+roar	VBZ	roars
+prance	VBG	prancing
+lay	VBN	laid
+wander	VBP	wander
+lay	VBP	lay
+jeopardize	VBG	jeopardizing
+acidify	VBN	acidified
+crawl	VBZ	crawls
+thunder	VBD	thundered
+chide	VBD	chided
+strain	VBP	strain
+strain	VBN	strained
+conceive	VBD	conceived
+chide	VBN	chided
+swindle	VBN	swindled
+strain	VBG	straining
+restart	VBN	restarted
+wire	VBN	wired
+improvise	VBD	improvised
+ferret	VBG	ferreting
+chide	VBZ	chides
+award	VBN	awarded
+rest	VBP	rest
+complete	VBN	completed
+complete	VBD	completed
+jut	VBG	Jutting
+complete	VBG	completing
+taint	VBN	tainted
+demand	VBN	demanded
+crawl	VBD	crawled
+consolidate	VBD	consolidated
+crawl	VBG	crawling
+complete	VBZ	completes
+consolidate	VBG	consolidating
+award	VBD	awarded
+demand	VBG	demanding
+award	VBG	awarding
+demand	VBD	demanded
+consolidate	VBN	consolidated
+rest	VBZ	rests
+animate	VBN	animated
+roar	VBG	roaring
+lay	VBZ	lays
+wander	VBG	wandering
+slacken	VBN	slackened
+demand	VBZ	demands
+consolidate	VBZ	consolidates
+slacken	VBD	slackened
+slacken	VBG	slackening
+demand	VBP	demand
+verify	VBN	verified
+rest	VBD	rested
+forget	VBN	forgotten
+forget	VBZ	forgets
+influence	VBD	influenced
+attain	VBN	attained
+vex	VBN	vexed
+billow	VBG	billowing
+appeal	VBN	appealed
+purr	VBZ	purrs
+dip	VBD	dipped
+fend	VBD	fended
+dip	VBG	dipping
+lengthen	VBN	lengthened
+fleece	VBN	fleeced
+appeal	VBP	appeal
+realign	VBG	realigning
+lengthen	VBZ	lengthens
+dip	VBN	dipped
+gripe	VBZ	gripes
+reject	VBG	rejecting
+reject	VBD	rejected
+curb	VBN	curbed
+appeal	VBD	appealed
+appeal	VBG	Appealing
+reject	VBZ	rejects
+grasp	VBG	grasping
+reject	VBN	rejected
+curb	VBD	curbed
+curb	VBG	curbing
+reject	VBP	reject
+meet	VBG	meeting
+gloat	VBD	gloated
+meet	VBD	met
+grasp	VBP	grasp
+wheeze	VBG	wheezing
+gloat	VBG	gloating
+meet	VBP	meet
+meet	VBN	met
+sport	VBD	sported
+prejudice	VBN	prejudiced
+flock	VBN	flocked
+honor	VBN	honored
+honor	VBG	honoring
+dread	VBN	dreaded
+gloat	VBZ	gloats
+argue	VBG	arguing
+travel	VBZ	travels
+generate	VBD	generated
+argue	VBN	argued
+fend	VBG	Fending
+argue	VBP	argue
+torment	VBZ	torments
+travel	VBN	traveled
+meet	VBZ	meets
+travel	VBP	travel
+flock	VBD	flocked
+forget	VBD	forgot
+flock	VBG	flocking
+travel	VBG	traveling
+forget	VBG	forgetting
+travel	VBD	traveled
+argue	VBD	argued
+vow	VBD	vowed
+detain	VBG	detaining
+detain	VBD	detained
+vow	VBG	vowing
+generate	VBZ	generates
+reactivate	VBD	reactivated
+stub	VBN	STUBBED
+brief	VBD	briefed
+generate	VBN	generated
+smack	VBZ	smacks
+generate	VBP	generate
+generate	VBG	generating
+smack	VBP	smack
+vow	VBZ	vows
+link	VBD	linked
+roll	VBZ	rolls
+link	VBG	Linking
+roll	VBP	roll
+link	VBP	link
+roll	VBN	rolled
+link	VBN	linked
+displace	VBN	displaced
+finagle	VBN	finagled
+roll	VBG	rolling
+roll	VBD	rolled
+link	VBZ	links
+detain	VBN	detained
+employ	VBZ	employs
+bear	VBG	bearing
+cycle	VBG	cycling
+bear	VBN	born
+erupt	VBN	erupted
+nickname	VBN	nicknamed
+bear	VBP	bear
+erupt	VBD	erupted
+employ	VBP	employ
+underwrite	VBZ	underwrites
+employ	VBN	employed
+falsify	VBN	falsified
+bear	VBZ	bears
+profess	VBZ	professes
+dig	VBD	dug
+perch	VBN	perched
+falsify	VBG	falsifying
+commission	VBN	commissioned
+profess	VBN	professed
+commission	VBG	commissioning
+commission	VBD	commissioned
+inquire	VBG	inquiring
+inquire	VBD	inquired
+profess	VBD	professed
+underwrite	VBN	underwritten
+underwrite	VBP	underwrite
+employ	VBG	employing
+underwrite	VBD	underwrote
+underwrite	VBG	underwriting
+dig	VBZ	digs
+allay	VBN	allayed
+accommodate	VBG	accommodating
+abuse	VBD	abused
+bet	VBG	betting
+scowl	VBZ	scowls
+bet	VBD	bet
+scrutinize	VBN	scrutinized
+flatten	VBD	flattened
+hit	VBZ	hits
+hit	VBN	hit
+abuse	VBN	abused
+scowl	VBP	scowl
+impoverish	VBN	impoverished
+hit	VBP	hit
+flatten	VBN	flattened
+abuse	VBG	abusing
+hurtle	VBG	hurtling
+founder	VBD	foundered
+founder	VBG	foundering
+subvert	VBN	subverted
+hit	VBG	hitting
+alarm	VBZ	alarms
+hightail	VBG	hightailing
+hit	VBD	hit
+subvert	VBZ	subverts
+approach	VBZ	approaches
+redline	VBG	redlining
+bet	VBN	bet
+bet	VBP	bet
+alarm	VBN	Alarmed
+approach	VBD	approached
+tail	VBG	tailing
+approach	VBG	approaching
+approach	VBN	approached
+incriminate	VBG	incriminating
+approach	VBP	approach
+examine	VBZ	examines
+trade	VBZ	trades
+buzz	VBG	buzzing
+commute	VBG	commuting
+chuckle	VBZ	chuckles
+claim	VBP	claim
+recommend	VBG	recommending
+crouch	VBD	crouched
+recommend	VBN	recommended
+crouch	VBN	Crouched
+claim	VBZ	claims
+recommend	VBD	recommended
+recommend	VBZ	recommends
+chuckle	VBG	chuckling
+congratulate	VBN	congratulated
+disregard	VBD	disregarded
+claim	VBD	claimed
+claim	VBG	claiming
+buzz	VBZ	buzzes
+accommodate	VBP	accommodate
+congratulate	VBD	congratulated
+recommend	VBP	recommend
+accommodate	VBN	accommodated
+claim	VBN	claimed
+cut	VBD	cut
+quip	VBD	quipped
+contradict	VBZ	contradicts
+cut	VBG	cutting
+argue	VBZ	argues
+devote	VBN	devoted
+rumble	VBG	rumbling
+hitch	VBN	hitched
+rumble	VBD	rumbled
+decease	VBN	deceased
+contradict	VBG	contradicting
+publish	VBZ	publishes
+cut	VBN	cut
+publish	VBN	published
+cut	VBP	cut
+rumble	VBZ	rumbles
+publish	VBG	publishing
+publish	VBD	published
+war	VBG	warring
+examine	VBN	examined
+cut	VBZ	cuts
+whoosh	VBP	whoosh
+examine	VBG	examining
+rumble	VBP	rumble
+pipe	VBN	piped
+examine	VBD	examined
+quip	VBZ	quips
+soar	VBD	soared
+observe	VBG	observing
+observe	VBN	observed
+pipe	VBD	piped
+object	VBD	objected
+object	VBG	objecting
+distract	VBD	distracted
+observe	VBD	observed
+soar	VBG	soaring
+boast	VBD	boasted
+observe	VBZ	observes
+distract	VBG	distracting
+object	VBP	object
+distract	VBN	distracted
+observe	VBP	observe
+ferry	VBG	ferrying
+differentiate	VBG	differentiating
+reinstate	VBN	reinstated
+fault	VBN	faulted
+depress	VBP	depress
+boast	VBZ	boasts
+depress	VBN	depressed
+reinstate	VBG	reinstating
+extend	VBZ	extends
+reinstate	VBD	reinstated
+extend	VBG	extending
+embroil	VBN	embroiled
+soar	VBN	soared
+extend	VBD	extended
+soar	VBP	soar
+depress	VBD	depressed
+extend	VBP	extend
+extend	VBN	extended
+boast	VBN	boasted
+depress	VBG	depressing
+filter	VBN	Filtered
+restore	VBD	restored
+restore	VBG	restoring
+filter	VBG	filtering
+outbid	VBG	outbidding
+filter	VBZ	filters
+rage	VBN	raged
+predate	VBZ	predates
+crash	VBZ	crashes
+struggle	VBG	struggling
+rage	VBG	raging
+glow	VBD	glowed
+glow	VBG	glowing
+rage	VBD	raged
+consider	VBZ	considers
+struggle	VBD	STRUGGLED
+mistake	VBN	mistaken
+struggle	VBZ	struggles
+consider	VBD	considered
+restore	VBN	restored
+consider	VBG	considering
+dethrone	VBN	dethroned
+struggle	VBN	struggled
+consider	VBP	consider
+consider	VBN	considered
+risk	VBZ	risks
+sign	VBN	signed
+devote	VBZ	devotes
+brew	VBG	brewing
+dissent	VBD	dissented
+risk	VBP	risk
+devote	VBP	devote
+crash	VBD	crashed
+burnish	VBG	burnishing
+crash	VBG	crashing
+brew	VBN	brewed
+comply	VBD	complied
+sign	VBD	signed
+comply	VBG	complying
+sign	VBG	signing
+dissent	VBN	dissented
+comply	VBN	complied
+jingle	VBG	jingling
+shirk	VBG	shirking
+supersede	VBD	superseded
+dismantle	VBG	dismantling
+blunder	VBD	blundered
+fragment	VBN	fragmented
+dismantle	VBN	dismantled
+risk	VBD	risked
+risk	VBG	risking
+fragment	VBZ	fragments
+disburse	VBN	disbursed
+wrangle	VBG	wrangling
+transplant	VBG	transplanting
+pack	VBZ	packs
+chew	VBP	chew
+pack	VBG	packing
+transplant	VBN	transplanted
+pack	VBD	packed
+crowd	VBD	crowded
+snatch	VBD	snatched
+pack	VBP	pack
+pack	VBN	packed
+chew	VBD	chewed
+chew	VBG	chewing
+modify	VBZ	modifies
+overcome	VBZ	overcomes
+overcome	VBN	overcome
+overcome	VBP	overcome
+modify	VBN	modified
+overcome	VBD	overcame
+jog	VBZ	jogs
+purport	VBZ	purports
+exacerbate	VBD	exacerbated
+doubt	VBD	doubted
+scrutinize	VBG	scrutinizing
+exacerbate	VBG	exacerbating
+conjure	VBZ	conjures
+draft	VBN	drafted
+purport	VBP	purport
+draft	VBG	drafting
+draft	VBD	drafted
+doubt	VBP	doubt
+resign	VBG	resigning
+doubt	VBZ	doubts
+resign	VBD	resigned
+pan	VBD	panned
+alleviate	VBG	alleviating
+extradite	VBN	extradited
+crowd	VBN	crowded
+stalk	VBN	stalked
+poll	VBZ	polls
+crowd	VBP	crowd
+jell	VBD	jelled
+crowd	VBZ	crowds
+curse	VBD	cursed
+poll	VBN	polled
+pan	VBG	panning
+pan	VBN	panned
+interrogate	VBN	interrogated
+stalk	VBG	stalking
+surprise	VBD	surprised
+surprise	VBG	surprising
+revive	VBG	reviving
+recognize	VBN	recognized
+flap	VBG	flapping
+recognize	VBP	recognize
+swing	VBZ	swings
+swing	VBP	swing
+invoke	VBG	invoking
+recognize	VBZ	recognizes
+postpone	VBD	postponed
+glue	VBN	glued
+swing	VBN	swung
+blanket	VBP	blanket
+dash	VBD	dashed
+revive	VBN	revived
+surprise	VBN	surprised
+revive	VBP	revive
+unsettle	VBD	unsettled
+lapse	VBN	lapsed
+unsettle	VBN	unsettled
+chat	VBG	chatting
+bud	VBG	budding
+invoke	VBZ	invokes
+amplify	VBN	amplified
+grimace	VBD	grimaced
+swing	VBD	swung
+blanket	VBD	blanketed
+add	VBZ	adds
+exacerbate	VBN	exacerbated
+recognize	VBD	recognized
+divert	VBP	divert
+dash	VBN	dashed
+divert	VBN	diverted
+postpone	VBG	postponing
+exacerbate	VBZ	exacerbates
+divert	VBG	diverting
+resign	VBN	resigned
+revive	VBD	revived
+recognize	VBG	recognizing
+postpone	VBN	postponed
+fracture	VBN	fractured
+excoriate	VBN	excoriated
+booze	VBG	boozing
+mire	VBN	mired
+fracture	VBD	fractured
+romp	VBP	romp
+contend	VBN	contended
+grant	VBP	grant
+torture	VBP	torture
+contend	VBP	contend
+contend	VBD	contended
+contend	VBG	contending
+add	VBN	added
+grant	VBZ	grants
+add	VBP	add
+up	VBG	Upping
+grant	VBD	granted
+add	VBD	added
+up	VBD	upped
+add	VBG	adding
+hear	VBN	heard
+hear	VBP	hear
+hear	VBZ	HEARS
+grant	VBN	granted
+grant	VBG	granting
+eclipse	VBG	eclipsing
+hear	VBG	hearing
+discard	VBD	discarded
+age	VBG	aging
+report	VBP	report
+sport	VBG	sporting
+wound	VBN	wound
+report	VBN	reported
+hear	VBD	heard
+report	VBG	reporting
+discard	VBN	discarded
+scout	VBG	scouting
+sport	VBZ	sports
+age	VBP	age
+report	VBZ	reports
+age	VBN	aged
+abstain	VBD	abstained
+contend	VBZ	contends
+refurbish	VBG	refurbishing
+refurbish	VBN	refurbished
+rewrite	VBN	rewritten
+rewrite	VBG	rewriting
+dial	VBG	dialing
+wound	VBD	wound
+surge	VBG	surging
+surge	VBD	surged
+mock	VBN	mocked
+surge	VBZ	surges
+pass	VBD	passed
+shimmer	VBD	shimmered
+pass	VBG	passing
+surge	VBN	surged
+remunerate	VBN	remunerated
+consign	VBZ	consigns
+pass	VBZ	passes
+appropriate	VBD	appropriated
+appropriate	VBN	appropriated
+report	VBD	reported
+pass	VBN	passed
+repress	VBG	repressing
+pass	VBP	pass
+deduct	VBG	deducting
+mature	VBZ	matures
+muddy	VBN	muddied
+prescribe	VBZ	prescribes
+stomp	VBG	stomping
+stomp	VBD	stomped
+need	VBD	needed
+typify	VBD	typified
+prescribe	VBN	prescribed
+prescribe	VBP	prescribe
+need	VBP	need
+produce	VBD	produced
+need	VBN	needed
+condition	VBN	conditioned
+produce	VBG	producing
+shrivel	VBD	shriveled
+need	VBG	needing
+mature	VBN	matured
+prepay	VBG	prepaying
+typify	VBZ	typifies
+dye	VBN	dyed
+produce	VBZ	produces
+mature	VBP	mature
+produce	VBN	produced
+prepay	VBN	prepaid
+produce	VBP	produce
+mature	VBG	maturing
+need	VBZ	needs
+spy	VBG	spying
+snub	VBG	snubbing
+snub	VBD	snubbed
+await	VBG	awaiting
+grapple	VBZ	grapples
+spy	VBD	spied
+await	VBP	await
+label	VBD	labeled
+await	VBZ	awaits
+spy	VBZ	spies
+excuse	VBN	excused
+sing	VBD	sang
+sing	VBG	singing
+intermix	VBD	intermixed
+sing	VBZ	sings
+falter	VBD	faltered
+falter	VBG	faltering
+overwhelm	VBD	overwhelmed
+figure	VBD	figured
+sing	VBP	sing
+sing	VBN	sung
+overwhelm	VBG	overwhelming
+figure	VBN	figured
+row	VBD	rowed
+overwhelm	VBP	overwhelm
+overwhelm	VBN	overwhelmed
+figure	VBG	figuring
+await	VBD	awaited
+televise	VBN	televised
+deactivate	VBZ	deactivates
+grapple	VBD	grappled
+figure	VBP	figure
+shutter	VBG	shuttering
+concentrate	VBZ	concentrates
+magnify	VBN	magnified
+join	VBZ	joins
+figure	VBZ	figures
+shutter	VBD	shuttered
+wreak	VBG	wreaking
+magnify	VBD	magnified
+perturb	VBD	perturbed
+seize	VBN	seized
+fear	VBG	fearing
+spark	VBD	sparked
+seize	VBP	seize
+label	VBG	Labeling
+fear	VBD	feared
+label	VBN	labeled
+excavate	VBG	excavating
+label	VBP	label
+spark	VBG	sparking
+wreak	VBD	wreaked
+concentrate	VBP	concentrate
+label	VBZ	labels
+concentrate	VBN	concentrated
+spark	VBN	sparked
+clock	VBZ	clocks
+concentrate	VBG	concentrating
+spark	VBZ	sparks
+prime	VBN	primed
+seize	VBG	seizing
+disintegrate	VBD	disintegrated
+concentrate	VBD	concentrated
+seize	VBD	seized
+disintegrate	VBG	disintegrating
+float	VBP	float
+float	VBZ	floats
+fear	VBZ	fears
+float	VBD	floated
+transfer	VBZ	transfers
+fear	VBN	feared
+excavate	VBN	excavated
+float	VBG	floating
+devalue	VBD	devalued
+crane	VBG	craning
+key	VBN	keyed
+fear	VBP	fear
+devalue	VBN	devalued
+pocket	VBZ	pockets
+explain	VBG	explaining
+explain	VBD	explained
+slope	VBZ	slopes
+explain	VBP	explain
+explain	VBN	explained
+exhale	VBD	exhaled
+join	VBG	joining
+explain	VBZ	explains
+pocket	VBG	pocketing
+join	VBD	joined
+join	VBP	join
+join	VBN	joined
+bar	VBD	barred
+bar	VBG	barring
+convene	VBZ	convenes
+persuade	VBZ	persuades
+persuade	VBN	persuaded
+diagnose	VBN	diagnosed
+bar	VBZ	bars
+covet	VBZ	covets
+diagnose	VBD	diagnosed
+ram	VBD	rammed
+transfer	VBD	transferred
+transfer	VBG	transferring
+persuade	VBG	persuading
+bar	VBN	barred
+covet	VBN	coveted
+persuade	VBD	persuaded
+delegate	VBG	delegating
+diagnose	VBG	diagnosing
+transfer	VBN	transferred
+arouse	VBZ	arouses
+conspire	VBP	conspire
+frustrate	VBD	frustrated
+frustrate	VBN	frustrated
+attach	VBD	attached
+laugh	VBN	laughed
+fidget	VBG	fidgeting
+conspire	VBD	conspired
+laugh	VBG	laughing
+laugh	VBD	laughed
+attach	VBG	attaching
+attach	VBN	attached
+attach	VBP	attach
+conspire	VBG	conspiring
+tag	VBN	tagged
+attach	VBZ	attaches
+dissolve	VBG	dissolving
+recede	VBG	receding
+convene	VBD	convened
+cleanse	VBG	cleansing
+convene	VBG	convening
+plot	VBD	plotted
+convene	VBN	convened
+misplace	VBN	misplaced
+laugh	VBZ	laughs
+convene	VBP	convene
+plot	VBG	plotting
+attack	VBG	attacking
+counsel	VBG	counseling
+force	VBN	forced
+dissect	VBG	dissecting
+attack	VBD	attacked
+distort	VBN	distorted
+pamper	VBZ	pampers
+barrel	VBG	barreling
+attack	VBP	attack
+counsel	VBN	counseled
+affect	VBD	affected
+force	VBG	forcing
+rain	VBD	rained
+force	VBD	forced
+attack	VBN	attacked
+dissolve	VBN	dissolved
+glance	VBD	glanced
+counsel	VBZ	counsels
+drool	VBG	drooling
+emulate	VBN	emulated
+slap	VBD	slapped
+affect	VBZ	affects
+slap	VBZ	slaps
+castle	VBG	castling
+attack	VBZ	attacks
+arouse	VBG	arousing
+distort	VBZ	distorts
+blame	VBD	blamed
+arouse	VBD	aroused
+affect	VBG	affecting
+blame	VBG	blaming
+tramp	VBG	tramping
+arouse	VBN	aroused
+distort	VBP	distort
+affect	VBP	affect
+affect	VBN	affected
+dissect	VBN	dissected
+sever	VBD	severed
+sever	VBG	severing
+blame	VBZ	blames
+blame	VBN	blamed
+scrap	VBG	scrapping
+scrap	VBD	scrapped
+install	VBP	install
+blame	VBP	blame
+subdue	VBN	subdued
+cultivate	VBZ	cultivates
+scrap	VBZ	scraps
+cultivate	VBG	cultivating
+trap	VBN	trapped
+superimpose	VBN	superimposed
+cultivate	VBN	cultivated
+scrap	VBN	scrapped
+scrap	VBP	SCRAP
+victimize	VBN	victimized
+sever	VBN	severed
+entwine	VBN	entwined
+growl	VBZ	growls
+ground	VBN	ground
+grumble	VBP	grumble
+plunge	VBN	plunged
+grumble	VBD	grumbled
+ground	VBG	grounding
+ground	VBD	ground
+overflow	VBG	overflowing
+ward	VBN	warded
+plunge	VBP	plunge
+hook	VBN	hooked
+plunge	VBZ	plunges
+hypnotize	VBN	hypnotized
+hook	VBG	hooking
+hook	VBD	hooked
+retain	VBZ	retains
+clobber	VBN	clobbered
+waver	VBD	wavered
+bore	VBG	boring
+exert	VBN	exerted
+oust	VBN	OUSTED
+clobber	VBD	clobbered
+bore	VBD	bore
+retain	VBN	retained
+retain	VBP	retain
+waver	VBG	wavering
+oust	VBD	ousted
+retain	VBG	retaining
+retain	VBD	retained
+cadge	VBP	cadge
+camouflage	VBN	camouflaged
+feel	VBG	feeling
+levy	VBD	levied
+feel	VBP	feel
+bore	VBN	bored
+instal	VBN	installed
+trade	VBN	traded
+filch	VBN	filched
+boom	VBD	boomed
+heat	VBG	Heating
+force	VBP	force
+boom	VBG	booming
+choose	VBZ	chooses
+allow	VBD	allowed
+allow	VBG	allowing
+anticipate	VBN	anticipated
+feel	VBZ	feels
+trade	VBG	trading
+anticipate	VBP	anticipate
+lash	VBD	lashed
+force	VBZ	forces
+anticipate	VBD	anticipated
+boom	VBN	boomed
+fluctuate	VBN	fluctuated
+lash	VBG	lashing
+allow	VBN	allowed
+trade	VBP	trade
+anticipate	VBG	anticipating
+allow	VBP	allow
+fluctuate	VBP	fluctuate
+offset	VBN	offset
+cease	VBD	ceased
+choose	VBD	chose
+segregate	VBD	segregated
+choose	VBG	choosing
+choose	VBP	choose
+fluctuate	VBD	fluctuated
+trade	VBD	traded
+choose	VBN	chosen
+offset	VBP	offset
+harm	VBZ	harms
+offset	VBD	offset
+offset	VBG	offsetting
+cease	VBN	ceased
+harm	VBN	harmed
+impel	VBN	impelled
+plunge	VBD	plunged
+cease	VBZ	ceases
+allow	VBZ	allows
+plunge	VBG	plunging
+hook	VBZ	hooks
+harm	VBP	harm
+harm	VBD	harmed
+control	VBG	controlling
+confine	VBN	confined
+control	VBD	controlled
+eschew	VBN	eschewed
+erect	VBD	erected
+control	VBZ	controls
+control	VBN	controlled
+control	VBP	control
+recount	VBZ	recounts
+confuse	VBD	confused
+confuse	VBG	confusing
+confuse	VBN	confused
+heat	VBN	heated
+recount	VBD	recounted
+recount	VBG	recounting
+recount	VBN	recounted
+heat	VBZ	heats
+service	VBG	servicing
+fling	VBG	flinging
+cry	VBZ	cries
+service	VBZ	services
+wheel	VBN	wheeled
+finish	VBG	finishing
+conduct	VBZ	conducts
+rehabilitate	VBN	rehabilitated
+finish	VBD	finished
+conduct	VBP	conduct
+finish	VBN	finished
+abound	VBP	abound
+finish	VBP	finish
+abound	VBZ	abounds
+fantasize	VBP	fantasize
+conduct	VBN	conducted
+neutralize	VBZ	neutralizes
+conduct	VBG	conducting
+conduct	VBD	conducted
+abound	VBD	abounded
+resuscitate	VBG	resuscitating
+depress	VBZ	depresses
+finish	VBZ	finishes
+precipitate	VBD	precipitated
+forecast	VBP	forecast
+worsen	VBD	worsened
+worsen	VBG	worsening
+forecast	VBZ	forecasts
+imprison	VBN	imprisoned
+tap	VBD	tapped
+tap	VBG	tapping
+forecast	VBG	forecasting
+forecast	VBD	forecast
+tap	VBN	tapped
+forecast	VBN	forecast
+worsen	VBN	worsened
+rid	VBN	rid
+begin	VBN	begun
+fly	VBP	fly
+begin	VBP	begin
+begin	VBG	beginning
+begin	VBD	began
+fly	VBN	flown
+sidestep	VBZ	sidesteps
+fly	VBZ	flies
+discriminate	VBG	discriminating
+devastate	VBN	devastated
+document	VBZ	documents
+devastate	VBG	devastating
+sweep	VBZ	sweeps
+begin	VBZ	begins
+document	VBN	documented
+devastate	VBD	devastated
+line	VBD	lined
+comment	VBD	commented
+sidestep	VBD	sidestepped
+document	VBG	documenting
+comment	VBG	commenting
+tap	VBZ	Taps
+imprison	VBG	imprisoning
+lie	VBP	lie
+lie	VBD	lied
+check	VBZ	checks
+lie	VBG	lying
+whistle	VBN	whistled
+deform	VBN	deformed
+line	VBN	lined
+line	VBG	lining
+anticipate	VBZ	anticipates
+sweep	VBG	sweeping
+check	VBP	check
+check	VBN	checked
+deprive	VBD	deprived
+sweep	VBN	swept
+check	VBG	checking
+sweep	VBD	swept
+lie	VBZ	lies
+check	VBD	checked
+deprive	VBN	deprived
+deprive	VBG	depriving
+racketeer	VBG	racketeering
+fly	VBG	flying
+instal	VBG	installing
+deprive	VBZ	deprives
+fly	VBD	flew
+instal	VBD	installed
+collaborate	VBG	collaborating
+collaborate	VBD	collaborated
+bumble	VBG	bumbling
+cling	VBP	cling
+bumble	VBP	bumble
+commission	VBZ	commissions
+dance	VBG	dancing
+expect	VBN	expected
+expect	VBP	expect
+wrestle	VBZ	wrestles
+expect	VBG	expecting
+fetch	VBZ	fetches
+expect	VBD	expected
+fetch	VBG	fetching
+bail	VBD	bailed
+flip	VBZ	flips
+bail	VBG	bailing
+expect	VBZ	expects
+dispatch	VBN	dispatched
+insulate	VBN	insulated
+fetch	VBD	fetched
+insulate	VBP	insulate
+fetch	VBP	fetch
+unionize	VBD	unionized
+dispatch	VBD	dispatched
+dispatch	VBG	dispatching
+dissipate	VBN	dissipated
+befall	VBN	befallen
+befall	VBP	befall
+wrestle	VBG	wrestling
+sympathize	VBP	sympathize
+recess	VBN	recessed
+inform	VBZ	informs
+watch	VBG	watching
+watch	VBD	watched
+constitute	VBZ	constitutes
+constitute	VBP	constitute
+decide	VBZ	decides
+overdose	VBG	overdosing
+guarantee	VBZ	guarantees
+constitute	VBD	constituted
+guarantee	VBP	guarantee
+ripen	VBZ	ripens
+treat	VBD	treated
+chafe	VBN	chafed
+wink	VBG	winking
+treat	VBG	treating
+guarantee	VBN	guaranteed
+guarantee	VBG	guaranteeing
+fan	VBD	fanned
+rendezvous	VBD	rendezvoused
+treat	VBN	treated
+guarantee	VBD	guaranteed
+treat	VBP	treat
+watch	VBN	watched
+watch	VBP	watch
+treat	VBZ	treats
+chafe	VBP	chafe
+watch	VBZ	watches
+enjoy	VBZ	enjoys
+ship	VBD	shipped
+handle	VBZ	handles
+ship	VBN	shipped
+enjoy	VBP	enjoy
+ship	VBG	shipping
+stymie	VBN	stymied
+suspend	VBG	suspending
+suspend	VBN	suspended
+ship	VBP	ship
+overhaul	VBG	overhauling
+overtake	VBN	overtaken
+reassess	VBG	reassessing
+suspend	VBD	suspended
+overhaul	VBN	overhauled
+dampen	VBD	dampened
+flout	VBG	flouting
+penetrate	VBN	penetrated
+spirit	VBN	spirited
+penetrate	VBG	penetrating
+redesign	VBN	redesigned
+inform	VBD	informed
+enjoy	VBN	enjoyed
+inform	VBG	informing
+enjoy	VBD	enjoyed
+inform	VBN	informed
+enjoy	VBG	enjoying
+appreciate	VBD	appreciated
+remain	VBG	remaining
+tan	VBN	tanned
+appreciate	VBG	appreciating
+remain	VBN	remained
+tame	VBG	Taming
+appreciate	VBN	appreciated
+appreciate	VBP	appreciate
+remain	VBD	remained
+litter	VBN	littered
+step	VBZ	steps
+redesign	VBG	redesigning
+approximate	VBZ	approximates
+redesign	VBD	redesigned
+appreciate	VBZ	appreciates
+step	VBP	step
+show	VBD	showed
+step	VBG	stepping
+insulate	VBG	insulating
+flip	VBD	flipped
+step	VBN	stepped
+flip	VBG	flipping
+step	VBD	stepped
+show	VBG	showing
+handle	VBG	handling
+handle	VBD	handled
+show	VBP	show
+show	VBN	shown
+entrench	VBN	entrenched
+handle	VBP	handle
+show	VBZ	shows
+handle	VBN	handled
+extract	VBD	extracted
+brim	VBD	brimmed
+extract	VBG	extracting
+remark	VBD	remarked
+thank	VBD	thanked
+reinvent	VBD	reinvented
+thank	VBG	thanking
+remark	VBZ	remarks
+thank	VBP	thank
+extract	VBN	extracted
+vest	VBN	vested
+remain	VBP	remain
+avoid	VBG	avoiding
+avoid	VBP	avoid
+remain	VBZ	remains
+avoid	VBN	avoided
+avoid	VBZ	avoids
+originate	VBN	originated
+rile	VBZ	riles
+originate	VBG	originating
+rile	VBP	rile
+originate	VBZ	originates
+slow	VBG	slowing
+slow	VBD	slowed
+originate	VBP	originated
+joust	VBG	jousting
+trumpet	VBG	trumpeting
+slow	VBN	slowed
+stone	VBN	stoned
+trumpet	VBP	trumpet
+accord	VBG	according
+wake	VBP	wake
+trumpet	VBZ	trumpets
+jack	VBN	jacked
+slow	VBZ	slows
+refine	VBG	refining
+jack	VBD	jacked
+wake	VBD	woke
+encase	VBG	encasing
+jack	VBG	jacking
+bike	VBG	Biking
+accord	VBN	accorded
+lurch	VBD	lurched
+deepen	VBG	deepening
+marry	VBD	married
+balk	VBP	balk
+lurch	VBG	lurching
+whisper	VBN	whispered
+reprint	VBZ	reprints
+renounce	VBD	renounced
+marry	VBN	married
+renounce	VBG	renouncing
+balk	VBD	balked
+steal	VBZ	steals
+whisper	VBG	whispering
+refine	VBN	refined
+marry	VBG	marrying
+steal	VBP	steal
+reprint	VBN	reprinted
+balk	VBG	balking
+steal	VBN	stolen
+tire	VBZ	tires
+brush	VBN	brushed
+compile	VBG	compiling
+hone	VBN	honed
+adapt	VBP	adapt
+steal	VBG	stealing
+create	VBD	created
+adapt	VBN	adapted
+steal	VBD	stole
+narrow	VBZ	narrows
+create	VBG	creating
+brush	VBG	brushing
+outnumber	VBD	outnumbered
+brush	VBD	brushed
+create	VBN	created
+kiss	VBG	Kissing
+create	VBP	create
+overdose	VBN	overdosed
+writhe	VBG	writhing
+narrow	VBN	narrowed
+memorialize	VBN	memorialized
+deepen	VBD	deepened
+narrow	VBD	narrowed
+adapt	VBD	adapted
+create	VBZ	creates
+narrow	VBG	narrowing
+garner	VBD	garnered
+contact	VBD	contacted
+contact	VBG	contacting
+beef	VBD	beefed
+compile	VBZ	compiles
+deplore	VBZ	deplores
+light	VBD	lit
+beef	VBN	beefed
+beef	VBG	beefing
+garner	VBP	garner
+avoid	VBD	avoided
+contact	VBN	contacted
+wrack	VBD	wracked
+sound	VBD	sounded
+compile	VBN	compiled
+sound	VBG	sounding
+detach	VBN	detached
+tout	VBZ	touts
+sound	VBN	sounded
+light	VBN	lighted
+tally	VBG	tallying
+sound	VBZ	sounds
+tally	VBD	tallied
+wrack	VBN	wracked
+light	VBG	lighting
+wrack	VBP	wrack
+lurch	VBP	lurch
+airlift	VBG	airlifting
+impede	VBN	impeded
+tout	VBD	touted
+deplore	VBG	deploring
+tout	VBG	touting
+airlift	VBN	airlifted
+reexamine	VBG	reexamining
+uphold	VBG	upholding
+advocate	VBG	advocating
+decline	VBG	declining
+uphold	VBD	upheld
+uphold	VBN	upheld
+decline	VBP	decline
+advocate	VBN	advocated
+decline	VBN	declined
+do	VBG	doing
+emulate	VBG	emulating
+wholesale	VBG	wholesaling
+decline	VBZ	declines
+do	VBD	did
+plan	VBZ	plans
+clean	VBZ	cleans
+do	VBN	done
+distance	VBG	distancing
+cripple	VBN	crippled
+accept	VBZ	accepts
+clean	VBD	cleaned
+accept	VBN	accepted
+consume	VBN	consumed
+do	VBP	do
+clean	VBG	cleaning
+accept	VBP	accept
+accept	VBD	accepted
+consume	VBD	consumed
+spurn	VBD	spurned
+accept	VBG	accepting
+do	VBZ	does
+clean	VBN	cleaned
+clang	VBG	clanging
+pay	VBD	paid
+woo	VBG	wooing
+pay	VBG	paying
+code	VBN	coded
+pay	VBN	paid
+woo	VBN	wooed
+pay	VBP	pay
+consume	VBP	consume
+pay	VBZ	pays
+erase	VBD	erased
+become	VBD	became
+become	VBG	becoming
+become	VBP	become
+recoup	VBD	recouped
+become	VBN	become
+poach	VBG	poaching
+stuff	VBG	Stuffing
+dive	VBD	dived
+erase	VBN	erased
+stuff	VBP	stuff
+theorize	VBD	theorized
+misuse	VBD	misused
+blunt	VBN	blunted
+erase	VBG	erasing
+soil	VBD	soiled
+liquidate	VBG	liquidating
+plan	VBP	plan
+plan	VBN	planned
+plan	VBD	planned
+plan	VBG	planning
+liquidate	VBN	liquidated
+become	VBZ	becomes
+greet	VBD	greeted
+provision	VBG	provisioning
+attract	VBP	attract
+clip	VBN	clipped
+hospitalize	VBN	hospitalized
+censor	VBN	censored
+greet	VBG	greeting
+attract	VBN	attracted
+muddle	VBN	muddled
+censor	VBP	censor
+greet	VBN	greeted
+outsell	VBZ	outsells
+tie	VBZ	ties
+stoke	VBG	stoking
+squeegee	VBP	squeegee
+outsell	VBD	outsold
+attract	VBD	attracted
+outsell	VBG	outselling
+skew	VBN	skewed
+tie	VBN	tied
+attract	VBG	attracting
+tie	VBG	tying
+stuff	VBD	stuffed
+lease	VBZ	leases
+preclude	VBN	precluded
+tie	VBD	tied
+obstruct	VBG	obstructing
+obstruct	VBN	obstructed
+obstruct	VBP	obstruct
+blunt	VBD	blunted
+unearth	VBD	unearthed
+attract	VBZ	attracts
+dangle	VBN	dangled
+obligate	VBN	obligated
+lease	VBP	lease
+lease	VBN	leased
+fulfill	VBP	fulfill
+lease	VBD	leased
+strengthen	VBZ	strengthens
+lease	VBG	leasing
+strengthen	VBD	strengthened
+strengthen	VBG	strengthening
+afflict	VBZ	afflicts
+restate	VBN	restated
+size	VBP	size
+afflict	VBN	afflicted
+strengthen	VBP	strengthen
+strengthen	VBN	strengthened
+restate	VBG	restating
+size	VBD	sized
+spurn	VBN	spurned
+shred	VBD	shredded
+restate	VBD	restated
+acquiesce	VBD	acquiesced
+spurn	VBG	spurning
+warm	VBD	warmed
+affirm	VBG	affirming
+incline	VBN	inclined
+affirm	VBD	affirmed
+decline	VBD	declined
+warm	VBN	warmed
+advocate	VBZ	advocates
+detest	VBZ	detests
+flabbergast	VBN	flabbergasted
+advocate	VBP	advocate
+warm	VBG	warming
+dust	VBD	dusted
+stretch	VBG	stretching
+near	VBZ	nears
+waffle	VBN	waffled
+dust	VBG	dusting
+wonder	VBZ	wonders
+divest	VBD	divested
+wonder	VBP	wonder
+stretch	VBN	stretched
+top	VBD	topped
+resell	VBZ	resells
+wonder	VBD	wondered
+stretch	VBD	stretched
+wonder	VBG	wondering
+drip	VBG	dripping
+waffle	VBD	waffled
+fuel	VBG	Fueling
+resell	VBG	reselling
+top	VBZ	tops
+ballyhoo	VBN	ballyhooed
+disperse	VBG	dispersing
+fuel	VBN	fueled
+change	VBG	changing
+disperse	VBD	dispersed
+change	VBD	changed
+resell	VBP	resell
+divest	VBG	Divesting
+maneuver	VBG	maneuvering
+stretch	VBZ	stretches
+top	VBG	topping
+maneuver	VBD	maneuvered
+maneuver	VBN	maneuvered
+top	VBP	top
+top	VBN	topped
+dismay	VBN	dismayed
+intersperse	VBN	interspersed
+rivet	VBD	riveted
+pave	VBN	paved
+post	VBN	posted
+reignite	VBD	reignited
+post	VBD	posted
+implore	VBZ	implores
+change	VBN	changed
+pave	VBD	paved
+change	VBP	change
+post	VBG	posting
+fuel	VBD	fueled
+reignite	VBN	reignited
+change	VBZ	changes
+rivet	VBN	riveted
+near	VBG	nearing
+crunch	VBD	crunched
+near	VBD	neared
+rivet	VBZ	rivets
+implore	VBG	imploring
+lumber	VBP	lumber
+hover	VBD	hovered
+fulfil	VBG	fulfilling
+hesitate	VBP	hesitate
+fulfil	VBN	fulfilled
+hover	VBN	hovered
+admit	VBD	admitted
+hover	VBG	hovering
+fulfil	VBD	fulfilled
+liquefy	VBZ	liquefies
+admit	VBZ	admits
+admit	VBG	admitting
+wriggle	VBG	wriggling
+intimidate	VBN	intimidated
+thrash	VBG	thrashing
+admit	VBN	admitted
+liquefy	VBP	liquefy
+admit	VBP	admit
+thrash	VBD	thrashed
+liquefy	VBN	liquefied
+intimidate	VBG	intimidating
+mate	VBN	mated
+exchange	VBD	exchanged
+affiliate	VBN	Affiliated
+drive	VBZ	drives
+exchange	VBN	exchanged
+exchange	VBP	exchange
+steady	VBD	steadied
+orient	VBN	oriented
+delouse	VBG	delousing
+drive	VBP	drive
+drive	VBN	driven
+steady	VBN	steadied
+drive	VBG	driving
+wrong	VBN	wronged
+dissociate	VBG	dissociating
+drive	VBD	drove
+misunderstand	VBG	Misunderstanding
+affiliate	VBG	affiliating
+overreact	VBG	overreacting
+disallow	VBD	disallowed
+hesitate	VBG	hesitating
+misunderstand	VBN	misunderstood
+overreact	VBN	overreacted
+license	VBD	licensed
+license	VBG	licensing
+log	VBD	logged
+hemorrhage	VBG	hemorrhaging
+hemorrhage	VBN	hemorrhaged
+log	VBP	log
+brave	VBG	braving
+log	VBG	logging
+license	VBN	licensed
+taper	VBZ	tapers
+license	VBP	license
+log	VBN	logged
+distil	VBN	distilled
+log	VBZ	logs
+license	VBZ	licenses
+distil	VBG	distilling
+taper	VBG	tapering
+demur	VBZ	demurs
+outrage	VBN	outraged
+wane	VBD	waned
+spurt	VBN	spurted
+expend	VBN	expended
+wane	VBG	waning
+spurt	VBD	spurted
+scuttle	VBD	scuttled
+crack	VBP	crack
+spurt	VBZ	spurts
+crack	VBN	cracked
+forge	VBN	forged
+crack	VBG	Cracking
+scuttle	VBN	scuttled
+forge	VBG	forging
+bind	VBG	binding
+crack	VBD	cracked
+wane	VBP	wane
+entrance	VBN	entranced
+dodge	VBD	dodged
+reduce	VBN	reduced
+reduce	VBP	reduce
+wane	VBZ	WANES
+club	VBD	clubbed
+reduce	VBG	reducing
+dodge	VBP	dodge
+concede	VBZ	concedes
+reduce	VBD	reduced
+shuttle	VBN	shuttled
+pinpoint	VBN	pinpointed
+shuttle	VBD	shuttled
+brand	VBZ	brands
+shuttle	VBG	shuttling
+play	VBG	playing
+rattle	VBG	rattling
+play	VBN	played
+rattle	VBD	RATTLED
+dangle	VBG	dangling
+play	VBP	play
+rattle	VBN	rattled
+impose	VBD	imposed
+term	VBD	termed
+communicate	VBN	communicated
+opt	VBP	opt
+play	VBZ	Plays
+disseminate	VBN	disseminated
+discipline	VBN	disciplined
+stir	VBZ	stirs
+term	VBN	termed
+discount	VBZ	discounts
+opt	VBN	opted
+stir	VBD	stirred
+denounce	VBG	denouncing
+stir	VBG	stirring
+discount	VBN	discounted
+stir	VBP	stir
+denounce	VBD	denounced
+discount	VBG	discounting
+discount	VBD	discounted
+denounce	VBN	denounced
+denounce	VBP	denounce
+swallow	VBN	swallowed
+reimburse	VBZ	reimburses
+swallow	VBG	swallowing
+reimburse	VBD	reimbursed
+opt	VBG	opting
+impose	VBN	imposed
+opt	VBD	opted
+spearhead	VBD	spearheaded
+mishandle	VBD	mishandled
+spearhead	VBG	spearheading
+stock	VBN	stocked
+function	VBP	function
+mishandle	VBG	mishandling
+languish	VBN	languished
+impose	VBG	imposing
+function	VBD	functioned
+stock	VBG	stocking
+languish	VBD	languished
+spearhead	VBN	spearheaded
+escape	VBN	escaped
+function	VBG	functioning
+languish	VBG	languishing
+socialize	VBG	socializing
+escape	VBD	escaped
+escape	VBG	escaping
+hole	VBN	holed
+play	VBD	played
+languish	VBZ	languishes
+stock	VBZ	stocks
+impose	VBZ	imposes
+hole	VBP	hole
+desert	VBN	deserted
+supervise	VBZ	supervises
+supervise	VBN	supervised
+supervise	VBP	supervise
+supervise	VBD	supervised
+want	VBP	want
+whir	VBG	whirring
+supervise	VBG	supervising
+want	VBN	wanted
+want	VBZ	wants
+merge	VBP	merge
+merge	VBN	merged
+merge	VBG	merging
+want	VBG	wanting
+probe	VBG	Probing
+merge	VBD	merged
+want	VBD	wanted
+smother	VBN	smothered
+disenchant	VBN	disenchanted
+depict	VBP	depict
+pause	VBD	paused
+depict	VBZ	depicts
+reinforce	VBP	reinforce
+enforce	VBZ	enforces
+depict	VBG	Depicting
+thwart	VBD	thwarted
+reinforce	VBN	reinforced
+depict	VBN	depicted
+fret	VBG	fretting
+weather	VBP	weather
+dovetail	VBZ	dovetails
+cook	VBN	cooked
+fret	VBZ	frets
+probe	VBP	probe
+thwart	VBN	thwarted
+fret	VBP	fret
+reinforce	VBZ	reinforces
+cook	VBG	cooking
+lick	VBG	licking
+recant	VBD	recanted
+recant	VBN	recanted
+reinforce	VBG	reinforcing
+renegotiate	VBG	renegotiating
+subtitle	VBN	subtitled
+reinforce	VBD	reinforced
+flicker	VBD	flickered
+refashion	VBG	refashioning
+renegotiate	VBN	renegotiated
+freeze	VBN	frozen
+cater	VBP	cater
+reduce	VBZ	reduces
+concede	VBD	conceded
+freeze	VBD	froze
+concede	VBN	conceded
+direct	VBG	directing
+mass	VBD	massed
+concede	VBP	concede
+cater	VBG	catering
+direct	VBD	directed
+cater	VBD	catered
+direct	VBN	directed
+concede	VBG	conceding
+freeze	VBZ	freezes
+measure	VBD	measured
+secure	VBN	secured
+enforce	VBG	enforcing
+range	VBD	ranged
+secure	VBP	secure
+provoke	VBN	provoked
+secure	VBD	secured
+tell	VBP	tell
+range	VBG	ranging
+secure	VBG	securing
+tell	VBN	told
+measure	VBG	measuring
+nosedive	VBG	nosediving
+range	VBP	range
+range	VBN	ranged
+measure	VBN	measured
+implicate	VBN	implicated
+measure	VBZ	measures
+provoke	VBG	provoking
+cater	VBZ	caters
+provoke	VBD	provoked
+enforce	VBP	enforce
+encircle	VBG	encircling
+tell	VBZ	tells
+range	VBZ	ranges
+enforce	VBN	enforced
+predict	VBD	predicted
+render	VBD	rendered
+pause	VBG	pausing
+predict	VBG	predicting
+form	VBD	formed
+toil	VBP	toil
+predict	VBN	predicted
+moderate	VBG	moderating
+undulate	VBP	undulate
+pause	VBP	pause
+predict	VBP	predict
+toil	VBG	toiling
+prefer	VBZ	prefers
+pause	VBZ	pauses
+tell	VBD	told
+form	VBP	form
+tell	VBG	telling
+predict	VBZ	predicts
+moan	VBZ	moans
+form	VBG	forming
+moderate	VBP	moderate
+chance	VBP	chance
+prefer	VBP	prefer
+form	VBN	formed
+prefer	VBN	preferred
+prefer	VBG	preferring
+champion	VBD	championed
+prefer	VBD	preferred
+handicap	VBN	handicapped
+form	VBZ	forms
+moan	VBG	moaning
+champion	VBN	championed
+capture	VBD	captured
+champion	VBP	champion
+capture	VBG	capturing
+render	VBN	rendered
+recharge	VBG	recharging
+render	VBG	rendering
+capture	VBN	captured
+ring	VBN	rung
+ring	VBP	ring
+indicate	VBZ	indicates
+cruise	VBP	cruise
+indicate	VBG	indicating
+indicate	VBD	indicated
+stand	VBD	stood
+jar	VBG	jarring
+forbid	VBD	forbade
+indicate	VBP	indicate
+indicate	VBN	indicated
+cruise	VBG	cruising
+shine	VBG	shining
+stand	VBN	stood
+fax	VBD	faxed
+stand	VBP	stand
+trickle	VBG	trickling
+void	VBN	voided
+forbid	VBG	forbidding
+stand	VBG	standing
+forbid	VBN	forbidden
+rate	VBD	rated
+rate	VBP	rate
+alert	VBD	alerted
+route	VBN	routed
+rate	VBN	rated
+rate	VBZ	rates
+route	VBG	routing
+forbid	VBZ	forbids
+stand	VBZ	stands
+alert	VBG	alerting
+expand	VBD	expanded
+expand	VBG	expanding
+expand	VBN	expanded
+expand	VBP	expand
+expand	VBZ	EXPANDS
+impound	VBN	impounded
+decide	VBD	decided
+decide	VBG	deciding
+decide	VBN	decided
+mount	VBZ	mounts
+decide	VBP	decide
+mount	VBD	mounted
+mount	VBG	mounting
+ring	VBG	ringing
+ring	VBD	rang
+mount	VBP	mount
+mount	VBN	mounted
+wed	VBZ	weds
+title	VBD	titled
+veto	VBD	vetoed
+rear	VBG	rearing
+drown	VBN	drowned
+veto	VBG	vetoing
+rear	VBN	reared
+waft	VBG	wafting
+title	VBN	titled
+drown	VBD	drowned
+veto	VBN	vetoed
+inspire	VBD	inspired
+saw	VBD	saw
+inspire	VBP	inspire
+inspire	VBN	Inspired
+wed	VBN	wed
+leverage	VBN	leveraged
+hedge	VBG	hedging
+debate	VBN	debated
+repaint	VBN	repainted
+neighbor	VBG	neighboring
+necessitate	VBD	necessitated
+send	VBN	sent
+witness	VBG	witnessing
+haunt	VBZ	haunts
+send	VBP	send
+perceive	VBD	perceived
+send	VBD	sent
+perceive	VBP	perceive
+witness	VBN	witnessed
+perceive	VBN	perceived
+necessitate	VBN	necessitated
+send	VBG	sending
+cake	VBD	caked
+perceive	VBZ	perceives
+mix	VBN	mixed
+mix	VBG	mixing
+shine	VBP	shine
+amaze	VBN	amazed
+tend	VBP	tend
+mix	VBZ	mixes
+tend	VBN	tended
+send	VBZ	sends
+tend	VBD	tended
+tend	VBG	tending
+waive	VBG	waiving
+rocket	VBD	rocketed
+crumble	VBZ	crumbles
+skirt	VBG	skirting
+allege	VBZ	alleges
+irk	VBD	irked
+crumble	VBN	crumbled
+trouble	VBN	troubled
+irk	VBN	irked
+tend	VBZ	tends
+crumble	VBG	crumbling
+trouble	VBD	troubled
+mean	VBZ	means
+trouble	VBG	troubling
+saturate	VBD	saturated
+hammer	VBN	hammered
+freak	VBN	freaked
+allege	VBD	alleged
+feature	VBN	featured
+feature	VBP	feature
+enclose	VBG	enclosing
+deceive	VBN	deceived
+mean	VBN	meant
+allege	VBG	alleging
+synchronize	VBN	synchronized
+mean	VBP	mean
+skirt	VBZ	skirts
+haunt	VBP	haunt
+blare	VBD	blared
+haunt	VBN	haunted
+feature	VBG	featuring
+master	VBN	mastered
+mean	VBG	meaning
+haunt	VBG	haunting
+mean	VBD	meant
+waive	VBZ	waives
+vibrate	VBG	vibrating
+represent	VBZ	represents
+waive	VBN	waived
+rocket	VBG	rocketing
+skirt	VBN	skirted
+allege	VBP	allege
+feature	VBZ	features
+allege	VBN	alleged
+dwarf	VBZ	dwarfs
+ignite	VBN	ignited
+downgrade	VBD	downgraded
+overlook	VBP	overlook
+represent	VBN	represented
+represent	VBP	represent
+represent	VBD	represented
+coax	VBG	coaxing
+overlook	VBN	overlooked
+represent	VBG	representing
+move	VBZ	moves
+debate	VBG	debating
+move	VBP	move
+overlook	VBZ	overlooks
+move	VBN	moved
+move	VBG	moving
+trundle	VBZ	trundles
+picture	VBN	pictured
+saturate	VBN	saturated
+deregulate	VBN	deregulated
+move	VBD	moved
+picture	VBP	picture
+picture	VBZ	pictures
+brag	VBZ	brags
+crumble	VBD	crumbled
+empty	VBP	empty
+tiptoe	VBD	tiptoed
+empty	VBN	emptied
+stampede	VBN	stampeded
+picture	VBG	picturing
+instruct	VBN	instructed
+instruct	VBD	instructed
+instruct	VBG	instructing
+instruct	VBZ	instructs
+signal	VBZ	signals
+divide	VBZ	divides
+divide	VBG	dividing
+downgrade	VBG	downgrading
+misrepresent	VBZ	misrepresents
+divide	VBD	divided
+overlook	VBD	overlooked
+divide	VBN	divided
+downgrade	VBN	downgraded
+divide	VBP	divide
+overlook	VBG	overlooking
+major	VBG	majoring
+dwarf	VBN	dwarfed
+dwarf	VBP	dwarf
+subsidize	VBN	subsidized
+subsidize	VBG	subsidizing
+rescind	VBD	rescinded
+phase	VBN	phased
+signal	VBG	signaling
+point	VBZ	points
+inhabit	VBZ	inhabits
+signal	VBD	signaled
+phase	VBG	phasing
+feature	VBD	featured
+point	VBN	pointed
+misrepresent	VBG	misrepresenting
+inhabit	VBN	inhabited
+signal	VBP	signal
+phase	VBD	phased
+signal	VBN	signaled
+rescind	VBG	rescinding
+point	VBP	point
+inhabit	VBP	inhabit
+misrepresent	VBD	misrepresented
+point	VBD	pointed
+redouble	VBG	redoubling
+point	VBG	pointing
+dispel	VBD	dispelled
+pinch	VBG	pinching
+subsidize	VBZ	subsidizes
+parachute	VBG	parachuting
+bump	VBN	bumped
+swap	VBG	swapping
+shed	VBG	SHEDDING
+contaminate	VBN	contaminated
+totter	VBG	tottering
+shed	VBN	shed
+track	VBN	tracked
+tax	VBZ	taxes
+shed	VBP	shed
+track	VBD	tracked
+track	VBG	tracking
+track	VBZ	tracks
+evade	VBN	evaded
+dress	VBG	dressing
+dress	VBD	dressed
+refund	VBG	refunding
+unroll	VBP	unroll
+dress	VBN	dressed
+track	VBP	track
+dress	VBP	dress
+evade	VBZ	evades
+unroll	VBZ	unrolls
+swap	VBP	swap
+slide	VBN	slid
+slide	VBG	sliding
+realize	VBN	realized
+slide	VBD	slid
+realize	VBP	realize
+sentence	VBN	sentenced
+realize	VBG	realizing
+sentence	VBG	Sentencing
+sentence	VBD	sentenced
+realize	VBZ	realizes
+tax	VBD	taxed
+simplify	VBN	simplified
+simplify	VBP	simplify
+simplify	VBG	SIMPLIFYING
+tax	VBN	taxed
+shed	VBD	shed
+electrify	VBN	electrified
+clash	VBD	clashed
+rotate	VBD	rotated
+bump	VBD	bumped
+rotate	VBG	rotating
+clash	VBN	clashed
+franchise	VBG	franchising
+persist	VBZ	persists
+occupy	VBD	occupied
+harbor	VBG	harboring
+house	VBN	housed
+franchise	VBZ	franchises
+demean	VBN	demeaned
+persist	VBP	persist
+franchise	VBN	franchised
+house	VBZ	houses
+persist	VBG	persisting
+harbor	VBZ	harbors
+persist	VBD	persisted
+reap	VBP	REAP
+retire	VBZ	retires
+occupy	VBZ	occupies
+reap	VBN	reaped
+occupy	VBN	occupied
+shun	VBP	shun
+harbor	VBP	harbor
+enclose	VBN	enclosed
+retire	VBP	retire
+retire	VBN	Retired
+reap	VBD	reaped
+retire	VBG	retiring
+retire	VBD	retired
+realize	VBD	realized
+foreclose	VBN	foreclosed
+wipe	VBG	wiping
+wipe	VBD	wiped
+disrupt	VBD	disrupted
+waste	VBN	wasted
+rally	VBZ	rallies
+wipe	VBN	wiped
+waste	VBG	wasting
+uproot	VBD	uprooted
+waste	VBD	wasted
+wipe	VBP	wipe
+withstand	VBN	withstood
+spike	VBN	spiked
+catalog	VBG	cataloging
+shun	VBG	shunning
+waste	VBZ	wastes
+shun	VBD	shunned
+outperform	VBG	outperforming
+outperform	VBD	outperformed
+outperform	VBN	outperformed
+outperform	VBP	outperform
+outperform	VBZ	outperforms
+withstand	VBG	withstanding
+withstand	VBD	withstood
+disrupt	VBN	disrupted
+copyright	VBN	copyrighted
+disrupt	VBG	disrupting
+chase	VBG	chasing
+chase	VBD	chased
+commend	VBZ	commends
+have	VBN	had
+have	VBP	have
+have	VBD	had
+have	VBG	having
+illustrate	VBD	illustrated
+fit	VBZ	fits
+overtax	VBN	overtaxed
+equip	VBG	equipping
+equip	VBD	equipped
+import	VBZ	imports
+foul	VBN	fouled
+fit	VBN	fit
+fit	VBP	fit
+damp	VBP	damp
+spend	VBD	spent
+stop	VBZ	stops
+hoard	VBP	hoard
+determine	VBP	determine
+import	VBG	importing
+damp	VBN	damped
+equip	VBZ	equips
+construe	VBN	construed
+determine	VBN	determined
+equip	VBN	equipped
+spend	VBG	spending
+reside	VBN	resided
+import	VBN	imported
+awake	VBD	awoke
+import	VBP	import
+energize	VBN	energized
+interpret	VBZ	interprets
+illustrate	VBN	illustrated
+illustrate	VBP	illustrate
+construe	VBD	construed
+spend	VBP	spend
+spend	VBN	spent
+damp	VBG	damping
+spend	VBZ	spends
+import	VBD	imported
+interpret	VBN	interpreted
+illustrate	VBZ	illustrates
+determine	VBZ	determines
+rectify	VBG	rectifying
+cope	VBG	coping
+libel	VBN	libeled
+suit	VBZ	suits
+file	VBD	filed
+interpret	VBG	interpreting
+interpret	VBD	interpreted
+stop	VBD	stopped
+consent	VBG	consenting
+file	VBG	filing
+suit	VBN	suited
+stop	VBG	stopping
+file	VBN	filed
+gleam	VBG	gleaming
+consent	VBD	consented
+berate	VBD	berated
+effect	VBZ	effects
+determine	VBG	determining
+file	VBP	file
+determine	VBD	determined
+stop	VBP	stop
+stop	VBN	stopped
+scale	VBN	scaled
+muzzle	VBZ	muzzles
+file	VBZ	files
+scale	VBD	scaled
+reside	VBZ	resides
+scale	VBG	scaling
+bootleg	VBN	bootlegged
+search	VBD	searched
+search	VBG	searching
+authorize	VBD	authorized
+offend	VBZ	offends
+authorize	VBG	authorizing
+authorize	VBN	authorized
+embolden	VBN	emboldened
+offend	VBG	offending
+intertwine	VBG	intertwining
+intertwine	VBN	intertwined
+decimate	VBN	decimated
+shut	VBD	shut
+weep	VBD	wept
+wreck	VBG	wrecking
+weep	VBG	weeping
+wreck	VBD	wrecked
+assert	VBZ	asserts
+adorn	VBD	adorned
+shut	VBG	shutting
+compensate	VBZ	compensates
+imitate	VBG	imitating
+shut	VBN	shut
+adorn	VBN	adorned
+bow	VBG	Bowing
+imitate	VBN	imitated
+compensate	VBN	compensated
+remind	VBZ	reminds
+bow	VBD	bowed
+bow	VBP	bow
+miscalculate	VBD	miscalculated
+shut	VBZ	shuts
+imitate	VBP	imitate
+volunteer	VBD	volunteered
+remind	VBG	reminding
+remind	VBN	reminded
+assert	VBD	asserted
+assert	VBG	asserting
+search	VBZ	searches
+remind	VBD	reminded
+assert	VBN	asserted
+assert	VBP	assert
+rely	VBD	relied
+drag	VBD	dragged
+rely	VBG	relying
+withhold	VBG	withholding
+relinquish	VBG	relinquishing
+gesture	VBD	gestured
+relinquish	VBN	relinquished
+choke	VBD	choked
+withhold	VBN	withheld
+choke	VBG	choking
+rely	VBZ	relies
+pedal	VBG	pedaling
+finger	VBG	fingering
+choke	VBN	choked
+advise	VBZ	advises
+rely	VBN	relied
+withhold	VBD	withheld
+host	VBD	hosted
+host	VBG	hosting
+pedal	VBN	pedaled
+listen	VBZ	listens
+finger	VBN	fingered
+rely	VBP	rely
+forgive	VBN	forgiven
+bite	VBZ	bites
+listen	VBP	listen
+listen	VBD	listened
+forgive	VBG	forgiving
+listen	VBG	listening
+style	VBN	styled
+bite	VBG	biting
+resonate	VBD	resonated
+pale	VBZ	pales
+bite	VBN	Bitten
+surpass	VBP	surpass
+surpass	VBN	surpassed
+dwindle	VBG	dwindling
+hamper	VBZ	hampers
+thrill	VBZ	thrills
+pale	VBD	paled
+rack	VBN	racked
+convolute	VBN	convoluted
+pawn	VBG	pawning
+rack	VBG	racking
+rack	VBD	racked
+pale	VBP	pale
+style	VBG	styling
+omit	VBP	omit
+omit	VBN	omitted
+right	VBN	righted
+omit	VBD	omitted
+surpass	VBG	surpassing
+dwindle	VBD	dwindled
+resonate	VBZ	resonates
+surpass	VBD	surpassed
+recalculate	VBD	recalculated
+omit	VBZ	omits
+recalculate	VBG	recalculating
+depend	VBG	depending
+depend	VBN	depended
+underpin	VBN	underpinned
+shout	VBP	shout
+host	VBZ	hosts
+shout	VBD	shouted
+drag	VBZ	drags
+shout	VBG	shouting
+depend	VBD	depended
+shout	VBZ	shouts
+mumble	VBN	mumbled
+hamper	VBN	hampered
+express	VBZ	expresses
+drink	VBG	drinking
+drag	VBP	drag
+drag	VBN	dragged
+express	VBN	expressed
+express	VBP	express
+hamper	VBG	hampering
+drink	VBP	drink
+drag	VBG	dragging
+bone	VBN	boned
+pare	VBN	pared
+pare	VBG	paring
+manufacture	VBZ	manufactures
+buy	VBD	bought
+pound	VBN	pounded
+buy	VBG	buying
+pound	VBG	pounding
+buy	VBN	bought
+buy	VBP	buy
+surmount	VBG	surmounting
+trudge	VBG	trudging
+manufacture	VBD	manufactured
+buy	VBZ	buys
+manufacture	VBG	manufacturing
+wash	VBN	washed
+wash	VBP	wash
+wash	VBD	washed
+wash	VBG	washing
+thrill	VBN	thrilled
+manufacture	VBP	manufacture
+manufacture	VBN	manufactured
+taunt	VBD	taunted
+undervalue	VBN	undervalued
+fume	VBG	fuming
+tackle	VBZ	tackles
+have	VBZ	has
+tackle	VBP	tackle
+advise	VBD	advised
+astound	VBZ	astounds
+vanish	VBZ	vanishes
+shove	VBG	shoving
+seek	VBZ	seeks
+tackle	VBG	tackling
+advise	VBG	advising
+shove	VBD	shoved
+vanish	VBP	vanish
+advise	VBN	advised
+advise	VBP	advise
+snore	VBG	snoring
+exist	VBZ	exists
+exist	VBN	existed
+seek	VBD	sought
+exist	VBP	exist
+discredit	VBN	discredited
+seek	VBG	seeking
+vanish	VBN	vanished
+exist	VBD	existed
+seek	VBN	sought
+exist	VBG	existing
+vanish	VBG	vanishing
+seek	VBP	seek
+scamper	VBP	scamper
+evacuate	VBN	evacuated
+abandon	VBN	abandoned
+rally	VBG	rallying
+abandon	VBP	abandon
+shove	VBZ	shoves
+rally	VBD	rallied
+qualify	VBP	qualify
+qualify	VBN	qualified
+author	VBN	authored
+introduce	VBZ	introduces
+declassify	VBG	declassifying
+rally	VBP	rally
+abandon	VBG	abandoning
+qualify	VBZ	qualifies
+rally	VBN	rallied
+introduce	VBN	introduced
+prohibit	VBD	prohibited
+act	VBZ	acts
+prohibit	VBG	prohibiting
+introduce	VBD	introduced
+panic	VBG	panicking
+source	VBG	sourcing
+prohibit	VBP	prohibit
+panic	VBD	panicked
+introduce	VBG	introducing
+tumble	VBG	tumbling
+tumble	VBD	tumbled
+prohibit	VBN	prohibited
+discipline	VBG	disciplining
+act	VBN	acted
+prohibit	VBZ	prohibits
+act	VBP	act
+abandon	VBZ	abandons
+graft	VBN	grafted
+act	VBG	acting
+tumble	VBZ	tumbles
+plant	VBN	planted
+act	VBD	acted
+plant	VBD	planted
+plant	VBG	planting
+qualify	VBD	qualified
+mouth	VBD	mouthed
+scold	VBN	scolded
+qualify	VBG	qualifying
+proffer	VBD	proffered
+avert	VBG	averting
+jam	VBN	jammed
+proffer	VBN	proffered
+personalize	VBN	personalized
+please	VBZ	pleases
+certify	VBN	certified
+end	VBZ	ends
+avert	VBZ	averts
+end	VBP	end
+end	VBN	ended
+exhibit	VBG	exhibiting
+end	VBD	ended
+end	VBG	Ending
+tangle	VBN	tangled
+tangle	VBP	tangle
+jam	VBD	jammed
+avert	VBN	averted
+fare	VBN	fared
+fare	VBP	fare
+depend	VBP	depend
+depend	VBZ	depends
+gyrate	VBD	gyrated
+digest	VBG	digesting
+gyrate	VBG	gyrating
+digest	VBN	digested
+fasten	VBN	fastened
+please	VBP	please
+appoint	VBN	appointed
+please	VBN	pleased
+amend	VBN	amended
+please	VBG	pleasing
+please	VBD	pleased
+bottom	VBN	bottomed
+bottom	VBD	bottomed
+appoint	VBD	appointed
+bottom	VBG	bottoming
+chug	VBP	chug
+paint	VBP	paint
+paint	VBN	painted
+paint	VBG	painting
+presage	VBZ	presages
+amend	VBD	amended
+amend	VBG	amending
+paint	VBD	painted
+spawn	VBZ	spawns
+bleed	VBG	bleeding
+fare	VBD	fared
+rob	VBG	robbing
+spawn	VBN	spawned
+abandon	VBD	abandoned
+spawn	VBD	spawned
+rob	VBN	robbed
+deploy	VBN	deployed
+desire	VBD	desired
+motivate	VBN	motivated
+tuck	VBN	tucked
+localize	VBN	localized
+scare	VBZ	scares
+tuck	VBD	tucked
+brace	VBG	bracing
+motivate	VBP	motivate
+deploy	VBD	deployed
+interrupt	VBN	interrupted
+desire	VBN	desired
+desire	VBP	desire
+hoodwink	VBN	hoodwinked
+interrupt	VBG	interrupting
+screech	VBG	screeching
+screech	VBD	screeched
+trample	VBN	trampled
+fizz	VBZ	fizzes
+devour	VBN	devoured
+consist	VBP	consist
+consist	VBN	consisted
+scare	VBD	scared
+enhance	VBZ	enhances
+strand	VBN	stranded
+consist	VBG	consisting
+enhance	VBN	enhanced
+strand	VBG	stranding
+consist	VBD	consisted
+scare	VBP	scare
+consist	VBZ	consists
+foam	VBG	foaming
+scare	VBG	scaring
+scare	VBN	scared
+burn	VBD	burned
+burn	VBG	burning
+duck	VBZ	ducks
+chip	VBN	chipped
+gush	VBZ	gushes
+chip	VBG	chipping
+enhance	VBG	enhancing
+duck	VBG	ducking
+enhance	VBD	enhanced
+incite	VBG	inciting
+design	VBZ	designs
+eyeball	VBG	eyeballing
+design	VBN	designed
+dot	VBG	dotting
+gush	VBP	gush
+burn	VBZ	burns
+brace	VBN	braced
+design	VBG	designing
+burn	VBN	burned
+dot	VBP	dot
+design	VBD	designed
+burn	VBP	burn
+soothe	VBG	soothing
+battle	VBZ	battles
+target	VBG	targeting
+invert	VBN	inverted
+target	VBD	targeted
+tip	VBD	tipped
+saddle	VBN	saddled
+reward	VBN	rewarded
+battle	VBP	battle
+emit	VBN	emitted
+battle	VBN	battled
+loom	VBZ	looms
+battle	VBG	battling
+saddle	VBD	saddled
+reward	VBZ	rewards
+battle	VBD	battled
+eat	VBP	eat
+target	VBZ	targets
+eat	VBN	eaten
+eat	VBG	eating
+eat	VBD	ate
+target	VBN	targeted
+outdo	VBD	outdid
+target	VBP	target
+eat	VBZ	eats
+outdo	VBN	outdone
+power	VBN	powered
+eject	VBN	ejected
+venture	VBG	venturing
+fine	VBD	fined
+reorganize	VBZ	reorganizes
+auction	VBN	auctioned
+grind	VBG	grinding
+reward	VBG	rewarding
+fine	VBN	fined
+compress	VBN	compressed
+loot	VBG	looting
+motivate	VBG	motivating
+auction	VBD	auctioned
+loom	VBG	looming
+repel	VBP	repel
+grind	VBZ	grinds
+reorganize	VBN	reorganized
+weaken	VBG	Weakening
+address	VBN	addressed
+ally	VBD	allied
+lure	VBG	luring
+salvage	VBN	salvaged
+lure	VBN	lured
+yell	VBZ	yells
+ally	VBG	allying
+delay	VBN	delayed
+address	VBG	addressing
+weaken	VBD	weakened
+delay	VBP	delay
+kick	VBZ	kicks
+circulate	VBD	circulated
+release	VBZ	releases
+address	VBP	address
+lure	VBD	lured
+pluck	VBN	plucked
+lure	VBZ	lures
+circulate	VBN	circulated
+address	VBZ	addresses
+circulate	VBG	circulating
+span	VBG	spanning
+swell	VBZ	swells
+weaken	VBN	weakened
+reshape	VBG	reshaping
+weaken	VBP	weaken
+delay	VBD	delayed
+quiet	VBD	quieted
+demonize	VBN	demonized
+grovel	VBZ	grovels
+span	VBP	span
+delay	VBG	delaying
+circulate	VBP	circulate
+kick	VBD	kicked
+reshape	VBN	reshaped
+diagram	VBG	diagramming
+swell	VBP	swell
+swell	VBN	swelled
+delay	VBZ	DELAYS
+swell	VBD	swelled
+release	VBN	released
+nag	VBG	nagging
+yell	VBG	yelling
+kick	VBN	kicked
+release	VBP	release
+swell	VBG	swelling
+kick	VBP	kick
+yell	VBD	yelled
+release	VBD	released
+release	VBG	releasing
+kick	VBG	kicking
+deplete	VBN	depleted
+attempt	VBZ	attempts
+intend	VBZ	intends
+verge	VBD	verged
+survey	VBZ	surveys
+intend	VBP	intend
+attempt	VBP	attempt
+manage	VBZ	manages
+rekindle	VBG	rekindling
+attempt	VBN	attempted
+deplete	VBD	depleted
+survey	VBD	surveyed
+deplete	VBZ	depletes
+survey	VBG	Surveying
+teem	VBD	teemed
+teem	VBG	teeming
+survey	VBN	surveyed
+survey	VBP	survey
+shepherd	VBD	shepherded
+pray	VBG	praying
+reapportion	VBP	reapportion
+quiet	VBN	quieted
+submit	VBZ	submits
+quiet	VBG	quieting
+humanize	VBG	humanizing
+weaken	VBZ	weakens
+bother	VBG	bothering
+intend	VBN	intended
+submit	VBG	submitting
+attempt	VBG	attempting
+submit	VBD	submitted
+swim	VBG	swimming
+submit	VBP	submit
+attempt	VBD	attempted
+intend	VBD	intended
+swim	VBP	swim
+bother	VBD	bothered
+submit	VBN	submitted
+bother	VBN	bothered
+bother	VBP	bother
+recur	VBG	recurring
+remember	VBG	remembering
+mimic	VBP	mimic
+mimic	VBZ	mimics
+remember	VBD	remembered
+buffet	VBN	buffeted
+correct	VBP	correct
+predetermine	VBN	predetermined
+correct	VBN	corrected
+remember	VBZ	remembers
+temper	VBN	tempered
+juggle	VBG	juggling
+manage	VBD	managed
+correct	VBG	correcting
+remember	VBN	remembered
+remember	VBP	remember
+correct	VBD	corrected
+manage	VBG	managing
+manage	VBP	manage
+manage	VBN	managed
+credit	VBN	credited
+hatch	VBN	hatched
+credit	VBD	credited
+skip	VBD	skipped
+credit	VBG	crediting
+skip	VBG	skipping
+credit	VBZ	credits
+bargain	VBN	bargained
+pioneer	VBD	pioneered
+glut	VBN	glutted
+manipulate	VBP	manipulate
+bash	VBG	Bashing
+manipulate	VBN	manipulated
+comfort	VBN	comforted
+evince	VBN	evinced
+manipulate	VBG	manipulating
+repeat	VBZ	repeats
+tailor	VBN	tailored
+address	VBD	addressed
+curl	VBD	curled
+repeat	VBG	repeating
+repeat	VBD	repeated
+manipulate	VBZ	manipulates
+express	VBD	expressed
+hiss	VBD	hissed
+impeach	VBN	impeached
+repeat	VBN	repeated
+express	VBG	expressing
+inherit	VBN	inherited
+encrypt	VBG	encrypting
+lull	VBN	lulled
+lag	VBP	lag
+awaken	VBN	awakened
+lag	VBN	lagged
+extrapolate	VBN	extrapolated
+inherit	VBD	inherited
+dab	VBZ	dabs
+redirect	VBN	redirected
+lag	VBZ	lags
+disguise	VBN	disguised
+reveal	VBP	reveal
+reveal	VBN	revealed
+reveal	VBZ	reveals
+attest	VBZ	attests
+inherit	VBP	inherit
+peak	VBD	peaked
+insist	VBD	insisted
+peak	VBG	peaking
+reveal	VBD	revealed
+load	VBD	loaded
+loan	VBD	loaned
+gape	VBN	gaped
+insist	VBN	insisted
+reveal	VBG	revealing
+insist	VBG	insisting
+load	VBN	loaded
+regret	VBZ	regrets
+assassinate	VBN	assassinated
+apply	VBG	Applying
+insist	VBP	insist
+load	VBG	loading
+regret	VBN	regretted
+hate	VBP	hate
+lag	VBD	lagged
+apply	VBD	applied
+hate	VBN	hated
+regret	VBP	regret
+peak	VBN	peaked
+insist	VBZ	insists
+gross	VBG	grossing
+lag	VBG	lagging
+defend	VBD	defended
+amount	VBN	amounted
+knit	VBN	knit
+rig	VBD	rigged
+defend	VBG	defending
+hate	VBZ	hates
+shift	VBD	shifted
+amount	VBD	amounted
+shift	VBG	shifting
+defend	VBP	defend
+defend	VBN	defended
+rebuff	VBD	rebuffed
+defend	VBZ	defends
+shift	VBP	shift
+air	VBZ	airs
+shift	VBN	shifted
+trail	VBZ	trails
+rebuff	VBN	rebuffed
+amount	VBZ	amounts
+shift	VBZ	shifts
+air	VBN	aired
+trail	VBG	trailing
+wither	VBG	withering
+reply	VBD	replied
+merit	VBP	merit
+trail	VBN	trailed
+calculate	VBD	calculated
+reply	VBN	replied
+trail	VBP	trail
+air	VBG	airing
+air	VBD	aired
+leap	VBN	leaped
+validate	VBG	validating
+hasten	VBN	hastened
+calculate	VBG	calculating
+leap	VBD	leaped
+knit	VBG	knitting
+leap	VBG	leaping
+calculate	VBN	calculated
+trail	VBD	trailed
+project	VBD	projected
+storm	VBD	stormed
+compact	VBN	compacted
+advance	VBD	advanced
+advance	VBG	Advancing
+storm	VBG	storming
+project	VBG	projecting
+breach	VBN	breached
+project	VBP	project
+project	VBN	Projected
+reply	VBZ	replies
+juxtapose	VBP	juxtapose
+consult	VBN	consulted
+enable	VBZ	enables
+project	VBZ	projects
+advance	VBP	advance
+advance	VBN	advanced
+consult	VBG	consulting
+enable	VBP	enable
+price	VBN	priced
+price	VBP	price
+price	VBD	priced
+price	VBG	pricing
+enable	VBN	enabled
+dicker	VBD	dickered
+breach	VBD	breached
+enable	VBD	enabled
+enable	VBG	enabling
+couch	VBG	couching
+miscalculate	VBN	miscalculated
+cart	VBD	carted
+rise	VBN	risen
+rise	VBP	rise
+halt	VBP	halt
+cheer	VBN	cheered
+reform	VBN	reformed
+cart	VBG	carting
+halt	VBN	halted
+formulate	VBZ	formulates
+infect	VBN	infected
+rise	VBG	rising
+spar	VBD	sparred
+couch	VBN	couched
+latch	VBZ	latches
+dazzle	VBN	dazzled
+reform	VBG	reforming
+rise	VBD	rose
+loan	VBN	loaned
+formulate	VBG	formulating
+halt	VBD	halted
+formulate	VBN	formulated
+replenish	VBN	replenished
+foment	VBG	fomenting
+loan	VBZ	loans
+cart	VBP	cart
+halt	VBG	halting
+sponsor	VBZ	sponsors
+sponsor	VBN	sponsored
+cheer	VBD	cheered
+infect	VBD	infected
+latch	VBP	latch
+bicker	VBN	bickered
+erupt	VBZ	erupts
+sponsor	VBP	sponsor
+bicker	VBG	bickering
+rise	VBZ	rises
+sponsor	VBG	sponsoring
+latch	VBG	latching
+cheer	VBG	cheering
+sponsor	VBD	sponsored
+grip	VBG	gripping
+trash	VBG	trashing
+grip	VBD	gripped
+hurt	VBG	hurting
+press	VBP	press
+hurt	VBD	hurt
+retrain	VBG	retraining
+press	VBN	pressed
+press	VBD	pressed
+grow	VBG	growing
+grow	VBD	grew
+press	VBG	pressing
+tease	VBN	teased
+trust	VBD	trusted
+grow	VBP	grow
+fudge	VBP	fudge
+trust	VBN	trusted
+grow	VBN	grown
+depose	VBN	deposed
+flank	VBN	Flanked
+trust	VBP	trust
+preoccupy	VBN	preoccupied
+hurt	VBZ	hurts
+trust	VBZ	trusts
+felt	VBN	felt
+squeeze	VBZ	squeezes
+hurt	VBP	hurt
+grow	VBZ	grows
+felt	VBD	felt
+hurt	VBN	hurt
+backfire	VBN	backfired
+squeeze	VBN	squeezed
+backfire	VBP	backfire
+squeeze	VBP	squeeze
+backfire	VBZ	backfires
+hang	VBG	hanging
+hang	VBD	hung
+screw	VBN	screwed
+backfire	VBD	backfired
+heighten	VBD	heightened
+smash	VBD	smashed
+squeeze	VBD	squeezed
+smash	VBG	smashing
+smash	VBN	smashed
+lord	VBD	lorded
+squeeze	VBG	squeezing
+captain	VBP	captain
+comprise	VBG	comprising
+comprise	VBN	comprised
+heighten	VBN	heightened
+comprise	VBP	comprise
+comprise	VBZ	comprises
+interlope	VBG	interloping
+revitalize	VBG	revitalizing
+capitulate	VBD	capitulated
+wither	VBP	wither
+revitalize	VBN	Revitalized
+enrol	VBD	enrolled
+feast	VBN	feasted
+seat	VBZ	seats
+calculate	VBZ	calculates
+reassert	VBG	reasserting
+seat	VBN	seated
+hail	VBZ	hails
+seat	VBG	seating
+hail	VBD	hailed
+zone	VBG	zoning
+hail	VBN	hailed
+mislead	VBN	misled
+counteract	VBN	counteracted
+chant	VBN	chanted
+mislead	VBG	misleading
+mislead	VBD	misled
+beg	VBZ	begs
+know	VBZ	knows
+inundate	VBN	inundated
+speed	VBZ	speeds
+know	VBP	know
+apply	VBN	applied
+apply	VBP	apply
+assassinate	VBG	assassinating
+stabilize	VBD	stabilized
+stabilize	VBG	stabilizing
+chant	VBG	chanting
+tune	VBN	tuned
+crop	VBG	cropping
+apply	VBZ	applies
+subsume	VBN	subsumed
+chant	VBD	chanted
+stabilize	VBZ	stabilizes
+crop	VBN	cropped
+peek	VBG	Peeking
+stabilize	VBP	stabilize
+stabilize	VBN	stabilized
+beg	VBN	begged
+know	VBN	known
+speed	VBN	sped
+beg	VBG	begging
+know	VBD	knew
+speed	VBD	sped
+speed	VBG	speeding
+know	VBG	knowing
+fade	VBN	faded
+toy	VBG	toying
+deter	VBD	deterred
+deter	VBG	deterring
+fade	VBD	faded
+lift	VBP	lift
+lump	VBZ	lumps
+deter	VBP	deter
+lift	VBZ	lifts
+deter	VBZ	deters
+disappoint	VBN	disappointed
+lambaste	VBD	lambasted
+mail	VBN	mailed
+assign	VBN	assigned
+lift	VBG	lifting
+mail	VBP	mail
+intercept	VBN	intercepted
+assign	VBP	assign
+lift	VBD	lifted
+mail	VBD	mailed
+hinder	VBG	hindering
+mail	VBG	mailing
+whoop	VBG	whooping
+lift	VBN	lifted
+hinder	VBN	hindered
+assign	VBZ	assigns
+wind	VBG	winding
+hinder	VBD	hindered
+return	VBG	returning
+wind	VBP	wind
+perform	VBZ	performs
+return	VBD	returned
+intercept	VBG	Intercepting
+massage	VBG	massaging
+participate	VBG	participating
+combat	VBG	combating
+return	VBN	returned
+exile	VBD	exiled
+return	VBP	return
+conflict	VBG	conflicting
+participate	VBD	participated
+return	VBZ	returns
+decentralize	VBN	decentralized
+decentralize	VBG	decentralizing
+threaten	VBZ	threatens
+participate	VBZ	participates
+participate	VBP	participate
+participate	VBN	participated
+unleash	VBZ	unleashes
+threaten	VBN	threatened
+arrive	VBP	arrive
+jerk	VBN	jerked
+arrive	VBN	arrived
+lug	VBG	lugging
+threaten	VBP	threaten
+arrive	VBG	arriving
+arrive	VBD	arrived
+rename	VBD	renamed
+arrive	VBZ	arrives
+rename	VBN	renamed
+threaten	VBD	threatened
+exile	VBN	exiled
+threaten	VBG	threatening
+back	VBZ	backs
+simulate	VBZ	simulates
+rim	VBP	rim
+complement	VBZ	complements
+crisscross	VBG	crisscrossing
+miniaturize	VBN	miniaturized
+demolish	VBD	demolished
+pontificate	VBP	pontificate
+dog	VBZ	dogs
+stamp	VBG	stamping
+perform	VBN	performed
+perform	VBP	perform
+flaw	VBN	flawed
+dog	VBG	dogging
+disappoint	VBD	disappointed
+engulf	VBN	engulfed
+dog	VBN	dogged
+perform	VBD	performed
+perform	VBG	performing
+dog	VBD	dogged
+pummel	VBD	pummeled
+slog	VBZ	slogs
+close	VBZ	closes
+lump	VBG	lumping
+pummel	VBN	pummeled
+engulf	VBD	engulfed
+streak	VBD	streaked
+lump	VBN	lumped
+scandalize	VBD	scandalized
+close	VBG	closing
+close	VBD	closed
+deal	VBD	dealt
+deal	VBG	dealing
+close	VBP	close
+simulate	VBP	simulate
+close	VBN	closed
+deal	VBN	dealt
+drum	VBG	drumming
+disclaim	VBZ	disclaims
+distribute	VBD	distributed
+deteriorate	VBZ	deteriorates
+minimize	VBN	minimized
+distribute	VBG	distributing
+minimize	VBG	minimizing
+neglect	VBN	neglected
+distribute	VBP	distribute
+distribute	VBN	distributed
+deal	VBZ	deals
+institute	VBD	instituted
+neglect	VBG	neglecting
+suggest	VBZ	suggests
+liberate	VBD	liberated
+deal	VBP	deal
+neglect	VBD	neglected
+gobble	VBN	gobbled
+investigate	VBD	investigated
+deteriorate	VBD	deteriorated
+investigate	VBG	Investigating
+institute	VBG	instituting
+suggest	VBP	suggest
+develop	VBG	developing
+develop	VBD	developed
+suggest	VBN	suggested
+suggest	VBG	suggesting
+institute	VBN	instituted
+suggest	VBD	suggested
+develop	VBZ	develops
+deteriorate	VBP	deteriorate
+deteriorate	VBN	deteriorated
+investigate	VBZ	investigates
+investigate	VBN	investigated
+deteriorate	VBG	deteriorating
+develop	VBN	developed
+develop	VBP	develop
+demolish	VBN	demolished
+slash	VBG	slashing
+slash	VBD	slashed
+demolish	VBG	demolishing
+evidence	VBN	evidenced
+defy	VBG	defying
+defy	VBP	defy
+slash	VBP	slash
+slash	VBN	slashed
+poison	VBN	poisoned
+underestimate	VBD	underestimated
+defy	VBD	defied
+underestimate	VBN	underestimated
+foot	VBP	foot
+sprawl	VBG	sprawling
+exhaust	VBN	exhausted
+equal	VBP	equal
+exhaust	VBG	exhausting
+equal	VBN	equaled
+misstate	VBZ	misstates
+equal	VBG	equaling
+exhaust	VBD	exhausted
+absolve	VBG	absolving
+collapse	VBG	collapsing
+advertise	VBD	advertised
+advertise	VBG	advertising
+misstate	VBD	misstated
+misstate	VBN	misstated
+advertise	VBP	advertise
+shadow	VBG	shadowing
+collapse	VBD	collapsed
+halve	VBZ	halves
+advertise	VBN	advertised
+equal	VBZ	equals
+toss	VBN	tossed
+halve	VBN	halved
+best	VBN	bested
+toss	VBD	tossed
+toss	VBG	tossing
+disturb	VBG	disturbing
+best	VBD	bested
+disturb	VBN	disturbed
+halve	VBD	halved
+cringe	VBD	cringed
+disturb	VBZ	disturbs
+enrich	VBP	enrich
+characterize	VBZ	characterizes
+lambaste	VBZ	lambastes
+enrich	VBG	enriching
+characterize	VBP	characterize
+modulate	VBP	modulate
+hobble	VBG	hobbling
+hobble	VBN	hobbled
+alternate	VBG	alternating
+telephone	VBD	telephoned
+collapse	VBZ	collapses
+rough	VBD	roughed
+advertise	VBZ	advertises
+assess	VBD	assessed
+collapse	VBN	collapsed
+characterize	VBN	characterized
+assess	VBG	assessing
+assess	VBN	assessed
+equal	VBD	equaled
+characterize	VBD	characterized
+assess	VBP	assess
+telephone	VBG	telephoning
+silt	VBN	silted
+purchase	VBG	purchasing
+contest	VBD	contested
+purchase	VBD	purchased
+delve	VBZ	delves
+revolve	VBG	revolving
+purchase	VBN	purchased
+delve	VBN	delved
+purchase	VBP	purchase
+coin	VBN	coined
+garden	VBG	gardening
+fire	VBN	fired
+wax	VBN	waxed
+sow	VBZ	sows
+correct	VBZ	corrects
+extort	VBD	extorted
+tinker	VBN	tinkered
+convict	VBN	convicted
+sow	VBP	sow
+extort	VBG	extorting
+purchase	VBZ	purchases
+tinker	VBG	tinkering
+fire	VBZ	Fires
+sow	VBD	sowed
+contest	VBG	contesting
+convict	VBD	convicted
+contest	VBN	contested
+think	VBP	think
+think	VBN	thought
+fire	VBD	fired
+inspect	VBD	inspected
+activate	VBP	activate
+activate	VBN	activated
+shear	VBN	sheared
+think	VBZ	thinks
+inspect	VBP	inspect
+inspect	VBG	inspecting
+coordinate	VBZ	coordinates
+oppose	VBZ	opposes
+prop	VBN	propped
+inspect	VBN	inspected
+inch	VBD	inched
+coordinate	VBN	coordinated
+inch	VBG	inching
+prop	VBD	propped
+prop	VBG	propping
+fritter	VBN	frittered
+coordinate	VBG	coordinating
+oppose	VBP	oppose
+fritter	VBG	frittering
+shag	VBZ	shags
+oppose	VBN	opposed
+copy	VBG	copying
+oppose	VBG	opposing
+taste	VBP	taste
+direct	VBZ	directs
+love	VBN	loved
+copy	VBN	copied
+hint	VBZ	hints
+love	VBP	love
+oppose	VBD	opposed
+copy	VBP	copy
+taste	VBZ	tastes
+love	VBZ	loves
+assemble	VBD	assembled
+assemble	VBG	assembling
+impair	VBN	impaired
+assemble	VBP	assemble
+assemble	VBN	assembled
+launch	VBN	launched
+position	VBZ	positions
+preview	VBG	previewing
+excite	VBN	excited
+hint	VBN	hinted
+foot	VBG	footing
+hint	VBP	hint
+hint	VBD	hinted
+think	VBG	thinking
+stew	VBD	stewed
+hint	VBG	hinting
+launch	VBZ	launches
+think	VBD	thought
+eliminate	VBZ	eliminates
+encumber	VBN	encumbered
+eliminate	VBN	eliminated
+eliminate	VBP	eliminate
+eliminate	VBD	eliminated
+launch	VBD	launched
+position	VBD	positioned
+launch	VBG	launching
+dominate	VBP	dominate
+eliminate	VBG	eliminating
+convict	VBZ	CONVICTS
+relive	VBP	relive
+distribute	VBZ	distributes
+position	VBN	positioned
+dominate	VBZ	dominates
+dominate	VBD	dominated
+dominate	VBG	dominating
+ramble	VBD	rambled
+sleep	VBP	sleep
+sleep	VBG	sleeping
+dominate	VBN	dominated
+speculate	VBD	speculated
+sleep	VBD	slept
+speculate	VBG	speculating
+revolve	VBZ	revolves
+speculate	VBN	speculated
+restrain	VBN	restrained
+speculate	VBP	speculate
+restrain	VBD	restrained
+flirt	VBG	flirting
+sleep	VBZ	sleeps
+experience	VBZ	experiences
+restrain	VBG	restraining
+mention	VBN	mentioned
+mention	VBP	mention
+refuse	VBD	refused
+mention	VBD	mentioned
+quibble	VBG	quibbling
+mention	VBG	mentioning
+contribute	VBG	contributing
+smoke	VBZ	smokes
+experience	VBN	experienced
+experience	VBP	experience
+chuck	VBD	chucked
+smoke	VBP	smoke
+experience	VBD	experienced
+experience	VBG	experiencing
+contribute	VBD	contributed
+expedite	VBG	expediting
+insert	VBG	inserting
+lavish	VBG	lavishing
+insert	VBD	inserted
+refuse	VBZ	refuses
+insert	VBN	inserted
+refuse	VBN	refused
+vacate	VBN	vacated
+refuse	VBG	refusing
+chain	VBP	chain
+beep	VBG	beeping
+scrimp	VBD	scrimped
+vacate	VBG	vacating
+expedite	VBN	expedited
+bread	VBN	breaded
+refuse	VBP	refuse
+cash	VBG	cashing
+scrimp	VBG	scrimping
+vacate	VBD	vacated
+lavish	VBN	lavished
+cash	VBD	cashed
+resurface	VBD	resurfaced
+cash	VBN	cashed
+revert	VBZ	reverts
+succeed	VBG	succeeding
+peg	VBZ	pegs
+resurface	VBN	resurfaced
+succeed	VBD	succeeded
+succeed	VBN	succeeded
+twiddle	VBG	twiddling
+succeed	VBP	succeed
+mutate	VBN	mutated
+peg	VBN	pegged
+graduate	VBZ	graduates
+peg	VBP	peg
+fish	VBG	fishing
+peg	VBG	pegging
+graduate	VBD	graduated
+value	VBZ	values
+peg	VBD	pegged
+issue	VBZ	issues
+succeed	VBZ	succeeds
+try	VBZ	tries
+try	VBP	try
+graduate	VBN	graduated
+love	VBD	loved
+value	VBN	valued
+issue	VBN	issued
+try	VBN	tried
+value	VBP	value
+issue	VBP	issue
+try	VBD	tried
+issue	VBG	issuing
+try	VBG	trying
+issue	VBD	issued
+value	VBD	valued
+assume	VBG	assuming
+adjourn	VBN	adjourned
+value	VBG	valuing
+assume	VBN	assumed
+unleash	VBD	unleashed
+assume	VBD	assumed
+unleash	VBN	unleashed
+park	VBN	parked
+unleash	VBG	unleashing
+park	VBD	parked
+park	VBG	parking
+bulge	VBG	bulging
+unleash	VBP	unleash
+leave	VBN	left
+batter	VBN	battered
+batter	VBG	battering
+leave	VBP	leave
+leave	VBG	leaving
+batter	VBD	battered
+leave	VBD	left
+whipsaw	VBN	whipsawed
+profiteer	VBG	profiteering
+revert	VBN	reverted
+back	VBD	backed
+back	VBG	backing
+back	VBP	back
+leave	VBZ	leaves
+back	VBN	backed
+calibrate	VBN	calibrated
+conform	VBG	conforming
+conform	VBP	conform
+raze	VBG	razing
+celebrate	VBZ	celebrates
+network	VBG	networking
+decelerate	VBG	decelerating
+raze	VBN	razed
+decelerate	VBN	decelerated
+bury	VBP	bury
+celebrate	VBG	celebrating
+celebrate	VBD	celebrated
+bury	VBN	buried
+contribute	VBP	contribute
+contemplate	VBP	contemplate
+contribute	VBN	contributed
+bury	VBG	burying
+contribute	VBZ	contributes
+smoke	VBG	smoking
+bury	VBD	buried
+celebrate	VBP	celebrate
+contemplate	VBZ	contemplates
+contemplate	VBD	contemplated
+assume	VBZ	assumes
+repeal	VBN	repealed
+contemplate	VBN	contemplated
+contemplate	VBG	contemplating
+assume	VBP	assume
+mention	VBZ	mentions
+get	VBZ	gets
+tick	VBN	ticked
+lend	VBD	lent
+lend	VBG	lending
+clear	VBG	clearing
+shorten	VBG	shortening
+deny	VBN	denied
+deny	VBG	denying
+get	VBG	getting
+deny	VBD	denied
+shrug	VBZ	shrugs
+shorten	VBN	shortened
+jolt	VBD	jolted
+get	VBP	get
+get	VBN	got
+clear	VBD	cleared
+belong	VBP	belong
+win	VBZ	wins
+fall	VBG	falling
+trace	VBD	traced
+deny	VBZ	denies
+clear	VBZ	clears
+stimulate	VBG	stimulating
+clear	VBP	clear
+belong	VBZ	belongs
+fall	VBN	fallen
+clear	VBN	cleared
+win	VBP	WON
+get	VBD	got
+shrug	VBD	shrugged
+stimulate	VBN	stimulated
+deny	VBP	deny
+jolt	VBN	jolted
+win	VBG	winning
+trace	VBN	traced
+win	VBN	won
+fall	VBP	fall
+encrust	VBN	encrusted
+hustle	VBZ	hustles
+trace	VBG	tracing
+belong	VBD	belonged
+belong	VBG	belonging
+win	VBD	won
+fall	VBZ	falls
+aim	VBD	aimed
+exercise	VBN	exercised
+survive	VBZ	survives
+exercise	VBP	exercise
+exercise	VBD	exercised
+exercise	VBG	exercising
+own	VBZ	owns
+hunt	VBZ	hunts
+survive	VBP	survive
+structure	VBG	structuring
+aim	VBP	aim
+survive	VBN	survived
+aim	VBN	aimed
+structure	VBD	structured
+aim	VBG	aiming
+exercise	VBZ	exercises
+deride	VBN	derided
+condemn	VBG	condemning
+acknowledge	VBP	acknowledge
+own	VBD	owned
+condemn	VBN	condemned
+aim	VBZ	aims
+confess	VBG	confessing
+acknowledge	VBZ	acknowledges
+deride	VBD	derided
+confess	VBD	confessed
+confess	VBN	confessed
+acknowledge	VBD	acknowledged
+own	VBN	owned
+bandy	VBN	bandied
+own	VBP	own
+own	VBG	owning
+acknowledge	VBN	acknowledged
+acknowledge	VBG	acknowledging
+hunt	VBG	hunting
+condemn	VBD	condemned
+counter	VBD	countered
+counter	VBN	countered
+counter	VBG	countering
+counter	VBP	counter
+confront	VBZ	confronts
+name	VBD	named
+enliven	VBG	enlivening
+name	VBG	naming
+name	VBN	named
+name	VBP	name
+survive	VBG	surviving
+structure	VBN	structured
+survive	VBD	survived
+mourn	VBG	mourning
+welcome	VBZ	welcomes
+disincline	VBN	disinclined
+proceed	VBZ	proceeds
+proceed	VBP	proceed
+liberalize	VBG	liberalizing
+outline	VBD	outlined
+amuse	VBN	amused
+liberalize	VBD	liberalized
+outline	VBG	outlining
+stray	VBP	stray
+strip	VBN	stripped
+proceed	VBG	proceeding
+strip	VBG	stripping
+liberalize	VBN	liberalized
+proceed	VBD	proceeded
+initial	VBD	initialed
+strip	VBD	stripped
+stray	VBG	straying
+liberalize	VBP	liberalize
+strip	VBZ	strips
+amuse	VBP	amuse
+outline	VBN	outlined
+stage	VBZ	stages
+outline	VBZ	outlines
+stage	VBP	stage
+stage	VBG	staging
+ventilate	VBD	ventilated
+stage	VBD	staged
+ventilate	VBN	ventilated
+monitor	VBP	monitor
+dispute	VBD	disputed
+monitor	VBN	monitored
+perpetuate	VBP	perpetuate
+monitor	VBG	monitoring
+monitor	VBD	monitored
+postmark	VBN	postmarked
+matter	VBN	mattered
+matter	VBP	matter
+monitor	VBZ	monitors
+dispute	VBP	dispute
+compound	VBN	compounded
+dispute	VBN	disputed
+legalize	VBG	legalizing
+staff	VBN	staffed
+perpetuate	VBG	perpetuating
+compound	VBD	compounded
+compound	VBG	compounding
+spook	VBD	spooked
+trigger	VBP	trigger
+reserve	VBN	reserved
+reserve	VBG	reserving
+trigger	VBN	triggered
+matter	VBZ	matters
+borrow	VBG	borrowing
+reserve	VBD	reserved
+relieve	VBD	relieved
+revalue	VBN	revalued
+trigger	VBG	triggering
+spook	VBN	Spooked
+trigger	VBD	triggered
+borrow	VBP	borrow
+borrow	VBN	borrowed
+dispute	VBZ	disputes
+relieve	VBN	relieved
+borrow	VBZ	borrows
+reserve	VBZ	reserves
+whittle	VBN	whittled
+trigger	VBZ	triggers
+prey	VBP	prey
+reserve	VBP	reserve
+espouse	VBP	espouse
+streamline	VBG	streamlining
+welcome	VBG	welcoming
+discover	VBZ	discovers
+welcome	VBD	welcomed
+march	VBG	marching
+march	VBD	marched
+stipulate	VBZ	stipulates
+dismiss	VBZ	dismisses
+sum	VBZ	sums
+yield	VBG	yielding
+yield	VBD	yielded
+bewitch	VBN	bewitched
+welcome	VBP	welcome
+welcome	VBN	welcomed
+amass	VBD	amassed
+march	VBP	march
+yield	VBZ	yields
+practice	VBN	practiced
+reckon	VBG	reckoning
+dismiss	VBN	dismissed
+stipulate	VBD	stipulated
+dismiss	VBD	dismissed
+practice	VBD	practiced
+reckon	VBN	reckoned
+sum	VBD	summed
+amass	VBN	amassed
+reckon	VBP	reckon
+practice	VBG	practicing
+accomplish	VBN	accomplished
+yield	VBN	yielded
+transact	VBN	transacted
+dismiss	VBG	Dismissing
+yield	VBP	yield
+confront	VBP	confront
+accomplish	VBG	Accomplishing
+confront	VBN	confronted
+amass	VBZ	amasses
+intone	VBZ	intones
+confront	VBG	confronting
+reckon	VBZ	reckons
+paw	VBG	pawing
+accustom	VBN	accustomed
+mark	VBG	marking
+mark	VBD	marked
+emphasize	VBN	emphasized
+surround	VBG	surrounding
+condemn	VBZ	condemns
+finalize	VBD	finalized
+emphasize	VBD	emphasized
+surround	VBN	surrounded
+emphasize	VBG	emphasizing
+surround	VBP	surround
+finalize	VBN	finalized
+smart	VBG	smarting
+mark	VBZ	marks
+barter	VBN	bartered
+emphasize	VBZ	emphasizes
+mark	VBN	marked
+mark	VBP	mark
+eviscerate	VBG	eviscerating
+increase	VBP	increase
+increase	VBN	increased
+derail	VBG	derailing
+rush	VBZ	rushes
+escort	VBZ	escorts
+sanitize	VBP	sanitize
+sanitize	VBN	sanitized
+rush	VBP	rush
+coerce	VBZ	coerces
+splash	VBD	splashed
+rush	VBN	rushed
+rush	VBG	rushing
+increase	VBD	increased
+mellow	VBN	mellowed
+rush	VBD	rushed
+increase	VBG	increasing
+demonstrate	VBZ	demonstrates
+understate	VBP	understate
+understate	VBN	understated
+chime	VBZ	chimes
+understate	VBG	understating
+demonstrate	VBP	demonstrate
+culminate	VBZ	culminates
+understate	VBD	understated
+increase	VBZ	increases
+engrave	VBN	engraved
+culminate	VBG	culminating
+derail	VBN	derailed
+culminate	VBN	culminated
+budge	VBN	budged
+haul	VBD	hauled
+reproduce	VBD	reproduced
+haul	VBG	hauling
+fail	VBN	failed
+fail	VBP	fail
+fail	VBZ	fails
+behave	VBZ	behaves
+deflect	VBG	deflecting
+reproduce	VBN	Reproduced
+fail	VBD	failed
+peruse	VBP	peruse
+fail	VBG	failing
+stare	VBG	staring
+stare	VBD	stared
+behave	VBD	behaved
+behave	VBG	behaving
+mask	VBN	masked
+popularize	VBD	popularized
+will	VBG	willing
+mask	VBD	masked
+let	VBP	let
+disable	VBG	disabling
+bundle	VBN	bundled
+wallow	VBG	wallowing
+traduce	VBN	traduced
+disable	VBN	disabled
+let	VBZ	lets
+let	VBD	let
+let	VBG	letting
+orphan	VBN	orphaned
+let	VBN	let
+infuse	VBN	infused
+record	VBD	recorded
+entrust	VBP	entrust
+record	VBG	recording
+learn	VBD	learned
+learn	VBN	learned
+learn	VBG	learning
+learn	VBP	learn
+boost	VBD	boosted
+boost	VBG	boosting
+learn	VBZ	learns
+record	VBZ	records
+abolish	VBN	abolished
+differ	VBP	differ
+abolish	VBG	abolishing
+ruin	VBG	ruining
+estimate	VBP	estimate
+estimate	VBN	estimated
+boost	VBP	boost
+abolish	VBD	abolished
+sanction	VBG	sanctioning
+ruin	VBP	ruin
+differ	VBZ	differs
+boost	VBN	boosted
+estimate	VBG	Estimating
+record	VBN	recorded
+ruin	VBN	Ruined
+estimate	VBD	estimated
+detract	VBZ	detracts
+sanction	VBN	sanctioned
+smell	VBD	smelled
+smell	VBG	smelling
+boost	VBZ	boosts
+parallel	VBZ	parallels
+estimate	VBZ	estimates
+discourage	VBG	discouraging
+encompass	VBD	encompassed
+discourage	VBD	discouraged
+discourage	VBP	discourage
+retract	VBD	retracted
+discourage	VBN	discouraged
+discourage	VBZ	discourages
+widen	VBG	widening
+widen	VBD	widened
+party	VBZ	parties
+widen	VBN	widened
+abdicate	VBP	abdicate
+stifle	VBG	stifling
+widen	VBP	widen
+smell	VBP	smell
+stifle	VBZ	stifles
+widen	VBZ	widens
+smell	VBZ	smells
+shake	VBD	shook
+lighten	VBG	lightening
+lighten	VBD	lightened
+overpay	VBD	overpaid
+rejoin	VBZ	Rejoins
+switch	VBD	switched
+shake	VBP	shake
+rejoin	VBD	rejoined
+shake	VBN	shaken
+cost	VBZ	costs
+shake	VBG	shaking
+cost	VBN	cost
+profit	VBZ	profits
+cost	VBP	cost
+herd	VBG	herding
+rejoin	VBG	rejoining
+cost	VBG	costing
+jettison	VBG	jettisoning
+profit	VBG	profiting
+cost	VBD	cost
+profit	VBN	profited
+ensure	VBG	ensuring
+shake	VBZ	shakes
+overpay	VBN	overpaid
+short	VBG	shorting
+profit	VBD	profited
+carp	VBP	carp
+ensure	VBZ	ensures
+slate	VBD	slated
+scramble	VBD	scrambled
+smile	VBP	smile
+blast	VBD	blasted
+differ	VBG	differing
+smile	VBG	smiling
+smile	VBD	smiled
+slate	VBN	slated
+scramble	VBG	scrambling
+negate	VBN	negated
+stroke	VBZ	strokes
+arm	VBN	armed
+switch	VBZ	switches
+belie	VBD	belied
+scatter	VBN	scattered
+stroke	VBG	Stroking
+switch	VBN	switched
+belie	VBP	belie
+switch	VBG	switching
+scramble	VBP	scramble
+smile	VBZ	smiles
+switch	VBP	switch
+bruise	VBG	bruising
+bruise	VBN	bruised
+recruit	VBN	Recruited
+labor	VBG	Laboring
+reappraise	VBN	reappraised
+recruit	VBZ	recruits
+disgust	VBN	Disgusted
+aid	VBZ	aids
+pool	VBP	pool
+reappraise	VBD	reappraised
+pool	VBN	pooled
+aid	VBD	aided
+recruit	VBD	recruited
+withdraw	VBD	withdrew
+pool	VBG	pooling
+withdraw	VBG	withdrawing
+aid	VBN	aided
+recruit	VBG	recruiting
+withdraw	VBN	withdrawn
+aid	VBG	aiding
+lead	VBZ	leads
+lend	VBZ	lends
+lend	VBP	lend
+lead	VBP	lead
+underlie	VBG	underlying
+lend	VBN	lent
+lead	VBG	leading
+abate	VBD	abated
+abate	VBG	abating
+lead	VBN	led
+strangle	VBZ	strangles
+lead	VBD	led
+shatter	VBG	shattering
+shatter	VBD	shattered
+couple	VBN	coupled
+strangle	VBN	strangled
+shatter	VBN	shattered
+abate	VBN	abated
+chortle	VBD	chortled
+tempt	VBZ	tempts
+tempt	VBN	tempted
+abate	VBZ	abates
+tempt	VBP	tempt
+root	VBG	rooting
+provide	VBZ	provides
+time	VBD	timed
+assure	VBZ	assures
+overbid	VBD	overbid
+time	VBG	timing
+spur	VBZ	spurs
+retail	VBZ	retails
+spur	VBG	spurring
+spur	VBD	spurred
+spur	VBN	Spurred
+root	VBP	root
+root	VBN	rooted
+equate	VBZ	equates
+sag	VBG	sagging
+sag	VBD	sagged
+quarrel	VBG	quarreling
+sustain	VBZ	sustains
+retail	VBP	retail
+sag	VBN	sagged
+acquit	VBN	acquitted
+time	VBN	timed
+schedule	VBN	scheduled
+overwork	VBG	overworking
+assure	VBN	assured
+reach	VBD	reached
+schedule	VBD	scheduled
+radio	VBG	radioing
+reach	VBG	reaching
+schedule	VBG	scheduling
+retail	VBG	retailing
+assure	VBD	assured
+assure	VBG	assuring
+sustain	VBD	sustained
+sustain	VBG	sustaining
+rail	VBZ	rails
+phone	VBG	phoning
+gallop	VBG	galloping
+pose	VBG	posing
+phone	VBD	phoned
+pose	VBD	posed
+cap	VBN	capped
+cap	VBP	cap
+visit	VBZ	visits
+dump	VBD	dumped
+visit	VBP	visit
+sustain	VBN	sustained
+premiere	VBD	premiered
+pose	VBZ	poses
+crumple	VBN	crumpled
+visit	VBN	visited
+premiere	VBG	premiering
+provide	VBD	provided
+shuffle	VBD	shuffled
+visit	VBG	visiting
+equate	VBN	equated
+visit	VBD	visited
+provide	VBG	providing
+cap	VBD	capped
+pose	VBN	posed
+pose	VBP	pose
+program	VBG	programming
+program	VBN	programmed
+cap	VBG	capping
+provide	VBP	provide
+provide	VBN	provided
+program	VBP	program
+bungle	VBN	bungled
+crumple	VBD	crumpled
+rearrange	VBZ	rearranges
+promote	VBN	promoted
+promote	VBP	promote
+possess	VBZ	possesses
+promote	VBZ	promotes
+reinstall	VBN	reinstalled
+snivel	VBG	sniveling
+promote	VBD	promoted
+promote	VBG	promoting
+retake	VBG	retaking
+dump	VBG	dumping
+launder	VBD	laundered
+dump	VBN	dumped
+launder	VBG	laundering
+hypothesize	VBN	hypothesized
+look	VBD	looked
+dump	VBP	dump
+look	VBG	looking
+stride	VBD	strode
+daunt	VBG	daunting
+broaden	VBD	broadened
+possess	VBP	possess
+film	VBN	filmed
+look	VBN	looked
+possess	VBN	possessed
+broaden	VBG	broadening
+look	VBP	look
+film	VBG	filming
+possess	VBG	possessing
+broaden	VBN	broadened
+look	VBZ	looks
+launder	VBN	laundered
+insure	VBZ	insures
+reach	VBP	reach
+black	VBN	blacked
+land	VBP	Land
+heap	VBD	heaped
+broaden	VBZ	broadens
+reach	VBN	reached
+hop	VBG	hopping
+savor	VBG	savoring
+idle	VBD	idled
+insure	VBP	insure
+revolutionize	VBD	revolutionized
+insure	VBN	insured
+savor	VBD	savored
+pen	VBN	penned
+reach	VBZ	reaches
+insure	VBD	insured
+insure	VBG	insuring
+stonewall	VBD	stonewalled
+addict	VBN	addicted
+oblige	VBN	obliged
+downsize	VBN	downsized
+accelerate	VBD	accelerated
+shy	VBD	shied
+recover	VBD	recovered
+accelerate	VBG	accelerating
+idle	VBG	idling
+idle	VBN	idled
+reintroduce	VBN	reintroduced
+oblige	VBZ	obliges
+dispose	VBG	disposing
+utter	VBD	uttered
+hop	VBZ	hops
+stream	VBD	streamed
+shy	VBP	shy
+accelerate	VBN	accelerated
+recover	VBN	recovered
+stream	VBG	streaming
+recover	VBG	recovering
+dispose	VBN	disposed
+reclassify	VBD	reclassified
+dispose	VBZ	disposes
+downsize	VBG	downsizing
+shy	VBG	shying
+shy	VBN	shied
+recover	VBP	recover
+accelerate	VBZ	accelerates
+save	VBP	save
+poke	VBG	poking
+save	VBN	saved
+answer	VBZ	answers
+poke	VBD	poked
+answer	VBN	answered
+answer	VBP	answer
+pillory	VBG	pillorying
+save	VBZ	saves
+answer	VBG	answering
+save	VBD	saved
+pillory	VBN	pilloried
+save	VBG	saving
+poke	VBZ	pokes
+answer	VBD	answered
+land	VBN	landed
+surrender	VBG	surrendering
+squint	VBD	squinted
+land	VBG	landing
+elapse	VBN	elapsed
+land	VBD	landed
+caution	VBG	cautioning
+squint	VBG	squinting
+surrender	VBN	surrendered
+caution	VBD	cautioned
+surrender	VBD	surrendered
+put	VBG	putting
+pacify	VBD	pacified
+put	VBD	put
+discontinue	VBG	discontinuing
+refer	VBZ	refers
+refer	VBN	referred
+discontinue	VBN	discontinued
+refer	VBP	refer
+aspire	VBP	aspire
+refer	VBD	referred
+refer	VBG	referring
+aspire	VBG	aspiring
+aspire	VBD	aspired
+entertain	VBN	entertained
+conclude	VBP	conclude
+interview	VBG	interviewing
+conclude	VBZ	concludes
+entertain	VBG	entertaining
+reshuffle	VBG	reshuffling
+entertain	VBD	entertained
+interview	VBD	interviewed
+interview	VBN	interviewed
+reshuffle	VBD	reshuffled
+inhibit	VBD	inhibited
+retreat	VBG	retreating
+retreat	VBD	retreated
+put	VBZ	puts
+inhibit	VBP	inhibit
+steam	VBG	steaming
+put	VBN	put
+retreat	VBN	retreated
+put	VBP	put
+truck	VBZ	trucks
+subtract	VBD	subtracted
+color	VBN	colored
+supply	VBZ	supplies
+command	VBG	commanding
+supply	VBN	supplied
+supply	VBP	supply
+absorb	VBD	absorbed
+conclude	VBN	concluded
+revise	VBD	revised
+concur	VBD	concurred
+revise	VBG	revising
+bestow	VBN	bestowed
+revise	VBN	revised
+conclude	VBD	concluded
+conclude	VBG	concluding
+legitimize	VBN	legitimized
+absorb	VBG	absorbing
+phone	VBN	phoned
+phone	VBP	phone
+liken	VBD	likened
+lodge	VBN	lodged
+liken	VBN	likened
+subtract	VBN	subtracted
+cheapen	VBZ	cheapens
+overshadow	VBN	overshadowed
+quantify	VBN	quantified
+overshadow	VBG	overshadowing
+nix	VBD	nixed
+plug	VBP	plug
+caution	VBP	caution
+cheat	VBP	cheat
+caution	VBZ	cautions
+prove	VBZ	proves
+absorb	VBN	absorbed
+absorb	VBP	absorb
+zip	VBP	zip
+prove	VBP	prove
+puzzle	VBD	puzzled
+cherish	VBN	cherished
+absorb	VBZ	absorbs
+cheat	VBG	cheating
+cheat	VBD	cheated
+plug	VBG	Plugging
+prove	VBG	proving
+vie	VBG	vying
+mushroom	VBD	mushroomed
+prove	VBN	proven
+muck	VBN	mucked
+plug	VBD	plugged
+puzzle	VBN	puzzled
+furnish	VBN	furnished
+mushroom	VBN	mushroomed
+prove	VBD	proved
+single	VBN	singled
+care	VBN	cared
+single	VBP	single
+care	VBP	care
+single	VBD	singled
+recite	VBZ	recites
+associate	VBG	associating
+single	VBG	singling
+inject	VBZ	injects
+associate	VBN	associated
+declare	VBP	declare
+care	VBZ	cares
+associate	VBP	associate
+declare	VBN	declared
+subordinate	VBZ	subordinates
+smolder	VBG	smoldering
+declare	VBG	declaring
+summarize	VBG	Summarizing
+inject	VBN	injected
+summarize	VBD	summarized
+declare	VBD	declared
+smolder	VBP	smolder
+heal	VBG	healing
+inject	VBG	injecting
+subordinate	VBN	subordinated
+appal	VBN	appalled
+sue	VBN	sued
+pattern	VBN	patterned
+inject	VBD	injected
+embezzle	VBD	embezzled
+subordinate	VBD	subordinated
+merchandise	VBG	merchandising
+heal	VBN	healed
+ruminate	VBD	ruminated
+merchandise	VBN	merchandised
+ruminate	VBN	ruminated
+recite	VBG	reciting
+care	VBD	cared
+embezzle	VBG	embezzling
+derive	VBZ	derives
+sue	VBD	sued
+sue	VBG	suing
+care	VBG	caring
+derive	VBN	derived
+supply	VBD	supplied
+supply	VBG	supplying
+countervail	VBG	countervailing
+derive	VBD	derived
+derive	VBG	deriving
+course	VBN	coursed
+americanize	VBD	Americanized
+imply	VBZ	implies
+embark	VBN	embarked
+designate	VBN	designated
+designate	VBG	designating
+imply	VBN	implied
+imply	VBP	imply
+embark	VBD	embarked
+imply	VBD	implied
+imply	VBG	implying
+underline	VBD	underlined
+rub	VBD	rubbed
+permit	VBN	permitted
+permit	VBD	permitted
+permit	VBG	permitting
+promulgate	VBD	promulgated
+stab	VBN	stabbed
+jail	VBD	jailed
+stab	VBD	stabbed
+stab	VBG	stabbing
+rub	VBZ	rubs
+permit	VBZ	permits
+rub	VBP	rub
+permit	VBP	permit
+jail	VBN	jailed
+deflate	VBN	deflated
+infiltrate	VBG	infiltrating
+discover	VBP	discover
+discover	VBN	discovered
+deflate	VBD	deflated
+discover	VBD	discovered
+discover	VBG	discovering
+handcuff	VBN	handcuffed
+peddle	VBZ	peddles
+team	VBD	teamed
+relish	VBZ	relishes
+vomit	VBG	vomiting
+pasteurize	VBN	pasteurized
+peddle	VBN	peddled
+team	VBG	teaming
+administer	VBZ	administers
+bank	VBP	bank
+refinance	VBG	refinancing
+administer	VBN	administered
+hype	VBD	hyped
+trot	VBN	trotted
+refinance	VBD	refinanced
+churn	VBP	churn
+accrete	VBN	accreted
+refinance	VBN	refinanced
+unify	VBN	unified
+bank	VBG	banking
+trot	VBG	Trotting
+trot	VBD	trotted
+sequester	VBP	sequester
+hype	VBG	hyping
+relish	VBD	relished
+decontaminate	VBN	decontaminated
+foreshadow	VBN	foreshadowed
+initiate	VBD	initiated
+hand	VBN	handed
+initiate	VBP	initiate
+initiate	VBN	initiated
+hand	VBZ	hands
+slither	VBG	slithering
+hang	VBZ	hangs
+slither	VBD	slithered
+hang	VBN	hung
+hang	VBP	hang
+opine	VBG	opining
+peddle	VBG	peddling
+test	VBG	testing
+blaze	VBP	blaze
+oversee	VBZ	oversees
+test	VBD	tested
+entomb	VBN	entombed
+jiggle	VBG	jiggling
+oversee	VBN	overseen
+sell	VBG	selling
+lower	VBG	lowering
+sell	VBD	sold
+lower	VBD	lowered
+gear	VBG	gearing
+oversee	VBG	overseeing
+lower	VBN	lowered
+lower	VBP	lower
+oversee	VBD	oversaw
+bridge	VBG	bridging
+ease	VBZ	eases
+blaze	VBG	blazing
+ease	VBN	eased
+imperil	VBN	imperiled
+sell	VBZ	sells
+involve	VBN	involved
+involve	VBP	involve
+lower	VBZ	lowers
+frame	VBG	framing
+involve	VBZ	involves
+solve	VBD	solved
+solve	VBG	solving
+test	VBZ	tests
+sell	VBN	sold
+solve	VBN	solved
+involve	VBD	involved
+sell	VBP	sell
+gear	VBP	gear
+scratch	VBN	scratched
+gear	VBN	geared
+scratch	VBP	scratch
+prize	VBN	prized
+test	VBN	tested
+test	VBP	test
+involve	VBG	involving
+solve	VBZ	solves
+scratch	VBG	scratching
+split	VBZ	splits
+further	VBG	furthering
+surface	VBD	surfaced
+frame	VBN	framed
+split	VBN	split
+rake	VBG	raking
+package	VBG	packaging
+gossip	VBG	gossiping
+apologize	VBD	apologized
+split	VBD	split
+package	VBN	packaged
+surface	VBG	surfacing
+tighten	VBG	tightening
+ease	VBD	eased
+envision	VBN	envisioned
+package	VBZ	packages
+envision	VBP	envision
+tighten	VBD	tightened
+slip	VBD	slipped
+explode	VBN	exploded
+slip	VBG	slipping
+tighten	VBN	tightened
+ease	VBG	easing
+tighten	VBP	tighten
+slip	VBZ	slips
+envision	VBZ	envisions
+correspond	VBD	corresponded
+correspond	VBG	Corresponding
+slip	VBN	slipped
+explode	VBD	exploded
+proofread	VBG	proofreading
+refute	VBD	refuted
+explode	VBG	exploding
+slip	VBP	slip
+broadcast	VBN	broadcast
+invite	VBZ	invites
+sink	VBN	sunk
+broadcast	VBD	broadcast
+broadcast	VBG	broadcasting
+surface	VBN	surfaced
+destroy	VBN	destroyed
+surface	VBP	surface
+destroy	VBP	destroy
+hand	VBD	handed
+apologize	VBZ	apologizes
+distinguish	VBN	distinguished
+sink	VBG	sinking
+sink	VBD	sank
+destroy	VBG	destroying
+destroy	VBD	destroyed
+invite	VBN	invited
+destroy	VBZ	destroys
+invite	VBG	inviting
+declare	VBZ	declares
+invite	VBD	invited
+distinguish	VBD	distinguished
+circumvent	VBZ	circumvents
+bring	VBD	brought
+adjust	VBD	adjusted
+accuse	VBP	accuse
+bring	VBG	bringing
+adjust	VBG	adjusting
+accuse	VBN	accused
+query	VBN	queried
+accuse	VBG	accusing
+accuse	VBD	accused
+persecute	VBN	persecuted
+sideline	VBG	sidelining
+wish	VBD	wished
+squelch	VBN	squelched
+wish	VBG	wishing
+sideline	VBN	sidelined
+wish	VBP	wish
+squelch	VBP	squelch
+wish	VBN	wished
+implement	VBG	implementing
+sway	VBG	swaying
+implement	VBD	implemented
+disappear	VBP	disappear
+sway	VBN	swayed
+persecute	VBG	persecuting
+bring	VBZ	brings
+disappear	VBN	disappeared
+adjust	VBZ	adjusts
+bloom	VBG	blooming
+query	VBZ	queries
+disappear	VBD	disappeared
+implement	VBN	implemented
+sway	VBP	sway
+adjust	VBP	adjust
+bring	VBP	bring
+adjust	VBN	adjusted
+bring	VBN	brought
+separate	VBP	separate
+protect	VBD	protected
+protect	VBG	protecting
+clone	VBN	cloned
+separate	VBN	separated
+map	VBP	map
+separate	VBG	separating
+map	VBG	mapping
+scarf	VBG	scarfing
+disappear	VBZ	disappears
+dither	VBG	dithering
+wish	VBZ	wishes
+fell	VBN	fell
+regard	VBG	regarding
+succumb	VBG	succumbing
+restrict	VBG	restricting
+regard	VBD	regarded
+restrict	VBN	restricted
+regard	VBN	regarded
+protect	VBN	protected
+restrict	VBP	restrict
+protect	VBP	protect
+circumvent	VBG	circumventing
+regard	VBP	regard
+gun	VBN	gunned
+restrict	VBZ	restricts
+protect	VBZ	protects
+regard	VBZ	regards
+fell	VBD	fell
+ruffle	VBN	ruffled
+char	VBN	charred
+resist	VBN	resisted
+resist	VBP	resist
+replace	VBZ	replaces
+resist	VBD	resisted
+resist	VBG	resisting
+replace	VBP	replace
+glean	VBN	gleaned
+subject	VBN	subjected
+replace	VBG	replacing
+replace	VBN	replaced
+export	VBP	export
+prosecute	VBD	prosecuted
+export	VBN	exported
+prosecute	VBG	prosecuting
+export	VBG	exporting
+prosecute	VBN	prosecuted
+export	VBZ	exports
+torch	VBD	torched
+dedicate	VBN	dedicated
+joke	VBZ	jokes
+torch	VBN	torched
+sort	VBG	Sorting
+sort	VBN	sorted
+export	VBD	exported
+formalize	VBZ	formalizes
+replace	VBD	replaced
+subject	VBZ	subjects
+combine	VBG	combining
+emigrate	VBD	emigrated
+combine	VBD	combined
+combine	VBP	combine
+combine	VBN	combined
+dedicate	VBD	dedicated
+combine	VBZ	combines
+buttress	VBN	buttressed
+bomb	VBN	bombed
+teach	VBZ	teaches
+teach	VBN	taught
+teach	VBP	teach
+relax	VBP	relax
+teach	VBG	teaching
+squander	VBN	squandered
+relax	VBN	relaxed
+thrust	VBN	thrust
+ski	VBG	skiing
+relax	VBG	relaxing
+hunch	VBN	hunched
+squander	VBG	squandering
+relax	VBD	relaxed
+transport	VBZ	transports
+thrust	VBD	thrust
+prompt	VBG	prompting
+prompt	VBN	prompted
+thrust	VBG	thrusting
+prompt	VBD	prompted
+cancel	VBD	canceled
+hope	VBN	hoped
+maintain	VBG	maintaining
+hope	VBG	hoping
+maintain	VBD	maintained
+hope	VBD	hoped
+maintain	VBN	maintained
+cancel	VBN	canceled
+contract	VBN	contracted
+contrast	VBZ	contrasts
+resemble	VBP	resemble
+transport	VBG	transporting
+vote	VBD	voted
+bounce	VBD	bounced
+romance	VBG	romancing
+resemble	VBZ	resembles
+hope	VBZ	hopes
+bounce	VBG	bouncing
+vote	VBG	voting
+transport	VBD	transported
+transport	VBN	transported
+contract	VBZ	contracts
+bust	VBD	busted
+cancel	VBZ	cancels
+vote	VBN	voted
+vote	VBP	vote
+hope	VBP	hope
+unlock	VBZ	unlocks
+bounce	VBP	bounce
+sap	VBG	sapping
+pump	VBP	pump
+contrast	VBG	contrasting
+ham	VBG	hamming
+appraise	VBN	appraised
+bounce	VBZ	bounces
+unlock	VBP	unlock
+pump	VBN	pumped
+pump	VBG	pumping
+pump	VBD	pumped
+ambush	VBD	ambushed
+maintain	VBP	maintain
+contract	VBD	contracted
+unlock	VBD	unlocked
+commence	VBG	commencing
+contract	VBG	contracting
+commence	VBD	commenced
+transmogrify	VBN	transmogrified
+contrast	VBN	contrasted
+maintain	VBZ	maintains
+sap	VBN	sapped
+resemble	VBG	resembling
+bludgeon	VBN	bludgeoned
+propel	VBD	propelled
+settle	VBN	settled
+date	VBZ	dates
+confiscate	VBN	confiscated
+tape	VBP	tape
+tape	VBN	taped
+boycott	VBN	boycotted
+settle	VBG	settling
+settle	VBD	settled
+date	VBP	date
+date	VBN	dated
+propel	VBN	propelled
+skyrocket	VBD	skyrocketed
+confiscate	VBD	confiscated
+encounter	VBD	encountered
+tape	VBD	taped
+confiscate	VBG	confiscating
+tape	VBG	taping
+prearrange	VBN	prearranged
+continue	VBZ	continues
+bankrupt	VBP	bankrupt
+refocus	VBN	refocused
+defect	VBG	defecting
+defect	VBD	defected
+vote	VBZ	votes
+detect	VBN	detected
+bust	VBG	busting
+detect	VBP	detect
+refocus	VBG	refocusing
+bust	VBN	busted
+glide	VBG	gliding
+piggyback	VBG	Piggybacking
+police	VBG	policing
+refocus	VBD	refocused
+settle	VBZ	settles
+hug	VBD	hugged
+detect	VBD	detected
+settle	VBP	settle
+detect	VBG	detecting
+override	VBD	overrode
+impress	VBD	impressed
+override	VBG	overriding
+commit	VBZ	commits
+continue	VBD	continued
+impress	VBZ	impresses
+nurse	VBD	nursed
+commit	VBN	committed
+continue	VBG	continuing
+arbitrage	VBG	arbitraging
+commit	VBP	commit
+indoctrinate	VBN	indoctrinated
+commit	VBD	committed
+continue	VBN	continued
+sail	VBD	sailed
+commit	VBG	committing
+continue	VBP	continue
+sail	VBG	sailing
+nurse	VBG	nursing
+coast	VBD	coasted
+impress	VBN	impressed
+dawn	VBZ	dawns
+skyrocket	VBN	skyrocketed
+accuse	VBZ	accuses
+teach	VBD	taught
+skyrocket	VBG	skyrocketing
+encounter	VBN	encountered
+date	VBG	dating
+dawn	VBG	dawning
+bolt	VBN	bolted
+encounter	VBZ	encounters
+obscure	VBZ	obscures
+chair	VBD	chaired
+applaud	VBP	applaud
+applaud	VBG	applauding
+assail	VBD	assailed
+arrange	VBZ	arranges
+applaud	VBD	applauded
+chair	VBZ	chairs
+arrange	VBN	arranged
+arrange	VBG	arranging
+be	VBD	were
+arrange	VBD	arranged
+be	VBG	being
+be	VBN	been
+sample	VBN	sampled
+be	VBP	are
+serve	VBG	serving
+serve	VBD	served
+serve	VBP	serve
+embarrass	VBG	embarrassing
+be	VBZ	is
+serve	VBN	served
+nationalize	VBD	nationalized
+obscure	VBD	obscured
+embarrass	VBN	embarrassed
+serve	VBZ	serves
+assist	VBG	assisting
+nationalize	VBN	nationalized
+assist	VBN	assisted
+bristle	VBP	bristle
+assist	VBZ	assists
+veil	VBG	Veiling
+say	VBN	said
+photograph	VBG	photographing
+exclude	VBZ	excludes
+say	VBD	said
+expel	VBN	expelled
+say	VBG	saying
+exclude	VBG	excluding
+admire	VBZ	admires
+sprinkle	VBP	sprinkle
+exclude	VBN	Excluded
+photograph	VBZ	photographs
+exclude	VBP	exclude
+sprinkle	VBD	sprinkled
+bristle	VBZ	bristles
+prevent	VBZ	prevents
+sprinkle	VBZ	sprinkles
+sterilize	VBG	sterilizing
+gain	VBG	gaining
+craft	VBN	crafted
+gain	VBD	gained
+gain	VBN	gained
+craft	VBD	crafted
+prevent	VBG	preventing
+prevent	VBD	prevented
+gain	VBP	gain
+craft	VBG	crafting
+prevent	VBP	prevent
+sterilize	VBN	sterilized
+veil	VBN	veiled
+prevent	VBN	prevented
+gain	VBZ	gains
+subside	VBN	subsided
+scoff	VBZ	scoffs
+knock	VBD	knocked
+shave	VBZ	shaves
+scoff	VBP	scoff
+subside	VBD	subsided
+shave	VBG	Shaving
+scoff	VBD	scoffed
+shave	VBD	shaved
+fascinate	VBN	fascinated
+destabilize	VBG	destabilizing
+cool	VBP	cool
+applaud	VBZ	applauds
+cool	VBN	cooled
+shave	VBN	shaved
+cool	VBD	cooled
+cool	VBG	cooling
+cool	VBZ	cools
+immerse	VBN	immersed
+knock	VBZ	knocks
+register	VBG	registering
+register	VBD	registered
+harden	VBN	hardened
+knock	VBN	knocked
+register	VBN	registered
+bristle	VBD	bristled
+ensconce	VBN	ensconced
+monopolize	VBN	monopolized
+knock	VBG	knocking
+monopolize	VBG	monopolizing
+perpetrate	VBN	perpetrated
+register	VBP	register
+soften	VBN	softened
+embrace	VBZ	embraces
+testify	VBZ	testifies
+square	VBN	squared
+soften	VBZ	softens
+confer	VBD	conferred
+square	VBG	squaring
+confer	VBG	conferring
+square	VBD	squared
+unite	VBN	united
+elude	VBD	eluded
+understand	VBD	understood
+flourish	VBG	flourishing
+festoon	VBG	festooning
+flourish	VBN	flourished
+confer	VBP	confer
+understand	VBG	understanding
+understand	VBN	understood
+embrace	VBD	embraced
+flaunt	VBZ	flaunts
+understand	VBP	understand
+embrace	VBG	embracing
+understand	VBZ	understands
+buttress	VBZ	buttresses
+confer	VBZ	confers
+rave	VBZ	raves
+soften	VBD	softened
+embrace	VBN	embraced
+soften	VBG	softening
+wait	VBN	waited
+wait	VBP	wait
+scour	VBG	scouring
+disgruntle	VBN	disgruntled
+wait	VBG	waiting
+snake	VBZ	snakes
+widow	VBN	widowed
+festoon	VBN	festooned
+wait	VBZ	waits
+trend	VBG	trending
+admire	VBD	admired
+annoy	VBD	annoyed
+say	VBP	say
+induce	VBN	induced
+induce	VBG	inducing
+annoy	VBN	annoyed
+say	VBZ	says
+testify	VBG	Testifying
+cement	VBG	Cementing
+testify	VBD	testified
+testify	VBP	testify
+induce	VBZ	induces
+vend	VBG	vending
+grab	VBD	grabbed
+round	VBN	rounded
+round	VBP	round
+grab	VBN	grabbed
+grab	VBG	grabbing
+mull	VBG	mulling
+unveil	VBZ	unveils
+weld	VBN	welded
+allocate	VBG	allocating
+enter	VBZ	enters
+sit	VBN	sat
+fashion	VBN	fashioned
+sit	VBP	sit
+sit	VBZ	sits
+allocate	VBD	allocated
+solidify	VBP	solidify
+round	VBD	rounded
+foster	VBD	fostered
+sit	VBD	sat
+foster	VBG	fostering
+progress	VBN	progressed
+enter	VBD	entered
+print	VBD	printed
+enter	VBG	entering
+grab	VBP	grab
+wait	VBD	waited
+enter	VBN	entered
+allocate	VBP	allocate
+print	VBG	printing
+allocate	VBN	allocated
+foster	VBN	fostered
+progress	VBZ	progresses
+enter	VBP	enter
+sit	VBG	sitting
+like	VBZ	likes
+aggravate	VBP	aggravate
+specialize	VBP	specialize
+strive	VBP	strive
+progress	VBD	progressed
+dictate	VBP	dictate
+print	VBN	printed
+strive	VBN	striven
+print	VBP	print
+specialize	VBZ	specializes
+print	VBZ	prints
+emote	VBD	emoted
+aggravate	VBZ	aggravates
+progress	VBG	progressing
+invade	VBP	invade
+pursue	VBD	pursued
+strive	VBG	striving
+strive	VBD	strove
+dictate	VBZ	dictates
+rape	VBD	raped
+open	VBG	opening
+dictate	VBD	dictated
+rape	VBG	raping
+rape	VBN	raped
+harvest	VBN	harvested
+specialize	VBG	specializing
+open	VBD	opened
+harvest	VBP	harvest
+like	VBD	liked
+open	VBP	open
+open	VBN	opened
+like	VBP	like
+dictate	VBN	dictated
+specialize	VBN	specialized
+like	VBN	liked
+irk	VBZ	irks
+break	VBP	break
+pursue	VBZ	pursues
+break	VBN	broken
+mull	VBZ	mulls
+unite	VBZ	unites
+unveil	VBN	unveiled
+break	VBZ	breaks
+open	VBZ	opens
+unveil	VBD	unveiled
+unveil	VBG	unveiling
+pursue	VBG	pursuing
+invade	VBD	invaded
+invade	VBG	invading
+pursue	VBN	pursued
+start	VBZ	starts
+aggravate	VBG	aggravating
+strive	VBZ	strives
+aggravate	VBN	aggravated
+break	VBG	breaking
+break	VBD	broke
+remove	VBD	removed
+complicate	VBN	complicated
+complicate	VBD	complicated
+complicate	VBZ	complicates
+pile	VBP	pile
+pile	VBN	piled
+magnetize	VBN	magnetized
+remove	VBN	removed
+remove	VBG	removing
+book	VBN	booked
+convert	VBP	convert
+book	VBG	booking
+convert	VBN	converted
+book	VBD	booked
+remove	VBZ	removes
+reschedule	VBN	rescheduled
+reschedule	VBD	rescheduled
+convert	VBZ	converts
+snag	VBN	snagged
+fleet	VBZ	fleets
+overhang	VBG	overhanging
+rival	VBG	rivaling
+shell	VBG	shelling
+shell	VBD	shelled
+alter	VBP	alter
+match	VBZ	matches
+unwind	VBG	unwinding
+alter	VBN	altered
+creep	VBN	crept
+lean	VBD	leaned
+alter	VBG	altering
+creep	VBG	creeping
+convert	VBD	converted
+convert	VBG	converting
+industrialize	VBN	industrialized
+creep	VBD	crept
+lean	VBG	leaning
+tremble	VBG	trembling
+lean	VBN	leaned
+lean	VBP	lean
+start	VBD	started
+start	VBG	starting
+turn	VBG	turning
+denationalize	VBN	denationalized
+swamp	VBD	swamped
+zoom	VBN	zoomed
+pile	VBD	piled
+turn	VBD	turned
+satisfy	VBN	satisfied
+mislay	VBN	mislaid
+match	VBD	matched
+pile	VBG	piling
+satisfy	VBD	satisfied
+turn	VBZ	turns
+backpedal	VBG	backpedaling
+alter	VBD	altered
+match	VBG	matching
+satisfy	VBG	Satisfying
+burglarize	VBN	burglarized
+glare	VBZ	glares
+match	VBP	match
+match	VBN	matched
+turn	VBN	turned
+start	VBP	start
+swamp	VBN	swamped
+rival	VBZ	rivals
+turn	VBP	turn
+start	VBN	started
+deck	VBG	decking
+sniff	VBG	sniffing
+deck	VBN	decked
+sniff	VBD	sniffed
+satisfy	VBZ	satisfies
+buckle	VBD	buckled
+seal	VBN	sealed
+patent	VBN	patented
+tear	VBN	torn
+patent	VBD	patented
+agree	VBD	agreed
+tear	VBD	tore
+seal	VBD	sealed
+tear	VBG	tearing
+agree	VBN	agreed
+seal	VBG	sealing
+interest	VBZ	interests
+agree	VBG	agreeing
+intensify	VBN	intensified
+shoot	VBP	shoot
+agree	VBP	agree
+help	VBP	help
+echo	VBD	echoed
+shoot	VBN	shot
+help	VBN	helped
+shoot	VBZ	shoots
+agree	VBZ	agrees
+interest	VBN	interested
+echo	VBP	echo
+echo	VBN	echoed
+paralyze	VBN	paralyzed
+blot	VBG	blotting
+intensify	VBG	intensifying
+help	VBD	helped
+paralyze	VBG	paralyzing
+echo	VBG	echoing
+defer	VBG	deferring
+zap	VBG	zapping
+shoot	VBD	shot
+shoot	VBG	shooting
+help	VBG	helping
+intensify	VBD	intensified
+besiege	VBN	besieged
+demobilize	VBG	demobilizing
+calm	VBN	calmed
+misspend	VBN	misspent
+intervene	VBN	intervened
+outshine	VBZ	outshines
+buckle	VBG	buckling
+help	VBZ	helps
+intervene	VBG	intervening
+relay	VBD	relayed
+calm	VBG	calming
+mandate	VBD	mandated
+sniff	VBZ	sniffs
+intervene	VBD	intervened
+mandate	VBG	mandating
+mandate	VBN	mandated
+decry	VBZ	decries
+quash	VBN	quashed
+laud	VBN	lauded
+laud	VBD	lauded
+analyze	VBP	analyze
+mess	VBG	messing
+talk	VBD	talked
+cram	VBG	cramming
+analyze	VBD	analyzed
+cram	VBD	crammed
+facilitate	VBG	facilitating
+entice	VBG	enticing
+talk	VBN	talked
+analyze	VBN	analyzed
+analyze	VBG	analyzing
+talk	VBG	talking
+occur	VBD	occurred
+quash	VBD	quashed
+defer	VBN	deferred
+occur	VBN	occurred
+facilitate	VBP	facilitate
+occur	VBG	occurring
+cram	VBZ	crams
+munch	VBG	Munching
+talk	VBP	talk
+talk	VBZ	talks
+groan	VBZ	groans
+incur	VBP	incur
+nail	VBN	nailed
+comb	VBG	combing
+compute	VBG	computing
+immigrate	VBD	immigrated
+delete	VBG	deleting
+compute	VBZ	computes
+incur	VBD	incurred
+delete	VBN	deleted
+comb	VBN	combed
+incur	VBN	incurred
+console	VBZ	consoles
+dabble	VBD	dabbled
+suppress	VBN	suppressed
+hide	VBG	hiding
+frighten	VBN	frightened
+dawdle	VBG	dawdling
+frighten	VBD	frightened
+gaze	VBP	gaze
+hide	VBN	hidden
+thin	VBN	thinned
+metabolize	VBN	metabolized
+thin	VBG	thinning
+repurchase	VBG	repurchasing
+resume	VBZ	resumes
+repurchase	VBN	repurchase
+resume	VBP	resume
+resume	VBN	resumed
+rankle	VBN	rankled
+compete	VBG	competing
+compete	VBD	competed
+lean	VBZ	leans
+compete	VBP	compete
+occur	VBZ	occurs
+compete	VBZ	competes
+fizzle	VBN	fizzled
+fizzle	VBD	fizzled
+benefit	VBZ	benefits
+safeguard	VBN	safeguarded
+occur	VBP	occur
+disconnect	VBN	disconnected
+benefit	VBP	benefit
+capitalize	VBG	Capitalizing
+arbitrate	VBZ	arbitrates
+capitalize	VBN	capitalized
+resume	VBG	resuming
+benefit	VBN	benefited
+hinder	VBZ	hinders
+bulldoze	VBN	bulldozed
+repurchase	VBD	repurchase
+resume	VBD	resumed
+benefit	VBG	benefiting
+capitalize	VBD	capitalized
+benefit	VBD	benefited
+unfold	VBG	unfolding
+unfold	VBD	unfolded
+endanger	VBN	endangered
+remodel	VBG	remodeling
+emerge	VBD	emerged
+pore	VBZ	pores
+emerge	VBG	emerging
+suppress	VBD	suppressed
+dabble	VBG	dabbling
+pore	VBN	pored
+unfold	VBZ	unfolds
+question	VBG	questioning
+cure	VBN	cured
+default	VBG	defaulting
+question	VBN	Questioned
+default	VBD	defaulted
+question	VBP	question
+update	VBG	updating
+channel	VBD	channeled
+default	VBN	defaulted
+veer	VBG	veering
+update	VBN	updated
+question	VBD	questioned
+shock	VBN	shocked
+relate	VBP	relate
+emerge	VBP	emerge
+relate	VBN	related
+enroll	VBP	enroll
+relate	VBD	related
+emerge	VBN	emerged
+relate	VBG	relating
+relate	VBZ	relates
+sandwich	VBN	sandwiched
+shock	VBD	shocked
+emerge	VBZ	emerges
+attribute	VBZ	attributes
+bowl	VBP	bowl
+attribute	VBP	attribute
+drift	VBG	drifting
+center	VBZ	centers
+drift	VBD	drifted
+attribute	VBG	attributing
+betray	VBN	betrayed
+center	VBP	center
+attribute	VBN	attributed
+center	VBN	centered
+attribute	VBD	attributed
+center	VBG	centering
+bowl	VBG	bowling
+dilute	VBN	diluted
+center	VBD	centered
+harass	VBG	harassing
+harass	VBD	harassed
+stitch	VBN	stitched
+dilute	VBG	diluting
+dilute	VBD	diluted
+organize	VBD	organized
+organize	VBG	organizing
+reaffirm	VBZ	reaffirms
+govern	VBG	governing
+cloud	VBN	clouded
+govern	VBD	governed
+cloud	VBP	cloud
+confide	VBD	confided
+downplay	VBD	downplayed
+reaffirm	VBG	reaffirming
+confide	VBG	Confiding
+cloud	VBZ	clouds
+organize	VBN	organized
+renege	VBG	reneging
+hurl	VBG	hurling
+confide	VBZ	confides
+hurl	VBN	hurled
+hurl	VBP	hurl
+reaffirm	VBD	reaffirmed
+govern	VBN	governed
+perfect	VBN	perfected
+stake	VBN	staked
+govern	VBP	govern
+bowl	VBZ	bowls
+keep	VBZ	keeps
+convince	VBZ	convinces
+convince	VBP	convince
+ogle	VBZ	ogles
+convince	VBN	convinced
+explore	VBG	exploring
+rescue	VBD	rescued
+convince	VBD	convinced
+convince	VBG	convincing
+stun	VBD	stunned
+overlay	VBZ	overlays
+keep	VBD	kept
+stun	VBN	stunned
+indulge	VBG	indulging
+demonstrate	VBG	demonstrating
+screen	VBG	screening
+keep	VBG	keeping
+rescue	VBZ	rescues
+demonstrate	VBN	demonstrated
+howl	VBG	howling
+frequent	VBZ	frequents
+explore	VBZ	explores
+constrict	VBG	constricting
+ogle	VBG	ogling
+squirm	VBG	squirming
+keep	VBN	kept
+indulge	VBZ	indulges
+question	VBZ	questions
+demonstrate	VBD	demonstrated
+keep	VBP	keep
+revamp	VBN	revamped
+spill	VBZ	spills
+burden	VBN	burdened
+costume	VBN	costumed
+revamp	VBD	revamped
+revamp	VBG	revamping
+screen	VBZ	screens
+burden	VBZ	burdens
+bare	VBG	baring
+cross	VBD	crossed
+precede	VBG	preceding
+anger	VBD	angered
+anger	VBG	angering
+cross	VBG	crossing
+precede	VBN	preceded
+down	VBD	downed
+anger	VBN	angered
+cross	VBZ	crosses
+down	VBP	down
+cross	VBN	crossed
+err	VBZ	errs
+scurry	VBG	scurrying
+heave	VBD	heaves
+flame	VBD	flamed
+triumph	VBD	triumphed
+cross	VBP	cross
+result	VBZ	results
+heave	VBN	heaved
+chronicle	VBZ	chronicles
+abort	VBN	aborted
+result	VBP	result
+attend	VBZ	attends
+spoil	VBD	spoiled
+stunt	VBN	stunted
+supercede	VBP	supercede
+result	VBN	resulted
+attend	VBG	attending
+polish	VBG	polishing
+attend	VBD	attended
+result	VBG	resulting
+attend	VBN	attended
+result	VBD	resulted
+attend	VBP	attend
+supercede	VBD	superceded
+burden	VBD	burdened
+confess	VBZ	confesses
+farm	VBG	farming
+polish	VBN	polished
+barge	VBZ	barges
+disavow	VBD	disavowed
+spill	VBD	spilled
+despair	VBZ	despairs
+farm	VBZ	farms
+spill	VBN	spilled
+cower	VBP	cower
+disclose	VBN	disclosed
+spout	VBP	spout
+reconsider	VBN	reconsidered
+lecture	VBZ	lectures
+bend	VBG	bending
+stink	VBP	stink
+disclose	VBG	disclosing
+theme	VBN	themed
+lecture	VBP	lecture
+disclose	VBD	disclosed
+blow	VBG	blowing
+blow	VBD	blew
+prosper	VBN	prospered
+lecture	VBD	lectured
+fork	VBN	forked
+funnel	VBN	funneled
+sweeten	VBD	sweetened
+funnel	VBG	funneling
+bless	VBN	blessed
+sweeten	VBN	sweetened
+fork	VBD	forked
+funnel	VBD	funneled
+reinvigorate	VBN	reinvigorated
+contravene	VBN	contravened
+err	VBP	err
+err	VBN	erred
+err	VBD	erred
+bemoan	VBG	bemoaning
+blow	VBN	blown
+disclose	VBZ	discloses
+kindle	VBN	kindled
+rot	VBG	rotting
+rot	VBN	rotted
+rebut	VBN	rebutted
+overvalue	VBN	overvalued
+ride	VBD	rode
+study	VBG	studying
+revoke	VBG	revoking
+ride	VBG	riding
+rehash	VBG	rehashing
+study	VBD	studied
+study	VBP	study
+revoke	VBN	revoked
+study	VBN	studied
+ride	VBP	ride
+manhandle	VBN	manhandled
+drop	VBG	dropping
+drop	VBD	dropped
+prevail	VBG	prevailing
+flee	VBN	fled
+prevail	VBD	prevailed
+redeem	VBN	redeemed
+redeem	VBG	redeeming
+flee	VBG	fleeing
+flee	VBD	fled
+study	VBZ	studies
+encourage	VBN	encouraged
+snap	VBG	snapping
+flounder	VBN	floundered
+encourage	VBP	encourage
+live	VBG	Living
+live	VBN	lived
+stay	VBP	stay
+snap	VBD	snapped
+stay	VBN	stayed
+stay	VBD	stayed
+respond	VBD	responded
+snap	VBP	snap
+prevail	VBZ	prevails
+crow	VBN	crowed
+snap	VBN	snapped
+encourage	VBZ	encourages
+live	VBD	lived
+stay	VBG	staying
+steer	VBN	steered
+stay	VBZ	stays
+crow	VBZ	crows
+steer	VBZ	steers
+prevail	VBP	prevail
+prevail	VBN	prevailed
+respond	VBZ	responds
+sweat	VBD	sweat
+syndicate	VBN	syndicated
+syndicate	VBG	syndicating
+steer	VBD	steered
+steer	VBG	steering
+respond	VBG	responding
+encourage	VBD	encouraged
+encourage	VBG	encouraging
+flounder	VBG	floundering
+respond	VBN	responded
+snap	VBZ	snaps
+curtail	VBD	curtailed
+sack	VBG	sacking
+curtail	VBG	curtailing
+research	VBZ	researches
+ooze	VBG	oozing
+circle	VBD	circled
+research	VBN	researched
+poise	VBN	poised
+exclaim	VBZ	exclaims
+contain	VBD	contained
+set	VBZ	sets
+bully	VBZ	bullies
+reassure	VBN	reassured
+contain	VBG	containing
+pester	VBN	Pestered
+contain	VBN	contained
+innovate	VBD	innovated
+discolor	VBN	discolored
+clutch	VBG	clutching
+contain	VBP	contain
+reassure	VBG	reassuring
+seem	VBZ	seems
+reassure	VBD	reassured
+contain	VBZ	contains
+free	VBN	freed
+populate	VBG	populating
+live	VBP	live
+free	VBG	freeing
+embed	VBN	embedded
+seem	VBD	seemed
+bully	VBD	bullied
+populate	VBN	populated
+seem	VBN	seemed
+free	VBD	freed
+curtail	VBN	curtailed
+seem	VBP	seem
+gasp	VBD	gasped
+circle	VBZ	circles
+curtail	VBP	curtail
+live	VBZ	lives
+draw	VBD	drew
+believe	VBZ	believes
+blindfold	VBD	blindfolded
+lament	VBZ	laments
+believe	VBP	believe
+exonerate	VBD	exonerated
+clutch	VBP	clutch
+draw	VBP	draw
+exonerate	VBG	exonerating
+draw	VBN	drawn
+believe	VBG	believing
+believe	VBN	believed
+swathe	VBN	swathed
+wrench	VBN	wrenched
+draw	VBG	drawing
+believe	VBD	believed
+weigh	VBD	weighed
+weigh	VBG	weighing
+draw	VBZ	draws
+weigh	VBN	weighed
+weigh	VBP	weigh
+compare	VBZ	compares
+sack	VBD	sacked
+weigh	VBZ	weighs
+lament	VBD	lamented
+compare	VBD	compared
+mill	VBG	milling
+compare	VBP	compare
+compare	VBN	compared
+dry	VBG	drying
+dry	VBD	dried
+compare	VBG	comparing
+dry	VBN	dried
+scotch	VBD	scotched
+roam	VBP	roam
+expose	VBD	exposed
+confirm	VBD	confirmed
+roam	VBD	roamed
+confirm	VBG	confirming
+expose	VBP	expose
+confirm	VBN	confirmed
+confirm	VBP	confirm
+punish	VBN	punished
+expose	VBG	exposing
+expose	VBN	exposed
+punish	VBG	punishing
+confirm	VBZ	confirms
+see	VBG	seeing
+revel	VBP	revel
+reason	VBN	reasoned
+erode	VBP	erode
+overstate	VBG	overstating
+bolster	VBG	bolstering
+bolster	VBD	bolstered
+revel	VBG	reveling
+erode	VBN	eroded
+free	VBP	free
+enlist	VBG	enlisting
+erode	VBD	eroded
+erode	VBG	eroding
+enlist	VBD	enlisted
+reason	VBD	reasoned
+free	VBZ	frees
+overstate	VBN	overstated
+pollinate	VBG	pollinating
+mutilate	VBN	mutilated
+moonlight	VBG	moonlighting
+see	VBZ	sees
+bolster	VBZ	bolsters
+see	VBP	see
+reason	VBZ	reasons
+see	VBN	seen
+bolster	VBN	bolstered
+receive	VBN	received
+double	VBD	doubled
+sweat	VBN	sweated
+sweat	VBG	Sweating
+double	VBG	doubling
+exceed	VBP	exceed
+terminate	VBD	terminated
+exceed	VBN	exceeded
+sweat	VBP	sweat
+receive	VBP	receive
+exceed	VBG	exceeding
+terminate	VBG	terminating
+terminate	VBN	terminated
+receive	VBG	receiving
+receive	VBD	received
+exceed	VBZ	exceeds
+expound	VBG	expounding
+sting	VBN	Stung
+account	VBZ	accounts
+account	VBP	account
+double	VBZ	doubles
+pollinate	VBP	pollinate
+account	VBN	accounted
+pollinate	VBN	pollinated
+erode	VBZ	erodes
+foil	VBG	foiling
+foil	VBN	Foiled
+reverberate	VBG	reverberating
+dislike	VBP	dislike
+botch	VBN	botched
+shelve	VBD	shelved
+sting	VBG	stinging
+foil	VBD	foiled
+double	VBN	doubled
+double	VBP	double
+build	VBD	built
+undergo	VBN	undergone
+subscribe	VBP	subscribe
+vindicate	VBN	vindicated
+undergo	VBP	undergo
+subscribe	VBN	subscribed
+reverberate	VBN	reverberated
+stagger	VBD	staggered
+stagger	VBG	staggering
+improve	VBZ	improves
+build	VBG	building
+subscribe	VBG	subscribing
+walk	VBP	Walk
+improve	VBP	improve
+account	VBG	accounting
+improve	VBN	improved
+shrink	VBN	shrunk
+shrink	VBD	shrank
+walk	VBG	walking
+vacation	VBG	vacationing
+improve	VBG	improving
+account	VBD	accounted
+undergo	VBD	underwent
+walk	VBD	walked
+undergo	VBG	undergoing
+shrink	VBG	Shrinking
+improve	VBD	improved
+disarm	VBG	disarming
+select	VBG	selecting
+strew	VBN	strewn
+salute	VBG	saluting
+walk	VBZ	walks
+select	VBN	selected
+select	VBD	selected
+subscribe	VBZ	subscribes
+select	VBZ	selects
+embargo	VBD	embargoed
+exceed	VBD	exceeded
+epitomize	VBP	epitomize
+select	VBP	select
+regroup	VBP	regroup
+pop	VBP	pop
+defraud	VBD	defrauded
+donate	VBN	donated
+train	VBZ	trains
+defraud	VBG	defrauding
+dull	VBN	dulled
+warrant	VBZ	warrants
+smelt	VBN	smelt
+pop	VBZ	pops
+ping	VBG	pinging
+warrant	VBP	warrant
+defraud	VBN	defrauded
+injure	VBD	injured
+solicit	VBG	soliciting
+injure	VBG	injuring
+undertake	VBN	undertaken
+solicit	VBN	solicited
+damage	VBZ	damages
+undertake	VBD	undertook
+rev	VBN	revved
+undertake	VBG	undertaking
+solicit	VBZ	solicits
+rusticate	VBN	rusticated
+train	VBG	training
+train	VBN	trained
+damage	VBP	damage
+charge	VBD	charged
+pop	VBG	popping
+damage	VBN	damaged
+train	VBP	train
+injure	VBN	injured
+number	VBD	numbered
+place	VBZ	places
+charge	VBG	charging
+border	VBN	bordered
+spin	VBZ	spins
+border	VBG	bordering
+charge	VBN	charged
+charge	VBP	charge
+receive	VBZ	receives
+number	VBN	numbered
+stack	VBG	stacking
+charge	VBZ	charges
+bewilder	VBN	bewildered
+concoct	VBN	concocted
+concoct	VBZ	Concocts
+bewilder	VBG	bewildering
+stack	VBN	stacked
+head	VBG	heading
+head	VBD	headed
+infer	VBN	inferred
+spin	VBD	spun
+head	VBZ	heads
+frolic	VBN	frolicked
+spin	VBN	spun
+place	VBD	placed
+place	VBG	placing
+announce	VBZ	announces
+place	VBP	place
+head	VBP	head
+head	VBN	headed
+place	VBN	placed
+announce	VBP	announce
+announce	VBN	announced
+whip	VBG	whipping
+arch	VBD	arched
+banish	VBN	banished
+announce	VBG	announcing
+whip	VBN	whipped
+announce	VBD	announced
+reiterate	VBD	reiterated
+reiterate	VBG	reiterating
+whip	VBZ	whips
+integrate	VBG	integrating
+rework	VBN	reworked
+bill	VBZ	bills
+campaign	VBG	campaigning
+bill	VBG	billing
+gamble	VBG	gambling
+bill	VBD	billed
+rent	VBZ	rents
+admonish	VBG	admonishing
+campaign	VBN	campaigned
+bill	VBN	billed
+spare	VBZ	spares
+melt	VBZ	melts
+bill	VBP	bill
+denominate	VBN	denominated
+preach	VBP	preach
+spare	VBN	spared
+arch	VBP	arch
+pick	VBZ	picks
+rent	VBN	rented
+spare	VBP	spare
+requisition	VBD	requisitioned
+preach	VBG	preaching
+spare	VBD	spared
+prolong	VBN	prolonged
+renovate	VBG	renovating
+melt	VBG	melting
+feud	VBG	feuding
+earmark	VBD	earmarked
+earmark	VBG	earmarking
+pick	VBP	pick
+pick	VBN	picked
+damage	VBD	damaged
+damage	VBG	damaging
+rhyme	VBG	rhyming
+pick	VBD	picked
+earmark	VBN	earmarked
+pick	VBG	picking
+gather	VBD	gathered
+replicate	VBN	replicated
+gather	VBG	gathering
+integrate	VBN	integrated
+whisk	VBN	whisked
+replicate	VBG	replicating
+gather	VBN	gathered
+donate	VBG	donating
+gather	VBP	gather
+donate	VBD	donated
+quack	VBZ	quacks
+symbolize	VBN	symbolized
+invalidate	VBD	invalidated
+praise	VBP	praise
+arise	VBP	arise
+compromise	VBZ	compromises
+arise	VBN	arisen
+arise	VBD	arose
+detail	VBG	detailing
+arise	VBG	arising
+praise	VBZ	praises
+praise	VBD	praised
+mitigate	VBG	mitigating
+compromise	VBN	compromised
+connect	VBZ	connects
+symbolize	VBZ	symbolizes
+compromise	VBG	compromising
+patrol	VBN	patrolled
+praise	VBN	praised
+praise	VBG	praising
+entitle	VBG	entitling
+throw	VBN	thrown
+entitle	VBP	entitle
+throw	VBP	throw
+entitle	VBN	entitled
+entitle	VBZ	entitles
+throw	VBG	throwing
+detail	VBN	detailed
+throw	VBD	threw
+marvel	VBD	marveled
+outweigh	VBP	outweigh
+outweigh	VBN	outweighed
+wrest	VBN	wrested
+burgeon	VBG	burgeoning
+stroll	VBP	stroll
+tone	VBN	toned
+stroll	VBG	strolling
+enact	VBD	enacted
+enact	VBG	enacting
+diversify	VBG	diversifying
+accrue	VBZ	accrues
+diversify	VBN	diversified
+enact	VBN	enacted
+plead	VBD	pleaded
+ache	VBG	aching
+murder	VBG	murdering
+plead	VBG	pleading
+excel	VBP	excel
+brake	VBG	braking
+coincide	VBD	coincided
+outlast	VBD	outlasted
+stash	VBD	stashed
+murder	VBN	murdered
+plead	VBN	pleaded
+scrounge	VBD	scrounged
+convey	VBD	conveyed
+arise	VBZ	arises
+zero	VBP	zero
+coincide	VBZ	coincides
+deport	VBD	deported
+zero	VBG	zeroing
+endure	VBG	enduring
+linger	VBZ	lingers
+convey	VBZ	conveys
+beat	VBZ	beats
+endure	VBD	endured
+beat	VBN	beaten
+beat	VBP	beat
+preserve	VBZ	preserves
+beat	VBG	beating
+preserve	VBD	preserved
+preserve	VBG	preserving
+accrue	VBN	accrued
+preserve	VBN	preserved
+accrue	VBG	accruing
+give	VBD	gave
+give	VBG	giving
+outweigh	VBD	outweighed
+prod	VBZ	prods
+push	VBZ	pushes
+corroborate	VBP	corroborate
+push	VBG	pushing
+pardon	VBD	pardoned
+throw	VBZ	throws
+rip	VBD	ripped
+construct	VBG	constructing
+push	VBD	pushed
+prod	VBN	prodded
+push	VBP	Push
+push	VBN	pushed
+rip	VBN	ripped
+construct	VBN	constructed
+prod	VBG	prodding
+beat	VBD	beat
+heed	VBD	heeded
+connect	VBG	connecting
+give	VBZ	gives
+connect	VBN	connected
+linger	VBG	lingering
+connect	VBP	connect
+intrude	VBP	intrude
+endure	VBP	endure
+give	VBP	give
+give	VBN	given
+endure	VBN	endured
+cite	VBZ	cites
+sense	VBG	sensing
+engineer	VBN	engineered
+cite	VBG	citing
+cite	VBD	cited
+suck	VBZ	sucks
+scribble	VBD	scribbled
+cite	VBP	cite
+cite	VBN	cited
+publicize	VBN	publicized
+sense	VBD	sensed
+scribble	VBG	scribbling
+react	VBD	reacted
+invest	VBD	invested
+raise	VBD	raised
+react	VBG	reacting
+raise	VBN	raised
+raise	VBG	raising
+react	VBZ	reacts
+react	VBN	reacted
+react	VBP	react
+incorporate	VBG	incorporating
+exaggerate	VBN	exaggerated
+arrest	VBN	arrested
+process	VBP	process
+materialize	VBZ	materializes
+describe	VBG	describing
+situate	VBN	situated
+gird	VBG	girding
+describe	VBD	described
+identify	VBD	identified
+envisage	VBD	envisaged
+incorporate	VBN	incorporated
+process	VBN	processed
+materialize	VBN	materialized
+crave	VBP	crave
+identify	VBG	identifying
+incorporate	VBZ	incorporates
+process	VBZ	processes
+describe	VBN	described
+identify	VBN	identified
+blacken	VBN	blackened
+describe	VBP	describe
+identify	VBP	identify
+seep	VBD	seeped
+describe	VBZ	describes
+identify	VBZ	identifies
+gird	VBD	girded
+materialize	VBD	materialized
+loathe	VBD	loathed
+elevate	VBD	elevated
+sense	VBP	sense
+shiver	VBG	shivering
+elevate	VBZ	elevates
+oversimplify	VBN	oversimplified
+stress	VBP	stress
+focus	VBZ	focuses
+mine	VBG	mining
+stress	VBG	stressing
+stress	VBN	stressed
+cough	VBN	coughed
+focus	VBG	focusing
+sacrifice	VBZ	sacrifices
+descend	VBZ	descends
+focus	VBD	focused
+focus	VBP	focus
+loathe	VBN	loathed
+cough	VBG	coughing
+stress	VBZ	stresses
+portend	VBZ	portends
+cough	VBD	coughed
+focus	VBN	focused
+process	VBG	processing
+balance	VBG	balancing
+process	VBD	processed
+lock	VBP	lock
+balance	VBN	balanced
+bode	VBZ	bodes
+clarify	VBN	clarified
+lock	VBZ	locks
+clarify	VBG	clarifying
+balance	VBZ	balances
+mine	VBP	mine
+refuel	VBG	refueling
+recycle	VBN	recycled
+die	VBG	dying
+rebuild	VBG	rebuilding
+proliferate	VBG	proliferating
+die	VBD	died
+pledge	VBZ	pledges
+rebuild	VBN	rebuilt
+proliferate	VBP	proliferate
+proliferate	VBN	proliferated
+pledge	VBD	pledged
+die	VBZ	dies
+raise	VBZ	raises
+run	VBZ	runs
+lock	VBG	locking
+recycle	VBZ	recycles
+lock	VBD	locked
+hose	VBZ	hoses
+pledge	VBG	pledging
+raise	VBP	raise
+run	VBP	run
+die	VBP	die
+lock	VBN	locked
+die	VBN	died
+pledge	VBN	pledged
+slump	VBP	slump
+inflate	VBG	inflating
+inflate	VBD	inflated
+model	VBN	modeled
+run	VBN	run
+slump	VBN	slumped
+engineer	VBG	engineering
+inflate	VBN	inflated
+descend	VBG	descending
+discuss	VBN	discussed
+run	VBG	running
+model	VBD	modeled
+run	VBD	ran
+descend	VBD	descended
+discuss	VBD	discussed
+stress	VBD	stressed
+discuss	VBG	discussing
+sacrifice	VBG	sacrificing
+recycle	VBG	recycling
+slump	VBD	slumped
+slump	VBG	slumping
+peel	VBN	peeled
+rupture	VBG	rupturing
+degenerate	VBN	degenerated
+branch	VBN	branched
+rupture	VBD	ruptured
+rupture	VBN	ruptured
+branch	VBG	branching
+marginalize	VBG	marginalizing
+index	VBN	indexed
+hold	VBZ	holds
+index	VBG	indexing
+weight	VBN	weighted
+hold	VBP	hold
+fuss	VBZ	fusses
+tug	VBD	tugged
+hold	VBN	held
+tug	VBG	tugging
+hold	VBD	held
+hold	VBG	holding
+allude	VBD	alluded
+reverse	VBG	reversing
+reverse	VBD	reversed
+outstrip	VBZ	outstrips
+lack	VBZ	lacks
+lack	VBP	lack
+level	VBD	leveled
+lack	VBN	lacked
+level	VBN	leveled
+wail	VBG	wailing
+lack	VBG	lacking
+level	VBG	leveling
+reverse	VBP	Reverse
+reverse	VBN	reversed
+lack	VBD	lacked
+lose	VBD	lost
+level	VBP	level
+lose	VBG	losing
+crush	VBG	crushing
+presume	VBN	presumed
+crush	VBN	crushed
+lose	VBN	lost
+lose	VBP	lose
+outstrip	VBN	outstripped
+lose	VBZ	loses
+outstrip	VBD	outstripped
+crush	VBZ	crushes
+overthrow	VBN	overthrown
+siphon	VBD	siphoned
+siphon	VBG	siphoning
+swerve	VBP	swerve
+reverse	VBZ	reverses
+overthrow	VBG	overthrowing
+fix	VBG	fixing
+firm	VBD	firmed
+entail	VBZ	entails
+unhinge	VBN	unhinged
+fix	VBN	fixed
+firm	VBG	firming
+inflict	VBN	inflicted
+entail	VBN	entailed
+firm	VBN	firmed
+upgrade	VBD	upgraded
+hurry	VBN	hurried
+upgrade	VBG	upgrading
+ravage	VBN	ravaged
+upgrade	VBN	upgraded
+disparage	VBG	disparaging
+rumor	VBN	rumored
+append	VBN	appended
+siphon	VBN	siphoned
+rumor	VBZ	rumors
+harry	VBN	harried
+degenerate	VBD	degenerated
+inflict	VBD	inflicted
+cloak	VBP	cloak
+peck	VBP	peck
+fix	VBD	fixed
+underperform	VBN	underperformed
+devise	VBN	devised
+outgrow	VBD	outgrew
+repay	VBD	repaid
+devise	VBD	devised
+bottle	VBG	bottling
+outgrow	VBN	outgrown
+misinterpret	VBN	misinterpreted
+bottle	VBN	bottled
+happen	VBZ	happens
+endow	VBN	endowed
+straddle	VBG	straddling
+staple	VBG	stapling
+careen	VBD	careened
+lap	VBP	lap
+irradiate	VBN	irradiated
+careen	VBG	careening
+flow	VBG	flowing
+repay	VBG	repaying
+underperform	VBZ	underperforms
+repay	VBN	repaid
+trek	VBD	trekked
+devise	VBZ	devises
+flow	VBD	flowed
+endow	VBD	endowed
+flow	VBZ	flows
+cast	VBG	casting
+fill	VBP	fill
+cast	VBD	cast
+fill	VBN	filled
+happen	VBG	happening
+toast	VBD	toasted
+acquaint	VBN	acquainted
+happen	VBD	happened
+flow	VBP	flow
+fill	VBG	filling
+cast	VBZ	casts
+happen	VBP	happen
+fill	VBD	filled
+happen	VBN	happened
+can	VBN	canned
+cause	VBN	caused
+cause	VBP	cause
+cause	VBD	caused
+cast	VBN	cast
+cause	VBG	causing
+charter	VBD	chartered
+trim	VBD	trimmed
+trim	VBG	trimming
+exempt	VBN	exempted
+charter	VBN	chartered
+can	VBG	canning
+exempt	VBG	exempting
+group	VBN	grouped
+herald	VBN	heralded
+breed	VBD	bred
+fool	VBG	fooling
+challenge	VBZ	challenges
+trim	VBN	trimmed
+fool	VBN	fooled
+trim	VBP	Trim
+fill	VBZ	fills
+challenge	VBP	challenge
+interconnect	VBN	interconnected
+plague	VBD	plagued
+align	VBN	aligned
+drain	VBZ	drains
+challenge	VBN	challenged
+drain	VBN	drained
+challenge	VBG	challenging
+pull	VBZ	pulls
+challenge	VBD	challenged
+mar	VBN	marred
+drain	VBG	draining
+pull	VBG	pulling
+kidnap	VBN	kidnapped
+pull	VBN	pulled
+pull	VBP	pull
+kidnap	VBD	kidnapped
+cause	VBZ	causes
+evolve	VBN	evolved
+guard	VBN	guarded
+evolve	VBG	evolving
+educate	VBN	educated
+guard	VBP	guard
+evolve	VBD	evolved
+guard	VBG	guarding
+educate	VBG	educating
+pull	VBD	pulled
+buoy	VBZ	buoys
+undercut	VBN	undercut
+audit	VBD	audited
+undercut	VBG	undercutting
+meld	VBZ	melds
+buoy	VBN	buoyed
+audit	VBN	audited
+mobilize	VBD	mobilized
+guard	VBZ	guards
+undercut	VBD	undercut
+buoy	VBG	buoying
+portray	VBN	portrayed
+portray	VBD	portrayed
+buoy	VBD	buoyed
+portray	VBG	portraying
+shoehorn	VBN	shoehorned
+portray	VBZ	portrays
+flunk	VBP	flunk
+ail	VBG	ailing
+plague	VBN	plagued
+mobilize	VBN	mobilized
+meld	VBG	melding
+flunk	VBG	flunking
+flash	VBG	flashing
+set	VBG	setting
+elect	VBN	elected
+flash	VBD	flashed
+elect	VBP	elect
+set	VBD	set
+experiment	VBN	experimented
+experiment	VBG	experimenting
+shroud	VBD	shrouded
+note	VBG	noting
+set	VBN	set
+prompt	VBZ	prompts
+set	VBP	set
+experiment	VBD	experimented
+note	VBD	noted
+repute	VBN	reputed
+isolate	VBN	isolated
+soak	VBG	soaking
+isolate	VBD	isolated
+envy	VBP	envy
+elect	VBD	elected
+found	VBG	founding
+slice	VBP	slice
+hawk	VBG	hawking
+kill	VBD	killed
+stumble	VBG	stumbling
+dissatisfy	VBN	dissatisfied
+bang	VBZ	bangs
+found	VBD	found
+stumble	VBD	stumbled
+slam	VBD	slammed
+kill	VBG	killing
+ebb	VBZ	ebbs
+kill	VBN	killed
+isolate	VBZ	isolates
+kill	VBP	kill
+kill	VBZ	kills
+stumble	VBN	stumbled
+found	VBN	found
+stumble	VBP	stumble
+isolate	VBP	isolate
+duplicate	VBN	duplicated
+obtain	VBG	obtaining
+privatize	VBG	privatizing
+clarify	VBZ	clarifies
+obtain	VBP	obtain
+obtain	VBN	obtained
+duplicate	VBG	Duplicating
+rationalize	VBG	rationalizing
+visualize	VBG	VISUALIZING
+execute	VBD	executed
+stow	VBD	stowed
+slice	VBG	slicing
+parry	VBD	parried
+obtain	VBD	obtained
+deliver	VBP	deliver
+execute	VBG	executing
+deliver	VBN	delivered
+rock	VBN	rocked
+accompany	VBN	accompanied
+execute	VBP	execute
+deliver	VBG	delivering
+execute	VBN	executed
+rock	VBG	rocking
+accompany	VBD	accompanied
+disband	VBN	disbanded
+accompany	VBG	accompanying
+remand	VBD	remanded
+manifest	VBP	manifest
+rock	VBD	rocked
+translate	VBN	translated
+accompany	VBZ	accompanies
+privatize	VBN	privatized
+deliver	VBD	delivered
+disband	VBG	disbanding
+execute	VBZ	executes
+wiggle	VBP	wiggle
+rebound	VBZ	rebounds
+station	VBN	stationed
+translate	VBG	translating
+deviate	VBD	deviated
+furrow	VBZ	furrows
+flood	VBG	flooding
+approve	VBN	approved
+approve	VBP	approve
+approve	VBZ	approves
+flood	VBD	flooded
+maximize	VBG	maximizing
+ensue	VBG	ensuing
+ensue	VBD	ensued
+indict	VBN	indicted
+exemplify	VBZ	exemplifies
+flood	VBN	flooded
+indict	VBD	indicted
+graze	VBD	grazed
+disqualify	VBN	disqualified
+rebound	VBD	rebounded
+scorn	VBP	scorn
+invest	VBG	investing
+rebound	VBG	rebounding
+wiggle	VBD	wiggled
+wiggle	VBG	wiggling
+note	VBN	noted
+invest	VBP	invest
+note	VBP	note
+invest	VBN	invested
+rebound	VBN	rebounded
+flash	VBN	flashed
+invest	VBZ	invests
+approve	VBD	approved
+flash	VBP	flash
+gray	VBG	graying
+note	VBZ	notes
+deliver	VBZ	delivers
+approve	VBG	approving
+flash	VBZ	flashes
+graze	VBP	graze
+undo	VBN	undone
+decorate	VBN	decorated
+burst	VBG	bursting
+quote	VBP	quote
+regain	VBZ	regains
+swear	VBP	swear
+swear	VBN	sworn
+quote	VBZ	quotes
+regain	VBP	regain
+request	VBG	requesting
+regain	VBN	regained
+request	VBD	requested
+quote	VBD	quoted
+masquerade	VBG	masquerading
+burst	VBZ	bursts
+quote	VBN	quoted
+galvanize	VBD	galvanized
+galvanize	VBG	galvanizing
+undo	VBD	undid
+crackle	VBP	crackle
+burst	VBP	burst
+swear	VBZ	swears
+quote	VBG	quoting
+sharpen	VBG	sharpening
+complain	VBD	complained
+complain	VBG	complaining
+specify	VBG	specifying
+request	VBN	requested
+complain	VBN	complained
+request	VBP	request
+specify	VBD	specified
+complain	VBP	complain
+sharpen	VBZ	sharpens
+specify	VBN	specified
+reign	VBG	reigning
+spot	VBN	spotted
+reign	VBD	reigned
+tar	VBD	tarred
+locate	VBG	locating
+spot	VBG	spotting
+corner	VBN	cornered
+spot	VBD	spotted
+order	VBN	ordered
+appear	VBD	appeared
+obliterate	VBN	obliterated
+establish	VBN	established
+appear	VBG	appearing
+order	VBG	ordering
+nominate	VBN	nominated
+feed	VBZ	feeds
+feed	VBN	fed
+appear	VBN	appeared
+establish	VBG	establishing
+appear	VBP	appear
+regain	VBD	regained
+establish	VBD	established
+regain	VBG	regaining
+order	VBD	ordered
+mingle	VBP	mingle
+tango	VBD	tangoed
+feed	VBG	feeding
+depart	VBG	departing
+appear	VBZ	appears
+locate	VBP	locate
+establish	VBZ	establishes
+locate	VBN	located
+nominate	VBD	nominated
+feed	VBD	fed
+consummate	VBN	consummated
+spot	VBZ	spots
+hew	VBN	hewn
+sketch	VBZ	sketches
+thrive	VBZ	thrives
+depart	VBD	departed
+meander	VBZ	meanders
+use	VBZ	uses
+hew	VBD	hewed
+collateralize	VBN	collateralized
+thrive	VBP	thrive
+hew	VBZ	hews
+punch	VBG	Punching
+thrive	VBG	thriving
+call	VBN	called
+call	VBP	call
+call	VBZ	calls
+use	VBP	use
+call	VBD	called
+use	VBN	used
+muse	VBZ	muses
+use	VBG	using
+call	VBG	calling
+use	VBD	used
+specify	VBZ	specifies
+suffer	VBD	suffered
+classify	VBZ	classifies
+suffer	VBG	suffering
+demote	VBN	demoted
+define	VBZ	defines
+punch	VBP	punch
+classify	VBD	classified
+reconstruct	VBG	reconstructing
+befriend	VBN	befriended
+suffer	VBN	suffered
+reconstruct	VBD	reconstructed
+define	VBN	defined
+suffer	VBP	suffer
+define	VBD	defined
+suffer	VBZ	suffers
+classify	VBN	classified
+define	VBG	Defining
+vary	VBZ	varies
+miss	VBZ	misses
+miss	VBP	miss
+miss	VBN	missed
+displease	VBZ	displeases
+vary	VBN	varied
+vary	VBP	vary
+miss	VBG	missing
+fray	VBN	frayed
+miss	VBD	missed
+fertilize	VBN	fertilized
+parcel	VBP	parcel
+empower	VBP	empower
+wedge	VBN	wedged
+shape	VBG	shaping
+empower	VBZ	empowers
+resurrect	VBD	resurrected
+shape	VBP	shape
+resurrect	VBN	resurrected
+converge	VBD	converged
+resurrect	VBP	resurrect
+shape	VBN	shaped
+whack	VBN	whacked
+whack	VBD	whacked
+grouse	VBD	Groused
+shape	VBZ	shapes
+resurrect	VBZ	resurrects
+touch	VBN	touched
+touch	VBD	touched
+touch	VBG	touching
+placate	VBN	placated
+grouse	VBZ	grouses
+wedge	VBD	wedged
+reclaim	VBP	reclaim
+reclaim	VBG	reclaiming
+find	VBZ	finds
+pitch	VBN	pitched
+terrify	VBN	terrified
+fertilize	VBG	fertilizing
+breed	VBP	breed
+pitch	VBP	pitch
+breed	VBN	bred
+vary	VBG	varying
+categorize	VBN	categorized
+pitch	VBZ	pitches
+estrange	VBN	estranged
+breed	VBG	breeding
+wave	VBD	waved
+wave	VBG	waving
+find	VBP	find
+pitch	VBD	pitched
+find	VBG	finding
+pitch	VBG	pitching
+urge	VBZ	urges
+fatten	VBN	fattened
+interfere	VBZ	interferes
+urge	VBP	urge
+interfere	VBP	interfere
+humble	VBN	humbled
+fatten	VBP	fatten
+score	VBN	scored
+score	VBP	score
+falter	VBP	falter
+unmask	VBZ	unmasks
+falter	VBN	faltered
+urge	VBN	urged
+fatten	VBD	fattened
+profile	VBN	profiled
+falter	VBZ	falters
+urge	VBD	urged
+urge	VBG	urging
+evaporate	VBN	evaporated
+resort	VBP	resort
+seduce	VBG	seducing
+score	VBD	scored
+interfere	VBG	interfering
+apprise	VBN	apprised
+suffice	VBD	sufficed
+interfere	VBD	interfered
+resort	VBZ	resorts
+complain	VBZ	complains
+compliment	VBP	compliment
+codify	VBG	Codifying
+redefine	VBD	redefined
+mint	VBG	minting
+evaporate	VBD	evaporated
+miff	VBD	miffed
+redefine	VBG	redefining
+carry	VBD	carried
+carry	VBG	carrying
+fold	VBP	fold
+blossom	VBD	blossomed
+fold	VBN	folded
+carry	VBN	carried
+lurk	VBG	lurking
+substitute	VBN	substituted
+carry	VBP	carry
+fold	VBD	folded
+substitute	VBG	substituting
+carry	VBZ	carries
+blossom	VBN	blossomed
+perk	VBD	perked
+total	VBG	totaling
+implant	VBG	implanting
+total	VBN	totaled
+reel	VBN	reeled
+implant	VBD	implanted
+reel	VBD	reeled
+conceal	VBG	concealing
+total	VBP	total
+reel	VBG	reeling
+implant	VBN	implanted
+star	VBG	starring
+spew	VBG	spewing
+furlough	VBN	furloughed
+total	VBD	totaled
+spew	VBD	spewed
+captivate	VBG	captivating
+star	VBZ	stars
+irritate	VBZ	irritates
+strike	VBN	struck
+strike	VBP	strike
+conceal	VBN	concealed
+total	VBZ	totals
+decree	VBN	decreed
+cave	VBD	caved
+commemorate	VBD	commemorated
+strike	VBZ	strikes
+stud	VBN	studded
+chill	VBG	chilling
+wear	VBG	wearing
+man	VBD	manned
+wear	VBD	wore
+go	VBZ	goes
+ignore	VBN	ignored
+ignore	VBP	ignore
+strike	VBG	striking
+wear	VBZ	wears
+clothe	VBN	clothed
+strike	VBD	struck
+ignore	VBZ	ignores
+wear	VBP	wear
+wear	VBN	worn
+peer	VBG	peering
+rule	VBZ	rules
+rule	VBP	rule
+ignore	VBD	ignored
+rule	VBN	ruled
+rule	VBG	ruling
+ignore	VBG	ignoring
+slaughter	VBN	slaughtered
+rule	VBD	ruled
+peer	VBP	peer
+mirror	VBP	mirror
+embody	VBZ	embodies
+preside	VBD	presided
+reintegrate	VBN	reintegrated
+preside	VBG	presiding
+regulate	VBZ	regulates
+preside	VBZ	presides
+modernize	VBG	modernizing
+lobby	VBD	lobbied
+snoop	VBG	snooping
+reclaim	VBZ	reclaims
+modernize	VBN	modernized
+mirror	VBD	mirrored
+uncover	VBD	uncovered
+relocate	VBD	relocated
+lobby	VBN	lobbied
+regulate	VBG	regulating
+clog	VBN	clogged
+sour	VBD	soured
+modernize	VBD	modernized
+lobby	VBG	lobbying
+uncover	VBG	uncovering
+accumulate	VBN	accumulated
+accumulate	VBP	accumulate
+regulate	VBN	regulated
+go	VBD	went
+clog	VBG	clogging
+embody	VBP	embody
+posture	VBG	posturing
+relocate	VBN	relocated
+embody	VBN	embodied
+go	VBG	going
+twist	VBG	twisting
+accumulate	VBG	accumulating
+uncover	VBN	uncovered
+twist	VBP	twist
+relocate	VBG	relocating
+go	VBN	gone
+go	VBP	go
+twist	VBN	twisted
+twist	VBZ	twists
+underscore	VBZ	underscores
+court	VBZ	courts
+abet	VBG	abetting
+underscore	VBP	underscore
+underscore	VBN	underscored
+tote	VBG	toting
+rethink	VBG	rethinking
+tote	VBN	toted
+unnerve	VBG	unnerving
+underscore	VBG	underscoring
+underscore	VBD	underscored
+unnerve	VBD	unnerved
+discharge	VBN	discharged
+court	VBD	courted
+abet	VBN	abetted
+rumor	VBD	rumored
+court	VBG	courting
+flop	VBN	flopped
+perk	VBN	perked
+flop	VBD	flopped
+court	VBN	courted
+thumb	VBZ	thumbs
+clamber	VBD	clambered
+chart	VBP	chart
+beam	VBZ	beams
+sprout	VBG	sprouting
+enjoin	VBN	enjoined
+transmit	VBG	transmitting
+transmit	VBD	transmitted
+sprout	VBP	sprout
+beam	VBN	beamed
+disagree	VBZ	disagrees
+overrule	VBG	overruling
+beset	VBN	beset
+climb	VBG	climbing
+deserve	VBD	deserved
+canvass	VBN	canvassed
+disagree	VBP	disagree
+climb	VBN	climbed
+disagree	VBN	disagreed
+enjoin	VBD	enjoined
+reawaken	VBG	reawakening
+telegraph	VBD	telegraphed
+climb	VBZ	climbs
+bond	VBN	bonded
+collect	VBZ	collects
+disagree	VBD	disagreed
+notify	VBP	notify
+bound	VBN	bound
+notify	VBN	notified
+decrease	VBZ	decreases
+pit	VBN	pitted
+collect	VBN	collected
+collect	VBP	collect
+coat	VBN	coated
+pit	VBD	pitted
+criticize	VBD	criticized
+justify	VBG	justifying
+collect	VBD	collected
+notify	VBG	notifying
+notify	VBD	notified
+criticize	VBG	criticizing
+bound	VBZ	bounds
+collect	VBG	collecting
+decrease	VBN	decreased
+exploit	VBG	exploiting
+criticize	VBN	criticized
+criticize	VBP	criticize
+decrease	VBG	decreasing
+deserve	VBZ	deserves
+scar	VBN	scarred
+pit	VBZ	pits
+decrease	VBD	decreased
+exploit	VBN	exploited
+deserve	VBP	deserve
+bound	VBG	bounding
+climb	VBD	climbed
+criticize	VBZ	criticizes
+limit	VBG	limiting
+beam	VBG	beaming
+transmit	VBN	transmitted
+limit	VBD	limited
+exploit	VBP	exploit
+limit	VBN	limited
+alienate	VBZ	alienates
+exploit	VBZ	exploits
+justify	VBN	justified
+limit	VBP	limit
+justify	VBZ	justifies
+limit	VBZ	limits
+dine	VBN	dined
+roil	VBG	roiling
+dine	VBG	dining
+dine	VBD	dined
+peer	VBZ	peers
+alienate	VBG	alienating
+edge	VBD	edged
+face	VBG	facing
+face	VBD	faced
+edge	VBG	edging
+edge	VBN	edged
+face	VBZ	faces
+face	VBP	face
+face	VBN	faced
+fund	VBG	funding
+dream	VBZ	dreams
+suspect	VBN	suspected
+suspect	VBP	suspect
+suspect	VBD	suspected
+fund	VBP	fund
+suspect	VBG	suspecting
+fund	VBN	funded
+foresee	VBZ	foresees
+automate	VBG	automating
+motorize	VBN	motorized
+automate	VBN	automated
+swear	VBD	swore
+foresee	VBP	foresee
+consort	VBG	consorting
+foresee	VBN	foreseen
+automate	VBZ	automates
+trip	VBN	tripped
+fund	VBD	funded
+read	VBD	read
+suspect	VBZ	suspects
+read	VBG	reading
+negotiate	VBG	negotiating
+read	VBN	read
+read	VBP	read
+dream	VBG	dreaming
+democratize	VBN	democratized
+negotiate	VBD	negotiated
+dream	VBD	dreamed
+diverge	VBG	diverging
+fund	VBZ	funds
+read	VBZ	reads
+dream	VBN	dreamed
+negotiate	VBN	negotiated
+dream	VBP	dream
+negotiate	VBP	negotiate
+stagnate	VBD	stagnated
+leak	VBG	leaking
+leak	VBD	leaked
+knead	VBN	kneaded
+knead	VBG	kneading
+upset	VBN	upset
+outlaw	VBD	outlawed
+leak	VBN	leaked
+pollute	VBG	polluting
+outlaw	VBG	outlawing
+outlaw	VBN	outlawed
+tarnish	VBD	tarnished
+huckster	VBG	huckstering
+offer	VBG	offering
+offer	VBN	offered
+sober	VBD	sobered
+offer	VBD	offered
+support	VBD	supported
+disapprove	VBZ	disapproves
+offer	VBZ	offers
+support	VBG	supporting
+offer	VBP	offer
+tack	VBD	tacked
+disapprove	VBN	disapproved
+ponder	VBG	pondering
+support	VBZ	supports
+tack	VBG	tacking
+support	VBN	supported
+field	VBZ	fields
+support	VBP	support
+field	VBG	fielding
+field	VBD	fielded
+ponder	VBP	ponder
+field	VBN	fielded
+aver	VBD	averred
+hamstring	VBN	hamstrung
+diminish	VBN	diminished
+recall	VBZ	recalls
+recall	VBP	recall
+diminish	VBZ	diminishes
+recall	VBN	recalled
+recall	VBG	recalling
+proclaim	VBP	proclaim
+view	VBG	viewing
+recall	VBD	recalled
+suppose	VBP	suppose
+delight	VBZ	delights
+view	VBP	view
+proclaim	VBZ	proclaims
+defeat	VBD	defeated
+view	VBN	viewed
+suppose	VBN	supposed
+defeat	VBG	defeating
+plummet	VBP	plummet
+sift	VBN	sifted
+water	VBG	watering
+suppose	VBD	supposed
+plummet	VBN	plummeted
+delight	VBP	DELIGHT
+water	VBD	watered
+plummet	VBG	plummeting
+view	VBD	viewed
+exude	VBP	exude
+plummet	VBD	plummeted
+sift	VBP	sift
+owe	VBN	owed
+defeat	VBZ	defeats
+delight	VBD	delighted
+traumatize	VBN	traumatized
+owe	VBP	owe
+last	VBZ	lasts
+owe	VBZ	owes
+tarnish	VBN	tarnished
+hash	VBG	hashing
+traumatize	VBD	traumatized
+pair	VBN	paired
+defeat	VBN	defeated
+owe	VBD	owed
+view	VBZ	views
+last	VBN	lasted
+last	VBP	last
+resent	VBD	resented
+scream	VBD	screamed
+proclaim	VBD	proclaimed
+last	VBG	lasting
+proclaim	VBG	proclaiming
+scream	VBG	screaming
+last	VBD	lasted
+resent	VBP	resent
+protest	VBN	protested
+womanize	VBG	womanizing
+scoop	VBD	scooped
+protest	VBZ	protests
+silence	VBN	silenced
+diminish	VBG	diminishing
+diminish	VBD	diminished
+protest	VBD	protested
+scoop	VBZ	scoops
+protest	VBG	protesting
+purge	VBD	purged
+burble	VBZ	burbles
+purge	VBG	purging
+respect	VBD	respected
+purge	VBN	purged
+warn	VBZ	warns
+elaborate	VBG	Elaborating
+guide	VBG	guiding
+guide	VBN	guided
+shoulder	VBG	shouldering
+adopt	VBG	adopting
+adopt	VBD	adopted
+respect	VBN	respected
+quadruple	VBZ	quadruples
+respect	VBZ	respects
+balloon	VBN	ballooned
+concern	VBZ	concerns
+undermine	VBP	undermine
+warn	VBD	warned
+concern	VBN	concerned
+voice	VBN	voiced
+quadruple	VBN	quadrupled
+balloon	VBZ	balloons
+warn	VBN	warned
+warn	VBP	warn
+concern	VBD	concerned
+slay	VBP	Slay
+orchestrate	VBG	orchestrating
+quadruple	VBG	quadrupling
+scream	VBZ	screams
+slay	VBN	slain
+concern	VBG	concerning
+quadruple	VBD	quadrupled
+anoint	VBG	Anointing
+voice	VBZ	voices
+orchestrate	VBD	orchestrated
+warn	VBG	warning
+scream	VBP	scream
+blur	VBD	blurred
+blur	VBG	blurring
+carve	VBZ	carves
+review	VBZ	reviews
+divorce	VBN	divorced
+review	VBP	review
+dare	VBP	dare
+voice	VBD	voiced
+undermine	VBG	undermining
+undermine	VBD	undermined
+review	VBN	reviewed
+compose	VBN	composed
+review	VBG	reviewing
+dub	VBD	dubbed
+type	VBN	typed
+balloon	VBG	ballooning
+undermine	VBN	undermined
+balloon	VBD	ballooned
+adopt	VBN	adopted
+list	VBN	listed
+multiply	VBN	multiplied
+promise	VBD	promised
+list	VBP	list
+promise	VBG	promising
+adopt	VBP	adopt
+carve	VBD	carved
+list	VBZ	lists
+carve	VBG	carving
+adopt	VBZ	adopts
+promise	VBN	promised
+promise	VBP	promise
+carve	VBN	carved
+list	VBD	listed
+instigate	VBD	instigated
+divorce	VBD	divorced
+promise	VBZ	promises
+carve	VBP	carve
+purge	VBZ	purges
+list	VBG	listing
+band	VBN	banded
+destine	VBN	destined
+ascend	VBG	ascending
+spring	VBD	sprang
+race	VBD	raced
+sigh	VBZ	sighs
+spring	VBG	springing
+race	VBG	racing
+sliver	VBN	slivered
+coddle	VBN	coddled
+block	VBP	block
+block	VBN	Blocked
+reiterate	VBZ	reiterates
+sigh	VBD	sighed
+block	VBG	blocking
+buck	VBP	buck
+buck	VBZ	bucks
+skid	VBD	SKIDDED
+block	VBD	blocked
+buck	VBG	bucking
+buck	VBD	bucked
+spring	VBN	sprung
+overprice	VBN	overpriced
+unload	VBG	unloading
+unload	VBP	unload
+invent	VBP	invent
+invent	VBN	invented
+unload	VBN	unloaded
+invent	VBG	inventing
+invent	VBD	invented
+finance	VBG	financing
+finance	VBN	financed
+deposit	VBZ	deposits
+deposit	VBD	deposited
+deposit	VBG	depositing
+finance	VBZ	finances
+nick	VBN	nicked
+tender	VBD	tendered
+operate	VBD	operated
+store	VBG	storing
+patronize	VBG	patronizing
+follow	VBG	following
+follow	VBD	followed
+operate	VBP	operate
+condone	VBD	condoned
+clinch	VBD	clinched
+hulk	VBG	hulking
+store	VBP	store
+operate	VBN	operated
+store	VBN	stored
+patronize	VBN	patronized
+operate	VBG	operating
+politicize	VBN	politicized
+operate	VBZ	operates
+cushion	VBN	cushioned
+deem	VBD	deemed
+agitate	VBN	agitated
+tender	VBP	tender
+cushion	VBG	cushioning
+tender	VBN	tendered
+deem	VBN	deemed
+deem	VBP	deem
+tender	VBG	tendering
+favor	VBZ	favors
+favor	VBN	favored
+favor	VBP	favor
+stick	VBG	sticking
+work	VBD	worked
+favor	VBG	favoring
+stick	VBD	stuck
+work	VBG	working
+lunge	VBD	lunged
+favor	VBD	favored
+scoot	VBD	scooted
+stick	VBZ	sticks
+hire	VBG	hiring
+hire	VBN	hired
+kayo	VBN	kayoed
+hire	VBP	hire
+stick	VBP	stick
+pressure	VBD	pressured
+stick	VBN	stuck
+follow	VBN	followed
+work	VBP	work
+follow	VBP	follow
+work	VBN	worked
+hire	VBZ	hires
+pressure	VBG	pressuring
+follow	VBZ	follows
+pressure	VBP	pressure
+work	VBZ	works
+pressure	VBN	pressured
+yank	VBG	yanking
+market	VBN	marketed
+budget	VBN	budgeted
+market	VBG	marketing
+yank	VBN	yanked
+dub	VBZ	dubs
+market	VBD	marketed
+sputter	VBP	sputter
+hire	VBD	hired
+market	VBZ	markets
+wield	VBZ	wields
+market	VBP	market
+yank	VBD	yanked
+patch	VBN	patched
+dub	VBN	dubbed
+spell	VBZ	spells
+starve	VBN	starved
+meddle	VBG	meddling
+wield	VBG	wielding
+cooperate	VBG	cooperating
+forsake	VBN	forsaken
+spiral	VBG	spiraling
+cooperate	VBD	cooperated
+cooperate	VBP	cooperate
+cooperate	VBN	cooperated
+starve	VBG	starving
+shelter	VBG	sheltering
+cluster	VBN	clustered
+breathe	VBG	breathing
+shelter	VBN	sheltered
+lace	VBN	laced
+build	VBP	build
+appease	VBD	appeased
+build	VBN	built
+breathe	VBD	breathed
+snowball	VBD	snowballed
+spell	VBG	spelling
+spell	VBN	spelled
+build	VBZ	builds
+restructure	VBP	restructure
+restructure	VBN	restructured
+topple	VBN	toppled
+restructure	VBZ	restructures
+teeter	VBG	teetering
+pronounce	VBZ	pronounces
+snort	VBZ	snorts
+drill	VBG	drilling
+restructure	VBG	restructuring
+restructure	VBD	restructured
+drill	VBN	drilled
+autograph	VBN	autographed
+imagine	VBP	imagine
+evaluate	VBZ	evaluates
+nod	VBZ	nods
+drop	VBP	drop
+imagine	VBN	imagined
+drop	VBN	dropped
+overheat	VBN	overheated
+pronounce	VBN	pronounced
+share	VBZ	shares
+pronounce	VBD	pronounced
+drop	VBZ	drops
+imagine	VBG	imagining
+share	VBN	shared
+share	VBP	share
+achieve	VBP	achieve
+topple	VBD	toppled
+achieve	VBN	achieved
+share	VBD	shared
+jump	VBZ	jumps
+share	VBG	sharing
+prune	VBN	pruned
+evaluate	VBN	evaluated
+repair	VBN	repaired
+blurt	VBP	blurt
+require	VBZ	requires
+repair	VBP	repair
+borrow	VBD	borrowed
+achieve	VBZ	achieves
+jump	VBP	jump
+evaluate	VBG	evaluating
+jump	VBN	jumped
+repair	VBD	repaired
+haggle	VBG	haggling
+piece	VBN	pieced
+repair	VBG	repairing
+achieve	VBD	achieved
+achieve	VBG	achieving
+impend	VBG	impending
+fabricate	VBN	fabricated
+imagine	VBD	imagined
+engage	VBZ	engages
+display	VBZ	displays
+acquire	VBD	acquired
+enlighten	VBN	enlightened
+enlighten	VBG	enlightening
+jump	VBG	jumping
+display	VBD	displayed
+reassign	VBN	reassigned
+acquire	VBN	acquired
+display	VBG	displaying
+infringe	VBZ	infringes
+acquire	VBG	acquiring
+jump	VBD	jumped
+tilt	VBZ	tilts
+spray	VBG	spraying
+infringe	VBN	infringed
+infringe	VBG	infringing
+acquire	VBZ	acquires
+reassign	VBD	reassigned
+display	VBN	displayed
+illuminate	VBZ	illuminates
+tilt	VBN	tilted
+display	VBP	display
+wage	VBD	waged
+infringe	VBD	infringed
+cede	VBN	ceded
+wage	VBG	waging
+behead	VBG	Beheading
+dizzy	VBG	dizzying
+rank	VBD	ranked
+rank	VBG	ranking
+rank	VBN	ranked
+cede	VBD	ceded
+cede	VBG	ceding
+engage	VBG	engaging
+engage	VBD	engaged
+engage	VBN	engaged
+engage	VBP	engage
+come	VBN	come
+come	VBG	coming
+come	VBP	come
+doom	VBD	doomed
+deem	VBZ	deems
+doom	VBG	dooming
+fake	VBD	faked
+come	VBD	came
+wow	VBZ	wows
+doom	VBN	doomed
+fake	VBN	faked
+rank	VBP	rank
+require	VBN	required
+blink	VBD	blinked
+require	VBP	require
+commercialize	VBG	commercializing
+fake	VBG	faking
+require	VBG	requiring
+rank	VBZ	ranks
+require	VBD	required
+store	VBZ	stores
+come	VBZ	comes
+permeate	VBD	permeated
+sizzle	VBG	sizzling
+permeate	VBG	permeating
+*
+brave	1
+disarm	3
+Jolt	1
+zoom	1
+clutter	1
+calculate	3
+augment	2
+compete	26
+furnish	2
+knock	5
+roll	9
+degenerate	1
+joke	1
+grimace	1
+heed	4
+trick	1
+impugn	1
+differentiate	1
+answer	14
+revisit	2
+regard	2
+flaunt	2
+meet	110
+rave	1
+reddened	1
+GET	1
+touch	6
+reinstate	3
+exacerbate	1
+monopolize	2
+outsell	1
+redial	1
+dissipate	1
+justify	16
+roil	1
+undercut	2
+net	1
+relied	1
+transform	13
+patronize	1
+guard	2
+fudge	1
+mention	13
+whack	4
+ignore	14
+muster	4
+erupt	4
+Ask	1
+reverberate	1
+suffer	17
+join	40
+enjoy	11
+amalgamate	1
+analyze	7
+predict	16
+guess	6
+hinge	1
+safeguard	4
+debut	1
+refinance	4
+suspend	9
+garner	2
+root	1
+change	84
+drop	45
+lead	63
+echo	1
+diverge	1
+march	2
+entrust	1
+undulate	1
+aggravate	1
+salvage	3
+repond	1
+append	1
+rationalize	3
+execute	9
+watch	17
+renovate	4
+repurchase	3
+label	1
+display	6
+resist	7
+amble	1
+double	16
+rattle	2
+borrow	21
+lean	3
+override	10
+tough	1
+Have	1
+make	496
+leap	3
+update	4
+grab	7
+connect	2
+jolt	5
+occasion	2
+deduct	5
+Defuse	1
+organize	3
+rat	1
+disturb	4
+normalize	1
+Impose	1
+supplement	2
+fuel	9
+hinder	5
+dominate	6
+vacillate	1
+circulate	1
+mail	2
+misrepresent	1
+finished	1
+equal	3
+cohere	1
+minimize	7
+confront	1
+peruse	1
+Coach	1
+expected	1
+flush	1
+advantage	1
+Become	1
+relinquish	4
+freeze	4
+reimburse	5
+exhaust	1
+venture	2
+lower	27
+deposit	1
+prescribe	1
+rock	1
+rewrite	3
+readmit	1
+help	210
+rank	4
+administer	3
+empty	1
+report	84
+reset	8
+reappraise	1
+accelerate	9
+elect	4
+support	61
+identify	28
+paled	1
+resign	10
+row	1
+ramp	1
+suppose	1
+outpace	1
+regain	11
+branch	3
+scape	1
+embark	2
+muse	1
+mandate	2
+express	6
+build	115
+resurrect	3
+taketh	1
+distance	2
+reimpose	2
+reside	1
+adjust	11
+Citicorp	1
+flounder	1
+note	6
+melt	3
+water	1
+Tap	1
+foster	3
+economize	1
+meld	1
+recall	7
+omit	3
+Alter	1
+square	1
+strengthen	17
+dish	1
+apply	31
+formulate	2
+emulate	1
+shave	1
+endanger	5
+retreat	3
+postpone	11
+proceed	17
+wonder	9
+Tell	5
+obscure	1
+mull	1
+hire	17
+mesh	1
+indict	2
+punch	2
+wrap	1
+contract	1
+damage	3
+uphold	1
+finger	1
+infringe	4
+dictate	2
+console	1
+restore	24
+dress	4
+polish	1
+scale	2
+manipulate	5
+Help	2
+distribute	14
+Reward	1
+drum	6
+Bar	1
+develop	76
+jeopardize	7
+puzzle	1
+Step	1
+hint	1
+offer	92
+bottle	1
+remade	1
+accede	2
+evade	4
+schedule	4
+remedy	3
+Dismantle	1
+rid	5
+brazen	1
+caricature	1
+tender	5
+accrue	2
+spread	9
+glean	1
+fester	1
+advance	7
+replenish	1
+appear	48
+understand	30
+speculate	10
+maintain	54
+blunt	2
+deflect	2
+flow	5
+hasten	1
+liquidate	6
+hide	11
+communicate	3
+drink	4
+appeal	12
+feature	4
+cheat	1
+sour	1
+laugh	2
+suggest	17
+sublet	1
+Expect	3
+peddle	1
+ketchup	1
+favor	11
+specify	13
+abolish	6
+eliminate	28
+behave	4
+Wear	1
+press	19
+sort	7
+visualize	1
+overpower	1
+broaden	5
+advise	11
+vitiate	1
+chase	1
+restrain	7
+intensify	8
+run	78
+iron	2
+maul	1
+strike	16
+pick	34
+mimic	2
+Decide	1
+foresee	2
+counterprogram	1
+pinch	1
+franchise	1
+trust	6
+Sit	1
+oust	13
+admit	6
+reinvent	1
+alter	15
+narrow	6
+remain	98
+mount	9
+obviate	1
+congratulate	1
+chart	3
+garden	1
+reflect	30
+condone	2
+arise	5
+progress	3
+wrest	1
+entice	4
+infuse	2
+infuriate	1
+become	119
+perform	12
+publicize	1
+Tandy	1
+Consider	16
+populate	1
+care	11
+proclaim	1
+Add	2
+mute	1
+demand	23
+mobilize	2
+veto	17
+spare	1
+collaborate	1
+spark	11
+vary	4
+upgrade	6
+cast	5
+rub	1
+pollinate	1
+soothe	1
+cash	6
+maximize	9
+scare	3
+reopen	14
+regulate	9
+attempt	8
+reinvest	5
+insure	6
+assimilate	2
+irk	1
+worsen	6
+revive	24
+breach	3
+pursue	39
+overlook	1
+drill	6
+question	3
+extort	3
+mistreat	1
+plague	1
+smuggle	1
+forecast	3
+Bank	1
+unleash	1
+counter	12
+engineer	2
+multiply	1
+chill	1
+See	5
+sever	2
+Forget	1
+subtract	3
+charge	14
+ferry	2
+effect	2
+penalize	1
+spurn	1
+disdain	1
+designate	1
+pretend	2
+scan	1
+glut	1
+lodge	1
+Look	7
+pinpoint	5
+surface	5
+articulate	2
+originate	1
+imply	2
+zero	1
+draw	20
+sacrifice	4
+apologize	1
+spawn	2
+stock	12
+reform	6
+drive	24
+milk	5
+alleviate	5
+ping	1
+exchange	9
+stash	1
+spruce	1
+Aim	1
+overhaul	10
+like	52
+saturate	1
+topple	6
+many	1
+sap	1
+relieve	8
+start	66
+say	183
+Enter	1
+toss	1
+shield	4
+dance	3
+range	5
+plead	11
+Give	6
+link	5
+line	5
+escape	9
+delegate	2
+Govern	1
+straighten	2
+democratize	1
+upset	3
+pile	3
+disprove	1
+mind	13
+smother	1
+end	69
+flip	2
+prod	3
+slash	9
+resolve	21
+assassinate	2
+corner	2
+coordinate	10
+vent	1
+drag	7
+prop	5
+tackle	6
+injure	1
+obfuscate	1
+disqualify	1
+remind	1
+process	5
+arrange	7
+assemble	2
+revise	5
+tour	1
+Keep	3
+tout	3
+skid	1
+End	1
+belong	5
+Settle	4
+remark	1
+decline	28
+overcome	12
+Remember	6
+skip	2
+heat	3
+skim	1
+function	1
+anchor	1
+contrast	1
+destabilize	1
+hear	27
+stave	3
+police	3
+heal	1
+HOLD	1
+budge	3
+partake	1
+fund	18
+disobey	1
+head	21
+acquit	2
+cheer	1
+dream	1
+frolic	1
+mark	7
+revamp	1
+dwarf	1
+soften	6
+lift	14
+chop	3
+dissolve	4
+sensitize	1
+calm	2
+call	49
+decide	42
+increased	1
+issue	32
+thrash	1
+state	2
+attribute	1
+achieve	16
+redraw	2
+interfere	9
+eclipse	2
+flatten	2
+quote	1
+underline	2
+premiere	2
+woo	8
+blow	2
+computerize	1
+inch	2
+check	16
+teach	7
+surpass	3
+savor	1
+enlarge	2
+deprive	4
+address	15
+shoulder	2
+target	9
+disconnect	1
+Assume	3
+group	1
+maneuver	1
+miss	9
+average	1
+educate	5
+total	14
+need	57
+harass	1
+twitch	1
+fret	1
+benefit	35
+visit	14
+lessen	2
+wait	28
+diversify	5
+overturn	4
+wail	1
+free	4
+search	1
+Buy	1
+stanch	1
+refurbish	1
+attract	39
+batter	1
+smoke	3
+further	3
+veer	1
+marvel	1
+Transport	1
+soak	1
+impress	4
+view	10
+explain	30
+soar	8
+deserve	4
+blackmail	1
+acclaim	1
+adhere	1
+wage	1
+accommodate	15
+refund	1
+weaken	11
+donate	4
+placate	2
+swamp	2
+derail	2
+firm	2
+shy	3
+fire	3
+stain	1
+represent	28
+connote	1
+sit	12
+reestablish	1
+reconnect	1
+endeavor	1
+conform	8
+bolster	25
+Spend	1
+inflate	3
+construct	6
+Get	7
+conceive	1
+warrant	2
+breed	1
+lecture	2
+stall	1
+taste	1
+close	101
+doctor	1
+defuse	1
+poll	1
+revolutionize	1
+light	2
+key	1
+think	116
+get	383
+dilute	4
+handicap	1
+bode	3
+cough	1
+sprout	1
+comprise	1
+walk	12
+wall	1
+pound	1
+terminate	6
+abate	2
+set	47
+retire	26
+purchase	58
+enhance	13
+throw	15
+experience	5
+stamp	1
+Witness	1
+SELL	1
+consolidate	10
+edit	1
+audit	2
+win	64
+languish	1
+diminish	3
+see	197
+stand	26
+suit	3
+provoke	2
+stomach	1
+scorn	1
+rotate	1
+yield	214
+spy	1
+concern	1
+curl	1
+glide	1
+court	1
+curb	20
+persist	4
+impose	13
+chew	3
+cure	6
+break	36
+dismember	1
+deliver	39
+combine	15
+overstate	5
+embrace	2
+inhibit	4
+import	3
+ring	1
+fetch	9
+screen	1
+structure	2
+sow	1
+counteract	1
+entail	1
+heighten	3
+buckle	5
+Charge	1
+include	73
+discount	3
+emasculate	1
+displace	1
+thwart	5
+indemnify	1
+Dream	1
+abandon	11
+allay	4
+sob	1
+sabotage	2
+subject	1
+merge	22
+influence	10
+protect	51
+hammer	1
+recover	25
+buck	1
+countenance	1
+nominate	2
+scour	2
+scout	1
+disregard	1
+Say	2
+emote	1
+pollute	1
+juggle	1
+differ	3
+Speed	1
+interview	2
+Wait	1
+fabricate	2
+design	10
+cause	42
+count	8
+save	48
+uncover	3
+permit	19
+empathize	2
+unmask	1
+study	16
+chat	1
+buffer	2
+buffet	1
+squeeze	7
+level	2
+substantiate	1
+gather	6
+centralize	1
+exorcise	1
+torture	1
+ski	3
+revolve	1
+indulge	1
+doubt	6
+wade	1
+disassemble	1
+manufacture	8
+operate	34
+redo	1
+called	1
+bridge	1
+PAY	1
+stack	1
+Think	1
+release	14
+plummet	4
+appreciate	8
+accomplish	10
+stick	9
+demobilize	1
+fend	17
+disengage	1
+believe	59
+affect	46
+stage	6
+bellow	1
+network	1
+stabilize	12
+Throw	1
+flourish	2
+risk	9
+staff	1
+linger	1
+rise	70
+read	29
+prevail	7
+receive	91
+evolve	3
+avert	3
+reap	6
+eradicate	1
+merit	1
+repossess	1
+loosen	7
+bleed	1
+intend	7
+worry	19
+occupy	2
+wad	1
+constitute	4
+guide	6
+handle	33
+compound	2
+fight	35
+redeem	15
+lure	8
+rage	1
+assure	5
+vanish	1
+classify	1
+resell	2
+anticipate	6
+happen	42
+pounce	1
+piece	1
+serve	35
+turn	76
+honor	8
+undermine	7
+pummel	1
+declare	6
+price	7
+kowtow	1
+crimp	1
+shower	1
+split	6
+own	44
+complain	14
+popularize	1
+confiscate	1
+face	38
+roost	1
+discard	3
+criminalize	1
+estimate	14
+prohibit	6
+seduce	1
+defer	8
+document	1
+figure	9
+survive	14
+impound	1
+renegotiate	3
+possess	3
+assess	11
+underlie	1
+notice	4
+guzzle	1
+resent	1
+direct	4
+fade	1
+erect	2
+circumvent	3
+factor	2
+intervene	7
+clamp	2
+reclaim	4
+assert	2
+prompt	8
+Develop	1
+decrease	7
+agree	26
+scold	1
+fear	5
+relate	1
+seize	15
+surrender	6
+encounter	1
+loose	1
+confer	2
+hack	1
+commit	4
+gender	1
+bribe	3
+marry	2
+demonstrate	8
+dispute	1
+NOTE	1
+enlist	2
+inform	5
+Leave	2
+encourage	28
+Pretend	1
+embellish	1
+require	56
+forfeit	3
+specialize	4
+raid	1
+McDonald	1
+result	39
+sue	6
+model	1
+dump	12
+Report	1
+sum	2
+owe	4
+cooperate	10
+brace	1
+complete	27
+elaborate	19
+Starve	1
+supply	31
+feed	5
+rebuild	11
+rain	1
+unite	2
+clip	1
+denude	1
+rein	6
+feel	43
+refocuses	1
+rush	4
+consent	1
+cease	7
+negotiate	13
+promise	4
+punish	6
+cleanse	1
+subpoena	2
+resume	38
+blink	1
+distort	2
+invoke	3
+grow	62
+belie	1
+service	8
+dissuade	1
+claim	4
+relish	1
+brief	1
+flash	1
+waste	5
+tag	1
+accept	58
+dial	3
+bring	75
+conceal	4
+cover	56
+fail	15
+file	32
+intimate	1
+weather	4
+choose	19
+opt	1
+mince	1
+grasp	3
+wind	5
+Show	1
+compare	10
+mortgage	2
+overrule	1
+prevent	60
+create	66
+Fly	1
+violate	10
+criticize	2
+recycle	1
+tax	2
+ward	1
+shrink	8
+tap	9
+Make	3
+position	3
+correspond	1
+ground	1
+familiarize	1
+wane	1
+Stop	2
+probe	1
+usurp	2
+judge	6
+compile	1
+rent	6
+simplify	3
+want	99
+Please	3
+steal	10
+concede	4
+edge	3
+rely	15
+trickle	2
+desert	1
+segregate	2
+inflame	1
+establish	35
+wipe	5
+access	2
+demolish	1
+ferret	1
+fog	1
+scurry	1
+fall	67
+cloud	1
+distract	1
+rediscover	1
+wander	2
+reauthorize	1
+quell	3
+grant	7
+preclude	5
+wish	3
+discomfit	1
+ruin	2
+renew	6
+disband	2
+churn	1
+ponder	3
+catapult	1
+audition	2
+please	4
+compromise	3
+characterize	3
+traduce	1
+work	115
+complicate	5
+accuse	3
+succeed	37
+wire	1
+discover	5
+sense	1
+restrict	17
+cuff	1
+fly	24
+promote	25
+program	2
+unravel	4
+bomb	1
+reignite	1
+summon	1
+encompass	1
+even	3
+expunge	1
+brush	1
+rest	5
+clash	1
+ride	12
+warn	3
+stop	68
+warm	3
+voice	1
+allow	99
+caution	2
+dismantle	2
+outweigh	4
+MAKE	1
+fit	12
+desist	1
+fix	6
+rule	19
+notify	6
+triple	1
+wash	1
+mean	47
+defraud	5
+fine	1
+find	121
+profit	17
+Check	1
+relaunch	1
+matter	6
+fill	26
+moderate	1
+Recall	1
+safety	1
+observe	1
+continue	214
+steer	6
+confuse	3
+skipper	1
+boom	3
+assume	27
+channel	4
+rethink	1
+rejuvenate	1
+excorciate	1
+falsify	1
+portray	4
+tend	8
+float	7
+incorporate	3
+Imagine	1
+time	2
+refer	3
+Follow	1
+host	1
+buttress	1
+duplicate	1
+conquer	2
+extract	6
+Do	6
+project	6
+surge	1
+pocket	1
+shorten	2
+foil	3
+bite	2
+urge	10
+unfold	1
+discuss	41
+divert	3
+innovate	1
+nail	2
+smooth	3
+depart	1
+rival	2
+parry	1
+refrain	3
+Work	1
+beware	1
+Thank	2
+liquefy	2
+detract	1
+divest	2
+side	1
+unplug	1
+recognize	12
+stumble	2
+tell	66
+ensure	42
+define	3
+Place	1
+entrench	1
+stir	5
+tilt	3
+redesign	3
+solicit	5
+reassume	4
+drown	1
+register	4
+invest	42
+incur	5
+arouse	2
+base	1
+rehabilitate	1
+coincide	1
+bash	1
+Hold	2
+tamper	1
+broadcast	3
+qualify	12
+EXAMINE	1
+bog	1
+bounce	3
+band	1
+refute	1
+overthrow	3
+bank	1
+devote	4
+materialize	4
+stampede	1
+rebut	4
+sweeten	3
+monitor	18
+outshine	1
+crack	9
+fulfill	8
+sift	2
+code	1
+creak	1
+sign	20
+rally	10
+refuse	7
+discern	1
+offend	3
+distinguish	2
+overemphasize	2
+prefer	14
+hope	8
+Crunch	1
+deteriorate	2
+measure	12
+bill	1
+resemble	5
+scrutinize	1
+exercise	15
+fare	5
+enact	6
+Welcome	1
+farm	1
+vacate	1
+lag	3
+ally	1
+invent	2
+name	11
+BE	1
+pay	281
+emphasize	3
+offset	31
+locate	4
+talk	33
+quarrel	1
+amortize	1
+Listen	1
+coax	1
+lay	10
+depend	9
+disrupt	8
+forge	6
+fantasize	1
+pan	1
+amplify	1
+authorize	5
+widen	7
+Be	6
+retrieve	5
+take	365
+Lean	1
+bow	2
+forgo	4
+Stick	1
+govern	7
+lobby	2
+reason	1
+verify	2
+package	3
+involve	21
+deliberate	1
+highlight	6
+Adjust	1
+convey	4
+crumble	4
+respond	30
+blend	1
+nullify	4
+redound	1
+torpedo	1
+wimp	1
+torment	1
+carry	39
+isolate	1
+dispel	3
+expedite	4
+ban	11
+transfer	22
+Let	17
+hold	79
+careen	1
+reconsider	7
+shoot	4
+will	1
+bar	1
+liberalize	3
+compensate	10
+shore	9
+Benefit	1
+Stand	1
+announce	34
+quit	7
+plea	1
+restate	1
+clear	13
+short	1
+thank	1
+clean	10
+subscribe	4
+quiz	1
+shorn	1
+butt	1
+listen	13
+TEACH	1
+restart	2
+hone	1
+Pay	1
+stay	60
+impede	2
+exceed	20
+star	2
+Surrender	1
+void	2
+exclude	7
+scuttle	10
+master	1
+stroll	2
+envision	1
+translate	7
+finance	53
+Linger	1
+cut	102
+force	41
+settle	43
+unwind	2
+debunk	2
+constrain	2
+defect	1
+Go	4
+toughen	1
+revoke	6
+hit	18
+request	3
+buzz	1
+tear	2
+pave	2
+rearrange	1
+subvert	2
+prepaid	1
+approve	29
+consist	4
+assist	19
+enter	22
+team	4
+condemn	6
+arrive	7
+discourage	4
+panic	3
+flood	1
+bless	1
+bet	5
+underpin	3
+invade	3
+synthesize	1
+discredit	1
+explore	14
+defeat	7
+motivate	2
+refocus	4
+appoint	4
+ease	49
+digest	1
+shove	2
+wrestle	2
+reassure	3
+tolerate	3
+arrest	4
+seal	3
+erode	8
+reconstruct	3
+compute	1
+subordinate	1
+misinterpret	2
+bid	30
+vacuum	1
+redefine	1
+zip	1
+depict	2
+applaud	1
+outlast	1
+play	53
+inject	3
+modify	4
+halve	1
+pass	35
+illuminate	1
+plan	13
+pin	3
+redevelop	1
+stem	12
+pit	2
+earn	24
+shout	1
+appraise	1
+step	16
+buoy	2
+deregulate	1
+cope	14
+pop	4
+manage	24
+naysay	1
+pot	1
+interest	1
+adopt	19
+copy	4
+cool	7
+cook	1
+certify	1
+integrate	6
+prove	41
+backfire	3
+vote	38
+supersede	1
+quiet	1
+Anne	1
+log	1
+convince	10
+equate	2
+hamper	3
+swear	1
+sniff	1
+crank	1
+surprise	3
+sweat	1
+exaggerate	3
+sidetrack	1
+use	133
+adorn	1
+bump	1
+Compare	2
+modernize	10
+haunt	2
+publish	20
+license	1
+parachute	2
+deter	6
+allocate	2
+come	145
+back	20
+wedge	1
+kidnap	1
+seem	43
+seek	89
+exhibit	1
+challenge	13
+practice	5
+SHAKE	1
+defend	29
+suppress	1
+con	1
+unload	6
+Open	1
+implicate	1
+replaster	1
+bend	1
+stray	1
+Allow	1
+comply	13
+lunch	1
+crash	4
+control	32
+conclude	7
+imagine	9
+discontinue	2
+BECOME	1
+dignify	1
+select	8
+bury	1
+prolong	2
+tumble	6
+cost	57
+battle	1
+sound	10
+gon	1
+summarize	2
+crest	1
+burn	3
+generate	31
+crush	6
+cap	1
+reshape	1
+petition	1
+inspire	3
+profile	1
+transmit	1
+retrofit	5
+argue	12
+regret	3
+cry	1
+exploit	10
+nudge	1
+subcontract	1
+rekindle	3
+bypass	1
+freight	1
+increase	127
+Save	1
+wear	10
+rejoin	3
+earmark	2
+craft	1
+assign	3
+dispense	1
+house	3
+avoid	79
+sustain	11
+prepay	1
+initiate	3
+shadow	2
+pour	4
+dissociate	1
+focus	42
+blame	19
+Deliver	1
+disclose	52
+Put	6
+overpurchase	1
+migrate	1
+cushion	3
+scrap	5
+curtail	7
+transact	1
+disassociate	1
+gore	1
+bail	6
+Ignore	1
+utilize	1
+dislike	1
+suffice	1
+inspect	3
+Use	1
+renounce	2
+overbid	1
+dabble	1
+put	117
+remove	25
+funnel	4
+galvanize	2
+secure	12
+block	42
+switch	15
+outline	3
+WATCH	1
+mirror	3
+fluctuate	1
+pose	4
+sell	406
+transport	6
+Encourage	1
+emphaticize	1
+convene	3
+imprison	1
+cinch	1
+underperform	2
+post	27
+penetrate	4
+balk	4
+let	68
+gut	1
+nurture	1
+return	60
+bankrupt	1
+contribute	12
+oppose	10
+gloss	1
+tarnish	1
+curry	3
+tick	2
+transplant	1
+testify	10
+standardize	2
+Press	1
+allowed	1
+send	24
+concentrate	21
+undo	6
+buy	377
+beef	1
+enable	20
+introduce	30
+outflank	1
+travel	15
+preserve	17
+disguise	1
+explode	2
+reproduce	1
+hurry	1
+swell	4
+regenerate	1
+Sell	2
+rebound	7
+ignite	1
+survey	5
+Meet	2
+swing	1
+deceive	1
+herald	1
+paint	1
+sink	3
+mollify	1
+strip	2
+plunge	5
+ensue	1
+jump	13
+sing	4
+stretch	3
+legislate	1
+match	23
+pitch	1
+Orkem	1
+Attention	1
+blast	2
+erase	1
+protest	3
+convert	28
+inflict	4
+junk	1
+complement	2
+gasp	1
+resort	2
+participate	23
+exist	14
+invite	3
+detect	6
+pressure	4
+embarrass	3
+begin	113
+blunder	1
+tower	1
+Judge	1
+antagonize	3
+Record	1
+lie	7
+auction	9
+ebb	1
+store	6
+contemplate	3
+rescind	5
+reposition	1
+glaze	1
+privatize	3
+parcel	1
+slow	37
+regroup	1
+quantify	3
+wreak	1
+forgive	2
+choke	2
+launder	1
+contemporize	1
+capitalize	6
+sleep	3
+overwhelm	2
+withstand	8
+aim	2
+struggle	2
+persuade	21
+retain	29
+eat	12
+air	3
+ingratiate	1
+review	21
+retail	2
+go	224
+satisfy	10
+raise	139
+peak	1
+indicate	20
+aid	10
+overreact	1
+loot	1
+leave	59
+consider	72
+write	35
+debate	2
+do	318
+unveil	10
+recraft	1
+loom	1
+man	2
+install	10
+look	76
+bear	11
+allege	1
+ooze	1
+beat	15
+predispose	1
+wreck	1
+commemorate	1
+sterilize	1
+gain	44
+alienate	1
+construe	1
+precede	1
+waive	9
+balance	6
+infiltrate	1
+conduct	13
+deal	27
+expose	3
+capture	4
+eavesdrop	1
+cement	2
+be	3724
+reward	4
+stress	3
+learn	19
+vault	1
+drain	4
+wring	2
+lease	10
+lighten	1
+trash	1
+thrive	2
+phase	1
+lend	16
+enforce	7
+collect	10
+depress	5
+remember	15
+ratify	1
+boast	1
+Atone	1
+adapt	2
+chisel	1
+rearm	1
+recommend	10
+notch	1
+Rest	1
+Divide	1
+trim	10
+reorganize	4
+parallel	1
+export	13
+disappoint	2
+speed	17
+stimulate	7
+sponsor	2
+replicate	1
+instill	1
+draft	1
+shed	6
+reckon	1
+approach	5
+accompany	4
+forget	13
+amend	2
+growth	1
+demilitarize	1
+Sock	1
+underwrite	6
+determine	30
+bother	8
+abuse	1
+correct	12
+repay	18
+prosper	2
+portend	1
+whip	1
+assuage	2
+move	86
+enroll	1
+limit	27
+Increase	1
+endorse	1
+board	1
+commend	1
+threaten	5
+flee	3
+downsize	1
+glamorize	1
+strafe	1
+industrialize	1
+delay	23
+comment	122
+plant	5
+evaluate	13
+fashion	1
+strain	3
+RID	1
+relocate	2
+bankroll	1
+banish	1
+wound	1
+massage	1
+solve	16
+totter	1
+streamline	9
+autograph	1
+stockpile	1
+dampen	1
+tiptoe	1
+withdraw	15
+Diversify	1
+sharpen	2
+clobber	1
+entitle	3
+bumble	1
+crawl	2
+abide	1
+illustrate	3
+reaffirm	1
+legitimize	3
+idle	7
+account	6
+retry	1
+dismiss	6
+produce	89
+realize	26
+reveal	10
+last	18
+recreate	1
+unblock	1
+love	7
+trivialize	1
+trail	2
+value	1
+lash	1
+train	4
+underscore	1
+homer	1
+credit	1
+spell	3
+live	22
+flay	1
+outfly	2
+spill	2
+Produce	1
+balloon	2
+reshuffle	1
+militate	1
+endure	5
+levy	1
+supervise	2
+jack	1
+volunteer	1
+outfit	2
+blur	1
+improve	79
+drift	2
+compel	1
+add	67
+suspect	4
+frustrate	1
+celebrate	2
+peer	1
+dispose	5
+expel	1
+extend	29
+smash	1
+list	1
+dole	1
+insulate	1
+know	126
+spend	64
+lose	53
+hurt	26
+absorb	15
+tighten	6
+slump	1
+act	28
+don	1
+reassess	1
+socialize	1
+spot	6
+subsidize	6
+Lend	1
+commercialize	4
+place	14
+amass	4
+slack	1
+attain	2
+contend	3
+trend	2
+Kiss	1
+yank	1
+cling	1
+mop	3
+pedal	2
+loan	1
+investigate	10
+grace	1
+content	1
+chauffeur	1
+mow	1
+appease	2
+disparage	1
+Move	1
+load	2
+try	90
+climb	7
+harm	4
+give	187
+restructure	16
+recapture	2
+plow	1
+solidify	1
+date	2
+spring	2
+plot	1
+browbeat	1
+The	1
+holler	1
+reply	2
+slide	3
+reassert	2
+reverse	12
+facilitate	5
+presage	3
+park	1
+induce	10
+navigate	1
+Note	2
+employ	5
+field	3
+replace	45
+interconnect	1
+institute	3
+dash	1
+brag	1
+stifle	2
+leapfrog	2
+reinforce	9
+keen	1
+frighten	1
+part	1
+confirm	12
+spotlight	1
+respect	3
+afford	28
+keep	167
+kick	1
+flinch	1
+provide	156
+oversee	6
+attend	3
+pull	14
+round	3
+cancel	13
+substitute	3
+crop	1
+amount	5
+expand	55
+swallow	2
+welcome	5
+signify	1
+dare	2
+follow	41
+collapse	5
+submit	15
+Call	8
+pump	8
+emerge	18
+reduce	138
+Die	1
+palm	1
+Release	2
+finish	9
+bedevil	2
+weigh	5
+frame	2
+repel	2
+Read	2
+extricate	1
+spur	11
+Survive	1
+acknowledge	2
+repeal	6
+weight	1
+gamble	3
+trade	36
+catch	24
+land	5
+interpret	10
+signal	8
+Beware	1
+repeat	5
+hang	3
+withhold	1
+shun	1
+consume	4
+destroy	12
+hand	3
+reach	58
+shut	9
+deny	18
+dispatch	2
+implement	6
+lengthen	1
+react	6
+consult	4
+top	7
+mitigate	2
+separate	4
+dry	2
+reschedule	2
+prune	1
+trace	1
+oversaw	1
+track	8
+accord	2
+gloat	1
+itemize	1
+snatch	1
+reinvigorate	1
+school	1
+mature	5
+renege	1
+halt	12
+shift	20
+equip	1
+shell	2
+examine	10
+generalize	2
+relax	8
+test	14
+tie	5
+excuse	2
+shake	10
+insist	9
+rescue	5
+shine	1
+pluck	1
+expect	76
+open	48
+damp	10
+brew	2
+propose	9
+clarify	3
+describe	8
+undergo	1
+arm	1
+incarcerate	1
+grapple	2
+corral	1
+form	23
+alert	4
+Take	8
+disagree	7
+bargain	1
+prepare	15
+exit	1
+cite	4
+present	11
+record	12
+extinguish	1
+obtain	44
+cede	1
+plug	2
+reserve	1
+boost	67
+impair	1
+ask	46
+cross	5
+hesitate	5
+Provide	1
+attest	1
+pair	1
+ship	12
+launch	22
+escalate	1
+contact	1
+refine	1
+delight	1
+engage	11
+evaporate	2
+agonize	1
+command	1
+spin	16
+elongate	1
+acquire	117
+trigger	5
+expire	20
+hum	1
+sequester	1
+reconcile	2
+speak	12
+slip	4
+cater	4
+encapsulate	1
+research	2
+mix	1
+point	9
+stipulate	1
+attach	4
+devise	6
+attack	6
+amaze	2
+propel	3
+pace	1
+shop	3
+hate	3
+convict	3
+Try	4
+foot	1
+shirk	1
+kill	28
+show	81
+pack	2
+fool	2
+repatriate	2
+enjoin	2
+impact	2
+accomodate	1
+conserve	4
+Fight	1
+combat	6
+repair	12
+except	1
+perpetuate	1
+drape	1
+outperform	3
+shape	7
+moan	1
+tread	1
+COMPARE	1
+outstrip	1
+market	22
+default	2
+await	2
+mediate	1
+contain	10
+treat	13
+reject	16
+Suppose	1
+have	1108
+Streetspeak	1
+undertake	4
+object	2
+push	37
+share	19
+slog	1
+dip	4
+order	6
+ingest	1
+recoup	6
+BEWARE	1
+die	11
+reunite	1
+dig	1
+JOIN	1
+exempt	3
+realign	2
+lock	7
+fold	2
+shock	1
+hedge	8
+sway	3
+term	1
+Hoe	1
+gauge	6
+guarantee	12
+swap	7
+disappear	5
+haul	4
+occur	14
