@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import catena.parser.TXPParser;
+import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
@@ -326,8 +326,8 @@ public class PairEvaluator {
 		System.out.println("Accuracy " + totaltp/(double)totaltotal + " (" + totaltp + "/" + totaltotal + ")");
 	}
 	
-	public void printIncorrect(TXPParser txpParser, File txpFile) throws IOException {
-		Doc docTxp = txpParser.parseDocument(txpFile.getPath());
+	public void printIncorrect(ColumnParser txpParser, File txpFile) throws IOException {
+		Doc docTxp = txpParser.parseDocument(txpFile);
 		String label, pred, e1Str, e2Str;
 		Entity e1, e2;
 		for (String s : pairs) { //e1	e2	label(str)	predicted(str)
@@ -350,8 +350,8 @@ public class PairEvaluator {
 		}
 	}
 	
-	public void printIncorrectAndSentence(TXPParser txpParser, File txpFile) throws IOException {
-		Doc docTxp = txpParser.parseDocument(txpFile.getPath());
+	public void printIncorrectAndSentence(ColumnParser txpParser, File txpFile) throws IOException {
+		Doc docTxp = txpParser.parseDocument(txpFile);
 		String label, pred, e1Str, e2Str, sentStr;
 		Entity e1, e2;
 		for (String s : pairs) { //e1	e2	label(str)	predicted(str)

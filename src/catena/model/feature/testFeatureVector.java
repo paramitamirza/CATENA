@@ -6,13 +6,13 @@ import java.io.PrintWriter;
 
 import catena.model.feature.FeatureEnum.*;
 import catena.model.rule.TimexTimexRelationRule;
-import catena.parser.TXPParser;
-import catena.parser.TXPParser.Field;
+import catena.parser.ColumnParser;
+import catena.parser.ColumnParser.Field;
 import catena.parser.entities.*;
 
 public class testFeatureVector {
 	
-	public static void getFeatureVector(TXPParser parser, String filepath, TemporalSignalList tsignalList, CausalSignalList csignalList) throws Exception {
+	public static void getFeatureVector(ColumnParser parser, String filepath, TemporalSignalList tsignalList, CausalSignalList csignalList) throws Exception {
 		File dir_TXP = new File(filepath);
 		File[] files_TXP = dir_TXP.listFiles();
 		
@@ -24,7 +24,7 @@ public class testFeatureVector {
 				getFeatureVector(parser, file.getPath(), tsignalList, csignalList);
 				
 			} else if (file.isFile()) {				
-				Doc doc = parser.parseDocument(file.getPath());
+				Doc doc = parser.parseDocument(file);
 				
 				Object[] entArr = doc.getEntities().keySet().toArray();
 				
@@ -143,7 +143,7 @@ public class testFeatureVector {
 				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
 				Field.main_verb, Field.connective, Field.morpho, 
 				Field.tense_aspect_pol, Field.coref_event, Field.tlink};
-		TXPParser parser = new TXPParser(EntityEnum.Language.EN, fields);
+		ColumnParser parser = new ColumnParser(EntityEnum.Language.EN, fields);
 		
 		//dir_TXP <-- data/example_TXP
 		try {

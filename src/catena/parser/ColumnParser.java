@@ -7,20 +7,25 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import catena.parser.TXPParser.Field;
+import catena.parser.ColumnParser.Field;
 import catena.parser.entities.*;
 
-public class TXPParser {
+public class ColumnParser {
 	
 	public static enum Field {
-		token, token_id, sent_id, pos, lemma, mate_pos,
-		deps, mate_deps, tmx_id, tmx_type, tmx_value, ner, ev_class, 
-		ev_id, role1, role2, role3, is_arg_pred, has_semrole, 
-		chunk, main_verb, connective, morpho, supersense, ss_ner,
-		tense_aspect_pol, tense, aspect, pol, coref_event, 
-		tlink, clink, tsignal, csignal;
+		token, token_id, sent_id, 
+		pos, lemma, chunk, ner, mate_pos, mate_lemma,
+		deps, main_verb, 
+		role1, role2, role3, is_arg_pred, has_semrole, 
+		connective, morpho, 
+		supersense, ss_ner,
+		coref_event, 
+		tmx_id, tmx_type, tmx_value, 
+		ev_id, ev_class, tense_aspect_pol, tense, aspect, pol, 
+		tsignal, csignal, tlink, clink;
 	}
 	
 	private EntityEnum.Language language;
@@ -32,16 +37,15 @@ public class TXPParser {
 	private Entity currCSignal = null;
 	private Sentence currSentence = null;
 	
-	public TXPParser(EntityEnum.Language lang, Field[] fields) {
+	public ColumnParser(EntityEnum.Language lang, Field[] fields) {
 		this.language = lang;
 		this.fields = fields;
 	}
 	
-	public Doc parseDocument(String filepath) throws IOException {
-		File f = new File(filepath);
-		Doc doc = new Doc(this.language, f.getName());
+	public Doc parseDocument(File columnFile) throws IOException {
+		Doc doc = new Doc(this.language, columnFile.getName());
 		
-		BufferedReader reader = new BufferedReader(new FileReader(filepath));	
+		BufferedReader reader = new BufferedReader(new FileReader(columnFile));	
 		
 		//Read the first 4 lines (comments)
 		reader.readLine();
@@ -65,7 +69,7 @@ public class TXPParser {
 		return doc;
 	}
 	
-	public Doc parseLines(String[] lines) throws IOException {
+	public Doc parseLines(List<String> lines) throws IOException {
 		Doc doc = new Doc(this.language, "TEXT");
 		for (String line : lines) {
 			parseLine(line, doc);
@@ -175,6 +179,7 @@ public class TXPParser {
 			dct.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
 			doc.getEntities().put(tmx_id, dct);
 			doc.setDct(dct);
+			
 		} else if(cols.get(0).contains("ETX_")) {
 			String tmx_id = cols.get(getIndex(Field.tmx_id));
 			Timex etx = new Timex(tmx_id, "O", "O");
@@ -186,16 +191,25 @@ public class TXPParser {
 			etx.setEmptyTag(true);
 			etx.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
 			doc.getEntities().put(tmx_id, etx);
+			
 		} else if(!cols.get(0).isEmpty()) {
-			//token basic info
+			//token basic info : token_id, sent_id, token_string !!required!!
 			String tok_id = cols.get(getIndex(Field.token_id));
 			Token tok = new Token(tok_id, 
 					cols.get(getIndex(Field.sent_id)), 
 					cols.get(getIndex(Field.token)));
-			tok.setLemmaPosChunk(cols.get(getIndex(Field.lemma)), 
-					cols.get(getIndex(Field.pos)), 
-					cols.get(getIndex(Field.chunk)));
-			tok.setMainPos(getMainPosFromPos(cols.get(getIndex(Field.pos))));
+			
+			//lemma, PoS and chunk
+			if (getIndex(Field.lemma) != -1) {
+				tok.setLemma(cols.get(getIndex(Field.lemma)));
+			}
+			if (getIndex(Field.pos) != -1) {
+				tok.setPos(cols.get(getIndex(Field.pos)));
+				tok.setMainPos(getMainPosFromPos(cols.get(getIndex(Field.pos))));
+			}
+			if (getIndex(Field.chunk) != -1) {
+				tok.setChunk(cols.get(getIndex(Field.chunk)));
+			}		
 			
 			//named entitiy type
 			if (getIndex(Field.ner) != -1) {
@@ -212,10 +226,14 @@ public class TXPParser {
 				tok.setDiscourseConn(cols.get(getIndex(Field.connective)));
 			}
 			
-			//dependency info
+			//dependency relations
 			if (getIndex(Field.main_verb) != -1 && getIndex(Field.deps) != -1) {
-				tok.setDependencyInfo(isMainVerb(cols.get(getIndex(Field.main_verb))), 
-						parseDependency(cols.get(getIndex(Field.deps))));
+				tok.setDependencyRel(parseDependency(cols.get(getIndex(Field.deps))));
+			}
+			
+			//main verb
+			if (getIndex(Field.main_verb) != -1) {
+				tok.setMainVerb(isMainVerb(cols.get(getIndex(Field.main_verb))));
 			}
 			
 			String tense = "O", aspect = "O", pol = "O";
@@ -225,20 +243,21 @@ public class TXPParser {
 				tense = arr[0];
 				aspect = arr[1];
 				pol = arr[2];
-			} else {
-				if (getIndex(Field.tense) != -1) {
-					tense = cols.get(getIndex(Field.tense));
-				}
-				if (getIndex(Field.aspect) != -1) {
-					aspect = cols.get(getIndex(Field.aspect));
-				}
-				if (getIndex(Field.pol) != -1) {
-					pol = cols.get(getIndex(Field.pol));
-				}
+				tok.setTense(tense); tok.setAspect(aspect); tok.setPolarity(pol);
+			} else if (getIndex(Field.tense) != -1){
+				tense = cols.get(getIndex(Field.tense));
+				tok.setTense(tense);
+			} else if (getIndex(Field.aspect) != -1) {
+				aspect = cols.get(getIndex(Field.aspect));
+				tok.setAspect(aspect);
+			} else if (getIndex(Field.pol) != -1) {
+				pol = cols.get(getIndex(Field.pol));
+				tok.setPolarity(pol);
 			}
-			tok.setTense(tense); tok.setAspect(aspect); tok.setPolarity(pol);
 			
-			tok.setIndex(doc.getTokIdx()); doc.setTokIdx(doc.getTokIdx() + 1);
+			tok.setIndex(doc.getTokIdx()); 
+			
+			doc.setTokIdx(doc.getTokIdx() + 1);
 			doc.getTokenArr().add(tok_id);
 			doc.getTokens().put(tok_id, tok);
 			
@@ -440,76 +459,114 @@ public class TXPParser {
 
 	}
 	
+	public void printParseResult(Doc doc) {
+		//array of tokens
+		System.out.println("*** Token info - token per line ***");
+		for (String tid : doc.getTokenArr()) {
+			Token tok = doc.getTokens().get(tid);
+			System.out.print(tok.getText() + 
+					"\t" + tok.getLemma() + 
+					"\t" + tok.getPos() + 
+					"\t" + tok.getMainPos() + 
+					"\t" + tok.getChunk() + 
+					"\t" + tok.getNamedEntity());
+			System.out.print("\t");
+			if (tok.getDependencyRel() != null) {
+				for (String key : tok.getDependencyRel().keySet()) {
+					System.out.print(key + "-" + tok.getDependencyRel().get(key) + " | ");
+				}
+				System.out.println();
+			} else {
+				System.out.println();
+			}
+		}
+		
+		System.out.println();
+		
+		//array of sentences
+		System.out.println("*** Sentence info - sentence per line ***");
+		for (String sid : doc.getSentenceArr()) {
+			Sentence sent = doc.getSentences().get(sid);
+			System.out.print(sent.getID() + 
+					"\t" + sent.getStartTokID() + 
+					"\t" + sent.getEndTokID());
+			System.out.print("\t");
+			for (String eid : sent.getEntityArr()) {
+				System.out.print(eid + " | ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println();
+		
+		//array of entities
+		System.out.println("*** Entities (Events and Timexes) - entity per line ***");
+		for (String ent_id : doc.getEntities().keySet()) {
+			Entity ent = doc.getEntities().get(ent_id);
+			if (ent instanceof Timex) {
+				System.out.println(ent.getID() + "\tTimex\t" + ent.getStartTokID() + 
+						"\t" + ent.getEndTokID());
+			} else if (ent instanceof Event) {
+				System.out.print(ent.getID() + "\tEvent\t" + ent.getStartTokID() + 
+						"\t" + ent.getEndTokID());
+				System.out.print("\t");
+				for (String eid : ((Event)ent).getCorefList()) {
+					System.out.print(eid + "|");
+				}
+				System.out.println();
+			}
+		}
+		
+		System.out.println();
+		
+		//array of TLINKs
+		System.out.println("*** TLINKs - TLINK per line ***");
+		for (TemporalRelation tlink : doc.getTlinks()) {
+			System.out.println(tlink.getSourceID() + "\t" + tlink.getTargetID() + 
+					"\t" + tlink.getRelType());
+		}
+		
+		System.out.println();
+	}
+	
 	public static void main(String [] args) {
 		
+		// Parse a document in column format (resulting from NewsReader text processing)
 		Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
 				Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
 				Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
 				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
 				Field.main_verb, Field.connective, Field.morpho,
-				Field.tense_aspect_pol, Field.coref_event, Field.tlink};
-		TXPParser parser = new TXPParser(EntityEnum.Language.EN, fields);
+				Field.tense_aspect_pol, Field.tlink};
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
 		
-		//dir_TXP <-- data/example_TXP
-		File dir_TXP = new File(args[0]);
-		File[] files_TXP = dir_TXP.listFiles();
-		for (File file : files_TXP) {
-			if (file.isFile()) {
-				
-				try {
-					Doc doc = parser.parseDocument(file.getPath());
-					
-					//array of tokens
-					for (String tid : doc.getTokenArr()) {
-						Token tok = doc.getTokens().get(tid);
-						System.out.println(tok.getText() + "\t" + tok.getLemma() + "\t" + tok.getPos() + 
-								"\t" + tok.getMainPos() + "\t" + tok.getChunk() + "\t" + tok.getNamedEntity());
-						if (tok.getDependencyRel() != null) {
-							for (String key : tok.getDependencyRel().keySet()) {
-								System.out.println(key + "-" + tok.getDependencyRel().get(key));
-							}
-						}
-					}
-					
-					//array of sentences
-					for (String sid : doc.getSentenceArr()) {
-						Sentence sent = doc.getSentences().get(sid);
-						System.out.println(sent.getID() + "\t" + sent.getStartTokID() + "\t" + sent.getEndTokID());
-						for (String eid : sent.getEntityArr()) {
-							System.out.print(eid + " ");
-						}
-						System.out.println();
-					}
-					
-					//array of entities
-					for (String ent_id : doc.getEntities().keySet()) {
-						Entity ent = doc.getEntities().get(ent_id);
-						if (ent instanceof Timex) {
-							System.out.println(ent.getID() + "\tTimex\t" + ent.getStartTokID() + 
-									"\t" + ent.getEndTokID());
-						} else if (ent instanceof Event) {
-							System.out.println(ent.getID() + "\tEvent\t" + ent.getStartTokID() + 
-									"\t" + ent.getEndTokID());
-							for (String eid : ((Event)ent).getCorefList()) {
-								System.out.print(eid + "|");
-							}
-							System.out.println();
-						}
-					}
-					
-					//array of TLINKs
-					for (TemporalRelation tlink : doc.getTlinks()) {
-						System.out.println(tlink.getSourceID() + "\t" + tlink.getTargetID() + 
-								"\t" + tlink.getRelType());
-					}
-					
-					System.out.println();
-					
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
+		try {
+			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"));
+			colParser.printParseResult(doc);
+						
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// Parse a list of string in column format (directly converted from a TimeML document)
+		Field[] fields2 = {Field.token, Field.token_id, Field.sent_id, Field.lemma, 
+				Field.ev_id, Field.ev_class, Field.tense_aspect_pol,
+				Field.tmx_id, Field.tmx_type, Field.tmx_value,
+				Field.tsignal, Field.csignal,
+				Field.pos, Field.chunk,
+				Field.mate_lemma, Field.mate_pos, Field.deps, Field.main_verb};
+		ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN, fields2);
+		
+		try {
+			TimeMLToColumns tmlToCol = new TimeMLToColumns();
+			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
+			Doc doc2 = colParser2.parseLines(columns);
+			colParser2.printParseResult(doc2);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

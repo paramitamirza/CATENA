@@ -27,12 +27,11 @@ public class TimeMLDoc {
 	private Document doc;
 	private Node root;
 	
-	public TimeMLDoc(String filepath) throws ParserConfigurationException, SAXException, IOException {
-		File fXmlFile = new File(filepath);
+	public TimeMLDoc(File tmlFile) throws ParserConfigurationException, SAXException, IOException {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setIgnoringElementContentWhitespace(true);
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		doc = dBuilder.parse(fXmlFile);
+		doc = dBuilder.parse(tmlFile);
 				
 		//optional, but recommended
 		//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work

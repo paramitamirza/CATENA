@@ -45,12 +45,12 @@ public class TimeMLToColumns {
 		this.language = language;
 	}
 	
-	public List<String> parse(String timeMLFilePath) throws ParserConfigurationException, SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
+	public List<String> parse(File timeMLFile) throws ParserConfigurationException, SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		List<String> columns = new ArrayList<String>();
 		
 		//Get <TEXT> content from TimeML document
 		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
-		TimeMLDoc tmlDoc = new TimeMLDoc(timeMLFilePath);
+		TimeMLDoc tmlDoc = new TimeMLDoc(timeMLFile);
 		String tmlText = tmlParser.getText(tmlDoc);
 //		System.out.println(tmlText);			
 		String tmlTextOnly = tmlParser.getTextOnly(tmlDoc);
@@ -271,20 +271,25 @@ public class TimeMLToColumns {
 				else sentIdx = Integer.parseInt(tmlcols[2]);
 				
 				if (sentIdx > 0) {
-					gov = "t" + (Integer.parseInt(mateCols[9]) + startOfSentences.get(sentIdx) - 1);
-					dep = tmlcols[1];
-					if (!dependencies.containsKey(gov))
-						dependencies.put(gov, new ArrayList<String>());
-					dependencies.get(gov).add(dep + ":" + mateCols[11]);
+					if (!mateCols[9].equals("0")) {
+						gov = "t" + (Integer.parseInt(mateCols[9]) + startOfSentences.get(sentIdx) - 1);
+						dep = tmlcols[1];
+						if (!dependencies.containsKey(gov))
+							dependencies.put(gov, new ArrayList<String>());
+						dependencies.get(gov).add(dep + ":" + mateCols[11]);
+					} else {
+						gov = tmlcols[1];
+						dependencies.get(gov).add("mainVb");
+					}
 				}		
 			} 
 		}
 		
-		for (String key : dependencies.keySet()) {
-			System.out.print(key + ": ");
-			for (String s : dependencies.get(key)) System.out.print(s + " ");
-			System.out.println();
-		}
+//		for (String key : dependencies.keySet()) {
+//			System.out.print(key + ": ");
+//			for (String s : dependencies.get(key)) System.out.print(s + " ");
+//			System.out.println();
+//		}
 		
 		return dependencies;
 	}
@@ -294,15 +299,25 @@ public class TimeMLToColumns {
 		
 		Map<String, List<String>> dependencies = getDependencies(timeMLCols, mateToolsCols);
 		
+		String mainVerb = "O";
+		
 		for (int i=0; i<timeMLCols.size(); i++) {
 			String[] tmlcols = timeMLCols.get(i).split("\t");
 			String[] txpCols = textProCols.get(i).split("\t");
 			String[] mateCols = mateToolsCols.get(i).split("\t");
 			
 			if (!timeMLCols.get(i).equals("")) {
+				
+				if (mainVerb.equals("mainVb") && !txpCols[2].equals("I-VP")) {
+					mainVerb = "O";
+				}
 			
 				String depRel = "O";
 				if (dependencies.containsKey(tmlcols[1])) {
+					if (dependencies.get(tmlcols[1]).contains("mainVb")) {
+						mainVerb = "mainVb";
+						dependencies.get(tmlcols[1]).remove("mainVb");
+					}
 					depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
 				
@@ -312,6 +327,7 @@ public class TimeMLToColumns {
 						+ "\t" + mateCols[3]	// Mate tools - lemma		
 						+ "\t" + mateCols[5]	// Mate tools - PoS tag
 						+ "\t" + depRel			// Mate tools - dependency relations
+						+ "\t" + mainVerb		// Mate tools (+TextPro) - main verb 
 						);		
 			} else {
 				columns.add("");
@@ -326,6 +342,8 @@ public class TimeMLToColumns {
 		
 		Map<String, List<String>> dependencies = getDependencies(timeMLCols, mateToolsCols);
 		
+		String mainVerb = "O";
+		
 		for (int i=0; i<timeMLCols.size(); i++) {
 			String[] tmlcols = timeMLCols.get(i).split("\t");
 			String[] mateCols = mateToolsCols.get(i).split("\t");
@@ -334,6 +352,10 @@ public class TimeMLToColumns {
 				
 				String depRel = "O";
 				if (dependencies.containsKey(tmlcols[1])) {
+					if (dependencies.get(tmlcols[1]).contains("mainVb")) {
+						mainVerb = "mainVb";
+						dependencies.get(tmlcols[1]).remove("mainVb");
+					}
 					depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
 				
@@ -341,6 +363,7 @@ public class TimeMLToColumns {
 						+ "\t" + mateCols[3]	// Mate tools - lemma		
 						+ "\t" + mateCols[5]	// Mate tools - PoS tag
 						+ "\t" + depRel			// Mate tools - dependency relations
+						+ "\t" + mainVerb		// Mate tools - main verb 
 						);		
 			} else {
 				columns.add("");
@@ -366,38 +389,38 @@ public class TimeMLToColumns {
 	 * 		7:timex-id			8:timex-type		9:timex-value
 	 * 		10:signal-id		11:causal-signal-id
 	 * 		12:textpro-pos-tag	13:textpro-chunk
-	 * 		14:mate-lemma		15:mate-pos-tag		16:mate-dep-gov
+	 * 		14:mate-lemma		15:mate-pos-tag		16:mate-dep-gov			17:mate-textpro-main-verb
 	 * 
 	 * - Without TextPro:
 	 * 		0:token				1:token-id			2:sentence-id			3:stanford-lemma   
 	 * 		4:event-id			5:event-class		6:event-tense+aspect+polarity
 	 * 		7:timex-id			8:timex-type		9:timex-value
 	 * 		10:signal-id		11:causal-signal-id
-	 * 		12:mate-lemma		13:mate-pos-tag		14:mate-dep-gov
+	 * 		12:mate-lemma		13:mate-pos-tag		14:mate-dep-gov			15:mate-main-verb
 	 */
-	public List<String> convert(String tmlFilepath, boolean includeTextPro) throws Exception {
+	public List<String> convert(File tmlFile, boolean includeTextPro) throws Exception {
 		List<String> finalColumns = new ArrayList<String>();
 		
 		// Parse TimeML document			
-		List<String> columns = parse(tmlFilepath);
+		List<String> columns = parse(tmlFile);
 //		for (String s : columns) System.out.println(s);			
 		
 		// Print in CoNLL format as the input for the Mate tools
-		printToConllFile(columns, tmlFilepath.replace(".tml", ".conll"));
+		printToConllFile(columns, tmlFile.getPath().replace(".tml", ".conll"));
 				
 		// Run Mate tools			
 		MateToolsParser mateTools = new MateToolsParser("./tools/MateTools/");
-		List<String> mateToolsColumns = mateTools.run(new File(tmlFilepath.replace(".tml", ".conll")));
+		List<String> mateToolsColumns = mateTools.run(new File(tmlFile.getPath().replace(".tml", ".conll")));
 //		for (String s : mateToolsColumns) System.out.println(s);
 		
 		if (includeTextPro) {
 			// Print tokens in lines as the input for TextPro
-			printTokenizedText(columns, tmlFilepath.replace(".tml", ".txt"));
+			printTokenizedText(columns, tmlFile.getPath().replace(".tml", ".txt"));
 			
 			// Run TextPro	
 			TextProParser textpro = new TextProParser("./tools/TextPro2.0/");
 			String[] annotations = {"token", "pos", "chunk"};	
-			List<String> textProColumns = textpro.run(annotations, new File(tmlFilepath.replace(".tml", ".txt")), true);
+			List<String> textProColumns = textpro.run(annotations, new File(tmlFile.getPath().replace(".tml", ".txt")), true);
 //			for (String s : textProColumns) System.out.println(s);	
 			
 			// Merge tagged columns (PoS and chunk tags from TextPro, and 
@@ -412,9 +435,9 @@ public class TimeMLToColumns {
 //			for (String s : finalColumns) System.out.println(s);
 		}
 		
-		Files.delete(new File(tmlFilepath.replace(".tml", ".conll")).toPath());
+		Files.delete(new File(tmlFile.getPath().replace(".tml", ".conll")).toPath());
 		if (includeTextPro) {
-			Files.delete(new File(tmlFilepath.replace(".tml", ".txt")).toPath());
+			Files.delete(new File(tmlFile.getPath().replace(".tml", ".txt")).toPath());
 		}
 			
 		return finalColumns;
@@ -425,7 +448,7 @@ public class TimeMLToColumns {
 		TimeMLToColumns tmlToCol = new TimeMLToColumns();		
 		
 		try {					
-			List<String> columns = tmlToCol.convert("./data/example_TML/wsj_1014.tml", false);
+			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
 			for (String s : columns) System.out.println(s);
 			System.out.println(columns.get(0).split("\t").length);
 			

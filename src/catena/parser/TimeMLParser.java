@@ -70,19 +70,19 @@ public class TimeMLParser {
 		this.timeMLPath = timeMLPath;
 	}
 	
-	public Document getTimeML(String filepath) throws ParserConfigurationException, SAXException, IOException {
-		TimeMLDoc tmlDoc = new TimeMLDoc(filepath);
+	public Document getTimeML(File tmlFile) throws ParserConfigurationException, SAXException, IOException {
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		return tmlDoc.getDoc();
 	}
 	
-	public Doc parseDocument(String filepath) throws ParserConfigurationException, SAXException, IOException, TransformerException {
-		TimeMLDoc tmlDoc = new TimeMLDoc(filepath);
+	public Doc parseDocument(File tmlFile) throws ParserConfigurationException, SAXException, IOException, TransformerException {
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		
 		Doc d = new Doc();
 		setInstances(tmlDoc, d);
 		setTlinks(tmlDoc, d);
 		setClinks(tmlDoc, d);
-		d.setFilename(new File(filepath).getName());
+		d.setFilename(tmlFile.getName());
 		
 		return d;
 	}
@@ -264,7 +264,7 @@ public class TimeMLParser {
 		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
 		
 		try {
-			TimeMLDoc tmlDoc = new TimeMLDoc("./data/example_TML/wsj_1014.tml");
+			TimeMLDoc tmlDoc = new TimeMLDoc(new File("./data/example_TML/wsj_1014.tml"));
 			
 //			// List all events
 //			List<String> events = tmlParser.getEvents(tmlDoc);

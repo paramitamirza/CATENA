@@ -15,9 +15,9 @@ import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.PairType;
-import catena.parser.TXPParser;
+import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
-import catena.parser.TXPParser.Field;
+import catena.parser.ColumnParser.Field;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
@@ -33,12 +33,12 @@ public class TestEventEventRelationRuleTempEval3 {
 		
 	}
 	
-	public List<String> getEventEventTlinksPerFile(TXPParser txpParser, TimeMLParser tmlParser, 
+	public List<String> getEventEventTlinksPerFile(ColumnParser txpParser, TimeMLParser tmlParser, 
 			File txpFile, File tmlFile) throws Exception {
 		List<String> ee = new ArrayList<String>();
 		
-		Doc docTxp = txpParser.parseDocument(txpFile.getPath());
-		Doc docTml = tmlParser.parseDocument(tmlFile.getPath());
+		Doc docTxp = txpParser.parseDocument(txpFile);
+		Doc docTml = tmlParser.parseDocument(tmlFile);
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
@@ -72,7 +72,7 @@ public class TestEventEventRelationRuleTempEval3 {
 		return ee;
 	}
 	
-	public List<String> getEventEventTlinks(TXPParser txpParser, TimeMLParser tmlParser, 
+	public List<String> getEventEventTlinks(ColumnParser txpParser, TimeMLParser tmlParser, 
 			String txpDirpath, String tmlDirpath) throws Exception {
 		File[] txpFiles = new File(txpDirpath).listFiles();
 		List<String> et = new ArrayList<String>();
@@ -94,7 +94,7 @@ public class TestEventEventRelationRuleTempEval3 {
 				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
 				Field.main_verb, Field.connective, Field.morpho, 
 				Field.tense_aspect_pol, /*Field.coref_event,*/ Field.tlink};
-		TXPParser txpParser = new TXPParser(EntityEnum.Language.EN, fields);		
+		ColumnParser txpParser = new ColumnParser(EntityEnum.Language.EN, fields);		
 		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
 		
 //		String txpDirpath = "./data/TempEval3-train_TXP2/";
