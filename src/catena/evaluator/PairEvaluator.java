@@ -352,6 +352,10 @@ public class PairEvaluator {
 	
 	public void printIncorrectAndSentence(ColumnParser txpParser, File txpFile) throws IOException {
 		Doc docTxp = txpParser.parseDocument(txpFile);
+		printIncorrectAndSentence(docTxp);
+	}
+	
+	public void printIncorrectAndSentence(Doc docCol) throws IOException {
 		String label, pred, e1Str, e2Str, sentStr;
 		Entity e1, e2;
 		for (String s : pairs) { //e1	e2	label(str)	predicted(str)
@@ -359,8 +363,8 @@ public class PairEvaluator {
 				String[] cols = s.split("\t");
 				label = cols[2];
 				pred = cols[3];
-				e1 = docTxp.getEntities().get(cols[0]);
-				e2 = docTxp.getEntities().get(cols[1]);
+				e1 = docCol.getEntities().get(cols[0]);
+				e2 = docCol.getEntities().get(cols[1]);
 				
 				sentStr = "";
 				if (e1 instanceof Timex) {
@@ -368,12 +372,12 @@ public class PairEvaluator {
 					if (((Timex) e1).isDct()) {
 						sentStr += "DCT";
 					} else {
-						sentStr += docTxp.getSentences().get(e1.getSentID()).toString(docTxp);
+						sentStr += docCol.getSentences().get(e1.getSentID()).toString(docCol);
 					}
 				}
 				else {
-					e1Str = e1.toString(docTxp);
-					sentStr += docTxp.getSentences().get(e1.getSentID()).toString(docTxp);
+					e1Str = e1.toString(docCol);
+					sentStr += docCol.getSentences().get(e1.getSentID()).toString(docCol);
 				}
 				if (e2 instanceof Timex) {
 					e2Str = ((Timex)e2).getValue(); //+ "-" + ((Timex)e2).getType() + "-" + ((Timex)e2).isDct();
@@ -382,13 +386,13 @@ public class PairEvaluator {
 					} else {
 						if ((e1 instanceof Timex && ((Timex) e1).isDct())
 								|| !e1.getSentID().equals(e2.getSentID()))
-							sentStr += " || " + docTxp.getSentences().get(e2.getSentID()).toString(docTxp);
+							sentStr += " || " + docCol.getSentences().get(e2.getSentID()).toString(docCol);
 					}
 				}
 				else {
-					e2Str = e2.toString(docTxp);
+					e2Str = e2.toString(docCol);
 					if (!e1.getSentID().equals(e2.getSentID()))
-						sentStr += " || " + docTxp.getSentences().get(e2.getSentID()).toString(docTxp);
+						sentStr += " || " + docCol.getSentences().get(e2.getSentID()).toString(docCol);
 				}
 				
 				if (!label.equals(pred)) {					

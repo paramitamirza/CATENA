@@ -37,6 +37,19 @@ public class ColumnParser {
 	private Entity currCSignal = null;
 	private Sentence currSentence = null;
 	
+	public ColumnParser(EntityEnum.Language lang) {
+		this.language = lang;
+		
+		// Default columns as a result of TimeMLToColumns class
+		Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.lemma, 
+				Field.ev_id, Field.ev_class, Field.tense_aspect_pol,
+				Field.tmx_id, Field.tmx_type, Field.tmx_value,
+				Field.tsignal, Field.csignal,
+				Field.pos, Field.chunk,
+				Field.mate_lemma, Field.mate_pos, Field.deps, Field.main_verb};
+		this.fields = fields;
+	}
+	
 	public ColumnParser(EntityEnum.Language lang, Field[] fields) {
 		this.language = lang;
 		this.fields = fields;
@@ -532,15 +545,15 @@ public class ColumnParser {
 	public static void main(String [] args) {
 		
 		// Parse a document in column format (resulting from NewsReader text processing)
-		Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
-				Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
-				Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
-				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
-				Field.main_verb, Field.connective, Field.morpho,
-				Field.tense_aspect_pol, Field.tlink};
-		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
-		
 		try {
+			Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
+					Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
+					Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
+					Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
+					Field.main_verb, Field.connective, Field.morpho,
+					Field.tense_aspect_pol, Field.tlink};
+			ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
+			
 			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"));
 			colParser.printParseResult(doc);
 						
@@ -550,18 +563,15 @@ public class ColumnParser {
 		}
 		
 		// Parse a list of string in column format (directly converted from a TimeML document)
-		Field[] fields2 = {Field.token, Field.token_id, Field.sent_id, Field.lemma, 
-				Field.ev_id, Field.ev_class, Field.tense_aspect_pol,
-				Field.tmx_id, Field.tmx_type, Field.tmx_value,
-				Field.tsignal, Field.csignal,
-				Field.pos, Field.chunk,
-				Field.mate_lemma, Field.mate_pos, Field.deps, Field.main_verb};
-		ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN, fields2);
-		
 		try {
 			TimeMLToColumns tmlToCol = new TimeMLToColumns();
 			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
+			ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN);
 			Doc doc2 = colParser2.parseLines(columns);
+			
+			//TimeML instances and links (parsed direcly from TimeML format)
+			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc2);
+			
 			colParser2.printParseResult(doc2);
 			
 		} catch (Exception e) {

@@ -4,6 +4,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -81,8 +83,20 @@ public class TimeMLToColumns {
 				+ "\t" + "O");
 		columns.add("");
 		
+		// *** Run Stanford Simple CoreNLP parser ***
+		PrintStream originalOutStream = System.out;
+		PrintStream originalErrStream = System.err;
+		PrintStream dummyStream    = new PrintStream(new OutputStream(){
+		    public void write(int b) {
+		        //NO-OP
+		    }
+		});
+		System.setOut(dummyStream);
+		System.setErr(dummyStream);
+		
 		//Run Stanford parser on the content string (with tags)
 		List<String> tokensWithTags = new ArrayList<String>();
+		List<String> lemmasWithTags = new ArrayList<String>();
 		Document doc = new Document(tmlText);
 		for (Sentence sent : doc.sentences()) {
 			for (String word : sent.words()) {
@@ -90,7 +104,13 @@ public class TimeMLToColumns {
 				else if (word.equals("''")) tokensWithTags.add("\"");
 				else tokensWithTags.add(word);
 			}
+			for (String lemma : sent.lemmas()) {
+				if (lemma.equals("``")) lemmasWithTags.add("\"");
+				else if (lemma.equals("''")) lemmasWithTags.add("\"");
+				else lemmasWithTags.add(lemma);
+			}
 			tokensWithTags.add("");
+			lemmasWithTags.add("");
         }
 		
 		//Run Stanford parser on the content string (text only)
@@ -112,6 +132,8 @@ public class TimeMLToColumns {
 			lemmas.add("");
         }
 		
+		System.setOut(originalOutStream);
+		System.setErr(originalErrStream);		
 		
 		int i = 0, j = 0, sent = 1, idx = 1;
 		String evId = "O", evClass = "O";
@@ -122,6 +144,9 @@ public class TimeMLToColumns {
 		startOfSentences.put(sent, idx);
 		
 		while (i < tokensWithTags.size()) {
+			
+//			System.out.println(tokensWithTags.get(i) + " - " + tokens.get(j));
+			
 			if (tokens.get(j).equals("")) {
 				columns.add(tokens.get(j));
 				i ++;
@@ -148,6 +173,23 @@ public class TimeMLToColumns {
 				} else {
 					if (tokensWithTags.get(i).equals(".")) i ++;
 					else if (tokensWithTags.get(i).equals("")) i ++;
+					else if (tokens.get(j).startsWith(tokensWithTags.get(i))) {
+						tokens.set(j, tokens.get(j).substring(tokensWithTags.get(i).length()));
+						columns.add(tokensWithTags.get(i)
+								+ "\t" + "t" + idx 
+								+ "\t" + sent
+								+ "\t" + lemmasWithTags.get(i)
+								+ "\t" + evId
+								+ "\t" + evClass
+								+ "\t" + tenseAspectPolarity
+								+ "\t" + tmxId
+								+ "\t" + tmxType
+								+ "\t" + tmxValue
+								+ "\t" + sigId
+								+ "\t" + csigId);
+						i ++;
+						idx ++;
+					}
 					else if (tokensWithTags.get(i).equals("</EVENT>")) {
 						evId = "O";
 						evClass = "O";
@@ -279,6 +321,8 @@ public class TimeMLToColumns {
 						dependencies.get(gov).add(dep + ":" + mateCols[11]);
 					} else {
 						gov = tmlcols[1];
+						if (!dependencies.containsKey(gov))
+							dependencies.put(gov, new ArrayList<String>());
 						dependencies.get(gov).add("mainVb");
 					}
 				}		

@@ -4,6 +4,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintStream;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,6 +52,16 @@ public class MateToolsParser {
 	
 	public void run(File inputFile, File outputFile) throws Exception {
 		
+		PrintStream originalOutStream = System.out;
+		PrintStream originalErrStream = System.err;
+		PrintStream dummyStream    = new PrintStream(new OutputStream(){
+		    public void write(int b) {
+		        //NO-OP
+		    }
+		});
+		System.setOut(dummyStream);
+		System.setErr(dummyStream);
+		
 		String[] lemmatizerArgs = {"-model", this.getMateToolsPath() + "models/lemmatizer-eng-4M-v36.mdl",
 				"-test", inputFile.getPath(),
 				"-out", "./data/temp"};
@@ -67,6 +79,9 @@ public class MateToolsParser {
 		
 		Files.delete(new File("./data/temp").toPath());
 		Files.delete(new File("./data/temp2").toPath());
+		
+		System.setOut(originalOutStream);
+		System.setErr(originalErrStream);
 	}
 	
 	public List<String> run(File inputFile) throws Exception {
@@ -80,7 +95,7 @@ public class MateToolsParser {
 		    result.add(next);
 		}
 		
-//		Files.delete(new File(inputFile + ".dep").toPath());
+		Files.delete(new File(inputFile + ".dep").toPath());
 		
 		return result;
 	}

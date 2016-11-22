@@ -87,6 +87,14 @@ public class TimeMLParser {
 		return d;
 	}
 	
+	public static void parseTimeML(File tmlFile, Doc dTml) throws ParserConfigurationException, SAXException, IOException {
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
+		setInstances(tmlDoc, dTml);
+		setTlinks(tmlDoc, dTml);
+		setClinks(tmlDoc, dTml);
+		dTml.setFilename(tmlFile.getName());
+	}
+	
 	public Map<String, String> getEvents(TimeMLDoc tmlDoc) {
 		Map<String, String> mapEvents = new HashMap<String, String>();
 		NodeList events = tmlDoc.getDoc().getElementsByTagName("EVENT");
@@ -154,7 +162,7 @@ public class TimeMLParser {
 		return dct;
 	}
 	
-	public void setTlinks(TimeMLDoc tmlDoc, Doc d) {
+	public static void setTlinks(TimeMLDoc tmlDoc, Doc d) {
 		NodeList tlinks = tmlDoc.getDoc().getElementsByTagName("TLINK");
 		ArrayList<TemporalRelation> tlinkArr = d.getTlinks();
 		String source = null, target = null, relType = null;
@@ -206,7 +214,7 @@ public class TimeMLParser {
 		}
 	}
 	
-	public void setClinks(TimeMLDoc tmlDoc, Doc d) {
+	public static void setClinks(TimeMLDoc tmlDoc, Doc d) {
 		NodeList clinks = tmlDoc.getDoc().getElementsByTagName("CLINK");
 		ArrayList<CausalRelation> clinkArr = d.getClinks();
 		String source = null, target = null;
@@ -239,7 +247,7 @@ public class TimeMLParser {
 		}
 	}
 	
-	public void setInstances(TimeMLDoc tmlDoc, Doc d) {
+	public static void setInstances(TimeMLDoc tmlDoc, Doc d) {
 		NodeList instances = tmlDoc.getDoc().getElementsByTagName("MAKEINSTANCE");
 		Map<String, String> instMap = d.getInstances();
 		Map<String, String> instInvMap = d.getInstancesInv();

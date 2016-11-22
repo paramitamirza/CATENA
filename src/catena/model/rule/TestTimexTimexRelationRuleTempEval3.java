@@ -17,6 +17,7 @@ import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
+import catena.parser.TimeMLToColumns;
 import catena.parser.ColumnParser.Field;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
@@ -53,30 +54,25 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		return ttlinks;
 	}
 	
-	public List<String> getTimexTimexTlinksPerFile(ColumnParser txpParser, TimeMLParser tmlParser, 
-			File txpFile, File tmlFile) throws Exception {
+	public List<String> getTimexTimexTlinksPerFile(Doc doc) throws Exception {
 		List<String> tt = new ArrayList<String>();
-		
-		Doc docTxp = txpParser.parseDocument(txpFile);
-		Doc docTml = tmlParser.parseDocument(tmlFile);
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
 	    
 		//Determine the relation type of every timex-timex pair in the document via rules 
-		Map<String,String> ttlinks = getTimexTimexRuleRelation(docTxp);
+		Map<String,String> ttlinks = getTimexTimexRuleRelation(doc);
 		
-		//for (TemporalRelation tlink : docTxp.getTlinks()) {	//for every TLINK in TXP file: candidate pairs
-		for (TemporalRelation tlink : docTml.getTlinks()) {	//for every TLINK in TML file: gold annotated pairs
+		for (TemporalRelation tlink : doc.getTlinks()) {	//for every TLINK in TML file: gold annotated pairs
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
-					&& docTxp.getEntities().containsKey(tlink.getSourceID())
-					&& docTxp.getEntities().containsKey(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
 					&& !tlink.getRelType().equals("NONE")
 					) {	//classifying the relation task
 				
-				Entity e1 = docTxp.getEntities().get(tlink.getSourceID());
-				Entity e2 = docTxp.getEntities().get(tlink.getTargetID());
-				PairFeatureVector fv = new PairFeatureVector(docTxp, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
 				
 				if (fv.getPairType().equals(PairType.timex_timex)) {
 					String st = tlink.getSourceID() + "-" + tlink.getTargetID();
@@ -97,42 +93,37 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		return tt;
 	}
 	
-	public List<String> getTimexTimexTlinks(ColumnParser txpParser, TimeMLParser tmlParser, 
-			String txpDirpath, String tmlDirpath) throws Exception {
-		File[] txpFiles = new File(txpDirpath).listFiles();
+	public List<String> getTimexTimexTlinks(String tmlDirpath, 
+			TimeMLToColumns tmlToCol, ColumnParser colParser) throws Exception {
+		
 		List<String> tt = new ArrayList<String>();
 		
-		for (File txpFile : txpFiles) {	//assuming that there is no sub-directory
-			File tmlFile = new File(tmlDirpath, txpFile.getName().replace(".txp", ""));
-			List<String> ttPerFile = getTimexTimexTlinksPerFile(txpParser, tmlParser, txpFile, tmlFile);
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			System.out.println("Processing " + tmlFile.getPath());
+			
+			List<String> columns = tmlToCol.convert(tmlFile, true);
+			Doc doc = colParser.parseLines(columns);
+			TimeMLParser.parseTimeML(tmlFile, doc);
+			
+			List<String> ttPerFile = getTimexTimexTlinksPerFile(doc);
 			tt.addAll(ttPerFile);
+			
 			PairEvaluator pe = new PairEvaluator(ttPerFile);
-			pe.printIncorrectAndSentence(txpParser, txpFile);
+			pe.printIncorrectAndSentence(doc);
 		}		
 		return tt;
 	}
 
 	public static void main(String [] args) throws Exception {
-		Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
-				Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
-				Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
-				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
-				Field.main_verb, Field.connective, Field.morpho, 
-				Field.tense_aspect_pol, /*Field.coref_event,*/ Field.tlink};
-		ColumnParser txpParser = new ColumnParser(EntityEnum.Language.EN, fields);		
-		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
 		
-//		String txpDirpath = "./data/TempEval3-train_TXP2/";
-//		String tmlDirpath = "./data/TempEval3-train_TML/";
+		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
-		String txpDirpath = "./data/TempEval3-eval_TXP/";
 		String tmlDirpath = "./data/TempEval3-eval_TML/";
-		
-		File[] txpFiles = new File(txpDirpath).listFiles();		
-		if (txpFiles == null) return;	
-		
 		TestTimexTimexRelationRuleTempEval3 test = new TestTimexTimexRelationRuleTempEval3();
-		List<String> ttResult = test.getTimexTimexTlinks(txpParser, tmlParser, txpDirpath, tmlDirpath);
+		List<String> ttResult = test.getTimexTimexTlinks(tmlDirpath, tmlToCol, colParser);
 
 		PairEvaluator pe = new PairEvaluator(ttResult);
 		pe.evaluatePerLabel(); 
