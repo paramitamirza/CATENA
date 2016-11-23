@@ -1,18 +1,30 @@
 package catena.model.rule;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
+import catena.model.feature.CausalSignalList;
+import catena.model.feature.EventTimexFeatureVector;
+import catena.model.feature.PairFeatureVector;
+import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.FeatureName;
+import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
+import catena.parser.entities.EntityEnum;
 import catena.parser.entities.Event;
 import catena.parser.entities.Sentence;
+import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 
 public class EventTimexRelationRule {
 	
 	private String relType;
 	private Boolean measureRel=false;
+	
+	private static String[] ruleTlinks = {"BEFORE", "AFTER", "SIMULTANEOUS", "INCLUDES", "IS_INCLUDED"};
+	public static List<String> ruleTlinkTypes = Arrays.asList(ruleTlinks);
 	
 	public EventTimexRelationRule(Event e1, Timex t2, Doc doc, String depPath,
 			Boolean measureRel) {
@@ -35,6 +47,47 @@ public class EventTimexRelationRule {
 		if (measureRel && tmx.getType().equals("DURATION")) {
 			this.setRelType("MEASURE");
 		}
+	}
+	
+	public static List<String> getEventTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		List<String> et = new ArrayList<String>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+		
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+	    
+		for (TemporalRelation tlink : candidateTlinks) {
+			if (!tlink.getSourceID().equals(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
+					&& !tlink.getRelType().equals("NONE")
+					) {	//classifying the relation task
+				
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_timex)) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+					
+					if (!((Timex) etfv.getE2()).isDct()) {
+						EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
+								doc, etfv.getMateDependencyPath());
+						if (!etRule.getRelType().equals("O")) {
+							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+									etfv.getLabel() + "\t" + etRule.getRelType());
+						} else {
+							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+									etfv.getLabel() + "\tNONE");
+						}
+					}
+				}
+			}
+		}
+		return et;
 	}
 	
 	protected ArrayList<String> getTokenIDArr(Doc doc, String startTokID, String endTokID) {

@@ -13,6 +13,7 @@ import catena.model.feature.Marker;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.FeatureName;
+import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
@@ -88,6 +89,44 @@ public class EventEventRelationRule {
 		if (this.getRelType().equals("DURING") || this.getRelType().equals("DURING_INV")) {
 			this.setRelType("SIMULTANEOUS");
 		}
+	}
+	
+	public static List<String> getEventEventTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		List<String> ee = new ArrayList<String>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+	    
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+	    
+		for (TemporalRelation tlink : candidateTlinks) {
+			if (!tlink.getSourceID().equals(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
+					&& !tlink.getRelType().equals("NONE")
+					) {	//classifying the relation task
+				
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_event)) {
+					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+					EventEventRelationRule eeRule = new EventEventRelationRule((Event) eefv.getE1(), (Event) eefv.getE2(), 
+							doc, eefv.getMateDependencyPath());
+					if (!eeRule.getRelType().equals("O")) {
+						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
+								eefv.getLabel() + "\t" + eeRule.getRelType());
+					} else {
+						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
+								eefv.getLabel() + "\tNONE");
+					}
+				}
+			}
+		}
+		return ee;
 	}
 	
 	public static String getEventCausalityRule(EventEventFeatureVector eefv) throws Exception {

@@ -28,10 +28,51 @@ import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 
-public class TestEventTimexRelationRuleTempEval3 {
+public class TestEventDctRelationRuleTempEval3 {
 	
-	public TestEventTimexRelationRuleTempEval3() {
+	public TestEventDctRelationRuleTempEval3() {
 		
+	}
+	
+	public List<String> getEventTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		List<String> et = new ArrayList<String>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+		
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+	    
+		for (TemporalRelation tlink : candidateTlinks) {
+			if (!tlink.getSourceID().equals(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
+					&& !tlink.getRelType().equals("NONE")
+					) {	//classifying the relation task
+				
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_timex)) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+					
+					if (((Timex) etfv.getE2()).isDct()) {
+						EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
+								doc, etfv.getMateDependencyPath());
+						if (!etRule.getRelType().equals("O")) {
+							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+									etfv.getLabel() + "\t" + etRule.getRelType());
+						} else {
+							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+									etfv.getLabel() + "\tNONE");
+						}
+					}
+				}
+			}
+		}
+		return et;
 	}
 	
 	public List<String> getEventTimexTlinks(String tmlDirpath, 
@@ -52,7 +93,7 @@ public class TestEventTimexRelationRuleTempEval3 {
 			ColumnParser.setCandidateTlinks(doc);
 						
 			// Applying rules...	
-			List<String> etPerFile = EventTimexRelationRule.getEventTimexTlinksPerFile(doc, goldCandidate);
+			List<String> etPerFile = getEventTimexTlinksPerFile(doc, goldCandidate);
 			et.addAll(etPerFile);
 			
 			// Evaluate the results...
@@ -71,7 +112,7 @@ public class TestEventTimexRelationRuleTempEval3 {
 		// Apply event-timex rules to the TimeML (.tml) files...
 		String tmlDirpath = "./data/TempEval3-eval_TML/";
 		boolean goldCandidate = true;
-		TestEventTimexRelationRuleTempEval3 test = new TestEventTimexRelationRuleTempEval3();
+		TestEventDctRelationRuleTempEval3 test = new TestEventDctRelationRuleTempEval3();
 		List<String> etResult = test.getEventTimexTlinks(tmlDirpath, tmlToCol, colParser, goldCandidate);
 
 		// Evaluate the results...

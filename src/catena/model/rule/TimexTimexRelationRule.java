@@ -4,14 +4,88 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import catena.model.feature.CausalSignalList;
+import catena.model.feature.PairFeatureVector;
+import catena.model.feature.TemporalSignalList;
+import catena.model.feature.FeatureEnum.PairType;
+import catena.parser.entities.Doc;
+import catena.parser.entities.Entity;
+import catena.parser.entities.EntityEnum;
+import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 
 public class TimexTimexRelationRule {
 	
 	private String relType;
 	private Boolean identityRel=true;
+	
+	public static Map<String,String> getTimexTimexRuleRelation(Doc doc) {
+		Object[] entArr = doc.getEntities().keySet().toArray();
+		Map<String,String> ttlinks = new HashMap<String,String>();
+		String pair = null;
+		for (int i = 0; i < entArr.length; i++) {
+			for (int j = i; j < entArr.length; j++) {
+				if (!entArr[i].equals(entArr[j]) && doc.getEntities().get(entArr[i]) instanceof Timex && 
+						doc.getEntities().get(entArr[j]) instanceof Timex) {
+					TimexTimexRelationRule timextimex = 
+							new TimexTimexRelationRule(((Timex)doc.getEntities().get(entArr[i])), 
+							((Timex)doc.getEntities().get(entArr[j])), doc.getDct(), false);
+					if (!timextimex.getRelType().equals("O")) {
+						pair = ((String) entArr[i]) + "," + ((String) entArr[j]);
+						ttlinks.put(pair, timextimex.getRelType());
+					}
+				}
+			}
+		}
+		return ttlinks;
+	}
+	
+	public static List<String> getTimexTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		List<String> tt = new ArrayList<String>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+	    
+		//Determine the relation type of every timex-timex pair in the document via rules 
+		Map<String,String> ttlinks = getTimexTimexRuleRelation(doc);
+		
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+		
+		for (TemporalRelation tlink : candidateTlinks) {
+			if (!tlink.getSourceID().equals(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
+					&& !tlink.getRelType().equals("NONE")
+					) {	//classifying the relation task
+				
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.timex_timex)) {
+					String st = tlink.getSourceID() + "," + tlink.getTargetID();
+					String ts = tlink.getTargetID() + "," + tlink.getSourceID();
+					if (ttlinks.containsKey(st)) {
+						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
+								tlink.getRelType() + "\t" + ttlinks.get(st));
+					} else if (ttlinks.containsKey(ts)) {
+						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
+								tlink.getRelType() + "\t" + TemporalRelation.getInverseRelation(ttlinks.get(ts)));
+					} else {
+						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
+								tlink.getRelType() + "\tNONE");
+					}
+				}
+			}
+		}
+		return tt;
+	}
 	
 	public TimexTimexRelationRule(Timex t1, Timex t2, Timex dct, Boolean identityRel) {
 		

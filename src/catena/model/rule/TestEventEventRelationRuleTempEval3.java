@@ -34,44 +34,6 @@ public class TestEventEventRelationRuleTempEval3 {
 		
 	}
 	
-	public List<String> getEventEventTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
-		List<String> ee = new ArrayList<String>();
-		
-		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
-		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-	    
-		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
-		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
-		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
-	    
-		for (TemporalRelation tlink : candidateTlinks) {
-			if (!tlink.getSourceID().equals(tlink.getTargetID())
-					&& doc.getEntities().containsKey(tlink.getSourceID())
-					&& doc.getEntities().containsKey(tlink.getTargetID())
-					&& !tlink.getRelType().equals("NONE")
-					) {	//classifying the relation task
-				
-				Entity e1 = doc.getEntities().get(tlink.getSourceID());
-				Entity e2 = doc.getEntities().get(tlink.getTargetID());
-				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
-				
-				if (fv.getPairType().equals(PairType.event_event)) {
-					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-					EventEventRelationRule eeRule = new EventEventRelationRule((Event) eefv.getE1(), (Event) eefv.getE2(), 
-							doc, eefv.getMateDependencyPath());
-					if (!eeRule.getRelType().equals("O")) {
-						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
-								eefv.getLabel() + "\t" + eeRule.getRelType());
-					} else {
-						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
-								eefv.getLabel() + "\tNONE");
-					}
-				}
-			}
-		}
-		return ee;
-	}
-	
 	public List<String> getEventEventTlinks(String tmlDirpath, 
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			boolean goldCandidate) throws Exception {
@@ -90,7 +52,7 @@ public class TestEventEventRelationRuleTempEval3 {
 			ColumnParser.setCandidateTlinks(doc);
 						
 			// Applying rules...	
-			List<String> eePerFile = getEventEventTlinksPerFile(doc, goldCandidate);
+			List<String> eePerFile = EventEventRelationRule.getEventEventTlinksPerFile(doc, goldCandidate);
 			ee.addAll(eePerFile);
 			
 			// Evaluate the results...
