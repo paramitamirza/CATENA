@@ -49,7 +49,7 @@ public class ColumnParser {
 				Field.ev_id, Field.ev_class, Field.tense_aspect_pol,
 				Field.tmx_id, Field.tmx_type, Field.tmx_value,
 				Field.tsignal, Field.csignal,
-//				Field.pos, Field.chunk,
+				Field.pos, Field.chunk,
 				Field.mate_lemma, Field.mate_pos, Field.deps, Field.main_verb};
 		this.fields = fields;
 	}
