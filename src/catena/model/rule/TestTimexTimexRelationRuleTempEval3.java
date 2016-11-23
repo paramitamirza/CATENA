@@ -109,7 +109,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 			System.out.println("Processing " + tmlFile.getPath());
 			
 			// File pre-processing...
-			List<String> columns = tmlToCol.convert(tmlFile, false);
+			List<String> columns = tmlToCol.convert(tmlFile, true);
 			Doc doc = colParser.parseLines(columns);
 			TimeMLParser.parseTimeML(tmlFile, doc);
 			ColumnParser.setCandidateTlinks(doc);
@@ -133,7 +133,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 		
 		// Apply timex-timex rules to the TimeML (.tml) files...
 		String tmlDirpath = "./data/TempEval3-eval_TML/";
-		boolean goldCandidate = false;
+		boolean goldCandidate = true;
 		TestTimexTimexRelationRuleTempEval3 test = new TestTimexTimexRelationRuleTempEval3();
 		List<String> ttResult = test.getTimexTimexTlinks(tmlDirpath, tmlToCol, colParser, goldCandidate);
 

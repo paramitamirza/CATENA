@@ -17,6 +17,7 @@ import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
+import catena.parser.TimeMLToColumns;
 import catena.parser.ColumnParser.Field;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
@@ -33,32 +34,31 @@ public class TestEventEventRelationRuleTempEval3 {
 		
 	}
 	
-	public List<String> getEventEventTlinksPerFile(ColumnParser txpParser, TimeMLParser tmlParser, 
-			File txpFile, File tmlFile) throws Exception {
+	public List<String> getEventEventTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
 		List<String> ee = new ArrayList<String>();
-		
-		Doc docTxp = txpParser.parseDocument(txpFile);
-		Doc docTml = tmlParser.parseDocument(tmlFile);
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
 	    
-		//for (TemporalRelation tlink : docTxp.getTlinks()) {	//for every TLINK in TXP file: candidate pairs
-		for (TemporalRelation tlink : docTml.getTlinks()) {	//for every TLINK in TML file: gold annotated pairs
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+	    
+		for (TemporalRelation tlink : candidateTlinks) {
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
-					&& docTxp.getEntities().containsKey(tlink.getSourceID())
-					&& docTxp.getEntities().containsKey(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
 					&& !tlink.getRelType().equals("NONE")
 					) {	//classifying the relation task
 				
-				Entity e1 = docTxp.getEntities().get(tlink.getSourceID());
-				Entity e2 = docTxp.getEntities().get(tlink.getTargetID());
-				PairFeatureVector fv = new PairFeatureVector(docTxp, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
 				
 				if (fv.getPairType().equals(PairType.event_event)) {
 					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
 					EventEventRelationRule eeRule = new EventEventRelationRule((Event) eefv.getE1(), (Event) eefv.getE2(), 
-							docTxp, eefv.getMateDependencyPath());
+							doc, eefv.getMateDependencyPath());
 					if (!eeRule.getRelType().equals("O")) {
 						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
 								eefv.getLabel() + "\t" + eeRule.getRelType());
@@ -72,43 +72,47 @@ public class TestEventEventRelationRuleTempEval3 {
 		return ee;
 	}
 	
-	public List<String> getEventEventTlinks(ColumnParser txpParser, TimeMLParser tmlParser, 
-			String txpDirpath, String tmlDirpath) throws Exception {
-		File[] txpFiles = new File(txpDirpath).listFiles();
-		List<String> et = new ArrayList<String>();
+	public List<String> getEventEventTlinks(String tmlDirpath, 
+			TimeMLToColumns tmlToCol, ColumnParser colParser, 
+			boolean goldCandidate) throws Exception {
 		
-		for (File txpFile : txpFiles) {	//assuming that there is no sub-directory
-			File tmlFile = new File(tmlDirpath, txpFile.getName().replace(".txp", ""));
-			List<String> etPerFile = getEventEventTlinksPerFile(txpParser, tmlParser, txpFile, tmlFile);
-			et.addAll(etPerFile);
-			PairEvaluator pe = new PairEvaluator(etPerFile);
-			pe.printIncorrectAndSentence(txpParser, txpFile);
+		List<String> ee = new ArrayList<String>();
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+
+			System.out.println("Processing " + tmlFile.getPath());
+			
+			// File pre-processing...
+			List<String> columns = tmlToCol.convert(tmlFile, true);
+			Doc doc = colParser.parseLines(columns);
+			TimeMLParser.parseTimeML(tmlFile, doc);
+			ColumnParser.setCandidateTlinks(doc);
+						
+			// Applying rules...	
+			List<String> eePerFile = getEventEventTlinksPerFile(doc, goldCandidate);
+			ee.addAll(eePerFile);
+			
+			// Evaluate the results...
+			PairEvaluator pe = new PairEvaluator(eePerFile);
+			pe.printIncorrectAndSentence(doc);
 		}		
-		return et;
+		return ee;
 	}
 
 	public static void main(String [] args) throws Exception {
-		Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
-				Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
-				Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
-				Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
-				Field.main_verb, Field.connective, Field.morpho, 
-				Field.tense_aspect_pol, /*Field.coref_event,*/ Field.tlink};
-		ColumnParser txpParser = new ColumnParser(EntityEnum.Language.EN, fields);		
-		TimeMLParser tmlParser = new TimeMLParser(EntityEnum.Language.EN);
-		
-//		String txpDirpath = "./data/TempEval3-train_TXP2/";
-//		String tmlDirpath = "./data/TempEval3-train_TML/";
-		
-		String txpDirpath = "./data/TempEval3-eval_TXP/";
-		String tmlDirpath = "./data/TempEval3-eval_TML/";
-		
-		File[] txpFiles = new File(txpDirpath).listFiles();		
-		if (txpFiles == null) return;	
-		
-		TestEventEventRelationRuleTempEval3 test = new TestEventEventRelationRuleTempEval3();
-		List<String> eeResult = test.getEventEventTlinks(txpParser, tmlParser, txpDirpath, tmlDirpath);
 
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Apply event-timex rules to the TimeML (.tml) files...
+		String tmlDirpath = "./data/TempEval3-eval_TML/";
+		boolean goldCandidate = true;
+		TestEventEventRelationRuleTempEval3 test = new TestEventEventRelationRuleTempEval3();
+		List<String> eeResult = test.getEventEventTlinks(tmlDirpath, tmlToCol, colParser, goldCandidate);
+
+		// Evaluate the results...
 		PairEvaluator pe = new PairEvaluator(eeResult);
 		pe.evaluatePerLabel();   
 		
