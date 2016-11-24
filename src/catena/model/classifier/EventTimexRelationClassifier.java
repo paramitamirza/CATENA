@@ -62,11 +62,11 @@ public class EventTimexRelationClassifier extends PairClassifier {
 			
 		} else {
 			FeatureName[] etFeatures = {
-					FeatureName.pos,
+					//FeatureName.pos,		//temporary because no TextPro
 //					Feature.mainpos,
-					FeatureName.samePos,
+					//FeatureName.samePos,	//temporary because no TextPro
 //					Feature.sameMainPos,
-					FeatureName.chunk, 
+					//FeatureName.chunk,	//temporary because no TextPro 
 					FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
 					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
 					FeatureName.dct,
@@ -77,7 +77,7 @@ public class EventTimexRelationClassifier extends PairClassifier {
 //					FeatureName.depTmxPath,
 					FeatureName.tempSignalClusText,		//TimeBank-Dense
 					FeatureName.tempSignalPos,			//TimeBank-Dense
-					FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
+					//FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense	//temporary because no TextPro
 //					FeatureName.tempSignal1ClusText,	//TempEval3
 //					FeatureName.tempSignal1Pos,			//TempEval3
 //					FeatureName.tempSignal1Dep			//TempEval3
@@ -96,7 +96,7 @@ public class EventTimexRelationClassifier extends PairClassifier {
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-	    
+		
 		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
 		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
 		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
@@ -106,12 +106,12 @@ public class EventTimexRelationClassifier extends PairClassifier {
 			ttlinks = TimexTimexRelationRule.getTimexTimexRuleRelation(doc);
 		}
 		
-		for (TemporalRelation tlink : candidateTlinks) {	
+		for (TemporalRelation tlink : candidateTlinks) {
 			
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
 					&& doc.getEntities().containsKey(tlink.getSourceID())
 					&& doc.getEntities().containsKey(tlink.getTargetID())
-					) {	
+					) {
 				
 				Entity e1 = doc.getEntities().get(tlink.getSourceID());
 				Entity e2 = doc.getEntities().get(tlink.getTargetID());
@@ -158,17 +158,22 @@ public class EventTimexRelationClassifier extends PairClassifier {
 							else etfv.addToVector(FeatureName.label);
 						}
 						
-						if (train && !fv.getVectors().get(fv.getVectors().size()-1).equals("0")
-								&& !fv.getVectors().get(fv.getVectors().size()-1).equals("NONE")) {
-							fvList.add(etfv);
-						} else if (!train){ //test
-							//add all
-							fvList.add(etfv);
-						}
+//						if (train && !fv.getVectors().get(fv.getVectors().size()-1).equals("0")
+//								&& !fv.getVectors().get(fv.getVectors().size()-1).equals("NONE")) {
+//							fvList.add(etfv);
+//						} 
+//						if (train && !etfv.getLabel().equals("NONE")) {
+//							fvList.add(etfv);
+//						} else if (!train){ //test
+//							//add all
+//							fvList.add(etfv);
+//						}
+						fvList.add(etfv);
 					}
 				}
 			}
 		}
+		System.out.println(fvList.size());
 		return fvList;
 	}
 	

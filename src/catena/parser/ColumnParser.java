@@ -115,16 +115,18 @@ public class ColumnParser {
 		}
 	}
 	
-	public Doc parseDocument(File columnFile) throws IOException {
+	public Doc parseDocument(File columnFile, boolean header) throws IOException {
 		Doc doc = new Doc(this.language, columnFile.getName());
 		
 		BufferedReader reader = new BufferedReader(new FileReader(columnFile));	
 		
-		//Read the first 4 lines (comments)
-		reader.readLine();
-		reader.readLine();
-		reader.readLine();
-		reader.readLine();
+		if (header) {
+			//Read the first 4 lines (comments)
+			reader.readLine();
+			reader.readLine();
+			reader.readLine();
+			reader.readLine();
+		}
 		
 		String line;
 		while ((line = reader.readLine()) != null) { 
@@ -627,7 +629,7 @@ public class ColumnParser {
 					Field.tense_aspect_pol, Field.tlink};
 			ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
 			
-			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"));
+			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"), true);
 			
 			//TimeML instances and links (parsed direcly from TimeML format)
 			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc);

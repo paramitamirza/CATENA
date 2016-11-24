@@ -138,21 +138,27 @@ public class TimeMLToColumns {
 		int i = 0, j = 0, sent = 1, idx = 1;
 		String evId = "O", evClass = "O";
 		String tmxId = "O", tmxType = "O", tmxValue = "O";
-		String tenseAspectPolarity = "O";
+		String tenseAspectPolarity = "O+O+O";
 		String sigId = "O", csigId = "O";
 		
 		startOfSentences.put(sent, idx);
 		
-		while (i < tokensWithTags.size()) {
+		while (i < tokensWithTags.size() && j < tokens.size()) {
 			
 //			System.out.println(tokensWithTags.get(i) + " - " + tokens.get(j));
 			
 			if (tokens.get(j).equals("")) {
-				columns.add(tokens.get(j));
-				i ++;
-				j ++;
-				sent ++;
-				startOfSentences.put(sent, idx);
+				if (!tokensWithTags.get(i).equals("\"")) {
+					columns.add(tokens.get(j));
+					i ++;
+					j ++;
+					sent ++;
+					startOfSentences.put(sent, idx);
+				} else {
+					j ++;
+					sent ++;
+					startOfSentences.put(sent, idx);
+				}
 			} else {
 				if (tokensWithTags.get(i).equals(tokens.get(j))) {
 					columns.add(tokens.get(j) 
@@ -221,7 +227,7 @@ public class TimeMLToColumns {
 						if (mEvClass.find()) {
 							evClass = mEvClass.group(1);
 						}
-						tenseAspectPolarity = mapInstances.get(evId);
+						if (mapInstances.containsKey(evId)) tenseAspectPolarity = mapInstances.get(evId);
 						i ++;
 					} else if (tokensWithTags.get(i).contains("<TIMEX3")) {
 						Pattern pTmxId = Pattern.compile("tid=\"(.*?)\"");
@@ -246,12 +252,16 @@ public class TimeMLToColumns {
 						if (mSigId.find()) {
 							sigId = mSigId.group(1);
 						}
+						i ++;
 					} else if (tokensWithTags.get(i).contains("<C-SIGNAL")) {
 						Pattern pCSigId = Pattern.compile("cid=\"(.*?)\"");
 						Matcher mCSigId = pCSigId.matcher(tokensWithTags.get(i));							
 						if (mCSigId.find()) {
 							sigId = mCSigId.group(1).replace("c", "cs");
 						}
+						i ++;
+					} else {
+						break;
 					}
 				}
 			}
@@ -305,6 +315,8 @@ public class TimeMLToColumns {
 		int sentIdx;
 		String gov, dep;
 		for (int i=0; i<timeMLCols.size(); i++) {
+//			System.out.println(timeMLCols.get(i) + ", " + mateToolsCols.get(i));
+			
 			String[] tmlcols = timeMLCols.get(i).split("\t");
 			String[] mateCols = mateToolsCols.get(i).split("\t");
 			
@@ -362,7 +374,8 @@ public class TimeMLToColumns {
 						mainVerb = "mainVb";
 						dependencies.get(tmlcols[1]).remove("mainVb");
 					}
-					depRel = String.join("||", dependencies.get(tmlcols[1]));
+					if (!dependencies.get(tmlcols[1]).isEmpty())
+						depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
 				
 				columns.add(timeMLCols.get(i) 
@@ -400,7 +413,8 @@ public class TimeMLToColumns {
 						mainVerb = "mainVb";
 						dependencies.get(tmlcols[1]).remove("mainVb");
 					}
-					depRel = String.join("||", dependencies.get(tmlcols[1]));
+					if (!dependencies.get(tmlcols[1]).isEmpty())
+						depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
 				
 				columns.add(timeMLCols.get(i)
@@ -485,6 +499,17 @@ public class TimeMLToColumns {
 		}
 			
 		return finalColumns;
+	}
+	
+	public void convert(File tmlFile, File outputFile, boolean includeTextPro) throws Exception {
+		List<String> finalColumns = convert(tmlFile, includeTextPro);		
+		
+		FileWriter fileStream = new FileWriter(outputFile);
+		BufferedWriter out = new BufferedWriter(fileStream);
+		for (String line : finalColumns) {
+		    out.write(line + "\n");
+		}
+		out.close();
 	}
 	
 	public static void main(String[] args) {

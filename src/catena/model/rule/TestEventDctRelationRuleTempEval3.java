@@ -34,47 +34,6 @@ public class TestEventDctRelationRuleTempEval3 {
 		
 	}
 	
-	public List<String> getEventTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
-		List<String> et = new ArrayList<String>();
-		
-		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
-		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-		
-		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
-		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
-		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
-	    
-		for (TemporalRelation tlink : candidateTlinks) {
-			if (!tlink.getSourceID().equals(tlink.getTargetID())
-					&& doc.getEntities().containsKey(tlink.getSourceID())
-					&& doc.getEntities().containsKey(tlink.getTargetID())
-					&& !tlink.getRelType().equals("NONE")
-					) {	//classifying the relation task
-				
-				Entity e1 = doc.getEntities().get(tlink.getSourceID());
-				Entity e2 = doc.getEntities().get(tlink.getTargetID());
-				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
-				
-				if (fv.getPairType().equals(PairType.event_timex)) {
-					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-					
-					if (((Timex) etfv.getE2()).isDct()) {
-						EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
-								doc, etfv.getMateDependencyPath());
-						if (!etRule.getRelType().equals("O")) {
-							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\t" + etRule.getRelType());
-						} else {
-							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\tNONE");
-						}
-					}
-				}
-			}
-		}
-		return et;
-	}
-	
 	public List<String> getEventTimexTlinks(String tmlDirpath, 
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			boolean goldCandidate) throws Exception {
@@ -84,21 +43,23 @@ public class TestEventDctRelationRuleTempEval3 {
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
-			System.out.println("Processing " + tmlFile.getPath());
-			
-			// File pre-processing...
-			List<String> columns = tmlToCol.convert(tmlFile, true);
-			Doc doc = colParser.parseLines(columns);
-			TimeMLParser.parseTimeML(tmlFile, doc);
-			ColumnParser.setCandidateTlinks(doc);
-						
-			// Applying rules...	
-			List<String> etPerFile = getEventTimexTlinksPerFile(doc, goldCandidate);
-			et.addAll(etPerFile);
-			
-			// Evaluate the results...
-			PairEvaluator pe = new PairEvaluator(etPerFile);
-			pe.printIncorrectAndSentence(doc);
+			if (tmlFile.getName().contains(".tml")) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+				List<String> columns = tmlToCol.convert(tmlFile, true);
+				Doc doc = colParser.parseLines(columns);
+				TimeMLParser.parseTimeML(tmlFile, doc);
+				ColumnParser.setCandidateTlinks(doc);
+							
+				// Applying rules...	
+				List<String> etPerFile = EventTimexRelationRule.getEventDctTlinksPerFile(doc, goldCandidate);
+				et.addAll(etPerFile);
+				
+				// Evaluate the results...
+				PairEvaluator pe = new PairEvaluator(etPerFile);
+				pe.printIncorrectAndSentence(doc);
+			}
 		}		
 		return et;
 	}

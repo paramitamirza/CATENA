@@ -56,17 +56,23 @@ public class TestEventTimexRelationClassifierTempEval3 {
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
-			System.out.println("Processing " + tmlFile.getPath());
-			
-			// File pre-processing...
-			List<String> columns = tmlToCol.convert(tmlFile, true);
-			Doc doc = colParser.parseLines(columns);
-			TimeMLParser.parseTimeML(tmlFile, doc);
-			ColumnParser.setCandidateTlinks(doc);
-			
-			// Get the feature vectors
-			fvList.addAll(EventTimexRelationClassifier.getEventTimexTlinksPerFile(doc, etRelCls, 
-					train, goldCandidate, ttFeature));
+			if (tmlFile.getName().contains(".tml")) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+//				List<String> columns = tmlToCol.convert(tmlFile, false);
+//				Doc doc = colParser.parseLines(columns);
+				
+				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
+				TimeMLParser.parseTimeML(tmlFile, doc);
+				ColumnParser.setCandidateTlinks(doc);
+				
+				// Get the feature vectors
+				fvList.addAll(EventTimexRelationClassifier.getEventTimexTlinksPerFile(doc, etRelCls, 
+						train, goldCandidate, ttFeature));
+			}
 		}
 		return fvList;
 	}

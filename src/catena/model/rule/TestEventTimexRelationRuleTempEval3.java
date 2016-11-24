@@ -43,21 +43,23 @@ public class TestEventTimexRelationRuleTempEval3 {
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
-			System.out.println("Processing " + tmlFile.getPath());
-			
-			// File pre-processing...
-			List<String> columns = tmlToCol.convert(tmlFile, true);
-			Doc doc = colParser.parseLines(columns);
-			TimeMLParser.parseTimeML(tmlFile, doc);
-			ColumnParser.setCandidateTlinks(doc);
-						
-			// Applying rules...	
-			List<String> etPerFile = EventTimexRelationRule.getEventTimexTlinksPerFile(doc, goldCandidate);
-			et.addAll(etPerFile);
-			
-			// Evaluate the results...
-			PairEvaluator pe = new PairEvaluator(etPerFile);
-			pe.printIncorrectAndSentence(doc);
+			if (tmlFile.getName().contains(".tml")) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+				List<String> columns = tmlToCol.convert(tmlFile, true);
+				Doc doc = colParser.parseLines(columns);
+				TimeMLParser.parseTimeML(tmlFile, doc);
+				ColumnParser.setCandidateTlinks(doc);
+							
+				// Applying rules...	
+				List<String> etPerFile = EventTimexRelationRule.getEventTimexTlinksPerFile(doc, goldCandidate);
+				et.addAll(etPerFile);
+				
+				// Evaluate the results...
+				PairEvaluator pe = new PairEvaluator(etPerFile);
+				pe.printIncorrectAndSentence(doc);
+			}
 		}		
 		return et;
 	}
