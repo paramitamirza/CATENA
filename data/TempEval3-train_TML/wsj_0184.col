@@ -1,380 +1,380 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
 
-Upjohn	t1	1	Upjohn	O	O	O+O+O	O	O	O	O	O	upjohn	NNP	t2:POSTHON	O
-Co.	t2	1	Co.	O	O	O+O+O	O	O	O	O	O	co.	NNP	O	O
-said	t3	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t1:SBJ||t5:OBJ||t28:P	mainVb
-it	t4	1	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-will	t5	1	will	O	O	O	O	O	O	O	O	will	MD	t4:SBJ||t6:VC	mainVb
-offer	t6	1	offer	e2	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	offer	VB	t10:OBJ||t11:DTV	mainVb
-an	t7	1	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-early	t8	1	early	O	O	O	O	O	O	O	O	early	JJ	O	mainVb
-retirement	t9	1	retirement	O	O	O	O	O	O	O	O	retirement	NN	t8:NMOD	mainVb
-package	t10	1	package	O	O	O	O	O	O	O	O	package	NN	t7:NMOD||t9:NMOD	mainVb
-to	t11	1	to	O	O	O	O	O	O	O	O	to	TO	t16:PMOD	mainVb
-as	t12	1	as	O	O	O	O	O	O	O	O	as	RB	O	mainVb
-many	t13	1	many	O	O	O	O	O	O	O	O	many	JJ	O	mainVb
-as	t14	1	as	O	O	O	O	O	O	O	O	as	IN	O	mainVb
-1,100	t15	1	1,100	O	O	O	O	O	O	O	O	1,100	NN	t12:DEP||t13:DEP||t14:DEP	mainVb
-employees	t16	1	employee	O	O	O	O	O	O	O	O	employee	NNS	t15:NMOD||t17:LOC	mainVb
-in	t17	1	in	O	O	O	O	O	O	O	O	in	IN	t20:PMOD	mainVb
-a	t18	1	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-cost-cutting	t19	1	cost-cutting	O	O	O	O	O	O	O	O	cost-cut	VBG	O	mainVb
-move	t20	1	move	e3	I_ACTION	NONE+NONE+POS	O	O	O	O	O	move	NN	t18:NMOD||t19:NMOD||t21:APPO	mainVb
-expected	t21	1	expect	e5	I_STATE	PASTPART+NONE+POS	O	O	O	O	O	expect	VBN	t22:OPRD	mainVb
-to	t22	1	to	O	O	O	O	O	O	O	O	to	TO	t23:IM	mainVb
-result	t23	1	result	e7	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	result	VB	t24:ADV	mainVb
-in	t24	1	in	O	O	O	O	O	O	O	O	in	IN	t27:PMOD	mainVb
-a	t25	1	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-fourth-quarter	t26	1	fourth-quarter	O	O	O	tmx79	DURATION	1989-Q4	O	O	fourth-quarter	NN	O	mainVb
-charge	t27	1	charge	e80	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	charge	NN	t25:NMOD||t26:NMOD	mainVb
-.	t28	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Upjohn	t1	1	Upjohn	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	t2:POSTHON	O
+Co.	t2	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
+said	t3	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t1:SBJ||t5:OBJ||t28:P	mainVb
+it	t4	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+will	t5	1	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t4:SBJ||t6:VC	O
+offer	t6	1	offer	e2	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	offer	VB	t10:OBJ||t11:DTV	O
+an	t7	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+early	t8	1	early	O	O	O	O	O	O	O	O	AJ0	I-NP	early	JJ	O	O
+retirement	t9	1	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	t8:NMOD	O
+package	t10	1	package	O	O	O	O	O	O	O	O	NN1	I-NP	package	NN	t7:NMOD||t9:NMOD	O
+to	t11	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t16:PMOD	O
+as	t12	1	as	O	O	O	O	O	O	O	O	AV0	B-NP	as	RB	O	O
+many	t13	1	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	JJ	O	O
+as	t14	1	as	O	O	O	O	O	O	O	O	CJS	I-NP	as	IN	O	O
+1,100	t15	1	1,100	O	O	O	O	O	O	O	O	CRD	I-NP	1,100	NN	t12:DEP||t13:DEP||t14:DEP	O
+employees	t16	1	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	t15:NMOD||t17:LOC	O
+in	t17	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t20:PMOD	O
+a	t18	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+cost-cutting	t19	1	cost-cutting	O	O	O	O	O	O	O	O	AJ0	I-NP	cost-cut	VBG	O	O
+move	t20	1	move	e3	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	move	NN	t18:NMOD||t19:NMOD||t21:APPO	O
+expected	t21	1	expect	e5	I_STATE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	expect	VBN	t22:OPRD	O
+to	t22	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t23:IM	O
+result	t23	1	result	e7	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	result	VB	t24:ADV	O
+in	t24	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t27:PMOD	O
+a	t25	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+fourth-quarter	t26	1	fourth-quarter	O	O	O	tmx79	DURATION	1989-Q4	O	O	NN1	I-NP	fourth-quarter	NN	O	O
+charge	t27	1	charge	e80	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	charge	NN	t25:NMOD||t26:NMOD	O
+.	t28	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Upjohn	t29	2	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-officials	t30	2	official	O	O	O	O	O	O	O	O	official	NNS	t29:NMOD	mainVb
-said	t31	2	say	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t30:SBJ||t33:OBJ||t57:P	mainVb
-they	t32	2	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-could	t33	2	could	O	O	O	O	O	O	O	O	could	MD	t32:SBJ||t34:ADV||t35:VC||t46:P||t47:COORD	mainVb
-n't	t34	2	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-estimate	t35	2	estimate	e9	I_ACTION	NONE+NONE+NEG	O	O	O	O	O	estimate	VB	t37:OBJ||t41:TMP	mainVb
-the	t36	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-size	t37	2	size	O	O	O	O	O	O	O	O	size	NN	t36:NMOD||t38:NMOD	mainVb
-of	t38	2	of	O	O	O	O	O	O	O	O	of	IN	t40:PMOD	mainVb
-the	t39	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-charge	t40	2	charge	e81	STATE	NONE+NONE+POS	O	O	O	O	O	charge	NN	t39:NMOD	mainVb
-until	t41	2	until	O	O	O	O	O	O	O	O	until	IN	t43:SUB	mainVb
-they	t42	2	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-determine	t43	2	determine	e12	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	determine	VBP	t42:SBJ||t45:OBJ	mainVb
-which	t44	2	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-employees	t45	2	employee	O	O	O	O	O	O	O	O	employee	NNS	t44:NMOD	mainVb
-,	t46	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-and	t47	2	and	O	O	O	O	O	O	O	O	and	CC	t51:CONJ	mainVb
-how	t48	2	how	O	O	O	O	O	O	O	O	how	WRB	O	mainVb
-many	t49	2	many	O	O	O	O	O	O	O	O	many	DT	O	mainVb
-,	t50	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-will	t51	2	will	O	O	O	O	O	O	O	O	will	MD	t49:SBJ||t50:P||t52:VC	mainVb
-participate	t52	2	participate	e14	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	participate	VB	t48:MNR||t53:ADV	mainVb
-in	t53	2	in	O	O	O	O	O	O	O	O	in	IN	t56:PMOD	mainVb
-the	t54	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-retirement	t55	2	retirement	O	O	O	O	O	O	O	O	retirement	NN	O	mainVb
-plan	t56	2	plan	O	O	O	O	O	O	O	O	plan	NN	t54:NMOD||t55:NMOD	mainVb
-.	t57	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Upjohn	t29	2	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+officials	t30	2	official	O	O	O	O	O	O	O	O	NN2	I-NP	official	NNS	t29:NMOD	O
+said	t31	2	say	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t30:SBJ||t33:OBJ||t57:P	mainVb
+they	t32	2	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+could	t33	2	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t32:SBJ||t34:ADV||t35:VC||t46:P||t47:COORD	O
+n't	t34	2	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+estimate	t35	2	estimate	e9	I_ACTION	NONE+NONE+NEG	O	O	O	O	O	VVI	I-VP	estimate	VB	t37:OBJ||t41:TMP	O
+the	t36	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+size	t37	2	size	O	O	O	O	O	O	O	O	NN1	I-NP	size	NN	t36:NMOD||t38:NMOD	O
+of	t38	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t40:PMOD	O
+the	t39	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+charge	t40	2	charge	e81	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	charge	NN	t39:NMOD	O
+until	t41	2	until	O	O	O	O	O	O	O	O	CJS	B-SBAR	until	IN	t43:SUB	O
+they	t42	2	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+determine	t43	2	determine	e12	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	determine	VBP	t42:SBJ||t45:OBJ	O
+which	t44	2	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+employees	t45	2	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	t44:NMOD	O
+,	t46	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+and	t47	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t51:CONJ	O
+how	t48	2	how	O	O	O	O	O	O	O	O	AVQ	B-ADVP	how	WRB	O	O
+many	t49	2	many	O	O	O	O	O	O	O	O	DT0	B-NP	many	DT	O	O
+,	t50	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+will	t51	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t49:SBJ||t50:P||t52:VC	O
+participate	t52	2	participate	e14	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	participate	VB	t48:MNR||t53:ADV	O
+in	t53	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t56:PMOD	O
+the	t54	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+retirement	t55	2	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	O	O
+plan	t56	2	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t54:NMOD||t55:NMOD	O
+.	t57	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-But	t58	3	but	O	O	O	O	O	O	O	O	but	CC	O	mainVb
-the	t59	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-pharmaceutical	t60	3	pharmaceutical	O	O	O	O	O	O	O	O	pharmaceutical	JJ	O	mainVb
-company	t61	3	company	O	O	O	O	O	O	O	O	company	NN	t59:NMOD||t60:NMOD	mainVb
-said	t62	3	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t58:DEP||t61:SBJ||t75:OBJ||t81:P||t82:P	mainVb
-it	t63	3	it	O	O	O	O	O	O	O	O	it	PRP	t65:NMOD	mainVb
-"	t64	3	"	O	O	O	O	O	O	O	O	"	NNP	O	mainVb
-anticipates	t65	3	anticipate	e17	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	anticipate	VBZ	t64:SBJ||t68:OBJ	mainVb
-the	t66	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-long-term	t67	3	long-term	O	O	O	O	O	O	O	O	long-term	NN	t66:NMOD	mainVb
-savings	t68	3	savings	O	O	O	O	O	O	O	O	savings	NNS	t67:SBJ||t69:APPO	mainVb
-resulting	t69	3	result	O	O	O	O	O	O	O	O	result	VBG	t70:ADV	mainVb
-from	t70	3	from	O	O	O	O	O	O	O	O	from	IN	t74:PMOD	mainVb
-the	t71	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-plan	t72	3	plan	O	O	O	O	O	O	O	O	plan	NN	t71:NMOD||t73:SUFFIX	mainVb
-'s	t73	3	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-implementation	t74	3	implementation	O	O	O	O	O	O	O	O	implementation	NN	t72:NMOD	mainVb
-will	t75	3	will	O	O	O	O	O	O	O	O	will	MD	t63:SBJ||t76:ADV	mainVb
-more	t76	3	more	O	O	O	O	O	O	O	O	more	RBR	t77:AMOD	mainVb
-than	t77	3	than	O	O	O	O	O	O	O	O	than	IN	t80:PMOD	mainVb
-offset	t78	3	offset	e91	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	offset	VBN	O	mainVb
-short-term	t79	3	short-term	O	O	O	O	O	O	O	O	short-term	NN	O	mainVb
-costs	t80	3	cost	O	O	O	O	O	O	O	O	costs	NNS	t78:NMOD||t79:NMOD	mainVb
-.	t81	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
-"	t82	3	"	O	O	O	O	O	O	O	O	"	''	O	mainVb
+But	t58	3	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
+the	t59	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+pharmaceutical	t60	3	pharmaceutical	O	O	O	O	O	O	O	O	AJ0	I-NP	pharmaceutical	JJ	O	O
+company	t61	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t59:NMOD||t60:NMOD	O
+said	t62	3	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t58:DEP||t61:SBJ||t75:OBJ||t81:P||t82:P	mainVb
+it	t63	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	t65:NMOD	O
+"	t64	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+anticipates	t65	3	anticipate	e17	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	anticipate	VBZ	t64:SBJ||t68:OBJ	O
+the	t66	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+long-term	t67	3	long-term	O	O	O	O	O	O	O	O	AJ0	I-NP	long-term	NN	t66:NMOD	O
+savings	t68	3	savings	O	O	O	O	O	O	O	O	NN2	I-NP	savings	NNS	t67:SBJ||t69:APPO	O
+resulting	t69	3	result	O	O	O	O	O	O	O	O	VVG	B-VP	result	VBG	t70:ADV	O
+from	t70	3	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t74:PMOD	O
+the	t71	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+plan	t72	3	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t71:NMOD||t73:SUFFIX	O
+'s	t73	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+implementation	t74	3	implementation	O	O	O	O	O	O	O	O	NN1	I-NP	implementation	NN	t72:NMOD	O
+will	t75	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t63:SBJ||t76:ADV	O
+more	t76	3	more	O	O	O	O	O	O	O	O	DT0	I-VP	more	RBR	t77:AMOD	O
+than	t77	3	than	O	O	O	O	O	O	O	O	CJS	I-VP	than	IN	t80:PMOD	O
+offset	t78	3	offset	e91	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	AJ0	B-NP	offset	VBN	O	O
+short-term	t79	3	short-term	O	O	O	O	O	O	O	O	NN1	I-NP	short-term	NN	O	O
+costs	t80	3	cost	O	O	O	O	O	O	O	O	NN2	I-NP	costs	NNS	t78:NMOD||t79:NMOD	O
+.	t81	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
+"	t82	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
-The	t83	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-program	t84	4	program	O	O	O	O	O	O	O	O	program	NN	t83:NMOD||t85:P||t86:APPO||t95:P	mainVb
-,	t85	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-available	t86	4	available	O	O	O	O	O	O	O	O	available	JJ	t87:AMOD	mainVb
-to	t87	4	to	O	O	O	O	O	O	O	O	to	TO	t89:PMOD	mainVb
-Upjohn	t88	4	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-employees	t89	4	employee	O	O	O	O	O	O	O	O	employee	NNS	t88:NAME||t92:APPO	mainVb
-55	t90	4	55	O	O	O	O	O	O	O	O	55	CD	O	mainVb
-years	t91	4	year	O	O	O	O	O	O	O	O	years	NNS	t90:NMOD	mainVb
-old	t92	4	old	O	O	O	O	O	O	O	O	old	JJ	t91:AMOD||t93:COORD	mainVb
-or	t93	4	or	O	O	O	O	O	O	O	O	or	CC	t94:CONJ	mainVb
-older	t94	4	older	O	O	O	O	O	O	O	O	older	JJR	O	mainVb
-,	t95	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-could	t96	4	could	O	O	O	O	O	O	O	O	could	MD	t84:SBJ||t97:VC||t108:P	mainVb
-increase	t97	4	increase	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	increase	VB	t102:OBJ||t107:EXT	mainVb
-an	t98	4	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-individual	t99	4	individual	O	O	O	O	O	O	O	O	individual	NN	t98:NMOD||t100:SUFFIX	mainVb
-'s	t100	4	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-retirement	t101	4	retirement	O	O	O	O	O	O	O	O	retirement	NN	O	mainVb
-benefits	t102	4	benefit	O	O	O	O	O	O	O	O	benefit	NNS	t99:NMOD||t101:NMOD	mainVb
-10	t103	4	10	O	O	O	O	O	O	O	O	10	CD	O	mainVb
-%	t104	4	%	O	O	O	O	O	O	O	O	%	NN	O	mainVb
-to	t105	4	to	O	O	O	O	O	O	O	O	to	TO	O	mainVb
-20	t106	4	20	O	O	O	O	O	O	O	O	20	CD	O	mainVb
-%	t107	4	%	O	O	O	O	O	O	O	O	%	NN	t103:DEP||t104:DEP||t105:DEP||t106:NMOD	mainVb
-.	t108	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t83	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+program	t84	4	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t83:NMOD||t85:P||t86:APPO||t95:P	O
+,	t85	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+available	t86	4	available	O	O	O	O	O	O	O	O	AJ0	B-ADJP	available	JJ	t87:AMOD	O
+to	t87	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t89:PMOD	O
+Upjohn	t88	4	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+employees	t89	4	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	t88:NAME||t92:APPO	O
+55	t90	4	55	O	O	O	O	O	O	O	O	CRD	B-NP	55	CD	O	O
+years	t91	4	year	O	O	O	O	O	O	O	O	NN2	I-NP	years	NNS	t90:NMOD	O
+old	t92	4	old	O	O	O	O	O	O	O	O	AJ0	B-ADJP	old	JJ	t91:AMOD||t93:COORD	O
+or	t93	4	or	O	O	O	O	O	O	O	O	CJC	I-ADJP	or	CC	t94:CONJ	O
+older	t94	4	older	O	O	O	O	O	O	O	O	AJC	I-ADJP	older	JJR	O	O
+,	t95	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+could	t96	4	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t84:SBJ||t97:VC||t108:P	mainVb
+increase	t97	4	increase	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	increase	VB	t102:OBJ||t107:EXT	mainVb
+an	t98	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+individual	t99	4	individual	O	O	O	O	O	O	O	O	NN1	I-NP	individual	NN	t98:NMOD||t100:SUFFIX	O
+'s	t100	4	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+retirement	t101	4	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	O	O
+benefits	t102	4	benefit	O	O	O	O	O	O	O	O	NN2	I-NP	benefit	NNS	t99:NMOD||t101:NMOD	O
+10	t103	4	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
+%	t104	4	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	O	O
+to	t105	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
+20	t106	4	20	O	O	O	O	O	O	O	O	CRD	B-NP	20	CD	O	O
+%	t107	4	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t103:DEP||t104:DEP||t105:DEP||t106:NMOD	O
+.	t108	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t109	5	in	O	O	O	O	O	O	O	O	in	IN	t110:PMOD	mainVb
-addition	t110	5	addition	O	O	O	O	O	O	O	O	addition	NN	O	mainVb
-,	t111	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Upjohn	t112	5	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-is	t113	5	be	O	O	O	O	O	O	O	O	be	VBZ	t109:ADV||t111:P||t112:SBJ||t114:VC||t126:P	mainVb
-offering	t114	5	offer	e29	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	offer	VBG	t118:OBJ	mainVb
-a	t115	5	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-one-time	t116	5	one-time	O	O	O	O	O	O	O	O	one-time	JJ	O	mainVb
-retirement	t117	5	retirement	O	O	O	O	O	O	O	O	retirement	NN	O	mainVb
-bonus	t118	5	bonus	O	O	O	O	O	O	O	O	bonus	NN	t115:NMOD||t116:NMOD||t117:NMOD||t119:APPO	mainVb
-equal	t119	5	equal	O	O	O	O	O	O	O	O	equal	JJ	t120:AMOD	mainVb
-to	t120	5	to	O	O	O	O	O	O	O	O	to	TO	t122:PMOD	mainVb
-six	t121	5	six	O	O	O	O	O	O	O	O	six	CD	O	mainVb
-months	t122	5	month	O	O	O	O	O	O	O	O	month	NNS	t121:NMOD||t123:NMOD	mainVb
-of	t123	5	of	O	O	O	O	O	O	O	O	of	IN	t125:PMOD	mainVb
-base	t124	5	base	O	O	O	O	O	O	O	O	base	NN	O	mainVb
-pay	t125	5	pay	O	O	O	O	O	O	O	O	pay	NN	t124:NMOD	mainVb
-.	t126	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t109	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t110:PMOD	O
+addition	t110	5	addition	O	O	O	O	O	O	O	O	NN1	B-NP	addition	NN	O	O
+,	t111	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Upjohn	t112	5	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+is	t113	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t109:ADV||t111:P||t112:SBJ||t114:VC||t126:P	mainVb
+offering	t114	5	offer	e29	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	offer	VBG	t118:OBJ	mainVb
+a	t115	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+one-time	t116	5	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	JJ	O	O
+retirement	t117	5	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	O	O
+bonus	t118	5	bonus	O	O	O	O	O	O	O	O	NN1	I-NP	bonus	NN	t115:NMOD||t116:NMOD||t117:NMOD||t119:APPO	O
+equal	t119	5	equal	O	O	O	O	O	O	O	O	AJ0	I-NP	equal	JJ	t120:AMOD	O
+to	t120	5	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t122:PMOD	O
+six	t121	5	six	O	O	O	O	O	O	O	O	CRD	B-NP	six	CD	O	O
+months	t122	5	month	O	O	O	O	O	O	O	O	NN2	I-NP	month	NNS	t121:NMOD||t123:NMOD	O
+of	t123	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t125:PMOD	O
+base	t124	5	base	O	O	O	O	O	O	O	O	NN1	B-NP	base	NN	O	O
+pay	t125	5	pay	O	O	O	O	O	O	O	O	NN1	I-NP	pay	NN	t124:NMOD	O
+.	t126	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Chairman	t127	6	Chairman	O	O	O	O	O	O	O	O	chairman	NN	O	mainVb
-Theodore	t128	6	Theodore	O	O	O	O	O	O	O	O	theodore	NNP	O	mainVb
-Cooper	t129	6	Cooper	O	O	O	O	O	O	O	O	cooper	NNP	t127:TITLE||t128:NAME	mainVb
-called	t130	6	call	e31	REPORTING	PAST+NONE+POS	O	O	O	O	O	call	VBD	t129:SBJ||t133:OBJ||t150:P	mainVb
-the	t131	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-program	t132	6	program	O	O	O	O	O	O	O	O	program	NN	O	mainVb
-part	t133	6	part	O	O	O	O	O	O	O	O	part	NN	t131:NMOD||t132:NMOD||t134:NMOD	mainVb
-of	t134	6	of	O	O	O	O	O	O	O	O	of	IN	t139:PMOD	mainVb
-the	t135	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t136	6	company	O	O	O	O	O	O	O	O	company	NN	t135:NMOD||t137:SUFFIX||t151:NMOD	mainVb
-'s	t137	6	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-two-year	t138	6	two-year	O	O	O	tmx190	DURATION	P2Y	O	O	two-year	NN	O	mainVb
-strategy	t139	6	strategy	e189	I_ACTION	NONE+NONE+POS	O	O	O	O	O	strategy	NN	t136:NMOD||t138:NMOD||t140:NMOD	mainVb
-to	t140	6	to	O	O	O	O	O	O	O	O	to	TO	t141:IM	mainVb
-implement	t141	6	implement	e33	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	implement	VB	t143:OBJ	mainVb
-budget	t142	6	budget	O	O	O	O	O	O	O	O	budget	NN	O	mainVb
-constraints	t143	6	constraint	O	O	O	O	O	O	O	O	constraint	NNS	t142:NMOD||t144:COORD	mainVb
-and	t144	6	and	O	O	O	O	O	O	O	O	and	CC	t149:CONJ	mainVb
-"	t145	6	"	O	O	O	O	O	O	O	O	"	PDT	O	mainVb
-an	t146	6	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-effective	t147	6	effective	O	O	O	O	O	O	O	O	effective	JJ	O	mainVb
-headcount-control	t148	6	headcount-control	O	O	O	O	O	O	O	O	headcount-control	NN	O	mainVb
-program	t149	6	program	O	O	O	O	O	O	O	O	program	NN	t145:NMOD||t146:NMOD||t147:NMOD||t148:NMOD	mainVb
-.	t150	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
-"	t151	6	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
+Chairman	t127	6	Chairman	O	O	O	O	O	O	O	O	NP0	B-NP	chairman	NN	O	O
+Theodore	t128	6	Theodore	O	O	O	O	O	O	O	O	NP0	I-NP	theodore	NNP	O	O
+Cooper	t129	6	Cooper	O	O	O	O	O	O	O	O	NP0	I-NP	cooper	NNP	t127:TITLE||t128:NAME	O
+called	t130	6	call	e31	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	call	VBD	t129:SBJ||t133:OBJ||t150:P	mainVb
+the	t131	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+program	t132	6	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	O	O
+part	t133	6	part	O	O	O	O	O	O	O	O	NN1	I-NP	part	NN	t131:NMOD||t132:NMOD||t134:NMOD	O
+of	t134	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t139:PMOD	O
+the	t135	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t136	6	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t135:NMOD||t137:SUFFIX||t151:NMOD	O
+'s	t137	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+two-year	t138	6	two-year	O	O	O	tmx190	DURATION	P2Y	O	O	AJ0	I-NP	two-year	NN	O	O
+strategy	t139	6	strategy	e189	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	strategy	NN	t136:NMOD||t138:NMOD||t140:NMOD	O
+to	t140	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t141:IM	O
+implement	t141	6	implement	e33	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	NN1	B-NP	implement	VB	t143:OBJ	O
+budget	t142	6	budget	O	O	O	O	O	O	O	O	NN1	I-NP	budget	NN	O	O
+constraints	t143	6	constraint	O	O	O	O	O	O	O	O	NN2	I-NP	constraint	NNS	t142:NMOD||t144:COORD	O
+and	t144	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t149:CONJ	O
+"	t145	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	PDT	O	O
+an	t146	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+effective	t147	6	effective	O	O	O	O	O	O	O	O	AJ0	I-NP	effective	JJ	O	O
+headcount-control	t148	6	headcount-control	O	O	O	O	O	O	O	O	NN1	I-NP	headcount-control	NN	O	O
+program	t149	6	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t145:NMOD||t146:NMOD||t147:NMOD||t148:NMOD	O
+.	t150	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
+"	t151	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
-But	t152	7	but	O	O	O	O	O	O	O	O	but	CC	O	mainVb
-some	t153	7	some	O	O	O	O	O	O	O	O	some	DT	O	mainVb
-analysts	t154	7	analyst	O	O	O	O	O	O	O	O	analyst	NNS	t153:NMOD	mainVb
-questioned	t155	7	question	e34	I_ACTION	PAST+NONE+POS	O	O	O	O	O	question	VBD	t152:DEP||t154:SBJ||t157:OBJ||t166:P||t167:PRP||t175:P	mainVb
-how	t156	7	how	O	O	O	O	O	O	O	O	how	WRB	O	mainVb
-much	t157	7	much	O	O	O	O	O	O	O	O	much	JJ	t156:NMOD||t158:NMOD	mainVb
-of	t158	7	of	O	O	O	O	O	O	O	O	of	IN	t160:PMOD	mainVb
-an	t159	7	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-impact	t160	7	impact	O	O	O	O	O	O	O	O	impact	NN	t159:NMOD||t164:NMOD	mainVb
-the	t161	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-retirement	t162	7	retirement	O	O	O	O	O	O	O	O	retirement	NN	O	mainVb
-package	t163	7	package	O	O	O	O	O	O	O	O	package	NN	t161:NMOD||t162:NMOD	mainVb
-will	t164	7	will	O	O	O	O	O	O	O	O	will	MD	t163:SBJ||t165:VC	mainVb
-have	t165	7	have	e36	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	have	VB	O	mainVb
-,	t166	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-because	t167	7	because	O	O	O	O	O	O	O	O	because	IN	t170:SUB	mainVb
-few	t168	7	few	O	O	O	O	O	O	O	O	few	DT	O	mainVb
-jobs	t169	7	job	O	O	O	O	O	O	O	O	job	NNS	t168:NMOD	mainVb
-will	t170	7	will	O	O	O	O	O	O	O	O	will	MD	t169:SBJ||t171:VC	mainVb
-end	t171	7	end	e38	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	end	VB	t172:PRT||t173:OPRD	mainVb
-up	t172	7	up	O	O	O	O	O	O	O	O	up	RP	O	mainVb
-being	t173	7	be	O	O	O	O	O	O	O	O	be	VBG	t174:VC	mainVb
-eliminated	t174	7	eliminate	e86	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	eliminate	VBN	O	mainVb
-.	t175	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+But	t152	7	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
+some	t153	7	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
+analysts	t154	7	analyst	O	O	O	O	O	O	O	O	NN2	I-NP	analyst	NNS	t153:NMOD	O
+questioned	t155	7	question	e34	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	question	VBD	t152:DEP||t154:SBJ||t157:OBJ||t166:P||t167:PRP||t175:P	mainVb
+how	t156	7	how	O	O	O	O	O	O	O	O	AVQ	B-ADVP	how	WRB	O	O
+much	t157	7	much	O	O	O	O	O	O	O	O	DT0	B-NP	much	JJ	t156:NMOD||t158:NMOD	O
+of	t158	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t160:PMOD	O
+an	t159	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+impact	t160	7	impact	O	O	O	O	O	O	O	O	NN1	I-NP	impact	NN	t159:NMOD||t164:NMOD	O
+the	t161	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+retirement	t162	7	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	O	O
+package	t163	7	package	O	O	O	O	O	O	O	O	NN1	I-NP	package	NN	t161:NMOD||t162:NMOD	O
+will	t164	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t163:SBJ||t165:VC	O
+have	t165	7	have	e36	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VHI	I-VP	have	VB	O	O
+,	t166	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+because	t167	7	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t170:SUB	O
+few	t168	7	few	O	O	O	O	O	O	O	O	DT0	B-NP	few	DT	O	O
+jobs	t169	7	job	O	O	O	O	O	O	O	O	NN2	I-NP	job	NNS	t168:NMOD	O
+will	t170	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t169:SBJ||t171:VC	O
+end	t171	7	end	e38	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	end	VB	t172:PRT||t173:OPRD	O
+up	t172	7	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
+being	t173	7	be	O	O	O	O	O	O	O	O	VBG	B-VP	be	VBG	t174:VC	O
+eliminated	t174	7	eliminate	e86	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVN	I-VP	eliminate	VBN	O	O
+.	t175	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t176	8	"	O	O	O	O	O	O	O	O	"	SYM	O	mainVb
-It	t177	8	it	O	O	O	O	O	O	O	O	it	PRP	t178:SUFFIX	mainVb
-'s	t178	8	be	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-a	t179	8	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-cosmetic	t180	8	cosmetic	O	O	O	O	O	O	O	O	cosmetic	JJ	O	mainVb
-move	t181	8	move	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	move	NN	t176:DEP||t177:NMOD||t179:NMOD||t180:NMOD	mainVb
-,	t182	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-"	t183	8	"	O	O	O	O	O	O	O	O	"	NNP	O	mainVb
-said	t184	8	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t181:TMP||t182:P||t183:SBJ||t187:SBJ||t193:P	mainVb
-Jonathan	t185	8	Jonathan	O	O	O	O	O	O	O	O	jonathan	NNP	O	mainVb
-S.	t186	8	S.	O	O	O	O	O	O	O	O	s.	NNP	O	mainVb
-Gelles	t187	8	Gelles	O	O	O	O	O	O	O	O	gelles	NNP	t185:NAME||t186:NAME||t188:NMOD	mainVb
-of	t188	8	of	O	O	O	O	O	O	O	O	of	IN	t191:PMOD	mainVb
-Wertheim	t189	8	Wertheim	O	O	O	O	O	O	O	O	wertheim	NNP	O	mainVb
-Schroder	t190	8	Schroder	O	O	O	O	O	O	O	O	schroder	NNP	t189:NAME	mainVb
-amp	t191	8	amp	O	O	O	O	O	O	O	O	amp	NNP	t190:NAME||t192:POSTHON	mainVb
-Co.	t192	8	Co.	O	O	O	O	O	O	O	O	co.	NNP	O	mainVb
-.	t193	8	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+"	t176	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+It	t177	8	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	t178:SUFFIX	O
+'s	t178	8	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+a	t179	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+cosmetic	t180	8	cosmetic	O	O	O	O	O	O	O	O	AJ0	I-NP	cosmetic	JJ	O	O
+move	t181	8	move	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	move	NN	t176:DEP||t177:NMOD||t179:NMOD||t180:NMOD	O
+,	t182	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+"	t183	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+said	t184	8	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t181:TMP||t182:P||t183:SBJ||t187:SBJ||t193:P	mainVb
+Jonathan	t185	8	Jonathan	O	O	O	O	O	O	O	O	NP0	B-NP	jonathan	NNP	O	O
+S.	t186	8	S.	O	O	O	O	O	O	O	O	NP0	I-NP	s.	NNP	O	O
+Gelles	t187	8	Gelles	O	O	O	O	O	O	O	O	NP0	I-NP	gelles	NNP	t185:NAME||t186:NAME||t188:NMOD	O
+of	t188	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t191:PMOD	O
+Wertheim	t189	8	Wertheim	O	O	O	O	O	O	O	O	NP0	B-NP	wertheim	NNP	O	O
+Schroder	t190	8	Schroder	O	O	O	O	O	O	O	O	NP0	I-NP	schroder	NNP	t189:NAME	O
+amp	t191	8	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	t190:NAME||t192:POSTHON	O
+Co.	t192	8	Co.	O	O	O	O	O	O	O	O	NN1	I-NP	co.	NNP	O	O
+.	t193	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-According	t194	9	accord	O	O	O	O	O	O	O	O	accord	VBG	t195:PMOD	mainVb
-to	t195	9	to	O	O	O	O	O	O	O	O	to	TO	t198:PMOD	mainVb
-Upjohn	t196	9	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	t197:SUFFIX	mainVb
-'s	t197	9	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-estimates	t198	9	estimate	O	O	O	O	O	O	O	O	estimate	NNS	t196:NMOD	mainVb
-,	t199	9	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-only	t200	9	only	O	O	O	O	O	O	O	O	only	RB	O	mainVb
-50	t201	9	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-%	t202	9	%	O	O	O	O	O	O	O	O	%	NN	O	mainVb
-to	t203	9	to	O	O	O	O	O	O	O	O	to	TO	O	mainVb
-60	t204	9	60	O	O	O	O	O	O	O	O	60	CD	O	mainVb
-%	t205	9	%	O	O	O	O	O	O	O	O	%	NN	t200:DEP||t201:DEP||t202:DEP||t203:DEP||t204:NMOD||t206:NMOD	mainVb
-of	t206	9	of	O	O	O	O	O	O	O	O	of	IN	t210:PMOD	mainVb
-the	t207	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-1,100	t208	9	1,100	O	O	O	O	O	O	O	O	1,100	CD	O	mainVb
-eligible	t209	9	eligible	O	O	O	O	O	O	O	O	eligible	JJ	O	mainVb
-employees	t210	9	employee	O	O	O	O	O	O	O	O	employee	NNS	t207:NMOD||t208:NMOD||t209:NMOD	mainVb
-will	t211	9	will	O	O	O	O	O	O	O	O	will	MD	t194:ADV||t199:P||t205:SBJ||t212:VC||t217:P	mainVb
-take	t212	9	take	e42	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	take	VB	t213:OBJ||t214:ADV	mainVb
-advantage	t213	9	advantage	O	O	O	O	O	O	O	O	advantage	NN	O	mainVb
-of	t214	9	of	O	O	O	O	O	O	O	O	of	IN	t216:PMOD	mainVb
-the	t215	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-plan	t216	9	plan	O	O	O	O	O	O	O	O	plan	NN	t215:NMOD	mainVb
-.	t217	9	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+According	t194	9	accord	O	O	O	O	O	O	O	O	PRP	B-PP	accord	VBG	t195:PMOD	O
+to	t195	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t198:PMOD	O
+Upjohn	t196	9	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	t197:SUFFIX	O
+'s	t197	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+estimates	t198	9	estimate	O	O	O	O	O	O	O	O	NN2	I-NP	estimate	NNS	t196:NMOD	O
+,	t199	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+only	t200	9	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	O	O
+50	t201	9	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
+%	t202	9	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	O	O
+to	t203	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
+60	t204	9	60	O	O	O	O	O	O	O	O	CRD	B-NP	60	CD	O	O
+%	t205	9	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t200:DEP||t201:DEP||t202:DEP||t203:DEP||t204:NMOD||t206:NMOD	O
+of	t206	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t210:PMOD	O
+the	t207	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+1,100	t208	9	1,100	O	O	O	O	O	O	O	O	CRD	I-NP	1,100	CD	O	O
+eligible	t209	9	eligible	O	O	O	O	O	O	O	O	AJ0	I-NP	eligible	JJ	O	O
+employees	t210	9	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	t207:NMOD||t208:NMOD||t209:NMOD	O
+will	t211	9	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t194:ADV||t199:P||t205:SBJ||t212:VC||t217:P	mainVb
+take	t212	9	take	e42	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	take	VB	t213:OBJ||t214:ADV	mainVb
+advantage	t213	9	advantage	O	O	O	O	O	O	O	O	NN1	B-NP	advantage	NN	O	O
+of	t214	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t216:PMOD	O
+the	t215	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+plan	t216	9	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t215:NMOD	O
+.	t217	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Upjohn	t218	10	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-further	t219	10	further	O	O	O	O	O	O	O	O	further	RBR	O	mainVb
-estimated	t220	10	estimate	e43	I_ACTION	PAST+NONE+POS	O	O	O	O	O	estimate	VBD	t218:SBJ||t219:ADV||t221:OBJ||t236:P	mainVb
-that	t221	10	that	O	O	O	O	O	O	O	O	that	IN	t233:SUB	mainVb
-about	t222	10	about	O	O	O	O	O	O	O	O	about	IN	O	mainVb
-50	t223	10	50	O	O	O	O	O	O	O	O	50	CD	t222:DEP	mainVb
-%	t224	10	%	O	O	O	O	O	O	O	O	%	NN	t223:NMOD||t225:NMOD	mainVb
-of	t225	10	of	O	O	O	O	O	O	O	O	of	IN	t227:PMOD	mainVb
-the	t226	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-employees	t227	10	employee	O	O	O	O	O	O	O	O	employee	NNS	t226:NMOD||t229:NMOD	mainVb
-who	t228	10	who	O	O	O	O	O	O	O	O	who	WP	O	mainVb
-leave	t229	10	leave	e44	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	leave	VBP	t228:SBJ||t230:ADV	mainVb
-for	t230	10	for	O	O	O	O	O	O	O	O	for	IN	t232:PMOD	mainVb
-early	t231	10	early	O	O	O	O	O	O	O	O	early	JJ	O	mainVb
-retirement	t232	10	retirement	O	O	O	O	O	O	O	O	retirement	NN	t231:NMOD	mainVb
-may	t233	10	may	O	O	O	O	O	O	O	O	may	MD	t224:SBJ||t234:VC	mainVb
-be	t234	10	be	O	O	O	O	O	O	O	O	be	VB	t235:VC	mainVb
-replaced	t235	10	replace	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	replace	VBN	O	mainVb
-.	t236	10	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Upjohn	t218	10	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+further	t219	10	further	O	O	O	O	O	O	O	O	AV0	B-ADVP	further	RBR	O	O
+estimated	t220	10	estimate	e43	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	estimate	VBD	t218:SBJ||t219:ADV||t221:OBJ||t236:P	mainVb
+that	t221	10	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t233:SUB	O
+about	t222	10	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+50	t223	10	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	t222:DEP	O
+%	t224	10	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t223:NMOD||t225:NMOD	O
+of	t225	10	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t227:PMOD	O
+the	t226	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+employees	t227	10	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	t226:NMOD||t229:NMOD	O
+who	t228	10	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
+leave	t229	10	leave	e44	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	leave	VBP	t228:SBJ||t230:ADV	O
+for	t230	10	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t232:PMOD	O
+early	t231	10	early	O	O	O	O	O	O	O	O	AJ0	B-NP	early	JJ	O	O
+retirement	t232	10	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	t231:NMOD	O
+may	t233	10	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t224:SBJ||t234:VC	O
+be	t234	10	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t235:VC	O
+replaced	t235	10	replace	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	replace	VBN	O	O
+.	t236	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-As	t237	11	as	O	O	O	O	O	O	O	O	as	IN	t239:PMOD	mainVb
-a	t238	11	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-result	t239	11	result	O	O	O	O	O	O	O	O	result	NN	t238:NMOD	mainVb
-,	t240	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Upjohn	t241	11	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-will	t242	11	will	O	O	O	O	O	O	O	O	will	MD	t237:ADV||t240:P||t241:SBJ||t243:ADV||t244:VC||t257:P	mainVb
-likely	t243	11	likely	O	O	O	O	O	O	O	O	likely	RB	O	mainVb
-trim	t244	11	trim	e50	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	trim	VB	t245:ADV||t250:ADV	mainVb
-only	t245	11	only	O	O	O	O	O	O	O	O	only	RB	t246:DEP||t247:DEP||t248:DEP||t249:DEP	mainVb
-about	t246	11	about	O	O	O	O	O	O	O	O	about	IN	O	mainVb
-275	t247	11	275	O	O	O	O	O	O	O	O	275	CD	O	mainVb
-to	t248	11	to	O	O	O	O	O	O	O	O	to	TO	O	mainVb
-350	t249	11	350	O	O	O	O	O	O	O	O	350	CD	O	mainVb
-of	t250	11	of	O	O	O	O	O	O	O	O	of	IN	t256:PMOD	mainVb
-its	t251	11	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-more	t252	11	more	O	O	O	O	O	O	O	O	more	RBR	O	mainVb
-than	t253	11	than	O	O	O	O	O	O	O	O	than	IN	O	mainVb
-21,000	t254	11	21,000	O	O	O	O	O	O	O	O	21,000	NN	t252:DEP||t253:DEP	mainVb
-jobs	t255	11	job	O	O	O	O	O	O	O	O	job	NNS	t251:NMOD||t254:NMOD	mainVb
-world-wide	t256	11	world-wide	O	O	O	O	O	O	O	O	world-wide	VBP	t255:SBJ	mainVb
-.	t257	11	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+As	t237	11	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t239:PMOD	O
+a	t238	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+result	t239	11	result	O	O	O	O	O	O	O	O	NN1	I-NP	result	NN	t238:NMOD	O
+,	t240	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Upjohn	t241	11	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+will	t242	11	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t237:ADV||t240:P||t241:SBJ||t243:ADV||t244:VC||t257:P	mainVb
+likely	t243	11	likely	O	O	O	O	O	O	O	O	AV0	I-VP	likely	RB	O	mainVb
+trim	t244	11	trim	e50	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	trim	VB	t245:ADV||t250:ADV	mainVb
+only	t245	11	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	t246:DEP||t247:DEP||t248:DEP||t249:DEP	O
+about	t246	11	about	O	O	O	O	O	O	O	O	AV0	I-NP	about	IN	O	O
+275	t247	11	275	O	O	O	O	O	O	O	O	CRD	I-NP	275	CD	O	O
+to	t248	11	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
+350	t249	11	350	O	O	O	O	O	O	O	O	NN0	B-NP	350	CD	O	O
+of	t250	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t256:PMOD	O
+its	t251	11	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+more	t252	11	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	RBR	O	O
+than	t253	11	than	O	O	O	O	O	O	O	O	CJS	I-NP	than	IN	O	O
+21,000	t254	11	21,000	O	O	O	O	O	O	O	O	CRD	I-NP	21,000	NN	t252:DEP||t253:DEP	O
+jobs	t255	11	job	O	O	O	O	O	O	O	O	NN2	I-NP	job	NNS	t251:NMOD||t254:NMOD	O
+world-wide	t256	11	world-wide	O	O	O	O	O	O	O	O	AJ0	B-ADVP	world-wide	VBP	t255:SBJ	O
+.	t257	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t258	12	in	O	O	O	O	O	O	O	O	in	IN	t260:PMOD	mainVb
-composite	t259	12	composite	O	O	O	O	O	O	O	O	composite	JJ	O	mainVb
-trading	t260	12	trading	O	O	O	O	O	O	O	O	trading	NN	t259:NMOD	mainVb
-on	t261	12	on	O	O	O	O	O	O	O	O	on	IN	t266:PMOD	mainVb
-the	t262	12	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-New	t263	12	New	O	O	O	O	O	O	O	O	new	NNP	O	mainVb
-York	t264	12	York	O	O	O	O	O	O	O	O	york	NNP	t263:NAME	mainVb
-Stock	t265	12	Stock	O	O	O	O	O	O	O	O	stock	NNP	O	mainVb
-Exchange	t266	12	Exchange	O	O	O	O	O	O	O	O	exchange	NNP	t262:NMOD||t264:NAME||t265:NAME	mainVb
-yesterday	t267	12	yesterday	O	O	O	tmx92	DATE	1989-11-01	O	O	yesterday	NN	O	mainVb
-,	t268	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Upjohn	t269	12	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-shares	t270	12	share	O	O	O	O	O	O	O	O	share	NNS	t269:NMOD	mainVb
-rose	t271	12	rise	e53	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	rise	VBD	t258:LOC||t261:LOC||t267:TMP||t268:P||t270:SBJ||t273:EXT||t274:DIR||t278:P	mainVb
-87.5	t272	12	87.5	O	O	O	O	O	O	O	O	87.5	CD	O	mainVb
-cents	t273	12	cent	O	O	O	O	O	O	O	O	cent	NNS	t272:NMOD	mainVb
-to	t274	12	to	O	O	O	O	O	O	O	O	to	TO	t275:PMOD	mainVb
-$	t275	12	$	O	O	O	O	O	O	O	O	$	$	t276:NMOD||t277:NMOD	mainVb
-38.875	t276	12	38.875	O	O	O	O	O	O	O	O	38.875	CD	O	mainVb
-apiece	t277	12	apiece	O	O	O	O	O	O	O	O	apiece	RB	O	mainVb
-.	t278	12	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t258	12	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t260:PMOD	O
+composite	t259	12	composite	O	O	O	O	O	O	O	O	AJ0	B-NP	composite	JJ	O	O
+trading	t260	12	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t259:NMOD	O
+on	t261	12	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t266:PMOD	O
+the	t262	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+New	t263	12	New	O	O	O	O	O	O	O	O	NP0	I-NP	new	NNP	O	O
+York	t264	12	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t263:NAME	O
+Stock	t265	12	Stock	O	O	O	O	O	O	O	O	NP0	I-NP	stock	NNP	O	O
+Exchange	t266	12	Exchange	O	O	O	O	O	O	O	O	NN1	I-NP	exchange	NNP	t262:NMOD||t264:NAME||t265:NAME	O
+yesterday	t267	12	yesterday	O	O	O	tmx92	DATE	1989-11-01	O	O	AV0	B-NP	yesterday	NN	O	O
+,	t268	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Upjohn	t269	12	Upjohn	O	O	O	O	O	O	O	O	NP0	B-NP	upjohn	NNP	O	O
+shares	t270	12	share	O	O	O	O	O	O	O	O	VVZ	I-NP	share	NNS	t269:NMOD	O
+rose	t271	12	rise	e53	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t258:LOC||t261:LOC||t267:TMP||t268:P||t270:SBJ||t273:EXT||t274:DIR||t278:P	mainVb
+87.5	t272	12	87.5	O	O	O	O	O	O	O	O	CRD	B-NP	87.5	CD	O	O
+cents	t273	12	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t272:NMOD	O
+to	t274	12	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t275:PMOD	O
+$	t275	12	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t276:NMOD||t277:NMOD	O
+38.875	t276	12	38.875	O	O	O	O	O	O	O	O	CRD	I-NP	38.875	CD	O	O
+apiece	t277	12	apiece	O	O	O	O	O	O	O	O	AV0	B-ADVP	apiece	RB	O	O
+.	t278	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-An	t279	13	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-Upjohn	t280	13	Upjohn	O	O	O	O	O	O	O	O	upjohn	NNP	O	mainVb
-spokesman	t281	13	spokesman	O	O	O	O	O	O	O	O	spokesman	NN	t279:NMOD||t280:NMOD	mainVb
-said	t282	13	say	e54	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t281:SBJ||t284:OBJ||t317:P	mainVb
-he	t283	13	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-had	t284	13	have	O	O	O	O	O	O	O	O	have	VBD	t283:SBJ||t285:VC	mainVb
-"	t285	13	"	O	O	O	O	O	O	O	O	"	VBN	t295:OBJ	mainVb
-heard	t286	13	hear	e399	PERCEPTION	PAST+PERFECTIVE+NEG	O	O	O	O	O	hear	VBN	O	mainVb
-nothing	t287	13	nothing	O	O	O	O	O	O	O	O	nothing	NN	O	mainVb
-"	t288	13	"	O	O	O	O	O	O	O	O	"	NN	t286:NMOD||t287:NMOD||t289:NMOD	mainVb
-to	t289	13	to	O	O	O	O	O	O	O	O	to	TO	t290:IM	mainVb
-suggest	t290	13	suggest	e57	I_STATE	INFINITIVE+NONE+NEG	O	O	O	O	O	suggest	VB	t294:OBJ	mainVb
-the	t291	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-early	t292	13	early	O	O	O	O	O	O	O	O	early	JJ	O	mainVb
-retirement	t293	13	retirement	O	O	O	O	O	O	O	O	retirement	NN	t292:NMOD	mainVb
-package	t294	13	package	O	O	O	O	O	O	O	O	package	NN	t291:NMOD||t293:NMOD	mainVb
-was	t295	13	be	O	O	O	O	O	O	O	O	be	VBD	t288:SBJ||t296:VC	mainVb
-spurred	t296	13	spur	e58	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	spur	VBN	t297:LGS	mainVb
-by	t297	13	by	O	O	O	O	O	O	O	O	by	IN	t299:PMOD	mainVb
-shareholder	t298	13	shareholder	O	O	O	O	O	O	O	O	shareholder	NN	O	mainVb
-pressure	t299	13	pressure	O	O	O	O	O	O	O	O	pressure	NN	t298:NMOD||t300:COORD||t304:NMOD	mainVb
-or	t300	13	or	O	O	O	O	O	O	O	O	or	CC	t303:CONJ	mainVb
-a	t301	13	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-potential	t302	13	potential	O	O	O	O	O	O	O	O	potential	JJ	O	mainVb
-bidder	t303	13	bidder	O	O	O	O	O	O	O	O	bidder	NN	t301:NMOD||t302:NMOD	mainVb
-for	t304	13	for	O	O	O	O	O	O	O	O	for	IN	t306:PMOD	mainVb
-the	t305	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t306	13	company	O	O	O	O	O	O	O	O	company	NN	t305:NMOD||t307:P||t310:NMOD	mainVb
-,	t307	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t308	13	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-occasionally	t309	13	occasionally	O	O	O	O	O	O	O	O	occasionally	RB	O	mainVb
-has	t310	13	have	O	O	O	O	O	O	O	O	have	VBZ	t308:SBJ||t309:TMP||t311:VC	mainVb
-been	t311	13	be	O	O	O	O	O	O	O	O	be	VBN	t313:PRD	mainVb
-the	t312	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-target	t313	13	target	O	O	O	O	O	O	O	O	target	NN	t312:NMOD||t314:NMOD	mainVb
-of	t314	13	of	O	O	O	O	O	O	O	O	of	IN	t316:PMOD	mainVb
-takeover	t315	13	takeover	O	O	O	O	O	O	O	O	takeover	NN	O	mainVb
-speculation	t316	13	speculation	O	O	O	O	O	O	O	O	speculation	NN	t315:NMOD	mainVb
-.	t317	13	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+An	t279	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+Upjohn	t280	13	Upjohn	O	O	O	O	O	O	O	O	NP0	I-NP	upjohn	NNP	O	O
+spokesman	t281	13	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t279:NMOD||t280:NMOD	O
+said	t282	13	say	e54	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t281:SBJ||t284:OBJ||t317:P	mainVb
+he	t283	13	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+had	t284	13	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t283:SBJ||t285:VC	O
+"	t285	13	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	VBN	t295:OBJ	O
+heard	t286	13	hear	e399	PERCEPTION	PAST+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	hear	VBN	O	O
+nothing	t287	13	nothing	O	O	O	O	O	O	O	O	PNI	B-NP	nothing	NN	O	O
+"	t288	13	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t286:NMOD||t287:NMOD||t289:NMOD	O
+to	t289	13	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t290:IM	O
+suggest	t290	13	suggest	e57	I_STATE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVI	I-VP	suggest	VB	t294:OBJ	O
+the	t291	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+early	t292	13	early	O	O	O	O	O	O	O	O	AJ0	I-NP	early	JJ	O	O
+retirement	t293	13	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	t292:NMOD	O
+package	t294	13	package	O	O	O	O	O	O	O	O	NN1	I-NP	package	NN	t291:NMOD||t293:NMOD	O
+was	t295	13	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t288:SBJ||t296:VC	O
+spurred	t296	13	spur	e58	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	spur	VBN	t297:LGS	O
+by	t297	13	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t299:PMOD	O
+shareholder	t298	13	shareholder	O	O	O	O	O	O	O	O	NN1	B-NP	shareholder	NN	O	O
+pressure	t299	13	pressure	O	O	O	O	O	O	O	O	NN1	I-NP	pressure	NN	t298:NMOD||t300:COORD||t304:NMOD	O
+or	t300	13	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t303:CONJ	O
+a	t301	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+potential	t302	13	potential	O	O	O	O	O	O	O	O	AJ0	I-NP	potential	JJ	O	O
+bidder	t303	13	bidder	O	O	O	O	O	O	O	O	NN1	I-NP	bidder	NN	t301:NMOD||t302:NMOD	O
+for	t304	13	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t306:PMOD	O
+the	t305	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t306	13	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t305:NMOD||t307:P||t310:NMOD	O
+,	t307	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t308	13	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+occasionally	t309	13	occasionally	O	O	O	O	O	O	O	O	AV0	B-ADVP	occasionally	RB	O	O
+has	t310	13	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t308:SBJ||t309:TMP||t311:VC	O
+been	t311	13	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t313:PRD	O
+the	t312	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+target	t313	13	target	O	O	O	O	O	O	O	O	NN1	I-NP	target	NN	t312:NMOD||t314:NMOD	O
+of	t314	13	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t316:PMOD	O
+takeover	t315	13	takeover	O	O	O	O	O	O	O	O	NN1	B-NP	takeover	NN	O	O
+speculation	t316	13	speculation	O	O	O	O	O	O	O	O	NN1	I-NP	speculation	NN	t315:NMOD	O
+.	t317	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t318	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t319	14	company	O	O	O	O	O	O	O	O	company	NN	t318:NMOD	mainVb
-earlier	t320	14	earlier	O	O	O	tmx372	DATE	1989	O	O	earlier	RBR	O	mainVb
-this	t321	14	this	O	O	O	tmx372	DATE	1989	O	O	this	DT	O	mainVb
-year	t322	14	year	O	O	O	tmx372	DATE	1989	O	O	year	NN	t320:NMOD||t321:NMOD	mainVb
-adopted	t323	14	adopt	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	adopt	VBD	t319:SBJ||t322:TMP||t326:OBJ||t332:P	mainVb
-a	t324	14	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-shareholder-rights	t325	14	shareholder-rights	O	O	O	O	O	O	O	O	shareholder-right	NNS	O	mainVb
-plan	t326	14	plan	O	O	O	O	O	O	O	O	plan	NN	t324:NMOD||t325:NMOD||t327:NMOD	mainVb
-to	t327	14	to	O	O	O	O	O	O	O	O	to	TO	t328:IM	mainVb
-ward	t328	14	ward	e63	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	ward	VB	t329:PRT||t331:OBJ	mainVb
-off	t329	14	off	O	O	O	O	O	O	O	O	off	RP	O	mainVb
-unwanted	t330	14	unwanted	O	O	O	O	O	O	O	O	unwanted	JJ	O	mainVb
-suitors	t331	14	suitor	O	O	O	O	O	O	O	O	suitor	NNS	t330:NMOD	mainVb
-.	t332	14	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t318	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t319	14	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t318:NMOD	O
+earlier	t320	14	earlier	O	O	O	tmx372	DATE	1989	O	O	AV0	B-NP	earlier	RBR	O	O
+this	t321	14	this	O	O	O	tmx372	DATE	1989	O	O	DT0	I-NP	this	DT	O	O
+year	t322	14	year	O	O	O	tmx372	DATE	1989	O	O	NN1	I-NP	year	NN	t320:NMOD||t321:NMOD	O
+adopted	t323	14	adopt	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	adopt	VBD	t319:SBJ||t322:TMP||t326:OBJ||t332:P	mainVb
+a	t324	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+shareholder-rights	t325	14	shareholder-rights	O	O	O	O	O	O	O	O	NN2	I-NP	shareholder-right	NNS	O	O
+plan	t326	14	plan	O	O	O	O	O	O	O	O	VVB	B-VP	plan	NN	t324:NMOD||t325:NMOD||t327:NMOD	O
+to	t327	14	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t328:IM	O
+ward	t328	14	ward	e63	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	ward	VB	t329:PRT||t331:OBJ	O
+off	t329	14	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
+unwanted	t330	14	unwanted	O	O	O	O	O	O	O	O	AJ0	B-NP	unwanted	JJ	O	O
+suitors	t331	14	suitor	O	O	O	O	O	O	O	O	NN2	I-NP	suitor	NNS	t330:NMOD	O
+.	t332	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t333	15	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-spokesman	t334	15	spokesman	O	O	O	O	O	O	O	O	spokesman	NN	t333:NMOD	mainVb
-said	t335	15	say	e64	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t334:SBJ||t337:OBJ||t349:P	mainVb
-it	t336	15	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-is	t337	15	be	O	O	O	O	O	O	O	O	be	VBZ	t336:SBJ||t342:PRD	mainVb
-the	t338	15	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-first	t339	15	first	O	O	O	O	O	O	O	O	first	JJ	O	mainVb
-early	t340	15	early	O	O	O	O	O	O	O	O	early	JJ	O	mainVb
-retirement	t341	15	retirement	O	O	O	O	O	O	O	O	retirement	NN	t340:NMOD	mainVb
-plan	t342	15	plan	O	O	O	O	O	O	O	O	plan	NN	t338:NMOD||t339:NMOD||t341:NMOD||t343:APPO	mainVb
-offered	t343	15	offer	e65	I_ACTION	PASTPART+NONE+POS	O	O	O	O	O	offer	VBN	t344:LOC	mainVb
-under	t344	15	under	O	O	O	O	O	O	O	O	under	IN	t348:PMOD	mainVb
-its	t345	15	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-two-year	t346	15	two-year	O	O	O	tmx500	DURATION	P2Y	O	O	two-year	NN	O	mainVb
-cost-control	t347	15	cost-control	O	O	O	O	O	O	O	O	cost-control	NN	O	mainVb
-strategy	t348	15	strategy	O	O	O	O	O	O	O	O	strategy	NN	t345:NMOD||t346:NMOD||t347:NMOD	mainVb
-.	t349	15	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t333	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+spokesman	t334	15	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t333:NMOD	O
+said	t335	15	say	e64	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t334:SBJ||t337:OBJ||t349:P	mainVb
+it	t336	15	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+is	t337	15	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t336:SBJ||t342:PRD	O
+the	t338	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+first	t339	15	first	O	O	O	O	O	O	O	O	ORD	I-NP	first	JJ	O	O
+early	t340	15	early	O	O	O	O	O	O	O	O	AJ0	I-NP	early	JJ	O	O
+retirement	t341	15	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	t340:NMOD	O
+plan	t342	15	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t338:NMOD||t339:NMOD||t341:NMOD||t343:APPO	O
+offered	t343	15	offer	e65	I_ACTION	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBN	t344:LOC	O
+under	t344	15	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t348:PMOD	O
+its	t345	15	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+two-year	t346	15	two-year	O	O	O	tmx500	DURATION	P2Y	O	O	AJ0	I-NP	two-year	NN	O	O
+cost-control	t347	15	cost-control	O	O	O	O	O	O	O	O	NN1	I-NP	cost-control	NN	O	O
+strategy	t348	15	strategy	O	O	O	O	O	O	O	O	NN1	I-NP	strategy	NN	t345:NMOD||t346:NMOD||t347:NMOD	O
+.	t349	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Earlier	t350	16	earlier	O	O	O	tmx404	DATE	PAST_REF	O	O	earlier	JJR	O	mainVb
-staff-reduction	t351	16	staff-reduction	O	O	O	O	O	O	O	O	staff-reduction	NN	O	mainVb
-moves	t352	16	move	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	move	NNS	t350:NMOD||t351:NMOD	mainVb
-have	t353	16	have	O	O	O	O	O	O	O	O	have	VBP	t352:SBJ||t354:VC	mainVb
-trimmed	t354	16	trim	e67	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	trim	VBN	t357:OBJ	mainVb
-about	t355	16	about	O	O	O	O	O	O	O	O	about	CD	O	mainVb
-300	t356	16	300	O	O	O	O	O	O	O	O	300	CD	t355:DEP	mainVb
-jobs	t357	16	job	O	O	O	O	O	O	O	O	job	NNS	t356:NMOD	mainVb
-,	t358	16	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t359	16	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-spokesman	t360	16	spokesman	O	O	O	O	O	O	O	O	spokesman	NN	t359:NMOD	mainVb
-said	t361	16	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t353:OBJ||t358:P||t360:SBJ||t362:P	mainVb
-.	t362	16	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Earlier	t350	16	earlier	O	O	O	tmx404	DATE	PAST_REF	O	O	AJC	B-NP	earlier	JJR	O	O
+staff-reduction	t351	16	staff-reduction	O	O	O	O	O	O	O	O	NN1	I-NP	staff-reduction	NN	O	O
+moves	t352	16	move	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	move	NNS	t350:NMOD||t351:NMOD	O
+have	t353	16	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t352:SBJ||t354:VC	O
+trimmed	t354	16	trim	e67	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	trim	VBN	t357:OBJ	O
+about	t355	16	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	O	O
+300	t356	16	300	O	O	O	O	O	O	O	O	CRD	I-NP	300	CD	t355:DEP	O
+jobs	t357	16	job	O	O	O	O	O	O	O	O	NN2	I-NP	job	NNS	t356:NMOD	O
+,	t358	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t359	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+spokesman	t360	16	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t359:NMOD	O
+said	t361	16	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t353:OBJ||t358:P||t360:SBJ||t362:P	mainVb
+.	t362	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

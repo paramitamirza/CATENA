@@ -1,503 +1,503 @@
-DCT_1998-01-08	O	O	O	O	O	O	tmx0	DATE	1998-01-08	O	O	dct_1998-01-08	SYM	O	O
+DCT_1998-01-08	O	O	O	O	O	O	tmx0	DATE	1998-01-08	O	O	NP0	B-NP	dct_1998-01-08	SYM	O	O
 
-On	t1	1	on	O	O	O+O+O	O	O	O	O	O	on	IN	t4:PMOD||t5:P||t8:COORD||t19:P	mainVb
-the	t2	1	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	mainVb
-other	t3	1	other	O	O	O+O+O	O	O	O	O	O	other	JJ	t7:SUFFIX	mainVb
-hand	t4	1	hand	O	O	O+O+O	O	O	O	O	O	hand	NN	t2:NMOD||t3:NMOD	mainVb
-,	t5	1	,	O	O	O+O+O	O	O	O	O	O	,	,	O	mainVb
-it	t6	1	it	O	O	O+O+O	O	O	O	O	O	it	PRP	O	mainVb
-'s	t7	1	be	O	O	O+O+O	O	O	O	O	O	's	POS	O	mainVb
-turning	t8	1	turn	e1	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	turn	VBG	t6:SBJ||t9:PRT||t10:OPRD	mainVb
-out	t9	1	out	O	O	O	O	O	O	O	O	out	RP	O	mainVb
-to	t10	1	to	O	O	O	O	O	O	O	O	to	TO	t11:IM	mainVb
-be	t11	1	be	O	O	O	O	O	O	O	O	be	VB	t16:PRD	mainVb
-another	t12	1	another	O	O	O	O	O	O	O	O	another	DT	O	mainVb
-very	t13	1	very	O	O	O	O	O	O	O	O	very	RB	O	mainVb
-bad	t14	1	bad	O	O	O	O	O	O	O	O	bad	JJ	t13:AMOD	mainVb
-financial	t15	1	financial	O	O	O	O	O	O	O	O	financial	JJ	O	mainVb
-week	t16	1	week	O	O	O	tmx83	DURATION	P1W	O	O	week	NN	t12:NMOD||t14:NMOD||t15:NMOD||t17:NMOD	mainVb
-for	t17	1	for	O	O	O	O	O	O	O	O	for	IN	t18:PMOD	mainVb
-Asia	t18	1	Asia	O	O	O	O	O	O	O	O	asia	NNP	O	mainVb
-.	t19	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+On	t1	1	on	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	on	IN	t4:PMOD||t5:P||t8:COORD||t19:P	mainVb
+the	t2	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+other	t3	1	other	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	other	JJ	t7:SUFFIX	O
+hand	t4	1	hand	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	hand	NN	t2:NMOD||t3:NMOD	O
+,	t5	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
+it	t6	1	it	O	O	O+O+O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t7	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+turning	t8	1	turn	e1	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	turn	VBG	t6:SBJ||t9:PRT||t10:OPRD	O
+out	t9	1	out	O	O	O	O	O	O	O	O	AVP	B-PRT	out	RP	O	O
+to	t10	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t11:IM	O
+be	t11	1	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t16:PRD	O
+another	t12	1	another	O	O	O	O	O	O	O	O	DT0	B-NP	another	DT	O	O
+very	t13	1	very	O	O	O	O	O	O	O	O	AV0	I-NP	very	RB	O	O
+bad	t14	1	bad	O	O	O	O	O	O	O	O	AJ0	I-NP	bad	JJ	t13:AMOD	O
+financial	t15	1	financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	JJ	O	O
+week	t16	1	week	O	O	O	tmx83	DURATION	P1W	O	O	NN1	I-NP	week	NN	t12:NMOD||t14:NMOD||t15:NMOD||t17:NMOD	O
+for	t17	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t18:PMOD	O
+Asia	t18	1	Asia	O	O	O	O	O	O	O	O	NP0	B-NP	asia	NNP	O	O
+.	t19	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t20	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-financial	t21	2	financial	O	O	O	O	O	O	O	O	financial	JJ	O	mainVb
-assistance	t22	2	assistance	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	assistance	NN	t20:NMOD||t21:NMOD||t23:NMOD	mainVb
-from	t23	2	from	O	O	O	O	O	O	O	O	from	IN	t26:PMOD	mainVb
-the	t24	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-World	t25	2	World	O	O	O	O	O	O	O	O	world	NNP	O	mainVb
-Bank	t26	2	Bank	O	O	O	O	O	O	O	O	bank	NNP	t24:NMOD||t25:NAME||t27:COORD	mainVb
-and	t27	2	and	O	O	O	O	O	O	O	O	and	CC	t31:CONJ	mainVb
-the	t28	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-International	t29	2	International	O	O	O	O	O	O	O	O	international	NNP	O	mainVb
-Monetary	t30	2	Monetary	O	O	O	O	O	O	O	O	monetary	NNP	O	mainVb
-Fund	t31	2	Fund	O	O	O	O	O	O	O	O	fund	NNP	t28:NMOD||t29:NAME||t30:NAME	mainVb
-are	t32	2	be	O	O	O	O	O	O	O	O	be	VBP	t22:SBJ||t33:ADV||t34:VC||t35:P	mainVb
-not	t33	2	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-helping	t34	2	help	e4	OCCURRENCE	PRESENT+PROGRESSIVE+NEG	O	O	O	O	O	help	VBG	O	mainVb
-.	t35	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t20	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+financial	t21	2	financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	JJ	O	O
+assistance	t22	2	assistance	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	assistance	NN	t20:NMOD||t21:NMOD||t23:NMOD	O
+from	t23	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t26:PMOD	O
+the	t24	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+World	t25	2	World	O	O	O	O	O	O	O	O	NN1	I-NP	world	NNP	O	O
+Bank	t26	2	Bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NNP	t24:NMOD||t25:NAME||t27:COORD	O
+and	t27	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t31:CONJ	O
+the	t28	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+International	t29	2	International	O	O	O	O	O	O	O	O	AJ0	I-NP	international	NNP	O	O
+Monetary	t30	2	Monetary	O	O	O	O	O	O	O	O	AJ0	I-NP	monetary	NNP	O	O
+Fund	t31	2	Fund	O	O	O	O	O	O	O	O	NN1	I-NP	fund	NNP	t28:NMOD||t29:NAME||t30:NAME	O
+are	t32	2	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t22:SBJ||t33:ADV||t34:VC||t35:P	mainVb
+not	t33	2	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
+helping	t34	2	help	e4	OCCURRENCE	PRESENT+PROGRESSIVE+NEG	O	O	O	O	O	VVG	I-VP	help	VBG	O	mainVb
+.	t35	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t36	3	in	O	O	O	O	O	O	O	O	in	IN	t41:PMOD	mainVb
-the	t37	3	the	O	O	O	tmx85	DURATION	P1D	O	O	the	DT	O	mainVb
-last	t38	3	last	O	O	O	tmx85	DURATION	P1D	O	O	last	JJ	O	mainVb
-twenty	t39	3	twenty	O	O	O	tmx85	DURATION	P1D	O	O	twenty	CD	O	mainVb
-four	t40	3	four	O	O	O	tmx85	DURATION	P1D	O	O	four	CD	t39:DEP	mainVb
-hours	t41	3	hour	O	O	O	tmx85	DURATION	P1D	O	O	hours	NNS	t37:NMOD||t38:NMOD||t40:NMOD	mainVb
-,	t42	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t43	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-value	t44	3	value	O	O	O	O	O	O	O	O	value	NN	t43:NMOD||t45:NMOD	mainVb
-of	t45	3	of	O	O	O	O	O	O	O	O	of	IN	t49:PMOD	mainVb
-the	t46	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Indonesian	t47	3	indonesian	O	O	O	O	O	O	O	O	indonesian	JJ	O	mainVb
-stock	t48	3	stock	O	O	O	O	O	O	O	O	stock	NN	O	mainVb
-market	t49	3	market	O	O	O	O	O	O	O	O	market	NN	t46:NMOD||t47:NMOD||t48:NMOD	mainVb
-has	t50	3	have	O	O	O	O	O	O	O	O	have	VBZ	t36:TMP||t42:P||t44:SBJ||t51:VC||t55:P	mainVb
-fallen	t51	3	fall	e7	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	fall	VBN	t52:EXT	mainVb
-by	t52	3	by	O	O	O	O	O	O	O	O	by	IN	t54:PMOD	mainVb
-twelve	t53	3	twelve	O	O	O	O	O	O	O	O	twelve	CD	O	mainVb
-percent	t54	3	percent	O	O	O	O	O	O	O	O	percent	NN	t53:NMOD	mainVb
-.	t55	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t36	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t41:PMOD	O
+the	t37	3	the	O	O	O	tmx85	DURATION	P1D	O	O	AT0	B-NP	the	DT	O	O
+last	t38	3	last	O	O	O	tmx85	DURATION	P1D	O	O	ORD	I-NP	last	JJ	O	O
+twenty	t39	3	twenty	O	O	O	tmx85	DURATION	P1D	O	O	CRD	I-NP	twenty	CD	O	O
+four	t40	3	four	O	O	O	tmx85	DURATION	P1D	O	O	CRD	B-NP	four	CD	t39:DEP	O
+hours	t41	3	hour	O	O	O	tmx85	DURATION	P1D	O	O	NN2	I-NP	hours	NNS	t37:NMOD||t38:NMOD||t40:NMOD	O
+,	t42	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t43	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+value	t44	3	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t43:NMOD||t45:NMOD	O
+of	t45	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t49:PMOD	O
+the	t46	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Indonesian	t47	3	indonesian	O	O	O	O	O	O	O	O	AJ0	I-NP	indonesian	JJ	O	O
+stock	t48	3	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	O	O
+market	t49	3	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t46:NMOD||t47:NMOD||t48:NMOD	O
+has	t50	3	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t36:TMP||t42:P||t44:SBJ||t51:VC||t55:P	mainVb
+fallen	t51	3	fall	e7	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	fall	VBN	t52:EXT	mainVb
+by	t52	3	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t54:PMOD	O
+twelve	t53	3	twelve	O	O	O	O	O	O	O	O	CRD	B-NP	twelve	CD	O	O
+percent	t54	3	percent	O	O	O	O	O	O	O	O	NN0	I-NP	percent	NN	t53:NMOD	O
+.	t55	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t56	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Indonesian	t57	4	indonesian	O	O	O	O	O	O	O	O	indonesian	JJ	O	mainVb
-currency	t58	4	currency	O	O	O	O	O	O	O	O	currency	NN	t56:NMOD||t57:NMOD	mainVb
-has	t59	4	have	O	O	O	O	O	O	O	O	have	VBZ	t58:SBJ||t60:VC||t67:P	mainVb
-lost	t60	4	lose	e9	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	lose	VBN	t63:OBJ	mainVb
-twenty	t61	4	twenty	O	O	O	O	O	O	O	O	twenty	CD	O	mainVb
-six	t62	4	six	O	O	O	O	O	O	O	O	six	CD	t61:NMOD	mainVb
-percent	t63	4	percent	O	O	O	O	O	O	O	O	percent	NN	t62:NMOD||t64:NMOD	mainVb
-of	t64	4	of	O	O	O	O	O	O	O	O	of	IN	t66:PMOD	mainVb
-its	t65	4	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-value	t66	4	value	O	O	O	O	O	O	O	O	value	NN	t65:NMOD	mainVb
-.	t67	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t56	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Indonesian	t57	4	indonesian	O	O	O	O	O	O	O	O	AJ0	I-NP	indonesian	JJ	O	O
+currency	t58	4	currency	O	O	O	O	O	O	O	O	NN1	I-NP	currency	NN	t56:NMOD||t57:NMOD	O
+has	t59	4	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t58:SBJ||t60:VC||t67:P	mainVb
+lost	t60	4	lose	e9	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	lose	VBN	t63:OBJ	mainVb
+twenty	t61	4	twenty	O	O	O	O	O	O	O	O	CRD	B-NP	twenty	CD	O	O
+six	t62	4	six	O	O	O	O	O	O	O	O	CRD	B-NP	six	CD	t61:NMOD	O
+percent	t63	4	percent	O	O	O	O	O	O	O	O	NN0	I-NP	percent	NN	t62:NMOD||t64:NMOD	O
+of	t64	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t66:PMOD	O
+its	t65	4	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+value	t66	4	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t65:NMOD	O
+.	t67	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t68	5	in	O	O	O	O	O	O	O	O	in	IN	t69:PMOD	mainVb
-Singapore	t69	5	Singapore	O	O	O	O	O	O	O	O	singapore	NNP	O	mainVb
-,	t70	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-stocks	t71	5	stock	O	O	O	O	O	O	O	O	stocks	NNS	O	mainVb
-hit	t72	5	hit	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	hit	VBD	t68:TMP||t70:P||t71:SBJ||t75:OBJ||t77:P	mainVb
-a	t73	5	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-five	t74	5	five	O	O	O	tmx86	DURATION	P5Y	O	O	five	CD	O	mainVb
-year	t75	5	year	O	O	O	tmx86	DURATION	P5Y	O	O	year	NN	t73:NMOD||t74:NMOD||t76:NMOD	mainVb
-low	t76	5	low	O	O	O	O	O	O	O	O	low	JJ	O	mainVb
-.	t77	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t68	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t69:PMOD	O
+Singapore	t69	5	Singapore	O	O	O	O	O	O	O	O	NP0	B-NP	singapore	NNP	O	O
+,	t70	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+stocks	t71	5	stock	O	O	O	O	O	O	O	O	VVZ	B-VP	stocks	NNS	O	O
+hit	t72	5	hit	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	I-VP	hit	VBD	t68:TMP||t70:P||t71:SBJ||t75:OBJ||t77:P	mainVb
+a	t73	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+five	t74	5	five	O	O	O	tmx86	DURATION	P5Y	O	O	CRD	I-NP	five	CD	O	O
+year	t75	5	year	O	O	O	tmx86	DURATION	P5Y	O	O	NN1	I-NP	year	NN	t73:NMOD||t74:NMOD||t76:NMOD	O
+low	t76	5	low	O	O	O	O	O	O	O	O	AJ0	I-NP	low	JJ	O	O
+.	t77	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t78	6	in	O	O	O	O	O	O	O	O	in	IN	t80:PMOD	mainVb
-the	t79	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Philippines	t80	6	Philippines	O	O	O	O	O	O	O	O	philippines	NNPS	t79:NMOD	mainVb
-,	t81	6	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-a	t82	6	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-four	t83	6	four	O	O	O	tmx87	DURATION	P4Y	O	O	four	CD	O	mainVb
-year	t84	6	year	O	O	O	tmx87	DURATION	P4Y	O	O	year	NN	t78:LOC||t81:P||t82:NMOD||t83:NMOD||t85:NMOD||t86:P	mainVb
-low	t85	6	low	O	O	O	O	O	O	O	O	low	JJ	O	mainVb
-.	t86	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t78	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t80:PMOD	O
+the	t79	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Philippines	t80	6	Philippines	O	O	O	O	O	O	O	O	NN2	I-NP	philippines	NNPS	t79:NMOD	O
+,	t81	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+a	t82	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+four	t83	6	four	O	O	O	tmx87	DURATION	P4Y	O	O	CRD	I-NP	four	CD	O	O
+year	t84	6	year	O	O	O	tmx87	DURATION	P4Y	O	O	NN1	I-NP	year	NN	t78:LOC||t81:P||t82:NMOD||t83:NMOD||t85:NMOD||t86:P	mainVb
+low	t85	6	low	O	O	O	O	O	O	O	O	AJ0	I-NP	low	JJ	O	O
+.	t86	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-And	t87	7	and	O	O	O	O	O	O	O	O	and	CC	O	mainVb
-in	t88	7	in	O	O	O	O	O	O	O	O	in	IN	t87:DEP||t90:PMOD||t96:P	mainVb
-Hong	t89	7	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t90	7	Kong	O	O	O	O	O	O	O	O	kong	NNP	t89:NAME||t91:P||t95:APPO	mainVb
-,	t91	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-a	t92	7	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-three	t93	7	three	O	O	O	O	O	O	O	O	three	CD	O	mainVb
-percent	t94	7	percent	O	O	O	O	O	O	O	O	percent	NN	t93:NMOD	mainVb
-drop	t95	7	drop	e147	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	drop	NN	t92:NMOD||t94:NMOD	mainVb
-.	t96	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+And	t87	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
+in	t88	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t87:DEP||t90:PMOD||t96:P	mainVb
+Hong	t89	7	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t90	7	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t89:NAME||t91:P||t95:APPO	O
+,	t91	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+a	t92	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+three	t93	7	three	O	O	O	O	O	O	O	O	CRD	I-NP	three	CD	O	O
+percent	t94	7	percent	O	O	O	O	O	O	O	O	NN0	I-NP	percent	NN	t93:NMOD	O
+drop	t95	7	drop	e147	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	drop	NN	t92:NMOD||t94:NMOD	O
+.	t96	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-More	t97	8	more	O	O	O	O	O	O	O	O	more	DT	O	mainVb
-problems	t98	8	problem	O	O	O	O	O	O	O	O	problem	NNS	t97:NMOD||t99:LOC||t102:NMOD	mainVb
-in	t99	8	in	O	O	O	O	O	O	O	O	in	IN	t101:PMOD	mainVb
-Hong	t100	8	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t101	8	Kong	O	O	O	O	O	O	O	O	kong	NNP	t100:NAME	mainVb
-for	t102	8	for	O	O	O	O	O	O	O	O	for	IN	t104:PMOD	mainVb
-a	t103	8	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-place	t104	8	place	O	O	O	O	O	O	O	O	place	NN	t103:NMOD	mainVb
-,	t105	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-for	t106	8	for	O	O	O	O	O	O	O	O	for	IN	t108:PMOD	mainVb
-an	t107	8	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-economy	t108	8	economy	O	O	O	O	O	O	O	O	economy	NN	t107:NMOD	mainVb
-,	t109	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-that	t110	8	that	O	O	O	O	O	O	O	O	that	IN	t113:SUB	mainVb
-many	t111	8	many	O	O	O	O	O	O	O	O	many	DT	O	mainVb
-experts	t112	8	expert	O	O	O	O	O	O	O	O	expert	NNS	t111:NMOD	mainVb
-thought	t113	8	think	e11	I_STATE	PAST+NONE+POS	O	O	O	O	O	think	VBD	t112:SBJ	mainVb
-was	t114	8	be	O	O	O	O	O	O	O	O	be	VBD	t98:SBJ||t105:P||t106:ADV||t109:P||t110:SBJ||t116:PRD||t117:P	mainVb
-once	t115	8	once	O	O	O	O	O	O	O	O	once	RB	O	mainVb
-invincible	t116	8	invincible	e376	STATE	PAST+NONE+POS	O	O	O	O	O	invincible	JJ	t115:AMOD	mainVb
-.	t117	8	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+More	t97	8	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	DT	O	O
+problems	t98	8	problem	O	O	O	O	O	O	O	O	NN2	I-NP	problem	NNS	t97:NMOD||t99:LOC||t102:NMOD	O
+in	t99	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t101:PMOD	O
+Hong	t100	8	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t101	8	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t100:NAME	O
+for	t102	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t104:PMOD	O
+a	t103	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+place	t104	8	place	O	O	O	O	O	O	O	O	NN1	I-NP	place	NN	t103:NMOD	O
+,	t105	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+for	t106	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t108:PMOD	O
+an	t107	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+economy	t108	8	economy	O	O	O	O	O	O	O	O	NN1	I-NP	economy	NN	t107:NMOD	O
+,	t109	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+that	t110	8	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t113:SUB	O
+many	t111	8	many	O	O	O	O	O	O	O	O	DT0	B-NP	many	DT	O	O
+experts	t112	8	expert	O	O	O	O	O	O	O	O	NN2	I-NP	expert	NNS	t111:NMOD	O
+thought	t113	8	think	e11	I_STATE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	think	VBD	t112:SBJ	O
+was	t114	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t98:SBJ||t105:P||t106:ADV||t109:P||t110:SBJ||t116:PRD||t117:P	mainVb
+once	t115	8	once	O	O	O	O	O	O	O	O	AV0	B-ADJP	once	RB	O	O
+invincible	t116	8	invincible	e376	STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	invincible	JJ	t115:AMOD	O
+.	t117	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Here	t118	9	here	O	O	O	O	O	O	O	O	here	RB	t119:SUFFIX	mainVb
-'s	t119	9	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-ABC	t120	9	ABC	O	O	O	O	O	O	O	O	abc	NNP	t118:NMOD||t121:SUFFIX	mainVb
-'s	t121	9	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-Jim	t122	9	Jim	O	O	O	O	O	O	O	O	jim	NNP	O	mainVb
-Laurie	t123	9	Laurie	O	O	O	O	O	O	O	O	laurie	NNP	t120:NMOD||t122:NAME||t124:P	mainVb
-.	t124	9	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Here	t118	9	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	t119:SUFFIX	O
+'s	t119	9	's	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+ABC	t120	9	ABC	O	O	O	O	O	O	O	O	NP0	B-NP	abc	NNP	t118:NMOD||t121:SUFFIX	O
+'s	t121	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+Jim	t122	9	Jim	O	O	O	O	O	O	O	O	NP0	I-NP	jim	NNP	O	O
+Laurie	t123	9	Laurie	O	O	O	O	O	O	O	O	NP0	I-NP	laurie	NNP	t120:NMOD||t122:NAME||t124:P	mainVb
+.	t124	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Not	t125	10	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-that	t126	10	that	O	O	O	O	O	O	O	O	that	DT	O	mainVb
-long	t127	10	long	O	O	O	O	O	O	O	O	long	RB	t125:NMOD||t126:AMOD	mainVb
-ago	t128	10	ago	O	O	O	O	O	O	O	O	ago	RB	t127:AMOD	mainVb
-,	t129	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-before	t130	10	before	O	O	O	O	O	O	O	O	before	IN	t133:PMOD	mainVb
-the	t131	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Chinese	t132	10	chinese	O	O	O	O	O	O	O	O	chinese	JJ	O	mainVb
-takeover	t133	10	takeover	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	takeover	NN	t131:NMOD||t132:NMOD	mainVb
-,	t134	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t135	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-news	t136	10	news	O	O	O	O	O	O	O	O	news	NN	t135:NMOD||t137:NMOD	mainVb
-about	t137	10	about	O	O	O	O	O	O	O	O	about	IN	t139:PMOD	mainVb
-real	t138	10	real	O	O	O	O	O	O	O	O	real	JJ	O	mainVb
-estate	t139	10	estate	O	O	O	O	O	O	O	O	estate	NN	t138:NMOD||t140:LOC	mainVb
-here	t140	10	here	O	O	O	O	O	O	O	O	here	RB	O	mainVb
-was	t141	10	be	O	O	O	O	O	O	O	O	be	VBD	t128:TMP||t129:P||t130:TMP||t134:P||t136:SBJ||t142:PRD||t154:P	mainVb
-that	t142	10	that	O	O	O	O	O	O	O	O	that	IN	t145:SUB	mainVb
-the	t143	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-sky	t144	10	sky	O	O	O	O	O	O	O	O	sky	NN	t143:NMOD	mainVb
-was	t145	10	be	O	O	O	O	O	O	O	O	be	VBD	t144:SBJ||t147:PRD	mainVb
-the	t146	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-limit	t147	10	limit	O	O	O	O	O	O	O	O	limit	NN	t146:NMOD||t150:OBJ||t151:LOC	mainVb
-the	t148	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-highest	t149	10	highest	O	O	O	O	O	O	O	O	high	JJS	O	mainVb
-prices	t150	10	price	O	O	O	O	O	O	O	O	price	NNS	t148:NMOD||t149:NMOD	mainVb
-in	t151	10	in	O	O	O	O	O	O	O	O	in	IN	t153:PMOD	mainVb
-the	t152	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-world	t153	10	world	O	O	O	O	O	O	O	O	world	NN	t152:NMOD	mainVb
-.	t154	10	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Not	t125	10	not	O	O	O	O	O	O	O	O	XX0	B-NP	not	RB	O	O
+that	t126	10	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
+long	t127	10	long	O	O	O	O	O	O	O	O	AV0	B-ADVP	long	RB	t125:NMOD||t126:AMOD	O
+ago	t128	10	ago	O	O	O	O	O	O	O	O	AV0	I-ADVP	ago	RB	t127:AMOD	O
+,	t129	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+before	t130	10	before	O	O	O	O	O	O	O	O	PRP	B-PP	before	IN	t133:PMOD	O
+the	t131	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Chinese	t132	10	chinese	O	O	O	O	O	O	O	O	AJ0	I-NP	chinese	JJ	O	O
+takeover	t133	10	takeover	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t131:NMOD||t132:NMOD	O
+,	t134	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t135	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+news	t136	10	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	t135:NMOD||t137:NMOD	O
+about	t137	10	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t139:PMOD	O
+real	t138	10	real	O	O	O	O	O	O	O	O	AJ0	B-NP	real	JJ	O	O
+estate	t139	10	estate	O	O	O	O	O	O	O	O	NN1	I-NP	estate	NN	t138:NMOD||t140:LOC	O
+here	t140	10	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
+was	t141	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t128:TMP||t129:P||t130:TMP||t134:P||t136:SBJ||t142:PRD||t154:P	mainVb
+that	t142	10	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t145:SUB	O
+the	t143	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+sky	t144	10	sky	O	O	O	O	O	O	O	O	NN1	I-NP	sky	NN	t143:NMOD	O
+was	t145	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t144:SBJ||t147:PRD	O
+the	t146	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+limit	t147	10	limit	O	O	O	O	O	O	O	O	NN1	I-NP	limit	NN	t146:NMOD||t150:OBJ||t151:LOC	O
+the	t148	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+highest	t149	10	highest	O	O	O	O	O	O	O	O	AJS	I-NP	high	JJS	O	O
+prices	t150	10	price	O	O	O	O	O	O	O	O	NN2	I-NP	price	NNS	t148:NMOD||t149:NMOD	O
+in	t151	10	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t153:PMOD	O
+the	t152	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+world	t153	10	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t152:NMOD	O
+.	t154	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-So	t155	11	so	O	O	O	O	O	O	O	O	so	RB	O	mainVb
-when	t156	11	when	O	O	O	O	O	O	O	O	when	WRB	O	mainVb
-Wong	t157	11	Wong	O	O	O	O	O	O	O	O	wong	NNP	O	mainVb
-Kwan	t158	11	Kwan	O	O	O	O	O	O	O	O	kwan	NNP	t157:NAME	mainVb
-spent	t159	11	spend	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	spend	VBD	t156:TMP||t158:SBJ||t162:OBJ	mainVb
-seventy	t160	11	seventy	O	O	O	O	O	O	O	O	seventy	CD	O	mainVb
-million	t161	11	million	O	O	O	O	O	O	O	O	million	CD	t160:DEP	mainVb
-dollars	t162	11	dollar	O	O	O	O	O	O	O	O	dollar	NNS	t161:NMOD||t163:NMOD	mainVb
-for	t163	11	for	O	O	O	O	O	O	O	O	for	IN	t165:PMOD	mainVb
-this	t164	11	this	O	O	O	O	O	O	O	O	this	DT	O	mainVb
-house	t165	11	house	O	O	O	O	O	O	O	O	house	NN	t164:NMOD	mainVb
-,	t166	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t167	11	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-thought	t168	11	think	e17	I_STATE	PAST+NONE+POS	O	O	O	O	O	think	VBD	t155:ADV||t159:TMP||t166:P||t167:SBJ||t170:OBJ||t174:P	mainVb
-it	t169	11	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-was	t170	11	be	O	O	O	O	O	O	O	O	be	VBD	t169:SBJ||t173:PRD	mainVb
-a	t171	11	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-great	t172	11	great	O	O	O	O	O	O	O	O	great	JJ	O	mainVb
-deal	t173	11	deal	e18	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	deal	NN	t171:NMOD||t172:NMOD	mainVb
-.	t174	11	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+So	t155	11	so	O	O	O	O	O	O	O	O	AV0	O	so	RB	O	O
+when	t156	11	when	O	O	O	O	O	O	O	O	CJS	B-ADVP	when	WRB	O	O
+Wong	t157	11	Wong	O	O	O	O	O	O	O	O	NP0	B-NP	wong	NNP	O	O
+Kwan	t158	11	Kwan	O	O	O	O	O	O	O	O	NP0	I-NP	kwan	NNP	t157:NAME	O
+spent	t159	11	spend	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	spend	VBD	t156:TMP||t158:SBJ||t162:OBJ	O
+seventy	t160	11	seventy	O	O	O	O	O	O	O	O	CRD	B-NP	seventy	CD	O	O
+million	t161	11	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t160:DEP	O
+dollars	t162	11	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t161:NMOD||t163:NMOD	O
+for	t163	11	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t165:PMOD	O
+this	t164	11	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
+house	t165	11	house	O	O	O	O	O	O	O	O	NN1	I-NP	house	NN	t164:NMOD	O
+,	t166	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t167	11	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+thought	t168	11	think	e17	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	think	VBD	t155:ADV||t159:TMP||t166:P||t167:SBJ||t170:OBJ||t174:P	mainVb
+it	t169	11	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+was	t170	11	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t169:SBJ||t173:PRD	O
+a	t171	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+great	t172	11	great	O	O	O	O	O	O	O	O	AJ0	I-NP	great	JJ	O	O
+deal	t173	11	deal	e18	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	deal	NN	t171:NMOD||t172:NMOD	O
+.	t174	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-He	t175	12	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-sold	t176	12	sell	e19	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	sell	VBD	t175:SBJ||t178:OBJ||t179:DTV||t182:COORD||t189:P	mainVb
-the	t177	12	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-property	t178	12	property	O	O	O	O	O	O	O	O	property	NN	t177:NMOD	mainVb
-to	t179	12	to	O	O	O	O	O	O	O	O	to	TO	t181:PMOD	mainVb
-five	t180	12	five	O	O	O	O	O	O	O	O	five	CD	O	mainVb
-buyers	t181	12	buyer	O	O	O	O	O	O	O	O	buyer	NNS	t180:NMOD	mainVb
-and	t182	12	and	O	O	O	O	O	O	O	O	and	CC	t183:CONJ	mainVb
-said	t183	12	say	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t185:OBJ	mainVb
-he	t184	12	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-'d	t185	12	would	O	O	O	O	O	O	O	O	'd	MD	t184:SBJ||t186:VC	mainVb
-double	t186	12	double	e21	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	double	VB	t188:OBJ	mainVb
-his	t187	12	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-money	t188	12	money	O	O	O	O	O	O	O	O	money	NN	t187:NMOD	mainVb
-.	t189	12	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+He	t175	12	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+sold	t176	12	sell	e19	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	sell	VBD	t175:SBJ||t178:OBJ||t179:DTV||t182:COORD||t189:P	mainVb
+the	t177	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+property	t178	12	property	O	O	O	O	O	O	O	O	NN1	I-NP	property	NN	t177:NMOD	O
+to	t179	12	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t181:PMOD	O
+five	t180	12	five	O	O	O	O	O	O	O	O	CRD	B-NP	five	CD	O	O
+buyers	t181	12	buyer	O	O	O	O	O	O	O	O	NN2	I-NP	buyer	NNS	t180:NMOD	O
+and	t182	12	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t183:CONJ	O
+said	t183	12	say	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t185:OBJ	O
+he	t184	12	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+'d	t185	12	would	O	O	O	O	O	O	O	O	VM0	B-VP	'd	MD	t184:SBJ||t186:VC	O
+double	t186	12	double	e21	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	double	VB	t188:OBJ	O
+his	t187	12	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+money	t188	12	money	O	O	O	O	O	O	O	O	NN1	I-NP	money	NN	t187:NMOD	O
+.	t189	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t190	13	in	O	O	O	O	O	O	O	O	in	IN	t192:PMOD	mainVb
-Hong	t191	13	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t192	13	Kong	O	O	O	O	O	O	O	O	kong	NNP	t191:NAME	mainVb
-,	t193	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-is	t194	13	be	O	O	O	O	O	O	O	O	be	VBZ	t190:LOC||t193:P||t195:TMP||t196:PRD||t202:P	mainVb
-always	t195	13	always	O	O	O	O	O	O	O	O	always	RB	O	mainVb
-belongs	t196	13	belong	O	O	O	O	O	O	O	O	belong	VBZ	t197:ADV	mainVb
-to	t197	13	to	O	O	O	O	O	O	O	O	to	TO	t201:PMOD	mainVb
-the	t198	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-seller	t199	13	seller	O	O	O	O	O	O	O	O	seller	NN	t198:NMOD||t200:SUFFIX	mainVb
-'s	t200	13	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-market	t201	13	market	O	O	O	O	O	O	O	O	market	NN	t199:NMOD	mainVb
-.	t202	13	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t190	13	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t192:PMOD	O
+Hong	t191	13	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t192	13	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t191:NAME	O
+,	t193	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+is	t194	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t190:LOC||t193:P||t195:TMP||t196:PRD||t202:P	mainVb
+always	t195	13	always	O	O	O	O	O	O	O	O	AV0	B-ADVP	always	RB	O	O
+belongs	t196	13	belong	O	O	O	O	O	O	O	O	VVZ	B-VP	belong	VBZ	t197:ADV	O
+to	t197	13	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t201:PMOD	O
+the	t198	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+seller	t199	13	seller	O	O	O	O	O	O	O	O	NN1	I-NP	seller	NN	t198:NMOD||t200:SUFFIX	O
+'s	t200	13	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+market	t201	13	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t199:NMOD	O
+.	t202	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Now	t203	14	now	O	O	O	tmx196	DATE	PRESENT_REF	O	O	now	RB	O	mainVb
-with	t204	14	with	O	O	O	O	O	O	O	O	with	IN	t206:PMOD	mainVb
-new	t205	14	new	O	O	O	O	O	O	O	O	new	JJ	O	mainVb
-construction	t206	14	construction	e26	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	construction	NN	t205:NMOD||t207:LOC	mainVb
-under	t207	14	under	O	O	O	O	O	O	O	O	under	IN	t208:PMOD	mainVb
-way	t208	14	way	O	O	O	O	O	O	O	O	way	NN	O	mainVb
-,	t209	14	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-three	t210	14	three	O	O	O	O	O	O	O	O	three	CD	t211:NMOD	mainVb
-of	t211	14	of	O	O	O	O	O	O	O	O	of	IN	t213:PMOD	mainVb
-his	t212	14	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-buyers	t213	14	buyer	O	O	O	O	O	O	O	O	buyer	NNS	t212:NMOD	mainVb
-have	t214	14	have	O	O	O	O	O	O	O	O	have	VBP	t203:TMP||t204:ADV||t209:P||t210:SBJ||t215:VC||t217:P	mainVb
-backed	t215	14	back	e28	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	back	VBN	t216:PRT	mainVb
-out	t216	14	out	O	O	O	O	O	O	O	O	out	RP	O	mainVb
-.	t217	14	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Now	t203	14	now	O	O	O	tmx196	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
+with	t204	14	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t206:PMOD	O
+new	t205	14	new	O	O	O	O	O	O	O	O	AJ0	B-NP	new	JJ	O	O
+construction	t206	14	construction	e26	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	construction	NN	t205:NMOD||t207:LOC	O
+under	t207	14	under	O	O	O	O	O	O	O	O	AV0	B-PP	under	IN	t208:PMOD	O
+way	t208	14	way	O	O	O	O	O	O	O	O	AV0	B-NP	way	NN	O	O
+,	t209	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+three	t210	14	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	t211:NMOD	O
+of	t211	14	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t213:PMOD	O
+his	t212	14	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+buyers	t213	14	buyer	O	O	O	O	O	O	O	O	NN2	I-NP	buyer	NNS	t212:NMOD	O
+have	t214	14	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t203:TMP||t204:ADV||t209:P||t210:SBJ||t215:VC||t217:P	mainVb
+backed	t215	14	back	e28	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	back	VBN	t216:PRT	mainVb
+out	t216	14	out	O	O	O	O	O	O	O	O	AVP	B-PRT	out	RP	O	O
+.	t217	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-And	t218	15	and	O	O	O	O	O	O	O	O	and	CC	O	mainVb
-Wong	t219	15	Wong	O	O	O	O	O	O	O	O	wong	NNP	O	mainVb
-Kwan	t220	15	Kwan	O	O	O	O	O	O	O	O	kwan	NNP	t219:NAME	mainVb
-will	t221	15	will	O	O	O	O	O	O	O	O	will	MD	t218:DEP||t220:SBJ||t222:VC||t227:P	mainVb
-be	t222	15	be	O	O	O	O	O	O	O	O	be	VB	t223:PRD	mainVb
-lucky	t223	15	lucky	O	O	O	O	O	O	O	O	lucky	JJ	t224:AMOD	mainVb
-to	t224	15	to	O	O	O	O	O	O	O	O	to	TO	t225:IM	mainVb
-break	t225	15	break	e30	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	break	VB	t226:ADV	mainVb
-even	t226	15	even	O	O	O	O	O	O	O	O	even	RB	O	mainVb
-.	t227	15	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+And	t218	15	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
+Wong	t219	15	Wong	O	O	O	O	O	O	O	O	NP0	B-NP	wong	NNP	O	O
+Kwan	t220	15	Kwan	O	O	O	O	O	O	O	O	NP0	I-NP	kwan	NNP	t219:NAME	O
+will	t221	15	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t218:DEP||t220:SBJ||t222:VC||t227:P	mainVb
+be	t222	15	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t223:PRD	mainVb
+lucky	t223	15	lucky	O	O	O	O	O	O	O	O	AJ0	B-ADJP	lucky	JJ	t224:AMOD	O
+to	t224	15	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t225:IM	O
+break	t225	15	break	e30	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	break	VB	t226:ADV	O
+even	t226	15	even	O	O	O	O	O	O	O	O	AV0	B-ADVP	even	RB	O	O
+.	t227	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-All	t228	16	all	O	O	O	O	O	O	O	O	all	DT	O	mainVb
-across	t229	16	across	O	O	O	O	O	O	O	O	across	IN	t231:PMOD	mainVb
-Hong	t230	16	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t231	16	Kong	O	O	O	O	O	O	O	O	kong	NNP	t230:NAME	mainVb
-,	t232	16	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t233	16	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-property	t234	16	property	O	O	O	O	O	O	O	O	property	NN	O	mainVb
-market	t235	16	market	O	O	O	O	O	O	O	O	market	NN	t233:NMOD||t234:NMOD	mainVb
-has	t236	16	have	O	O	O	O	O	O	O	O	have	VBZ	t228:SBJ||t229:ADV||t232:P||t235:SBJ||t237:VC||t238:P	mainVb
-crashed	t237	16	crash	e32	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	crash	VBN	O	mainVb
-.	t238	16	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+All	t228	16	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
+across	t229	16	across	O	O	O	O	O	O	O	O	PRP	I-NP	across	IN	t231:PMOD	O
+Hong	t230	16	Hong	O	O	O	O	O	O	O	O	NP0	I-NP	hong	NNP	O	O
+Kong	t231	16	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t230:NAME	O
+,	t232	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t233	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+property	t234	16	property	O	O	O	O	O	O	O	O	NN1	I-NP	property	NN	O	O
+market	t235	16	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t233:NMOD||t234:NMOD	O
+has	t236	16	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t228:SBJ||t229:ADV||t232:P||t235:SBJ||t237:VC||t238:P	mainVb
+crashed	t237	16	crash	e32	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	crash	VBN	O	mainVb
+.	t238	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Pamela	t239	17	Pamela	O	O	O	O	O	O	O	O	pamela	NNP	O	mainVb
-Pak	t240	17	Pak	O	O	O	O	O	O	O	O	pak	NNP	t239:NAME	mainVb
-owns	t241	17	own	e33	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	own	VBZ	t240:SBJ||t243:OBJ||t244:LOC||t245:P	mainVb
-eight	t242	17	eight	O	O	O	O	O	O	O	O	eight	CD	O	mainVb
-condominiums	t243	17	condominium	O	O	O	O	O	O	O	O	condominium	NNS	t242:NMOD	mainVb
-here	t244	17	here	O	O	O	O	O	O	O	O	here	RB	O	mainVb
-.	t245	17	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Pamela	t239	17	Pamela	O	O	O	O	O	O	O	O	NP0	B-NP	pamela	NNP	O	O
+Pak	t240	17	Pak	O	O	O	O	O	O	O	O	NP0	I-NP	pak	NNP	t239:NAME	O
+owns	t241	17	own	e33	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN2	I-NP	own	VBZ	t240:SBJ||t243:OBJ||t244:LOC||t245:P	mainVb
+eight	t242	17	eight	O	O	O	O	O	O	O	O	CRD	I-NP	eight	CD	O	O
+condominiums	t243	17	condominium	O	O	O	O	O	O	O	O	NN2	I-NP	condominium	NNS	t242:NMOD	O
+here	t244	17	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
+.	t245	17	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Pak	t246	18	Pak	O	O	O	O	O	O	O	O	pak	NNP	O	mainVb
-ca	t247	18	can	O	O	O	O	O	O	O	O	ca	MD	t246:SBJ||t248:ADV||t249:VC||t251:P	mainVb
-n't	t248	18	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-find	t249	18	find	e34	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	find	VB	t250:OBJ	mainVb
-buyers	t250	18	buyer	O	O	O	O	O	O	O	O	buyer	NNS	O	mainVb
-.	t251	18	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Pak	t246	18	Pak	O	O	O	O	O	O	O	O	NP0	B-NP	pak	NNP	O	O
+ca	t247	18	can	O	O	O	O	O	O	O	O	VM0	B-VP	ca	MD	t246:SBJ||t248:ADV||t249:VC||t251:P	mainVb
+n't	t248	18	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
+find	t249	18	find	e34	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	find	VB	t250:OBJ	mainVb
+buyers	t250	18	buyer	O	O	O	O	O	O	O	O	NN2	B-NP	buyer	NNS	O	O
+.	t251	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-She	t252	19	she	O	O	O	O	O	O	O	O	she	PRP	O	mainVb
-estimates	t253	19	estimate	e37	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	estimate	VBZ	t252:SBJ||t255:OBJ||t256:P||t257:ADV||t272:P	mainVb
-her	t254	19	she	O	O	O	O	O	O	O	O	her	PRP$	O	mainVb
-properties	t255	19	property	O	O	O	O	O	O	O	O	property	NNS	t254:NMOD	mainVb
-,	t256	19	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-worth	t257	19	worth	e88	STATE	NONE+NONE+POS	O	O	O	O	O	worth	IN	t266:SUB	mainVb
-a	t258	19	a	O	O	O	O	O	O	O	O	a	DT	t259:DEP	mainVb
-hundred	t259	19	hundred	O	O	O	O	O	O	O	O	hundred	CD	O	mainVb
-thirty	t260	19	thirty	O	O	O	O	O	O	O	O	thirty	CD	O	mainVb
-million	t261	19	million	O	O	O	O	O	O	O	O	million	CD	t260:DEP	mainVb
-dollars	t262	19	dollar	O	O	O	O	O	O	O	O	dollar	NNS	t258:NMOD||t261:NMOD||t263:NMOD||t265:P	mainVb
-in	t263	19	in	O	O	O	O	O	O	O	O	in	IN	t264:PMOD	mainVb
-October	t264	19	October	O	O	O	tmx89	DATE	1997-10	O	O	october	NNP	O	mainVb
-,	t265	19	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-are	t266	19	be	O	O	O	O	O	O	O	O	be	VBP	t262:SBJ||t267:PRD||t271:TMP	mainVb
-worth	t267	19	worth	e91	STATE	PRESENT+NONE+POS	O	O	O	O	O	worth	JJ	O	mainVb
-only	t268	19	only	O	O	O	O	O	O	O	O	only	CD	O	mainVb
-half	t269	19	half	O	O	O	O	O	O	O	O	half	CD	t268:DEP	mainVb
-that	t270	19	that	O	O	O	O	O	O	O	O	that	WDT	O	mainVb
-now	t271	19	now	O	O	O	tmx90	DATE	PRESENT_REF	O	O	now	RB	t269:AMOD||t270:SBJ	mainVb
-.	t272	19	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+She	t252	19	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
+estimates	t253	19	estimate	e37	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	estimate	VBZ	t252:SBJ||t255:OBJ||t256:P||t257:ADV||t272:P	mainVb
+her	t254	19	she	O	O	O	O	O	O	O	O	DPS	B-NP	her	PRP$	O	O
+properties	t255	19	property	O	O	O	O	O	O	O	O	NN2	I-NP	property	NNS	t254:NMOD	O
+,	t256	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+worth	t257	19	worth	e88	STATE	NONE+NONE+POS	O	O	O	O	O	PRP	B-PP	worth	IN	t266:SUB	O
+a	t258	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	t259:DEP	O
+hundred	t259	19	hundred	O	O	O	O	O	O	O	O	CRD	I-NP	hundred	CD	O	O
+thirty	t260	19	thirty	O	O	O	O	O	O	O	O	CRD	I-NP	thirty	CD	O	O
+million	t261	19	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t260:DEP	O
+dollars	t262	19	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t258:NMOD||t261:NMOD||t263:NMOD||t265:P	O
+in	t263	19	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t264:PMOD	O
+October	t264	19	October	O	O	O	tmx89	DATE	1997-10	O	O	NP0	B-NP	october	NNP	O	O
+,	t265	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+are	t266	19	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t262:SBJ||t267:PRD||t271:TMP	O
+worth	t267	19	worth	e91	STATE	PRESENT+NONE+POS	O	O	O	O	O	PRP	B-ADJP	worth	JJ	O	O
+only	t268	19	only	O	O	O	O	O	O	O	O	AV0	B-ADVP	only	CD	O	O
+half	t269	19	half	O	O	O	O	O	O	O	O	DT0	B-NP	half	CD	t268:DEP	O
+that	t270	19	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
+now	t271	19	now	O	O	O	tmx90	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	t269:AMOD||t270:SBJ	O
+.	t272	19	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-They	t273	20	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-believe	t274	20	believe	e39	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	believe	VBP	t273:SBJ||t275:OBJ||t287:P	mainVb
-ah	t275	20	ah	O	O	O	O	O	O	O	O	ah	IN	t277:SUB	mainVb
-it	t276	20	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-will	t277	20	will	O	O	O	O	O	O	O	O	will	MD	t276:SBJ||t278:VC	mainVb
-be	t278	20	be	O	O	O	O	O	O	O	O	be	VB	t279:LOC-PRD||t281:VC	mainVb
-always	t279	20	always	O	O	O	O	O	O	O	O	always	RB	t280:PRT	mainVb
-up	t280	20	up	O	O	O	O	O	O	O	O	up	RP	O	mainVb
-going	t281	20	go	e40	OCCURRENCE	FUTURE+PROGRESSIVE+POS	O	O	O	O	O	go	VBG	t282:DIR||t286:MNR	mainVb
-up	t282	20	up	O	O	O	O	O	O	O	O	up	RP	t283:COORD	mainVb
-and	t283	20	and	O	O	O	O	O	O	O	O	and	CC	t284:CONJ	mainVb
-up	t284	20	up	O	O	O	O	O	O	O	O	up	RP	O	mainVb
-ah	t285	20	ah	O	O	O	O	O	O	O	O	ah	IN	O	mainVb
-forever	t286	20	forever	O	O	O	O	O	O	O	O	forever	RB	t285:AMOD	mainVb
-.	t287	20	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+They	t273	20	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+believe	t274	20	believe	e39	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	believe	VBP	t273:SBJ||t275:OBJ||t287:P	mainVb
+ah	t275	20	ah	O	O	O	O	O	O	O	O	ITJ	B-NP	ah	IN	t277:SUB	O
+it	t276	20	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+will	t277	20	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t276:SBJ||t278:VC	O
+be	t278	20	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t279:LOC-PRD||t281:VC	O
+always	t279	20	always	O	O	O	O	O	O	O	O	AV0	B-ADVP	always	RB	t280:PRT	O
+up	t280	20	up	O	O	O	O	O	O	O	O	AVP	B-ADVP	up	RP	O	O
+going	t281	20	go	e40	OCCURRENCE	FUTURE+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	go	VBG	t282:DIR||t286:MNR	O
+up	t282	20	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	t283:COORD	O
+and	t283	20	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t284:CONJ	O
+up	t284	20	up	O	O	O	O	O	O	O	O	PRP	B-ADVP	up	RP	O	O
+ah	t285	20	ah	O	O	O	O	O	O	O	O	PRP	I-ADVP	ah	IN	O	O
+forever	t286	20	forever	O	O	O	O	O	O	O	O	AV0	I-ADVP	forever	RB	t285:AMOD	O
+.	t287	20	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Nobody	t288	21	nobody	O	O	O	O	O	O	O	O	nobody	NN	O	mainVb
-believe	t289	21	believe	e41	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	believe	VBP	t288:SBJ||t292:OBJ||t293:P	mainVb
-this	t290	21	this	O	O	O	O	O	O	O	O	this	DT	O	mainVb
-any	t291	21	any	O	O	O	O	O	O	O	O	any	DT	O	mainVb
-more	t292	21	more	O	O	O	O	O	O	O	O	more	DT	t290:NMOD||t291:NMOD	mainVb
-.	t293	21	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Nobody	t288	21	nobody	O	O	O	O	O	O	O	O	PNI	B-NP	nobody	NN	O	O
+believe	t289	21	believe	e41	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	believe	VBP	t288:SBJ||t292:OBJ||t293:P	mainVb
+this	t290	21	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
+any	t291	21	any	O	O	O	O	O	O	O	O	DT0	I-NP	any	DT	O	O
+more	t292	21	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	DT	t290:NMOD||t291:NMOD	O
+.	t293	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Of	t294	22	of	O	O	O	O	O	O	O	O	of	IN	t295:PMOD	mainVb
-all	t295	22	all	O	O	O	O	O	O	O	O	all	DT	t296:NMOD	mainVb
-of	t296	22	of	O	O	O	O	O	O	O	O	of	IN	t299:PMOD	mainVb
-Asia	t297	22	Asia	O	O	O	O	O	O	O	O	asia	NNP	t298:SUFFIX	mainVb
-'s	t298	22	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-economies	t299	22	economy	O	O	O	O	O	O	O	O	economy	NNS	t297:NMOD	mainVb
-,	t300	22	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Hong	t301	22	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t302	22	Kong	O	O	O	O	O	O	O	O	kong	NNP	t301:NAME	mainVb
-is	t303	22	be	O	O	O	O	O	O	O	O	be	VBZ	t294:ADV||t300:P||t302:SBJ||t306:PRD||t307:P	mainVb
-the	t304	22	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-most	t305	22	most	O	O	O	O	O	O	O	O	most	RBS	O	mainVb
-robust	t306	22	robust	O	O	O	O	O	O	O	O	robust	JJ	t304:NMOD||t305:AMOD	mainVb
-.	t307	22	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Of	t294	22	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t295:PMOD	O
+all	t295	22	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	t296:NMOD	O
+of	t296	22	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t299:PMOD	O
+Asia	t297	22	Asia	O	O	O	O	O	O	O	O	NP0	B-NP	asia	NNP	t298:SUFFIX	O
+'s	t298	22	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+economies	t299	22	economy	O	O	O	O	O	O	O	O	NN2	I-NP	economy	NNS	t297:NMOD	O
+,	t300	22	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Hong	t301	22	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t302	22	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t301:NAME	O
+is	t303	22	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t294:ADV||t300:P||t302:SBJ||t306:PRD||t307:P	mainVb
+the	t304	22	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+most	t305	22	most	O	O	O	O	O	O	O	O	AV0	I-NP	most	RBS	O	O
+robust	t306	22	robust	O	O	O	O	O	O	O	O	AJ0	I-NP	robust	JJ	t304:NMOD||t305:AMOD	O
+.	t307	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-But	t308	23	but	O	O	O	O	O	O	O	O	but	CC	O	mainVb
-in	t309	23	in	O	O	O	O	O	O	O	O	in	IN	t313:PMOD	mainVb
-the	t310	23	the	O	O	O	tmx98	DURATION	P3M	O	O	the	DT	O	mainVb
-past	t311	23	past	O	O	O	tmx98	DURATION	P3M	O	O	past	JJ	O	mainVb
-three	t312	23	three	O	O	O	tmx98	DURATION	P3M	O	O	three	CD	O	mainVb
-months	t313	23	month	O	O	O	tmx98	DURATION	P3M	O	O	month	NNS	t310:NMOD||t311:NMOD||t312:NMOD	mainVb
-,	t314	23	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-stocks	t315	23	stock	O	O	O	O	O	O	O	O	stocks	NNS	O	mainVb
-have	t316	23	have	O	O	O	O	O	O	O	O	have	VBP	t308:DEP||t309:TMP||t314:P||t315:SBJ||t317:VC||t318:P||t321:COORD||t336:P	mainVb
-plunged	t317	23	plunge	e42	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	plunge	VBN	O	mainVb
-,	t318	23	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-interest	t319	23	interest	O	O	O	O	O	O	O	O	interest	NN	O	mainVb
-rates	t320	23	rate	O	O	O	O	O	O	O	O	rates	NNS	t319:NMOD	mainVb
-have	t321	23	have	O	O	O	O	O	O	O	O	have	VBP	t320:SBJ||t322:VC||t323:COORD	mainVb
-soared	t322	23	soar	e43	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	soar	VBN	O	mainVb
-and	t323	23	and	O	O	O	O	O	O	O	O	and	CC	t329:CONJ	mainVb
-the	t324	23	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-downturn	t325	23	downturn	e44	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	downturn	NN	t324:NMOD||t327:LOC	mainVb
-all	t326	23	all	O	O	O	O	O	O	O	O	all	DT	O	mainVb
-across	t327	23	across	O	O	O	O	O	O	O	O	across	IN	t326:PMOD||t328:PMOD	mainVb
-Asia	t328	23	Asia	O	O	O	O	O	O	O	O	asia	NNP	O	mainVb
-means	t329	23	mean	O	O	O	O	O	O	O	O	mean	VBZ	t325:SBJ||t330:OBJ	mainVb
-that	t330	23	that	O	O	O	O	O	O	O	O	that	IN	t332:SUB	mainVb
-people	t331	23	people	O	O	O	O	O	O	O	O	people	NN	O	mainVb
-are	t332	23	be	O	O	O	O	O	O	O	O	be	VBP	t331:SBJ||t333:ADV||t334:VC	mainVb
-not	t333	23	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-spending	t334	23	spend	e46	OCCURRENCE	PRESENT+PROGRESSIVE+NEG	O	O	O	O	O	spend	VBG	t335:LOC	mainVb
-here	t335	23	here	O	O	O	O	O	O	O	O	here	RB	O	mainVb
-.	t336	23	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+But	t308	23	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
+in	t309	23	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t313:PMOD	O
+the	t310	23	the	O	O	O	tmx98	DURATION	P3M	O	O	AT0	B-NP	the	DT	O	O
+past	t311	23	past	O	O	O	tmx98	DURATION	P3M	O	O	AJ0	I-NP	past	JJ	O	O
+three	t312	23	three	O	O	O	tmx98	DURATION	P3M	O	O	CRD	I-NP	three	CD	O	O
+months	t313	23	month	O	O	O	tmx98	DURATION	P3M	O	O	NN2	I-NP	month	NNS	t310:NMOD||t311:NMOD||t312:NMOD	O
+,	t314	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+stocks	t315	23	stock	O	O	O	O	O	O	O	O	NN2	B-NP	stocks	NNS	O	O
+have	t316	23	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t308:DEP||t309:TMP||t314:P||t315:SBJ||t317:VC||t318:P||t321:COORD||t336:P	mainVb
+plunged	t317	23	plunge	e42	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	plunge	VBN	O	mainVb
+,	t318	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+interest	t319	23	interest	O	O	O	O	O	O	O	O	NN1	B-NP	interest	NN	O	O
+rates	t320	23	rate	O	O	O	O	O	O	O	O	NN2	I-NP	rates	NNS	t319:NMOD	O
+have	t321	23	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t320:SBJ||t322:VC||t323:COORD	O
+soared	t322	23	soar	e43	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	soar	VBN	O	O
+and	t323	23	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t329:CONJ	O
+the	t324	23	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+downturn	t325	23	downturn	e44	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	downturn	NN	t324:NMOD||t327:LOC	O
+all	t326	23	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
+across	t327	23	across	O	O	O	O	O	O	O	O	PRP	I-NP	across	IN	t326:PMOD||t328:PMOD	O
+Asia	t328	23	Asia	O	O	O	O	O	O	O	O	NP0	I-NP	asia	NNP	O	O
+means	t329	23	mean	O	O	O	O	O	O	O	O	VVZ	B-VP	mean	VBZ	t325:SBJ||t330:OBJ	O
+that	t330	23	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t332:SUB	O
+people	t331	23	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+are	t332	23	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t331:SBJ||t333:ADV||t334:VC	O
+not	t333	23	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+spending	t334	23	spend	e46	OCCURRENCE	PRESENT+PROGRESSIVE+NEG	O	O	O	O	O	VVG	I-VP	spend	VBG	t335:LOC	O
+here	t335	23	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
+.	t336	23	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Hotels	t337	24	Hotels	O	O	O	O	O	O	O	O	hotel	NNS	O	mainVb
-are	t338	24	be	O	O	O	O	O	O	O	O	be	VBP	t337:SBJ||t341:PRD||t342:GAP-PRD||t343:P	mainVb
-only	t339	24	only	O	O	O	O	O	O	O	O	only	RB	t340:DEP	mainVb
-thirty	t340	24	thirty	O	O	O	O	O	O	O	O	thirty	CD	O	mainVb
-percent	t341	24	percent	O	O	O	O	O	O	O	O	percent	NN	t339:NMOD	mainVb
-full	t342	24	full	O	O	O	O	O	O	O	O	full	JJ	O	mainVb
-.	t343	24	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Hotels	t337	24	Hotels	O	O	O	O	O	O	O	O	NN2	B-NP	hotel	NNS	O	O
+are	t338	24	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t337:SBJ||t341:PRD||t342:GAP-PRD||t343:P	mainVb
+only	t339	24	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	t340:DEP	O
+thirty	t340	24	thirty	O	O	O	O	O	O	O	O	CRD	I-NP	thirty	CD	O	O
+percent	t341	24	percent	O	O	O	O	O	O	O	O	NN0	I-NP	percent	NN	t339:NMOD	O
+full	t342	24	full	O	O	O	O	O	O	O	O	AJ0	B-ADJP	full	JJ	O	O
+.	t343	24	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-You	t344	25	you	O	O	O	O	O	O	O	O	you	PRP	O	mainVb
-can	t345	25	can	O	O	O	O	O	O	O	O	can	MD	t344:SBJ||t346:VC||t354:P	mainVb
-get	t346	25	get	e48	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	get	VB	t349:OBJ	mainVb
-seventy	t347	25	seventy	O	O	O	O	O	O	O	O	seventy	CD	O	mainVb
-percent	t348	25	percent	O	O	O	O	O	O	O	O	percent	NN	O	mainVb
-discounts	t349	25	discount	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	discount	NNS	t347:NMOD||t348:NMOD||t350:LOC	mainVb
-at	t350	25	at	O	O	O	O	O	O	O	O	at	IN	t353:PMOD	mainVb
-the	t351	25	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-shopping	t352	25	shopping	O	O	O	O	O	O	O	O	shopping	NN	O	mainVb
-malls	t353	25	mall	O	O	O	O	O	O	O	O	mall	NNS	t351:NMOD||t352:NMOD	mainVb
-.	t354	25	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+You	t344	25	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
+can	t345	25	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t344:SBJ||t346:VC||t354:P	mainVb
+get	t346	25	get	e48	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	get	VB	t349:OBJ	mainVb
+seventy	t347	25	seventy	O	O	O	O	O	O	O	O	CRD	B-NP	seventy	CD	O	O
+percent	t348	25	percent	O	O	O	O	O	O	O	O	NN0	I-NP	percent	NN	O	O
+discounts	t349	25	discount	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	discount	NNS	t347:NMOD||t348:NMOD||t350:LOC	O
+at	t350	25	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t353:PMOD	O
+the	t351	25	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+shopping	t352	25	shopping	O	O	O	O	O	O	O	O	NN1	I-NP	shopping	NN	O	O
+malls	t353	25	mall	O	O	O	O	O	O	O	O	NN2	I-NP	mall	NNS	t351:NMOD||t352:NMOD	O
+.	t354	25	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Three	t355	26	three	O	O	O	O	O	O	O	O	three	CD	O	mainVb
-thousand	t356	26	thousand	O	O	O	O	O	O	O	O	thousand	CD	t355:DEP	mainVb
-dollar	t357	26	dollar	O	O	O	O	O	O	O	O	dollar	NN	O	mainVb
-pearls	t358	26	pearl	O	O	O	O	O	O	O	O	pearl	NNS	t356:NMOD||t357:NMOD||t359:NMOD||t363:P	mainVb
-for	t359	26	for	O	O	O	O	O	O	O	O	for	IN	t362:PMOD	mainVb
-eight	t360	26	eight	O	O	O	O	O	O	O	O	eight	CD	O	mainVb
-hundred	t361	26	hundred	O	O	O	O	O	O	O	O	hundred	CD	t360:DEP	mainVb
-dollars	t362	26	dollar	O	O	O	O	O	O	O	O	dollar	NNS	t361:NMOD	mainVb
-.	t363	26	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Three	t355	26	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	O	O
+thousand	t356	26	thousand	O	O	O	O	O	O	O	O	CRD	I-NP	thousand	CD	t355:DEP	O
+dollar	t357	26	dollar	O	O	O	O	O	O	O	O	NN1	I-NP	dollar	NN	O	O
+pearls	t358	26	pearl	O	O	O	O	O	O	O	O	NN2	I-NP	pearl	NNS	t356:NMOD||t357:NMOD||t359:NMOD||t363:P	mainVb
+for	t359	26	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t362:PMOD	O
+eight	t360	26	eight	O	O	O	O	O	O	O	O	CRD	B-NP	eight	CD	O	O
+hundred	t361	26	hundred	O	O	O	O	O	O	O	O	CRD	I-NP	hundred	CD	t360:DEP	O
+dollars	t362	26	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t361:NMOD	O
+.	t363	26	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-A	t364	27	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-two	t365	27	two	O	O	O	O	O	O	O	O	two	CD	O	mainVb
-hundred	t366	27	hundred	O	O	O	O	O	O	O	O	hundred	CD	t365:DEP	mainVb
-dollar	t367	27	dollar	O	O	O	O	O	O	O	O	dollar	NN	O	mainVb
-wool	t368	27	wool	O	O	O	O	O	O	O	O	wool	NN	t367:NMOD	mainVb
-jacket	t369	27	jacket	O	O	O	O	O	O	O	O	jacket	NN	t364:NMOD||t366:NMOD||t368:NMOD||t370:NMOD||t373:P	mainVb
-for	t370	27	for	O	O	O	O	O	O	O	O	for	IN	t372:PMOD	mainVb
-fifty	t371	27	fifty	O	O	O	O	O	O	O	O	fifty	JJ	O	mainVb
-dollars	t372	27	dollar	O	O	O	O	O	O	O	O	dollar	NNS	t371:NMOD	mainVb
-.	t373	27	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+A	t364	27	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+two	t365	27	two	O	O	O	O	O	O	O	O	CRD	I-NP	two	CD	O	O
+hundred	t366	27	hundred	O	O	O	O	O	O	O	O	CRD	I-NP	hundred	CD	t365:DEP	O
+dollar	t367	27	dollar	O	O	O	O	O	O	O	O	NN1	I-NP	dollar	NN	O	O
+wool	t368	27	wool	O	O	O	O	O	O	O	O	NN1	I-NP	wool	NN	t367:NMOD	O
+jacket	t369	27	jacket	O	O	O	O	O	O	O	O	NN1	I-NP	jacket	NN	t364:NMOD||t366:NMOD||t368:NMOD||t370:NMOD||t373:P	mainVb
+for	t370	27	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t372:PMOD	O
+fifty	t371	27	fifty	O	O	O	O	O	O	O	O	CRD	B-NP	fifty	JJ	O	O
+dollars	t372	27	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t371:NMOD	O
+.	t373	27	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Still	t374	28	still	O	O	O	O	O	O	O	O	still	RB	O	mainVb
-,	t375	28	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-there	t376	28	there	O	O	O	O	O	O	O	O	there	EX	O	mainVb
-are	t377	28	be	O	O	O	O	O	O	O	O	be	VBP	t374:ADV||t375:P||t376:SBJ||t379:PRD||t380:P	mainVb
-few	t378	28	few	O	O	O	O	O	O	O	O	few	DT	O	mainVb
-buyers	t379	28	buyer	O	O	O	O	O	O	O	O	buyer	NNS	t378:NMOD	mainVb
-.	t380	28	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Still	t374	28	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
+,	t375	28	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+there	t376	28	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
+are	t377	28	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t374:ADV||t375:P||t376:SBJ||t379:PRD||t380:P	mainVb
+few	t378	28	few	O	O	O	O	O	O	O	O	DT0	B-NP	few	DT	O	O
+buyers	t379	28	buyer	O	O	O	O	O	O	O	O	NN2	I-NP	buyer	NNS	t378:NMOD	O
+.	t380	28	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-And	t381	29	and	O	O	O	O	O	O	O	O	and	CC	O	mainVb
-at	t382	29	at	O	O	O	O	O	O	O	O	at	IN	t386:PMOD	mainVb
-the	t383	29	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-big	t384	29	big	O	O	O	O	O	O	O	O	big	JJ	O	mainVb
-brokerage	t385	29	brokerage	O	O	O	O	O	O	O	O	brokerage	NN	O	mainVb
-houses	t386	29	house	O	O	O	O	O	O	O	O	house	NNS	t383:NMOD||t384:NMOD||t385:NMOD	mainVb
-,	t387	29	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-after	t388	29	after	O	O	O	O	O	O	O	O	after	IN	t390:PMOD	mainVb
-ten	t389	29	ten	O	O	O	tmx99	DURATION	P10Y	O	O	ten	CD	O	mainVb
-years	t390	29	year	O	O	O	tmx99	DURATION	P10Y	O	O	years	NNS	t389:NMOD||t391:NMOD	mainVb
-of	t391	29	of	O	O	O	O	O	O	O	O	of	IN	t392:PMOD	mainVb
-boom	t392	29	boom	e52	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	boom	NN	O	mainVb
-,	t393	29	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-they	t394	29	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-'re	t395	29	be	O	O	O	O	O	O	O	O	're	VBP	t381:DEP||t382:TMP||t387:P||t388:TMP||t393:P||t394:SBJ||t396:VC||t399:P	mainVb
-talking	t396	29	talk	e53	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	talk	VBG	t397:ADV	mainVb
-about	t397	29	about	O	O	O	O	O	O	O	O	about	IN	t398:PMOD	mainVb
-layoffs	t398	29	layoff	e54	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	layoff	NNS	O	mainVb
-.	t399	29	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+And	t381	29	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
+at	t382	29	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t386:PMOD	O
+the	t383	29	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+big	t384	29	big	O	O	O	O	O	O	O	O	AJ0	I-NP	big	JJ	O	O
+brokerage	t385	29	brokerage	O	O	O	O	O	O	O	O	NN1	I-NP	brokerage	NN	O	O
+houses	t386	29	house	O	O	O	O	O	O	O	O	NN2	I-NP	house	NNS	t383:NMOD||t384:NMOD||t385:NMOD	O
+,	t387	29	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+after	t388	29	after	O	O	O	O	O	O	O	O	CJS	B-SBAR	after	IN	t390:PMOD	O
+ten	t389	29	ten	O	O	O	tmx99	DURATION	P10Y	O	O	CRD	B-NP	ten	CD	O	O
+years	t390	29	year	O	O	O	tmx99	DURATION	P10Y	O	O	NN2	I-NP	years	NNS	t389:NMOD||t391:NMOD	O
+of	t391	29	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t392:PMOD	O
+boom	t392	29	boom	e52	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	boom	NN	O	O
+,	t393	29	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+they	t394	29	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+'re	t395	29	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t381:DEP||t382:TMP||t387:P||t388:TMP||t393:P||t394:SBJ||t396:VC||t399:P	mainVb
+talking	t396	29	talk	e53	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	talk	VBG	t397:ADV	mainVb
+about	t397	29	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t398:PMOD	O
+layoffs	t398	29	layoff	e54	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	layoff	NNS	O	O
+.	t399	29	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-I	t400	30	I	O	O	O	O	O	O	O	O	i	PRP	O	mainVb
-think	t401	30	think	e55	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	think	VBP	t400:SBJ||t402:OBJ||t408:P||t409:COORD||t423:P	mainVb
-that	t402	30	that	O	O	O	O	O	O	O	O	that	IN	t405:SUB	mainVb
-the	t403	30	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-mood	t404	30	mood	O	O	O	O	O	O	O	O	mood	NN	t403:NMOD	mainVb
-is	t405	30	be	O	O	O	O	O	O	O	O	be	VBZ	t404:SBJ||t407:PRD	mainVb
-fairly	t406	30	fairly	O	O	O	O	O	O	O	O	fairly	RB	O	mainVb
-gloomy	t407	30	gloomy	e374	STATE	PRESENT+NONE+POS	O	O	O	O	O	gloomy	JJ	t406:AMOD	mainVb
-,	t408	30	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-and	t409	30	and	O	O	O	O	O	O	O	O	and	CC	t411:CONJ	mainVb
-I	t410	30	I	O	O	O	O	O	O	O	O	i	PRP	O	mainVb
-think	t411	30	think	e56	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	think	VBP	t410:SBJ||t413:OBJ	mainVb
-it	t412	30	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-'s	t413	30	be	O	O	O	O	O	O	O	O	's	VBZ	t412:SBJ||t414:ADV||t415:VC	mainVb
-not	t414	30	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-going	t415	30	go	O	O	O	O	O	O	O	O	go	VBG	t416:VC	mainVb
-to	t416	30	to	O	O	O	O	O	O	O	O	to	TO	t417:IM	mainVb
-change	t417	30	change	e59	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	change	VB	t418:ADV	mainVb
-for	t418	30	for	O	O	O	O	O	O	O	O	for	IN	t420:PMOD	mainVb
-a	t419	30	a	O	O	O	tmx100	DURATION	P2Y	O	O	a	DT	O	mainVb
-couple	t420	30	couple	O	O	O	tmx100	DURATION	P2Y	O	O	couple	NN	t419:NMOD||t421:NMOD	mainVb
-of	t421	30	of	O	O	O	tmx100	DURATION	P2Y	O	O	of	IN	t422:PMOD	mainVb
-years	t422	30	year	O	O	O	tmx100	DURATION	P2Y	O	O	years	NNS	O	mainVb
-.	t423	30	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+I	t400	30	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
+think	t401	30	think	e55	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VBP	t400:SBJ||t402:OBJ||t408:P||t409:COORD||t423:P	mainVb
+that	t402	30	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t405:SUB	O
+the	t403	30	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+mood	t404	30	mood	O	O	O	O	O	O	O	O	NN1	I-NP	mood	NN	t403:NMOD	O
+is	t405	30	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t404:SBJ||t407:PRD	O
+fairly	t406	30	fairly	O	O	O	O	O	O	O	O	AV0	B-ADJP	fairly	RB	O	O
+gloomy	t407	30	gloomy	e374	STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	gloomy	JJ	t406:AMOD	O
+,	t408	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+and	t409	30	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t411:CONJ	O
+I	t410	30	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
+think	t411	30	think	e56	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VBP	t410:SBJ||t413:OBJ	O
+it	t412	30	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t413	30	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t412:SBJ||t414:ADV||t415:VC	O
+not	t414	30	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+going	t415	30	go	O	O	O	O	O	O	O	O	VVG	I-VP	go	VBG	t416:VC	O
+to	t416	30	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t417:IM	O
+change	t417	30	change	e59	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	change	VB	t418:ADV	O
+for	t418	30	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t420:PMOD	O
+a	t419	30	a	O	O	O	tmx100	DURATION	P2Y	O	O	AT0	B-NP	a	DT	O	O
+couple	t420	30	couple	O	O	O	tmx100	DURATION	P2Y	O	O	NN1	I-NP	couple	NN	t419:NMOD||t421:NMOD	O
+of	t421	30	of	O	O	O	tmx100	DURATION	P2Y	O	O	PRF	B-PP	of	IN	t422:PMOD	O
+years	t422	30	year	O	O	O	tmx100	DURATION	P2Y	O	O	NN2	B-NP	years	NNS	O	O
+.	t423	30	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-So	t424	31	so	O	O	O	O	O	O	O	O	so	RB	t425:AMOD	mainVb
-for	t425	31	for	O	O	O	O	O	O	O	O	for	IN	t427:PMOD	mainVb
-Hong	t426	31	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t427	31	Kong	O	O	O	O	O	O	O	O	kong	NNP	t426:NAME	mainVb
-,	t428	31	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-it	t429	31	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-'s	t430	31	be	O	O	O	O	O	O	O	O	's	VBZ	t424:ADV||t428:P||t429:SBJ||t431:OBJ||t432:P||t433:ADV||t442:P	mainVb
-time	t431	31	time	O	O	O	O	O	O	O	O	time	NN	O	mainVb
-,	t432	31	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-as	t433	31	as	O	O	O	O	O	O	O	O	as	IN	t436:SUB	mainVb
-investment	t434	31	investment	O	O	O	O	O	O	O	O	investment	NN	O	mainVb
-bankers	t435	31	banker	O	O	O	O	O	O	O	O	banker	NNS	t434:NMOD	mainVb
-like	t436	31	like	O	O	O	O	O	O	O	O	like	VBP	t435:SBJ||t437:OPRD||t439:P||t440:ADV	mainVb
-to	t437	31	to	O	O	O	O	O	O	O	O	to	TO	t438:IM	mainVb
-say	t438	31	say	O	O	O	O	O	O	O	O	say	VB	O	mainVb
-,	t439	31	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-to	t440	31	to	O	O	O	O	O	O	O	O	to	TO	t441:PMOD	mainVb
-reposition	t441	31	reposition	e64	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	reposition	NN	O	mainVb
-.	t442	31	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+So	t424	31	so	O	O	O	O	O	O	O	O	AV0	O	so	RB	t425:AMOD	O
+for	t425	31	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t427:PMOD	O
+Hong	t426	31	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t427	31	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t426:NAME	O
+,	t428	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+it	t429	31	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t430	31	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t424:ADV||t428:P||t429:SBJ||t431:OBJ||t432:P||t433:ADV||t442:P	mainVb
+time	t431	31	time	O	O	O	O	O	O	O	O	NN1	B-NP	time	NN	O	O
+,	t432	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+as	t433	31	as	O	O	O	O	O	O	O	O	AV0	B-NP	as	IN	t436:SUB	O
+investment	t434	31	investment	O	O	O	O	O	O	O	O	NN1	I-NP	investment	NN	O	O
+bankers	t435	31	banker	O	O	O	O	O	O	O	O	NN2	I-NP	banker	NNS	t434:NMOD	O
+like	t436	31	like	O	O	O	O	O	O	O	O	PRP	B-ADVP	like	VBP	t435:SBJ||t437:OPRD||t439:P||t440:ADV	O
+to	t437	31	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t438:IM	O
+say	t438	31	say	O	O	O	O	O	O	O	O	VVI	I-VP	say	VB	O	O
+,	t439	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+to	t440	31	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t441:PMOD	O
+reposition	t441	31	reposition	e64	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reposition	NN	O	O
+.	t442	31	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-To	t443	32	to	O	O	O	O	O	O	O	O	to	TO	t445:PMOD||t448:COORD	mainVb
-either	t444	32	either	O	O	O	O	O	O	O	O	either	DT	O	mainVb
-hold	t445	32	hold	e65	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	hold	NN	t444:NMOD||t446:NMOD	mainVb
-on	t446	32	on	O	O	O	O	O	O	O	O	on	IN	t447:PMOD	mainVb
-tight	t447	32	tight	O	O	O	O	O	O	O	O	tight	JJ	O	mainVb
-or	t448	32	or	O	O	O	O	O	O	O	O	or	CC	t449:CONJ	mainVb
-get	t449	32	get	e66	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	get	VB	t450:PRT||t451:P||t452:ADV	mainVb
-out	t450	32	out	O	O	O	O	O	O	O	O	out	RP	O	mainVb
-,	t451	32	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-as	t452	32	as	O	O	O	O	O	O	O	O	as	IN	t453:PMOD	mainVb
-much	t453	32	much	O	O	O	O	O	O	O	O	much	JJ	t454:NMOD	mainVb
-of	t454	32	of	O	O	O	O	O	O	O	O	of	IN	t455:PMOD	mainVb
-Asia	t455	32	Asia	O	O	O	O	O	O	O	O	asia	NNP	O	mainVb
-goes	t456	32	go	e67	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	go	VBZ	t443:SBJ||t457:ADV||t459:P	mainVb
-into	t457	32	into	O	O	O	O	O	O	O	O	into	IN	t458:PMOD	mainVb
-recession	t458	32	recession	e368	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	recession	NN	O	mainVb
-.	t459	32	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+To	t443	32	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t445:PMOD||t448:COORD	O
+either	t444	32	either	O	O	O	O	O	O	O	O	DT0	O	either	DT	O	O
+hold	t445	32	hold	e65	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	NN1	B-NP	hold	NN	t444:NMOD||t446:NMOD	O
+on	t446	32	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t447:PMOD	O
+tight	t447	32	tight	O	O	O	O	O	O	O	O	AJ0	B-NP	tight	JJ	O	O
+or	t448	32	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	t449:CONJ	O
+get	t449	32	get	e66	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVB	I-NP	get	VB	t450:PRT||t451:P||t452:ADV	O
+out	t450	32	out	O	O	O	O	O	O	O	O	AVP	B-ADVP	out	RP	O	O
+,	t451	32	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+as	t452	32	as	O	O	O	O	O	O	O	O	AV0	B-PP	as	IN	t453:PMOD	O
+much	t453	32	much	O	O	O	O	O	O	O	O	DT0	B-NP	much	JJ	t454:NMOD	O
+of	t454	32	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t455:PMOD	O
+Asia	t455	32	Asia	O	O	O	O	O	O	O	O	NP0	B-NP	asia	NNP	O	O
+goes	t456	32	go	e67	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	go	VBZ	t443:SBJ||t457:ADV||t459:P	mainVb
+into	t457	32	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t458:PMOD	O
+recession	t458	32	recession	e368	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	recession	NN	O	O
+.	t459	32	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Jim	t460	33	Jim	O	O	O	O	O	O	O	O	jim	NNP	O	mainVb
-Laurie	t461	33	Laurie	O	O	O	O	O	O	O	O	laurie	NNP	t460:NAME||t462:P||t464:COORD||t468:P	mainVb
-,	t462	33	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-ABC	t463	33	ABC	O	O	O	O	O	O	O	O	abc	NNP	O	mainVb
-News	t464	33	News	O	O	O	O	O	O	O	O	news	NNP	t463:NAME||t465:P||t467:APPO	mainVb
-,	t465	33	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Hong	t466	33	Hong	O	O	O	O	O	O	O	O	hong	NNP	O	mainVb
-Kong	t467	33	Kong	O	O	O	O	O	O	O	O	kong	NNP	t466:NAME	mainVb
-.	t468	33	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Jim	t460	33	Jim	O	O	O	O	O	O	O	O	NP0	B-NP	jim	NNP	O	O
+Laurie	t461	33	Laurie	O	O	O	O	O	O	O	O	NP0	I-NP	laurie	NNP	t460:NAME||t462:P||t464:COORD||t468:P	mainVb
+,	t462	33	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+ABC	t463	33	ABC	O	O	O	O	O	O	O	O	NP0	B-NP	abc	NNP	O	O
+News	t464	33	News	O	O	O	O	O	O	O	O	NN1	I-NP	news	NNP	t463:NAME||t465:P||t467:APPO	O
+,	t465	33	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Hong	t466	33	Hong	O	O	O	O	O	O	O	O	NP0	B-NP	hong	NNP	O	O
+Kong	t467	33	Kong	O	O	O	O	O	O	O	O	NP0	I-NP	kong	NNP	t466:NAME	O
+.	t468	33	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

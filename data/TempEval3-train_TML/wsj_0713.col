@@ -1,150 +1,150 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
 
-West	t1	1	west	O	O	O+O+O	O	O	O	O	O	west	JJ	O	O
-German	t2	1	german	O	O	O+O+O	O	O	O	O	O	german	JJ	t1:AMOD||t3:COORD	O
-and	t3	1	and	O	O	O+O+O	O	O	O	O	O	and	CC	t4:CONJ	O
-French	t4	1	french	O	O	O+O+O	O	O	O	O	O	french	JJ	O	O
-authorities	t5	1	authority	O	O	O+O+O	O	O	O	O	O	authorities	NNS	t2:NMOD	O
-have	t6	1	have	O	O	O+O+O	O	O	O	O	O	have	VBP	t5:SBJ||t7:VC	O
-cleared	t7	1	clear	e1	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	clear	VBN	t12:OBJ	O
-Dresdner	t8	1	Dresdner	O	O	O	O	O	O	O	O	dresdner	NNP	O	O
-Bank	t9	1	Bank	O	O	O	O	O	O	O	O	bank	NNP	t8:NAME	O
-AG	t10	1	AG	O	O	O	O	O	O	O	O	ag	NNP	t9:NAME||t11:SUFFIX	O
-'s	t11	1	's	O	O	O	O	O	O	O	O	's	POS	O	O
-takeover	t12	1	takeover	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	takeover	NN	t10:NMOD||t13:NMOD	O
-of	t13	1	of	O	O	O	O	O	O	O	O	of	IN	t16:PMOD	O
-a	t14	1	a	O	O	O	O	O	O	O	O	a	DT	O	O
-majority	t15	1	majority	O	O	O	O	O	O	O	O	majority	NN	O	O
-stake	t16	1	stake	O	O	O	O	O	O	O	O	stake	NN	t14:NMOD||t15:NMOD||t17:LOC	O
-in	t17	1	in	O	O	O	O	O	O	O	O	in	IN	t24:PMOD	O
-Banque	t18	1	Banque	O	O	O	O	O	O	O	O	banque	NNP	O	O
-Internationale	t19	1	Internationale	O	O	O	O	O	O	O	O	internationale	NNP	O	O
-de	t20	1	de	O	O	O	O	O	O	O	O	de	NNP	O	O
-Placement	t21	1	Placement	O	O	O	O	O	O	O	O	placement	NNP	O	O
--LRB-	t22	1	-lrb-	O	O	O	O	O	O	O	O	-lrb-	NNP	O	O
-BIP	t23	1	BIP	O	O	O	O	O	O	O	O	bip	NNP	t21:NAME||t22:NAME	O
--RRB-	t24	1	-rrb-	O	O	O	O	O	O	O	O	-rrb-	NNP	t18:NAME||t19:NAME||t20:NAME||t23:NAME	O
-,	t25	1	,	O	O	O	O	O	O	O	O	,	,	O	O
-Dresdner	t26	1	Dresdner	O	O	O	O	O	O	O	O	dresdner	NNP	O	O
-Bank	t27	1	Bank	O	O	O	O	O	O	O	O	bank	NNP	t26:NAME	O
-said	t28	1	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t6:OBJ||t25:P||t27:SBJ||t29:P	mainVb
-.	t29	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+West	t1	1	west	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	west	JJ	O	O
+German	t2	1	german	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	german	JJ	t1:AMOD||t3:COORD	O
+and	t3	1	and	O	O	O+O+O	O	O	O	O	O	CJC	I-NP	and	CC	t4:CONJ	O
+French	t4	1	french	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
+authorities	t5	1	authority	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	authorities	NNS	t2:NMOD	O
+have	t6	1	have	O	O	O+O+O	O	O	O	O	O	VHB	B-VP	have	VBP	t5:SBJ||t7:VC	O
+cleared	t7	1	clear	e1	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	clear	VBN	t12:OBJ	O
+Dresdner	t8	1	Dresdner	O	O	O	O	O	O	O	O	NP0	B-NP	dresdner	NNP	O	O
+Bank	t9	1	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t8:NAME	O
+AG	t10	1	AG	O	O	O	O	O	O	O	O	NP0	I-NP	ag	NNP	t9:NAME||t11:SUFFIX	O
+'s	t11	1	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+takeover	t12	1	takeover	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t10:NMOD||t13:NMOD	O
+of	t13	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t16:PMOD	O
+a	t14	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+majority	t15	1	majority	O	O	O	O	O	O	O	O	NN1	I-NP	majority	NN	O	O
+stake	t16	1	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t14:NMOD||t15:NMOD||t17:LOC	O
+in	t17	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t24:PMOD	O
+Banque	t18	1	Banque	O	O	O	O	O	O	O	O	NP0	B-NP	banque	NNP	O	O
+Internationale	t19	1	Internationale	O	O	O	O	O	O	O	O	NP0	I-NP	internationale	NNP	O	O
+de	t20	1	de	O	O	O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Placement	t21	1	Placement	O	O	O	O	O	O	O	O	NN1	I-NP	placement	NNP	O	O
+-LRB-	t22	1	-lrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
+BIP	t23	1	BIP	O	O	O	O	O	O	O	O	NP0	I-NP	bip	NNP	t21:NAME||t22:NAME	O
+-RRB-	t24	1	-rrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t18:NAME||t19:NAME||t20:NAME||t23:NAME	O
+,	t25	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Dresdner	t26	1	Dresdner	O	O	O	O	O	O	O	O	NP0	B-NP	dresdner	NNP	O	O
+Bank	t27	1	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t26:NAME	O
+said	t28	1	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t6:OBJ||t25:P||t27:SBJ||t29:P	mainVb
+.	t29	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t30	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-approval	t31	2	approval	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	approval	NN	t30:NMOD||t32:P||t34:NMOD||t37:P	mainVb
-,	t32	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t33	2	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-had	t34	2	have	O	O	O	O	O	O	O	O	have	VBD	t33:SBJ||t35:VC	mainVb
-been	t35	2	be	O	O	O	O	O	O	O	O	be	VBN	t36:VC	mainVb
-expected	t36	2	expect	e6	I_STATE	PAST+PERFECTIVE+POS	O	O	O	O	O	expect	VBN	O	mainVb
-,	t37	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-permits	t38	2	permit	e7	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	permit	VBZ	t31:SBJ||t43:OBJ||t44:OPRD||t52:P	mainVb
-West	t39	2	West	O	O	O	O	O	O	O	O	west	NNP	O	mainVb
-Germany	t40	2	Germany	O	O	O	O	O	O	O	O	germany	NNP	t39:NAME||t41:SUFFIX	mainVb
-'s	t41	2	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-second-largest	t42	2	second-largest	O	O	O	O	O	O	O	O	second-large	JJS	O	mainVb
-bank	t43	2	bank	O	O	O	O	O	O	O	O	bank	NN	t40:NMOD||t42:NMOD	mainVb
-to	t44	2	to	O	O	O	O	O	O	O	O	to	TO	t45:IM	mainVb
-acquire	t45	2	acquire	e9	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	acquire	VB	t46:OBJ	mainVb
-shares	t46	2	share	O	O	O	O	O	O	O	O	share	NNS	t47:NMOD	mainVb
-of	t47	2	of	O	O	O	O	O	O	O	O	of	IN	t51:PMOD	mainVb
-the	t48	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-French	t49	2	french	O	O	O	O	O	O	O	O	french	JJ	O	mainVb
-investment	t50	2	investment	O	O	O	O	O	O	O	O	investment	NN	O	mainVb
-bank	t51	2	bank	O	O	O	O	O	O	O	O	bank	NN	t48:NMOD||t49:NMOD||t50:NMOD	mainVb
-.	t52	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t30	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+approval	t31	2	approval	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	approval	NN	t30:NMOD||t32:P||t34:NMOD||t37:P	O
+,	t32	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t33	2	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+had	t34	2	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t33:SBJ||t35:VC	O
+been	t35	2	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t36:VC	O
+expected	t36	2	expect	e6	I_STATE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	expect	VBN	O	O
+,	t37	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+permits	t38	2	permit	e7	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	permit	VBZ	t31:SBJ||t43:OBJ||t44:OPRD||t52:P	mainVb
+West	t39	2	West	O	O	O	O	O	O	O	O	NP0	B-NP	west	NNP	O	O
+Germany	t40	2	Germany	O	O	O	O	O	O	O	O	NP0	I-NP	germany	NNP	t39:NAME||t41:SUFFIX	O
+'s	t41	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+second-largest	t42	2	second-largest	O	O	O	O	O	O	O	O	AJS	I-NP	second-large	JJS	O	O
+bank	t43	2	bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NN	t40:NMOD||t42:NMOD	O
+to	t44	2	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t45:IM	O
+acquire	t45	2	acquire	e9	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	t46:OBJ	O
+shares	t46	2	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	t47:NMOD	O
+of	t47	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t51:PMOD	O
+the	t48	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+French	t49	2	french	O	O	O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
+investment	t50	2	investment	O	O	O	O	O	O	O	O	NN1	I-NP	investment	NN	O	O
+bank	t51	2	bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NN	t48:NMOD||t49:NMOD||t50:NMOD	O
+.	t52	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t53	3	in	O	O	O	O	O	O	O	O	in	IN	t56:PMOD	mainVb
-a	t54	3	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-first	t55	3	first	O	O	O	O	O	O	O	O	first	JJ	O	mainVb
-step	t56	3	step	O	O	O	O	O	O	O	O	step	NN	t54:NMOD||t55:NMOD	mainVb
-,	t57	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Dresdner	t58	3	Dresdner	O	O	O	O	O	O	O	O	dresdner	NNP	O	mainVb
-Bank	t59	3	Bank	O	O	O	O	O	O	O	O	bank	NNP	t58:NAME	mainVb
-will	t60	3	will	O	O	O	O	O	O	O	O	will	MD	t53:LOC||t57:P||t59:SBJ||t61:VC||t86:P	mainVb
-buy	t61	3	buy	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	buy	VB	t63:OBJ||t66:ADV	mainVb
-32.99	t62	3	32.99	O	O	O	O	O	O	O	O	32.99	CD	O	mainVb
-%	t63	3	%	O	O	O	O	O	O	O	O	%	NN	t62:NMOD||t64:NMOD||t71:NMOD	mainVb
-of	t64	3	of	O	O	O	O	O	O	O	O	of	IN	t65:PMOD	mainVb
-BIP	t65	3	BIP	O	O	O	O	O	O	O	O	bip	NNP	O	mainVb
-for	t66	3	for	O	O	O	O	O	O	O	O	for	IN	t69:PMOD	mainVb
-1,015	t67	3	1,015	O	O	O	O	O	O	O	O	1,015	CD	O	mainVb
-French	t68	3	french	O	O	O	O	O	O	O	O	french	JJ	O	mainVb
-francs	t69	3	franc	O	O	O	O	O	O	O	O	franc	NNS	t67:NMOD||t68:NMOD||t81:NMOD	mainVb
--LRB-	t70	3	-lrb-	O	O	O	O	O	O	O	O	-lrb-	WDT	O	mainVb
-$	t71	3	$	O	O	O	O	O	O	O	O	$	$	t72:DEP||t73:DEP||t75:ADV||t76:P||t77:COORD	mainVb
-162	t72	3	162	O	O	O	O	O	O	O	O	162	CD	O	mainVb
--RRB-	t73	3	-rrb-	O	O	O	O	O	O	O	O	-rrb-	CD	O	mainVb
-a	t74	3	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t75	3	share	O	O	O	O	O	O	O	O	share	NN	t74:NMOD	mainVb
-,	t76	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t77	3	or	O	O	O	O	O	O	O	O	or	CC	t80:CONJ	mainVb
-528	t78	3	528	O	O	O	O	O	O	O	O	528	CD	O	mainVb
-million	t79	3	million	O	O	O	O	O	O	O	O	million	CD	t78:DEP	mainVb
-francs	t80	3	franc	O	O	O	O	O	O	O	O	franc	NNS	t79:NMOD	mainVb
--LRB-	t81	3	-lrb-	O	O	O	O	O	O	O	O	-lrb-	VBP	t70:SBJ||t82:OBJ||t85:GAP-NMOD	mainVb
-$	t82	3	$	O	O	O	O	O	O	O	O	$	$	t83:DEP||t84:DEP	mainVb
-84.7	t83	3	84.7	O	O	O	O	O	O	O	O	84.7	CD	O	mainVb
-million	t84	3	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
--RRB-	t85	3	-rrb-	O	O	O	O	O	O	O	O	-rrb-	NNP	O	mainVb
-.	t86	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t53	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t56:PMOD	O
+a	t54	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+first	t55	3	first	O	O	O	O	O	O	O	O	ORD	I-NP	first	JJ	O	O
+step	t56	3	step	O	O	O	O	O	O	O	O	NN1	I-NP	step	NN	t54:NMOD||t55:NMOD	O
+,	t57	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Dresdner	t58	3	Dresdner	O	O	O	O	O	O	O	O	NP0	B-NP	dresdner	NNP	O	O
+Bank	t59	3	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t58:NAME	O
+will	t60	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t53:LOC||t57:P||t59:SBJ||t61:VC||t86:P	mainVb
+buy	t61	3	buy	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t63:OBJ||t66:ADV	mainVb
+32.99	t62	3	32.99	O	O	O	O	O	O	O	O	CRD	B-NP	32.99	CD	O	O
+%	t63	3	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t62:NMOD||t64:NMOD||t71:NMOD	O
+of	t64	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t65:PMOD	O
+BIP	t65	3	BIP	O	O	O	O	O	O	O	O	NN1	B-NP	bip	NNP	O	O
+for	t66	3	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t69:PMOD	O
+1,015	t67	3	1,015	O	O	O	O	O	O	O	O	CRD	B-NP	1,015	CD	O	O
+French	t68	3	french	O	O	O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
+francs	t69	3	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t67:NMOD||t68:NMOD||t81:NMOD	O
+-LRB-	t70	3	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	WDT	O	O
+$	t71	3	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t72:DEP||t73:DEP||t75:ADV||t76:P||t77:COORD	O
+162	t72	3	162	O	O	O	O	O	O	O	O	CRD	I-NP	162	CD	O	O
+-RRB-	t73	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	CD	O	O
+a	t74	3	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
+share	t75	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t74:NMOD	O
+,	t76	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t77	3	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t80:CONJ	O
+528	t78	3	528	O	O	O	O	O	O	O	O	CRD	B-NP	528	CD	O	O
+million	t79	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t78:DEP	O
+francs	t80	3	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t79:NMOD	O
+-LRB-	t81	3	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	VBP	t70:SBJ||t82:OBJ||t85:GAP-NMOD	O
+$	t82	3	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t83:DEP||t84:DEP	O
+84.7	t83	3	84.7	O	O	O	O	O	O	O	O	CRD	I-NP	84.7	CD	O	O
+million	t84	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+-RRB-	t85	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+.	t86	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Dresdner	t87	4	Dresdner	O	O	O	O	O	O	O	O	dresdner	NNP	O	mainVb
-Bank	t88	4	Bank	O	O	O	O	O	O	O	O	bank	NNP	t87:NAME	mainVb
-said	t89	4	say	e12	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t88:SBJ||t91:OBJ||t113:P	mainVb
-it	t90	4	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-will	t91	4	will	O	O	O	O	O	O	O	O	will	MD	t90:SBJ||t92:ADV||t93:VC	mainVb
-also	t92	4	also	O	O	O	O	O	O	O	O	also	RB	O	mainVb
-buy	t93	4	buy	e13	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	buy	VB	t95:OBJ||t104:ADV||t108:TMP	mainVb
-all	t94	4	all	O	O	O	O	O	O	O	O	all	DT	O	mainVb
-shares	t95	4	share	O	O	O	O	O	O	O	O	share	NNS	t94:NMOD||t96:APPO	mainVb
-tendered	t96	4	tender	e14	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	tender	VBN	t97:LGS||t99:LOC	mainVb
-by	t97	4	by	O	O	O	O	O	O	O	O	by	IN	t98:PMOD	mainVb
-shareholders	t98	4	shareholder	O	O	O	O	O	O	O	O	shareholder	NNS	O	mainVb
-on	t99	4	on	O	O	O	O	O	O	O	O	on	IN	t103:PMOD	mainVb
-the	t100	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Paris	t101	4	Paris	O	O	O	O	O	O	O	O	paris	NNP	O	mainVb
-Stock	t102	4	Stock	O	O	O	O	O	O	O	O	stock	NNP	O	mainVb
-Exchange	t103	4	Exchange	O	O	O	O	O	O	O	O	exchange	NNP	t100:NMOD||t101:NAME||t102:NAME	mainVb
-at	t104	4	at	O	O	O	O	O	O	O	O	at	IN	t107:PMOD	mainVb
-the	t105	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-same	t106	4	same	O	O	O	O	O	O	O	O	same	JJ	O	mainVb
-price	t107	4	price	O	O	O	O	O	O	O	O	price	NN	t105:NMOD||t106:NMOD	mainVb
-from	t108	4	from	O	O	O	O	O	O	O	O	from	IN	t109:PMOD||t110:PMOD	mainVb
-today	t109	4	today	O	O	O	tmx27	DATE	1989-10-27	O	O	today	NN	O	mainVb
-through	t110	4	through	O	O	O	O	O	O	O	O	through	IN	t112:PMOD	mainVb
-Nov.	t111	4	Nov.	O	O	O	tmx28	DATE	1989-11-17	O	O	nov.	NNP	O	mainVb
-17	t112	4	17	O	O	O	tmx28	DATE	1989-11-17	O	O	17	CD	t111:NMOD	mainVb
-.	t113	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Dresdner	t87	4	Dresdner	O	O	O	O	O	O	O	O	NP0	B-NP	dresdner	NNP	O	O
+Bank	t88	4	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t87:NAME	O
+said	t89	4	say	e12	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t88:SBJ||t91:OBJ||t113:P	mainVb
+it	t90	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+will	t91	4	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t90:SBJ||t92:ADV||t93:VC	O
+also	t92	4	also	O	O	O	O	O	O	O	O	AV0	I-VP	also	RB	O	O
+buy	t93	4	buy	e13	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t95:OBJ||t104:ADV||t108:TMP	O
+all	t94	4	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
+shares	t95	4	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t94:NMOD||t96:APPO	O
+tendered	t96	4	tender	e14	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	tender	VBN	t97:LGS||t99:LOC	O
+by	t97	4	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t98:PMOD	O
+shareholders	t98	4	shareholder	O	O	O	O	O	O	O	O	NN2	B-NP	shareholder	NNS	O	O
+on	t99	4	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t103:PMOD	O
+the	t100	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Paris	t101	4	Paris	O	O	O	O	O	O	O	O	NP0	I-NP	paris	NNP	O	O
+Stock	t102	4	Stock	O	O	O	O	O	O	O	O	NP0	I-NP	stock	NNP	O	O
+Exchange	t103	4	Exchange	O	O	O	O	O	O	O	O	NP0	I-NP	exchange	NNP	t100:NMOD||t101:NAME||t102:NAME	O
+at	t104	4	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t107:PMOD	O
+the	t105	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+same	t106	4	same	O	O	O	O	O	O	O	O	DT0	I-NP	same	JJ	O	O
+price	t107	4	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	t105:NMOD||t106:NMOD	O
+from	t108	4	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t109:PMOD||t110:PMOD	O
+today	t109	4	today	O	O	O	tmx27	DATE	1989-10-27	O	O	AV0	B-NP	today	NN	O	O
+through	t110	4	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t112:PMOD	O
+Nov.	t111	4	Nov.	O	O	O	tmx28	DATE	1989-11-17	O	O	NP0	B-NP	nov.	NNP	O	O
+17	t112	4	17	O	O	O	tmx28	DATE	1989-11-17	O	O	CRD	I-NP	17	CD	t111:NMOD	O
+.	t113	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t114	5	in	O	O	O	O	O	O	O	O	in	IN	t115:PMOD	mainVb
-addition	t115	5	addition	O	O	O	O	O	O	O	O	addition	NN	O	mainVb
-,	t116	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t117	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bank	t118	5	bank	O	O	O	O	O	O	O	O	bank	NN	t117:NMOD	mainVb
-has	t119	5	have	e22	STATE	PRESENT+NONE+POS	O	O	O	O	O	have	VBZ	t114:ADV||t116:P||t118:SBJ||t121:OBJ||t143:P	mainVb
-an	t120	5	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-option	t121	5	option	O	O	O	O	O	O	O	O	option	NN	t120:NMOD||t122:NMOD	mainVb
-to	t122	5	to	O	O	O	O	O	O	O	O	to	TO	t123:IM	mainVb
-buy	t123	5	buy	e20	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	buy	VB	t127:OBJ||t130:ADV||t133:TMP||t138:ADV	mainVb
-a	t124	5	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-30.84	t125	5	30.84	O	O	O	O	O	O	O	O	30.84	CD	O	mainVb
-%	t126	5	%	O	O	O	O	O	O	O	O	%	NN	t125:NMOD	mainVb
-stake	t127	5	stake	O	O	O	O	O	O	O	O	stake	NN	t124:NMOD||t126:NMOD||t128:LOC	mainVb
-in	t128	5	in	O	O	O	O	O	O	O	O	in	IN	t129:PMOD	mainVb
-BIP	t129	5	BIP	O	O	O	O	O	O	O	O	bip	NNP	O	mainVb
-from	t130	5	from	O	O	O	O	O	O	O	O	from	IN	t132:PMOD	mainVb
-Societe	t131	5	Societe	O	O	O	O	O	O	O	O	societe	NNP	O	mainVb
-Generale	t132	5	Generale	O	O	O	O	O	O	O	O	generale	NNP	t131:NAME	mainVb
-after	t133	5	after	O	O	O	O	O	O	O	O	after	IN	t137:PMOD	mainVb
-Jan.	t134	5	Jan.	O	O	O	tmx29	DATE	1990-01-01	O	O	jan.	NNP	t135:NMOD	mainVb
-1	t135	5	1	O	O	O	tmx29	DATE	1990-01-01	O	O	1	CD	O	mainVb
-,	t136	5	,	O	O	O	tmx29	DATE	1990-01-01	O	O	,	,	O	mainVb
-1990	t137	5	1990	O	O	O	tmx29	DATE	1990-01-01	O	O	1990	CD	t134:NMOD||t136:P	mainVb
-at	t138	5	at	O	O	O	O	O	O	O	O	at	IN	t140:PMOD	mainVb
-1,015	t139	5	1,015	O	O	O	O	O	O	O	O	1,015	CD	O	mainVb
-francs	t140	5	franc	O	O	O	O	O	O	O	O	franc	NNS	t139:NMOD||t142:ADV	mainVb
-a	t141	5	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t142	5	share	O	O	O	O	O	O	O	O	share	NN	t141:NMOD	mainVb
-.	t143	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t114	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t115:PMOD	O
+addition	t115	5	addition	O	O	O	O	O	O	O	O	NN1	B-NP	addition	NN	O	O
+,	t116	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t117	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bank	t118	5	bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NN	t117:NMOD	O
+has	t119	5	have	e22	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHZ	B-VP	have	VBZ	t114:ADV||t116:P||t118:SBJ||t121:OBJ||t143:P	mainVb
+an	t120	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+option	t121	5	option	O	O	O	O	O	O	O	O	NN1	I-NP	option	NN	t120:NMOD||t122:NMOD	O
+to	t122	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t123:IM	O
+buy	t123	5	buy	e20	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t127:OBJ||t130:ADV||t133:TMP||t138:ADV	O
+a	t124	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+30.84	t125	5	30.84	O	O	O	O	O	O	O	O	CRD	I-NP	30.84	CD	O	O
+%	t126	5	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t125:NMOD	O
+stake	t127	5	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t124:NMOD||t126:NMOD||t128:LOC	O
+in	t128	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t129:PMOD	O
+BIP	t129	5	BIP	O	O	O	O	O	O	O	O	NN1	B-NP	bip	NNP	O	O
+from	t130	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t132:PMOD	O
+Societe	t131	5	Societe	O	O	O	O	O	O	O	O	NP0	B-NP	societe	NNP	O	O
+Generale	t132	5	Generale	O	O	O	O	O	O	O	O	NP0	I-NP	generale	NNP	t131:NAME	O
+after	t133	5	after	O	O	O	O	O	O	O	O	CJS	B-PP	after	IN	t137:PMOD	O
+Jan.	t134	5	Jan.	O	O	O	tmx29	DATE	1990-01-01	O	O	NP0	B-NP	jan.	NNP	t135:NMOD	O
+1	t135	5	1	O	O	O	tmx29	DATE	1990-01-01	O	O	CRD	I-NP	1	CD	O	O
+,	t136	5	,	O	O	O	tmx29	DATE	1990-01-01	O	O	PUN	O	,	,	O	O
+1990	t137	5	1990	O	O	O	tmx29	DATE	1990-01-01	O	O	CRD	B-NP	1990	CD	t134:NMOD||t136:P	O
+at	t138	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t140:PMOD	O
+1,015	t139	5	1,015	O	O	O	O	O	O	O	O	CRD	B-NP	1,015	CD	O	O
+francs	t140	5	franc	O	O	O	O	O	O	O	O	NN2	I-NP	franc	NNS	t139:NMOD||t142:ADV	O
+a	t141	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t142	5	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t141:NMOD	O
+.	t143	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

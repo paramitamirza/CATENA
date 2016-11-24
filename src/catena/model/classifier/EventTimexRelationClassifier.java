@@ -173,7 +173,7 @@ public class EventTimexRelationClassifier extends PairClassifier {
 				}
 			}
 		}
-		System.out.println(fvList.size());
+		
 		return fvList;
 	}
 	

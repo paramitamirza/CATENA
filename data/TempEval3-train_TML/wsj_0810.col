@@ -1,770 +1,770 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
 
-Cie.	t1	1	Cie.	O	O	O+O+O	O	O	O	O	O	cie.	NNP	O	O
-de	t2	1	de	O	O	O+O+O	O	O	O	O	O	de	NNP	O	O
-Navigation	t3	1	Navigation	O	O	O+O+O	O	O	O	O	O	navigation	NNP	O	O
-Mixte	t4	1	Mixte	O	O	O+O+O	O	O	O	O	O	mixte	NNP	t1:TITLE||t2:NAME||t3:NAME	O
-Chairman	t5	1	Chairman	O	O	O+O+O	O	O	O	O	O	chairman	NN	t4:NMOD	O
-Marc	t6	1	Marc	O	O	O+O+O	O	O	O	O	O	marc	NNP	O	O
-Fournier	t7	1	Fournier	O	O	O+O+O	O	O	O	O	O	fournier	NNP	t5:TITLE||t6:NAME	O
-said	t8	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t7:SBJ||t12:OBJ||t36:P	mainVb
-his	t9	1	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-board	t10	1	board	O	O	O	O	O	O	O	O	board	NN	O	mainVb
-unanimously	t11	1	unanimously	O	O	O	O	O	O	O	O	unanimously	NN	t9:NMOD||t10:NMOD	mainVb
-rejected	t12	1	reject	e2	I_ACTION	PAST+NONE+POS	O	O	O	O	O	reject	VBD	t11:SBJ||t13:ADV||t20:OBJ	mainVb
-as	t13	1	as	O	O	O	O	O	O	O	O	as	IN	t15:PMOD	mainVb
-too	t14	1	too	O	O	O	O	O	O	O	O	too	RB	O	mainVb
-low	t15	1	low	O	O	O	O	O	O	O	O	low	JJ	t14:AMOD	mainVb
-the	t16	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-$	t17	1	$	O	O	O	O	O	O	O	O	$	$	t18:DEP||t19:DEP	mainVb
-1.77	t18	1	1.77	O	O	O	O	O	O	O	O	1.77	CD	O	mainVb
-billion	t19	1	billion	O	O	O	O	O	O	O	O	billion	CD	O	mainVb
-bid	t20	1	bid	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t16:NMOD||t17:NMOD||t21:NMOD||t26:NMOD	mainVb
-by	t21	1	by	O	O	O	O	O	O	O	O	by	IN	t25:PMOD	mainVb
-Cie.	t22	1	Cie.	O	O	O	O	O	O	O	O	cie.	NNP	O	mainVb
-Financiere	t23	1	Financiere	O	O	O	O	O	O	O	O	financiere	NNP	O	mainVb
-de	t24	1	de	O	O	O	O	O	O	O	O	de	NNP	O	mainVb
-Paribas	t25	1	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t22:TITLE||t23:NAME||t24:NAME	mainVb
-to	t26	1	to	O	O	O	O	O	O	O	O	to	TO	t27:IM	mainVb
-bring	t27	1	bring	e5	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	bring	VB	t29:OBJ||t33:DIR	mainVb
-its	t28	1	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-stake	t29	1	stake	O	O	O	O	O	O	O	O	stake	NN	t28:NMOD||t30:LOC	mainVb
-in	t30	1	in	O	O	O	O	O	O	O	O	in	IN	t32:PMOD	mainVb
-Navigation	t31	1	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t32	1	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t31:NAME	mainVb
-to	t33	1	to	O	O	O	O	O	O	O	O	to	TO	t35:PMOD	mainVb
-66.7	t34	1	66.7	O	O	O	O	O	O	O	O	66.7	CD	O	mainVb
-%	t35	1	%	O	O	O	O	O	O	O	O	%	NN	t34:NMOD	mainVb
-.	t36	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Cie.	t1	1	Cie.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cie.	NNP	O	O
+de	t2	1	de	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Navigation	t3	1	Navigation	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	navigation	NNP	O	O
+Mixte	t4	1	Mixte	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	mixte	NNP	t1:TITLE||t2:NAME||t3:NAME	O
+Chairman	t5	1	Chairman	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	chairman	NN	t4:NMOD	O
+Marc	t6	1	Marc	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	marc	NNP	O	O
+Fournier	t7	1	Fournier	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t5:TITLE||t6:NAME	O
+said	t8	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t7:SBJ||t12:OBJ||t36:P	mainVb
+his	t9	1	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+board	t10	1	board	O	O	O	O	O	O	O	O	NN1	I-NP	board	NN	O	O
+unanimously	t11	1	unanimously	O	O	O	O	O	O	O	O	AV0	B-ADVP	unanimously	NN	t9:NMOD||t10:NMOD	O
+rejected	t12	1	reject	e2	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	reject	VBD	t11:SBJ||t13:ADV||t20:OBJ	O
+as	t13	1	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t15:PMOD	O
+too	t14	1	too	O	O	O	O	O	O	O	O	AV0	B-NP	too	RB	O	O
+low	t15	1	low	O	O	O	O	O	O	O	O	AJ0	I-NP	low	JJ	t14:AMOD	O
+the	t16	1	the	O	O	O	O	O	O	O	O	AT0	I-NP	the	DT	O	O
+$	t17	1	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t18:DEP||t19:DEP	O
+1.77	t18	1	1.77	O	O	O	O	O	O	O	O	CRD	I-NP	1.77	CD	O	O
+billion	t19	1	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
+bid	t20	1	bid	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t16:NMOD||t17:NMOD||t21:NMOD||t26:NMOD	O
+by	t21	1	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t25:PMOD	O
+Cie.	t22	1	Cie.	O	O	O	O	O	O	O	O	NP0	B-NP	cie.	NNP	O	O
+Financiere	t23	1	Financiere	O	O	O	O	O	O	O	O	NP0	I-NP	financiere	NNP	O	O
+de	t24	1	de	O	O	O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Paribas	t25	1	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	t22:TITLE||t23:NAME||t24:NAME	O
+to	t26	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t27:IM	O
+bring	t27	1	bring	e5	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	bring	VB	t29:OBJ||t33:DIR	O
+its	t28	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+stake	t29	1	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t28:NMOD||t30:LOC	O
+in	t30	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t32:PMOD	O
+Navigation	t31	1	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t32	1	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t31:NAME	O
+to	t33	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t35:PMOD	O
+66.7	t34	1	66.7	O	O	O	O	O	O	O	O	CRD	B-NP	66.7	CD	O	O
+%	t35	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t34:NMOD	O
+.	t36	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-At	t37	2	at	O	O	O	O	O	O	O	O	at	IN	t40:PMOD	mainVb
-a	t38	2	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-news	t39	2	news	O	O	O	O	O	O	O	O	news	NN	O	mainVb
-conference	t40	2	conference	e148	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	conference	NN	t38:NMOD||t39:NMOD	mainVb
-,	t41	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Mr.	t42	2	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t43	2	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t42:TITLE	mainVb
-accused	t44	2	accuse	e7	I_ACTION	PAST+NONE+POS	O	O	O	O	O	accuse	VBD	t37:LOC||t41:P||t43:SBJ||t45:OBJ||t46:ADV||t74:P	mainVb
-Paribas	t45	2	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-of	t46	2	of	O	O	O	O	O	O	O	O	of	IN	t47:PMOD	mainVb
-planning	t47	2	plan	e8	I_STATE	NONE+NONE+POS	O	O	O	O	O	plan	VBG	t48:OPRD	mainVb
-to	t48	2	to	O	O	O	O	O	O	O	O	to	TO	t49:IM	mainVb
-pay	t49	2	pay	e10	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	pay	VB	t50:ADV||t53:MNR	mainVb
-for	t50	2	for	O	O	O	O	O	O	O	O	for	IN	t52:PMOD	mainVb
-the	t51	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-takeover	t52	2	takeover	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	takeover	NN	t51:NMOD	mainVb
-by	t53	2	by	O	O	O	O	O	O	O	O	by	IN	t54:PMOD	mainVb
-selling	t54	2	sell	O	O	O	O	O	O	O	O	sell	VBG	t55:OBJ	mainVb
-parts	t55	2	part	O	O	O	O	O	O	O	O	parts	NNS	t56:NMOD	mainVb
-of	t56	2	of	O	O	O	O	O	O	O	O	of	IN	t58:PMOD	mainVb
-the	t57	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t58	2	company	O	O	O	O	O	O	O	O	company	NN	t57:NMOD||t59:P||t62:NMOD	mainVb
-,	t59	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-whose	t60	2	whose	O	O	O	O	O	O	O	O	whose	WP$	O	mainVb
-interests	t61	2	interest	O	O	O	O	O	O	O	O	interest	NNS	t60:NMOD	mainVb
-include	t62	2	include	O	O	O	O	O	O	O	O	include	VBP	t61:SBJ||t63:OBJ	mainVb
-insurance	t63	2	insurance	O	O	O	O	O	O	O	O	insurance	NN	t64:P||t65:COORD	mainVb
-,	t64	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-banking	t65	2	banking	O	O	O	O	O	O	O	O	banking	NN	t66:P||t68:COORD	mainVb
-,	t66	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-tuna	t67	2	tuna	O	O	O	O	O	O	O	O	tuna	NN	O	mainVb
-canning	t68	2	canning	O	O	O	O	O	O	O	O	canning	NN	t67:NMOD||t69:P||t70:COORD	mainVb
-,	t69	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-sugar	t70	2	sugar	O	O	O	O	O	O	O	O	sugar	NN	t71:COORD	mainVb
-and	t71	2	and	O	O	O	O	O	O	O	O	and	CC	t73:CONJ	mainVb
-orange	t72	2	orange	O	O	O	O	O	O	O	O	orange	NN	O	mainVb
-juice	t73	2	juice	O	O	O	O	O	O	O	O	juice	NN	t72:NMOD	mainVb
-.	t74	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+At	t37	2	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t40:PMOD	O
+a	t38	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+news	t39	2	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	O	O
+conference	t40	2	conference	e148	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conference	NN	t38:NMOD||t39:NMOD	O
+,	t41	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Mr.	t42	2	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t43	2	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t42:TITLE	O
+accused	t44	2	accuse	e7	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	accuse	VBD	t37:LOC||t41:P||t43:SBJ||t45:OBJ||t46:ADV||t74:P	mainVb
+Paribas	t45	2	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+of	t46	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t47:PMOD	O
+planning	t47	2	plan	e8	I_STATE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	plan	VBG	t48:OPRD	O
+to	t48	2	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t49:IM	O
+pay	t49	2	pay	e10	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t50:ADV||t53:MNR	O
+for	t50	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t52:PMOD	O
+the	t51	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+takeover	t52	2	takeover	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t51:NMOD	O
+by	t53	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t54:PMOD	O
+selling	t54	2	sell	O	O	O	O	O	O	O	O	VVG	B-VP	sell	VBG	t55:OBJ	O
+parts	t55	2	part	O	O	O	O	O	O	O	O	NN2	B-NP	parts	NNS	t56:NMOD	O
+of	t56	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t58:PMOD	O
+the	t57	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t58	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t57:NMOD||t59:P||t62:NMOD	O
+,	t59	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+whose	t60	2	whose	O	O	O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
+interests	t61	2	interest	O	O	O	O	O	O	O	O	NN2	I-NP	interest	NNS	t60:NMOD	O
+include	t62	2	include	O	O	O	O	O	O	O	O	VVB	B-VP	include	VBP	t61:SBJ||t63:OBJ	O
+insurance	t63	2	insurance	O	O	O	O	O	O	O	O	NN1	B-NP	insurance	NN	t64:P||t65:COORD	O
+,	t64	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+banking	t65	2	banking	O	O	O	O	O	O	O	O	VVG	B-VP	banking	NN	t66:P||t68:COORD	O
+,	t66	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+tuna	t67	2	tuna	O	O	O	O	O	O	O	O	NN0	B-NP	tuna	NN	O	O
+canning	t68	2	canning	O	O	O	O	O	O	O	O	VVG	B-VP	canning	NN	t67:NMOD||t69:P||t70:COORD	O
+,	t69	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+sugar	t70	2	sugar	O	O	O	O	O	O	O	O	NN1	B-NP	sugar	NN	t71:COORD	O
+and	t71	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t73:CONJ	O
+orange	t72	2	orange	O	O	O	O	O	O	O	O	NN1	I-NP	orange	NN	O	O
+juice	t73	2	juice	O	O	O	O	O	O	O	O	NN1	I-NP	juice	NN	t72:NMOD	O
+.	t74	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t75	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-chairman	t76	3	chairman	O	O	O	O	O	O	O	O	chairman	NN	t75:NMOD	mainVb
-said	t77	3	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t76:SBJ||t100:OBJ||t109:P	mainVb
-his	t78	3	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-board	t79	3	board	O	O	O	O	O	O	O	O	board	NN	O	mainVb
-members	t80	3	member	O	O	O	O	O	O	O	O	member	NNS	t78:NMOD||t79:NMOD||t81:P||t82:NMOD||t99:P	mainVb
-,	t81	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-including	t82	3	include	O	O	O	O	O	O	O	O	include	VBG	t83:PMOD	mainVb
-representatives	t83	3	representative	O	O	O	O	O	O	O	O	representative	NNS	t84:NMOD	mainVb
-of	t84	3	of	O	O	O	O	O	O	O	O	of	IN	t88:PMOD	mainVb
-West	t85	3	west	O	O	O	O	O	O	O	O	west	JJ	O	mainVb
-German	t86	3	german	O	O	O	O	O	O	O	O	german	JJ	t85:AMOD	mainVb
-insurance	t87	3	insurance	O	O	O	O	O	O	O	O	insurance	NN	O	mainVb
-giant	t88	3	giant	O	O	O	O	O	O	O	O	giant	NN	t86:NMOD||t87:NMOD||t90:APPO||t91:COORD	mainVb
-Allianz	t89	3	Allianz	O	O	O	O	O	O	O	O	allianz	NNP	O	mainVb
-AG	t90	3	AG	O	O	O	O	O	O	O	O	ag	NNP	t89:NAME	mainVb
-and	t91	3	and	O	O	O	O	O	O	O	O	and	CC	t95:CONJ	mainVb
-French	t92	3	french	O	O	O	O	O	O	O	O	french	JJ	O	mainVb
-banks	t93	3	bank	O	O	O	O	O	O	O	O	banks	NNS	t92:NMOD	mainVb
-Credit	t94	3	Credit	O	O	O	O	O	O	O	O	credit	NNP	O	mainVb
-Lyonnais	t95	3	Lyonnais	O	O	O	O	O	O	O	O	lyonnais	NNP	t93:NMOD||t94:NAME||t96:COORD	mainVb
-and	t96	3	and	O	O	O	O	O	O	O	O	and	CC	t98:CONJ	mainVb
-Societe	t97	3	Societe	O	O	O	O	O	O	O	O	societe	NNP	O	mainVb
-Generale	t98	3	Generale	O	O	O	O	O	O	O	O	generale	NNP	t97:NAME	mainVb
-,	t99	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-hold	t100	3	hold	e17	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	hold	VBP	t80:SBJ||t103:OBJ	mainVb
-nearly	t101	3	nearly	O	O	O	O	O	O	O	O	nearly	RB	t102:DEP	mainVb
-50	t102	3	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-%	t103	3	%	O	O	O	O	O	O	O	O	%	NN	t101:NMOD||t104:NMOD	mainVb
-of	t104	3	of	O	O	O	O	O	O	O	O	of	IN	t108:PMOD	mainVb
-Navigation	t105	3	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t106	3	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t105:NAME||t107:SUFFIX	mainVb
-'s	t107	3	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-capital	t108	3	capital	O	O	O	O	O	O	O	O	capital	NN	t106:NMOD	mainVb
-.	t109	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t75	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+chairman	t76	3	chairman	O	O	O	O	O	O	O	O	NN1	I-NP	chairman	NN	t75:NMOD	O
+said	t77	3	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t76:SBJ||t100:OBJ||t109:P	mainVb
+his	t78	3	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+board	t79	3	board	O	O	O	O	O	O	O	O	NN1	I-NP	board	NN	O	O
+members	t80	3	member	O	O	O	O	O	O	O	O	NN2	I-NP	member	NNS	t78:NMOD||t79:NMOD||t81:P||t82:NMOD||t99:P	O
+,	t81	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+including	t82	3	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t83:PMOD	O
+representatives	t83	3	representative	O	O	O	O	O	O	O	O	NN2	B-NP	representative	NNS	t84:NMOD	O
+of	t84	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t88:PMOD	O
+West	t85	3	west	O	O	O	O	O	O	O	O	NP0	B-NP	west	JJ	O	O
+German	t86	3	german	O	O	O	O	O	O	O	O	AJ0	I-NP	german	JJ	t85:AMOD	O
+insurance	t87	3	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	O	O
+giant	t88	3	giant	O	O	O	O	O	O	O	O	NN1	I-NP	giant	NN	t86:NMOD||t87:NMOD||t90:APPO||t91:COORD	O
+Allianz	t89	3	Allianz	O	O	O	O	O	O	O	O	NP0	I-NP	allianz	NNP	O	O
+AG	t90	3	AG	O	O	O	O	O	O	O	O	NP0	I-NP	ag	NNP	t89:NAME	O
+and	t91	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t95:CONJ	O
+French	t92	3	french	O	O	O	O	O	O	O	O	AJ0	B-NP	french	JJ	O	O
+banks	t93	3	bank	O	O	O	O	O	O	O	O	NN2	I-NP	banks	NNS	t92:NMOD	O
+Credit	t94	3	Credit	O	O	O	O	O	O	O	O	NN1	I-NP	credit	NNP	O	O
+Lyonnais	t95	3	Lyonnais	O	O	O	O	O	O	O	O	NP0	I-NP	lyonnais	NNP	t93:NMOD||t94:NAME||t96:COORD	O
+and	t96	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t98:CONJ	O
+Societe	t97	3	Societe	O	O	O	O	O	O	O	O	NP0	B-NP	societe	NNP	O	O
+Generale	t98	3	Generale	O	O	O	O	O	O	O	O	NP0	I-NP	generale	NNP	t97:NAME	O
+,	t99	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+hold	t100	3	hold	e17	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	hold	VBP	t80:SBJ||t103:OBJ	O
+nearly	t101	3	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	RB	t102:DEP	O
+50	t102	3	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
+%	t103	3	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t101:NMOD||t104:NMOD	O
+of	t104	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t108:PMOD	O
+Navigation	t105	3	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t106	3	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t105:NAME||t107:SUFFIX	O
+'s	t107	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+capital	t108	3	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t106:NMOD	O
+.	t109	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Mr.	t110	4	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t111	4	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t110:TITLE	mainVb
-said	t112	4	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t111:SBJ||t113:OBJ||t138:P	mainVb
-that	t113	4	that	O	O	O	O	O	O	O	O	that	IN	t120:SUB	mainVb
-as	t114	4	as	O	O	O	O	O	O	O	O	as	IN	t117:PMOD	mainVb
-Navigation	t115	4	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t116	4	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	O	mainVb
-chairman	t117	4	chairman	O	O	O	O	O	O	O	O	chairman	NN	t115:NAME||t116:NAME	mainVb
-,	t118	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t119	4	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-is	t120	4	be	O	O	O	O	O	O	O	O	be	VBZ	t114:ADV||t118:P||t119:SBJ||t121:VC	mainVb
-prohibited	t121	4	prohibit	e19	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	prohibit	VBN	t122:LGS||t125:ADV	mainVb
-by	t122	4	by	O	O	O	O	O	O	O	O	by	IN	t124:PMOD	mainVb
-takeover	t123	4	takeover	O	O	O	O	O	O	O	O	takeover	NN	O	mainVb
-regulations	t124	4	regulation	O	O	O	O	O	O	O	O	regulation	NNS	t123:NMOD	mainVb
-from	t125	4	from	O	O	O	O	O	O	O	O	from	IN	t126:PMOD	mainVb
-organizing	t126	4	organize	e22	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	organize	VBG	t129:OBJ||t130:COORD	mainVb
-his	t127	4	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-own	t128	4	own	O	O	O	O	O	O	O	O	own	JJ	O	mainVb
-defense	t129	4	defense	O	O	O	O	O	O	O	O	defense	NN	t127:NMOD||t128:NMOD	mainVb
-or	t130	4	or	O	O	O	O	O	O	O	O	or	CC	t131:CONJ	mainVb
-doing	t131	4	do	e24	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	do	VBG	t132:OBJ	mainVb
-anything	t132	4	anything	O	O	O	O	O	O	O	O	anything	NN	t133:NMOD	mainVb
-besides	t133	4	besides	O	O	O	O	O	O	O	O	besides	IN	t134:PMOD	mainVb
-managing	t134	4	manage	e25	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	manage	VBG	t137:OBJ	mainVb
-current	t135	4	current	O	O	O	O	O	O	O	O	current	JJ	O	mainVb
-company	t136	4	company	O	O	O	O	O	O	O	O	company	NN	O	mainVb
-business	t137	4	business	O	O	O	O	O	O	O	O	business	NN	t135:NMOD||t136:NMOD	mainVb
-.	t138	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Mr.	t110	4	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t111	4	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t110:TITLE	O
+said	t112	4	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t111:SBJ||t113:OBJ||t138:P	mainVb
+that	t113	4	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t120:SUB	O
+as	t114	4	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t117:PMOD	O
+Navigation	t115	4	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t116	4	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	O	O
+chairman	t117	4	chairman	O	O	O	O	O	O	O	O	NN1	I-NP	chairman	NN	t115:NAME||t116:NAME	O
+,	t118	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t119	4	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+is	t120	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t114:ADV||t118:P||t119:SBJ||t121:VC	O
+prohibited	t121	4	prohibit	e19	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	prohibit	VBN	t122:LGS||t125:ADV	O
+by	t122	4	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t124:PMOD	O
+takeover	t123	4	takeover	O	O	O	O	O	O	O	O	NN1	B-NP	takeover	NN	O	O
+regulations	t124	4	regulation	O	O	O	O	O	O	O	O	NN2	I-NP	regulation	NNS	t123:NMOD	O
+from	t125	4	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t126:PMOD	O
+organizing	t126	4	organize	e22	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	organize	VBG	t129:OBJ||t130:COORD	O
+his	t127	4	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+own	t128	4	own	O	O	O	O	O	O	O	O	DT0	I-NP	own	JJ	O	O
+defense	t129	4	defense	O	O	O	O	O	O	O	O	NN1	I-NP	defense	NN	t127:NMOD||t128:NMOD	O
+or	t130	4	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t131:CONJ	O
+doing	t131	4	do	e24	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VDG	B-VP	do	VBG	t132:OBJ	O
+anything	t132	4	anything	O	O	O	O	O	O	O	O	PNI	B-NP	anything	NN	t133:NMOD	O
+besides	t133	4	besides	O	O	O	O	O	O	O	O	PRP	B-PP	besides	IN	t134:PMOD	O
+managing	t134	4	manage	e25	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-NP	manage	VBG	t137:OBJ	O
+current	t135	4	current	O	O	O	O	O	O	O	O	AJ0	I-NP	current	JJ	O	O
+company	t136	4	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	O	O
+business	t137	4	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t135:NMOD||t136:NMOD	O
+.	t138	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-But	t139	5	but	O	O	O	O	O	O	O	O	but	CC	O	mainVb
-sources	t140	5	source	O	O	O	O	O	O	O	O	source	NNS	O	mainVb
-said	t141	5	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t139:DEP||t140:SBJ||t143:OBJ||t170:P	mainVb
-he	t142	5	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-will	t143	5	will	O	O	O	O	O	O	O	O	will	MD	t142:SBJ||t144:VC	mainVb
-be	t144	5	be	O	O	O	O	O	O	O	O	be	VB	t145:VC	mainVb
-urging	t145	5	urge	e28	I_ACTION	FUTURE+PROGRESSIVE+POS	O	O	O	O	O	urge	VBG	t147:OBJ||t148:OPRD	mainVb
-his	t146	5	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-allies	t147	5	ally	O	O	O	O	O	O	O	O	allies	NNS	t146:NMOD	mainVb
-to	t148	5	to	O	O	O	O	O	O	O	O	to	TO	t149:IM	mainVb
-boost	t149	5	boost	e30	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	boost	VB	t151:OBJ	mainVb
-their	t150	5	they	O	O	O	O	O	O	O	O	their	PRP$	O	mainVb
-stakes	t151	5	stake	O	O	O	O	O	O	O	O	stakes	NNS	t150:NMOD||t152:LOC	mainVb
-in	t152	5	in	O	O	O	O	O	O	O	O	in	IN	t154:PMOD	mainVb
-Navigation	t153	5	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t154	5	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t153:NAME||t155:P||t157:NMOD	mainVb
-,	t155	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t156	5	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-is	t157	5	be	O	O	O	O	O	O	O	O	be	VBZ	t156:SBJ||t158:VC||t162:COORD	mainVb
-being	t158	5	be	O	O	O	O	O	O	O	O	be	VBG	t159:VC	mainVb
-traded	t159	5	trade	e31	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	trade	VBN	t160:LOC	mainVb
-in	t160	5	in	O	O	O	O	O	O	O	O	in	IN	t161:PMOD	mainVb
-London	t161	5	London	O	O	O	O	O	O	O	O	london	NNP	O	mainVb
-and	t162	5	and	O	O	O	O	O	O	O	O	and	CC	t163:CONJ	mainVb
-is	t163	5	be	O	O	O	O	O	O	O	O	be	VBZ	t164:VC	mainVb
-to	t164	5	to	O	O	O	O	O	O	O	O	to	TO	t165:IM	mainVb
-resume	t165	5	resume	e33	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	resume	VB	t166:OPRD||t169:TMP	mainVb
-trading	t166	5	trade	e34	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	trade	VBG	t167:LOC	mainVb
-in	t167	5	in	O	O	O	O	O	O	O	O	in	IN	t168:PMOD	mainVb
-Paris	t168	5	Paris	O	O	O	O	O	O	O	O	paris	NNP	O	mainVb
-Tuesday	t169	5	Tuesday	O	O	O	tmx153	DATE	1989-10-31	O	O	tuesday	NNP	O	mainVb
-.	t170	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+But	t139	5	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
+sources	t140	5	source	O	O	O	O	O	O	O	O	NN2	B-NP	source	NNS	O	O
+said	t141	5	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t139:DEP||t140:SBJ||t143:OBJ||t170:P	mainVb
+he	t142	5	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+will	t143	5	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t142:SBJ||t144:VC	O
+be	t144	5	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t145:VC	O
+urging	t145	5	urge	e28	I_ACTION	FUTURE+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	urge	VBG	t147:OBJ||t148:OPRD	O
+his	t146	5	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+allies	t147	5	ally	O	O	O	O	O	O	O	O	NN2	I-NP	allies	NNS	t146:NMOD	O
+to	t148	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t149:IM	O
+boost	t149	5	boost	e30	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	boost	VB	t151:OBJ	O
+their	t150	5	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
+stakes	t151	5	stake	O	O	O	O	O	O	O	O	NN2	I-NP	stakes	NNS	t150:NMOD||t152:LOC	O
+in	t152	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t154:PMOD	O
+Navigation	t153	5	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t154	5	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t153:NAME||t155:P||t157:NMOD	O
+,	t155	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t156	5	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+is	t157	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t156:SBJ||t158:VC||t162:COORD	O
+being	t158	5	be	O	O	O	O	O	O	O	O	VBG	I-VP	be	VBG	t159:VC	O
+traded	t159	5	trade	e31	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVN	I-VP	trade	VBN	t160:LOC	O
+in	t160	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t161:PMOD	O
+London	t161	5	London	O	O	O	O	O	O	O	O	NP0	B-NP	london	NNP	O	O
+and	t162	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t163:CONJ	O
+is	t163	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t164:VC	O
+to	t164	5	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t165:IM	O
+resume	t165	5	resume	e33	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	resume	VB	t166:OPRD||t169:TMP	O
+trading	t166	5	trade	e34	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	trade	VBG	t167:LOC	O
+in	t167	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t168:PMOD	O
+Paris	t168	5	Paris	O	O	O	O	O	O	O	O	NP0	B-NP	paris	NNP	O	O
+Tuesday	t169	5	Tuesday	O	O	O	tmx153	DATE	1989-10-31	O	O	NP0	B-NP	tuesday	NNP	O	O
+.	t170	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-At	t171	6	at	O	O	O	O	O	O	O	O	at	IN	t174:PMOD	mainVb
-the	t172	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-same	t173	6	same	O	O	O	O	O	O	O	O	same	JJ	O	mainVb
-time	t174	6	time	O	O	O	O	O	O	O	O	time	NN	t172:NMOD||t173:NMOD	mainVb
-,	t175	6	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t176	6	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-is	t177	6	be	O	O	O	O	O	O	O	O	be	VBZ	t171:TMP||t175:P||t176:SBJ||t178:VC||t192:P	mainVb
-expected	t178	6	expect	e36	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	expect	VBN	t179:OPRD	mainVb
-to	t179	6	to	O	O	O	O	O	O	O	O	to	TO	t180:IM	mainVb
-seek	t180	6	seek	e38	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	seek	VB	t184:OBJ	mainVb
-legal	t181	6	legal	O	O	O	O	O	O	O	O	legal	JJ	t182:COORD	mainVb
-and	t182	6	and	O	O	O	O	O	O	O	O	and	CC	t183:CONJ	mainVb
-regulatory	t183	6	regulatory	O	O	O	O	O	O	O	O	regulatory	JJ	O	mainVb
-means	t184	6	means	O	O	O	O	O	O	O	O	means	NNS	t181:NMOD||t185:NMOD	mainVb
-of	t185	6	of	O	O	O	O	O	O	O	O	of	IN	t186:PMOD	mainVb
-blocking	t186	6	block	e40	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	block	VBG	t187:COORD||t191:OBJ	mainVb
-or	t187	6	or	O	O	O	O	O	O	O	O	or	CC	t188:CONJ	mainVb
-delaying	t188	6	delay	e41	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	delay	VBG	O	mainVb
-Paribas	t189	6	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t190:SUFFIX	mainVb
-'s	t190	6	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-bid	t191	6	bid	e42	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t189:NMOD	mainVb
-.	t192	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+At	t171	6	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t174:PMOD	O
+the	t172	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+same	t173	6	same	O	O	O	O	O	O	O	O	DT0	I-NP	same	JJ	O	O
+time	t174	6	time	O	O	O	O	O	O	O	O	NN1	I-NP	time	NN	t172:NMOD||t173:NMOD	O
+,	t175	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t176	6	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+is	t177	6	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t171:TMP||t175:P||t176:SBJ||t178:VC||t192:P	mainVb
+expected	t178	6	expect	e36	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	expect	VBN	t179:OPRD	mainVb
+to	t179	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t180:IM	mainVb
+seek	t180	6	seek	e38	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	seek	VB	t184:OBJ	mainVb
+legal	t181	6	legal	O	O	O	O	O	O	O	O	AJ0	B-NP	legal	JJ	t182:COORD	O
+and	t182	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t183:CONJ	O
+regulatory	t183	6	regulatory	O	O	O	O	O	O	O	O	AJ0	I-NP	regulatory	JJ	O	O
+means	t184	6	means	O	O	O	O	O	O	O	O	NN0	I-NP	means	NNS	t181:NMOD||t185:NMOD	O
+of	t185	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t186:PMOD	O
+blocking	t186	6	block	e40	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	block	VBG	t187:COORD||t191:OBJ	O
+or	t187	6	or	O	O	O	O	O	O	O	O	CJC	I-VP	or	CC	t188:CONJ	O
+delaying	t188	6	delay	e41	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	delay	VBG	O	O
+Paribas	t189	6	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	t190:SUFFIX	O
+'s	t190	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+bid	t191	6	bid	e42	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t189:NMOD	O
+.	t192	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-For	t193	7	for	O	O	O	O	O	O	O	O	for	IN	t195:PMOD	mainVb
-the	t194	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-moment	t195	7	moment	O	O	O	O	O	O	O	O	moment	NN	t194:NMOD	mainVb
-,	t196	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t197	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-sources	t198	7	source	O	O	O	O	O	O	O	O	source	NNS	t197:NMOD	mainVb
-said	t199	7	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t196:P||t198:SBJ||t200:P||t202:OBJ	mainVb
-,	t200	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t201	7	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-has	t202	7	have	O	O	O	O	O	O	O	O	have	VBZ	t193:TMP||t201:SBJ||t203:VC||t215:P	mainVb
-decided	t203	7	decide	e44	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	decide	VBN	t204:ADV	mainVb
-against	t204	7	against	O	O	O	O	O	O	O	O	against	IN	t205:PMOD	mainVb
-seeking	t205	7	seek	e45	I_ACTION	NONE+NONE+POS	O	O	O	O	O	seek	VBG	t208:OBJ||t209:COORD	mainVb
-a	t206	7	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-white	t207	7	white	O	O	O	O	O	O	O	O	white	JJ	O	mainVb
-knight	t208	7	knight	O	O	O	O	O	O	O	O	knight	NN	t206:NMOD||t207:NMOD	mainVb
-or	t209	7	or	O	O	O	O	O	O	O	O	or	CC	t210:CONJ	mainVb
-organizing	t210	7	organize	e46	I_ACTION	NONE+NONE+POS	O	O	O	O	O	organize	VBG	t212:OBJ	mainVb
-a	t211	7	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-counterbid	t212	7	counterbid	e156	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	counterbid	NN	t211:NMOD||t213:NMOD	mainVb
-for	t213	7	for	O	O	O	O	O	O	O	O	for	IN	t214:PMOD	mainVb
-Paribas	t214	7	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-.	t215	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+For	t193	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t195:PMOD	O
+the	t194	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+moment	t195	7	moment	O	O	O	O	O	O	O	O	NN1	I-NP	moment	NN	t194:NMOD	O
+,	t196	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t197	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+sources	t198	7	source	O	O	O	O	O	O	O	O	NN2	I-NP	source	NNS	t197:NMOD	O
+said	t199	7	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t196:P||t198:SBJ||t200:P||t202:OBJ	mainVb
+,	t200	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t201	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+has	t202	7	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t193:TMP||t201:SBJ||t203:VC||t215:P	O
+decided	t203	7	decide	e44	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	decide	VBN	t204:ADV	O
+against	t204	7	against	O	O	O	O	O	O	O	O	PRP	B-PP	against	IN	t205:PMOD	O
+seeking	t205	7	seek	e45	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	seek	VBG	t208:OBJ||t209:COORD	O
+a	t206	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+white	t207	7	white	O	O	O	O	O	O	O	O	AJ0	I-NP	white	JJ	O	O
+knight	t208	7	knight	O	O	O	O	O	O	O	O	NN1	I-NP	knight	NN	t206:NMOD||t207:NMOD	O
+or	t209	7	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t210:CONJ	O
+organizing	t210	7	organize	e46	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	organize	VBG	t212:OBJ	O
+a	t211	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+counterbid	t212	7	counterbid	e156	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	counterbid	NN	t211:NMOD||t213:NMOD	O
+for	t213	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t214:PMOD	O
+Paribas	t214	7	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+.	t215	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Mr.	t216	8	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t217	8	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t216:TITLE	mainVb
-said	t218	8	say	e47	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t217:SBJ||t229:OBJ||t249:P	mainVb
-Navigation	t219	8	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t220	8	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t219:NAME||t221:SUFFIX	mainVb
-'s	t221	8	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-1989	t222	8	1989	O	O	O	tmx157	DATE	1989	O	O	1989	CD	O	mainVb
-unconsolidated	t223	8	unconsolidated	O	O	O	O	O	O	O	O	unconsolidated	JJ	t224:P||t225:COORD||t227:P	mainVb
-,	t224	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t225	8	or	O	O	O	O	O	O	O	O	or	CC	t226:CONJ	mainVb
-parent-company	t226	8	parent-company	O	O	O	O	O	O	O	O	parent-company	NN	O	mainVb
-,	t227	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-profit	t228	8	profit	O	O	O	O	O	O	O	O	profit	NN	t220:NMOD||t222:NMOD||t223:NMOD	mainVb
-is	t229	8	be	O	O	O	O	O	O	O	O	be	VBZ	t228:SBJ||t230:PRD	mainVb
-likely	t230	8	likely	O	O	O	O	O	O	O	O	likely	JJ	t231:AMOD	mainVb
-to	t231	8	to	O	O	O	O	O	O	O	O	to	TO	t232:IM	mainVb
-be	t232	8	be	O	O	O	O	O	O	O	O	be	VB	t240:PRD||t241:P||t242:ADV	mainVb
-4.7	t233	8	4.7	O	O	O	O	O	O	O	O	4.7	CD	O	mainVb
-billion	t234	8	billion	O	O	O	O	O	O	O	O	billion	CD	t233:DEP	mainVb
-francs	t235	8	franc	O	O	O	O	O	O	O	O	franc	NNS	t234:NMOD	mainVb
--LRB-	t236	8	-lrb-	O	O	O	O	O	O	O	O	-lrb-	NNP	t235:NAME	mainVb
-$	t237	8	$	O	O	O	O	O	O	O	O	$	$	t238:DEP||t239:DEP	mainVb
-754.4	t238	8	754.4	O	O	O	O	O	O	O	O	754.4	CD	O	mainVb
-million	t239	8	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
--RRB-	t240	8	-rrb-	O	O	O	O	O	O	O	O	-rrb-	NN	t236:NMOD||t237:NMOD	mainVb
-,	t241	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-up	t242	8	up	O	O	O	O	O	O	O	O	up	RB	t243:AMOD	mainVb
-from	t243	8	from	O	O	O	O	O	O	O	O	from	IN	t246:PMOD||t248:TMP	mainVb
-633.8	t244	8	633.8	O	O	O	O	O	O	O	O	633.8	CD	O	mainVb
-million	t245	8	million	O	O	O	O	O	O	O	O	million	CD	t244:DEP	mainVb
-francs	t246	8	franc	O	O	O	O	O	O	O	O	franc	NNS	t245:NMOD	mainVb
-last	t247	8	last	O	O	O	tmx162	DATE	1988	O	O	last	JJ	O	mainVb
-year	t248	8	year	O	O	O	tmx162	DATE	1988	O	O	year	NN	t247:NMOD	mainVb
-.	t249	8	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Mr.	t216	8	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t217	8	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t216:TITLE	O
+said	t218	8	say	e47	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t217:SBJ||t229:OBJ||t249:P	mainVb
+Navigation	t219	8	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t220	8	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t219:NAME||t221:SUFFIX	O
+'s	t221	8	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+1989	t222	8	1989	O	O	O	tmx157	DATE	1989	O	O	CRD	I-NP	1989	CD	O	O
+unconsolidated	t223	8	unconsolidated	O	O	O	O	O	O	O	O	AJ0	I-NP	unconsolidated	JJ	t224:P||t225:COORD||t227:P	O
+,	t224	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t225	8	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t226:CONJ	O
+parent-company	t226	8	parent-company	O	O	O	O	O	O	O	O	NN1	B-NP	parent-company	NN	O	O
+,	t227	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+profit	t228	8	profit	O	O	O	O	O	O	O	O	NN1	B-NP	profit	NN	t220:NMOD||t222:NMOD||t223:NMOD	O
+is	t229	8	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t228:SBJ||t230:PRD	O
+likely	t230	8	likely	O	O	O	O	O	O	O	O	AJ0	B-ADJP	likely	JJ	t231:AMOD	O
+to	t231	8	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t232:IM	O
+be	t232	8	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t240:PRD||t241:P||t242:ADV	O
+4.7	t233	8	4.7	O	O	O	O	O	O	O	O	CRD	B-NP	4.7	CD	O	O
+billion	t234	8	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t233:DEP	O
+francs	t235	8	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t234:NMOD	O
+-LRB-	t236	8	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NNP	t235:NAME	O
+$	t237	8	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t238:DEP||t239:DEP	O
+754.4	t238	8	754.4	O	O	O	O	O	O	O	O	CRD	I-NP	754.4	CD	O	O
+million	t239	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+-RRB-	t240	8	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t236:NMOD||t237:NMOD	O
+,	t241	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+up	t242	8	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RB	t243:AMOD	O
+from	t243	8	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t246:PMOD||t248:TMP	O
+633.8	t244	8	633.8	O	O	O	O	O	O	O	O	CRD	B-NP	633.8	CD	O	O
+million	t245	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t244:DEP	O
+francs	t246	8	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t245:NMOD	O
+last	t247	8	last	O	O	O	tmx162	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
+year	t248	8	year	O	O	O	tmx162	DATE	1988	O	O	NN1	I-NP	year	NN	t247:NMOD	O
+.	t249	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-That	t250	9	that	O	O	O	O	O	O	O	O	that	DT	O	mainVb
-is	t251	9	be	O	O	O	O	O	O	O	O	be	VBZ	t250:SBJ||t252:PRD||t276:P	mainVb
-due	t252	9	due	O	O	O	O	O	O	O	O	due	JJ	t254:AMOD	mainVb
-mostly	t253	9	mostly	O	O	O	O	O	O	O	O	mostly	RB	O	mainVb
-to	t254	9	to	O	O	O	O	O	O	O	O	to	TO	t253:PMOD||t255:PMOD	mainVb
-payments	t255	9	payment	e49	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	payment	NNS	t256:NMOD||t258:NMOD	mainVb
-from	t256	9	from	O	O	O	O	O	O	O	O	from	IN	t257:PMOD	mainVb
-Allianz	t257	9	Allianz	O	O	O	O	O	O	O	O	allianz	NNP	O	mainVb
-for	t258	9	for	O	O	O	O	O	O	O	O	for	IN	t259:PMOD	mainVb
-most	t259	9	most	O	O	O	O	O	O	O	O	most	DT	t260:NMOD	mainVb
-of	t260	9	of	O	O	O	O	O	O	O	O	of	IN	t264:PMOD	mainVb
-the	t261	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-50	t262	9	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-%	t263	9	%	O	O	O	O	O	O	O	O	%	NN	t262:NMOD	mainVb
-stake	t264	9	stake	O	O	O	O	O	O	O	O	stake	NN	t261:NMOD||t263:NMOD||t266:NMOD||t270:LOC	mainVb
-it	t265	9	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-has	t266	9	have	O	O	O	O	O	O	O	O	have	VBZ	t265:SBJ||t267:VC	mainVb
-agreed	t267	9	agree	e51	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	agree	VBN	t268:OPRD	mainVb
-to	t268	9	to	O	O	O	O	O	O	O	O	to	TO	t269:IM	mainVb
-acquire	t269	9	acquire	e53	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	acquire	VB	O	mainVb
-in	t270	9	in	O	O	O	O	O	O	O	O	in	IN	t275:PMOD	mainVb
-Navigation	t271	9	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t272	9	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t271:NAME||t273:SUFFIX	mainVb
-'s	t273	9	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-insurance	t274	9	insurance	O	O	O	O	O	O	O	O	insurance	NN	O	mainVb
-business	t275	9	business	O	O	O	O	O	O	O	O	business	NN	t272:NMOD||t274:NMOD	mainVb
-.	t276	9	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+That	t250	9	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
+is	t251	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t250:SBJ||t252:PRD||t276:P	mainVb
+due	t252	9	due	O	O	O	O	O	O	O	O	PRP	B-ADJP	due	JJ	t254:AMOD	O
+mostly	t253	9	mostly	O	O	O	O	O	O	O	O	AV0	B-ADVP	mostly	RB	O	O
+to	t254	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t253:PMOD||t255:PMOD	O
+payments	t255	9	payment	e49	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN2	B-NP	payment	NNS	t256:NMOD||t258:NMOD	O
+from	t256	9	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t257:PMOD	O
+Allianz	t257	9	Allianz	O	O	O	O	O	O	O	O	NP0	B-NP	allianz	NNP	O	O
+for	t258	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t259:PMOD	O
+most	t259	9	most	O	O	O	O	O	O	O	O	DT0	B-NP	most	DT	t260:NMOD	O
+of	t260	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t264:PMOD	O
+the	t261	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+50	t262	9	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
+%	t263	9	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t262:NMOD	O
+stake	t264	9	stake	O	O	O	O	O	O	O	O	VVB	I-NP	stake	NN	t261:NMOD||t263:NMOD||t266:NMOD||t270:LOC	O
+it	t265	9	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+has	t266	9	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t265:SBJ||t267:VC	O
+agreed	t267	9	agree	e51	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	agree	VBN	t268:OPRD	O
+to	t268	9	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t269:IM	O
+acquire	t269	9	acquire	e53	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	O	O
+in	t270	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t275:PMOD	O
+Navigation	t271	9	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t272	9	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t271:NAME||t273:SUFFIX	O
+'s	t273	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+insurance	t274	9	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	O	O
+business	t275	9	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t272:NMOD||t274:NMOD	O
+.	t276	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Mr.	t277	10	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t278	10	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t277:TITLE	mainVb
-said	t279	10	say	e55	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t278:SBJ||t283:OBJ||t295:P	mainVb
-the	t280	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-exceptional	t281	10	exceptional	O	O	O	O	O	O	O	O	exceptional	JJ	O	mainVb
-gain	t282	10	gain	O	O	O	O	O	O	O	O	gain	NN	t280:NMOD||t281:NMOD	mainVb
-would	t283	10	would	O	O	O	O	O	O	O	O	would	MD	t282:SBJ||t284:VC	mainVb
-mean	t284	10	mean	e2258	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	mean	VB	t290:OBJ||t292:TMP	mainVb
-nearly	t285	10	nearly	O	O	O	O	O	O	O	O	nearly	RB	t286:DEP||t288:AMOD	mainVb
-twice	t286	10	twice	O	O	O	O	O	O	O	O	twice	RB	O	mainVb
-as	t287	10	as	O	O	O	O	O	O	O	O	as	IN	O	mainVb
-high	t288	10	high	O	O	O	O	O	O	O	O	high	JJ	t287:AMOD	mainVb
-a	t289	10	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-dividend	t290	10	dividend	O	O	O	O	O	O	O	O	dividend	NN	t285:NMOD||t289:NMOD||t293:NMOD	mainVb
-this	t291	10	this	O	O	O	tmx163	DATE	1989	O	O	this	DT	O	mainVb
-year	t292	10	year	O	O	O	tmx163	DATE	1989	O	O	year	NN	t291:NMOD	mainVb
-as	t293	10	as	O	O	O	O	O	O	O	O	as	IN	t294:PMOD	mainVb
-last	t294	10	last	O	O	O	tmx167	DATE	1988	O	O	last	JJ	O	mainVb
-.	t295	10	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Mr.	t277	10	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t278	10	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t277:TITLE	O
+said	t279	10	say	e55	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t278:SBJ||t283:OBJ||t295:P	mainVb
+the	t280	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+exceptional	t281	10	exceptional	O	O	O	O	O	O	O	O	AJ0	I-NP	exceptional	JJ	O	O
+gain	t282	10	gain	O	O	O	O	O	O	O	O	NN1	I-NP	gain	NN	t280:NMOD||t281:NMOD	O
+would	t283	10	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t282:SBJ||t284:VC	O
+mean	t284	10	mean	e2258	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	mean	VB	t290:OBJ||t292:TMP	O
+nearly	t285	10	nearly	O	O	O	O	O	O	O	O	AV0	B-ADVP	nearly	RB	t286:DEP||t288:AMOD	O
+twice	t286	10	twice	O	O	O	O	O	O	O	O	AV0	I-ADVP	twice	RB	O	O
+as	t287	10	as	O	O	O	O	O	O	O	O	AV0	B-PP	as	IN	O	O
+high	t288	10	high	O	O	O	O	O	O	O	O	AJ0	B-NP	high	JJ	t287:AMOD	O
+a	t289	10	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
+dividend	t290	10	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t285:NMOD||t289:NMOD||t293:NMOD	O
+this	t291	10	this	O	O	O	tmx163	DATE	1989	O	O	DT0	B-NP	this	DT	O	O
+year	t292	10	year	O	O	O	tmx163	DATE	1989	O	O	NN1	I-NP	year	NN	t291:NMOD	O
+as	t293	10	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t294:PMOD	O
+last	t294	10	last	O	O	O	tmx167	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
+.	t295	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-If	t296	11	if	O	O	O	O	O	O	O	O	if	IN	t298:SUB	mainVb
-holders	t297	11	holder	O	O	O	O	O	O	O	O	holder	NNS	O	mainVb
-avoid	t298	11	avoid	e59	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	avoid	VBP	t297:SBJ||t299:OPRD	mainVb
-tendering	t299	11	tender	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	tender	VBG	t300:ADV	mainVb
-to	t300	11	to	O	O	O	O	O	O	O	O	to	TO	t301:PMOD	mainVb
-Paribas	t301	11	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-,	t302	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t303	11	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-added	t304	11	add	e61	REPORTING	PAST+NONE+POS	O	O	O	O	O	add	VBD	t303:SBJ||t305:P||t307:OBJ	mainVb
-,	t305	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-they	t306	11	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-can	t307	11	can	O	O	O	O	O	O	O	O	can	MD	t296:ADV||t302:P||t306:SBJ||t308:VC||t314:P	mainVb
-expect	t308	11	expect	e62	I_STATE	NONE+NONE+POS	O	O	O	O	O	expect	VB	t311:OBJ	mainVb
-strong	t309	11	strong	O	O	O	O	O	O	O	O	strong	JJ	O	mainVb
-dividends	t310	11	dividend	O	O	O	O	O	O	O	O	dividend	NNS	t309:NMOD	mainVb
-again	t311	11	again	O	O	O	O	O	O	O	O	again	RB	t310:NMOD||t313:TMP	mainVb
-next	t312	11	next	O	O	O	tmx169	DATE	1990	O	O	next	JJ	O	mainVb
-year	t313	11	year	O	O	O	tmx169	DATE	1990	O	O	year	NN	t312:NMOD	mainVb
-.	t314	11	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+If	t296	11	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t298:SUB	O
+holders	t297	11	holder	O	O	O	O	O	O	O	O	NN2	B-NP	holder	NNS	O	O
+avoid	t298	11	avoid	e59	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	avoid	VBP	t297:SBJ||t299:OPRD	O
+tendering	t299	11	tender	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	tender	VBG	t300:ADV	O
+to	t300	11	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t301:PMOD	O
+Paribas	t301	11	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+,	t302	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t303	11	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+added	t304	11	add	e61	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	add	VBD	t303:SBJ||t305:P||t307:OBJ	mainVb
+,	t305	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+they	t306	11	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+can	t307	11	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t296:ADV||t302:P||t306:SBJ||t308:VC||t314:P	O
+expect	t308	11	expect	e62	I_STATE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	expect	VB	t311:OBJ	O
+strong	t309	11	strong	O	O	O	O	O	O	O	O	AJ0	B-NP	strong	JJ	O	O
+dividends	t310	11	dividend	O	O	O	O	O	O	O	O	NN2	I-NP	dividend	NNS	t309:NMOD	O
+again	t311	11	again	O	O	O	O	O	O	O	O	AV0	B-ADVP	again	RB	t310:NMOD||t313:TMP	O
+next	t312	11	next	O	O	O	tmx169	DATE	1990	O	O	ORD	B-NP	next	JJ	O	O
+year	t313	11	year	O	O	O	tmx169	DATE	1990	O	O	NN1	I-NP	year	NN	t312:NMOD	O
+.	t314	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Analysts	t315	12	analyst	O	O	O	O	O	O	O	O	analyst	NNS	O	mainVb
-noted	t316	12	note	e64	REPORTING	PAST+NONE+POS	O	O	O	O	O	note	VBD	t315:SBJ||t317:OBJ||t343:P	mainVb
-that	t317	12	that	O	O	O	O	O	O	O	O	that	IN	t326:SUB	mainVb
-over	t318	12	over	O	O	O	O	O	O	O	O	over	IN	t322:PMOD	mainVb
-the	t319	12	the	O	O	O	tmx173	DURATION	P20Y	O	O	the	DT	O	mainVb
-past	t320	12	past	O	O	O	tmx173	DURATION	P20Y	O	O	past	JJ	O	mainVb
-20	t321	12	20	O	O	O	tmx173	DURATION	P20Y	O	O	20	CD	O	mainVb
-years	t322	12	year	O	O	O	tmx173	DURATION	P20Y	O	O	years	NNS	t319:NMOD||t320:NMOD||t321:NMOD	mainVb
-,	t323	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Mr.	t324	12	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t325	12	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t324:TITLE	mainVb
-has	t326	12	have	O	O	O	O	O	O	O	O	have	VBZ	t318:TMP||t323:P||t325:SBJ||t327:VC||t334:COORD	mainVb
-built	t327	12	build	e65	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	build	VBN	t329:OBJ||t330:MNR	mainVb
-his	t328	12	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-company	t329	12	company	O	O	O	O	O	O	O	O	company	NN	t328:NMOD	mainVb
-through	t330	12	through	O	O	O	O	O	O	O	O	through	IN	t333:PMOD	mainVb
-astute	t331	12	astute	O	O	O	O	O	O	O	O	astute	JJ	O	mainVb
-stock-market	t332	12	stock-market	O	O	O	O	O	O	O	O	stock-market	NN	O	mainVb
-activity	t333	12	activity	O	O	O	O	O	O	O	O	activity	NN	t331:NMOD||t332:NMOD	mainVb
-and	t334	12	and	O	O	O	O	O	O	O	O	and	CC	t335:CONJ	mainVb
-has	t335	12	have	O	O	O	O	O	O	O	O	have	VBZ	t336:VC	mainVb
-warded	t336	12	ward	e68	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	ward	VBN	t337:PRT||t342:OBJ	mainVb
-off	t337	12	off	O	O	O	O	O	O	O	O	off	RP	O	mainVb
-at	t338	12	at	O	O	O	O	O	O	O	O	at	IN	O	mainVb
-least	t339	12	least	O	O	O	O	O	O	O	O	least	JJS	O	mainVb
-three	t340	12	three	O	O	O	O	O	O	O	O	three	CD	t338:DEP||t339:DEP	mainVb
-takeover	t341	12	takeover	O	O	O	O	O	O	O	O	takeover	NN	O	mainVb
-attempts	t342	12	attempt	e69	I_ACTION	NONE+NONE+POS	O	O	O	O	O	attempt	NNS	t340:NMOD||t341:NMOD	mainVb
-.	t343	12	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Analysts	t315	12	analyst	O	O	O	O	O	O	O	O	NN2	B-NP	analyst	NNS	O	O
+noted	t316	12	note	e64	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	note	VBD	t315:SBJ||t317:OBJ||t343:P	mainVb
+that	t317	12	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t326:SUB	O
+over	t318	12	over	O	O	O	O	O	O	O	O	PRP	B-PP	over	IN	t322:PMOD	O
+the	t319	12	the	O	O	O	tmx173	DURATION	P20Y	O	O	AT0	B-NP	the	DT	O	O
+past	t320	12	past	O	O	O	tmx173	DURATION	P20Y	O	O	NN1	I-NP	past	JJ	O	O
+20	t321	12	20	O	O	O	tmx173	DURATION	P20Y	O	O	CRD	I-NP	20	CD	O	O
+years	t322	12	year	O	O	O	tmx173	DURATION	P20Y	O	O	NN2	I-NP	years	NNS	t319:NMOD||t320:NMOD||t321:NMOD	O
+,	t323	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Mr.	t324	12	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t325	12	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t324:TITLE	O
+has	t326	12	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t318:TMP||t323:P||t325:SBJ||t327:VC||t334:COORD	O
+built	t327	12	build	e65	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	build	VBN	t329:OBJ||t330:MNR	O
+his	t328	12	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+company	t329	12	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t328:NMOD	O
+through	t330	12	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t333:PMOD	O
+astute	t331	12	astute	O	O	O	O	O	O	O	O	NN1	B-NP	astute	JJ	O	O
+stock-market	t332	12	stock-market	O	O	O	O	O	O	O	O	NN1	I-NP	stock-market	NN	O	O
+activity	t333	12	activity	O	O	O	O	O	O	O	O	NN1	I-NP	activity	NN	t331:NMOD||t332:NMOD	O
+and	t334	12	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t335:CONJ	O
+has	t335	12	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t336:VC	O
+warded	t336	12	ward	e68	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	ward	VBN	t337:PRT||t342:OBJ	O
+off	t337	12	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
+at	t338	12	at	O	O	O	O	O	O	O	O	AV0	B-ADVP	at	IN	O	O
+least	t339	12	least	O	O	O	O	O	O	O	O	AV0	I-ADVP	least	JJS	O	O
+three	t340	12	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	t338:DEP||t339:DEP	O
+takeover	t341	12	takeover	O	O	O	O	O	O	O	O	NN1	I-NP	takeover	NN	O	O
+attempts	t342	12	attempt	e69	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	attempt	NNS	t340:NMOD||t341:NMOD	O
+.	t343	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-This	t344	13	this	O	O	O	O	O	O	O	O	this	DT	O	mainVb
-time	t345	13	time	O	O	O	O	O	O	O	O	time	NN	t344:NMOD	mainVb
-,	t346	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-however	t347	13	however	O	O	O	O	O	O	O	O	however	RB	O	mainVb
-,	t348	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-some	t349	13	some	O	O	O	O	O	O	O	O	some	DT	O	mainVb
-analysts	t350	13	analyst	O	O	O	O	O	O	O	O	analyst	NNS	t349:NMOD	mainVb
-think	t351	13	think	e71	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	think	VBP	t345:TMP||t346:P||t347:ADV||t348:P||t350:SBJ||t353:OBJ||t358:P	mainVb
-he	t352	13	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-could	t353	13	could	O	O	O	O	O	O	O	O	could	MD	t352:SBJ||t354:VC	mainVb
-face	t354	13	face	e177	I_STATE	NONE+NONE+POS	O	O	O	O	O	face	VB	t357:OBJ	mainVb
-a	t355	13	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-real	t356	13	real	O	O	O	O	O	O	O	O	real	JJ	O	mainVb
-battle	t357	13	battle	e72	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	battle	NN	t355:NMOD||t356:NMOD	mainVb
-.	t358	13	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+This	t344	13	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
+time	t345	13	time	O	O	O	O	O	O	O	O	NN1	I-NP	time	NN	t344:NMOD	O
+,	t346	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+however	t347	13	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
+,	t348	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+some	t349	13	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
+analysts	t350	13	analyst	O	O	O	O	O	O	O	O	NN2	I-NP	analyst	NNS	t349:NMOD	O
+think	t351	13	think	e71	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VBP	t345:TMP||t346:P||t347:ADV||t348:P||t350:SBJ||t353:OBJ||t358:P	mainVb
+he	t352	13	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+could	t353	13	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t352:SBJ||t354:VC	O
+face	t354	13	face	e177	I_STATE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	face	VB	t357:OBJ	O
+a	t355	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+real	t356	13	real	O	O	O	O	O	O	O	O	AJ0	I-NP	real	JJ	O	O
+battle	t357	13	battle	e72	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	battle	NN	t355:NMOD||t356:NMOD	O
+.	t358	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t359	14	"	O	O	O	O	O	O	O	O	"	NN	t360:NMOD	mainVb
-Without	t360	14	without	O	O	O	O	O	O	O	O	without	IN	t364:PMOD	mainVb
-some	t361	14	some	O	O	O	O	O	O	O	O	some	DT	O	mainVb
-unexpected	t362	14	unexpected	O	O	O	O	O	O	O	O	unexpected	JJ	O	mainVb
-"	t363	14	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-coup	t364	14	coup	O	O	O	O	O	O	O	O	coup	NN	t361:NMOD||t362:NMOD||t363:NMOD||t365:NMOD	mainVb
-de	t365	14	de	O	O	O	O	O	O	O	O	de	IN	t366:PMOD	mainVb
-theatre	t366	14	theatre	O	O	O	O	O	O	O	O	theatre	NN	t367:APPO	mainVb
-"	t367	14	"	O	O	O	O	O	O	O	O	"	NNP	O	mainVb
-,	t368	14	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-I	t369	14	I	O	O	O	O	O	O	O	O	i	PRP	O	mainVb
-do	t370	14	do	O	O	O	O	O	O	O	O	do	VBP	t359:ADV||t368:P||t369:SBJ||t371:ADV||t372:VC	mainVb
-n't	t371	14	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-see	t372	14	see	e74	PERCEPTION	PRESENT+NONE+NEG	O	O	O	O	O	see	VB	t374:OBJ	mainVb
-what	t373	14	what	O	O	O	O	O	O	O	O	what	WP	O	mainVb
-will	t374	14	will	O	O	O	O	O	O	O	O	will	MD	t373:SBJ||t375:VC	mainVb
-block	t375	14	block	e76	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	block	VB	t378:OBJ	mainVb
-the	t376	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Paribas	t377	14	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-bid	t378	14	bid	e178	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t376:NMOD||t377:NMOD	mainVb
-,	t379	14	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-"	t380	14	"	O	O	O	O	O	O	O	O	"	NNP	O	mainVb
-said	t381	14	say	e77	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t370:OBJ||t379:P||t380:SBJ||t384:SBJ||t396:OBJ||t412:P	mainVb
-Philippe	t382	14	Philippe	O	O	O	O	O	O	O	O	philippe	NNP	O	mainVb
-de	t383	14	de	O	O	O	O	O	O	O	O	de	NNP	O	mainVb
-Cholet	t384	14	Cholet	O	O	O	O	O	O	O	O	cholet	NNP	t382:NAME||t383:NAME||t385:P||t386:APPO	mainVb
-,	t385	14	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-analyst	t386	14	analyst	O	O	O	O	O	O	O	O	analyst	NN	t387:LOC	mainVb
-at	t387	14	at	O	O	O	O	O	O	O	O	at	IN	t389:PMOD	mainVb
-the	t388	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-brokerage	t389	14	brokerage	O	O	O	O	O	O	O	O	brokerage	NN	t388:NMOD||t392:APPO	mainVb
-Cholet-Dupont	t390	14	Cholet-Dupont	O	O	O	O	O	O	O	O	cholet-dupont	NNP	O	mainVb
-amp	t391	14	amp	O	O	O	O	O	O	O	O	amp	NNP	O	mainVb
-Cie.	t392	14	Cie.	O	O	O	O	O	O	O	O	cie.	NNP	t390:NAME||t391:NAME	mainVb
-Mr.	t393	14	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-de	t394	14	de	O	O	O	O	O	O	O	O	de	NNP	O	mainVb
-Cholet	t395	14	Cholet	O	O	O	O	O	O	O	O	cholet	NNP	t393:TITLE||t394:NAME	mainVb
-said	t396	14	say	e79	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t395:SBJ||t402:OBJ	mainVb
-Mr.	t397	14	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t398	14	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t397:TITLE||t399:SUFFIX	mainVb
-'s	t399	14	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-biggest	t400	14	biggest	O	O	O	O	O	O	O	O	big	JJS	O	mainVb
-hope	t401	14	hope	O	O	O	O	O	O	O	O	hope	NN	t398:NMOD||t400:NMOD	mainVb
-was	t402	14	be	O	O	O	O	O	O	O	O	be	VBD	t401:SBJ||t403:PRD	mainVb
-to	t403	14	to	O	O	O	O	O	O	O	O	to	TO	t404:MNR||t405:IM	mainVb
-somehow	t404	14	somehow	O	O	O	O	O	O	O	O	somehow	RB	O	mainVb
-persuade	t405	14	persuade	e81	I_ACTION	PAST+NONE+POS	O	O	O	O	O	persuade	VB	t407:OBJ||t408:OPRD	mainVb
-regulatory	t406	14	regulatory	O	O	O	O	O	O	O	O	regulatory	JJ	O	mainVb
-authorities	t407	14	authority	O	O	O	O	O	O	O	O	authorities	NNS	t406:NMOD	mainVb
-to	t408	14	to	O	O	O	O	O	O	O	O	to	TO	t409:IM	mainVb
-block	t409	14	block	e83	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	block	VB	t411:OBJ	mainVb
-the	t410	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bid	t411	14	bid	e84	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t410:NMOD	mainVb
-.	t412	14	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+"	t359	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t360:NMOD	O
+Without	t360	14	without	O	O	O	O	O	O	O	O	PRP	B-PP	without	IN	t364:PMOD	O
+some	t361	14	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
+unexpected	t362	14	unexpected	O	O	O	O	O	O	O	O	AJ0	I-NP	unexpected	JJ	O	O
+"	t363	14	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
+coup	t364	14	coup	O	O	O	O	O	O	O	O	NN1	I-NP	coup	NN	t361:NMOD||t362:NMOD||t363:NMOD||t365:NMOD	O
+de	t365	14	de	O	O	O	O	O	O	O	O	NN1	I-NP	de	IN	t366:PMOD	O
+theatre	t366	14	theatre	O	O	O	O	O	O	O	O	NN1	I-NP	theatre	NN	t367:APPO	O
+"	t367	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+,	t368	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+I	t369	14	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
+do	t370	14	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t359:ADV||t368:P||t369:SBJ||t371:ADV||t372:VC	O
+n't	t371	14	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+see	t372	14	see	e74	PERCEPTION	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	see	VB	t374:OBJ	O
+what	t373	14	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
+will	t374	14	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t373:SBJ||t375:VC	O
+block	t375	14	block	e76	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	block	VB	t378:OBJ	O
+the	t376	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Paribas	t377	14	Paribas	O	O	O	O	O	O	O	O	NN1	I-NP	paribas	NNP	O	O
+bid	t378	14	bid	e178	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t376:NMOD||t377:NMOD	O
+,	t379	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+"	t380	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+said	t381	14	say	e77	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t370:OBJ||t379:P||t380:SBJ||t384:SBJ||t396:OBJ||t412:P	mainVb
+Philippe	t382	14	Philippe	O	O	O	O	O	O	O	O	NP0	B-NP	philippe	NNP	O	O
+de	t383	14	de	O	O	O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Cholet	t384	14	Cholet	O	O	O	O	O	O	O	O	NP0	I-NP	cholet	NNP	t382:NAME||t383:NAME||t385:P||t386:APPO	O
+,	t385	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+analyst	t386	14	analyst	O	O	O	O	O	O	O	O	NN1	B-NP	analyst	NN	t387:LOC	O
+at	t387	14	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t389:PMOD	O
+the	t388	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+brokerage	t389	14	brokerage	O	O	O	O	O	O	O	O	NN1	I-NP	brokerage	NN	t388:NMOD||t392:APPO	O
+Cholet-Dupont	t390	14	Cholet-Dupont	O	O	O	O	O	O	O	O	NP0	I-NP	cholet-dupont	NNP	O	O
+amp	t391	14	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
+Cie.	t392	14	Cie.	O	O	O	O	O	O	O	O	NP0	I-NP	cie.	NNP	t390:NAME||t391:NAME	O
+Mr.	t393	14	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+de	t394	14	de	O	O	O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Cholet	t395	14	Cholet	O	O	O	O	O	O	O	O	NP0	I-NP	cholet	NNP	t393:TITLE||t394:NAME	O
+said	t396	14	say	e79	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t395:SBJ||t402:OBJ	O
+Mr.	t397	14	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t398	14	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t397:TITLE||t399:SUFFIX	O
+'s	t399	14	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+biggest	t400	14	biggest	O	O	O	O	O	O	O	O	AJS	I-NP	big	JJS	O	O
+hope	t401	14	hope	O	O	O	O	O	O	O	O	NN1	I-NP	hope	NN	t398:NMOD||t400:NMOD	O
+was	t402	14	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t401:SBJ||t403:PRD	O
+to	t403	14	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t404:MNR||t405:IM	O
+somehow	t404	14	somehow	O	O	O	O	O	O	O	O	AV0	I-VP	somehow	RB	O	O
+persuade	t405	14	persuade	e81	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVI	I-VP	persuade	VB	t407:OBJ||t408:OPRD	O
+regulatory	t406	14	regulatory	O	O	O	O	O	O	O	O	AJ0	B-NP	regulatory	JJ	O	O
+authorities	t407	14	authority	O	O	O	O	O	O	O	O	NN2	I-NP	authorities	NNS	t406:NMOD	O
+to	t408	14	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t409:IM	O
+block	t409	14	block	e83	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	block	VB	t411:OBJ	O
+the	t410	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bid	t411	14	bid	e84	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t410:NMOD	O
+.	t412	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Paribas	t413	15	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-still	t414	15	still	O	O	O	O	O	O	O	O	still	RB	O	mainVb
-needs	t415	15	need	O	O	O	O	O	O	O	O	need	VBZ	t413:SBJ||t414:ADV||t417:OBJ||t430:P||t431:COORD||t438:P	mainVb
-the	t416	15	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-go-ahead	t417	15	go-ahead	O	O	O	O	O	O	O	O	go-ahead	NN	t416:NMOD||t418:NMOD	mainVb
-from	t418	15	from	O	O	O	O	O	O	O	O	from	IN	t424:PMOD	mainVb
-the	t419	15	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Commission	t420	15	Commission	O	O	O	O	O	O	O	O	commission	NNP	O	mainVb
-des	t421	15	des	O	O	O	O	O	O	O	O	des	NNP	O	mainVb
-Operations	t422	15	Operations	O	O	O	O	O	O	O	O	operations	NNS	O	mainVb
-de	t423	15	de	O	O	O	O	O	O	O	O	de	NNP	O	mainVb
-Bourse	t424	15	Bourse	O	O	O	O	O	O	O	O	bourse	NNP	t419:NMOD||t420:NAME||t421:NAME||t422:NAME||t423:NAME||t425:P||t429:APPO	mainVb
-,	t425	15	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-a	t426	15	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-government	t427	15	government	O	O	O	O	O	O	O	O	government	NN	O	mainVb
-regulatory	t428	15	regulatory	O	O	O	O	O	O	O	O	regulatory	JJ	O	mainVb
-agency	t429	15	agency	O	O	O	O	O	O	O	O	agency	NN	t426:NMOD||t427:NMOD||t428:NMOD	mainVb
-,	t430	15	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-but	t431	15	but	O	O	O	O	O	O	O	O	but	CC	t433:CONJ	mainVb
-analysts	t432	15	analyst	O	O	O	O	O	O	O	O	analyst	NNS	O	mainVb
-said	t433	15	say	e87	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t432:SBJ||t435:OBJ	mainVb
-that	t434	15	that	O	O	O	O	O	O	O	O	that	DT	O	mainVb
-is	t435	15	be	O	O	O	O	O	O	O	O	be	VBZ	t434:SBJ||t436:VC	mainVb
-considered	t436	15	consider	O	O	O	O	O	O	O	O	consider	VBN	t437:OPRD	mainVb
-likely	t437	15	likely	O	O	O	O	O	O	O	O	likely	JJ	O	mainVb
-.	t438	15	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Paribas	t413	15	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+still	t414	15	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
+needs	t415	15	need	O	O	O	O	O	O	O	O	VVZ	B-VP	need	VBZ	t413:SBJ||t414:ADV||t417:OBJ||t430:P||t431:COORD||t438:P	mainVb
+the	t416	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+go-ahead	t417	15	go-ahead	O	O	O	O	O	O	O	O	NN1	I-NP	go-ahead	NN	t416:NMOD||t418:NMOD	O
+from	t418	15	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t424:PMOD	O
+the	t419	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Commission	t420	15	Commission	O	O	O	O	O	O	O	O	NN1	I-NP	commission	NNP	O	O
+des	t421	15	des	O	O	O	O	O	O	O	O	VVZ	B-VP	des	NNP	O	O
+Operations	t422	15	Operations	O	O	O	O	O	O	O	O	NN2	B-NP	operations	NNS	O	O
+de	t423	15	de	O	O	O	O	O	O	O	O	NP0	I-NP	de	NNP	O	O
+Bourse	t424	15	Bourse	O	O	O	O	O	O	O	O	NP0	I-NP	bourse	NNP	t419:NMOD||t420:NAME||t421:NAME||t422:NAME||t423:NAME||t425:P||t429:APPO	O
+,	t425	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+a	t426	15	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+government	t427	15	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	O	O
+regulatory	t428	15	regulatory	O	O	O	O	O	O	O	O	AJ0	I-NP	regulatory	JJ	O	O
+agency	t429	15	agency	O	O	O	O	O	O	O	O	NN1	I-NP	agency	NN	t426:NMOD||t427:NMOD||t428:NMOD	O
+,	t430	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+but	t431	15	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t433:CONJ	O
+analysts	t432	15	analyst	O	O	O	O	O	O	O	O	NN2	B-NP	analyst	NNS	O	O
+said	t433	15	say	e87	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t432:SBJ||t435:OBJ	O
+that	t434	15	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	DT	O	O
+is	t435	15	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t434:SBJ||t436:VC	O
+considered	t436	15	consider	O	O	O	O	O	O	O	O	VVN	I-VP	consider	VBN	t437:OPRD	O
+likely	t437	15	likely	O	O	O	O	O	O	O	O	AJ0	B-ADJP	likely	JJ	O	O
+.	t438	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Mr.	t439	16	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t440	16	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t439:TITLE	mainVb
-also	t441	16	also	O	O	O	O	O	O	O	O	also	RB	O	mainVb
-noted	t442	16	note	e89	REPORTING	PAST+NONE+POS	O	O	O	O	O	note	VBD	t440:SBJ||t441:ADV||t443:OBJ||t458:P||t459:COORD||t472:P	mainVb
-that	t443	16	that	O	O	O	O	O	O	O	O	that	IN	t446:SUB	mainVb
-Navigation	t444	16	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t445	16	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t444:NAME	mainVb
-joined	t446	16	join	e90	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	join	VBD	t445:SBJ||t449:OBJ||t454:TMP	mainVb
-Paribas	t447	16	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t448:SUFFIX	mainVb
-'s	t448	16	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-core	t449	16	core	O	O	O	O	O	O	O	O	core	NN	t447:NMOD||t450:NMOD	mainVb
-of	t450	16	of	O	O	O	O	O	O	O	O	of	IN	t451:PMOD	mainVb
-shareholders	t451	16	shareholder	O	O	O	O	O	O	O	O	shareholder	NNS	O	mainVb
-when	t452	16	when	O	O	O	O	O	O	O	O	when	WRB	O	mainVb
-Paribas	t453	16	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-was	t454	16	be	O	O	O	O	O	O	O	O	be	VBD	t453:SBJ||t455:VC	mainVb
-denationalized	t455	16	denationalize	e92	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	denationalize	VBN	t452:TMP||t456:TMP	mainVb
-in	t456	16	in	O	O	O	O	O	O	O	O	in	IN	t457:PMOD	mainVb
-1987	t457	16	1987	O	O	O	tmx1994	DATE	1987	O	O	1987	CD	O	mainVb
-,	t458	16	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-and	t459	16	and	O	O	O	O	O	O	O	O	and	CC	t460:CONJ	mainVb
-said	t460	16	say	e93	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t463:OBJ	mainVb
-it	t461	16	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-now	t462	16	now	O	O	O	tmx1995	DATE	PRESENT_REF	O	O	now	RB	O	mainVb
-holds	t463	16	hold	e94	STATE	PRESENT+NONE+POS	O	O	O	O	O	hold	VBZ	t461:SBJ||t462:TMP||t467:OBJ	mainVb
-just	t464	16	just	O	O	O	O	O	O	O	O	just	RB	t465:DEP||t466:DEP	mainVb
-under	t465	16	under	O	O	O	O	O	O	O	O	under	IN	O	mainVb
-5	t466	16	5	O	O	O	O	O	O	O	O	5	CD	O	mainVb
-%	t467	16	%	O	O	O	O	O	O	O	O	%	NN	t464:NMOD||t468:NMOD	mainVb
-of	t468	16	of	O	O	O	O	O	O	O	O	of	IN	t471:PMOD	mainVb
-Paribas	t469	16	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t470:SUFFIX	mainVb
-'s	t470	16	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-shares	t471	16	share	O	O	O	O	O	O	O	O	share	NNS	t469:NMOD	mainVb
-.	t472	16	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Mr.	t439	16	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t440	16	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t439:TITLE	O
+also	t441	16	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
+noted	t442	16	note	e89	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	note	VBD	t440:SBJ||t441:ADV||t443:OBJ||t458:P||t459:COORD||t472:P	mainVb
+that	t443	16	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t446:SUB	O
+Navigation	t444	16	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t445	16	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t444:NAME	O
+joined	t446	16	join	e90	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	join	VBD	t445:SBJ||t449:OBJ||t454:TMP	O
+Paribas	t447	16	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	t448:SUFFIX	O
+'s	t448	16	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+core	t449	16	core	O	O	O	O	O	O	O	O	NN1	I-NP	core	NN	t447:NMOD||t450:NMOD	O
+of	t450	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t451:PMOD	O
+shareholders	t451	16	shareholder	O	O	O	O	O	O	O	O	NN2	B-NP	shareholder	NNS	O	O
+when	t452	16	when	O	O	O	O	O	O	O	O	CJS	B-ADVP	when	WRB	O	O
+Paribas	t453	16	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+was	t454	16	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t453:SBJ||t455:VC	O
+denationalized	t455	16	denationalize	e92	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	denationalize	VBN	t452:TMP||t456:TMP	O
+in	t456	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t457:PMOD	O
+1987	t457	16	1987	O	O	O	tmx1994	DATE	1987	O	O	CRD	B-NP	1987	CD	O	O
+,	t458	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+and	t459	16	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t460:CONJ	O
+said	t460	16	say	e93	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t463:OBJ	O
+it	t461	16	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+now	t462	16	now	O	O	O	tmx1995	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
+holds	t463	16	hold	e94	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	hold	VBZ	t461:SBJ||t462:TMP||t467:OBJ	O
+just	t464	16	just	O	O	O	O	O	O	O	O	AV0	B-NP	just	RB	t465:DEP||t466:DEP	O
+under	t465	16	under	O	O	O	O	O	O	O	O	AV0	I-NP	under	IN	O	O
+5	t466	16	5	O	O	O	O	O	O	O	O	CRD	I-NP	5	CD	O	O
+%	t467	16	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t464:NMOD||t468:NMOD	O
+of	t468	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t471:PMOD	O
+Paribas	t469	16	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	t470:SUFFIX	O
+'s	t470	16	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+shares	t471	16	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t469:NMOD	O
+.	t472	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Once	t473	17	once	O	O	O	O	O	O	O	O	once	RB	t475:DEP||t487:COORD	mainVb
-he	t474	17	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-realized	t475	17	realize	e95	I_STATE	PAST+NONE+POS	O	O	O	O	O	realize	VBD	t474:SBJ||t476:OBJ	mainVb
-that	t476	17	that	O	O	O	O	O	O	O	O	that	IN	t480:SUB	mainVb
-Paribas	t477	17	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t478:SUFFIX	mainVb
-'s	t478	17	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-intentions	t479	17	intention	O	O	O	O	O	O	O	O	intention	NNS	t477:NMOD	mainVb
-were	t480	17	be	O	O	O	O	O	O	O	O	be	VBD	t479:SBJ||t481:ADV||t482:PRD	mainVb
-n't	t481	17	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-friendly	t482	17	friendly	O	O	O	O	O	O	O	O	friendly	JJ	O	mainVb
-,	t483	17	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t484	17	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-said	t485	17	say	e96	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t483:P||t484:SBJ||t486:P||t495:OBJ	mainVb
-,	t486	17	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-but	t487	17	but	O	O	O	O	O	O	O	O	but	CC	t488:CONJ	mainVb
-before	t488	17	before	O	O	O	O	O	O	O	O	before	IN	t491:SUB	mainVb
-the	t489	17	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bid	t490	17	bid	e97	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t489:NMOD	mainVb
-was	t491	17	be	O	O	O	O	O	O	O	O	be	VBD	t490:SBJ||t492:VC	mainVb
-launched	t492	17	launch	e99	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	launch	VBN	O	mainVb
-,	t493	17	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t494	17	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-sought	t495	17	seek	e100	I_ACTION	PAST+NONE+POS	O	O	O	O	O	seek	VBD	t473:TMP||t493:P||t494:SBJ||t496:OBJ||t505:P	mainVb
-approval	t496	17	approval	e101	I_ACTION	NONE+NONE+POS	O	O	O	O	O	approval	NN	t497:NMOD	mainVb
-to	t497	17	to	O	O	O	O	O	O	O	O	to	TO	t498:IM	mainVb
-boost	t498	17	boost	e103	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	boost	VB	t501:OBJ||t502:DIR	mainVb
-his	t499	17	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-Paribas	t500	17	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-stake	t501	17	stake	O	O	O	O	O	O	O	O	stake	NN	t499:NMOD||t500:NMOD	mainVb
-above	t502	17	above	O	O	O	O	O	O	O	O	above	IN	t504:PMOD	mainVb
-10	t503	17	10	O	O	O	O	O	O	O	O	10	CD	O	mainVb
-%	t504	17	%	O	O	O	O	O	O	O	O	%	NN	t503:NMOD	mainVb
-.	t505	17	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Once	t473	17	once	O	O	O	O	O	O	O	O	CJS	O	once	RB	t475:DEP||t487:COORD	O
+he	t474	17	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+realized	t475	17	realize	e95	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	realize	VBD	t474:SBJ||t476:OBJ	O
+that	t476	17	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t480:SUB	O
+Paribas	t477	17	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	t478:SUFFIX	O
+'s	t478	17	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+intentions	t479	17	intention	O	O	O	O	O	O	O	O	NN2	I-NP	intention	NNS	t477:NMOD	O
+were	t480	17	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t479:SBJ||t481:ADV||t482:PRD	O
+n't	t481	17	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
+friendly	t482	17	friendly	O	O	O	O	O	O	O	O	AJ0	B-ADJP	friendly	JJ	O	O
+,	t483	17	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t484	17	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+said	t485	17	say	e96	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t483:P||t484:SBJ||t486:P||t495:OBJ	mainVb
+,	t486	17	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+but	t487	17	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t488:CONJ	O
+before	t488	17	before	O	O	O	O	O	O	O	O	PRP	B-PP	before	IN	t491:SUB	O
+the	t489	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bid	t490	17	bid	e97	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t489:NMOD	O
+was	t491	17	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t490:SBJ||t492:VC	O
+launched	t492	17	launch	e99	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	launch	VBN	O	O
+,	t493	17	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t494	17	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+sought	t495	17	seek	e100	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	seek	VBD	t473:TMP||t493:P||t494:SBJ||t496:OBJ||t505:P	O
+approval	t496	17	approval	e101	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	approval	NN	t497:NMOD	O
+to	t497	17	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t498:IM	O
+boost	t498	17	boost	e103	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	boost	VB	t501:OBJ||t502:DIR	O
+his	t499	17	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+Paribas	t500	17	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	O	O
+stake	t501	17	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t499:NMOD||t500:NMOD	O
+above	t502	17	above	O	O	O	O	O	O	O	O	PRP	B-PP	above	IN	t504:PMOD	O
+10	t503	17	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
+%	t504	17	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t503:NMOD	O
+.	t505	17	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t506	18	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-petition	t507	18	petition	O	O	O	O	O	O	O	O	petition	NN	t506:NMOD	mainVb
-is	t508	18	be	O	O	O	O	O	O	O	O	be	VBZ	t507:SBJ||t509:TMP||t510:PRD||t511:P||t512:COORD||t531:P	mainVb
-still	t509	18	still	O	O	O	O	O	O	O	O	still	RB	O	mainVb
-pending	t510	18	pend	e105	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	pending	JJ	O	mainVb
-,	t511	18	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-but	t512	18	but	O	O	O	O	O	O	O	O	but	CC	t515:CONJ	mainVb
-Mr.	t513	18	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t514	18	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t513:TITLE	mainVb
-downplayed	t515	18	downplay	e106	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	downplay	VBD	t514:SBJ||t517:OBJ	mainVb
-the	t516	18	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-likelihood	t517	18	likelihood	O	O	O	O	O	O	O	O	likelihood	NN	t516:NMOD||t518:NMOD	mainVb
-of	t518	18	of	O	O	O	O	O	O	O	O	of	IN	t520:PMOD	mainVb
-his	t519	18	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-organizing	t520	18	organize	e107	I_ACTION	NONE+NONE+POS	O	O	O	O	O	organize	VBG	t519:SBJ||t523:OBJ	mainVb
-a	t521	18	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-takeover	t522	18	takeover	O	O	O	O	O	O	O	O	takeover	NN	O	mainVb
-bid	t523	18	bid	e108	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bid	NN	t521:NMOD||t522:NMOD||t524:NMOD||t527:NMOD	mainVb
-of	t524	18	of	O	O	O	O	O	O	O	O	of	IN	t526:PMOD	mainVb
-his	t525	18	he	O	O	O	O	O	O	O	O	his	PRP$	O	mainVb
-own	t526	18	own	O	O	O	O	O	O	O	O	own	JJ	t525:NMOD	mainVb
-for	t527	18	for	O	O	O	O	O	O	O	O	for	IN	t530:PMOD	mainVb
-the	t528	18	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-much-larger	t529	18	much-larger	O	O	O	O	O	O	O	O	much-larger	NN	O	mainVb
-Paribas	t530	18	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	t528:NMOD||t529:NMOD	mainVb
-.	t531	18	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t506	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+petition	t507	18	petition	O	O	O	O	O	O	O	O	NN1	I-NP	petition	NN	t506:NMOD	O
+is	t508	18	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t507:SBJ||t509:TMP||t510:PRD||t511:P||t512:COORD||t531:P	mainVb
+still	t509	18	still	O	O	O	O	O	O	O	O	AV0	I-VP	still	RB	O	mainVb
+pending	t510	18	pend	e105	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	pending	JJ	O	mainVb
+,	t511	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+but	t512	18	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t515:CONJ	O
+Mr.	t513	18	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t514	18	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t513:TITLE	O
+downplayed	t515	18	downplay	e106	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	downplay	VBD	t514:SBJ||t517:OBJ	O
+the	t516	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+likelihood	t517	18	likelihood	O	O	O	O	O	O	O	O	NN1	I-NP	likelihood	NN	t516:NMOD||t518:NMOD	O
+of	t518	18	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t520:PMOD	O
+his	t519	18	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+organizing	t520	18	organize	e107	I_ACTION	NONE+NONE+POS	O	O	O	O	O	AJ0	I-NP	organize	VBG	t519:SBJ||t523:OBJ	O
+a	t521	18	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
+takeover	t522	18	takeover	O	O	O	O	O	O	O	O	NN1	I-NP	takeover	NN	O	O
+bid	t523	18	bid	e108	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t521:NMOD||t522:NMOD||t524:NMOD||t527:NMOD	O
+of	t524	18	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t526:PMOD	O
+his	t525	18	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
+own	t526	18	own	O	O	O	O	O	O	O	O	DT0	I-NP	own	JJ	t525:NMOD	O
+for	t527	18	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t530:PMOD	O
+the	t528	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+much-larger	t529	18	much-larger	O	O	O	O	O	O	O	O	NN1	I-NP	much-larger	NN	O	O
+Paribas	t530	18	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	t528:NMOD||t529:NMOD	O
+.	t531	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-One	t532	19	one	O	O	O	O	O	O	O	O	one	CD	O	mainVb
-big	t533	19	big	O	O	O	O	O	O	O	O	big	JJ	O	mainVb
-question	t534	19	question	O	O	O	O	O	O	O	O	question	NN	t532:NMOD||t533:NMOD	mainVb
-now	t535	19	now	O	O	O	O	O	O	O	O	now	RB	O	mainVb
-is	t536	19	be	O	O	O	O	O	O	O	O	be	VBZ	t534:SBJ||t535:TMP||t539:PRD||t545:P	mainVb
-the	t537	19	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-likely	t538	19	likely	O	O	O	O	O	O	O	O	likely	JJ	O	mainVb
-role	t539	19	role	O	O	O	O	O	O	O	O	role	NN	t537:NMOD||t538:NMOD||t540:NMOD	mainVb
-of	t540	19	of	O	O	O	O	O	O	O	O	of	IN	t544:PMOD	mainVb
-Mr.	t541	19	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t542	19	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t541:TITLE||t543:SUFFIX	mainVb
-'s	t543	19	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-allies	t544	19	ally	O	O	O	O	O	O	O	O	allies	NNS	t542:NMOD	mainVb
-.	t545	19	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+One	t532	19	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
+big	t533	19	big	O	O	O	O	O	O	O	O	AJ0	I-NP	big	JJ	O	O
+question	t534	19	question	O	O	O	O	O	O	O	O	NN1	I-NP	question	NN	t532:NMOD||t533:NMOD	O
+now	t535	19	now	O	O	O	O	O	O	O	O	AV0	B-ADVP	now	RB	O	O
+is	t536	19	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t534:SBJ||t535:TMP||t539:PRD||t545:P	mainVb
+the	t537	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+likely	t538	19	likely	O	O	O	O	O	O	O	O	AJ0	I-NP	likely	JJ	O	O
+role	t539	19	role	O	O	O	O	O	O	O	O	NN1	I-NP	role	NN	t537:NMOD||t538:NMOD||t540:NMOD	O
+of	t540	19	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t544:PMOD	O
+Mr.	t541	19	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t542	19	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t541:TITLE||t543:SUFFIX	O
+'s	t543	19	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+allies	t544	19	ally	O	O	O	O	O	O	O	O	NN2	I-NP	allies	NNS	t542:NMOD	O
+.	t545	19	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Mr.	t546	20	Mr.	O	O	O	O	O	O	O	O	mr.	NNP	O	mainVb
-Fournier	t547	20	Fournier	O	O	O	O	O	O	O	O	fournier	NNP	t546:TITLE	mainVb
-said	t548	20	say	e111	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t547:SBJ||t564:OBJ||t566:P||t567:COORD||t576:P	mainVb
-the	t549	20	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-large	t550	20	large	O	O	O	O	O	O	O	O	large	JJ	O	mainVb
-institutions	t551	20	institution	O	O	O	O	O	O	O	O	institution	NNS	t549:NMOD||t550:NMOD||t553:NMOD	mainVb
-that	t552	20	that	O	O	O	O	O	O	O	O	that	WDT	O	mainVb
-hold	t553	20	hold	O	O	O	O	O	O	O	O	hold	VBP	t552:SBJ||t556:OBJ	mainVb
-nearly	t554	20	nearly	O	O	O	O	O	O	O	O	nearly	RB	t555:DEP	mainVb
-50	t555	20	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-%	t556	20	%	O	O	O	O	O	O	O	O	%	NN	t554:NMOD||t557:NMOD	mainVb
-of	t557	20	of	O	O	O	O	O	O	O	O	of	IN	t561:PMOD	mainVb
-Navigation	t558	20	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t559	20	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t558:NAME||t560:SUFFIX	mainVb
-'s	t560	20	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-capital	t561	20	capital	O	O	O	O	O	O	O	O	capital	NN	t559:NMOD	mainVb
-all	t562	20	all	O	O	O	O	O	O	O	O	all	RB	O	mainVb
-strongly	t563	20	strongly	O	O	O	O	O	O	O	O	strongly	RB	O	mainVb
-support	t564	20	support	e113	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	support	VB	t551:SBJ||t562:PRD-TMP||t563:MNR||t565:OBJ	mainVb
-him	t565	20	he	O	O	O	O	O	O	O	O	him	PRP	O	mainVb
-,	t566	20	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-but	t567	20	but	O	O	O	O	O	O	O	O	but	CC	t570:CONJ	mainVb
-some	t568	20	some	O	O	O	O	O	O	O	O	some	DT	O	mainVb
-analysts	t569	20	analyst	O	O	O	O	O	O	O	O	analyst	NNS	t568:NMOD	mainVb
-said	t570	20	say	e114	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t569:SBJ||t572:OBJ	mainVb
-they	t571	20	they	O	O	O	O	O	O	O	O	they	PRP	O	mainVb
-are	t572	20	be	O	O	O	O	O	O	O	O	be	VBP	t571:SBJ||t573:ADV||t575:PRD	mainVb
-n't	t573	20	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-so	t574	20	so	O	O	O	O	O	O	O	O	so	RB	O	mainVb
-sure	t575	20	sure	O	O	O	O	O	O	O	O	sure	JJ	t574:AMOD	mainVb
-.	t576	20	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Mr.	t546	20	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
+Fournier	t547	20	Fournier	O	O	O	O	O	O	O	O	NP0	I-NP	fournier	NNP	t546:TITLE	O
+said	t548	20	say	e111	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t547:SBJ||t564:OBJ||t566:P||t567:COORD||t576:P	mainVb
+the	t549	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+large	t550	20	large	O	O	O	O	O	O	O	O	AJ0	I-NP	large	JJ	O	O
+institutions	t551	20	institution	O	O	O	O	O	O	O	O	NN2	I-NP	institution	NNS	t549:NMOD||t550:NMOD||t553:NMOD	O
+that	t552	20	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
+hold	t553	20	hold	O	O	O	O	O	O	O	O	VVB	B-VP	hold	VBP	t552:SBJ||t556:OBJ	O
+nearly	t554	20	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	RB	t555:DEP	O
+50	t555	20	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
+%	t556	20	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t554:NMOD||t557:NMOD	O
+of	t557	20	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t561:PMOD	O
+Navigation	t558	20	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t559	20	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t558:NAME||t560:SUFFIX	O
+'s	t560	20	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+capital	t561	20	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t559:NMOD	O
+all	t562	20	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	RB	O	O
+strongly	t563	20	strongly	O	O	O	O	O	O	O	O	AV0	B-ADVP	strongly	RB	O	O
+support	t564	20	support	e113	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVB	B-VP	support	VB	t551:SBJ||t562:PRD-TMP||t563:MNR||t565:OBJ	O
+him	t565	20	he	O	O	O	O	O	O	O	O	PNP	B-NP	him	PRP	O	O
+,	t566	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+but	t567	20	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t570:CONJ	O
+some	t568	20	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
+analysts	t569	20	analyst	O	O	O	O	O	O	O	O	NN2	I-NP	analyst	NNS	t568:NMOD	O
+said	t570	20	say	e114	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t569:SBJ||t572:OBJ	O
+they	t571	20	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
+are	t572	20	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t571:SBJ||t573:ADV||t575:PRD	O
+n't	t573	20	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
+so	t574	20	so	O	O	O	O	O	O	O	O	AV0	B-ADJP	so	RB	O	O
+sure	t575	20	sure	O	O	O	O	O	O	O	O	AJ0	I-ADJP	sure	JJ	t574:AMOD	O
+.	t576	20	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Allianz	t577	21	Allianz	O	O	O	O	O	O	O	O	allianz	NNP	O	mainVb
-,	t578	21	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-for	t579	21	for	O	O	O	O	O	O	O	O	for	IN	t580:PMOD	mainVb
-example	t580	21	example	O	O	O	O	O	O	O	O	example	NN	O	mainVb
-,	t581	21	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-has	t582	21	have	O	O	O	O	O	O	O	O	have	VBZ	t577:SBJ||t578:P||t579:ADV||t581:P||t583:VC||t594:P	mainVb
-said	t583	21	say	e115	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	say	VBD	t584:LOC||t587:TMP||t589:OBJ	mainVb
-in	t584	21	in	O	O	O	O	O	O	O	O	in	IN	t586:PMOD	mainVb
-official	t585	21	official	O	O	O	O	O	O	O	O	official	JJ	O	mainVb
-comments	t586	21	comment	O	O	O	O	O	O	O	O	comment	NNS	t585:NMOD	mainVb
-so	t587	21	so	O	O	O	O	O	O	O	O	so	RB	t588:AMOD	mainVb
-far	t588	21	far	O	O	O	O	O	O	O	O	far	RB	O	mainVb
-that	t589	21	that	O	O	O	O	O	O	O	O	that	IN	t591:SUB	mainVb
-it	t590	21	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-will	t591	21	will	O	O	O	O	O	O	O	O	will	MD	t590:SBJ||t592:VC	mainVb
-remain	t592	21	remain	e118	STATE	FUTURE+NONE+POS	O	O	O	O	O	remain	VB	t593:PRD	mainVb
-neutral	t593	21	neutral	O	O	O	O	O	O	O	O	neutral	JJ	O	mainVb
-.	t594	21	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Allianz	t577	21	Allianz	O	O	O	O	O	O	O	O	NP0	B-NP	allianz	NNP	O	O
+,	t578	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+for	t579	21	for	O	O	O	O	O	O	O	O	AV0	B-PP	for	IN	t580:PMOD	O
+example	t580	21	example	O	O	O	O	O	O	O	O	AV0	B-NP	example	NN	O	O
+,	t581	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+has	t582	21	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t577:SBJ||t578:P||t579:ADV||t581:P||t583:VC||t594:P	mainVb
+said	t583	21	say	e115	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	say	VBD	t584:LOC||t587:TMP||t589:OBJ	mainVb
+in	t584	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t586:PMOD	O
+official	t585	21	official	O	O	O	O	O	O	O	O	AJ0	B-NP	official	JJ	O	O
+comments	t586	21	comment	O	O	O	O	O	O	O	O	NN2	I-NP	comment	NNS	t585:NMOD	O
+so	t587	21	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	t588:AMOD	O
+far	t588	21	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	O	O
+that	t589	21	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t591:SUB	O
+it	t590	21	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+will	t591	21	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t590:SBJ||t592:VC	O
+remain	t592	21	remain	e118	STATE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	remain	VB	t593:PRD	O
+neutral	t593	21	neutral	O	O	O	O	O	O	O	O	AJ0	B-ADJP	neutral	JJ	O	O
+.	t594	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Paribas	t595	22	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-is	t596	22	be	O	O	O	O	O	O	O	O	be	VBZ	t595:SBJ||t601:PRD||t602:P	mainVb
-Allianz	t597	22	Allianz	O	O	O	O	O	O	O	O	allianz	NNP	t598:SUFFIX	mainVb
-'s	t598	22	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-lead	t599	22	lead	O	O	O	O	O	O	O	O	lead	NN	O	mainVb
-French	t600	22	french	O	O	O	O	O	O	O	O	french	JJ	O	mainVb
-bank	t601	22	bank	O	O	O	O	O	O	O	O	bank	NN	t597:NMOD||t599:NMOD||t600:NMOD	mainVb
-.	t602	22	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Paribas	t595	22	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+is	t596	22	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t595:SBJ||t601:PRD||t602:P	mainVb
+Allianz	t597	22	Allianz	O	O	O	O	O	O	O	O	NP0	B-NP	allianz	NNP	t598:SUFFIX	O
+'s	t598	22	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+lead	t599	22	lead	O	O	O	O	O	O	O	O	NN1	I-NP	lead	NN	O	O
+French	t600	22	french	O	O	O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
+bank	t601	22	bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NN	t597:NMOD||t599:NMOD||t600:NMOD	O
+.	t602	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Paribas	t603	23	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-said	t604	23	say	e120	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t603:SBJ||t605:TMP||t606:OBJ||t629:P	mainVb
-Monday	t605	23	Monday	O	O	O	tmx2003	DATE	1989-10-23	O	O	monday	NNP	O	mainVb
-that	t606	23	that	O	O	O	O	O	O	O	O	that	IN	t608:SUB	mainVb
-it	t607	23	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-intends	t608	23	intend	e121	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	intend	VBZ	t607:SBJ||t609:OPRD	mainVb
-to	t609	23	to	O	O	O	O	O	O	O	O	to	TO	t610:IM	mainVb
-bid	t610	23	bid	e122	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	bid	VB	t611:PRP	mainVb
-to	t611	23	to	O	O	O	O	O	O	O	O	to	TO	t612:IM	mainVb
-boost	t612	23	boost	e124	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	boost	VB	t614:OBJ||t618:DIR||t621:P||t622:DIR	mainVb
-its	t613	23	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-stake	t614	23	stake	O	O	O	O	O	O	O	O	stake	NN	t613:NMOD||t615:LOC	mainVb
-in	t615	23	in	O	O	O	O	O	O	O	O	in	IN	t617:PMOD	mainVb
-Navigation	t616	23	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t617	23	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t616:NAME	mainVb
-to	t618	23	to	O	O	O	O	O	O	O	O	to	TO	t620:PMOD	mainVb
-66.7	t619	23	66.7	O	O	O	O	O	O	O	O	66.7	CD	O	mainVb
-%	t620	23	%	O	O	O	O	O	O	O	O	%	NN	t619:NMOD	mainVb
-,	t621	23	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-from	t622	23	from	O	O	O	O	O	O	O	O	from	IN	t625:PMOD	mainVb
-the	t623	23	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-18.7	t624	23	18.7	O	O	O	O	O	O	O	O	18.7	CD	O	mainVb
-%	t625	23	%	O	O	O	O	O	O	O	O	%	NN	t623:NMOD||t624:NMOD||t628:NMOD	mainVb
-it	t626	23	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-already	t627	23	already	O	O	O	O	O	O	O	O	already	RB	O	mainVb
-owns	t628	23	own	e126	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	own	VBZ	t626:SBJ||t627:TMP	mainVb
-.	t629	23	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Paribas	t603	23	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+said	t604	23	say	e120	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t603:SBJ||t605:TMP||t606:OBJ||t629:P	mainVb
+Monday	t605	23	Monday	O	O	O	tmx2003	DATE	1989-10-23	O	O	NP0	B-NP	monday	NNP	O	O
+that	t606	23	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t608:SUB	O
+it	t607	23	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+intends	t608	23	intend	e121	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	intend	VBZ	t607:SBJ||t609:OPRD	O
+to	t609	23	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t610:IM	O
+bid	t610	23	bid	e122	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	bid	VB	t611:PRP	O
+to	t611	23	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t612:IM	O
+boost	t612	23	boost	e124	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	NN1	B-VP	boost	VB	t614:OBJ||t618:DIR||t621:P||t622:DIR	O
+its	t613	23	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+stake	t614	23	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t613:NMOD||t615:LOC	O
+in	t615	23	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t617:PMOD	O
+Navigation	t616	23	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t617	23	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t616:NAME	O
+to	t618	23	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t620:PMOD	O
+66.7	t619	23	66.7	O	O	O	O	O	O	O	O	CRD	B-NP	66.7	CD	O	O
+%	t620	23	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t619:NMOD	O
+,	t621	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+from	t622	23	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t625:PMOD	O
+the	t623	23	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+18.7	t624	23	18.7	O	O	O	O	O	O	O	O	CRD	I-NP	18.7	CD	O	O
+%	t625	23	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t623:NMOD||t624:NMOD||t628:NMOD	O
+it	t626	23	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+already	t627	23	already	O	O	O	O	O	O	O	O	AV0	B-ADVP	already	RB	O	O
+owns	t628	23	own	e126	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	own	VBZ	t626:SBJ||t627:TMP	O
+.	t629	23	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t630	24	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-purchase	t631	24	purchase	e127	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	purchase	NN	t630:NMOD||t632:NMOD	mainVb
-of	t632	24	of	O	O	O	O	O	O	O	O	of	IN	t637:PMOD	mainVb
-the	t633	24	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-additional	t634	24	additional	O	O	O	O	O	O	O	O	additional	JJ	O	mainVb
-48	t635	24	48	O	O	O	O	O	O	O	O	48	CD	O	mainVb
-%	t636	24	%	O	O	O	O	O	O	O	O	%	NN	t635:NMOD	mainVb
-stake	t637	24	stake	O	O	O	O	O	O	O	O	stake	NN	t633:NMOD||t634:NMOD||t636:NMOD	mainVb
-is	t638	24	be	O	O	O	O	O	O	O	O	be	VBZ	t631:SBJ||t639:VC||t652:P	mainVb
-expected	t639	24	expect	e129	I_STATE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	expect	VBN	t640:OPRD	mainVb
-to	t640	24	to	O	O	O	O	O	O	O	O	to	TO	t641:IM	mainVb
-cost	t641	24	cost	e2010	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	cost	VB	t646:OBJ||t648:OBJ||t651:OBJ	mainVb
-more	t642	24	more	O	O	O	O	O	O	O	O	more	RBR	O	mainVb
-than	t643	24	than	O	O	O	O	O	O	O	O	than	IN	O	mainVb
-11	t644	24	11	O	O	O	O	O	O	O	O	11	CD	O	mainVb
-billion	t645	24	billion	O	O	O	O	O	O	O	O	billion	CD	t642:DEP||t643:DEP||t644:DEP	mainVb
-francs	t646	24	franc	O	O	O	O	O	O	O	O	franc	NNS	t645:NMOD	mainVb
--LRB-	t647	24	-lrb-	O	O	O	O	O	O	O	O	-lrb-	NNP	O	mainVb
-$	t648	24	$	O	O	O	O	O	O	O	O	$	$	t649:DEP||t650:DEP	mainVb
-1.77	t649	24	1.77	O	O	O	O	O	O	O	O	1.77	CD	O	mainVb
-billion	t650	24	billion	O	O	O	O	O	O	O	O	billion	CD	O	mainVb
--RRB-	t651	24	-rrb-	O	O	O	O	O	O	O	O	-rrb-	NNP	t647:NAME	mainVb
-.	t652	24	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t630	24	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+purchase	t631	24	purchase	e127	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	purchase	NN	t630:NMOD||t632:NMOD	O
+of	t632	24	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t637:PMOD	O
+the	t633	24	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+additional	t634	24	additional	O	O	O	O	O	O	O	O	AJ0	I-NP	additional	JJ	O	O
+48	t635	24	48	O	O	O	O	O	O	O	O	CRD	I-NP	48	CD	O	O
+%	t636	24	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t635:NMOD	O
+stake	t637	24	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t633:NMOD||t634:NMOD||t636:NMOD	O
+is	t638	24	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t631:SBJ||t639:VC||t652:P	mainVb
+expected	t639	24	expect	e129	I_STATE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	expect	VBN	t640:OPRD	mainVb
+to	t640	24	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t641:IM	mainVb
+cost	t641	24	cost	e2010	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	cost	VB	t646:OBJ||t648:OBJ||t651:OBJ	mainVb
+more	t642	24	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	O	O
+than	t643	24	than	O	O	O	O	O	O	O	O	AV0	I-NP	than	IN	O	O
+11	t644	24	11	O	O	O	O	O	O	O	O	CRD	I-NP	11	CD	O	O
+billion	t645	24	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t642:DEP||t643:DEP||t644:DEP	O
+francs	t646	24	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t645:NMOD	O
+-LRB-	t647	24	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NNP	O	O
+$	t648	24	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t649:DEP||t650:DEP	O
+1.77	t649	24	1.77	O	O	O	O	O	O	O	O	CRD	I-NP	1.77	CD	O	O
+billion	t650	24	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
+-RRB-	t651	24	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t647:NAME	O
+.	t652	24	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Paribas	t653	25	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-says	t654	25	say	e130	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	say	VBZ	t653:SBJ||t656:OBJ||t696:P	mainVb
-it	t655	25	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-will	t656	25	will	O	O	O	O	O	O	O	O	will	MD	t655:SBJ||t657:VC	mainVb
-offer	t657	25	offer	e131	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	offer	VB	t659:OBJ||t665:DEP||t674:P||t675:COORD	mainVb
-1,850	t658	25	1,850	O	O	O	O	O	O	O	O	1,850	CD	O	mainVb
-francs	t659	25	franc	O	O	O	O	O	O	O	O	franc	NNS	t658:NMOD||t660:APPO||t664:ADV	mainVb
--LRB-	t660	25	-lrb-	O	O	O	O	O	O	O	O	-lrb-	VBP	t661:OBJ||t663:OBJ	mainVb
-$	t661	25	$	O	O	O	O	O	O	O	O	$	$	t662:NMOD	mainVb
-296.95	t662	25	296.95	O	O	O	O	O	O	O	O	296.95	CD	O	mainVb
--RRB-	t663	25	-rrb-	O	O	O	O	O	O	O	O	-rrb-	NNP	O	mainVb
-each	t664	25	each	O	O	O	O	O	O	O	O	each	DT	O	mainVb
-for	t665	25	for	O	O	O	O	O	O	O	O	for	IN	t668:PMOD	mainVb
-Navigation	t666	25	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t667	25	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t666:NAME	mainVb
-shares	t668	25	share	O	O	O	O	O	O	O	O	share	NNS	t667:NMOD||t670:NMOD	mainVb
-that	t669	25	that	O	O	O	O	O	O	O	O	that	WDT	O	mainVb
-enjoy	t670	25	enjoy	e132	STATE	PRESENT+NONE+POS	O	O	O	O	O	enjoy	VBP	t669:SBJ||t673:OBJ	mainVb
-full	t671	25	full	O	O	O	O	O	O	O	O	full	JJ	O	mainVb
-dividend	t672	25	dividend	O	O	O	O	O	O	O	O	dividend	NN	t671:NMOD	mainVb
-rights	t673	25	rights	O	O	O	O	O	O	O	O	right	NNS	t672:NMOD	mainVb
-,	t674	25	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-and	t675	25	and	O	O	O	O	O	O	O	O	and	CC	t677:GAP-OBJ||t679:DEP-GAP	mainVb
-1,800	t676	25	1,800	O	O	O	O	O	O	O	O	1,800	CD	O	mainVb
-francs	t677	25	franc	O	O	O	O	O	O	O	O	franc	NNS	t676:NMOD||t678:ADV	mainVb
-each	t678	25	each	O	O	O	O	O	O	O	O	each	DT	O	mainVb
-for	t679	25	for	O	O	O	O	O	O	O	O	for	IN	t681:PMOD	mainVb
-a	t680	25	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-block	t681	25	block	O	O	O	O	O	O	O	O	block	NN	t680:NMOD||t682:NMOD||t684:APPO||t687:P||t689:NMOD	mainVb
-of	t682	25	of	O	O	O	O	O	O	O	O	of	IN	t683:PMOD	mainVb
-shares	t683	25	share	O	O	O	O	O	O	O	O	share	NNS	O	mainVb
-issued	t684	25	issue	O	O	O	O	O	O	O	O	issue	VBN	t686:TMP	mainVb
-July	t685	25	July	O	O	O	tmx2011	DATE	1989-07-01	O	O	july	NNP	O	mainVb
-1	t686	25	1	O	O	O	tmx2011	DATE	1989-07-01	O	O	1	CD	t685:NMOD	mainVb
-,	t687	25	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t688	25	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-will	t689	25	will	O	O	O	O	O	O	O	O	will	MD	t688:SBJ||t690:VC	mainVb
-receive	t690	25	receive	e134	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	receive	VB	t693:OBJ||t695:TMP	mainVb
-only	t691	25	only	O	O	O	O	O	O	O	O	only	RB	O	mainVb
-partial	t692	25	partial	O	O	O	O	O	O	O	O	partial	JJ	t691:AMOD	mainVb
-dividends	t693	25	dividend	O	O	O	O	O	O	O	O	dividend	NNS	t692:NMOD	mainVb
-this	t694	25	this	O	O	O	tmx2012	DATE	1989	O	O	this	DT	O	mainVb
-year	t695	25	year	O	O	O	tmx2012	DATE	1989	O	O	year	NN	t694:NMOD	mainVb
-.	t696	25	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Paribas	t653	25	Paribas	O	O	O	O	O	O	O	O	NP0	B-NP	paribas	NNP	O	O
+says	t654	25	say	e130	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t653:SBJ||t656:OBJ||t696:P	mainVb
+it	t655	25	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+will	t656	25	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t655:SBJ||t657:VC	O
+offer	t657	25	offer	e131	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	offer	VB	t659:OBJ||t665:DEP||t674:P||t675:COORD	O
+1,850	t658	25	1,850	O	O	O	O	O	O	O	O	CRD	B-NP	1,850	CD	O	O
+francs	t659	25	franc	O	O	O	O	O	O	O	O	AJ0	I-NP	franc	NNS	t658:NMOD||t660:APPO||t664:ADV	O
+-LRB-	t660	25	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	VBP	t661:OBJ||t663:OBJ	O
+$	t661	25	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t662:NMOD	O
+296.95	t662	25	296.95	O	O	O	O	O	O	O	O	CRD	I-NP	296.95	CD	O	O
+-RRB-	t663	25	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+each	t664	25	each	O	O	O	O	O	O	O	O	DT0	I-NP	each	DT	O	O
+for	t665	25	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t668:PMOD	O
+Navigation	t666	25	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t667	25	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t666:NAME	O
+shares	t668	25	share	O	O	O	O	O	O	O	O	VVZ	I-NP	share	NNS	t667:NMOD||t670:NMOD	O
+that	t669	25	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
+enjoy	t670	25	enjoy	e132	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	enjoy	VBP	t669:SBJ||t673:OBJ	O
+full	t671	25	full	O	O	O	O	O	O	O	O	AJ0	B-NP	full	JJ	O	O
+dividend	t672	25	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t671:NMOD	O
+rights	t673	25	rights	O	O	O	O	O	O	O	O	NN2	I-NP	right	NNS	t672:NMOD	O
+,	t674	25	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+and	t675	25	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t677:GAP-OBJ||t679:DEP-GAP	O
+1,800	t676	25	1,800	O	O	O	O	O	O	O	O	CRD	B-NP	1,800	CD	O	O
+francs	t677	25	franc	O	O	O	O	O	O	O	O	AJ0	I-NP	franc	NNS	t676:NMOD||t678:ADV	O
+each	t678	25	each	O	O	O	O	O	O	O	O	DT0	I-NP	each	DT	O	O
+for	t679	25	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t681:PMOD	O
+a	t680	25	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+block	t681	25	block	O	O	O	O	O	O	O	O	NN1	I-NP	block	NN	t680:NMOD||t682:NMOD||t684:APPO||t687:P||t689:NMOD	O
+of	t682	25	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t683:PMOD	O
+shares	t683	25	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	O	O
+issued	t684	25	issue	O	O	O	O	O	O	O	O	VVD	B-VP	issue	VBN	t686:TMP	O
+July	t685	25	July	O	O	O	tmx2011	DATE	1989-07-01	O	O	NP0	B-NP	july	NNP	O	O
+1	t686	25	1	O	O	O	tmx2011	DATE	1989-07-01	O	O	CRD	I-NP	1	CD	t685:NMOD	O
+,	t687	25	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t688	25	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+will	t689	25	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t688:SBJ||t690:VC	O
+receive	t690	25	receive	e134	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	receive	VB	t693:OBJ||t695:TMP	O
+only	t691	25	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	O	O
+partial	t692	25	partial	O	O	O	O	O	O	O	O	AJ0	I-NP	partial	JJ	t691:AMOD	O
+dividends	t693	25	dividend	O	O	O	O	O	O	O	O	NN2	I-NP	dividend	NNS	t692:NMOD	O
+this	t694	25	this	O	O	O	tmx2012	DATE	1989	O	O	DT0	B-NP	this	DT	O	O
+year	t695	25	year	O	O	O	tmx2012	DATE	1989	O	O	NN1	I-NP	year	NN	t694:NMOD	O
+.	t696	25	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Alternatively	t697	26	alternatively	O	O	O	O	O	O	O	O	alternatively	RB	O	mainVb
-,	t698	26	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-it	t699	26	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-is	t700	26	be	O	O	O	O	O	O	O	O	be	VBZ	t697:ADV||t698:P||t699:SBJ||t701:VC||t711:P	mainVb
-to	t701	26	to	O	O	O	O	O	O	O	O	to	TO	t702:IM	mainVb
-offer	t702	26	offer	e135	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	offer	VB	t705:OBJ||t706:ADV	mainVb
-three	t703	26	three	O	O	O	O	O	O	O	O	three	CD	O	mainVb
-Paribas	t704	26	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-shares	t705	26	share	O	O	O	O	O	O	O	O	share	NNS	t703:NMOD||t704:NMOD	mainVb
-for	t706	26	for	O	O	O	O	O	O	O	O	for	IN	t710:PMOD	mainVb
-one	t707	26	one	O	O	O	O	O	O	O	O	one	CD	O	mainVb
-Navigation	t708	26	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t709	26	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t708:NAME	mainVb
-share	t710	26	share	O	O	O	O	O	O	O	O	share	NN	t707:NMOD||t709:NMOD	mainVb
-.	t711	26	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Alternatively	t697	26	alternatively	O	O	O	O	O	O	O	O	AV0	B-ADVP	alternatively	RB	O	O
+,	t698	26	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+it	t699	26	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+is	t700	26	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t697:ADV||t698:P||t699:SBJ||t701:VC||t711:P	mainVb
+to	t701	26	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t702:IM	mainVb
+offer	t702	26	offer	e135	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	offer	VB	t705:OBJ||t706:ADV	mainVb
+three	t703	26	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	O	O
+Paribas	t704	26	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	O	O
+shares	t705	26	share	O	O	O	O	O	O	O	O	VVZ	I-NP	share	NNS	t703:NMOD||t704:NMOD	O
+for	t706	26	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t710:PMOD	O
+one	t707	26	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
+Navigation	t708	26	Navigation	O	O	O	O	O	O	O	O	NN1	I-NP	navigation	NNP	O	O
+Mixte	t709	26	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t708:NAME	O
+share	t710	26	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t707:NMOD||t709:NMOD	O
+.	t711	26	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t712	27	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Paribas	t713	27	Paribas	O	O	O	O	O	O	O	O	paribas	NNP	O	mainVb
-offer	t714	27	offer	O	O	O	O	O	O	O	O	offer	NN	t712:NMOD||t713:NMOD	mainVb
-values	t715	27	value	O	O	O	O	O	O	O	O	value	VBZ	t714:SBJ||t717:OBJ||t718:ADV||t723:P||t724:ADV||t741:P	mainVb
-Navigation	t716	27	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t717	27	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t716:NAME	mainVb
-at	t718	27	at	O	O	O	O	O	O	O	O	at	IN	t722:PMOD	mainVb
-about	t719	27	about	O	O	O	O	O	O	O	O	about	IN	t720:DEP||t721:DEP	mainVb
-23	t720	27	23	O	O	O	O	O	O	O	O	23	CD	O	mainVb
-billion	t721	27	billion	O	O	O	O	O	O	O	O	billion	CD	O	mainVb
-francs	t722	27	franc	O	O	O	O	O	O	O	O	franc	NNS	t719:NMOD	mainVb
-,	t723	27	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-depending	t724	27	depend	O	O	O	O	O	O	O	O	depend	VBG	t725:PMOD	mainVb
-on	t725	27	on	O	O	O	O	O	O	O	O	on	IN	t733:PMOD	mainVb
-how	t726	27	how	O	O	O	O	O	O	O	O	how	WRB	O	mainVb
-many	t727	27	many	O	O	O	O	O	O	O	O	many	DT	t728:NMOD	mainVb
-of	t728	27	of	O	O	O	O	O	O	O	O	of	IN	t732:PMOD	mainVb
-Navigation	t729	27	Navigation	O	O	O	O	O	O	O	O	navigation	NNP	O	mainVb
-Mixte	t730	27	Mixte	O	O	O	O	O	O	O	O	mixte	NNP	t729:NAME||t731:SUFFIX	mainVb
-'s	t731	27	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-warrants	t732	27	warrant	O	O	O	O	O	O	O	O	warrant	NNS	t730:NMOD	mainVb
-are	t733	27	be	O	O	O	O	O	O	O	O	be	VBP	t727:SBJ||t734:VC	mainVb
-converted	t734	27	convert	O	O	O	O	O	O	O	O	convert	VBN	t726:MNR||t735:ADV||t737:TMP	mainVb
-into	t735	27	into	O	O	O	O	O	O	O	O	into	IN	t736:PMOD	mainVb
-shares	t736	27	share	O	O	O	O	O	O	O	O	share	NNS	O	mainVb
-during	t737	27	during	O	O	O	O	O	O	O	O	during	IN	t740:PMOD	mainVb
-the	t738	27	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-takeover	t739	27	takeover	O	O	O	O	O	O	O	O	takeover	NN	O	mainVb
-battle	t740	27	battle	O	O	O	O	O	O	O	O	battle	NN	t738:NMOD||t739:NMOD	mainVb
-.	t741	27	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t712	27	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Paribas	t713	27	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	O	O
+offer	t714	27	offer	O	O	O	O	O	O	O	O	NN1	I-NP	offer	NN	t712:NMOD||t713:NMOD	O
+values	t715	27	value	O	O	O	O	O	O	O	O	NN2	I-NP	value	VBZ	t714:SBJ||t717:OBJ||t718:ADV||t723:P||t724:ADV||t741:P	mainVb
+Navigation	t716	27	Navigation	O	O	O	O	O	O	O	O	NN1	I-NP	navigation	NNP	O	O
+Mixte	t717	27	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t716:NAME	O
+at	t718	27	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t722:PMOD	O
+about	t719	27	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t720:DEP||t721:DEP	O
+23	t720	27	23	O	O	O	O	O	O	O	O	CRD	I-NP	23	CD	O	O
+billion	t721	27	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
+francs	t722	27	franc	O	O	O	O	O	O	O	O	NN2	I-NP	franc	NNS	t719:NMOD	O
+,	t723	27	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+depending	t724	27	depend	O	O	O	O	O	O	O	O	PRP	B-PP	depend	VBG	t725:PMOD	O
+on	t725	27	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t733:PMOD	O
+how	t726	27	how	O	O	O	O	O	O	O	O	AVQ	B-NP	how	WRB	O	O
+many	t727	27	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	DT	t728:NMOD	O
+of	t728	27	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t732:PMOD	O
+Navigation	t729	27	Navigation	O	O	O	O	O	O	O	O	NN1	B-NP	navigation	NNP	O	O
+Mixte	t730	27	Mixte	O	O	O	O	O	O	O	O	NN1	I-NP	mixte	NNP	t729:NAME||t731:SUFFIX	O
+'s	t731	27	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+warrants	t732	27	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t730:NMOD	O
+are	t733	27	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t727:SBJ||t734:VC	O
+converted	t734	27	convert	O	O	O	O	O	O	O	O	VVN	I-VP	convert	VBN	t726:MNR||t735:ADV||t737:TMP	O
+into	t735	27	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t736:PMOD	O
+shares	t736	27	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	O	O
+during	t737	27	during	O	O	O	O	O	O	O	O	PRP	B-PP	during	IN	t740:PMOD	O
+the	t738	27	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+takeover	t739	27	takeover	O	O	O	O	O	O	O	O	NN1	I-NP	takeover	NN	O	O
+battle	t740	27	battle	O	O	O	O	O	O	O	O	NN1	I-NP	battle	NN	t738:NMOD||t739:NMOD	O
+.	t741	27	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

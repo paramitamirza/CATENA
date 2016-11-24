@@ -1,201 +1,201 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
 
-Tony	t1	1	Tony	O	O	O+O+O	O	O	O	O	O	tony	NNP	O	O
-Lama	t2	1	Lama	O	O	O+O+O	O	O	O	O	O	lama	NNP	t1:NAME||t3:POSTHON	O
-Co.	t3	1	Co.	O	O	O+O+O	O	O	O	O	O	co.	NNP	O	O
-said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t2:SBJ||t5:OBJ||t30:P	mainVb
-that	t5	1	that	O	O	O	O	O	O	O	O	that	IN	t11:SUB	mainVb
-Equus	t6	1	Equus	O	O	O	O	O	O	O	O	equus	NNP	O	mainVb
-Investment	t7	1	Investment	O	O	O	O	O	O	O	O	investment	NNP	O	mainVb
-II	t8	1	II	O	O	O	O	O	O	O	O	ii	NNP	O	mainVb
-Limited	t9	1	Limited	O	O	O	O	O	O	O	O	limited	NNP	O	mainVb
-Partnership	t10	1	Partnership	O	O	O	O	O	O	O	O	partnership	NNP	t6:NAME||t7:NAME||t8:NAME||t9:NAME	mainVb
-has	t11	1	have	O	O	O	O	O	O	O	O	have	VBZ	t10:SBJ||t12:VC	mainVb
-proposed	t12	1	propose	e2	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	propose	VBN	t13:OPRD	mainVb
-changing	t13	1	change	e2030	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	change	VBG	t15:OBJ||t19:ADV	mainVb
-the	t14	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-offer	t15	1	offer	e1995	I_ACTION	NONE+NONE+POS	O	O	O	O	O	offer	NN	t14:NMOD||t16:NMOD	mainVb
-for	t16	1	for	O	O	O	O	O	O	O	O	for	IN	t18:PMOD	mainVb
-the	t17	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t18	1	company	O	O	O	O	O	O	O	O	company	NN	t17:NMOD	mainVb
-to	t19	1	to	O	O	O	O	O	O	O	O	to	TO	t20:PMOD	mainVb
-$	t20	1	$	O	O	O	O	O	O	O	O	$	$	t21:NMOD||t22:NMOD	mainVb
-13.65	t21	1	13.65	O	O	O	O	O	O	O	O	13.65	CD	O	mainVb
-in	t22	1	in	O	O	O	O	O	O	O	O	in	IN	t23:PMOD	mainVb
-cash	t23	1	cash	O	O	O	O	O	O	O	O	cash	NN	t24:COORD	mainVb
-and	t24	1	and	O	O	O	O	O	O	O	O	and	CC	t25:CONJ	mainVb
-stock	t25	1	stock	O	O	O	O	O	O	O	O	stock	NN	t26:NMOD	mainVb
-from	t26	1	from	O	O	O	O	O	O	O	O	from	IN	t29:PMOD	mainVb
-an	t27	1	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-all-cash	t28	1	all-cash	O	O	O	O	O	O	O	O	all-cash	NN	O	mainVb
-transaction	t29	1	transaction	e4	I_ACTION	NONE+NONE+POS	O	O	O	O	O	transaction	NN	t27:NMOD||t28:NMOD	mainVb
-.	t30	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Tony	t1	1	Tony	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	tony	NNP	O	O
+Lama	t2	1	Lama	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	lama	NNP	t1:NAME||t3:POSTHON	O
+Co.	t3	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
+said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t5:OBJ||t30:P	mainVb
+that	t5	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t11:SUB	O
+Equus	t6	1	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	O	O
+Investment	t7	1	Investment	O	O	O	O	O	O	O	O	NN1	I-NP	investment	NNP	O	O
+II	t8	1	II	O	O	O	O	O	O	O	O	CRD	I-NP	ii	NNP	O	O
+Limited	t9	1	Limited	O	O	O	O	O	O	O	O	AJ0	I-NP	limited	NNP	O	O
+Partnership	t10	1	Partnership	O	O	O	O	O	O	O	O	NN1	I-NP	partnership	NNP	t6:NAME||t7:NAME||t8:NAME||t9:NAME	O
+has	t11	1	have	O	O	O	O	O	O	O	O	VHZ	I-NP	have	VBZ	t10:SBJ||t12:VC	O
+proposed	t12	1	propose	e2	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-NP	propose	VBN	t13:OPRD	O
+changing	t13	1	change	e2030	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	change	VBG	t15:OBJ||t19:ADV	O
+the	t14	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+offer	t15	1	offer	e1995	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t14:NMOD||t16:NMOD	O
+for	t16	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t18:PMOD	O
+the	t17	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t18	1	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t17:NMOD	O
+to	t19	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t20:PMOD	O
+$	t20	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t21:NMOD||t22:NMOD	O
+13.65	t21	1	13.65	O	O	O	O	O	O	O	O	CRD	I-NP	13.65	CD	O	O
+in	t22	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t23:PMOD	O
+cash	t23	1	cash	O	O	O	O	O	O	O	O	NN1	B-NP	cash	NN	t24:COORD	O
+and	t24	1	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t25:CONJ	O
+stock	t25	1	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t26:NMOD	O
+from	t26	1	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t29:PMOD	O
+an	t27	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+all-cash	t28	1	all-cash	O	O	O	O	O	O	O	O	AJ0	I-NP	all-cash	NN	O	O
+transaction	t29	1	transaction	e4	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	transaction	NN	t27:NMOD||t28:NMOD	O
+.	t30	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Under	t31	2	under	O	O	O	O	O	O	O	O	under	IN	t32:PMOD	mainVb
-terms	t32	2	term	O	O	O	O	O	O	O	O	terms	NNS	t33:NMOD	mainVb
-of	t33	2	of	O	O	O	O	O	O	O	O	of	IN	t36:PMOD	mainVb
-the	t34	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-new	t35	2	new	O	O	O	O	O	O	O	O	new	JJ	O	mainVb
-proposal	t36	2	proposal	e2046	I_ACTION	NONE+NONE+POS	O	O	O	O	O	proposal	NN	t34:NMOD||t35:NMOD	mainVb
-,	t37	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Equus	t38	2	Equus	O	O	O	O	O	O	O	O	equus	NNP	t39:P||t40:APPO||t47:P	mainVb
-,	t39	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-managed	t40	2	manage	O	O	O	O	O	O	O	O	manage	VBN	t41:LGS	mainVb
-by	t41	2	by	O	O	O	O	O	O	O	O	by	IN	t45:P	mainVb
-Equus	t42	2	Equus	O	O	O	O	O	O	O	O	equus	NNP	O	mainVb
-Capital	t43	2	Capital	O	O	O	O	O	O	O	O	capital	NNP	t42:NAME||t44:POSTHON	mainVb
-Corp.	t44	2	Corp.	O	O	O	O	O	O	O	O	corp.	NNP	O	mainVb
-,	t45	2	,	O	O	O	O	O	O	O	O	,	,	t43:NMOD||t46:LOC	mainVb
-Houston	t46	2	Houston	O	O	O	O	O	O	O	O	houston	NNP	O	mainVb
-,	t47	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-would	t48	2	would	O	O	O	O	O	O	O	O	would	MD	t31:LOC||t37:P||t38:SBJ||t49:VC||t77:P	mainVb
-pay	t49	2	pay	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	pay	VB	t52:OBJ||t58:ADV||t67:ADV	mainVb
-$	t50	2	$	O	O	O	O	O	O	O	O	$	$	t51:NMOD	mainVb
-12	t51	2	12	O	O	O	O	O	O	O	O	12	CD	O	mainVb
-cash	t52	2	cash	O	O	O	O	O	O	O	O	cash	NN	t50:NMOD||t53:COORD	mainVb
-and	t53	2	and	O	O	O	O	O	O	O	O	and	CC	t57:CONJ	mainVb
-one	t54	2	one	O	O	O	O	O	O	O	O	one	CD	O	mainVb
-new	t55	2	new	O	O	O	O	O	O	O	O	new	JJ	O	mainVb
-preferred	t56	2	preferred	O	O	O	O	O	O	O	O	prefer	VBN	O	mainVb
-share	t57	2	share	O	O	O	O	O	O	O	O	share	NN	t54:NMOD||t55:NMOD||t56:NMOD	mainVb
-with	t58	2	with	O	O	O	O	O	O	O	O	with	IN	t61:PMOD	mainVb
-a	t59	2	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-liquidation	t60	2	liquidation	O	O	O	O	O	O	O	O	liquidation	NN	O	mainVb
-preference	t61	2	preference	O	O	O	O	O	O	O	O	preference	NN	t59:NMOD||t60:NMOD||t62:NMOD	mainVb
-of	t62	2	of	O	O	O	O	O	O	O	O	of	IN	t63:PMOD	mainVb
-$	t63	2	$	O	O	O	O	O	O	O	O	$	$	t64:NMOD||t66:ADV	mainVb
-1.65	t64	2	1.65	O	O	O	O	O	O	O	O	1.65	CD	O	mainVb
-a	t65	2	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t66	2	share	O	O	O	O	O	O	O	O	share	NN	t65:NMOD	mainVb
-for	t67	2	for	O	O	O	O	O	O	O	O	for	IN	t68:PMOD	mainVb
-each	t68	2	each	O	O	O	O	O	O	O	O	each	DT	t69:NMOD	mainVb
-of	t69	2	of	O	O	O	O	O	O	O	O	of	IN	t75:PMOD	mainVb
-Tony	t70	2	Tony	O	O	O	O	O	O	O	O	tony	NNP	O	mainVb
-Lama	t71	2	Lama	O	O	O	O	O	O	O	O	lama	NNP	t70:NAME||t72:SUFFIX	mainVb
-'s	t72	2	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-2.1	t73	2	2.1	O	O	O	O	O	O	O	O	2.1	CD	O	mainVb
-million	t74	2	million	O	O	O	O	O	O	O	O	million	CD	t73:DEP	mainVb
-shares	t75	2	share	O	O	O	O	O	O	O	O	share	NNS	t71:NMOD||t74:NMOD||t76:APPO	mainVb
-outstanding	t76	2	outstanding	O	O	O	O	O	O	O	O	outstanding	JJ	O	mainVb
-.	t77	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Under	t31	2	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t32:PMOD	O
+terms	t32	2	term	O	O	O	O	O	O	O	O	PRP	B-NP	terms	NNS	t33:NMOD	O
+of	t33	2	of	O	O	O	O	O	O	O	O	PRP	B-PP	of	IN	t36:PMOD	O
+the	t34	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+new	t35	2	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
+proposal	t36	2	proposal	e2046	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	proposal	NN	t34:NMOD||t35:NMOD	O
+,	t37	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Equus	t38	2	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	t39:P||t40:APPO||t47:P	O
+,	t39	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+managed	t40	2	manage	O	O	O	O	O	O	O	O	VVN	B-VP	manage	VBN	t41:LGS	O
+by	t41	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t45:P	O
+Equus	t42	2	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	O	O
+Capital	t43	2	Capital	O	O	O	O	O	O	O	O	NP0	I-NP	capital	NNP	t42:NAME||t44:POSTHON	O
+Corp.	t44	2	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
+,	t45	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t43:NMOD||t46:LOC	O
+Houston	t46	2	Houston	O	O	O	O	O	O	O	O	NP0	B-NP	houston	NNP	O	O
+,	t47	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+would	t48	2	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t31:LOC||t37:P||t38:SBJ||t49:VC||t77:P	mainVb
+pay	t49	2	pay	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t52:OBJ||t58:ADV||t67:ADV	mainVb
+$	t50	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t51:NMOD	O
+12	t51	2	12	O	O	O	O	O	O	O	O	CRD	I-NP	12	CD	O	O
+cash	t52	2	cash	O	O	O	O	O	O	O	O	NN1	I-NP	cash	NN	t50:NMOD||t53:COORD	O
+and	t53	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t57:CONJ	O
+one	t54	2	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
+new	t55	2	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
+preferred	t56	2	preferred	O	O	O	O	O	O	O	O	AJ0	I-NP	prefer	VBN	O	O
+share	t57	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t54:NMOD||t55:NMOD||t56:NMOD	O
+with	t58	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t61:PMOD	O
+a	t59	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+liquidation	t60	2	liquidation	O	O	O	O	O	O	O	O	NN1	I-NP	liquidation	NN	O	O
+preference	t61	2	preference	O	O	O	O	O	O	O	O	NN1	I-NP	preference	NN	t59:NMOD||t60:NMOD||t62:NMOD	O
+of	t62	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t63:PMOD	O
+$	t63	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t64:NMOD||t66:ADV	O
+1.65	t64	2	1.65	O	O	O	O	O	O	O	O	CRD	I-NP	1.65	CD	O	O
+a	t65	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t66	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t65:NMOD	O
+for	t67	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t68:PMOD	O
+each	t68	2	each	O	O	O	O	O	O	O	O	DT0	B-NP	each	DT	t69:NMOD	O
+of	t69	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t75:PMOD	O
+Tony	t70	2	Tony	O	O	O	O	O	O	O	O	NP0	B-NP	tony	NNP	O	O
+Lama	t71	2	Lama	O	O	O	O	O	O	O	O	NP0	I-NP	lama	NNP	t70:NAME||t72:SUFFIX	O
+'s	t72	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+2.1	t73	2	2.1	O	O	O	O	O	O	O	O	CRD	I-NP	2.1	CD	O	O
+million	t74	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t73:DEP	O
+shares	t75	2	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t71:NMOD||t74:NMOD||t76:APPO	O
+outstanding	t76	2	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
+.	t77	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Previously	t78	3	previously	O	O	O	tmx1999	DATE	PAST_REF	O	O	previously	RB	O	mainVb
-,	t79	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-it	t80	3	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-offered	t81	3	offer	e9	I_ACTION	PAST+NONE+POS	O	O	O	O	O	offer	VBD	t78:TMP||t79:P||t80:SBJ||t82:OBJ||t93:P	mainVb
-$	t82	3	$	O	O	O	O	O	O	O	O	$	$	t83:NMOD||t85:ADV||t86:NMOD||t88:P||t89:COORD	mainVb
-13.65	t83	3	13.65	O	O	O	O	O	O	O	O	13.65	CD	O	mainVb
-a	t84	3	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t85	3	share	O	O	O	O	O	O	O	O	share	NN	t84:NMOD	mainVb
-in	t86	3	in	O	O	O	O	O	O	O	O	in	IN	t87:PMOD	mainVb
-cash	t87	3	cash	O	O	O	O	O	O	O	O	cash	NN	O	mainVb
-,	t88	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t89	3	or	O	O	O	O	O	O	O	O	or	CC	t90:CONJ	mainVb
-$	t90	3	$	O	O	O	O	O	O	O	O	$	$	t91:DEP||t92:DEP	mainVb
-29	t91	3	29	O	O	O	O	O	O	O	O	29	CD	O	mainVb
-million	t92	3	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-.	t93	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Previously	t78	3	previously	O	O	O	tmx1999	DATE	PAST_REF	O	O	AV0	B-ADVP	previously	RB	O	O
+,	t79	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+it	t80	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+offered	t81	3	offer	e9	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBD	t78:TMP||t79:P||t80:SBJ||t82:OBJ||t93:P	mainVb
+$	t82	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t83:NMOD||t85:ADV||t86:NMOD||t88:P||t89:COORD	O
+13.65	t83	3	13.65	O	O	O	O	O	O	O	O	CRD	I-NP	13.65	CD	O	O
+a	t84	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t85	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t84:NMOD	O
+in	t86	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t87:PMOD	O
+cash	t87	3	cash	O	O	O	O	O	O	O	O	NN1	B-NP	cash	NN	O	O
+,	t88	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t89	3	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t90:CONJ	O
+$	t90	3	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t91:DEP||t92:DEP	O
+29	t91	3	29	O	O	O	O	O	O	O	O	CRD	I-NP	29	CD	O	O
+million	t92	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+.	t93	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t94	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-El	t95	4	El	O	O	O	O	O	O	O	O	el	NNP	O	mainVb
-Paso	t96	4	Paso	O	O	O	O	O	O	O	O	paso	NNP	t95:NAME	mainVb
-,	t97	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Texas	t98	4	Texas	O	O	O	O	O	O	O	O	texas	NNP	t96:NMOD||t97:P||t99:P	mainVb
-,	t99	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-maker	t100	4	maker	O	O	O	O	O	O	O	O	maker	NN	t94:NMOD||t98:LOC||t101:NMOD	mainVb
-of	t101	4	of	O	O	O	O	O	O	O	O	of	IN	t103:PMOD	mainVb
-Western	t102	4	western	O	O	O	O	O	O	O	O	western	JJ	O	mainVb
-boots	t103	4	boot	O	O	O	O	O	O	O	O	boot	NNS	t102:NMOD||t104:COORD	mainVb
-and	t104	4	and	O	O	O	O	O	O	O	O	and	CC	t106:CONJ	mainVb
-leather	t105	4	leather	O	O	O	O	O	O	O	O	leather	NN	O	mainVb
-accessories	t106	4	accessory	O	O	O	O	O	O	O	O	accessory	NNS	t105:NMOD	mainVb
-said	t107	4	say	e10	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t100:SBJ||t111:OBJ||t130:P	mainVb
-the	t108	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-preferred	t109	4	preferred	O	O	O	O	O	O	O	O	prefer	VBN	O	mainVb
-stock	t110	4	stock	O	O	O	O	O	O	O	O	stock	NN	t108:NMOD||t109:NMOD	mainVb
-would	t111	4	would	O	O	O	O	O	O	O	O	would	MD	t110:SBJ||t112:VC||t119:P||t120:COORD	mainVb
-accrue	t112	4	accrue	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	accrue	VB	t113:OBJ||t114:ADV	mainVb
-dividends	t113	4	dividend	O	O	O	O	O	O	O	O	dividend	NNS	O	mainVb
-at	t114	4	at	O	O	O	O	O	O	O	O	at	IN	t118:PMOD	mainVb
-a	t115	4	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-12	t116	4	12	O	O	O	O	O	O	O	O	12	CD	O	mainVb
-%	t117	4	%	O	O	O	O	O	O	O	O	%	NN	t116:NMOD	mainVb
-rate	t118	4	rate	O	O	O	O	O	O	O	O	rate	NN	t115:NMOD||t117:NMOD	mainVb
-,	t119	4	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-but	t120	4	but	O	O	O	O	O	O	O	O	but	CC	t121:CONJ	mainVb
-would	t121	4	would	O	O	O	O	O	O	O	O	would	MD	t122:ADV||t123:VC	mainVb
-n't	t122	4	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-be	t123	4	be	O	O	O	O	O	O	O	O	be	VB	t124:VC	mainVb
-paid	t124	4	pay	e14	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	pay	VBN	t125:TMP	mainVb
-for	t125	4	for	O	O	O	O	O	O	O	O	for	IN	t129:PMOD	mainVb
-the	t126	4	the	O	O	O	tmx28	DURATION	P2Y	O	O	the	DT	O	mainVb
-first	t127	4	first	O	O	O	tmx28	DURATION	P2Y	O	O	first	JJ	O	mainVb
-two	t128	4	two	O	O	O	tmx28	DURATION	P2Y	O	O	two	CD	O	mainVb
-years	t129	4	year	O	O	O	tmx28	DURATION	P2Y	O	O	years	NNS	t126:NMOD||t127:NMOD||t128:NMOD	mainVb
-.	t130	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t94	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+El	t95	4	El	O	O	O	O	O	O	O	O	NP0	I-NP	el	NNP	O	O
+Paso	t96	4	Paso	O	O	O	O	O	O	O	O	NP0	I-NP	paso	NNP	t95:NAME	O
+,	t97	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Texas	t98	4	Texas	O	O	O	O	O	O	O	O	NP0	B-NP	texas	NNP	t96:NMOD||t97:P||t99:P	O
+,	t99	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+maker	t100	4	maker	O	O	O	O	O	O	O	O	NN1	B-NP	maker	NN	t94:NMOD||t98:LOC||t101:NMOD	O
+of	t101	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t103:PMOD	O
+Western	t102	4	western	O	O	O	O	O	O	O	O	AJ0	B-NP	western	JJ	O	O
+boots	t103	4	boot	O	O	O	O	O	O	O	O	NN2	I-NP	boot	NNS	t102:NMOD||t104:COORD	O
+and	t104	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t106:CONJ	O
+leather	t105	4	leather	O	O	O	O	O	O	O	O	NN1	I-NP	leather	NN	O	O
+accessories	t106	4	accessory	O	O	O	O	O	O	O	O	NN2	I-NP	accessory	NNS	t105:NMOD	O
+said	t107	4	say	e10	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t100:SBJ||t111:OBJ||t130:P	mainVb
+the	t108	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+preferred	t109	4	preferred	O	O	O	O	O	O	O	O	AJ0	I-NP	prefer	VBN	O	O
+stock	t110	4	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t108:NMOD||t109:NMOD	O
+would	t111	4	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t110:SBJ||t112:VC||t119:P||t120:COORD	O
+accrue	t112	4	accrue	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	accrue	VB	t113:OBJ||t114:ADV	O
+dividends	t113	4	dividend	O	O	O	O	O	O	O	O	NN2	B-NP	dividend	NNS	O	O
+at	t114	4	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t118:PMOD	O
+a	t115	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+12	t116	4	12	O	O	O	O	O	O	O	O	CRD	I-NP	12	CD	O	O
+%	t117	4	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t116:NMOD	O
+rate	t118	4	rate	O	O	O	O	O	O	O	O	NN1	I-NP	rate	NN	t115:NMOD||t117:NMOD	O
+,	t119	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+but	t120	4	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t121:CONJ	O
+would	t121	4	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t122:ADV||t123:VC	O
+n't	t122	4	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+be	t123	4	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t124:VC	O
+paid	t124	4	pay	e14	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	VVN	I-VP	pay	VBN	t125:TMP	O
+for	t125	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t129:PMOD	O
+the	t126	4	the	O	O	O	tmx28	DURATION	P2Y	O	O	AT0	B-NP	the	DT	O	O
+first	t127	4	first	O	O	O	tmx28	DURATION	P2Y	O	O	ORD	I-NP	first	JJ	O	O
+two	t128	4	two	O	O	O	tmx28	DURATION	P2Y	O	O	CRD	I-NP	two	CD	O	O
+years	t129	4	year	O	O	O	tmx28	DURATION	P2Y	O	O	NN2	I-NP	years	NNS	t126:NMOD||t127:NMOD||t128:NMOD	O
+.	t130	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t131	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-stock	t132	5	stock	O	O	O	O	O	O	O	O	stock	NN	t131:NMOD	mainVb
-would	t133	5	would	O	O	O	O	O	O	O	O	would	MD	t132:SBJ||t134:VC||t149:P	mainVb
-be	t134	5	be	O	O	O	O	O	O	O	O	be	VB	t135:VC	mainVb
-redeemed	t135	5	redeem	e17	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	redeem	VBN	t136:TMP||t139:P||t140:ADV	mainVb
-in	t136	5	in	O	O	O	O	O	O	O	O	in	IN	t138:PMOD	mainVb
-five	t137	5	five	O	O	O	tmx29	DATE	1994	O	O	five	CD	O	mainVb
-years	t138	5	year	O	O	O	tmx29	DATE	1994	O	O	years	NNS	t137:NMOD	mainVb
-,	t139	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-subject	t140	5	subject	O	O	O	O	O	O	O	O	subject	JJ	t141:AMOD	mainVb
-to	t141	5	to	O	O	O	O	O	O	O	O	to	TO	t142:PMOD	mainVb
-terms	t142	5	term	O	O	O	O	O	O	O	O	terms	NNS	t143:NMOD	mainVb
-of	t143	5	of	O	O	O	O	O	O	O	O	of	IN	t148:PMOD	mainVb
-the	t144	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-surviving	t145	5	survive	O	O	O	O	O	O	O	O	survive	VBG	O	mainVb
-company	t146	5	company	O	O	O	O	O	O	O	O	company	NN	t144:NMOD||t145:NMOD||t147:SUFFIX	mainVb
-'s	t147	5	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-debt	t148	5	debt	O	O	O	O	O	O	O	O	debt	NN	t146:NMOD	mainVb
-.	t149	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t131	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+stock	t132	5	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t131:NMOD	O
+would	t133	5	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t132:SBJ||t134:VC||t149:P	mainVb
+be	t134	5	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t135:VC	mainVb
+redeemed	t135	5	redeem	e17	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	redeem	VBN	t136:TMP||t139:P||t140:ADV	mainVb
+in	t136	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t138:PMOD	O
+five	t137	5	five	O	O	O	tmx29	DATE	1994	O	O	CRD	B-NP	five	CD	O	O
+years	t138	5	year	O	O	O	tmx29	DATE	1994	O	O	NN2	I-NP	years	NNS	t137:NMOD	O
+,	t139	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+subject	t140	5	subject	O	O	O	O	O	O	O	O	PRP	B-ADJP	subject	JJ	t141:AMOD	O
+to	t141	5	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t142:PMOD	O
+terms	t142	5	term	O	O	O	O	O	O	O	O	PRP	B-NP	terms	NNS	t143:NMOD	O
+of	t143	5	of	O	O	O	O	O	O	O	O	PRP	B-PP	of	IN	t148:PMOD	O
+the	t144	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+surviving	t145	5	survive	O	O	O	O	O	O	O	O	AJ0	I-NP	survive	VBG	O	O
+company	t146	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t144:NMOD||t145:NMOD||t147:SUFFIX	O
+'s	t147	5	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+debt	t148	5	debt	O	O	O	O	O	O	O	O	NN1	I-NP	debt	NN	t146:NMOD	O
+.	t149	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Neither	t150	6	neither	O	O	O	O	O	O	O	O	neither	DT	O	mainVb
-Equus	t151	6	Equus	O	O	O	O	O	O	O	O	equus	NNP	t150:NMOD||t152:COORD	mainVb
-nor	t152	6	nor	O	O	O	O	O	O	O	O	nor	CC	t154:CONJ	mainVb
-Tony	t153	6	Tony	O	O	O	O	O	O	O	O	tony	NNP	O	mainVb
-Lama	t154	6	Lama	O	O	O	O	O	O	O	O	lama	NNP	t153:NAME	mainVb
-gave	t155	6	give	e19	REPORTING	PAST+NONE+NEG	O	O	O	O	O	give	VBD	t151:SBJ||t157:OBJ||t162:COORD||t171:P	mainVb
-a	t156	6	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-reason	t157	6	reason	O	O	O	O	O	O	O	O	reason	NN	t156:NMOD||t158:NMOD	mainVb
-for	t158	6	for	O	O	O	O	O	O	O	O	for	IN	t161:PMOD	mainVb
-the	t159	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-changed	t160	6	change	O	O	O	O	O	O	O	O	change	VBN	O	mainVb
-offer	t161	6	offer	e2000	I_ACTION	NONE+NONE+POS	O	O	O	O	O	offer	NN	t159:NMOD||t160:NMOD	mainVb
-and	t162	6	and	O	O	O	O	O	O	O	O	and	CC	t165:CONJ	mainVb
-Tony	t163	6	Tony	O	O	O	O	O	O	O	O	tony	NNP	O	mainVb
-Lama	t164	6	Lama	O	O	O	O	O	O	O	O	lama	NNP	t163:NAME	mainVb
-could	t165	6	could	O	O	O	O	O	O	O	O	could	MD	t164:SBJ||t166:ADV||t167:VC	mainVb
-n't	t166	6	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-be	t167	6	be	O	O	O	O	O	O	O	O	be	VB	t168:VC	mainVb
-reached	t168	6	reach	O	O	O	O	O	O	O	O	reach	VBN	t169:ADV	mainVb
-for	t169	6	for	O	O	O	O	O	O	O	O	for	IN	t170:PMOD	mainVb
-comment	t170	6	comment	O	O	O	O	O	O	O	O	comment	NN	O	mainVb
-.	t171	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Neither	t150	6	neither	O	O	O	O	O	O	O	O	AV0	B-NP	neither	DT	O	O
+Equus	t151	6	Equus	O	O	O	O	O	O	O	O	NP0	I-NP	equus	NNP	t150:NMOD||t152:COORD	O
+nor	t152	6	nor	O	O	O	O	O	O	O	O	CJC	I-NP	nor	CC	t154:CONJ	O
+Tony	t153	6	Tony	O	O	O	O	O	O	O	O	NP0	I-NP	tony	NNP	O	O
+Lama	t154	6	Lama	O	O	O	O	O	O	O	O	NP0	I-NP	lama	NNP	t153:NAME	O
+gave	t155	6	give	e19	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	give	VBD	t151:SBJ||t157:OBJ||t162:COORD||t171:P	mainVb
+a	t156	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+reason	t157	6	reason	O	O	O	O	O	O	O	O	NN1	I-NP	reason	NN	t156:NMOD||t158:NMOD	O
+for	t158	6	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t161:PMOD	O
+the	t159	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+changed	t160	6	change	O	O	O	O	O	O	O	O	AJ0	I-NP	change	VBN	O	O
+offer	t161	6	offer	e2000	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t159:NMOD||t160:NMOD	O
+and	t162	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t165:CONJ	O
+Tony	t163	6	Tony	O	O	O	O	O	O	O	O	NP0	B-NP	tony	NNP	O	O
+Lama	t164	6	Lama	O	O	O	O	O	O	O	O	NP0	I-NP	lama	NNP	t163:NAME	O
+could	t165	6	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t164:SBJ||t166:ADV||t167:VC	O
+n't	t166	6	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+be	t167	6	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t168:VC	O
+reached	t168	6	reach	O	O	O	O	O	O	O	O	VVN	I-VP	reach	VBN	t169:ADV	O
+for	t169	6	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t170:PMOD	O
+comment	t170	6	comment	O	O	O	O	O	O	O	O	NN1	B-NP	comment	NN	O	O
+.	t171	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-However	t172	7	however	O	O	O	O	O	O	O	O	however	RB	O	mainVb
-,	t173	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Tony	t174	7	Tony	O	O	O	O	O	O	O	O	tony	NNP	O	mainVb
-Lama	t175	7	Lama	O	O	O	O	O	O	O	O	lama	NNP	t174:NAME	mainVb
-said	t176	7	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t172:ADV||t173:P||t175:SBJ||t178:OBJ||t192:P	mainVb
-it	t177	7	it	O	O	O	O	O	O	O	O	it	PRP	O	mainVb
-would	t178	7	would	O	O	O	O	O	O	O	O	would	MD	t177:SBJ||t179:TMP||t180:VC	mainVb
-promptly	t179	7	promptly	O	O	O	O	O	O	O	O	promptly	RB	O	mainVb
-submit	t180	7	submit	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	submit	VB	t182:OBJ||t183:ADV	mainVb
-the	t181	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-offer	t182	7	offer	O	O	O	O	O	O	O	O	offer	NN	t181:NMOD	mainVb
-to	t183	7	to	O	O	O	O	O	O	O	O	to	TO	t186:PMOD	mainVb
-a	t184	7	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-special	t185	7	special	O	O	O	O	O	O	O	O	special	JJ	O	mainVb
-committee	t186	7	committee	O	O	O	O	O	O	O	O	committee	NN	t184:NMOD||t185:NMOD||t187:NMOD	mainVb
-of	t187	7	of	O	O	O	O	O	O	O	O	of	IN	t191:PMOD	mainVb
-the	t188	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t189	7	company	O	O	O	O	O	O	O	O	company	NN	t188:NMOD||t190:SUFFIX	mainVb
-'s	t190	7	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-board	t191	7	board	O	O	O	O	O	O	O	O	board	NN	t189:NMOD	mainVb
-.	t192	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+However	t172	7	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
+,	t173	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Tony	t174	7	Tony	O	O	O	O	O	O	O	O	NP0	B-NP	tony	NNP	O	O
+Lama	t175	7	Lama	O	O	O	O	O	O	O	O	NP0	I-NP	lama	NNP	t174:NAME	O
+said	t176	7	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t172:ADV||t173:P||t175:SBJ||t178:OBJ||t192:P	mainVb
+it	t177	7	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+would	t178	7	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t177:SBJ||t179:TMP||t180:VC	O
+promptly	t179	7	promptly	O	O	O	O	O	O	O	O	AV0	I-VP	promptly	RB	O	O
+submit	t180	7	submit	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	submit	VB	t182:OBJ||t183:ADV	O
+the	t181	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+offer	t182	7	offer	O	O	O	O	O	O	O	O	NN1	I-NP	offer	NN	t181:NMOD	O
+to	t183	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t186:PMOD	O
+a	t184	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+special	t185	7	special	O	O	O	O	O	O	O	O	AJ0	I-NP	special	JJ	O	O
+committee	t186	7	committee	O	O	O	O	O	O	O	O	NN1	I-NP	committee	NN	t184:NMOD||t185:NMOD||t187:NMOD	O
+of	t187	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t191:PMOD	O
+the	t188	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t189	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t188:NMOD||t190:SUFFIX	O
+'s	t190	7	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+board	t191	7	board	O	O	O	O	O	O	O	O	NN1	I-NP	board	NN	t189:NMOD	O
+.	t192	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

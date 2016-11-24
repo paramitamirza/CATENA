@@ -1,326 +1,326 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
 
-Aetna	t1	1	Aetna	O	O	O+O+O	O	O	O	O	O	aetna	NNP	O	O
-Life	t2	1	Life	O	O	O+O+O	O	O	O	O	O	life	NNP	O	O
-amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	amp	NNP	O	O
-Casualty	t4	1	Casualty	O	O	O+O+O	O	O	O	O	O	casualty	NNP	t1:NAME||t2:NAME||t3:NAME||t5:POSTHON||t6:SUFFIX	O
-Co.	t5	1	Co.	O	O	O+O+O	O	O	O	O	O	co.	NNP	O	O
-'s	t6	1	's	O	O	O+O+O	O	O	O	O	O	's	POS	O	O
-third-quarter	t7	1	third-quarter	O	O	O+O+O	tmx44	DATE	1989-Q3	O	O	third-quarter	NN	O	O
-net	t8	1	net	O	O	O+O+O	O	O	O	O	O	net	JJ	O	O
-income	t9	1	income	O	O	O+O+O	O	O	O	O	O	income	NN	t4:NMOD||t7:NMOD||t8:NMOD	O
-fell	t10	1	fall	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	fell	VBD	t9:SBJ||t12:EXT||t13:DIR||t23:P||t24:ADV||t41:P	mainVb
-22	t11	1	22	O	O	O	O	O	O	O	O	22	CD	O	mainVb
-%	t12	1	%	O	O	O	O	O	O	O	O	%	NN	t11:NMOD	mainVb
-to	t13	1	to	O	O	O	O	O	O	O	O	to	TO	t14:PMOD	mainVb
-$	t14	1	$	O	O	O	O	O	O	O	O	$	$	t15:DEP||t16:DEP||t17:P||t18:COORD	mainVb
-182.6	t15	1	182.6	O	O	O	O	O	O	O	O	182.6	CD	O	mainVb
-million	t16	1	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t17	1	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t18	1	or	O	O	O	O	O	O	O	O	or	CC	t19:CONJ	mainVb
-$	t19	1	$	O	O	O	O	O	O	O	O	$	$	t20:NMOD||t22:ADV	mainVb
-1.63	t20	1	1.63	O	O	O	O	O	O	O	O	1.63	CD	O	mainVb
-a	t21	1	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t22	1	share	O	O	O	O	O	O	O	O	share	NN	t21:NMOD	mainVb
-,	t23	1	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-reflecting	t24	1	reflect	O	O	O	O	O	O	O	O	reflect	VBG	t26:OBJ	mainVb
-the	t25	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-damages	t26	1	damages	e47	STATE	NONE+NONE+POS	O	O	O	O	O	damages	NNS	t25:NMOD||t27:NMOD||t30:COORD	mainVb
-from	t27	1	from	O	O	O	O	O	O	O	O	from	IN	t29:PMOD	mainVb
-Hurricane	t28	1	Hurricane	O	O	O	O	O	O	O	O	hurricane	NNP	O	mainVb
-Hugo	t29	1	Hugo	O	O	O	O	O	O	O	O	hugo	NNP	t28:NAME	mainVb
-and	t30	1	and	O	O	O	O	O	O	O	O	and	CC	t32:CONJ	mainVb
-lower	t31	1	lower	O	O	O	O	O	O	O	O	low	JJR	O	mainVb
-results	t32	1	result	e3	STATE	NONE+NONE+POS	O	O	O	O	O	result	NNS	t31:NMOD||t33:NMOD	mainVb
-for	t33	1	for	O	O	O	O	O	O	O	O	for	IN	t34:PMOD	mainVb
-some	t34	1	some	O	O	O	O	O	O	O	O	some	DT	t35:NMOD	mainVb
-of	t35	1	of	O	O	O	O	O	O	O	O	of	IN	t40:PMOD	mainVb
-the	t36	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t37	1	company	O	O	O	O	O	O	O	O	company	NN	t36:NMOD||t38:SUFFIX	mainVb
-'s	t38	1	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-major	t39	1	major	O	O	O	O	O	O	O	O	major	JJ	O	mainVb
-divisions	t40	1	division	O	O	O	O	O	O	O	O	division	NNS	t37:NMOD||t39:NMOD	mainVb
-.	t41	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Aetna	t1	1	Aetna	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	aetna	NNP	O	O
+Life	t2	1	Life	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	life	NNP	O	O
+amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
+Casualty	t4	1	Casualty	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	casualty	NNP	t1:NAME||t2:NAME||t3:NAME||t5:POSTHON||t6:SUFFIX	O
+Co.	t5	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
+'s	t6	1	's	O	O	O+O+O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+third-quarter	t7	1	third-quarter	O	O	O+O+O	tmx44	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
+net	t8	1	net	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
+income	t9	1	income	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	income	NN	t4:NMOD||t7:NMOD||t8:NMOD	O
+fell	t10	1	fall	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t9:SBJ||t12:EXT||t13:DIR||t23:P||t24:ADV||t41:P	mainVb
+22	t11	1	22	O	O	O	O	O	O	O	O	CRD	B-NP	22	CD	O	O
+%	t12	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t11:NMOD	O
+to	t13	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t14:PMOD	O
+$	t14	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t15:DEP||t16:DEP||t17:P||t18:COORD	O
+182.6	t15	1	182.6	O	O	O	O	O	O	O	O	CRD	I-NP	182.6	CD	O	O
+million	t16	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t17	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t18	1	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t19:CONJ	O
+$	t19	1	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t20:NMOD||t22:ADV	O
+1.63	t20	1	1.63	O	O	O	O	O	O	O	O	CRD	I-NP	1.63	CD	O	O
+a	t21	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t22	1	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t21:NMOD	O
+,	t23	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+reflecting	t24	1	reflect	O	O	O	O	O	O	O	O	VVG	B-VP	reflect	VBG	t26:OBJ	O
+the	t25	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+damages	t26	1	damages	e47	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	damages	NNS	t25:NMOD||t27:NMOD||t30:COORD	O
+from	t27	1	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t29:PMOD	O
+Hurricane	t28	1	Hurricane	O	O	O	O	O	O	O	O	NP0	B-NP	hurricane	NNP	O	O
+Hugo	t29	1	Hugo	O	O	O	O	O	O	O	O	NP0	I-NP	hugo	NNP	t28:NAME	O
+and	t30	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t32:CONJ	O
+lower	t31	1	lower	O	O	O	O	O	O	O	O	AJC	B-NP	low	JJR	O	O
+results	t32	1	result	e3	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t31:NMOD||t33:NMOD	O
+for	t33	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t34:PMOD	O
+some	t34	1	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	t35:NMOD	O
+of	t35	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t40:PMOD	O
+the	t36	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t37	1	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t36:NMOD||t38:SUFFIX	O
+'s	t38	1	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+major	t39	1	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
+divisions	t40	1	division	O	O	O	O	O	O	O	O	NN2	I-NP	division	NNS	t37:NMOD||t39:NMOD	O
+.	t41	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Catastrophe	t42	2	catastrophe	O	O	O	O	O	O	O	O	catastrophe	NN	O	mainVb
-losses	t43	2	loss	e48	STATE	NONE+NONE+POS	O	O	O	O	O	losses	NNS	t42:NMOD	mainVb
-reduced	t44	2	reduce	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	reduce	VBD	t43:SBJ||t48:OBJ||t49:ADV||t53:P||t54:ADV||t60:P	mainVb
-Aetna	t45	2	Aetna	O	O	O	O	O	O	O	O	aetna	NNP	t46:SUFFIX	mainVb
-'s	t46	2	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-net	t47	2	net	O	O	O	O	O	O	O	O	net	JJ	O	mainVb
-income	t48	2	income	O	O	O	O	O	O	O	O	income	NN	t45:NMOD||t47:NMOD	mainVb
-by	t49	2	by	O	O	O	O	O	O	O	O	by	IN	t50:PMOD	mainVb
-$	t50	2	$	O	O	O	O	O	O	O	O	$	$	t51:DEP||t52:DEP	mainVb
-50	t51	2	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-million	t52	2	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t53	2	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-including	t54	2	include	O	O	O	O	O	O	O	O	include	VBG	t55:PMOD	mainVb
-$	t55	2	$	O	O	O	O	O	O	O	O	$	$	t56:DEP||t57:DEP||t58:NMOD	mainVb
-36	t56	2	36	O	O	O	O	O	O	O	O	36	CD	O	mainVb
-million	t57	2	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-from	t58	2	from	O	O	O	O	O	O	O	O	from	IN	t59:PMOD	mainVb
-Hugo	t59	2	Hugo	O	O	O	O	O	O	O	O	hugo	NNP	O	mainVb
-.	t60	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Catastrophe	t42	2	catastrophe	O	O	O	O	O	O	O	O	NN1	B-NP	catastrophe	NN	O	O
+losses	t43	2	loss	e48	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	losses	NNS	t42:NMOD	O
+reduced	t44	2	reduce	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	reduce	VBD	t43:SBJ||t48:OBJ||t49:ADV||t53:P||t54:ADV||t60:P	mainVb
+Aetna	t45	2	Aetna	O	O	O	O	O	O	O	O	NP0	B-NP	aetna	NNP	t46:SUFFIX	O
+'s	t46	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+net	t47	2	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
+income	t48	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t45:NMOD||t47:NMOD	O
+by	t49	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t50:PMOD	O
+$	t50	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t51:DEP||t52:DEP	O
+50	t51	2	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
+million	t52	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t53	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+including	t54	2	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t55:PMOD	O
+$	t55	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t56:DEP||t57:DEP||t58:NMOD	O
+36	t56	2	36	O	O	O	O	O	O	O	O	CRD	I-NP	36	CD	O	O
+million	t57	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+from	t58	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t59:PMOD	O
+Hugo	t59	2	Hugo	O	O	O	O	O	O	O	O	NP0	B-NP	hugo	NNP	O	O
+.	t60	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Last	t61	3	last	O	O	O	tmx49	DATE	1988	O	O	last	JJ	O	mainVb
-year	t62	3	year	O	O	O	tmx49	DATE	1988	O	O	year	NN	t61:NMOD	mainVb
-catastrophe	t63	3	catastrophe	O	O	O	O	O	O	O	O	catastrophe	NN	O	mainVb
-losses	t64	3	loss	e50	STATE	NONE+NONE+POS	O	O	O	O	O	losses	NNS	t63:NMOD	mainVb
-totaled	t65	3	total	O	O	O	O	O	O	O	O	total	VBD	t62:TMP||t64:SBJ||t66:OBJ||t69:P||t72:TMP||t82:P	mainVb
-$	t66	3	$	O	O	O	O	O	O	O	O	$	$	t67:DEP||t68:DEP	mainVb
-5	t67	3	5	O	O	O	O	O	O	O	O	5	CD	O	mainVb
-million	t68	3	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t69	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-when	t70	3	when	O	O	O	O	O	O	O	O	when	WRB	O	mainVb
-net	t71	3	net	e7	STATE	NONE+NONE+POS	O	O	O	O	O	net	NN	O	mainVb
-was	t72	3	be	O	O	O	O	O	O	O	O	be	VBD	t70:TMP||t71:SBJ||t73:PRD	mainVb
-$	t73	3	$	O	O	O	O	O	O	O	O	$	$	t74:DEP||t75:DEP||t76:P||t77:COORD	mainVb
-235.5	t74	3	235.5	O	O	O	O	O	O	O	O	235.5	CD	O	mainVb
-million	t75	3	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t76	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t77	3	or	O	O	O	O	O	O	O	O	or	CC	t78:CONJ	mainVb
-$	t78	3	$	O	O	O	O	O	O	O	O	$	$	t79:NMOD||t81:ADV	mainVb
-2.07	t79	3	2.07	O	O	O	O	O	O	O	O	2.07	CD	O	mainVb
-a	t80	3	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t81	3	share	O	O	O	O	O	O	O	O	share	NN	t80:NMOD	mainVb
-.	t82	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Last	t61	3	last	O	O	O	tmx49	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
+year	t62	3	year	O	O	O	tmx49	DATE	1988	O	O	NN1	I-NP	year	NN	t61:NMOD	O
+catastrophe	t63	3	catastrophe	O	O	O	O	O	O	O	O	NN1	I-NP	catastrophe	NN	O	O
+losses	t64	3	loss	e50	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	losses	NNS	t63:NMOD	O
+totaled	t65	3	total	O	O	O	O	O	O	O	O	VVD	B-VP	total	VBD	t62:TMP||t64:SBJ||t66:OBJ||t69:P||t72:TMP||t82:P	mainVb
+$	t66	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t67:DEP||t68:DEP	O
+5	t67	3	5	O	O	O	O	O	O	O	O	CRD	I-NP	5	CD	O	O
+million	t68	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t69	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+when	t70	3	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
+net	t71	3	net	e7	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	net	NN	O	O
+was	t72	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t70:TMP||t71:SBJ||t73:PRD	O
+$	t73	3	$	O	O	O	O	O	O	O	O	UNC	B-NP	$	$	t74:DEP||t75:DEP||t76:P||t77:COORD	O
+235.5	t74	3	235.5	O	O	O	O	O	O	O	O	CRD	I-NP	235.5	CD	O	O
+million	t75	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t76	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t77	3	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t78:CONJ	O
+$	t78	3	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t79:NMOD||t81:ADV	O
+2.07	t79	3	2.07	O	O	O	O	O	O	O	O	CRD	I-NP	2.07	CD	O	O
+a	t80	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t81	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t80:NMOD	O
+.	t82	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t83	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-year-earlier	t84	4	year-earlier	O	O	O	tmx52	DATE	1988	O	O	year-earlier	JJR	O	mainVb
-results	t85	4	result	e8	STATE	NONE+NONE+POS	O	O	O	O	O	result	NNS	t83:NMOD||t84:NMOD	mainVb
-have	t86	4	have	O	O	O	O	O	O	O	O	have	VBP	t85:SBJ||t87:VC||t94:P	mainVb
-been	t87	4	be	O	O	O	O	O	O	O	O	be	VBN	t88:VC	mainVb
-restated	t88	4	restate	e9	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	restate	VBN	t89:PRP	mainVb
-to	t89	4	to	O	O	O	O	O	O	O	O	to	TO	t90:IM	mainVb
-reflect	t90	4	reflect	e11	I_STATE	INFINITIVE+NONE+POS	O	O	O	O	O	reflect	VB	t93:OBJ	mainVb
-an	t91	4	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-accounting	t92	4	accounting	O	O	O	O	O	O	O	O	accounting	NN	O	mainVb
-change	t93	4	change	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	change	NN	t91:NMOD||t92:NMOD	mainVb
-.	t94	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t83	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+year-earlier	t84	4	year-earlier	O	O	O	tmx52	DATE	1988	O	O	NN1	I-NP	year-earlier	JJR	O	O
+results	t85	4	result	e8	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t83:NMOD||t84:NMOD	O
+have	t86	4	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t85:SBJ||t87:VC||t94:P	mainVb
+been	t87	4	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t88:VC	mainVb
+restated	t88	4	restate	e9	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	restate	VBN	t89:PRP	mainVb
+to	t89	4	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t90:IM	mainVb
+reflect	t90	4	reflect	e11	I_STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reflect	VB	t93:OBJ	mainVb
+an	t91	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+accounting	t92	4	accounting	O	O	O	O	O	O	O	O	AJ0	I-NP	accounting	NN	O	O
+change	t93	4	change	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	change	NN	t91:NMOD||t92:NMOD	O
+.	t94	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t95	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-insurer	t96	5	insurer	O	O	O	O	O	O	O	O	insurer	NN	t95:NMOD	mainVb
-has	t97	5	have	O	O	O	O	O	O	O	O	have	VBZ	t96:SBJ||t98:VC||t110:P	mainVb
-started	t98	5	start	e13	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	start	VBN	t99:OPRD	mainVb
-processing	t99	5	process	e54	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	process	VBG	t100:OBJ||t109:TMP	mainVb
-claims	t100	5	claim	e14	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	claim	NNS	t101:NMOD	mainVb
-from	t101	5	from	O	O	O	O	O	O	O	O	from	IN	t105:PMOD	mainVb
-the	t102	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Northern	t103	5	Northern	O	O	O	O	O	O	O	O	northern	NNP	O	mainVb
-California	t104	5	California	O	O	O	O	O	O	O	O	california	NNP	t103:NAME	mainVb
-earthquake	t105	5	earthquake	e55	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	earthquake	NN	t102:NMOD||t104:NMOD	mainVb
-nearly	t106	5	nearly	O	O	O	tmx57	DATE	1989-WXX	O	O	nearly	RB	O	mainVb
-two	t107	5	two	O	O	O	tmx57	DATE	1989-WXX	O	O	two	CD	O	mainVb
-weeks	t108	5	week	O	O	O	tmx57	DATE	1989-WXX	O	O	week	NNS	t106:NMOD||t107:NMOD	mainVb
-ago	t109	5	ago	O	O	O	tmx57	DATE	1989-WXX	O	O	ago	RB	t108:AMOD	mainVb
-.	t110	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t95	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+insurer	t96	5	insurer	O	O	O	O	O	O	O	O	NN1	I-NP	insurer	NN	t95:NMOD	O
+has	t97	5	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t96:SBJ||t98:VC||t110:P	mainVb
+started	t98	5	start	e13	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	start	VBN	t99:OPRD	mainVb
+processing	t99	5	process	e54	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	process	VBG	t100:OBJ||t109:TMP	mainVb
+claims	t100	5	claim	e14	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	claim	NNS	t101:NMOD	O
+from	t101	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t105:PMOD	O
+the	t102	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Northern	t103	5	Northern	O	O	O	O	O	O	O	O	AJ0	I-NP	northern	NNP	O	O
+California	t104	5	California	O	O	O	O	O	O	O	O	NP0	I-NP	california	NNP	t103:NAME	O
+earthquake	t105	5	earthquake	e55	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVB	B-VP	earthquake	NN	t102:NMOD||t104:NMOD	O
+nearly	t106	5	nearly	O	O	O	tmx57	DATE	1989-WXX	O	O	AV0	B-NP	nearly	RB	O	O
+two	t107	5	two	O	O	O	tmx57	DATE	1989-WXX	O	O	CRD	I-NP	two	CD	O	O
+weeks	t108	5	week	O	O	O	tmx57	DATE	1989-WXX	O	O	NN2	I-NP	week	NNS	t106:NMOD||t107:NMOD	O
+ago	t109	5	ago	O	O	O	tmx57	DATE	1989-WXX	O	O	AV0	B-ADVP	ago	RB	t108:AMOD	O
+.	t110	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-But	t111	6	but	O	O	O	O	O	O	O	O	but	CC	O	mainVb
-because	t112	6	because	O	O	O	O	O	O	O	O	because	IN	t115:SUB	mainVb
-these	t113	6	these	O	O	O	O	O	O	O	O	these	DT	O	mainVb
-claims	t114	6	claim	O	O	O	O	O	O	O	O	claim	NNS	t113:NMOD	mainVb
-are	t115	6	be	O	O	O	O	O	O	O	O	be	VBP	t114:SBJ||t117:PRD	mainVb
-more	t116	6	more	O	O	O	O	O	O	O	O	more	RBR	O	mainVb
-difficult	t117	6	difficult	O	O	O	O	O	O	O	O	difficult	JJ	t116:AMOD||t118:AMOD	mainVb
-to	t118	6	to	O	O	O	O	O	O	O	O	to	TO	t119:IM	mainVb
-evaluate	t119	6	evaluate	O	O	O	O	O	O	O	O	evaluate	VB	t120:COORD	mainVb
-and	t120	6	and	O	O	O	O	O	O	O	O	and	CC	t121:CONJ	mainVb
-have	t121	6	have	O	O	O	O	O	O	O	O	have	VB	t122:VC	mainVb
-been	t122	6	be	O	O	O	O	O	O	O	O	be	VBN	t123:VC	mainVb
-coming	t123	6	come	e18	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	come	VBG	t124:LOC||t126:MNR	mainVb
-in	t124	6	in	O	O	O	O	O	O	O	O	in	RB	O	mainVb
-more	t125	6	more	O	O	O	O	O	O	O	O	more	RBR	O	mainVb
-slowly	t126	6	slowly	O	O	O	O	O	O	O	O	slowly	RB	t125:AMOD	mainVb
-,	t127	6	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t128	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-company	t129	6	company	O	O	O	O	O	O	O	O	company	NN	t128:NMOD	mainVb
-has	t130	6	have	e19	STATE	PRESENT+NONE+POS	O	O	O	O	O	have	VBZ	t111:DEP||t112:PRP||t127:P||t129:SBJ||t132:OBJ||t142:P	mainVb
-no	t131	6	no	O	O	O	O	O	O	O	O	no	DT	O	mainVb
-estimate	t132	6	estimate	e20	I_STATE	NONE+NONE+NEG	O	O	O	O	O	estimate	NN	t131:NMOD||t133:NMOD	mainVb
-of	t133	6	of	O	O	O	O	O	O	O	O	of	IN	t135:PMOD	mainVb
-the	t134	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-impact	t135	6	impact	e21	STATE	NONE+NONE+POS	O	O	O	O	O	impact	NN	t134:NMOD||t136:NMOD||t139:NMOD	mainVb
-of	t136	6	of	O	O	O	O	O	O	O	O	of	IN	t138:PMOD	mainVb
-the	t137	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-earthquake	t138	6	earthquake	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	earthquake	NN	t137:NMOD	mainVb
-on	t139	6	on	O	O	O	O	O	O	O	O	on	IN	t141:PMOD	mainVb
-fourth-quarter	t140	6	fourth-quarter	O	O	O	tmx61	DATE	1989-Q4	O	O	fourth-quarter	JJ	O	mainVb
-results	t141	6	result	e22	STATE	NONE+NONE+POS	O	O	O	O	O	result	NNS	t140:NMOD	mainVb
-.	t142	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+But	t111	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
+because	t112	6	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t115:SUB	O
+these	t113	6	these	O	O	O	O	O	O	O	O	DT0	B-NP	these	DT	O	O
+claims	t114	6	claim	O	O	O	O	O	O	O	O	NN2	I-NP	claim	NNS	t113:NMOD	O
+are	t115	6	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t114:SBJ||t117:PRD	O
+more	t116	6	more	O	O	O	O	O	O	O	O	AV0	B-ADJP	more	RBR	O	O
+difficult	t117	6	difficult	O	O	O	O	O	O	O	O	AJ0	I-ADJP	difficult	JJ	t116:AMOD||t118:AMOD	O
+to	t118	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t119:IM	O
+evaluate	t119	6	evaluate	O	O	O	O	O	O	O	O	VVI	I-VP	evaluate	VB	t120:COORD	O
+and	t120	6	and	O	O	O	O	O	O	O	O	CJC	I-VP	and	CC	t121:CONJ	O
+have	t121	6	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t122:VC	O
+been	t122	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t123:VC	O
+coming	t123	6	come	e18	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	come	VBG	t124:LOC||t126:MNR	O
+in	t124	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	RB	O	O
+more	t125	6	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	O	O
+slowly	t126	6	slowly	O	O	O	O	O	O	O	O	AV0	I-NP	slowly	RB	t125:AMOD	O
+,	t127	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t128	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+company	t129	6	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t128:NMOD	O
+has	t130	6	have	e19	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHZ	B-VP	have	VBZ	t111:DEP||t112:PRP||t127:P||t129:SBJ||t132:OBJ||t142:P	mainVb
+no	t131	6	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
+estimate	t132	6	estimate	e20	I_STATE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	estimate	NN	t131:NMOD||t133:NMOD	O
+of	t133	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t135:PMOD	O
+the	t134	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+impact	t135	6	impact	e21	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	impact	NN	t134:NMOD||t136:NMOD||t139:NMOD	O
+of	t136	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t138:PMOD	O
+the	t137	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+earthquake	t138	6	earthquake	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	earthquake	NN	t137:NMOD	O
+on	t139	6	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t141:PMOD	O
+fourth-quarter	t140	6	fourth-quarter	O	O	O	tmx61	DATE	1989-Q4	O	O	NN1	B-NP	fourth-quarter	JJ	O	O
+results	t141	6	result	e22	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t140:NMOD	O
+.	t142	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t143	7	in	O	O	O	O	O	O	O	O	in	IN	t149:PMOD	mainVb
-New	t144	7	New	O	O	O	O	O	O	O	O	new	NNP	O	mainVb
-York	t145	7	York	O	O	O	O	O	O	O	O	york	NNP	t144:NAME	mainVb
-Stock	t146	7	Stock	O	O	O	O	O	O	O	O	stock	NNP	O	mainVb
-Exchange	t147	7	Exchange	O	O	O	O	O	O	O	O	exchange	NNP	t145:NAME||t146:NAME	mainVb
-composite	t148	7	composite	O	O	O	O	O	O	O	O	composite	JJ	O	mainVb
-trading	t149	7	trading	O	O	O	O	O	O	O	O	trading	NN	t147:NMOD||t148:NMOD	mainVb
-Friday	t150	7	Friday	O	O	O	tmx63	DATE	1989-10-27	O	O	friday	NNP	O	mainVb
-,	t151	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Aetna	t152	7	Aetna	O	O	O	O	O	O	O	O	aetna	NNP	O	mainVb
-closed	t153	7	close	e24	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	close	VBD	t143:LOC||t150:TMP||t151:P||t152:SBJ||t154:ADV||t157:P||t158:ADV||t161:P	mainVb
-at	t154	7	at	O	O	O	O	O	O	O	O	at	IN	t155:PMOD	mainVb
-$	t155	7	$	O	O	O	O	O	O	O	O	$	$	t156:NMOD	mainVb
-60	t156	7	60	O	O	O	O	O	O	O	O	60	CD	O	mainVb
-,	t157	7	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-down	t158	7	down	O	O	O	O	O	O	O	O	down	IN	t160:AMOD	mainVb
-50	t159	7	50	O	O	O	O	O	O	O	O	50	CD	O	mainVb
-cents	t160	7	cent	O	O	O	O	O	O	O	O	cent	NNS	t159:NMOD	mainVb
-.	t161	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t143	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t149:PMOD	O
+New	t144	7	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
+York	t145	7	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t144:NAME	O
+Stock	t146	7	Stock	O	O	O	O	O	O	O	O	NP0	I-NP	stock	NNP	O	O
+Exchange	t147	7	Exchange	O	O	O	O	O	O	O	O	NP0	I-NP	exchange	NNP	t145:NAME||t146:NAME	O
+composite	t148	7	composite	O	O	O	O	O	O	O	O	AJ0	I-NP	composite	JJ	O	O
+trading	t149	7	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t147:NMOD||t148:NMOD	O
+Friday	t150	7	Friday	O	O	O	tmx63	DATE	1989-10-27	O	O	NP0	B-NP	friday	NNP	O	O
+,	t151	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Aetna	t152	7	Aetna	O	O	O	O	O	O	O	O	NP0	B-NP	aetna	NNP	O	O
+closed	t153	7	close	e24	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	close	VBD	t143:LOC||t150:TMP||t151:P||t152:SBJ||t154:ADV||t157:P||t158:ADV||t161:P	mainVb
+at	t154	7	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t155:PMOD	O
+$	t155	7	$	O	O	O	O	O	O	O	O	NN1	B-NP	$	$	t156:NMOD	O
+60	t156	7	60	O	O	O	O	O	O	O	O	CRD	B-NP	60	CD	O	O
+,	t157	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+down	t158	7	down	O	O	O	O	O	O	O	O	AV0	B-ADVP	down	IN	t160:AMOD	O
+50	t159	7	50	O	O	O	O	O	O	O	O	CRD	B-NP	50	CD	O	O
+cents	t160	7	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t159:NMOD	O
+.	t161	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t162	8	in	O	O	O	O	O	O	O	O	in	IN	t165:PMOD	mainVb
-the	t163	8	the	O	O	O	tmx65	DATE	1989-Q3	O	O	the	DT	O	mainVb
-latest	t164	8	latest	O	O	O	tmx65	DATE	1989-Q3	O	O	latest	JJS	O	mainVb
-quarter	t165	8	quarter	O	O	O	tmx65	DATE	1989-Q3	O	O	quarter	NN	t163:NMOD||t164:NMOD	mainVb
-,	t166	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Aetna	t167	8	Aetna	O	O	O	O	O	O	O	O	aetna	NNP	O	mainVb
-had	t168	8	have	e67	STATE	PAST+NONE+POS	O	O	O	O	O	have	VBD	t162:TMP||t166:P||t167:SBJ||t173:OBJ||t174:ADV||t178:P||t179:ADV||t188:P	mainVb
-a	t169	8	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-$	t170	8	$	O	O	O	O	O	O	O	O	$	$	t171:DEP||t172:DEP	mainVb
-23	t171	8	23	O	O	O	O	O	O	O	O	23	CD	O	mainVb
-million	t172	8	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-loss	t173	8	loss	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	loss	NN	t169:NMOD||t170:NMOD	mainVb
-on	t174	8	on	O	O	O	O	O	O	O	O	on	IN	t177:PMOD	mainVb
-its	t175	8	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-auto/homeowners	t176	8	auto/homeowners	O	O	O	O	O	O	O	O	auto/homeowner	NNS	O	mainVb
-line	t177	8	line	O	O	O	O	O	O	O	O	line	NN	t175:NMOD||t176:NMOD	mainVb
-,	t178	8	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-compared	t179	8	compare	O	O	O	O	O	O	O	O	compare	VBN	t180:PMOD	mainVb
-with	t180	8	with	O	O	O	O	O	O	O	O	with	IN	t182:PMOD	mainVb
-earnings	t181	8	earnings	e68	STATE	NONE+NONE+POS	O	O	O	O	O	earnings	NNS	O	mainVb
-of	t182	8	of	O	O	O	O	O	O	O	O	of	IN	t181:NMOD||t183:PMOD||t187:TMP	mainVb
-$	t183	8	$	O	O	O	O	O	O	O	O	$	$	t184:DEP||t185:DEP	mainVb
-33	t184	8	33	O	O	O	O	O	O	O	O	33	CD	O	mainVb
-million	t185	8	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-last	t186	8	last	O	O	O	tmx69	DATE	1988-Q3	O	O	last	JJ	O	mainVb
-year	t187	8	year	O	O	O	tmx69	DATE	1988-Q3	O	O	year	NN	t186:NMOD	mainVb
-.	t188	8	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t162	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t165:PMOD	O
+the	t163	8	the	O	O	O	tmx65	DATE	1989-Q3	O	O	AT0	B-NP	the	DT	O	O
+latest	t164	8	latest	O	O	O	tmx65	DATE	1989-Q3	O	O	AJS	I-NP	latest	JJS	O	O
+quarter	t165	8	quarter	O	O	O	tmx65	DATE	1989-Q3	O	O	NN1	I-NP	quarter	NN	t163:NMOD||t164:NMOD	O
+,	t166	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Aetna	t167	8	Aetna	O	O	O	O	O	O	O	O	NP0	B-NP	aetna	NNP	O	O
+had	t168	8	have	e67	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t162:TMP||t166:P||t167:SBJ||t173:OBJ||t174:ADV||t178:P||t179:ADV||t188:P	mainVb
+a	t169	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+$	t170	8	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t171:DEP||t172:DEP	O
+23	t171	8	23	O	O	O	O	O	O	O	O	CRD	I-NP	23	CD	O	O
+million	t172	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+loss	t173	8	loss	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t169:NMOD||t170:NMOD	O
+on	t174	8	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t177:PMOD	O
+its	t175	8	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+auto/homeowners	t176	8	auto/homeowners	O	O	O	O	O	O	O	O	NN2	I-NP	auto/homeowner	NNS	O	O
+line	t177	8	line	O	O	O	O	O	O	O	O	NN1	I-NP	line	NN	t175:NMOD||t176:NMOD	O
+,	t178	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+compared	t179	8	compare	O	O	O	O	O	O	O	O	VVN	B-PP	compare	VBN	t180:PMOD	O
+with	t180	8	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t182:PMOD	O
+earnings	t181	8	earnings	e68	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	earnings	NNS	O	O
+of	t182	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t181:NMOD||t183:PMOD||t187:TMP	O
+$	t183	8	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t184:DEP||t185:DEP	O
+33	t184	8	33	O	O	O	O	O	O	O	O	CRD	B-NP	33	CD	O	O
+million	t185	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+last	t186	8	last	O	O	O	tmx69	DATE	1988-Q3	O	O	ORD	B-NP	last	JJ	O	O
+year	t187	8	year	O	O	O	tmx69	DATE	1988-Q3	O	O	NN1	I-NP	year	NN	t186:NMOD	O
+.	t188	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Profit	t189	9	profit	O	O	O	O	O	O	O	O	profit	NN	t190:NMOD	mainVb
-for	t190	9	for	O	O	O	O	O	O	O	O	for	IN	t194:PMOD	mainVb
-its	t191	9	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-commercial	t192	9	commercial	O	O	O	O	O	O	O	O	commercial	JJ	O	mainVb
-insurance	t193	9	insurance	O	O	O	O	O	O	O	O	insurance	NN	t192:NMOD	mainVb
-division	t194	9	division	O	O	O	O	O	O	O	O	division	NN	t191:NMOD||t193:NMOD	mainVb
-fell	t195	9	fall	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	fell	VBD	t189:SBJ||t197:EXT||t198:DIR||t202:P||t203:ADV||t219:P	mainVb
-30	t196	9	30	O	O	O	O	O	O	O	O	30	CD	O	mainVb
-%	t197	9	%	O	O	O	O	O	O	O	O	%	NN	t196:NMOD	mainVb
-to	t198	9	to	O	O	O	O	O	O	O	O	to	TO	t199:PMOD	mainVb
-$	t199	9	$	O	O	O	O	O	O	O	O	$	$	t200:DEP||t201:DEP	mainVb
-59	t200	9	59	O	O	O	O	O	O	O	O	59	CD	O	mainVb
-million	t201	9	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t202	9	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-reflecting	t203	9	reflect	O	O	O	O	O	O	O	O	reflect	VBG	t206:OBJ	mainVb
-higher	t204	9	higher	O	O	O	O	O	O	O	O	higher	JJR	O	mainVb
-catastrophe	t205	9	catastrophe	O	O	O	O	O	O	O	O	catastrophe	NN	O	mainVb
-losses	t206	9	loss	e70	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	losses	NNS	t204:NMOD||t205:NMOD||t207:COORD	mainVb
-and	t207	9	and	O	O	O	O	O	O	O	O	and	CC	t210:CONJ	mainVb
-the	t208	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-price	t209	9	price	O	O	O	O	O	O	O	O	price	NN	O	mainVb
-war	t210	9	war	e71	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	war	NN	t208:NMOD||t209:NMOD||t211:LOC||t215:TMP	mainVb
-in	t211	9	in	O	O	O	O	O	O	O	O	in	IN	t214:PMOD	mainVb
-the	t212	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-property/casualty	t213	9	property/casualty	O	O	O	O	O	O	O	O	property/casualty	NN	O	mainVb
-market	t214	9	market	O	O	O	O	O	O	O	O	market	NN	t212:NMOD||t213:NMOD	mainVb
-for	t215	9	for	O	O	O	O	O	O	O	O	for	IN	t218:PMOD	mainVb
-nearly	t216	9	nearly	O	O	O	tmx73	DURATION	P3Y	O	O	nearly	RB	t217:DEP	mainVb
-three	t217	9	three	O	O	O	tmx73	DURATION	P3Y	O	O	three	CD	O	mainVb
-years	t218	9	year	O	O	O	tmx73	DURATION	P3Y	O	O	years	NNS	t216:NMOD	mainVb
-.	t219	9	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Profit	t189	9	profit	O	O	O	O	O	O	O	O	NN1	B-NP	profit	NN	t190:NMOD	O
+for	t190	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t194:PMOD	O
+its	t191	9	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+commercial	t192	9	commercial	O	O	O	O	O	O	O	O	AJ0	I-NP	commercial	JJ	O	O
+insurance	t193	9	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	t192:NMOD	O
+division	t194	9	division	O	O	O	O	O	O	O	O	NN1	I-NP	division	NN	t191:NMOD||t193:NMOD	O
+fell	t195	9	fall	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t189:SBJ||t197:EXT||t198:DIR||t202:P||t203:ADV||t219:P	mainVb
+30	t196	9	30	O	O	O	O	O	O	O	O	CRD	B-NP	30	CD	O	O
+%	t197	9	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t196:NMOD	O
+to	t198	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t199:PMOD	O
+$	t199	9	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t200:DEP||t201:DEP	O
+59	t200	9	59	O	O	O	O	O	O	O	O	CRD	I-NP	59	CD	O	O
+million	t201	9	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t202	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+reflecting	t203	9	reflect	O	O	O	O	O	O	O	O	VVG	B-VP	reflect	VBG	t206:OBJ	O
+higher	t204	9	higher	O	O	O	O	O	O	O	O	AJC	B-NP	higher	JJR	O	O
+catastrophe	t205	9	catastrophe	O	O	O	O	O	O	O	O	NN1	I-NP	catastrophe	NN	O	O
+losses	t206	9	loss	e70	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	losses	NNS	t204:NMOD||t205:NMOD||t207:COORD	O
+and	t207	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t210:CONJ	O
+the	t208	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+price	t209	9	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	O	O
+war	t210	9	war	e71	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	war	NN	t208:NMOD||t209:NMOD||t211:LOC||t215:TMP	O
+in	t211	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t214:PMOD	O
+the	t212	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+property/casualty	t213	9	property/casualty	O	O	O	O	O	O	O	O	NN1	I-NP	property/casualty	NN	O	O
+market	t214	9	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t212:NMOD||t213:NMOD	O
+for	t215	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t218:PMOD	O
+nearly	t216	9	nearly	O	O	O	tmx73	DURATION	P3Y	O	O	AV0	B-NP	nearly	RB	t217:DEP	O
+three	t217	9	three	O	O	O	tmx73	DURATION	P3Y	O	O	CRD	I-NP	three	CD	O	O
+years	t218	9	year	O	O	O	tmx73	DURATION	P3Y	O	O	NN2	I-NP	years	NNS	t216:NMOD	O
+.	t219	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-However	t220	10	however	O	O	O	O	O	O	O	O	however	RB	O	mainVb
-,	t221	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Aetna	t222	10	Aetna	O	O	O	O	O	O	O	O	aetna	NNP	t223:SUFFIX	mainVb
-'s	t223	10	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-employee	t224	10	employee	O	O	O	O	O	O	O	O	employee	NN	O	mainVb
-benefits	t225	10	benefit	O	O	O	O	O	O	O	O	benefit	NNS	t224:NMOD	mainVb
-division	t226	10	division	O	O	O	O	O	O	O	O	division	NN	t222:NMOD||t225:NMOD||t227:P||t229:NMOD||t235:P	mainVb
-,	t227	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t228	10	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-includes	t229	10	include	O	O	O	O	O	O	O	O	include	VBZ	t228:SBJ||t234:OBJ	mainVb
-its	t230	10	its	O	O	O	O	O	O	O	O	its	PRP$	O	mainVb
-group	t231	10	group	O	O	O	O	O	O	O	O	group	NN	O	mainVb
-health	t232	10	health	O	O	O	O	O	O	O	O	health	NN	O	mainVb
-insurance	t233	10	insurance	O	O	O	O	O	O	O	O	insurance	NN	t232:NMOD	mainVb
-operations	t234	10	operation	O	O	O	O	O	O	O	O	operations	NNS	t230:NMOD||t231:NMOD||t233:NMOD	mainVb
-,	t235	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-posted	t236	10	post	e34	REPORTING	PAST+NONE+POS	O	O	O	O	O	post	VBD	t220:ADV||t221:P||t226:SBJ||t241:OBJ||t246:P	mainVb
-a	t237	10	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-34	t238	10	34	O	O	O	O	O	O	O	O	34	CD	O	mainVb
-%	t239	10	%	O	O	O	O	O	O	O	O	%	NN	t238:NMOD	mainVb
-profit	t240	10	profit	O	O	O	O	O	O	O	O	profit	NN	O	mainVb
-gain	t241	10	gain	e74	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	gain	NN	t237:NMOD||t239:NMOD||t240:NMOD||t242:NMOD	mainVb
-to	t242	10	to	O	O	O	O	O	O	O	O	to	TO	t243:PMOD	mainVb
-$	t243	10	$	O	O	O	O	O	O	O	O	$	$	t244:DEP||t245:DEP	mainVb
-106	t244	10	106	O	O	O	O	O	O	O	O	106	CD	O	mainVb
-million	t245	10	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-.	t246	10	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+However	t220	10	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
+,	t221	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Aetna	t222	10	Aetna	O	O	O	O	O	O	O	O	NP0	B-NP	aetna	NNP	t223:SUFFIX	O
+'s	t223	10	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+employee	t224	10	employee	O	O	O	O	O	O	O	O	NN1	I-NP	employee	NN	O	O
+benefits	t225	10	benefit	O	O	O	O	O	O	O	O	NN2	I-NP	benefit	NNS	t224:NMOD	O
+division	t226	10	division	O	O	O	O	O	O	O	O	NN1	I-NP	division	NN	t222:NMOD||t225:NMOD||t227:P||t229:NMOD||t235:P	O
+,	t227	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t228	10	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+includes	t229	10	include	O	O	O	O	O	O	O	O	VVZ	B-VP	include	VBZ	t228:SBJ||t234:OBJ	O
+its	t230	10	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
+group	t231	10	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	O	O
+health	t232	10	health	O	O	O	O	O	O	O	O	NN1	I-NP	health	NN	O	O
+insurance	t233	10	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	t232:NMOD	O
+operations	t234	10	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t230:NMOD||t231:NMOD||t233:NMOD	O
+,	t235	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+posted	t236	10	post	e34	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t220:ADV||t221:P||t226:SBJ||t241:OBJ||t246:P	mainVb
+a	t237	10	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+34	t238	10	34	O	O	O	O	O	O	O	O	CRD	I-NP	34	CD	O	O
+%	t239	10	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t238:NMOD	O
+profit	t240	10	profit	O	O	O	O	O	O	O	O	NN1	I-NP	profit	NN	O	O
+gain	t241	10	gain	e74	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	gain	NN	t237:NMOD||t239:NMOD||t240:NMOD||t242:NMOD	O
+to	t242	10	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t243:PMOD	O
+$	t243	10	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t244:DEP||t245:DEP	O
+106	t244	10	106	O	O	O	O	O	O	O	O	CRD	I-NP	106	CD	O	O
+million	t245	10	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+.	t246	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Third-quarter	t247	11	third-quarter	O	O	O	tmx75	DATE	1989-Q3	O	O	third-quarter	NN	O	mainVb
-results	t248	11	result	e35	STATE	NONE+NONE+POS	O	O	O	O	O	result	NNS	t247:NMOD	mainVb
-included	t249	11	include	O	O	O	O	O	O	O	O	include	VBD	t248:SBJ||t253:OBJ||t279:P	mainVb
-net	t250	11	net	O	O	O	O	O	O	O	O	net	JJ	O	mainVb
-realized	t251	11	realize	O	O	O	O	O	O	O	O	realize	VBN	O	mainVb
-capital	t252	11	capital	O	O	O	O	O	O	O	O	capital	NN	O	mainVb
-gains	t253	11	gain	e76	STATE	NONE+NONE+POS	O	O	O	O	O	gain	NNS	t250:NMOD||t251:NMOD||t252:NMOD||t254:NMOD	mainVb
-of	t254	11	of	O	O	O	O	O	O	O	O	of	IN	t255:PMOD	mainVb
-$	t255	11	$	O	O	O	O	O	O	O	O	$	$	t256:DEP||t257:DEP||t258:P||t260:NMOD	mainVb
-48	t256	11	48	O	O	O	O	O	O	O	O	48	CD	O	mainVb
-million	t257	11	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t258	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-which	t259	11	which	O	O	O	O	O	O	O	O	which	WDT	O	mainVb
-included	t260	11	include	e89	STATE	PAST+NONE+POS	O	O	O	O	O	include	VBD	t259:SBJ||t261:OBJ	mainVb
-$	t261	11	$	O	O	O	O	O	O	O	O	$	$	t262:DEP||t263:DEP||t264:NMOD||t272:COORD	mainVb
-27	t262	11	27	O	O	O	O	O	O	O	O	27	CD	O	mainVb
-million	t263	11	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-from	t264	11	from	O	O	O	O	O	O	O	O	from	IN	t266:PMOD	mainVb
-the	t265	11	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-sale	t266	11	sale	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	sale	NN	t265:NMOD||t267:NMOD||t270:TMP	mainVb
-of	t267	11	of	O	O	O	O	O	O	O	O	of	IN	t269:PMOD	mainVb
-Federated	t268	11	Federated	O	O	O	O	O	O	O	O	federated	NNP	O	mainVb
-Investors	t269	11	Investors	O	O	O	O	O	O	O	O	investor	NNPS	t268:NAME	mainVb
-in	t270	11	in	O	O	O	O	O	O	O	O	in	IN	t271:PMOD	mainVb
-August	t271	11	August	O	O	O	tmx80	DATE	1989-08	O	O	august	NNP	O	mainVb
-and	t272	11	and	O	O	O	O	O	O	O	O	and	CC	t278:CONJ	mainVb
-a	t273	11	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-$	t274	11	$	O	O	O	O	O	O	O	O	$	$	t275:DEP||t276:DEP	mainVb
-15	t275	11	15	O	O	O	O	O	O	O	O	15	CD	O	mainVb
-million	t276	11	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-tax	t277	11	tax	O	O	O	O	O	O	O	O	tax	NN	O	mainVb
-credit	t278	11	credit	O	O	O	O	O	O	O	O	credit	NN	t273:NMOD||t274:NMOD||t277:NMOD	mainVb
-.	t279	11	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Third-quarter	t247	11	third-quarter	O	O	O	tmx75	DATE	1989-Q3	O	O	NP0	B-NP	third-quarter	NN	O	O
+results	t248	11	result	e35	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t247:NMOD	O
+included	t249	11	include	O	O	O	O	O	O	O	O	VVD	B-VP	include	VBD	t248:SBJ||t253:OBJ||t279:P	mainVb
+net	t250	11	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
+realized	t251	11	realize	O	O	O	O	O	O	O	O	AJ0	I-NP	realize	VBN	O	O
+capital	t252	11	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	O	O
+gains	t253	11	gain	e76	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	gain	NNS	t250:NMOD||t251:NMOD||t252:NMOD||t254:NMOD	O
+of	t254	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t255:PMOD	O
+$	t255	11	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t256:DEP||t257:DEP||t258:P||t260:NMOD	O
+48	t256	11	48	O	O	O	O	O	O	O	O	CRD	I-NP	48	CD	O	O
+million	t257	11	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t258	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+which	t259	11	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
+included	t260	11	include	e89	STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	include	VBD	t259:SBJ||t261:OBJ	O
+$	t261	11	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t262:DEP||t263:DEP||t264:NMOD||t272:COORD	O
+27	t262	11	27	O	O	O	O	O	O	O	O	CRD	I-NP	27	CD	O	O
+million	t263	11	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+from	t264	11	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t266:PMOD	O
+the	t265	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+sale	t266	11	sale	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	sale	NN	t265:NMOD||t267:NMOD||t270:TMP	O
+of	t267	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t269:PMOD	O
+Federated	t268	11	Federated	O	O	O	O	O	O	O	O	AJ0	B-NP	federated	NNP	O	O
+Investors	t269	11	Investors	O	O	O	O	O	O	O	O	NN2	I-NP	investor	NNPS	t268:NAME	O
+in	t270	11	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t271:PMOD	O
+August	t271	11	August	O	O	O	tmx80	DATE	1989-08	O	O	NP0	B-NP	august	NNP	O	O
+and	t272	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t278:CONJ	O
+a	t273	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+$	t274	11	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t275:DEP||t276:DEP	O
+15	t275	11	15	O	O	O	O	O	O	O	O	CRD	I-NP	15	CD	O	O
+million	t276	11	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+tax	t277	11	tax	O	O	O	O	O	O	O	O	NN1	I-NP	tax	NN	O	O
+credit	t278	11	credit	O	O	O	O	O	O	O	O	NN1	I-NP	credit	NN	t273:NMOD||t274:NMOD||t277:NMOD	O
+.	t279	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t280	12	in	O	O	O	O	O	O	O	O	in	IN	t283:PMOD	mainVb
-the	t281	12	the	O	O	O	tmx81	DURATION	P9M	O	O	the	DT	O	mainVb
-nine	t282	12	nine	O	O	O	tmx81	DURATION	P9M	O	O	nine	CD	O	mainVb
-months	t283	12	month	O	O	O	tmx81	DURATION	P9M	O	O	month	NNS	t281:NMOD||t282:NMOD	mainVb
-,	t284	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-net	t285	12	net	O	O	O	O	O	O	O	O	net	NN	O	mainVb
-rose	t286	12	rise	e42	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	rise	VBD	t280:TMP||t284:P||t285:SBJ||t288:EXT||t289:DIR||t298:P||t299:DIR||t312:P	mainVb
-4.3	t287	12	4.3	O	O	O	O	O	O	O	O	4.3	CD	O	mainVb
-%	t288	12	%	O	O	O	O	O	O	O	O	%	NN	t287:NMOD	mainVb
-to	t289	12	to	O	O	O	O	O	O	O	O	to	TO	t290:PMOD	mainVb
-$	t290	12	$	O	O	O	O	O	O	O	O	$	$	t291:DEP||t292:DEP||t293:COORD	mainVb
-525.8	t291	12	525.8	O	O	O	O	O	O	O	O	525.8	CD	O	mainVb
-million	t292	12	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-or	t293	12	or	O	O	O	O	O	O	O	O	or	CC	t294:CONJ	mainVb
-$	t294	12	$	O	O	O	O	O	O	O	O	$	$	t295:COORD||t297:ADV	mainVb
-4.67	t295	12	4.67	O	O	O	O	O	O	O	O	4.67	CD	O	mainVb
-a	t296	12	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t297	12	share	O	O	O	O	O	O	O	O	share	NN	t296:NMOD	mainVb
-,	t298	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-from	t299	12	from	O	O	O	O	O	O	O	O	from	IN	t300:PMOD||t309:P||t311:TMP	mainVb
-$	t300	12	$	O	O	O	O	O	O	O	O	$	$	t301:DEP||t302:DEP||t303:P||t304:COORD	mainVb
-504.2	t301	12	504.2	O	O	O	O	O	O	O	O	504.2	CD	O	mainVb
-million	t302	12	million	O	O	O	O	O	O	O	O	million	CD	O	mainVb
-,	t303	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-or	t304	12	or	O	O	O	O	O	O	O	O	or	CC	t305:CONJ	mainVb
-$	t305	12	$	O	O	O	O	O	O	O	O	$	$	t306:NMOD||t308:ADV	mainVb
-4.41	t306	12	4.41	O	O	O	O	O	O	O	O	4.41	CD	O	mainVb
-a	t307	12	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-share	t308	12	share	O	O	O	O	O	O	O	O	share	NN	t307:NMOD	mainVb
-,	t309	12	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-last	t310	12	last	O	O	O	tmx85	DATE	1988	O	O	last	JJ	O	mainVb
-year	t311	12	year	O	O	O	tmx85	DATE	1988	O	O	year	NN	t310:NMOD	mainVb
-.	t312	12	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+In	t280	12	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t283:PMOD	O
+the	t281	12	the	O	O	O	tmx81	DURATION	P9M	O	O	AT0	B-NP	the	DT	O	O
+nine	t282	12	nine	O	O	O	tmx81	DURATION	P9M	O	O	CRD	I-NP	nine	CD	O	O
+months	t283	12	month	O	O	O	tmx81	DURATION	P9M	O	O	NN2	I-NP	month	NNS	t281:NMOD||t282:NMOD	O
+,	t284	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+net	t285	12	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	NN	O	O
+rose	t286	12	rise	e42	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	B-VP	rise	VBD	t280:TMP||t284:P||t285:SBJ||t288:EXT||t289:DIR||t298:P||t299:DIR||t312:P	mainVb
+4.3	t287	12	4.3	O	O	O	O	O	O	O	O	CRD	B-NP	4.3	CD	O	O
+%	t288	12	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t287:NMOD	O
+to	t289	12	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t290:PMOD	O
+$	t290	12	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t291:DEP||t292:DEP||t293:COORD	O
+525.8	t291	12	525.8	O	O	O	O	O	O	O	O	CRD	I-NP	525.8	CD	O	O
+million	t292	12	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+or	t293	12	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	t294:CONJ	O
+$	t294	12	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t295:COORD||t297:ADV	O
+4.67	t295	12	4.67	O	O	O	O	O	O	O	O	CRD	I-NP	4.67	CD	O	O
+a	t296	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t297	12	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t296:NMOD	O
+,	t298	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+from	t299	12	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t300:PMOD||t309:P||t311:TMP	O
+$	t300	12	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t301:DEP||t302:DEP||t303:P||t304:COORD	O
+504.2	t301	12	504.2	O	O	O	O	O	O	O	O	CRD	I-NP	504.2	CD	O	O
+million	t302	12	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+,	t303	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+or	t304	12	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t305:CONJ	O
+$	t305	12	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t306:NMOD||t308:ADV	O
+4.41	t306	12	4.41	O	O	O	O	O	O	O	O	CRD	I-NP	4.41	CD	O	O
+a	t307	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+share	t308	12	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t307:NMOD	O
+,	t309	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+last	t310	12	last	O	O	O	tmx85	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
+year	t311	12	year	O	O	O	tmx85	DATE	1988	O	O	NN1	I-NP	year	NN	t310:NMOD	O
+.	t312	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

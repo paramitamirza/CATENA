@@ -89,14 +89,14 @@ public class TestEventTimexRelationClassifierTempEval3 {
 		EventTimexRelationClassifier etCls = new EventTimexRelationClassifier("te3", "liblinear");
 		
 		// TRAIN
-		String trainTmlDirpath = "./data/TempEval3-train_TML/";
-		List<PairFeatureVector> trainFvList = test.getEventTimexTlinks(trainTmlDirpath, tmlToCol, colParser,
-				etCls, true, true, false);
-		etCls.train(trainFvList, "./models/test/te3-et.model");
+//		String trainTmlDirpath = "./data/TempEval3-train_TML/";
+//		List<PairFeatureVector> trainFvList = test.getEventTimexTlinks(trainTmlDirpath, tmlToCol, colParser,
+//				etCls, true, true, false);
+//		etCls.train(trainFvList, "./models/test/te3-et.model");
 		
 		// EVALUATE
 		String evalTmlDirpath = "./data/TempEval3-eval_TML/";
-		List<PairFeatureVector> evalFvList = test.getEventTimexTlinks(trainTmlDirpath, tmlToCol, colParser,
+		List<PairFeatureVector> evalFvList = test.getEventTimexTlinks(evalTmlDirpath, tmlToCol, colParser,
 				etCls, false, true, false);
 		etCls.evaluate(evalFvList, "./models/test/te3-et.model");
 		

@@ -1,502 +1,502 @@
-DCT_1998-08-21	O	O	O	O	O	O	tmx0	TIME	1998-08-21	O	O	dct_1998-08-21	SYM	O	O
+DCT_1998-08-21	O	O	O	O	O	O	tmx0	TIME	1998-08-21	O	O	NP0	B-NP	dct_1998-08-21	SYM	O	O
 
-NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	nairobi	NNP	t2:P||t4:TMP	O
-,	t2	1	,	O	O	O+O+O	O	O	O	O	O	,	,	O	O
-August	t3	1	August	O	O	O+O+O	tmx111	DATE	1998-08-21	O	O	august	NNP	O	O
-21	t4	1	21	O	O	O+O+O	tmx111	DATE	1998-08-21	O	O	21	CD	t3:NMOD	O
--LRB-	t5	1	-lrb-	O	O	O+O+O	O	O	O	O	O	-lrb-	NNP	O	O
-Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	xinhua	NNP	O	O
--RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	-rrb-	NNP	t1:NMOD||t5:NAME||t6:NAME||t8:P	mainVb
-.	t8	1	.	O	O	O+O+O	O	O	O	O	O	.	.	O	mainVb
+NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	t2:P||t4:TMP	O
+,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
+August	t3	1	August	O	O	O+O+O	tmx111	DATE	1998-08-21	O	O	NP0	B-NP	august	NNP	O	O
+21	t4	1	21	O	O	O+O+O	tmx111	DATE	1998-08-21	O	O	CRD	I-NP	21	CD	t3:NMOD	O
+-LRB-	t5	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
+Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	xinhua	NNP	O	O
+-RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t1:NMOD||t5:NAME||t6:NAME||t8:P	mainVb
+.	t8	1	.	O	O	O+O+O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Director	t9	2	director	O	O	O+O+O	O	O	O	O	O	director	NN	t10:NMOD	mainVb
-of	t10	2	of	O	O	O+O+O	O	O	O	O	O	of	IN	t12:PMOD	mainVb
-the	t11	2	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t12	2	U.S.	O	O	O+O+O	O	O	O	O	O	u.s.	NNP	t11:NMOD	mainVb
-Federal	t13	2	Federal	O	O	O+O+O	O	O	O	O	O	federal	NNP	O	mainVb
-Bureau	t14	2	Bureau	O	O	O+O+O	O	O	O	O	O	bureau	NNP	t9:TITLE||t13:NAME||t15:NMOD	mainVb
-of	t15	2	of	O	O	O+O+O	O	O	O	O	O	of	IN	t21:PMOD	mainVb
-Investigation	t16	2	Investigation	O	O	O+O+O	O	O	O	O	O	investigation	NNP	O	mainVb
--LRB-	t17	2	-lrb-	O	O	O+O+O	O	O	O	O	O	-lrb-	NNP	O	mainVb
-FBI	t18	2	FBI	O	O	O+O+O	O	O	O	O	O	fbi	NNP	O	mainVb
--RRB-	t19	2	-rrb-	O	O	O+O+O	O	O	O	O	O	-rrb-	NNP	O	mainVb
-Louis	t20	2	Louis	O	O	O+O+O	O	O	O	O	O	louis	NNP	t19:NAME	mainVb
-Freeh	t21	2	Freeh	O	O	O+O+O	O	O	O	O	O	freeh	NNP	t16:NAME||t17:NAME||t18:NAME||t20:TITLE	mainVb
-said	t22	2	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t14:SBJ||t23:LOC||t24:TMP||t25:OBJ||t48:P	mainVb
-here	t23	2	here	O	O	O	O	O	O	O	O	here	RB	O	mainVb
-Friday	t24	2	Friday	O	O	O	tmx2	DATE	1998-08-21	O	O	friday	NNP	O	mainVb
-that	t25	2	that	O	O	O	O	O	O	O	O	that	IN	t33:SUB	mainVb
-U.S.	t26	2	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-air	t27	2	air	O	O	O	O	O	O	O	O	air	NN	t26:NMOD||t28:APPO	mainVb
-raid	t28	2	raid	e45	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	raid	VBD	t29:TMP	mainVb
-on	t29	2	on	O	O	O	O	O	O	O	O	on	IN	t30:PMOD	mainVb
-Afghanistan	t30	2	Afghanistan	O	O	O	O	O	O	O	O	afghanistan	NNP	t31:COORD	mainVb
-and	t31	2	and	O	O	O	O	O	O	O	O	and	CC	t32:CONJ	mainVb
-Sudan	t32	2	Sudan	O	O	O	O	O	O	O	O	sudan	NNP	O	mainVb
-is	t33	2	be	O	O	O	O	O	O	O	O	be	VBZ	t27:SBJ||t34:ADV||t36:VC	mainVb
-not	t34	2	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-directly	t35	2	directly	O	O	O	O	O	O	O	O	directly	RB	O	mainVb
-linked	t36	2	link	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	link	VBN	t35:MNR||t37:ADV||t40:ADV	mainVb
-with	t37	2	with	O	O	O	O	O	O	O	O	with	IN	t39:PMOD	mainVb
-the	t38	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-probe	t39	2	probe	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	probe	NN	t38:NMOD	mainVb
-into	t40	2	into	O	O	O	O	O	O	O	O	into	IN	t44:PMOD	mainVb
-the	t41	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-August	t42	2	August	O	O	O	tmx3	DATE	1998-08-07	O	O	august	NNP	O	mainVb
-7	t43	2	7	O	O	O	tmx3	DATE	1998-08-07	O	O	7	CD	t42:NMOD	mainVb
-bombings	t44	2	bombing	e47	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bombing	NNS	t41:NMOD||t43:NMOD||t45:LOC	mainVb
-in	t45	2	in	O	O	O	O	O	O	O	O	in	IN	t47:PMOD	mainVb
-east	t46	2	east	O	O	O	O	O	O	O	O	east	JJ	O	mainVb
-Africa	t47	2	Africa	O	O	O	O	O	O	O	O	africa	NNP	t46:NMOD	mainVb
-.	t48	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Director	t9	2	director	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	director	NN	t10:NMOD	O
+of	t10	2	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t12:PMOD	O
+the	t11	2	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t12	2	U.S.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	t11:NMOD	O
+Federal	t13	2	Federal	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	federal	NNP	O	O
+Bureau	t14	2	Bureau	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	bureau	NNP	t9:TITLE||t13:NAME||t15:NMOD	O
+of	t15	2	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t21:PMOD	O
+Investigation	t16	2	Investigation	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	investigation	NNP	O	O
+-LRB-	t17	2	-lrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
+FBI	t18	2	FBI	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	fbi	NNP	O	O
+-RRB-	t19	2	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
+Louis	t20	2	Louis	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	louis	NNP	t19:NAME	O
+Freeh	t21	2	Freeh	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	freeh	NNP	t16:NAME||t17:NAME||t18:NAME||t20:TITLE	O
+said	t22	2	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t14:SBJ||t23:LOC||t24:TMP||t25:OBJ||t48:P	mainVb
+here	t23	2	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
+Friday	t24	2	Friday	O	O	O	tmx2	DATE	1998-08-21	O	O	NP0	B-NP	friday	NNP	O	O
+that	t25	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t33:SUB	O
+U.S.	t26	2	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
+air	t27	2	air	O	O	O	O	O	O	O	O	NN1	I-NP	air	NN	t26:NMOD||t28:APPO	O
+raid	t28	2	raid	e45	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	raid	VBD	t29:TMP	O
+on	t29	2	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t30:PMOD	O
+Afghanistan	t30	2	Afghanistan	O	O	O	O	O	O	O	O	NP0	B-NP	afghanistan	NNP	t31:COORD	O
+and	t31	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t32:CONJ	O
+Sudan	t32	2	Sudan	O	O	O	O	O	O	O	O	NP0	B-NP	sudan	NNP	O	O
+is	t33	2	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t27:SBJ||t34:ADV||t36:VC	O
+not	t34	2	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+directly	t35	2	directly	O	O	O	O	O	O	O	O	AV0	I-VP	directly	RB	O	O
+linked	t36	2	link	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	link	VBN	t35:MNR||t37:ADV||t40:ADV	O
+with	t37	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t39:PMOD	O
+the	t38	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+probe	t39	2	probe	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	probe	NN	t38:NMOD	O
+into	t40	2	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t44:PMOD	O
+the	t41	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+August	t42	2	August	O	O	O	tmx3	DATE	1998-08-07	O	O	NP0	I-NP	august	NNP	O	O
+7	t43	2	7	O	O	O	tmx3	DATE	1998-08-07	O	O	CRD	I-NP	7	CD	t42:NMOD	O
+bombings	t44	2	bombing	e47	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	NNS	t41:NMOD||t43:NMOD||t45:LOC	O
+in	t45	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t47:PMOD	O
+east	t46	2	east	O	O	O	O	O	O	O	O	NN1	B-NP	east	JJ	O	O
+Africa	t47	2	Africa	O	O	O	O	O	O	O	O	NP0	I-NP	africa	NNP	t46:NMOD	O
+.	t48	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t49	3	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-This	t50	3	this	O	O	O	O	O	O	O	O	this	DT	O	mainVb
-is	t51	3	be	O	O	O	O	O	O	O	O	be	VBZ	t49:SBJ||t50:SBJ||t53:PRD	mainVb
-an	t52	3	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-investigation	t53	3	investigation	O	O	O	O	O	O	O	O	investigation	NN	t52:NMOD||t54:APPO	mainVb
-proceeding	t54	3	proceeding	e3	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	proceeding	VBG	t55:LOC	mainVb
-on	t55	3	on	O	O	O	O	O	O	O	O	on	IN	t57:PMOD	mainVb
-many	t56	3	many	O	O	O	O	O	O	O	O	many	DT	O	mainVb
-fronts	t57	3	front	O	O	O	O	O	O	O	O	front	NNS	t56:NMOD	mainVb
-,	t58	3	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-"	t59	3	"	O	O	O	O	O	O	O	O	"	NNP	O	mainVb
-said	t60	3	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t51:OBJ||t58:P||t59:SBJ||t61:OBJ||t62:LOC||t71:TMP||t74:P	mainVb
-Freeh	t61	3	Freeh	O	O	O	O	O	O	O	O	freeh	NNP	O	mainVb
-at	t62	3	at	O	O	O	O	O	O	O	O	at	IN	t65:PMOD	mainVb
-a	t63	3	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-press	t64	3	press	O	O	O	O	O	O	O	O	press	NN	O	mainVb
-conference	t65	3	conference	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	conference	NN	t63:NMOD||t64:NMOD||t66:LOC	mainVb
-at	t66	3	at	O	O	O	O	O	O	O	O	at	IN	t70:PMOD	mainVb
-the	t67	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Jomo	t68	3	Jomo	O	O	O	O	O	O	O	O	jomo	NNP	O	mainVb
-Kenyatta	t69	3	Kenyatta	O	O	O	O	O	O	O	O	kenyatta	NNP	t68:NAME	mainVb
-airport	t70	3	airport	O	O	O	O	O	O	O	O	airport	NN	t67:NMOD||t69:NMOD	mainVb
-before	t71	3	before	O	O	O	O	O	O	s1	O	before	IN	t72:PMOD	mainVb
-returning	t72	3	return	e5	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	return	VBG	t73:DIR	mainVb
-home	t73	3	home	O	O	O	O	O	O	O	O	home	NN	O	mainVb
-.	t74	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+"	t49	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+This	t50	3	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
+is	t51	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t49:SBJ||t50:SBJ||t53:PRD	O
+an	t52	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+investigation	t53	3	investigation	O	O	O	O	O	O	O	O	NN1	I-NP	investigation	NN	t52:NMOD||t54:APPO	O
+proceeding	t54	3	proceeding	e3	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVG	I-NP	proceeding	VBG	t55:LOC	O
+on	t55	3	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t57:PMOD	O
+many	t56	3	many	O	O	O	O	O	O	O	O	DT0	B-NP	many	DT	O	O
+fronts	t57	3	front	O	O	O	O	O	O	O	O	NN2	I-NP	front	NNS	t56:NMOD	O
+,	t58	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+"	t59	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+said	t60	3	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t51:OBJ||t58:P||t59:SBJ||t61:OBJ||t62:LOC||t71:TMP||t74:P	mainVb
+Freeh	t61	3	Freeh	O	O	O	O	O	O	O	O	NP0	B-NP	freeh	NNP	O	O
+at	t62	3	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t65:PMOD	O
+a	t63	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+press	t64	3	press	O	O	O	O	O	O	O	O	NN1	I-NP	press	NN	O	O
+conference	t65	3	conference	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conference	NN	t63:NMOD||t64:NMOD||t66:LOC	O
+at	t66	3	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t70:PMOD	O
+the	t67	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Jomo	t68	3	Jomo	O	O	O	O	O	O	O	O	NP0	I-NP	jomo	NNP	O	O
+Kenyatta	t69	3	Kenyatta	O	O	O	O	O	O	O	O	NP0	I-NP	kenyatta	NNP	t68:NAME	O
+airport	t70	3	airport	O	O	O	O	O	O	O	O	NN1	I-NP	airport	NN	t67:NMOD||t69:NMOD	O
+before	t71	3	before	O	O	O	O	O	O	s1	O	PRP	B-PP	before	IN	t72:PMOD	O
+returning	t72	3	return	e5	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	return	VBG	t73:DIR	O
+home	t73	3	home	O	O	O	O	O	O	O	O	AV0	B-ADVP	home	NN	O	O
+.	t74	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t75	4	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-I	t76	4	I	O	O	O	O	O	O	O	O	i	PRP	O	mainVb
-can	t77	4	can	O	O	O	O	O	O	O	O	can	MD	t76:SBJ||t78:ADV||t79:VC||t91:P||t92:P	mainVb
-not	t78	4	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-detail	t79	4	detail	e78	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	detail	VB	t75:OBJ||t80:COORD||t83:OBJ	mainVb
-or	t80	4	or	O	O	O	O	O	O	O	O	or	CC	t81:CONJ	mainVb
-characterize	t81	4	characterize	e6	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	characterize	VB	O	mainVb
-the	t82	4	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-type	t83	4	type	O	O	O	O	O	O	O	O	type	NN	t82:NMOD||t84:NMOD	mainVb
-of	t84	4	of	O	O	O	O	O	O	O	O	of	IN	t85:PMOD	mainVb
-evidence	t85	4	evidence	O	O	O	O	O	O	O	O	evidence	NN	t87:NMOD	mainVb
-we	t86	4	we	O	O	O	O	O	O	O	O	we	PRP	O	mainVb
-have	t87	4	have	O	O	O	O	O	O	O	O	have	VBP	t86:SBJ||t88:VC	mainVb
-gathered	t88	4	gather	e7	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	gather	VBN	t89:LOC	mainVb
-in	t89	4	in	O	O	O	O	O	O	O	O	in	IN	t90:PMOD	mainVb
-Nairobi	t90	4	Nairobi	O	O	O	O	O	O	O	O	nairobi	NNP	O	mainVb
-.	t91	4	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
-"	t92	4	"	O	O	O	O	O	O	O	O	"	''	O	mainVb
+"	t75	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+I	t76	4	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
+can	t77	4	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t76:SBJ||t78:ADV||t79:VC||t91:P||t92:P	mainVb
+not	t78	4	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
+detail	t79	4	detail	e78	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	detail	VB	t75:OBJ||t80:COORD||t83:OBJ	mainVb
+or	t80	4	or	O	O	O	O	O	O	O	O	CJC	I-VP	or	CC	t81:CONJ	mainVb
+characterize	t81	4	characterize	e6	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	characterize	VB	O	mainVb
+the	t82	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+type	t83	4	type	O	O	O	O	O	O	O	O	NN1	I-NP	type	NN	t82:NMOD||t84:NMOD	O
+of	t84	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t85:PMOD	O
+evidence	t85	4	evidence	O	O	O	O	O	O	O	O	NN1	B-NP	evidence	NN	t87:NMOD	O
+we	t86	4	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
+have	t87	4	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t86:SBJ||t88:VC	O
+gathered	t88	4	gather	e7	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	gather	VBN	t89:LOC	O
+in	t89	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t90:PMOD	O
+Nairobi	t90	4	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
+.	t91	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
+"	t92	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
-He	t93	5	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-said	t94	5	say	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t93:SBJ||t96:OBJ||t137:P	mainVb
-he	t95	5	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-can	t96	5	can	O	O	O	O	O	O	O	O	can	MD	t95:SBJ||t97:ADV||t98:VC	mainVb
-not	t97	5	not	O	O	O	O	O	O	O	O	not	RB	O	mainVb
-confirm	t98	5	confirm	e9	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	confirm	VB	t100:OBJ	mainVb
-there	t99	5	there	O	O	O	O	O	O	O	O	there	EX	O	mainVb
-is	t100	5	be	O	O	O	O	O	O	O	O	be	VBZ	t99:SBJ||t102:PRD	mainVb
-any	t101	5	any	O	O	O	O	O	O	O	O	any	DT	O	mainVb
-evidence	t102	5	evidence	O	O	O	O	O	O	O	O	evidence	NN	t101:NMOD||t103:APPO	mainVb
-linking	t103	5	link	e10	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	link	VBG	t106:OBJ||t115:ADV	mainVb
-the	t104	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bomb	t105	5	bomb	O	O	O	O	O	O	O	O	bomb	NN	O	mainVb
-blasts	t106	5	blast	e51	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	blast	NNS	t104:NMOD||t105:NMOD||t107:LOC	mainVb
-at	t107	5	at	O	O	O	O	O	O	O	O	at	IN	t110:PMOD	mainVb
-the	t108	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t109	5	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-embassies	t110	5	embassy	O	O	O	O	O	O	O	O	embassy	NNS	t108:NMOD||t109:NMOD||t111:LOC	mainVb
-in	t111	5	in	O	O	O	O	O	O	O	O	in	IN	t112:PMOD	mainVb
-Kenya	t112	5	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t113:COORD	mainVb
-and	t113	5	and	O	O	O	O	O	O	O	O	and	CC	t114:CONJ	mainVb
-Tanzania	t114	5	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-to	t115	5	to	O	O	O	O	O	O	O	O	to	TO	t118:PMOD	mainVb
-the	t116	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Saudi	t117	5	saudi	O	O	O	O	O	O	O	O	saudi	JJ	O	mainVb
-millionaire	t118	5	millionaire	O	O	O	O	O	O	O	O	millionaire	NN	t116:NMOD||t117:NMOD||t119:COORD||t127:P||t130:APPO||t131:P||t134:NMOD	mainVb
-and	t119	5	and	O	O	O	O	O	O	O	O	and	CC	t123:CONJ	mainVb
-the	t120	5	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-allegedly	t121	5	allegedly	O	O	O	O	O	O	O	O	allegedly	RB	O	mainVb
-main	t122	5	main	O	O	O	O	O	O	O	O	main	JJ	t121:AMOD	mainVb
-sponsor	t123	5	sponsor	O	O	O	O	O	O	O	O	sponsor	NN	t120:NMOD||t122:NMOD||t124:NMOD	mainVb
-of	t124	5	of	O	O	O	O	O	O	O	O	of	IN	t126:PMOD	mainVb
-anti-U.S.	t125	5	anti-u.s.	O	O	O	O	O	O	O	O	anti-u.s.	JJ	O	mainVb
-terrorism	t126	5	terrorism	O	O	O	O	O	O	O	O	terrorism	NN	t125:NMOD	mainVb
-,	t127	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Osama	t128	5	Osama	O	O	O	O	O	O	O	O	osama	NNP	O	mainVb
-Bin	t129	5	Bin	O	O	O	O	O	O	O	O	bin	NNP	O	mainVb
-Laden	t130	5	Laden	O	O	O	O	O	O	O	O	laden	NNP	t128:NAME||t129:NAME	mainVb
-,	t131	5	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-who	t132	5	who	O	O	O	O	O	O	O	O	who	WP	O	mainVb
-now	t133	5	now	O	O	O	tmx4	DATE	PRESENT_REF	O	O	now	RB	O	mainVb
-lives	t134	5	live	O	O	O	O	O	O	O	O	live	VBZ	t132:SBJ||t133:TMP||t135:LOC	mainVb
-in	t135	5	in	O	O	O	O	O	O	O	O	in	IN	t136:PMOD	mainVb
-Afghanistan	t136	5	Afghanistan	O	O	O	O	O	O	O	O	afghanistan	NNP	O	mainVb
-.	t137	5	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+He	t93	5	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+said	t94	5	say	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t93:SBJ||t96:OBJ||t137:P	mainVb
+he	t95	5	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+can	t96	5	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t95:SBJ||t97:ADV||t98:VC	O
+not	t97	5	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
+confirm	t98	5	confirm	e9	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	confirm	VB	t100:OBJ	O
+there	t99	5	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
+is	t100	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t99:SBJ||t102:PRD	O
+any	t101	5	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
+evidence	t102	5	evidence	O	O	O	O	O	O	O	O	NN1	I-NP	evidence	NN	t101:NMOD||t103:APPO	O
+linking	t103	5	link	e10	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	link	VBG	t106:OBJ||t115:ADV	O
+the	t104	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bomb	t105	5	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	O	O
+blasts	t106	5	blast	e51	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	blast	NNS	t104:NMOD||t105:NMOD||t107:LOC	O
+at	t107	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t110:PMOD	O
+the	t108	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t109	5	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+embassies	t110	5	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t108:NMOD||t109:NMOD||t111:LOC	O
+in	t111	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t112:PMOD	O
+Kenya	t112	5	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t113:COORD	O
+and	t113	5	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t114:CONJ	O
+Tanzania	t114	5	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
+to	t115	5	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t118:PMOD	O
+the	t116	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Saudi	t117	5	saudi	O	O	O	O	O	O	O	O	NP0	I-NP	saudi	JJ	O	O
+millionaire	t118	5	millionaire	O	O	O	O	O	O	O	O	NN1	I-NP	millionaire	NN	t116:NMOD||t117:NMOD||t119:COORD||t127:P||t130:APPO||t131:P||t134:NMOD	O
+and	t119	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t123:CONJ	O
+the	t120	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+allegedly	t121	5	allegedly	O	O	O	O	O	O	O	O	AV0	I-NP	allegedly	RB	O	O
+main	t122	5	main	O	O	O	O	O	O	O	O	AJ0	I-NP	main	JJ	t121:AMOD	O
+sponsor	t123	5	sponsor	O	O	O	O	O	O	O	O	NN1	I-NP	sponsor	NN	t120:NMOD||t122:NMOD||t124:NMOD	O
+of	t124	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t126:PMOD	O
+anti-U.S.	t125	5	anti-u.s.	O	O	O	O	O	O	O	O	AJ0	B-NP	anti-u.s.	JJ	O	O
+terrorism	t126	5	terrorism	O	O	O	O	O	O	O	O	NN1	I-NP	terrorism	NN	t125:NMOD	O
+,	t127	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Osama	t128	5	Osama	O	O	O	O	O	O	O	O	NP0	B-NP	osama	NNP	O	O
+Bin	t129	5	Bin	O	O	O	O	O	O	O	O	NP0	I-NP	bin	NNP	O	O
+Laden	t130	5	Laden	O	O	O	O	O	O	O	O	NP0	I-NP	laden	NNP	t128:NAME||t129:NAME	O
+,	t131	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+who	t132	5	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
+now	t133	5	now	O	O	O	tmx4	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
+lives	t134	5	live	O	O	O	O	O	O	O	O	VVZ	B-VP	live	VBZ	t132:SBJ||t133:TMP||t135:LOC	O
+in	t135	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t136:PMOD	O
+Afghanistan	t136	5	Afghanistan	O	O	O	O	O	O	O	O	NP0	B-NP	afghanistan	NNP	O	O
+.	t137	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t138	6	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-Hundreds	t139	6	hundred	O	O	O	O	O	O	O	O	hundred	NNS	t138:NMOD||t140:NMOD	mainVb
-of	t140	6	of	O	O	O	O	O	O	O	O	of	IN	t141:PMOD	mainVb
-people	t141	6	people	O	O	O	O	O	O	O	O	people	NN	O	mainVb
-have	t142	6	have	O	O	O	O	O	O	O	O	have	VBP	t139:SBJ||t143:VC||t146:COORD	mainVb
-been	t143	6	be	O	O	O	O	O	O	O	O	be	VBN	t144:VC	mainVb
-interviewed	t144	6	interview	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	interview	VBN	t145:TMP	mainVb
-"	t145	6	"	O	O	O	O	O	O	O	O	"	RBR	O	mainVb
-and	t146	6	and	O	O	O	O	O	O	O	O	and	CC	t149:CONJ	mainVb
-investigators	t147	6	investigator	O	O	O	O	O	O	O	O	investigator	NNS	O	mainVb
-probably	t148	6	probably	O	O	O	O	O	O	O	O	probably	RB	O	mainVb
-have	t149	6	have	O	O	O	O	O	O	O	O	have	VBP	t147:SBJ||t148:ADV||t150:OPRD	mainVb
-to	t150	6	to	O	O	O	O	O	O	O	O	to	TO	t151:IM	mainVb
-take	t151	6	take	e13	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	take	VB	t155:OBJ	mainVb
-quite	t152	6	quite	O	O	O	O	O	O	O	O	quite	RB	O	mainVb
-a	t153	6	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-long	t154	6	long	O	O	O	O	O	O	O	O	long	JJ	O	mainVb
-time	t155	6	time	O	O	O	O	O	O	O	O	time	NN	t152:NMOD||t153:NMOD||t154:NMOD||t156:NMOD	mainVb
-to	t156	6	to	O	O	O	O	O	O	O	O	to	TO	t157:IM	mainVb
-compile	t157	6	compile	e14	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	compile	VB	t158:OBJ||t159:LOC	mainVb
-evidence	t158	6	evidence	O	O	O	O	O	O	O	O	evidence	NN	t165:NMOD	mainVb
-in	t159	6	in	O	O	O	O	O	O	O	O	in	IN	t163:PMOD	mainVb
-the	t160	6	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-two	t161	6	two	O	O	O	O	O	O	O	O	two	CD	O	mainVb
-bomb	t162	6	bomb	O	O	O	O	O	O	O	O	bomb	NN	t161:NMOD	mainVb
-blasts	t163	6	blast	e54	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	blast	NNS	t160:NMOD||t162:NMOD	mainVb
-so	t164	6	so	O	O	O	O	O	O	O	O	so	RB	O	mainVb
-as	t165	6	as	O	O	O	O	O	O	O	O	as	IN	t164:DEP||t166:SUB	mainVb
-to	t166	6	to	O	O	O	O	O	O	O	O	to	TO	t167:IM	mainVb
-reach	t167	6	reach	e15	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	reach	VB	t169:OBJ	mainVb
-any	t168	6	any	O	O	O	O	O	O	O	O	any	DT	O	mainVb
-conclusion	t169	6	conclusion	O	O	O	O	O	O	O	O	conclusion	NN	t168:NMOD	mainVb
-,	t170	6	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-he	t171	6	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-said	t172	6	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t142:OBJ||t170:P||t171:SBJ||t173:P	mainVb
-.	t173	6	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+"	t138	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+Hundreds	t139	6	hundred	O	O	O	O	O	O	O	O	CRD	B-NP	hundred	NNS	t138:NMOD||t140:NMOD	O
+of	t140	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t141:PMOD	O
+people	t141	6	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+have	t142	6	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t139:SBJ||t143:VC||t146:COORD	O
+been	t143	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t144:VC	O
+interviewed	t144	6	interview	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	interview	VBN	t145:TMP	O
+"	t145	6	"	O	O	O	O	O	O	O	O	PUQ	B-ADVP	"	RBR	O	O
+and	t146	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t149:CONJ	O
+investigators	t147	6	investigator	O	O	O	O	O	O	O	O	NN2	B-NP	investigator	NNS	O	O
+probably	t148	6	probably	O	O	O	O	O	O	O	O	AV0	B-ADVP	probably	RB	O	O
+have	t149	6	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t147:SBJ||t148:ADV||t150:OPRD	O
+to	t150	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t151:IM	O
+take	t151	6	take	e13	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	take	VB	t155:OBJ	O
+quite	t152	6	quite	O	O	O	O	O	O	O	O	AV0	B-NP	quite	RB	O	O
+a	t153	6	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
+long	t154	6	long	O	O	O	O	O	O	O	O	AJ0	I-NP	long	JJ	O	O
+time	t155	6	time	O	O	O	O	O	O	O	O	NN1	I-NP	time	NN	t152:NMOD||t153:NMOD||t154:NMOD||t156:NMOD	O
+to	t156	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t157:IM	O
+compile	t157	6	compile	e14	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	compile	VB	t158:OBJ||t159:LOC	O
+evidence	t158	6	evidence	O	O	O	O	O	O	O	O	NN1	B-NP	evidence	NN	t165:NMOD	O
+in	t159	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t163:PMOD	O
+the	t160	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+two	t161	6	two	O	O	O	O	O	O	O	O	CRD	I-NP	two	CD	O	O
+bomb	t162	6	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t161:NMOD	O
+blasts	t163	6	blast	e54	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	blast	NNS	t160:NMOD||t162:NMOD	O
+so	t164	6	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	O	O
+as	t165	6	as	O	O	O	O	O	O	O	O	AV0	I-ADVP	as	IN	t164:DEP||t166:SUB	O
+to	t166	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t167:IM	O
+reach	t167	6	reach	e15	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reach	VB	t169:OBJ	O
+any	t168	6	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
+conclusion	t169	6	conclusion	O	O	O	O	O	O	O	O	NN1	I-NP	conclusion	NN	t168:NMOD	O
+,	t170	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+he	t171	6	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+said	t172	6	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t142:OBJ||t170:P||t171:SBJ||t173:P	mainVb
+.	t173	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Freeh	t174	7	Freeh	O	O	O	O	O	O	O	O	freeh	NNP	O	mainVb
-flew	t175	7	fly	e17	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	fly	VBD	t174:SBJ||t176:DIR||t179:TMP||t183:P	mainVb
-to	t176	7	to	O	O	O	O	O	O	O	O	to	TO	t177:PMOD	mainVb
-Washington	t177	7	Washington	O	O	O	O	O	O	O	O	washington	NNP	O	mainVb
-immediately	t178	7	immediately	O	O	O	O	O	O	O	O	immediately	RB	O	mainVb
-after	t179	7	after	O	O	O	O	O	O	O	O	after	IN	t178:PMOD||t182:PMOD	mainVb
-the	t180	7	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-press	t181	7	press	O	O	O	O	O	O	O	O	press	NN	O	mainVb
-conference	t182	7	conference	e57	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	conference	NN	t180:NMOD||t181:NMOD	mainVb
-.	t183	7	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Freeh	t174	7	Freeh	O	O	O	O	O	O	O	O	NP0	B-NP	freeh	NNP	O	O
+flew	t175	7	fly	e17	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fly	VBD	t174:SBJ||t176:DIR||t179:TMP||t183:P	mainVb
+to	t176	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t177:PMOD	O
+Washington	t177	7	Washington	O	O	O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
+immediately	t178	7	immediately	O	O	O	O	O	O	O	O	AV0	B-ADVP	immediately	RB	O	O
+after	t179	7	after	O	O	O	O	O	O	O	O	PRP	B-PP	after	IN	t178:PMOD||t182:PMOD	O
+the	t180	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+press	t181	7	press	O	O	O	O	O	O	O	O	NN1	I-NP	press	NN	O	O
+conference	t182	7	conference	e57	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conference	NN	t180:NMOD||t181:NMOD	O
+.	t183	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-U.S.	t184	8	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-President	t185	8	President	O	O	O	O	O	O	O	O	president	NN	O	mainVb
-Bill	t186	8	Bill	O	O	O	O	O	O	O	O	bill	NNP	O	mainVb
-Clinton	t187	8	Clinton	O	O	O	O	O	O	O	O	clinton	NNP	t184:NAME||t185:NAME||t186:NAME	mainVb
-said	t188	8	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t187:SBJ||t189:TMP||t190:OBJ||t227:P	mainVb
-Thursday	t189	8	Thursday	O	O	O	tmx5	DATE	1998-08-20	O	O	thursday	NNP	O	mainVb
-that	t190	8	that	O	O	O	O	O	O	O	O	that	IN	t192:SUB	mainVb
-he	t191	8	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-had	t192	8	have	O	O	O	O	O	O	O	O	have	VBD	t191:SBJ||t193:VC	mainVb
-ordered	t193	8	order	e19	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	order	VBN	t195:OBJ||t196:TMP	mainVb
-the	t194	8	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-strikes	t195	8	strike	e58	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	strike	NNS	t194:NMOD	mainVb
-after	t196	8	after	O	O	O	O	O	O	s3	O	after	IN	t197:PMOD	mainVb
-receiving	t197	8	receive	e20	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	receive	VBG	t201:OBJ	mainVb
-"	t198	8	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-convincing	t199	8	convincing	O	O	O	O	O	O	O	O	convincing	NN	t198:NMOD	mainVb
-evidence	t200	8	evidence	O	O	O	O	O	O	O	O	evidence	NN	O	mainVb
-"	t201	8	"	O	O	O	O	O	O	O	O	"	NN	t199:NMOD||t200:NMOD||t202:NMOD	mainVb
-that	t202	8	that	O	O	O	O	O	O	O	O	that	IN	t213:SUB	mainVb
-the	t203	8	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-terrorist	t204	8	terrorist	O	O	O	O	O	O	O	O	terrorist	NN	O	mainVb
-facilities	t205	8	facility	O	O	O	O	O	O	O	O	facility	NNS	t203:NMOD||t204:NMOD||t208:NMOD	mainVb
-the	t206	8	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t207	8	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	t206:NMOD	mainVb
-raided	t208	8	raid	e21	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	raid	VBD	t207:SBJ||t209:LOC	mainVb
-in	t209	8	in	O	O	O	O	O	O	O	O	in	IN	t210:PMOD	mainVb
-Sudan	t210	8	Sudan	O	O	O	O	O	O	O	O	sudan	NNP	t211:COORD	mainVb
-and	t211	8	and	O	O	O	O	O	O	O	O	and	CC	t212:CONJ	mainVb
-Afghanistan	t212	8	Afghanistan	O	O	O	O	O	O	O	O	afghanistan	NNP	O	mainVb
-had	t213	8	have	O	O	O	O	O	O	O	O	have	VBD	t205:SBJ||t214:VC	mainVb
-played	t214	8	play	e22	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	play	VBN	t216:OBJ||t221:LOC	mainVb
-key	t215	8	key	O	O	O	O	O	O	O	O	key	NN	O	mainVb
-roles	t216	8	role	O	O	O	O	O	O	O	O	role	NNS	t215:NMOD||t217:LOC	mainVb
-in	t217	8	in	O	O	O	O	O	O	O	O	in	IN	t220:PMOD	mainVb
-the	t218	8	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bomb	t219	8	bomb	O	O	O	O	O	O	O	O	bomb	NN	O	mainVb
-attacks	t220	8	attack	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	attack	NNS	t218:NMOD||t219:NMOD	mainVb
-in	t221	8	in	O	O	O	O	O	O	O	O	in	IN	t222:PMOD	mainVb
-capitals	t222	8	capital	O	O	O	O	O	O	O	O	capital	NNS	t223:NMOD	mainVb
-of	t223	8	of	O	O	O	O	O	O	O	O	of	IN	t224:PMOD	mainVb
-Kenya	t224	8	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t225:COORD	mainVb
-and	t225	8	and	O	O	O	O	O	O	O	O	and	CC	t226:CONJ	mainVb
-Tanzania	t226	8	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-.	t227	8	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+U.S.	t184	8	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
+President	t185	8	President	O	O	O	O	O	O	O	O	NP0	I-NP	president	NN	O	O
+Bill	t186	8	Bill	O	O	O	O	O	O	O	O	NP0	I-NP	bill	NNP	O	O
+Clinton	t187	8	Clinton	O	O	O	O	O	O	O	O	NP0	I-NP	clinton	NNP	t184:NAME||t185:NAME||t186:NAME	O
+said	t188	8	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t187:SBJ||t189:TMP||t190:OBJ||t227:P	mainVb
+Thursday	t189	8	Thursday	O	O	O	tmx5	DATE	1998-08-20	O	O	NP0	B-NP	thursday	NNP	O	O
+that	t190	8	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t192:SUB	O
+he	t191	8	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+had	t192	8	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t191:SBJ||t193:VC	O
+ordered	t193	8	order	e19	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	order	VBN	t195:OBJ||t196:TMP	O
+the	t194	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+strikes	t195	8	strike	e58	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	strike	NNS	t194:NMOD	O
+after	t196	8	after	O	O	O	O	O	O	s3	O	PRP	B-PP	after	IN	t197:PMOD	O
+receiving	t197	8	receive	e20	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	receive	VBG	t201:OBJ	O
+"	t198	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+convincing	t199	8	convincing	O	O	O	O	O	O	O	O	AJ0	B-NP	convincing	NN	t198:NMOD	O
+evidence	t200	8	evidence	O	O	O	O	O	O	O	O	NN1	I-NP	evidence	NN	O	O
+"	t201	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t199:NMOD||t200:NMOD||t202:NMOD	O
+that	t202	8	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t213:SUB	O
+the	t203	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+terrorist	t204	8	terrorist	O	O	O	O	O	O	O	O	NN1	I-NP	terrorist	NN	O	O
+facilities	t205	8	facility	O	O	O	O	O	O	O	O	VVZ	B-VP	facility	NNS	t203:NMOD||t204:NMOD||t208:NMOD	O
+the	t206	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t207	8	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	t206:NMOD	O
+raided	t208	8	raid	e21	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	raid	VBD	t207:SBJ||t209:LOC	O
+in	t209	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t210:PMOD	O
+Sudan	t210	8	Sudan	O	O	O	O	O	O	O	O	NP0	B-NP	sudan	NNP	t211:COORD	O
+and	t211	8	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t212:CONJ	O
+Afghanistan	t212	8	Afghanistan	O	O	O	O	O	O	O	O	NP0	B-NP	afghanistan	NNP	O	O
+had	t213	8	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t205:SBJ||t214:VC	O
+played	t214	8	play	e22	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	play	VBN	t216:OBJ||t221:LOC	O
+key	t215	8	key	O	O	O	O	O	O	O	O	AJ0	B-NP	key	NN	O	O
+roles	t216	8	role	O	O	O	O	O	O	O	O	NN2	I-NP	role	NNS	t215:NMOD||t217:LOC	O
+in	t217	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t220:PMOD	O
+the	t218	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bomb	t219	8	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	O	O
+attacks	t220	8	attack	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	attack	NNS	t218:NMOD||t219:NMOD	O
+in	t221	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t222:PMOD	O
+capitals	t222	8	capital	O	O	O	O	O	O	O	O	NN2	B-NP	capital	NNS	t223:NMOD	O
+of	t223	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t224:PMOD	O
+Kenya	t224	8	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t225:COORD	O
+and	t225	8	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t226:CONJ	O
+Tanzania	t226	8	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
+.	t227	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-However	t228	9	however	O	O	O	O	O	O	O	O	however	RB	O	mainVb
-,	t229	9	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Freeh	t230	9	Freeh	O	O	O	O	O	O	O	O	freeh	NNP	O	mainVb
-said	t231	9	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t228:ADV||t229:P||t230:SBJ||t232:ADV||t271:P	mainVb
-although	t232	9	although	O	O	O	O	O	O	O	O	although	IN	t243:SUB	mainVb
-the	t233	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bombing	t234	9	bombing	e61	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bombing	VBG	O	mainVb
-investigators	t235	9	investigator	O	O	O	O	O	O	O	O	investigator	NNS	t233:NMOD||t234:NMOD||t236:NMOD	mainVb
-from	t236	9	from	O	O	O	O	O	O	O	O	from	IN	t238:PMOD	mainVb
-the	t237	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-FBI	t238	9	FBI	O	O	O	O	O	O	O	O	fbi	NNP	t237:NMOD||t239:P||t240:COORD	mainVb
-,	t239	9	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Kenya	t240	9	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t241:COORD	mainVb
-and	t241	9	and	O	O	O	O	O	O	O	O	and	CC	t242:CONJ	mainVb
-Tanzania	t242	9	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-have	t243	9	have	O	O	O	O	O	O	O	O	have	VBP	t235:SBJ||t244:VC	mainVb
-been	t244	9	be	O	O	O	O	O	O	O	O	be	VBN	t245:VC	mainVb
-working	t245	9	work	e24	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	work	VBG	t246:MNR||t248:COORD||t254:OBJ||t255:ADV||t258:P||t259:PRP	mainVb
-very	t246	9	very	O	O	O	O	O	O	O	O	very	RB	t247:AMOD	mainVb
-hard	t247	9	hard	O	O	O	O	O	O	O	O	hard	RB	O	mainVb
-and	t248	9	and	O	O	O	O	O	O	O	O	and	CC	t249:CONJ	mainVb
-made	t249	9	make	O	O	O	O	O	O	O	O	make	VBN	t250:OBJ	mainVb
-"	t250	9	"	O	O	O	O	O	O	O	O	"	NN	O	mainVb
-very	t251	9	very	O	O	O	O	O	O	O	O	very	RB	O	mainVb
-good	t252	9	good	O	O	O	O	O	O	O	O	good	JJ	t251:AMOD	mainVb
-progress	t253	9	progress	O	O	O	O	O	O	O	O	progress	NN	O	mainVb
-"	t254	9	"	O	O	O	O	O	O	O	O	"	NN	t252:NMOD||t253:NMOD	mainVb
-on	t255	9	on	O	O	O	O	O	O	O	O	on	IN	t257:PMOD	mainVb
-the	t256	9	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-case	t257	9	case	O	O	O	O	O	O	O	O	case	NN	t256:NMOD	mainVb
-,	t258	9	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-so	t259	9	so	O	O	O	O	O	O	O	O	so	RB	t260:AMOD||t265:DEP	mainVb
-far	t260	9	far	O	O	O	O	O	O	O	O	far	RB	O	mainVb
-no	t261	9	no	O	O	O	O	O	O	O	O	no	DT	O	mainVb
-conclusion	t262	9	conclusion	e64	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	conclusion	NN	t261:NMOD||t263:COORD	mainVb
-or	t263	9	or	O	O	O	O	O	O	O	O	or	CC	t264:CONJ	mainVb
-decision	t264	9	decision	e65	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	decision	NN	O	mainVb
-can	t265	9	can	O	O	O	O	O	O	O	O	can	MD	t262:SBJ||t266:VC	mainVb
-be	t266	9	be	O	O	O	O	O	O	O	O	be	VB	t267:VC	mainVb
-made	t267	9	make	O	O	O	O	O	O	O	O	make	VBN	t268:LOC	mainVb
-at	t268	9	at	O	O	O	O	O	O	O	O	at	IN	t270:PMOD	mainVb
-this	t269	9	this	O	O	O	O	O	O	O	O	this	DT	O	mainVb
-stage	t270	9	stage	O	O	O	O	O	O	O	O	stage	NN	t269:NMOD	mainVb
-.	t271	9	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+However	t228	9	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
+,	t229	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Freeh	t230	9	Freeh	O	O	O	O	O	O	O	O	NP0	B-NP	freeh	NNP	O	O
+said	t231	9	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t228:ADV||t229:P||t230:SBJ||t232:ADV||t271:P	mainVb
+although	t232	9	although	O	O	O	O	O	O	O	O	CJS	B-SBAR	although	IN	t243:SUB	O
+the	t233	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bombing	t234	9	bombing	e61	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AJ0	I-NP	bombing	VBG	O	O
+investigators	t235	9	investigator	O	O	O	O	O	O	O	O	NN2	I-NP	investigator	NNS	t233:NMOD||t234:NMOD||t236:NMOD	O
+from	t236	9	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t238:PMOD	O
+the	t237	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+FBI	t238	9	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	t237:NMOD||t239:P||t240:COORD	O
+,	t239	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Kenya	t240	9	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t241:COORD	O
+and	t241	9	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t242:CONJ	O
+Tanzania	t242	9	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
+have	t243	9	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t235:SBJ||t244:VC	O
+been	t244	9	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t245:VC	O
+working	t245	9	work	e24	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	work	VBG	t246:MNR||t248:COORD||t254:OBJ||t255:ADV||t258:P||t259:PRP	O
+very	t246	9	very	O	O	O	O	O	O	O	O	AV0	B-ADJP	very	RB	t247:AMOD	O
+hard	t247	9	hard	O	O	O	O	O	O	O	O	AJ0	I-ADJP	hard	RB	O	O
+and	t248	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t249:CONJ	O
+made	t249	9	make	O	O	O	O	O	O	O	O	VVD	B-VP	make	VBN	t250:OBJ	O
+"	t250	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+very	t251	9	very	O	O	O	O	O	O	O	O	AV0	B-NP	very	RB	O	O
+good	t252	9	good	O	O	O	O	O	O	O	O	AJ0	I-NP	good	JJ	t251:AMOD	O
+progress	t253	9	progress	O	O	O	O	O	O	O	O	NN1	I-NP	progress	NN	O	O
+"	t254	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t252:NMOD||t253:NMOD	O
+on	t255	9	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t257:PMOD	O
+the	t256	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+case	t257	9	case	O	O	O	O	O	O	O	O	NN1	I-NP	case	NN	t256:NMOD	O
+,	t258	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+so	t259	9	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	t260:AMOD||t265:DEP	O
+far	t260	9	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	O	O
+no	t261	9	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
+conclusion	t262	9	conclusion	e64	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	conclusion	NN	t261:NMOD||t263:COORD	O
+or	t263	9	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	t264:CONJ	O
+decision	t264	9	decision	e65	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	decision	NN	O	O
+can	t265	9	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t262:SBJ||t266:VC	O
+be	t266	9	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t267:VC	O
+made	t267	9	make	O	O	O	O	O	O	O	O	VVN	I-VP	make	VBN	t268:LOC	O
+at	t268	9	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t270:PMOD	O
+this	t269	9	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
+stage	t270	9	stage	O	O	O	O	O	O	O	O	NN1	I-NP	stage	NN	t269:NMOD	O
+.	t271	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-After	t272	10	after	O	O	O	O	O	O	O	O	after	IN	t273:PMOD	mainVb
-touring	t273	10	tour	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	tour	VBG	t275:OBJ||t282:MNR	mainVb
-Tanzanian	t274	10	tanzanian	O	O	O	O	O	O	O	O	tanzanian	JJ	O	mainVb
-capital	t275	10	capital	O	O	O	O	O	O	O	O	capital	NN	t274:NMOD||t277:NMOD||t280:COORD	mainVb
-Dar	t276	10	Dar	O	O	O	O	O	O	O	O	dar	NNP	O	mainVb
-es	t277	10	e	O	O	O	O	O	O	O	O	e	VBZ	t276:SBJ||t279:OBJ	mainVb
-Salaam	t278	10	salaam	O	O	O	O	O	O	O	O	salaam	NNP	O	mainVb
-Thursday	t279	10	Thursday	O	O	O	tmx6	DATE	1998-08-20	O	O	thursday	NNP	t278:NAME	mainVb
-and	t280	10	and	O	O	O	O	O	O	O	O	and	CC	t281:CONJ	mainVb
-meeting	t281	10	meeting	e67	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	meeting	NN	O	mainVb
-with	t282	10	with	O	O	O	O	O	O	O	O	with	IN	t287:PMOD	mainVb
-Kenyan	t283	10	kenyan	O	O	O	O	O	O	O	O	kenyan	JJ	O	mainVb
-police	t284	10	police	O	O	O	O	O	O	O	O	police	NN	O	mainVb
-leaders	t285	10	leader	O	O	O	O	O	O	O	O	leaders	NNS	t283:NMOD||t284:NMOD	mainVb
-Friday	t286	10	Friday	O	O	O	tmx7	TIME	1998-08-21TMO	O	O	friday	NNP	O	mainVb
-morning	t287	10	morning	O	O	O	tmx7	TIME	1998-08-21TMO	O	O	morning	NN	t285:NMOD||t286:NMOD	mainVb
-,	t288	10	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t289	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-FBI	t290	10	FBI	O	O	O	O	O	O	O	O	fbi	NNP	O	mainVb
-chief	t291	10	chief	O	O	O	O	O	O	O	O	chief	NN	t289:NMOD||t290:NMOD	mainVb
-also	t292	10	also	O	O	O	O	O	O	O	O	also	RB	O	mainVb
-said	t293	10	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t272:TMP||t288:P||t291:SBJ||t292:ADV||t294:OBJ||t316:P	mainVb
-that	t294	10	that	O	O	O	O	O	O	O	O	that	IN	t296:SUB	mainVb
-he	t295	10	he	O	O	O	O	O	O	O	O	he	PRP	O	mainVb
-is	t296	10	be	O	O	O	O	O	O	O	O	be	VBZ	t295:SBJ||t298:PRD	mainVb
-very	t297	10	very	O	O	O	O	O	O	O	O	very	RB	O	mainVb
-satisfied	t298	10	satisfied	O	O	O	O	O	O	O	O	satisfy	VBN	t297:AMOD||t299:AMOD	mainVb
-with	t299	10	with	O	O	O	O	O	O	O	O	with	IN	t304:PMOD	mainVb
-the	t300	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-close	t301	10	close	O	O	O	O	O	O	O	O	close	NN	t302:COORD	mainVb
-and	t302	10	and	O	O	O	O	O	O	O	O	and	CC	t303:CONJ	mainVb
-effective	t303	10	effective	O	O	O	O	O	O	O	O	effective	JJ	O	mainVb
-cooperation	t304	10	cooperation	e68	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	cooperation	NN	t300:NMOD||t301:NMOD||t305:LOC||t309:COORD	mainVb
-among	t305	10	among	O	O	O	O	O	O	O	O	among	IN	t308:PMOD	mainVb
-the	t306	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-FBI	t307	10	FBI	O	O	O	O	O	O	O	O	fbi	NNP	O	mainVb
-agents	t308	10	agent	O	O	O	O	O	O	O	O	agent	NNS	t306:NMOD||t307:NMOD	mainVb
-and	t309	10	and	O	O	O	O	O	O	O	O	and	CC	t311:CONJ	mainVb
-the	t310	10	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-police	t311	10	police	O	O	O	O	O	O	O	O	police	NN	t310:NMOD||t312:LOC	mainVb
-in	t312	10	in	O	O	O	O	O	O	O	O	in	IN	t313:PMOD	mainVb
-Kenya	t313	10	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t314:COORD	mainVb
-and	t314	10	and	O	O	O	O	O	O	O	O	and	CC	t315:CONJ	mainVb
-Tanzania	t315	10	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-.	t316	10	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+After	t272	10	after	O	O	O	O	O	O	O	O	PRP	B-PP	after	IN	t273:PMOD	O
+touring	t273	10	tour	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	tour	VBG	t275:OBJ||t282:MNR	O
+Tanzanian	t274	10	tanzanian	O	O	O	O	O	O	O	O	AJ0	B-NP	tanzanian	JJ	O	O
+capital	t275	10	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t274:NMOD||t277:NMOD||t280:COORD	O
+Dar	t276	10	Dar	O	O	O	O	O	O	O	O	NN1	I-NP	dar	NNP	O	O
+es	t277	10	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t276:SBJ||t279:OBJ	O
+Salaam	t278	10	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
+Thursday	t279	10	Thursday	O	O	O	tmx6	DATE	1998-08-20	O	O	NP0	B-NP	thursday	NNP	t278:NAME	O
+and	t280	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t281:CONJ	O
+meeting	t281	10	meeting	e67	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	meeting	NN	O	O
+with	t282	10	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t287:PMOD	O
+Kenyan	t283	10	kenyan	O	O	O	O	O	O	O	O	AJ0	B-NP	kenyan	JJ	O	O
+police	t284	10	police	O	O	O	O	O	O	O	O	NN2	I-NP	police	NN	O	O
+leaders	t285	10	leader	O	O	O	O	O	O	O	O	NN2	I-NP	leaders	NNS	t283:NMOD||t284:NMOD	O
+Friday	t286	10	Friday	O	O	O	tmx7	TIME	1998-08-21TMO	O	O	NP0	B-NP	friday	NNP	O	O
+morning	t287	10	morning	O	O	O	tmx7	TIME	1998-08-21TMO	O	O	NN1	I-NP	morning	NN	t285:NMOD||t286:NMOD	O
+,	t288	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t289	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+FBI	t290	10	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	O	O
+chief	t291	10	chief	O	O	O	O	O	O	O	O	AJ0	I-NP	chief	NN	t289:NMOD||t290:NMOD	O
+also	t292	10	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
+said	t293	10	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t272:TMP||t288:P||t291:SBJ||t292:ADV||t294:OBJ||t316:P	mainVb
+that	t294	10	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t296:SUB	O
+he	t295	10	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+is	t296	10	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t295:SBJ||t298:PRD	O
+very	t297	10	very	O	O	O	O	O	O	O	O	AV0	B-ADJP	very	RB	O	O
+satisfied	t298	10	satisfied	O	O	O	O	O	O	O	O	AJ0	I-ADJP	satisfy	VBN	t297:AMOD||t299:AMOD	O
+with	t299	10	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t304:PMOD	O
+the	t300	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+close	t301	10	close	O	O	O	O	O	O	O	O	AJ0	I-NP	close	NN	t302:COORD	O
+and	t302	10	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t303:CONJ	O
+effective	t303	10	effective	O	O	O	O	O	O	O	O	AJ0	I-NP	effective	JJ	O	O
+cooperation	t304	10	cooperation	e68	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	cooperation	NN	t300:NMOD||t301:NMOD||t305:LOC||t309:COORD	O
+among	t305	10	among	O	O	O	O	O	O	O	O	PRP	B-PP	among	IN	t308:PMOD	O
+the	t306	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+FBI	t307	10	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	O	O
+agents	t308	10	agent	O	O	O	O	O	O	O	O	NN2	I-NP	agent	NNS	t306:NMOD||t307:NMOD	O
+and	t309	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t311:CONJ	O
+the	t310	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+police	t311	10	police	O	O	O	O	O	O	O	O	NN2	I-NP	police	NN	t310:NMOD||t312:LOC	O
+in	t312	10	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t313:PMOD	O
+Kenya	t313	10	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t314:COORD	O
+and	t314	10	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t315:CONJ	O
+Tanzania	t315	10	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
+.	t316	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t317	11	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-man	t318	11	man	O	O	O	O	O	O	O	O	man	NN	t317:NMOD||t320:NMOD	mainVb
-who	t319	11	who	O	O	O	O	O	O	O	O	who	WP	O	mainVb
-hurled	t320	11	hurl	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	hurl	VBD	t319:SBJ||t322:OBJ||t323:LOC||t332:TMP	mainVb
-a	t321	11	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-grenade	t322	11	grenade	O	O	O	O	O	O	O	O	grenade	NN	t321:NMOD	mainVb
-at	t323	11	at	O	O	O	O	O	O	O	O	at	IN	t325:PMOD	mainVb
-security	t324	11	security	O	O	O	O	O	O	O	O	security	NN	O	mainVb
-guards	t325	11	guard	O	O	O	O	O	O	O	O	guard	NNS	t324:NMOD||t326:LOC	mainVb
-at	t326	11	at	O	O	O	O	O	O	O	O	at	IN	t331:PMOD	mainVb
-the	t327	11	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t328	11	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-embassy	t329	11	embassy	O	O	O	O	O	O	O	O	embassy	NN	t327:NMOD||t328:NMOD||t330:NMOD	mainVb
-here	t330	11	here	O	O	O	O	O	O	O	O	here	RB	O	mainVb
-seconds	t331	11	seconds	O	O	O	O	O	O	O	O	second	NNS	t329:SBJ	mainVb
-before	t332	11	before	O	O	O	O	O	O	s2	O	before	IN	t335:SUB	mainVb
-the	t333	11	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-bomb	t334	11	bomb	O	O	O	O	O	O	O	O	bomb	NN	t333:NMOD	mainVb
-exploded	t335	11	explode	e29	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	explode	VBD	t334:SBJ	mainVb
-was	t336	11	be	O	O	O	O	O	O	O	O	be	VBD	t318:SBJ||t338:VC||t362:P	mainVb
-positively	t337	11	positively	O	O	O	O	O	O	O	O	positively	RB	O	mainVb
-identified	t338	11	identify	e30	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	identify	VBN	t337:AMOD||t339:TMP||t340:ADV	mainVb
-Thursday	t339	11	Thursday	O	O	O	tmx8	DATE	1998-08-20	O	O	thursday	NNP	O	mainVb
-as	t340	11	as	O	O	O	O	O	O	O	O	as	IN	t343:PMOD	mainVb
-two	t341	11	two	O	O	O	O	O	O	O	O	two	CD	O	mainVb
-more	t342	11	more	O	O	O	O	O	O	O	O	more	DT	O	mainVb
-suspects	t343	11	suspect	O	O	O	O	O	O	O	O	suspect	NNS	t341:NMOD||t342:NMOD||t344:P||t346:APPO||t352:NMOD||t355:P||t359:APPO	mainVb
---	t344	11	--	O	O	O	O	O	O	O	O	--	:	O	mainVb
-one	t345	11	one	O	O	O	O	O	O	O	O	one	CD	O	mainVb
-Arab	t346	11	Arab	O	O	O	O	O	O	O	O	arab	NN	t345:NMOD||t347:P||t348:APPO||t350:P	mainVb
-,	t347	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-one	t348	11	one	O	O	O	O	O	O	O	O	one	CD	t349:APPO	mainVb
-Sudanese	t349	11	sudanese	O	O	O	O	O	O	O	O	sudanese	JJ	O	mainVb
---	t350	11	--	O	O	O	O	O	O	O	O	--	:	O	mainVb
-who	t351	11	who	O	O	O	O	O	O	O	O	who	WP	O	mainVb
-had	t352	11	have	O	O	O	O	O	O	O	O	have	VBD	t351:SBJ||t353:VC	mainVb
-been	t353	11	be	O	O	O	O	O	O	O	O	be	VBN	t354:VC	mainVb
-arrested	t354	11	arrest	e31	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	arrest	VBN	O	mainVb
-,	t355	11	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Kenya	t356	11	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t357:SUFFIX	mainVb
-'s	t357	11	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-national	t358	11	national	O	O	O	O	O	O	O	O	national	JJ	O	mainVb
-newspapers	t359	11	newspaper	O	O	O	O	O	O	O	O	newspaper	NNS	t356:NMOD||t358:NMOD||t360:APPO	mainVb
-reported	t360	11	report	e32	REPORTING	PAST+NONE+POS	O	O	O	O	O	report	VBN	t361:TMP	mainVb
-Friday	t361	11	Friday	O	O	O	tmx9	DATE	1998-08-21	O	O	friday	NNP	O	mainVb
-.	t362	11	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t317	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+man	t318	11	man	O	O	O	O	O	O	O	O	NN1	I-NP	man	NN	t317:NMOD||t320:NMOD	O
+who	t319	11	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
+hurled	t320	11	hurl	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	hurl	VBD	t319:SBJ||t322:OBJ||t323:LOC||t332:TMP	O
+a	t321	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+grenade	t322	11	grenade	O	O	O	O	O	O	O	O	NN1	I-NP	grenade	NN	t321:NMOD	O
+at	t323	11	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t325:PMOD	O
+security	t324	11	security	O	O	O	O	O	O	O	O	NN1	B-NP	security	NN	O	O
+guards	t325	11	guard	O	O	O	O	O	O	O	O	NN2	I-NP	guard	NNS	t324:NMOD||t326:LOC	O
+at	t326	11	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t331:PMOD	O
+the	t327	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t328	11	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+embassy	t329	11	embassy	O	O	O	O	O	O	O	O	NN1	I-NP	embassy	NN	t327:NMOD||t328:NMOD||t330:NMOD	O
+here	t330	11	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
+seconds	t331	11	seconds	O	O	O	O	O	O	O	O	NN2	B-VP	second	NNS	t329:SBJ	O
+before	t332	11	before	O	O	O	O	O	O	s2	O	PRP	B-PP	before	IN	t335:SUB	O
+the	t333	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bomb	t334	11	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t333:NMOD	O
+exploded	t335	11	explode	e29	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	explode	VBD	t334:SBJ	O
+was	t336	11	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t318:SBJ||t338:VC||t362:P	mainVb
+positively	t337	11	positively	O	O	O	O	O	O	O	O	AV0	I-VP	positively	RB	O	mainVb
+identified	t338	11	identify	e30	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	identify	VBN	t337:AMOD||t339:TMP||t340:ADV	mainVb
+Thursday	t339	11	Thursday	O	O	O	tmx8	DATE	1998-08-20	O	O	NP0	B-NP	thursday	NNP	O	O
+as	t340	11	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t343:PMOD	O
+two	t341	11	two	O	O	O	O	O	O	O	O	CRD	B-NP	two	CD	O	O
+more	t342	11	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	DT	O	O
+suspects	t343	11	suspect	O	O	O	O	O	O	O	O	NN2	I-NP	suspect	NNS	t341:NMOD||t342:NMOD||t344:P||t346:APPO||t352:NMOD||t355:P||t359:APPO	O
+--	t344	11	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
+one	t345	11	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
+Arab	t346	11	Arab	O	O	O	O	O	O	O	O	NP0	I-NP	arab	NN	t345:NMOD||t347:P||t348:APPO||t350:P	O
+,	t347	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+one	t348	11	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	t349:APPO	O
+Sudanese	t349	11	sudanese	O	O	O	O	O	O	O	O	AJ0	I-NP	sudanese	JJ	O	O
+--	t350	11	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
+who	t351	11	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
+had	t352	11	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t351:SBJ||t353:VC	O
+been	t353	11	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t354:VC	O
+arrested	t354	11	arrest	e31	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	arrest	VBN	O	O
+,	t355	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Kenya	t356	11	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t357:SUFFIX	O
+'s	t357	11	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+national	t358	11	national	O	O	O	O	O	O	O	O	AJ0	I-NP	national	JJ	O	O
+newspapers	t359	11	newspaper	O	O	O	O	O	O	O	O	NN2	I-NP	newspaper	NNS	t356:NMOD||t358:NMOD||t360:APPO	O
+reported	t360	11	report	e32	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBN	t361:TMP	O
+Friday	t361	11	Friday	O	O	O	tmx9	DATE	1998-08-21	O	O	NP0	B-NP	friday	NNP	O	O
+.	t362	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Local	t363	12	local	O	O	O	O	O	O	O	O	local	JJ	O	mainVb
-sources	t364	12	source	O	O	O	O	O	O	O	O	source	NNS	t363:NMOD	mainVb
-said	t365	12	say	e33	REPORTING	PAST+NONE+POS	O	O	O	O	O	say	VBD	t364:SBJ||t366:OBJ||t393:P	mainVb
-that	t366	12	that	O	O	O	O	O	O	O	O	that	IN	t377:SUB	mainVb
-the	t367	12	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-plan	t368	12	plan	O	O	O	O	O	O	O	O	plan	NN	t367:NMOD||t369:NMOD	mainVb
-of	t369	12	of	O	O	O	O	O	O	O	O	of	IN	t370:PMOD	mainVb
-bombing	t370	12	bombing	e71	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bomb	VBG	t372:OBJ||t373:LOC	mainVb
-U.S.	t371	12	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-embassies	t372	12	embassy	O	O	O	O	O	O	O	O	embassy	NNS	t371:NMOD	mainVb
-in	t373	12	in	O	O	O	O	O	O	O	O	in	IN	t374:PMOD	mainVb
-Kenya	t374	12	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t375:COORD	mainVb
-and	t375	12	and	O	O	O	O	O	O	O	O	and	CC	t376:CONJ	mainVb
-Tanzania	t376	12	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-took	t377	12	take	O	O	O	O	O	O	O	O	take	VBD	t368:SBJ||t379:OBJ||t380:OPRD||t382:COORD	mainVb
-three	t378	12	three	O	O	O	tmx10	DURATION	P3M	O	O	three	CD	O	mainVb
-months	t379	12	month	O	O	O	tmx10	DURATION	P3M	O	O	month	NNS	t378:NMOD	mainVb
-to	t380	12	to	O	O	O	O	O	O	O	O	to	TO	t381:IM	mainVb
-complete	t381	12	complete	e79	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	complete	VB	O	mainVb
-and	t382	12	and	O	O	O	O	O	O	O	O	and	CC	t387:CONJ	mainVb
-bombers	t383	12	bomber	O	O	O	O	O	O	O	O	bomber	NNS	t384:APPO	mainVb
-destined	t384	12	destine	O	O	O	O	O	O	O	O	destine	VBN	t385:ADV	mainVb
-for	t385	12	for	O	O	O	O	O	O	O	O	for	IN	t386:PMOD	mainVb
-Kenya	t386	12	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	O	mainVb
-were	t387	12	be	O	O	O	O	O	O	O	O	be	VBD	t383:SBJ||t388:VC	mainVb
-dispatched	t388	12	dispatch	e35	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	dispatch	VBN	t389:TMP	mainVb
-through	t389	12	through	O	O	O	O	O	O	O	O	through	IN	t390:PMOD	mainVb
-Somalia	t390	12	Somalia	O	O	O	O	O	O	O	O	somalia	NNP	t391:COORD	mainVb
-and	t391	12	and	O	O	O	O	O	O	O	O	and	CC	t392:CONJ	mainVb
-Rwanda	t392	12	Rwanda	O	O	O	O	O	O	O	O	rwanda	NNP	O	mainVb
-.	t393	12	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Local	t363	12	local	O	O	O	O	O	O	O	O	AJ0	B-NP	local	JJ	O	O
+sources	t364	12	source	O	O	O	O	O	O	O	O	NN2	I-NP	source	NNS	t363:NMOD	O
+said	t365	12	say	e33	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t364:SBJ||t366:OBJ||t393:P	mainVb
+that	t366	12	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t377:SUB	O
+the	t367	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+plan	t368	12	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t367:NMOD||t369:NMOD	O
+of	t369	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t370:PMOD	O
+bombing	t370	12	bombing	e71	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	bomb	VBG	t372:OBJ||t373:LOC	O
+U.S.	t371	12	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
+embassies	t372	12	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t371:NMOD	O
+in	t373	12	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t374:PMOD	O
+Kenya	t374	12	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t375:COORD	O
+and	t375	12	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t376:CONJ	O
+Tanzania	t376	12	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
+took	t377	12	take	O	O	O	O	O	O	O	O	VVD	B-VP	take	VBD	t368:SBJ||t379:OBJ||t380:OPRD||t382:COORD	O
+three	t378	12	three	O	O	O	tmx10	DURATION	P3M	O	O	CRD	B-NP	three	CD	O	O
+months	t379	12	month	O	O	O	tmx10	DURATION	P3M	O	O	NN2	I-NP	month	NNS	t378:NMOD	O
+to	t380	12	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t381:IM	O
+complete	t381	12	complete	e79	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	complete	VB	O	O
+and	t382	12	and	O	O	O	O	O	O	O	O	CJC	I-VP	and	CC	t387:CONJ	O
+bombers	t383	12	bomber	O	O	O	O	O	O	O	O	NN2	I-VP	bomber	NNS	t384:APPO	O
+destined	t384	12	destine	O	O	O	O	O	O	O	O	VVN	I-VP	destine	VBN	t385:ADV	O
+for	t385	12	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t386:PMOD	O
+Kenya	t386	12	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
+were	t387	12	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t383:SBJ||t388:VC	O
+dispatched	t388	12	dispatch	e35	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	dispatch	VBN	t389:TMP	O
+through	t389	12	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t390:PMOD	O
+Somalia	t390	12	Somalia	O	O	O	O	O	O	O	O	NP0	B-NP	somalia	NNP	t391:COORD	O
+and	t391	12	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t392:CONJ	O
+Rwanda	t392	12	Rwanda	O	O	O	O	O	O	O	O	NP0	I-NP	rwanda	NNP	O	O
+.	t393	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-A	t394	13	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-senior	t395	13	senior	O	O	O	O	O	O	O	O	senior	JJ	O	mainVb
-government	t396	13	government	O	O	O	O	O	O	O	O	government	NN	O	mainVb
-official	t397	13	official	O	O	O	O	O	O	O	O	official	NN	t394:NMOD||t395:NMOD||t396:NMOD||t399:NMOD	mainVb
-who	t398	13	who	O	O	O	O	O	O	O	O	who	WP	O	mainVb
-saw	t399	13	see	e36	PERCEPTION	PAST+NONE+POS	O	O	O	O	O	saw	VBD	t398:SBJ||t401:OBJ	mainVb
-the	t400	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-confessions	t401	13	confession	e72	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	confession	NNS	t400:NMOD||t402:NMOD	mainVb
-of	t402	13	of	O	O	O	O	O	O	O	O	of	IN	t403:PMOD	mainVb
-suspects	t403	13	suspect	O	O	O	O	O	O	O	O	suspect	NNS	O	mainVb
-was	t404	13	be	O	O	O	O	O	O	O	O	be	VBD	t397:SBJ||t405:VC||t426:P	mainVb
-quoted	t405	13	quote	e37	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	quote	VBN	t406:TMP||t407:LGS||t410:ADV	mainVb
-Friday	t406	13	Friday	O	O	O	tmx11	DATE	1998-08-21	O	O	friday	NNP	O	mainVb
-by	t407	13	by	O	O	O	O	O	O	O	O	by	IN	t409:PMOD	mainVb
-local	t408	13	local	O	O	O	O	O	O	O	O	local	JJ	O	mainVb
-media	t409	13	media	O	O	O	O	O	O	O	O	medium	NNS	t408:NMOD	mainVb
-as	t410	13	as	O	O	O	O	O	O	O	O	as	IN	t411:PMOD	mainVb
-saying	t411	13	say	e38	REPORTING	PRESPART+NONE+POS	O	O	O	O	O	say	VBG	t412:OBJ	mainVb
-that	t412	13	that	O	O	O	O	O	O	O	O	that	IN	t423:SUB	mainVb
-an	t413	13	a	O	O	O	O	O	O	O	O	an	DT	O	mainVb
-Egyptian	t414	13	egyptian	O	O	O	O	O	O	O	O	egyptian	NNP	O	mainVb
-Islamic	t415	13	Islamic	O	O	O	O	O	O	O	O	islamic	NNP	O	mainVb
-Jihad	t416	13	Jihad	O	O	O	O	O	O	O	O	jihad	NNP	t414:NAME||t415:NAME	mainVb
-group	t417	13	group	O	O	O	O	O	O	O	O	group	NN	t413:NMOD||t416:NMOD||t418:P||t419:APPO||t422:P	mainVb
-,	t418	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-linked	t419	13	link	e39	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	link	VBN	t420:ADV	mainVb
-with	t420	13	with	O	O	O	O	O	O	O	O	with	IN	t421:PMOD	mainVb
-Laden	t421	13	Laden	O	O	O	O	O	O	O	O	laden	NNP	O	mainVb
-,	t422	13	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-planned	t423	13	plan	e40	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	plan	VBD	t417:SBJ||t425:OBJ	mainVb
-the	t424	13	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-attacks	t425	13	attack	e73	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	attack	NNS	t424:NMOD	mainVb
-.	t426	13	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+A	t394	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
+senior	t395	13	senior	O	O	O	O	O	O	O	O	AJ0	I-NP	senior	JJ	O	O
+government	t396	13	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	O	O
+official	t397	13	official	O	O	O	O	O	O	O	O	NN1	I-NP	official	NN	t394:NMOD||t395:NMOD||t396:NMOD||t399:NMOD	O
+who	t398	13	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
+saw	t399	13	see	e36	PERCEPTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	saw	VBD	t398:SBJ||t401:OBJ	O
+the	t400	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+confessions	t401	13	confession	e72	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	confession	NNS	t400:NMOD||t402:NMOD	O
+of	t402	13	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t403:PMOD	O
+suspects	t403	13	suspect	O	O	O	O	O	O	O	O	NN2	B-NP	suspect	NNS	O	O
+was	t404	13	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t397:SBJ||t405:VC||t426:P	mainVb
+quoted	t405	13	quote	e37	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	quote	VBN	t406:TMP||t407:LGS||t410:ADV	mainVb
+Friday	t406	13	Friday	O	O	O	tmx11	DATE	1998-08-21	O	O	NP0	B-NP	friday	NNP	O	O
+by	t407	13	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t409:PMOD	O
+local	t408	13	local	O	O	O	O	O	O	O	O	AJ0	B-NP	local	JJ	O	O
+media	t409	13	media	O	O	O	O	O	O	O	O	NN0	I-NP	medium	NNS	t408:NMOD	O
+as	t410	13	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t411:PMOD	O
+saying	t411	13	say	e38	REPORTING	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	say	VBG	t412:OBJ	O
+that	t412	13	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t423:SUB	O
+an	t413	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
+Egyptian	t414	13	egyptian	O	O	O	O	O	O	O	O	AJ0	I-NP	egyptian	NNP	O	O
+Islamic	t415	13	Islamic	O	O	O	O	O	O	O	O	AJ0	I-NP	islamic	NNP	O	O
+Jihad	t416	13	Jihad	O	O	O	O	O	O	O	O	NN1	I-NP	jihad	NNP	t414:NAME||t415:NAME	O
+group	t417	13	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t413:NMOD||t416:NMOD||t418:P||t419:APPO||t422:P	O
+,	t418	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+linked	t419	13	link	e39	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	link	VBN	t420:ADV	O
+with	t420	13	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t421:PMOD	O
+Laden	t421	13	Laden	O	O	O	O	O	O	O	O	NP0	B-NP	laden	NNP	O	O
+,	t422	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+planned	t423	13	plan	e40	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	plan	VBD	t417:SBJ||t425:OBJ	O
+the	t424	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+attacks	t425	13	attack	e73	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	attack	NNS	t424:NMOD	O
+.	t426	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t427	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-car	t428	14	car	O	O	O	O	O	O	O	O	car	NN	O	mainVb
-bomb	t429	14	bomb	O	O	O	O	O	O	O	O	bomb	NN	t428:NMOD	mainVb
-attack	t430	14	attack	e74	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	attack	NN	t427:NMOD||t429:NMOD||t431:LOC	mainVb
-at	t431	14	at	O	O	O	O	O	O	O	O	at	IN	t434:PMOD	mainVb
-the	t432	14	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t433	14	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-embassy	t434	14	embassy	O	O	O	O	O	O	O	O	embassy	NN	t432:NMOD||t433:NMOD||t435:LOC	mainVb
-in	t435	14	in	O	O	O	O	O	O	O	O	in	IN	t436:PMOD	mainVb
-Nairobi	t436	14	Nairobi	O	O	O	O	O	O	O	O	nairobi	NNP	O	mainVb
-killed	t437	14	kill	e41	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	kill	VBD	t430:SBJ||t439:OBJ||t440:COORD||t444:P	mainVb
-253	t438	14	253	O	O	O	O	O	O	O	O	253	CD	O	mainVb
-people	t439	14	people	O	O	O	O	O	O	O	O	people	NN	t438:NMOD	mainVb
-and	t440	14	and	O	O	O	O	O	O	O	O	and	CC	t441:CONJ	mainVb
-injured	t441	14	injured	e80	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	injure	VBN	t443:OBJ	mainVb
-5,000	t442	14	5,000	O	O	O	O	O	O	O	O	5,000	CD	O	mainVb
-others	t443	14	other	O	O	O	O	O	O	O	O	others	NNS	t442:NMOD	mainVb
-.	t444	14	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t427	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+car	t428	14	car	O	O	O	O	O	O	O	O	NN1	I-NP	car	NN	O	O
+bomb	t429	14	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t428:NMOD	O
+attack	t430	14	attack	e74	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	attack	NN	t427:NMOD||t429:NMOD||t431:LOC	O
+at	t431	14	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t434:PMOD	O
+the	t432	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t433	14	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+embassy	t434	14	embassy	O	O	O	O	O	O	O	O	NN1	I-NP	embassy	NN	t432:NMOD||t433:NMOD||t435:LOC	O
+in	t435	14	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t436:PMOD	O
+Nairobi	t436	14	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
+killed	t437	14	kill	e41	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	kill	VBD	t430:SBJ||t439:OBJ||t440:COORD||t444:P	mainVb
+253	t438	14	253	O	O	O	O	O	O	O	O	CRD	B-NP	253	CD	O	O
+people	t439	14	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t438:NMOD	O
+and	t440	14	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t441:CONJ	O
+injured	t441	14	injured	e80	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	injure	VBN	t443:OBJ	O
+5,000	t442	14	5,000	O	O	O	O	O	O	O	O	CRD	B-NP	5,000	CD	O	O
+others	t443	14	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t442:NMOD	O
+.	t444	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-A	t445	15	a	O	O	O	O	O	O	O	O	a	DT	O	mainVb
-nearly	t446	15	nearly	O	O	O	O	O	O	O	O	nearly	RB	O	mainVb
-simultaneous	t447	15	simultaneous	O	O	O	O	O	O	O	O	simultaneous	JJ	t446:AMOD	mainVb
-car	t448	15	car	O	O	O	O	O	O	O	O	car	NN	t445:NMOD||t447:NMOD||t449:APPO	mainVb
-bombing	t449	15	bombing	e75	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bomb	VBG	t450:LOC||t454:LOC	mainVb
-outside	t450	15	outside	O	O	O	O	O	O	O	O	outside	IN	t453:PMOD	mainVb
-the	t451	15	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t452	15	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-embassy	t453	15	embassy	O	O	O	O	O	O	O	O	embassy	NN	t451:NMOD||t452:NMOD	mainVb
-in	t454	15	in	O	O	O	O	O	O	O	O	in	IN	t455:PMOD	mainVb
-Tanzania	t455	15	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	O	mainVb
-killed	t456	15	kill	e42	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	kill	VBD	t448:SBJ||t458:OBJ||t459:COORD||t464:P	mainVb
-10	t457	15	10	O	O	O	O	O	O	O	O	10	CD	O	mainVb
-people	t458	15	people	O	O	O	O	O	O	O	O	people	NN	t457:NMOD	mainVb
-and	t459	15	and	O	O	O	O	O	O	O	O	and	CC	t460:CONJ	mainVb
-wounded	t460	15	wound	e43	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	wound	VBD	t463:OBJ	mainVb
-about	t461	15	about	O	O	O	O	O	O	O	O	about	CD	O	mainVb
-70	t462	15	70	O	O	O	O	O	O	O	O	70	CD	t461:DEP	mainVb
-others	t463	15	other	O	O	O	O	O	O	O	O	others	NNS	t462:NMOD	mainVb
-.	t464	15	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+A	t445	15	a	O	O	O	O	O	O	O	O	ZZ0	B-NP	a	DT	O	O
+nearly	t446	15	nearly	O	O	O	O	O	O	O	O	AV0	I-NP	nearly	RB	O	O
+simultaneous	t447	15	simultaneous	O	O	O	O	O	O	O	O	AJ0	I-NP	simultaneous	JJ	t446:AMOD	O
+car	t448	15	car	O	O	O	O	O	O	O	O	NN1	I-NP	car	NN	t445:NMOD||t447:NMOD||t449:APPO	O
+bombing	t449	15	bombing	e75	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	bomb	VBG	t450:LOC||t454:LOC	O
+outside	t450	15	outside	O	O	O	O	O	O	O	O	PRP	B-PP	outside	IN	t453:PMOD	O
+the	t451	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t452	15	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+embassy	t453	15	embassy	O	O	O	O	O	O	O	O	NN1	I-NP	embassy	NN	t451:NMOD||t452:NMOD	O
+in	t454	15	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t455:PMOD	O
+Tanzania	t455	15	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	O	O
+killed	t456	15	kill	e42	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	kill	VBD	t448:SBJ||t458:OBJ||t459:COORD||t464:P	mainVb
+10	t457	15	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
+people	t458	15	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t457:NMOD	O
+and	t459	15	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t460:CONJ	O
+wounded	t460	15	wound	e43	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	wound	VBD	t463:OBJ	O
+about	t461	15	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	O	O
+70	t462	15	70	O	O	O	O	O	O	O	O	CRD	I-NP	70	CD	t461:DEP	O
+others	t463	15	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t462:NMOD	O
+.	t464	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Earlier	t465	16	earlier	O	O	O	O	O	O	O	O	earlier	RBR	O	mainVb
-,	t466	16	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-the	t467	16	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t468	16	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	t467:NMOD||t469:SUFFIX	mainVb
-'s	t469	16	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-demand	t470	16	demand	e76	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	demand	NN	t468:NMOD||t471:NMOD||t475:NMOD	mainVb
-for	t471	16	for	O	O	O	O	O	O	O	O	for	IN	t474:PMOD	mainVb
-Laden	t472	16	Laden	O	O	O	O	O	O	O	O	laden	NNP	t473:SUFFIX	mainVb
-'s	t473	16	's	O	O	O	O	O	O	O	O	's	POS	O	mainVb
-extradition	t474	16	extradition	e77	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	extradition	NN	t472:NMOD	mainVb
-from	t475	16	from	O	O	O	O	O	O	O	O	from	IN	t476:PMOD	mainVb
-Afghanistan	t476	16	Afghanistan	O	O	O	O	O	O	O	O	afghanistan	NNP	O	mainVb
-has	t477	16	have	O	O	O	O	O	O	O	O	have	VBZ	t465:TMP||t466:P||t470:SBJ||t478:VC||t484:P	mainVb
-been	t478	16	be	O	O	O	O	O	O	O	O	be	VBN	t479:VC	mainVb
-refused	t479	16	refuse	e44	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	refuse	VBN	t480:LGS	mainVb
-by	t480	16	by	O	O	O	O	O	O	O	O	by	IN	t483:PMOD	mainVb
-the	t481	16	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Taliban	t482	16	Taliban	O	O	O	O	O	O	O	O	taliban	JJ	O	mainVb
-government	t483	16	government	O	O	O	O	O	O	O	O	government	NN	t481:NMOD||t482:NMOD	mainVb
-.	t484	16	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+Earlier	t465	16	earlier	O	O	O	O	O	O	O	O	AV0	B-ADVP	earlier	RBR	O	O
+,	t466	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+the	t467	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t468	16	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	t467:NMOD||t469:SUFFIX	O
+'s	t469	16	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+demand	t470	16	demand	e76	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	demand	NN	t468:NMOD||t471:NMOD||t475:NMOD	O
+for	t471	16	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t474:PMOD	O
+Laden	t472	16	Laden	O	O	O	O	O	O	O	O	NP0	B-NP	laden	NNP	t473:SUFFIX	O
+'s	t473	16	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
+extradition	t474	16	extradition	e77	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	extradition	NN	t472:NMOD	O
+from	t475	16	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t476:PMOD	O
+Afghanistan	t476	16	Afghanistan	O	O	O	O	O	O	O	O	NP0	B-NP	afghanistan	NNP	O	O
+has	t477	16	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t465:TMP||t466:P||t470:SBJ||t478:VC||t484:P	mainVb
+been	t478	16	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t479:VC	mainVb
+refused	t479	16	refuse	e44	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	refuse	VBN	t480:LGS	mainVb
+by	t480	16	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t483:PMOD	O
+the	t481	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Taliban	t482	16	Taliban	O	O	O	O	O	O	O	O	AJ0	I-NP	taliban	JJ	O	O
+government	t483	16	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t481:NMOD||t482:NMOD	O
+.	t484	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

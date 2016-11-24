@@ -1,118 +1,118 @@
-DCT_1998-08-10	O	O	O	O	O	O	tmx0	TIME	1998-08-10	O	O	dct_1998-08-10	SYM	O	O
+DCT_1998-08-10	O	O	O	O	O	O	tmx0	TIME	1998-08-10	O	O	NP0	B-NP	dct_1998-08-10	SYM	O	O
 
-NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	nairobi	NNP	t2:P||t7:COORD	O
-,	t2	1	,	O	O	O+O+O	O	O	O	O	O	,	,	O	O
-Kenya	t3	1	Kenya	O	O	O+O+O	O	O	O	O	O	kenya	NNP	O	O
--LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	ap	NNP	O	O
--RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	-rrb-	NNP	O	O
-_	t7	1	_	O	O	O+O+O	O	O	O	O	O	_	NNP	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t9:AMOD	O
-The	t8	1	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	O
-following	t9	1	following	O	O	O+O+O	O	O	O	O	O	following	VBG	t8:NMOD	O
-are	t10	1	be	O	O	O+O+O	O	O	O	O	O	be	VBP	t1:SBJ||t13:PRD||t40:P	mainVb
-the	t11	1	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	mainVb
-latest	t12	1	latest	O	O	O+O+O	O	O	O	O	O	latest	JJS	O	mainVb
-figures	t13	1	figure	O	O	O+O+O	O	O	O	O	O	figure	NNS	t11:NMOD||t12:NMOD||t14:TMP||t17:NMOD	mainVb
-as	t14	1	as	O	O	O+O+O	O	O	O	O	O	as	IN	t15:PMOD	mainVb
-of	t15	1	of	O	O	O+O+O	O	O	O	O	O	of	IN	t16:PMOD	mainVb
-Monday	t16	1	Monday	O	O	O+O+O	tmx1	DATE	1998-08-10	O	O	monday	NNP	O	mainVb
-for	t17	1	for	O	O	O+O+O	O	O	O	O	O	for	IN	t19:PMOD	mainVb
-the	t18	1	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	mainVb
-dead	t19	1	dead	O	O	O+O+O	O	O	O	O	O	dead	JJ	t18:NMOD||t20:COORD||t39:LOC	mainVb
-and	t20	1	and	O	O	O+O+O	O	O	O	O	O	and	CC	t21:CONJ	mainVb
-injured	t21	1	injure	O	O	O+O+O	O	O	O	O	O	injure	VBN	t22:LOC||t33:P||t34:COORD	mainVb
-in	t22	1	in	O	O	O+O+O	O	O	O	O	O	in	IN	t24:PMOD	mainVb
-the	t23	1	the	O	O	O+O+O	O	O	O	O	O	the	DT	O	mainVb
-bombings	t24	1	bombing	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	bombing	NNS	t23:NMOD||t25:NMOD	mainVb
-of	t25	1	of	O	O	O	O	O	O	O	O	of	IN	t28:PMOD||t29:LOC	mainVb
-the	t26	1	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t27	1	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-Embassies	t28	1	Embassies	O	O	O	O	O	O	O	O	embassy	NNPS	t26:NMOD||t27:NAME	mainVb
-in	t29	1	in	O	O	O	O	O	O	O	O	in	IN	t32:PMOD	mainVb
-Nairobi	t30	1	Nairobi	O	O	O	O	O	O	O	O	nairobi	NNP	O	mainVb
-,	t31	1	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Kenya	t32	1	Kenya	O	O	O	O	O	O	O	O	kenya	NNP	t30:NMOD||t31:P	mainVb
-,	t33	1	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-and	t34	1	and	O	O	O	O	O	O	O	O	and	CC	t36:CONJ	mainVb
-Dar	t35	1	Dar	O	O	O	O	O	O	O	O	dar	NNP	O	mainVb
-es	t36	1	e	O	O	O	O	O	O	O	O	e	VBZ	t35:SBJ	mainVb
-Salaam	t37	1	salaam	O	O	O	O	O	O	O	O	salaam	NNP	O	mainVb
-,	t38	1	,	O	O	O	O	O	O	O	O	,	,	O	mainVb
-Tanzania	t39	1	Tanzania	O	O	O	O	O	O	O	O	tanzania	NNP	t37:NMOD||t38:P	mainVb
-.	t40	1	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	t2:P||t7:COORD	O
+,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
+Kenya	t3	1	Kenya	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
+-LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
+-RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
+_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t9:AMOD	O
+The	t8	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+following	t9	1	following	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	following	VBG	t8:NMOD	O
+are	t10	1	be	O	O	O+O+O	O	O	O	O	O	VBB	B-VP	be	VBP	t1:SBJ||t13:PRD||t40:P	mainVb
+the	t11	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+latest	t12	1	latest	O	O	O+O+O	O	O	O	O	O	AJS	I-NP	latest	JJS	O	O
+figures	t13	1	figure	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	figure	NNS	t11:NMOD||t12:NMOD||t14:TMP||t17:NMOD	O
+as	t14	1	as	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	as	IN	t15:PMOD	O
+of	t15	1	of	O	O	O+O+O	O	O	O	O	O	PRP	I-PP	of	IN	t16:PMOD	O
+Monday	t16	1	Monday	O	O	O+O+O	tmx1	DATE	1998-08-10	O	O	NP0	B-NP	monday	NNP	O	O
+for	t17	1	for	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	for	IN	t19:PMOD	O
+the	t18	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+dead	t19	1	dead	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	dead	JJ	t18:NMOD||t20:COORD||t39:LOC	O
+and	t20	1	and	O	O	O+O+O	O	O	O	O	O	CJC	I-NP	and	CC	t21:CONJ	O
+injured	t21	1	injure	O	O	O+O+O	O	O	O	O	O	VVD	I-NP	injure	VBN	t22:LOC||t33:P||t34:COORD	O
+in	t22	1	in	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	in	IN	t24:PMOD	O
+the	t23	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+bombings	t24	1	bombing	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	NNS	t23:NMOD||t25:NMOD	O
+of	t25	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t28:PMOD||t29:LOC	O
+the	t26	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t27	1	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+Embassies	t28	1	Embassies	O	O	O	O	O	O	O	O	NP0	I-NP	embassy	NNPS	t26:NMOD||t27:NAME	O
+in	t29	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t32:PMOD	O
+Nairobi	t30	1	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
+,	t31	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Kenya	t32	1	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t30:NMOD||t31:P	O
+,	t33	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+and	t34	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t36:CONJ	O
+Dar	t35	1	Dar	O	O	O	O	O	O	O	O	NN1	B-NP	dar	NNP	O	O
+es	t36	1	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t35:SBJ	O
+Salaam	t37	1	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
+,	t38	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Tanzania	t39	1	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	t37:NMOD||t38:P	O
+.	t40	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t41	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-source	t42	2	source	O	O	O	O	O	O	O	O	source	NN	t41:NMOD||t43:NMOD	mainVb
-for	t43	2	for	O	O	O	O	O	O	O	O	for	IN	t46:PMOD	mainVb
-the	t44	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Kenyan	t45	2	kenyan	O	O	O	O	O	O	O	O	kenyan	NNP	O	mainVb
-figures	t46	2	figure	O	O	O	O	O	O	O	O	figure	NNS	t44:NMOD||t45:NMOD	mainVb
-is	t47	2	be	O	O	O	O	O	O	O	O	be	VBZ	t42:SBJ||t51:SBJ||t54:LOC||t62:P	mainVb
-the	t48	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Department	t49	2	Department	O	O	O	O	O	O	O	O	department	NNP	O	mainVb
-of	t50	2	of	O	O	O	O	O	O	O	O	of	IN	O	mainVb
-Relief	t51	2	Relief	O	O	O	O	O	O	O	O	relief	NNP	t48:NAME||t49:NAME||t50:NAME||t52:COORD	mainVb
-and	t52	2	and	O	O	O	O	O	O	O	O	and	CC	t53:CONJ	mainVb
-Rehabilitation	t53	2	Rehabilitation	O	O	O	O	O	O	O	O	rehabilitation	NNP	O	mainVb
-in	t54	2	in	O	O	O	O	O	O	O	O	in	IN	t56:PMOD	mainVb
-the	t55	2	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-office	t56	2	office	O	O	O	O	O	O	O	O	office	NN	t55:NMOD||t57:NMOD	mainVb
-of	t57	2	of	O	O	O	O	O	O	O	O	of	IN	t61:PMOD	mainVb
-President	t58	2	President	O	O	O	O	O	O	O	O	president	NN	O	mainVb
-Daniel	t59	2	Daniel	O	O	O	O	O	O	O	O	daniel	NNP	O	mainVb
-arap	t60	2	arap	O	O	O	O	O	O	O	O	arap	NNP	O	mainVb
-Moi	t61	2	Moi	O	O	O	O	O	O	O	O	moi	NNP	t58:TITLE||t59:NAME||t60:NAME	mainVb
-.	t62	2	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t41	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+source	t42	2	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t41:NMOD||t43:NMOD	O
+for	t43	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t46:PMOD	O
+the	t44	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Kenyan	t45	2	kenyan	O	O	O	O	O	O	O	O	AJ0	I-NP	kenyan	NNP	O	O
+figures	t46	2	figure	O	O	O	O	O	O	O	O	NN2	I-NP	figure	NNS	t44:NMOD||t45:NMOD	O
+is	t47	2	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t42:SBJ||t51:SBJ||t54:LOC||t62:P	mainVb
+the	t48	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Department	t49	2	Department	O	O	O	O	O	O	O	O	NN1	I-NP	department	NNP	O	O
+of	t50	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	O	O
+Relief	t51	2	Relief	O	O	O	O	O	O	O	O	NN1	B-NP	relief	NNP	t48:NAME||t49:NAME||t50:NAME||t52:COORD	O
+and	t52	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t53:CONJ	O
+Rehabilitation	t53	2	Rehabilitation	O	O	O	O	O	O	O	O	NN1	I-NP	rehabilitation	NNP	O	O
+in	t54	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t56:PMOD	O
+the	t55	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+office	t56	2	office	O	O	O	O	O	O	O	O	NN1	I-NP	office	NN	t55:NMOD||t57:NMOD	O
+of	t57	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t61:PMOD	O
+President	t58	2	President	O	O	O	O	O	O	O	O	NP0	B-NP	president	NN	O	O
+Daniel	t59	2	Daniel	O	O	O	O	O	O	O	O	NP0	I-NP	daniel	NNP	O	O
+arap	t60	2	arap	O	O	O	O	O	O	O	O	NN1	I-NP	arap	NNP	O	O
+Moi	t61	2	Moi	O	O	O	O	O	O	O	O	UNC	I-NP	moi	NNP	t58:TITLE||t59:NAME||t60:NAME	O
+.	t62	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-The	t63	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-source	t64	3	source	O	O	O	O	O	O	O	O	source	NN	t63:NMOD||t65:NMOD	mainVb
-for	t65	3	for	O	O	O	O	O	O	O	O	for	IN	t68:PMOD	mainVb
-the	t66	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-Tanzanian	t67	3	tanzanian	O	O	O	O	O	O	O	O	tanzanian	JJ	O	mainVb
-figures	t68	3	figure	O	O	O	O	O	O	O	O	figure	NNS	t66:NMOD||t67:NMOD	mainVb
-is	t69	3	be	O	O	O	O	O	O	O	O	be	VBZ	t64:SBJ||t75:PRD||t77:P	mainVb
-the	t70	3	the	O	O	O	O	O	O	O	O	the	DT	O	mainVb
-U.S.	t71	3	U.S.	O	O	O	O	O	O	O	O	u.s.	NNP	O	mainVb
-Embassy	t72	3	Embassy	O	O	O	O	O	O	O	O	embassy	NNP	t70:NMOD||t71:NAME||t73:LOC	mainVb
-in	t73	3	in	O	O	O	O	O	O	O	O	in	IN	t74:PMOD	mainVb
-Dar	t74	3	Dar	O	O	O	O	O	O	O	O	dar	NNP	O	mainVb
-es	t75	3	e	O	O	O	O	O	O	O	O	e	VBZ	t72:SBJ||t76:OBJ	mainVb
-Salaam	t76	3	salaam	O	O	O	O	O	O	O	O	salaam	NNP	O	mainVb
-.	t77	3	.	O	O	O	O	O	O	O	O	.	.	O	mainVb
+The	t63	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+source	t64	3	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t63:NMOD||t65:NMOD	O
+for	t65	3	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t68:PMOD	O
+the	t66	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+Tanzanian	t67	3	tanzanian	O	O	O	O	O	O	O	O	AJ0	I-NP	tanzanian	JJ	O	O
+figures	t68	3	figure	O	O	O	O	O	O	O	O	NN2	I-NP	figure	NNS	t66:NMOD||t67:NMOD	O
+is	t69	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t64:SBJ||t75:PRD||t77:P	mainVb
+the	t70	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
+U.S.	t71	3	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
+Embassy	t72	3	Embassy	O	O	O	O	O	O	O	O	NP0	I-NP	embassy	NNP	t70:NMOD||t71:NAME||t73:LOC	O
+in	t73	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t74:PMOD	O
+Dar	t74	3	Dar	O	O	O	O	O	O	O	O	NN1	B-NP	dar	NNP	O	O
+es	t75	3	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t72:SBJ||t76:OBJ	O
+Salaam	t76	3	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
+.	t77	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-KENYA	t78	4	KENYA	O	O	O	O	O	O	O	O	kenya	NNP	t79:P||t81:APPO	mainVb
-:	t79	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-Total	t80	4	Total	O	O	O	O	O	O	O	O	total	JJ	O	mainVb
-Dead	t81	4	Dead	O	O	O	O	O	O	O	O	dead	NN	t80:NMOD||t82:P||t87:APPO||t99:P||t101:APPO||t105:P	mainVb
-:	t82	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-192	t83	4	192	O	O	O	O	O	O	O	O	192	CD	O	mainVb
-Americans	t84	4	Americans	O	O	O	O	O	O	O	O	americans	JJ	O	mainVb
-:	t85	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-12	t86	4	12	O	O	O	O	O	O	O	O	12	CD	O	mainVb
-Injured	t87	4	injure	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	injured	NNP	t83:NMOD||t84:NAME||t85:P||t86:NMOD||t88:P||t98:NMOD	mainVb
-:	t88	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-4,877	t89	4	4,877	O	O	O	O	O	O	O	O	4,877	CD	O	mainVb
-Hospitalized	t90	4	hospitalize	O	O	O	O	O	O	O	O	hospitalized	VBN	t91:P||t94:COORD	mainVb
-:	t91	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-542	t92	4	542	O	O	O	O	O	O	O	O	542	CD	O	mainVb
-Treated	t93	4	treat	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	treated	NNP	O	mainVb
-and	t94	4	and	O	O	O	O	O	O	O	O	and	CC	t95:CONJ	mainVb
-discharged	t95	4	discharge	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	discharge	VBD	t96:P	mainVb
-:	t96	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-4,257	t97	4	4,257	O	O	O	O	O	O	O	O	4,257	CD	O	mainVb
-TANZANIA	t98	4	TANZANIA	O	O	O	O	O	O	O	O	tanzania	NNP	t89:NMOD||t90:NMOD||t92:NMOD||t93:NAME||t97:NMOD	mainVb
-:	t99	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-Total	t100	4	total	O	O	O	O	O	O	O	O	total	JJ	O	mainVb
-dead	t101	4	dead	O	O	O	O	O	O	O	O	dead	NN	t100:NMOD||t102:P||t107:APPO||t108:P||t109:APPO	mainVb
-:	t102	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-10	t103	4	10	O	O	O	O	O	O	O	O	10	CD	O	mainVb
-Americans	t104	4	Americans	O	O	O	O	O	O	O	O	americans	JJ	O	mainVb
-:	t105	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-0	t106	4	0	O	O	O	O	O	O	O	O	0	CD	O	mainVb
-Injured	t107	4	injure	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	injured	NNP	t103:NMOD||t104:NAME||t106:NMOD	mainVb
-:	t108	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-74	t109	4	74	O	O	O	O	O	O	O	O	74	CD	t110:APPO||t112:NMOD	mainVb
-Hospitalized	t110	4	hospitalize	O	O	O	O	O	O	O	O	hospitalized	VBN	t111:P	mainVb
-:	t111	4	:	O	O	O	O	O	O	O	O	:	:	O	mainVb
-6	t112	4	6	O	O	O	O	O	O	O	O	6	CD	O	mainVb
+KENYA	t78	4	KENYA	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t79:P||t81:APPO	mainVb
+:	t79	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+Total	t80	4	Total	O	O	O	O	O	O	O	O	AJ0	B-ADJP	total	JJ	O	O
+Dead	t81	4	Dead	O	O	O	O	O	O	O	O	AJ0	I-ADJP	dead	NN	t80:NMOD||t82:P||t87:APPO||t99:P||t101:APPO||t105:P	O
+:	t82	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+192	t83	4	192	O	O	O	O	O	O	O	O	CRD	B-NP	192	CD	O	O
+Americans	t84	4	Americans	O	O	O	O	O	O	O	O	NN2	I-NP	americans	JJ	O	O
+:	t85	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+12	t86	4	12	O	O	O	O	O	O	O	O	CRD	B-NP	12	CD	O	O
+Injured	t87	4	injure	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-NP	injured	NNP	t83:NMOD||t84:NAME||t85:P||t86:NMOD||t88:P||t98:NMOD	O
+:	t88	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+4,877	t89	4	4,877	O	O	O	O	O	O	O	O	CRD	B-NP	4,877	CD	O	O
+Hospitalized	t90	4	hospitalize	O	O	O	O	O	O	O	O	AJ0	I-NP	hospitalized	VBN	t91:P||t94:COORD	O
+:	t91	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+542	t92	4	542	O	O	O	O	O	O	O	O	CRD	B-NP	542	CD	O	O
+Treated	t93	4	treat	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-NP	treated	NNP	O	O
+and	t94	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t95:CONJ	O
+discharged	t95	4	discharge	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	I-NP	discharge	VBD	t96:P	O
+:	t96	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+4,257	t97	4	4,257	O	O	O	O	O	O	O	O	CRD	B-NP	4,257	CD	O	O
+TANZANIA	t98	4	TANZANIA	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	t89:NMOD||t90:NMOD||t92:NMOD||t93:NAME||t97:NMOD	O
+:	t99	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+Total	t100	4	total	O	O	O	O	O	O	O	O	AJ0	B-ADJP	total	JJ	O	O
+dead	t101	4	dead	O	O	O	O	O	O	O	O	AJ0	I-ADJP	dead	NN	t100:NMOD||t102:P||t107:APPO||t108:P||t109:APPO	O
+:	t102	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+10	t103	4	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
+Americans	t104	4	Americans	O	O	O	O	O	O	O	O	NN2	I-NP	americans	JJ	O	O
+:	t105	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+0	t106	4	0	O	O	O	O	O	O	O	O	CRD	B-NP	0	CD	O	O
+Injured	t107	4	injure	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-NP	injured	NNP	t103:NMOD||t104:NAME||t106:NMOD	O
+:	t108	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+74	t109	4	74	O	O	O	O	O	O	O	O	CRD	B-NP	74	CD	t110:APPO||t112:NMOD	O
+Hospitalized	t110	4	hospitalize	O	O	O	O	O	O	O	O	AJ0	I-NP	hospitalized	VBN	t111:P	O
+:	t111	4	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
+6	t112	4	6	O	O	O	O	O	O	O	O	CRD	B-NP	6	CD	O	O
 
