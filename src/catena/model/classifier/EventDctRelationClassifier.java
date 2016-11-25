@@ -1,38 +1,22 @@
 package catena.model.classifier;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import catena.model.classifier.PairClassifier.VectorClassifier;
-import de.bwaldvogel.liblinear.Feature;
-import de.bwaldvogel.liblinear.FeatureNode;
-import de.bwaldvogel.liblinear.Linear;
-import de.bwaldvogel.liblinear.Model;
-import de.bwaldvogel.liblinear.Parameter;
-import de.bwaldvogel.liblinear.Problem;
-import de.bwaldvogel.liblinear.SolverType;
-import evaluator.PairEvaluator;
-import model.feature.CausalSignalList;
-import model.feature.PairFeatureVector;
-import model.feature.TemporalSignalList;
-import model.feature.FeatureEnum.FeatureName;
-import parser.TXPParser;
-import parser.TimeMLParser;
-import parser.entities.EntityEnum;
-import server.RemoteServer;
-import weka.classifiers.Classifier;
-import weka.classifiers.trees.RandomForest;
+import catena.model.feature.CausalSignalList;
+import catena.model.feature.EventTimexFeatureVector;
+import catena.model.feature.PairFeatureVector;
+import catena.model.feature.TemporalSignalList;
+import catena.model.feature.FeatureEnum.FeatureName;
+import catena.model.feature.FeatureEnum.PairType;
+import catena.parser.entities.Doc;
+import catena.parser.entities.Entity;
+import catena.parser.entities.EntityEnum;
+import catena.parser.entities.TemporalRelation;
+import catena.parser.entities.Timex;
 
 public class EventDctRelationClassifier extends EventTimexRelationClassifier {
-	
-	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-	private String[] labelDense = {"BEFORE", "AFTER", "SIMULTANEOUS", 
-			"INCLUDES", "IS_INCLUDED", "VAGUE"};
 	
 	protected void initFeatureVector() {
 		
@@ -96,6 +80,67 @@ public class EventDctRelationClassifier extends EventTimexRelationClassifier {
 			};
 			featureList = Arrays.asList(etFeatures);
 		}
+	}
+	
+	public static List<PairFeatureVector> getEventDctTlinksPerFile(Doc doc, PairClassifier etRelCls,
+			boolean train, boolean goldCandidate) throws Exception {
+		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+		
+		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
+		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
+		
+		for (TemporalRelation tlink : candidateTlinks) {
+			
+			if (!tlink.getSourceID().equals(tlink.getTargetID())
+					&& doc.getEntities().containsKey(tlink.getSourceID())
+					&& doc.getEntities().containsKey(tlink.getTargetID())
+					) {
+				
+				Entity e1 = doc.getEntities().get(tlink.getSourceID());
+				Entity e2 = doc.getEntities().get(tlink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_timex)) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+					
+					if (((Timex) etfv.getE2()).isDct()) {
+						
+						// Add features to feature vector
+						for (FeatureName f : etRelCls.featureList) {
+							if (etRelCls.classifier.equals(VectorClassifier.libsvm) ||
+									etRelCls.classifier.equals(VectorClassifier.liblinear)) {								
+								etfv.addBinaryFeatureToVector(f);
+								
+							} else if (etRelCls.classifier.equals(VectorClassifier.none)) {								
+								etfv.addToVector(f);
+							}
+						}
+						
+						if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
+								etRelCls.classifier.equals(VectorClassifier.liblinear)) {
+							if (train) etfv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
+							else etfv.addBinaryFeatureToVector(FeatureName.label);
+							
+						} else if (etRelCls.classifier.equals(VectorClassifier.none)){
+							if (train) etfv.addToVector(FeatureName.labelCollapsed);
+							else etfv.addToVector(FeatureName.label);
+						}
+						
+						if (train && !etfv.getLabel().equals("NONE")) {
+							fvList.add(etfv);
+						} else if (!train) { //test
+							//add all
+							fvList.add(etfv);
+						}
+					}
+				}
+			}
+		}
+		return fvList;
 	}
 	
 	public EventDctRelationClassifier(String taskName, 

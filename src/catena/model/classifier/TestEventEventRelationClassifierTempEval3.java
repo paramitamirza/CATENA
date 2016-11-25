@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 import catena.model.classifier.PairClassifier.VectorClassifier;
+import catena.parser.ColumnParser;
+import catena.parser.TimeMLToColumns;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import evaluator.PairEvaluator;
 import evaluator.TempEval3;
@@ -36,78 +38,17 @@ import task.SortMapByValue;
 
 public class TestEventEventRelationClassifierTempEval3 {
 	
+	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+	
 	public TestEventEventRelationClassifierTempEval3() {
 		
 	}
 	
-	public List<PairFeatureVector> getEventEventTlinksPerFile(TXPParser txpParser, TimeMLParser tmlParser, 
-			File txpFile, File tmlFile, PairClassifier eeRelCls,
-			boolean train) throws Exception {
-		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
-		
-		Doc docTxp = txpParser.parseDocument(txpFile.getPath());
-		Doc docTml = tmlParser.parseDocument(tmlFile.getPath());
-		
-		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
-		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-	    
-		//for (TemporalRelation tlink : docTxp.getTlinks()) {	//for every TLINK in TXP file: candidate pairs
-		for (TemporalRelation tlink : docTml.getTlinks()) {	//for every TLINK in TML file: gold annotated pairs
-			if (!tlink.getSourceID().equals(tlink.getTargetID())
-					&& docTxp.getEntities().containsKey(tlink.getSourceID())
-					&& docTxp.getEntities().containsKey(tlink.getTargetID())
-					&& !tlink.getRelType().equals("NONE")
-					) {	//classifying the relation task
-				
-				Entity e1 = docTxp.getEntities().get(tlink.getSourceID());
-				Entity e2 = docTxp.getEntities().get(tlink.getTargetID());
-				PairFeatureVector fv = new PairFeatureVector(docTxp, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
-				
-				if (fv.getPairType().equals(PairType.event_event)) {
-					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-					
-					if (eeRelCls.classifier.equals(VectorClassifier.yamcha)) {
-						eefv.addToVector(FeatureName.id);
-					}
-					
-					//Add features to feature vector
-					for (FeatureName f : eeRelCls.featureList) {
-						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) ||
-								eeRelCls.classifier.equals(VectorClassifier.liblinear) ||
-								eeRelCls.classifier.equals(VectorClassifier.weka)) {
-							eefv.addBinaryFeatureToVector(f);
-						} else if (eeRelCls.classifier.equals(VectorClassifier.yamcha) ||
-								eeRelCls.classifier.equals(VectorClassifier.none)) {
-							eefv.addToVector(f);
-						}
-					}
-					
-					if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-							eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
-						if (train) eefv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
-						else eefv.addBinaryFeatureToVector(FeatureName.label);
-					} else if (eeRelCls.classifier.equals(VectorClassifier.yamcha) ||
-							eeRelCls.classifier.equals(VectorClassifier.weka) ||
-							eeRelCls.classifier.equals(VectorClassifier.none)){
-						if (train) eefv.addToVector(FeatureName.labelCollapsed);
-						else eefv.addToVector(FeatureName.label);
-					}
-						
-					if (train && !eefv.getVectors().get(eefv.getVectors().size()-1).equals("0")
-							&& !eefv.getVectors().get(eefv.getVectors().size()-1).equals("NONE")) {
-						fvList.add(eefv);
-					} else if (!train){ //test, add all
-						fvList.add(eefv);
-					}
-				}
-			}
-		}
-		return fvList;
-	}
-	
-	public List<PairFeatureVector> getEventEventTlinks(TXPParser txpParser, TimeMLParser tmlParser, 
-			String dirTxpPath, String dirTmlPath, PairClassifier etRelCls,
-			boolean train) throws Exception {
+	public List<PairFeatureVector> getEventEventTlinks(String tmlDirpath, 
+			TimeMLToColumns tmlToCol, ColumnParser colParser, 
+			PairClassifier etRelCls, boolean train, 
+			boolean goldCandidate, boolean etFeature) throws Exception {
 		File[] txpFiles = new File(dirTxpPath).listFiles();		
 		if (dirTxpPath == null) return null;
 		

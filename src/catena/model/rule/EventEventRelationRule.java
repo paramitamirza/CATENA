@@ -28,6 +28,9 @@ public class EventEventRelationRule {
 	private Boolean identityRel=true;
 	public static Integer numReason=0;
 	
+	private static String[] ruleTlinks = {"BEFORE", "AFTER", "SIMULTANEOUS", "INCLUDES", "IS_INCLUDED"};
+	public static List<String> ruleTlinkTypes = Arrays.asList(ruleTlinks);
+	
 	public EventEventRelationRule(PairFeatureVector fv) {
 		
 	}

@@ -1,8 +1,6 @@
 package catena.model.classifier;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -24,7 +22,6 @@ import libsvm.svm_parameter;
 import libsvm.svm_problem;
 
 import catena.evaluator.PairEvaluator;
-import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
@@ -62,11 +59,11 @@ public class EventTimexRelationClassifier extends PairClassifier {
 			
 		} else {
 			FeatureName[] etFeatures = {
-					//FeatureName.pos,		//temporary because no TextPro
+					FeatureName.pos,
 //					Feature.mainpos,
-					//FeatureName.samePos,	//temporary because no TextPro
+					FeatureName.samePos,
 //					Feature.sameMainPos,
-					//FeatureName.chunk,	//temporary because no TextPro 
+					FeatureName.chunk,
 					FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
 					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
 					FeatureName.dct,
@@ -75,12 +72,12 @@ public class EventTimexRelationClassifier extends PairClassifier {
 					FeatureName.hasModal,
 //					FeatureName.modalVerb,
 //					FeatureName.depTmxPath,
-					FeatureName.tempSignalClusText,		//TimeBank-Dense
-					FeatureName.tempSignalPos,			//TimeBank-Dense
-					//FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense	//temporary because no TextPro
-//					FeatureName.tempSignal1ClusText,	//TempEval3
-//					FeatureName.tempSignal1Pos,			//TempEval3
-//					FeatureName.tempSignal1Dep			//TempEval3
+//					FeatureName.tempSignalClusText,		//TimeBank-Dense
+//					FeatureName.tempSignalPos,			//TimeBank-Dense
+//					FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
+					FeatureName.tempSignal1ClusText,	//TempEval3
+					FeatureName.tempSignal1Pos,			//TempEval3
+					FeatureName.tempSignal1Dep			//TempEval3
 //					FeatureName.tempSignal2ClusText,
 //					FeatureName.tempSignal2Pos,
 //					FeatureName.tempSignal2Dep,
@@ -98,9 +95,10 @@ public class EventTimexRelationClassifier extends PairClassifier {
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
 		
 		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
-		if (goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
-		else candidateTlinks = doc.getCandidateTlinks();		//candidate pairs
+		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
+		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
 		
+		//timex-DCT rules
 		Map<String,String> ttlinks = new HashMap<String, String>();
 		if (ttFeature) {
 			ttlinks = TimexTimexRelationRule.getTimexTimexRuleRelation(doc);
@@ -121,7 +119,7 @@ public class EventTimexRelationClassifier extends PairClassifier {
 					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
 					
 					if (!((Timex) etfv.getE2()).isDct()) {
-					
+						
 						// Add features to feature vector
 						for (FeatureName f : etRelCls.featureList) {
 							if (etRelCls.classifier.equals(VectorClassifier.libsvm) ||
@@ -133,8 +131,8 @@ public class EventTimexRelationClassifier extends PairClassifier {
 							}
 						}
 						
+						//Add timex-DCT TLINK type feature to feature vector
 						if (ttFeature) {
-							//Add timex-DCT TLINK type feature to feature vector
 							String timexDct = "O";
 							if (ttlinks.containsKey(etfv.getE2().getID() + "\t" + doc.getDct().getID())) {
 								timexDct = ttlinks.get(etfv.getE2().getID() + "\t" + doc.getDct().getID());
@@ -158,17 +156,12 @@ public class EventTimexRelationClassifier extends PairClassifier {
 							else etfv.addToVector(FeatureName.label);
 						}
 						
-//						if (train && !fv.getVectors().get(fv.getVectors().size()-1).equals("0")
-//								&& !fv.getVectors().get(fv.getVectors().size()-1).equals("NONE")) {
-//							fvList.add(etfv);
-//						} 
-//						if (train && !etfv.getLabel().equals("NONE")) {
-//							fvList.add(etfv);
-//						} else if (!train){ //test
-//							//add all
-//							fvList.add(etfv);
-//						}
-						fvList.add(etfv);
+						if (train && !etfv.getLabel().equals("NONE")) {
+							fvList.add(etfv);
+						} else if (!train) { //test
+							//add all
+							fvList.add(etfv);
+						}
 					}
 				}
 			}
@@ -214,7 +207,8 @@ public class EventTimexRelationClassifier extends PairClassifier {
 		int nInstances = vectors.size();
 		int nFeatures = vectors.get(0).getVectors().size()-1;
 		
-		System.out.println(nInstances + "-" + vectors.get(0).getVectors().size());
+		System.err.println("Number of instances: " + nInstances);
+		System.err.println("Number of features: " + vectors.get(0).getVectors().size());
 		
 		if (classifier.equals(VectorClassifier.liblinear)
 				|| classifier.equals(VectorClassifier.logit)

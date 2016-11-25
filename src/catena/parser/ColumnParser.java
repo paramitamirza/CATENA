@@ -67,6 +67,7 @@ public class ColumnParser {
 	}
 	
 	public static void setCandidateTlinks(Doc doc) {
+		doc.setCandidateTlinks(new ArrayList<TemporalRelation>());
 		ArrayList<TemporalRelation> tlinkArr = doc.getCandidateTlinks();
 		
 		Timex dct = doc.getDct();
@@ -302,7 +303,7 @@ public class ColumnParser {
 			}
 			
 			//dependency relations
-			if (getIndex(Field.main_verb) != -1 && getIndex(Field.deps) != -1) {
+			if (getIndex(Field.deps) != -1) {
 				tok.setDependencyRel(parseDependency(cols.get(getIndex(Field.deps))));
 			}
 			
@@ -619,37 +620,38 @@ public class ColumnParser {
 	
 	public static void main(String [] args) {
 		
-		// Parse a document in column format (resulting from NewsReader text processing)
-		try {
-			Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
-					Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
-					Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
-					Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
-					Field.main_verb, Field.connective, Field.morpho,
-					Field.tense_aspect_pol, Field.tlink};
-			ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
-			
-			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"), true);
-			
-			//TimeML instances and links (parsed direcly from TimeML format)
-			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc);
-			
-			colParser.printParseResult(doc);
-						
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		// Parse a document in column format (resulting from NewsReader text processing)
+//		try {
+//			Field[] fields = {Field.token, Field.token_id, Field.sent_id, Field.pos, 
+//					Field.lemma, Field.deps, Field.tmx_id, Field.tmx_type, Field.tmx_value, 
+//					Field.ner, Field.ev_class, Field.ev_id, Field.role1, Field.role2, 
+//					Field.role3, Field.is_arg_pred, Field.has_semrole, Field.chunk, 
+//					Field.main_verb, Field.connective, Field.morpho,
+//					Field.tense_aspect_pol, Field.tlink};
+//			ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN, fields);
+//			
+//			Doc doc = colParser.parseDocument(new File("./data/example_column/wsj_1014.tml.txp"), true);
+//			
+//			//TimeML instances and links (parsed direcly from TimeML format)
+//			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc);
+//			
+//			colParser.printParseResult(doc);
+//						
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 		// Parse a list of string in column format (directly converted from a TimeML document)
 		try {
 			TimeMLToColumns tmlToCol = new TimeMLToColumns();
-			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
+			List<String> columns = tmlToCol.convert(new File("./data/TempEval3-train_TML/APW19980322.0749.tml"), true);
 			ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN);
-			Doc doc2 = colParser2.parseLines(columns);
+//			Doc doc2 = colParser2.parseLines(columns);
+			Doc doc2 = colParser2.parseDocument(new File("./data/TempEval3-train_TML/APW19980322.0749.col"), false);
 			
 			//TimeML instances and links (parsed direcly from TimeML format)
-			TimeMLParser.parseTimeML(new File("./data/example_TML/wsj_1014.tml"), doc2);
+			TimeMLParser.parseTimeML(new File("./data/TempEval3-train_TML/APW19980322.0749.tml"), doc2);
 			
 			//Add the TLINK candidates
 			setCandidateTlinks(doc2);
