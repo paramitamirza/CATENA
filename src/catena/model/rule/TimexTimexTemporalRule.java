@@ -18,7 +18,7 @@ import catena.parser.entities.EntityEnum;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 
-public class TimexTimexRelationRule {
+public class TimexTimexTemporalRule {
 	
 	private String relType;
 	private Boolean identityRel=true;
@@ -31,8 +31,8 @@ public class TimexTimexRelationRule {
 			for (int j = i; j < entArr.length; j++) {
 				if (!entArr[i].equals(entArr[j]) && doc.getEntities().get(entArr[i]) instanceof Timex && 
 						doc.getEntities().get(entArr[j]) instanceof Timex) {
-					TimexTimexRelationRule timextimex = 
-							new TimexTimexRelationRule(((Timex)doc.getEntities().get(entArr[i])), 
+					TimexTimexTemporalRule timextimex = 
+							new TimexTimexTemporalRule(((Timex)doc.getEntities().get(entArr[i])), 
 							((Timex)doc.getEntities().get(entArr[j])), doc.getDct(), false);
 					if (!timextimex.getRelType().equals("O")) {
 						pair = ((String) entArr[i]) + "," + ((String) entArr[j]);
@@ -77,9 +77,9 @@ public class TimexTimexRelationRule {
 					} else if (ttlinks.containsKey(ts)) {
 						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
 								tlink.getRelType() + "\t" + TemporalRelation.getInverseRelation(ttlinks.get(ts)));
-					} else {
-						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
-								tlink.getRelType() + "\tNONE");
+//					} else {
+//						tt.add(tlink.getSourceID() + "\t" + tlink.getTargetID() + "\t" + 
+//								tlink.getRelType() + "\tNONE");
 					}
 				}
 			}
@@ -87,7 +87,7 @@ public class TimexTimexRelationRule {
 		return tt;
 	}
 	
-	public TimexTimexRelationRule(Timex t1, Timex t2, Timex dct, Boolean identityRel) {
+	public TimexTimexTemporalRule(Timex t1, Timex t2, Timex dct, Boolean identityRel) {
 		
 		this.setRelType("O");	
 		this.setIdentityRel(identityRel);

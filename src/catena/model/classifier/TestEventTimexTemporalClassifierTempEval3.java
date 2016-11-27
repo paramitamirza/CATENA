@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import catena.model.CandidateLinks;
 import catena.model.classifier.PairClassifier;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
@@ -14,12 +15,12 @@ import catena.parser.entities.Doc;
 import catena.parser.entities.EntityEnum;
 import catena.evaluator.PairEvaluator;
 
-public class TestEventTimexRelationClassifierTempEval3 {
+public class TestEventTimexTemporalClassifierTempEval3 {
 	
 	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 	
-	public TestEventTimexRelationClassifierTempEval3() {
+	public TestEventTimexTemporalClassifierTempEval3() {
 		
 	}
 	
@@ -43,10 +44,10 @@ public class TestEventTimexRelationClassifierTempEval3 {
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
-				ColumnParser.setCandidateTlinks(doc);
+				if (!train) CandidateLinks.setCandidateTlinks(doc);
 				
 				// Get the feature vectors
-				fvList.addAll(EventTimexRelationClassifier.getEventTimexTlinksPerFile(doc, etRelCls, 
+				fvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etRelCls, 
 						train, goldCandidate, ttFeature));
 			}
 		}
@@ -55,16 +56,16 @@ public class TestEventTimexRelationClassifierTempEval3 {
 
 	public static void main(String [] args) throws Exception {
 		
-		TestEventTimexRelationClassifierTempEval3 test = new TestEventTimexRelationClassifierTempEval3();
+		TestEventTimexTemporalClassifierTempEval3 test = new TestEventTimexTemporalClassifierTempEval3();
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns();
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
-		EventTimexRelationClassifier etCls = new EventTimexRelationClassifier("te3", "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
 		
-		boolean goldCandidate = true;
+		boolean goldCandidate = false;
 		boolean ttFeature = true;
 		
 		// TRAIN

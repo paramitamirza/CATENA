@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import catena.evaluator.PairEvaluator;
+import catena.model.CandidateLinks;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
@@ -46,14 +47,18 @@ public class TestEventEventRelationRuleTempEval3 {
 			if (tmlFile.getName().contains(".tml")) {
 				System.out.println("Processing " + tmlFile.getPath());
 				
-				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, true);
-				Doc doc = colParser.parseLines(columns);
+				// File pre-processing...				
+//				List<String> columns = tmlToCol.convert(tmlFile, true);
+//				Doc doc = colParser.parseLines(columns);
+				
+//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
 				TimeMLParser.parseTimeML(tmlFile, doc);
-				ColumnParser.setCandidateTlinks(doc);
+				CandidateLinks.setCandidateTlinks(doc);
 							
 				// Applying rules...	
-				List<String> eePerFile = EventEventRelationRule.getEventEventTlinksPerFile(doc, goldCandidate);
+				List<String> eePerFile = EventEventTemporalRule.getEventEventTlinksPerFile(doc, goldCandidate);
 				ee.addAll(eePerFile);
 				
 				// Evaluate the results...

@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import catena.evaluator.PairEvaluator;
+import catena.model.CandidateLinks;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -32,10 +33,10 @@ public class TestTimexTimexRelationRuleTempEval3 {
 				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
 				TimeMLParser.parseTimeML(tmlFile, doc);
-				ColumnParser.setCandidateTlinks(doc);
+				CandidateLinks.setCandidateTlinks(doc);
 				
 				// Applying rules...
-				List<String> ttPerFile = TimexTimexRelationRule.getTimexTimexTlinksPerFile(doc, goldCandidate);
+				List<String> ttPerFile = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, goldCandidate);
 				tt.addAll(ttPerFile);
 				
 				// Evaluate the results...

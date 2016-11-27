@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import catena.evaluator.PairEvaluator;
+import catena.model.CandidateLinks;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
@@ -50,10 +51,10 @@ public class TestEventDctRelationRuleTempEval3 {
 				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
 				TimeMLParser.parseTimeML(tmlFile, doc);
-				ColumnParser.setCandidateTlinks(doc);
+				CandidateLinks.setCandidateTlinks(doc);
 							
 				// Applying rules...	
-				List<String> etPerFile = EventTimexRelationRule.getEventDctTlinksPerFile(doc, goldCandidate);
+				List<String> etPerFile = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, goldCandidate);
 				et.addAll(etPerFile);
 				
 				// Evaluate the results...

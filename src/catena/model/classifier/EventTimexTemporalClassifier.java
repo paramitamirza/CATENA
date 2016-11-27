@@ -7,108 +7,93 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import catena.model.classifier.PairClassifier.VectorClassifier;
+import de.bwaldvogel.liblinear.*;
+import libsvm.*;
+
+import catena.evaluator.PairEvaluator;
+import catena.model.feature.CausalSignalList;
+import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
+import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
+import catena.model.rule.EventTimexTemporalRule;
+import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.entities.Doc;
-import catena.model.classifier.EventTimexRelationClassifier;
-import catena.model.classifier.PairClassifier;
-import catena.model.feature.CausalSignalList;
-import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
-import catena.model.feature.TemporalSignalList;
-import catena.model.rule.EventEventRelationRule;
-import catena.model.rule.EventTimexRelationRule;
-import catena.parser.ColumnParser;
-import catena.parser.TimeMLParser;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
-import catena.evaluator.PairEvaluator;
 
-import de.bwaldvogel.liblinear.*;
 
-public class EventEventRelationClassifier extends PairClassifier {
+public class EventTimexTemporalClassifier extends PairClassifier {
 	
-	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+	protected String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-	private String[] labelDense = {"BEFORE", "AFTER", "SIMULTANEOUS", 
+	protected String[] labelDense = {"BEFORE", "AFTER", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "VAGUE"};
 	
-	private void initFeatureVector() {
+	protected void initFeatureVector() {
 		
-		super.setPairType(PairType.event_event);
+		super.setPairType(PairType.event_timex);
 				
 		if (classifier.equals(VectorClassifier.none)) {
-			FeatureName[] eeFeatures = {
-					FeatureName.tokenSpace, FeatureName.lemmaSpace,
+			FeatureName[] etFeatures = {
+					FeatureName.tokenSpace, 
+					FeatureName.lemmaSpace,
 					FeatureName.tokenChunk,
-					FeatureName.tempMarkerTextSpace, FeatureName.causMarkerTextSpace
+					FeatureName.tempMarkerTextSpace
 			};
-			featureList = Arrays.asList(eeFeatures);
+			featureList = Arrays.asList(etFeatures);
 			
 		} else {
-			FeatureName[] eeFeatures = {
-					FeatureName.pos, /*Feature.mainpos,*/
-					FeatureName.samePos, /*Feature.sameMainPos,*/
+			FeatureName[] etFeatures = {
+					FeatureName.pos,
+//					Feature.mainpos,
+					FeatureName.samePos,
+//					Feature.sameMainPos,
 					FeatureName.chunk,
-					FeatureName.entDistance, FeatureName.sentDistance,
+					FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
 					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
-					FeatureName.sameEventClass, FeatureName.sameTenseAspect, /*Feature.sameAspect,*/ FeatureName.samePolarity,
-					FeatureName.depEvPath,			
-					FeatureName.mainVerb,
+					FeatureName.dct,
+					FeatureName.timexType, 				
+					FeatureName.mainVerb, 
 					FeatureName.hasModal,
 //					FeatureName.modalVerb,
-//					FeatureName.tempSignalClusText,
-//					FeatureName.tempSignalPos,
-//					FeatureName.tempSignalDep1Dep2,
-//					FeatureName.tempSignal1ClusText,
-//					FeatureName.tempSignal1Pos,
-//					FeatureName.tempSignal1Dep,
-					FeatureName.tempSignal2ClusText,
-					FeatureName.tempSignal2Pos,
-					FeatureName.tempSignal2Dep,
-//					FeatureName.causMarkerClusText,
-//					FeatureName.causMarkerPos,
-//					/*FeatureName.coref,*/
-					FeatureName.wnSim
+//					FeatureName.depTmxPath,
+//					FeatureName.tempSignalClusText,		//TimeBank-Dense
+//					FeatureName.tempSignalPos,			//TimeBank-Dense
+//					FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
+					FeatureName.tempSignal1ClusText,	//TempEval3
+					FeatureName.tempSignal1Pos,			//TempEval3
+					FeatureName.tempSignal1Dep			//TempEval3
+//					FeatureName.tempSignal2ClusText,
+//					FeatureName.tempSignal2Pos,
+//					FeatureName.tempSignal2Dep,
+//					FeatureName.timexRule
 			};
-			featureList = Arrays.asList(eeFeatures);
+			featureList = Arrays.asList(etFeatures);
 		}
 	}
 	
-	public List<PairFeatureVector> getEventEventTlinksPerFile(Doc doc, PairClassifier eeRelCls,
-			boolean train, boolean goldCandidate, boolean etFeature) throws Exception {
+	public static List<PairFeatureVector> getEventTimexTlinksPerFile(Doc doc, PairClassifier etRelCls,
+			boolean train, boolean goldCandidate, boolean ttFeature) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-	    
+		
 		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
 		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
 		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
 		
-		//event-DCT rules
-		Map<String, String> eDctRules = new HashMap<String, String>();
-		if (etFeature) {
-			EventDctRelationClassifier dctCls = new EventDctRelationClassifier("te3", "liblinear");
-			List<PairFeatureVector> etFvList = EventDctRelationClassifier.getEventDctTlinksPerFile(doc, dctCls, 
-					train, goldCandidate);
-			
-			for (PairFeatureVector fv : etFvList) {
-				EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-				EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
-						doc, etfv.getMateDependencyPath());
-				if (!etRule.getRelType().equals("O")) {
-					eDctRules.put(etfv.getE1().getID(), etRule.getRelType());
-				}
-			}
+		//timex-DCT rules
+		Map<String,String> ttlinks = new HashMap<String, String>();
+		if (ttFeature) {
+			ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
 		}
 		
-		for (TemporalRelation tlink : candidateTlinks) {	
+		for (TemporalRelation tlink : candidateTlinks) {
 			
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
 					&& doc.getEntities().containsKey(tlink.getSourceID())
@@ -119,64 +104,68 @@ public class EventEventRelationClassifier extends PairClassifier {
 				Entity e2 = doc.getEntities().get(tlink.getTargetID());
 				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
 				
-				if (fv.getPairType().equals(PairType.event_event)) {
-					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+				if (fv.getPairType().equals(PairType.event_timex)) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
 					
-					//Add features to feature vector
-					for (FeatureName f : eeRelCls.featureList) {
-						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) ||
-								eeRelCls.classifier.equals(VectorClassifier.liblinear)) {								
-							eefv.addBinaryFeatureToVector(f);
-							
-						} else if (eeRelCls.classifier.equals(VectorClassifier.none)) {								
-							eefv.addToVector(f);
-						}
-					}
-					
-					//Add event-timex/DCT TLINK type feature to feature vector
-					if (etFeature) {
-						String etRule1 = "O", etRule2 = "O";
-						if (eDctRules.containsKey(eefv.getE1().getID())) etRule1 = eDctRules.get(eefv.getE1().getID());
-						if (eDctRules.containsKey(eefv.getE2().getID())) etRule2 = eDctRules.get(eefv.getE2().getID());
-						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-								eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
-							eefv.addBinaryFeatureToVector("etRule1", etRule1, EventEventRelationRule.ruleTlinkTypes);
-							eefv.addBinaryFeatureToVector("etRule2", etRule2, EventEventRelationRule.ruleTlinkTypes);
-						} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
-							eefv.addToVector("etRule1", etRule1);
-							eefv.addToVector("etRule2", etRule2);
-						}
-					}					
-					
-					if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-							eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
-						if (train) eefv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
-						else eefv.addBinaryFeatureToVector(FeatureName.label);
+					if (!((Timex) etfv.getE2()).isDct()) {
 						
-					} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
-						if (train) eefv.addToVector(FeatureName.labelCollapsed);
-						else eefv.addToVector(FeatureName.label);
-					}
-					
-					if (train && !eefv.getLabel().equals("NONE")) {
-						fvList.add(eefv);
-					} else if (!train) { //test
-						//add all
-						fvList.add(eefv);
+						// Add features to feature vector
+						for (FeatureName f : etRelCls.featureList) {
+							if (etRelCls.classifier.equals(VectorClassifier.libsvm) ||
+									etRelCls.classifier.equals(VectorClassifier.liblinear)) {								
+								etfv.addBinaryFeatureToVector(f);
+								
+							} else if (etRelCls.classifier.equals(VectorClassifier.none)) {								
+								etfv.addToVector(f);
+							}
+						}
+						
+						//Add timex-DCT TLINK type feature to feature vector
+						if (ttFeature) {
+							String timexDct = "O";
+							if (ttlinks.containsKey(etfv.getE2().getID() + "\t" + doc.getDct().getID())) {
+								timexDct = ttlinks.get(etfv.getE2().getID() + "\t" + doc.getDct().getID());
+							}
+							if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
+									etRelCls.classifier.equals(VectorClassifier.liblinear)) {
+								etfv.addBinaryFeatureToVector("timexDct", timexDct, EventTimexTemporalRule.ruleTlinkTypes);
+								
+							} else if (etRelCls.classifier.equals(VectorClassifier.none)){
+								etfv.addToVector("timexDct", timexDct);
+							}
+						}
+						
+						if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
+								etRelCls.classifier.equals(VectorClassifier.liblinear)) {
+							if (train) etfv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
+							else etfv.addBinaryFeatureToVector(FeatureName.label);
+							
+						} else if (etRelCls.classifier.equals(VectorClassifier.none)){
+							if (train) etfv.addToVector(FeatureName.labelCollapsed);
+							else etfv.addToVector(FeatureName.label);
+						}
+						
+						if (train && !etfv.getLabel().equals("NONE")) {
+							fvList.add(etfv);
+						} else if (!train) { //test
+							//add all
+							fvList.add(etfv);
+						}
 					}
 				}
 			}
 		}
+		
 		return fvList;
 	}
 	
-	public EventEventRelationClassifier(String taskName, 
+	public EventTimexTemporalClassifier(String taskName, 
 			String classifier) throws Exception {
 		super(taskName, classifier);
 		initFeatureVector();
 	}
 	
-	public EventEventRelationClassifier(String taskName, 
+	public EventTimexTemporalClassifier(String taskName, 
 			String classifier, String feature, 
 			String lblGrouping, String probVecFile) throws Exception {
 		super(taskName, classifier,
@@ -184,14 +173,14 @@ public class EventEventRelationClassifier extends PairClassifier {
 		initFeatureVector();
 	}
 	
-	public EventEventRelationClassifier(String taskName,
+	public EventTimexTemporalClassifier(String taskName,
 			String classifier, String inconsistency) throws Exception {
 		super(taskName, classifier,
 				inconsistency);
 		initFeatureVector();
 	}
 
-	public EventEventRelationClassifier(String taskName, 
+	public EventTimexTemporalClassifier(String taskName, 
 			String classifier, String feature, 
 			String lblGrouping, String probVecFile,
 			String inconsistency) throws Exception {
@@ -207,6 +196,9 @@ public class EventEventRelationClassifier extends PairClassifier {
 		int nInstances = vectors.size();
 		int nFeatures = vectors.get(0).getVectors().size()-1;
 		
+		System.err.println("Number of instances: " + nInstances);
+		System.err.println("Number of features: " + vectors.get(0).getVectors().size());
+		
 		if (classifier.equals(VectorClassifier.liblinear)
 				|| classifier.equals(VectorClassifier.logit)
 				) {
@@ -217,8 +209,8 @@ public class EventEventRelationClassifier extends PairClassifier {
 			int row = 0;
 			for (PairFeatureVector fv : vectors) {				
 				int idx = 1, col = 0;
-				labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
 				for (int i=0; i<nFeatures; i++) {
+					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
 					instances[row][col] = new FeatureNode(idx, Double.valueOf(fv.getVectors().get(i)));
 					idx ++;
 					col ++;
@@ -302,6 +294,53 @@ public class EventEventRelationClassifier extends PairClassifier {
 		}
 	}
 	
+	public svm_model trainSVM(List<PairFeatureVector> vectors) throws Exception {
+		
+		System.err.println("Train model...");
+
+		int nInstances = vectors.size();
+		int nFeatures = vectors.get(0).getVectors().size()-1;
+		
+		if (classifier.equals(VectorClassifier.libsvm)) {
+			//Prepare training data
+			svm_problem prob = new svm_problem();
+			prob.l = nInstances;
+			prob.x = new svm_node[nInstances][nFeatures];
+			prob.y = new double[nInstances];
+			
+			int row = 0;
+			for (PairFeatureVector fv : vectors) {				
+				int idx = 1, col = 0;
+				for (int i=0; i<nFeatures; i++) {
+					svm_node node = new svm_node();
+					node.index = idx;
+					node.value = Double.valueOf(fv.getVectors().get(i));
+					prob.x[row][col] = node;
+					idx ++;
+					col ++;
+				}
+				prob.y[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
+				row ++;
+			}
+			
+			//Train
+			svm_parameter param = new svm_parameter();
+		    param.probability = 1;
+		    param.gamma = 0.125;
+//		    param.nu = 0.5;
+		    param.C = 8;
+		    param.svm_type = svm_parameter.C_SVC;
+		    param.kernel_type = svm_parameter.RBF; 
+		    param.degree = 2;
+		    param.cache_size = 20000;
+		    param.eps = 0.001;
+		    
+		    svm_model model = svm.svm_train(prob, param);
+		    return model;
+		}
+		return null;
+	}
+	
 	public void evaluate(List<PairFeatureVector> vectors, String modelPath) throws Exception {
 		
 		System.err.println("Evaluate model...");
@@ -319,7 +358,7 @@ public class EventEventRelationClassifier extends PairClassifier {
 				double[] labels = new double[nInstances];
 				
 				int row = 0;
-				for (PairFeatureVector fv : vectors) {	
+				for (PairFeatureVector fv : vectors) {				
 					int idx = 1, col = 0;
 					for (int i=0; i<nFeatures; i++) {
 						labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
@@ -343,7 +382,6 @@ public class EventEventRelationClassifier extends PairClassifier {
 				List<String> result = new ArrayList<String>();
 				for (int i=0; i<labels.length; i++) {
 					result.add(((int)labels[i]) + "\t" + ((int)predictions[i]));
-					System.out.println(((int)labels[i]) + "\t" + ((int)predictions[i]));
 				}
 				
 				PairEvaluator pe = new PairEvaluator(result);
@@ -354,8 +392,6 @@ public class EventEventRelationClassifier extends PairClassifier {
 	
 	public List<String> predict(List<PairFeatureVector> vectors, String modelPath) throws Exception {
 		
-//		System.err.println("Test model...");
-
 		List<String> predictionLabels = new ArrayList<String>();
 		
 		if (vectors.size() > 0) {
@@ -371,7 +407,7 @@ public class EventEventRelationClassifier extends PairClassifier {
 				double[] labels = new double[nInstances];
 				
 				int row = 0;
-				for (PairFeatureVector fv : vectors) {			
+				for (PairFeatureVector fv : vectors) {				
 					int idx = 1, col = 0;
 					for (int i=0; i<nFeatures; i++) {
 						labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
@@ -437,115 +473,10 @@ public class EventEventRelationClassifier extends PairClassifier {
 		return predictionLabels;
 	}
 	
-	public List<String> predictProbs(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-//		System.err.println("Test model...");
-
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;
-			
-			if (classifier.equals(VectorClassifier.liblinear)) {
-				//Prepare test data
-				Feature[][] instances = new Feature[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {				
-					int idx = 1, col = 0;
-					for (int i=0; i<nFeatures; i++) {
-						labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-						instances[row][col] = new FeatureNode(idx, Double.valueOf(fv.getVectors().get(i)));
-						idx ++;
-						col ++;
-					}
-					row ++;
-				}
-				
-				//Test
-				File modelFile = new File(modelPath);
-				Model model = Model.load(modelFile);
-				int[] mLabels = model.getLabels();
-				for (int i : mLabels) System.out.print(label[i-1] + " ");
-				System.out.println();
-				double[] dec_values = new double[model.getNrClass()];
-				for (Feature[] instance : instances) {
-//					predictionLabels.add(label[(int)Linear.predict(model, instance)-1]);
-					predictionLabels.add(label[(int)Linear.predictProbability(model, instance, dec_values)-1]);
-//					System.out.print((int)Linear.predict(model, instance) + "\t");
-					for (double d : dec_values) System.out.print(d + " ");
-					System.out.println();
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predictProbs2(List<PairFeatureVector> vectors, String modelPath,
-			String[] arrLabel) throws Exception {
-		
-//		System.err.println("Test model...");
-
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getFeatures().length-1;
-			
-			if (classifier.equals(VectorClassifier.liblinear)
-					|| classifier.equals(VectorClassifier.logit)
-					) {
-				//Prepare test data
-				Feature[][] instances = new Feature[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {			
-					int idx = 1, col = 0;
-					labels[row] = fv.getFeatures()[nFeatures];	//last column is label
-					for (int i=0; i<nFeatures; i++) {
-						instances[row][col] = new FeatureNode(idx, fv.getFeatures()[i]);
-						idx ++;
-						col ++;
-					}
-					row ++;
-				}
-				
-				//Test
-				File modelFile = new File(modelPath);
-				Model model = Model.load(modelFile);
-				
-//				int[] mLabels = model.getLabels();
-//				for (int i : mLabels) System.out.print(label[i-1] + " ");
-//				System.out.println();
-				
-				double[] dec_values = new double[model.getNrClass()];
-				String line, lbl;
-				for (Feature[] instance : instances) {
-//					predictionLabels.add(label[(int)Linear.predictProbability(model, instance, dec_values)-1]);
-//					System.out.print((int)Linear.predictProbability(model, instance, dec_values) 
-//							+ " " + label[(int)Linear.predictProbability(model, instance, dec_values)-1]
-//							+ ": ");
-					line = "";
-					lbl = arrLabel[(int)Linear.predictProbability(model, instance, dec_values)-1];
-					for (double d : dec_values) line += d + ",";
-					predictionLabels.add(lbl + "#" + line.substring(0, line.length()-1));
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predictBinary(List<PairFeatureVector> vectors, String modelPath) throws Exception {
+	public List<String> predict(List<PairFeatureVector> vectors, svm_model model) throws Exception {
 		
 		System.err.println("Test model...");
-
+		
 		List<String> predictionLabels = new ArrayList<String>();
 		
 		if (vectors.size() > 0) {
@@ -553,29 +484,35 @@ public class EventEventRelationClassifier extends PairClassifier {
 			int nInstances = vectors.size();
 			int nFeatures = vectors.get(0).getVectors().size()-1;
 			
-			if (classifier.equals(VectorClassifier.liblinear)) {
+			if (classifier.equals(VectorClassifier.libsvm)) {
 				//Prepare test data
-				Feature[][] instances = new Feature[nInstances][nFeatures];
+				svm_node[][] instances = new svm_node[nInstances][nFeatures];
 				double[] labels = new double[nInstances];
 				
 				int row = 0;
 				for (PairFeatureVector fv : vectors) {				
 					int idx = 1, col = 0;
 					for (int i=0; i<nFeatures; i++) {
-						labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-						instances[row][col] = new FeatureNode(idx, Double.valueOf(fv.getVectors().get(i)));
+						svm_node node = new svm_node();
+						node.index = idx;
+						node.value = Double.valueOf(fv.getVectors().get(i));
+						instances[row][col] = node;
 						idx ++;
 						col ++;
 					}
+					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
 					row ++;
 				}
 				
 				//Test
-				File modelFile = new File(modelPath);
-				Model model = Model.load(modelFile);
-				for (Feature[] instance : instances) {
-					if ((int)Linear.predict(model, instance) == 0) predictionLabels.add("NONE");
-					else predictionLabels.add("TLINK");
+				int totalClasses = 3;
+				double[] predictions = new double[nInstances];
+				
+				for (svm_node[] instance : instances) {
+					int[] classes = new int[totalClasses];
+			        svm.svm_get_labels(model, classes);
+			        double[] probs = new double[totalClasses];
+			        predictionLabels.add(label[((int)svm.svm_predict_probability(model, instance, probs))-1]);
 				}
 			}
 		}
@@ -586,13 +523,13 @@ public class EventEventRelationClassifier extends PairClassifier {
 	public List<String> predictDense(List<PairFeatureVector> vectors, String modelPath) throws Exception {
 		
 		System.err.println("Test model...");
-
+		
 		List<String> predictionLabels = new ArrayList<String>();
 		
 		if (vectors.size() > 0) {
 
 			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;
+			int nFeatures = vectors.get(0).getVectors().size()-1;		
 			
 			if (classifier.equals(VectorClassifier.liblinear)
 					|| classifier.equals(VectorClassifier.logit)) {
@@ -617,6 +554,53 @@ public class EventEventRelationClassifier extends PairClassifier {
 				Model model = Model.load(modelFile);
 				for (Feature[] instance : instances) {
 					predictionLabels.add(labelDense[(int)Linear.predict(model, instance)-1]);
+				}
+			}
+		}
+		
+		return predictionLabels;
+	}
+	
+	public List<String> predictDense(List<PairFeatureVector> vectors, svm_model model) throws Exception {
+		
+		System.err.println("Test model...");
+
+		List<String> predictionLabels = new ArrayList<String>();
+		
+		if (vectors.size() > 0) {
+
+			int nInstances = vectors.size();
+			int nFeatures = vectors.get(0).getVectors().size()-1;
+			
+			if (classifier.equals(VectorClassifier.libsvm)) {
+				//Prepare test data
+				svm_node[][] instances = new svm_node[nInstances][nFeatures];
+				double[] labels = new double[nInstances];
+				
+				int row = 0;
+				for (PairFeatureVector fv : vectors) {				
+					int idx = 1, col = 0;
+					for (int i=0; i<nFeatures; i++) {
+						svm_node node = new svm_node();
+						node.index = idx;
+						node.value = Double.valueOf(fv.getVectors().get(i));
+						instances[row][col] = node;
+						idx ++;
+						col ++;
+					}
+					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
+					row ++;
+				}
+				
+				//Test
+				int totalClasses = labelDense.length;
+				double[] predictions = new double[nInstances];
+				
+				for (svm_node[] instance : instances) {
+					int[] classes = new int[totalClasses];
+			        svm.svm_get_labels(model, classes);
+			        double[] probs = new double[totalClasses];
+			        predictionLabels.add(labelDense[((int)svm.svm_predict_probability(model, instance, probs))-1]);
 				}
 			}
 		}

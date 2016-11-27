@@ -18,7 +18,7 @@ import catena.parser.entities.Sentence;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 
-public class EventTimexRelationRule {
+public class EventTimexTemporalRule {
 	
 	private String relType;
 	private Boolean measureRel=false;
@@ -26,13 +26,13 @@ public class EventTimexRelationRule {
 	private static String[] ruleTlinks = {"BEFORE", "AFTER", "SIMULTANEOUS", "INCLUDES", "IS_INCLUDED"};
 	public static List<String> ruleTlinkTypes = Arrays.asList(ruleTlinks);
 	
-	public EventTimexRelationRule(Event e1, Timex t2, Doc doc, String depPath,
+	public EventTimexTemporalRule(Event e1, Timex t2, Doc doc, String depPath,
 			Boolean measureRel) {
 		this(e1, t2, doc, depPath);
 		this.setMeasureRel(measureRel);
 	}
 	
-	public EventTimexRelationRule(Event ev, Timex tmx, Doc doc, String depPath) {
+	public EventTimexTemporalRule(Event ev, Timex tmx, Doc doc, String depPath) {
 		
 		this.setRelType("O");
 		
@@ -70,20 +70,18 @@ public class EventTimexRelationRule {
 				Entity e2 = doc.getEntities().get(tlink.getTargetID());
 				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, tlink.getRelType(), tsignalList, csignalList);	
 				
-				System.out.println(fv.getPairType() + ", " + fv.getPairType().equals(PairType.event_event));
-				
 				if (fv.getPairType().equals(PairType.event_timex)) {
 					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
 					
 					if (!((Timex) etfv.getE2()).isDct()) {
-						EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
+						EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
 								doc, etfv.getMateDependencyPath());
 						if (!etRule.getRelType().equals("O")) {
 							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
 									etfv.getLabel() + "\t" + etRule.getRelType());
-						} else {
-							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\tNONE");
+//						} else {
+//							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+//									etfv.getLabel() + "\tNONE");
 						}
 					}
 				}
@@ -117,14 +115,14 @@ public class EventTimexRelationRule {
 					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
 					
 					if (((Timex) etfv.getE2()).isDct()) {
-						EventTimexRelationRule etRule = new EventTimexRelationRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
+						EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
 								doc, etfv.getMateDependencyPath());
 						if (!etRule.getRelType().equals("O")) {
 							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
 									etfv.getLabel() + "\t" + etRule.getRelType());
-						} else {
-							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\tNONE");
+//						} else {
+//							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
+//									etfv.getLabel() + "\tNONE");
 						}
 					}
 				}

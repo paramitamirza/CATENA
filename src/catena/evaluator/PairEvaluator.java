@@ -326,35 +326,6 @@ public class PairEvaluator {
 		System.out.println("Accuracy " + totaltp/(double)totaltotal + " (" + totaltp + "/" + totaltotal + ")");
 	}
 	
-	public void printIncorrect(ColumnParser txpParser, File txpFile) throws IOException {
-		Doc docTxp = txpParser.parseDocument(txpFile);
-		String label, pred, e1Str, e2Str;
-		Entity e1, e2;
-		for (String s : pairs) { //e1	e2	label(str)	predicted(str)
-			if (!s.isEmpty()) {
-				String[] cols = s.split("\t");
-				label = cols[2];
-				pred = cols[3];
-				if (!label.equals(pred)) {
-					e1 = docTxp.getEntities().get(cols[0]);
-					e2 = docTxp.getEntities().get(cols[1]);
-					
-					if (e1 instanceof Timex) e1Str = ((Timex)e1).getValue();
-					else e1Str = e1.toString(docTxp);
-					if (e2 instanceof Timex) e2Str = ((Timex)e2).getValue(); //+ "-" + ((Timex)e2).getType() + "-" + ((Timex)e2).isDct();
-					else e2Str = e2.toString(docTxp);
-					
-					System.out.println(e1Str + " | " + e2Str + " | " + label + " | " + pred);
-				}
-			}
-		}
-	}
-	
-	public void printIncorrectAndSentence(ColumnParser txpParser, File txpFile) throws IOException {
-		Doc docTxp = txpParser.parseDocument(txpFile);
-		printIncorrectAndSentence(docTxp);
-	}
-	
 	public void printIncorrectAndSentence(Doc docCol) throws IOException {
 		String label, pred, e1Str, e2Str, sentStr;
 		Entity e1, e2;

@@ -14,6 +14,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import catena.model.CandidateLinks;
 import catena.parser.ColumnParser.Field;
 import catena.parser.entities.*;
 
@@ -57,63 +58,6 @@ public class ColumnParser {
 	public ColumnParser(EntityEnum.Language lang, Field[] fields) {
 		this.language = lang;
 		this.fields = fields;
-	}
-	
-	private static String getTlinkType(String sourceId, String targetId, Doc doc) {
-		if (doc.getTlinkTypes().containsKey(sourceId + "," + targetId)) {
-			return doc.getTlinkTypes().get(sourceId + "," + targetId);
-		} 
-		return "NONE";
-	}
-	
-	public static void setCandidateTlinks(Doc doc) {
-		doc.setCandidateTlinks(new ArrayList<TemporalRelation>());
-		ArrayList<TemporalRelation> tlinkArr = doc.getCandidateTlinks();
-		
-		Timex dct = doc.getDct();
-		String mainEid = "", mainEType = "";
-		for (String sid : doc.getSentenceArr()) {
-			Sentence sent = doc.getSentences().get(sid);
-			for (int i = 0; i < sent.getEntityArr().size(); i ++) {
-				String eid = sent.getEntityArr().get(i);
-				Entity e = doc.getEntities().get(eid);
-				String eType = "Event";
-				if (e instanceof Timex) eType = "Timex";
-						
-				// TLINK: (entity, DCT)
-				TemporalRelation tl = new TemporalRelation(eid, dct.getID());
-				tl.setSourceType(eType); tl.setTargetType("Timex");
-				tl.setRelType(getTlinkType(eid, dct.getID(), doc));
-				tlinkArr.add(tl);
-				
-				//TLINKs between entities in the same sentence
-				for (int j = i+1; j < sent.getEntityArr().size(); j ++) {
-					String eeid = sent.getEntityArr().get(j);
-					Entity ee = doc.getEntities().get(eid);
-					String eeType = "Event";
-					if (ee instanceof Timex) eeType = "Timex";
-					
-					TemporalRelation tll = new TemporalRelation(eid, eeid);
-					tll.setSourceType(eType); tll.setTargetType(eeType);
-					tll.setRelType(getTlinkType(eid, eeid, doc));
-					tlinkArr.add(tll);
-				}
-				
-				//TLINK with the main event in previous sentence
-				if (!mainEid.equals("")) {
-					Token tok = doc.getTokens().get(e.getStartTokID());
-					if (tok.isMainVerb()) {
-						TemporalRelation tll = new TemporalRelation(eid, mainEid);
-						tll.setSourceType(eType); tll.setTargetType(mainEType);
-						tll.setRelType(getTlinkType(eid, mainEid, doc));
-						tlinkArr.add(tll);
-						
-						mainEid = eid;
-						mainEType = eType;
-					}
-				}
-			}
-		}
 	}
 	
 	public Doc parseDocument(File columnFile, boolean header) throws IOException {
@@ -654,7 +598,7 @@ public class ColumnParser {
 			TimeMLParser.parseTimeML(new File("./data/TempEval3-train_TML/APW19980322.0749.tml"), doc2);
 			
 			//Add the TLINK candidates
-			setCandidateTlinks(doc2);
+			CandidateLinks.setCandidateTlinks(doc2);
 			
 			colParser2.printParseResult(doc2);
 			

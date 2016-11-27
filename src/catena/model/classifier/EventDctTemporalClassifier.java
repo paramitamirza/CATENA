@@ -16,7 +16,7 @@ import catena.parser.entities.EntityEnum;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 
-public class EventDctRelationClassifier extends EventTimexRelationClassifier {
+public class EventDctTemporalClassifier extends EventTimexTemporalClassifier {
 	
 	protected void initFeatureVector() {
 		
@@ -143,13 +143,13 @@ public class EventDctRelationClassifier extends EventTimexRelationClassifier {
 		return fvList;
 	}
 	
-	public EventDctRelationClassifier(String taskName, 
+	public EventDctTemporalClassifier(String taskName, 
 			String classifier) throws Exception {
 		super(taskName, classifier);
 		initFeatureVector();
 	}
 	
-	public EventDctRelationClassifier(String taskName, 
+	public EventDctTemporalClassifier(String taskName, 
 			String classifier, String feature, 
 			String lblGrouping, String probVecFile) throws Exception {
 		super(taskName, classifier,
@@ -157,14 +157,14 @@ public class EventDctRelationClassifier extends EventTimexRelationClassifier {
 		initFeatureVector();
 	}
 	
-	public EventDctRelationClassifier(String taskName,
+	public EventDctTemporalClassifier(String taskName,
 			String classifier, String inconsistency) throws Exception {
 		super(taskName, classifier,
 				inconsistency);
 		initFeatureVector();
 	}
 
-	public EventDctRelationClassifier(String taskName, 
+	public EventDctTemporalClassifier(String taskName, 
 			String classifier, String feature, 
 			String lblGrouping, String probVecFile,
 			String inconsistency) throws Exception {
