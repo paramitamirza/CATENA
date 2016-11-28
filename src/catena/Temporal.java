@@ -1,6 +1,8 @@
 package catena;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,7 +55,7 @@ public class Temporal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		String task = "te3-c-rel";
+		String task = "timebank-dense";
 		
 		switch(task) {
 		
@@ -64,8 +66,86 @@ public class Temporal {
 			case "te3-c" :
 				TempEval3TaskC();
 				break;
+				
+			case "timebank-dense" :
+				TimeBankDense();
+				break;
+		
 		
 		}
+		
+	}
+	
+	private static boolean exists(String name, String[] names) {
+		for( String nn : names )
+			if( name.equals(nn) ) return true;
+		return false;
+	}
+	
+	public static void TimeBankDense() throws Exception {
+		String[] devDocs = { 
+				"APW19980227.0487.tml", 
+				"CNN19980223.1130.0960.tml", 
+				"NYT19980212.0019.tml",  
+				"PRI19980216.2000.0170.tml", 
+				"ed980111.1130.0089.tml" 
+			};
+			
+		String[] testDocs = { 
+			"APW19980227.0489.tml",
+			"APW19980227.0494.tml",
+			"APW19980308.0201.tml",
+			"APW19980418.0210.tml",
+			"CNN19980126.1600.1104.tml",
+			"CNN19980213.2130.0155.tml",
+			"NYT19980402.0453.tml",
+			"PRI19980115.2000.0186.tml",
+			"PRI19980306.2000.1675.tml" 
+		};
+		
+		String[] trainDocs = {
+			"APW19980219.0476.tml",
+			"ea980120.1830.0071.tml",
+			"PRI19980205.2000.1998.tml",
+			"ABC19980108.1830.0711.tml",
+			"AP900815-0044.tml",
+			"CNN19980227.2130.0067.tml",
+			"NYT19980206.0460.tml",
+			"APW19980213.1310.tml",
+			"AP900816-0139.tml",
+			"APW19980227.0476.tml",
+			"PRI19980205.2000.1890.tml",
+			"CNN19980222.1130.0084.tml",
+			"APW19980227.0468.tml",
+			"PRI19980213.2000.0313.tml",
+			"ABC19980120.1830.0957.tml",
+			"ABC19980304.1830.1636.tml",
+			"APW19980213.1320.tml",
+			"PRI19980121.2000.2591.tml",
+			"ABC19980114.1830.0611.tml",
+			"APW19980213.1380.tml",
+			"ea980120.1830.0456.tml",
+			"NYT19980206.0466.tml"
+		};
+		
+		Map<String, Map<String, String>> tlinkPerFile = getTimeBankDenseTlinks("./data/TimebankDense.T3.txt");
+		
+		Temporal temp;
+		PairEvaluator ptt, ped, pet, pee;
+		Map<String, String> relTypeMapping;
+		Links tlinks;
+		
+		// TimeBank-Dense
+		String[] tbDenseLabel = {"BEFORE", "AFTER", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "VAGUE"};
+		
+		temp = new Temporal(false, 
+				"./models/tbdense-event-dct.model",
+				"./models/tbdense-event-timex.model",
+				"./models/tbdense-event-event.model",
+				true, true, true,
+				true, true);
+		
 		
 	}
 	
@@ -456,7 +536,40 @@ public class Temporal {
 		return links;
 	}
 	
+	public static String getRelTypeTimeBankDense(String type) {
+		switch(type) {
+			case "s": return "SIMULTANEOUS";
+			case "b": return "BEFORE";
+			case "a": return "AFTER";
+			case "i": return "INCLUDES";
+			case "ii": return "IS_INCLUDED";
+			default: return "VAGUE";
+		}
+	}
 	
+	public static Map<String, Map<String, String>> getTimeBankDenseTlinks(String tlinkPath) throws Exception {
+		Map<String, Map<String, String>> tlinkPerFile = new HashMap<String, Map<String, String>>();
+		
+		BufferedReader br = new BufferedReader(new FileReader(new File(tlinkPath)));
+		String line;
+		String filename, e1, e2, tlink;
+	    while ((line = br.readLine()) != null) {
+	    	String[] cols = line.split("\t");
+	    	filename = cols[0] + ".tml";
+	    	e1 = cols[1]; e2 = cols[2];
+	    	if (e1.startsWith("t")) e1 = e1.replace("t", "tmx");
+	    	if (e2.startsWith("t")) e2 = e2.replace("t", "tmx");
+	    	tlink = getRelTypeTimeBankDense(cols[3]);
+	    	
+	    	if (!tlinkPerFile.containsKey(filename)) {
+	    		tlinkPerFile.put(filename, new HashMap<String, String>());
+	    	}
+    		tlinkPerFile.get(filename).put(e1+"\t"+e2, tlink);
+	    }
+	    br.close();
+		
+		return tlinkPerFile;
+	}
 
 	public boolean isGoldCandidate() {
 		return goldCandidate;
