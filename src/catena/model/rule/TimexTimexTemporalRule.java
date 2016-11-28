@@ -35,8 +35,8 @@ public class TimexTimexTemporalRule {
 							new TimexTimexTemporalRule(((Timex)doc.getEntities().get(entArr[i])), 
 							((Timex)doc.getEntities().get(entArr[j])), doc.getDct(), false);
 					if (!timextimex.getRelType().equals("O")) {
-						pair = ((String) entArr[i]) + "," + ((String) entArr[j]);
-						ttlinks.put(pair, timextimex.getRelType());
+						ttlinks.put(((String) entArr[i]) + "," + ((String) entArr[j]), timextimex.getRelType());
+						ttlinks.put(((String) entArr[j]) + "," + ((String) entArr[i]), TemporalRelation.getInverseRelation(timextimex.getRelType()));
 					}
 				}
 			}

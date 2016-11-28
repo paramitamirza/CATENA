@@ -97,6 +97,14 @@ public class TimeMLParser {
 		dTml.setFilename(tmlFile.getName());
 	}
 	
+	public static void parseTimeML(String tmlString, String tmlFilename, Doc dTml) throws ParserConfigurationException, SAXException, IOException {
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlString);
+		setInstances(tmlDoc, dTml);
+		setTlinks(tmlDoc, dTml);
+		setClinks(tmlDoc, dTml);
+		dTml.setFilename(tmlFilename);
+	}
+	
 	public Map<String, String> getEvents(TimeMLDoc tmlDoc) {
 		Map<String, String> mapEvents = new HashMap<String, String>();
 		NodeList events = tmlDoc.getDoc().getElementsByTagName("EVENT");

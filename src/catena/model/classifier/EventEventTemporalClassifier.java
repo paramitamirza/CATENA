@@ -77,7 +77,7 @@ public class EventEventTemporalClassifier extends PairClassifier {
 	}
 	
 	public static List<PairFeatureVector> getEventEventTlinksPerFile(Doc doc, PairClassifier eeRelCls,
-			boolean train, boolean goldCandidate, boolean etFeature) throws Exception {
+			boolean train, boolean goldCandidate, Map<String, String> etLinks) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -87,22 +87,22 @@ public class EventEventTemporalClassifier extends PairClassifier {
 		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
 		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
 		
-		//event-DCT rules
-		Map<String, String> eDctRules = new HashMap<String, String>();
-		if (etFeature) {
-			EventDctTemporalClassifier dctCls = new EventDctTemporalClassifier("te3", "liblinear");
-			List<PairFeatureVector> etFvList = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, dctCls, 
-					train, goldCandidate);
-			
-			for (PairFeatureVector fv : etFvList) {
-				EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-				EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
-						doc, etfv.getMateDependencyPath());
-				if (!etRule.getRelType().equals("O")) {
-					eDctRules.put(etfv.getE1().getID(), etRule.getRelType());
-				}
-			}
-		}
+//		//event-DCT rules
+//		Map<String, String> eDctRules = new HashMap<String, String>();
+//		if (etFeature) {
+//			EventDctTemporalClassifier dctCls = new EventDctTemporalClassifier("te3", "liblinear");
+//			List<PairFeatureVector> etFvList = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, dctCls, 
+//					train, goldCandidate);
+//			
+//			for (PairFeatureVector fv : etFvList) {
+//				EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+//				EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
+//						doc, etfv.getMateDependencyPath());
+//				if (!etRule.getRelType().equals("O")) {
+//					eDctRules.put(etfv.getE1().getID(), etRule.getRelType());
+//				}
+//			}
+//		}
 		
 		for (TemporalRelation tlink : candidateTlinks) {	
 			
@@ -130,10 +130,13 @@ public class EventEventTemporalClassifier extends PairClassifier {
 					}
 					
 					//Add event-timex/DCT TLINK type feature to feature vector
-					if (etFeature) {
+					if (etLinks != null) {
 						String etRule1 = "O", etRule2 = "O";
-						if (eDctRules.containsKey(eefv.getE1().getID())) etRule1 = eDctRules.get(eefv.getE1().getID());
-						if (eDctRules.containsKey(eefv.getE2().getID())) etRule2 = eDctRules.get(eefv.getE2().getID());
+						if (etLinks.containsKey(eefv.getE1().getID() + "," + doc.getDct().getID())) 
+							etRule1 = etLinks.get(eefv.getE1().getID() + "," + doc.getDct().getID());
+						if (etLinks.containsKey(eefv.getE2().getID() + "," + doc.getDct().getID()))
+							etRule2 = etLinks.get(eefv.getE2().getID() + "," + doc.getDct().getID());
+						
 						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
 								eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
 							eefv.addBinaryFeatureToVector("etRule1", etRule1, EventEventTemporalRule.ruleTlinkTypes);

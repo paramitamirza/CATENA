@@ -77,7 +77,7 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 	}
 	
 	public static List<PairFeatureVector> getEventTimexTlinksPerFile(Doc doc, PairClassifier etRelCls,
-			boolean train, boolean goldCandidate, boolean ttFeature) throws Exception {
+			boolean train, boolean goldCandidate, Map<String, String> ttLinks) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -86,12 +86,6 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
 		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
 		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
-		
-		//timex-DCT rules
-		Map<String,String> ttlinks = new HashMap<String, String>();
-		if (ttFeature) {
-			ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-		}
 		
 		for (TemporalRelation tlink : candidateTlinks) {
 			
@@ -121,10 +115,10 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 						}
 						
 						//Add timex-DCT TLINK type feature to feature vector
-						if (ttFeature) {
+						if (ttLinks != null) {
 							String timexDct = "O";
-							if (ttlinks.containsKey(etfv.getE2().getID() + "\t" + doc.getDct().getID())) {
-								timexDct = ttlinks.get(etfv.getE2().getID() + "\t" + doc.getDct().getID());
+							if (ttLinks.containsKey(etfv.getE2().getID() + "," + doc.getDct().getID())) {
+								timexDct = ttLinks.get(etfv.getE2().getID() + "," + doc.getDct().getID());
 							}
 							if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
 									etRelCls.classifier.equals(VectorClassifier.liblinear)) {

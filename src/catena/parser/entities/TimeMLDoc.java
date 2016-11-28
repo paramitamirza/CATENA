@@ -1,5 +1,6 @@
 package catena.parser.entities;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -28,6 +29,19 @@ public class TimeMLDoc {
 	
 	private Document doc;
 	private Node root;
+	
+	public TimeMLDoc(String xml) throws ParserConfigurationException, SAXException, IOException {
+	    DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	    dbFactory.setIgnoringElementContentWhitespace(true);
+	    DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+	    doc = dBuilder.parse(new ByteArrayInputStream(xml.getBytes()));
+
+	    //optional, but recommended
+		//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
+		doc.getDocumentElement().normalize();
+		
+		root = doc.getDocumentElement();
+	}
 	
 	public TimeMLDoc(File tmlFile) throws ParserConfigurationException, SAXException, IOException {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

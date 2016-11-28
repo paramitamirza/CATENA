@@ -16,8 +16,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 
-import com.sun.jersey.api.client.WebResource;
-
 import catena.parser.TimeMLParser;
 import catena.parser.entities.Doc;
 import catena.parser.entities.EntityEnum;

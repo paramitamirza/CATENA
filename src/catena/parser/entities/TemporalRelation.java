@@ -22,6 +22,11 @@ public class TemporalRelation extends Relation{
 		super(source, target);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public TemporalRelation(String source, String target, String relType) {
+		super(source, target);
+		this.setRelType(relType);
+	}
 
 	public String getSignal() {
 		return signal;

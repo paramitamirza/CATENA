@@ -3,7 +3,7 @@ package catena.model.feature;
 public final class FeatureEnum {
 	
 	public static enum PairType { 
-		event_event, event_timex, timex_timex; 
+		event_event, event_timex, event_dct, timex_timex; 
 	}
 	
 	public static enum FeatureName {
