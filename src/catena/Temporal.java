@@ -25,6 +25,7 @@ import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.parser.entities.Event;
 import catena.parser.entities.Links;
+import catena.parser.entities.TimeMLDoc;
 import catena.parser.entities.Timex;
 
 public class Temporal {
@@ -117,7 +118,7 @@ public class Temporal {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
@@ -189,7 +190,7 @@ public class Temporal {
 		Links links = new Links();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
@@ -212,7 +213,12 @@ public class Temporal {
 		
 		//Applying temporal reasoner...
 		if (isReasoner()) {
-			
+			String tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
+					links.getTT(), links.getED(), 
+					links.getET(), links.getEE());
+			Reasoner r = new Reasoner();
+			String deducedTmlString = r.deduceTlinksPerFile(tmlString);
+			System.out.println(deducedTmlString);
 		}
 		
 		//Applying temporal classifiers...
@@ -374,7 +380,7 @@ public class Temporal {
 						"./models/te3-event-dct.model",
 						"./models/te3-event-timex.model",
 						"./models/te3-event-event.model",
-						true, true, false);
+						true, true, true);
 				
 		//		// TRAIN
 		//		temp.trainModels("./data/TempEval3-train_TML/");

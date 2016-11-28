@@ -13,6 +13,7 @@ import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
 import catena.parser.entities.Doc;
 import catena.parser.entities.EntityEnum;
+import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 
 public class TestEventTimexTemporalClassifierTempEval3 {
@@ -59,7 +60,7 @@ public class TestEventTimexTemporalClassifierTempEval3 {
 		TestEventTimexTemporalClassifierTempEval3 test = new TestEventTimexTemporalClassifierTempEval3();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...

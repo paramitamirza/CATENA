@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
 import catena.model.feature.CausalSignalList;
@@ -68,7 +69,7 @@ public class TestEventTimexRelationRuleTempEval3 {
 	public static void main(String [] args) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Apply event-timex rules to the TimeML (.tml) files...

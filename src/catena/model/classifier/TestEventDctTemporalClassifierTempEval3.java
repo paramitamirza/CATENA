@@ -35,6 +35,7 @@ import catena.parser.entities.Event;
 import catena.parser.entities.Sentence;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
+import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
@@ -83,7 +84,7 @@ public class TestEventDctTemporalClassifierTempEval3 {
 		TestEventDctTemporalClassifierTempEval3 test = new TestEventDctTemporalClassifierTempEval3();
 		
 		// Init the parsers...
-				TimeMLToColumns tmlToCol = new TimeMLToColumns();
+				TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 				ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// Init the classifier...

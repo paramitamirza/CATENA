@@ -20,6 +20,7 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 
 import org.xml.sax.SAXException;
 
+import catena.ParserConfig;
 import catena.parser.entities.EntityEnum;
 import catena.parser.entities.TimeMLDoc;
 import catena.parser.entities.Timex;
@@ -30,21 +31,21 @@ public class TimeMLToColumns {
 	private EntityEnum.Language language;
 	private Map<Integer, Integer> startOfSentences;
 	
-	public TimeMLToColumns() {
+	private String textProDirpath;
+	private String mateToolsDirpath;
+	
+	public TimeMLToColumns(String textProDirpath, String mateToolsDirpath) {
 		startOfSentences = new HashMap<Integer, Integer>();
+		this.setTextProDirpath(textProDirpath);
+		this.setMateToolsDirpath(mateToolsDirpath);
 	}
 	
-	public TimeMLToColumns(EntityEnum.Language lang) {
+	public TimeMLToColumns(EntityEnum.Language lang,
+			String textProDirpath, String mateToolsDirpath) {
 		this.setLanguage(lang);
 		startOfSentences = new HashMap<Integer, Integer>();
-	}
-
-	public EntityEnum.Language getLanguage() {
-		return language;
-	}
-
-	public void setLanguage(EntityEnum.Language language) {
-		this.language = language;
+		this.setTextProDirpath(textProDirpath);
+		this.setMateToolsDirpath(mateToolsDirpath);
 	}
 	
 	public List<String> parse(File timeMLFile) throws ParserConfigurationException, SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
@@ -467,7 +468,7 @@ public class TimeMLToColumns {
 		printToConllFile(columns, tmlFile.getPath().replace(".tml", ".conll"));
 				
 		// Run Mate tools			
-		MateToolsParser mateTools = new MateToolsParser("./tools/MateTools/");
+		MateToolsParser mateTools = new MateToolsParser(this.getMateToolsDirpath());
 		List<String> mateToolsColumns = mateTools.run(new File(tmlFile.getPath().replace(".tml", ".conll")));
 //		for (String s : mateToolsColumns) System.out.println(s);
 		
@@ -476,7 +477,7 @@ public class TimeMLToColumns {
 			printTokenizedText(columns, tmlFile.getPath().replace(".tml", ".txt"));
 			
 			// Run TextPro	
-			TextProParser textpro = new TextProParser("./tools/TextPro2.0/");
+			TextProParser textpro = new TextProParser(this.getTextProDirpath());
 			String[] annotations = {"token", "pos", "chunk"};	
 			List<String> textProColumns = textpro.run(annotations, new File(tmlFile.getPath().replace(".tml", ".txt")), true);
 //			for (String s : textProColumns) System.out.println(s);	
@@ -514,7 +515,7 @@ public class TimeMLToColumns {
 	
 	public static void main(String[] args) {
 		
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();		
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);		
 		
 		try {					
 			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
@@ -528,6 +529,30 @@ public class TimeMLToColumns {
 		
 		
 		
+	}
+
+	public EntityEnum.Language getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(EntityEnum.Language language) {
+		this.language = language;
+	}
+
+	public String getTextProDirpath() {
+		return textProDirpath;
+	}
+
+	public void setTextProDirpath(String textProDirpath) {
+		this.textProDirpath = textProDirpath;
+	}
+
+	public String getMateToolsDirpath() {
+		return mateToolsDirpath;
+	}
+
+	public void setMateToolsDirpath(String mateToolsDirpath) {
+		this.mateToolsDirpath = mateToolsDirpath;
 	}
 
 }

@@ -14,6 +14,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import catena.ParserConfig;
 import catena.model.CandidateLinks;
 import catena.parser.ColumnParser.Field;
 import catena.parser.entities.*;
@@ -588,7 +589,7 @@ public class ColumnParser {
 		
 		// Parse a list of string in column format (directly converted from a TimeML document)
 		try {
-			TimeMLToColumns tmlToCol = new TimeMLToColumns();
+			TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 			List<String> columns = tmlToCol.convert(new File("./data/TempEval3-train_TML/APW19980322.0749.tml"), true);
 			ColumnParser colParser2 = new ColumnParser(EntityEnum.Language.EN);
 //			Doc doc2 = colParser2.parseLines(columns);

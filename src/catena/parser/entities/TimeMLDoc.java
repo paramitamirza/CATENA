@@ -2,8 +2,10 @@ package catena.parser.entities;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -154,6 +156,85 @@ public class TimeMLDoc {
 		}
 		
 		return wordList;
+	}
+	
+	public static String timeMLFileToString(Doc doc, File tmlFile,
+			List<String> ttResult, List<String> edResult, 
+			List<String> etResult, List<String> eeResult) throws Exception {
+		
+		TimeMLDoc tml = new TimeMLDoc(tmlFile);
+		tml.removeLinks();
+
+		int linkId = 1;
+		TemporalRelation tlink = new TemporalRelation();
+		for (String ttStr : ttResult) {
+			if (!ttStr.isEmpty()) {
+				String[] cols = ttStr.split("\t");
+				if (!cols[3].equals("NONE")) {
+					tlink.setSourceID(cols[0].replace("tmx", "t"));
+					tlink.setTargetID(cols[1].replace("tmx", "t"));
+					tlink.setRelType(cols[3]);
+					tlink.setSourceType("Timex");
+					tlink.setTargetType("Timex");
+					tml.addLink(tlink.toTimeMLNode(tml.getDoc(), linkId));
+					linkId += 1;
+				}
+			}
+		}
+		for (String etStr : edResult) {
+			if (!etStr.isEmpty()) {
+				String[] cols = etStr.split("\t");
+				if (!cols[3].equals("NONE")) {
+					tlink.setSourceID(doc.getInstancesInv().get(cols[0]));
+					tlink.setTargetID(cols[1].replace("tmx", "t"));
+					tlink.setRelType(cols[3]);
+					tlink.setSourceType("Event");
+					tlink.setTargetType("Timex");
+					tml.addLink(tlink.toTimeMLNode(tml.getDoc(), linkId));
+					linkId += 1;
+				}
+			}
+		}
+		for (String etStr : etResult) {
+			if (!etStr.isEmpty()) {
+				String[] cols = etStr.split("\t");
+				if (!cols[3].equals("NONE")) {
+					tlink.setSourceID(doc.getInstancesInv().get(cols[0]));
+					tlink.setTargetID(cols[1].replace("tmx", "t"));
+					tlink.setRelType(cols[3]);
+					tlink.setSourceType("Event");
+					tlink.setTargetType("Timex");
+					tml.addLink(tlink.toTimeMLNode(tml.getDoc(), linkId));
+					linkId += 1;
+				}
+			}
+		}
+		for (String eeStr : eeResult) {
+			if (!eeStr.isEmpty()) {
+				String[] cols = eeStr.split("\t");
+				if (!cols[3].equals("NONE")) {
+					tlink.setSourceID(doc.getInstancesInv().get(cols[0]));
+					tlink.setTargetID(doc.getInstancesInv().get(cols[1]));
+					tlink.setRelType(cols[3]);
+					tlink.setSourceType("Event");
+					tlink.setTargetType("Event");
+					tml.addLink(tlink.toTimeMLNode(tml.getDoc(), linkId));
+					linkId += 1;
+				}
+			}
+		}
+		
+		return tml.toString();
+	}
+	
+	public static void writeTimeMLFile(Doc doc, File tmlFile, File tmlOutput,
+			List<String> ttResult, List<String> edResult, 
+			List<String> etResult, List<String> eeResult) throws Exception {
+		
+		PrintWriter sysTML = new PrintWriter(tmlOutput.getPath());
+		sysTML.write(timeMLFileToString(doc, tmlFile, 
+				ttResult, edResult, etResult, eeResult));
+		sysTML.close();
 	}
 
 	public Document getDoc() {

@@ -3,6 +3,8 @@ package catena.model.rule;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
 import catena.parser.ColumnParser;
@@ -50,7 +52,7 @@ public class TestTimexTimexRelationRuleTempEval3 {
 	public static void main(String [] args) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns();
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Apply timex-timex rules to the TimeML (.tml) files...
