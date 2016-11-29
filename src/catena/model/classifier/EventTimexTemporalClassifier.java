@@ -11,6 +11,7 @@ import de.bwaldvogel.liblinear.*;
 import libsvm.*;
 
 import catena.evaluator.PairEvaluator;
+import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
@@ -39,45 +40,86 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 				
 		if (classifier.equals(VectorClassifier.none)) {
 			FeatureName[] etFeatures = {
-					FeatureName.tokenSpace, 
-					FeatureName.lemmaSpace,
-					FeatureName.tokenChunk,
-					FeatureName.tempMarkerTextSpace
+					FeatureName.pos
+//					FeatureName.tokenSpace, 
+//					FeatureName.lemmaSpace,
+//					FeatureName.tokenChunk,
+//					FeatureName.tempMarkerTextSpace
 			};
 			featureList = Arrays.asList(etFeatures);
 			
 		} else {
-			FeatureName[] etFeatures = {
-					FeatureName.pos,
-//					Feature.mainpos,
-					FeatureName.samePos,
-//					Feature.sameMainPos,
-					FeatureName.chunk,
-					FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
-					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
-					FeatureName.dct,
-					FeatureName.timexType, 				
-					FeatureName.mainVerb, 
-					FeatureName.hasModal,
-//					FeatureName.modalVerb,
-//					FeatureName.depTmxPath,
-//					FeatureName.tempSignalClusText,		//TimeBank-Dense
-//					FeatureName.tempSignalPos,			//TimeBank-Dense
-//					FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
-					FeatureName.tempSignal1ClusText,	//TempEval3
-					FeatureName.tempSignal1Pos,			//TempEval3
-					FeatureName.tempSignal1Dep			//TempEval3
-//					FeatureName.tempSignal2ClusText,
-//					FeatureName.tempSignal2Pos,
-//					FeatureName.tempSignal2Dep,
-//					FeatureName.timexRule
-			};
-			featureList = Arrays.asList(etFeatures);
+			if (getName().equals("tbdense")) {
+				FeatureName[] etFeatures = {
+						FeatureName.pos,
+////						Feature.mainpos,
+//						FeatureName.samePos,
+////						Feature.sameMainPos,
+//						FeatureName.chunk,
+//						FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
+//						FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
+//						FeatureName.dct,
+//						FeatureName.timexType, 				
+//						FeatureName.mainVerb, 
+//						FeatureName.hasModal,
+////						FeatureName.modalVerb,
+////						FeatureName.depTmxPath,
+//						FeatureName.tempSignalClusText,		//TimeBank-Dense
+//						FeatureName.tempSignalPos,			//TimeBank-Dense
+//						FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
+////						FeatureName.tempSignal1ClusText,	//TempEval3
+////						FeatureName.tempSignal1Pos,			//TempEval3
+////						FeatureName.tempSignal1Dep,			//TempEval3
+////						FeatureName.tempSignal2ClusText,
+////						FeatureName.tempSignal2Pos,
+////						FeatureName.tempSignal2Dep,
+////						FeatureName.timexRule
+				};
+				featureList = Arrays.asList(etFeatures);
+			} else {
+				FeatureName[] etFeatures = {
+						FeatureName.pos,
+//						Feature.mainpos,
+						FeatureName.samePos,
+//						Feature.sameMainPos,
+						FeatureName.chunk,
+						FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
+						FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
+//						FeatureName.dct,
+						FeatureName.timexType, 				
+						FeatureName.mainVerb, 
+						FeatureName.hasModal,
+//						FeatureName.modalVerb,
+//						FeatureName.depTmxPath,
+//						FeatureName.tempSignalClusText,		//TimeBank-Dense
+//						FeatureName.tempSignalPos,			//TimeBank-Dense
+//						FeatureName.tempSignalDep1Dep2,		//TimeBank-Dense
+						FeatureName.tempSignal1ClusText,	//TempEval3
+						FeatureName.tempSignal1Pos,			//TempEval3
+						FeatureName.tempSignal1Dep,			//TempEval3
+//						FeatureName.tempSignal2ClusText,
+//						FeatureName.tempSignal2Pos,
+//						FeatureName.tempSignal2Dep,
+//						FeatureName.timexRule
+				};
+				featureList = Arrays.asList(etFeatures);
+			}
 		}
 	}
 	
 	public static List<PairFeatureVector> getEventTimexTlinksPerFile(Doc doc, PairClassifier etRelCls,
-			boolean train, boolean goldCandidate, Map<String, String> ttLinks) throws Exception {
+			boolean train, boolean goldCandidate,
+			List<String> labelList,
+			Map<String, String> ttLinks) throws Exception {
+		return getEventTimexTlinksPerFile(doc, etRelCls,
+				train, goldCandidate,
+				labelList, new HashMap<String, String>(), ttLinks);
+	}
+	
+	public static List<PairFeatureVector> getEventTimexTlinksPerFile(Doc doc, PairClassifier etRelCls,
+			boolean train, boolean goldCandidate, List<String> labelList,
+			Map<String, String> relTypeMapping,
+			Map<String, String> ttLinks) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -105,8 +147,8 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 						
 						// Add features to feature vector
 						for (FeatureName f : etRelCls.featureList) {
-							if (etRelCls.classifier.equals(VectorClassifier.libsvm) ||
-									etRelCls.classifier.equals(VectorClassifier.liblinear)) {								
+							if (etRelCls.classifier.equals(VectorClassifier.liblinear) ||
+									etRelCls.classifier.equals(VectorClassifier.logit)) {								
 								etfv.addBinaryFeatureToVector(f);
 								
 							} else if (etRelCls.classifier.equals(VectorClassifier.none)) {								
@@ -120,8 +162,8 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 							if (ttLinks.containsKey(etfv.getE2().getID() + "," + doc.getDct().getID())) {
 								timexDct = ttLinks.get(etfv.getE2().getID() + "," + doc.getDct().getID());
 							}
-							if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
-									etRelCls.classifier.equals(VectorClassifier.liblinear)) {
+							if (etRelCls.classifier.equals(VectorClassifier.liblinear) || 
+									etRelCls.classifier.equals(VectorClassifier.logit)) {
 								etfv.addBinaryFeatureToVector("timexDct", timexDct, EventTimexTemporalRule.ruleTlinkTypes);
 								
 							} else if (etRelCls.classifier.equals(VectorClassifier.none)){
@@ -129,14 +171,14 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 							}
 						}
 						
-						if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
-								etRelCls.classifier.equals(VectorClassifier.liblinear)) {
-							if (train) etfv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
-							else etfv.addBinaryFeatureToVector(FeatureName.label);
+						String label = etfv.getLabel();
+						if (relTypeMapping.containsKey(label)) label = relTypeMapping.get(label);
+						if (etRelCls.classifier.equals(VectorClassifier.liblinear) || 
+								etRelCls.classifier.equals(VectorClassifier.logit)) {
+							etfv.addToVector("label", String.valueOf(labelList.indexOf(label)+1));
 							
 						} else if (etRelCls.classifier.equals(VectorClassifier.none)){
-							if (train) etfv.addToVector(FeatureName.labelCollapsed);
-							else etfv.addToVector(FeatureName.label);
+							etfv.addToVector("label", label);
 						}
 						
 						if (train && !etfv.getLabel().equals("NONE")) {
@@ -384,7 +426,8 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 		}
 	}
 	
-	public List<String> predict(List<PairFeatureVector> vectors, String modelPath) throws Exception {
+	public List<String> predict(List<PairFeatureVector> vectors, 
+			String modelPath, String[] relTypes) throws Exception {
 		
 		List<String> predictionLabels = new ArrayList<String>();
 		
@@ -416,7 +459,7 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 				File modelFile = new File(modelPath);
 				Model model = Model.load(modelFile);
 				for (Feature[] instance : instances) {
-					predictionLabels.add(label[(int)Linear.predict(model, instance)-1]);
+					predictionLabels.add(relTypes[(int)Linear.predict(model, instance)-1]);
 				}
 			}
 		}

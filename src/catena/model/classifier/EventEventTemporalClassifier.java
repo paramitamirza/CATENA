@@ -12,6 +12,7 @@ import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.Doc;
 import catena.model.classifier.PairClassifier;
+import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
@@ -77,7 +78,17 @@ public class EventEventTemporalClassifier extends PairClassifier {
 	}
 	
 	public static List<PairFeatureVector> getEventEventTlinksPerFile(Doc doc, PairClassifier eeRelCls,
-			boolean train, boolean goldCandidate, Map<String, String> etLinks) throws Exception {
+			boolean train, boolean goldCandidate, List<String> labelList,
+			Map<String, String> etLinks) throws Exception {
+		return getEventEventTlinksPerFile(doc, eeRelCls,
+				train, goldCandidate,
+				labelList, new HashMap<String, String>(), etLinks);
+	}
+	
+	public static List<PairFeatureVector> getEventEventTlinksPerFile(Doc doc, PairClassifier eeRelCls,
+			boolean train, boolean goldCandidate, List<String> labelList,
+			Map<String, String> relTypeMapping,
+			Map<String, String> etLinks) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -86,23 +97,6 @@ public class EventEventTemporalClassifier extends PairClassifier {
 		List<TemporalRelation> candidateTlinks = new ArrayList<TemporalRelation> ();
 		if (train || goldCandidate) candidateTlinks = doc.getTlinks();	//gold annotated pairs
 		else candidateTlinks = doc.getCandidateTlinks();				//candidate pairs
-		
-//		//event-DCT rules
-//		Map<String, String> eDctRules = new HashMap<String, String>();
-//		if (etFeature) {
-//			EventDctTemporalClassifier dctCls = new EventDctTemporalClassifier("te3", "liblinear");
-//			List<PairFeatureVector> etFvList = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, dctCls, 
-//					train, goldCandidate);
-//			
-//			for (PairFeatureVector fv : etFvList) {
-//				EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-//				EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
-//						doc, etfv.getMateDependencyPath());
-//				if (!etRule.getRelType().equals("O")) {
-//					eDctRules.put(etfv.getE1().getID(), etRule.getRelType());
-//				}
-//			}
-//		}
 		
 		for (TemporalRelation tlink : candidateTlinks) {	
 			
@@ -120,8 +114,8 @@ public class EventEventTemporalClassifier extends PairClassifier {
 					
 					//Add features to feature vector
 					for (FeatureName f : eeRelCls.featureList) {
-						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) ||
-								eeRelCls.classifier.equals(VectorClassifier.liblinear)) {								
+						if (eeRelCls.classifier.equals(VectorClassifier.liblinear) ||
+								eeRelCls.classifier.equals(VectorClassifier.logit)) {								
 							eefv.addBinaryFeatureToVector(f);
 							
 						} else if (eeRelCls.classifier.equals(VectorClassifier.none)) {								
@@ -137,8 +131,8 @@ public class EventEventTemporalClassifier extends PairClassifier {
 						if (etLinks.containsKey(eefv.getE2().getID() + "," + doc.getDct().getID()))
 							etRule2 = etLinks.get(eefv.getE2().getID() + "," + doc.getDct().getID());
 						
-						if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-								eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
+						if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
+								eeRelCls.classifier.equals(VectorClassifier.logit)) {
 							eefv.addBinaryFeatureToVector("etRule1", etRule1, EventEventTemporalRule.ruleTlinkTypes);
 							eefv.addBinaryFeatureToVector("etRule2", etRule2, EventEventTemporalRule.ruleTlinkTypes);
 						} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
@@ -147,14 +141,14 @@ public class EventEventTemporalClassifier extends PairClassifier {
 						}
 					}					
 					
-					if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-							eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
-						if (train) eefv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
-						else eefv.addBinaryFeatureToVector(FeatureName.label);
+					String label = eefv.getLabel();
+					if (relTypeMapping.containsKey(label)) label = relTypeMapping.get(label);
+					if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
+							eeRelCls.classifier.equals(VectorClassifier.logit)) {
+						eefv.addToVector("label", String.valueOf(labelList.indexOf(label)+1));
 						
 					} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
-						if (train) eefv.addToVector(FeatureName.labelCollapsed);
-						else eefv.addToVector(FeatureName.label);
+						eefv.addToVector("label", label);
 					}
 					
 					if (train && !eefv.getLabel().equals("NONE")) {
@@ -354,7 +348,8 @@ public class EventEventTemporalClassifier extends PairClassifier {
 		}
 	}
 	
-	public List<String> predict(List<PairFeatureVector> vectors, String modelPath) throws Exception {
+	public List<String> predict(List<PairFeatureVector> vectors, 
+			String modelPath, String[] relTypes) throws Exception {
 		
 		List<String> predictionLabels = new ArrayList<String>();
 		
@@ -386,7 +381,7 @@ public class EventEventTemporalClassifier extends PairClassifier {
 				File modelFile = new File(modelPath);
 				Model model = Model.load(modelFile);
 				for (Feature[] instance : instances) {
-					predictionLabels.add(label[(int)Linear.predict(model, instance)-1]);
+					predictionLabels.add(relTypes[(int)Linear.predict(model, instance)-1]);
 				}
 			}
 		}

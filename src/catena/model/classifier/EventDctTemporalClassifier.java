@@ -2,7 +2,9 @@ package catena.model.classifier;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventTimexFeatureVector;
@@ -27,30 +29,6 @@ public class EventDctTemporalClassifier extends EventTimexTemporalClassifier {
 					FeatureName.tokenSpace, FeatureName.lemmaSpace,
 					FeatureName.tokenChunk,
 					FeatureName.tempMarkerTextSpace
-			};
-			featureList = Arrays.asList(etFeatures);
-			
-		} else if (classifier.equals(VectorClassifier.yamcha)) {
-			FeatureName[] etFeatures = {
-					//FeatureName.tokenSpace, FeatureName.lemmaSpace, FeatureName.tokenChunk,
-					/*FeatureName.token,*/ FeatureName.lemma,
-					FeatureName.pos, /*FeatureName.mainpos,*/
-					/*FeatureName.samePos,*/ /*FeatureName.sameMainPos,*/
-					FeatureName.chunk,
-//					FeatureName.entDistance, FeatureName.sentDistance, FeatureName.entOrder,
-					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, /*Feature.polarity,*/
-//					FeatureName.dct,
-					/*FeatureName.timexType,*/ 				
-					/*FeatureName.timexValueTemplate,*/
-//					FeatureName.depTmxPath,				
-					FeatureName.mainVerb,
-					FeatureName.modalVerb,
-//					FeatureName.tempSignalText,
-//					FeatureName.tempSignalPos,
-					/*FeatureName.tempMarkerClusTextPos,*/
-					/*FeatureName.tempMarkerPos,*/ 
-					/*FeatureName.tempMarkerDep1Dep2,*/
-					/*FeatureName.timexRule*/
 			};
 			featureList = Arrays.asList(etFeatures);
 			
@@ -83,7 +61,17 @@ public class EventDctTemporalClassifier extends EventTimexTemporalClassifier {
 	}
 	
 	public static List<PairFeatureVector> getEventDctTlinksPerFile(Doc doc, PairClassifier etRelCls,
-			boolean train, boolean goldCandidate) throws Exception {
+			boolean train, boolean goldCandidate,
+			List<String> labelList) throws Exception {
+		return getEventDctTlinksPerFile(doc, etRelCls,
+				train, goldCandidate,
+				labelList, new HashMap<String, String>());
+	}
+	
+	public static List<PairFeatureVector> getEventDctTlinksPerFile(Doc doc, PairClassifier etRelCls,
+			boolean train, boolean goldCandidate,
+			List<String> labelList,
+			Map<String, String> relTypeMapping) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -111,8 +99,8 @@ public class EventDctTemporalClassifier extends EventTimexTemporalClassifier {
 						
 						// Add features to feature vector
 						for (FeatureName f : etRelCls.featureList) {
-							if (etRelCls.classifier.equals(VectorClassifier.libsvm) ||
-									etRelCls.classifier.equals(VectorClassifier.liblinear)) {								
+							if (etRelCls.classifier.equals(VectorClassifier.liblinear) ||
+									etRelCls.classifier.equals(VectorClassifier.logit)) {								
 								etfv.addBinaryFeatureToVector(f);
 								
 							} else if (etRelCls.classifier.equals(VectorClassifier.none)) {								
@@ -120,14 +108,14 @@ public class EventDctTemporalClassifier extends EventTimexTemporalClassifier {
 							}
 						}
 						
-						if (etRelCls.classifier.equals(VectorClassifier.libsvm) || 
-								etRelCls.classifier.equals(VectorClassifier.liblinear)) {
-							if (train) etfv.addBinaryFeatureToVector(FeatureName.labelCollapsed);
-							else etfv.addBinaryFeatureToVector(FeatureName.label);
+						String label = etfv.getLabel();
+						if (relTypeMapping.containsKey(label)) label = relTypeMapping.get(label);
+						if (etRelCls.classifier.equals(VectorClassifier.liblinear) || 
+								etRelCls.classifier.equals(VectorClassifier.logit)) {
+							etfv.addToVector("label", String.valueOf(labelList.indexOf(label)+1));
 							
 						} else if (etRelCls.classifier.equals(VectorClassifier.none)){
-							if (train) etfv.addToVector(FeatureName.labelCollapsed);
-							else etfv.addToVector(FeatureName.label);
+							etfv.addToVector("label", label);
 						}
 						
 						if (train && !etfv.getLabel().equals("NONE")) {

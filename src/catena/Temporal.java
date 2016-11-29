@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -55,7 +56,7 @@ public class Temporal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		String task = "timebank-dense";
+		String task = "tbdense";
 		
 		switch(task) {
 		
@@ -67,19 +68,13 @@ public class Temporal {
 				TempEval3TaskC();
 				break;
 				
-			case "timebank-dense" :
+			case "tbdense" :
 				TimeBankDense();
 				break;
 		
 		
 		}
 		
-	}
-	
-	private static boolean exists(String name, String[] names) {
-		for( String nn : names )
-			if( name.equals(nn) ) return true;
-		return false;
 	}
 	
 	public static void TimeBankDense() throws Exception {
@@ -138,41 +133,71 @@ public class Temporal {
 		// TimeBank-Dense
 		String[] tbDenseLabel = {"BEFORE", "AFTER", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "VAGUE"};
+		String taskName = "tbdense";
 		
-		temp = new Temporal(false, 
-				"./models/tbdense-event-dct.model",
-				"./models/tbdense-event-timex.model",
-				"./models/tbdense-event-event.model",
-				true, true, true,
-				true, true);
+		temp = new Temporal(true, 
+				"./models/" + taskName + "-event-dct.model",
+				"./models/" + taskName + "-event-timex.model",
+				"./models/" + taskName + "-event-event.model",
+				false, true, false,
+				false, false);
 		
+		// TRAIN
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel);
 		
+		// PREDICT
+		relTypeMapping = new HashMap<String, String>();
+		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
+		relTypeMapping.put("BEGINS", "BEFORE");
+		relTypeMapping.put("BEGUN_BY", "AFTER");
+		relTypeMapping.put("ENDS", "AFTER");
+		relTypeMapping.put("ENDED_BY", "BEFORE");
+		relTypeMapping.put("DURING", "SIMULTANEOUS");
+		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
+		tlinks = temp.extractRelations("./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping);
+		
+		// EVALUATE
+		ptt = new PairEvaluator(tlinks.getTT());
+		ptt.evaluatePerLabel(tbDenseLabel);
+		ped = new PairEvaluator(tlinks.getED());
+		ped.evaluatePerLabel(tbDenseLabel);
+		pet = new PairEvaluator(tlinks.getET());
+		pet.evaluatePerLabel(tbDenseLabel);
+		pee = new PairEvaluator(tlinks.getEE());
+		pee.evaluatePerLabel(tbDenseLabel);
 	}
 	
 	public static void TempEval3TaskC() throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
-		Map<String, String> relTypeMapping;
 		Links tlinks;
 		
 		// TempEval3 task C
 		String[] te3CLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String taskName = "te3";
 		
 		temp = new Temporal(false, 
-				"./models/te3-event-dct.model",
-				"./models/te3-event-timex.model",
-				"./models/te3-event-event.model",
+				"./models/" + taskName + "-event-dct.model",
+				"./models/" + taskName + "-event-timex.model",
+				"./models/" + taskName + "-event-event.model",
 				true, true, true,
 				true, true);
 		
 		// TRAIN
-		temp.trainModels("./data/TempEval3-train_TML/");
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
 		
 		// PREDICT
-		relTypeMapping = new HashMap<String, String>();
+		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", relTypeMapping);
+		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -194,21 +219,29 @@ public class Temporal {
 		// TempEval3 task C (relation only)
 		String[] te3CRelLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String taskName = "te3";
 		
 		temp = new Temporal(true, 
-				"./models/te3-event-dct.model",
-				"./models/te3-event-timex.model",
-				"./models/te3-event-event.model",
+				"./models/" + taskName + "-event-dct.model",
+				"./models/" + taskName + "-event-timex.model",
+				"./models/" + taskName + "-event-event.model",
 				true, true, true,
 				true, true);
 		
 		// TRAIN
-		temp.trainModels("./data/TempEval3-train_TML/");
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
 		
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", relTypeMapping);
+		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -287,7 +320,8 @@ public class Temporal {
 		this.setETFeature(etFeature);
 	}
 	
-	public void trainModels(String tmlDirpath) throws Exception {
+	public void trainModels(String taskName, String tmlDirpath, String[] labels,
+			Map<String, String> relTypeMapping) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -297,9 +331,9 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
-		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");
-		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
-		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier("te3", "liblinear");	
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");	
 		
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
@@ -322,11 +356,11 @@ public class Temporal {
 				
 				// Get the feature vectors
 				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
-						true, true));
+						true, true, Arrays.asList(labels), relTypeMapping));
 				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
-						true, true, ttlinks));
+						true, true, Arrays.asList(labels), relTypeMapping, ttlinks));
 				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
-						true, true, etlinks));
+						true, true, Arrays.asList(labels), relTypeMapping, etlinks));
 			}
 		}
 		
@@ -335,7 +369,8 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public Links extractRelations(String tmlDirpath, Map<String, String> relTypeMapping) throws Exception {
+	public Links extractRelations(String tmlDirpath, String[] labels,
+			Map<String, String> relTypeMapping) throws Exception {
 		Links results = new Links();
 		List<String> tt = new ArrayList<String>();
 		List<String> ed = new ArrayList<String>();
@@ -349,7 +384,7 @@ public class Temporal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				Links links = extractRelation(tmlFile, relTypeMapping);
+				Links links = extractRelations(tmlFile, labels, relTypeMapping);
 				tt.addAll(links.getTT());
 				ed.addAll(links.getED());
 				et.addAll(links.getET());
@@ -363,6 +398,119 @@ public class Temporal {
 		results.setEE(ee);
 		
 		return results;
+	}
+	
+	public Links extractRelations(File tmlFile, String[] labels, 
+			Map<String, String> relTypeMapping) throws Exception {
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+				
+		// File pre-processing...
+//		List<String> columns = tmlToCol.convert(tmlFile, false);
+//		Doc doc = colParser.parseLines(columns);
+		
+//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		
+		TimeMLParser.parseTimeML(tmlFile, doc);
+		CandidateLinks.setCandidateTlinks(doc);
+		
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
+		tmlDoc.removeLinks();
+		String tmlString = tmlDoc.toString();
+					
+		// Applying temporal rules...
+		if (isRuleSieve()) {
+			List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
+			List<String> edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
+			List<String> etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
+			List<String> eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
+			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
+					ttRule, edRule, etRule, eeRule);
+		}
+		
+		//Applying temporal reasoner...
+		if (isReasoner()) {			
+			Reasoner r = new Reasoner();
+			tmlString = r.deduceTlinksPerFile(tmlString);
+		}
+		
+		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);		
+		
+		//Applying temporal classifiers...
+		if (isClassifierSieve()) {
+			
+			// Init the classifier...
+			EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");
+			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
+			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier("te3", "liblinear");	
+			
+			//Init the feature vectors...	
+			Map<String, String> ttlinks = null, etlinks = null;
+			if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
+			if (isETFeature()) etlinks = docSieved.getTlinkTypes();
+			
+			List<PairFeatureVector> edFv = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
+					false, isGoldCandidate(), Arrays.asList(labels));
+			List<PairFeatureVector> etFv = EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
+					false, isGoldCandidate(), Arrays.asList(labels), ttlinks);
+			List<PairFeatureVector> eeFv = EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
+					false, isGoldCandidate(), Arrays.asList(labels), etlinks);
+			
+			List<String> edClsLabels = edCls.predict(edFv, getEDModelPath(), labels);
+			List<String> etClsLabels = etCls.predict(etFv, getETModelPath(), labels);
+			List<String> eeClsLabels = eeCls.predict(eeFv, getEEModelPath(), labels);
+			
+			if (isRuleSieve()) {
+				
+				for (int i = 0; i < edFv.size(); i ++) {
+					//Find label according to rules
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(edFv.get(i));
+					if (!docSieved.getTlinkTypes().containsKey(etfv.getE1().getID() + "," + etfv.getE2().getID())
+							&& !docSieved.getTlinkTypes().containsKey(etfv.getE2().getID() + "," + etfv.getE1().getID())) {
+						docSieved.getTlinks().add(new TemporalRelation(etfv.getE1().getID(), etfv.getE2().getID(), edClsLabels.get(i)));
+					}							
+				}
+				for (int i = 0; i < etFv.size(); i ++) {
+					//Find label according to rules
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(etFv.get(i));
+					if (!docSieved.getTlinkTypes().containsKey(etfv.getE1().getID() + "," + etfv.getE2().getID())
+							&& !docSieved.getTlinkTypes().containsKey(etfv.getE2().getID() + "," + etfv.getE1().getID())) {
+						docSieved.getTlinks().add(new TemporalRelation(etfv.getE1().getID(), etfv.getE2().getID(), etClsLabels.get(i)));
+					}							
+				}
+				for (int i = 0; i < eeFv.size(); i ++) {
+					//Find label according to rules
+					EventEventFeatureVector eefv = new EventEventFeatureVector(eeFv.get(i));
+					if (!docSieved.getTlinkTypes().containsKey(eefv.getE1().getID() + "," + eefv.getE2().getID())
+							&& !docSieved.getTlinkTypes().containsKey(eefv.getE2().getID() + "," + eefv.getE1().getID())) {
+						docSieved.getTlinks().add(new TemporalRelation(eefv.getE1().getID(), eefv.getE2().getID(), eeClsLabels.get(i)));
+					}				
+				}
+				
+			} else {
+				for (int i = 0; i < edFv.size(); i ++) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(edFv.get(i));
+					docSieved.getTlinks().add(new TemporalRelation(etfv.getE1().getID(), etfv.getE2().getID(), edClsLabels.get(i)));
+				}
+				for (int i = 0; i < etFv.size(); i ++) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(etFv.get(i));
+					docSieved.getTlinks().add(new TemporalRelation(etfv.getE1().getID(), etfv.getE2().getID(), etClsLabels.get(i)));
+				}
+				for (int i = 0; i < eeFv.size(); i ++) {
+					EventEventFeatureVector eefv = new EventEventFeatureVector(eeFv.get(i));
+					docSieved.getTlinks().add(new TemporalRelation(eefv.getE1().getID(), eefv.getE2().getID(), eeClsLabels.get(i)));
+				}
+			}
+		}
+		
+		// Temporal links to string
+		Links links = relationToString(doc, docSieved, relTypeMapping);
+		
+		return links;
 	}
 	
 	public Links relationToString(Doc gold, Doc system, Map<String, String> relTypeMapping) {
@@ -423,8 +571,109 @@ public class Temporal {
 		
 		return links;
 	}
+		
+	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels) throws Exception {
+		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Init the classifier...
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
+		
+		if (taskName.equals("tbdense")) {	//TimeBank-Dense --- Logistic Regression!
+			edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+			etCls = new EventTimexTemporalClassifier(taskName, "none");
+			eeCls = new EventEventTemporalClassifier(taskName, "logit");
+		} 
+		
+		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+//				List<String> columns = tmlToCol.convert(tmlFile, false);
+//				Doc doc = colParser.parseLines(columns);
+				
+//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
+				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
+				TimeMLParser.parseTimeML(tmlFile, doc, tlinks);
+				
+				Map<String, String> ttlinks = null, etlinks = null;		
+				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
+				if (isETFeature()) etlinks = doc.getTlinkTypes();
+				
+				// Get the feature vectors
+				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
+						true, true, Arrays.asList(labels)));
+				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
+						true, true, Arrays.asList(labels), ttlinks));
+				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
+						true, true, Arrays.asList(labels), etlinks));
+			}
+		}
+		
+		for (PairFeatureVector pfv : etFvList) {
+			System.out.println(pfv.toString());
+		}
+		
+		edCls.train(edFvList, getEDModelPath());
+		etCls.train(etFvList, getETModelPath());
+		eeCls.train(eeFvList, getEEModelPath());
+	}
 	
-	public Links extractRelation(File tmlFile, Map<String, String> relTypeMapping) throws Exception {
+	public Links extractRelations(String tmlDirpath, String[] tmlFileNames,
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels,
+			Map<String, String> relTypeMapping) throws Exception {
+		Links results = new Links();
+		List<String> tt = new ArrayList<String>();
+		List<String> ed = new ArrayList<String>();
+		List<String> et = new ArrayList<String>();
+		List<String> ee = new ArrayList<String>();
+		
+		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// PREDICT
+				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
+				Links links = extractRelations(tmlFile, tlinks, labels, relTypeMapping);
+				tt.addAll(links.getTT());
+				ed.addAll(links.getED());
+				et.addAll(links.getET());
+				ee.addAll(links.getEE());
+			}
+		}
+		
+		results.setTT(tt);
+		results.setED(ed);
+		results.setET(et);
+		results.setEE(ee);
+		
+		return results;
+	}	
+	
+	public Links extractRelations(File tmlFile, Map<String, String> tlinks, 
+			String[] labels,
+			Map<String, String> relTypeMapping) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
@@ -437,7 +686,7 @@ public class Temporal {
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
-		TimeMLParser.parseTimeML(tmlFile, doc);
+		TimeMLParser.parseTimeML(tmlFile, doc, tlinks);
 		CandidateLinks.setCandidateTlinks(doc);
 		
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
@@ -477,15 +726,15 @@ public class Temporal {
 			if (isETFeature()) etlinks = docSieved.getTlinkTypes();
 			
 			List<PairFeatureVector> edFv = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
-					false, isGoldCandidate());
+					false, isGoldCandidate(), Arrays.asList(labels));
 			List<PairFeatureVector> etFv = EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
-					false, isGoldCandidate(), ttlinks);
+					false, isGoldCandidate(), Arrays.asList(labels), ttlinks);
 			List<PairFeatureVector> eeFv = EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
-					false, isGoldCandidate(), etlinks);
+					false, isGoldCandidate(), Arrays.asList(labels), etlinks);
 			
-			List<String> edClsLabels = edCls.predict(edFv, getEDModelPath());
-			List<String> etClsLabels = etCls.predict(etFv, getETModelPath());
-			List<String> eeClsLabels = eeCls.predict(eeFv, getEEModelPath());
+			List<String> edClsLabels = edCls.predict(edFv, getEDModelPath(), labels);
+			List<String> etClsLabels = etCls.predict(etFv, getETModelPath(), labels);
+			List<String> eeClsLabels = eeCls.predict(eeFv, getEEModelPath(), labels);
 			
 			if (isRuleSieve()) {
 				
@@ -564,7 +813,7 @@ public class Temporal {
 	    	if (!tlinkPerFile.containsKey(filename)) {
 	    		tlinkPerFile.put(filename, new HashMap<String, String>());
 	    	}
-    		tlinkPerFile.get(filename).put(e1+"\t"+e2, tlink);
+    		tlinkPerFile.get(filename).put(e1+","+e2, tlink);
 	    }
 	    br.close();
 		

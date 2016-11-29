@@ -21,6 +21,7 @@ import java.util.regex.Pattern;
 
 import catena.model.feature.FeatureEnum.*;
 import catena.parser.entities.*;
+import edu.stanford.nlp.util.StringUtils;
 
 public class PairFeatureVector {
 	
@@ -3485,6 +3486,14 @@ public class PairFeatureVector {
 
 	public void setFeatures(double[] features) {
 		this.features = features;
+	}
+	
+	public String toString() {
+		String res = "";
+		for (int i=0; i<getVectors().size()-1; i++) {
+			res += getVectors().get(i) + ",";
+		}
+		return res.substring(0, res.length()-1);
 	}
 	
 	public String toCSVString() {

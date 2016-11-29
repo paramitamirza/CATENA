@@ -97,6 +97,14 @@ public class TimeMLParser {
 		dTml.setFilename(tmlFile.getName());
 	}
 	
+	public static void parseTimeML(File tmlFile, Doc dTml, Map<String, String> tlinks) throws ParserConfigurationException, SAXException, IOException {
+		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
+		setInstances(tmlDoc, dTml);
+		setTlinks(tmlDoc, dTml, tlinks);
+		setClinks(tmlDoc, dTml);
+		dTml.setFilename(tmlFile.getName());
+	}
+	
 	public static void parseTimeML(String tmlString, String tmlFilename, Doc dTml) throws ParserConfigurationException, SAXException, IOException {
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlString);
 		setInstances(tmlDoc, dTml);
@@ -220,6 +228,32 @@ public class TimeMLParser {
 			tl.setSourceType(sourceType); tl.setTargetType(targetType);
 			tl.setRelType(relType);
 			tl.setDeduced(deduced);
+			tlinkArr.add(tl);
+			
+			d.getTlinkTypes().put(source+","+target, relType);
+			d.getTlinkTypes().put(target+","+source, TemporalRelation.getInverseRelation(relType));
+		}
+	}
+	
+	public static void setTlinks(TimeMLDoc tmlDoc, Doc d, 
+			Map<String, String> tlinks) {
+		ArrayList<TemporalRelation> tlinkArr = d.getTlinks();
+		String source = null, target = null, relType = null;
+		String sourceType = null, targetType = null;
+		
+		for (String key : tlinks.keySet()) {
+			source = key.split(",")[0];
+			target = key.split(",")[1];
+			relType = tlinks.get(key);
+			if (source.contains("e")) sourceType = "Event";
+			else sourceType = "Timex";
+			if (target.contains("e")) targetType = "Event";
+			else targetType = "Timex";
+			
+			TemporalRelation tl = new TemporalRelation(source, target);
+			tl.setSourceType(sourceType); tl.setTargetType(targetType);
+			tl.setRelType(relType);
+			tl.setDeduced(false);
 			tlinkArr.add(tl);
 			
 			d.getTlinkTypes().put(source+","+target, relType);

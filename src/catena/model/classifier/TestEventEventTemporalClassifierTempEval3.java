@@ -2,7 +2,10 @@ package catena.model.classifier;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -10,6 +13,7 @@ import catena.model.CandidateLinks;
 import catena.model.classifier.PairClassifier;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.PairFeatureVector;
+import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -22,6 +26,8 @@ public class TestEventEventTemporalClassifierTempEval3 {
 	
 	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+	private String[] labelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+			"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 	
 	public TestEventEventTemporalClassifierTempEval3() {
 		
@@ -31,6 +37,19 @@ public class TestEventEventTemporalClassifierTempEval3 {
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			PairClassifier etRelCls, boolean train, 
 			boolean goldCandidate, boolean etFeature) throws Exception {
+		return getEventEventTlinks(tmlDirpath, 
+				tmlToCol, colParser, 
+				etRelCls, train, goldCandidate, 
+				new HashMap<String, String>(),
+				etFeature);
+	}
+	
+	public List<PairFeatureVector> getEventEventTlinks(String tmlDirpath, 
+			TimeMLToColumns tmlToCol, ColumnParser colParser, 
+			PairClassifier etRelCls, boolean train, 
+			boolean goldCandidate, 
+			Map<String, String> relTypeMapping, 
+			boolean etFeature) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
@@ -49,9 +68,13 @@ public class TestEventEventTemporalClassifierTempEval3 {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				if (!train) CandidateLinks.setCandidateTlinks(doc);
 				
+				Map<String, String> etlinks = null;		
+				if (etFeature) etlinks = etlinks = doc.getTlinkTypes();
+				
 				// Get the feature vectors
+				List<String> labelList = Arrays.asList(labelCollapsed);
 				fvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, etRelCls, 
-						train, goldCandidate, etFeature));
+						train, goldCandidate, labelList, relTypeMapping, etlinks));
 				
 			}
 		}
@@ -83,7 +106,7 @@ public class TestEventEventTemporalClassifierTempEval3 {
 		String evalTmlDirpath = "./data/TempEval3-eval_TML/";
 		List<PairFeatureVector> evalFvList = test.getEventEventTlinks(evalTmlDirpath, tmlToCol, colParser,
 				eeCls, false, goldCandidate, etFeature);
-		List<String> eeClsTest = eeCls.predict(evalFvList, "./models/test/te3-ee.model");
+		List<String> eeClsTest = eeCls.predict(evalFvList, "./models/test/te3-ee.model", test.labelCollapsed);
 		List<String> eeTestList = new ArrayList<String>();
 		for (int i = 0; i < evalFvList.size(); i ++) {
 			EventEventFeatureVector eefv = new EventEventFeatureVector(evalFvList.get(i));

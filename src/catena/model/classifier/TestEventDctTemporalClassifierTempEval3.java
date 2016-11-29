@@ -3,6 +3,7 @@ package catena.model.classifier;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -44,6 +45,8 @@ public class TestEventDctTemporalClassifierTempEval3 {
 	
 	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+	private String[] labelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+			"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 	
 	public TestEventDctTemporalClassifierTempEval3() {
 		
@@ -53,6 +56,18 @@ public class TestEventDctTemporalClassifierTempEval3 {
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			PairClassifier etRelCls, boolean train, 
 			boolean goldCandidate) throws Exception {
+		return getEventDctTlinks(tmlDirpath, 
+				tmlToCol, colParser, 
+				etRelCls, train, 
+				goldCandidate,
+				new HashMap<String, String>());
+	}
+	
+	public List<PairFeatureVector> getEventDctTlinks(String tmlDirpath, 
+			TimeMLToColumns tmlToCol, ColumnParser colParser, 
+			PairClassifier etRelCls, boolean train, 
+			boolean goldCandidate,
+			Map<String, String> relTypeMapping) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
@@ -72,8 +87,9 @@ public class TestEventDctTemporalClassifierTempEval3 {
 				if (!train) CandidateLinks.setCandidateTlinks(doc);
 				
 				// Get the feature vectors
+				List<String> labelList = Arrays.asList(labelCollapsed);
 				fvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, etRelCls, 
-						train, goldCandidate));
+						train, goldCandidate, labelList, relTypeMapping));
 			}
 		}
 		return fvList;
@@ -94,15 +110,20 @@ public class TestEventDctTemporalClassifierTempEval3 {
 		
 		// TRAIN
 		String trainTmlDirpath = "./data/TempEval3-train_TML/";
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
 		List<PairFeatureVector> trainFvList = test.getEventDctTlinks(trainTmlDirpath, tmlToCol, colParser,
-				edCls, true, goldCandidate);
+				edCls, true, goldCandidate, relTypeMappingTrain);
 		edCls.train(trainFvList, "./models/test/te3-ed.model");
 		
 		// PREDICT
 		String evalTmlDirpath = "./data/TempEval3-eval_TML/";
 		List<PairFeatureVector> evalFvList = test.getEventDctTlinks(evalTmlDirpath, tmlToCol, colParser,
 				edCls, false, goldCandidate);
-		List<String> edClsTest = edCls.predict(evalFvList, "./models/test/te3-ed.model");
+		List<String> edClsTest = edCls.predict(evalFvList, "./models/test/te3-ed.model", test.labelCollapsed);
 		List<String> edTestList = new ArrayList<String>();
 		for (int i = 0; i < evalFvList.size(); i ++) {
 			EventTimexFeatureVector edfv = new EventTimexFeatureVector(evalFvList.get(i));
