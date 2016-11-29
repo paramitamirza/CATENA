@@ -1,34 +1,17 @@
 package catena.model.rule;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
-import catena.model.feature.CausalSignalList;
-import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
-import catena.model.feature.PairFeatureVector;
-import catena.model.feature.TemporalSignalList;
-import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
-import catena.parser.ColumnParser.Field;
 import catena.parser.entities.Doc;
-import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
-import catena.parser.entities.Sentence;
-import catena.parser.entities.TemporalRelation;
-import catena.parser.entities.Timex;
-import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 
 public class TestEventTimexRelationRuleTempEval3 {
 	
@@ -69,7 +52,8 @@ public class TestEventTimexRelationRuleTempEval3 {
 	public static void main(String [] args) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Apply event-timex rules to the TimeML (.tml) files...

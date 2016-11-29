@@ -12,18 +12,13 @@ import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.Doc;
 import catena.model.classifier.PairClassifier;
-import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.rule.EventEventTemporalRule;
-import catena.model.rule.EventTimexTemporalRule;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
 import catena.parser.entities.TemporalRelation;
-import catena.parser.entities.Timex;
 import catena.evaluator.PairEvaluator;
 
 import de.bwaldvogel.liblinear.*;

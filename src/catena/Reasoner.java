@@ -14,7 +14,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.List;
 
 import catena.parser.TimeMLParser;
 import catena.parser.entities.Doc;
@@ -22,8 +21,6 @@ import catena.parser.entities.EntityEnum;
 import eu.terenceproject.utils.rest.REST;
 import eu.terenceproject.utils.rest.Consistency;
 import eu.terenceproject.utils.rest.Consistency.State;
-
-import javax.ws.rs.core.UriBuilder;
 
 /**
  *
@@ -61,7 +58,21 @@ public class Reasoner extends REST {
 	}
 	
 	public String deduceTlinksPerFile(String tmlString) throws Exception {
-		return deduction(tmlString);
+		Consistency conresult = consistency(tmlString);
+		switch (conresult.getState()) {
+			case TRUE_STRICT: numTrueStrict ++; break;
+			case TRUE_RELAXED: numTrueRelaxed ++; break;
+			case FALSE: numFalse ++; break;
+			case ERROR: break;
+		}
+		
+		if (conresult.getState().equals(State.TRUE_STRICT) ||
+				conresult.getState().equals(State.TRUE_RELAXED)) {
+			return deduction(tmlString);
+			
+		} else {
+			return tmlString;
+		}
 	}
 	
 	public void deduceTlinksPerFile(String tmlString,

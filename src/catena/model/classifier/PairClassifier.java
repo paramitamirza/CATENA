@@ -3,16 +3,12 @@ package catena.model.classifier;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import de.bwaldvogel.liblinear.Predict;
 
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -21,20 +17,12 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
 import catena.evaluator.PairEvaluator;
-import catena.evaluator.TempEval3;
 import catena.model.feature.CausalSignalList;
-import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
-import catena.parser.ColumnParser;
-import catena.parser.TimeMLParser;
-import catena.parser.entities.Doc;
-import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.TemporalRelation;
 
 public class PairClassifier {
 	

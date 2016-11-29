@@ -26,7 +26,6 @@ public class TimexTimexTemporalRule {
 	public static Map<String,String> getTimexTimexRuleRelation(Doc doc) {
 		Object[] entArr = doc.getEntities().keySet().toArray();
 		Map<String,String> ttlinks = new HashMap<String,String>();
-		String pair = null;
 		for (int i = 0; i < entArr.length; i++) {
 			for (int j = i; j < entArr.length; j++) {
 				if (!entArr[i].equals(entArr[j]) && doc.getEntities().get(entArr[i]) instanceof Timex && 

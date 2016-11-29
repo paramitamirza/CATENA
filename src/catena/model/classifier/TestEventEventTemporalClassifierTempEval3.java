@@ -7,13 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.StringUtils;
-
 import catena.model.CandidateLinks;
 import catena.model.classifier.PairClassifier;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.PairFeatureVector;
-import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -69,7 +66,7 @@ public class TestEventEventTemporalClassifierTempEval3 {
 				if (!train) CandidateLinks.setCandidateTlinks(doc);
 				
 				Map<String, String> etlinks = null;		
-				if (etFeature) etlinks = etlinks = doc.getTlinkTypes();
+				if (etFeature) etlinks = doc.getTlinkTypes();
 				
 				// Get the feature vectors
 				List<String> labelList = Arrays.asList(labelCollapsed);
@@ -87,7 +84,8 @@ public class TestEventEventTemporalClassifierTempEval3 {
 		TestEventEventTemporalClassifierTempEval3 test = new TestEventEventTemporalClassifierTempEval3();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...

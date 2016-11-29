@@ -2,7 +2,6 @@ package catena.model.feature;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import catena.model.feature.FeatureEnum.FeatureName;

@@ -11,7 +11,6 @@ import de.bwaldvogel.liblinear.*;
 import libsvm.*;
 
 import catena.evaluator.PairEvaluator;
-import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
@@ -19,7 +18,6 @@ import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.model.rule.EventTimexTemporalRule;
-import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;

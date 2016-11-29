@@ -6,9 +6,6 @@ import java.util.List;
 
 import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
-import catena.model.classifier.EventTimexTemporalClassifier;
-import catena.model.classifier.PairClassifier;
-import catena.model.feature.PairFeatureVector;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -64,7 +61,8 @@ public class TestCandidateLinks {
 	
 	public static void main(String[] args) {
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		String tmlDirpath = "./data/TempEval3-eval_TML/";

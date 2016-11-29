@@ -1,26 +1,12 @@
 package catena.model.rule;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import catena.model.feature.CausalSignalList;
+
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.Marker;
 import catena.model.feature.PairFeatureVector;
-import catena.model.feature.TemporalSignalList;
-import catena.model.feature.FeatureEnum.FeatureName;
-import catena.model.feature.FeatureEnum.PairType;
-import catena.parser.entities.Doc;
-import catena.parser.entities.Entity;
-import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
-import catena.parser.entities.Sentence;
-import catena.parser.entities.TemporalRelation;
-import catena.parser.entities.Timex;
 
 public class EventEventCausalRule {
 	

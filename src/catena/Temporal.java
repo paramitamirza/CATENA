@@ -2,10 +2,7 @@ package catena;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -19,6 +16,7 @@ import catena.model.CandidateLinks;
 import catena.model.classifier.EventDctTemporalClassifier;
 import catena.model.classifier.EventEventTemporalClassifier;
 import catena.model.classifier.EventTimexTemporalClassifier;
+import catena.model.rule.EventDctTemporalRule;
 import catena.model.rule.EventEventTemporalRule;
 import catena.model.rule.EventTimexTemporalRule;
 import catena.model.rule.TimexTimexTemporalRule;
@@ -32,7 +30,6 @@ import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.FeatureEnum.PairType;
-import catena.parser.entities.Event;
 import catena.parser.entities.Links;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.TimeMLDoc;
@@ -58,7 +55,7 @@ public class Temporal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		String task = "tbdense";
+		String task = "te3-c-rel";
 		
 		switch(task) {
 		
@@ -141,8 +138,8 @@ public class Temporal {
 				"./models/" + taskName + "-event-dct.model",
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
-				false, true, false,
-				false, false);
+				true, true, true,
+				true, true);
 		
 		// TRAIN
 		temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel);
@@ -156,7 +153,7 @@ public class Temporal {
 		relTypeMapping.put("ENDED_BY", "BEFORE");
 		relTypeMapping.put("DURING", "SIMULTANEOUS");
 		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -329,7 +326,8 @@ public class Temporal {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
@@ -347,7 +345,7 @@ public class Temporal {
 //				List<String> columns = tmlToCol.convert(tmlFile, false);
 //				Doc doc = colParser.parseLines(columns);
 				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
@@ -369,6 +367,11 @@ public class Temporal {
 		edCls.train(edFvList, getEDModelPath());
 		etCls.train(etFvList, getETModelPath());
 		eeCls.train(eeFvList, getEEModelPath());
+	}
+	
+	public Links extractRelations(String taskName, String tmlDirpath, String[] labels) throws Exception {
+		return extractRelations(taskName, tmlDirpath, labels,
+				new HashMap<String, String>());
 	}
 	
 	public Links extractRelations(String taskName, String tmlDirpath, String[] labels,
@@ -406,14 +409,15 @@ public class Temporal {
 			Map<String, String> relTypeMapping) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
 //		List<String> columns = tmlToCol.convert(tmlFile, false);
 //		Doc doc = colParser.parseLines(columns);
 		
-//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc);
@@ -453,7 +457,7 @@ public class Temporal {
 			//Init the feature vectors...	
 			Map<String, String> ttlinks = null, etlinks = null;
 			if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-			if (isETFeature()) etlinks = docSieved.getTlinkTypes();
+			if (isETFeature()) etlinks = doc.getTlinkTypes();
 			
 			List<PairFeatureVector> edFv = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
 					false, isGoldCandidate(), Arrays.asList(labels));
@@ -582,7 +586,8 @@ public class Temporal {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
@@ -590,7 +595,7 @@ public class Temporal {
 		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
 		
-		if (taskName.equals("tbdense")) {	//TimeBank-Dense --- Logistic Regression!
+		if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- Logistic Regression!
 			edCls = new EventDctTemporalClassifier(taskName, "logit");
 			etCls = new EventTimexTemporalClassifier(taskName, "logit");
 			eeCls = new EventEventTemporalClassifier(taskName, "logit");
@@ -608,7 +613,7 @@ public class Temporal {
 //				List<String> columns = tmlToCol.convert(tmlFile, false);
 //				Doc doc = colParser.parseLines(columns);
 				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
@@ -616,7 +621,11 @@ public class Temporal {
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-				if (isETFeature()) etlinks = doc.getTlinkTypes();
+				if (isETFeature()) {
+					etlinks = doc.getTlinkTypes();
+					if (Arrays.asList(labels).contains("VAGUE"))	//TimeBank-Dense --- etlinks only from E-D rule labels 
+						etlinks = EventDctTemporalRule.getEventDctRuleRelation(doc, true);
+				}
 				
 				// Get the feature vectors
 				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
@@ -683,14 +692,15 @@ public class Temporal {
 			Map<String, String> relTypeMapping) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
 //		List<String> columns = tmlToCol.convert(tmlFile, false);
 //		Doc doc = colParser.parseLines(columns);
 		
-//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc, tlinks);
@@ -703,9 +713,14 @@ public class Temporal {
 		// Applying temporal rules...
 		if (isRuleSieve()) {
 			List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
+			List<String> edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
 			List<String> etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
 			List<String> eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
+			
+			if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- special VAGUE rules for E-D and E-T
+				edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate(), true);
+				etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate(), true);
+			}
 			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
 					ttRule, edRule, etRule, eeRule);
 		}
@@ -727,7 +742,7 @@ public class Temporal {
 			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
 			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
 			
-			if (taskName.equals("tbdense")) {	//TimeBank-Dense --- Logistic Regression!
+			if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- Logistic Regression!
 				edCls = new EventDctTemporalClassifier(taskName, "liblinear");
 				etCls = new EventTimexTemporalClassifier(taskName, "logit");
 				eeCls = new EventEventTemporalClassifier(taskName, "logit");
@@ -736,7 +751,11 @@ public class Temporal {
 			//Init the feature vectors...	
 			Map<String, String> ttlinks = null, etlinks = null;
 			if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-			if (isETFeature()) etlinks = docSieved.getTlinkTypes();
+			if (isETFeature()) {
+				etlinks = docSieved.getTlinkTypes();
+				if (Arrays.asList(labels).contains("VAGUE")) 	//TimeBank-Dense --- etlinks only from E-D rule labels 
+					etlinks = EventDctTemporalRule.getEventDctRuleRelation(doc, true);
+			}
 			
 			List<PairFeatureVector> edFv = EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
 					false, isGoldCandidate(), Arrays.asList(labels));

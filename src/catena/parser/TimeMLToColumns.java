@@ -32,20 +32,29 @@ public class TimeMLToColumns {
 	private Map<Integer, Integer> startOfSentences;
 	
 	private String textProDirpath;
-	private String mateToolsDirpath;
 	
-	public TimeMLToColumns(String textProDirpath, String mateToolsDirpath) {
+	private String mateLemmatizerModelPath;
+	private String mateTaggerModelPath;
+	private String mateParserModelPath;
+	
+	public TimeMLToColumns(String textProDirpath, 
+			String lemmatizerModelPath, String taggerModelPath, String parserModelPath) {
 		startOfSentences = new HashMap<Integer, Integer>();
 		this.setTextProDirpath(textProDirpath);
-		this.setMateToolsDirpath(mateToolsDirpath);
+		this.setMateLemmatizerModelPath(lemmatizerModelPath);
+		this.setMateTaggerModelPath(taggerModelPath);
+		this.setMateParserModelPath(parserModelPath);
 	}
 	
 	public TimeMLToColumns(EntityEnum.Language lang,
-			String textProDirpath, String mateToolsDirpath) {
+			String textProDirpath, 
+			String lemmatizerModelPath, String taggerModelPath, String parserModelPath) {
 		this.setLanguage(lang);
 		startOfSentences = new HashMap<Integer, Integer>();
 		this.setTextProDirpath(textProDirpath);
-		this.setMateToolsDirpath(mateToolsDirpath);
+		this.setMateLemmatizerModelPath(lemmatizerModelPath);
+		this.setMateTaggerModelPath(taggerModelPath);
+		this.setMateParserModelPath(parserModelPath);
 	}
 	
 	public List<String> parse(File timeMLFile) throws ParserConfigurationException, SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
@@ -468,7 +477,7 @@ public class TimeMLToColumns {
 		printToConllFile(columns, tmlFile.getPath().replace(".tml", ".conll"));
 				
 		// Run Mate tools			
-		MateToolsParser mateTools = new MateToolsParser(this.getMateToolsDirpath());
+		MateToolsParser mateTools = new MateToolsParser(ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		List<String> mateToolsColumns = mateTools.run(new File(tmlFile.getPath().replace(".tml", ".conll")));
 //		for (String s : mateToolsColumns) System.out.println(s);
 		
@@ -515,7 +524,8 @@ public class TimeMLToColumns {
 	
 	public static void main(String[] args) {
 		
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);		
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);		
 		
 		try {					
 			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
@@ -547,12 +557,28 @@ public class TimeMLToColumns {
 		this.textProDirpath = textProDirpath;
 	}
 
-	public String getMateToolsDirpath() {
-		return mateToolsDirpath;
+	public String getMateLemmatizerModelPath() {
+		return mateLemmatizerModelPath;
 	}
 
-	public void setMateToolsDirpath(String mateToolsDirpath) {
-		this.mateToolsDirpath = mateToolsDirpath;
+	public void setMateLemmatizerModelPath(String mateLemmatizerModelPath) {
+		this.mateLemmatizerModelPath = mateLemmatizerModelPath;
+	}
+
+	public String getMateTaggerModelPath() {
+		return mateTaggerModelPath;
+	}
+
+	public void setMateTaggerModelPath(String mateTaggerModelPath) {
+		this.mateTaggerModelPath = mateTaggerModelPath;
+	}
+
+	public String getMateParserModelPath() {
+		return mateParserModelPath;
+	}
+
+	public void setMateParserModelPath(String mateParserModelPath) {
+		this.mateParserModelPath = mateParserModelPath;
 	}
 
 }

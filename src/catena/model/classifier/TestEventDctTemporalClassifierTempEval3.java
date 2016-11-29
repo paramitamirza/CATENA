@@ -1,45 +1,23 @@
 package catena.model.classifier;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.CandidateLinks;
 import catena.model.classifier.PairClassifier;
-import catena.model.feature.CausalSignalList;
-import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
-import catena.model.feature.TemporalSignalList;
-import catena.model.feature.FeatureEnum.FeatureName;
-import catena.model.feature.FeatureEnum.PairType;
-import catena.model.rule.EventEventTemporalRule;
-import catena.model.rule.EventTimexTemporalRule;
-import catena.model.rule.TestEventTimexRelationRuleTempEval3;
-import catena.model.rule.TestTimexTimexRelationRuleTempEval3;
-import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
-import catena.parser.ColumnParser.Field;
 import catena.parser.entities.Doc;
-import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
-import catena.parser.entities.Sentence;
-import catena.parser.entities.TemporalRelation;
-import catena.parser.entities.Timex;
 import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
-
-import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 
 public class TestEventDctTemporalClassifierTempEval3 {
 	
@@ -100,8 +78,9 @@ public class TestEventDctTemporalClassifierTempEval3 {
 		TestEventDctTemporalClassifierTempEval3 test = new TestEventDctTemporalClassifierTempEval3();
 		
 		// Init the parsers...
-				TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
-				ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// Init the classifier...
 		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");

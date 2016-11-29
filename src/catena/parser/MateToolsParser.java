@@ -1,45 +1,41 @@
 package catena.parser;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
+import catena.ParserConfig;
 import catena.parser.entities.EntityEnum;
 
 public class MateToolsParser {
 
-	private String mateToolsPath;
+	private String mateLemmatizerModel;
+	private String mateTaggerModel;
+	private String mateParserModel;
+	
 	private EntityEnum.Language language;
 	
 	public MateToolsParser() {
 		
 	}
 	
-	public MateToolsParser(String mateToolsPath) {
-		this.setMateToolsPath(mateToolsPath);
+	public MateToolsParser(String mateLemmatizerModelPath, String mateTaggerModelPath, String mateParserModelPath) {
+		this.setMateLemmatizerModel(mateLemmatizerModelPath);
+		this.setMateTaggerModel(mateTaggerModelPath);
+		this.setMateParserModel(mateParserModelPath);
 		this.setLanguage(EntityEnum.Language.EN);
 	}
 	
-	public MateToolsParser(String mateToolsPath, EntityEnum.Language lang) {
-		this.setMateToolsPath(mateToolsPath);
+	public MateToolsParser(String mateLemmatizerModelPath, String mateTaggerModelPath, String mateParserModelPath, 
+			EntityEnum.Language lang) {
+		this.setMateLemmatizerModel(mateLemmatizerModelPath);
+		this.setMateTaggerModel(mateTaggerModelPath);
+		this.setMateParserModel(mateParserModelPath);
 		this.setLanguage(lang);
-	}
-
-	public String getMateToolsPath() {
-		return mateToolsPath;
-	}
-
-	public void setMateToolsPath(String mateToolsPath) {
-		this.mateToolsPath = mateToolsPath;
 	}
 
 	public EntityEnum.Language getLanguage() {
@@ -62,17 +58,17 @@ public class MateToolsParser {
 		System.setOut(dummyStream);
 		System.setErr(dummyStream);
 		
-		String[] lemmatizerArgs = {"-model", this.getMateToolsPath() + "models/lemmatizer-eng-4M-v36.mdl",
+		String[] lemmatizerArgs = {"-model", this.getMateLemmatizerModel(),
 				"-test", inputFile.getPath(),
 				"-out", "./data/temp"};
 		is2.lemmatizer.Lemmatizer.main(lemmatizerArgs);
 		
-		String[] taggerArgs = {"-model", this.getMateToolsPath() + "models/tagger-eng-4M-v36.mdl",
+		String[] taggerArgs = {"-model", this.getMateTaggerModel(),
 				"-test", "./data/temp",
 				"-out", "./data/temp2"};
 		is2.tag.Tagger.main(taggerArgs);
 		
-		String[] parserArgs = {"-model", this.getMateToolsPath() + "models/parser-eng-12M-v36.mdl",
+		String[] parserArgs = {"-model", this.getMateParserModel(),
 				"-test", "./data/temp2",
 				"-out", outputFile.getPath()};
 		is2.parser.Parser.main(parserArgs);
@@ -105,7 +101,7 @@ public class MateToolsParser {
 		
 		try {
 			
-			MateToolsParser mateTools = new MateToolsParser("./tools/MateTools/");
+			MateToolsParser mateTools = new MateToolsParser(ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 			List<String> mateToolsColumns = mateTools.run(new File("./data/example_CoNLL/wsj_1014.conll"));
 			for (String s : mateToolsColumns) System.out.println(s);
 			
@@ -114,5 +110,29 @@ public class MateToolsParser {
 			e.printStackTrace();
 		}
 		
+	}
+
+	public String getMateLemmatizerModel() {
+		return mateLemmatizerModel;
+	}
+
+	public void setMateLemmatizerModel(String mateLemmatizerModel) {
+		this.mateLemmatizerModel = mateLemmatizerModel;
+	}
+
+	public String getMateTaggerModel() {
+		return mateTaggerModel;
+	}
+
+	public void setMateTaggerModel(String mateTaggerModel) {
+		this.mateTaggerModel = mateTaggerModel;
+	}
+
+	public String getMateParserModel() {
+		return mateParserModel;
+	}
+
+	public void setMateParserModel(String mateParserModel) {
+		this.mateParserModel = mateParserModel;
 	}
 }

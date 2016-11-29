@@ -1,8 +1,5 @@
 package catena.parser.entities;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class CausalRelation extends Relation{
 	
 	private String signal;

@@ -50,6 +50,10 @@ public class EventTimexTemporalRule {
 	}
 	
 	public static List<String> getEventTimexTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		return getEventTimexTlinksPerFile(doc, goldCandidate, false);
+	}
+	
+	public static List<String> getEventTimexTlinksPerFile(Doc doc, boolean goldCandidate, boolean vague) throws Exception {
 		List<String> et = new ArrayList<String>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -77,8 +81,12 @@ public class EventTimexTemporalRule {
 						EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
 								doc, etfv.getMateDependencyPath());
 						if (!etRule.getRelType().equals("O")) {
+							String label = etRule.getRelType();
+							if (vague) {
+								if (((Timex) etfv.getE2()).getValue().contains("REF")) label = "VAGUE";
+							}
 							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\t" + etRule.getRelType());
+									etfv.getLabel() + "\t" + label);
 //						} else {
 //							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
 //									etfv.getLabel() + "\tNONE");
@@ -91,6 +99,10 @@ public class EventTimexTemporalRule {
 	}
 	
 	public static List<String> getEventDctTlinksPerFile(Doc doc, boolean goldCandidate) throws Exception {
+		return getEventDctTlinksPerFile(doc, goldCandidate, false);
+	}
+	
+	public static List<String> getEventDctTlinksPerFile(Doc doc, boolean goldCandidate, boolean vague) throws Exception {
 		List<String> et = new ArrayList<String>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -118,12 +130,17 @@ public class EventTimexTemporalRule {
 						EventTimexTemporalRule etRule = new EventTimexTemporalRule((Event) etfv.getE1(), (Timex) etfv.getE2(), 
 								doc, etfv.getMateDependencyPath());
 						if (!etRule.getRelType().equals("O")) {
+							String label = etRule.getRelType();
+							if (vague) {	//Rule for VAGUE label
+								if (etfv.getTokenAttribute(etfv.getE1(), FeatureName.mainpos).equals("adj")) label = "VAGUE";
+							}
 							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
-									etfv.getLabel() + "\t" + etRule.getRelType());
+									etfv.getLabel() + "\t" + label);
 //						} else {
 //							et.add(etfv.getE1().getID() + "\t" + etfv.getE2().getID() + "\t" + 
 //									etfv.getLabel() + "\tNONE");
 						}
+						
 					}
 				}
 			}

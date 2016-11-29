@@ -83,7 +83,8 @@ public class TestEventTimexTemporalClassifierTempEval3 {
 		TestEventTimexTemporalClassifierTempEval3 test = new TestEventTimexTemporalClassifierTempEval3();
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...

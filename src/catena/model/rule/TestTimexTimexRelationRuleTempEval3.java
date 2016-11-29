@@ -52,7 +52,8 @@ public class TestTimexTimexRelationRuleTempEval3 {
 	public static void main(String [] args) throws Exception {
 		
 		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, ParserConfig.mateToolsDirpath);
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Apply timex-timex rules to the TimeML (.tml) files...

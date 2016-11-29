@@ -1,7 +1,6 @@
 package catena.model.rule;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 import org.python.core.Py;
 import org.python.core.PyClass;
