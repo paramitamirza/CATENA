@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Lawrence	t1	1	Lawrence	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	lawrence	NNP	O	O
 Insurance	t2	1	Insurance	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	insurance	NNP	O	O
@@ -91,7 +91,7 @@ Lawrence	t85	4	Lawrence	O	O	O	O	O	O	O	O	NP0	B-NP	lawrence	NNP	O	O
 Group	t86	4	Group	O	O	O	O	O	O	O	O	NP0	I-NP	group	NNP	t85:NAME	O
 increased	t87	4	increase	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	increase	VBD	t80:MNR||t84:P||t86:SBJ||t89:OBJ||t93:DIR||t96:DIR||t99:P	mainVb
 its	t88	4	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-stake	t89	4	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t88:NMOD||t90:NMOD	O
+stake	t89	4	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t88:NMOD||t90:LOC	O
 in	t90	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t92:PMOD	O
 Lawrence	t91	4	Lawrence	O	O	O	O	O	O	O	O	NP0	B-NP	lawrence	NNP	O	O
 Insurance	t92	4	Insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NNP	t91:NAME	O
@@ -140,12 +140,12 @@ Group	t131	7	Group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NNP	t130:NAME	O
 also	t132	7	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
 owns	t133	7	own	e24	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	own	VBZ	t131:SBJ||t132:ADV||t135:OBJ||t147:P	mainVb
 Lawrence	t134	7	Lawrence	O	O	O	O	O	O	O	O	NP0	B-NP	lawrence	NNP	O	O
-Agency	t135	7	Agency	O	O	O	O	O	O	O	O	NP0	I-NP	agency	NN	t134:NMOD||t136:POSTHON||t137:P||t140:LOC	O
+Agency	t135	7	Agency	O	O	O	O	O	O	O	O	NP0	I-NP	agency	NNP	t134:NAME||t136:POSTHON||t137:P||t140:LOC||t141:P||t144:APPO	O
 Corp.	t136	7	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 ,	t137	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Schenectady	t138	7	Schenectady	O	O	O	O	O	O	O	O	NP0	B-NP	schenectady	NNP	O	O
 ,	t139	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-N.Y.	t140	7	N.Y.	O	O	O	O	O	O	O	O	NP0	B-NP	n.y.	NNP	t138:NMOD||t139:P||t141:P||t144:APPO	O
+N.Y.	t140	7	N.Y.	O	O	O	O	O	O	O	O	NP0	B-NP	n.y.	NNP	t138:NMOD||t139:P	O
 ,	t141	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 an	t142	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 insurance	t143	7	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	O	O

@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	LS	O	O
 
 CNW	t1	1	CNW	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cnw	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -42,9 +42,9 @@ be	t38	2	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t39:VC	mainVb
 acquired	t39	2	acquire	e9	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	I-VP	acquire	VBN	t40:LGS||t52:ADV	mainVb
 by	t40	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t42:PMOD	O
 a	t41	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-group	t42	2	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t41:NMOD||t43:NMOD	O
+group	t42	2	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t41:NMOD||t43:NMOD||t45:APPO	O
 of	t43	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t44:PMOD	O
-investors	t44	2	investor	O	O	O	O	O	O	O	O	NN2	B-NP	investor	NNS	t45:APPO	O
+investors	t44	2	investor	O	O	O	O	O	O	O	O	NN2	B-NP	investor	NNS	O	O
 led	t45	2	lead	O	O	O	O	O	O	O	O	VVN	B-VP	lead	VBN	t46:LGS	O
 by	t46	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t51:PMOD	O
 Blackstone	t47	2	Blackstone	O	O	O	O	O	O	O	O	NP0	B-NP	blackstone	NNP	O	O

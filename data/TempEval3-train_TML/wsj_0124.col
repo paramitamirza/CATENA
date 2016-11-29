@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 William	t1	1	William	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	william	NNP	O	O
 C.	t2	1	C.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	c.	NNP	O	O
@@ -27,8 +27,8 @@ Holding	t24	1	Holding	O	O	O	O	O	O	O	O	NP0	I-NP	holding	NNP	t23:NAME||t25:POSTHON
 Corp.	t25	1	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 and	t26	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t34:CONJ	O
 its	t27	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-principal	t28	1	principal	O	O	O	O	O	O	O	O	AJ0	I-NP	principal	NN	O	O
-operating	t29	1	operate	O	O	O	O	O	O	O	O	AJ0	I-NP	operate	VBG	O	O
+principal	t28	1	principal	O	O	O	O	O	O	O	O	AJ0	I-NP	principal	JJ	O	O
+operating	t29	1	operate	O	O	O	O	O	O	O	O	AJ0	I-NP	operate	NN	O	O
 unit	t30	1	unit	O	O	O	O	O	O	O	O	NN1	I-NP	unit	NN	t27:NMOD||t28:NMOD||t29:NMOD	O
 ,	t31	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Fidelity	t32	1	Fidelity	O	O	O	O	O	O	O	O	NN1	B-NP	fidelity	NNP	O	O
@@ -51,8 +51,8 @@ A.	t46	3	A.	O	O	O	O	O	O	O	O	NP0	I-NP	a.	NNP	O	O
 Taylor	t47	3	Taylor	O	O	O	O	O	O	O	O	NP0	I-NP	taylor	NNP	t45:NAME||t46:NAME||t48:P||t50:NMOD	O
 ,	t48	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t49	3	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
-stepped	t50	3	step	e5	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	step	VBD	t49:SBJ||t51:ADV||t59:TMP||t61:PRP	O
-down	t51	3	down	O	O	O	O	O	O	O	O	AVP	B-PRT	down	RB	t52:AMOD	O
+stepped	t50	3	step	e5	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	step	VBD	t49:SBJ||t51:ADV||t52:ADV||t59:TMP||t61:PRP	O
+down	t51	3	down	O	O	O	O	O	O	O	O	AVP	B-PRT	down	RP	O	O
 as	t52	3	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t53:PMOD	O
 chairman	t53	3	chairman	e3000	STATE	O	O	O	O	O	O	NN1	B-NP	chairman	NN	t54:P||t55:COORD	O
 ,	t54	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -80,13 +80,13 @@ chairman	t72	4	chairman	O	O	O	O	O	O	O	O	NN1	B-NP	chairman	NN	O	O
 Separately	t74	5	separately	O	O	O	O	O	O	O	O	AV0	B-ADVP	separately	RB	O	O
 ,	t75	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Citadel	t76	5	Citadel	O	O	O	O	O	O	O	O	NP0	B-NP	citadel	NNP	O	O
-posted	t77	5	post	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t74:ADV||t75:P||t76:SBJ||t81:OBJ||t92:P||t93:ADV||t110:P	mainVb
+posted	t77	5	post	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t74:ADV||t75:P||t76:SBJ||t81:OBJ||t110:P	mainVb
 a	t78	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t79	5	third-quarter	O	O	O	tmx29	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	RBR	O	O
-net	t80	5	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	t79:AMOD	O
-loss	t81	5	loss	e9	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t78:NMOD||t80:NMOD||t82:NMOD	O
+third-quarter	t79	5	third-quarter	O	O	O	tmx29	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
+net	t80	5	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
+loss	t81	5	loss	e9	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t78:NMOD||t79:NMOD||t80:NMOD||t82:NMOD||t93:NMOD	O
 of	t82	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t83:PMOD	O
-$	t83	5	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t84:DEP||t85:DEP||t86:P||t87:COORD	O
+$	t83	5	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t84:DEP||t85:DEP||t86:P||t87:COORD||t92:P	O
 2.3	t84	5	2.3	O	O	O	O	O	O	O	O	CRD	I-NP	2.3	CD	O	O
 million	t85	5	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t86	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -126,7 +126,7 @@ write-downs	t117	6	write-downs	e32	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	w
 which	t119	6	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 had	t120	6	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t119:SBJ||t123:OBJ	O
 an	t121	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-after-tax	t122	6	after-tax	O	O	O	O	O	O	O	O	AJ0	I-NP	after-tax	JJ	O	O
+after-tax	t122	6	after-tax	O	O	O	O	O	O	O	O	AJ0	I-NP	after-tax	NN	O	O
 impact	t123	6	impact	O	O	O	O	O	O	O	O	NN1	I-NP	impact	NN	t121:NMOD||t122:NMOD||t124:NMOD	O
 of	t124	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t125:PMOD	O
 $	t125	6	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t126:DEP||t127:DEP	O
@@ -135,8 +135,8 @@ million	t127	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 .	t128	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Those	t129	7	those	O	O	O	O	O	O	O	O	DT0	B-NP	those	DT	O	O
-included	t130	7	include	e13	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	include	VBN	O	O
-costs	t131	7	cost	O	O	O	O	O	O	O	O	NN2	B-NP	costs	NNS	t129:NMOD||t130:NMOD||t132:APPO||t152:P	mainVb
+included	t130	7	include	e13	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	include	VBD	t129:SBJ||t131:OBJ||t152:P	mainVb
+costs	t131	7	cost	O	O	O	O	O	O	O	O	NN2	B-NP	costs	NNS	t132:APPO	O
 associated	t132	7	associate	O	O	O	O	O	O	O	O	VVN	B-VP	associate	VBN	t133:ADV	O
 with	t133	7	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t142:PMOD	O
 the	t134	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O

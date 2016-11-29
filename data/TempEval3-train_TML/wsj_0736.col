@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Poughkeepsie	t1	1	Poughkeepsie	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	poughkeepsie	NNP	O	O
 Savings	t2	1	Savings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	savings	NNPS	O	O
@@ -107,7 +107,7 @@ deposits	t100	5	deposit	O	O	O	O	O	O	O	O	NN2	I-NP	deposit	NNS	t99:NMOD	O
 to	t101	5	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t103:PMOD	O
 commercial	t102	5	commercial	O	O	O	O	O	O	O	O	AJ0	B-NP	commercial	JJ	O	O
 banks	t103	5	bank	O	O	O	O	O	O	O	O	NN2	I-NP	banks	NNS	t102:NMOD||t106:NMOD	O
-"	t104	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	WDT	O	O
+"	t104	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 substantially	t105	5	substantially	O	O	O	O	O	O	O	O	AV0	B-VP	substantially	RB	O	O
 altered	t106	5	alter	e23	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	I-VP	alter	VBD	t104:SBJ||t105:ADV||t108:OBJ||t112:ADV	O
 the	t107	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -147,7 +147,7 @@ taxes	t138	6	tax	O	O	O	O	O	O	O	O	NN2	B-NP	tax	NNS	O	O
 
 In	t140	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t144:PMOD	O
 the	t141	7	the	O	O	O	tmx65	DATE	1988-Q3	O	O	AT0	B-NP	the	DT	O	O
-year-earlier	t142	7	year-earlier	O	O	O	tmx65	DATE	1988-Q3	O	O	AJC	I-NP	year-earlier	NN	O	O
+year-earlier	t142	7	year-earlier	O	O	O	tmx65	DATE	1988-Q3	O	O	AJC	I-NP	year-earlier	JJR	O	O
 third	t143	7	third	O	O	O	tmx65	DATE	1988-Q3	O	O	ORD	I-NP	third	JJ	O	O
 quarter	t144	7	quarter	O	O	O	tmx65	DATE	1988-Q3	O	O	NN1	I-NP	quarter	NN	t141:NMOD||t142:NMOD||t143:NMOD	O
 ,	t145	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

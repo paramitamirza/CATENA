@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Tony	t1	1	Tony	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	tony	NNP	O	O
 Lama	t2	1	Lama	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	lama	NNP	t1:NAME||t3:POSTHON	O
@@ -38,18 +38,18 @@ the	t34	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 new	t35	2	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 proposal	t36	2	proposal	e2046	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	proposal	NN	t34:NMOD||t35:NMOD	O
 ,	t37	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Equus	t38	2	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	t39:P||t40:APPO||t47:P	O
+Equus	t38	2	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	t39:P||t40:APPO	O
 ,	t39	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 managed	t40	2	manage	O	O	O	O	O	O	O	O	VVN	B-VP	manage	VBN	t41:LGS	O
-by	t41	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t45:P	O
+by	t41	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t47:P	O
 Equus	t42	2	Equus	O	O	O	O	O	O	O	O	NP0	B-NP	equus	NNP	O	O
 Capital	t43	2	Capital	O	O	O	O	O	O	O	O	NP0	I-NP	capital	NNP	t42:NAME||t44:POSTHON	O
 Corp.	t44	2	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
-,	t45	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t43:NMOD||t46:LOC	O
+,	t45	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Houston	t46	2	Houston	O	O	O	O	O	O	O	O	NP0	B-NP	houston	NNP	O	O
-,	t47	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+,	t47	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t43:NMOD||t45:P||t46:LOC	O
 would	t48	2	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t31:LOC||t37:P||t38:SBJ||t49:VC||t77:P	mainVb
-pay	t49	2	pay	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t52:OBJ||t58:ADV||t67:ADV	mainVb
+pay	t49	2	pay	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t52:OBJ||t67:ADV	mainVb
 $	t50	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t51:NMOD	O
 12	t51	2	12	O	O	O	O	O	O	O	O	CRD	I-NP	12	CD	O	O
 cash	t52	2	cash	O	O	O	O	O	O	O	O	NN1	I-NP	cash	NN	t50:NMOD||t53:COORD	O
@@ -57,7 +57,7 @@ and	t53	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t57:CONJ	O
 one	t54	2	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 new	t55	2	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 preferred	t56	2	preferred	O	O	O	O	O	O	O	O	AJ0	I-NP	prefer	VBN	O	O
-share	t57	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t54:NMOD||t55:NMOD||t56:NMOD	O
+share	t57	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t54:NMOD||t55:NMOD||t56:NMOD||t58:NMOD	O
 with	t58	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t61:PMOD	O
 a	t59	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 liquidation	t60	2	liquidation	O	O	O	O	O	O	O	O	NN1	I-NP	liquidation	NN	O	O
@@ -82,8 +82,8 @@ outstanding	t76	2	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 Previously	t78	3	previously	O	O	O	tmx1999	DATE	PAST_REF	O	O	AV0	B-ADVP	previously	RB	O	O
 ,	t79	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 it	t80	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-offered	t81	3	offer	e9	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBD	t78:TMP||t79:P||t80:SBJ||t82:OBJ||t93:P	mainVb
-$	t82	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t83:NMOD||t85:ADV||t86:NMOD||t88:P||t89:COORD	O
+offered	t81	3	offer	e9	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBD	t78:TMP||t79:P||t80:SBJ||t82:OBJ||t86:ADV||t93:P	mainVb
+$	t82	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t83:NMOD||t85:ADV||t88:P||t89:COORD	O
 13.65	t83	3	13.65	O	O	O	O	O	O	O	O	CRD	I-NP	13.65	CD	O	O
 a	t84	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t85	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t84:NMOD	O

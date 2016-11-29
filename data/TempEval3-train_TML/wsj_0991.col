@@ -1,9 +1,9 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
-Total	t1	1	total	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	total	JJ	O	O
-Assets	t2	1	asset	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	assets	NNS	O	O
-Protection	t3	1	Protection	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	protection	NNP	O	O
-Inc.	t4	1	Inc.	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	inc.	NNP	t1:NAME||t2:NAME||t3:NAME	O
+Total	t1	1	total	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	total	NNP	O	O
+Assets	t2	1	asset	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	assets	NNP	O	O
+Protection	t3	1	Protection	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	protection	NNP	t1:NAME||t2:NAME||t4:POSTHON	O
+Inc.	t4	1	Inc.	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 ,	t5	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 rebounding	t6	1	rebound	e1	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	rebound	VBG	t7:ADV	O
 from	t7	1	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t10:PMOD	O
@@ -11,14 +11,14 @@ its	t8	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 earlier	t9	1	earlier	O	O	O	O	O	O	O	O	AJC	I-NP	earlier	JJR	O	O
 loss	t10	1	loss	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t8:NMOD||t9:NMOD	O
 ,	t11	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-expects	t12	1	expect	e4	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t4:SBJ||t5:P||t6:ADV||t11:P||t13:OPRD	O
+expects	t12	1	expect	e4	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t3:SBJ||t5:P||t6:ADV||t11:P||t13:OPRD	O
 to	t13	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t14:IM	O
 report	t14	1	report	e6	REPORTING	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	report	VB	t15:OBJ	O
 earnings	t15	1	earnings	e17	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	earnings	NNS	t16:NMOD||t18:NMOD||t22:NMOD	O
 from	t16	1	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t17:PMOD	O
 operations	t17	1	operation	O	O	O	O	O	O	O	O	NN2	B-NP	operations	NNS	O	O
 of	t18	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t20:PMOD	O
-about	t19	1	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
+about	t19	1	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
 $	t20	1	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t19:DEP||t21:DEP	O
 200,000	t21	1	200,000	O	O	O	O	O	O	O	O	CRD	I-NP	200,000	CD	O	O
 for	t22	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t25:PMOD	O
@@ -57,7 +57,7 @@ income	t52	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t51:NMOD	O
 
 Revenue	t54	3	revenue	O	O	O	O	O	O	O	O	NN1	B-NP	revenue	NN	O	O
 was	t55	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t54:SBJ||t57:PRD||t60:P	mainVb
-about	t56	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+about	t56	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
 $	t57	3	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t56:DEP||t58:DEP||t59:DEP	O
 4.5	t58	3	4.5	O	O	O	O	O	O	O	O	CRD	I-NP	4.5	CD	O	O
 million	t59	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -94,11 +94,11 @@ $	t87	4	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t86:DEP||t88:DEP||t89:DEP	O
 million	t89	4	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 .	t90	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Total	t91	5	total	O	O	O	O	O	O	O	O	AJ0	B-NP	total	JJ	O	O
-Assets	t92	5	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNS	t91:NMOD	O
-plans	t93	5	plan	O	O	O	O	O	O	O	O	NN2	I-NP	plan	NNS	t92:SBJ||t94:COORD||t97:OBJ||t106:P	mainVb
+Total	t91	5	total	O	O	O	O	O	O	O	O	AJ0	B-NP	total	NNP	O	O
+Assets	t92	5	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNPS	t91:NAME	O
+plans	t93	5	plan	O	O	O	O	O	O	O	O	NN2	I-NP	plan	VBZ	t92:SBJ||t94:COORD||t97:OBJ||t106:P	mainVb
 and	t94	5	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t95:CONJ	O
-designs	t95	5	design	O	O	O	O	O	O	O	O	NN2	I-NP	design	NNS	O	O
+designs	t95	5	design	O	O	O	O	O	O	O	O	NN2	I-NP	design	VBZ	O	O
 computer	t96	5	computer	O	O	O	O	O	O	O	O	NN1	I-NP	computer	NN	O	O
 centers	t97	5	center	O	O	O	O	O	O	O	O	NN2	I-NP	center	NNS	t96:NMOD||t98:P||t101:COORD	O
 ,	t98	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

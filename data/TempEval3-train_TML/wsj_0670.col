@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 National	t1	1	National	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	national	NNP	O	O
 Intergroup	t2	1	Intergroup	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	intergroup	NNP	t1:NAME||t3:POSTHON	O
@@ -88,7 +88,7 @@ sell	t83	3	sell	e17	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	sell	VB	t8
 National	t84	3	National	O	O	O	O	O	O	O	O	AJ0	B-NP	national	NNP	O	O
 Aluminum	t85	3	Aluminum	O	O	O	O	O	O	O	O	NN1	I-NP	aluminum	NNP	t84:NAME||t86:SUFFIX	O
 's	t86	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-rolling	t87	3	roll	O	O	O	O	O	O	O	O	AJ0	I-NP	roll	VBG	O	O
+rolling	t87	3	roll	O	O	O	O	O	O	O	O	AJ0	I-NP	roll	NN	O	O
 division	t88	3	division	O	O	O	O	O	O	O	O	NN1	I-NP	division	NN	t85:NMOD||t87:NMOD	O
 .	t89	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

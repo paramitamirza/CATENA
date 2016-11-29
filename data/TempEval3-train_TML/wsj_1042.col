@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 AVON	t1	1	AVON	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	avon	NNP	O	O
 RENT-A-CAR	t2	1	RENT-A-CAR	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	rent-a-car	NNP	O	O
@@ -44,9 +44,9 @@ outstanding	t38	2	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 About	t40	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	O	O
 1.1	t41	3	1.1	O	O	O	O	O	O	O	O	CRD	I-NP	1.1	CD	O	O
 million	t42	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t40:DEP||t41:DEP	O
-Class	t43	3	class	O	O	O	O	O	O	O	O	NN1	I-NP	class	NN	O	O
-C	t44	3	C	O	O	O	O	O	O	O	O	ZZ0	I-NP	c	NNP	O	O
-warrants	t45	3	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t42:NMOD||t43:NMOD||t44:NMOD	O
+Class	t43	3	class	O	O	O	O	O	O	O	O	NN1	I-NP	class	NNP	O	O
+C	t44	3	C	O	O	O	O	O	O	O	O	ZZ0	I-NP	c	NNP	t43:NAME	O
+warrants	t45	3	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t42:NMOD||t44:NMOD	O
 were	t46	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t45:SBJ||t47:VC	O
 issued	t47	3	issue	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	issue	VBN	O	O
 ,	t48	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -96,10 +96,10 @@ also	t88	6	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
 said	t89	6	say	O	O	O	O	O	O	O	O	VVD	B-VP	say	VBD	t87:SBJ||t88:ADV||t91:OBJ||t113:P	mainVb
 it	t90	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t91	6	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t90:SBJ||t92:VC	O
-issue	t92	6	issue	e18	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	issue	VB	t95:OBJ||t101:DTV	O
+issue	t92	6	issue	e18	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	issue	VB	t95:OBJ	O
 an	t93	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 additional	t94	6	additional	O	O	O	O	O	O	O	O	AJ0	I-NP	additional	JJ	O	O
-243,677	t95	6	243,677	O	O	O	O	O	O	O	O	CRD	I-NP	243,677	NN	t93:NMOD||t94:NMOD||t96:NMOD	O
+243,677	t95	6	243,677	O	O	O	O	O	O	O	O	CRD	I-NP	243,677	NN	t93:NMOD||t94:NMOD||t96:NMOD||t101:NMOD	O
 of	t96	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t100:PMOD	O
 the	t97	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Class	t98	6	class	O	O	O	O	O	O	O	O	NN1	I-NP	class	NN	O	O
@@ -109,14 +109,14 @@ to	t101	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t102:PMOD	O
 holders	t102	6	holder	O	O	O	O	O	O	O	O	NN2	B-NP	holder	NNS	t103:NMOD	O
 of	t103	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t112:PMOD	O
 its	t104	6	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-Class	t105	6	class	O	O	O	O	O	O	O	O	NN1	I-NP	class	NN	t106:COORD	O
-A	t106	6	A	O	O	O	O	O	O	O	O	ZZ0	I-NP	a	DT	t107:P||t109:COORD	O
+Class	t105	6	class	O	O	O	O	O	O	O	O	NN1	I-NP	class	NN	O	O
+A	t106	6	A	O	O	O	O	O	O	O	O	ZZ0	I-NP	a	DT	t105:NMOD	O
 ,	t107	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Class	t108	6	Class	O	O	O	O	O	O	O	O	NN1	B-NP	class	NNP	O	O
 B	t109	6	B	O	O	O	O	O	O	O	O	ZZ0	I-NP	b	NNP	t108:NMOD||t110:COORD	O
 and	t110	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t111:CONJ	O
 unclassified	t111	6	unclassified	O	O	O	O	O	O	O	O	AJ0	B-NP	unclassified	JJ	O	O
-warrants	t112	6	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t104:NMOD||t105:NMOD	O
+warrants	t112	6	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t104:NMOD||t106:NMOD||t107:P||t109:NMOD	O
 .	t113	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Issuance	t114	7	issuance	O	O	O	O	O	O	O	O	NN1	B-NP	issuance	NN	t115:NMOD	O

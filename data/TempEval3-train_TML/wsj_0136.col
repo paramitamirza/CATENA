@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Oshkosh	t1	1	Oshkosh	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	oshkosh	NNP	O	O
 Truck	t2	1	Truck	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	truck	NNP	t1:NAME||t3:POSTHON||t4:P||t7:LOC	O
@@ -17,15 +17,15 @@ quarter	t14	1	quarter	O	O	O	tmx2027	DATE	1998-Q4	O	O	NN1	I-NP	quarter	NN	t12:NMO
 ended	t15	1	end	O	O	O	O	O	O	O	O	VVD	B-VP	end	VBN	t17:TMP	O
 Sept.	t16	1	Sept.	O	O	O	tmx2023	DATE	1989-09	O	O	NP0	B-NP	sept.	NNP	O	O
 30	t17	1	30	O	O	O	tmx2023	DATE	1989-09	O	O	CRD	I-NP	30	CD	t16:NMOD	O
-fell	t18	1	fall	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t10:SBJ||t20:EXT||t21:DIR	O
+fell	t18	1	fall	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t10:SBJ||t20:EXT||t21:DIR||t24:DIR	O
 50	t19	1	50	O	O	O	O	O	O	O	O	CRD	B-NP	50	CD	O	O
 %	t20	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t19:NMOD	O
 to	t21	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t23:PMOD	O
 75	t22	1	75	O	O	O	O	O	O	O	O	CRD	B-NP	75	CD	O	O
-%	t23	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t22:NMOD||t24:NMOD	O
+%	t23	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t22:NMOD	O
 below	t24	1	below	O	O	O	O	O	O	O	O	PRP	B-PP	below	IN	t27:PMOD	O
 the	t25	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-year-earlier	t26	1	year-earlier	O	O	O	O	O	O	O	O	NN1	I-NP	year-earlier	NN	O	O
+year-earlier	t26	1	year-earlier	O	O	O	O	O	O	O	O	NN1	I-NP	year-earlier	JJR	O	O
 $	t27	1	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t25:NMOD||t26:NMOD||t28:DEP||t29:DEP||t30:P||t31:COORD	O
 4.5	t28	1	4.5	O	O	O	O	O	O	O	O	CRD	I-NP	4.5	CD	O	O
 million	t29	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O

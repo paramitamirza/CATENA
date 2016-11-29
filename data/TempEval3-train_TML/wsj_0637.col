@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 John	t1	1	John	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	john	NNP	O	O
 Labatt	t2	1	Labatt	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	labatt	NNP	t1:NAME||t3:POSTHON	O
@@ -14,11 +14,11 @@ of	t10	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t14:PMOD	O
 million	t12	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t11:DEP	O
 Canadian	t13	1	canadian	O	O	O	O	O	O	O	O	AJ0	I-NP	canadian	JJ	O	O
 dollars	t14	1	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t12:NMOD||t13:NMOD	O
--LRB-	t15	1	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t16:OBJ||t19:GAP-NMOD||t20:ADV	O
+-LRB-	t15	1	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t19:OBJ	O
 US$	t16	1	us$	O	O	O	O	O	O	O	O	NP0	I-NP	us$	$	t17:DEP||t18:DEP	O
 127.5	t17	1	127.5	O	O	O	O	O	O	O	O	CRD	I-NP	127.5	CD	O	O
 million	t18	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t19	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+-RRB-	t19	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t16:NMOD||t20:NMOD	O
 in	t20	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t22:PMOD	O
 preferred	t21	1	preferred	O	O	O	O	O	O	O	O	AJ0	B-NP	prefer	VBN	O	O
 shares	t22	1	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t21:NMOD	O
@@ -62,7 +62,7 @@ shares	t57	3	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t55:NMOD||t56:NMOD	O
 will	t58	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t57:SBJ||t59:VC||t80:P	mainVb
 carry	t59	3	carry	e12	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	carry	VB	t63:OBJ||t75:TMP	mainVb
 a	t60	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-floating	t61	3	floating	O	O	O	O	O	O	O	O	AJ0	I-NP	floating	JJ	O	O
+floating	t61	3	floating	O	O	O	O	O	O	O	O	AJ0	I-NP	floating	VBG	O	O
 annual	t62	3	annual	O	O	O	O	O	O	O	O	AJ0	I-NP	annual	JJ	O	O
 dividend	t63	3	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t60:NMOD||t61:NMOD||t62:NMOD||t64:APPO	O
 equal	t64	3	equal	O	O	O	O	O	O	O	O	AJ0	I-NP	equal	JJ	t65:AMOD	O
@@ -175,10 +175,10 @@ underwriter	t164	9	underwriter	O	O	O	O	O	O	O	O	AV0	B-ADVP	underwriter	NN	t163:NM
 to	t165	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t167:PMOD	O
 the	t166	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issue	t167	9	issue	O	O	O	O	O	O	O	O	NN1	I-NP	issue	NN	t166:NMOD	O
-is	t168	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t164:SBJ||t169:PRD||t173:P	mainVb
-Toronto	t169	9	Toronto	O	O	O	O	O	O	O	O	NP0	B-NP	toronto	NNP	t171:APPO	O
+is	t168	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t164:SBJ||t171:PRD||t173:P	mainVb
+Toronto	t169	9	Toronto	O	O	O	O	O	O	O	O	NP0	B-NP	toronto	NNP	O	O
 Dominion	t170	9	Dominion	O	O	O	O	O	O	O	O	NP0	I-NP	dominion	NNP	O	O
-Securities	t171	9	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNPS	t170:NAME||t172:POSTHON	O
+Securities	t171	9	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNP	t169:NAME||t170:NAME||t172:POSTHON	O
 Inc.	t172	9	Inc.	O	O	O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 .	t173	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

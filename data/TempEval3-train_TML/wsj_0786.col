@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	LS	O	O
 
 IMA	t1	1	IMA	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ima	NNP	O	O
 Holdings	t2	1	Holdings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	holding	NNP	t1:NAME||t3:POSTHON	O
@@ -28,9 +28,9 @@ of	t25	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t31:PMOD	O
 the	t26	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Los	t27	1	Los	O	O	O	O	O	O	O	O	NP0	I-NP	los	NNP	O	O
 Angeles-based	t28	1	angeles-based	O	O	O	O	O	O	O	O	NP0	I-NP	angeles-based	NNP	t27:NAME	O
-health-care	t29	1	health-care	O	O	O	O	O	O	O	O	NN1	I-NP	health-care	NNP	O	O
-services	t30	1	service	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNS	t28:NAME||t29:NAME	O
-concern	t31	1	concern	O	O	O	O	O	O	O	O	VVB	B-VP	concern	NN	t26:NMOD||t30:NMOD	O
+health-care	t29	1	health-care	O	O	O	O	O	O	O	O	NN1	I-NP	health-care	NNP	t28:NAME	O
+services	t30	1	service	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNS	O	O
+concern	t31	1	concern	O	O	O	O	O	O	O	O	VVB	B-VP	concern	NN	t26:NMOD||t29:NMOD||t30:NMOD	O
 for	t32	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t33:PMOD	O
 $	t33	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t34:NMOD||t36:ADV	O
 26.50	t34	1	26.50	O	O	O	O	O	O	O	O	CRD	I-NP	26.50	CD	O	O
@@ -44,7 +44,7 @@ also	t40	2	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
 includes	t41	2	include	O	O	O	O	O	O	O	O	VVZ	B-VP	include	VBZ	t39:SBJ||t40:ADV||t42:OBJ||t50:P	mainVb
 assumption	t42	2	assumption	O	O	O	O	O	O	O	O	NN1	B-NP	assumption	NN	t43:NMOD	O
 of	t43	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t45:PMOD	O
-about	t44	2	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+about	t44	2	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
 $	t45	2	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t44:DEP||t46:DEP||t47:DEP||t48:NMOD	O
 1.4	t46	2	1.4	O	O	O	O	O	O	O	O	CRD	I-NP	1.4	CD	O	O
 billion	t47	2	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
@@ -82,11 +82,11 @@ Partners	t76	3	Partners	O	O	O	O	O	O	O	O	NN2	I-NP	partner	NNPS	t74:NAME||t75:NAME
 
 Harry	t78	4	Harry	O	O	O	O	O	O	O	O	NP0	B-NP	harry	NNP	O	O
 J.	t79	4	J.	O	O	O	O	O	O	O	O	NP0	I-NP	j.	NNP	O	O
-Gray	t80	4	Gray	O	O	O	O	O	O	O	O	NP0	I-NP	gray	NNP	t78:NAME||t79:NAME||t81:COORD||t92:P	O
+Gray	t80	4	Gray	O	O	O	O	O	O	O	O	NP0	I-NP	gray	NNP	t78:NAME||t79:NAME||t81:COORD	O
 and	t81	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t84:CONJ	O
 Melvyn	t82	4	Melvyn	O	O	O	O	O	O	O	O	NP0	B-NP	melvyn	NNP	O	O
 N.	t83	4	N.	O	O	O	O	O	O	O	O	NP0	I-NP	n.	NNP	O	O
-Klein	t84	4	Klein	O	O	O	O	O	O	O	O	NP0	I-NP	klein	NNP	t82:NAME||t83:NAME||t85:P||t86:COORD	O
+Klein	t84	4	Klein	O	O	O	O	O	O	O	O	NP0	I-NP	klein	NNP	t82:NAME||t83:NAME	O
 ,	t85	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 along	t86	4	along	O	O	O	O	O	O	O	O	PRP	B-PP	along	IN	t87:PMOD	O
 with	t87	4	with	O	O	O	O	O	O	O	O	PRP	B-NP	with	IN	t91:PMOD	O
@@ -95,7 +95,7 @@ other	t89	4	other	O	O	O	O	O	O	O	O	AJ0	I-NP	other	JJ	O	O
 IMA	t90	4	IMA	O	O	O	O	O	O	O	O	NN1	I-NP	ima	NNP	O	O
 designees	t91	4	designee	O	O	O	O	O	O	O	O	NN2	I-NP	designees	NNS	t88:NMOD||t89:NMOD||t90:NMOD	O
 ,	t92	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-were	t93	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t80:SBJ||t94:VC||t102:P	mainVb
+were	t93	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t80:SBJ||t85:P||t86:ADV||t92:P||t94:VC||t102:P	mainVb
 named	t94	4	name	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	name	VBN	t95:OPRD	mainVb
 to	t95	4	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t96:IM	mainVb
 join	t96	4	join	e11	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	join	VB	t101:OBJ	mainVb
@@ -251,9 +251,9 @@ month	t238	11	month	O	O	O	tmx98	DATE	1989-04	O	O	NN1	I-NP	month	NN	t236:NMOD||t2
 ,	t239	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t240	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t241	11	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t240:NMOD	O
-put	t242	11	put	e37	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	put	VBD	t238:TMP||t239:P||t241:SBJ||t243:OBJ||t244:PRT||t245:ADV||t247:P	mainVb
+put	t242	11	put	e37	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	put	VBD	t238:TMP||t239:P||t241:SBJ||t243:OBJ||t244:PUT||t247:P	mainVb
 itself	t243	11	itself	O	O	O	O	O	O	O	O	PNX	B-NP	itself	PRP	O	O
-up	t244	11	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
+up	t244	11	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	t245:PMOD	O
 for	t245	11	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t246:PMOD	O
 sale	t246	11	sale	O	O	O	O	O	O	O	O	NN1	B-NP	sale	NN	O	O
 .	t247	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -298,7 +298,7 @@ some	t283	13	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 assets	t284	13	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNS	t283:NMOD	O
 might	t285	13	might	O	O	O	O	O	O	O	O	VM0	B-VP	might	MD	t284:SBJ||t286:VC	O
 be	t286	13	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t287:VC	O
-sold	t287	13	sell	e48	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t288:ADV||t289:PRP	O
+sold	t287	13	sell	e48	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t288:PRT||t289:PRP	O
 off	t288	13	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RB	O	O
 to	t289	13	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t290:IM	O
 service	t290	13	service	e51	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	service	VB	t292:OBJ	O

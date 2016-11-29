@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 HEALTHDYNE	t1	1	HEALTHDYNE	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	healthdyne	NNP	t2:POSTHON	O
 Inc.	t2	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
@@ -37,8 +37,8 @@ The	t33	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 in-home	t34	2	in-home	O	O	O	O	O	O	O	O	AJ0	I-NP	in-home	JJ	O	O
 health	t35	2	health	O	O	O	O	O	O	O	O	NN1	I-NP	health	NN	O	O
 care	t36	2	care	O	O	O	O	O	O	O	O	NN1	I-NP	care	NN	t35:NMOD	O
-services	t37	2	service	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNS	t34:NMOD||t36:NMOD	O
-provider	t38	2	provider	O	O	O	O	O	O	O	O	VVB	B-VP	provider	NN	t33:NMOD||t37:NMOD	O
+services	t37	2	service	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNS	t36:NMOD	O
+provider	t38	2	provider	O	O	O	O	O	O	O	O	VVB	B-VP	provider	NN	t33:NMOD||t34:NMOD||t37:NMOD	O
 said	t39	2	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	I-VP	say	VBD	t38:SBJ||t41:OBJ||t60:P	mainVb
 it	t40	2	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t41	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t40:SBJ||t42:VC	O

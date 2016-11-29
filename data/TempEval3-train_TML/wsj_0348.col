@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Ogden	t1	1	Ogden	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ogden	NNP	O	O
 Projects	t2	1	Projects	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	project	NNPS	t1:NAME||t3:POSTHON	O
@@ -27,7 +27,7 @@ quarter	t22	1	quarter	O	O	O	tmx29	DATE	1989-Q3	O	O	NN1	I-NP	quarter	NN	t20:NMOD|
 The	t24	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Fairfield	t25	2	Fairfield	O	O	O	O	O	O	O	O	NP0	I-NP	fairfield	NNP	O	O
 ,	t26	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-N.J.	t27	2	N.J.	O	O	O	O	O	O	O	O	NP0	B-NP	n.j.	NNP	t25:NAME||t26:P||t28:P	O
+N.J.	t27	2	N.J.	O	O	O	O	O	O	O	O	NP0	B-NP	n.j.	NNP	t25:NMOD||t26:P||t28:P	O
 ,	t28	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 company	t29	2	company	O	O	O	O	O	O	O	O	NN1	B-NP	company	NN	t24:NMOD||t27:LOC||t30:P||t32:NMOD	O
 ,	t30	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -44,10 +44,10 @@ Corp.	t39	2	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 New	t41	2	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
 York	t42	2	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t41:NAME	O
 ,	t43	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t38:NMOD||t40:P||t42:LOC	O
-had	t44	2	have	e30	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-NP	have	VBD	t29:SBJ||t45:OBJ||t60:P	mainVb
+had	t44	2	have	e30	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-NP	have	VBD	t29:SBJ||t45:OBJ||t59:TMP||t60:P	mainVb
 net	t45	2	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	NN	t46:NMOD	O
 of	t46	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t47:PMOD	O
-$	t47	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t48:DEP||t49:DEP||t50:P||t51:COORD||t56:P||t59:TMP	O
+$	t47	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t48:DEP||t49:DEP||t50:P||t51:COORD||t56:P	O
 1.1	t48	2	1.1	O	O	O	O	O	O	O	O	CRD	I-NP	1.1	CD	O	O
 million	t49	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t50	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -74,8 +74,8 @@ $	t68	3	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t69:DEP||t70:DEP	O
 million	t70	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 .	t71	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Ogden	t72	4	Ogden	O	O	O	O	O	O	O	O	NP0	B-NP	ogden	JJ	O	O
-Projects	t73	4	Projects	O	O	O	O	O	O	O	O	NP0	I-NP	project	NNS	t72:NMOD||t74:P||t77:NMOD||t87:P	O
+Ogden	t72	4	Ogden	O	O	O	O	O	O	O	O	NP0	B-NP	ogden	NNP	O	O
+Projects	t73	4	Projects	O	O	O	O	O	O	O	O	NP0	I-NP	project	NNPS	t72:NAME||t74:P||t77:NMOD||t87:P	O
 ,	t74	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 whose	t75	4	whose	O	O	O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
 shares	t76	4	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t75:NMOD	O
@@ -113,8 +113,8 @@ $	t105	5	$	O	O	O	O	O	O	O	O	NN1	B-NP	$	$	t106:NMOD||t107:NMOD	O
 apiece	t107	5	apiece	O	O	O	O	O	O	O	O	AV0	B-ADVP	apiece	RB	O	O
 .	t108	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Ogden	t109	6	Ogden	O	O	O	O	O	O	O	O	NP0	B-NP	ogden	JJ	O	O
-Projects	t110	6	Projects	O	O	O	O	O	O	O	O	NP0	I-NP	project	NNS	t109:NMOD||t111:P||t113:NMOD||t121:P	O
+Ogden	t109	6	Ogden	O	O	O	O	O	O	O	O	NP0	B-NP	ogden	NNP	O	O
+Projects	t110	6	Projects	O	O	O	O	O	O	O	O	NP0	I-NP	project	NNPS	t109:NAME||t111:P||t113:NMOD||t121:P	O
 ,	t111	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t112	6	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 has	t113	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t112:SBJ||t114:OBJ	O
@@ -157,7 +157,7 @@ maintenance	t148	7	maintenance	O	O	O	O	O	O	O	O	NN1	I-NP	maintenance	NN	t147:NMOD
 and	t149	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t150:CONJ	O
 management	t150	7	management	O	O	O	O	O	O	O	O	NN1	I-NP	management	NN	O	O
 ,	t151	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-reported	t152	7	report	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	AJ0	B-VP	report	VBD	t137:TMP||t138:P||t139:SBJ||t155:OBJ||t184:P	mainVb
+reported	t152	7	report	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	AJ0	B-VP	report	VBD	t137:ADV||t138:P||t139:SBJ||t155:OBJ||t184:P	mainVb
 third-quarter	t153	7	third-quarter	O	O	O	tmx52	DATE	1989-Q3	O	O	NN1	B-NP	third-quarter	RBR	O	O
 net	t154	7	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
 income	t155	7	income	e145	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	income	NN	t153:NMOD||t154:NMOD||t156:NMOD	O

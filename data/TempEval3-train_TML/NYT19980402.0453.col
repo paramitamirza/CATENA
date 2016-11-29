@@ -1,17 +1,17 @@
-DCT_1998-04-02T22:52:00	O	O	O	O	O	O	tmx0	TIME	1998-04-02T22:52:00	O	O	NP0	B-NP	dct_1998-04-02t22:52:00	JJ	O	O
+DCT_1998-04-02T22:52:00	O	O	O	O	O	O	tmx0	TIME	1998-04-02T22:52:00	O	O	NP0	B-NP	dct_1998-04-02t22:52:00	VBG	O	O
 
 NEWARK	t1	1	NEWARK	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	newark	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 N.J.	t3	1	N.J.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	n.j.	NNP	O	O
-_	t4	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	t3:NAME	O
+_	t4	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	VBD	t1:TMP||t2:P||t3:SBJ||t11:OBJ||t48:P	mainVb
 A	t5	1	A	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 new	t6	1	new	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 Essex	t7	1	Essex	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	essex	NNP	O	O
 County	t8	1	County	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	county	NNP	t7:NAME	O
 task	t9	1	task	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	task	NN	O	O
 force	t10	1	force	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	force	NN	t5:NMOD||t6:NMOD||t8:NMOD||t9:NMOD	O
-began	t11	1	begin	e1	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	begin	VBD	t1:ADV||t2:P||t4:SBJ||t10:SBJ||t12:OPRD||t30:P||t31:ADV||t48:P	mainVb
-delving	t12	1	delving	e45	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	delve	VBG	t13:TMP||t14:ADV	mainVb
+began	t11	1	begin	e1	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	begin	VBD	t10:SBJ||t12:OPRD||t30:P||t31:ADV	O
+delving	t12	1	delving	e45	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	delve	VBG	t13:TMP||t14:ADV||t21:TMP	O
 Thursday	t13	1	Thursday	O	O	O	tmx46	DATE	1998-04-02	O	O	NP0	B-NP	thursday	NNP	O	O
 into	t14	1	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t16:PMOD	O
 the	t15	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -19,7 +19,7 @@ slayings	t16	1	slaying	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	slaying	NN
 of	t17	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t20:PMOD	O
 14	t18	1	14	O	O	O	O	O	O	O	O	CRD	B-NP	14	CD	O	O
 black	t19	1	black	O	O	O	O	O	O	O	O	AJ0	I-NP	black	JJ	O	O
-women	t20	1	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t18:NMOD||t19:NMOD||t21:TMP	O
+women	t20	1	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t18:NMOD||t19:NMOD	O
 over	t21	1	over	O	O	O	O	O	O	O	O	PRP	B-PP	over	IN	t25:PMOD	O
 the	t22	1	the	O	O	O	tmx48	DURATION	P5Y	O	O	AT0	B-NP	the	DT	O	O
 last	t23	1	last	O	O	O	tmx48	DURATION	P5Y	O	O	ORD	I-NP	last	JJ	O	O
@@ -134,7 +134,7 @@ Police	t128	4	Police	O	O	O	O	O	O	O	O	NN2	I-NP	police	NNP	O	O
 Department	t129	4	Department	O	O	O	O	O	O	O	O	NN1	I-NP	department	NNP	t126:NMOD||t127:NAME||t128:NAME	O
 ,	t130	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 said	t131	4	say	e14	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t115:ADV||t118:P||t121:SBJ||t132:OBJ||t151:P	mainVb
-that	t132	4	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	IN	t143:SUB	O
+that	t132	4	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	IN	t144:SUB	O
 of	t133	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t135:PMOD	O
 nine	t134	4	nine	O	O	O	O	O	O	O	O	CRD	B-NP	nine	CD	O	O
 women	t135	4	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t134:NMOD||t137:NMOD	O
@@ -145,14 +145,14 @@ killed	t139	4	kill	e15	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	kill	VB
 last	t140	4	last	O	O	O	tmx64	DATE	1997	O	O	ORD	B-NP	last	JJ	O	O
 year	t141	4	year	O	O	O	tmx64	DATE	1997	O	O	NN1	I-NP	year	NN	t140:NMOD	O
 ,	t142	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-suspects	t143	4	suspect	O	O	O	O	O	O	O	O	NN2	B-NP	suspect	VBZ	t133:ADV||t142:P||t144:OBJ	O
-had	t144	4	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t145:VC	O
+suspects	t143	4	suspect	O	O	O	O	O	O	O	O	NN2	B-NP	suspect	NNS	O	O
+had	t144	4	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t133:NMOD||t142:P||t143:SBJ||t145:VC	O
 been	t145	4	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t146:VC	O
 arrested	t146	4	arrest	e17	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	arrest	VBN	t147:ADV	O
 in	t147	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t150:PMOD	O
-only	t148	4	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	O	O
-four	t149	4	four	O	O	O	O	O	O	O	O	CRD	I-NP	four	CD	t148:NMOD	O
-cases	t150	4	case	O	O	O	O	O	O	O	O	NN2	I-NP	case	NNS	t149:NMOD	O
+only	t148	4	only	O	O	O	O	O	O	O	O	AV0	B-NP	only	RB	t149:DEP	O
+four	t149	4	four	O	O	O	O	O	O	O	O	CRD	I-NP	four	CD	O	O
+cases	t150	4	case	O	O	O	O	O	O	O	O	NN2	I-NP	case	NNS	t148:NMOD	O
 .	t151	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 But	t152	5	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
@@ -182,7 +182,7 @@ the	t173	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 killings	t175	6	killing	e2072	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	killing	NNS	t173:NMOD||t174:NMOD	O
 since	t176	6	since	O	O	O	O	O	O	O	O	PRP	B-PP	since	IN	t177:PMOD	O
 1993	t177	6	1993	O	O	O	tmx63	DATE	1993	O	O	CRD	B-NP	1993	CD	O	O
-were	t178	6	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t171:SBJ||t179:ADV||t180:PRD	O
+were	t178	6	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t171:SBJ||t179:TMP||t180:PRD	O
 already	t179	6	already	O	O	O	O	O	O	O	O	AV0	B-ADVP	already	RB	O	O
 under	t180	6	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t181:PMOD	O
 investigation	t181	6	investigation	e2093	STATE	PAST+NONE+POS	O	O	O	O	O	NN1	B-NP	investigation	NN	t182:NMOD	O
@@ -196,13 +196,13 @@ Glenn	t188	6	Glenn	O	O	O	O	O	O	O	O	NP0	B-NP	glenn	NNP	O	O
 said	t189	6	say	e22	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t178:OBJ||t187:P||t188:SBJ||t190:P	mainVb
 .	t190	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Of	t191	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t194:PMOD||t215:COORD||t236:P	mainVb
+Of	t191	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t194:PMOD||t195:P||t197:COORD||t236:P	O
 the	t192	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 eight	t193	7	eight	O	O	O	O	O	O	O	O	CRD	I-NP	eight	CD	O	O
 victims	t194	7	victim	O	O	O	O	O	O	O	O	NN2	I-NP	victim	NNS	t192:NMOD||t193:NMOD	O
 ,	t195	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 three	t196	7	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	O	O
-were	t197	7	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t195:P||t196:SBJ||t198:VC||t199:P||t201:COORD	O
+were	t197	7	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t196:SBJ||t198:VC||t199:P||t201:COORD||t217:COORD	O
 stabbed	t198	7	stab	e23	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	stab	VBN	O	O
 ,	t199	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 two	t200	7	two	O	O	O	O	O	O	O	O	CRD	B-NP	two	CD	O	O
@@ -220,8 +220,8 @@ was	t211	7	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t210:SBJ||t212:VC	O
 asphyxiated	t212	7	asphyxiate	e26	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	asphyxiate	VBN	O	O
 ,	t213	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 he	t214	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t215	7	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t197:OBJ||t213:P||t214:SBJ||t216:P||t217:COORD	O
-,	t216	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+said	t215	7	say	e27	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t213:P||t214:SBJ||t216:P	mainVb
+,	t216	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t191:COORD	O
 and	t217	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t226:CONJ	O
 these	t218	7	these	O	O	O	O	O	O	O	O	DT0	B-NP	these	DT	O	O
 different	t219	7	different	O	O	O	O	O	O	O	O	AJ0	I-NP	different	JJ	O	O
@@ -264,8 +264,8 @@ any	t254	8	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
 firm	t255	8	firm	O	O	O	O	O	O	O	O	AJ0	I-NP	firm	JJ	O	O
 conclusions	t256	8	conclusion	O	O	O	O	O	O	O	O	NN2	I-NP	conclusion	NNS	t254:NMOD||t255:NMOD	O
 ,	t257	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-leaving	t258	8	leave	e35	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	leave	VBG	t259:PRT||t261:OBJ||t266:LOC	O
-open	t259	8	open	O	O	O	O	O	O	O	O	VVB	B-NP	open	RP	O	O
+leaving	t258	8	leave	e35	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	leave	VBG	t259:OPRD||t261:OBJ||t266:LOC	O
+open	t259	8	open	O	O	O	O	O	O	O	O	VVB	B-NP	open	JJ	O	O
 the	t260	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 possibility	t261	8	possibility	O	O	O	O	O	O	O	O	NN1	I-NP	possibility	NN	t260:NMOD||t262:NMOD	O
 of	t262	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t265:PMOD	O
@@ -281,9 +281,9 @@ cases	t270	8	case	O	O	O	O	O	O	O	O	NN2	I-NP	case	NNS	t269:NMOD	O
 
 There	t272	9	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
 have	t273	9	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t272:SBJ||t274:VC||t282:P	mainVb
-been	t274	9	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t276:PRD||t277:LOC	mainVb
+been	t274	9	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t276:PRD	mainVb
 no	t275	9	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
-arrests	t276	9	arrest	e36	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	NN2	I-NP	arrest	NNS	t275:NMOD	O
+arrests	t276	9	arrest	e36	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	NN2	I-NP	arrest	NNS	t275:NMOD||t277:LOC	O
 in	t277	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t278:PMOD	O
 any	t278	9	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	t279:NMOD	O
 of	t279	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t281:PMOD	O
@@ -291,17 +291,17 @@ the	t280	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 slayings	t281	9	slaying	e65	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	slaying	NNS	t280:NMOD	O
 .	t282	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t283	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	WP	O	O
+"	t283	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t284	10	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-have	t285	10	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t283:OBJ||t284:SBJ||t286:ADV||t287:VC	O
+have	t285	10	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t284:SBJ||t286:ADV||t287:VC	O
 n't	t286	10	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 seen	t287	10	see	e38	PERCEPTION	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	see	VBN	t289:OBJ||t290:TMP	O
 a	t288	10	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 pattern	t289	10	pattern	O	O	O	O	O	O	O	O	NN1	I-NP	pattern	NN	t288:NMOD	O
 yet	t290	10	yet	O	O	O	O	O	O	O	O	AV0	B-ADVP	yet	RB	O	O
 ,	t291	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t292	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t293	10	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t285:OBJ||t291:P||t292:SBJ||t295:SBJ||t309:P	mainVb
+"	t292	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+said	t293	10	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t283:DEP||t285:OBJ||t291:P||t292:SBJ||t295:OBJ||t309:P	mainVb
 Patricia	t294	10	Patricia	O	O	O	O	O	O	O	O	NP0	B-NP	patricia	NNP	O	O
 Hurt	t295	10	Hurt	O	O	O	O	O	O	O	O	NP0	I-NP	hurt	NNP	t294:NAME||t296:P||t300:APPO||t301:P||t303:NMOD	O
 ,	t296	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -319,19 +319,19 @@ on	t307	10	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t308:PMOD	O
 Tuesday	t308	10	Tuesday	O	O	O	tmx61	DATE	1998-03-31	O	O	NP0	B-NP	tuesday	NNP	O	O
 .	t309	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t310	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t310	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t311	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 type	t312	11	type	O	O	O	O	O	O	O	O	NN1	I-NP	type	NN	t311:NMOD||t313:NMOD	O
 of	t313	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t314:PMOD	O
 lifestyle	t314	11	lifestyle	O	O	O	O	O	O	O	O	NN1	B-NP	lifestyle	NN	t317:NMOD	O
 these	t315	11	these	O	O	O	O	O	O	O	O	DT0	B-NP	these	DT	O	O
 women	t316	11	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t315:NMOD	O
-have	t317	11	have	e60	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t316:SBJ||t322:VC	O
-is	t318	11	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t310:SBJ||t312:SBJ||t320:PRD	O
+have	t317	11	have	e60	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t316:SBJ||t322:OBJ	O
+is	t318	11	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t310:P||t312:SBJ||t320:PRD	O
 extremely	t319	11	extremely	O	O	O	O	O	O	O	O	AV0	B-ADJP	extremely	RB	O	O
 dangerous	t320	11	dangerous	O	O	O	O	O	O	O	O	AJ0	I-ADJP	dangerous	JJ	t319:AMOD	O
 ,	t321	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t322	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t322	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 she	t323	11	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 said	t324	11	say	e42	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t318:OBJ||t321:P||t323:SBJ||t325:P	mainVb
 .	t325	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

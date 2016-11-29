@@ -1,17 +1,17 @@
-DCT_1998-08-26	O	O	O	O	O	O	tmx0	TIME	1998-08-26	O	O	NP0	B-NP	dct_1998-08-26	SYM	O	O
+DCT_1998-08-26	O	O	O	O	O	O	tmx0	TIME	1998-08-26	O	O	NP0	B-NP	dct_1998-08-26	LS	O	O
 
 NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Kenya	t3	1	Kenya	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
 -LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t3:NAME||t4:NAME	O
 -RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
-_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	O	O
+_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	t5:NAME||t6:NAME	O
 U.S.	t8	1	U.S.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
-Ambassador	t9	1	Ambassador	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ambassador	NNP	O	O
+Ambassador	t9	1	Ambassador	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ambassador	NN	t7:NMOD||t8:NMOD||t11:APPO	O
 Prudence	t10	1	Prudence	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	prudence	NNP	O	O
-Bushnell	t11	1	Bushnell	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	bushnell	NNP	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t7:NAME||t8:NAME||t9:NAME||t10:NAME	O
-wrapped	t12	1	wrap	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	wrap	VBD	t1:ADV||t2:P||t11:SBJ||t13:PRT||t16:OBJ||t17:TMP||t19:P||t20:ADV||t39:P	mainVb
+Bushnell	t11	1	Bushnell	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	bushnell	NNP	t10:NAME	O
+wrapped	t12	1	wrap	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	wrap	VBD	t1:ADV||t2:P||t9:SBJ||t13:PRT||t16:OBJ||t17:TMP||t19:P||t20:ADV||t39:P	mainVb
 up	t13	1	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
 some	t14	1	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 unfinished	t15	1	unfinished	O	O	O	O	O	O	O	O	AJ0	I-NP	unfinished	JJ	O	O
@@ -69,11 +69,11 @@ embassy	t64	2	embassy	O	O	O	O	O	O	O	O	NN1	I-NP	embassy	NN	t63:NMOD	O
 
 They	t66	3	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 were	t67	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t66:SBJ||t68:VC||t84:P	mainVb
-talking	t68	3	talk	e5	REPORTING	PAST+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	talk	VBG	t72:OBJ||t74:P||t75:ADV	mainVb
+talking	t68	3	talk	e5	REPORTING	PAST+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	talk	VBG	t72:TMP||t74:P||t75:ADV	mainVb
 when	t69	3	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
 the	t70	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bomb	t71	3	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t70:NMOD	O
-went	t72	3	go	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t69:TMP||t71:SBJ||t73:ADV	O
+went	t72	3	go	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t69:TMP||t71:SBJ||t73:PRT	O
 off	t73	3	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RB	O	O
 ,	t74	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 killing	t75	3	kill	e7	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	kill	VBG	t77:OBJ||t78:COORD	O
@@ -88,12 +88,12 @@ others	t83	3	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t82:NMOD	O
 .	t84	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 On	t85	4	on	O	O	O	O	O	O	s4	O	PRP	B-PP	on	IN	t86:PMOD	O
-Wednesday	t86	4	Wednesday	O	O	O	tmx3	DATE	1998-08-26	O	O	NP0	B-NP	wednesday	NNP	O	O
+Wednesday	t86	4	Wednesday	O	O	O	tmx3	DATE	1998-08-26	O	O	NP0	B-NP	wednesday	NNP	t87:P||t88:COORD||t91:NMOD	O
 ,	t87	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Bushnell	t88	4	Bushnell	O	O	O	O	O	O	O	O	NP0	B-NP	bushnell	NNP	t89:COORD	O
 and	t89	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t90:CONJ	O
 Kimotho	t90	4	Kimotho	O	O	O	O	O	O	O	O	NP0	I-NP	kimotho	NNP	O	O
-met	t91	4	meet	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	meet	VBD	t85:TMP||t87:P||t88:SBJ||t92:TMP||t93:PRP	O
+met	t91	4	meet	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	meet	VBD	t92:ADV||t93:PRP	O
 again	t92	4	again	O	O	O	O	O	O	O	O	AV0	B-ADVP	again	RB	O	O
 to	t93	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t94:IM	O
 finish	t94	4	finish	e10	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	finish	VB	t96:OBJ	O
@@ -101,7 +101,7 @@ their	t95	4	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 discussion	t96	4	discussion	e33	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	discussion	NN	t95:NMOD	O
 ,	t97	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Bushnell	t98	4	Bushnell	O	O	O	O	O	O	O	O	NP0	B-NP	bushnell	NNP	O	O
-told	t99	4	tell	e11	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tell	VBD	t91:OBJ||t97:P||t98:SBJ||t101:OBJ||t102:P	mainVb
+told	t99	4	tell	e11	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tell	VBD	t85:TMP||t97:P||t98:SBJ||t101:OBJ||t102:P	mainVb
 Kenya	t100	4	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
 Television	t101	4	Television	O	O	O	O	O	O	O	O	NP0	I-NP	television	NNP	t100:NAME	O
 .	t102	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -109,7 +109,7 @@ Television	t101	4	Television	O	O	O	O	O	O	O	O	NP0	I-NP	television	NNP	t100:NAME	O
 The	t103	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ambassador	t104	5	ambassador	O	O	O	O	O	O	O	O	NN1	I-NP	ambassador	NN	t103:NMOD	O
 was	t105	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t104:SBJ||t106:VC||t137:P	mainVb
-cut	t106	5	cut	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	cut	VBN	t107:LOC||t112:LOC||t121:COORD	mainVb
+cut	t106	5	cut	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	cut	VBN	t107:ADV||t112:LOC||t121:COORD	mainVb
 on	t107	5	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t109:PMOD	O
 her	t108	5	she	O	O	O	O	O	O	O	O	DPS	B-NP	her	PRP$	O	O
 lip	t109	5	lip	O	O	O	O	O	O	O	O	NN1	I-NP	lip	NN	t108:NMOD||t110:COORD	O
@@ -133,13 +133,13 @@ the	t126	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 22-story	t127	5	22-story	O	O	O	O	O	O	O	O	AJ0	I-NP	22-story	CD	O	O
 Cooperative	t128	5	Cooperative	O	O	O	O	O	O	O	O	AJ0	I-NP	cooperative	NNP	O	O
 Bank	t129	5	Bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NNP	O	O
-House	t130	5	House	O	O	O	O	O	O	O	O	NN1	I-NP	house	NNP	t126:NMOD||t127:NMOD||t128:NAME||t129:NAME	O
+House	t130	5	House	O	O	O	O	O	O	O	O	NN1	I-NP	house	NNP	t126:NMOD||t127:NMOD||t128:NMOD||t129:NAME	O
 and	t131	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t132:CONJ	O
-toppled	t132	5	topple	e15	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	topple	VBD	t136:OBJ	O
+toppled	t132	5	topple	e15	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	topple	VBD	t134:OBJ	O
 the	t133	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-six-story	t134	5	six-story	O	O	O	O	O	O	O	O	AJ0	I-NP	six-story	JJ	O	O
+six-story	t134	5	six-story	O	O	O	O	O	O	O	O	AJ0	I-NP	six-story	NN	t133:NMOD||t136:APPO	O
 Ufundi	t135	5	Ufundi	O	O	O	O	O	O	O	O	NP0	I-NP	ufundi	NNP	O	O
-House	t136	5	House	O	O	O	O	O	O	O	O	NN1	I-NP	house	NNP	t133:NMOD||t134:NMOD||t135:NAME	O
+House	t136	5	House	O	O	O	O	O	O	O	O	NN1	I-NP	house	NNP	t135:NAME	O
 .	t137	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Bushnell	t138	6	Bushnell	O	O	O	O	O	O	O	O	NP0	B-NP	bushnell	NNP	O	O
@@ -195,8 +195,8 @@ slated	t186	7	slate	O	O	O	O	O	O	O	O	AJ0	I-NP	slate	VBN	O	O
 visit	t187	7	visit	e43	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	visit	NN	t185:NMOD||t186:NMOD||t188:NMOD||t194:TMP	O
 of	t188	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t191:PMOD	O
 U.S.	t189	7	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
-Commerce	t190	7	Commerce	O	O	O	O	O	O	O	O	NN1	I-NP	commerce	NNP	t189:NAME	O
-Secretary	t191	7	Secretary	O	O	O	O	O	O	O	O	NN1	I-NP	secretary	NN	t190:NMOD||t193:APPO	O
+Commerce	t190	7	Commerce	O	O	O	O	O	O	O	O	NN1	I-NP	commerce	NNP	O	O
+Secretary	t191	7	Secretary	O	O	O	O	O	O	O	O	NN1	I-NP	secretary	NN	t189:NMOD||t190:NMOD||t193:APPO	O
 William	t192	7	William	O	O	O	O	O	O	O	O	NP0	I-NP	william	NNP	O	O
 Daley	t193	7	Daley	O	O	O	O	O	O	O	O	NP0	I-NP	daley	NNP	t192:NAME	O
 in	t194	7	in	O	O	O	O	O	O	s5	O	PRP	B-PP	in	IN	t195:PMOD	O
@@ -218,14 +218,14 @@ The	t207	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 blast	t208	9	blast	e45	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	blast	NN	t207:NMOD||t209:LOC	O
 in	t209	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t210:PMOD	O
 Nairobi	t210	9	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
-occurred	t211	9	occur	O	O	O	O	O	O	O	O	VVD	B-VP	occur	VBD	t208:SBJ||t212:TMP||t213:MNR||t234:P	mainVb
+occurred	t211	9	occur	O	O	O	O	O	O	O	O	VVD	B-VP	occur	VBD	t208:SBJ||t212:TMP||t218:TMP||t234:P	mainVb
 at	t212	9	at	O	O	O	O	O	O	O	O	AV0	B-ADVP	at	IN	t217:PMOD	O
 almost	t213	9	almost	O	O	O	O	O	O	O	O	AV0	I-ADVP	almost	RB	t214:AMOD	O
 exactly	t214	9	exactly	O	O	O	O	O	O	O	O	AV0	I-ADVP	exactly	RB	O	O
 the	t215	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 same	t216	9	same	O	O	O	O	O	O	O	O	DT0	I-NP	same	JJ	O	O
-moment	t217	9	moment	O	O	O	O	O	O	O	O	NN1	I-NP	moment	NN	t215:NMOD||t216:NMOD||t218:NMOD	O
-as	t218	9	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t220:PMOD	O
+moment	t217	9	moment	O	O	O	O	O	O	O	O	NN1	I-NP	moment	NN	t213:TMP||t215:NMOD||t216:NMOD	O
+as	t218	9	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t232:SUB	O
 an	t219	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 explosion	t220	9	explosion	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	explosion	NN	t219:NMOD||t221:APPO	O
 ripped	t221	9	rip	e24	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rip	VBN	t222:ADV||t226:LOC	O
@@ -237,10 +237,10 @@ in	t226	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t230:PMOD	O
 Tanzania	t227	9	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	t228:SUFFIX	O
 's	t228	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 commercial	t229	9	commercial	O	O	O	O	O	O	O	O	AJ0	I-NP	commercial	JJ	O	O
-capital	t230	9	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t227:NMOD||t229:NMOD||t232:NMOD	O
+capital	t230	9	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t227:NMOD||t229:NMOD||t231:APPO	O
 Dar	t231	9	Dar	O	O	O	O	O	O	O	O	NN1	I-NP	dar	NNP	O	O
-es	t232	9	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t231:SBJ||t233:OBJ	O
-Salaam	t233	9	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NN	O	O
+es	t232	9	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t220:SBJ||t233:OBJ	O
+Salaam	t233	9	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
 .	t234	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t235	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -269,7 +269,7 @@ Wednesday	t257	10	Wednesday	O	O	O	tmx5	DATE	1998-08-26	O	O	NP0	B-NP	wednesday	NN
 .	t258	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 That	t259	11	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
-brought	t260	11	bring	O	O	O	O	O	O	O	O	VVD	B-VP	bring	VBD	t259:SBJ||t262:OBJ||t266:ADV||t268:P	mainVb
+brought	t260	11	bring	O	O	O	O	O	O	O	O	VVD	B-VP	bring	VBD	t259:SBJ||t262:OBJ||t266:DIR||t268:P	mainVb
 the	t261	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 toll	t262	11	toll	O	O	O	O	O	O	O	O	NN1	I-NP	toll	NN	t261:NMOD||t263:NMOD	O
 for	t263	11	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t265:PMOD	O

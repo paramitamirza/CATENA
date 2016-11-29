@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Hewlett-Packard	t1	1	Hewlett-Packard	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hewlett-packard	NNP	t2:POSTHON	O
 Co.	t2	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
@@ -90,7 +90,7 @@ company	t85	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t84:NMOD	O
 remains	t86	3	remain	e13	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t82:LOC||t85:SBJ||t87:PRD||t88:ADV	O
 independent	t87	3	independent	O	O	O	O	O	O	O	O	AJ0	B-ADJP	independent	JJ	O	O
 while	t88	3	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t89:SUB	O
-working	t89	3	work	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	work	VBG	t90:MNR||t91:OPRD	O
+working	t89	3	work	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	work	VBG	t90:MNR||t91:PRP	O
 together	t90	3	together	O	O	O	O	O	O	O	O	AV0	B-ADVP	together	RB	O	O
 to	t91	3	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t92:IM	O
 market	t92	3	market	e16	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	market	VB	t93:COORD||t96:OBJ	O

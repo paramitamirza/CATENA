@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Rally	t1	1	Rally	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	rally	NNP	t2:NMOD||t3:POSTHON	O
 's	t2	1	's	O	O	O+O+O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -32,7 +32,7 @@ one	t28	2	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 common	t29	2	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
 stock-purchase	t30	2	stock-purchase	O	O	O	O	O	O	O	O	NN1	I-NP	stock-purchase	NN	t28:NMOD||t29:NMOD	O
 right	t31	2	right	O	O	O	O	O	O	O	O	NN1	I-NP	right	RB	O	O
-as	t32	2	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t31:PMOD||t34:PMOD	O
+as	t32	2	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t31:DEP||t34:PMOD	O
 a	t33	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 dividend	t34	2	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t33:NMOD||t35:NMOD	O
 for	t35	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t37:PMOD	O
@@ -44,12 +44,12 @@ outstanding	t40	2	outstanding	O	O	O	O	O	O	O	O	NN1	I-NP	outstanding	JJ	O	O
 .	t41	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Each	t42	3	each	O	O	O	O	O	O	O	O	DT0	B-NP	each	DT	O	O
-right	t43	3	right	O	O	O	O	O	O	O	O	NN1	I-NP	right	NN	t42:NMOD	O
-entitles	t44	3	entitle	O	O	O	O	O	O	O	O	VVZ	B-VP	entitle	VBZ	t43:SBJ||t45:OBJ||t46:OPRD||t55:P	mainVb
+right	t43	3	right	O	O	O	O	O	O	O	O	NN1	I-NP	right	JJ	t42:NMOD	O
+entitles	t44	3	entitle	O	O	O	O	O	O	O	O	VVZ	B-VP	entitle	NNS	t43:SBJ||t45:OBJ||t46:OPRD||t55:P	mainVb
 shareholders	t45	3	shareholder	O	O	O	O	O	O	O	O	NN2	B-NP	shareholder	NNS	O	O
 to	t46	3	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t47:IM	O
 buy	t47	3	buy	O	O	O	O	O	O	O	O	VVI	I-VP	buy	VB	t49:OBJ||t52:ADV	O
-one-half	t48	3	one-half	O	O	O	O	O	O	O	O	CRD	B-NP	one-half	NN	O	O
+one-half	t48	3	one-half	O	O	O	O	O	O	O	O	CRD	B-NP	one-half	CD	O	O
 share	t49	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t48:NMOD||t50:NMOD	O
 of	t50	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t51:PMOD	O
 common	t51	3	common	O	O	O	O	O	O	O	O	AJ0	B-NP	common	JJ	O	O
@@ -122,20 +122,20 @@ The	t115	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t116	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t115:NMOD	O
 said	t117	5	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t116:SBJ||t119:OBJ||t137:P	mainVb
 it	t118	5	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-was	t119	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t118:SBJ||t121:PRD	O
-"	t120	5	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	RB	O	O
-concerned	t121	5	concern	e18	I_STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	concern	VBN	t120:AMOD||t122:ADV	O
+was	t119	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t118:SBJ||t120:PRD	O
+"	t120	5	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	NN	t121:APPO	O
+concerned	t121	5	concern	e18	I_STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	concern	VBN	t122:ADV||t133:LGS	O
 about	t122	5	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t125:PMOD	O
 the	t123	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 announced	t124	5	announce	O	O	O	O	O	O	O	O	AJ0	I-NP	announce	VBN	O	O
 intent	t125	5	intent	O	O	O	O	O	O	O	O	NN1	I-NP	intent	NN	t123:NMOD||t124:NMOD||t126:NMOD	O
 to	t126	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t127:IM	O
 acquire	t127	5	acquire	e21	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	t128:OBJ	O
-control	t128	5	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	t129:NMOD||t133:NMOD	O
+control	t128	5	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	t129:NMOD	O
 of	t129	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t131:PMOD	O
 the	t130	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-company	t131	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t130:NMOD||t132:SUFFIX	O
-"	t132	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	POS	O	O
+company	t131	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t130:NMOD||t132:NMOD	O
+"	t132	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NIL	O	O
 by	t133	5	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t136:PMOD	O
 a	t134	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 Sugarman-led	t135	5	sugarman-led	O	O	O	O	O	O	O	O	AJ0	I-NP	sugarman-led	NNP	O	O

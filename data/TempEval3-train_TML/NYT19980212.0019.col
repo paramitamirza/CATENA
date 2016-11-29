@@ -1,10 +1,10 @@
-DCT_1998-02-12T01:58:00	O	O	O	O	O	O	tmx0	TIME	1998-02-12T01:58:00	O	O	NN1	B-NP	dct_1998-02-12t01:58:00	NN	O	O
+DCT_1998-02-12T01:58:00	O	O	O	O	O	O	tmx0	TIME	1998-02-12T01:58:00	O	O	NN1	B-NP	dct_1998-02-12t01:58:00	VBG	O	O
 
 NEW	t1	1	NEW	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
-YORK	t2	1	YORK	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	york	NNP	t1:NAME	O
-_	t3	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	O	O
-A	t4	1	a	O	O	O+O+O	O	O	O	O	O	ZZ0	I-NP	a	NNP	t3:NAME	O
-Brooklyn	t5	1	Brooklyn	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	brooklyn	NNP	t2:NAME||t4:NAME	O
+YORK	t2	1	YORK	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	york	NNP	t1:NAME||t3:P||t6:APPO	O
+_	t3	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	,	O	O
+A	t4	1	a	O	O	O+O+O	O	O	O	O	O	ZZ0	I-NP	a	NNP	O	O
+Brooklyn	t5	1	Brooklyn	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	brooklyn	NNP	t4:NAME	O
 woman	t6	1	woman	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	woman	NN	t5:NMOD||t8:NMOD	O
 who	t7	1	who	O	O	O+O+O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 was	t8	1	be	O	O	O+O+O	O	O	O	O	O	VBD	B-VP	be	VBD	t7:SBJ||t9:VC	O
@@ -15,7 +15,7 @@ dry	t12	1	dry	O	O	O	O	O	O	O	O	AJ0	B-ADJP	dry	JJ	O	O
 in	t13	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t15:PMOD	O
 a	t14	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 laundromat	t15	1	laundromat	O	O	O	O	O	O	O	O	NN1	I-NP	laundromat	NN	t14:NMOD	O
-was	t16	1	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t6:SBJ||t17:VC	O
+was	t16	1	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t2:SBJ||t17:VC	O
 killed	t17	1	kill	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	kill	VBN	t19:OBJ||t24:TMP	O
 Thursday	t18	1	Thursday	O	O	O	tmx44	TIME	1998-02-12TEV	O	O	NP0	B-NP	thursday	NNP	O	O
 evening	t19	1	evening	O	O	O	tmx44	TIME	1998-02-12TEV	O	O	NN1	I-NP	evening	NN	t18:NMOD	O
@@ -36,18 +36,18 @@ said	t33	1	say	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t16:OBJ||t3
 .	t34	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t35	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-men	t36	2	man	O	O	O	O	O	O	O	O	NN2	I-NP	men	NNS	t35:NMOD||t37:APPO	O
-appeared	t37	2	appear	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	appear	VBD	t38:LOC	O
+men	t36	2	man	O	O	O	O	O	O	O	O	NN2	I-NP	men	NNS	t35:NMOD	O
+appeared	t37	2	appear	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	appear	VBD	t36:SBJ||t38:LOC||t41:LOC||t47:TMP	O
 in	t38	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t40:PMOD	O
 the	t39	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-store	t40	2	store	O	O	O	O	O	O	O	O	NN1	I-NP	store	NN	t39:NMOD||t41:LOC||t47:LOC	O
+store	t40	2	store	O	O	O	O	O	O	O	O	NN1	I-NP	store	NN	t39:NMOD	O
 at	t41	2	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t44:PMOD	O
 469	t42	2	469	O	O	O	O	O	O	O	O	CRD	B-NP	469	CD	O	O
 Vermont	t43	2	Vermont	O	O	O	O	O	O	O	O	NP0	I-NP	vermont	NNP	O	O
 St.	t44	2	St.	O	O	O	O	O	O	O	O	NP0	I-NP	st.	NNP	t42:NMOD||t43:NMOD||t45:LOC	O
 in	t45	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t46:PMOD	O
 Brownsville	t46	2	Brownsville	O	O	O	O	O	O	O	O	NP0	B-NP	brownsville	NNP	O	O
-around	t47	2	around	O	O	O	tmx46	TIME	1998-02-12T19:15	O	O	AV0	B-ADVP	around	IN	t48:PMOD	O
+around	t47	2	around	O	O	O	tmx46	TIME	1998-02-12T19:15	O	O	AV0	B-ADVP	around	IN	t60:SUB	O
 7:15	t48	2	7:15	O	O	O	tmx46	TIME	1998-02-12T19:15	O	O	CRD	B-NP	7:15	CD	t49:NMOD	O
 p.m.	t49	2	p.m.	O	O	O	tmx46	TIME	1998-02-12T19:15	O	O	AV0	I-NP	p.m.	RB	O	O
 ,	t50	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -60,7 +60,7 @@ Sanders	t56	2	Sanders	O	O	O	O	O	O	O	O	NP0	I-NP	sander	NNP	t55:NAME	O
 ,	t57	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 35	t58	2	35	O	O	O	O	O	O	O	O	CRD	B-NP	35	CD	t56:NMOD||t57:P||t59:P	O
 ,	t59	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-had	t60	2	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t36:SBJ||t50:P||t51:TMP||t54:P||t58:SBJ||t61:VC||t64:COORD	O
+had	t60	2	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t48:SBJ||t50:P||t51:TMP||t54:P||t58:SBJ||t61:VC||t64:COORD	O
 finished	t61	2	finish	e9	ASPECTUAL	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	finish	VBN	t63:OBJ	O
 her	t62	2	she	O	O	O	O	O	O	O	O	DPS	B-NP	her	PRP$	O	O
 cleaning	t63	2	cleaning	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	cleaning	NN	t62:NMOD	O
@@ -74,16 +74,16 @@ to	t70	2	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t69:SBJ||t71:IM	O
 dry	t71	2	dry	e11	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	dry	VB	O	O
 ,	t72	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 detectives	t73	2	detective	O	O	O	O	O	O	O	O	NN2	B-NP	detective	NNS	O	O
-said	t74	2	say	e12	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t60:OBJ||t72:P||t73:SBJ||t75:P	mainVb
+said	t74	2	say	e12	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t37:OBJ||t72:P||t73:SBJ||t75:P	mainVb
 .	t75	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t76	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+"	t76	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 It	t77	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-looks	t78	3	look	e13	PERCEPTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	look	VBZ	t76:DEP||t77:SBJ||t79:ADV	O
-as	t79	3	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t80:DEP||t82:SUB	O
-though	t80	3	though	O	O	O	O	O	O	O	O	CJS	I-SBAR	though	IN	O	O
+looks	t78	3	look	e13	PERCEPTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	look	VBZ	t76:P||t77:SBJ||t79:ADV||t98:P	mainVb
+as	t79	3	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t94:SUB	O
+though	t80	3	though	O	O	O	O	O	O	O	O	CJS	I-SBAR	though	IN	t82:SUB	O
 they	t81	3	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-panicked	t82	3	panic	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	panic	VBD	t81:SBJ	O
+panicked	t82	3	panic	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	panic	VBD	t81:SBJ||t83:P||t84:P||t86:OBJ	O
 ,	t83	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t84	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	,	O	O
 a	t85	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -95,7 +95,7 @@ condition	t90	3	condition	O	O	O	O	O	O	O	O	NN1	B-NP	condition	NN	t91:NMOD	O
 of	t91	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t92:PMOD	O
 anonymity	t92	3	anonymity	O	O	O	O	O	O	O	O	NN1	B-NP	anonymity	NN	O	O
 ,	t93	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t94	3	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t78:OBJ||t83:P||t84:P||t86:SBJ||t87:P||t88:ADV||t93:P||t95:ADV||t98:P	mainVb
+said	t94	3	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t80:ADV||t87:P||t88:ADV||t93:P||t95:ADV	O
 of	t95	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t97:PMOD	O
 the	t96	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 robbers	t97	3	robber	O	O	O	O	O	O	O	O	NN2	I-NP	robber	NNS	t96:NMOD	O
@@ -111,11 +111,11 @@ place	t105	4	place	O	O	O	O	O	O	O	O	NN1	I-NP	place	NN	t104:NMOD	O
 .	t106	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 There	t107	5	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-were	t108	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t107:SBJ||t112:PRD||t113:LOC||t114:P||t115:COORD||t120:P||t121:P	mainVb
+were	t108	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t107:SBJ||t112:PRD||t114:P||t115:COORD||t120:P||t121:P	mainVb
 four	t109	5	four	O	O	O	O	O	O	O	O	CRD	B-NP	four	CD	t110:COORD	O
 or	t110	5	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t111:CONJ	O
 five	t111	5	five	O	O	O	O	O	O	O	O	CRD	B-NP	five	CD	O	O
-people	t112	5	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t109:NMOD	O
+people	t112	5	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t109:NMOD||t113:LOC	O
 inside	t113	5	inside	O	O	O	O	O	O	O	O	AV0	B-ADVP	inside	RB	O	O
 ,	t114	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t115	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t118:CONJ	O
@@ -124,7 +124,7 @@ just	t117	5	just	O	O	O	O	O	O	O	O	AV0	B-ADVP	just	RB	O	O
 started	t118	5	start	e20	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	start	VBD	t116:SBJ||t117:ADV||t119:OPRD	O
 firing	t119	5	firing	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	firing	VBG	O	O
 .	t120	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t121	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t121	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Ms.	t122	6	Ms.	O	O	O	O	O	O	O	O	NP0	B-NP	ms.	NNP	O	O
 Sanders	t123	6	Sanders	O	O	O	O	O	O	O	O	NP0	I-NP	sander	NNP	t122:TITLE	O
@@ -190,12 +190,12 @@ Miranda	t179	9	Miranda	O	O	O	O	O	O	O	O	NP0	I-NP	miranda	NNP	t178:NAME||t180:P||t
 ,	t180	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t181	9	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 lives	t182	9	live	e35	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	live	VBZ	t181:SBJ||t183:LOC	O
-in	t183	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t187:PMOD	O
+in	t183	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t188:PMOD	O
 Ms.	t184	9	Ms.	O	O	O	O	O	O	O	O	NP0	B-NP	ms.	NNP	O	O
 Sanders	t185	9	Sanders	O	O	O	O	O	O	O	O	NN2	I-NP	sander	NNP	t184:TITLE||t186:SUFFIX	O
 '	t186	9	'	O	O	O	O	O	O	O	O	POS	B-NP	'	POS	O	O
-apartment	t187	9	apartment	O	O	O	O	O	O	O	O	NN1	I-NP	apartment	NN	t185:NMOD||t188:APPO	O
-building	t188	9	building	O	O	O	O	O	O	O	O	NN1	I-NP	build	VBG	t189:LOC	O
+apartment	t187	9	apartment	O	O	O	O	O	O	O	O	NN1	I-NP	apartment	NN	O	O
+building	t188	9	building	O	O	O	O	O	O	O	O	NN1	I-NP	building	NN	t185:NMOD||t187:NMOD||t189:LOC	O
 at	t189	9	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t192:PMOD	O
 405	t190	9	405	O	O	O	O	O	O	O	O	CRD	B-NP	405	CD	O	O
 Williams	t191	9	Williams	O	O	O	O	O	O	O	O	NP0	I-NP	williams	NNP	O	O

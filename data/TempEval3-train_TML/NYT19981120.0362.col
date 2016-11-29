@@ -1,25 +1,25 @@
-DCT_1998-11-20T19:30	O	O	O	O	O	O	tmx0	TIME	1998-11-20T19:30	O	O	NN1	B-NP	dct_1998-11-20t19:30	SYM	O	O
+DCT_1998-11-20T19:30	O	O	O	O	O	O	tmx0	TIME	1998-11-20T19:30	O	O	NN1	B-NP	dct_1998-11-20t19:30	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 antiabortion	t2	1	antiabortion	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	antiabortion	NN	O	O
 activist	t3	1	activist	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	activist	NN	t1:NMOD||t2:NMOD	O
 wanted	t4	1	want	e1	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVD	B-VP	want	VBD	t3:SBJ||t5:ADV||t31:P	mainVb
-for	t5	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t6:PMOD	O
-questioning	t6	1	question	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	question	VBG	t7:ADV	O
+for	t5	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t20:SUB	O
+questioning	t6	1	question	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	question	VBG	t7:ADV||t16:LOC	O
 in	t7	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t12:PMOD	O
 last	t8	1	last	O	O	O	tmx2	DATE	1998-10	O	O	ORD	B-NP	last	JJ	O	O
 month	t9	1	month	O	O	O	tmx2	DATE	1998-10	O	O	NN1	I-NP	month	NN	t8:NMOD||t10:SUFFIX	O
 's	t10	1	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 shooting	t11	1	shooting	O	O	O	O	O	O	O	O	AJ0	I-NP	shooting	NN	O	O
 death	t12	1	death	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	death	NN	t9:NMOD||t11:NMOD||t13:NMOD	O
-of	t13	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t20:PMOD	O
+of	t13	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t15:PMOD	O
 a	t14	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-doctor	t15	1	doctor	O	O	O	O	O	O	O	O	NN1	I-NP	doctor	NN	t14:NMOD||t16:LOC	O
+doctor	t15	1	doctor	O	O	O	O	O	O	O	O	NN1	I-NP	doctor	NN	t14:NMOD	O
 in	t16	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t19:PMOD	O
 a	t17	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 Buffalo	t18	1	Buffalo	O	O	O	O	O	O	O	O	NN1	I-NP	buffalo	NNP	O	O
 suburb	t19	1	suburb	O	O	O	O	O	O	O	O	NN1	I-NP	suburb	NN	t17:NMOD||t18:NMOD	O
-may	t20	1	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t15:SBJ||t21:VC	O
+may	t20	1	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t6:SBJ||t21:VC	O
 have	t21	1	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t22:VC	O
 fled	t22	1	flee	e4	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	flee	VBN	t23:DIR||t25:P||t26:ADV	O
 to	t23	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t24:PMOD	O
@@ -57,8 +57,8 @@ border	t53	2	border	O	O	O	O	O	O	O	O	NN1	I-NP	border	NN	O	O
 days	t54	2	day	O	O	O	tmx7	DATE	1998-10-XX	O	O	NN2	I-NP	days	NNS	t51:NMOD||t52:NMOD||t53:NMOD	O
 after	t55	2	after	O	O	O	O	O	O	s1	O	CJS	B-PP	after	IN	t69:SUB	O
 a	t56	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-sniper	t57	2	sniper	O	O	O	O	O	O	O	O	NN1	I-NP	sniper	NN	t56:NMOD||t58:APPO	O
-killed	t58	2	kill	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	kill	VBN	t61:OBJ||t62:LOC	O
+sniper	t57	2	sniper	O	O	O	O	O	O	O	O	NN1	I-NP	sniper	NN	t56:NMOD	O
+killed	t58	2	kill	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	kill	VBD	t57:SBJ||t61:OBJ||t62:LOC	O
 Dr.	t59	2	Dr.	O	O	O	O	O	O	O	O	NP0	B-NP	dr.	NN	O	O
 Barnett	t60	2	Barnett	O	O	O	O	O	O	O	O	NP0	I-NP	barnett	NNP	O	O
 Slepian	t61	2	Slepian	O	O	O	O	O	O	O	O	NP0	I-NP	slepian	NNP	t59:TITLE||t60:NAME	O
@@ -69,7 +69,7 @@ kitchen	t64	2	kitchen	O	O	O	O	O	O	O	O	NN1	I-NP	kitchen	NN	t63:NMOD	O
 the	t66	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Buffalo	t67	2	Buffalo	O	O	O	O	O	O	O	O	NP0	I-NP	buffalo	NNP	O	O
 News	t68	2	News	O	O	O	O	O	O	O	O	NN1	I-NP	news	NNP	t66:NMOD||t67:NAME	O
-reported	t69	2	report	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t57:ADV||t65:P||t68:SBJ||t70:TMP	O
+reported	t69	2	report	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t58:OBJ||t65:P||t68:SBJ||t70:TMP	O
 Friday	t70	2	Friday	O	O	O	tmx3	DATE	1998-11-20	O	O	NP0	B-NP	friday	NNP	O	O
 .	t71	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -119,7 +119,7 @@ is	t113	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t112:SBJ||t114:VC	O
 wanted	t114	4	want	e14	STATE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	want	VBN	t115:ADV	O
 as	t115	4	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t118:PMOD	O
 a	t116	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-material	t117	4	material	O	O	O	O	O	O	O	O	NN1	I-NP	material	JJ	O	O
+material	t117	4	material	O	O	O	O	O	O	O	O	NN1	I-NP	material	NN	O	O
 witness	t118	4	witness	O	O	O	O	O	O	O	O	NN1	I-NP	witness	NN	t116:NMOD||t117:NMOD||t119:LOC	O
 in	t119	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t121:PMOD	O
 the	t120	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -150,13 +150,13 @@ whereabouts	t143	5	whereabouts	O	O	O	O	O	O	O	O	AVQ	B-ADVP	whereabouts	NN	t141:NM
 .	t144	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 "	t145	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
-In	t146	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t145:SBJ||t148:PMOD	O
+In	t146	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t148:PMOD	O
 all	t147	6	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 candor	t148	6	candor	O	O	O	O	O	O	O	O	NN1	I-NP	candor	NN	t147:NMOD	O
 ,	t149	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t150	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 FBI	t151	6	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	t150:NMOD	O
-does	t152	6	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t146:LOC||t149:P||t151:SBJ||t153:ADV||t154:VC	O
+does	t152	6	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t145:SBJ||t146:LOC||t149:P||t151:SBJ||t153:ADV||t154:VC	O
 not	t153	6	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 know	t154	6	know	e18	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	know	VB	t158:OBJ	O
 where	t155	6	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	O	O
@@ -167,7 +167,7 @@ _	t159	6	_	O	O	O	O	O	O	O	O	PUQ	B-NP	_	JJ	O	O
 period	t160	6	period	O	O	O	O	O	O	O	O	NN1	I-NP	period	NN	t159:NMOD	O
 ,	t161	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t162	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t163	6	say	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t152:OBJ||t161:P||t162:SBJ||t165:OBJ||t175:P	mainVb
+said	t163	6	say	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t152:OBJ||t161:P||t162:SBJ||t165:SBJ||t175:P	mainVb
 Paul	t164	6	Paul	O	O	O	O	O	O	O	O	NP0	B-NP	paul	NNP	O	O
 Moskal	t165	6	Moskal	O	O	O	O	O	O	O	O	NP0	I-NP	moskal	NNP	t164:NAME||t166:P||t168:APPO	O
 ,	t166	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -181,9 +181,9 @@ Buffalo	t173	6	Buffalo	O	O	O	O	O	O	O	O	NN1	I-NP	buffalo	NNP	O	O
 office	t174	6	office	O	O	O	O	O	O	O	O	NN1	I-NP	office	NN	t171:NMOD||t173:NMOD	O
 .	t175	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t176	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
-He	t177	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	t178:SUFFIX	O
-'s	t178	7	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+"	t176	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+He	t177	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+'s	t178	7	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t176:P||t177:SBJ||t180:PRD||t194:P	mainVb
 as	t179	7	as	O	O	O	O	O	O	O	O	AV0	B-ADJP	as	IN	O	O
 likely	t180	7	likely	O	O	O	O	O	O	O	O	AJ0	I-ADJP	likely	JJ	t179:AMOD||t181:AMOD	O
 to	t181	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t182:IM	O
@@ -193,17 +193,17 @@ Boston	t184	7	Boston	O	O	O	O	O	O	O	O	NP0	B-NP	boston	NNP	O	O
 ,	t185	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Massachusetts	t186	7	Massachusetts	O	O	O	O	O	O	O	O	NP0	B-NP	massachusetts	NNP	t184:NMOD||t185:P||t187:P||t188:NMOD||t191:P	O
 ,	t187	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-as	t188	7	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t189:LOC	O
+as	t188	7	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t189:PMOD	O
 in	t189	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t190:PMOD	O
 Buffalo	t190	7	Buffalo	O	O	O	O	O	O	O	O	NP0	B-NP	buffalo	NNP	O	O
-,	t191	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+,	t191	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t193:LOC	O
 New	t192	7	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
 York	t193	7	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t192:NAME	O
-.	t194	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t176:DEP||t177:SBJ||t180:DEP||t193:NMOD||t195:APPO	mainVb
+.	t194	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t195:NMOD	O
 "	t195	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Authorities	t196	8	Authorities	O	O	O	O	O	O	O	O	NN2	B-NP	authorities	NNS	O	O
-want	t197	8	want	e22	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	want	VBP	t196:SBJ||t198:OPRD||t217:P	mainVb
+want	t197	8	want	e22	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	want	VBP	t196:SBJ||t198:OPRD||t208:P||t209:ADV||t217:P	mainVb
 to	t198	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t199:IM	mainVb
 question	t199	8	question	e23	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	question	VB	t202:OBJ	mainVb
 the	t200	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -211,7 +211,7 @@ unidentified	t201	8	unidentified	O	O	O	O	O	O	O	O	AJ0	I-NP	unidentified	JJ	O	O
 woman	t202	8	woman	O	O	O	O	O	O	O	O	NN1	I-NP	woman	NN	t200:NMOD||t201:NMOD||t205:NMOD	O
 who	t203	8	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 allegedly	t204	8	allegedly	O	O	O	O	O	O	O	O	AV0	B-ADVP	allegedly	RB	O	O
-traveled	t205	8	travel	e24	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	travel	VBD	t203:SBJ||t204:ADV||t206:ADV||t208:P||t209:ADV	O
+traveled	t205	8	travel	e24	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	travel	VBD	t203:SBJ||t204:ADV||t206:ADV	O
 with	t206	8	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t207:PMOD	O
 Kopp	t207	8	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	O	O
 ,	t208	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -225,9 +225,9 @@ the	t215	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 newspaper	t216	8	newspaper	O	O	O	O	O	O	O	O	NN1	I-NP	newspaper	NN	t215:NMOD	O
 .	t217	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t218	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t220:NMOD||t229:P	O
+"	t218	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 She	t219	9	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-may	t220	9	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t219:SBJ||t221:VC	O
+may	t220	9	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t218:ADV||t219:SBJ||t221:VC	O
 have	t221	9	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t222:VC	O
 been	t222	9	be	e26	STATE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VBN	I-VP	be	VBN	t223:PRD||t226:TMP	O
 with	t223	9	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t224:PMOD	O
@@ -237,34 +237,34 @@ after	t226	9	after	O	O	O	O	O	O	s2	O	PRP	B-PP	after	IN	t225:PMOD||t228:PMOD	O
 the	t227	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 murder	t228	9	murder	e27	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	murder	NN	t227:NMOD	O
 ,	t229	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t230	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	t218:SBJ	O
+"	t230	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 the	t231	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 investigator	t232	9	investigator	O	O	O	O	O	O	O	O	NN1	I-NP	investigator	NN	t231:NMOD	O
-said	t233	9	say	e28	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t230:DEP||t232:SBJ||t234:P	mainVb
+said	t233	9	say	e28	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t220:OBJ||t229:P||t230:P||t232:SBJ||t234:P	mainVb
 .	t234	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t235	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
-Kopp	t236	10	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	O	O
-may	t237	10	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t235:DEP||t236:SBJ||t238:VC||t241:P	mainVb
+"	t235	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+Kopp	t236	10	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NN	t235:HMOD	O
+may	t237	10	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t236:SBJ||t238:VC||t241:P	mainVb
 be	t238	10	be	e29	STATE	PRESENT+NONE+POS	O	O	O	O	O	VBI	I-VP	be	VB	t239:LOC-PRD	mainVb
 in	t239	10	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t240:PMOD	O
 Mexico	t240	10	Mexico	O	O	O	O	O	O	O	O	NP0	B-NP	mexico	NNP	O	O
 .	t241	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 He	t242	11	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-may	t243	11	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t242:SBJ||t244:VC||t254:P	mainVb
+may	t243	11	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t242:SBJ||t244:VC||t254:P||t255:P	mainVb
 have	t244	11	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t246:VC	mainVb
 even	t245	11	even	O	O	O	O	O	O	O	O	AV0	I-VP	even	RB	O	mainVb
 traveled	t246	11	travel	e30	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	travel	VBN	t245:ADV||t247:ADV||t248:DIR	mainVb
 further	t247	11	further	O	O	O	O	O	O	O	O	AV0	B-ADVP	further	RBR	O	O
-into	t248	11	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t250:PMOD||t255:PMOD	O
+into	t248	11	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t250:PMOD	O
 Central	t249	11	Central	O	O	O	O	O	O	O	O	AJ0	B-NP	central	NNP	O	O
 America	t250	11	America	O	O	O	O	O	O	O	O	NP0	I-NP	america	NNP	t249:NAME||t251:COORD	O
 or	t251	11	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t253:CONJ	O
 South	t252	11	South	O	O	O	O	O	O	O	O	NP0	B-NP	south	NNP	O	O
 America	t253	11	America	O	O	O	O	O	O	O	O	NP0	I-NP	america	NNP	t252:NAME	O
 .	t254	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t255	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t255	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	.	O	O
 
 A	t256	12	a	O	O	O	O	O	O	O	O	ZZ0	B-NP	a	DT	O	O
 task	t257	12	task	O	O	O	O	O	O	O	O	NN1	I-NP	task	NN	O	O
@@ -314,7 +314,7 @@ $	t298	13	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t299:NMOD	O
 reward	t300	13	reward	O	O	O	O	O	O	O	O	NN1	I-NP	reward	NN	t297:NMOD||t298:NMOD||t301:NMOD	O
 for	t301	13	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t302:PMOD	O
 information	t302	13	information	O	O	O	O	O	O	O	O	NN1	B-NP	information	NN	t303:APPO	O
-leading	t303	13	lead	e34	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	lead	VBG	t304:DIR	O
+leading	t303	13	lead	e34	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	lead	JJ	t304:AMOD	O
 to	t304	13	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t306:PMOD	O
 the	t305	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 arrest	t306	13	arrest	e35	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	arrest	NN	t305:NMOD||t307:COORD||t309:NMOD	O
@@ -326,6 +326,6 @@ responsible	t311	13	responsible	O	O	O	O	O	O	O	O	AJ0	I-NP	responsible	JJ	t312:AMO
 for	t312	13	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t315:PMOD	O
 Slepian	t313	13	Slepian	O	O	O	O	O	O	O	O	NP0	B-NP	slepian	NNP	t314:SUFFIX	O
 's	t314	13	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-slaying	t315	13	slaying	e37	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	slaying	NN	t313:NMOD	O
+slaying	t315	13	slaying	e37	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	slay	NN	t313:NMOD	O
 .	t316	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

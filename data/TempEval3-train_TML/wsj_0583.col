@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Polly	t1	1	Polly	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	polly	NNP	O	O
 Peck	t2	1	Peck	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	peck	NNP	t1:NAME	O
@@ -43,15 +43,15 @@ British	t39	2	british	O	O	O	O	O	O	O	O	AJ0	I-NP	british	JJ	O	O
 conglomerate	t40	2	conglomerate	O	O	O	O	O	O	O	O	NN1	I-NP	conglomerate	NN	t37:NMOD||t38:NMOD||t39:NMOD	O
 ,	t41	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 will	t42	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t35:SBJ||t43:VC||t75:P	mainVb
-pay	t43	2	pay	e8	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t46:OBJ||t48:OBJ||t52:ADV	mainVb
+pay	t43	2	pay	e8	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	pay	VB	t48:OBJ||t51:TMP||t52:ADV	mainVb
 15.6	t44	2	15.6	O	O	O	O	O	O	O	O	CRD	B-NP	15.6	CD	O	O
 billion	t45	2	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t44:DEP	O
-yen	t46	2	yen	O	O	O	O	O	O	O	O	NN1	I-NP	yen	NN	t45:NMOD||t51:APPO	O
--LRB-	t47	2	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NNP	O	O
-$	t48	2	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t49:DEP||t50:DEP	O
+yen	t46	2	yen	O	O	O	O	O	O	O	O	NN1	I-NP	yen	NN	t45:NMOD	O
+-LRB-	t47	2	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	JJ	O	O
+$	t48	2	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t46:NMOD||t47:DEP||t49:DEP||t50:DEP	O
 110	t49	2	110	O	O	O	O	O	O	O	O	CRD	I-NP	110	CD	O	O
 million	t50	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t51	2	-rrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-rrb-	NNP	t47:NAME	O
+-RRB-	t51	2	-rrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-rrb-	NNP	O	O
 for	t52	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t56:PMOD	O
 39	t53	2	39	O	O	O	O	O	O	O	O	CRD	B-NP	39	CD	O	O
 million	t54	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t53:DEP	O
@@ -65,8 +65,8 @@ well-known	t61	2	well-known	O	O	O	O	O	O	O	O	AJ0	I-NP	well-known	NN	O	O
 maker	t62	2	maker	O	O	O	O	O	O	O	O	NN1	I-NP	maker	NN	t60:NMOD||t61:NMOD||t63:NMOD||t68:NMOD	O
 of	t63	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t66:PMOD	O
 high-fidelity	t64	2	high-fidelity	O	O	O	O	O	O	O	O	NN1	B-NP	high-fidelity	NN	O	O
-audio	t65	2	audio	O	O	O	O	O	O	O	O	NN1	I-NP	audio	NN	t64:NMOD	O
-equipment	t66	2	equipment	O	O	O	O	O	O	O	O	NN1	I-NP	equipment	NN	t65:NMOD	O
+audio	t65	2	audio	O	O	O	O	O	O	O	O	NN1	I-NP	audio	JJ	O	O
+equipment	t66	2	equipment	O	O	O	O	O	O	O	O	NN1	I-NP	equipment	NN	t64:NMOD||t65:NMOD	O
 that	t67	2	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 failed	t68	2	fail	e9	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fail	VBD	t67:SBJ||t69:OPRD	O
 to	t69	2	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t70:IM	O
@@ -128,7 +128,7 @@ announced	t122	4	announce	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	announc
 Friday	t123	4	Friday	O	O	O	tmx200	DATE	1989-10-27	O	O	NP0	B-NP	friday	NNP	O	O
 .	t124	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t125	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t125	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t126	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 myths	t127	5	myth	O	O	O	O	O	O	O	O	NN2	I-NP	myth	NNS	t126:NMOD||t128:NMOD	O
 that	t128	5	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t130:SUB	O
@@ -143,7 +143,7 @@ outside	t136	5	outside	O	O	O	O	O	O	O	O	AV0	B-NP	outside	NN	O	O
 has	t137	5	have	O	O	O	O	O	O	O	O	VHZ	I-NP	have	VBZ	t127:SBJ||t142:VC	O
 ,	t138	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 I	t139	5	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-think	t140	5	think	O	O	O	O	O	O	O	O	VVB	B-VP	think	VBP	t125:DEP||t137:OBJ||t138:P||t139:SBJ||t141:P	O
+think	t140	5	think	O	O	O	O	O	O	O	O	VVB	B-VP	think	VBP	t137:OBJ||t138:P||t139:SBJ||t141:P	O
 ,	t141	5	,	O	O	O	O	O	O	O	O	PUN	I-VP	,	,	O	O
 been	t142	5	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t143:VC	O
 demolished	t143	5	demolish	e27	OCCURRENCE	PASTPART+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	demolish	VBN	t144:MNR	O
@@ -154,7 +154,7 @@ stroke	t146	5	stroke	O	O	O	O	O	O	O	O	NN1	I-NP	stroke	NN	t145:NMOD	O
 "	t148	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Mr.	t149	5	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Nadir	t150	5	Nadir	O	O	O	O	O	O	O	O	NP0	I-NP	nadir	NNP	t148:NAME||t149:TITLE	O
-said	t151	5	say	e30	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t140:OBJ||t147:P||t150:SBJ||t152:P	mainVb
+said	t151	5	say	e30	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t125:P||t140:DEP||t147:P||t150:SBJ||t152:P	mainVb
 .	t152	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 But	t153	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
@@ -190,38 +190,38 @@ exceed	t181	7	exceed	e39	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	exceed	VBP	t1
 its	t182	7	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 assets	t183	7	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNS	t182:NMOD	O
 by	t184	7	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t188:PMOD	O
-about	t185	7	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+about	t185	7	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t186:DEP||t187:DEP	O
 13.8	t186	7	13.8	O	O	O	O	O	O	O	O	CRD	I-NP	13.8	CD	O	O
-billion	t187	7	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t185:DEP||t186:DEP	O
-yen	t188	7	yen	O	O	O	O	O	O	O	O	NN1	I-NP	yen	NN	t187:NMOD	O
+billion	t187	7	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
+yen	t188	7	yen	O	O	O	O	O	O	O	O	NN1	I-NP	yen	NN	t185:NMOD	O
 .	t189	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t190	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	DT	O	O
+"	t190	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 If	t191	8	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t193:SUB	O
 you	t192	8	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
 find	t193	8	find	e246	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	find	VBP	t192:SBJ||t197:OBJ||t198:LOC	O
 sound	t194	8	sound	O	O	O	O	O	O	O	O	NN1	B-NP	sound	JJ	O	O
 ,	t195	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 healthy	t196	8	healthy	O	O	O	O	O	O	O	O	AJ0	B-NP	healthy	JJ	O	O
-companies	t197	8	company	O	O	O	O	O	O	O	O	NN2	I-NP	company	NNS	t190:NMOD||t194:NMOD||t195:P||t196:NMOD	O
+companies	t197	8	company	O	O	O	O	O	O	O	O	NN2	I-NP	company	NNS	t194:NMOD||t195:P||t196:NMOD	O
 in	t198	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t199:PMOD	O
 Japan	t199	8	Japan	O	O	O	O	O	O	O	O	NP0	B-NP	japan	NNP	O	O
 ,	t200	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 they	t201	8	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-are	t202	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t191:ADV||t200:P||t201:SBJ||t203:ADV||t204:PRD	O
+are	t202	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t190:GAP-PRD||t191:ADV||t200:P||t201:SBJ||t203:ADV||t204:PRD	O
 not	t203	8	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
 for	t204	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t205:PMOD	O
 sale	t205	8	sale	O	O	O	O	O	O	O	O	NN1	B-NP	sale	NN	O	O
 ,	t206	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t207	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t208	8	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t202:OBJ||t206:P||t207:SBJ||t210:OBJ||t220:P	mainVb
+said	t208	8	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t202:OBJ||t206:P||t207:SBJ||t210:SBJ||t220:P	mainVb
 George	t209	8	George	O	O	O	O	O	O	O	O	NP0	B-NP	george	NNP	O	O
 Watanabe	t210	8	Watanabe	O	O	O	O	O	O	O	O	NP0	I-NP	watanabe	NNP	t209:NAME||t211:P||t213:APPO	O
 ,	t211	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t212	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 management-consultant	t213	8	management-consultant	O	O	O	O	O	O	O	O	NN1	I-NP	management-consultant	NN	t212:NMOD||t214:LOC	O
 at	t214	8	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t218:PMOD	O
-Tokyo-based	t215	8	tokyo-based	O	O	O	O	O	O	O	O	AJ0	B-NP	tokyo-based	NNP	O	O
+Tokyo-based	t215	8	tokyo-based	O	O	O	O	O	O	O	O	AJ0	B-NP	tokyo-base	NNP	O	O
 Asia	t216	8	Asia	O	O	O	O	O	O	O	O	NP0	I-NP	asia	NNP	O	O
 Advisory	t217	8	Advisory	O	O	O	O	O	O	O	O	AJ0	I-NP	advisory	NNP	O	O
 Services	t218	8	Services	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNPS	t215:NAME||t216:NAME||t217:NAME||t219:POSTHON	O
@@ -295,9 +295,9 @@ companies	t283	10	company	O	O	O	O	O	O	O	O	NN2	I-NP	company	NNS	t282:NMOD	O
 .	t284	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Nor	t285	11	nor	O	O	O	O	O	O	O	O	CJC	O	nor	CC	O	O
-do	t286	11	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t285:DEP||t287:SBJ||t288:VC||t301:P	mainVb
+do	t286	11	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	O	O
 analysts	t287	11	analyst	O	O	O	O	O	O	O	O	NN2	B-NP	analyst	NNS	O	O
-expect	t288	11	expect	e56	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	B-VP	expect	VB	t291:OBJ||t292:OPRD	O
+expect	t288	11	expect	e56	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	B-VP	expect	VB	t285:DEP||t286:DEP||t287:SBJ||t291:OBJ||t292:OPRD||t301:P	mainVb
 the	t289	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Sansui	t290	11	Sansui	O	O	O	O	O	O	O	O	NP0	I-NP	sansui	NNP	O	O
 deal	t291	11	deal	O	O	O	O	O	O	O	O	NN1	I-NP	deal	NN	t289:NMOD||t290:NMOD	O
@@ -343,7 +343,7 @@ Japanese	t329	12	japanese	O	O	O	O	O	O	O	O	AJ0	I-NP	japanese	JJ	O	O
 corporate	t330	12	corporate	O	O	O	O	O	O	O	O	AJ0	I-NP	corporate	JJ	O	O
 attitudes	t331	12	attitude	O	O	O	O	O	O	O	O	NN2	I-NP	attitude	NNS	t328:NMOD||t329:NMOD||t330:NMOD	O
 repel	t332	12	repel	e62	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	repel	VBP	t302:ADV||t318:P||t319:SBJ||t335:OBJ||t336:P	mainVb
-most	t333	12	most	O	O	O	O	O	O	O	O	AV0	B-NP	most	DT	O	O
+most	t333	12	most	O	O	O	O	O	O	O	O	AV0	B-NP	most	RBS	O	O
 would-be	t334	12	would-be	O	O	O	O	O	O	O	O	AJ0	I-NP	would-be	JJ	O	O
 acquirers	t335	12	acquirer	O	O	O	O	O	O	O	O	NN2	I-NP	acquirer	NNS	t333:NMOD||t334:NMOD	O
 .	t336	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -405,8 +405,8 @@ of	t389	14	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t394:PMOD	O
 expensive	t390	14	expensive	O	O	O	O	O	O	O	O	AJ0	B-NP	expensive	JJ	O	O
 ,	t391	14	,	O	O	O	O	O	O	O	O	PUN	I-NP	,	,	O	O
 high-quality	t392	14	high-quality	O	O	O	O	O	O	O	O	NN1	I-NP	high-quality	NN	O	O
-stereo	t393	14	stereo	O	O	O	O	O	O	O	O	NN1	I-NP	stereo	NN	O	O
-gear	t394	14	gear	O	O	O	O	O	O	O	O	NN1	I-NP	gear	NN	t390:NMOD||t391:P||t392:NMOD||t393:NMOD||t395:NMOD	O
+stereo	t393	14	stereo	O	O	O	O	O	O	O	O	NN1	I-NP	stereo	NN	t392:NMOD	O
+gear	t394	14	gear	O	O	O	O	O	O	O	O	NN1	I-NP	gear	NN	t390:NMOD||t391:P||t393:NMOD||t395:NMOD	O
 for	t395	14	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t396:PMOD	O
 audiophiles	t396	14	audiophile	O	O	O	O	O	O	O	O	NN2	B-NP	audiophiles	NNS	O	O
 .	t397	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -422,11 +422,11 @@ has	t405	15	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t398:DEP||t399:TMP||t402:P||t
 moved	t406	15	move	e71	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	move	VBN	t407:DIR	mainVb
 toward	t407	15	toward	O	O	O	O	O	O	O	O	AV0	B-ADVP	toward	IN	t413:PMOD	O
 less	t408	15	less	O	O	O	O	O	O	O	O	AV0	I-ADVP	less	RBR	O	O
-expensive	t409	15	expensive	O	O	O	O	O	O	O	O	AJ0	B-NP	expensive	JJ	t408:AMOD||t410:AMOD	O
-"	t410	15	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	$	t411:NMOD	O
-mini-component	t411	15	mini-component	O	O	O	O	O	O	O	O	AJ0	I-NP	mini-component	JJ	O	O
+expensive	t409	15	expensive	O	O	O	O	O	O	O	O	AJ0	B-NP	expensive	JJ	t408:AMOD||t410:HYPH	O
+"	t410	15	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	HYPH	O	O
+mini-component	t411	15	mini-component	O	O	O	O	O	O	O	O	AJ0	I-NP	mini-component	NN	t409:HMOD	O
 "	t412	15	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
-sets	t413	15	set	O	O	O	O	O	O	O	O	NN2	I-NP	set	NNS	t409:NMOD||t412:NMOD||t414:P||t416:NMOD	O
+sets	t413	15	set	O	O	O	O	O	O	O	O	NN2	I-NP	set	NNS	t411:NMOD||t412:NMOD||t414:P||t416:NMOD	O
 ,	t414	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 miniaturized	t415	15	miniaturize	O	O	O	O	O	O	O	O	AJ0	B-NP	miniaturize	VBN	O	O
 amplifiers	t416	15	amplifier	O	O	O	O	O	O	O	O	NN2	I-NP	amplifier	NNS	t415:NMOD||t417:COORD||t423:NMOD	O
@@ -471,7 +471,7 @@ by	t453	16	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t455:PMOD||t462:P||t463:COORD	O
 quickly	t454	16	quickly	O	O	O	O	O	O	O	O	AV0	B-NP	quickly	RB	O	O
 bringing	t455	16	bring	e77	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-NP	bring	VBG	t454:MNR||t456:PRT||t458:OBJ	O
 out	t456	16	out	O	O	O	O	O	O	O	O	AVP	B-PP	out	RP	O	O
-mini-component	t457	16	mini-component	O	O	O	O	O	O	O	O	AJ0	B-NP	mini-component	JJ	O	O
+mini-component	t457	16	mini-component	O	O	O	O	O	O	O	O	AJ0	B-NP	mini-component	NN	O	O
 products	t458	16	product	O	O	O	O	O	O	O	O	NN2	I-NP	product	NNS	t457:NMOD||t459:NMOD	O
 of	t459	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t461:PMOD	O
 their	t460	16	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
@@ -508,7 +508,7 @@ was	t489	17	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t488:SBJ||t490:PRD||t495:COORD||t
 late	t490	17	late	O	O	O	O	O	O	O	O	AJ0	B-ADJP	late	JJ	t491:AMOD	O
 into	t491	17	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t494:PMOD	O
 the	t492	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-mini-component	t493	17	mini-component	O	O	O	O	O	O	O	O	AJ0	I-NP	mini-component	JJ	O	O
+mini-component	t493	17	mini-component	O	O	O	O	O	O	O	O	AJ0	I-NP	mini-component	NN	O	O
 business	t494	17	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t492:NMOD||t493:NMOD	O
 and	t495	17	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t496:CONJ	O
 failed	t496	17	fail	e85	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fail	VBD	t497:OPRD	O
@@ -567,12 +567,12 @@ Southeast	t546	19	Southeast	O	O	O	O	O	O	O	O	NN1	B-NP	southeast	NNP	O	O
 Asia	t547	19	Asia	O	O	O	O	O	O	O	O	NP0	I-NP	asia	NNP	t546:NAME	O
 .	t548	19	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t549	20	"	O	O	O	O	O	O	O	O	PUQ	O	"	$	O	O
+"	t549	20	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 Our	t550	20	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 company	t551	20	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t550:NMOD	O
 has	t552	20	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t551:SBJ||t553:ADV||t554:VC	O
 not	t553	20	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-been	t554	20	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t549:PRD||t555:PRD	O
+been	t554	20	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t555:PRD	O
 able	t555	20	able	e224	I_STATE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	AJ0	B-ADJP	able	JJ	t556:AMOD	O
 to	t556	20	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t557:IM	O
 cope	t557	20	cope	e225	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	cope	VB	t558:MNR||t560:ADV	O
@@ -585,7 +585,7 @@ in	t563	20	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t565:PMOD	O
 the	t564	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 marketplace	t565	20	marketplace	O	O	O	O	O	O	O	O	NN1	I-NP	marketplace	NN	t564:NMOD	O
 ,	t566	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t567	20	say	e105	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t552:OBJ||t566:P||t573:SBJ||t574:P	mainVb
+said	t567	20	say	e105	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t549:P||t552:OBJ||t566:P||t573:SBJ||t574:P	mainVb
 Ryosuke	t568	20	Ryosuke	O	O	O	O	O	O	O	O	NP0	B-NP	ryosuke	NNP	O	O
 Ito	t569	20	Ito	O	O	O	O	O	O	O	O	NP0	I-NP	ito	NNP	t568:NAME	O
 ,	t570	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -635,7 +635,7 @@ amp	t611	22	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
 Hamilton	t612	22	Hamilton	O	O	O	O	O	O	O	O	NP0	I-NP	hamilton	NNP	t610:NAME||t611:NAME	O
 -LRB-	t613	22	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
 Japan	t614	22	Japan	O	O	O	O	O	O	O	O	NP0	I-NP	japan	NNP	t613:NAME	O
--RRB-	t615	22	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t612:NAME||t614:NAME||t616:POSTHON	O
+-RRB-	t615	22	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t612:NMOD||t614:NAME||t616:POSTHON	O
 Inc.	t616	22	Inc.	O	O	O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 ,	t617	22	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 said	t618	22	say	e113	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t604:SBJ||t621:OBJ||t637:P	mainVb
@@ -660,13 +660,13 @@ future	t636	22	future	O	O	O	tmx228	DATE	FUTURE_REF	O	O	NN1	I-NP	future	NN	t635:N
 .	t637	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 "	t638	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
-Attitudes	t639	23	attitude	O	O	O	O	O	O	O	O	NP0	B-NP	attitude	NNS	t638:NMOD	O
--LCB-	t640	23	-lcb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lcb-	VBP	t639:SBJ||t641:ADV||t655:P||t656:COORD	O
-toward	t641	23	toward	O	O	O	O	O	O	O	O	PRP	B-PP	toward	IN	t642:PMOD||t645:COORD	O
+Attitudes	t639	23	attitude	O	O	O	O	O	O	O	O	NP0	B-NP	attitude	NNS	t638:NMOD||t641:NMOD	O
+-LCB-	t640	23	-lcb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lcb-	VBP	O	O
+toward	t641	23	toward	O	O	O	O	O	O	O	O	PRP	B-PP	toward	IN	t642:PMOD	O
 being	t642	23	be	O	O	O	O	O	O	O	O	VBG	B-VP	be	VBG	t643:VC	O
 acquired	t643	23	acquire	O	O	O	O	O	O	O	O	VVN	I-VP	acquire	VBN	t644:OBJ	O
 -RCB-	t644	23	-rcb-	O	O	O	O	O	O	O	O	NN1	B-NP	-rcb-	NNP	O	O
-are	t645	23	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t646:TMP||t647:PRD||t648:P||t649:COORD	O
+are	t645	23	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t639:SBJ||t646:TMP||t647:PRD||t648:P||t649:COORD	O
 still	t646	23	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
 negative	t647	23	negative	O	O	O	O	O	O	O	O	AJ0	B-ADJP	negative	JJ	O	O
 ,	t648	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -675,15 +675,15 @@ they	t650	23	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 're	t651	23	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t650:SBJ||t652:VC	O
 becoming	t652	23	become	e119	I_STATE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	become	VBG	t654:PRD	O
 more	t653	23	more	O	O	O	O	O	O	O	O	AV0	B-ADJP	more	RBR	O	O
-positive	t654	23	positive	O	O	O	O	O	O	O	O	AJ0	I-ADJP	positive	JJ	t653:AMOD	O
+positive	t654	23	positive	O	O	O	O	O	O	O	O	AJ0	I-ADJP	positive	JJ	t640:AMOD||t653:AMOD	O
 ,	t655	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t656	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
+"	t656	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 Mr.	t657	23	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Murasawa	t658	23	Murasawa	O	O	O	O	O	O	O	O	NP0	I-NP	murasawa	NNP	t657:TITLE	O
-said	t659	23	say	e120	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t640:OBJ||t658:SBJ||t660:P	mainVb
+said	t659	23	say	e120	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t645:OBJ||t655:P||t656:P||t658:SBJ||t660:P	mainVb
 .	t660	23	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t661	24	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t662:LOC	O
+"	t661	24	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 In	t662	24	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t664:PMOD	O
 some	t663	24	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 industries	t664	24	industry	O	O	O	O	O	O	O	O	NN2	I-NP	industry	NNS	t663:NMOD	O
@@ -692,17 +692,17 @@ like	t666	24	like	O	O	O	O	O	O	O	O	PRP	B-PP	like	IN	t667:PMOD	O
 pharmaceuticals	t667	24	pharmaceutical	O	O	O	O	O	O	O	O	NN2	B-NP	pharmaceutical	NNS	O	O
 ,	t668	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 acquisitions	t669	24	acquisition	O	O	O	O	O	O	O	O	NN2	B-NP	acquisition	NNS	O	O
-make	t670	24	make	e249	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	make	VBP	t661:ADV||t665:P||t666:ADV||t668:P||t669:SBJ||t671:OBJ||t672:P||t673:P	mainVb
+make	t670	24	make	e249	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	make	VBP	t661:VOC||t662:LOC||t665:P||t666:ADV||t668:P||t669:SBJ||t671:OBJ||t672:P||t673:P	mainVb
 sense	t671	24	sense	O	O	O	O	O	O	O	O	NN1	B-NP	sense	NN	O	O
 .	t672	24	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t673	24	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Whether	t674	25	whether	O	O	O	O	O	O	O	O	CJS	B-SBAR	whether	NNP	O	O
 Polly	t675	25	Polly	O	O	O	O	O	O	O	O	NP0	B-NP	polly	NNP	O	O
-Peck	t676	25	Peck	O	O	O	O	O	O	O	O	NP0	I-NP	peck	NNP	t674:NAME||t675:NAME||t677:SUFFIX	O
+Peck	t676	25	Peck	O	O	O	O	O	O	O	O	NP0	I-NP	peck	NNP	t675:NAME||t677:SUFFIX	O
 's	t677	25	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 acquisition	t678	25	acquisition	e125	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	acquisition	NN	t676:NMOD	O
-makes	t679	25	make	e248	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	make	VBZ	t678:SBJ||t680:OBJ	O
+makes	t679	25	make	e248	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	make	VBZ	t674:DEP||t678:SBJ||t680:OBJ	O
 sense	t680	25	sense	O	O	O	O	O	O	O	O	NN1	B-NP	sense	NN	O	O
 remains	t681	25	remain	e233	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t679:SBJ||t682:OPRD||t685:P||t686:COORD||t703:P	mainVb
 to	t682	25	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t683:IM	mainVb
@@ -717,9 +717,9 @@ conference	t690	25	conference	O	O	O	O	O	O	O	O	NN1	I-NP	conference	NN	t688:NMOD||
 ,	t691	25	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Mr.	t692	25	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Nadir	t693	25	Nadir	O	O	O	O	O	O	O	O	NP0	I-NP	nadir	NNP	t692:TITLE	O
-brimmed	t694	25	brim	e131	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	brim	VBD	t687:LOC||t691:P||t693:SBJ||t695:ADV	O
+brimmed	t694	25	brim	e131	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	brim	VBD	t687:LOC||t691:P||t693:SBJ||t695:ADV||t697:OBJ	O
 with	t695	25	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t696:PMOD	O
-self-confidence	t696	25	self-confidence	O	O	O	O	O	O	O	O	NN1	B-NP	self-confidence	NN	t697:NMOD	O
+self-confidence	t696	25	self-confidence	O	O	O	O	O	O	O	O	NN1	B-NP	self-confidence	NN	O	O
 that	t697	25	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t699:SUB	O
 he	t698	25	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 can	t699	25	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t698:SBJ||t700:VC	O
@@ -733,7 +733,7 @@ Sansui	t704	26	Sansui	O	O	O	O	O	O	O	O	NP0	B-NP	sansui	NNP	O	O
 he	t706	26	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 said	t707	26	say	e3001	REPORTING	O	O	O	O	O	O	VVD	B-VP	say	VBD	t705:P||t706:SBJ||t708:P||t709:OBJ	mainVb
 ,	t708	26	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-is	t709	26	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t704:SBJ||t712:PRD||t737:P||t747:P	O
+is	t709	26	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t704:SBJ||t712:PRD||t747:P	O
 a	t710	26	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 perfect	t711	26	perfect	O	O	O	O	O	O	O	O	AJ0	I-NP	perfect	JJ	O	O
 fit	t712	26	fit	O	O	O	O	O	O	O	O	NN1	I-NP	fit	NN	t710:NMOD||t711:NMOD||t713:NMOD	O
@@ -761,8 +761,8 @@ an	t732	26	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 original	t734	26	original	O	O	O	O	O	O	O	O	AJ0	I-NP	original	JJ	O	O
 equipment	t735	26	equipment	O	O	O	O	O	O	O	O	NN1	I-NP	equipment	NN	O	O
 maker	t736	26	maker	O	O	O	O	O	O	O	O	NN1	I-NP	maker	NN	t733:NMOD||t734:NMOD||t735:NMOD	O
-"	t737	26	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	:	O	O
-basis	t738	26	basis	O	O	O	O	O	O	O	O	NN1	I-NP	basis	NN	t732:NMOD||t736:NMOD	O
+"	t737	26	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
+basis	t738	26	basis	O	O	O	O	O	O	O	O	NN1	I-NP	basis	NN	t732:NMOD||t736:NMOD||t737:NMOD	O
 for	t739	26	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t740:PMOD	O
 sale	t740	26	sale	O	O	O	O	O	O	O	O	NN1	B-NP	sale	NN	t741:LOC	O
 under	t741	26	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t746:PMOD	O
@@ -779,7 +779,7 @@ Polly	t750	27	Polly	O	O	O	O	O	O	O	O	NP0	B-NP	polly	NNP	O	O
 Peck	t751	27	Peck	O	O	O	O	O	O	O	O	NP0	I-NP	peck	NNP	t750:NAME	O
 will	t752	27	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t751:SBJ||t754:VC||t769:P||t770:COORD	O
 greatly	t753	27	greatly	O	O	O	O	O	O	O	O	AV0	I-VP	greatly	RB	O	O
-expand	t754	27	expand	e141	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	expand	VB	t753:MNR||t758:OBJ||t759:P||t760:ADV	O
+expand	t754	27	expand	e141	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	expand	VB	t753:ADV||t758:OBJ||t759:P||t760:ADV	O
 Sansui	t755	27	Sansui	O	O	O	O	O	O	O	O	NP0	B-NP	sansui	NNP	t756:SUFFIX	O
 's	t756	27	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 product	t757	27	product	O	O	O	O	O	O	O	O	NN1	I-NP	product	NN	O	O
@@ -818,11 +818,11 @@ own	t789	27	own	O	O	O	O	O	O	O	O	DT0	I-NP	own	JJ	O	O
 factories	t790	27	factory	O	O	O	O	O	O	O	O	NN2	I-NP	factory	NNS	t787:NMOD||t789:NMOD	O
 .	t791	27	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t792	28	"	O	O	O	O	O	O	O	O	PUQ	O	"	$	t793:NMOD	O
+"	t792	28	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
 Whatever	t793	28	whatever	O	O	O	O	O	O	O	O	DTQ	B-NP	whatever	WDT	O	O
-capital	t794	28	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t792:NMOD	O
+capital	t794	28	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t793:NMOD	O
 it	t795	28	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
--LRB-	t796	28	-lrb-	O	O	O	O	O	O	O	O	AJ0	B-VP	-lrb-	VBD	t794:OBJ||t795:SBJ||t799:OBJ	O
+-LRB-	t796	28	-lrb-	O	O	O	O	O	O	O	O	AJ0	B-VP	-lrb-	VBD	t792:DEP||t794:OBJ||t795:SBJ||t799:OBJ	O
 Sansui	t797	28	Sansui	O	O	O	O	O	O	O	O	NP0	B-NP	sansui	NNP	O	O
 -RRB-	t798	28	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t797:NAME	O
 needs	t799	28	need	O	O	O	O	O	O	O	O	VVZ	B-VP	need	VBZ	t798:SBJ||t800:PRP	O
@@ -972,7 +972,7 @@ Del	t938	32	Del	O	O	O	O	O	O	O	O	NP0	I-NP	del	NNP	O	O
 Monte	t939	32	Monte	O	O	O	O	O	O	O	O	NP0	I-NP	monte	NNP	t938:NAME	O
 foods	t940	32	food	O	O	O	O	O	O	O	O	VVZ	B-VP	food	NNS	O	O
 unit	t941	32	unit	O	O	O	O	O	O	O	O	NN1	B-NP	unit	NN	t935:NMOD||t939:NMOD||t940:NMOD	O
-for	t942	32	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t943:PMOD||t950:PMOD	O
+for	t942	32	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t950:PMOD	O
 #	t943	32	#	O	O	O	O	O	O	O	O	PUQ	O	#	#	t944:DEP||t945:DEP	O
 557	t944	32	557	O	O	O	O	O	O	O	O	CRD	B-NP	557	CD	O	O
 million	t945	32	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -980,7 +980,7 @@ million	t945	32	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 $	t947	32	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t948:DEP||t949:DEP	O
 878	t948	32	878	O	O	O	O	O	O	O	O	CRD	I-NP	878	CD	O	O
 million	t949	32	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t950	32	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t946:NAME||t947:NMOD	O
+-RRB-	t950	32	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t943:NMOD||t946:NMOD||t947:NMOD	O
 .	t951	32	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Last	t952	33	last	O	O	O	tmx241	DATE	1989-09	O	O	ORD	B-NP	last	JJ	O	O

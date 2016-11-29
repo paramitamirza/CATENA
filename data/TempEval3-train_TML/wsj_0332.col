@@ -1,13 +1,13 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Orkem	t1	1	Orkem	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	orkem	NNP	t2:POSTHON||t3:P||t8:APPO||t9:P	O
 S.A.	t2	1	S.A.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	s.a.	NNP	O	O
 ,	t3	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t4	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 French	t5	1	french	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
-state-controlled	t6	1	state-controlled	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	state-controlled	NN	O	O
-chemical	t7	1	chemical	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	chemical	NN	t6:NMOD	O
-manufacturer	t8	1	manufacturer	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	manufacturer	NN	t4:NMOD||t5:NMOD||t7:NMOD	O
+state-controlled	t6	1	state-controlled	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	state-controlled	VBN	O	O
+chemical	t7	1	chemical	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	chemical	NN	O	O
+manufacturer	t8	1	manufacturer	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	manufacturer	NN	t4:NMOD||t5:NMOD||t6:NMOD||t7:NMOD	O
 ,	t9	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 is	t10	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:SBJ||t11:VC	O
 making	t11	1	make	e1	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	make	VBG	t14:OBJ	O
@@ -16,11 +16,11 @@ friendly	t13	1	friendly	O	O	O	O	O	O	O	O	AJ0	I-NP	friendly	JJ	O	O
 bid	t14	1	bid	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bid	NN	t12:NMOD||t13:NMOD||t15:NMOD||t24:NMOD	O
 of	t15	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t17:PMOD	O
 470	t16	1	470	O	O	O	O	O	O	O	O	CRD	B-NP	470	CD	O	O
-pence	t17	1	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t16:NMOD||t18:APPO||t19:APPO||t23:ADV	O
--LRB-	t18	1	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	NNP	O	O
-$	t19	1	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t20:DEP||t21:DEP	O
+pence	t17	1	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t16:NMOD||t18:APPO||t23:ADV	O
+-LRB-	t18	1	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	JJ	t21:AMOD	O
+$	t19	1	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t20:NMOD	O
 7.43	t20	1	7.43	O	O	O	O	O	O	O	O	CRD	I-NP	7.43	CD	O	O
--RRB-	t21	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	CD	O	O
+-RRB-	t21	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t19:NMOD	O
 a	t22	1	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
 share	t23	1	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t22:NMOD	O
 for	t24	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t27:PMOD	O
@@ -33,7 +33,7 @@ specialty	t30	1	specialty	O	O	O	O	O	O	O	O	AJ0	I-NP	specialty	NN	O	O
 chemical	t31	1	chemical	O	O	O	O	O	O	O	O	AJ0	I-NP	chemical	NN	O	O
 group	t32	1	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t29:NMOD||t30:NMOD||t31:NMOD||t35:APPO	O
 Coates	t33	1	Coates	O	O	O	O	O	O	O	O	NP0	I-NP	coates	NNP	O	O
-Brothers	t34	1	Brothers	O	O	O	O	O	O	O	O	NP0	I-NP	brother	NNP	t33:NAME	O
+Brothers	t34	1	Brothers	O	O	O	O	O	O	O	O	NP0	I-NP	brother	NNPS	t33:NAME	O
 PLC	t35	1	PLC	O	O	O	O	O	O	O	O	NP0	I-NP	plc	NNP	t34:NAME	O
 which	t36	1	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 it	t37	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O

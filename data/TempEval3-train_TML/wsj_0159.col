@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	LS	O	O
 
 DD	t1	1	DD	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	dd	NNP	O	O
 Acquisition	t2	1	Acquisition	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	acquisition	NNP	t1:NAME||t3:POSTHON||t4:P||t6:APPO||t19:P	O
@@ -73,9 +73,9 @@ the	t69	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t70	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t69:NMOD||t71:SUFFIX	O
 's	t71	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 poison	t72	2	poison	O	O	O	O	O	O	O	O	NN1	I-NP	poison	NN	O	O
-pill	t73	2	pill	O	O	O	O	O	O	O	O	NN1	I-NP	pill	NN	t70:NMOD||t72:NMOD	O
-rights	t74	2	rights	O	O	O	O	O	O	O	O	NN2	I-NP	right	VBZ	t73:SBJ	O
-plan	t75	2	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t74:NMOD	O
+pill	t73	2	pill	O	O	O	O	O	O	O	O	NN1	I-NP	pill	NN	t72:NMOD	O
+rights	t74	2	rights	O	O	O	O	O	O	O	O	NN2	I-NP	right	NNS	t73:NMOD	O
+plan	t75	2	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t70:NMOD||t74:NMOD	O
 .	t76	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Acquisition	t77	3	acquisition	O	O	O	O	O	O	O	O	NN1	B-NP	acquisition	NNP	O	O
@@ -192,15 +192,15 @@ Randolph	t181	8	Randolph	O	O	O	O	O	O	O	O	NP0	B-NP	randolph	NNP	O	O
 Mass.	t183	8	Mass.	O	O	O	O	O	O	O	O	NP0	B-NP	mass.	NNP	t181:NMOD||t182:P	O
 .	t184	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Cara	t185	9	Cara	O	O	O	O	O	O	O	O	NP0	B-NP	cara	NNP	t186:P||t191:APPO||t192:COORD	O
+Cara	t185	9	Cara	O	O	O	O	O	O	O	O	NP0	B-NP	cara	NNP	t186:P||t191:APPO||t198:P	O
 ,	t186	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t187	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 food	t188	9	food	O	O	O	O	O	O	O	O	NN1	I-NP	food	NN	O	O
 services	t189	9	service	O	O	O	O	O	O	O	O	NN2	I-NP	services	NNS	t188:NMOD	O
 chain	t190	9	chain	O	O	O	O	O	O	O	O	VVB	B-VP	chain	NN	t189:NMOD	O
-operator	t191	9	operator	O	O	O	O	O	O	O	O	NN1	B-NP	operator	NN	t187:NMOD||t190:NMOD	O
+operator	t191	9	operator	O	O	O	O	O	O	O	O	NN1	B-NP	operator	NN	t187:NMOD||t190:NMOD||t192:COORD	O
 and	t192	9	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t193:CONJ	O
-Unicorp	t193	9	Unicorp	O	O	O	O	O	O	O	O	NP0	I-NP	unicorp	NNP	t194:P||t197:APPO||t198:P	O
+Unicorp	t193	9	Unicorp	O	O	O	O	O	O	O	O	NP0	I-NP	unicorp	NNP	t194:P||t197:APPO	O
 ,	t194	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t195	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 holding	t196	9	hold	O	O	O	O	O	O	O	O	AJ0	I-NP	hold	VBG	O	O

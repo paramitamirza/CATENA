@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Crossland	t1	1	Crossland	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	crossland	NNP	O	O
 Savings	t2	1	Savings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	savings	NNPS	O	O
@@ -94,23 +94,23 @@ does	t89	3	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t77:LOC||t81:P||t83:SBJ||t90:ADV||
 n't	t90	3	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 meet	t91	3	meet	e18	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	meet	VB	t97:OBJ	O
 the	t92	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-"	t93	3	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	O	O
-core	t94	3	core	O	O	O	O	O	O	O	O	NN1	I-NP	core	NN	O	O
-capital	t95	3	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t92:NMOD||t93:NMOD||t94:NMOD||t96:P	O
-"	t96	3	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	:	O	O
-criteria	t97	3	criterion	O	O	O	O	O	O	O	O	NN2	I-NP	criterion	NNS	t95:SBJ||t98:APPO	O
+"	t93	3	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
+core	t94	3	core	O	O	O	O	O	O	O	O	NN1	I-NP	core	NN	t93:NMOD	O
+capital	t95	3	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	O	O
+"	t96	3	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	NN	t95:NMOD	O
+criteria	t97	3	criterion	O	O	O	O	O	O	O	O	NN2	I-NP	criterion	NNS	t92:NMOD||t94:NMOD||t96:NMOD||t98:APPO	O
 outlined	t98	3	outline	O	O	O	O	O	O	O	O	VVD	B-VP	outline	VBN	t99:LOC	O
-under	t99	3	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t102:PMOD	O
+under	t99	3	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t109:PMOD	O
 the	t100	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 new	t101	3	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
-Financial	t102	3	Financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	NN	t100:NMOD||t101:NMOD||t103:APPO||t105:P||t109:APPO||t110:NMOD	O
-Institutions	t103	3	Institutions	O	O	O	O	O	O	O	O	NN2	I-NP	institution	NNPS	t104:APPO	O
-Reform	t104	3	Reform	O	O	O	O	O	O	O	O	NN1	I-NP	reform	NNP	O	O
+Financial	t102	3	Financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	NN	O	O
+Institutions	t103	3	Institutions	O	O	O	O	O	O	O	O	NN2	I-NP	institution	NNPS	t102:NMOD	O
+Reform	t104	3	Reform	O	O	O	O	O	O	O	O	NN1	I-NP	reform	NNP	t105:P||t106:COORD	O
 ,	t105	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Recovery	t106	3	Recovery	O	O	O	O	O	O	O	O	NN1	B-NP	recovery	NNP	t107:COORD	O
 and	t107	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t108:CONJ	O
 Enforcement	t108	3	Enforcement	O	O	O	O	O	O	O	O	NN1	I-NP	enforcement	NNP	O	O
-Act	t109	3	Act	O	O	O	O	O	O	O	O	NN1	I-NP	act	NNP	t106:NAME	O
+Act	t109	3	Act	O	O	O	O	O	O	O	O	NN1	I-NP	act	NNP	t100:NMOD||t101:NMOD||t103:NAME||t104:NAME||t110:NMOD	O
 of	t110	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t111:PMOD	O
 1989	t111	3	1989	O	O	O	tmx89	DATE	1989	O	O	CRD	B-NP	1989	CD	O	O
 .	t112	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -169,10 +169,10 @@ Additionally	t159	7	additionally	O	O	O	O	O	O	O	O	AV0	B-ADVP	additionally	RB	O	O
 Crossland	t161	7	Crossland	O	O	O	O	O	O	O	O	NP0	B-NP	crossland	NNP	O	O
 reported	t162	7	report	e39	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t159:ADV||t160:P||t161:SBJ||t165:OBJ||t195:P	mainVb
 a	t163	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t164	7	third-quarter	O	O	O	tmx92	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
-loss	t165	7	loss	e40	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t163:NMOD||t164:NMOD||t166:NMOD||t176:P||t177:NMOD	O
+third-quarter	t164	7	third-quarter	O	O	O	tmx92	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
+loss	t165	7	loss	e40	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t163:NMOD||t164:NMOD||t166:NMOD	O
 of	t166	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t167:PMOD	O
-$	t167	7	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t168:DEP||t169:DEP||t170:P||t171:COORD	O
+$	t167	7	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t168:DEP||t169:DEP||t170:P||t171:COORD||t176:P||t177:NMOD	O
 175.5	t168	7	175.5	O	O	O	O	O	O	O	O	CRD	I-NP	175.5	CD	O	O
 million	t169	7	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t170	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -204,7 +204,7 @@ ago	t194	7	ago	O	O	O	tmx95	DATE	1988-Q3	O	O	AV0	B-ADVP	ago	RB	t193:AMOD	O
 
 A	t196	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 major	t197	8	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
-factor	t198	8	factor	O	O	O	O	O	O	O	O	NN1	I-NP	factor	NN	t196:NMOD||t197:NMOD||t199:NMOD	O
+factor	t198	8	factor	O	O	O	O	O	O	O	O	NN1	I-NP	factor	NN	t196:NMOD||t197:NMOD||t199:LOC	O
 in	t199	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t202:PMOD	O
 the	t200	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 third-quarter	t201	8	third-quarter	O	O	O	tmx98	DATE	1989-Q3	O	O	AJC	I-NP	third-quarter	NN	O	O
@@ -290,7 +290,7 @@ ago	t276	11	ago	O	O	O	tmx111	DATE	1988-Q3	O	O	AV0	B-ADVP	ago	RB	t275:AMOD	O
 
 However	t278	12	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
 ,	t279	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-non-interest	t280	12	non-interest	O	O	O	O	O	O	O	O	AJS	B-NP	non-interest	NN	O	O
+non-interest	t280	12	non-interest	O	O	O	O	O	O	O	O	AJS	B-NP	non-interest	JJS	O	O
 income	t281	12	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t280:NMOD	O
 rose	t282	12	rise	e55	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t278:ADV||t279:P||t281:SBJ||t283:DIR||t287:DIR||t291:P	mainVb
 to	t283	12	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t284:PMOD	O
@@ -312,8 +312,8 @@ to	t297	13	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t298:PMOD	O
 $	t298	13	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t299:DEP||t300:DEP	O
 663	t299	13	663	O	O	O	O	O	O	O	O	CRD	I-NP	663	CD	O	O
 million	t300	13	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
-from	t301	13	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t302:PMOD	O
-$	t302	13	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t303:DEP||t304:DEP||t307:TMP	O
+from	t301	13	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t302:PMOD||t307:TMP	O
+$	t302	13	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t303:DEP||t304:DEP	O
 1	t303	13	1	O	O	O	O	O	O	O	O	CRD	I-NP	1	CD	O	O
 billion	t304	13	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 a	t305	13	a	O	O	O	tmx122	DATE	1988-Q3	O	O	AT0	B-NP	a	DT	O	O
@@ -321,12 +321,12 @@ year	t306	13	year	O	O	O	tmx122	DATE	1988-Q3	O	O	NN1	I-NP	year	NN	t305:NMOD	O
 ago	t307	13	ago	O	O	O	tmx122	DATE	1988-Q3	O	O	AV0	B-ADVP	ago	RB	t306:AMOD	O
 .	t308	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Standard	t309	14	standard	O	O	O	O	O	O	O	O	NP0	B-NP	standard	NNP	t310:COORD	O
-amp	t310	14	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	CC	t311:CONJ	O
-Poor	t311	14	Poor	O	O	O	O	O	O	O	O	NP0	I-NP	poor	NNP	t312:NMOD||t313:POSTHON	O
+Standard	t309	14	standard	O	O	O	O	O	O	O	O	NP0	B-NP	standard	JJ	O	O
+amp	t310	14	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	CC	O	O
+Poor	t311	14	Poor	O	O	O	O	O	O	O	O	NP0	I-NP	poor	NN	t309:NAME||t310:NAME||t312:NMOD||t313:POSTHON	O
 's	t312	14	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 Corp.	t313	14	Corp.	O	O	O	O	O	O	O	O	NN1	I-NP	corp.	NNP	O	O
-lowered	t314	14	lower	e58	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	lower	VBD	t309:SBJ||t316:OBJ||t326:COORD||t335:P	mainVb
+lowered	t314	14	lower	e58	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	lower	VBD	t311:SBJ||t316:OBJ||t326:COORD||t335:P	mainVb
 the	t315	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 rating	t316	14	rating	O	O	O	O	O	O	O	O	NN1	I-NP	rating	NN	t315:NMOD||t317:NMOD	O
 on	t317	14	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t321:PMOD	O
@@ -351,7 +351,7 @@ downgrade	t334	14	downgrade	O	O	O	O	O	O	O	O	AJ0	I-NP	downgrade	NN	t332:NMOD||t33
 
 It	t336	15	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 also	t337	15	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-placed	t338	15	place	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	place	VBD	t336:SBJ||t337:ADV||t339:ADV||t341:PRP||t345:OBJ||t367:P	mainVb
+placed	t338	15	place	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	place	VBD	t336:SBJ||t337:ADV||t339:ADV||t341:ADV||t345:OBJ||t367:P	mainVb
 on	t339	15	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t340:PMOD	O
 CreditWatch	t340	15	CreditWatch	O	O	O	O	O	O	O	O	NP0	B-NP	creditwatch	NNP	O	O
 for	t341	15	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t343:PMOD	O

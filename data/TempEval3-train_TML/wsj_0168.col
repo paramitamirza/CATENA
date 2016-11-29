@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Meridian	t1	1	Meridian	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	meridian	NNP	O	O
 National	t2	1	National	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	national	NNP	t1:NAME||t3:POSTHON	O
@@ -78,7 +78,7 @@ convertible	t72	4	convertible	e22	STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	co
 into	t73	4	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t74:PMOD	O
 shares	t74	4	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	t75:NMOD	O
 of	t75	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t78:PMOD	O
-Meridian	t76	4	Meridian	O	O	O	O	O	O	O	O	AJ0	B-NP	meridian	NNP	O	O
+Meridian	t76	4	Meridian	O	O	O	O	O	O	O	O	AJ0	B-NP	meridian	JJ	O	O
 common	t77	4	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
 stock	t78	4	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t76:NMOD||t77:NMOD	O
 at	t79	4	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t80:PMOD	O
@@ -174,6 +174,6 @@ of	t166	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t170:PMOD	O
 Toledo	t167	6	Toledo	O	O	O	O	O	O	O	O	NP0	B-NP	toledo	NNP	O	O
 ,	t168	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Ohio-based	t169	6	ohio-based	O	O	O	O	O	O	O	O	AJ0	B-NP	ohio-base	NNP	O	O
-Meridian	t170	6	Meridian	O	O	O	O	O	O	O	O	NN1	I-NP	meridian	NNP	t167:NMOD||t168:P||t169:NAME	O
+Meridian	t170	6	Meridian	O	O	O	O	O	O	O	O	NN1	I-NP	meridian	NNP	t167:NAME||t168:P||t169:NAME	O
 .	t171	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 First	t1	1	First	O	O	O+O+O	O	O	O	O	O	ORD	B-ADVP	first	JJ	t2:NMOD	O
 of	t2	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t4:PMOD	O
@@ -102,7 +102,7 @@ Mich.-based	t95	5	mich.-based	O	O	O	O	O	O	O	O	AJ0	B-NP	mich.-base	NNP	O	O
 First	t96	5	First	O	O	O	O	O	O	O	O	ORD	I-NP	first	NNP	O	O
 of	t97	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	O	O
 America	t98	5	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	t95:NAME||t96:NAME||t97:NAME	O
-said	t99	5	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t93:ADV||t94:P||t98:SBJ||t101:OBJ||t114:P	mainVb
+said	t99	5	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t93:TMP||t94:P||t98:SBJ||t101:OBJ||t114:P	mainVb
 it	t100	5	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t101	5	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t100:SBJ||t102:VC	O
 eliminate	t102	5	eliminate	e18	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	eliminate	VB	t106:OBJ	O
@@ -119,18 +119,18 @@ parent	t112	5	parent	O	O	O	O	O	O	O	O	NN1	I-NP	parent	NN	O	O
 company	t113	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t108:NMOD||t109:NMOD||t111:NMOD||t112:NMOD	O
 .	t114	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-First	t115	6	First	O	O	O	O	O	O	O	O	ORD	B-ADVP	first	JJ	t116:AMOD	O
-of	t116	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t117:PMOD	O
-America	t117	6	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	O	O
-said	t118	6	say	e19	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t115:SBJ||t123:OBJ||t131:P	mainVb
+First	t115	6	First	O	O	O	O	O	O	O	O	ORD	B-ADVP	first	JJ	O	O
+of	t116	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	O	O
+America	t117	6	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	t115:NAME||t116:NAME	O
+said	t118	6	say	e19	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t117:SBJ||t123:OBJ||t131:P	mainVb
 some	t119	6	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	t120:NMOD	O
 of	t120	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t122:PMOD	O
 the	t121	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 managers	t122	6	manager	O	O	O	O	O	O	O	O	NN2	I-NP	manager	NNS	t121:NMOD	O
 will	t123	6	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t119:SBJ||t124:VC	O
-take	t124	6	take	e20	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	take	VB	t126:OBJ	O
+take	t124	6	take	e20	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	take	VB	t126:OBJ||t127:ADV	O
 other	t125	6	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
-jobs	t126	6	job	O	O	O	O	O	O	O	O	NN2	I-NP	job	NNS	t125:NMOD||t127:NMOD	O
+jobs	t126	6	job	O	O	O	O	O	O	O	O	NN2	I-NP	job	NNS	t125:NMOD	O
 with	t127	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t130:PMOD	O
 First	t128	6	First	O	O	O	O	O	O	O	O	ORD	B-NP	first	NNP	O	O
 of	t129	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	O	O
@@ -153,7 +153,7 @@ the	t144	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t145	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t144:NMOD	O
 will	t146	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t137:SBJ||t147:VC	O
 reduce	t147	7	reduce	e25	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	reduce	VB	t148:OBJ||t156:EXT	O
-First	t148	7	First	O	O	O	O	O	O	O	O	ORD	B-ADVP	first	NNP	t149:NMOD	O
+First	t148	7	First	O	O	O	O	O	O	O	O	ORD	B-ADVP	first	JJ	t149:AMOD	O
 of	t149	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t153:PMOD	O
 America	t150	7	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	t151:SUFFIX	O
 's	t151	7	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -170,12 +170,12 @@ $	t161	7	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	O	O
 4	t162	7	4	O	O	O	O	O	O	O	O	CRD	I-NP	4	CD	O	O
 million	t163	7	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t164	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-or	t165	7	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t170:CONJ	O
+or	t165	7	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t167:CONJ	O
 15	t166	7	15	O	O	O	O	O	O	O	O	CRD	B-NP	15	CD	O	O
-cents	t167	7	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t166:NMOD||t168:DEP||t169:DEP	O
+cents	t167	7	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t166:NMOD||t168:DEP||t170:NMOD||t172:ADV	O
 to	t168	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
 20	t169	7	20	O	O	O	O	O	O	O	O	CRD	B-NP	20	CD	O	O
-cents	t170	7	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t167:NMOD||t172:ADV	O
+cents	t170	7	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t169:NMOD	O
 a	t171	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t172	7	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t171:NMOD	O
 .	t173	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

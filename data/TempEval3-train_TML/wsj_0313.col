@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Ocean	t1	1	Ocean	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ocean	NNP	O	O
 Drilling	t2	1	Drilling	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	drilling	NNP	O	O
@@ -40,7 +40,7 @@ and	t36	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t37:CONJ	O
 gas	t37	2	gas	O	O	O	O	O	O	O	O	NN1	I-NP	gas	NN	O	O
 exploration	t38	2	exploration	O	O	O	O	O	O	O	O	NN1	I-NP	exploration	NN	t39:COORD	O
 and	t39	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t40:CONJ	O
-diving	t40	2	diving	O	O	O	O	O	O	O	O	AJ0	B-NP	diving	VBG	O	O
+diving	t40	2	diving	O	O	O	O	O	O	O	O	AJ0	B-NP	dive	VBG	O	O
 operations	t41	2	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t35:NMOD||t38:NMOD	O
 company	t42	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t32:NMOD||t34:NMOD||t41:NMOD	O
 added	t43	2	add	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	add	VBD	t42:SBJ||t44:OBJ||t57:P	mainVb
@@ -80,10 +80,10 @@ Corp.	t75	3	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 of	t76	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t77:PMOD	O
 Arkansas	t77	3	Arkansas	O	O	O	O	O	O	O	O	NP0	B-NP	arkansas	NNP	O	O
 ,	t78	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-had	t79	3	have	e48	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t58:TMP||t62:P||t64:SBJ||t82:OBJ||t113:P	mainVb
+had	t79	3	have	e48	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t58:TMP||t62:P||t64:SBJ||t82:OBJ||t93:P||t94:ADV||t113:P	mainVb
 a	t80	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 net	t81	3	net	O	O	O	O	O	O	O	O	AJ0	I-NP	net	JJ	O	O
-loss	t82	3	loss	e15	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t80:NMOD||t81:NMOD||t83:NMOD||t93:P||t94:NMOD	O
+loss	t82	3	loss	e15	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t80:NMOD||t81:NMOD||t83:NMOD	O
 of	t83	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t84:PMOD	O
 $	t84	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t85:DEP||t86:DEP||t87:P||t88:COORD	O
 46.9	t85	3	46.9	O	O	O	O	O	O	O	O	CRD	I-NP	46.9	CD	O	O
@@ -157,7 +157,7 @@ to	t148	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
 %	t150	6	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t146:DEP||t147:DEP||t148:DEP||t149:NMOD||t151:NMOD	O
 of	t151	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t154:PMOD	O
 the	t152	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-contract-drilling	t153	6	contract-drilling	O	O	O	O	O	O	O	O	AJ0	I-NP	contract-dril	VBG	O	O
+contract-drilling	t153	6	contract-drilling	O	O	O	O	O	O	O	O	AJ0	I-NP	contract-drilling	VBG	O	O
 business	t154	6	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t152:NMOD||t153:NMOD	O
 through	t155	6	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t159:PMOD	O
 an	t156	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O

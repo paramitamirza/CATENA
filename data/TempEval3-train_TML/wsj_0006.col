@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Pacific	t1	1	Pacific	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	pacific	NNP	O	O
 First	t2	1	First	O	O	O+O+O	O	O	O	O	O	ORD	I-NP	first	NNP	O	O

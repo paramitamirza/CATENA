@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Hudson	t1	1	Hudson	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hudson	NNP	t2:SUFFIX	O
 's	t2	1	's	O	O	O+O+O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -26,7 +26,7 @@ dollars	t22	1	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t20:NMOD||t21:NMOD	O
 US$	t24	1	us$	O	O	O	O	O	O	O	O	NP0	I-NP	us$	$	t25:DEP||t26:DEP	O
 337	t25	1	337	O	O	O	O	O	O	O	O	CRD	I-NP	337	CD	O	O
 million	t26	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t27	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+-RRB-	t27	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	O	O
 net	t28	1	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	NN	t24:NMOD||t27:NMOD||t29:NMOD	O
 of	t29	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t30:PMOD	O
 expenses	t30	1	expense	O	O	O	O	O	O	O	O	NN2	B-NP	expense	NNS	O	O
@@ -50,7 +50,7 @@ shares	t46	2	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t45:NMOD	O
 and	t47	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t48:CONJ	O
 to	t48	2	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t49:IM	O
 reduce	t49	2	reduce	e11	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reduce	VB	t51:OBJ	O
-short-term	t50	2	short-term	O	O	O	O	O	O	O	O	AJ0	B-NP	short-term	NN	O	O
+short-term	t50	2	short-term	O	O	O	O	O	O	O	O	AJ0	B-NP	short-term	JJ	O	O
 debt	t51	2	debt	O	O	O	O	O	O	O	O	NN1	I-NP	debt	NN	t50:NMOD	O
 ,	t52	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t53	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -209,7 +209,7 @@ redeem	t198	9	redeem	e31	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	redeem	VB
 9.5	t199	9	9.5	O	O	O	O	O	O	O	O	CRD	B-NP	9.5	CD	O	O
 million	t200	9	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t199:DEP	O
 Series	t201	9	Series	O	O	O	O	O	O	O	O	NN0	I-NP	series	NNP	O	O
-H	t202	9	H	O	O	O	O	O	O	O	O	PNP	B-NP	h	NNP	t201:NMOD	O
+H	t202	9	H	O	O	O	O	O	O	O	O	PNP	B-NP	h	NNP	t201:NAME	O
 preferred	t203	9	prefer	O	O	O	O	O	O	O	O	VVD	B-VP	prefer	VBN	O	O
 shares	t204	9	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	t200:NMOD||t202:NMOD||t203:NMOD	O
 on	t205	9	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t207:PMOD	O

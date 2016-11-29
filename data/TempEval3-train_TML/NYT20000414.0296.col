@@ -1,17 +1,17 @@
-DCT_2000-04-14	O	O	O	O	O	O	tmx0	TIME	2000-04-14	O	O	NP0	B-NP	dct_2000-04-14	SYM	O	O
+DCT_2000-04-14	O	O	O	O	O	O	tmx0	TIME	2000-04-14	O	O	NP0	B-NP	dct_2000-04-14	LS	O	O
 
 MIAMI	t1	1	MIAMI	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	miami	NNP	t2:P	O
 _	t2	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	:	O	O
 The	t3	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 small	t4	1	small	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	small	JJ	O	O
-pharmacy	t5	1	pharmacy	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	pharmacy	NN	t3:NMOD||t4:NMOD||t6:LOC	O
+pharmacy	t5	1	pharmacy	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	pharmacy	NN	t3:NMOD||t4:NMOD||t6:NMOD	O
 on	t6	1	on	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	on	IN	t8:PMOD	O
 Unity	t7	1	Unity	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	unity	NNP	O	O
 Boulevard	t8	1	Boulevard	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	boulevard	NNP	t7:NAME||t9:LOC	O
 in	t9	1	in	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	in	IN	t11:PMOD	O
 Little	t10	1	Little	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	little	NNP	O	O
 Havana	t11	1	Havana	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	havana	NNP	t10:NAME	O
-is	t12	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:PRD||t5:SBJ||t13:PRD||t14:P	mainVb
+is	t12	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:LOC||t5:SBJ||t13:PRD||t14:P	mainVb
 unassuming	t13	1	unassuming	O	O	O+O+O	O	O	O	O	O	AJ0	B-ADJP	unassuming	JJ	O	O
 .	t14	1	.	O	O	O+O+O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -104,7 +104,7 @@ flags	t97	5	flag	O	O	O	O	O	O	O	O	NN2	I-NP	flag	NNS	t96:NMOD	O
 fly	t98	5	fly	O	O	O	O	O	O	O	O	VVB	B-VP	fly	VBP	t95:LOC||t97:SBJ||t99:DIR	O
 from	t99	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t101:PMOD	O
 beatup	t100	5	beatup	O	O	O	O	O	O	O	O	NN1	B-NP	beatup	NN	O	O
-Buicks	t101	5	buick	O	O	O	O	O	O	O	O	NP0	I-NP	buick	NNS	t100:NMOD	O
+Buicks	t101	5	buick	O	O	O	O	O	O	O	O	NP0	I-NP	buick	NNP	t100:NMOD	O
 ,	t102	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Juanita	t103	5	Juanita	O	O	O	O	O	O	O	O	NP0	B-NP	juanita	NNP	O	O
 Castro	t104	5	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t103:NAME	O
@@ -147,9 +147,9 @@ the	t139	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 case	t140	6	case	O	O	O	O	O	O	O	O	NN1	I-NP	case	NN	t139:NMOD||t141:NMOD	O
 of	t141	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t145:PMOD	O
 the	t142	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-6-year-old	t143	6	6-year-old	O	O	O	O	O	O	O	O	AJ0	I-NP	6-year-old	NNP	O	O
-Cuban	t144	6	cuban	O	O	O	O	O	O	O	O	NP0	I-NP	cuban	NNP	t143:NAME	O
-boy	t145	6	boy	O	O	O	O	O	O	O	O	NN1	I-NP	boy	NN	t142:NMOD||t144:NMOD||t147:NMOD	O
+6-year-old	t143	6	6-year-old	O	O	O	O	O	O	O	O	AJ0	I-NP	6-year-old	CD	O	O
+Cuban	t144	6	cuban	O	O	O	O	O	O	O	O	NP0	I-NP	cuban	JJ	O	O
+boy	t145	6	boy	O	O	O	O	O	O	O	O	NN1	I-NP	boy	NN	t142:NMOD||t143:NMOD||t144:NMOD||t147:NMOD	O
 that	t146	6	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 has	t147	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t146:SBJ||t148:VC	O
 dominated	t148	6	dominate	e10	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	dominate	VBN	t150:OBJ||t151:TMP	O
@@ -162,7 +162,7 @@ months	t154	6	month	O	O	O	tmx2	DURATION	P5M	O	O	NN2	I-NP	month	NNS	t152:NMOD||t1
 now	t155	6	now	O	O	O	tmx3	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
 .	t156	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t157	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+"	t157	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t158	7	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 feel	t159	7	feel	O	O	O	O	O	O	O	O	VVB	B-VP	feel	VBP	t158:SBJ||t160:ADV	O
 for	t160	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t162:PMOD	O
@@ -172,7 +172,7 @@ child	t162	7	child	O	O	O	O	O	O	O	O	NN1	I-NP	child	NN	t161:NMOD	O
 "	t164	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Juanita	t165	7	Juanita	O	O	O	O	O	O	O	O	NP0	B-NP	juanita	NNP	O	O
 Castro	t166	7	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t164:NAME||t165:NAME	O
-said	t167	7	say	e12	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t157:P||t159:OBJ||t163:P||t166:SBJ||t168:P	mainVb
+said	t167	7	say	e12	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t157:DEP||t159:OBJ||t163:P||t166:SBJ||t168:P	mainVb
 .	t168	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 "	t169	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
@@ -190,8 +190,8 @@ Miami	t180	8	Miami	O	O	O	O	O	O	O	O	NP0	I-NP	miami	NNP	O	O
 ,	t181	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t182	8	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t186:CONJ	O
 too	t183	8	too	O	O	O	O	O	O	O	O	AV0	B-NP	too	RB	O	O
-many	t184	8	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	DT	O	O
-people	t185	8	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t183:NMOD||t184:NMOD	O
+many	t184	8	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	DT	t183:AMOD	O
+people	t185	8	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t184:NMOD	O
 are	t186	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t185:SBJ||t187:VC	O
 profiting	t187	8	profit	O	O	O	O	O	O	O	O	VVG	I-VP	profit	VBG	t188:ADV	O
 from	t188	8	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t190:PMOD	O
@@ -250,23 +250,23 @@ should	t237	11	should	O	O	O	O	O	O	O	O	VM0	B-VP	should	MD	t236:SBJ||t238:VC	O
 stay	t238	11	stay	e19	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	stay	VB	t239:LOC	O
 in	t239	11	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t242:PMOD	O
 the	t240	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-United	t241	11	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	t250:SUFFIX	O
+United	t241	11	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
 States	t242	11	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t240:NMOD||t241:NAME	O
 ,	t243	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 but	t244	11	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t246:CONJ	O
 she	t245	11	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 feels	t246	11	feel	O	O	O	O	O	O	O	O	VVZ	B-VP	feel	VBZ	t245:SBJ||t247:OBJ	O
 that	t247	11	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t257:SUB	O
-since	t248	11	since	O	O	O	O	O	O	O	O	CJS	B-SBAR	since	IN	t251:SUB	O
+since	t248	11	since	O	O	O	O	O	O	O	O	CJS	B-SBAR	since	IN	t250:SUB	O
 he	t249	11	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-'s	t250	11	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	POS	O	O
-been	t251	11	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t249:SBJ||t252:LOC-PRD||t253:TMP	O
+'s	t250	11	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	VBZ	t249:SBJ||t251:VC	O
+been	t251	11	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t252:LOC-PRD||t253:TMP	O
 here	t252	11	here	O	O	O	O	O	O	O	O	AV0	B-ADJP	here	RB	O	O
 so	t253	11	so	O	O	O	O	O	O	O	O	CJS	I-ADJP	so	RB	t254:AMOD	O
 long	t254	11	long	O	O	O	O	O	O	O	O	AJ0	I-ADJP	long	RB	O	O
 ,	t255	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 he	t256	11	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-should	t257	11	should	O	O	O	O	O	O	O	O	VM0	B-VP	should	MD	t248:PRP||t255:P||t256:SBJ||t258:VC	O
+should	t257	11	should	O	O	O	O	O	O	O	O	VM0	B-VP	should	MD	t248:ADV||t255:P||t256:SBJ||t258:VC	O
 be	t258	11	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t259:VC	O
 afforded	t259	11	afford	e84	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	afford	VBN	t261:OBJ	O
 the	t260	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -295,7 +295,7 @@ Gonzalez	t281	12	Gonzalez	O	O	O	O	O	O	O	O	NP0	I-NP	gonzalez	NNP	t279:NAME||t280:
 ,	t282	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 was	t283	12	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t277:SBJ||t284:VC	O
 being	t284	12	be	O	O	O	O	O	O	O	O	VBG	I-VP	be	VBG	t285:VC	O
-controlled	t285	12	control	e24	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	control	VBN	t286:LGS	O
+controlled	t285	12	control	e24	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	control	VBN	t286:LGS||t291:ADV	O
 by	t286	12	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t289:PMOD	O
 the	t287	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Cuban	t288	12	cuban	O	O	O	O	O	O	O	O	AJ0	I-NP	cuban	JJ	O	O
@@ -316,14 +316,14 @@ last	t302	12	last	O	O	O	tmx5	DATE	2000-W15	O	O	ORD	I-NP	last	JJ	O	O
 week	t303	12	week	O	O	O	tmx5	DATE	2000-W15	O	O	NN1	I-NP	week	NN	t301:NMOD||t302:NMOD	O
 ,	t304	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 she	t305	12	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-frowned	t306	12	frown	e86	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	frown	VBD	t270:TMP||t291:ADV||t304:P||t305:SBJ||t307:P	mainVb
+frowned	t306	12	frown	e86	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	frown	VBD	t270:TMP||t304:P||t305:SBJ||t307:P	mainVb
 .	t307	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t308	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+"	t308	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 I	t309	13	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-do	t310	13	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t309:SBJ||t311:ADV||t312:VC	O
+do	t310	13	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t308:OBJ||t309:SBJ||t311:ADV||t312:VC	O
 n't	t311	13	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-know	t312	13	know	e26	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	know	VB	t308:SBJ||t316:OBJ	O
+know	t312	13	know	e26	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	know	VB	t316:OBJ	O
 what	t313	13	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
 Juan	t314	13	Juan	O	O	O	O	O	O	O	O	NP0	I-NP	juan	NNP	O	O
 Miguel	t315	13	Miguel	O	O	O	O	O	O	O	O	NP0	I-NP	miguel	NNP	t314:NAME	O
@@ -337,12 +337,12 @@ Castro	t322	13	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t320:NAME||t321:NAME	O
 said	t323	13	say	e29	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t310:OBJ||t319:P||t322:SBJ||t324:P	mainVb
 .	t324	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t325	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t325	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 What	t326	14	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
 I	t327	14	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 do	t328	14	do	e30	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VDB	B-VP	do	VBP	t327:SBJ||t329:VC	O
 think	t329	14	think	e31	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	think	VB	t326:OBJ	O
-is	t330	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t325:DEP||t328:SBJ||t331:PRD||t355:P	mainVb
+is	t330	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t325:DEP||t328:SBJ||t331:PRD||t355:P||t356:P	mainVb
 that	t331	14	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t333:SUB	O
 he	t332	14	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 should	t333	14	should	O	O	O	O	O	O	O	O	VM0	B-VP	should	MD	t332:SBJ||t334:VC	O
@@ -361,19 +361,19 @@ son	t345	14	son	O	O	O	O	O	O	O	O	NN1	I-NP	son	NN	t344:NMOD	O
 was	t346	14	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t345:SBJ||t347:VC	O
 found	t347	14	find	e33	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	found	VBN	t348:OPRD	O
 floating	t348	14	float	e34	OCCURRENCE	PAST+PROGRESSIVE+NEG	O	O	O	O	O	VVG	I-VP	float	VBG	t349:LOC	O
-off	t349	14	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	IN	t351:PMOD	O
+off	t349	14	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	IN	t351:AMOD	O
 the	t350	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 coast	t351	14	coast	O	O	O	O	O	O	O	O	NN1	I-NP	coast	NN	t350:NMOD||t352:NMOD	O
 of	t352	14	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t354:PMOD	O
 Fort	t353	14	Fort	O	O	O	O	O	O	O	O	NP0	B-NP	fort	NNP	O	O
 Lauderdale	t354	14	Lauderdale	O	O	O	O	O	O	O	O	NP0	I-NP	lauderdale	NNP	t353:NAME	O
-.	t355	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t356:APPO	O
-"	t356	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+.	t355	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
+"	t356	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	.	O	O
 
 "	t357	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 This	t358	15	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 has	t359	15	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t357:SBJ||t358:SBJ||t360:VC||t363:P	mainVb
-gone	t360	15	go	e35	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	go	VBN	t361:ADV	mainVb
+gone	t360	15	go	e35	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	go	VBN	t361:DIR	mainVb
 too	t361	15	too	O	O	O	O	O	O	O	O	AV0	B-ADVP	too	RB	t362:AMOD	O
 far	t362	15	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	O	O
 .	t363	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -409,7 +409,7 @@ walked	t390	17	walk	e37	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	walk	VBD	t37
 around	t391	17	around	O	O	O	O	O	O	O	O	PRP	B-PP	around	IN	t393:PMOD	O
 the	t392	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 pharmacy	t393	17	pharmacy	O	O	O	O	O	O	O	O	NN1	I-NP	pharmacy	NN	t392:NMOD||t394:APPO	O
-talking	t394	17	talk	e38	REPORTING	PRESPART+NONE+NEG	O	O	O	O	O	VVG	B-VP	talk	VBG	t395:ADV||t396:ADV	O
+talking	t394	17	talk	e38	REPORTING	PRESPART+NONE+NEG	O	O	O	O	O	VVG	B-VP	talk	VBG	t395:MNR||t396:ADV	O
 warmly	t395	17	warmly	O	O	O	O	O	O	O	O	AV0	B-ADVP	warmly	RB	O	O
 with	t396	17	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t398:PMOD	O
 her	t397	17	she	O	O	O	O	O	O	O	O	DPS	B-NP	her	PRP$	O	O
@@ -421,7 +421,7 @@ said	t401	18	say	e39	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t400:SBJ
 she	t402	18	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 she	t403	18	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 sometimes	t404	18	sometimes	O	O	O	O	O	O	O	O	AV0	B-ADVP	sometimes	RB	O	O
-talks	t405	18	talk	e40	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	talks	NNS	t402:SBJ||t403:SBJ||t404:TMP||t406:NMOD	O
+talks	t405	18	talk	e40	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	talks	VBZ	t402:SBJ||t403:SBJ||t404:TMP||t406:ADV	O
 to	t406	18	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t408:PMOD	O
 family	t407	18	family	O	O	O	O	O	O	O	O	AV0	I-VP	family	NN	O	O
 members	t408	18	member	O	O	O	O	O	O	O	O	VVZ	I-VP	member	NNS	t407:NMOD||t409:LOC	O
@@ -430,17 +430,17 @@ in	t410	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t411:PMOD	O
 Cuba	t411	18	Cuba	O	O	O	O	O	O	O	O	NP0	B-NP	cuba	NNP	O	O
 .	t412	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t413	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t413	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t414	19	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-have	t415	19	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t414:SBJ||t416:OBJ||t427:P||t428:COORD	O
+have	t415	19	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t414:SBJ||t416:OBJ||t427:P||t428:COORD||t435:P	O
 sisters	t416	19	sister	O	O	O	O	O	O	O	O	NN2	B-NP	sister	NNS	t417:NMOD	O
 that	t417	19	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t420:SUB	O
 I	t418	19	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 still	t419	19	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
-speak	t420	19	speak	e41	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	B-VP	speak	VBP	t413:DEP||t418:SBJ||t419:ADV||t421:ADV	O
+speak	t420	19	speak	e41	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	B-VP	speak	VBP	t413:DEP||t418:SBJ||t419:ADV||t421:OBJ	O
 to	t421	19	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t423:PMOD	O
 ,	t422	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t423	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t423	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	t436:APPO	O
 she	t424	19	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 said	t425	19	say	e42	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t415:OBJ||t422:P||t424:SBJ||t426:P	mainVb
 ,	t426	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -448,12 +448,12 @@ said	t425	19	say	e42	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t415:OBJ
 and	t428	19	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t431:CONJ	O
 this	t429	19	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 situation	t430	19	situation	e76	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	situation	NN	t429:NMOD	O
-is	t431	19	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t430:SBJ||t432:VC||t435:P||t436:GAP-SBJ	O
-driving	t432	19	drive	O	O	O	O	O	O	O	O	VVG	I-VP	drive	VBG	t433:OBJ||t434:TMP	O
+is	t431	19	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t430:SBJ||t432:VC	O
+driving	t432	19	drive	O	O	O	O	O	O	O	O	VVG	I-VP	drive	VBG	t433:OBJ||t434:OPRD	O
 people	t433	19	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
 crazy	t434	19	crazy	O	O	O	O	O	O	O	O	AJ0	B-ADJP	crazy	JJ	O	O
 .	t435	19	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t436	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t436	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 
 The	t437	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 only	t438	20	only	O	O	O	O	O	O	O	O	AJ0	I-NP	only	JJ	O	O
@@ -461,7 +461,7 @@ thing	t439	20	thing	O	O	O	O	O	O	O	O	NN1	I-NP	thing	NN	t437:NMOD||t438:NMOD||t440
 on	t440	20	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t442:PMOD	O
 Cuban	t441	20	cuban	O	O	O	O	O	O	O	O	AJ0	B-NP	cuban	JJ	O	O
 television	t442	20	television	O	O	O	O	O	O	O	O	NN1	I-NP	television	NN	t441:NMOD	O
-is	t443	20	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t439:SBJ||t446:PRD||t451:COORD	O
+is	t443	20	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t439:SBJ||t446:PRD||t451:COORD||t463:P	O
 Elian	t444	20	Elian	O	O	O	O	O	O	O	O	NP0	B-NP	elian	NNP	t445:SUFFIX	O
 's	t445	20	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 story	t446	20	story	O	O	O	O	O	O	O	O	NN1	I-NP	story	NN	t444:NMOD	O
@@ -471,11 +471,11 @@ said	t449	20	say	e44	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t443:OBJ
 ,	t450	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t451	20	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t453:CONJ	O
 she	t452	20	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-feels	t453	20	feel	O	O	O	O	O	O	O	O	VVZ	B-VP	feel	VBZ	t452:SBJ||t456:OBJ||t457:PRD	O
+feels	t453	20	feel	O	O	O	O	O	O	O	O	VVZ	B-VP	feel	VBZ	t452:SBJ||t457:OBJ	O
 the	t454	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Cuban	t455	20	cuban	O	O	O	O	O	O	O	O	AJ0	I-NP	cuban	JJ	O	O
 people	t456	20	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t454:NMOD||t455:NMOD	O
-are	t457	20	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t458:VC||t463:P	O
+are	t457	20	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t456:SBJ||t458:VC	O
 getting	t458	20	get	e46	OCCURRENCE	PRESENT+PROGRESSIVE+NEG	O	O	O	O	O	VVG	I-VP	get	VBG	t459:PRD	O
 tired	t459	20	tired	O	O	O	O	O	O	O	O	AJ0	B-ADJP	tired	JJ	t460:AMOD	O
 of	t460	20	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t462:PMOD	O
@@ -516,9 +516,9 @@ Castro	t492	22	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t490:NAME||t491:NAME	O
 said	t493	22	say	e49	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t480:OBJ||t489:P||t492:SBJ||t494:P	mainVb
 .	t494	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t495	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	NIL	O	O
+"	t495	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 He	t496	23	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-talks	t497	23	talk	e50	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	talks	VBZ	t495:NMOD||t496:SBJ||t498:COORD||t501:P	mainVb
+talks	t497	23	talk	e50	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	talks	VBZ	t495:P||t496:SBJ||t498:COORD||t501:P	mainVb
 and	t498	23	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t500:CONJ	O
 he	t499	23	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 decides	t500	23	decide	e85	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	decide	VBZ	t499:SBJ||t502:OBJ	O
@@ -549,13 +549,13 @@ so	t522	24	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	O	O
 
 Although	t524	25	although	O	O	O	O	O	O	O	O	CJS	B-SBAR	although	IN	t526:SUB	O
 she	t525	25	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-supports	t526	25	support	e54	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	support	VBZ	t525:SBJ||t528:OBJ||t533:LOC	O
+supports	t526	25	support	e54	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	support	VBZ	t525:SBJ||t528:OBJ	O
 the	t527	25	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-cause	t528	25	cause	O	O	O	O	O	O	O	O	NN1	I-NP	cause	NN	t527:NMOD||t529:NMOD	O
+cause	t528	25	cause	O	O	O	O	O	O	O	O	NN1	I-NP	cause	NN	t527:NMOD||t529:NMOD||t533:LOC	O
 of	t529	25	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t532:PMOD	O
 Miami	t530	25	Miami	O	O	O	O	O	O	O	O	NP0	B-NP	miami	NNP	t531:SUFFIX	O
 's	t531	25	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-Cubans	t532	25	Cubans	O	O	O	O	O	O	O	O	NN2	I-NP	cubans	NNS	t530:NMOD	O
+Cubans	t532	25	Cubans	O	O	O	O	O	O	O	O	NN2	I-NP	cubans	JJ	t530:NMOD	O
 in	t533	25	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t535:PMOD	O
 their	t534	25	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 struggle	t535	25	struggle	O	O	O	O	O	O	O	O	NN1	I-NP	struggle	NN	t534:NMOD||t536:NMOD	O
@@ -581,10 +581,10 @@ to	t554	25	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t555:PMOD	O
 politics	t555	25	politics	O	O	O	O	O	O	O	O	NN1	B-NP	politics	NNS	O	O
 .	t556	25	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t557	26	"	O	O	O	O	O	O	O	O	PUQ	O	"	WP	O	O
+"	t557	26	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t558	26	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 just	t559	26	just	O	O	O	O	O	O	O	O	AV0	B-ADVP	just	RB	O	O
-work	t560	26	work	e59	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	work	VBP	t557:OBJ||t558:SBJ||t559:ADV||t561:LOC||t565:TMP||t566:COORD	O
+work	t560	26	work	e59	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	work	VBP	t557:DEP||t558:SBJ||t559:ADV||t561:LOC||t565:TMP||t566:COORD	O
 in	t561	26	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t563:PMOD	O
 my	t562	26	my	O	O	O	O	O	O	O	O	DPS	B-NP	my	PRP$	O	O
 pharmacy	t563	26	pharmacy	O	O	O	O	O	O	O	O	NN1	I-NP	pharmacy	NN	t562:NMOD	O
@@ -612,11 +612,11 @@ she	t584	26	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 said	t585	26	say	e61	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t560:OBJ||t582:P||t583:SBJ||t584:SBJ||t586:P	mainVb
 .	t586	26	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t587	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t587	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 And	t588	27	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
-I	t589	27	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	t587:NMOD	O
+I	t589	27	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 also	t590	27	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-pray	t591	27	pray	e87	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	pray	VBP	t588:DEP||t589:SBJ||t590:ADV||t592:ADV||t597:TMP||t598:PRP||t602:P	mainVb
+pray	t591	27	pray	e87	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	pray	VBP	t587:P||t588:DEP||t589:SBJ||t590:ADV||t592:ADV||t597:TMP||t598:PRP||t602:P	mainVb
 for	t592	27	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t595:PMOD	O
 this	t593	27	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 young	t594	27	young	O	O	O	O	O	O	O	O	AJ0	I-NP	young	JJ	O	O
@@ -629,12 +629,12 @@ needs	t600	27	need	e62	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	need	VBZ	t599
 help	t601	27	help	e63	I_ACTION	NONE+NONE+NEG	O	O	O	O	O	NN1	B-NP	help	NN	O	O
 .	t602	27	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-He	t603	28	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	t604:SUFFIX	O
-'s	t604	28	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	POS	O	O
-been	t605	28	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t603:SBJ||t606:PRD||t609:P||t610:P	mainVb
+He	t603	28	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
+'s	t604	28	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	VBZ	t603:SBJ||t605:VC||t609:P	mainVb
+been	t605	28	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t606:PRD	mainVb
 through	t606	28	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t608:PMOD	O
 a	t607	28	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 lot	t608	28	lot	O	O	O	O	O	O	O	O	NN1	I-NP	lot	NN	t607:NMOD	O
-.	t609	28	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t610	28	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+.	t609	28	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t610:NMOD	O
+"	t610	28	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 

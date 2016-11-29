@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Bethlehem	t1	1	Bethlehem	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	bethlehem	NNP	O	O
 Steel	t2	1	Steel	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	steel	NNP	t1:NAME||t3:POSTHON||t4:P||t5:APPO||t18:P	O
@@ -81,7 +81,7 @@ the	t76	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 disappointing	t77	3	disappointing	O	O	O	O	O	O	O	O	AJ0	I-NP	disappointing	JJ	O	O
 trend	t78	3	trend	e310	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trend	NN	t76:NMOD||t77:NMOD	O
 to	t79	3	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t80:IM	O
-continue	t80	3	continue	e18	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t81:DIR	O
+continue	t80	3	continue	e18	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t81:TMP	O
 into	t81	3	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t84:PMOD||t85:COORD	O
 the	t82	3	the	O	O	O	tmx182	DATE	1989-Q4	O	O	AT0	B-NP	the	DT	O	O
 fourth	t83	3	fourth	O	O	O	tmx182	DATE	1989-Q4	O	O	ORD	I-NP	fourth	JJ	O	O
@@ -100,7 +100,7 @@ of	t93	3	of	O	O	O	tmx183	DATE	1990-H1	O	O	PRF	B-PP	of	IN	t94:PMOD	O
 when	t96	3	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
 the	t97	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 industry	t98	3	industry	O	O	O	O	O	O	O	O	NN1	I-NP	industry	NN	t97:NMOD	O
-will	t99	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t98:SBJ||t100:MNR||t101:VC	O
+will	t99	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t98:SBJ||t100:ADV||t101:VC	O
 increasingly	t100	3	increasingly	O	O	O	O	O	O	O	O	AV0	I-VP	increasingly	RB	O	O
 see	t101	3	see	e21	PERCEPTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t96:TMP||t103:OBJ	O
 the	t102	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -126,7 +126,7 @@ and	t121	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t122:CONJ	O
 construction	t122	3	construction	O	O	O	O	O	O	O	O	NN1	I-NP	construction	NN	O	O
 .	t123	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t124	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t124	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 It	t125	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 does	t126	4	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t124:DEP||t125:SBJ||t127:ADV||t128:VC	O
 n't	t127	4	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
@@ -136,8 +136,8 @@ for	t130	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t132:PMOD	O
 coming	t131	4	come	O	O	O	tmx190	DATE	FUTURE_REF	O	O	VVG	B-NP	coming	NN	O	O
 quarters	t132	4	quarter	O	O	O	tmx190	DATE	FUTURE_REF	O	O	NN2	I-NP	quarters	NNS	t131:NMOD	O
 ,	t133	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t134	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t135	4	say	e29	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t126:OBJ||t133:P||t134:SBJ||t137:OBJ||t147:P	mainVb
+"	t134	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+said	t135	4	say	e29	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t126:OBJ||t133:P||t134:SBJ||t137:SBJ||t147:P	mainVb
 John	t136	4	John	O	O	O	O	O	O	O	O	NP0	B-NP	john	NNP	O	O
 Jacobson	t137	4	Jacobson	O	O	O	O	O	O	O	O	NP0	I-NP	jacobson	NNP	t136:NAME||t138:P||t140:NMOD	O
 ,	t138	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -352,14 +352,14 @@ volume	t337	13	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	t336:NMOD	O
 ,	t338	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Bethlehem	t339	13	Bethlehem	O	O	O	O	O	O	O	O	NP0	B-NP	bethlehem	NNP	O	O
 "	t340	13	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t339:NAME	O
-had	t341	13	have	e206	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	I-NP	have	VBD	t323:ADV||t324:P||t325:ADV||t338:P||t340:SBJ||t345:OBJ	O
+had	t341	13	have	e206	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	I-NP	have	VBD	t323:ADV||t324:P||t325:ADV||t338:P||t340:SBJ||t345:OBJ||t346:P	O
 pretty	t342	13	pretty	O	O	O	O	O	O	O	O	AV0	B-VP	pretty	RB	O	O
 good	t343	13	good	O	O	O	O	O	O	O	O	AJ0	I-VP	good	JJ	t342:AMOD	O
 earnings	t344	13	earnings	O	O	O	O	O	O	O	O	NN2	B-NP	earnings	NNS	O	O
 numbers	t345	13	number	O	O	O	O	O	O	O	O	NN2	I-NP	numbers	NNS	t343:NMOD||t344:NMOD	O
 ,	t346	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t347	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t348	13	say	e63	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t341:OBJ||t346:P||t347:SBJ||t351:SBJ||t359:P	mainVb
+"	t347	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	,	O	O
+said	t348	13	say	e63	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t341:OBJ||t347:P||t351:SBJ||t359:P	mainVb
 Michelle	t349	13	Michelle	O	O	O	O	O	O	O	O	NP0	B-NP	michelle	NNP	O	O
 Galanter	t350	13	Galanter	O	O	O	O	O	O	O	O	NP0	I-NP	galanter	NNP	O	O
 Applebaum	t351	13	Applebaum	O	O	O	O	O	O	O	O	NP0	I-NP	applebaum	NNP	t349:NAME||t350:NAME||t352:P||t354:APPO	O
@@ -380,14 +380,14 @@ third-quarter	t364	14	third-quarter	O	O	O	tmx207	DATE	1989-Q3	O	O	AJC	B-NP	third
 earnings	t365	14	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t363:NMOD||t364:NMOD||t366:NMOD	O
 of	t366	14	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t368:PMOD	O
 55	t367	14	55	O	O	O	O	O	O	O	O	CRD	B-NP	55	CD	O	O
-cents	t368	14	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t367:NMOD||t371:ADV||t373:ADV||t374:P||t375:COORD	O
+cents	t368	14	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t367:NMOD||t371:ADV||t373:ADV||t374:P||t375:COORD||t377:ADV||t378:P||t379:COORD	O
 a	t369	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-shhha55	t370	14	shhha55	O	O	O	O	O	O	O	O	UNC	I-NP	shhha55	NN	O	O
+shhha55	t370	14	shhha55	O	O	O	O	O	O	O	O	UNC	I-NP	shhha55	CD	O	O
 cents	t371	14	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t369:NMOD||t370:NMOD	O
 a	t372	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t373	14	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t372:NMOD	O
 ,	t374	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-ents	t375	14	ent	O	O	O	O	O	O	O	O	VVZ	B-VP	ent	VBZ	t377:OBJ||t378:P||t379:COORD	O
+ents	t375	14	ent	O	O	O	O	O	O	O	O	VVZ	B-VP	ent	VBZ	O	O
 a	t376	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t377	14	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t376:NMOD	O
 ,	t378	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -414,10 +414,10 @@ Still	t396	15	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
 Bethlehem	t398	15	Bethlehem	O	O	O	O	O	O	O	O	NP0	B-NP	bethlehem	NNP	t399:SUFFIX	O
 's	t399	15	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 core	t400	15	core	O	O	O	O	O	O	O	O	NN1	I-NP	core	NN	O	O
-basic	t401	15	basic	O	O	O	O	O	O	O	O	AJ0	I-NP	basic	JJ	O	O
+basic	t401	15	basic	O	O	O	O	O	O	O	O	AJ0	I-NP	basic	NN	O	O
 steel	t402	15	steel	O	O	O	O	O	O	O	O	NN1	I-NP	steel	NN	t401:NMOD	O
 operations	t403	15	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t398:NMOD||t400:NMOD||t402:NMOD	O
-experienced	t404	15	experience	e70	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	experience	VBD	t396:ADV||t397:P||t403:SBJ||t407:OBJ||t431:P	mainVb
+experienced	t404	15	experience	e70	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	experience	VBD	t396:ADV||t397:P||t403:SBJ||t407:OBJ||t422:P||t426:TMP||t431:P	mainVb
 a	t405	15	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 steep	t406	15	steep	O	O	O	O	O	O	O	O	AJ0	I-NP	steep	JJ	O	O
 drop	t407	15	drop	e210	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	drop	NN	t405:NMOD||t406:NMOD||t408:LOC||t411:DIR||t415:DIR	O
@@ -434,7 +434,7 @@ $	t416	15	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t417:DEP||t418:DEP	O
 million	t418	15	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 a	t419	15	a	O	O	O	tmx211	DATE	1988-10-26	O	O	AT0	B-NP	a	DT	O	O
 year	t420	15	year	O	O	O	tmx211	DATE	1988-10-26	O	O	NN1	I-NP	year	NN	t419:NMOD	O
-ago	t421	15	ago	O	O	O	tmx211	DATE	1988-10-26	O	O	AV0	B-ADVP	ago	RB	t420:AMOD||t422:P||t426:AMOD	O
+ago	t421	15	ago	O	O	O	tmx211	DATE	1988-10-26	O	O	AV0	B-ADVP	ago	RB	t420:AMOD	O
 ,	t422	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 when	t423	15	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
 the	t424	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -516,19 +516,19 @@ June	t497	17	June	O	O	O	tmx219	DATE	1990-06-01	O	O	NP0	B-NP	june	NNP	O	O
 1	t498	17	1	O	O	O	tmx219	DATE	1990-06-01	O	O	CRD	I-NP	1	CD	t497:NMOD	O
 .	t499	17	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t500	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t500	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t501	18	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-anticipate	t502	18	anticipate	e93	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	anticipate	VBP	t500:TMP||t501:SBJ||t503:OBJ	O
+anticipate	t502	18	anticipate	e93	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	anticipate	VBP	t500:P||t501:SBJ||t503:OBJ||t517:PRP	O
 that	t503	18	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t507:SUB	O
 steel	t504	18	steel	O	O	O	O	O	O	O	O	NN1	B-NP	steel	NN	O	O
 market	t505	18	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t504:NMOD	O
 conditions	t506	18	condition	O	O	O	O	O	O	O	O	NN2	I-NP	condition	NNS	t505:NMOD	O
 will	t507	18	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t506:SBJ||t508:VC	O
-exhibit	t508	18	exhibit	e94	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	exhibit	VB	t512:OBJ||t517:TMP	O
+exhibit	t508	18	exhibit	e94	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	exhibit	VB	t512:OBJ||t513:TMP	O
 a	t509	18	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-further	t510	18	further	O	O	O	O	O	O	O	O	AJC	I-NP	further	JJ	O	O
-moderate	t511	18	moderate	O	O	O	O	O	O	O	O	AJ0	I-NP	moderate	JJ	O	O
-decline	t512	18	decline	e222	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	decline	NN	t509:NMOD||t510:NMOD||t511:NMOD||t513:TMP	O
+further	t510	18	further	O	O	O	O	O	O	O	O	AJC	I-NP	further	RB	O	O
+moderate	t511	18	moderate	O	O	O	O	O	O	O	O	AJ0	I-NP	moderate	JJ	t510:AMOD	O
+decline	t512	18	decline	e222	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	decline	NN	t509:NMOD||t511:NMOD	O
 in	t513	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t516:PMOD	O
 the	t514	18	the	O	O	O	tmx220	DATE	1989-Q4	O	O	AT0	B-NP	the	DT	O	O
 fourth	t515	18	fourth	O	O	O	tmx220	DATE	1989-Q4	O	O	ORD	I-NP	fourth	JJ	O	O
@@ -546,7 +546,7 @@ to	t526	18	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t527:IM	O
 adjust	t527	18	adjust	e98	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	adjust	VB	t528:OBJ	O
 inventories	t528	18	inventory	O	O	O	O	O	O	O	O	NN2	B-NP	inventory	NNS	O	O
 ,	t529	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t530	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t530	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 said	t531	18	say	e100	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t502:OBJ||t529:P||t530:SBJ||t536:OBJ||t537:P	mainVb
 Bethlehem	t532	18	Bethlehem	O	O	O	O	O	O	O	O	NP0	B-NP	bethlehem	NNP	O	O
 Chairman	t533	18	Chairman	O	O	O	O	O	O	O	O	NP0	I-NP	chairman	NN	O	O
@@ -656,7 +656,7 @@ Steel	t633	21	Steel	O	O	O	O	O	O	O	O	NP0	I-NP	steel	NNP	t632:NAME||t634:POSTHON	O
 Corp.	t634	21	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 .	t635	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Along	t636	22	along	O	O	O	O	O	O	O	O	PRP	B-PP	along	IN	t637:PMOD	O
+Along	t636	22	along	O	O	O	O	O	O	O	O	PRP	B-PP	along	IN	t637:AMOD	O
 with	t637	22	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t639:PMOD	O
 reduced	t638	22	reduce	O	O	O	O	O	O	O	O	AJ0	B-NP	reduce	VBN	O	O
 volume	t639	22	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	t638:NMOD	O
@@ -670,9 +670,9 @@ fifth	t646	22	fifth	O	O	O	O	O	O	O	O	ORD	I-NP	fifth	JJ	t647:AMOD	O
 largest	t647	22	largest	O	O	O	O	O	O	O	O	AJS	I-NP	large	JJS	O	O
 steelmaker	t648	22	steelmaker	O	O	O	O	O	O	O	O	NN1	I-NP	steelmaker	NN	t644:NMOD||t646:NMOD	O
 was	t649	22	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t648:SBJ||t650:VC	O
-hurt	t650	22	hurt	e117	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	hurt	VBN	t651:LGS	O
+hurt	t650	22	hurt	e117	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	hurt	VBN	t651:MNR	O
 by	t651	22	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t652:PMOD	O
-holding	t652	22	hold	e118	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	hold	VBG	t654:OBJ||t658:TMP||t663:TMP	O
+holding	t652	22	hold	e118	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	hold	VBG	t654:OBJ||t658:TMP||t663:ADV	O
 higher-cost	t653	22	higher-cost	O	O	O	O	O	O	O	O	AJ0	B-NP	higher-cost	NN	O	O
 inventory	t654	22	inventory	O	O	O	O	O	O	O	O	NN1	I-NP	inventory	NN	t653:NMOD	O
 when	t655	22	when	O	O	O	O	O	O	O	O	CJS	B-ADVP	when	WRB	O	O
@@ -761,7 +761,7 @@ National	t733	26	National	O	O	O	O	O	O	O	O	AJ0	B-NP	national	NNP	O	O
 Intergroup	t734	26	Intergroup	O	O	O	O	O	O	O	O	NN1	I-NP	intergroup	NNP	t733:NAME||t735:P||t737:NMOD	O
 ,	t735	26	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t736	26	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
-owns	t737	26	own	e136	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	own	VBZ	t736:SBJ||t739:OBJ	O
+owns	t737	26	own	e136	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	own	VBZ	t736:SBJ||t739:OBJ||t749:PRN	O
 50	t738	26	50	O	O	O	O	O	O	O	O	CRD	B-NP	50	CD	O	O
 %	t739	26	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t738:NMOD||t740:NMOD	O
 of	t740	26	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t746:PMOD	O
@@ -770,7 +770,7 @@ nation	t742	26	nation	O	O	O	O	O	O	O	O	NN1	I-NP	nation	NN	t741:NMOD||t743:SUFFIX	
 's	t743	26	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 sixth	t744	26	sixth	O	O	O	O	O	O	O	O	ORD	I-NP	sixth	JJ	t745:AMOD	O
 largest	t745	26	largest	O	O	O	O	O	O	O	O	AJS	I-NP	large	JJS	O	O
-steelmaker	t746	26	steelmaker	O	O	O	O	O	O	O	O	NN1	I-NP	steelmaker	NN	t742:NMOD||t744:NMOD||t749:APPO	O
+steelmaker	t746	26	steelmaker	O	O	O	O	O	O	O	O	NN1	I-NP	steelmaker	NN	t742:NMOD||t744:NMOD	O
 --	t747	26	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
 National	t748	26	National	O	O	O	O	O	O	O	O	AJ0	B-NP	national	NNP	O	O
 Steel	t749	26	Steel	O	O	O	O	O	O	O	O	NP0	I-NP	steel	NNP	t747:P||t748:NAME||t750:POSTHON||t751:P	O
@@ -887,7 +887,7 @@ noted	t854	31	note	e154	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	note	VBD	t853
 that	t855	31	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t869:SUB	O
 its	t856	31	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 Fox-Meyer	t857	31	Fox-Meyer	O	O	O	O	O	O	O	O	NP0	I-NP	fox-meyer	NNP	O	O
-Drug	t858	31	Drug	O	O	O	O	O	O	O	O	NP0	I-NP	drug	NNP	t856:NMOD||t857:NAME||t859:POSTHON||t860:P||t863:APPO	O
+Drug	t858	31	Drug	O	O	O	O	O	O	O	O	NP0	I-NP	drug	NNP	t856:NMOD||t857:NAME||t859:POSTHON||t860:P||t863:COORD	O
 Co.	t859	31	Co.	O	O	O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
 ,	t860	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Ben	t861	31	Ben	O	O	O	O	O	O	O	O	NP0	B-NP	ben	NNP	O	O
@@ -904,7 +904,7 @@ as	t871	31	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t873:PMOD	O
 a	t872	31	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 result	t873	31	result	O	O	O	O	O	O	O	O	NN1	I-NP	result	NN	t872:NMOD||t874:NMOD	O
 of	t874	31	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t876:PMOD	O
-restructuring	t875	31	restructure	O	O	O	O	O	O	O	O	VVG	B-VP	restructuring	VBG	O	O
+restructuring	t875	31	restructure	O	O	O	O	O	O	O	O	VVG	B-VP	restructure	NN	O	O
 moves	t876	31	move	e158	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	move	NNS	t875:NMOD	O
 .	t877	31	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -938,7 +938,7 @@ and	t904	32	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t906:CONJ	O
 lost	t905	32	lose	O	O	O	O	O	O	O	O	AJ0	B-NP	lose	VBN	O	O
 orders	t906	32	order	O	O	O	O	O	O	O	O	NN2	I-NP	order	NNS	t905:NMOD	O
 following	t907	32	follow	O	O	O	O	O	O	O	O	VVG	B-PP	follow	VBG	t910:PMOD	O
-prolonged	t908	32	prolong	O	O	O	O	O	O	O	O	AJ0	B-NP	prolong	JJ	O	O
+prolonged	t908	32	prolong	O	O	O	O	O	O	O	O	AJ0	B-NP	prolonged	VBN	O	O
 labor	t909	32	labor	O	O	O	O	O	O	O	O	NN1	I-NP	labor	NN	O	O
 talks	t910	32	talk	e164	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	talks	NNS	t908:NMOD||t909:NMOD||t911:COORD	O
 and	t911	32	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t914:CONJ	O
@@ -950,10 +950,10 @@ strike	t914	32	strike	e165	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	strike	NN
 National	t916	33	National	O	O	O	O	O	O	O	O	AJ0	B-NP	national	NNP	O	O
 Intergroup	t917	33	Intergroup	O	O	O	O	O	O	O	O	NN1	I-NP	intergroup	NNP	t916:NAME	O
 is	t918	33	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t917:SBJ||t919:VC||t939:P	mainVb
-negotiating	t919	33	negotiate	e166	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	negotiate	VBG	t920:ADV||t931:PRP	mainVb
+negotiating	t919	33	negotiate	e166	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	negotiate	VBG	t920:ADV	mainVb
 for	t920	33	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t922:PMOD	O
 the	t921	33	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-sale	t922	33	sale	e167	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	NN1	I-NP	sale	NN	t921:NMOD||t923:NMOD	O
+sale	t922	33	sale	e167	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	NN1	I-NP	sale	NN	t921:NMOD||t923:NMOD||t931:NMOD	O
 of	t923	33	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t927:PMOD	O
 its	t924	33	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 50	t925	33	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O

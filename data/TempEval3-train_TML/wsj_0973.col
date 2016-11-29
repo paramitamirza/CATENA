@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Westinghouse	t1	1	Westinghouse	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	westinghouse	NNP	O	O
 Electric	t2	1	Electric	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	electric	NNP	t1:NAME||t3:POSTHON	O
@@ -8,7 +8,7 @@ capitalizing	t5	1	capitalize	e1	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	
 on	t6	1	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t10:PMOD	O
 a	t7	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 major	t8	1	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
-restructuring	t9	1	restructuring	O	O	O	O	O	O	O	O	NN1	I-NP	restructuring	VBG	O	O
+restructuring	t9	1	restructuring	O	O	O	O	O	O	O	O	NN1	I-NP	restructure	NN	O	O
 program	t10	1	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t7:NMOD||t8:NMOD||t9:NMOD	O
 ,	t11	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 expects	t12	1	expect	e3	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	NN2	B-NP	expect	VBZ	t2:SBJ||t4:P||t5:ADV||t11:P||t14:OBJ||t26:TMP	O
@@ -107,7 +107,7 @@ to	t101	4	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t102:IM	O
 produce	t102	4	produce	e20	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	produce	VB	t106:OBJ	O
 10	t103	4	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
 %	t104	4	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t103:NMOD	O
-operating	t105	4	operating	O	O	O	O	O	O	O	O	VVG	I-NP	operate	VBG	O	O
+operating	t105	4	operating	O	O	O	O	O	O	O	O	VVG	I-NP	operate	NN	O	O
 margins	t106	4	margin	O	O	O	O	O	O	O	O	NN2	I-NP	margin	NNS	t104:NMOD||t105:NMOD	O
 while	t107	4	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t108:SUB	O
 acquiring	t108	4	acquire	e22	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	acquire	VBG	t110:OBJ	O
@@ -145,10 +145,10 @@ slow-growth	t137	5	slow-growth	O	O	O	O	O	O	O	O	NN1	B-NP	slow-growth	NN	O	O
 low-profit	t139	5	low-profit	O	O	O	O	O	O	O	O	AJ0	B-NP	low-profit	NN	O	O
 businesses	t140	5	business	O	O	O	O	O	O	O	O	NN2	I-NP	business	NNS	t139:NMOD	O
 has	t141	5	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t131:SBJ||t138:P||t140:SBJ||t142:VC	O
-been	t142	5	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t143:ADV||t145:VC	O
+been	t142	5	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t145:VC	O
 more	t143	5	more	O	O	O	O	O	O	O	O	AV0	I-VP	more	RBR	t144:AMOD	O
 than	t144	5	than	O	O	O	O	O	O	O	O	CJS	I-VP	than	IN	O	O
-offset	t145	5	offset	e467	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	offset	VBN	t146:LGS	O
+offset	t145	5	offset	e467	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	offset	VBN	t143:ADV||t146:LGS	O
 by	t146	5	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t147:PMOD	O
 $	t147	5	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t148:DEP||t149:DEP||t150:NMOD	O
 600	t148	5	600	O	O	O	O	O	O	O	O	CRD	I-NP	600	CD	O	O
@@ -194,9 +194,9 @@ to	t185	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
 2.5	t186	7	2.5	O	O	O	O	O	O	O	O	CRD	B-NP	2.5	CD	O	O
 %	t187	7	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t183:DEP||t184:DEP||t185:DEP||t186:NMOD	O
 ,	t188	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t189	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t189	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
 we	t190	7	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-can	t191	7	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t169:ADV||t188:P||t189:P||t190:SBJ||t192:VC	O
+can	t191	7	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t169:ADV||t188:P||t189:DEP||t190:SBJ||t192:VC	O
 handle	t192	7	handle	e37	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	handle	VB	t193:OBJ	O
 that	t193	7	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 ,	t194	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -307,7 +307,7 @@ need	t293	12	need	O	O	O	O	O	O	O	O	NN1	I-NP	need	NN	t292:NMOD||t294:NMOD	O
 for	t294	12	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t297:PMOD	O
 a	t295	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 major	t296	12	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
-boost	t297	12	boost	e57	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	boost	NN	t295:NMOD||t296:NMOD||t298:NMOD||t301:TMP	O
+boost	t297	12	boost	e57	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	boost	NN	t295:NMOD||t296:NMOD||t298:LOC||t301:TMP	O
 in	t298	12	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t300:PMOD	O
 new-generation	t299	12	new-generation	O	O	O	O	O	O	O	O	NN1	B-NP	new-generation	NN	O	O
 capability	t300	12	capability	O	O	O	O	O	O	O	O	NN1	I-NP	capability	NN	t299:NMOD	O
@@ -364,17 +364,17 @@ said	t348	14	say	e68	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t333:OBJ
 .	t349	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 He	t350	15	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t351	15	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t350:SBJ||t356:OBJ||t369:P||t370:ADV||t383:P	mainVb
+said	t351	15	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t350:SBJ||t356:OBJ||t369:P||t370:ADV||t383:P||t384:P	mainVb
 the	t352	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 independent	t353	15	independent	O	O	O	O	O	O	O	O	AJ0	I-NP	independent	JJ	O	O
-power	t354	15	power	O	O	O	O	O	O	O	O	NN1	I-NP	power	NN	O	O
-segment	t355	15	segment	O	O	O	O	O	O	O	O	NN1	I-NP	segment	NN	t352:NMOD||t353:NMOD||t354:NMOD	O
+power	t354	15	power	O	O	O	O	O	O	O	O	NN1	I-NP	power	NN	t353:NMOD	O
+segment	t355	15	segment	O	O	O	O	O	O	O	O	NN1	I-NP	segment	NN	t352:NMOD||t354:NMOD	O
 could	t356	15	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t355:SBJ||t357:VC	O
 grow	t357	15	grow	e70	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	grow	VB	t358:OPRD	O
 to	t358	15	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t359:IM	O
 provide	t359	15	provide	e73	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	provide	VB	t364:OBJ	O
 as	t360	15	as	O	O	O	O	O	O	O	O	AV0	B-NP	as	RB	O	O
-much	t361	15	much	O	O	O	O	O	O	O	O	DT0	I-NP	much	JJ	t360:DEP||t362:DEP||t363:DEP||t384:DEP	O
+much	t361	15	much	O	O	O	O	O	O	O	O	DT0	I-NP	much	JJ	t360:DEP||t362:DEP||t363:DEP	O
 as	t362	15	as	O	O	O	O	O	O	O	O	CJS	I-NP	as	IN	O	O
 50	t363	15	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
 %	t364	15	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t361:NMOD||t365:NMOD	O
@@ -397,7 +397,7 @@ of	t380	15	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t382:PMOD	O
 this	t381	15	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 market	t382	15	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t381:NMOD	O
 .	t383	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t384	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	$	O	O
+"	t384	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Westinghouse	t385	16	Westinghouse	O	O	O	O	O	O	O	O	NP0	B-NP	westinghouse	NNP	O	O
 also	t386	16	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O

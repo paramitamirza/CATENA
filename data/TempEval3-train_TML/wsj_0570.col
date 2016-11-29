@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Crane	t1	1	Crane	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	crane	NNP	t2:POSTHON	O
 Co.	t2	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
@@ -72,13 +72,13 @@ seeking	t67	3	seek	e13	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	seek	VBG	t6
 control	t68	3	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	t69:NMOD	O
 of	t69	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t71:PMOD	O
 Milton	t70	3	Milton	O	O	O	O	O	O	O	O	NP0	B-NP	milton	NNP	O	O
-Roy	t71	3	Roy	O	O	O	O	O	O	O	O	NP0	I-NP	roy	NNP	t70:NAME||t72:P||t73:NMOD||t78:P	O
+Roy	t71	3	Roy	O	O	O	O	O	O	O	O	NP0	I-NP	roy	NNP	t70:NAME||t72:P||t73:NMOD	O
 ,	t72	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-of	t73	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t76:P	O
+of	t73	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t77:PMOD	O
 St.	t74	3	St.	O	O	O	O	O	O	O	O	NP0	B-NP	st.	NNP	O	O
 Petersburg	t75	3	Petersburg	O	O	O	O	O	O	O	O	NP0	I-NP	petersburg	NNP	t74:TITLE	O
-,	t76	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t75:NMOD||t77:LOC	O
-Fla.	t77	3	Fla.	O	O	O	O	O	O	O	O	NP0	B-NP	fla.	NNP	O	O
+,	t76	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Fla.	t77	3	Fla.	O	O	O	O	O	O	O	O	NP0	B-NP	fla.	NNP	t75:NMOD||t76:P||t78:P	O
 ,	t78	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 through	t79	3	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t81:PMOD	O
 a	t80	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -327,12 +327,12 @@ to	t312	13	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t313:IM	O
 acquire	t313	13	acquire	e63	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	t316:OBJ	O
 Automated	t314	13	Automated	O	O	O	O	O	O	O	O	NP0	B-NP	automated	NNP	O	O
 Custom	t315	13	Custom	O	O	O	O	O	O	O	O	NP0	I-NP	custom	NNP	O	O
-Systems	t316	13	Systems	O	O	O	O	O	O	O	O	NN2	I-NP	system	NNPS	t314:NAME||t315:NAME||t317:POSTHON||t318:P||t321:APPO||t322:P||t323:COORD	O
+Systems	t316	13	Systems	O	O	O	O	O	O	O	O	NN2	I-NP	system	NNPS	t314:NAME||t315:NAME||t317:POSTHON||t318:P||t321:LOC||t323:COORD	O
 Inc.	t317	13	Inc.	O	O	O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 ,	t318	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Orange	t319	13	Orange	O	O	O	O	O	O	O	O	NP0	B-NP	orange	NNP	O	O
 ,	t320	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Calif.	t321	13	Calif.	O	O	O	O	O	O	O	O	NP0	B-NP	calif.	NNP	t319:NMOD||t320:P	O
+Calif.	t321	13	Calif.	O	O	O	O	O	O	O	O	NP0	B-NP	calif.	NNP	t319:NMOD||t320:P||t322:P	O
 ,	t322	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t323	13	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t326:CONJ	O
 its	t324	13	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O

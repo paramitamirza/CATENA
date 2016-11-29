@@ -1,4 +1,4 @@
-DCT_1989-10-31	O	O	O	O	O	O	tmx0	DATE	1989-10-31	O	O	NP0	B-NP	dct_1989-10-31	SYM	O	O
+DCT_1989-10-31	O	O	O	O	O	O	tmx0	DATE	1989-10-31	O	O	NP0	B-NP	dct_1989-10-31	LS	O	O
 
 Dataproducts	t1	1	Dataproducts	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	dataproducts	NNP	t2:POSTHON	O
 Inc.	t2	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
@@ -88,7 +88,7 @@ it	t83	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 was	t84	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t83:SBJ||t85:ADV||t87:VC	O
 n't	t85	3	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 adequately	t86	3	adequately	O	O	O	O	O	O	O	O	AV0	I-VP	adequately	RB	O	O
-financed	t87	3	finance	e24	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	finance	VBN	t86:ADV	O
+financed	t87	3	finance	e24	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	finance	VBN	t86:MNR	O
 .	t88	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 DPC	t89	4	DPC	O	O	O	O	O	O	O	O	NP0	B-NP	dpc	NNP	O	O

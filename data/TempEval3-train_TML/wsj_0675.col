@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 PROGRAM	t1	1	program	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	program	NN	O	O
 TRADING	t2	1	trading	e143	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t1:NMOD	O
@@ -230,8 +230,8 @@ plan	t215	13	plan	e371	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	plan	NN	t214:NM
 to	t216	13	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t217:IM	O
 merge	t217	13	merge	e56	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	merge	VB	t220:OBJ	O
 cellular	t218	13	cellular	O	O	O	O	O	O	O	O	AJ0	B-NP	cellular	JJ	O	O
-phone	t219	13	phone	O	O	O	O	O	O	O	O	NN1	I-NP	phone	NN	t218:NMOD	O
-operations	t220	13	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t219:NMOD	O
+phone	t219	13	phone	O	O	O	O	O	O	O	O	NN1	I-NP	phone	NN	O	O
+operations	t220	13	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t218:NMOD||t219:NMOD	O
 ,	t221	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 offering	t222	13	offer	e396	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	offer	VBG	t224:OBJ||t229:OBJ	O
 LIN	t223	13	LIN	O	O	O	O	O	O	O	O	NP0	B-NP	lin	NNP	O	O
@@ -248,7 +248,7 @@ the	t232	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 new	t233	14	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 pact	t234	14	pact	O	O	O	O	O	O	O	O	NN1	I-NP	pact	NN	t232:NMOD||t233:NMOD	O
 will	t235	14	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t231:DEP||t234:SBJ||t236:VC||t253:P	mainVb
-force	t236	14	force	e60	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	force	VB	t238:OBJ||t239:ADV||t243:COORD	mainVb
+force	t236	14	force	e60	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	force	VB	t238:OBJ||t239:LOC||t243:COORD	mainVb
 huge	t237	14	huge	O	O	O	O	O	O	O	O	AJ0	B-NP	huge	JJ	O	O
 debt	t238	14	debt	O	O	O	O	O	O	O	O	NN1	I-NP	debt	NN	t237:NMOD	O
 on	t239	14	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t242:PMOD	O
@@ -256,7 +256,7 @@ the	t240	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 new	t241	14	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 firm	t242	14	firm	O	O	O	O	O	O	O	O	NN1	I-NP	firm	NN	t240:NMOD||t241:NMOD	O
 and	t243	14	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t244:CONJ	O
-could	t244	14	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t245:TMP||t246:VC	O
+could	t244	14	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t245:ADV||t246:VC	O
 still	t245	14	still	O	O	O	O	O	O	O	O	AV0	I-VP	still	RB	O	O
 fail	t246	14	fail	e62	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	fail	VB	t247:OPRD	O
 to	t247	14	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t248:IM	O
@@ -325,9 +325,9 @@ million	t305	17	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 
 The	t307	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 accord	t308	18	accord	O	O	O	O	O	O	O	O	NN1	I-NP	accord	NN	t307:NMOD	O
-helps	t309	18	help	e78	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	help	VBZ	t308:SBJ||t310:OBJ||t311:OPRD||t314:COORD||t329:P	mainVb
+helps	t309	18	help	e78	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	help	VBZ	t308:SBJ||t311:OBJ||t314:COORD||t329:P	mainVb
 RJR	t310	18	RJR	O	O	O	O	O	O	O	O	NP0	B-NP	rjr	NNP	O	O
-pay	t311	18	pay	e79	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVI	B-VP	pay	VBP	t312:PRT||t313:OBJ	O
+pay	t311	18	pay	e79	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVI	B-VP	pay	VBP	t310:SBJ||t312:PRT||t313:OBJ	O
 off	t312	18	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
 debt	t313	18	debt	O	O	O	O	O	O	O	O	NN1	B-NP	debt	NN	O	O
 and	t314	18	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t315:CONJ	O
@@ -355,7 +355,7 @@ expected	t334	19	expect	e81	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	expect	V
 to	t335	19	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t336:IM	mainVb
 go	t336	19	go	e83	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	go	VB	t338:ADV||t340:LOC||t343:PRP	mainVb
 head	t337	19	head	O	O	O	O	O	O	O	O	NN1	B-NP	head	NN	O	O
-to	t338	19	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t337:AMOD||t339:PMOD	O
+to	t338	19	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t337:AMOD||t339:AMOD	O
 head	t339	19	head	O	O	O	O	O	O	O	O	VVI	I-VP	head	NN	O	O
 in	t340	19	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t342:PMOD	O
 the	t341	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -542,39 +542,39 @@ shares	t512	27	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t511:NMOD	O
 
 Dow	t514	28	Dow	O	O	O	O	O	O	O	O	NP0	B-NP	dow	NNP	O	O
 Jones	t515	28	Jones	O	O	O	O	O	O	O	O	NP0	I-NP	jones	NNP	t514:NAME	O
-industrials	t516	28	industrial	O	O	O	O	O	O	O	O	NN2	I-NP	industrials	NNS	t515:NMOD||t517:NMOD||t521:P||t523:NMOD||t524:P||t525:NMOD||t527:P	O
-2596.72	t517	28	2596.72	O	O	O	O	O	O	O	O	CRD	I-NP	2596.72	CD	t518:P||t519:NMOD	O
+industrials	t516	28	industrial	O	O	O	O	O	O	O	O	NN2	I-NP	industrials	NNS	t515:NMOD	O
+2596.72	t517	28	2596.72	O	O	O	O	O	O	O	O	CRD	I-NP	2596.72	CD	t516:NMOD||t518:P||t519:NMOD	O
 ,	t518	28	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-off	t519	28	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t520:PMOD	O
+off	t519	28	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t520:AMOD	O
 17.01	t520	28	17.01	O	O	O	O	O	O	O	O	CRD	B-NP	17.01	CD	O	O
 ;	t521	28	;	O	O	O	O	O	O	O	O	PUN	O	;	:	O	O
 transportation	t522	28	transportation	O	O	O	O	O	O	O	O	NN1	B-NP	transportation	NN	O	O
-1190.43	t523	28	1190.43	O	O	O	O	O	O	O	O	CRD	I-NP	1190.43	CD	t522:NMOD	O
+1190.43	t523	28	1190.43	O	O	O	O	O	O	O	O	CRD	I-NP	1190.43	CD	t522:NMOD||t524:P||t525:NMOD	O
 ,	t524	28	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-off	t525	28	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t526:PMOD	O
+off	t525	28	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t526:AMOD	O
 14.76	t526	28	14.76	O	O	O	O	O	O	O	O	CRD	B-NP	14.76	CD	O	O
 ;	t527	28	;	O	O	O	O	O	O	O	O	PUN	O	;	:	O	O
-utilities	t528	28	utility	O	O	O	O	O	O	O	O	NN2	B-NP	utility	NNS	t516:SBJ||t529:APPO||t533:P	mainVb
-215.86	t529	28	215.86	O	O	O	O	O	O	O	O	CRD	I-NP	215.86	CD	t530:P||t531:NMOD	O
+utilities	t528	28	utility	O	O	O	O	O	O	O	O	NN2	B-NP	utility	NNS	O	O
+215.86	t529	28	215.86	O	O	O	O	O	O	O	O	CRD	I-NP	215.86	CD	t517:NMOD||t521:P||t523:NMOD||t527:P||t528:NMOD||t530:P||t531:NMOD||t533:P	mainVb
 ,	t530	28	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 up	t531	28	up	O	O	O	O	O	O	O	O	AV0	B-ADVP	up	IN	t532:AMOD	O
 0.19	t532	28	0.19	O	O	O	O	O	O	O	O	CRD	B-NP	0.19	CD	O	O
 .	t533	28	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Bonds	t534	29	bond	O	O	O	O	O	O	O	O	NP0	B-NP	bond	NNS	t535:P||t541:NMOD||t542:P||t543:NMOD||t545:P	mainVb
+Bonds	t534	29	bond	O	O	O	O	O	O	O	O	NP0	B-NP	bond	NNS	t535:P||t541:NMOD||t545:P	mainVb
 :	t535	29	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
 Shearson	t536	29	Shearson	O	O	O	O	O	O	O	O	NP0	B-NP	shearson	NNP	O	O
 Lehman	t537	29	Lehman	O	O	O	O	O	O	O	O	NP0	I-NP	lehman	NNP	O	O
 Hutton	t538	29	Hutton	O	O	O	O	O	O	O	O	NP0	I-NP	hutton	NNP	t536:NAME||t537:NAME	O
 Treasury	t539	29	Treasury	O	O	O	O	O	O	O	O	NN1	I-NP	treasury	NNP	O	O
 index	t540	29	index	O	O	O	O	O	O	O	O	NN1	I-NP	index	NN	t538:NMOD||t539:NMOD	O
-3406.31	t541	29	3406.31	O	O	O	O	O	O	O	O	CRD	I-NP	3406.31	CD	t540:NMOD	O
+3406.31	t541	29	3406.31	O	O	O	O	O	O	O	O	CRD	I-NP	3406.31	CD	t540:NMOD||t542:P||t543:NMOD	O
 ,	t542	29	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 off	t543	29	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t544:AMOD	O
 19.29	t544	29	19.29	O	O	O	O	O	O	O	O	CRD	B-NP	19.29	CD	O	O
 .	t545	29	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Commodities	t546	30	commodity	O	O	O	O	O	O	O	O	NP0	B-NP	commodity	NNS	t547:P||t552:NMOD||t563:P	mainVb
+Commodities	t546	30	commodity	O	O	O	O	O	O	O	O	NP0	B-NP	commodity	NNS	O	O
 :	t547	30	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
 Dow	t548	30	Dow	O	O	O	O	O	O	O	O	NP0	B-NP	dow	NNP	O	O
 Jones	t549	30	Jones	O	O	O	O	O	O	O	O	NP0	I-NP	jones	NNP	t548:NAME	O
@@ -583,11 +583,11 @@ index	t551	30	index	O	O	O	O	O	O	O	O	NN1	B-NP	index	NN	t549:NMOD||t550:NMOD	O
 129.49	t552	30	129.49	O	O	O	O	O	O	O	O	CRD	I-NP	129.49	CD	t551:NMOD||t553:P||t554:NMOD	O
 ,	t553	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 up	t554	30	up	O	O	O	O	O	O	O	O	AV0	B-ADVP	up	IN	t555:AMOD	O
-0.27	t555	30	0.27	O	O	O	O	O	O	O	O	CRD	B-NP	0.27	CD	t556:P||t559:NMOD	O
+0.27	t555	30	0.27	O	O	O	O	O	O	O	O	CRD	B-NP	0.27	CD	O	O
 ;	t556	30	;	O	O	O	O	O	O	O	O	PUN	O	;	:	O	O
 spot	t557	30	spot	O	O	O	O	O	O	O	O	NN1	B-NP	spot	NN	O	O
 index	t558	30	index	O	O	O	O	O	O	O	O	NN1	I-NP	index	NN	t557:NMOD	O
-130.80	t559	30	130.80	O	O	O	O	O	O	O	O	CRD	I-NP	130.80	CD	t558:NMOD||t560:P||t561:NMOD	O
+130.80	t559	30	130.80	O	O	O	O	O	O	O	O	CRD	I-NP	130.80	CD	t546:NMOD||t547:P||t552:NMOD||t556:P||t558:NMOD||t560:P||t561:NMOD||t563:P	mainVb
 ,	t560	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 off	t561	30	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t562:AMOD	O
 0.24	t562	30	0.24	O	O	O	O	O	O	O	O	CRD	B-NP	0.24	CD	O	O
@@ -598,7 +598,7 @@ Dollar	t564	31	dollar	O	O	O	O	O	O	O	O	NP0	B-NP	dollar	NN	O	O
 141.65	t566	31	141.65	O	O	O	O	O	O	O	O	CRD	B-NP	141.65	CD	O	O
 yen	t567	31	yen	O	O	O	O	O	O	O	O	NN1	I-NP	yen	NN	t566:NMOD||t568:P||t569:NMOD	O
 ,	t568	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-off	t569	31	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t570:PMOD	O
+off	t569	31	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t570:AMOD	O
 0.45	t570	31	0.45	O	O	O	O	O	O	O	O	CRD	B-NP	0.45	CD	O	O
 ;	t571	31	;	O	O	O	O	O	O	O	O	PUN	O	;	:	O	O
 1.8300	t572	31	1.8300	O	O	O	O	O	O	O	O	CRD	B-NP	1.8300	CD	O	O

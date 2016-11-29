@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 General	t1	1	General	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	general	NNP	O	O
 Motors	t2	1	Motors	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	motor	NNPS	t1:NAME||t3:POSTHON	O
@@ -133,7 +133,7 @@ an	t127	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 unwelcome	t128	4	unwelcome	O	O	O	O	O	O	O	O	AJ0	I-NP	unwelcome	JJ	O	O
 12.45	t129	4	12.45	O	O	O	O	O	O	O	O	CRD	I-NP	12.45	CD	O	O
 %	t130	4	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t129:NMOD	O
-stake	t131	4	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t127:NMOD||t128:NMOD||t130:NMOD||t132:LOC	O
+stake	t131	4	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t127:NMOD||t128:NMOD||t130:NMOD||t132:NMOD	O
 in	t132	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t133:PMOD	O
 Jaguar	t133	4	Jaguar	O	O	O	O	O	O	O	O	NP0	B-NP	jaguar	NNP	O	O
 ,	t134	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -188,7 +188,7 @@ Ford	t180	6	Ford	O	O	O	O	O	O	O	O	NP0	B-NP	ford	NNP	t181:COORD	O
 and	t181	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t182:CONJ	O
 GM	t182	6	GM	O	O	O	O	O	O	O	O	NP0	I-NP	gm	NNP	O	O
 ,	t183	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-pushed	t184	6	push	e38	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	push	VBD	t172:SBJ||t173:P||t174:ADV||t183:P||t185:PRT||t189:OBJ||t196:OPRD||t215:P	mainVb
+pushed	t184	6	push	e38	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	push	VBD	t172:SBJ||t173:P||t174:ADV||t183:P||t185:PRT||t189:OBJ||t192:OPRD||t215:P	mainVb
 up	t185	6	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
 Jaguar	t186	6	Jaguar	O	O	O	O	O	O	O	O	NP0	B-NP	jaguar	NNP	t187:SUFFIX	O
 's	t187	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -196,23 +196,23 @@ share	t188	6	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	O	O
 price	t189	6	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	t186:NMOD||t188:NMOD	O
 five	t190	6	five	O	O	O	O	O	O	O	O	CRD	B-NP	five	CD	O	O
 pence	t191	6	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t190:NMOD	O
--LRB-	t192	6	-lrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-lrb-	JJ	O	O
+-LRB-	t192	6	-lrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-lrb-	NN	t191:NMOD||t196:NMOD	O
 eight	t193	6	eight	O	O	O	O	O	O	O	O	CRD	I-NP	eight	CD	O	O
 U.S.	t194	6	U.S.	O	O	O	O	O	O	O	O	AV0	I-NP	u.s.	NNP	O	O
-cents	t195	6	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t191:NMOD||t192:NMOD||t193:NMOD||t194:NMOD	O
--RRB-	t196	6	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	VBD	t195:SBJ||t197:ADV||t205:TMP||t206:LOC||t214:TMP	O
-to	t197	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t199:PMOD	O
+cents	t195	6	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t193:NMOD||t194:NMOD	O
+-RRB-	t196	6	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	VBD	t195:SBJ||t197:ADV||t206:LOC	O
+to	t197	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t205:PMOD	O
 a	t198	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-near-record	t199	6	near-record	O	O	O	O	O	O	O	O	AJ0	I-NP	near-record	NN	t198:NMOD	O
+near-record	t199	6	near-record	O	O	O	O	O	O	O	O	AJ0	I-NP	near-record	NN	O	O
 720	t200	6	720	O	O	O	O	O	O	O	O	CRD	I-NP	720	CD	O	O
 pence	t201	6	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t200:NMOD	O
--LRB-	t202	6	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	NNP	t201:NMOD	O
+-LRB-	t202	6	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	JJ	t199:NMOD||t201:NMOD	O
 $	t203	6	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t204:NMOD	O
 11.60	t204	6	11.60	O	O	O	O	O	O	O	O	CRD	I-NP	11.60	CD	O	O
--RRB-	t205	6	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t202:NMOD||t203:NMOD	O
+-RRB-	t205	6	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t198:NMOD||t202:NMOD||t203:NMOD	O
 in	t206	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t208:PMOD	O
-late	t207	6	late	O	O	O	O	O	O	O	O	AJ0	B-NP	late	RB	O	O
-trading	t208	6	trading	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t207:NMOD||t209:LOC	O
+late	t207	6	late	O	O	O	O	O	O	O	O	AJ0	B-NP	late	JJ	O	O
+trading	t208	6	trading	e39	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t207:NMOD||t209:LOC||t214:TMP	O
 on	t209	6	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t213:PMOD	O
 London	t210	6	London	O	O	O	O	O	O	O	O	NP0	B-NP	london	NNP	t211:SUFFIX	O
 's	t211	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -236,8 +236,8 @@ nearly	t223	7	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	RB	t224:DEP	O
 But	t227	8	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 an	t228	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 all-out	t229	8	all-out	O	O	O	O	O	O	O	O	AJ0	I-NP	all-out	IN	O	O
-bidding	t230	8	bidding	O	O	O	O	O	O	O	O	NN1	I-NP	bidding	NN	t229:AMOD	O
-war	t231	8	war	e2091	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	war	NN	t228:NMOD||t230:NMOD||t232:NMOD||t239:NMOD	O
+bidding	t230	8	bidding	O	O	O	O	O	O	O	O	NN1	I-NP	bidding	NN	O	O
+war	t231	8	war	e2091	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	war	NN	t228:NMOD||t229:NMOD||t230:NMOD||t232:NMOD||t239:NMOD	O
 between	t232	8	between	O	O	O	O	O	O	O	O	PRP	B-PP	between	IN	t238:PMOD	O
 the	t233	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 world	t234	8	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t233:NMOD||t235:SUFFIX	O
@@ -248,7 +248,7 @@ giants	t238	8	giant	O	O	O	O	O	O	O	O	NN2	I-NP	giant	NNS	t234:NMOD||t236:NMOD||t23
 for	t239	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t244:PMOD	O
 Britain	t240	8	Britain	O	O	O	O	O	O	O	O	NP0	B-NP	britain	NNP	t241:SUFFIX	O
 's	t241	8	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-leading	t242	8	lead	O	O	O	O	O	O	O	O	AJ0	I-NP	lead	VBG	O	O
+leading	t242	8	lead	O	O	O	O	O	O	O	O	AJ0	I-NP	lead	JJ	O	O
 luxury-car	t243	8	luxury-car	O	O	O	O	O	O	O	O	NN1	I-NP	luxury-car	NN	O	O
 maker	t244	8	maker	O	O	O	O	O	O	O	O	NN1	I-NP	maker	NN	t240:NMOD||t242:NMOD||t243:NMOD	O
 seems	t245	8	seem	O	O	O	O	O	O	O	O	VVZ	B-VP	seem	VBZ	t227:DEP||t231:SBJ||t246:PRD||t247:P	mainVb
@@ -266,7 +266,7 @@ certain	t255	9	certain	O	O	O	O	O	O	O	O	AJ0	I-NP	certain	JJ	O	O
 level	t256	9	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t254:NMOD||t255:NMOD	O
 ,	t257	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t258	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t259	9	say	e48	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t250:OBJ||t257:P||t258:SBJ||t262:OBJ||t271:LOC||t291:P||t292:DEP	mainVb
+said	t259	9	say	e48	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t250:OBJ||t257:P||t258:SBJ||t262:OBJ||t271:LOC||t280:P||t282:COORD||t291:P||t292:P	mainVb
 David	t260	9	David	O	O	O	O	O	O	O	O	NP0	B-NP	david	NNP	O	O
 N.	t261	9	N.	O	O	O	O	O	O	O	O	NP0	I-NP	n.	NNP	O	O
 McCammon	t262	9	McCammon	O	O	O	O	O	O	O	O	NP0	I-NP	mccammon	NNP	t260:NAME||t261:NAME||t263:P||t267:APPO||t270:P	O
@@ -283,23 +283,23 @@ a	t272	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 news	t273	9	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	O	O
 conference	t274	9	conference	e316	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conference	NN	t272:NMOD||t273:NMOD||t275:TMP||t276:LOC	O
 yesterday	t275	9	yesterday	O	O	O	tmx315	DATE	1989-10-26	O	O	AV0	B-NP	yesterday	NN	O	O
-in	t276	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t277:PMOD	O
-Dearborn	t277	9	Dearborn	O	O	O	O	O	O	O	O	NP0	B-NP	dearborn	NNP	t278:P||t284:APPO	O
+in	t276	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t279:PMOD	O
+Dearborn	t277	9	Dearborn	O	O	O	O	O	O	O	O	NP0	B-NP	dearborn	NNP	O	O
 ,	t278	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Mich.	t279	9	Mich.	O	O	O	O	O	O	O	O	NP0	B-NP	mich.	NNP	O	O
-"	t280	9	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t279:NAME||t282:SUFFIX	O
+Mich.	t279	9	Mich.	O	O	O	O	O	O	O	O	NP0	B-NP	mich.	NNP	t277:NMOD||t278:P	O
+"	t280	9	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	:	O	O
 There	t281	9	there	O	O	O	O	O	O	O	O	EX0	I-NP	there	EX	O	O
-'s	t282	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+'s	t282	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t281:SBJ||t284:PRD	O
 some	t283	9	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
-price	t284	9	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	t280:NMOD||t283:NMOD||t288:NMOD	O
+price	t284	9	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	t283:NMOD||t288:NMOD	O
 at	t285	9	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t286:PMOD	O
 which	t286	9	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 we	t287	9	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 'd	t288	9	would	O	O	O	O	O	O	O	O	VM0	B-VP	'd	MD	t287:SBJ||t289:VC	O
-stop	t289	9	stop	e50	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	stop	VB	t281:SBJ||t285:LOC||t290:OPRD	O
-bidding	t290	9	bidding	e52	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	bidding	NN	O	O
+stop	t289	9	stop	e50	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	stop	VB	t290:OPRD	O
+bidding	t290	9	bidding	e52	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	bidding	VBG	t285:ADV	O
 .	t291	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t292	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t292	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 He	t293	10	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 would	t294	10	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t293:SBJ||t295:ADV||t296:VC||t300:P	mainVb
@@ -346,10 +346,10 @@ Dec.	t331	11	Dec.	O	O	O	tmx325	DATE	1990-12-31	O	O	NP0	B-NP	dec.	NNP	t332:NMOD	O
 1990	t334	11	1990	O	O	O	tmx325	DATE	1990-12-31	O	O	CRD	B-NP	1990	CD	t331:NMOD||t333:P	O
 .	t335	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t336	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	``	O	O
+"	t336	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t337	12	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 really	t338	12	really	O	O	O	O	O	O	O	O	AV0	B-ADVP	really	RB	O	O
-do	t339	12	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t337:SBJ||t338:ADV||t340:ADV||t341:VC	O
+do	t339	12	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t336:DEP||t337:SBJ||t338:ADV||t340:ADV||t341:VC	O
 n't	t340	12	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 see	t341	12	see	e64	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	see	VB	t343:OBJ||t344:OPRD	O
 the	t342	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -368,7 +368,7 @@ next	t353	12	next	O	O	O	tmx327	DURATION	P14M	O	O	ORD	I-NP	next	JJ	O	O
 months	t355	12	month	O	O	O	tmx327	DURATION	P14M	O	O	NN2	I-NP	month	NNS	t352:NMOD||t353:NMOD||t354:NMOD	O
 ,	t356	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t357	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t358	12	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t336:P||t339:OBJ||t356:P||t357:SBJ||t360:OBJ||t383:P	mainVb
+said	t358	12	say	e69	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t339:OBJ||t356:P||t357:SBJ||t360:SBJ||t383:P	mainVb
 Kenneth	t359	12	Kenneth	O	O	O	O	O	O	O	O	NP0	B-NP	kenneth	NNP	O	O
 Warren	t360	12	Warren	O	O	O	O	O	O	O	O	NP0	I-NP	warren	NNP	t359:NAME||t361:P||t364:APPO	O
 ,	t361	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -395,11 +395,11 @@ of	t381	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t380:NMOD||t382:PMOD	O
 Commons	t382	12	Commons	O	O	O	O	O	O	O	O	NP0	B-NP	commons	NNP	O	O
 .	t383	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t384	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBG	t387:OBJ	O
+"	t384	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t385	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 golden	t386	13	golden	O	O	O	O	O	O	O	O	AJ0	I-NP	golden	JJ	O	O
 share	t387	13	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t385:NMOD||t386:NMOD	O
-is	t388	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t384:SBJ||t391:PRD||t392:P||t393:COORD||t399:P||t400:P	mainVb
+is	t388	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t384:P||t387:SBJ||t391:PRD||t392:P||t393:COORD||t399:P||t400:P	mainVb
 a	t389	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 single	t390	13	single	O	O	O	O	O	O	O	O	AJ0	I-NP	single	JJ	O	O
 share	t391	13	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t389:NMOD||t390:NMOD	O
@@ -587,12 +587,12 @@ Co.	t564	20	Co.	O	O	O	O	O	O	O	O	NN1	I-NP	co.	NNP	O	O
 #	t566	20	#	O	O	O	O	O	O	O	O	UNC	I-NP	#	#	t567:DEP||t568:DEP	O
 2.5	t567	20	2.5	O	O	O	O	O	O	O	O	CRD	I-NP	2.5	CD	O	O
 billion	t568	20	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
--LRB-	t569	20	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NNP	O	O
+-LRB-	t569	20	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NN	t566:NMOD	O
 $	t570	20	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t571:DEP||t572:DEP	O
 4	t571	20	4	O	O	O	O	O	O	O	O	CRD	I-NP	4	CD	O	O
 billion	t572	20	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 -RRB-	t573	20	-rrb-	O	O	O	O	O	O	O	O	AJ0	I-NP	-rrb-	NN	O	O
-takeover	t574	20	takeover	e103	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t563:NMOD||t566:NMOD||t569:NMOD||t570:NMOD||t573:NMOD||t575:NMOD||t578:TMP	O
+takeover	t574	20	takeover	e103	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t563:NMOD||t569:NMOD||t570:NMOD||t573:NMOD||t575:NMOD||t578:TMP	O
 of	t575	20	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t577:PMOD	O
 Britoil	t576	20	Britoil	O	O	O	O	O	O	O	O	NP0	B-NP	britoil	NNP	O	O
 PLC	t577	20	PLC	O	O	O	O	O	O	O	O	NP0	I-NP	plc	NNP	t576:NAME	O
@@ -651,9 +651,9 @@ fly	t627	22	fly	e113	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	fly	VB	t6
 to	t628	22	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t629:PMOD	O
 Detroit	t629	22	Detroit	O	O	O	O	O	O	O	O	NP0	B-NP	detroit	NNP	O	O
 and	t630	22	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t631:CONJ	O
-tour	t631	22	tour	e114	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-VP	tour	VB	t633:OBJ||t634:LOC	O
+tour	t631	22	tour	e114	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-VP	tour	VB	t633:OBJ	O
 its	t632	22	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-operations	t633	22	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t632:NMOD	O
+operations	t633	22	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t632:NMOD||t634:LOC	O
 there	t634	22	there	O	O	O	O	O	O	O	O	AV0	B-ADVP	there	RB	O	O
 .	t635	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -734,8 +734,8 @@ can	t706	26	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t708:SBJ||t710:VC	O
 the	t707	26	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 government	t708	26	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t707:NMOD	O
 easily	t709	26	easily	O	O	O	O	O	O	O	O	AV0	B-ADVP	easily	RB	O	O
-back	t710	26	back	O	O	O	O	O	O	O	O	AVP	I-ADVP	back	VBP	t709:MNR||t711:ADV||t719:TMP	O
-down	t711	26	down	O	O	O	O	O	O	O	O	AVP	B-ADVP	down	RP	t712:AMOD	O
+back	t710	26	back	O	O	O	O	O	O	O	O	AVP	I-ADVP	back	VBP	t709:MNR||t711:PRT||t712:ADV||t719:TMP	O
+down	t711	26	down	O	O	O	O	O	O	O	O	AVP	B-ADVP	down	RP	O	O
 on	t712	26	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t714:PMOD	O
 promised	t713	26	promise	O	O	O	O	O	O	O	O	AJ0	B-NP	promise	VBN	O	O
 protection	t714	26	protection	O	O	O	O	O	O	O	O	NN1	I-NP	protection	NN	t713:NMOD||t715:NMOD	O

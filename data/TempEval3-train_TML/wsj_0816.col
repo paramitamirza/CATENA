@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Some	t1	1	some	O	O	O+O+O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 lousy	t2	1	lousy	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	lousy	JJ	O	O
@@ -54,7 +54,7 @@ higher	t48	3	higher	O	O	O	O	O	O	O	O	AJC	I-ADJP	higher	JJR	O	O
 
 The	t50	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 dollar	t51	4	dollar	O	O	O	O	O	O	O	O	NN1	I-NP	dollar	NN	t50:NMOD	O
-rose	t52	4	rise	e13	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t51:SBJ||t53:ADV||t54:ADV||t60:P||t61:COORD||t79:P	mainVb
+rose	t52	4	rise	e13	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t51:SBJ||t53:EXT||t54:ADV||t60:P||t61:COORD||t79:P	mainVb
 modestly	t53	4	modestly	O	O	O	O	O	O	O	O	AV0	B-ADVP	modestly	RB	O	O
 against	t54	4	against	O	O	O	O	O	O	O	O	PRP	B-PP	against	IN	t56:PMOD	O
 the	t55	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -263,9 +263,9 @@ growth	t249	11	growth	e114	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	growth	NN
 and	t251	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
 therefore	t252	11	therefore	O	O	O	O	O	O	O	O	AV0	B-ADVP	therefore	RB	O	O
 more	t253	11	more	O	O	O	O	O	O	O	O	AV0	I-ADVP	more	DT	O	O
-corporate	t254	11	corporate	O	O	O	O	O	O	O	O	AJ0	B-NP	corporate	JJ	O	O
+corporate	t254	11	corporate	O	O	O	O	O	O	O	O	AJ0	B-NP	corporate	JJ	t253:AMOD	O
 earnings	t255	11	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t254:NMOD	O
-disappointments	t256	11	disappointment	e48	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	disappointment	NNS	t250:P||t251:DEP||t252:DEP||t253:NMOD||t255:NMOD||t257:P	O
+disappointments	t256	11	disappointment	e48	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	disappointment	NNS	t250:P||t251:DEP||t252:DEP||t255:NMOD||t257:P	O
 --	t257	11	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
 for	t258	11	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t261:PMOD	O
 the	t259	11	the	O	O	O	tmx116	DATE	1989-Q4	O	O	AT0	B-NP	the	DT	O	O
@@ -273,23 +273,23 @@ fourth	t260	11	fourth	O	O	O	tmx116	DATE	1989-Q4	O	O	ORD	I-NP	fourth	JJ	O	O
 quarter	t261	11	quarter	O	O	O	tmx116	DATE	1989-Q4	O	O	NN1	I-NP	quarter	NN	t259:NMOD||t260:NMOD	O
 .	t262	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t263	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t263	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 There	t264	12	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
 are	t265	12	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t264:SBJ||t270:PRD	O
 a	t266	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-lot	t267	12	lot	O	O	O	O	O	O	O	O	NN1	I-NP	lot	NN	t266:NMOD	O
-more	t268	12	more	O	O	O	O	O	O	O	O	AV0	B-ADJP	more	DT	t267:AMOD	O
+lot	t267	12	lot	O	O	O	O	O	O	O	O	NN1	I-NP	lot	NN	t266:NMOD||t268:NMOD	O
+more	t268	12	more	O	O	O	O	O	O	O	O	AV0	B-ADJP	more	RBR	O	O
 downward	t269	12	downward	O	O	O	O	O	O	O	O	AJ0	I-ADJP	downward	JJ	O	O
-revisions	t270	12	revision	e49	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN2	B-NP	revision	NNS	t268:NMOD||t269:NMOD||t271:NMOD||t274:NMOD	O
+revisions	t270	12	revision	e49	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN2	B-NP	revision	NNS	t267:NMOD||t269:NMOD||t271:NMOD||t274:NMOD	O
 of	t271	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t273:PMOD	O
 earnings	t272	12	earnings	O	O	O	O	O	O	O	O	NN2	B-NP	earnings	NNS	O	O
-forecasts	t273	12	forecast	O	O	O	O	O	O	O	O	NN2	I-NP	forecast	NNS	t263:NMOD||t272:NMOD	O
+forecasts	t273	12	forecast	O	O	O	O	O	O	O	O	NN2	I-NP	forecast	NNS	t272:NMOD	O
 than	t274	12	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t276:PMOD	O
 upward	t275	12	upward	O	O	O	O	O	O	O	O	AJ0	B-NP	upward	JJ	O	O
 revisions	t276	12	revision	e51	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	revision	NNS	t275:NMOD	O
 ,	t277	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t278	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t279	12	say	e52	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t265:OBJ||t277:P||t278:SBJ||t282:SBJ||t291:P	mainVb
+said	t279	12	say	e52	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t263:P||t265:OBJ||t277:P||t278:SBJ||t282:SBJ||t291:P	mainVb
 Abby	t280	12	Abby	O	O	O	O	O	O	O	O	NP0	B-NP	abby	NNP	O	O
 Joseph	t281	12	Joseph	O	O	O	O	O	O	O	O	NP0	I-NP	joseph	NNP	O	O
 Cohen	t282	12	Cohen	O	O	O	O	O	O	O	O	NP0	I-NP	cohen	NNP	t280:NAME||t281:NAME||t283:P||t286:APPO	O
@@ -303,9 +303,9 @@ Burnham	t289	12	Burnham	O	O	O	O	O	O	O	O	NP0	I-NP	burnham	NNP	O	O
 Lambert	t290	12	Lambert	O	O	O	O	O	O	O	O	NP0	I-NP	lambert	NNP	t288:NAME||t289:NAME	O
 .	t291	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t292	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
-People	t293	13	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	t292:NMOD	O
-are	t294	13	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t293:SBJ||t295:VC||t307:P||t308:P	mainVb
+"	t292	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+People	t293	13	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+are	t294	13	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t292:P||t293:SBJ||t295:VC||t307:P||t308:P	mainVb
 questioning	t295	13	question	e53	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	question	VBG	t297:OBJ||t298:ADV	mainVb
 corporate	t296	13	corporate	O	O	O	O	O	O	O	O	AJ0	B-NP	corporate	JJ	O	O
 profits	t297	13	profit	O	O	O	O	O	O	O	O	NN2	I-NP	profits	NNS	t296:NMOD	O
@@ -350,7 +350,7 @@ were	t333	15	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t319:ADV||t331:P||t332:SBJ||t334
 cheered	t334	15	cheer	e60	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	cheer	VBN	t335:LGS	mainVb
 by	t335	15	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t337:PMOD	O
 inflation	t336	15	inflation	O	O	O	O	O	O	O	O	NN1	B-NP	inflation	NN	O	O
-measures	t337	15	measure	O	O	O	O	O	O	O	O	NN2	I-NP	measure	NNS	t336:NMOD||t338:NMOD||t342:NMOD	O
+measures	t337	15	measure	O	O	O	O	O	O	O	O	NN2	I-NP	measure	NNS	t336:NMOD||t338:LOC||t342:NMOD	O
 in	t338	15	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t340:PMOD	O
 the	t339	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 data	t340	15	datum	O	O	O	O	O	O	O	O	NN0	I-NP	data	NNS	t339:NMOD	O
@@ -422,7 +422,7 @@ on	t401	19	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t404:PMOD	O
 the	t402	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Big	t403	19	Big	O	O	O	O	O	O	O	O	AJ0	I-NP	big	NNP	O	O
 Board	t404	19	Board	O	O	O	O	O	O	O	O	NN1	I-NP	board	NNP	t402:NMOD||t403:NAME	O
-outstripped	t405	19	outstrip	e75	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	outstrip	VBD	t400:SBJ||t406:OBJ||t407:EXT||t408:ADV||t410:P	mainVb
+outstripped	t405	19	outstrip	e75	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	outstrip	VBD	t400:SBJ||t406:OBJ||t407:HMOD||t408:ADV||t410:P	mainVb
 gainers	t406	19	gainer	O	O	O	O	O	O	O	O	NN2	B-NP	gainer	NNS	O	O
 1,141	t407	19	1,141	O	O	O	O	O	O	O	O	CRD	I-NP	1,141	NN	O	O
 to	t408	19	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t409:PMOD	O
@@ -456,7 +456,7 @@ was	t429	22	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t425:SBJ||t431:PRD||t432:P	mainVb
 
 The	t433	23	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 dollar	t434	23	dollar	O	O	O	O	O	O	O	O	NN1	I-NP	dollar	NN	t433:NMOD	O
-rose	t435	23	rise	e80	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t434:SBJ||t436:ADV||t437:ADV||t441:P	mainVb
+rose	t435	23	rise	e80	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	rise	VBD	t434:SBJ||t436:EXT||t437:ADV||t441:P	mainVb
 modestly	t436	23	modestly	O	O	O	O	O	O	O	O	AV0	B-ADVP	modestly	RB	O	O
 against	t437	23	against	O	O	O	O	O	O	O	O	PRP	B-PP	against	IN	t440:PMOD	O
 most	t438	23	most	O	O	O	O	O	O	O	O	DT0	B-NP	most	DT	O	O

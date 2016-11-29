@@ -1,7 +1,7 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Sun	t1	1	Sun	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	sun	NNP	O	O
-Microsystems	t2	1	Microsystems	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	microsystems	NNPS	t1:NAME||t3:POSTHON	O
+Microsystems	t2	1	Microsystems	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	microsystems	NNP	t1:NAME||t3:POSTHON	O
 Inc.	t3	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 ,	t4	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 snapping	t5	1	snap	e1	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	snap	VBG	t6:ADV||t7:ADV||t9:TMP	O
@@ -20,8 +20,8 @@ firm	t17	1	firm	O	O	O	O	O	O	O	O	NN1	I-NP	firm	NN	t15:NMOD||t16:NMOD	O
 ,	t18	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 said	t19	1	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t4:P||t5:ADV||t18:P||t21:OBJ||t37:P	mainVb
 it	t20	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-earned	t21	1	earn	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t20:SBJ||t22:OBJ||t32:TMP	O
-$	t22	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t23:DEP||t24:DEP||t25:P||t26:COORD||t31:P	O
+earned	t21	1	earn	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t20:SBJ||t22:OBJ||t31:P||t32:TMP	O
+$	t22	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t23:DEP||t24:DEP||t25:P||t26:COORD	O
 5.2	t23	1	5.2	O	O	O	O	O	O	O	O	CRD	I-NP	5.2	CD	O	O
 million	t24	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t25	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -188,8 +188,8 @@ he	t179	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 said	t180	7	say	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t165:OBJ||t178:P||t179:SBJ||t181:P	mainVb
 .	t181	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-More	t182	8	more	O	O	O	O	O	O	O	O	DT0	B-NP	more	RBR	t183:AMOD	O
-than	t183	8	than	O	O	O	O	O	O	O	O	CJS	I-NP	than	IN	t184:PMOD	O
+More	t182	8	more	O	O	O	O	O	O	O	O	DT0	B-NP	more	RBR	O	O
+than	t183	8	than	O	O	O	O	O	O	O	O	CJS	I-NP	than	IN	t182:DEP||t184:PMOD	O
 two-thirds	t184	8	two-third	O	O	O	O	O	O	O	O	CRD	I-NP	two-third	NNS	t185:NMOD	O
 of	t185	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t187:PMOD	O
 the	t186	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -198,7 +198,7 @@ shipped	t188	8	ship	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVD	B-VP	ship	VBN	O	O
 ,	t189	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 meanwhile	t190	8	meanwhile	O	O	O	O	O	O	O	O	AV0	B-ADVP	meanwhile	RB	O	O
 ,	t191	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-were	t192	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t182:ADV||t189:P||t190:TMP||t191:P||t193:PRD||t197:P	mainVb
+were	t192	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t183:ADV||t189:P||t190:TMP||t191:P||t193:PRD||t197:P	mainVb
 products	t193	8	product	O	O	O	O	O	O	O	O	NN2	B-NP	product	NNS	t194:APPO	O
 introduced	t194	8	introduce	e26	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	introduce	VBN	t195:TMP	O
 in	t195	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t196:PMOD	O
@@ -208,7 +208,7 @@ April	t196	8	April	O	O	O	tmx87	DATE	1989-04	O	O	NP0	B-NP	april	NNP	O	O
 But	t198	9	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 problems	t199	9	problem	O	O	O	O	O	O	O	O	NN2	B-NP	problem	NNS	t200:LOC	O
 in	t200	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t201:PMOD	O
-manufacturing	t201	9	manufacturing	O	O	O	O	O	O	O	O	NN1	B-NP	manufacturing	NN	t202:P||t203:COORD	O
+manufacturing	t201	9	manufacturing	O	O	O	O	O	O	O	O	NN1	B-NP	manufacture	NN	t202:P||t203:COORD	O
 ,	t202	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 forecasting	t203	9	forecasting	O	O	O	O	O	O	O	O	VVG	B-VP	forecast	VBG	t204:OBJ||t205:COORD	O
 demand	t204	9	demand	O	O	O	O	O	O	O	O	NN1	B-NP	demand	NN	O	O
@@ -265,7 +265,7 @@ June	t251	10	June	O	O	O	tmx95	DATE	1989-06-30	O	O	NP0	B-NP	june	NNP	O	O
 
 Mr.	t254	11	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 McNealy	t255	11	McNealy	O	O	O	O	O	O	O	O	NP0	I-NP	mcnealy	NNP	t254:TITLE	O
-said	t256	11	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t255:SBJ||t267:OBJ||t275:P||t276:COORD||t289:P	mainVb
+said	t256	11	say	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t255:SBJ||t267:OBJ||t289:P	mainVb
 the	t257	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issues	t258	11	issue	O	O	O	O	O	O	O	O	NN2	I-NP	issue	NNS	t257:NMOD||t260:NMOD	O
 that	t259	11	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
@@ -276,11 +276,11 @@ performance	t263	11	performance	O	O	O	O	O	O	O	O	NN1	I-NP	performance	NN	t261:NMO
 earlier	t264	11	earlier	O	O	O	O	O	O	O	O	AV0	B-NP	earlier	RBR	O	O
 this	t265	11	this	O	O	O	tmx96	DATE	1989	O	O	DT0	I-NP	this	DT	O	O
 year	t266	11	year	O	O	O	tmx96	DATE	1989	O	O	NN1	I-NP	year	NN	t264:NMOD||t265:NMOD	O
-are	t267	11	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t258:SBJ||t268:TMP||t269:VC	O
+are	t267	11	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t258:SBJ||t268:TMP||t269:PRD	O
 now	t268	11	now	O	O	O	O	O	O	O	O	AV0	B-ADVP	now	RB	O	O
-"	t269	11	"	O	O	O	O	O	O	O	O	PUQ	I-ADVP	"	VBN	t270:ADV||t271:OBJ||t272:ADV	O
+"	t269	11	"	O	O	O	O	O	O	O	O	PUQ	I-ADVP	"	VBP	t270:ADV||t271:SBJ||t272:LOC||t275:P||t276:COORD	O
 largely	t270	11	largely	O	O	O	O	O	O	O	O	AV0	I-ADVP	largely	RB	O	O
-"	t271	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t271	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 behind	t272	11	behind	O	O	O	O	O	O	O	O	PRP	B-PP	behind	IN	t274:PMOD	O
 the	t273	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 firm	t274	11	firm	O	O	O	O	O	O	O	O	NN1	I-NP	firm	NN	t273:NMOD	O

@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	LS	O	O
 
 CMS	t1	1	CMS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cm	NNP	O	O
 ENERGY	t2	1	ENERGY	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	energy	NNP	t1:NAME||t3:POSTHON	O
@@ -18,13 +18,13 @@ stock	t15	1	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t14:NMOD	O
 dividend	t16	1	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t13:NMOD||t15:NMOD	O
 be	t17	1	be	O	O	O	O	O	O	O	O	VBI	B-VP	be	VB	t16:SBJ||t18:VC	O
 reinstated	t18	1	reinstate	e5	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	reinstate	VBN	t19:ADV||t27:TMP	O
-at	t19	1	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t23:PMOD	O
+at	t19	1	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t24:PMOD	O
 a	t20	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t21	1	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	CD	O	O
+"	t21	1	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	O	O
 modest	t22	1	modest	O	O	O	O	O	O	O	O	AJ0	I-NP	modest	JJ	O	O
-level	t23	1	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t20:NMOD||t21:NMOD||t22:NMOD	O
-"	t24	1	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	WDT	O	O
-later	t25	1	later	O	O	O	tmx77	DATE	1989-11-01	O	O	AV0	B-ADVP	later	RB	t24:AMOD	O
+level	t23	1	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t21:NMOD||t22:NMOD	O
+"	t24	1	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t20:NMOD||t23:NMOD	O
+later	t25	1	later	O	O	O	tmx77	DATE	1989-11-01	O	O	AV0	B-ADVP	later	RB	O	O
 this	t26	1	this	O	O	O	tmx77	DATE	1989-11-01	O	O	DT0	B-NP	this	DT	O	O
 year	t27	1	year	O	O	O	tmx77	DATE	1989-11-01	O	O	NN1	I-NP	year	NN	t25:NMOD||t26:NMOD	O
 .	t28	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -61,10 +61,10 @@ addition	t56	3	addition	O	O	O	O	O	O	O	O	NN1	B-NP	addition	NN	O	O
 ,	t57	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 CMS	t58	3	CMS	O	O	O	O	O	O	O	O	NP0	B-NP	cm	NNP	O	O
 reported	t59	3	report	e10	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t55:ADV||t57:P||t58:SBJ||t61:OBJ||t88:P	mainVb
-third-quarter	t60	3	third-quarter	O	O	O	tmx15	DATE	1989-Q3	O	O	AJC	B-NP	third-quarter	NN	O	O
-net	t61	3	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	NN	t60:NMOD||t62:NMOD||t73:NMOD	O
+third-quarter	t60	3	third-quarter	O	O	O	tmx15	DATE	1989-Q3	O	O	AJC	B-NP	third-quarter	JJ	O	O
+net	t61	3	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	NN	t60:NMOD||t62:NMOD	O
 of	t62	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t63:PMOD	O
-$	t63	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t64:DEP||t65:DEP||t66:P||t67:COORD||t72:P	O
+$	t63	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t64:DEP||t65:DEP||t66:P||t67:COORD||t72:P||t73:NMOD	O
 68.2	t64	3	68.2	O	O	O	O	O	O	O	O	CRD	I-NP	68.2	CD	O	O
 million	t65	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t66	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

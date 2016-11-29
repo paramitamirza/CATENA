@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Jayark	t1	1	Jayark	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	jayark	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -41,10 +41,10 @@ Friday	t37	2	Friday	O	O	O	tmx32	DATE	1989-10-27	O	O	NP0	B-NP	friday	NNP	O	O
 ,	t38	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Jayark	t39	2	Jayark	O	O	O	O	O	O	O	O	NP0	B-NP	jayark	NNP	O	O
 was	t40	2	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t34:LOC||t37:TMP||t38:P||t39:SBJ||t41:VC||t50:P	mainVb
-quoted	t41	2	quote	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	quote	VBN	t42:ADV	mainVb
+quoted	t41	2	quote	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	quote	VBN	t42:ADV||t46:P||t47:ADV	mainVb
 at	t42	2	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t44:PMOD	O
 87.5	t43	2	87.5	O	O	O	O	O	O	O	O	CRD	B-NP	87.5	CD	O	O
-cents	t44	2	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t43:NMOD||t45:APPO||t46:P||t47:NMOD	O
+cents	t44	2	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t43:NMOD||t45:APPO	O
 bid	t45	2	bid	O	O	O	O	O	O	O	O	VVB	B-VP	bid	NN	O	O
 ,	t46	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 down	t47	2	down	O	O	O	O	O	O	O	O	AVP	B-ADVP	down	IN	t49:AMOD	O
@@ -102,9 +102,9 @@ of	t95	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t96:PMOD	O
 Jayark	t96	5	Jayark	O	O	O	O	O	O	O	O	NP0	B-NP	jayark	NNP	O	O
 ,	t97	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 holds	t98	5	hold	O	O	O	O	O	O	O	O	VVZ	B-VP	hold	VBZ	t88:SBJ||t101:OBJ	O
-about	t99	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
-40	t100	5	40	O	O	O	O	O	O	O	O	CRD	I-NP	40	CD	t99:DEP	O
-%	t101	5	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t100:NMOD||t102:NMOD	O
+about	t99	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t100:DEP	O
+40	t100	5	40	O	O	O	O	O	O	O	O	CRD	I-NP	40	CD	O	O
+%	t101	5	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t99:NMOD||t102:NMOD	O
 of	t102	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t103:PMOD	O
 Kofcoh	t103	5	Kofcoh	O	O	O	O	O	O	O	O	NP0	B-NP	kofcoh	NNP	O	O
 ,	t104	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -112,18 +112,18 @@ Jayark	t105	5	Jayark	O	O	O	O	O	O	O	O	NP0	B-NP	jayark	NNP	O	O
 said	t106	5	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t98:OBJ||t104:P||t105:SBJ||t107:P	mainVb
 .	t107	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Jayark	t108	6	Jayark	O	O	O	O	O	O	O	O	NP0	B-NP	jayark	NNP	t109:P||t111:COORD	O
+Jayark	t108	6	Jayark	O	O	O	O	O	O	O	O	NP0	B-NP	jayark	NNP	O	O
 ,	t109	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 New	t110	6	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
-York	t111	6	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t110:NAME||t112:P||t113:COORD	O
-,	t112	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-distributes	t113	6	distribute	O	O	O	O	O	O	O	O	NN2	B-NP	distribute	NNS	t114:COORD	O
+York	t111	6	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t110:NAME	O
+,	t112	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t108:NMOD||t109:P||t111:LOC	O
+distributes	t113	6	distribute	O	O	O	O	O	O	O	O	NN2	B-NP	distribute	VBZ	t112:SBJ||t114:COORD||t117:OBJ||t124:P	mainVb
 and	t114	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t115:CONJ	O
-rents	t115	6	rent	O	O	O	O	O	O	O	O	NN2	I-NP	rent	NNS	t117:OBJ||t118:COORD	O
+rents	t115	6	rent	O	O	O	O	O	O	O	O	NN2	I-NP	rent	VBZ	t118:COORD	O
 audio-visual	t116	6	audio-visual	O	O	O	O	O	O	O	O	AJ0	I-NP	audio-visual	JJ	O	O
 equipment	t117	6	equipment	O	O	O	O	O	O	O	O	NN1	I-NP	equipment	NN	t116:NMOD	O
-and	t118	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	O	O
-prints	t119	6	print	O	O	O	O	O	O	O	O	NN2	I-NP	print	VBZ	t108:SBJ||t121:OBJ||t122:BNF||t124:P	mainVb
+and	t118	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t119:CONJ	O
+prints	t119	6	print	O	O	O	O	O	O	O	O	NN2	I-NP	print	VBZ	t121:OBJ||t122:BNF	O
 promotional	t120	6	promotional	O	O	O	O	O	O	O	O	AJ0	I-NP	promotional	JJ	O	O
 ads	t121	6	ad	O	O	O	O	O	O	O	O	NN2	I-NP	ad	NNS	t120:NMOD	O
 for	t122	6	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t123:PMOD	O

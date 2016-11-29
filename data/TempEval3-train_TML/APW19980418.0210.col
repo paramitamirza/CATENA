@@ -1,13 +1,13 @@
-DCT_1998-04-18T06:07:00	O	O	O	O	O	O	tmx0	TIME	1998-04-18T06:07:00	O	O	NP0	B-NP	dct_1998-04-18t06:07:00	NN	O	O
+DCT_1998-04-18T06:07:00	O	O	O	O	O	O	tmx0	TIME	1998-04-18T06:07:00	O	O	NP0	B-NP	dct_1998-04-18t06:07:00	VBG	O	O
 
-BUDAPEST	t1	1	BUDAPEST	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	budapest	NNP	t2:P||t5:COORD	O
+BUDAPEST	t1	1	BUDAPEST	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	budapest	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Hungary	t3	1	Hungary	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hungary	NNP	O	O
 -LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t3:NAME||t4:NAME||t8:APPO	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
 -RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
 _	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	O	O
-Tired	t8	1	tired	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	tired	NNP	t6:NAME||t7:NAME||t9:NMOD	O
+Tired	t8	1	tired	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	tired	NNP	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t7:NAME||t9:NMOD	O
 of	t9	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t10:PMOD	O
 being	t10	1	be	O	O	O+O+O	O	O	O	O	O	VBG	B-VP	be	VBG	t11:VC	O
 sidelined	t11	1	sideline	O	O	O+O+O	O	O	O	O	O	VVN	I-VP	sideline	VBN	O	O
@@ -16,7 +16,7 @@ Hungarian	t13	1	hungarian	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	hungarian	JJ	O	O
 astronaut	t14	1	astronaut	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	astronaut	NN	t13:NMOD||t16:APPO	O
 Bertalan	t15	1	Bertalan	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	bertalan	NNP	O	O
 Farkas	t16	1	Farkas	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	farkas	NNP	t15:NAME	O
-is	t17	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:LOC||t12:P||t14:SBJ||t18:VC	O
+is	t17	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:DEP||t2:P||t8:SBJ||t12:P||t14:SBJ||t18:VC	O
 leaving	t18	1	leave	e2	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	leave	VBG	t19:ADV	O
 for	t19	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t23:SUB	O
 the	t20	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -33,10 +33,10 @@ said	t30	1	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t17:OBJ||t2
 Saturday	t31	1	Saturday	O	O	O	tmx31	DATE	1998-04-18	O	O	NP0	B-NP	saturday	NNP	O	O
 .	t32	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t33	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t34:APPO	O
-Being	t34	2	be	O	O	O	O	O	O	O	O	NN1	B-NP	being	VBG	t35:OBJ	O
+"	t33	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+Being	t34	2	be	O	O	O	O	O	O	O	O	NN1	B-NP	being	VBG	t33:DEP||t36:OBJ	O
 48	t35	2	48	O	O	O	O	O	O	O	O	CRD	I-NP	48	CD	O	O
-is	t36	2	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t33:SBJ||t38:PRD	O
+is	t36	2	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t35:SBJ||t38:PRD	O
 too	t37	2	too	O	O	O	O	O	O	O	O	AV0	B-ADJP	too	RB	O	O
 early	t38	2	early	O	O	O	O	O	O	O	O	AJ0	I-ADJP	early	JJ	t37:AMOD||t39:AMOD	O
 to	t39	2	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t40:IM	O
@@ -45,9 +45,9 @@ retired	t41	2	retire	O	O	O	O	O	O	O	O	VVN	I-VP	retire	VBN	O	O
 ,	t42	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t43	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	PDT	O	O
 a	t44	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-fit-looking	t45	2	fit-looking	O	O	O	O	O	O	O	O	AJ0	I-NP	fit-looking	NN	t43:NMOD||t44:NMOD	O
-Farkas	t46	2	Farkas	O	O	O	O	O	O	O	O	NP0	I-NP	farkas	NNPS	t45:NMOD	O
-said	t47	2	say	e7	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t36:OBJ||t42:P||t46:SBJ||t48:LOC||t55:P	mainVb
+fit-looking	t45	2	fit-looking	O	O	O	O	O	O	O	O	AJ0	I-NP	fit-looking	NN	t43:NMOD||t44:NMOD||t46:APPO	O
+Farkas	t46	2	Farkas	O	O	O	O	O	O	O	O	NP0	I-NP	farkas	NNP	O	O
+said	t47	2	say	e7	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t34:ADV||t42:P||t45:SBJ||t48:LOC||t55:P	mainVb
 on	t48	2	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t54:PMOD	O
 state	t49	2	state	O	O	O	O	O	O	O	O	NN1	B-NP	state	NN	O	O
 TV	t50	2	tv	O	O	O	O	O	O	O	O	NN1	I-NP	tv	NN	t49:NMOD||t51:SUFFIX	O
@@ -76,8 +76,8 @@ Orion	t70	3	Orion	O	O	O	O	O	O	O	O	NP0	B-NP	orion	NNP	O	O
 ,	t72	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 manufacturing	t73	3	manufacture	O	O	O	O	O	O	O	O	NN1	B-NP	manufacture	VBG	t76:OBJ	O
 space-travel	t74	3	space-travel	O	O	O	O	O	O	O	O	NN1	I-NP	space-travel	NN	O	O
-related	t75	3	related	O	O	O	O	O	O	O	O	VVD	B-VP	relate	VBN	t74:AMOD	O
-technology	t76	3	technology	O	O	O	O	O	O	O	O	NN1	B-NP	technology	NN	t75:NMOD	O
+related	t75	3	related	O	O	O	O	O	O	O	O	VVD	B-VP	relate	VBN	O	O
+technology	t76	3	technology	O	O	O	O	O	O	O	O	NN1	B-NP	technology	NN	t74:NMOD||t75:NMOD	O
 .	t77	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Farkas	t78	4	Farkas	O	O	O	O	O	O	O	O	NP0	B-NP	farkas	NNP	O	O
@@ -163,25 +163,25 @@ October	t154	7	October	O	O	O	tmx35	DATE	1984-10	O	O	NP0	B-NP	october	NNP	O	O
 1984	t155	7	1984	O	O	O	tmx35	DATE	1984-10	O	O	CRD	I-NP	1984	CD	t154:NMOD	O
 and	t156	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t158:CONJ	O
 later	t157	7	later	O	O	O	O	O	O	O	O	AV0	B-VP	later	RB	O	O
-served	t158	7	serve	e15	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	serve	VBD	t157:TMP||t159:ADV	O
+served	t158	7	serve	e15	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	serve	VBD	t157:TMP||t159:ADV||t165:ADV	O
 as	t159	7	as	O	O	O	O	O	O	O	O	AV0	B-NP	as	IN	t161:PMOD	O
 assistant	t160	7	assistant	O	O	O	O	O	O	O	O	AJ0	I-NP	assistant	NN	O	O
 administrator	t161	7	administrator	O	O	O	O	O	O	O	O	NN1	I-NP	administrator	NN	t160:NMOD||t162:NMOD	O
 for	t162	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t164:PMOD	O
 congressional	t163	7	congressional	O	O	O	O	O	O	O	O	AJ0	B-NP	congressional	JJ	O	O
-relations	t164	7	relation	O	O	O	O	O	O	O	O	NN2	I-NP	relations	NNS	t163:NMOD||t165:NMOD	O
+relations	t164	7	relation	O	O	O	O	O	O	O	O	NN2	I-NP	relations	NNS	t163:NMOD	O
 for	t165	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t166:PMOD	O
 NASA	t166	7	NASA	O	O	O	O	O	O	O	O	NP0	B-NP	nasa	NNP	O	O
 .	t167	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Farkas	t168	8	Farkas	O	O	O	O	O	O	O	O	NP0	B-NP	farkas	NNS	O	O
-expressed	t169	8	express	e16	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	express	VBD	t168:SBJ||t171:OBJ||t176:LOC||t195:P	mainVb
+expressed	t169	8	express	e16	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	express	VBD	t168:SBJ||t171:OBJ||t175:OPRD||t195:P	mainVb
 the	t170	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-hope	t171	8	hope	O	O	O	O	O	O	O	O	NN1	I-NP	hope	NN	t170:NMOD||t175:NMOD	O
+hope	t171	8	hope	O	O	O	O	O	O	O	O	NN1	I-NP	hope	NN	t170:NMOD	O
 he	t172	8	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 one	t173	8	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 day	t174	8	day	O	O	O	O	O	O	O	O	NN1	I-NP	day	NN	t173:NMOD	O
-follow	t175	8	follow	e17	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	NN1	I-NP	follow	NN	t172:SBJ||t174:NMOD	O
+follow	t175	8	follow	e17	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	NN1	I-NP	follow	NN	t172:SBJ||t174:NMOD||t176:LOC	O
 in	t176	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t178:PMOD	O
 the	t177	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 footsteps	t178	8	footstep	O	O	O	O	O	O	O	O	NN2	I-NP	footstep	NNS	t177:NMOD||t179:NMOD	O
@@ -260,7 +260,7 @@ and	t248	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t249:CONJ	O
 retired	t249	10	retire	e27	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	retire	VBD	O	O
 .	t250	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
--LRB-	t251	11	-lrb-	O	O	O	O	O	O	O	O	NP0	B-NP	-lrb-	NN	O	O
+-LRB-	t251	11	-lrb-	O	O	O	O	O	O	O	O	NP0	B-NP	-lrb-	JJ	O	O
 ab/dc	t252	11	ab/dc	O	O	O	O	O	O	O	O	NP0	I-NP	ab/dc	NN	t251:NMOD	O
 -RRB-	t253	11	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NN	t252:NMOD	mainVb
 

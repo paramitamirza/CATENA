@@ -1,11 +1,11 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 London	t1	1	London	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	london	NNP	O	O
 share	t2	1	share	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	share	NN	O	O
 prices	t3	1	price	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	price	NNS	t1:NMOD||t2:NMOD	O
-closed	t4	1	close	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	close	VBD	t3:SBJ||t6:DEP||t7:TMP||t8:LOC||t11:TMP||t33:P	mainVb
-sharply	t5	1	sharply	O	O	O	O	O	O	O	O	AV0	B-ADJP	sharply	RB	O	O
-lower	t6	1	lower	O	O	O	O	O	O	O	O	AJC	I-ADJP	low	JJR	t5:AMOD	O
+closed	t4	1	close	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	close	VBD	t3:SBJ||t5:ADV||t7:TMP||t8:LOC||t11:TMP||t33:P	mainVb
+sharply	t5	1	sharply	O	O	O	O	O	O	O	O	AV0	B-ADJP	sharply	RB	t6:AMOD	O
+lower	t6	1	lower	O	O	O	O	O	O	O	O	AJC	I-ADJP	low	JJR	O	O
 Friday	t7	1	Friday	O	O	O	tmx199	DATE	1989-10-27	O	O	NP0	B-ADJP	friday	NNP	O	O
 in	t8	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t10:PMOD	O
 active	t9	1	active	O	O	O	O	O	O	O	O	AJ0	B-NP	active	JJ	O	O
@@ -134,7 +134,7 @@ from	t127	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t130:PMOD	O
 the	t128	5	the	O	O	O	tmx215	DATE	1989-10-20	O	O	AT0	B-NP	the	DT	O	O
 previous	t129	5	previous	O	O	O	tmx215	DATE	1989-10-20	O	O	AJ0	I-NP	previous	JJ	O	O
 Friday	t130	5	Friday	O	O	O	tmx215	DATE	1989-10-20	O	O	NP0	I-NP	friday	NNP	t128:NMOD||t129:NMOD	O
-and	t131	5	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t133:EXT-GAP||t134:DIR-GAP	O
+and	t131	5	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t133:CONJ||t134:DIR-GAP	O
 6.8	t132	5	6.8	O	O	O	O	O	O	O	O	CRD	I-NP	6.8	CD	O	O
 %	t133	5	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t132:NMOD	O
 from	t134	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t136:PMOD	O
@@ -233,10 +233,10 @@ on	t222	9	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t225:PMOD	O
 the	t223	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 top-tier	t224	9	top-tier	O	O	O	O	O	O	O	O	AJC	I-NP	top-ty	NN	O	O
 stocks	t225	9	stock	O	O	O	O	O	O	O	O	NN2	I-NP	stocks	NNS	t223:NMOD||t224:NMOD	O
-telegraphed	t226	9	telegraph	e45	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	telegraph	VBD	t221:SBJ||t227:DEP||t230:COORD	O
-active	t227	9	active	O	O	O	O	O	O	O	O	AJ0	B-ADJP	active	JJ	t228:LOC||t229:NMOD	O
-overseas	t228	9	overseas	O	O	O	O	O	O	O	O	AJ0	B-NP	overseas	RB	O	O
-selling	t229	9	selling	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	selling	VBG	O	O
+telegraphed	t226	9	telegraph	e45	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	telegraph	VBD	t221:SBJ||t229:OBJ||t230:COORD	O
+active	t227	9	active	O	O	O	O	O	O	O	O	AJ0	B-ADJP	active	JJ	O	O
+overseas	t228	9	overseas	O	O	O	O	O	O	O	O	AJ0	B-NP	overseas	JJ	O	O
+selling	t229	9	selling	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	selling	NN	t227:NMOD||t228:NMOD	O
 and	t230	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t231:CONJ	O
 showed	t231	9	show	e47	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	show	VBD	t234:OBJ	O
 the	t232	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -327,12 +327,12 @@ may	t314	11	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t313:SBJ||t315:VC||t318:COORD	O
 be	t315	11	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t316:PRD	O
 in	t316	11	in	e1353	STATE	NONE+NONE+POS	O	O	O	O	O	PRP	B-PP	in	IN	t317:PMOD	O
 turmoil	t317	11	turmoil	O	O	O	O	O	O	O	O	NN1	B-NP	turmoil	NN	O	O
-and	t318	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t323:CONJ	O
+and	t318	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t322:GAP-SBJ||t323:GAP-PRD	O
 Britain	t319	11	Britain	O	O	O	O	O	O	O	O	NP0	B-NP	britain	NNP	t320:SUFFIX	O
 's	t320	11	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 Labor	t321	11	Labor	O	O	O	O	O	O	O	O	NN1	I-NP	labor	NNP	O	O
 Party	t322	11	Party	O	O	O	O	O	O	O	O	NN1	I-NP	party	NNP	t319:NMOD||t321:NAME	O
-positioned	t323	11	position	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	position	VBD	t322:SBJ||t324:OPRD	O
+positioned	t323	11	position	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	position	VBD	t324:OPRD	O
 to	t324	11	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t325:IM	O
 regain	t325	11	regain	e63	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	regain	VB	t326:OBJ||t330:COORD	O
 control	t326	11	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	t327:NMOD	O
@@ -355,13 +355,13 @@ a	t341	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t342	12	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t341:NMOD	O
 to	t343	12	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t344:IM	O
 close	t344	12	close	e70	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	close	VB	t345:ADV	O
-at	t345	12	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t347:PMOD	O
+at	t345	12	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t351:PMOD	O
 185	t346	12	185	O	O	O	O	O	O	O	O	CRD	B-NP	185	CD	O	O
-pence	t347	12	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t346:NMOD||t351:APPO	O
--LRB-	t348	12	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	NNP	O	O
+pence	t347	12	pence	O	O	O	O	O	O	O	O	NN0	I-NP	penny	NN	t346:NMOD	O
+-LRB-	t348	12	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	JJ	t347:NMOD	O
 $	t349	12	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t350:NMOD	O
 2.90	t350	12	2.90	O	O	O	O	O	O	O	O	CRD	I-NP	2.90	CD	O	O
--RRB-	t351	12	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t348:NAME||t349:NMOD	O
+-RRB-	t351	12	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t348:NMOD||t349:NMOD	O
 .	t352	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Other	t353	13	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
@@ -496,7 +496,7 @@ to	t475	18	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t476:PMOD	O
 10.86	t477	18	10.86	O	O	O	O	O	O	O	O	CRD	B-NP	10.86	CD	O	O
 ,	t478	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Hanson	t479	18	Hanson	O	O	O	O	O	O	O	O	NP0	B-NP	hanson	NNP	O	O
-skidded	t480	18	skid	e92	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	skid	VBD	t479:SBJ||t481:EXT||t482:DIR||t484:P||t485:COORD	O
+skidded	t480	18	skid	e92	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	skid	VBD	t479:SBJ||t481:EXT||t482:ADV||t484:P||t485:COORD	O
 9.5	t481	18	9.5	O	O	O	O	O	O	O	O	CRD	B-NP	9.5	CD	O	O
 to	t482	18	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t483:PMOD	O
 200.5	t483	18	200.5	O	O	O	O	O	O	O	O	CRD	B-NP	200.5	CD	O	O
@@ -514,10 +514,10 @@ In	t493	19	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t494:PMOD	O
 Tokyo	t494	19	Tokyo	O	O	O	O	O	O	O	O	NP0	B-NP	tokyo	NNP	O	O
 ,	t495	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 stocks	t496	19	stock	O	O	O	O	O	O	O	O	NN2	B-NP	stocks	NNS	O	O
-closed	t497	19	close	e94	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	close	VBD	t493:LOC||t495:P||t496:SBJ||t498:DEP||t503:LOC||t506:P	mainVb
+closed	t497	19	close	e94	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	close	VBD	t493:LOC||t495:P||t496:SBJ||t498:ADV||t503:LOC||t506:P	mainVb
 lower	t498	19	lower	O	O	O	O	O	O	O	O	AJC	B-ADVP	low	JJR	t499:COORD	O
 but	t499	19	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t500:CONJ	O
-above	t500	19	above	O	O	O	O	O	O	O	O	PRP	B-PP	above	IN	t502:PMOD	O
+above	t500	19	above	O	O	O	O	O	O	O	O	PRP	B-PP	above	IN	t502:AMOD	O
 intraday	t501	19	intraday	O	O	O	O	O	O	O	O	NN1	B-NP	intraday	NN	O	O
 lows	t502	19	low	O	O	O	O	O	O	O	O	NN2	I-NP	low	NNS	t501:NMOD	O
 in	t503	19	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t505:PMOD	O
@@ -532,7 +532,7 @@ was	t510	20	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t509:SBJ||t511:VC||t523:COORD||t5
 pressured	t511	20	pressure	e98	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	pressure	VBN	t512:ADV||t513:MNR	mainVb
 down	t512	20	down	O	O	O	O	O	O	O	O	AVP	B-PRT	down	RB	O	O
 by	t513	20	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t514:PMOD	O
-profit-taking	t514	20	profit-taking	e265	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	profit-take	VBG	t515:VC	O
+profit-taking	t514	20	profit-taking	e265	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	profit-taking	VBG	t515:APPO	O
 triggered	t515	20	trigger	e99	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	I-VP	trigger	VBN	t516:LGS	O
 by	t516	20	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t518:PMOD	O
 sharp	t517	20	sharp	O	O	O	O	O	O	O	O	AJ0	B-NP	sharp	JJ	O	O
@@ -550,7 +550,7 @@ to	t527	20	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t528:PMOD	O
 .	t529	20	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 In	t530	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t532:PMOD	O
-early	t531	21	early	O	O	O	O	O	O	O	O	AJ0	B-NP	early	RB	O	O
+early	t531	21	early	O	O	O	O	O	O	O	O	AJ0	B-NP	early	JJ	O	O
 trading	t532	21	trading	e103	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t531:NMOD	O
 in	t533	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t534:PMOD	O
 Tokyo	t534	21	Tokyo	O	O	O	O	O	O	O	O	NP0	B-NP	tokyo	NNP	O	O
@@ -696,16 +696,16 @@ abnormal	t667	27	abnormal	O	O	O	O	O	O	O	O	AJ0	I-NP	abnormal	JJ	t666:AMOD	O
 fever	t668	27	fever	O	O	O	O	O	O	O	O	NN1	I-NP	fever	NN	O	O
 "	t669	27	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t664:NMOD||t667:NMOD||t668:NMOD||t670:LOC	O
 in	t670	27	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t671:PMOD	O
-buying	t671	27	buy	e132	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	buy	VBG	t680:OBJ	O
+buying	t671	27	buy	e132	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	buy	VBG	t673:OBJ	O
 real	t672	27	real	O	O	O	O	O	O	O	O	AJ0	B-NP	real	JJ	O	O
 estate	t673	27	estate	O	O	O	O	O	O	O	O	NN1	I-NP	estate	NN	t672:NMOD||t674:P||t675:COORD	O
 ,	t674	27	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 shipbuilding	t675	27	shipbuilding	O	O	O	O	O	O	O	O	VVG	B-VP	shipbuilding	NN	t676:P||t677:COORD	O
 ,	t676	27	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 steel	t677	27	steel	O	O	O	O	O	O	O	O	NN1	B-NP	steel	NN	t678:COORD	O
-and	t678	27	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t679:CONJ	O
+and	t678	27	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t680:CONJ	O
 construction	t679	27	construction	O	O	O	O	O	O	O	O	NN1	I-NP	construction	NN	O	O
-shares	t680	27	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t673:NMOD	O
+shares	t680	27	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t679:NMOD	O
 .	t681	27	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Frankfurt	t682	28	Frankfurt	O	O	O	O	O	O	O	O	NP0	B-NP	frankfurt	NNP	O	O
@@ -761,7 +761,7 @@ markets	t728	30	market	O	O	O	O	O	O	O	O	NN2	I-NP	market	NNS	t727:NMOD	O
 coupled	t730	30	couple	O	O	O	O	O	O	O	O	VVN	B-VP	couple	VBN	t731:ADV	O
 with	t731	30	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t733:PMOD	O
 the	t732	30	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-drop	t733	30	drop	e306	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	drop	NN	t732:NMOD||t734:LOC||t736:TMP	O
+drop	t733	30	drop	e306	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	drop	NN	t732:NMOD||t734:LOC||t736:NMOD	O
 in	t734	30	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t735:PMOD	O
 London	t735	30	London	O	O	O	O	O	O	O	O	NP0	B-NP	london	NNP	O	O
 following	t736	30	follow	O	O	O	O	O	O	O	O	VVG	B-PP	follow	IN	t739:PMOD	O
@@ -785,7 +785,7 @@ and	t752	31	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t753:CONJ	O
 that	t753	31	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t756:SUB	O
 the	t754	31	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 DAX	t755	31	DAX	O	O	O	O	O	O	O	O	NP0	I-NP	dax	NNP	t754:NMOD	O
-dropped	t756	31	drop	e145	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	drop	VBD	t755:SBJ||t757:TMP||t759:TMP	O
+dropped	t756	31	drop	e145	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	drop	VBD	t755:SBJ||t757:TMP||t759:ADV	O
 Friday	t757	31	Friday	O	O	O	tmx316	DATE	1989-10-27	O	O	NP0	B-NP	friday	NNP	t758:NMOD	O
 more	t758	31	more	O	O	O	O	O	O	O	O	AV0	B-ADVP	more	DT	O	O
 on	t759	31	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t761:PMOD	O
@@ -825,19 +825,19 @@ weekend	t790	32	weekend	O	O	O	tmx322	DATE	1989-W44-WE	O	O	NN1	I-NP	weekend	NN	t7
 
 "	t792	33	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 It	t793	33	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-'s	t794	33	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+'s	t794	33	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t792:DEP||t793:SBJ||t797:PRD	O
 the	t795	33	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 whole	t796	33	whole	O	O	O	O	O	O	O	O	AJ0	I-NP	whole	JJ	O	O
 uncertainty	t797	33	uncertainty	O	O	O	O	O	O	O	O	NN1	I-NP	uncertainty	NN	t795:NMOD||t796:NMOD||t798:NMOD	O
 about	t798	33	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t800:PMOD	O
 what	t799	33	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
-'s	t800	33	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	t799:SBJ	O
-happening	t801	33	happen	O	O	O	O	O	O	O	O	VVG	I-VP	happen	VBG	t792:DEP||t793:SBJ||t794:DEP||t797:SBJ||t802:LOC	O
+'s	t800	33	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t799:SBJ||t801:VC	O
+happening	t801	33	happen	O	O	O	O	O	O	O	O	VVG	I-VP	happen	VBG	t802:LOC	O
 around	t802	33	around	O	O	O	O	O	O	O	O	PRP	B-PP	around	IN	t803:PMOD	O
 us	t803	33	we	O	O	O	O	O	O	O	O	PNP	B-NP	us	PRP	O	O
 ,	t804	33	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t805	33	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t806	33	say	e130	REPORTING	O	O	O	O	O	O	VVD	B-VP	say	VBD	t801:ADV||t804:P||t805:SBJ||t809:SBJ||t820:P	mainVb
+"	t805	33	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+said	t806	33	say	e130	REPORTING	O	O	O	O	O	O	VVD	B-VP	say	VBD	t794:OBJ||t804:P||t805:SBJ||t809:SBJ||t820:P	mainVb
 Valentin	t807	33	Valentin	O	O	O	O	O	O	O	O	NP0	B-NP	valentin	NNP	O	O
 Von	t808	33	Von	O	O	O	O	O	O	O	O	NP0	I-NP	von	NNP	O	O
 Korff	t809	33	Korff	O	O	O	O	O	O	O	O	NP0	I-NP	korff	NNP	t807:NAME||t808:NAME||t810:P||t812:APPO	O
@@ -853,7 +853,7 @@ in	t818	33	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t819:PMOD	O
 Frankfurt	t819	33	Frankfurt	O	O	O	O	O	O	O	O	NP0	B-NP	frankfurt	NNP	O	O
 .	t820	33	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t821	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	DT	O	O
+"	t821	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 If	t822	34	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t824:SUB	O
 you	t823	34	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
 take	t824	34	take	e131	OCCURRENCE	O	O	O	O	O	O	VVB	B-VP	take	VBP	t823:SBJ||t825:ADV||t828:OBJ	O
@@ -865,16 +865,16 @@ influences	t828	34	influence	O	O	O	O	O	O	O	O	NN2	I-NP	influence	NNS	t826:NMOD||t
 the	t830	34	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 market	t831	34	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t830:NMOD||t832:APPO	O
 itself	t832	34	itself	O	O	O	O	O	O	O	O	PNX	B-NP	itself	PRP	O	O
-looks	t833	34	look	O	O	O	O	O	O	O	O	VVZ	B-VP	look	VBZ	t821:SBJ||t822:ADV||t829:P||t831:SBJ||t835:PRD||t836:P	mainVb
+looks	t833	34	look	O	O	O	O	O	O	O	O	VVZ	B-VP	look	VBZ	t821:GAP-SBJ||t822:ADV||t829:P||t831:SBJ||t835:PRD||t836:P	mainVb
 very	t834	34	very	O	O	O	O	O	O	O	O	AV0	B-ADJP	very	RB	O	O
 cheap	t835	34	cheap	O	O	O	O	O	O	O	O	AJ0	I-ADJP	cheap	JJ	t834:AMOD	O
 .	t836	34	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-What	t837	35	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	t838:NMOD	O
-'s	t838	35	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
-happening	t839	35	happen	O	O	O	O	O	O	O	O	VVG	I-VP	happen	NN	t837:NMOD||t840:LOC	O
+What	t837	35	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
+'s	t838	35	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t837:SBJ||t839:VC	O
+happening	t839	35	happen	O	O	O	O	O	O	O	O	VVG	I-VP	happen	VBG	t840:LOC	O
 here	t840	35	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
-is	t841	35	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t839:SBJ||t842:ADV||t843:VC||t847:P||t848:P	mainVb
+is	t841	35	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t838:SBJ||t842:ADV||t843:VC||t847:P||t848:P	mainVb
 n't	t842	35	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
 justified	t843	35	justify	O	O	O	O	O	O	O	O	VVN	I-VP	justify	VBN	t844:LGS	mainVb
 by	t844	35	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t846:PMOD	O
@@ -907,7 +907,7 @@ week	t869	36	week	O	O	O	tmx326	DATE	1989-W43	O	O	NN1	I-NP	week	NN	t868:NMOD	O
 .	t870	36	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 That	t871	37	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
-'s	t872	37	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t871:SBJ||t873:OPRD||t908:P	O
+'s	t872	37	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t871:SBJ||t873:VC||t908:P	O
 leaving	t873	37	leave	O	O	O	O	O	O	O	O	VVG	I-VP	leave	VBG	t875:OBJ||t876:ADV||t883:COORD	O
 small	t874	37	small	O	O	O	O	O	O	O	O	AJ0	B-NP	small	JJ	O	O
 investors	t875	37	investor	O	O	O	O	O	O	O	O	NN2	I-NP	investor	NNS	t874:NMOD	O
@@ -964,7 +964,7 @@ Stockholm	t924	38	Stockholm	O	O	O	O	O	O	O	O	NP0	I-NP	stockholm	NNP	O	O
 ,	t925	38	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t926	38	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t927:CONJ	O
 were	t927	38	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t928:PRD||t929:LOC	O
-mixed	t928	38	mix	e330	STATE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	mix	VBN	O	O
+mixed	t928	38	mix	e330	STATE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	mix	JJ	O	O
 in	t929	38	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t930:PMOD	O
 Milan	t930	38	Milan	O	O	O	O	O	O	O	O	NP0	B-NP	milan	NNP	O	O
 .	t931	38	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

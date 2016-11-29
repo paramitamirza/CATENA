@@ -1,4 +1,4 @@
-DCT_1998-03-01T14:11:00	O	O	O	O	O	O	tmx0	TIME	1998-03-01T14:11:00	O	O	NP0	B-NP	dct_1998-03-01t14:11:00	SYM	O	O
+DCT_1998-03-01T14:11:00	O	O	O	O	O	O	tmx0	TIME	1998-03-01T14:11:00	O	O	NP0	B-NP	dct_1998-03-01t14:11:00	VBG	O	O
 
 JERUSALEM	t1	1	JERUSALEM	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	jerusalem	NNP	O	O
 -LRB-	t2	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	t1:NAME	O
@@ -52,10 +52,10 @@ was	t48	2	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t47:SBJ||t49:PRD	O
 willing	t49	2	willing	e1990	I_STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	willing	JJ	t50:AMOD	O
 to	t50	2	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t51:IM	O
 withdraw	t51	2	withdraw	e10	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	withdraw	VB	t52:DIR	O
-from	t52	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t54:PMOD	O
-southern	t53	2	southern	O	O	O	O	O	O	O	O	AJ0	B-NP	southern	JJ	O	O
-Lebanon	t54	2	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	t53:NMOD||t55:NMOD	O
-provided	t55	2	provide	O	O	O	O	O	O	O	O	VVD	B-VP	provide	VBD	t60:OBJ	O
+from	t52	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t53:PMOD	O
+southern	t53	2	southern	O	O	O	O	O	O	O	O	AJ0	B-NP	southern	JJ	t55:NMOD	O
+Lebanon	t54	2	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	O	O
+provided	t55	2	provide	O	O	O	O	O	O	O	O	VVD	B-VP	provide	VBD	t54:SBJ||t60:OBJ	O
 Israel	t56	2	Israel	O	O	O	O	O	O	O	O	NP0	B-NP	israel	NNP	t57:SUFFIX	O
 's	t57	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 northern	t58	2	northern	O	O	O	O	O	O	O	O	AJ0	I-NP	northern	JJ	O	O
@@ -65,8 +65,8 @@ be	t61	2	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t62:VC	O
 secured	t62	2	secure	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	secure	VBN	O	O
 .	t63	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t64	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
-If	t65	3	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t64:SBJ||t69:SUB	O
+"	t64	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t65:NMOD	O
+If	t65	3	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t69:SUB	O
 the	t66	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Lebanese	t67	3	lebanese	O	O	O	O	O	O	O	O	AJ0	I-NP	lebanese	JJ	O	O
 government	t68	3	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t66:NMOD||t67:NMOD	O
@@ -84,8 +84,8 @@ south	t79	3	south	O	O	O	O	O	O	O	O	NN1	B-NP	south	JJ	O	O
 Lebanon	t80	3	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	t79:NMOD	O
 ,	t81	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 we	t82	3	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-will	t83	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t65:ADV||t81:P||t82:SBJ||t84:VC	O
-be	t84	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t85:PRD||t91:TMP	O
+will	t83	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t64:ADV||t81:P||t82:SBJ||t84:VC	O
+be	t84	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t85:PRD||t91:LOC	O
 happy	t85	3	happy	O	O	O	O	O	O	O	O	AJ0	B-ADJP	happy	JJ	t86:AMOD	O
 to	t86	3	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t87:IM	O
 get	t87	3	get	e18	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	get	VB	t88:ADV	O
@@ -102,9 +102,9 @@ U.N.	t97	3	U.N.	O	O	O	O	O	O	O	O	NP0	B-NP	u.n.	NNP	O	O
 Resolution	t98	3	Resolution	O	O	O	O	O	O	O	O	NN1	I-NP	resolution	NNP	t97:NAME	O
 425	t99	3	425	O	O	O	O	O	O	O	O	CRD	I-NP	425	CD	t98:NMOD	O
 ,	t100	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t101	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-Netanyahu	t102	3	Netanyahu	O	O	O	O	O	O	O	O	NP0	B-NP	netanyahu	NNP	t101:NAME	O
-told	t103	3	tell	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tell	VBD	t83:OBJ||t100:P||t102:SBJ||t105:OBJ||t106:P	mainVb
+"	t101	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+Netanyahu	t102	3	Netanyahu	O	O	O	O	O	O	O	O	NP0	B-NP	netanyahu	NNP	O	O
+told	t103	3	tell	e20	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tell	VBD	t83:OBJ||t100:P||t101:P||t102:SBJ||t105:OBJ||t106:P	mainVb
 his	t104	3	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 ministers	t105	3	minister	O	O	O	O	O	O	O	O	NN2	I-NP	minister	NNS	t104:NMOD	O
 .	t106	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -124,15 +124,15 @@ self-declared	t118	4	self-declared	O	O	O	O	O	O	O	O	AJ0	I-NP	self-declare	VBN	O	O
 security	t119	4	security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NN	t118:NMOD	O
 zone	t120	4	zone	O	O	O	O	O	O	O	O	NN1	I-NP	zone	NN	t117:NMOD||t119:NMOD||t122:NMOD	O
 it	t121	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-occupies	t122	4	occupy	e24	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	occupy	VBZ	t121:SBJ||t123:ADV	O
-in	t123	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t125:PMOD||t126:P||t127:COORD	O
-south	t124	4	south	O	O	O	O	O	O	O	O	NN1	B-NP	south	JJ	O	O
-Lebanon	t125	4	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	t124:NMOD	O
+occupies	t122	4	occupy	e24	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	occupy	VBZ	t121:SBJ||t123:LOC	O
+in	t123	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t124:PMOD||t126:P||t127:COORD	O
+south	t124	4	south	O	O	O	O	O	O	O	O	NN1	B-NP	south	NN	t125:APPO	O
+Lebanon	t125	4	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	O	O
 ,	t126	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t127	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t128:CONJ	O
-for	t128	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t138:SUB	O
+for	t128	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t130:PMOD	O
 the	t129	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-deployment	t130	4	deployment	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	deployment	NN	t129:NMOD||t131:NMOD	O
+deployment	t130	4	deployment	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	deployment	NN	t129:NMOD||t131:NMOD||t138:PRP	O
 of	t131	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t134:PMOD	O
 the	t132	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Lebanese	t133	4	lebanese	O	O	O	O	O	O	O	O	AJ0	I-NP	lebanese	JJ	O	O
@@ -140,7 +140,7 @@ army	t134	4	army	O	O	O	O	O	O	O	O	NN1	I-NP	army	NN	t132:NMOD||t133:NMOD||t135:COO
 and	t135	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t137:CONJ	O
 U.N.	t136	4	U.N.	O	O	O	O	O	O	O	O	NP0	I-NP	u.n.	NNP	O	O
 forces	t137	4	force	O	O	O	O	O	O	O	O	NN2	I-NP	force	NNS	t136:NMOD	O
-to	t138	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t130:SBJ||t139:IM	O
+to	t138	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t139:IM	O
 ensure	t139	4	ensure	e27	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	ensure	VB	t140:OBJ	O
 security	t140	4	security	O	O	O	O	O	O	O	O	NN1	B-NP	security	NN	t141:LOC	O
 along	t141	4	along	O	O	O	O	O	O	O	O	PRP	B-PP	along	IN	t144:PMOD	O
@@ -155,11 +155,11 @@ Friday	t147	5	Friday	O	O	O	tmx127	DATE	1998-02-27	O	O	NP0	B-NP	friday	NNP	O	O
 Netanyahu	t149	5	Netanyahu	O	O	O	O	O	O	O	O	NP0	B-NP	netanyahu	NNP	O	O
 said	t150	5	say	e29	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t146:TMP||t148:P||t149:SBJ||t152:OBJ||t173:P||t174:P	mainVb
 he	t151	5	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-had	t152	5	have	e30	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t151:SBJ||t153:PRT||t156:PRN||t164:TMP	O
+had	t152	5	have	e30	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t151:SBJ||t153:PRT||t155:OBJ||t162:P||t164:TMP	O
 "	t153	5	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	RP	O	O
 no	t154	5	no	O	O	O	O	O	O	O	O	AT0	I-NP	no	DT	O	O
-qualms	t155	5	qualm	O	O	O	O	O	O	O	O	NN2	I-NP	qualm	NNS	t154:NMOD	O
-"	t156	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBP	t155:SBJ||t157:ADV||t162:P	O
+qualms	t155	5	qualm	O	O	O	O	O	O	O	O	NN2	I-NP	qualm	NNS	t154:NMOD||t156:P||t157:NMOD	O
+"	t156	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 about	t157	5	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t158:PMOD	O
 implementing	t158	5	implement	e32	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	implement	VBG	t161:OBJ	O
 the	t159	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -179,7 +179,7 @@ safeguards	t172	5	safeguard	O	O	O	O	O	O	O	O	NN2	I-NP	safeguard	NNS	t169:NMOD||t1
 .	t173	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t174	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
-Cabinet	t175	6	Cabinet	O	O	O	O	O	O	O	O	NN1	B-NP	cabinet	NNP	O	O
+Cabinet	t175	6	Cabinet	O	O	O	O	O	O	O	O	NN1	B-NP	cabinet	NN	O	O
 minister	t176	6	minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t175:NMOD||t178:APPO	O
 Michael	t177	6	Michael	O	O	O	O	O	O	O	O	NP0	I-NP	michael	NNP	O	O
 Eitan	t178	6	Eitan	O	O	O	O	O	O	O	O	NP0	I-NP	eitan	NNP	t177:NAME	O
@@ -202,7 +202,7 @@ position	t192	6	position	O	O	O	O	O	O	O	O	NN1	I-NP	position	NN	t190:NMOD	O
 "	t194	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 We	t195	7	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 will	t196	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t194:TMP||t195:SBJ||t197:VC	O
-defend	t197	7	defend	e39	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	defend	VB	t199:OBJ||t200:ADV	O
+defend	t197	7	defend	e39	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	defend	VB	t199:OBJ||t200:DIR	O
 our	t198	7	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 north	t199	7	north	O	O	O	O	O	O	O	O	NN1	I-NP	north	NN	t198:NMOD	O
 from	t200	7	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t203:PMOD	O
@@ -222,9 +222,9 @@ minister	t211	7	minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t209:NMOD||t210:NM
 "	t213	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 No	t214	8	no	O	O	O	O	O	O	O	O	PNI	B-NP	no	DT	O	O
 one	t215	8	one	O	O	O	O	O	O	O	O	PNI	B-NP	one	NN	t214:NMOD	O
-wants	t216	8	want	e41	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	want	VBZ	t213:DEP||t215:SBJ||t217:OPRD||t221:P||t224:COORD||t229:P||t230:P	mainVb
-to	t217	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t218:IM	mainVb
-stay	t218	8	stay	e43	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	stay	VB	t219:LOC	mainVb
+wants	t216	8	want	e41	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	want	VBZ	t213:SBJ||t215:SBJ||t217:OPRD||t221:P||t224:COORD||t229:P	O
+to	t217	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t218:IM	O
+stay	t218	8	stay	e43	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	stay	VB	t219:LOC	O
 in	t219	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t220:PMOD	O
 Lebanon	t220	8	Lebanon	O	O	O	O	O	O	O	O	NP0	B-NP	lebanon	NNP	O	O
 ;	t221	8	;	O	O	O	O	O	O	O	O	PUN	O	;	:	O	O
@@ -236,7 +236,7 @@ better	t226	8	better	O	O	O	O	O	O	O	O	AV0	B-ADVP	better	JJR	t227:AMOD	O
 to	t227	8	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t228:IM	O
 withdraw	t228	8	withdraw	e46	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	withdraw	VB	O	O
 .	t229	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t230	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	``	O	O
+"	t230	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t216:SBJ	mainVb
 
 Uri	t231	9	Uri	O	O	O	O	O	O	O	O	NP0	B-NP	uri	NNP	O	O
 Lubrani	t232	9	Lubrani	O	O	O	O	O	O	O	O	NP0	I-NP	lubrani	NNP	t231:NAME||t233:P||t237:APPO||t241:P	O
@@ -277,12 +277,12 @@ we	t265	10	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 are	t266	10	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t265:SBJ||t267:PRD	O
 willing	t267	10	willing	e133	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	willing	JJ	t268:AMOD	O
 to	t268	10	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t269:IM	O
-talk	t269	10	talk	e54	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	talk	VB	t270:TMP||t271:ADV||t274:P||t275:ADV	O
+talk	t269	10	talk	e54	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	talk	VB	t270:TMP||t271:ADV||t274:ADV||t275:ADV	O
 today	t270	10	today	O	O	O	tmx134	DATE	1998-03-01	O	O	AV0	B-NP	today	NN	O	O
-_	t271	10	_	O	O	O	O	O	O	O	O	PUQ	I-NP	_	IN	t273:PMOD	O
+_	t271	10	_	O	O	O	O	O	O	O	O	PUQ	I-NP	_	CC	t273:CONJ	O
 full	t272	10	full	O	O	O	O	O	O	O	O	AJ0	I-NP	full	JJ	O	O
 stop	t273	10	stop	O	O	O	O	O	O	O	O	NN1	I-NP	stop	NN	t272:NMOD	O
-_	t274	10	_	O	O	O	O	O	O	O	O	PUQ	I-NP	_	)	O	O
+_	t274	10	_	O	O	O	O	O	O	O	O	PUQ	I-NP	_	PRP	O	O
 about	t275	10	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t276:PMOD	O
 security	t276	10	security	O	O	O	O	O	O	O	O	NN1	B-NP	security	NN	O	O
 ,	t277	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -295,11 +295,11 @@ Channel	t283	10	Channel	O	O	O	O	O	O	O	O	NN1	I-NP	channel	NNP	O	O
 One	t284	10	one	O	O	O	O	O	O	O	O	CRD	I-NP	one	CD	t281:NMOD||t283:NAME	O
 .	t285	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t286	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+"	t286	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t287	11	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-have	t288	11	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t287:SBJ||t289:VC||t301:P||t302:P	mainVb
-gotten	t289	11	get	e58	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	get	VBN	t290:PRT||t292:OBJ||t295:P||t296:ADV	mainVb
-off	t290	11	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
+have	t288	11	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t286:P||t287:SBJ||t289:VC||t301:P	mainVb
+gotten	t289	11	get	e58	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	get	VBN	t290:ADV||t295:P||t296:ADV	mainVb
+off	t290	11	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	IN	t292:PMOD	O
 the	t291	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issue	t292	11	issue	O	O	O	O	O	O	O	O	NN1	I-NP	issue	NN	t291:NMOD||t293:NMOD	O
 of	t293	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t294:PMOD	O
@@ -309,9 +309,9 @@ off	t296	11	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t298:PMOD	O
 the	t297	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issue	t298	11	issue	O	O	O	O	O	O	O	O	NN1	I-NP	issue	NN	t297:NMOD||t299:NMOD	O
 of	t299	11	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t300:PMOD	O
-normalization	t300	11	normalization	O	O	O	O	O	O	O	O	NN1	B-NP	normalization	NN	t286:DEP	O
-.	t301	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t302	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+normalization	t300	11	normalization	O	O	O	O	O	O	O	O	NN1	B-NP	normalization	NN	O	O
+.	t301	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t302:NMOD	O
+"	t302	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 As	t303	12	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t309:SUB	O
 the	t304	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -345,25 +345,25 @@ Lebanon	t330	12	Lebanon	O	O	O	O	O	O	O	O	NP0	B-NP	lebanon	NNP	O	O
 
 Since	t332	13	since	O	O	O	O	O	O	O	O	PRP	B-SBAR	since	IN	t334:PMOD	O
 1985	t333	13	1985	O	O	O	tmx1979	DATE	1985	O	O	CRD	B-NP	1985	CD	O	O
-_	t334	13	_	O	O	O	O	O	O	O	O	UNC	I-NP	_	NNP	t333:NMOD||t338:NMOD	O
+_	t334	13	_	O	O	O	O	O	O	O	O	UNC	I-NP	_	CD	t333:NMOD||t338:NMOD	O
 when	t335	13	when	O	O	O	O	O	O	O	O	CJS	B-ADVP	when	WRB	O	O
 the	t336	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Israelis	t337	13	Israelis	O	O	O	O	O	O	O	O	NN2	I-NP	israelis	NNP	t336:NMOD	O
-created	t338	13	create	e66	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	create	VBD	t335:TMP||t337:SBJ||t342:OBJ||t345:TMP	O
+created	t338	13	create	e66	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	create	VBD	t335:TMP||t337:SBJ||t342:OBJ	O
 a	t339	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 security	t340	13	security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NN	O	O
 buffer	t341	13	buffer	O	O	O	O	O	O	O	O	NN1	I-NP	buffer	NN	t340:NMOD	O
-zone	t342	13	zone	O	O	O	O	O	O	O	O	NN1	I-NP	zone	NN	t339:NMOD||t341:NMOD	O
+zone	t342	13	zone	O	O	O	O	O	O	O	O	NN1	I-NP	zone	NN	t339:NMOD||t341:NMOD||t345:APPO	O
 southern	t343	13	southern	O	O	O	O	O	O	O	O	AJ0	I-NP	southern	JJ	O	O
 Lebanon	t344	13	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	O	O
 _	t345	13	_	O	O	O	O	O	O	O	O	PUQ	I-NP	_	NNP	t343:NMOD||t344:NAME	O
 nearly	t346	13	nearly	O	O	O	O	O	O	O	O	AV0	I-NP	nearly	RB	O	O
-200	t347	13	200	O	O	O	O	O	O	O	O	CRD	I-NP	200	CD	O	O
+200	t347	13	200	O	O	O	O	O	O	O	O	CRD	I-NP	200	CD	t346:DEP	O
 Israeli	t348	13	israeli	O	O	O	O	O	O	O	O	AJ0	I-NP	israeli	JJ	O	O
 soldiers	t349	13	soldier	O	O	O	O	O	O	O	O	NN2	I-NP	soldier	NNS	t347:NMOD||t348:NMOD	O
-have	t350	13	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t332:TMP||t346:ADV||t349:SBJ||t351:VC||t358:P	mainVb
+have	t350	13	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t332:TMP||t349:SBJ||t351:VC||t358:P	mainVb
 been	t351	13	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t352:VC	mainVb
-killed	t352	13	kill	e67	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	kill	VBN	t353:OPRD	mainVb
+killed	t352	13	kill	e67	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	kill	VBN	t353:VC	mainVb
 fighting	t353	13	fight	e68	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	fight	VBG	t354:OBJ	mainVb
 Hezbollah	t354	13	Hezbollah	O	O	O	O	O	O	O	O	NP0	B-NP	hezbollah	NNP	t355:COORD	O
 and	t355	13	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t357:CONJ	O
@@ -389,11 +389,11 @@ others	t372	14	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t371:NMOD	O
 
 The	t374	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Israelis	t375	15	Israelis	O	O	O	O	O	O	O	O	NN2	I-NP	israelis	NNP	t374:NMOD	O
-suffered	t376	15	suffer	e71	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	suffer	VBD	t375:SBJ||t380:OBJ||t385:TMP||t386:P	mainVb
+suffered	t376	15	suffer	e71	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	suffer	VBD	t375:SBJ||t378:OBJ||t380:TMP||t385:TMP||t386:P	mainVb
 a	t377	15	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-record	t378	15	record	O	O	O	O	O	O	O	O	NN1	I-NP	record	NN	O	O
+record	t378	15	record	O	O	O	O	O	O	O	O	NN1	I-NP	record	NN	t377:NMOD	O
 39	t379	15	39	O	O	O	O	O	O	O	O	CRD	I-NP	39	CD	O	O
-deaths	t380	15	death	O	O	O	O	O	O	O	O	NN2	I-NP	death	NNS	t377:NMOD||t378:NMOD||t379:NMOD||t381:LOC	O
+deaths	t380	15	death	O	O	O	O	O	O	O	O	NN2	I-NP	death	NNS	t379:NMOD||t381:LOC	O
 in	t381	15	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t383:PMOD	O
 southern	t382	15	southern	O	O	O	O	O	O	O	O	AJ0	B-NP	southern	JJ	O	O
 Lebanon	t383	15	Lebanon	O	O	O	O	O	O	O	O	NP0	I-NP	lebanon	NNP	t382:NMOD	O
@@ -416,7 +416,7 @@ when	t398	16	when	O	O	O	O	O	O	O	O	CJS	B-ADVP	when	WRB	O	O
 two	t399	16	two	O	O	O	O	O	O	O	O	CRD	B-NP	two	CD	O	O
 military	t400	16	military	O	O	O	O	O	O	O	O	AJ0	I-NP	military	JJ	O	O
 helicopters	t401	16	helicopter	O	O	O	O	O	O	O	O	NN2	I-NP	helicopter	NNS	t399:NMOD||t400:NMOD	O
-crashed	t402	16	crash	e77	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	crash	VBD	t398:TMP||t401:SBJ||t404:TMP	O
+crashed	t402	16	crash	e77	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	crash	VBN	t398:TMP||t401:SBJ||t404:TMP	O
 last	t403	16	last	O	O	O	tmx1982	DATE	1997-02	O	O	ORD	B-NP	last	JJ	O	O
 February	t404	16	February	O	O	O	tmx1982	DATE	1997-02	O	O	NP0	I-NP	february	NNP	t403:NMOD	O
 .	t405	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -457,9 +457,9 @@ countries	t436	17	country	O	O	O	O	O	O	O	O	NN2	I-NP	country	NNS	t434:NMOD||t435:N
 The	t438	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 newspaper	t439	18	newspaper	O	O	O	O	O	O	O	O	NN1	I-NP	newspaper	NN	t438:NMOD	O
 ,	t440	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-quoting	t441	18	quote	e85	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	quote	VBG	t444:OBJ	O
-"	t442	18	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	HYPH	O	O
-secret	t443	18	secret	O	O	O	O	O	O	O	O	AJ0	I-NP	secret	JJ	t442:NAME	O
+quoting	t441	18	quote	e85	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	quote	VBG	t442:OBJ||t444:OBJ	O
+"	t442	18	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	PRP	O	O
+secret	t443	18	secret	O	O	O	O	O	O	O	O	AJ0	I-NP	secret	JJ	O	O
 reports	t444	18	report	O	O	O	O	O	O	O	O	NN2	I-NP	report	NNS	t443:NMOD	O
 ,	t445	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t446	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
@@ -470,11 +470,11 @@ indicated	t450	18	indicate	e88	I_ACTION	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	i
 its	t451	18	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 interest	t452	18	interest	O	O	O	O	O	O	O	O	NN1	I-NP	interest	NN	t451:NMOD||t453:NMOD	O
 in	t453	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t454:PMOD	O
-resuming	t454	18	resume	e90	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	resume	VBG	t455:OBJ||t456:LOC	O
-talks	t455	18	talk	e91	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	talks	NNS	O	O
+resuming	t454	18	resume	e90	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	resume	VBG	t455:OBJ	O
+talks	t455	18	talk	e91	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	talks	NNS	t456:LOC	O
 in	t456	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t457:PMOD	O
-remarks	t457	18	remark	e92	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	remark	NNS	t458:APPO	O
-made	t458	18	make	e94	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	make	VBN	t460:TMP||t461:LGS||t470:P||t471:LOC	O
+remarks	t457	18	remark	e92	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	remark	NNS	t458:APPO||t470:P||t471:LOC	O
+made	t458	18	make	e94	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	make	VBN	t460:TMP||t461:LGS	O
 last	t459	18	last	O	O	O	tmx1986	DATE	1998-W08	O	O	ORD	B-NP	last	JJ	O	O
 week	t460	18	week	O	O	O	tmx1986	DATE	1998-W08	O	O	NN1	I-NP	week	NN	t459:NMOD	O
 by	t461	18	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t464:PMOD	O
@@ -492,7 +492,7 @@ a	t472	18	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 lecture	t473	18	lecture	e95	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	lecture	NN	t472:NMOD||t474:NMOD	O
 to	t474	18	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t477:PMOD	O
 a	t475	18	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-closed	t476	18	closed	O	O	O	O	O	O	O	O	AJ0	I-NP	close	VBN	O	O
+closed	t476	18	closed	O	O	O	O	O	O	O	O	AJ0	I-NP	close	JJ	O	O
 forum	t477	18	forum	O	O	O	O	O	O	O	O	NN1	I-NP	forum	NN	t475:NMOD||t476:NMOD||t478:LOC	O
 in	t478	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t479:PMOD	O
 Baltimore	t479	18	Baltimore	O	O	O	O	O	O	O	O	NP0	B-NP	baltimore	NNP	O	O
@@ -500,9 +500,9 @@ Baltimore	t479	18	Baltimore	O	O	O	O	O	O	O	O	NP0	B-NP	baltimore	NNP	O	O
 
 Two	t481	19	two	O	O	O	O	O	O	O	O	CRD	B-NP	two	CD	O	O
 top	t482	19	top	O	O	O	O	O	O	O	O	AJ0	I-NP	top	JJ	O	O
-aides	t483	19	aide	O	O	O	O	O	O	O	O	NN2	I-NP	aides	NNS	t481:NMOD||t482:NMOD||t484:NMOD||t486:P||t488:APPO	O
+aides	t483	19	aide	O	O	O	O	O	O	O	O	NN2	I-NP	aides	NNS	t481:NMOD||t482:NMOD||t484:NMOD	O
 to	t484	19	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t485:PMOD	O
-Netanyahu	t485	19	Netanyahu	O	O	O	O	O	O	O	O	NP0	B-NP	netanyahu	NNP	O	O
+Netanyahu	t485	19	Netanyahu	O	O	O	O	O	O	O	O	NP0	B-NP	netanyahu	NNP	t486:P||t488:COORD||t496:P	O
 ,	t486	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 political	t487	19	political	O	O	O	O	O	O	O	O	AJ0	B-NP	political	JJ	O	O
 adviser	t488	19	adviser	O	O	O	O	O	O	O	O	NN1	I-NP	adviser	NN	t487:NMOD||t490:APPO||t491:COORD	O
@@ -510,11 +510,11 @@ Uzi	t489	19	Uzi	O	O	O	O	O	O	O	O	NP0	I-NP	uzi	NNP	O	O
 Arad	t490	19	Arad	O	O	O	O	O	O	O	O	NP0	I-NP	arad	NNP	t489:NAME	O
 and	t491	19	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t493:CONJ	O
 Cabinet	t492	19	Cabinet	O	O	O	O	O	O	O	O	NN1	I-NP	cabinet	NNP	O	O
-Secretary	t493	19	Secretary	O	O	O	O	O	O	O	O	NN1	I-NP	secretary	NN	t492:NMOD||t495:APPO||t496:P	O
+Secretary	t493	19	Secretary	O	O	O	O	O	O	O	O	NN1	I-NP	secretary	NN	t492:NMOD||t495:APPO	O
 Danny	t494	19	Danny	O	O	O	O	O	O	O	O	NP0	I-NP	danny	NNP	O	O
 Naveh	t495	19	Naveh	O	O	O	O	O	O	O	O	NP0	I-NP	naveh	NNP	t494:NAME	O
 ,	t496	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-left	t497	19	leave	e97	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	leave	VBD	t483:SBJ||t498:PRP||t500:TMP||t502:P||t504:PRP	O
+left	t497	19	leave	e97	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	leave	VBD	t483:SBJ||t498:DIR||t500:TMP||t502:P||t504:PRP	O
 for	t498	19	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t499:PMOD	O
 Europe	t499	19	Europe	O	O	O	O	O	O	O	O	NP0	B-NP	europe	NNP	O	O
 on	t500	19	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t501:PMOD	O
@@ -544,22 +544,22 @@ two	t522	20	two	O	O	O	tmx1988	DURATION	P2Y	O	O	CRD	I-NP	two	CD	O	O
 years	t523	20	year	O	O	O	tmx1988	DURATION	P2Y	O	O	NN2	I-NP	years	NNS	t521:NMOD||t522:NMOD	O
 .	t524	20	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Defense	t525	21	Defense	O	O	O	O	O	O	O	O	NN1	B-NP	defense	NNP	O	O
-Minister	t526	21	Minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	O	O
+Defense	t525	21	Defense	O	O	O	O	O	O	O	O	NN1	B-NP	defense	NN	O	O
+Minister	t526	21	Minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t525:NMOD||t528:APPO	O
 Yitzhak	t527	21	Yitzhak	O	O	O	O	O	O	O	O	NN1	I-NP	yitzhak	NNP	O	O
-Mordechai	t528	21	Mordechai	O	O	O	O	O	O	O	O	NP0	I-NP	mordechai	NNP	t525:NAME||t526:NAME||t527:NAME	O
-was	t529	21	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t528:SBJ||t534:PRD||t547:P||t548:ADV||t568:P	mainVb
+Mordechai	t528	21	Mordechai	O	O	O	O	O	O	O	O	NP0	I-NP	mordechai	NNP	t527:NAME	O
+was	t529	21	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t526:SBJ||t534:PRD||t547:P||t548:ADV||t568:P	mainVb
 the	t530	21	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 first	t531	21	first	O	O	O	O	O	O	O	O	ORD	I-NP	first	JJ	O	O
 senior	t532	21	senior	O	O	O	O	O	O	O	O	AJ0	I-NP	senior	JJ	O	O
 Israeli	t533	21	israeli	O	O	O	O	O	O	O	O	NP0	I-NP	israeli	JJ	O	O
 official	t534	21	official	O	O	O	O	O	O	O	O	NN1	I-NP	official	NN	t530:NMOD||t531:NMOD||t532:NMOD||t533:NMOD||t535:NMOD	O
 to	t535	21	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t536:IM	O
-refer	t536	21	refer	e102	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN1	B-NP	refer	VB	t537:ADV||t541:LOC||t546:TMP	O
+refer	t536	21	refer	e102	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN1	B-NP	refer	VB	t537:ADV||t546:TMP	O
 to	t537	21	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t540:PMOD	O
 U.N.	t538	21	U.N.	O	O	O	O	O	O	O	O	NP0	B-NP	u.n.	NNP	O	O
 resolution	t539	21	resolution	O	O	O	O	O	O	O	O	NN1	I-NP	resolution	NN	t538:NMOD	O
-425	t540	21	425	O	O	O	O	O	O	O	O	CRD	I-NP	425	CD	t539:NMOD	O
+425	t540	21	425	O	O	O	O	O	O	O	O	CRD	I-NP	425	CD	t539:NMOD||t541:LOC	O
 in	t541	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t543:PMOD	O
 a	t542	21	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 speech	t543	21	speech	e103	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	speech	NN	t542:NMOD	O
@@ -567,10 +567,10 @@ six	t544	21	six	O	O	O	tmx1989	DATE	1998-W02	O	O	CRD	B-NP	six	CD	O	O
 weeks	t545	21	week	O	O	O	tmx1989	DATE	1998-W02	O	O	NN2	I-NP	week	NNS	t544:NMOD	O
 ago	t546	21	ago	O	O	O	tmx1989	DATE	1998-W02	O	O	AV0	B-ADVP	ago	RB	t545:AMOD	O
 ,	t547	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-saying	t548	21	say	e105	REPORTING	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	say	VBG	t549:TMP||t553:OBJ	O
+saying	t548	21	say	e105	REPORTING	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	say	VBG	t549:TMP	O
 at	t549	21	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t551:PMOD	O
 the	t550	21	the	O	O	O	tmx1993	DATE	PAST_REF	O	O	AT0	B-NP	the	DT	O	O
-time	t551	21	time	O	O	O	tmx1993	DATE	PAST_REF	O	O	NN1	I-NP	time	NN	t550:NMOD	O
+time	t551	21	time	O	O	O	tmx1993	DATE	PAST_REF	O	O	NN1	I-NP	time	NN	t550:NMOD||t553:NMOD	O
 he	t552	21	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 was	t553	21	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t552:SBJ||t554:PRD	O
 willing	t554	21	willing	e1994	I_STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	willing	JJ	t555:AMOD	O
@@ -580,12 +580,12 @@ troops	t557	21	troops	O	O	O	O	O	O	O	O	NN2	B-NP	troops	NNS	O	O
 in	t558	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t559:PMOD	O
 exchange	t559	21	exchange	O	O	O	O	O	O	O	O	NN1	B-NP	exchange	NN	t560:NMOD	O
 for	t560	21	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t561:PMOD	O
-guarantees	t561	21	guarantee	O	O	O	O	O	O	O	O	NN2	B-NP	guarantee	NNS	t564:NMOD	O
-that	t562	21	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	WDT	O	O
+guarantees	t561	21	guarantee	O	O	O	O	O	O	O	O	NN2	B-NP	guarantee	NNS	t562:NMOD	O
+that	t562	21	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	WDT	t564:SUB	O
 Israel	t563	21	Israel	O	O	O	O	O	O	O	O	NP0	B-NP	israel	NNP	O	O
 would	t564	21	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t563:SBJ||t565:ADV||t566:VC	O
 not	t565	21	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 be	t566	21	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t567:VC	O
-attacked	t567	21	attack	e113	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	attack	VBN	t562:OBJ	O
+attacked	t567	21	attack	e113	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	attack	VBN	O	O
 .	t568	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

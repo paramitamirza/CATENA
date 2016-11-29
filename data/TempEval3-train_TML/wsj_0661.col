@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	LS	O	O
 
 A	t1	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 unit	t2	1	unit	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	unit	NN	t1:NMOD||t3:NMOD	O
@@ -31,13 +31,13 @@ the	t28	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 computer-printer	t29	1	computer-printer	O	O	O	O	O	O	O	O	NN1	I-NP	computer-printer	NN	O	O
 maker	t30	1	maker	O	O	O	O	O	O	O	O	NN1	I-NP	maker	NN	t28:NMOD||t29:NMOD	O
 "	t31	1	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
-as	t32	1	as	O	O	O	tmx80	DATE	FUTURE_REF	O	O	CJS	B-ADVP	as	IN	O	O
+as	t32	1	as	O	O	O	tmx80	DATE	FUTURE_REF	O	O	CJS	B-ADVP	as	IN	t37:SUB	O
 soon	t33	1	soon	O	O	O	tmx80	DATE	FUTURE_REF	O	O	AV0	I-ADVP	soon	RB	t32:AMOD||t34:AMOD	O
 as	t34	1	as	O	O	O	tmx80	DATE	FUTURE_REF	O	O	CJS	B-PP	as	IN	t35:PMOD	O
 possible	t35	1	possible	O	O	O	tmx80	DATE	FUTURE_REF	O	O	AJ0	B-ADJP	possible	JJ	O	O
 ,	t36	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t37	1	"	O	O	O	O	O	O	O	O	PUQ	O	"	RBR	O	O
-even	t38	1	even	O	O	O	O	O	O	O	O	CJS	B-SBAR	even	RB	t37:AMOD	O
+"	t37	1	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
+even	t38	1	even	O	O	O	O	O	O	O	O	CJS	B-SBAR	even	RB	O	O
 if	t39	1	if	O	O	O	O	O	O	O	O	CJS	I-SBAR	if	IN	t38:DEP||t42:SUB	O
 a	t40	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 merger	t41	1	merger	e82	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	merger	NN	t40:NMOD	O
@@ -104,11 +104,11 @@ received	t97	5	receive	e19	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	rec
 the	t98	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 reasonable	t99	5	reasonable	O	O	O	O	O	O	O	O	AJ0	I-NP	reasonable	JJ	O	O
 assurance	t100	5	assurance	O	O	O	O	O	O	O	O	NN1	I-NP	assurance	NN	t98:NMOD||t99:NMOD||t101:NMOD||t106:NMOD	O
-of	t101	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t105:PMOD	O
+of	t101	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t104:PMOD	O
 Chase	t102	5	Chase	O	O	O	O	O	O	O	O	NP0	B-NP	chase	NNP	O	O
 Manhattan	t103	5	Manhattan	O	O	O	O	O	O	O	O	NP0	I-NP	manhattan	NNP	O	O
-Bank	t104	5	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	O	O
-N.A.	t105	5	N.A.	O	O	O	O	O	O	O	O	NP0	I-NP	n.a.	NNP	t102:NAME||t103:NAME||t104:NAME	O
+Bank	t104	5	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t102:NAME||t103:NAME||t105:POSTHON	O
+N.A.	t105	5	N.A.	O	O	O	O	O	O	O	O	NP0	I-NP	n.a.	NNP	O	O
 that	t106	5	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t109:SUB	O
 the	t107	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 financing	t108	5	financing	e21	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	financing	NN	t107:NMOD	O
@@ -122,7 +122,7 @@ a	t114	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 filing	t115	6	filing	O	O	O	O	O	O	O	O	NN1	I-NP	filing	NN	t114:NMOD||t116:NMOD	O
 with	t116	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t121:PMOD	O
 the	t117	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Securities	t118	6	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNPS	O	O
+Securities	t118	6	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNP	O	O
 and	t119	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
 Exchange	t120	6	Exchange	O	O	O	O	O	O	O	O	AJ0	B-NP	exchange	NNP	O	O
 Commission	t121	6	Commission	O	O	O	O	O	O	O	O	NN1	I-NP	commission	NNP	t117:NAME||t118:NAME||t119:NAME||t120:NAME	O
@@ -134,7 +134,7 @@ it	t126	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 expects	t127	6	expect	e26	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t126:SBJ||t129:OBJ	O
 it	t128	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t129	6	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t128:SBJ||t130:VC	O
-need	t130	6	need	e27	I_STATE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	need	VB	t132:OBJ||t135:OPRD	O
+need	t130	6	need	e27	I_STATE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	need	VB	t132:OBJ||t135:PRP	O
 about	t131	6	about	O	O	O	O	O	O	O	O	PRP	B-NP	about	IN	O	O
 $	t132	6	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t131:DEP||t133:DEP||t134:DEP	O
 215	t133	6	215	O	O	O	O	O	O	O	O	CRD	I-NP	215	CD	O	O
@@ -180,7 +180,7 @@ the	t171	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 liquidation	t172	7	liquidation	e42	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	liquidation	NN	t171:NMOD	O
 .	t173	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Dataproducts	t174	8	Dataproducts	O	O	O	O	O	O	O	O	NN2	B-NP	dataproducts	NNP	O	O
+Dataproducts	t174	8	Dataproducts	O	O	O	O	O	O	O	O	NN2	B-NP	dataproducts	NNPS	O	O
 officials	t175	8	official	O	O	O	O	O	O	O	O	NN2	I-NP	official	NNS	t174:NMOD	O
 declined	t176	8	decline	e43	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	decline	VBD	t175:SBJ||t177:OPRD||t179:P||t180:COORD||t208:P	mainVb
 to	t177	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t178:IM	mainVb
@@ -228,7 +228,7 @@ $	t217	9	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t218:NMOD	O
 15-a-share	t218	9	15-a-share	O	O	O	O	O	O	O	O	AJ0	I-NP	15-a-share	CD	O	O
 offer	t219	9	offer	e57	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t216:NMOD||t217:NMOD||t220:NMOD||t222:P||t227:NMOD	O
 for	t220	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t221:PMOD	O
-Dataproducts	t221	9	Dataproducts	O	O	O	O	O	O	O	O	NN2	B-NP	dataproducts	NNP	O	O
+Dataproducts	t221	9	Dataproducts	O	O	O	O	O	O	O	O	NN2	B-NP	dataproducts	NNPS	O	O
 ,	t222	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t223	9	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 the	t224	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O

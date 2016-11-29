@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	LS	O	O
 
 RJR	t1	1	RJR	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	rjr	NNP	O	O
 Nabisco	t2	1	Nabisco	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	nabisco	NNP	t1:NAME||t3:POSTHON	O
@@ -67,7 +67,7 @@ U.S.	t63	2	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
 candy	t64	2	candy	O	O	O	O	O	O	O	O	NN1	I-NP	candy	NN	O	O
 market	t65	2	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t62:NMOD||t63:NMOD||t64:NMOD	O
 to	t66	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t69:PMOD	O
-about	t67	2	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+about	t67	2	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
 12	t68	2	12	O	O	O	O	O	O	O	O	CRD	I-NP	12	CD	t67:DEP	O
 %	t69	2	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t68:NMOD	O
 .	t70	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -75,7 +75,7 @@ about	t67	2	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
 The	t71	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 candy	t72	3	candy	O	O	O	O	O	O	O	O	NN1	I-NP	candy	NN	O	O
 businesses	t73	3	business	O	O	O	O	O	O	O	O	NN2	I-NP	business	NNS	t71:NMOD||t72:NMOD	O
-had	t74	3	have	e75	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t73:SBJ||t75:OBJ||t82:TMP||t83:P||t85:COORD||t98:P||t99:ADV||t119:P	mainVb
+had	t74	3	have	e75	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t73:SBJ||t75:OBJ||t82:TMP||t98:P||t99:ADV||t119:P	mainVb
 sales	t75	3	sale	e76	STATE	NONE+NONE+POS	O	O	O	O	O	NN0	B-NP	sales	NNS	t76:NMOD	O
 of	t76	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t78:PMOD	O
 about	t77	3	about	O	O	O	O	O	O	O	O	PRP	B-NP	about	IN	O	O
@@ -83,7 +83,7 @@ $	t78	3	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t77:DEP||t79:DEP||t80:DEP	O
 154	t79	3	154	O	O	O	O	O	O	O	O	CRD	I-NP	154	CD	O	O
 million	t80	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 last	t81	3	last	O	O	O	tmx79	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
-year	t82	3	year	O	O	O	tmx79	DATE	1988	O	O	NN1	I-NP	year	NN	t81:NMOD	O
+year	t82	3	year	O	O	O	tmx79	DATE	1988	O	O	NN1	I-NP	year	NN	t81:NMOD||t83:P||t85:NMOD	O
 ,	t83	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t84	3	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 was	t85	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t84:SBJ||t88:PRD	O
@@ -220,7 +220,7 @@ however	t211	7	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
 ,	t212	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 could	t213	7	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t209:SBJ||t210:P||t211:ADV||t212:P||t214:TMP||t215:VC||t221:P	mainVb
 still	t214	7	still	O	O	O	O	O	O	O	O	AV0	I-VP	still	RB	O	mainVb
-fall	t215	7	fall	e89	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	fall	VB	t216:MNR||t217:ADV	mainVb
+fall	t215	7	fall	e89	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	fall	VB	t216:ADV||t217:ADV	mainVb
 through	t216	7	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	RB	O	O
 if	t217	7	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t220:SUB	O
 financing	t218	7	financing	O	O	O	O	O	O	O	O	VVG	B-VP	financing	NN	O	O
@@ -280,12 +280,12 @@ program	t269	9	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t266:NMOD||t268:NMOD	
 ,	t270	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 as	t271	9	as	O	O	O	O	O	O	O	O	PRP	B-CONJP	as	RB	t272:DEP||t273:DEP||t278:CONJ	O
 well	t272	9	well	O	O	O	O	O	O	O	O	PRP	I-CONJP	well	RB	O	O
-as	t273	9	as	O	O	O	O	O	O	O	O	PRP	I-CONJP	as	IN	t275:PMOD	O
+as	t273	9	as	O	O	O	O	O	O	O	O	PRP	I-CONJP	as	IN	O	O
 a	t274	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t275	9	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t274:NMOD	O
+"	t275	9	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	PDT	O	O
 a	t276	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 strategic	t277	9	strategic	O	O	O	O	O	O	O	O	AJ0	I-NP	strategic	JJ	O	O
-divestiture	t278	9	divestiture	O	O	O	O	O	O	O	O	NN1	I-NP	divestiture	NN	t276:NMOD||t277:NMOD	O
+divestiture	t278	9	divestiture	O	O	O	O	O	O	O	O	NN1	I-NP	divestiture	NN	t274:NMOD||t275:NMOD||t276:NMOD||t277:NMOD	O
 .	t279	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t280	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
@@ -340,7 +340,7 @@ their	t327	11	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 markets	t328	11	market	O	O	O	O	O	O	O	O	NN2	I-NP	market	NNS	t327:NMOD	O
 .	t329	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t330	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	DT	O	O
+"	t330	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP$	O	O
 RJR	t331	12	RJR	O	O	O	O	O	O	O	O	NP0	B-NP	rjr	NNP	O	O
 Nabisco	t332	12	Nabisco	O	O	O	O	O	O	O	O	NP0	I-NP	nabisco	NNP	t330:NMOD||t331:NAME||t333:COORD	O
 and	t333	12	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t335:CONJ	O
@@ -370,7 +370,7 @@ are	t355	13	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t352:SBJ||t356:DEP||t357:LOC-PRD|
 both	t356	13	both	O	O	O	O	O	O	O	O	AV0	O	both	DT	O	O
 among	t357	13	among	O	O	O	O	O	O	O	O	PRP	B-PP	among	IN	t362:PMOD	O
 the	t358	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-top-selling	t359	13	top-selling	O	O	O	O	O	O	O	O	AJ0	I-NP	top-sell	VBG	O	O
+top-selling	t359	13	top-selling	O	O	O	O	O	O	O	O	AJ0	I-NP	top-sel	VBG	O	O
 15	t360	13	15	O	O	O	O	O	O	O	O	CRD	I-NP	15	CD	O	O
 chocolate	t361	13	chocolate	O	O	O	O	O	O	O	O	NN1	I-NP	chocolate	NN	O	O
 bars	t362	13	bar	O	O	O	O	O	O	O	O	NN2	I-NP	bars	NNS	t358:NMOD||t359:NMOD||t360:NMOD||t361:NMOD||t363:LOC	O
@@ -424,9 +424,9 @@ Inc.	t408	14	Inc.	O	O	O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 ,	t409	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t410	14	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 have	t411	14	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t410:SBJ||t414:OBJ||t421:P||t422:ADV	O
-about	t412	14	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
-40	t413	14	40	O	O	O	O	O	O	O	O	CRD	I-NP	40	CD	t412:DEP	O
-%	t414	14	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t413:NMOD||t415:COORD||t418:NMOD	O
+about	t412	14	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t413:DEP	O
+40	t413	14	40	O	O	O	O	O	O	O	O	CRD	I-NP	40	CD	O	O
+%	t414	14	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t412:NMOD||t415:COORD||t418:NMOD	O
 and	t415	14	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t416:CONJ	O
 36	t416	14	36	O	O	O	O	O	O	O	O	CRD	I-NP	36	CD	t417:COORD	O
 %	t417	14	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	O	O
@@ -437,7 +437,7 @@ market	t420	14	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t419:NMOD	O
 respectively	t422	14	respectively	O	O	O	O	O	O	O	O	AV0	B-ADVP	respectively	RB	O	O
 .	t423	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t424	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	#	O	O
+"	t424	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 This	t425	15	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 means	t426	15	mean	O	O	O	O	O	O	O	O	VVZ	B-VP	mean	VBZ	t424:OBJ||t425:SBJ||t428:OBJ	O
 Nestle	t427	15	Nestle	O	O	O	O	O	O	O	O	NP0	B-NP	nestle	NNP	O	O
@@ -463,15 +463,15 @@ Orlando	t446	15	Orlando	O	O	O	O	O	O	O	O	NP0	B-NP	orlando	NNP	O	O
 ,	t447	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Fla.-based	t448	15	fla.-based	O	O	O	O	O	O	O	O	AJ0	B-NP	fla.-base	NNP	O	O
 Confectioner	t449	15	Confectioner	O	O	O	O	O	O	O	O	NN1	I-NP	confectioner	NNP	O	O
-Magazine	t450	15	Magazine	O	O	O	O	O	O	O	O	NN1	I-NP	magazine	NNP	t446:NMOD||t447:P||t448:NAME||t449:NAME	O
+Magazine	t450	15	Magazine	O	O	O	O	O	O	O	O	NN1	I-NP	magazine	NNP	t446:NAME||t447:NAME||t448:NAME||t449:NAME	O
 .	t451	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t452	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	DT	O	O
+"	t452	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t453:ADV	O
 For	t453	16	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t454:PMOD	O
 them	t454	16	they	O	O	O	O	O	O	O	O	PNP	B-NP	them	PRP	O	O
 ,	t455	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 it	t456	16	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-makes	t457	16	make	O	O	O	O	O	O	O	O	VVZ	B-VP	make	VBZ	t452:SBJ||t453:ADV||t455:P||t456:SBJ||t459:OBJ||t462:P	mainVb
+makes	t457	16	make	O	O	O	O	O	O	O	O	VVZ	B-VP	make	VBZ	t452:ADV||t455:P||t456:SBJ||t459:OBJ||t462:P	mainVb
 all	t458	16	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 kinds	t459	16	kind	O	O	O	O	O	O	O	O	NN2	I-NP	kind	NNS	t458:NMOD||t460:NMOD	O
 of	t460	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t461:PMOD	O
@@ -510,7 +510,7 @@ new	t489	19	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 candy	t490	19	candy	O	O	O	O	O	O	O	O	NN1	I-NP	candy	NN	O	O
 bars	t491	19	bar	O	O	O	O	O	O	O	O	NN2	I-NP	bars	NNS	t488:NMOD||t489:NMOD||t490:NMOD	O
 ,	t492	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t493	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t493	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 make	t494	19	make	e69	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVB	B-VP	make	VBP	t491:SBJ||t492:P||t493:SBJ||t497:OBJ	O
 an	t495	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 important	t496	19	important	O	O	O	O	O	O	O	O	AJ0	I-NP	important	JJ	O	O
@@ -528,7 +528,7 @@ strategic	t507	19	strategic	O	O	O	O	O	O	O	O	AJ0	I-NP	strategic	JJ	O	O
 unit	t508	19	unit	O	O	O	O	O	O	O	O	NN1	I-NP	unit	NN	t504:NMOD||t506:NMOD||t507:NMOD	O
 ,	t509	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t510	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t511	19	say	e71	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t494:OBJ||t509:P||t510:SBJ||t514:OBJ	mainVb
+said	t511	19	say	e71	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t494:OBJ||t509:P||t510:SBJ||t514:SBJ	mainVb
 C.	t512	19	C.	O	O	O	O	O	O	O	O	NP0	B-NP	c.	NNP	O	O
 Alan	t513	19	Alan	O	O	O	O	O	O	O	O	NP0	I-NP	alan	NNP	O	O
 MacDonald	t514	19	MacDonald	O	O	O	O	O	O	O	O	NP0	I-NP	macdonald	NNP	t512:NAME||t513:NAME||t515:P||t516:APPO	O

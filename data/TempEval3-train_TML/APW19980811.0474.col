@@ -1,19 +1,19 @@
-DCT_1998-08-11	O	O	O	O	O	O	tmx0	TIME	1998-08-11	O	O	NP0	B-NP	dct_1998-08-11	SYM	O	O
+DCT_1998-08-11	O	O	O	O	O	O	tmx0	TIME	1998-08-11	O	O	NP0	B-NP	dct_1998-08-11	LS	O	O
 
-MANILA	t1	1	MANILA	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	manila	NNP	O	O
+MANILA	t1	1	MANILA	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	manila	NNP	t2:P||t6:COORD	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Philippines	t3	1	Philippines	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	philippines	NNP	O	O
--LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t4:NAME	O
--RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
-_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	t5:NAME||t6:NAME	O
-Philippine	t8	1	philippine	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	philippine	NNP	t7:NAME	O
+-LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	t3:NAME	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
+-RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t4:NAME||t5:NAME||t11:OBJ	O
+_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	O	O
+Philippine	t8	1	philippine	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	philippine	NNP	O	O
 President	t9	1	President	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	president	NN	O	O
 Joseph	t10	1	Joseph	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	joseph	NNP	O	O
-Estrada	t11	1	Estrada	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	estrada	NNP	t3:NAME||t8:NAME||t9:NAME||t10:NAME	O
+Estrada	t11	1	Estrada	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	estrada	NNP	t7:NAME||t8:NAME||t9:NAME||t10:NAME	O
 on	t12	1	on	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	on	IN	t13:PMOD	O
 Tuesday	t13	1	Tuesday	O	O	O+O+O	tmx4	DATE	1998-08-11	O	O	NP0	B-NP	tuesday	NNP	O	O
-condemned	t14	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:ADV||t2:P||t11:SBJ||t12:TMP||t16:OBJ||t21:LOC||t25:COORD||t34:P	mainVb
+condemned	t14	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:SBJ||t12:TMP||t16:OBJ||t21:LOC||t25:COORD||t34:P	mainVb
 the	t15	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bombings	t16	1	bombing	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	NNS	t15:NMOD||t17:NMOD	O
 of	t17	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t20:PMOD	O
@@ -25,8 +25,8 @@ Kenya	t22	1	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t23:COORD	O
 and	t23	1	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t24:CONJ	O
 Tanzania	t24	1	Tanzania	O	O	O	O	O	O	O	O	NP0	I-NP	tanzania	NNP	O	O
 and	t25	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t26:CONJ	O
-offered	t26	1	offer	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBN	t27:OBJ	O
-condolences	t27	1	condolence	O	O	O	O	O	O	O	O	NN2	B-NP	condolence	NNS	t28:NMOD	O
+offered	t26	1	offer	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBN	t27:OBJ||t28:DTV	O
+condolences	t27	1	condolence	O	O	O	O	O	O	O	O	NN2	B-NP	condolence	NNS	O	O
 to	t28	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t30:PMOD	O
 the	t29	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 victims	t30	1	victim	O	O	O	O	O	O	O	O	NN2	I-NP	victim	NNS	t29:NMOD||t31:COORD	O
@@ -35,9 +35,9 @@ their	t32	1	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 families	t33	1	family	O	O	O	O	O	O	O	O	NN2	I-NP	family	NNS	t32:NMOD	O
 .	t34	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t35	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t35	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t36	2	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-extend	t37	2	extend	e2	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	extend	VB	t35:DEP||t36:SBJ||t40:OBJ||t41:ADV||t47:COORD	O
+extend	t37	2	extend	e2	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	extend	VBP	t36:SBJ||t40:OBJ||t41:ADV||t47:COORD	O
 our	t38	2	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 heartfelt	t39	2	heartfelt	O	O	O	O	O	O	O	O	NN1	I-NP	heartfelt	NN	O	O
 sympathies	t40	2	sympathy	O	O	O	O	O	O	O	O	NN2	I-NP	sympathy	NNS	t38:NMOD||t39:NMOD	O
@@ -58,20 +58,20 @@ Tanzania	t54	2	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	t55:COORD	O
 and	t55	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t58:CONJ	O
 the	t56	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 United	t57	2	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
-States	t58	2	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t56:NAME||t57:NAME	O
+States	t58	2	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t56:NMOD||t57:NAME	O
 ,	t59	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t60	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Estrada	t61	2	Estrada	O	O	O	O	O	O	O	O	NP0	B-NP	estrada	NNP	t60:NAME	O
-said	t62	2	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t37:OBJ||t59:P||t61:SBJ||t63:LOC||t66:P	mainVb
+said	t62	2	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t35:P||t37:OBJ||t59:P||t61:SBJ||t63:LOC||t66:P	mainVb
 in	t63	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t65:PMOD	O
 a	t64	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 statement	t65	2	statement	O	O	O	O	O	O	O	O	NN1	I-NP	statement	NN	t64:NMOD	O
 .	t66	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t67	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t70:NMOD||t84:P	mainVb
+"	t67	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 No	t68	3	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
 cause	t69	3	cause	O	O	O	O	O	O	O	O	NN1	I-NP	cause	NN	t68:NMOD	O
-is	t70	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t69:SBJ||t72:PRD	O
+is	t70	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t67:DEP||t69:SBJ||t72:PRD||t84:P	mainVb
 so	t71	3	so	O	O	O	O	O	O	O	O	AV0	B-ADJP	so	RB	O	O
 great	t72	3	great	O	O	O	O	O	O	O	O	AJ0	I-ADJP	great	JJ	t71:AMOD||t73:AMOD	O
 that	t73	3	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t75:SUB	O
@@ -107,6 +107,6 @@ lives	t101	4	life	O	O	O	O	O	O	O	O	NN2	I-NP	life	NNS	t100:NMOD	O
 and	t102	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t103:CONJ	O
 injured	t103	4	injured	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	injure	VBN	t105:OBJ	O
 nearly	t104	4	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	CD	O	O
-5,000	t105	4	5,000	O	O	O	O	O	O	O	O	CRD	I-NP	5,000	NN	t104:DEP	O
+5,000	t105	4	5,000	O	O	O	O	O	O	O	O	CRD	I-NP	5,000	NN	t104:NMOD	O
 .	t106	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

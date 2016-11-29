@@ -1,7 +1,7 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 First	t1	1	First	O	O	O+O+O	O	O	O	O	O	ORD	B-NP	first	JJ	O	O
-Security	t2	1	Security	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	security	NNP	t1:NMOD||t3:POSTHON	O
+Security	t2	1	Security	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	security	NNP	t1:NAME||t3:POSTHON	O
 Corp.	t3	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t7:OBJ||t20:P	mainVb
 it	t5	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
@@ -15,7 +15,7 @@ for	t12	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t13:PMOD	O
 stock	t13	1	stock	O	O	O	O	O	O	O	O	NN1	B-NP	stock	NN	t14:APPO	O
 valued	t14	1	value	O	O	O	O	O	O	O	O	VVD	B-VP	value	VBN	t15:ADV	O
 at	t15	1	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t17:PMOD	O
-about	t16	1	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
+about	t16	1	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
 $	t17	1	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t16:DEP||t18:DEP||t19:DEP	O
 18	t18	1	18	O	O	O	O	O	O	O	O	CRD	I-NP	18	CD	O	O
 million	t19	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -60,7 +60,7 @@ shares	t55	3	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t54:NMOD||t56:APPO	O
 outstanding	t56	3	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 .	t57	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Deseret	t58	4	Deseret	O	O	O	O	O	O	O	O	NP0	B-NP	deseret	NNP	t59:P||t60:NMOD||t67:P	O
+Deseret	t58	4	Deseret	O	O	O	O	O	O	O	O	NP0	B-NP	deseret	NNP	O	O
 ,	t59	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 with	t60	4	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t62:PMOD	O
 about	t61	4	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
@@ -70,7 +70,7 @@ million	t64	4	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 in	t65	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t66:PMOD	O
 assets	t66	4	asset	O	O	O	O	O	O	O	O	NN2	B-NP	assets	NNS	O	O
 ,	t67	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-is	t68	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t58:SBJ||t70:PRD||t87:P	mainVb
+is	t68	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t58:SBJ||t59:P||t60:ADV||t67:P||t70:PRD||t87:P	mainVb
 the	t69	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 parent	t70	4	parent	O	O	O	O	O	O	O	O	NN1	I-NP	parent	NN	t69:NMOD||t71:NMOD	O
 of	t71	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t74:PMOD	O
@@ -117,9 +117,9 @@ liabilities	t109	5	liability	O	O	O	O	O	O	O	O	NN2	B-NP	liabilities	NNS	O	O
 
 Salt	t111	6	Salt	O	O	O	O	O	O	O	O	NP0	B-NP	salt	NNP	O	O
 Lake	t112	6	Lake	O	O	O	O	O	O	O	O	NP0	I-NP	lake	NNP	O	O
-City-based	t113	6	city-based	O	O	O	O	O	O	O	O	NP0	I-NP	city-base	NNP	t111:NAME||t112:NAME	O
+City-based	t113	6	city-based	O	O	O	O	O	O	O	O	NP0	I-NP	city-base	NNP	O	O
 First	t114	6	First	O	O	O	O	O	O	O	O	ORD	I-NP	first	NNP	O	O
-Security	t115	6	Security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NNP	t113:NMOD||t114:NAME||t116:P||t117:NMOD||t123:P	O
+Security	t115	6	Security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NNP	t111:NAME||t112:NAME||t113:NAME||t114:NAME||t116:P||t117:NMOD||t123:P	O
 ,	t116	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 with	t117	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t118:PMOD	O
 $	t118	6	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t119:DEP||t120:DEP||t121:NMOD	O
@@ -147,7 +147,7 @@ to	t139	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t140:IM	O
 complete	t140	6	complete	e13	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	complete	VB	t142:OBJ||t145:TMP	O
 the	t141	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 transaction	t142	6	transaction	e1993	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	transaction	NN	t141:NMOD	O
-early	t143	6	early	O	O	O	tmx16	DATE	1990	O	O	AV0	B-NP	early	JJ	O	O
+early	t143	6	early	O	O	O	tmx16	DATE	1990	O	O	AV0	B-NP	early	RB	O	O
 next	t144	6	next	O	O	O	tmx16	DATE	1990	O	O	ORD	I-NP	next	JJ	O	O
 year	t145	6	year	O	O	O	tmx16	DATE	1990	O	O	NN1	I-NP	year	NN	t143:NMOD||t144:NMOD	O
 .	t146	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

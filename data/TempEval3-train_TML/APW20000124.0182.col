@@ -1,4 +1,4 @@
-DCT_2000-01-24T19:48	O	O	O	O	O	O	tmx0	TIME	2000-01-24T19:48	O	O	NP0	B-NP	dct_2000-01-24t19	SYM	O	O
+DCT_2000-01-24T19:48	O	O	O	O	O	O	tmx0	TIME	2000-01-24T19:48	O	O	NP0	B-NP	dct_2000-01-24t19:48	VBG	O	O
 
 HAMILTON	t1	1	HAMILTON	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hamilton	NNP	O	O
 -LRB-	t2	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
@@ -6,7 +6,7 @@ AP	t3	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
 -RRB-	t4	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t1:NAME||t2:NAME||t3:NAME||t5:P	O
 --	t5	1	--	O	O	O+O+O	O	O	O	O	O	NP0	O	--	:	O	O
 Canadian	t6	1	canadian	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	canadian	JJ	O	O
-authorities	t7	1	authority	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	authorities	NNS	t4:SBJ||t6:NMOD	O
+authorities	t7	1	authority	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	authorities	NNS	t4:TITLE||t6:NMOD	O
 issued	t8	1	issue	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	issue	VBD	t7:SBJ||t12:OBJ||t13:TMP||t34:P	mainVb
 a	t9	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 nationwide	t10	1	nationwide	O	O	O	O	O	O	O	O	AJ0	I-NP	nationwide	JJ	O	O
@@ -23,7 +23,7 @@ U.S.	t20	1	U.S.	O	O	O	O	O	O	O	O	CRD	I-NP	u.s.	NNP	t19:NMOD||t21:NMOD||t22:NMOD	O
 fugitive	t21	1	fugitive	O	O	O	O	O	O	O	O	NN1	I-NP	fugitive	JJ	O	O
 on	t22	1	on	e2	STATE	NONE+NONE+POS	O	O	O	O	O	PRP	B-PP	on	IN	t24:PMOD	O
 the	t23	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-FBI	t24	1	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	t23:NMOD||t25:SUFFIX||t27:TMP	O
+FBI	t24	1	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	t23:NMOD||t25:SUFFIX||t27:NMOD	O
 's	t25	1	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 most	t26	1	most	O	O	O	O	O	O	O	O	AV0	B-ADJP	most	RBS	O	O
 wanted	t27	1	want	O	O	O	O	O	O	O	O	AJ0	I-ADJP	want	VBD	t26:SBJ||t28:OBJ	O
@@ -35,12 +35,12 @@ anti-abortion	t32	1	anti-abortion	O	O	O	O	O	O	O	O	NN1	I-NP	anti-abortion	NN	O	O
 murder	t33	1	murder	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	murder	NN	t30:NMOD||t31:NMOD||t32:NMOD	O
 .	t34	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Kopp	t35	2	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NN	O	O
+Kopp	t35	2	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	O	O
 also	t36	2	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
 is	t37	2	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t35:SBJ||t36:ADV||t38:VC||t52:P	mainVb
 wanted	t38	2	want	e4	I_STATE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	want	VBN	t39:ADV	mainVb
 for	t39	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t40:PMOD	O
-questioning	t40	2	question	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	question	VBG	t41:ADV	O
+questioning	t40	2	question	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	question	VBG	t41:LOC	O
 in	t41	2	in	O	O	O	O	O	O	O	O	AVP	B-PP	in	IN	t46:PMOD	O
 at	t42	2	at	O	O	O	O	O	O	O	O	AV0	B-NP	at	IN	O	O
 least	t43	2	least	O	O	O	O	O	O	O	O	AV0	I-NP	least	JJS	O	O
@@ -59,19 +59,19 @@ Canadian	t54	3	canadian	O	O	O	O	O	O	O	O	NN1	I-NP	canadian	JJ	O	O
 warrant	t55	3	warrant	O	O	O	O	O	O	O	O	NN1	I-NP	warrant	NN	t53:NMOD||t54:NMOD||t56:APPO	O
 issued	t56	3	issue	e8	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVD	B-VP	issue	VBN	t57:TMP	O
 Monday	t57	3	Monday	O	O	O	tmx3	DATE	2000-01-24	O	O	NP0	B-NP	monday	NNP	O	O
-charged	t58	3	charge	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	charge	VBD	t55:SBJ||t59:OBJ||t60:ADV||t63:TMP||t78:COORD||t89:P	mainVb
+charged	t58	3	charge	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	charge	VBD	t55:SBJ||t59:OBJ||t60:ADV||t78:COORD||t89:P	mainVb
 Kopp	t59	3	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	O	O
 with	t60	3	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t62:PMOD	O
 attempted	t61	3	attempt	O	O	O	O	O	O	O	O	AJ0	B-NP	attempt	VBN	O	O
-murder	t62	3	murder	O	O	O	O	O	O	O	O	NN1	I-NP	murder	NN	t61:NMOD	O
+murder	t62	3	murder	O	O	O	O	O	O	O	O	NN1	I-NP	murder	NN	t61:NMOD||t63:LOC	O
 in	t63	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t66:PMOD	O
 the	t64	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 1995	t65	3	1995	O	O	O	tmx4	DATE	1995	O	O	CRD	I-NP	1995	CD	O	O
-shooting	t66	3	shooting	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	shooting	NN	t64:NMOD||t65:NMOD||t67:NMOD||t71:P||t73:NMOD	O
+shooting	t66	3	shooting	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	shooting	NN	t64:NMOD||t65:NMOD||t67:NMOD	O
 of	t67	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t70:PMOD	O
 Dr.	t68	3	Dr.	O	O	O	O	O	O	O	O	NP0	B-NP	dr.	NN	O	O
 Hugh	t69	3	Hugh	O	O	O	O	O	O	O	O	NP0	I-NP	hugh	NNP	O	O
-Short	t70	3	Short	O	O	O	O	O	O	O	O	NP0	I-NP	short	NNP	t68:TITLE||t69:NAME	O
+Short	t70	3	Short	O	O	O	O	O	O	O	O	NP0	I-NP	short	NNP	t68:TITLE||t69:NAME||t71:P||t73:NMOD	O
 ,	t71	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t72	3	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 was	t73	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t72:SBJ||t74:VC	O
@@ -92,7 +92,7 @@ Ancaster	t86	3	Ancaster	O	O	O	O	O	O	O	O	NP0	B-NP	ancaster	NNP	O	O
 Ontario	t88	3	Ontario	O	O	O	O	O	O	O	O	NP0	B-NP	ontario	NNP	t86:NMOD||t87:P	O
 .	t89	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t90	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t90	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 It	t91	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 allows	t92	4	allow	e14	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	allow	VBZ	t90:DEP||t91:SBJ||t93:OBJ||t94:OPRD||t103:COORD	O
 us	t93	4	we	O	O	O	O	O	O	O	O	PNP	B-NP	us	PRP	O	O
@@ -102,7 +102,7 @@ his	t96	4	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 name	t97	4	name	O	O	O	O	O	O	O	O	NN1	I-NP	name	NN	t96:NMOD	O
 far	t98	4	far	O	O	O	O	O	O	O	O	AV0	B-ADVP	far	RB	t99:COORD	O
 and	t99	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t100:CONJ	O
-wide	t100	4	wide	O	O	O	O	O	O	O	O	AJ0	B-ADJP	wide	RB	O	O
+wide	t100	4	wide	O	O	O	O	O	O	O	O	AJ0	B-ADJP	wide	JJ	O	O
 across	t101	4	across	O	O	O	O	O	O	O	O	PRP	B-PP	across	IN	t102:PMOD	O
 Canada	t102	4	Canada	O	O	O	O	O	O	O	O	NP0	B-NP	canada	NNP	O	O
 and	t103	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t104:CONJ	O
@@ -116,7 +116,7 @@ attempted	t110	4	attempt	O	O	O	O	O	O	O	O	AJ0	B-NP	attempt	VBN	O	O
 murder	t111	4	murder	O	O	O	O	O	O	O	O	NN1	I-NP	murder	NN	t110:NMOD	O
 ,	t112	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t113	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t114	4	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t92:OBJ||t112:P||t113:SBJ||t116:OBJ||t119:P	mainVb
+said	t114	4	say	e18	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t92:OBJ||t112:P||t113:SBJ||t116:SBJ||t119:P	mainVb
 police	t115	4	police	O	O	O	O	O	O	O	O	NN2	B-NP	police	NN	O	O
 Inspector	t116	4	Inspector	O	O	O	O	O	O	O	O	NP0	I-NP	inspector	NN	t115:NMOD||t118:APPO	O
 Dave	t117	4	Dave	O	O	O	O	O	O	O	O	NP0	I-NP	dave	NNP	O	O
@@ -162,18 +162,18 @@ in	t154	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t155:PMOD	O
 connection	t155	6	connection	O	O	O	O	O	O	O	O	PRP	B-NP	connection	NN	t156:NMOD	O
 with	t156	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t158:PMOD	O
 the	t157	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-shooting	t158	6	shooting	e22	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	shooting	NN	t157:NMOD||t159:NMOD||t161:LOC	O
+shooting	t158	6	shooting	e22	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	shooting	NN	t157:NMOD||t159:NMOD	O
 of	t159	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t160:PMOD	O
-doctors	t160	6	doctor	O	O	O	O	O	O	O	O	NN2	B-NP	doctor	NNS	O	O
+doctors	t160	6	doctor	O	O	O	O	O	O	O	O	NN2	B-NP	doctor	NNS	t161:LOC	O
 in	t161	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t162:PMOD	O
-Winnipeg	t162	6	Winnipeg	O	O	O	O	O	O	O	O	NP0	B-NP	winnipeg	NNP	t163:P||t164:COORD||t167:P	O
+Winnipeg	t162	6	Winnipeg	O	O	O	O	O	O	O	O	NP0	B-NP	winnipeg	NNP	t163:P||t164:COORD	O
 ,	t163	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Vancouver	t164	6	Vancouver	O	O	O	O	O	O	O	O	NP0	B-NP	vancouver	NNP	t165:COORD	O
-and	t165	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t166:CONJ	O
+and	t165	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t169:CONJ	O
 Rochester	t166	6	Rochester	O	O	O	O	O	O	O	O	NP0	I-NP	rochester	NNP	O	O
-,	t167	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t169:LOC	O
+,	t167	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 New	t168	6	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
-York	t169	6	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t168:NAME	O
+York	t169	6	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t166:NMOD||t167:P||t168:NAME	O
 .	t170	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Slepian	t171	7	Slepian	O	O	O	O	O	O	O	O	NP0	B-NP	slepian	JJ	O	O
@@ -186,7 +186,7 @@ gunshot	t177	7	gunshot	O	O	O	O	O	O	O	O	NN1	I-NP	gunshot	NN	t175:NMOD||t176:NMOD|
 fired	t178	7	fire	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	B-VP	fire	VBD	t179:ADV||t183:MNR	O
 from	t179	7	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t182:PMOD	O
 a	t180	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-wooded	t181	7	wooded	O	O	O	O	O	O	O	O	AJ0	I-NP	woode	JJ	O	O
+wooded	t181	7	wooded	O	O	O	O	O	O	O	O	AJ0	I-NP	woode	VBN	O	O
 area	t182	7	area	O	O	O	O	O	O	O	O	NN1	I-NP	area	NN	t180:NMOD||t181:NMOD	O
 through	t183	7	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t185:PMOD	O
 a	t184	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -197,15 +197,15 @@ home	t188	7	home	O	O	O	O	O	O	O	O	NN1	I-NP	home	NN	t187:NMOD	O
 .	t189	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Kopp	t190	8	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	O	O
-purports	t191	8	purport	e25	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	purport	VBZ	t190:SBJ||t192:OPRD||t198:P||t199:COORD||t227:P	mainVb
-to	t192	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t193:IM	mainVb
-be	t193	8	be	e26	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VBI	I-VP	be	VB	t197:PRD	mainVb
+purports	t191	8	purport	e25	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	purport	VBZ	t190:SBJ||t192:OPRD||t198:P||t199:COORD	O
+to	t192	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t193:IM	O
+be	t193	8	be	e26	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VBI	I-VP	be	VB	t197:PRD	O
 a	t194	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-devout	t195	8	devout	O	O	O	O	O	O	O	O	AJ0	I-NP	devout	NNP	O	O
+devout	t195	8	devout	O	O	O	O	O	O	O	O	AJ0	I-NP	devout	JJ	O	O
 Roman	t196	8	Roman	O	O	O	O	O	O	O	O	AJ0	I-NP	roman	NNP	O	O
-Catholic	t197	8	Catholic	O	O	O	O	O	O	O	O	AJ0	I-NP	catholic	NNP	t194:NMOD||t195:NAME||t196:NAME	O
+Catholic	t197	8	Catholic	O	O	O	O	O	O	O	O	AJ0	I-NP	catholic	NNP	t194:NMOD||t195:NMOD||t196:NAME	O
 ,	t198	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-and	t199	8	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t224:CONJ	O
+and	t199	8	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t212:CONJ	O
 the	t200	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 majority	t201	8	majority	O	O	O	O	O	O	O	O	NN1	I-NP	majority	NN	t200:NMOD||t202:NMOD	O
 of	t202	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t203:PMOD	O
@@ -230,7 +230,7 @@ the	t220	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 U.S.	t221	8	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
 Justice	t222	8	Justice	O	O	O	O	O	O	O	O	NN1	I-NP	justice	NNP	O	O
 Department	t223	8	Department	O	O	O	O	O	O	O	O	NN1	I-NP	department	NNP	t220:NMOD||t221:NAME||t222:TITLE	O
-said	t224	8	say	e29	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t212:OBJ||t219:P||t223:SBJ||t226:TMP	O
+said	t224	8	say	e29	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t191:OBJ||t219:P||t223:SBJ||t226:TMP||t227:P	mainVb
 last	t225	8	last	O	O	O	tmx8	DATE	1999	O	O	ORD	B-NP	last	JJ	O	O
 year	t226	8	year	O	O	O	tmx8	DATE	1999	O	O	NN1	I-NP	year	NN	t225:NMOD	O
 .	t227	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -293,16 +293,16 @@ then	t277	12	then	O	O	O	O	O	O	O	O	AV0	B-ADVP	then	RB	O	O
 fugitives	t280	12	fugitive	O	O	O	O	O	O	O	O	NN2	I-NP	fugitive	NNS	t279:NMOD	O
 have	t281	12	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t276:TMP||t278:P||t280:SBJ||t282:VC	O
 been	t282	12	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t283:VC	O
-taken	t283	12	take	e38	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	take	VBN	t284:ADV||t292:PRP	O
+taken	t283	12	take	e38	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	take	VBN	t284:ADV||t286:COORD||t288:P||t292:PRP	O
 into	t284	12	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t285:PMOD	O
-custody	t285	12	custody	O	O	O	O	O	O	O	O	NN1	B-NP	custody	NN	t286:COORD	O
-or	t286	12	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t287:CONJ||t288:P||t289:CONJ	O
+custody	t285	12	custody	O	O	O	O	O	O	O	O	NN1	B-NP	custody	NN	O	O
+or	t286	12	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t287:CONJ	O
 located	t287	12	located	e39	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	locate	VBN	O	O
 ,	t288	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 133	t289	12	133	O	O	O	O	O	O	O	O	CRD	B-NP	133	CD	t290:NMOD	O
 of	t290	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t291:PMOD	O
 them	t291	12	they	O	O	O	O	O	O	O	O	PNP	B-NP	them	PRP	O	O
-as	t292	12	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t294:PMOD	O
+as	t292	12	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t289:SBJ||t294:PMOD	O
 a	t293	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 result	t294	12	result	O	O	O	O	O	O	O	O	NN1	I-NP	result	NN	t293:NMOD||t295:NMOD	O
 of	t295	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t297:PMOD	O
@@ -328,7 +328,7 @@ United	t313	13	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
 States	t314	13	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t312:NMOD||t313:NAME	O
 for	t315	13	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t316:PMOD	O
 information	t316	13	information	O	O	O	O	O	O	O	O	NN1	B-NP	information	NN	t317:APPO	O
-leading	t317	13	lead	e43	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	lead	VBG	t318:DIR	O
+leading	t317	13	lead	e43	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	lead	JJ	t318:AMOD	O
 to	t318	13	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t321:PMOD	O
 Kopp	t319	13	Kopp	O	O	O	O	O	O	O	O	NP0	B-NP	kopp	NNP	t320:SUFFIX	O
 's	t320	13	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O

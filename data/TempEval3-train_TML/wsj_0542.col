@@ -1,8 +1,8 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Dow	t1	1	Dow	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	dow	NNP	O	O
-Jones	t2	1	Jones	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	jones	NNP	O	O
-amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	amp	NNP	t1:NAME||t2:NAME||t4:POSTHON	O
+Jones	t2	1	Jones	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	jones	NNP	t1:NAME	O
+amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	amp	NNP	t2:NAME||t4:POSTHON	O
 Co.	t4	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
 extended	t5	1	extend	e1	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	extend	VBD	t3:SBJ||t8:OBJ||t34:TMP||t41:P	mainVb
 its	t6	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
@@ -33,10 +33,10 @@ does	t30	1	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t29:SBJ||t31:ADV||t32:TMP||t33:VC	
 n't	t31	1	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
 already	t32	1	already	O	O	O	O	O	O	O	O	AV0	B-ADVP	already	RB	O	O
 own	t33	1	own	O	O	O	O	O	O	O	O	DT0	B-NP	own	VBN	t28:OBJ	O
-until	t34	1	until	O	O	O	O	O	O	O	O	PRP	I-NP	until	IN	t37:PMOD	O
+until	t34	1	until	O	O	O	O	O	O	O	O	PRP	I-NP	until	IN	t35:PMOD	O
 5	t35	1	5	O	O	O	tmx87	TIME	1989-11-06T17	O	O	CRD	I-NP	5	CD	t36:NMOD	O
-p.m.	t36	1	p.m.	O	O	O	tmx87	TIME	1989-11-06T17	O	O	AV0	I-NP	p.m.	RB	O	O
-EST	t37	1	EST	O	O	O	tmx87	TIME	1989-11-06T17	O	O	NP0	I-NP	est	NNP	t35:NMOD||t38:P||t40:APPO	O
+p.m.	t36	1	p.m.	O	O	O	tmx87	TIME	1989-11-06T17	O	O	AV0	I-NP	p.m.	RB	t37:APPO||t38:P||t40:APPO	O
+EST	t37	1	EST	O	O	O	tmx87	TIME	1989-11-06T17	O	O	NP0	I-NP	est	NNP	O	O
 ,	t38	1	,	O	O	O	tmx87	TIME	1989-11-06T17	O	O	PUN	O	,	,	O	O
 Nov.	t39	1	Nov.	O	O	O	tmx87	TIME	1989-11-06T17	O	O	NP0	B-NP	nov.	NNP	O	O
 6	t40	1	6	O	O	O	tmx87	TIME	1989-11-06T17	O	O	CRD	I-NP	6	CD	t39:NMOD	O
@@ -198,7 +198,7 @@ supplement	t190	6	supplement	O	O	O	O	O	O	O	O	NN1	I-NP	supplement	NN	t187:NMOD||t
 ,	t191	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Dow	t192	6	Dow	O	O	O	O	O	O	O	O	NP0	B-NP	dow	NNP	O	O
 Jones	t193	6	Jones	O	O	O	O	O	O	O	O	NP0	I-NP	jones	NNP	t192:NAME	O
-discloses	t194	6	disclose	e44	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	disclose	VBZ	t186:LOC||t191:P||t193:SBJ||t198:OBJ||t199:COORD||t235:P||t236:P	mainVb
+discloses	t194	6	disclose	e44	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	disclose	VBZ	t186:LOC||t191:P||t193:SBJ||t198:OBJ||t199:COORD||t235:P	mainVb
 the	t195	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 different	t196	6	different	O	O	O	O	O	O	O	O	AJ0	I-NP	different	JJ	O	O
 growth	t197	6	growth	O	O	O	O	O	O	O	O	NN1	I-NP	growth	NN	O	O
@@ -206,19 +206,19 @@ forecasts	t198	6	forecast	e45	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	foreca
 but	t199	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t200:CONJ	O
 says	t200	6	say	e46	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t202:OBJ	O
 it	t201	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-views	t202	6	view	e47	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	view	VBZ	t201:SBJ||t208:OBJ||t209:ADV	O
+views	t202	6	view	e47	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	view	VBZ	t201:SBJ||t207:OBJ||t208:P||t209:ADV	O
 the	t203	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 20	t204	6	20	O	O	O	O	O	O	O	O	CRD	I-NP	20	CD	O	O
 %	t205	6	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t204:NMOD	O
 growth	t206	6	growth	O	O	O	O	O	O	O	O	NN1	I-NP	growth	NN	O	O
-rate	t207	6	rate	O	O	O	O	O	O	O	O	NN1	I-NP	rate	NN	t206:NMOD	O
-"	t208	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t203:NMOD||t205:NMOD||t207:NMOD	O
-as	t209	6	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t213:PMOD||t219:COORD	O
+rate	t207	6	rate	O	O	O	O	O	O	O	O	NN1	I-NP	rate	NN	t203:NMOD||t205:NMOD||t206:NMOD	O
+"	t208	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+as	t209	6	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t213:PMOD	O
 a	t210	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 hoped-for	t211	6	hoped-for	O	O	O	O	O	O	O	O	AJ0	I-NP	hoped-for	NN	O	O
 goal	t212	6	goal	O	O	O	O	O	O	O	O	NN1	I-NP	goal	NN	t211:NMOD	O
 "	t213	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t210:NMOD||t212:NMOD||t214:NMOD	O
-of	t214	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t218:PMOD	O
+of	t214	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t218:PMOD||t219:COORD	O
 Telerate	t215	6	Telerate	O	O	O	O	O	O	O	O	NP0	B-NP	telerate	NNP	t216:SUFFIX	O
 's	t216	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 management	t217	6	management	O	O	O	O	O	O	O	O	NN1	I-NP	management	NN	O	O
@@ -239,8 +239,8 @@ company	t230	6	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t229:NMOD||t231:SUFFI
 likely	t232	6	likely	O	O	O	O	O	O	O	O	AJ0	B-ADJP	likely	JJ	O	O
 future	t233	6	future	O	O	O	O	O	O	O	O	AJ0	B-NP	future	NN	O	O
 performance	t234	6	performance	O	O	O	O	O	O	O	O	NN1	I-NP	performance	NN	t230:NMOD||t232:NMOD||t233:NMOD	O
-.	t235	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t236	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+.	t235	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t236:NMOD	O
+"	t236	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Telerate	t237	7	Telerate	O	O	O	O	O	O	O	O	AJ0	B-NP	telerate	NNP	O	O
 shares	t238	7	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t237:NMOD	O

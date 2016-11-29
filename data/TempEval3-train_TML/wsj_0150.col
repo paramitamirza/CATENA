@@ -1,11 +1,11 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	UNC	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	UNC	B-NP	dct_1989-11-02	LS	O	O
 
 A.L.	t1	1	A.L.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	a.l.	NNP	O	O
 Williams	t2	1	Williams	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	williams	NNP	t1:NAME||t3:POSTHON	O
 Corp.	t3	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 was	t4	1	be	O	O	O+O+O	O	O	O	O	O	VBD	B-VP	be	VBD	t2:SBJ||t5:VC	O
-merged	t5	1	merge	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	merge	VBN	t6:ADV||t12:P||t13:TMP	O
-into	t6	1	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	O	O
+merged	t5	1	merge	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	merge	VBN	t6:ADV||t13:TMP	O
+into	t6	1	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t12:P	O
 Primerica	t7	1	Primerica	O	O	O	O	O	O	O	O	NP0	B-NP	primerica	NNP	t8:POSTHON	O
 Corp.	t8	1	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 ,	t9	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -74,7 +74,7 @@ Williams	t69	3	Williams	O	O	O	O	O	O	O	O	NP0	I-NP	williams	NNP	O	O
 share	t70	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t68:NMOD||t69:NMOD	O
 .	t71	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Williams	t72	4	Williams	O	O	O	O	O	O	O	O	NP0	B-NP	williams	NNS	O	O
+Williams	t72	4	Williams	O	O	O	O	O	O	O	O	NP0	B-NP	williams	NNP	O	O
 shares	t73	4	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t72:NMOD||t74:P||t76:NMOD||t93:P	O
 ,	t74	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t75	4	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
@@ -147,13 +147,13 @@ amp	t138	7	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
 Associates	t139	7	Associates	O	O	O	O	O	O	O	O	NN2	I-NP	associate	NNPS	t135:NMOD||t137:NAME||t138:NAME	O
 .	t140	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Primerica	t141	8	Primerica	O	O	O	O	O	O	O	O	NP0	B-NP	primerica	NNP	O	O
+Primerica	t141	8	Primerica	O	O	O	O	O	O	O	O	NP0	B-NP	primerica	NNP	t142:P||t143:NMOD||t145:P	O
 ,	t142	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 as	t143	8	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t144:SUB	O
 expected	t144	8	expect	O	O	O	O	O	O	O	O	VVN	B-VP	expect	VBN	O	O
 ,	t145	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 also	t146	8	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-acquired	t147	8	acquire	e27	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	acquire	VBN	t141:SBJ||t142:P||t143:ADV||t145:P||t146:ADV||t149:OBJ||t153:COORD||t159:P	mainVb
+acquired	t147	8	acquire	e27	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	acquire	VBN	t141:SBJ||t146:ADV||t149:OBJ||t153:COORD||t159:P	mainVb
 certain	t148	8	certain	O	O	O	O	O	O	O	O	AJ0	B-NP	certain	JJ	O	O
 assets	t149	8	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNS	t148:NMOD||t150:NMOD	O
 of	t150	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t152:PMOD	O

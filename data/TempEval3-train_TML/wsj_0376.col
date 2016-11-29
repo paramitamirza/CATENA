@@ -1,4 +1,4 @@
-DCT_1989-10-31	O	O	O	O	O	O	tmx0	DATE	1989-10-31	O	O	NP0	B-NP	dct_1989-10-31	SYM	O	O
+DCT_1989-10-31	O	O	O	O	O	O	tmx0	DATE	1989-10-31	O	O	NP0	B-NP	dct_1989-10-31	LS	O	O
 
 Courtaulds	t1	1	Courtaulds	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	courtaulds	NNP	O	O
 PLC	t2	1	PLC	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	plc	NNP	t1:NAME	O
@@ -57,7 +57,7 @@ million	t52	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 $	t54	2	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t55:DEP||t56:DEP	O
 473	t55	2	473	O	O	O	O	O	O	O	O	CRD	I-NP	473	CD	O	O
 million	t56	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t57	2	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t53:NAME||t54:NMOD	O
+-RRB-	t57	2	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t53:NMOD||t54:NMOD	O
 and	t58	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t59:CONJ	O
 #	t59	2	#	O	O	O	O	O	O	O	O	UNC	B-NP	#	#	t60:DEP||t61:DEP	O
 400	t60	2	400	O	O	O	O	O	O	O	O	CRD	I-NP	400	CD	O	O
@@ -156,17 +156,17 @@ though	t147	7	though	O	O	O	O	O	O	O	O	CJS	B-SBAR	though	IN	t149:SUB	O
 it	t148	7	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 is	t149	7	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t148:SBJ||t150:VC	O
 dwarfed	t150	7	dwarf	O	O	O	O	O	O	O	O	VVN	I-VP	dwarf	VBN	t151:ADV	O
-by	t151	7	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t156:PMOD	O
+by	t151	7	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t156:LOC	O
 B.A.T	t152	7	B.A.T	O	O	O	O	O	O	O	O	NP0	B-NP	b.a.t	NNP	O	O
 Industries	t153	7	Industries	O	O	O	O	O	O	O	O	NP0	I-NP	industry	NNPS	t152:NAME	O
 PLC	t154	7	PLC	O	O	O	O	O	O	O	O	NP0	I-NP	plc	NNP	t153:NAME||t155:SUFFIX	O
 's	t155	7	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 plans	t156	7	plan	e95	I_STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	plan	NNS	t154:NMOD||t157:NMOD	O
 to	t157	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t158:IM	O
-spin	t158	7	spin	e31	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	spin	VB	t160:PRT||t161:OBJ||t166:PRP	O
+spin	t158	7	spin	e31	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	spin	VB	t161:OBJ||t166:PRP	O
 roughly	t159	7	roughly	O	O	O	O	O	O	O	O	AV0	B-ADVP	roughly	RB	O	O
-off	t160	7	off	O	O	O	O	O	O	O	O	AVP	B-ADVP	off	RP	O	O
-#	t161	7	#	O	O	O	O	O	O	O	O	UNC	B-NP	#	#	t159:DEP||t162:DEP||t163:DEP||t164:NMOD	O
+off	t160	7	off	O	O	O	O	O	O	O	O	AVP	B-ADVP	off	RB	O	O
+#	t161	7	#	O	O	O	O	O	O	O	O	UNC	B-NP	#	#	t159:DEP||t160:DEP||t162:DEP||t163:DEP||t164:NMOD	O
 4	t162	7	4	O	O	O	O	O	O	O	O	CRD	I-NP	4	CD	O	O
 billion	t163	7	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 in	t164	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t165:PMOD	O
@@ -191,9 +191,9 @@ divested	t181	8	divested	O	O	O	O	O	O	O	O	AJ0	I-NP	divest	VBN	O	O
 Courtaulds	t182	8	Courtaulds	O	O	O	O	O	O	O	O	NP0	I-NP	courtaulds	NNP	O	O
 textile	t183	8	textile	O	O	O	O	O	O	O	O	NN1	I-NP	textile	NN	O	O
 operations	t184	8	operation	O	O	O	O	O	O	O	O	NN2	I-NP	operations	NNS	t180:NMOD||t181:NMOD||t182:NMOD||t183:NMOD	O
-had	t185	8	have	e96	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t184:SBJ||t187:OBJ||t204:P	mainVb
+had	t185	8	have	e96	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t184:SBJ||t187:OBJ||t198:TMP||t204:P	mainVb
 operating	t186	8	operating	O	O	O	O	O	O	O	O	VVG	I-VP	operate	VBG	O	mainVb
-profit	t187	8	profit	e97	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	profit	NN	t186:NMOD||t188:NMOD||t192:NMOD||t198:TMP	O
+profit	t187	8	profit	e97	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	profit	NN	t186:NMOD||t188:NMOD||t192:NMOD	O
 of	t188	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t189:PMOD	O
 #	t189	8	#	O	O	O	O	O	O	O	O	UNC	B-NP	#	#	t190:DEP||t191:DEP	O
 50	t190	8	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
@@ -270,7 +270,7 @@ and	t258	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t259:CONJ	O
 textile	t259	10	textile	O	O	O	O	O	O	O	O	AJ0	B-NP	textile	NN	O	O
 businesses	t260	10	business	O	O	O	O	O	O	O	O	NN2	I-NP	business	NNS	t255:NMOD||t256:NMOD||t257:NMOD	O
 to	t261	10	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t262:IM	O
-focus	t262	10	focus	e104	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	focus	VB	t264:MNR||t265:ADV	O
+focus	t262	10	focus	e104	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	focus	VB	t264:MNR||t265:LOC	O
 more	t263	10	more	O	O	O	O	O	O	O	O	AV0	B-ADVP	more	RBR	O	O
 closely	t264	10	closely	O	O	O	O	O	O	O	O	AV0	I-ADVP	closely	RB	t263:AMOD	O
 on	t265	10	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t267:PMOD	O
@@ -334,10 +334,10 @@ threat	t319	13	threat	O	O	O	O	O	O	O	O	NN1	I-NP	threat	NN	t316:NMOD||t317:NMOD||t
 ,	t320	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Courtaulds	t321	13	Courtaulds	O	O	O	O	O	O	O	O	NP0	B-NP	courtaulds	NNP	O	O
 is	t322	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t315:ADV||t320:P||t321:SBJ||t323:VC	O
-giving	t323	13	give	e64	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	give	VBG	t324:OBJ||t326:OBJ	O
+giving	t323	13	give	e64	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	give	VBG	t324:OBJ||t325:P||t326:OBJ	O
 shareholders	t324	13	shareholder	O	O	O	O	O	O	O	O	NN2	B-NP	shareholder	NNS	O	O
-"	t325	13	"	O	O	O	O	O	O	O	O	POS	B-NP	"	PRP$	O	O
-choice	t326	13	choice	O	O	O	O	O	O	O	O	NN1	I-NP	choice	NN	t325:NMOD||t327:COORD	O
+"	t325	13	"	O	O	O	O	O	O	O	O	POS	B-NP	"	:	O	O
+choice	t326	13	choice	O	O	O	O	O	O	O	O	NN1	I-NP	choice	NN	t327:COORD	O
 and	t327	13	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t328:CONJ	O
 value	t328	13	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	O	O
 ,	t329	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -363,9 +363,9 @@ statement	t347	14	statement	O	O	O	O	O	O	O	O	NN1	I-NP	statement	NN	t346:NMOD	O
 ,	t348	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t349	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t350	14	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t349:NMOD	O
-said	t351	14	say	O	O	O	O	O	O	O	O	VVD	B-VP	say	VBD	t345:LOC||t348:P||t350:SBJ||t352:P||t353:P||t356:OBJ||t375:P	mainVb
+said	t351	14	say	O	O	O	O	O	O	O	O	VVD	B-VP	say	VBD	t345:LOC||t348:P||t350:SBJ||t352:P||t353:ADV||t356:OBJ||t375:P	mainVb
 :	t352	14	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
-"	t353	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	.	O	O
+"	t353	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 Both	t354	14	both	O	O	O	O	O	O	O	O	DT0	B-NP	both	DT	O	O
 parts	t355	14	part	O	O	O	O	O	O	O	O	NN2	I-NP	parts	NNS	t354:NMOD	O
 can	t356	14	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t355:SBJ||t357:ADV||t358:VC	O
@@ -411,14 +411,14 @@ employees	t393	15	employee	O	O	O	O	O	O	O	O	NN2	I-NP	employee	NNS	O	O
 "	t395	15	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Courtaulds	t396	16	Courtaulds	O	O	O	O	O	O	O	O	NP0	B-NP	courtaulds	NNP	O	O
-Chairman	t397	16	Chairman	O	O	O	O	O	O	O	O	NP0	I-NP	chairman	NN	t396:NAME||t398:COORD	O
+Chairman	t397	16	Chairman	O	O	O	O	O	O	O	O	NP0	I-NP	chairman	NN	t396:NMOD||t398:COORD||t403:APPO	O
 and	t398	16	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t400:CONJ	O
 Chief	t399	16	Chief	O	O	O	O	O	O	O	O	NP0	B-NP	chief	NNP	O	O
 Executive	t400	16	Executive	O	O	O	O	O	O	O	O	NP0	I-NP	executive	NN	t399:NMOD	O
-Sir	t401	16	Sir	O	O	O	O	O	O	O	O	NP0	I-NP	sir	NNP	t397:NMOD||t403:APPO	O
+Sir	t401	16	Sir	O	O	O	O	O	O	O	O	NP0	I-NP	sir	NNP	O	O
 Christopher	t402	16	Christopher	O	O	O	O	O	O	O	O	NP0	I-NP	christopher	NNP	O	O
-Hogg	t403	16	Hogg	O	O	O	O	O	O	O	O	NP0	I-NP	hogg	NNP	t402:NAME	O
-will	t404	16	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t401:SBJ||t405:VC||t417:P	mainVb
+Hogg	t403	16	Hogg	O	O	O	O	O	O	O	O	NP0	I-NP	hogg	NNP	t401:NAME||t402:NAME	O
+will	t404	16	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t397:SBJ||t405:VC||t417:P	mainVb
 remain	t405	16	remain	e77	STATE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	remain	VB	t406:LOC-PRD||t414:TMP	mainVb
 in	t406	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t408:PMOD	O
 both	t407	16	both	O	O	O	O	O	O	O	O	DT0	B-NP	both	DT	O	O

@@ -1,31 +1,31 @@
-DCT_1999-02-27	O	O	O	O	O	O	tmx0	DATE	1999-02-27	O	O	NP0	B-NP	dct_1999-02-27	SYM	O	O
+DCT_1999-02-27	O	O	O	O	O	O	tmx0	DATE	1999-02-27	O	O	NP0	B-NP	dct_1999-02-27	LS	O	O
 
-WARSAW	t1	1	WARSAW	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	warsaw	NNP	t2:P||t3:COORD	O
+WARSAW	t1	1	WARSAW	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	warsaw	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-February	t3	1	February	O	O	O+O+O	tmx111	DATE	1999-02-26	O	O	NP0	B-NP	february	NNP	t4:NMOD||t7:COORD	O
+February	t3	1	February	O	O	O+O+O	tmx111	DATE	1999-02-26	O	O	NP0	B-NP	february	NNP	t4:NMOD	O
 26	t4	1	26	O	O	O+O+O	tmx111	DATE	1999-02-26	O	O	CRD	I-NP	26	CD	O	O
 -LRB-	t5	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
 Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	xinhua	NNP	O	O
--RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t5:NAME||t6:NAME||t8:P||t10:APPO	O
+-RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t3:NMOD||t5:NAME||t6:NAME	O
 --	t8	1	--	O	O	O+O+O	O	O	O	O	O	NP0	O	--	:	O	O
 The	t9	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-presidents	t10	1	president	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	president	NNS	t9:NMOD||t11:NMOD	O
+presidents	t10	1	president	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	president	NNS	t1:NMOD||t2:P||t7:NMOD||t8:P||t9:NMOD||t11:NMOD	O
 of	t11	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t12:PMOD	O
 Poland	t12	1	Poland	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	poland	NNP	t13:COORD	O
 and	t13	1	and	O	O	O+O+O	O	O	O	O	O	CJC	O	and	CC	t16:CONJ	O
 the	t14	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Czech	t15	1	Czech	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	czech	NNP	O	O
 Republic	t16	1	Republic	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	republic	NNP	t14:NMOD||t15:NAME	O
-have	t17	1	have	O	O	O+O+O	O	O	O	O	O	VHB	B-VP	have	VBP	t1:SBJ||t18:VC||t48:P	mainVb
-signed	t18	1	sign	e1	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	sign	VBN	t19:OBJ||t36:OPRD	mainVb
+have	t17	1	have	O	O	O+O+O	O	O	O	O	O	VHB	B-VP	have	VBP	t10:SBJ||t18:VC||t48:P	mainVb
+signed	t18	1	sign	e1	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	sign	VBN	t19:OBJ||t22:LOC	mainVb
 papers	t19	1	papers	O	O	O	O	O	O	O	O	NN2	B-NP	papers	NNS	t20:NMOD	O
 of	t20	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t21:PMOD	O
-accession	t21	1	accession	O	O	O	O	O	O	O	O	NN1	B-NP	accession	NN	t22:LOC||t26:PRN	O
+accession	t21	1	accession	O	O	O	O	O	O	O	O	NN1	B-NP	accession	NN	O	O
 in	t22	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t24:PMOD	O
 simultaneous	t23	1	simultaneous	O	O	O	O	O	O	O	O	AJ0	B-NP	simultaneous	JJ	O	O
-ceremonies	t24	1	ceremony	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	ceremony	NNS	t23:NMOD	O
+ceremonies	t24	1	ceremony	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	ceremony	NNS	t23:NMOD||t25:P||t26:APPO	O
 --	t25	1	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
-broadcast	t26	1	broadcast	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	broadcast	NN	t25:P||t27:NMOD||t35:P	O
+broadcast	t26	1	broadcast	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	broadcast	VBN	t27:OBJ||t35:P||t36:PRP	O
 live	t27	1	live	O	O	O	O	O	O	O	O	AJ0	I-ADJP	live	VBP	t28:LOC||t31:LOC	O
 on	t28	1	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t30:PMOD	O
 Polish	t29	1	polish	O	O	O	O	O	O	O	O	AJ0	B-NP	polish	JJ	O	O
@@ -45,8 +45,8 @@ Atlantic	t42	1	Atlantic	O	O	O	O	O	O	O	O	NP0	I-NP	atlantic	NNP	t41:NAME	O
 Treaty	t43	1	Treaty	O	O	O	O	O	O	O	O	NN1	I-NP	treaty	NNP	t42:NMOD	O
 Organization	t44	1	Organization	O	O	O	O	O	O	O	O	NN1	I-NP	organization	NNP	O	O
 -LRB-	t45	1	-lrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
-NATO	t46	1	NATO	O	O	O	O	O	O	O	O	NP0	I-NP	nato	NNP	t45:NAME	O
--RRB-	t47	1	-rrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t40:NMOD||t43:NAME||t44:NAME||t46:NAME	O
+NATO	t46	1	NATO	O	O	O	O	O	O	O	O	NP0	I-NP	nato	NNP	O	O
+-RRB-	t47	1	-rrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t40:NMOD||t43:NAME||t44:NAME||t45:NAME||t46:NAME	O
 .	t48	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Poland	t49	2	Poland	O	O	O	O	O	O	O	O	NP0	B-NP	poland	NNP	t50:SUFFIX	O
@@ -56,10 +56,10 @@ Kwasniewski	t52	2	Kwasniewski	O	O	O	O	O	O	O	O	NP0	I-NP	kwasniewski	NNP	t49:NMOD|
 and	t53	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t55:CONJ	O
 Vaclav	t54	2	Vaclav	O	O	O	O	O	O	O	O	NP0	B-NP	vaclav	NNP	O	O
 Havel	t55	2	Havel	O	O	O	O	O	O	O	O	NP0	I-NP	havel	NNP	t54:NAME	O
-signed	t56	2	sign	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	sign	VBD	t52:SBJ||t59:OBJ||t60:LOC||t64:P	mainVb
+signed	t56	2	sign	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	sign	VBD	t52:SBJ||t59:OBJ||t64:P	mainVb
 the	t57	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 preparatory	t58	2	preparatory	O	O	O	O	O	O	O	O	AJ0	I-NP	preparatory	JJ	O	O
-documents	t59	2	document	O	O	O	O	O	O	O	O	NN2	I-NP	document	NNS	t57:NMOD||t58:NMOD	O
+documents	t59	2	document	O	O	O	O	O	O	O	O	NN2	I-NP	document	NNS	t57:NMOD||t58:NMOD||t60:LOC	O
 in	t60	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t63:PMOD	O
 their	t61	2	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 presidential	t62	2	presidential	O	O	O	O	O	O	O	O	AJ0	I-NP	presidential	JJ	O	O
@@ -68,7 +68,7 @@ palaces	t63	2	palace	O	O	O	O	O	O	O	O	NN2	I-NP	palace	NNS	t61:NMOD||t62:NMOD	O
 
 Polish	t65	3	polish	O	O	O	O	O	O	O	O	AJ0	B-NP	polish	JJ	O	O
 Defense	t66	3	Defense	O	O	O	O	O	O	O	O	NN1	I-NP	defense	NNP	O	O
-Minister	t67	3	Minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t65:NMOD||t66:NMOD||t69:NMOD	O
+Minister	t67	3	Minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t65:NMOD||t66:NMOD||t69:OBJ	O
 Janusz	t68	3	Janusz	O	O	O	O	O	O	O	O	NP0	I-NP	janusz	NNP	O	O
 Onyszkiewicz	t69	3	Onyszkiewicz	O	O	O	O	O	O	O	O	NP0	I-NP	onyszkiewicz	NNP	t68:NAME||t70:COORD	O
 and	t70	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t74:CONJ	O
@@ -76,9 +76,9 @@ other	t71	3	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
 senior	t72	3	senior	O	O	O	O	O	O	O	O	AJ0	I-NP	senior	JJ	O	O
 military	t73	3	military	O	O	O	O	O	O	O	O	AJ0	I-NP	military	JJ	O	O
 officers	t74	3	officer	O	O	O	O	O	O	O	O	NN2	I-NP	officer	NNS	t71:NMOD||t72:NMOD||t73:NMOD	O
-were	t75	3	be	e6	STATE	PAST+NONE+POS	O	O	O	O	O	VBD	B-VP	be	VBD	t67:SBJ||t76:ADV||t77:PRD||t78:TMP||t81:P	mainVb
+were	t75	3	be	e6	STATE	PAST+NONE+POS	O	O	O	O	O	VBD	B-VP	be	VBD	t67:SBJ||t76:ADV||t77:PRD||t81:P	mainVb
 also	t76	3	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-present	t77	3	present	O	O	O	O	O	O	O	O	AJ0	B-ADJP	present	JJ	O	O
+present	t77	3	present	O	O	O	O	O	O	O	O	AJ0	B-ADJP	present	JJ	t78:LOC	O
 at	t78	3	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t80:PMOD	O
 the	t79	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ceremony	t80	3	ceremony	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	ceremony	NN	t79:NMOD	O
@@ -106,7 +106,7 @@ July	t99	4	July	O	O	O	tmx2	DATE	1997-07	O	O	NP0	B-NP	july	NNP	O	O
 ,	t101	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 will	t102	4	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t82:SBJ||t103:ADV||t104:VC||t116:P	mainVb
 officially	t103	4	officially	O	O	O	O	O	O	O	O	AV0	I-VP	officially	RB	O	mainVb
-join	t104	4	join	e10	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	join	VB	t105:OBJ||t106:TMP||t109:ADV	mainVb
+join	t104	4	join	e10	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	join	VB	t105:OBJ||t106:TMP||t109:TMP	mainVb
 NATO	t105	4	NATO	O	O	O	O	O	O	O	O	NP0	B-NP	nato	NNP	O	O
 on	t106	4	on	O	O	O	O	O	O	s2	O	PRP	B-PP	on	IN	t108:PMOD	O
 March	t107	4	March	O	O	O	tmx3	DATE	1999-03-12	O	O	NP0	B-NP	march	NNP	O	O
@@ -159,7 +159,7 @@ States	t149	6	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t147:NMOD||t148:NAME	O
 He	t151	7	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 will	t152	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t151:SBJ||t153:TMP||t154:VC||t165:P	mainVb
 then	t153	7	then	O	O	O	O	O	O	O	O	AV0	I-VP	then	RB	O	mainVb
-travel	t154	7	travel	e15	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	travel	VB	t155:DIR||t158:TMP||t161:OPRD	mainVb
+travel	t154	7	travel	e15	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	travel	VB	t155:DIR||t158:TMP||t161:PRP	mainVb
 to	t155	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t157:PMOD	O
 Washington	t156	7	Washington	O	O	O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
 DC	t157	7	DC	O	O	O	O	O	O	O	O	NP0	I-NP	dc	NNP	t156:NAME	O

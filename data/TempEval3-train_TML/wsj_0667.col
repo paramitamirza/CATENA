@@ -1,6 +1,6 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
-Shoney	t1	1	Shoney	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	shoney	NNP	t2:SUFFIX||t3:POSTHON	O
+Shoney	t1	1	Shoney	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	shoney	NNP	t2:NMOD||t3:POSTHON	O
 's	t2	1	's	O	O	O+O+O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 Inc.	t3	1	Inc.	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t1:SBJ||t6:OBJ||t27:P	mainVb
@@ -20,11 +20,11 @@ cents	t17	1	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t16:NMOD||t19:ADV	O
 a	t18	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t19	1	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t18:NMOD	O
 ,	t20	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-for	t21	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t24:PMOD	O
+for	t21	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t25:SUB	O
 its	t22	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 fourth	t23	1	fourth	O	O	O	tmx41	DATE	1989-Q4	O	O	ORD	I-NP	fourth	JJ	O	O
-quarter	t24	1	quarter	O	O	O	tmx41	DATE	1989-Q4	O	O	NN1	I-NP	quarter	NN	t22:NMOD||t23:NMOD||t25:APPO	O
-ended	t25	1	end	O	O	O	O	O	O	O	O	VVD	B-VP	end	VBN	t26:TMP	O
+quarter	t24	1	quarter	O	O	O	tmx41	DATE	1989-Q4	O	O	NN1	I-NP	quarter	NN	t22:NMOD||t23:NMOD	O
+ended	t25	1	end	O	O	O	O	O	O	O	O	VVD	B-VP	end	VBD	t24:SBJ||t26:TMP	O
 yesterday	t26	1	yesterday	O	O	O	tmx42	DATE	1989-10-29	O	O	AV0	B-NP	yesterday	NN	O	O
 .	t27	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -57,11 +57,11 @@ The	t52	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 write-off	t53	3	write-off	O	O	O	O	O	O	O	O	NN1	I-NP	write-off	NN	t52:NMOD	O
 will	t54	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t53:SBJ||t55:VC||t68:P	mainVb
 be	t55	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t56:VC	mainVb
-reported	t56	3	report	e9	REPORTING	FUTURE+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	report	VBN	t57:ADV	mainVb
+reported	t56	3	report	e9	REPORTING	FUTURE+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	report	VBN	t57:ADV||t61:LOC	mainVb
 as	t57	3	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t60:PMOD	O
 an	t58	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 extraordinary	t59	3	extraordinary	O	O	O	O	O	O	O	O	AJ0	I-NP	extraordinary	JJ	O	O
-item	t60	3	item	O	O	O	O	O	O	O	O	NN1	I-NP	item	NN	t58:NMOD||t59:NMOD||t61:LOC	O
+item	t60	3	item	O	O	O	O	O	O	O	O	NN1	I-NP	item	NN	t58:NMOD||t59:NMOD	O
 in	t61	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t67:PMOD	O
 the	t62	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t63	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t62:NMOD||t64:SUFFIX	O

@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Heritage	t1	1	Heritage	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	heritage	NNP	O	O
 Media	t2	1	Media	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	medium	NNP	t1:NAME||t3:POSTHON	O
@@ -11,7 +11,7 @@ said	t8	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t7:SBJ||t10:
 it	t9	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 offered	t10	1	offer	e2	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	offer	VBD	t9:SBJ||t11:OPRD	O
 to	t11	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t12:IM	O
-buy	t12	1	buy	e3	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t14:OBJ||t24:ADV	O
+buy	t12	1	buy	e3	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t14:OBJ	O
 the	t13	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 shares	t14	1	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t13:NMOD||t15:NMOD||t20:NMOD	O
 of	t15	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t17:PMOD	O
@@ -22,7 +22,7 @@ it	t19	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 does	t20	1	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t19:SBJ||t21:ADV||t22:TMP||t23:VC	O
 n't	t21	1	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
 already	t22	1	already	O	O	O	O	O	O	O	O	AV0	B-ADVP	already	RB	O	O
-own	t23	1	own	O	O	O	O	O	O	O	O	DT0	B-NP	own	VBN	O	O
+own	t23	1	own	O	O	O	O	O	O	O	O	DT0	B-NP	own	VBN	t24:LOC	O
 in	t24	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t27:PMOD	O
 a	t25	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 stock	t26	1	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	O	O
@@ -68,14 +68,14 @@ own	t63	2	own	O	O	O	O	O	O	O	O	DT0	I-ADVP	own	VB	O	O
 
 Depending	t65	3	depend	O	O	O	O	O	O	O	O	NP0	B-NP	depend	VBG	t66:PMOD	O
 upon	t66	3	upon	O	O	O	O	O	O	O	O	PRP	B-PP	upon	IN	t72:PMOD	O
-how	t67	3	how	O	O	O	O	O	O	O	O	AVQ	B-NP	how	WRB	O	O
+how	t67	3	how	O	O	O	O	O	O	O	O	AVQ	B-NP	how	WRB	t68:AMOD	O
 many	t68	3	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	DT	O	O
-warrants	t69	3	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t68:NMOD||t70:COORD	O
+warrants	t69	3	warrant	O	O	O	O	O	O	O	O	NN2	I-NP	warrant	NNS	t67:NMOD||t70:COORD	O
 and	t70	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t71:CONJ	O
 options	t71	3	option	O	O	O	O	O	O	O	O	NN2	I-NP	option	NNS	O	O
-are	t72	3	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t67:MNR||t69:SBJ||t73:VC	O
-exercised	t73	3	exercise	e14	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	exercise	VBN	t74:OBJ||t75:ADV	O
-prior	t74	3	prior	O	O	O	O	O	O	O	O	PRP	B-ADVP	prior	RB	O	O
+are	t72	3	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t69:SBJ||t73:VC	O
+exercised	t73	3	exercise	e14	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	exercise	VBN	t74:TMP	O
+prior	t74	3	prior	O	O	O	O	O	O	O	O	PRP	B-ADVP	prior	RB	t75:AMOD	O
 to	t75	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t76:PMOD	O
 completion	t76	3	completion	e29	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	completion	NN	t77:NMOD	O
 of	t77	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t79:PMOD	O
@@ -84,15 +84,15 @@ transaction	t79	3	transaction	e30	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	tr
 ,	t80	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Heritage	t81	3	Heritage	O	O	O	O	O	O	O	O	NP0	B-NP	heritage	NNP	O	O
 would	t82	3	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t65:ADV||t80:P||t81:SBJ||t83:VC	O
-issue	t83	3	issue	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	issue	VB	t91:OBJ	O
+issue	t83	3	issue	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	issue	VB	t86:OBJ	O
 between	t84	3	between	O	O	O	O	O	O	O	O	PRP	B-NP	between	IN	O	O
 1.8	t85	3	1.8	O	O	O	O	O	O	O	O	CRD	I-NP	1.8	CD	O	O
 million	t86	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t84:DEP||t85:DEP||t87:COORD	O
-and	t87	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t88:CONJ	O
-2.35	t88	3	2.35	O	O	O	O	O	O	O	O	CRD	B-NP	2.35	CD	t89:COORD	O
-million	t89	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+and	t87	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t91:CONJ	O
+2.35	t88	3	2.35	O	O	O	O	O	O	O	O	CRD	B-NP	2.35	CD	O	O
+million	t89	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t88:DEP	O
 preferred	t90	3	prefer	O	O	O	O	O	O	O	O	AJ0	I-NP	prefer	VBN	O	O
-shares	t91	3	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t86:NMOD||t90:NMOD	O
+shares	t91	3	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t89:NMOD||t90:NMOD	O
 ,	t92	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t93	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 Heritage	t94	3	Heritage	O	O	O	O	O	O	O	O	NN1	I-NP	heritage	NNP	O	O
@@ -144,9 +144,9 @@ of	t137	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t140:PMOD	O
 four	t138	5	four	O	O	O	O	O	O	O	O	CRD	B-NP	four	CD	O	O
 common	t139	5	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
 shares	t140	5	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t138:NMOD||t139:NMOD	O
-for	t141	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t142:PMOD	O
-each	t142	5	each	O	O	O	O	O	O	O	O	DT0	B-NP	each	DT	t143:APPO	O
-preferred	t143	5	prefer	O	O	O	O	O	O	O	O	VVD	I-NP	prefer	VBN	O	O
+for	t141	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t143:PMOD	O
+each	t142	5	each	O	O	O	O	O	O	O	O	DT0	B-NP	each	DT	O	O
+preferred	t143	5	prefer	O	O	O	O	O	O	O	O	VVD	I-NP	prefer	VBN	t142:NMOD	O
 .	t144	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 New	t145	6	New	O	O	O	O	O	O	O	O	AJ0	B-NP	new	NNP	O	O
@@ -171,24 +171,24 @@ and	t163	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t165:CONJ	O
 advertising	t164	6	advertising	O	O	O	O	O	O	O	O	NN1	I-NP	advertising	NN	O	O
 service	t165	6	service	O	O	O	O	O	O	O	O	NN1	B-VP	service	NN	t164:NMOD	O
 which	t166	6	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
-simulates	t167	6	simulate	e21	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	simulate	VBZ	t166:SBJ||t168:OBJ	O
-live	t168	6	live	O	O	O	O	O	O	O	O	AJ0	B-NP	live	VBP	t169:OBJ	O
-radio	t169	6	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	O	O
+simulates	t167	6	simulate	e21	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	simulate	VBZ	t166:SBJ||t169:OBJ	O
+live	t168	6	live	O	O	O	O	O	O	O	O	AJ0	B-NP	live	JJ	O	O
+radio	t169	6	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	t168:NMOD	O
 .	t170	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Heritage	t171	7	Heritage	O	O	O	O	O	O	O	O	NP0	B-NP	heritage	NNP	O	O
-owns	t172	7	own	O	O	O	O	O	O	O	O	NN2	I-NP	own	VBZ	t171:SBJ||t173:COORD||t178:OBJ||t179:COORD||t185:P	mainVb
+owns	t172	7	own	O	O	O	O	O	O	O	O	NN2	I-NP	own	VBZ	t171:SBJ||t173:COORD||t178:OBJ||t185:P	mainVb
 and	t173	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t174:CONJ	O
 operates	t174	7	operate	e32	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN2	B-NP	operate	VBZ	O	O
 television	t175	7	television	O	O	O	O	O	O	O	O	NN1	I-NP	television	NN	t176:COORD	O
 and	t176	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t177:CONJ	O
 radio	t177	7	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	O	O
-stations	t178	7	station	O	O	O	O	O	O	O	O	NN2	I-NP	stations	NNS	t175:NMOD	O
-and	t179	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t180:CONJ	O
-in-store	t180	7	in-store	O	O	O	O	O	O	O	O	NN1	I-NP	in-store	VBP	t184:OBJ	O
+stations	t178	7	station	O	O	O	O	O	O	O	O	NN2	I-NP	stations	NNS	t175:NMOD||t179:COORD	O
+and	t179	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t184:CONJ	O
+in-store	t180	7	in-store	O	O	O	O	O	O	O	O	NN1	I-NP	in-store	VB	O	O
 advertising	t181	7	advertising	O	O	O	O	O	O	O	O	NN1	I-NP	advertising	NN	t182:COORD	O
 and	t182	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t183:CONJ	O
 promotion	t183	7	promotion	O	O	O	O	O	O	O	O	NN1	I-NP	promotion	NN	O	O
-programs	t184	7	program	O	O	O	O	O	O	O	O	NN2	I-NP	program	NNS	t181:NMOD	O
+programs	t184	7	program	O	O	O	O	O	O	O	O	NN2	I-NP	program	NNS	t180:NMOD||t181:NMOD	O
 .	t185	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

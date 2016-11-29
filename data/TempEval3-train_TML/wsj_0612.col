@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NN1	B-NP	dct_1989-10-30	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 following	t2	1	following	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	following	JJ	t1:NMOD	O
@@ -21,7 +21,7 @@ with	t18	1	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t19:PMOD	O
 terms	t19	1	term	O	O	O	O	O	O	O	O	NN2	B-NP	terms	NNS	t20:COORD	O
 and	t20	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t22:CONJ	O
 syndicate	t21	1	syndicate	O	O	O	O	O	O	O	O	VVB	B-VP	syndicate	NN	O	O
-manager	t22	1	manager	O	O	O	O	O	O	O	O	NN1	B-NP	manager	NN	t21:NMOD||t23:P||t24:NMOD||t32:P||t36:APPO	O
+manager	t22	1	manager	O	O	O	O	O	O	O	O	NN1	B-NP	manager	NN	t21:NMOD||t23:P||t24:NMOD||t32:P||t33:NMOD||t38:P||t39:APPO	O
 ,	t23	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 as	t24	1	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t25:SUB	O
 compiled	t25	1	compile	e3	REPORTING	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	compile	VBN	t26:LGS	O
@@ -32,10 +32,10 @@ Capital	t29	1	Capital	O	O	O	O	O	O	O	O	NP0	I-NP	capital	NNP	O	O
 Markets	t30	1	Markets	O	O	O	O	O	O	O	O	NP0	I-NP	market	NNPS	O	O
 Report	t31	1	Report	O	O	O	O	O	O	O	O	NN1	I-NP	report	NNP	t27:NAME||t28:NAME||t29:NAME||t30:NAME	O
 :	t32	1	:	O	O	O	O	O	O	O	O	PUN	O	:	:	O	O
-@	t33	1	@	O	O	O	O	O	O	O	O	PUQ	O	@	(	O	O
+@	t33	1	@	O	O	O	O	O	O	O	O	PUQ	O	@	IN	t36:PMOD	O
 CORPORATES	t34	1	CORPORATES	O	O	O	O	O	O	O	O	NN2	B-NP	corporates	NNS	O	O
-Sun	t35	1	Sun	O	O	O	O	O	O	O	O	NN1	I-NP	sun	NNP	t33:P||t34:NAME	O
-Microsystems	t36	1	Microsystems	O	O	O	O	O	O	O	O	NP0	I-NP	microsystems	NNPS	t35:NAME||t37:POSTHON||t38:P||t39:APPO	O
+Sun	t35	1	Sun	O	O	O	O	O	O	O	O	NN1	I-NP	sun	NNP	O	O
+Microsystems	t36	1	Microsystems	O	O	O	O	O	O	O	O	NP0	I-NP	microsystems	NNP	t34:NMOD||t35:NAME||t37:POSTHON	O
 Inc.	t37	1	Inc.	O	O	O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 --	t38	1	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
 $	t39	1	$	O	O	O	O	O	O	O	O	UNC	B-NP	$	$	t40:DEP||t41:DEP||t42:NMOD	O
@@ -64,13 +64,13 @@ yield	t58	1	yield	e42	I_STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	yield	VB	t6
 
 The	t62	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 debentures	t63	2	debenture	O	O	O	O	O	O	O	O	NN2	I-NP	debenture	NNS	t62:NMOD	O
-are	t64	2	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t63:SBJ||t65:PRD||t74:P||t75:ADV||t86:P	mainVb
+are	t64	2	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t63:SBJ||t65:PRD||t86:P	mainVb
 convertible	t65	2	convertible	O	O	O	O	O	O	O	O	AJ0	B-ADJP	convertible	JJ	t66:AMOD||t69:AMOD	O
 into	t66	2	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t68:PMOD	O
 common	t67	2	common	O	O	O	O	O	O	O	O	AJ0	B-NP	common	JJ	O	O
 stock	t68	2	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t67:NMOD	O
 at	t69	2	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t70:PMOD	O
-$	t70	2	$	O	O	O	O	O	O	O	O	NN1	B-NP	$	$	t71:NMOD||t73:ADV	O
+$	t70	2	$	O	O	O	O	O	O	O	O	NN1	B-NP	$	$	t71:NMOD||t73:ADV||t74:P||t75:APPO	O
 25	t71	2	25	O	O	O	O	O	O	O	O	CRD	I-NP	25	CD	O	O
 a	t72	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t73	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t72:NMOD	O
@@ -109,7 +109,7 @@ the	t104	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issue	t105	3	issue	O	O	O	O	O	O	O	O	NN1	I-NP	issue	NN	t104:NMOD	O
 will	t106	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t87:ADV||t103:P||t105:SBJ||t107:VC||t118:P	mainVb
 be	t107	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t108:VC	mainVb
-sold	t108	3	sell	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t109:MNR	mainVb
+sold	t108	3	sell	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t109:ADV	mainVb
 through	t109	3	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t110:PMOD	O
 underwriters	t110	3	underwriter	O	O	O	O	O	O	O	O	NN2	B-NP	underwriter	NNS	t111:APPO	O
 led	t111	3	lead	O	O	O	O	O	O	O	O	VVN	B-VP	lead	VBN	t112:LGS	O
@@ -175,12 +175,12 @@ Treasury	t166	5	Treasury	O	O	O	O	O	O	O	O	NN1	I-NP	treasury	NNP	t165:NMOD||t167:S
 note	t169	5	note	O	O	O	O	O	O	O	O	NN1	I-NP	note	NN	t166:NMOD||t168:NMOD	O
 .	t170	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Rated	t171	6	rate	e21	STATE	PASTPART+NONE+POS	O	O	O	O	O	NP0	B-NP	rate	VBN	t172:OPRD||t173:LGS||t176:COORD	O
-single-A-3	t172	6	single-a-3	O	O	O	O	O	O	O	O	NP0	I-NP	single-a-3	JJ	O	O
+Rated	t171	6	rate	e21	STATE	PASTPART+NONE+POS	O	O	O	O	O	NP0	B-NP	rate	VBN	t172:OPRD||t178:LGS	O
+single-A-3	t172	6	single-a-3	O	O	O	O	O	O	O	O	NP0	I-NP	single-a-3	JJ	t173:LGS	O
 by	t173	6	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t174:PMOD	O
-Moody	t174	6	Moody	O	O	O	O	O	O	O	O	NP0	B-NP	moody	NNP	t175:SUFFIX	O
+Moody	t174	6	Moody	O	O	O	O	O	O	O	O	NP0	B-NP	moody	NNP	t175:SUFFIX||t176:COORD	O
 's	t175	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-and	t176	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t177:CONJ||t178:GAP-LGS	O
+and	t176	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t177:CONJ	O
 triple-B	t177	6	triple-b	O	O	O	O	O	O	O	O	NN0	I-NP	triple-b	NNP	O	O
 by	t178	6	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t179:PMOD	O
 SampP	t179	6	sampp	O	O	O	O	O	O	O	O	NP0	B-NP	sampp	NNP	O	O
@@ -189,7 +189,7 @@ the	t181	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 issue	t182	6	issue	O	O	O	O	O	O	O	O	NN1	I-NP	issue	NN	t181:NMOD	O
 will	t183	6	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t171:ADV||t180:P||t182:SBJ||t184:VC||t194:P	mainVb
 be	t184	6	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t185:VC	mainVb
-sold	t185	6	sell	e22	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t186:MNR	mainVb
+sold	t185	6	sell	e22	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	sell	VBN	t186:ADV	mainVb
 through	t186	6	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t187:PMOD	O
 underwriters	t187	6	underwriter	O	O	O	O	O	O	O	O	NN2	B-NP	underwriter	NNS	t188:APPO	O
 led	t188	6	lead	O	O	O	O	O	O	O	O	VVN	B-VP	lead	VBN	t189:LGS	O
@@ -202,14 +202,14 @@ Markets	t193	6	Markets	O	O	O	O	O	O	O	O	NP0	I-NP	market	NNP	t190:NAME||t191:NAME|
 
 @	t195	7	@	O	O	O	O	O	O	O	O	PUQ	O	@	SYM	O	O
 EUROBONDS	t196	7	EUROBONDS	O	O	O	O	O	O	O	O	NP0	B-NP	eurobonds	NNS	O	O
-Canadian	t197	7	Canadian	O	O	O	O	O	O	O	O	AJ0	I-NP	canadian	NNP	t196:NAME	O
+Canadian	t197	7	Canadian	O	O	O	O	O	O	O	O	AJ0	I-NP	canadian	NNP	O	O
 Imperial	t198	7	Imperial	O	O	O	O	O	O	O	O	AJ0	I-NP	imperial	NNP	O	O
-Bank	t199	7	Bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NNP	O	O
+Bank	t199	7	Bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NNP	t196:NMOD||t197:NAME||t198:NAME	O
 of	t200	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	O	O
 Commerce	t201	7	Commerce	O	O	O	O	O	O	O	O	NN1	B-NP	commerce	NNP	O	O
 -LRB-	t202	7	-lrb-	O	O	O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
 Canada	t203	7	Canada	O	O	O	O	O	O	O	O	NP0	I-NP	canada	NNP	O	O
--RRB-	t204	7	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t197:NAME||t198:NAME||t199:NAME||t200:NAME||t201:NAME||t202:NAME||t203:NAME||t205:P||t208:APPO||t234:P	mainVb
+-RRB-	t204	7	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t195:NAME||t199:NAME||t200:NAME||t201:NAME||t202:NAME||t203:NAME||t205:P||t208:APPO||t234:P	mainVb
 --	t205	7	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
 10	t206	7	10	O	O	O	O	O	O	O	O	CRD	B-NP	10	CD	O	O
 billion	t207	7	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t206:DEP	O
@@ -230,7 +230,7 @@ at	t220	7	at	O	O	O	O	O	O	O	O	PRP	B-ADVP	at	IN	t221:PMOD	O
 to	t222	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t223:IM	O
 yield	t223	7	yield	e27	I_STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	yield	VB	t225:OBJ	O
 5.75	t224	7	5.75	O	O	O	O	O	O	O	O	CRD	B-NP	5.75	CD	O	O
-%	t225	7	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t195:DEP||t224:NMOD||t226:NMOD	O
+%	t225	7	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t224:NMOD||t226:NMOD	O
 less	t226	7	less	O	O	O	O	O	O	O	O	AV0	I-NP	less	CC	t228:COORD	O
 full	t227	7	full	O	O	O	O	O	O	O	O	AJ0	I-NP	full	JJ	O	O
 fees	t228	7	fee	O	O	O	O	O	O	O	O	NN2	I-NP	fee	NNS	t227:NMOD	O

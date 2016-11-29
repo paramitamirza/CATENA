@@ -1,4 +1,4 @@
-DCT_1991-12-03	O	O	O	O	O	O	tmx0	DATE	1991-12-03	O	O	NN1	B-NP	dct_1991-12-03	SYM	O	O
+DCT_1991-12-03	O	O	O	O	O	O	tmx0	DATE	1991-12-03	O	O	NN1	B-NP	dct_1991-12-03	JJ	O	O
 
 One	t1	1	one	O	O	O+O+O	O	O	O	O	O	CRD	B-NP	one	CD	t2:NMOD	O
 of	t2	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t6:PMOD	O
@@ -18,11 +18,11 @@ Sununu	t15	1	Sununu	O	O	O	O	O	O	O	O	NP0	I-NP	sununu	NNP	t11:NMOD||t14:NAME	O
 that	t16	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t18:SUB	O
 he	t17	1	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 has	t18	1	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t17:SBJ||t19:VC	O
-lost	t19	1	lose	e65	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	lose	VBN	t20:OBJ||t24:LOC||t26:P||t27:ADV	O
+lost	t19	1	lose	e65	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	lose	VBN	t20:OBJ||t26:P||t27:ADV	O
 much	t20	1	much	O	O	O	O	O	O	O	O	DT0	B-NP	much	JJ	t21:NMOD	O
 of	t21	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t23:PMOD	O
 his	t22	1	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
-support	t23	1	support	O	O	O	O	O	O	O	O	NN1	I-NP	support	NN	t22:NMOD	O
+support	t23	1	support	O	O	O	O	O	O	O	O	NN1	I-NP	support	NN	t22:NMOD||t24:LOC	O
 among	t24	1	among	O	O	O	O	O	O	O	O	PRP	B-PP	among	IN	t25:PMOD	O
 Republicans	t25	1	Republicans	O	O	O	O	O	O	O	O	NN2	B-NP	republican	NNS	O	O
 ,	t26	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -68,10 +68,10 @@ that	t64	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t66:SUB	O
 he	t65	2	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 had	t66	2	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t65:SBJ||t67:VC	O
 alienated	t67	2	alienate	e75	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	alienate	VBN	t68:OBJ||t82:P||t83:ADV	O
-members	t68	2	member	O	O	O	O	O	O	O	O	NN2	B-NP	member	NNS	t69:NMOD	O
+members	t68	2	member	O	O	O	O	O	O	O	O	NN2	B-NP	member	NNS	t69:NMOD||t72:P||t76:COORD	O
 of	t69	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t71:PMOD	O
 the	t70	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Cabinet	t71	2	Cabinet	O	O	O	O	O	O	O	O	NN1	I-NP	cabinet	NNP	t70:NMOD||t72:P||t76:COORD	O
+Cabinet	t71	2	Cabinet	O	O	O	O	O	O	O	O	NN1	I-NP	cabinet	NNP	t70:NMOD	O
 ,	t72	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t73	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 White	t74	2	White	O	O	O	O	O	O	O	O	NP0	I-NP	white	NNP	O	O
@@ -154,22 +154,22 @@ post	t147	4	post	O	O	O	O	O	O	O	O	NN1	I-NP	post	NN	t146:NMOD	O
 
 One	t149	5	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 senior	t150	5	senior	O	O	O	O	O	O	O	O	AJ0	I-NP	senior	JJ	O	O
-official	t151	5	official	O	O	O	O	O	O	O	O	AJ0	I-NP	official	NN	t149:NMOD||t150:NMOD||t158:APPO	O
+official	t151	5	official	O	O	O	O	O	O	O	O	AJ0	I-NP	official	NN	t149:NMOD||t150:NMOD	O
 Monday	t152	5	Monday	O	O	O	tmx78	DATE	1991-12-02	O	O	NP0	I-NP	monday	NNP	O	O
-described	t153	5	describe	e15	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	describe	VBD	t151:SBJ||t152:TMP||t156:OBJ||t157:ADV||t169:P||t170:P||t171:ADV||t177:P	mainVb
+described	t153	5	describe	e15	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	describe	VBD	t151:SBJ||t152:TMP||t156:OBJ||t157:ADV||t170:P||t177:P	mainVb
 the	t154	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 White	t155	5	White	O	O	O	O	O	O	O	O	NP0	I-NP	white	NNP	O	O
 House	t156	5	House	O	O	O	O	O	O	O	O	NN1	I-NP	house	NNP	t154:NMOD||t155:NAME	O
 as	t157	5	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t160:PMOD	O
-"	t158	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t158	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	PDT	O	O
 a	t159	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-collection	t160	5	collection	O	O	O	O	O	O	O	O	NN1	I-NP	collection	NN	t159:NMOD||t161:NMOD	O
+collection	t160	5	collection	O	O	O	O	O	O	O	O	NN1	I-NP	collection	NN	t158:NMOD||t159:NMOD||t161:NMOD	O
 of	t161	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t163:PMOD	O
 small	t162	5	small	O	O	O	O	O	O	O	O	AJ0	B-NP	small	JJ	O	O
 groups	t163	5	group	O	O	O	O	O	O	O	O	NN2	I-NP	group	NNS	t162:NMOD||t164:NMOD	O
 of	t164	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t165:PMOD	O
 aides	t165	5	aide	O	O	O	O	O	O	O	O	NN2	B-NP	aides	NNS	t166:APPO	O
-holding	t166	5	hold	e16	STATE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	hold	VBG	t168:OBJ	O
+holding	t166	5	hold	e16	STATE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	hold	VBG	t168:OBJ||t169:P||t171:ADV	O
 their	t167	5	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 breaths	t168	5	breath	O	O	O	O	O	O	O	O	NN2	I-NP	breath	NNS	t167:NMOD	O
 ,	t169	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -184,7 +184,7 @@ survives	t176	5	survive	e20	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	survi
 
 One	t178	6	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 GOP	t179	6	GOP	O	O	O	O	O	O	O	O	NP0	I-NP	gop	NNP	O	O
-source	t180	6	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t178:NMOD||t179:NMOD||t181:P||t182:APPO||t195:P	O
+source	t180	6	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t178:NMOD||t179:NMOD	O
 ,	t181	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 reporting	t182	6	report	e21	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	report	VBG	t183:ADV	O
 on	t183	6	on	O	O	O	O	O	O	O	O	AVP	B-PP	on	IN	t185:PMOD	O
@@ -200,14 +200,14 @@ a	t192	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 Republican	t193	6	republican	O	O	O	O	O	O	O	O	NN1	I-NP	republican	JJ	O	O
 leader	t194	6	leader	O	O	O	O	O	O	O	O	NN1	I-NP	leader	NN	t192:NMOD||t193:NMOD	O
 ,	t195	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t196	6	say	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t180:SBJ||t198:OBJ||t200:P||t203:COORD||t214:P||t215:P	mainVb
+said	t196	6	say	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t180:SBJ||t181:P||t182:ADV||t195:P||t198:OBJ||t214:P||t215:P	mainVb
 Sununu	t197	6	Sununu	O	O	O	O	O	O	O	O	NP0	B-NP	sununu	NNP	O	O
 lamented	t198	6	lament	e25	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	lament	VBD	t197:SBJ||t199:OBJ	O
-that	t199	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	O	O
-"	t200	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+that	t199	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t203:SUB	O
+"	t200	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	TO	O	O
 the	t201	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 noose	t202	6	noose	O	O	O	O	O	O	O	O	NN1	I-NP	noose	NN	t201:NMOD	O
-is	t203	6	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t202:SBJ||t204:VC||t208:P||t209:COORD	O
+is	t203	6	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t200:ADV||t202:SBJ||t204:VC||t208:P||t209:COORD	O
 tightening	t204	6	tighten	e26	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	tighten	VBG	t205:ADV	O
 around	t205	6	around	O	O	O	O	O	O	O	O	AVP	B-PRT	around	IN	t207:PMOD	O
 my	t206	6	my	O	O	O	O	O	O	O	O	DPS	B-NP	my	PRP$	O	O
@@ -272,7 +272,7 @@ Bush	t262	8	Bush	O	O	O	O	O	O	O	O	NP0	I-NP	bush	NNP	O	O
 "	t263	8	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t260:NMOD||t261:NMOD||t262:NAME	O
 sketched	t264	8	sketch	e38	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	sketch	VBD	t263:SBJ||t265:PRT||t266:ADV	O
 out	t265	8	out	O	O	O	O	O	O	O	O	AVP	B-PRT	out	RP	O	O
-for	t266	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t269:SUB	O
+for	t266	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t269:PMOD	O
 Sununu	t267	8	Sununu	O	O	O	O	O	O	O	O	NP0	B-NP	sununu	NNP	O	O
 "	t268	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	t267:NAME	O
 problems	t269	8	problem	O	O	O	O	O	O	O	O	VVZ	B-VP	problem	VBZ	t268:SBJ||t272:OBJ	O
@@ -290,14 +290,14 @@ staff	t279	8	staff	O	O	O	O	O	O	O	O	NN0	B-NP	staff	NN	t280:SUFFIX	O
 tenure	t281	8	tenure	O	O	O	O	O	O	O	O	NN1	I-NP	tenure	NN	t279:NMOD	O
 .	t282	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t283	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t285:NMOD	O
+"	t283	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 He	t284	9	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-was	t285	9	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t284:SBJ||t286:VC	O
-told	t286	9	tell	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	tell	VBN	O	O
+was	t285	9	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t283:P||t284:SBJ||t286:VC	O
+told	t286	9	tell	e40	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	tell	VBN	t290:OBJ	O
 ...	t287	9	...	O	O	O	O	O	O	O	O	PUN	O	...	:	O	O
 the	t288	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 handwriting	t289	9	handwriting	O	O	O	O	O	O	O	O	NN1	I-NP	handwriting	NN	t288:NMOD	O
-was	t290	9	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t283:SBJ||t287:P||t289:SBJ||t291:PRD	O
+was	t290	9	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t287:P||t289:SBJ||t291:LOC-PRD	O
 on	t291	9	on	e317	STATE	PAST+NONE+POS	O	O	O	O	O	PRP	B-PP	on	IN	t293:PMOD	O
 the	t292	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 wall	t293	9	wall	O	O	O	O	O	O	O	O	NN1	I-NP	wall	NN	t292:NMOD	O
@@ -305,7 +305,7 @@ wall	t293	9	wall	O	O	O	O	O	O	O	O	NN1	I-NP	wall	NN	t292:NMOD	O
 "	t295	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 the	t296	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 source	t297	9	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t296:NMOD	O
-said	t298	9	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t290:OBJ||t294:P||t295:P||t297:SBJ||t299:TMP||t300:P	mainVb
+said	t298	9	say	e43	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t285:OBJ||t294:P||t295:P||t297:SBJ||t299:TMP||t300:P	mainVb
 Monday	t299	9	Monday	O	O	O	tmx87	DATE	1991-12-02	O	O	NP0	B-NP	monday	NNP	O	O
 .	t300	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -352,10 +352,10 @@ said	t339	11	say	e55	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t338:SBJ
 the	t340	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 president	t341	11	president	O	O	O	O	O	O	O	O	NN1	I-NP	president	NN	t340:NMOD||t342:APPO	O
 himself	t342	11	himself	O	O	O	O	O	O	O	O	PNX	I-NP	himself	PRP	O	O
-met	t343	11	meet	e56	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	meet	VBD	t341:SBJ||t344:ADV||t346:TMP	O
-with	t344	11	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t345:PMOD	O
+met	t343	11	meet	e56	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	meet	VBD	t341:SBJ||t344:ADV	O
+with	t344	11	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t346:PMOD	O
 Sununu	t345	11	Sununu	O	O	O	O	O	O	O	O	NP0	B-NP	sununu	NNP	O	O
-Sunday	t346	11	Sunday	O	O	O	tmx88	DATE	1991-12-01	O	O	NP0	I-NP	sunday	NNP	O	O
+Sunday	t346	11	Sunday	O	O	O	tmx88	DATE	1991-12-01	O	O	NP0	I-NP	sunday	NNP	t345:NAME	O
 .	t347	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t348	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O

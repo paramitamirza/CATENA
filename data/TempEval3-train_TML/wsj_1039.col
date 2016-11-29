@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Amdahl	t1	1	Amdahl	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	amdahl	NNP	t2:POSTHON||t3:P||t5:APPO||t9:P	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -22,9 +22,9 @@ third	t19	1	third	O	O	O	tmx17	DATE	1989-Q3	O	O	ORD	I-NP	third	JJ	O	O
 quarter	t20	1	quarter	O	O	O	tmx17	DATE	1989-Q3	O	O	NN1	I-NP	quarter	NN	t18:NMOD||t19:NMOD	O
 ,	t21	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 citing	t22	1	cite	e2	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	cite	VBG	t23:OBJ	O
-pricecutting	t23	1	pricecutting	e18	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	pricecut	NN	t24:NMOD||t26:COORD	O
+pricecutting	t23	1	pricecutting	e18	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	pricecut	NN	t24:NMOD	O
 by	t24	1	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t25:PMOD	O
-competitors	t25	1	competitor	O	O	O	O	O	O	O	O	NN2	B-NP	competitor	NNS	O	O
+competitors	t25	1	competitor	O	O	O	O	O	O	O	O	NN2	B-NP	competitor	NNS	t26:COORD	O
 and	t26	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t28:CONJ	O
 adverse	t27	1	adverse	O	O	O	O	O	O	O	O	AJ0	B-NP	adverse	JJ	O	O
 effects	t28	1	effect	O	O	O	O	O	O	O	O	NN2	I-NP	effects	NNS	t27:NMOD||t29:NMOD	O
@@ -37,11 +37,11 @@ dollar	t33	1	dollar	O	O	O	O	O	O	O	O	NN1	I-NP	dollar	NN	t30:NMOD||t31:NMOD||t32:N
 
 Net	t35	2	net	O	O	O	O	O	O	O	O	NP0	B-NP	net	JJ	O	O
 income	t36	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t35:NMOD	O
-fell	t37	2	fall	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t36:SBJ||t39:EXT||t40:DIR||t51:DIR||t66:P	mainVb
+fell	t37	2	fall	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t36:SBJ||t39:EXT||t40:DIR||t50:P||t51:DIR||t66:P	mainVb
 37	t38	2	37	O	O	O	O	O	O	O	O	CRD	B-NP	37	CD	O	O
 %	t39	2	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t38:NMOD	O
 to	t40	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t41:PMOD	O
-$	t41	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t42:DEP||t43:DEP||t44:P||t45:COORD||t50:P	O
+$	t41	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t42:DEP||t43:DEP||t44:P||t45:COORD	O
 32.9	t42	2	32.9	O	O	O	O	O	O	O	O	CRD	I-NP	32.9	CD	O	O
 million	t43	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t44	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

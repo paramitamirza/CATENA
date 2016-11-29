@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Despite	t1	1	despite	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	despite	IN	t3:PMOD	O
 continuing	t2	1	continue	O	O	O+O+O	O	O	O	O	O	VVG	B-VP	continue	VBG	O	O
@@ -14,9 +14,9 @@ posted	t11	1	post	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t1:ADV|
 a	t12	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 20	t13	1	20	O	O	O	O	O	O	O	O	CRD	I-NP	20	CD	O	O
 %	t14	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t13:NMOD	O
-gain	t15	1	gain	e38	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	gain	NN	t12:NMOD||t14:NMOD||t16:LOC	O
+gain	t15	1	gain	e38	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	gain	NN	t12:NMOD||t14:NMOD||t16:NMOD	O
 in	t16	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t19:PMOD	O
-third-quarter	t17	1	third-quarter	O	O	O	tmx82	DATE	1989-Q3	O	O	NN1	B-NP	third-quarter	NN	O	O
+third-quarter	t17	1	third-quarter	O	O	O	tmx82	DATE	1989-Q3	O	O	NN1	B-NP	third-quarter	JJ	O	O
 net	t18	1	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
 income	t19	1	income	e37	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	income	NN	t17:NMOD||t18:NMOD	O
 .	t20	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -88,7 +88,7 @@ the	t82	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 gain	t83	4	gain	e51	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	gain	NN	t82:NMOD	O
 to	t84	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t86:PMOD	O
 improved	t85	4	improve	O	O	O	O	O	O	O	O	AJ0	B-NP	improve	VBN	O	O
-results	t86	4	result	e11	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t85:NMOD||t87:LOC	O
+results	t86	4	result	e11	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t85:NMOD||t87:NMOD	O
 in	t87	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t90:PMOD	O
 its	t88	4	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 consumer	t89	4	consumer	O	O	O	O	O	O	O	O	NN1	I-NP	consumer	NN	O	O
@@ -134,14 +134,14 @@ said	t126	5	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t101:OBJ|
 
 Newsprint	t128	6	newsprint	O	O	O	O	O	O	O	O	NP0	B-NP	newsprint	NN	O	O
 results	t129	6	result	O	O	O	O	O	O	O	O	NN2	I-NP	result	NNS	t128:NMOD	O
-continued	t130	6	continue	e19	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	continue	VBD	t129:SBJ||t131:OPRD	O
+continued	t130	6	continue	e19	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	continue	VBD	t129:SBJ||t131:OPRD||t139:PRP||t144:P	O
 to	t131	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t132:IM	O
 be	t132	6	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t133:VC	O
 depressed	t133	6	depress	e57	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	depress	VBN	O	O
 ,	t134	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t135	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t136	6	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t135:NMOD	O
-added	t137	6	add	e56	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	add	VBD	t130:OBJ||t134:P||t136:SBJ||t138:P||t139:PRP||t144:P	mainVb
+added	t137	6	add	e56	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	add	VBD	t130:OBJ||t134:P||t136:SBJ||t138:P	mainVb
 ,	t138	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 because	t139	6	because	O	O	O	O	O	O	O	O	PRP	B-PP	because	IN	t140:DEP||t143:PMOD	O
 of	t140	6	of	O	O	O	O	O	O	O	O	PRP	I-PP	of	IN	O	O

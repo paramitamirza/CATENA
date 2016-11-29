@@ -1,7 +1,7 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Waxman	t1	1	Waxman	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	waxman	NNP	O	O
-Industries	t2	1	Industries	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	industry	NNPS	t1:NAME||t3:POSTHON	O
+Industries	t2	1	Industries	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	industry	NNP	t1:NAME||t3:POSTHON	O
 Inc.	t3	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t25:OBJ||t36:P	mainVb
 holders	t5	1	holder	O	O	O	O	O	O	O	O	NN2	B-NP	holder	NNS	t6:NMOD	O

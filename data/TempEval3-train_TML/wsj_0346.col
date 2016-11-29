@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Cilcorp	t1	1	Cilcorp	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cilcorp	NNP	t2:POSTHON||t3:P||t6:LOC||t7:P	O
 Inc.	t2	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
@@ -144,8 +144,8 @@ its	t136	6	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 common	t137	6	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
 stock	t138	6	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t136:NMOD||t137:NMOD||t139:APPO	O
 outstanding	t139	6	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
-from	t140	6	from	O	O	O	O	O	O	O	O	AV0	B-ADVP	from	IN	t141:PMOD||t142:PMOD	O
-time	t141	6	time	O	O	O	O	O	O	O	O	AV0	I-ADVP	time	NN	O	O
+from	t140	6	from	O	O	O	O	O	O	O	O	AV0	B-ADVP	from	IN	t141:PMOD	O
+time	t141	6	time	O	O	O	O	O	O	O	O	AV0	I-ADVP	time	NN	t142:NMOD	O
 to	t142	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t143:PMOD	O
 time	t143	6	time	O	O	O	O	O	O	O	O	VVI	I-VP	time	NN	O	O
 on	t144	6	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t147:PMOD||t148:COORD	O

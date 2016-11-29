@@ -1,4 +1,4 @@
-DCT_1998-02-13	O	O	O	O	O	O	tmx0	DATE	1998-02-13	O	O	NP0	B-NP	dct_1998-02-13	SYM	O	O
+DCT_1998-02-13	O	O	O	O	O	O	tmx0	DATE	1998-02-13	O	O	NP0	B-NP	dct_1998-02-13	LS	O	O
 
 Officials	t1	1	official	O	O	O+O+O	O	O	O	O	O	NN2	B-NP	official	NNS	t2:LOC	O
 in	t2	1	in	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	in	IN	t3:PMOD	O
@@ -7,9 +7,9 @@ are	t4	1	be	O	O	O+O+O	O	O	O	O	O	VBB	B-VP	be	VBP	t1:SBJ||t5:VC||t16:P	mainVb
 warning	t5	1	warn	e1	I_ACTION	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	warn	VBG	t6:OBJ||t7:OBJ	mainVb
 residents	t6	1	resident	O	O	O	O	O	O	O	O	NN2	B-NP	resident	NNS	O	O
 that	t7	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t10:SUB	O
-oncoming	t8	1	oncoming	O	O	O	O	O	O	O	O	AJ0	B-NP	oncome	VBG	t9:OBJ	O
-rains	t9	1	rain	e40	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	rain	NNS	O	O
-will	t10	1	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t8:SBJ||t11:VC	O
+oncoming	t8	1	oncoming	O	O	O	O	O	O	O	O	AJ0	B-NP	oncome	VBG	O	O
+rains	t9	1	rain	e40	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	rain	NNS	t8:NMOD	O
+will	t10	1	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t9:SBJ||t11:VC	O
 cause	t11	1	cause	e3	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	cause	VB	t15:OBJ	O
 dangerous	t12	1	dangerous	O	O	O	O	O	O	O	O	AJ0	B-NP	dangerous	JJ	t13:COORD	O
 and	t13	1	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t14:CONJ	O
@@ -53,8 +53,8 @@ off	t47	4	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
 in	t48	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t49:PMOD	O
 chunks	t49	4	chunk	O	O	O	O	O	O	O	O	NN2	B-NP	chunk	NNS	O	O
 and	t50	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t51:CONJ	O
-destroy	t51	4	destroy	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	NN1	I-NP	destroy	VB	t52:OBJ||t53:LOC	O
-anything	t52	4	anything	O	O	O	O	O	O	O	O	PNI	I-NP	anything	NN	O	O
+destroy	t51	4	destroy	e11	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	NN1	I-NP	destroy	VB	t52:OBJ	O
+anything	t52	4	anything	O	O	O	O	O	O	O	O	PNI	I-NP	anything	NN	t53:LOC	O
 in	t53	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t55:PMOD	O
 its	t54	4	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 path	t55	4	path	O	O	O	O	O	O	O	O	NN1	I-NP	path	NN	t54:NMOD	O
@@ -63,24 +63,24 @@ path	t55	4	path	O	O	O	O	O	O	O	O	NN1	I-NP	path	NN	t54:NMOD	O
 In	t57	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t59:PMOD	O
 Los	t58	5	Los	O	O	O	O	O	O	O	O	NP0	B-NP	los	NNP	O	O
 Angeles	t59	5	Angeles	O	O	O	O	O	O	O	O	NP0	I-NP	angeles	NNP	t58:NAME	O
-that	t60	5	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	WDT	O	O
+that	t60	5	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 lesson	t61	5	lesson	O	O	O	O	O	O	O	O	NN1	I-NP	lesson	NN	t60:NMOD	O
 was	t62	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t57:LOC||t61:SBJ||t63:VC||t81:P	mainVb
-brought	t63	5	bring	O	O	O	O	O	O	O	O	VVN	I-VP	bring	VBN	t64:DIR||t65:TMP||t70:TMP	mainVb
+brought	t63	5	bring	O	O	O	O	O	O	O	O	VVN	I-VP	bring	VBN	t64:DIR||t65:TMP||t70:TMP||t74:P||t75:ADV	mainVb
 home	t64	5	home	O	O	O	O	O	O	O	O	AV0	B-ADVP	home	NN	O	O
 today	t65	5	today	O	O	O	tmx38	DATE	1998-02-13	O	O	AV0	I-ADVP	today	NN	O	O
 when	t66	5	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
 tons	t67	5	ton	O	O	O	O	O	O	O	O	NN2	B-NP	tons	NNS	t68:NMOD	O
 of	t68	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t69:PMOD	O
 earth	t69	5	earth	O	O	O	O	O	O	O	O	NN1	B-NP	earth	NNP	O	O
-cascaded	t70	5	cascade	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	cascade	VBD	t66:TMP||t67:SBJ||t71:PRT||t73:OBJ||t74:P||t75:ADV	O
+cascaded	t70	5	cascade	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	cascade	VBD	t66:TMP||t67:SBJ||t71:PRT||t73:OBJ	O
 down	t71	5	down	O	O	O	O	O	O	O	O	AVP	B-PRT	down	RP	O	O
 a	t72	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 hillside	t73	5	hillside	O	O	O	O	O	O	O	O	NN1	I-NP	hillside	NN	t72:NMOD	O
 ,	t74	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-ripping	t75	5	rip	e17	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	rip	VBG	t77:OBJ	O
+ripping	t75	5	rip	e17	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	rip	VBG	t77:OBJ||t78:ADV	O
 two	t76	5	two	O	O	O	O	O	O	O	O	CRD	B-NP	two	CD	O	O
-houses	t77	5	house	O	O	O	O	O	O	O	O	NN2	I-NP	house	NNS	t76:NMOD||t78:NMOD	O
+houses	t77	5	house	O	O	O	O	O	O	O	O	NN2	I-NP	house	NNS	t76:NMOD	O
 from	t78	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t80:PMOD	O
 their	t79	5	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 foundations	t80	5	foundation	O	O	O	O	O	O	O	O	NN2	I-NP	foundation	NNS	t79:NMOD	O
@@ -105,7 +105,7 @@ they	t97	6	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 'll	t98	6	will	O	O	O	O	O	O	O	O	VM0	B-VP	'll	MD	t97:SBJ||t99:VC	O
 monitor	t99	6	monitor	e21	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	monitor	VB	t102:OBJ	O
 the	t100	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-shifting	t101	6	shift	O	O	O	O	O	O	O	O	NN1	I-NP	shifting	NN	O	O
+shifting	t101	6	shift	O	O	O	O	O	O	O	O	NN1	I-NP	shifting	VBG	O	O
 ground	t102	6	ground	O	O	O	O	O	O	O	O	NN1	I-NP	ground	NN	t100:NMOD||t101:NMOD	O
 .	t103	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -119,12 +119,12 @@ Rio	t110	7	Rio	O	O	O	O	O	O	O	O	NP0	B-NP	rio	NNP	O	O
 Nido	t111	7	Nido	O	O	O	O	O	O	O	O	NP0	I-NP	nido	NNP	t110:NAME	O
 ,	t112	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 officials	t113	7	official	O	O	O	O	O	O	O	O	NN2	B-NP	official	NNS	O	O
-say	t114	7	say	e23	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	say	VBP	t104:LOC||t112:P||t113:SBJ||t122:OBJ||t134:P	mainVb
+say	t114	7	say	e23	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	say	VBP	t104:LOC||t112:P||t113:SBJ||t118:OBJ||t134:P	mainVb
 a	t115	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 football	t116	7	football	O	O	O	O	O	O	O	O	NN1	I-NP	football	NN	O	O
 field	t117	7	field	O	O	O	O	O	O	O	O	NN1	I-NP	field	NN	t115:NMOD||t116:NMOD	O
-sized	t118	7	size	O	O	O	O	O	O	O	O	VVD	B-VP	sized	VBD	t117:SBJ	O
-slab	t119	7	slab	O	O	O	O	O	O	O	O	NN1	B-NP	slab	NN	t118:NMOD||t120:NMOD	O
+sized	t118	7	size	O	O	O	O	O	O	O	O	VVD	B-VP	sized	VBD	t117:SBJ||t122:OBJ	O
+slab	t119	7	slab	O	O	O	O	O	O	O	O	NN1	B-NP	slab	NN	t120:NMOD	O
 of	t120	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t121:PMOD	O
 hillside	t121	7	hillside	O	O	O	O	O	O	O	O	NN1	B-NP	hillside	NN	O	O
 could	t122	7	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t119:SBJ||t123:TMP||t124:VC	O

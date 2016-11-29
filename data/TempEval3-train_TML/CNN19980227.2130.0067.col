@@ -1,11 +1,11 @@
-DCT_1998-02-27	O	O	O	O	O	O	tmx0	DATE	1998-02-27	O	O	NP0	B-NP	dct_1998-02-27	SYM	O	O
+DCT_1998-02-27	O	O	O	O	O	O	tmx0	DATE	1998-02-27	O	O	NP0	B-NP	dct_1998-02-27	LS	O	O
 
 Live	t1	1	live	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	live	JJ	t2:AMOD||t13:P	mainVb
 from	t2	1	from	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	from	IN	t3:PMOD	O
-Atalanta	t3	1	Atalanta	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	atalanta	NNP	t4:P||t6:COORD	O
+Atalanta	t3	1	Atalanta	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	atalanta	NNP	t4:P||t6:COORD||t9:P||t12:APPO	O
 ,	t4	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 good	t5	1	good	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	good	JJ	O	O
-evening	t6	1	evening	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	evening	NN	t5:NMOD||t8:APPO||t9:P||t12:APPO	O
+evening	t6	1	evening	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	evening	NN	t5:NMOD||t8:APPO	O
 Lynne	t7	1	Lynne	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	lynne	NNP	O	O
 Russell	t8	1	Russell	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	russell	NNP	t7:NAME	O
 ,	t9	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -33,7 +33,7 @@ explosion	t29	2	explosion	e6	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	explosi
 at	t30	2	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t35:PMOD	O
 an	t31	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 Alabama	t32	2	Alabama	O	O	O	O	O	O	O	O	AJ0	I-NP	alabama	NNP	O	O
-women	t33	2	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t31:NMOD||t32:NAME||t34:SUFFIX	O
+women	t33	2	woman	O	O	O	O	O	O	O	O	NN2	I-NP	woman	NNS	t31:NMOD||t32:NMOD||t34:SUFFIX	O
 's	t34	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 clinic	t35	2	clinic	O	O	O	O	O	O	O	O	AJ0	I-NP	clinic	NN	t33:NMOD	O
 might	t36	2	might	O	O	O	O	O	O	O	O	VM0	B-VP	might	MD	t20:SBJ||t37:VC	O
@@ -50,7 +50,7 @@ latest	t44	3	latest	O	O	O	O	O	O	O	O	AJS	I-NP	latest	JJS	t43:NMOD	O
 
 Atlanta	t46	4	Atlanta	O	O	O	O	O	O	O	O	NP0	B-NP	atlanta	NNP	O	O
 nineteen	t47	4	nineteen	O	O	O	tmx95	DATE	1996	O	O	CRD	I-NP	nineteen	CD	O	O
-ninety-six	t48	4	ninety-six	O	O	O	tmx95	DATE	1996	O	O	CRD	I-NP	ninety-six	CD	t46:NMOD||t47:NMOD||t49:P	mainVb
+ninety-six	t48	4	ninety-six	O	O	O	tmx95	DATE	1996	O	O	CRD	I-NP	ninety-six	NNP	t46:NMOD||t47:NMOD||t49:P	mainVb
 .	t49	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t50	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -114,19 +114,19 @@ abortion	t101	11	abortion	O	O	O	O	O	O	O	O	NN1	I-NP	abortion	NN	O	O
 clinic	t102	11	clinic	O	O	O	O	O	O	O	O	NN1	I-NP	clinic	NN	t100:NMOD||t101:NMOD	O
 .	t103	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Location	t104	12	Location	O	O	O	O	O	O	O	O	NN1	B-NP	location	NNP	t105:P||t108:LOC||t109:P	mainVb
-,	t105	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+Location	t104	12	Location	O	O	O	O	O	O	O	O	NN1	B-NP	location	NN	O	O
+,	t105	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	t104:NMOD	O
 Birmingham	t106	12	Birmingham	O	O	O	O	O	O	O	O	NP0	B-NP	birmingham	NNP	O	O
 ,	t107	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Alabama	t108	12	Alabama	O	O	O	O	O	O	O	O	NP0	B-NP	alabama	NNP	t106:NMOD||t107:P	O
+Alabama	t108	12	Alabama	O	O	O	O	O	O	O	O	NP0	B-NP	alabama	NNP	t105:P||t106:NMOD||t107:P||t109:P	mainVb
 .	t109	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 This	t110	13	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
-man	t111	13	man	O	O	O	O	O	O	O	O	NN1	I-NP	man	NN	t110:NMOD	O
+man	t111	13	man	O	O	O	O	O	O	O	O	NN1	I-NP	man	NN	t110:NMOD||t112:P||t114:APPO	O
 ,	t112	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Eric	t113	13	Eric	O	O	O	O	O	O	O	O	NP0	B-NP	eric	NNP	O	O
 Rudolph	t114	13	Rudolph	O	O	O	O	O	O	O	O	NP0	I-NP	rudolph	NNP	t113:NAME	O
-has	t115	13	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t111:ADV||t112:P||t114:SBJ||t116:TMP||t117:VC||t123:P	mainVb
+has	t115	13	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t111:SBJ||t116:TMP||t117:VC||t123:P	mainVb
 already	t116	13	already	O	O	O	O	O	O	O	O	AV0	I-VP	already	RB	O	mainVb
 been	t117	13	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t118:VC	mainVb
 charged	t118	13	charge	e22	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	charge	VBN	t119:LOC	mainVb
@@ -140,12 +140,12 @@ Now	t124	14	now	O	O	O	tmx178	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
 officials	t125	14	official	O	O	O	O	O	O	O	O	NN2	B-NP	official	NNS	O	O
 are	t126	14	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t124:TMP||t125:SBJ||t127:VC||t143:P	mainVb
 investigating	t127	14	investigate	e25	I_ACTION	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	investigate	VBG	t128:OBJ	mainVb
-whether	t128	14	whether	O	O	O	O	O	O	O	O	CJS	B-SBAR	whether	IN	t129:P||t137:SUB	O
+whether	t128	14	whether	O	O	O	O	O	O	O	O	CJS	B-SBAR	whether	IN	t129:P||t137:COORD	O
 ,	t129	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Rudolph	t130	14	Rudolph	O	O	O	O	O	O	O	O	NP0	B-NP	rudolph	NNP	t131:P||t133:NMOD||t136:P	O
 ,	t131	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t132	14	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
-remains	t133	14	remain	O	O	O	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t132:SBJ||t134:ADV	O
+remains	t133	14	remain	O	O	O	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t132:SBJ||t134:LOC-PRD	O
 at	t134	14	at	O	O	O	O	O	O	O	O	AV0	B-ADVP	at	IN	t135:PMOD	O
 large	t135	14	large	O	O	O	O	O	O	O	O	AV0	I-ADVP	large	JJ	O	O
 ,	t136	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -153,15 +153,15 @@ is	t137	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t130:SBJ||t138:VC	O
 linked	t138	14	link	e27	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	link	VBN	t139:ADV	O
 to	t139	14	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t142:PMOD	O
 all	t140	14	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
-three	t141	14	three	O	O	O	O	O	O	O	O	CRD	I-NP	three	CD	t140:NMOD	O
-attacks	t142	14	attack	e28	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	attack	NNS	t141:NMOD	O
+three	t141	14	three	O	O	O	O	O	O	O	O	CRD	I-NP	three	CD	O	O
+attacks	t142	14	attack	e28	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	attack	NNS	t140:NMOD||t141:NMOD	O
 .	t143	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t144	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 reason	t145	15	reason	O	O	O	O	O	O	O	O	NN1	I-NP	reason	NN	t144:NMOD	O
 ,	t146	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 authorities	t147	15	authority	O	O	O	O	O	O	O	O	NN2	B-NP	authorities	NNS	O	O
-have	t148	15	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t145:ADV||t146:P||t147:SBJ||t149:VC||t153:P	mainVb
+have	t148	15	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t145:TMP||t146:P||t147:SBJ||t149:VC||t153:P	mainVb
 discovered	t149	15	discover	e30	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	discover	VBN	t150:OPRD	mainVb
 tantalizing	t150	15	tantalizing	O	O	O	O	O	O	O	O	VVG	I-VP	tantalize	VBG	t152:OBJ	mainVb
 new	t151	15	new	O	O	O	O	O	O	O	O	AJ0	B-NP	new	JJ	O	O
@@ -169,12 +169,12 @@ evidence	t152	15	evidence	O	O	O	O	O	O	O	O	NN1	I-NP	evidence	NN	t151:NMOD	O
 .	t153	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Steel	t154	16	Steel	O	O	O	O	O	O	O	O	NP0	B-NP	steel	NNP	O	O
-plates	t155	16	plate	O	O	O	O	O	O	O	O	NN2	I-NP	plate	NNS	t154:NMOD	O
-recovered	t156	16	recover	e33	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	recover	VBD	t155:SBJ||t157:LOC||t161:ADV||t174:P	mainVb
+plates	t155	16	plate	O	O	O	O	O	O	O	O	NN2	I-NP	plate	VBZ	t154:SBJ||t156:VC||t174:P	mainVb
+recovered	t156	16	recover	e33	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	recover	VBN	t157:LOC	O
 at	t157	16	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t160:PMOD	O
 the	t158	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Olympic	t159	16	Olympic	O	O	O	O	O	O	O	O	AJ0	I-NP	olympic	NNP	O	O
-park	t160	16	park	O	O	O	O	O	O	O	O	NN1	I-NP	park	NN	t158:NMOD||t159:NMOD	O
+park	t160	16	park	O	O	O	O	O	O	O	O	NN1	I-NP	park	NN	t158:NMOD||t159:NMOD||t161:APPO	O
 bombing	t161	16	bombing	O	O	O	O	O	O	O	O	VVG	B-VP	bomb	VBG	t162:OBJ	O
 appear	t162	16	appear	e34	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-NP	appear	VBP	t163:OPRD	O
 to	t163	16	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t164:IM	O
@@ -200,7 +200,7 @@ a	t181	17	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 machine	t182	17	machine	O	O	O	O	O	O	O	O	NN1	I-NP	machine	NN	O	O
 shop	t183	17	shop	O	O	O	O	O	O	O	O	NN1	I-NP	shop	NN	t181:NMOD||t182:NMOD||t184:LOC	O
 in	t184	17	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t186:PMOD	O
-north	t185	17	north	O	O	O	O	O	O	O	O	NN1	B-NP	north	NN	O	O
+north	t185	17	north	O	O	O	O	O	O	O	O	NN1	B-NP	north	NNP	O	O
 Carolina	t186	17	Carolina	O	O	O	O	O	O	O	O	NP0	I-NP	carolina	NNP	t185:NAME||t187:P||t193:NMOD	O
 ,	t187	17	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 where	t188	17	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	O	O
@@ -213,26 +213,26 @@ worked	t193	17	work	e44	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	work	VBD	t18
 
 And	t195	18	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
 nails	t196	18	nail	O	O	O	O	O	O	O	O	NN2	B-NP	nail	VBZ	t197:VC	O
-found	t197	18	find	e45	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	found	VBN	t198:LOC	O
+found	t197	18	find	e45	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	found	VBN	t198:LOC||t203:OPRD	O
 in	t198	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t202:PMOD	O
 the	t199	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Atlanta	t200	18	Atlanta	O	O	O	O	O	O	O	O	NP0	I-NP	atlanta	NNP	O	O
 abortion	t201	18	abortion	O	O	O	O	O	O	O	O	NN1	I-NP	abortion	NN	O	O
-clinic	t202	18	clinic	O	O	O	O	O	O	O	O	NN1	I-NP	clinic	NN	t199:NMOD||t200:NMOD||t201:NMOD||t203:NMOD	O
+clinic	t202	18	clinic	O	O	O	O	O	O	O	O	NN1	I-NP	clinic	NN	t199:NMOD||t200:NMOD||t201:NMOD	O
 bombing	t203	18	bombing	e101	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	bomb	VBG	O	O
 are	t204	18	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t195:DEP||t196:SBJ||t205:PRD||t217:P	mainVb
 identical	t205	18	identical	O	O	O	O	O	O	O	O	AJ0	B-ADJP	identical	JJ	t206:AMOD	O
 to	t206	18	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t207:PMOD	O
-those	t207	18	those	O	O	O	O	O	O	O	O	DT0	B-NP	those	DT	t208:APPO||t213:APPO	O
+those	t207	18	those	O	O	O	O	O	O	O	O	DT0	B-NP	those	DT	t208:APPO	O
 discovered	t208	18	discover	e46	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	discover	VBN	t209:LOC	O
 at	t209	18	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t212:PMOD	O
 Rudolph	t210	18	Rudolph	O	O	O	O	O	O	O	O	NP0	B-NP	rudolph	NNP	t211:SUFFIX	O
 's	t211	18	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-storage	t212	18	storage	O	O	O	O	O	O	O	O	NN1	I-NP	storage	NN	t210:NMOD	O
+storage	t212	18	storage	O	O	O	O	O	O	O	O	NN1	I-NP	storage	NN	t210:NMOD||t213:APPO	O
 shed	t213	18	shed	O	O	O	O	O	O	O	O	NN1	I-NP	shed	VBD	t214:LOC	O
 in	t214	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t216:PMOD	O
-north	t215	18	north	O	O	O	O	O	O	O	O	NN1	B-NP	north	JJ	O	O
-Carolina	t216	18	Carolina	O	O	O	O	O	O	O	O	NP0	I-NP	carolina	NNP	t215:NMOD	O
+north	t215	18	north	O	O	O	O	O	O	O	O	NN1	B-NP	north	NN	O	O
+Carolina	t216	18	Carolina	O	O	O	O	O	O	O	O	NP0	I-NP	carolina	NNP	t215:NAME	O
 .	t217	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t218	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -322,9 +322,9 @@ clinic	t298	22	clinic	O	O	O	O	O	O	O	O	NN1	I-NP	clinic	NN	t297:NMOD	O
 bombing	t299	22	bombing	e106	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bombing	NN	t295:NMOD||t296:NMOD||t298:NMOD||t300:P||t304:COORD	O
 ,	t300	22	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t301	22	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-nineteen	t302	22	nineteen	O	O	O	tmx107	DATE	1997	O	O	CRD	I-NP	nineteen	CD	O	O
-ninety-seven	t303	22	ninety-seven	O	O	O	tmx107	DATE	1997	O	O	CRD	I-NP	ninety-seven	CD	t302:NMOD	O
-attack	t304	22	attack	e61	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	attack	NN	t301:NMOD||t303:NMOD||t305:NMOD||t309:COORD	O
+nineteen	t302	22	nineteen	O	O	O	tmx107	DATE	1997	O	O	CRD	I-NP	nineteen	JJ	O	O
+ninety-seven	t303	22	ninety-seven	O	O	O	tmx107	DATE	1997	O	O	CRD	I-NP	ninety-seven	CD	O	O
+attack	t304	22	attack	e61	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	attack	NN	t301:NMOD||t302:NMOD||t303:NMOD||t305:NMOD||t309:COORD	O
 on	t305	22	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t308:PMOD	O
 a	t306	22	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 gay	t307	22	gay	O	O	O	O	O	O	O	O	AJ0	I-NP	gay	JJ	O	O
@@ -381,11 +381,11 @@ search	t354	24	search	e67	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	search	NN	
 
 Freeh	t356	25	Freeh	O	O	O	O	O	O	O	O	NP0	B-NP	freeh	NNP	O	O
 also	t357	25	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-ordered	t358	25	order	e68	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	order	VBD	t356:SBJ||t357:ADV||t362:OBJ||t379:P	mainVb
+ordered	t358	25	order	e68	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	order	VBD	t356:SBJ||t357:ADV||t360:OBJ||t361:OPRD||t379:P	mainVb
 the	t359	25	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-investigation	t360	25	investigation	e69	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	investigation	NN	O	O
-consolidate	t361	25	consolidate	O	O	O	O	O	O	O	O	AJ0	I-NP	consolidate	NN	O	O
-information	t362	25	information	O	O	O	O	O	O	O	O	NN1	I-NP	information	NN	t359:NMOD||t360:NMOD||t361:NMOD||t372:NMOD	O
+investigation	t360	25	investigation	e69	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	investigation	NN	t359:NMOD	O
+consolidate	t361	25	consolidate	O	O	O	O	O	O	O	O	AJ0	I-NP	consolidate	VB	t362:OBJ||t363:LOC||t368:P||t372:COORD	O
+information	t362	25	information	O	O	O	O	O	O	O	O	NN1	I-NP	information	NN	O	O
 under	t363	25	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t367:PMOD	O
 the	t364	25	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Atlanta	t365	25	Atlanta	O	O	O	O	O	O	O	O	NP0	I-NP	atlanta	NNP	O	O
@@ -395,7 +395,7 @@ force	t367	25	force	O	O	O	O	O	O	O	O	NN1	I-NP	force	NN	t364:NMOD||t365:NMOD||t366
 another	t369	25	another	O	O	O	O	O	O	O	O	DT0	B-NP	another	DT	O	O
 indication	t370	25	indication	O	O	O	O	O	O	O	O	NN1	I-NP	indication	NN	O	O
 officials	t371	25	official	O	O	O	O	O	O	O	O	NN2	I-NP	official	NNS	t369:NMOD||t370:NMOD	O
-suspect	t372	25	suspect	e72	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	suspect	VBP	t363:LOC||t368:P||t371:SBJ||t374:OBJ	O
+suspect	t372	25	suspect	e72	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	suspect	VBP	t371:SBJ||t374:OBJ	O
 a	t373	25	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 link	t374	25	link	O	O	O	O	O	O	O	O	NN1	I-NP	link	NN	t373:NMOD||t375:NMOD	O
 between	t375	25	between	O	O	O	O	O	O	O	O	PRP	B-PP	between	IN	t378:PMOD	O
@@ -434,9 +434,9 @@ The	t404	28	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 reason	t405	28	reason	O	O	O	O	O	O	O	O	NN1	I-NP	reason	NN	t404:NMOD	O
 ,	t406	28	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 they	t407	28	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-remember	t408	28	remember	e82	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	remember	VBP	t406:P||t407:SBJ||t410:OBJ||t411:P	mainVb
+remember	t408	28	remember	e82	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	remember	VBP	t405:TMP||t406:P||t407:SBJ||t410:OBJ||t411:P	mainVb
 Richard	t409	28	Richard	O	O	O	O	O	O	O	O	NP0	B-NP	richard	NNP	O	O
-Jewell	t410	28	Jewell	O	O	O	O	O	O	O	O	NP0	I-NP	jewell	NNP	t405:NMOD||t409:NAME	O
+Jewell	t410	28	Jewell	O	O	O	O	O	O	O	O	NP0	I-NP	jewell	NNP	t409:NAME	O
 .	t411	28	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 pierre	t412	29	pierre	O	O	O	O	O	O	O	O	AJ0	B-NP	pierre	NN	O	O

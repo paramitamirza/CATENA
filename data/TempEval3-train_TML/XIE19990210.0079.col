@@ -1,6 +1,6 @@
-DCT_1999-02-10	O	O	O	O	O	O	tmx0	DATE	1999-02-10	O	O	AJ0	B-ADVP	dct_1999-02-10	SYM	O	O
+DCT_1999-02-10	O	O	O	O	O	O	tmx0	DATE	1999-02-10	O	O	AJ0	B-ADVP	dct_1999-02-10	LS	O	O
 
-BRUSSELS	t1	1	BRUSSELS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	brussels	NNS	O	O
+BRUSSELS	t1	1	BRUSSELS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	brussels	NNS	t2:P||t7:APPO	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 February	t3	1	February	O	O	O+O+O	tmx111	DATE	1999-02-10	O	O	NP0	B-NP	february	NNP	t4:NMOD	O
 10	t4	1	10	O	O	O+O+O	tmx111	DATE	1999-02-10	O	O	CRD	I-NP	10	CD	O	O
@@ -16,17 +16,17 @@ Organization	t13	1	Organization	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	organization	NNP	O	
 -LRB-	t14	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
 NATO	t15	1	NATO	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	nato	NNP	O	O
 -RRB-	t16	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t9:NMOD||t12:NAME||t13:NAME||t14:NAME||t15:NAME	O
-has	t17	1	have	O	O	O+O+O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t16:SBJ||t18:VC	O
+has	t17	1	have	O	O	O+O+O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t1:LOC||t16:SBJ||t18:VC	O
 decided	t18	1	decide	e1	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	decide	VBN	t19:OPRD	O
-to	t19	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t1:SBJ||t20:IM	O
-admit	t20	1	admit	e2	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	admit	VB	t21:OBJ||t28:TMP	O
+to	t19	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t20:IM	O
+admit	t20	1	admit	e2	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	admit	VB	t21:OBJ	O
 Poland	t21	1	Poland	O	O	O	O	O	O	O	O	NP0	B-NP	poland	NNP	t22:P||t23:COORD	O
 ,	t22	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Hungary	t23	1	Hungary	O	O	O	O	O	O	O	O	NP0	B-NP	hungary	NNP	t24:COORD	O
 and	t24	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t27:CONJ	O
 the	t25	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Czech	t26	1	Czech	O	O	O	O	O	O	O	O	AJ0	I-NP	czech	NNP	O	O
-Republic	t27	1	Republic	O	O	O	O	O	O	O	O	NN1	I-NP	republic	NNP	t25:NMOD||t26:NAME	O
+Czech	t26	1	Czech	O	O	O	O	O	O	O	O	AJ0	I-NP	czech	JJ	O	O
+Republic	t27	1	Republic	O	O	O	O	O	O	O	O	NN1	I-NP	republic	NN	t25:NMOD||t26:NMOD||t28:LOC	O
 in	t28	1	in	O	O	O	O	O	O	s1	O	PRP	B-PP	in	IN	t30:PMOD	O
 early	t29	1	early	O	O	O	O	O	O	O	O	AJ0	B-NP	early	JJ	O	O
 March	t30	1	March	O	O	O	tmx2	DATE	1999-03	O	O	NP0	I-NP	march	NNP	t29:NMOD	O
@@ -36,7 +36,7 @@ official	t33	1	official	O	O	O	O	O	O	O	O	NN1	I-NP	official	NN	t32:NMOD||t34:NMOD	
 from	t34	1	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t36:PMOD	O
 the	t35	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 organization	t36	1	organization	O	O	O	O	O	O	O	O	NN1	I-NP	organization	NN	t35:NMOD	O
-said	t37	1	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:P||t7:SBJ||t17:OBJ||t31:P||t33:SBJ||t38:TMP||t40:P	mainVb
+said	t37	1	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t17:OBJ||t31:P||t33:SBJ||t38:TMP||t40:P	mainVb
 on	t38	1	on	O	O	O	O	O	O	s2	O	PRP	B-PP	on	IN	t39:PMOD	O
 Wednesday	t39	1	Wednesday	O	O	O	tmx3	DATE	1999-02-09	O	O	NP0	B-NP	wednesday	NNP	O	O
 .	t40	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -172,7 +172,7 @@ applying	t163	7	apply	e23	STATE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	apply	VBG	t
 for	t164	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t166:PMOD	O
 NATO	t165	7	NATO	O	O	O	O	O	O	O	O	NP0	B-NP	nato	NNP	O	O
 membership	t166	7	membership	O	O	O	O	O	O	O	O	NN1	I-NP	membership	NN	t165:NMOD	O
-are	t167	7	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t162:ADV||t163:SBJ||t168:SBJ||t179:P	mainVb
+are	t167	7	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t162:ADV||t163:VC||t168:SBJ||t179:P	mainVb
 Romania	t168	7	Romania	O	O	O	O	O	O	O	O	NP0	B-NP	romania	NNP	t169:P||t170:COORD	O
 ,	t169	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Slovenia	t170	7	Slovenia	O	O	O	O	O	O	O	O	NP0	B-NP	slovenia	NNP	t171:P||t172:COORD	O

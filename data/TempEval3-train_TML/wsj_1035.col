@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Consolidated	t1	1	Consolidated	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	consolidated	NNP	O	O
 Freightways	t2	1	Freightways	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	freightways	NNP	t1:NAME||t3:POSTHON	O
@@ -99,7 +99,7 @@ intense	t92	4	intense	O	O	O	O	O	O	O	O	AJ0	B-VP	intense	JJ	O	O
 discounting	t94	4	discounting	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-NP	discounting	VBG	t95:LOC	O
 in	t95	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t99:PMOD	O
 its	t96	4	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-long-haul	t97	4	long-haul	O	O	O	O	O	O	O	O	AJ0	I-NP	long-haul	NN	O	O
+long-haul	t97	4	long-haul	O	O	O	O	O	O	O	O	AJ0	I-NP	long-haul	JJ	O	O
 trucking	t98	4	trucking	O	O	O	O	O	O	O	O	NN1	I-NP	trucking	NN	t97:NMOD	O
 business	t99	4	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t96:NMOD||t98:NMOD	O
 ,	t100	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -141,9 +141,9 @@ trading	t134	5	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t132:NMOD||t133:NMOD	
 yesterday	t135	5	yesterday	O	O	O	tmx36	DATE	1989-10-25	O	O	AV0	B-NP	yesterday	NN	O	O
 .	t136	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t137	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t137	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 They	t138	6	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-have	t139	6	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t137:DEP||t138:SBJ||t140:OPRD	O
+have	t139	6	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t137:P||t138:SBJ||t140:OPRD	O
 to	t140	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t141:IM	O
 continue	t141	6	continue	e20	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t142:OPRD	O
 to	t142	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t143:IM	O

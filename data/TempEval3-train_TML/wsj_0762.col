@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 CAMBREX	t1	1	CAMBREX	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cambrex	NNP	t2:POSTHON||t3:P||t6:LOC	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -56,9 +56,9 @@ position	t49	3	position	O	O	O	O	O	O	O	O	NN1	I-NP	position	NN	t46:NMOD||t47:NMOD|
 Although	t51	4	although	O	O	O	O	O	O	O	O	CJS	B-SBAR	although	IN	t53:SUB	O
 profits	t52	4	profit	O	O	O	O	O	O	O	O	NN2	B-NP	profits	NNS	O	O
 were	t53	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t52:SBJ||t55:VC	O
-"	t54	4	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	NNP	O	O
-squeezed	t55	4	squeeze	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-VP	squeeze	VBD	t54:SBJ||t56:OBJ||t57:TMP||t59:P||t61:ADV	O
-"	t56	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t54	4	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	RBS	O	O
+squeezed	t55	4	squeeze	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-VP	squeeze	VBN	t54:MNR||t56:ADV||t57:TMP||t59:P||t61:PRP	O
+"	t56	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	RP	O	O
 in	t57	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t58:PMOD	O
 1989	t58	4	1989	O	O	O	tmx26	DATE	1989	O	O	CRD	B-NP	1989	CD	O	O
 ,	t59	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -68,23 +68,23 @@ a	t62	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 result	t63	4	result	O	O	O	O	O	O	O	O	NN1	I-NP	result	NN	t62:NMOD||t64:NMOD	O
 of	t64	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t67:PMOD	O
 higher	t65	4	higher	O	O	O	O	O	O	O	O	AJC	B-NP	higher	JJR	O	O
-raw-material	t66	4	raw-material	O	O	O	O	O	O	O	O	AJ0	I-NP	raw-material	NN	O	O
+raw-material	t66	4	raw-material	O	O	O	O	O	O	O	O	AJ0	I-NP	raw-material	JJ	O	O
 costs	t67	4	cost	O	O	O	O	O	O	O	O	NN2	I-NP	costs	NNS	t65:NMOD||t66:NMOD	O
 ,	t68	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t69	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t70	4	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t69:NMOD	O
 said	t71	4	say	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t51:ADV||t68:P||t70:SBJ||t73:OBJ||t85:P	mainVb
 it	t72	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-is	t73	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t72:SBJ||t74:PRD	O
+is	t73	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t72:SBJ||t74:PRD||t81:TMP||t83:COORD	O
 confident	t74	4	confident	e16	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	confident	JJ	t75:AMOD	O
 about	t75	4	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t77:PMOD	O
 future	t76	4	future	O	O	O	O	O	O	O	O	AJ0	B-NP	future	JJ	O	O
-earnings	t77	4	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t76:NMOD||t78:COORD||t81:NMOD	O
+earnings	t77	4	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t76:NMOD||t78:COORD	O
 and	t78	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t80:CONJ	O
 cash	t79	4	cash	O	O	O	O	O	O	O	O	NN1	I-NP	cash	NN	O	O
 flow	t80	4	flow	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	flow	NN	t79:NMOD	O
 for	t81	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t82:PMOD	O
-1990	t82	4	1990	O	O	O	tmx27	DATE	1990	O	O	CRD	B-NP	1990	CD	t83:COORD	O
+1990	t82	4	1990	O	O	O	tmx27	DATE	1990	O	O	CRD	B-NP	1990	CD	O	O
 and	t83	4	and	O	O	O	tmx27	DATE	1990	O	O	CJC	O	and	CC	t84:CONJ	O
 beyond	t84	4	beyond	O	O	O	tmx27	DATE	1990	O	O	AV0	B-ADVP	beyond	IN	O	O
 .	t85	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

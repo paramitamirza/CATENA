@@ -1,16 +1,16 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Hadson	t1	1	Hadson	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hadson	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	corp.	NNP	O	O
 said	t3	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t1:SBJ||t5:OBJ||t29:P	mainVb
 it	t4	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-expects	t5	1	expect	e2	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t4:SBJ||t6:OPRD||t20:PRP	O
+expects	t5	1	expect	e2	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t4:SBJ||t6:OPRD	O
 to	t6	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t7:IM	O
 report	t7	1	report	e4	REPORTING	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	report	VB	t11:OBJ	O
 a	t8	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t9	1	third-quarter	O	O	O	tmx28	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
+third-quarter	t9	1	third-quarter	O	O	O	tmx28	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
 net	t10	1	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
-loss	t11	1	loss	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t8:NMOD||t9:NMOD||t10:NMOD||t12:NMOD	O
+loss	t11	1	loss	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t8:NMOD||t9:NMOD||t10:NMOD||t12:NMOD||t20:PRP	O
 of	t12	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t13:PMOD	O
 $	t13	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t14:DEP||t15:DEP||t16:DEP||t17:DEP||t18:DEP||t19:DEP	O
 17	t14	1	17	O	O	O	O	O	O	O	O	CRD	I-NP	17	CD	O	O
@@ -26,7 +26,7 @@ reserves	t23	1	reserve	O	O	O	O	O	O	O	O	NN2	I-NP	reserves	NNS	t22:NMOD||t24:COORD
 and	t24	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t28:CONJ	O
 continued	t25	1	continue	O	O	O	O	O	O	O	O	VVD	B-VP	continue	VBN	O	O
 low	t26	1	low	O	O	O	O	O	O	O	O	AJ0	B-NP	low	JJ	O	O
-natural-gas	t27	1	natural-gas	O	O	O	O	O	O	O	O	NN2	I-NP	natural-gas	NNS	O	O
+natural-gas	t27	1	natural-gas	O	O	O	O	O	O	O	O	NN2	I-NP	natural-ga	NNS	O	O
 prices	t28	1	price	O	O	O	O	O	O	O	O	NN2	I-NP	price	NNS	t25:NMOD||t26:NMOD||t27:NMOD	O
 .	t29	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -66,12 +66,12 @@ fixed-price	t62	2	fixed-price	O	O	O	O	O	O	O	O	NN1	I-NP	fixed-price	NN	O	O
 development	t63	2	development	O	O	O	O	O	O	O	O	NN1	I-NP	development	NN	t62:NMOD	O
 contract	t64	2	contract	O	O	O	O	O	O	O	O	NN1	I-NP	contract	NN	t61:NMOD||t63:NMOD	O
 and	t65	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t66:CONJ	O
-$	t66	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t67:DEP||t68:DEP||t69:NMOD||t73:NMOD	O
+$	t66	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t67:DEP||t68:DEP||t69:NMOD	O
 2.8	t67	2	2.8	O	O	O	O	O	O	O	O	CRD	I-NP	2.8	CD	O	O
 million	t68	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 in	t69	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t71:PMOD	O
 overhead	t70	2	overhead	O	O	O	O	O	O	O	O	AJ0	B-NP	overhead	NN	O	O
-costs	t71	2	cost	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	costs	NNS	t70:NMOD	O
+costs	t71	2	cost	e66	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	costs	NNS	t70:NMOD||t73:NMOD	O
 that	t72	2	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 wo	t73	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	wo	MD	t72:SBJ||t74:ADV||t75:VC	O
 n't	t74	2	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O

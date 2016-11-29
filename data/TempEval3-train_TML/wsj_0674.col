@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Jim	t1	1	Jim	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	jim	NNP	O	O
 Pattison	t2	1	Pattison	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	pattison	NNP	O	O
@@ -19,10 +19,10 @@ entrepreneur	t16	1	entrepreneur	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	entrepreneur	NN	t18
 James	t17	1	James	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	james	NNP	O	O
 Pattison	t18	1	Pattison	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	pattison	NNP	t17:NAME	O
 ,	t19	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t20	1	say	e2	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t3:SBJ||t23:OBJ||t40:P	mainVb
+said	t20	1	say	e2	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t3:SBJ||t22:OBJ||t40:P	mainVb
 it	t21	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-"	t22	1	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-intends	t23	1	intend	e3	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	intend	VBZ	t21:SBJ||t22:SBJ||t24:OPRD	O
+"	t22	1	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBZ	t21:SBJ||t23:OBJ	O
+intends	t23	1	intend	e3	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	intend	VBZ	t24:OPRD	O
 to	t24	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t25:IM	O
 seek	t25	1	seek	e5	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	seek	VB	t27:OBJ	O
 control	t26	1	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	O	O
@@ -86,10 +86,10 @@ company	t81	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t80:NMOD	O
 said	t82	3	say	e13	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t81:SBJ||t85:OBJ||t115:P	mainVb
 it	t83	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 currently	t84	3	currently	O	O	O	tmx42	DATE	PRESENT_REF	O	O	AV0	B-ADVP	currently	RB	O	O
-holds	t85	3	hold	e14	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	hold	VBZ	t83:SBJ||t84:TMP||t86:OBJ||t110:OPRD	O
-about	t86	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	t87:DEP||t88:DEP||t89:NMOD	O
+holds	t85	3	hold	e14	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	hold	VBZ	t83:SBJ||t84:TMP||t88:OBJ	O
+about	t86	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	O	O
 4.2	t87	3	4.2	O	O	O	O	O	O	O	O	CRD	I-NP	4.2	CD	O	O
-million	t88	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+million	t88	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t86:DEP||t87:DEP||t89:NMOD	O
 of	t89	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t95:PMOD	O
 Innopac	t90	3	Innopac	O	O	O	O	O	O	O	O	NP0	B-NP	innopac	NNP	t91:SUFFIX	O
 's	t91	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -103,19 +103,19 @@ which	t98	3	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 have	t99	3	have	e43	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t98:SBJ||t103:OBJ	O
 an	t100	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 aggregate	t101	3	aggregate	O	O	O	O	O	O	O	O	AJ0	I-NP	aggregate	NN	O	O
-market	t102	3	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t101:NMOD	O
-value	t103	3	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t100:NMOD||t102:NMOD||t104:NMOD	O
-of	t104	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t109:PMOD	O
-about	t105	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	CD	O	O
+market	t102	3	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	O	O
+value	t103	3	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t100:NMOD||t101:NMOD||t102:NMOD||t104:NMOD	O
+of	t104	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t114:PMOD	O
+about	t105	3	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
 137.8	t106	3	137.8	O	O	O	O	O	O	O	O	CRD	I-NP	137.8	CD	O	O
 million	t107	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t105:DEP||t106:DEP	O
 Canadian	t108	3	canadian	O	O	O	O	O	O	O	O	AJ0	I-NP	canadian	JJ	O	O
 dollars	t109	3	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t107:NMOD||t108:NMOD	O
--LRB-	t110	3	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t111:OBJ||t114:GAP-NMOD	O
+-LRB-	t110	3	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t109:SBJ	O
 US$	t111	3	us$	O	O	O	O	O	O	O	O	NP0	I-NP	us$	$	t112:DEP||t113:DEP	O
 117.3	t112	3	117.3	O	O	O	O	O	O	O	O	CRD	I-NP	117.3	CD	O	O
 million	t113	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t114	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+-RRB-	t114	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t110:NMOD||t111:NMOD	O
 .	t115	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Separately	t116	4	separately	O	O	O	O	O	O	O	O	AV0	B-ADVP	separately	RB	O	O
@@ -188,8 +188,8 @@ C$	t179	6	c$	O	O	O	O	O	O	O	O	UNC	B-NP	c$	$	t180:DEP||t181:DEP	O
 million	t181	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t182	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 up	t183	6	up	O	O	O	O	O	O	O	O	AVP	B-ADVP	up	RB	t184:AMOD	O
-from	t184	6	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t185:PMOD||t188:TMP	O
-C$	t185	6	c$	O	O	O	O	O	O	O	O	NN1	B-NP	c$	$	t186:DEP||t187:DEP	O
+from	t184	6	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t185:PMOD	O
+C$	t185	6	c$	O	O	O	O	O	O	O	O	NN1	B-NP	c$	$	t186:DEP||t187:DEP||t188:TMP	O
 252	t186	6	252	O	O	O	O	O	O	O	O	CRD	I-NP	252	CD	O	O
 million	t187	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 in	t188	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t189:PMOD	O
@@ -216,16 +216,16 @@ decision	t207	7	decision	e23	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	decisio
 to	t208	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t209:IM	O
 seek	t209	7	seek	e25	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	seek	VB	t210:OBJ	O
 control	t210	7	control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NN	O	O
-as	t211	7	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t213:PMOD	O
+as	t211	7	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t217:PMOD	O
 a	t212	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t213	7	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t212:NMOD||t217:NMOD	O
+"	t213	7	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
 very	t214	7	very	O	O	O	O	O	O	O	O	AV0	I-NP	very	RB	O	O
 positive	t215	7	positive	O	O	O	O	O	O	O	O	AJ0	I-NP	positive	JJ	t214:AMOD	O
-"	t216	7	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
-move	t217	7	move	e26	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	move	NN	t215:NMOD||t216:NMOD	O
+"	t216	7	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	O	O
+move	t217	7	move	e26	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	move	NN	t212:NMOD||t213:NMOD||t215:NMOD||t216:NMOD	O
 .	t218	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t219	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t219	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t220	8	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 'm	t221	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	'm	VBP	t219:DEP||t220:SBJ||t222:PRD	O
 happy	t222	8	happy	e63	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	happy	JJ	t223:AMOD	O
@@ -237,9 +237,9 @@ about	t227	8	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t229:PMOD	O
 our	t228	8	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 company	t229	8	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t228:NMOD	O
 ,	t230	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t231	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t231	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	TO	O	O
 he	t232	8	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t233	8	say	e28	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t221:OBJ||t230:P||t231:SBJ||t232:SBJ||t234:P	mainVb
+said	t233	8	say	e28	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t221:OBJ||t230:P||t231:DEP-GAP||t232:SBJ||t234:P	mainVb
 .	t234	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Mr.	t235	9	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
@@ -281,8 +281,8 @@ often	t269	10	often	O	O	O	O	O	O	O	O	AV0	I-VP	often	RB	O	O
 used	t270	10	use	O	O	O	O	O	O	O	O	VVN	I-VP	use	VBN	t271:LGS||t281:P||t282:ADV	O
 by	t271	10	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t274:PMOD	O
 fast	t272	10	fast	O	O	O	O	O	O	O	O	AJ0	B-NP	fast	JJ	O	O
-food	t273	10	food	O	O	O	O	O	O	O	O	NN1	I-NP	food	NN	t272:NMOD	O
-chains	t274	10	chain	O	O	O	O	O	O	O	O	NN2	I-NP	chains	NNS	t273:NMOD||t275:P||t277:NMOD	O
+food	t273	10	food	O	O	O	O	O	O	O	O	NN1	I-NP	food	NN	O	O
+chains	t274	10	chain	O	O	O	O	O	O	O	O	NN2	I-NP	chains	NNS	t272:NMOD||t273:NMOD||t275:P||t277:NMOD	O
 ,	t275	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 such	t276	10	such	O	O	O	O	O	O	O	O	PRP	B-PP	such	JJ	O	O
 as	t277	10	as	O	O	O	O	O	O	O	O	PRP	I-PP	as	IN	t276:DEP||t278:PMOD	O
@@ -313,8 +313,8 @@ the	t300	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 first	t301	11	first	O	O	O	O	O	O	O	O	ORD	I-NP	first	JJ	O	O
 U.S.	t302	11	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
 polystyrene	t303	11	polystyrene	O	O	O	O	O	O	O	O	NN1	I-NP	polystyrene	NN	O	O
-recycling	t304	11	recycling	O	O	O	O	O	O	O	O	VVG	B-VP	recycling	VBG	O	O
-plant	t305	11	plant	O	O	O	O	O	O	O	O	NN1	B-NP	plant	NN	t300:NMOD||t301:NMOD||t302:NMOD||t303:NMOD||t304:NMOD	O
+recycling	t304	11	recycling	O	O	O	O	O	O	O	O	VVG	B-VP	recycling	NN	t303:NMOD	O
+plant	t305	11	plant	O	O	O	O	O	O	O	O	NN1	B-NP	plant	NN	t300:NMOD||t301:NMOD||t302:NMOD||t304:NMOD	O
 ,	t306	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 in	t307	11	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t310:PMOD	O
 Leominster	t308	11	Leominster	O	O	O	O	O	O	O	O	NP0	B-NP	leominster	NNP	O	O

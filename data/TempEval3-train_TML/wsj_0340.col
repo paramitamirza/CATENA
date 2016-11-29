@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 portfolio	t2	1	portfolio	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	portfolio	NN	O	O
@@ -96,11 +96,11 @@ Paribas	t91	3	Paribas	O	O	O	O	O	O	O	O	NP0	I-NP	paribas	NNP	t88:TITLE||t89:NAME||
 at	t92	3	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t95:PMOD	O
 1,850	t93	3	1,850	O	O	O	O	O	O	O	O	CRD	B-NP	1,850	CD	O	O
 French	t94	3	french	O	O	O	O	O	O	O	O	AJ0	I-NP	french	JJ	O	O
-francs	t95	3	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t93:NMOD||t94:NMOD||t99:NMOD||t101:ADV	O
--LRB-	t96	3	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	WDT	O	O
+francs	t95	3	franc	O	O	O	O	O	O	O	O	NN1	I-NP	franc	NNS	t93:NMOD||t94:NMOD||t96:APPO||t101:ADV	O
+-LRB-	t96	3	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	VBP	t99:OBJ	O
 $	t97	3	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t98:NMOD	O
 297	t98	3	297	O	O	O	O	O	O	O	O	CRD	I-NP	297	CD	O	O
--RRB-	t99	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t96:SBJ||t97:NMOD	O
+-RRB-	t99	3	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t97:NMOD	O
 a	t100	3	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
 share	t101	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t100:NMOD	O
 .	t102	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -147,8 +147,8 @@ shares	t139	5	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	t136:NMOD||t138:NMOD	O
 is	t141	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t128:SBJ||t142:VC||t152:P	mainVb
 valued	t142	5	value	O	O	O	O	O	O	O	O	VVN	I-VP	value	VBN	t143:ADV	mainVb
 at	t143	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t151:PMOD	O
-about	t144	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
-slightly	t145	5	slightly	O	O	O	O	O	O	O	O	AV0	I-NP	slightly	RB	t144:DEP||t146:NMOD||t147:DEP||t148:DEP||t149:DEP	O
+about	t144	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+slightly	t145	5	slightly	O	O	O	O	O	O	O	O	AV0	I-NP	slightly	RB	t144:DEP||t146:DEP||t147:DEP||t148:DEP||t149:DEP	O
 more	t146	5	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	RBR	O	O
 than	t147	5	than	O	O	O	O	O	O	O	O	AV0	I-NP	than	IN	O	O
 80	t148	5	80	O	O	O	O	O	O	O	O	CRD	I-NP	80	CD	O	O

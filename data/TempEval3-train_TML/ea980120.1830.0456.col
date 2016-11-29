@@ -6,12 +6,12 @@ said	t3	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t4:T
 today	t4	1	today	O	O	O	tmx14	DATE	1998-01-20	O	O	AV0	B-NP	today	NN	O	O
 it	t5	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t6	1	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t5:SBJ||t7:VC	O
-re-examine	t7	1	re-examine	e2	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	re-examine	VB	t9:OBJ||t10:OPRD||t23:P||t24:ADV	O
+re-examine	t7	1	re-examine	e2	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	re-examine	VB	t9:OBJ||t10:OPRD||t19:ADV||t23:P||t24:ADV	O
 the	t8	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 question	t9	1	question	O	O	O	O	O	O	O	O	NN1	I-NP	question	NN	t8:NMOD	O
-are	t10	1	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t12:PRD	O
+are	t10	1	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t12:PRD||t13:LOC	O
 the	t11	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-remains	t12	1	remains	O	O	O	O	O	O	O	O	NN2	I-NP	remain	NNS	t11:NMOD||t13:LOC||t19:NMOD	O
+remains	t12	1	remains	O	O	O	O	O	O	O	O	NN2	I-NP	remain	NNS	t11:NMOD	O
 inside	t13	1	inside	O	O	O	O	O	O	O	O	PRP	B-PP	inside	IN	t15:PMOD	O
 the	t14	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Tomb	t15	1	tomb	O	O	O	O	O	O	O	O	NN1	I-NP	tomb	NNP	t14:NMOD||t16:NMOD	O
@@ -60,11 +60,11 @@ was	t55	3	be	e20	STATE	PAST+NONE+POS	O	O	O	O	O	VBD	B-VP	be	VBD	t54:SBJ||t56:PRD	
 Blassie	t56	3	Blassie	O	O	O	O	O	O	O	O	NP0	B-NP	blassie	NNP	O	O
 because	t57	3	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t63:SUB	O
 his	t58	3	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
-uniform	t59	3	uniform	O	O	O	O	O	O	O	O	NN1	I-NP	uniform	NN	t58:NMOD||t60:COORD	O
-and	t60	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t62:CONJ	O
-ID	t61	3	id	O	O	O	O	O	O	O	O	NN1	I-NP	id	NNP	O	O
-card	t62	3	card	O	O	O	O	O	O	O	O	NN1	I-NP	card	NN	t61:NMOD	O
-were	t63	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t59:SBJ||t64:VC	O
+uniform	t59	3	uniform	O	O	O	O	O	O	O	O	NN1	I-NP	uniform	NN	t60:COORD	O
+and	t60	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t61:CONJ	O
+ID	t61	3	id	O	O	O	O	O	O	O	O	NN1	I-NP	id	NN	O	O
+card	t62	3	card	O	O	O	O	O	O	O	O	NN1	I-NP	card	NN	t58:NMOD||t59:NMOD	O
+were	t63	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t62:SBJ||t64:VC	O
 found	t64	3	find	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	found	VBN	t65:LOC||t68:LOC	O
 near	t65	3	near	O	O	O	O	O	O	O	O	PRP	B-PP	near	IN	t67:PMOD	O
 the	t66	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -77,7 +77,7 @@ But	t71	4	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 subsequently	t72	4	subsequently	O	O	O	O	O	O	O	O	AV0	B-ADVP	subsequently	RB	O	O
 ,	t73	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 they	t74	4	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-were	t75	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t71:DEP||t72:ADV||t73:P||t74:SBJ||t76:VC||t77:P	mainVb
+were	t75	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t71:DEP||t72:TMP||t73:P||t74:SBJ||t76:VC||t77:P	mainVb
 lost	t76	4	lose	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	lose	VBN	O	mainVb
 .	t77	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

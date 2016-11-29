@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Valley	t1	1	Valley	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	valley	NNP	O	O
 Federal	t2	1	Federal	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	federal	NNP	O	O
@@ -16,7 +16,7 @@ as	t13	1	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t15:SUB	O
 it	t14	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 reported	t15	1	report	e2	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t14:SBJ||t18:OBJ	O
 a	t16	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t17	1	third-quarter	O	O	O	tmx28	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
+third-quarter	t17	1	third-quarter	O	O	O	tmx28	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJR	O	O
 loss	t18	1	loss	e1995	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t16:NMOD||t17:NMOD||t19:NMOD	O
 of	t19	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t20:PMOD	O
 $	t20	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t21:DEP||t22:DEP||t23:P||t24:COORD	O
@@ -32,7 +32,7 @@ share	t28	1	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t27:NMOD	O
 
 The	t30	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Van	t31	2	Van	O	O	O	O	O	O	O	O	NP0	I-NP	van	NNP	O	O
-Nuys	t32	2	Nuys	O	O	O	O	O	O	O	O	NP0	I-NP	nuy	NNP	t31:NAME	O
+Nuys	t32	2	Nuys	O	O	O	O	O	O	O	O	NP0	I-NP	nuys	NNP	t31:NAME	O
 ,	t33	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Calif.	t34	2	Calif.	O	O	O	O	O	O	O	O	NP0	B-NP	calif.	NNP	t32:NMOD||t33:P||t35:P	O
 ,	t35	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -66,7 +66,7 @@ a	t61	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 $	t62	3	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t63:DEP||t64:DEP	O
 62	t63	3	62	O	O	O	O	O	O	O	O	CRD	B-NP	62	CD	O	O
 million	t64	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
-write-off	t65	3	write-off	O	O	O	O	O	O	O	O	NN1	I-NP	write-off	NN	t61:NMOD||t62:NMOD||t66:NMOD||t69:LOC	O
+write-off	t65	3	write-off	O	O	O	O	O	O	O	O	NN1	I-NP	write-off	NN	t61:NMOD||t62:NMOD||t66:NMOD||t69:LOC||t75:P||t79:NMOD	O
 of	t66	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t68:PMOD	O
 capitalized	t67	3	capitalized	O	O	O	O	O	O	O	O	AJ0	B-NP	capitalize	VBN	O	O
 servicing	t68	3	servicing	O	O	O	O	O	O	O	O	NN1	I-NP	service	NN	t67:NMOD	O
@@ -75,7 +75,7 @@ the	t70	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 mobile	t71	3	mobile	O	O	O	O	O	O	O	O	NN1	I-NP	mobile	JJ	O	O
 home	t72	3	home	O	O	O	O	O	O	O	O	AV0	B-VP	home	NN	O	O
 financing	t73	3	financing	O	O	O	O	O	O	O	O	VVG	I-VP	financing	NN	t72:NMOD	O
-subsidiary	t74	3	subsidiary	O	O	O	O	O	O	O	O	AJ0	B-NP	subsidiary	NN	t70:NMOD||t71:NMOD||t73:NMOD||t75:P||t79:NMOD	O
+subsidiary	t74	3	subsidiary	O	O	O	O	O	O	O	O	AJ0	B-NP	subsidiary	NN	t70:NMOD||t71:NMOD||t73:NMOD	O
 ,	t75	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t76	3	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 the	t77	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -132,29 +132,29 @@ The	t124	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 thrift	t125	6	thrift	O	O	O	O	O	O	O	O	NN1	I-NP	thrift	NN	t124:NMOD	O
 said	t126	6	say	e14	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t125:SBJ||t127:OBJ||t151:P	mainVb
 that	t127	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t143:SUB	O
-"	t128	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
-after	t129	6	after	O	O	O	O	O	O	O	O	CJS	B-PP	after	IN	t131:PMOD	O
+"	t128	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+after	t129	6	after	O	O	O	O	O	O	O	O	CJS	B-PP	after	IN	t131:PMOD||t132:COORD	O
 these	t130	6	these	O	O	O	O	O	O	O	O	DT0	B-NP	these	DT	O	O
-charges	t131	6	charge	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	charge	NNS	t130:NMOD||t132:COORD||t137:LOC	O
+charges	t131	6	charge	e15	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	charge	NNS	t130:NMOD	O
 and	t132	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t133:CONJ	O
 assuming	t133	6	assume	e2126	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	assume	VBG	t136:OBJ	O
 no	t134	6	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
 dramatic	t135	6	dramatic	O	O	O	O	O	O	O	O	AJ0	I-NP	dramatic	JJ	O	O
-fluctuation	t136	6	fluctuation	e1997	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	fluctuation	NN	t134:NMOD||t135:NMOD	O
+fluctuation	t136	6	fluctuation	e1997	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	fluctuation	NN	t134:NMOD||t135:NMOD||t137:LOC	O
 in	t137	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t139:PMOD	O
 interest	t138	6	interest	O	O	O	O	O	O	O	O	NN1	B-NP	interest	NN	O	O
-rates	t139	6	rate	O	O	O	O	O	O	O	O	NN2	I-NP	rates	NNS	t128:NMOD||t138:NMOD	O
+rates	t139	6	rate	O	O	O	O	O	O	O	O	NN2	I-NP	rates	NNS	t138:NMOD	O
 ,	t140	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t141	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 association	t142	6	association	O	O	O	O	O	O	O	O	NN1	I-NP	association	NN	t141:NMOD	O
-expects	t143	6	expect	e2001	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t129:TMP||t140:P||t142:SBJ||t144:OPRD	O
+expects	t143	6	expect	e2001	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t128:SBJ||t129:TMP||t140:P||t142:SBJ||t144:OPRD	O
 to	t144	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t145:IM	O
 achieve	t145	6	achieve	e20	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	achieve	VB	t148:OBJ||t149:TMP	O
-near	t146	6	near	O	O	O	O	O	O	O	O	PRP	B-PP	near	JJ	O	O
+near	t146	6	near	O	O	O	O	O	O	O	O	PRP	B-PP	near	JJ	t152:PMOD	O
 record	t147	6	record	O	O	O	O	O	O	O	O	NN1	B-NP	record	NN	O	O
 earnings	t148	6	earnings	e1998	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	earnings	NNS	t146:NMOD||t147:NMOD	O
 in	t149	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t150:PMOD	O
-1990	t150	6	1990	O	O	O	tmx31	DATE	1990	O	O	CRD	B-NP	1990	CD	t152:NMOD	O
+1990	t150	6	1990	O	O	O	tmx31	DATE	1990	O	O	CRD	B-NP	1990	CD	O	O
 .	t151	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t152	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 

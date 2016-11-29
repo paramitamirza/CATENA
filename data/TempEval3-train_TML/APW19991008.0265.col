@@ -1,4 +1,4 @@
-DCT_1999-10-08	O	O	O	O	O	O	tmx0	TIME	1999-10-08	O	O	NP0	B-NP	dct_1999-10-08	SYM	O	O
+DCT_1999-10-08	O	O	O	O	O	O	tmx0	TIME	1999-10-08	O	O	NP0	B-NP	dct_1999-10-08	LS	O	O
 
 CAPE	t1	1	CAPE	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cape	NNP	O	O
 TOWN	t2	1	TOWN	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	town	NNP	t1:NAME||t3:P||t8:COORD	O
@@ -38,9 +38,9 @@ said	t35	1	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t28
 today	t36	1	today	O	O	O	tmx2	DATE	1999-10-08	O	O	AV0	B-NP	today	NN	O	O
 .	t37	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t38	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t38	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t39	2	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-can	t40	2	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t38:DEP||t39:SBJ||t41:VC	O
+can	t40	2	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t39:SBJ||t41:VC	O
 confirm	t41	2	confirm	e4	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	confirm	VB	t42:OBJ	O
 that	t42	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t45:SUB	O
 an	t43	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
@@ -56,7 +56,7 @@ bombings	t52	2	bombing	e32	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	N
 and	t53	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t56:CONJ	O
 the	t54	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 FBI	t55	2	FBI	O	O	O	O	O	O	O	O	NP0	I-NP	fbi	NNP	t54:NMOD	O
-was	t56	2	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t55:SBJ||t57:VC	O
+was	t56	2	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t38:DEP||t55:SBJ||t57:VC	O
 involved	t57	2	involve	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	involve	VBN	t58:OBJ||t59:ADV	O
 "	t58	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 in	t59	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t60:PMOD	O
@@ -74,7 +74,7 @@ said	t69	2	say	e8	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t40:OBJ||t6
 
 Beer	t71	3	Beer	O	O	O	O	O	O	O	O	NP0	B-NP	beer	NNP	O	O
 said	t72	3	say	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t71:SBJ||t74:OBJ||t87:P	mainVb
-he	t73	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	t83:COORD	O
+he	t73	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 did	t74	3	do	O	O	O	O	O	O	O	O	VDD	B-VP	do	VBD	t73:SBJ||t75:ADV||t76:VC	O
 not	t75	3	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 know	t76	3	know	e10	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	know	VB	t80:OBJ	O
@@ -83,11 +83,11 @@ the	t78	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 man	t79	3	man	O	O	O	O	O	O	O	O	NN1	I-NP	man	NN	t78:NMOD	O
 was	t80	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t79:SBJ||t81:VC	O
 being	t81	3	be	O	O	O	O	O	O	O	O	VBG	I-VP	be	VBG	t82:VC	O
-held	t82	3	hold	O	O	O	O	O	O	O	O	VVN	I-VP	hold	VBN	t77:LOC	O
-or	t83	3	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t86:CONJ	O
+held	t82	3	hold	O	O	O	O	O	O	O	O	VVN	I-VP	hold	VBN	t77:LOC||t83:COORD||t86:OBJ	O
+or	t83	3	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t84:CONJ	O
 any	t84	3	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
 more	t85	3	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	DT	O	O
-details	t86	3	detail	O	O	O	O	O	O	O	O	NN2	I-NP	details	NNS	t84:NMOD||t85:NMOD	O
+details	t86	3	detail	O	O	O	O	O	O	O	O	NN2	I-NP	details	NNS	t85:NMOD	O
 .	t87	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t88	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -96,9 +96,9 @@ brought	t90	4	bring	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	bring	VBD	t8
 to	t91	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t92:IM	O
 nine	t92	4	nine	O	O	O	O	O	O	O	O	CRD	B-NP	nine	VB	t94:OBJ||t99:ADV	O
 the	t93	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-number	t94	4	number	O	O	O	O	O	O	O	O	NN1	I-NP	number	NN	t93:NMOD||t95:NMOD||t97:LOC	O
+number	t94	4	number	O	O	O	O	O	O	O	O	NN1	I-NP	number	NN	t93:NMOD||t95:NMOD	O
 of	t95	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t96:PMOD	O
-people	t96	4	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+people	t96	4	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	t97:NMOD	O
 in	t97	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t98:PMOD	O
 custody	t98	4	custody	O	O	O	O	O	O	O	O	NN1	B-NP	custody	NN	O	O
 in	t99	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t100:PMOD	O
@@ -115,7 +115,7 @@ a	t108	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 news	t109	5	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	O	O
 conference	t110	5	conference	e38	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conference	NN	t108:NMOD||t109:NMOD	O
 for	t111	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t113:PMOD	O
-later	t112	5	later	O	O	O	O	O	O	O	O	AJC	B-NP	later	JJR	O	O
+later	t112	5	later	O	O	O	O	O	O	O	O	AJC	B-NP	later	RB	O	O
 today	t113	5	today	O	O	O	tmx3	DATE	1999-10-08	O	O	AV0	B-NP	today	NN	t112:NMOD||t114:LOC	O
 in	t114	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t116:PMOD	O
 New	t115	5	New	O	O	O	O	O	O	O	O	NP0	B-NP	new	NNP	O	O
@@ -162,10 +162,10 @@ information	t153	7	information	O	O	O	O	O	O	O	O	NN1	B-NP	information	NN	t154:NMOD
 about	t154	7	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t155:PMOD	O
 requests	t155	7	request	O	O	O	O	O	O	O	O	NN2	B-NP	request	NNS	t156:NMOD	O
 for	t156	7	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t157:PMOD	O
-asylum	t157	7	asylum	O	O	O	O	O	O	O	O	NN1	B-NP	asylum	NN	t158:COORD	O
+asylum	t157	7	asylum	O	O	O	O	O	O	O	O	NN1	B-NP	asylum	NN	t158:COORD||t161:LOC	O
 and	t158	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t160:CONJ	O
 temporary	t159	7	temporary	O	O	O	O	O	O	O	O	AJ0	B-NP	temporary	JJ	O	O
-residence	t160	7	residence	O	O	O	O	O	O	O	O	NN1	I-NP	residence	NN	t159:NMOD||t161:LOC	O
+residence	t160	7	residence	O	O	O	O	O	O	O	O	NN1	I-NP	residence	NN	t159:NMOD	O
 in	t161	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t163:PMOD	O
 Cape	t162	7	Cape	O	O	O	O	O	O	O	O	NP0	B-NP	cape	NNP	O	O
 Town	t163	7	Town	O	O	O	O	O	O	O	O	NN1	I-NP	town	NNP	t162:NAME	O
@@ -201,26 +201,26 @@ custody	t188	10	custody	O	O	O	O	O	O	O	O	NN1	B-NP	custody	NN	O	O
 but	t190	10	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t193:CONJ	O
 the	t191	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 rest	t192	10	rest	O	O	O	O	O	O	O	O	NN1	I-NP	rest	NN	t191:NMOD	O
-remained	t193	10	remain	O	O	O	O	O	O	O	O	VVD	B-VP	remain	VBD	t192:SBJ||t194:OBJ	O
+remained	t193	10	remain	O	O	O	O	O	O	O	O	VVD	B-VP	remain	VBD	t192:SBJ||t194:PRD	O
 fugitives	t194	10	fugitive	O	O	O	O	O	O	O	O	NN2	B-NP	fugitive	NNS	t195:P||t196:NMOD	O
 ,	t195	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-including	t196	10	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t200:PMOD	O
-Saudi	t197	10	saudi	O	O	O	O	O	O	O	O	NP0	B-NP	saudi	JJ	O	O
+including	t196	10	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t201:PMOD	O
+Saudi	t197	10	saudi	O	O	O	O	O	O	O	O	NP0	B-NP	saudi	NNP	O	O
 radical	t198	10	radical	O	O	O	O	O	O	O	O	AJ0	I-NP	radical	JJ	O	O
 Osama	t199	10	Osama	O	O	O	O	O	O	O	O	NP0	I-NP	osama	NNP	O	O
-bin	t200	10	bin	O	O	O	O	O	O	O	O	NN1	I-NP	bin	NN	t197:NMOD||t198:NMOD||t199:NMOD||t201:APPO	O
-Laden	t201	10	Laden	O	O	O	O	O	O	O	O	NP0	I-NP	laden	NNP	O	O
+bin	t200	10	bin	O	O	O	O	O	O	O	O	NN1	I-NP	bin	NNP	t199:NAME	O
+Laden	t201	10	Laden	O	O	O	O	O	O	O	O	NP0	I-NP	laden	NNP	t197:NMOD||t198:NMOD||t200:NAME	O
 .	t202	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 It	t203	11	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-was	t204	11	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t203:SBJ||t205:ADV||t207:VC||t217:P	mainVb
+was	t204	11	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t203:SBJ||t205:ADV||t206:TMP||t207:VC||t217:P	mainVb
 not	t205	11	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
 immediately	t206	11	immediately	O	O	O	O	O	O	O	O	AV0	I-VP	immediately	RB	O	mainVb
-known	t207	11	know	O	O	O	O	O	O	O	O	VVN	I-VP	know	VBN	t206:TMP||t208:ADV	mainVb
+known	t207	11	know	O	O	O	O	O	O	O	O	VVN	I-VP	know	VBN	t208:ADV	mainVb
 if	t208	11	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t213:SUB	O
 the	t209	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 arrest	t210	11	arrest	e45	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	arrest	NN	t209:NMOD||t211:APPO	O
-announced	t211	11	announce	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	announce	VBD	t212:TMP	O
+announced	t211	11	announce	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	announce	VBN	t212:TMP	O
 today	t212	11	today	O	O	O	tmx5	DATE	1999-10-08	O	O	AV0	B-NP	today	NN	O	O
 stemmed	t213	11	stem	e25	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-NP	stem	VBD	t210:SBJ||t214:ADV	O
 from	t214	11	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t216:PMOD	O
@@ -265,25 +265,25 @@ capture	t249	13	capture	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	capture	
 
 The	t251	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bombs	t252	14	bomb	O	O	O	O	O	O	O	O	NN2	I-NP	bomb	NNS	t251:NMOD	O
-went	t253	14	go	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t252:SBJ||t254:ADV||t257:TMP||t262:ADV||t265:TMP||t275:P	mainVb
-off	t254	14	off	O	O	O	O	O	O	O	O	PRP	B-PRT	off	IN	t255:ADV	O
+went	t253	14	go	e28	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t252:SBJ||t254:DIR||t255:MNR||t257:TMP||t275:P	mainVb
+off	t254	14	off	O	O	O	O	O	O	O	O	PRP	B-PRT	off	RP	O	O
 almost	t255	14	almost	O	O	O	O	O	O	O	O	AV0	B-ADVP	almost	RB	t256:AMOD	O
 simultaneously	t256	14	simultaneously	O	O	O	O	O	O	O	O	AV0	I-ADVP	simultaneously	RB	O	O
 on	t257	14	on	O	O	O	O	O	O	s1	O	PRP	B-PP	on	IN	t261:PMOD	O
 Aug.	t258	14	Aug.	O	O	O	tmx6	DATE	1998-08-07	O	O	NP0	B-NP	aug.	NNP	t259:NMOD	O
 7	t259	14	7	O	O	O	tmx6	DATE	1998-08-07	O	O	CRD	I-NP	7	CD	O	O
 ,	t260	14	,	O	O	O	tmx6	DATE	1998-08-07	O	O	PUN	O	,	,	O	O
-1998	t261	14	1998	O	O	O	tmx6	DATE	1998-08-07	O	O	CRD	B-NP	1998	CD	t258:NMOD||t260:P	O
+1998	t261	14	1998	O	O	O	tmx6	DATE	1998-08-07	O	O	CRD	B-NP	1998	CD	t258:NMOD||t260:P||t271:NMOD	O
 at	t262	14	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t264:PMOD	O
 U.S.	t263	14	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
-embassies	t264	14	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t263:NMOD	O
+embassies	t264	14	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t263:NMOD||t265:LOC	O
 in	t265	14	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t266:PMOD	O
 Nairobi	t266	14	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	t267:P||t268:COORD	O
 ,	t267	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Kenya	t268	14	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t269:COORD	O
-and	t269	14	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t271:CONJ	O
+and	t269	14	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t270:CONJ	O
 Dar	t270	14	Dar	O	O	O	O	O	O	O	O	NN1	I-NP	dar	NNP	O	O
-es	t271	14	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t270:SBJ||t274:OBJ	O
+es	t271	14	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t262:LOC||t274:OBJ	O
 Salaam	t272	14	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
 ,	t273	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Tanzania	t274	14	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	t272:NMOD||t273:P	O

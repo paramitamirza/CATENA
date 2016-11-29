@@ -1,22 +1,22 @@
-DCT_1998-03-06T13:19:00	O	O	O	O	O	O	tmx0	TIME	1998-03-06T13:19:00	O	O	NP0	B-NP	dct_1998-03-06t13:19:00	SYM	O	O
+DCT_1998-03-06T13:19:00	O	O	O	O	O	O	tmx0	TIME	1998-03-06T13:19:00	O	O	NP0	B-NP	dct_1998-03-06t13:19:00	VBG	O	O
 
 BAGHDAD	t1	1	BAGHDAD	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	baghdad	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Iraq	t3	1	Iraq	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	iraq	NNP	O	O
--LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
+-LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	t3:NAME	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t4:NAME	O
 -RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
-_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	O	O
-An	t8	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	an	NNP	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t7:NAME	O
+_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	t6:NAME	O
+An	t8	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	an	NNP	t5:NAME||t7:NAME	O
 American	t9	1	american	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	american	JJ	O	O
 leader	t10	1	leader	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	leader	NN	t8:NMOD||t9:NMOD||t11:NMOD	O
 of	t11	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t16:PMOD	O
 a	t12	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 U.N.	t13	1	U.N.	O	O	O+O+O	O	O	O	O	O	CRD	I-NP	u.n.	NNP	O	O
-weapons	t14	1	weapon	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	weapon	NNS	O	O
+weapons	t14	1	weapon	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	weapon	NNS	t13:NMOD	O
 inspection	t15	1	inspection	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	inspection	NN	t14:NMOD	O
-team	t16	1	team	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	team	NN	t12:NMOD||t13:NMOD||t15:NMOD	O
-resumed	t17	1	resume	e1	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	resume	VBD	t1:ADV||t2:P||t10:SBJ||t18:OBJ||t21:TMP||t22:P||t26:TMP||t32:P	mainVb
+team	t16	1	team	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	team	NN	t12:NMOD||t15:NMOD	O
+resumed	t17	1	resume	e1	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	resume	VBD	t1:TMP||t2:P||t10:SBJ||t18:OBJ||t21:TMP||t22:P||t26:TMP||t32:P	mainVb
 work	t18	1	work	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	work	NN	t19:LOC	O
 in	t19	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t20:PMOD	O
 Iraq	t20	1	Iraq	O	O	O	O	O	O	O	O	NP0	B-NP	iraq	NNP	O	O
@@ -35,7 +35,7 @@ blocked	t31	1	block	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	block	VBN	t30
 
 Scott	t33	2	Scott	O	O	O	O	O	O	O	O	NP0	B-NP	scott	NNP	O	O
 Ritter	t34	2	Ritter	O	O	O	O	O	O	O	O	NP0	I-NP	ritter	NNP	t33:NAME	O
-led	t35	2	lead	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	lead	VBD	t34:SBJ||t37:OBJ||t38:ADV||t49:P	O
+led	t35	2	lead	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	lead	VBD	t34:SBJ||t37:OBJ||t38:ADV	O
 his	t36	2	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 team	t37	2	team	O	O	O	O	O	O	O	O	NN1	I-NP	team	NN	t36:NMOD	O
 on	t38	2	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t41:PMOD	O
@@ -47,11 +47,11 @@ three	t43	2	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	O	O
 suspected	t44	2	suspect	O	O	O	O	O	O	O	O	AJ0	I-NP	suspect	VBN	O	O
 weapons	t45	2	weapon	O	O	O	O	O	O	O	O	NN2	I-NP	weapon	NNS	O	O
 sites	t46	2	site	O	O	O	O	O	O	O	O	NN2	I-NP	site	NNS	t43:NMOD||t44:NMOD||t45:NMOD||t47:APPO	O
-classified	t47	2	classify	O	O	O	O	O	O	O	O	VVN	B-VP	classify	VBN	t48:ADV||t52:LGS	O
+classified	t47	2	classify	O	O	O	O	O	O	O	O	VVN	B-VP	classify	VBN	t48:ADV	O
 as	t48	2	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t51:PMOD	O
-"	t49	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t49	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	JJ	O	O
 sensitive	t50	2	sensitive	O	O	O	O	O	O	O	O	AJ0	B-ADJP	sensitive	JJ	O	O
-"	t51	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t50:NMOD	O
+"	t51	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t49:NMOD||t50:NMOD||t52:NMOD	O
 by	t52	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t55:PMOD	O
 the	t53	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Iraqi	t54	2	iraqi	O	O	O	O	O	O	O	O	NP0	I-NP	iraqi	NNP	O	O
@@ -64,15 +64,15 @@ Dacey	t60	2	Dacey	O	O	O	O	O	O	O	O	NP0	I-NP	dacey	NNP	t59:NAME	O
 said	t61	2	say	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t35:OBJ||t56:P||t58:SBJ||t62:P	mainVb
 .	t62	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t63	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t63	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 All	t64	3	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 sites	t65	3	site	O	O	O	O	O	O	O	O	NN2	I-NP	site	NNS	t64:NMOD	O
 were	t66	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t65:SBJ||t67:VC	O
 inspected	t67	3	inspect	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	inspect	VBN	t68:ADV	O
-to	t68	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t70:PMOD||t75:COORD	O
+to	t68	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t70:PMOD	O
 the	t69	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 satisfaction	t70	3	satisfaction	O	O	O	O	O	O	O	O	NN1	I-NP	satisfaction	NN	t69:NMOD||t71:NMOD	O
-of	t71	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t74:PMOD	O
+of	t71	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t74:PMOD||t75:COORD	O
 the	t72	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 inspection	t73	3	inspection	O	O	O	O	O	O	O	O	NN1	I-NP	inspection	NN	O	O
 team	t74	3	team	O	O	O	O	O	O	O	O	NN1	I-NP	team	NN	t72:NMOD||t73:NMOD	O
@@ -81,7 +81,7 @@ with	t76	3	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t78:PMOD	O
 full	t77	3	full	O	O	O	O	O	O	O	O	AJ0	B-NP	full	JJ	O	O
 cooperation	t78	3	cooperation	O	O	O	O	O	O	O	O	NN1	I-NP	cooperation	NN	t77:NMOD||t79:NMOD	O
 of	t79	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t81:PMOD	O
-Iraqi	t80	3	iraqi	O	O	O	O	O	O	O	O	NP0	B-NP	iraqi	JJ	O	O
+Iraqi	t80	3	iraqi	O	O	O	O	O	O	O	O	NP0	B-NP	iraqi	NNP	O	O
 authorities	t81	3	authority	O	O	O	O	O	O	O	O	NN2	I-NP	authorities	NNS	t80:NMOD	O
 ,	t82	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t83	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
@@ -96,19 +96,19 @@ of	t90	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t93:PMOD	O
 the	t91	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 sensitive	t92	4	sensitive	O	O	O	O	O	O	O	O	AJ0	I-NP	sensitive	JJ	O	O
 sites	t93	4	site	O	O	O	O	O	O	O	O	NN2	I-NP	site	NNS	t91:NMOD||t92:NMOD	O
-was	t94	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t89:SBJ||t96:PRD||t110:P	mainVb
+was	t94	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t89:SBJ||t96:PRD	O
 a	t95	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 barracks	t96	4	barracks	O	O	O	O	O	O	O	O	NN0	I-NP	barrack	NNS	t95:NMOD||t97:NMOD	O
-of	t97	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t99:PMOD	O
+of	t97	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t101:PMOD	O
 the	t98	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-elite	t99	4	elite	O	O	O	O	O	O	O	O	AJ0	I-NP	elite	NN	t98:NMOD||t106:NMOD	O
+elite	t99	4	elite	O	O	O	O	O	O	O	O	AJ0	I-NP	elite	NN	O	O
 Republican	t100	4	Republican	O	O	O	O	O	O	O	O	NN1	I-NP	republican	JJ	O	O
-Guard	t101	4	Guard	O	O	O	O	O	O	O	O	NN1	I-NP	guard	NNP	t100:NMOD	O
+Guard	t101	4	Guard	O	O	O	O	O	O	O	O	NN1	I-NP	guard	NNP	t98:NMOD||t99:NAME||t100:NMOD	O
 ,	t102	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t103	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 well-placed	t104	4	well-placed	O	O	O	O	O	O	O	O	AJ0	I-NP	well-placed	JJ	O	O
 source	t105	4	source	O	O	O	O	O	O	O	O	NN1	I-NP	source	NN	t103:NMOD||t104:NMOD	O
-told	t106	4	tell	O	O	O	O	O	O	O	O	VVD	B-VP	tell	VBD	t101:TMP||t102:P||t105:SBJ||t109:OBJ	O
+told	t106	4	tell	O	O	O	O	O	O	O	O	VVD	B-VP	tell	VBD	t94:OBJ||t102:P||t105:SBJ||t109:OBJ||t110:P	mainVb
 The	t107	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Associated	t108	4	Associated	O	O	O	O	O	O	O	O	AJ0	I-NP	associated	NNP	O	O
 Press	t109	4	Press	O	O	O	O	O	O	O	O	NN1	I-NP	press	NNP	t107:NMOD||t108:NAME	O
@@ -116,7 +116,7 @@ Press	t109	4	Press	O	O	O	O	O	O	O	O	NN1	I-NP	press	NNP	t107:NMOD||t108:NAME	O
 
 Previously	t111	5	previously	O	O	O	tmx1191	DATE	PAST_REF	O	O	AV0	B-ADVP	previously	RB	O	O
 the	t112	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Iraqis	t113	5	Iraqis	O	O	O	O	O	O	O	O	NP0	I-NP	iraqis	NNP	t112:NMOD	O
+Iraqis	t113	5	Iraqis	O	O	O	O	O	O	O	O	NP0	I-NP	iraqis	NNS	t112:NMOD	O
 have	t114	5	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t111:TMP||t113:SBJ||t115:VC||t121:P	mainVb
 resisted	t115	5	resist	e14	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	resist	VBN	t116:OBJ	mainVb
 attempts	t116	5	attempt	e15	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	attempt	NNS	t117:NMOD	O
@@ -135,9 +135,9 @@ charged	t127	6	charge	e18	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	cha
 the	t128	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 inspectors	t129	6	inspector	O	O	O	O	O	O	O	O	NN2	I-NP	inspector	NNS	t128:NMOD	O
 with	t130	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t131:PMOD	O
-verifying	t131	6	verify	e19	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	verify	VBG	t134:OBJ	O
-that	t132	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	DT	O	O
-Iraq	t133	6	Iraq	O	O	O	O	O	O	O	O	NP0	B-NP	iraq	NNP	t132:NMOD	O
+verifying	t131	6	verify	e19	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	verify	VBG	t132:OBJ	O
+that	t132	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	DT	t134:SUB	O
+Iraq	t133	6	Iraq	O	O	O	O	O	O	O	O	NP0	B-NP	iraq	NNP	O	O
 has	t134	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t133:SBJ||t135:VC	O
 destroyed	t135	6	destroy	e20	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	destroy	VBN	t138:OBJ	O
 its	t136	6	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
@@ -190,7 +190,7 @@ Jan.	t179	7	Jan.	O	O	O	tmx1192	DATE	1998-01-13	O	O	NP0	B-NP	jan.	NNP	O	O
 
 Then	t182	8	then	O	O	O	O	O	O	O	O	AV0	O	then	RB	O	O
 the	t183	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Baghdad	t184	8	Baghdad	O	O	O	O	O	O	O	O	NP0	I-NP	baghdad	JJ	O	O
+Baghdad	t184	8	Baghdad	O	O	O	O	O	O	O	O	NP0	I-NP	baghdad	NNP	O	O
 government	t185	8	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t183:NMOD||t184:NMOD	O
 stopped	t186	8	stop	e32	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	stop	VBD	t182:TMP||t185:SBJ||t187:OPRD||t193:P||t194:ADV||t203:P	mainVb
 providing	t187	8	provide	e33	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	provide	VBG	t190:OBJ||t191:ADV	mainVb
@@ -232,10 +232,10 @@ Britons	t221	9	Britons	O	O	O	O	O	O	O	O	NN2	I-NP	britons	NNPS	O	O
 .	t222	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t223	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-official	t224	10	official	O	O	O	O	O	O	O	O	AJ0	I-NP	official	NN	t223:NMOD||t227:APPO||t228:P||t230:NMOD||t236:P	O
+official	t224	10	official	O	O	O	O	O	O	O	O	AJ0	I-NP	official	NN	O	O
 Iraqi	t225	10	iraqi	O	O	O	O	O	O	O	O	NP0	I-NP	iraqi	NNP	O	O
 News	t226	10	News	O	O	O	O	O	O	O	O	NN1	I-NP	news	NNP	O	O
-Agency	t227	10	Agency	O	O	O	O	O	O	O	O	NN1	I-NP	agency	NNP	t225:NAME||t226:NAME	O
+Agency	t227	10	Agency	O	O	O	O	O	O	O	O	NN1	I-NP	agency	NNP	t223:NMOD||t224:NMOD||t225:NAME||t226:NAME||t228:P||t230:NMOD||t236:P	O
 ,	t228	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t229	10	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 gives	t230	10	give	O	O	O	O	O	O	O	O	VVZ	B-VP	give	VBZ	t229:SBJ||t233:OBJ	O
@@ -245,10 +245,10 @@ tally	t233	10	tally	O	O	O	O	O	O	O	O	NN1	I-NP	tally	NN	t231:NMOD||t232:NMOD||t234
 of	t234	10	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t235:PMOD	O
 inspections	t235	10	inspection	O	O	O	O	O	O	O	O	NN2	B-NP	inspection	NNS	O	O
 ,	t236	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-did	t237	10	do	O	O	O	O	O	O	O	O	VDD	B-VP	do	VBD	t224:SBJ||t238:ADV||t239:VC||t243:P||t244:COORD||t270:P	mainVb
+did	t237	10	do	O	O	O	O	O	O	O	O	VDD	B-VP	do	VBD	t227:SBJ||t238:ADV||t239:VC||t243:P||t244:COORD||t270:P	mainVb
 not	t238	10	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
-mention	t239	10	mention	e42	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVI	I-VP	mention	VBN	t240:OBJ||t241:LGS	mainVb
-Ritter	t240	10	Ritter	O	O	O	O	O	O	O	O	NN1	B-NP	ritter	NNP	O	O
+mention	t239	10	mention	e42	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVI	I-VP	mention	VB	t240:PRD||t241:TMP	mainVb
+Ritter	t240	10	Ritter	O	O	O	O	O	O	O	O	NN1	B-NP	ritter	JJ	O	O
 by	t241	10	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t242:PMOD	O
 name	t242	10	name	O	O	O	O	O	O	O	O	NN1	B-NP	name	NN	O	O
 ,	t243	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -257,14 +257,14 @@ said	t245	10	say	e45	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t246:TMP
 Friday	t246	10	Friday	O	O	O	tmx144	DATE	1998-03-06	O	O	NP0	B-NP	friday	NNP	O	O
 that	t247	10	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t256:SUB	O
 team	t248	10	team	O	O	O	O	O	O	O	O	NN1	B-NP	team	NN	O	O
-no.	t249	10	no.	O	O	O	O	O	O	O	O	NN1	I-NP	no.	NN	t250:NMOD	O
+no.	t249	10	no.	O	O	O	O	O	O	O	O	NN1	I-NP	no.	NN	t248:NMOD||t251:APPO	O
 225	t250	10	225	O	O	O	O	O	O	O	O	CRD	I-NP	225	CD	O	O
-_	t251	10	_	O	O	O	O	O	O	O	O	UNC	I-NP	_	NN	t248:NMOD||t249:NMOD||t254:NMOD	O
+_	t251	10	_	O	O	O	O	O	O	O	O	UNC	I-NP	_	NN	t250:NMOD||t254:NMOD	O
 which	t252	10	which	O	O	O	O	O	O	O	O	DTQ	I-NP	which	WDT	O	O
 Ritter	t253	10	Ritter	O	O	O	O	O	O	O	O	NP0	B-NP	ritter	NNP	O	O
 heads	t254	10	head	O	O	O	O	O	O	O	O	NN2	I-NP	head	VBZ	t252:OBJ||t253:SBJ||t255:OBJ	O
 _	t255	10	_	O	O	O	O	O	O	O	O	PUQ	O	_	NNP	O	O
-made	t256	10	make	e48	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	make	VBD	t251:SBJ||t258:OBJ||t259:ADV||t264:COORD	O
+made	t256	10	make	e48	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	make	VBD	t249:SBJ||t258:OBJ||t259:ADV||t264:COORD	O
 surprise	t257	10	surprise	O	O	O	O	O	O	O	O	NN1	B-NP	surprise	NN	O	O
 visits	t258	10	visit	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	visit	NNS	t257:NMOD	O
 to	t259	10	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t261:PMOD	O
@@ -299,7 +299,7 @@ reported	t286	11	report	e53	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VB
 .	t287	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 An	t288	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-Iraqi	t289	12	iraqi	O	O	O	O	O	O	O	O	NP0	I-NP	iraqi	JJ	O	O
+Iraqi	t289	12	iraqi	O	O	O	O	O	O	O	O	NP0	I-NP	iraqi	NNP	O	O
 official	t290	12	official	O	O	O	O	O	O	O	O	NN1	I-NP	official	NN	t288:NMOD||t289:NMOD	O
 ,	t291	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 speaking	t292	12	speak	e54	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	speak	VBG	t293:ADV	O
@@ -352,7 +352,7 @@ monitors	t337	13	monitor	O	O	O	O	O	O	O	O	NN2	I-NP	monitor	NNS	t336:NMOD||t338:CO
 and	t338	13	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t339:CONJ	O
 diplomats	t339	13	diplomat	O	O	O	O	O	O	O	O	NN2	I-NP	diplomat	NNS	O	O
 as	t340	13	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t341:SUB	O
-laid	t341	13	lay	e67	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	lay	VBN	t342:ADV||t343:LGS	O
+laid	t341	13	lay	e67	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	lay	VBN	t342:PRT||t343:LGS	O
 down	t342	13	down	O	O	O	O	O	O	O	O	AVP	B-PRT	down	RB	O	O
 by	t343	13	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t347:PMOD	O
 the	t344	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -371,7 +371,7 @@ Deputy	t356	13	Deputy	O	O	O	O	O	O	O	O	NN1	I-NP	deputy	NNP	t355:NAME	O
 Prime	t357	13	Prime	O	O	O	O	O	O	O	O	AJ0	I-NP	prime	NN	O	O
 Minister	t358	13	Minister	O	O	O	O	O	O	O	O	NN1	I-NP	minister	NN	t356:NMOD||t357:NMOD	O
 Tariq	t359	13	Tariq	O	O	O	O	O	O	O	O	NP0	I-NP	tariq	NNP	O	O
-Aziz	t360	13	Aziz	O	O	O	O	O	O	O	O	NP0	I-NP	aziz	NNP	t358:TITLE||t359:NAME	O
+Aziz	t360	13	Aziz	O	O	O	O	O	O	O	O	NP0	I-NP	aziz	NNP	t358:NMOD||t359:NAME	O
 .	t361	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Ritter	t362	14	Ritter	O	O	O	O	O	O	O	O	NP0	B-NP	ritter	NNP	t363:SUFFIX	O
@@ -396,9 +396,9 @@ to	t380	14	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t381:IM	O
 give	t381	14	give	e75	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	give	VB	t382:OBJ||t384:OBJ	O
 inspectors	t382	14	inspector	O	O	O	O	O	O	O	O	NN2	B-NP	inspector	NNS	O	O
 full	t383	14	full	O	O	O	O	O	O	O	O	AJ0	I-NP	full	JJ	O	O
-access	t384	14	access	O	O	O	O	O	O	O	O	NN1	I-NP	access	NN	t383:NMOD||t385:NMOD	O
+access	t384	14	access	O	O	O	O	O	O	O	O	NN1	I-NP	access	NN	t383:NMOD||t385:NMOD||t387:NMOD	O
 to	t385	14	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t386:PMOD	O
-eight	t386	14	eight	O	O	O	O	O	O	O	O	CRD	B-NP	eight	CD	t387:NMOD	O
+eight	t386	14	eight	O	O	O	O	O	O	O	O	CRD	B-NP	eight	CD	O	O
 of	t387	14	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t392:PMOD	O
 Saddam	t388	14	Saddam	O	O	O	O	O	O	O	O	NP0	B-NP	saddam	NNP	O	O
 Hussein	t389	14	Hussein	O	O	O	O	O	O	O	O	NP0	I-NP	hussein	NNP	t388:NAME||t390:SUFFIX	O
@@ -410,8 +410,8 @@ palaces	t392	14	palace	O	O	O	O	O	O	O	O	NN2	I-NP	palace	NNS	t389:NMOD||t391:NMOD	
 The	t394	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 United	t395	15	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
 States	t396	15	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t394:NMOD||t395:NAME	O
-had	t397	15	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t396:SBJ||t398:VC||t408:COORD||t433:P	mainVb
-moved	t398	15	move	e76	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	move	VBN	t400:OBJ||t405:DIR	mainVb
+had	t397	15	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t396:SBJ||t398:VC||t433:P	mainVb
+moved	t398	15	move	e76	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	move	VBN	t400:OBJ||t405:DIR||t408:COORD	mainVb
 additional	t399	15	additional	O	O	O	O	O	O	O	O	AJ0	B-NP	additional	JJ	O	O
 troops	t400	15	troops	O	O	O	O	O	O	O	O	NN2	I-NP	troops	NNS	t399:NMOD||t401:COORD	O
 and	t401	15	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t404:CONJ	O
@@ -439,8 +439,8 @@ access	t422	15	access	O	O	O	O	O	O	O	O	NN1	B-NP	access	NN	t421:NMOD||t423:NMOD	O
 to	t423	15	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t427:PMOD	O
 all	t424	15	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 potential	t425	15	potential	O	O	O	O	O	O	O	O	AJ0	I-NP	potential	JJ	O	O
-weapons	t426	15	weapon	O	O	O	O	O	O	O	O	NN2	I-NP	weapon	NNS	O	O
-sites	t427	15	site	O	O	O	O	O	O	O	O	NN2	I-NP	site	NNS	t424:NMOD||t425:NMOD||t426:NMOD||t428:P||t429:NMOD	O
+weapons	t426	15	weapon	O	O	O	O	O	O	O	O	NN2	I-NP	weapon	NNS	t425:NMOD	O
+sites	t427	15	site	O	O	O	O	O	O	O	O	NN2	I-NP	site	NNS	t424:NMOD||t426:NMOD||t428:P||t429:NMOD	O
 ,	t428	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 including	t429	15	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t432:PMOD	O
 Saddam	t430	15	Saddam	O	O	O	O	O	O	O	O	NP0	B-NP	saddam	NNP	t431:SUFFIX	O
@@ -495,12 +495,12 @@ inspections	t475	17	inspection	O	O	O	O	O	O	O	O	NN2	I-NP	inspection	NNS	t474:NMOD
 
 "	t477	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 We	t478	18	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-are	t479	18	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t477:ADV||t478:SBJ||t480:VC	O
+are	t479	18	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t477:TMP||t478:SBJ||t480:VC	O
 going	t480	18	go	O	O	O	O	O	O	O	O	VVG	I-VP	go	VBG	t481:VC	O
 to	t481	18	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t482:IM	O
-maintain	t482	18	maintain	e88	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	maintain	VB	t484:OBJ	O
+maintain	t482	18	maintain	e88	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	maintain	VB	t484:OBJ||t485:LOC	O
 our	t483	18	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
-forces	t484	18	force	O	O	O	O	O	O	O	O	NN2	I-NP	force	NNS	t483:NMOD||t485:LOC	O
+forces	t484	18	force	O	O	O	O	O	O	O	O	NN2	I-NP	force	NNS	t483:NMOD	O
 in	t485	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t487:PMOD	O
 the	t486	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 region	t487	18	region	O	O	O	O	O	O	O	O	NN1	I-NP	region	NN	t486:NMOD||t488:NMOD	O
@@ -531,7 +531,7 @@ Annan	t509	19	Annan	O	O	O	O	O	O	O	O	NP0	I-NP	annan	NNP	t506:NAME||t507:NAME||t50
 who	t511	19	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 appointed	t512	19	appoint	e91	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	appoint	VBD	t511:SBJ||t516:OBJ||t517:TMP||t519:ADV	O
 a	t513	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-retired	t514	19	retired	O	O	O	O	O	O	O	O	AJ0	I-NP	retire	JJ	O	O
+retired	t514	19	retired	O	O	O	O	O	O	O	O	AJ0	I-NP	retired	JJ	O	O
 Indian	t515	19	indian	O	O	O	O	O	O	O	O	AJ0	I-NP	indian	JJ	O	O
 diplomat	t516	19	diplomat	O	O	O	O	O	O	O	O	NN1	I-NP	diplomat	NN	t513:NMOD||t514:NMOD||t515:NMOD	O
 on	t517	19	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t518:PMOD	O
@@ -556,7 +556,7 @@ ambassador	t534	20	ambassador	O	O	O	O	O	O	O	O	NN1	I-NP	ambassador	NN	t531:NMOD||
 to	t535	20	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t538:PMOD	O
 the	t536	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 United	t537	20	United	O	O	O	O	O	O	O	O	AJ0	I-NP	united	NNP	O	O
-Nations	t538	20	Nations	O	O	O	O	O	O	O	O	NN2	I-NP	nation	NNP	t536:NMOD||t537:NAME	O
+Nations	t538	20	Nations	O	O	O	O	O	O	O	O	NN2	I-NP	nation	NNPS	t536:NMOD||t537:NAME	O
 ,	t539	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 is	t540	20	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t529:SBJ||t541:PRD||t554:P	mainVb
 part	t541	20	part	O	O	O	O	O	O	O	O	NN1	B-NP	part	NN	t542:NMOD	O
@@ -629,7 +629,7 @@ The	t603	24	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Security	t604	24	Security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NNP	O	O
 Council	t605	24	Council	O	O	O	O	O	O	O	O	NN1	I-NP	council	NNP	t603:NMOD||t604:NAME	O
 has	t606	24	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t605:SBJ||t607:VC||t638:P	mainVb
-said	t607	24	say	e113	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	say	VBD	t609:OBJ	mainVb
+said	t607	24	say	e113	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	say	VBN	t609:OBJ	mainVb
 it	t608	24	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t609	24	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t608:SBJ||t610:ADV||t611:VC	O
 not	t610	24	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
@@ -637,7 +637,7 @@ lift	t611	24	lift	e114	OCCURRENCE	FUTURE+NONE+NEG	O	O	O	O	O	VVI	I-VP	lift	VB	t61
 the	t612	24	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 sweeping	t613	24	sweeping	O	O	O	O	O	O	O	O	AJ0	I-NP	sweeping	JJ	O	O
 sanctions	t614	24	sanction	O	O	O	O	O	O	O	O	NN2	I-NP	sanction	NNS	t612:NMOD||t613:NMOD||t615:APPO	O
-imposed	t615	24	impose	e117	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	impose	VBN	t616:LOC||t618:TMP	O
+imposed	t615	24	impose	e117	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	impose	VBN	t616:ADV||t618:TMP	O
 on	t616	24	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t617:PMOD	O
 Iraq	t617	24	Iraq	O	O	O	O	O	O	O	O	NP0	B-NP	iraq	NNP	O	O
 after	t618	24	after	O	O	O	O	O	O	O	O	PRP	B-PP	after	IN	t621:PMOD	O
@@ -654,9 +654,9 @@ certify	t628	24	certify	e121	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	cert
 that	t629	24	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t631:SUB	O
 Baghdad	t630	24	Baghdad	O	O	O	O	O	O	O	O	NP0	B-NP	baghdad	NNP	O	O
 has	t631	24	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t630:SBJ||t632:VC	O
-eliminated	t632	24	eliminate	e122	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	eliminate	VBN	t634:OBJ||t635:ADV	O
+eliminated	t632	24	eliminate	e122	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	eliminate	VBN	t634:OBJ	O
 its	t633	24	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-weapons	t634	24	weapon	O	O	O	O	O	O	O	O	NN2	I-NP	weapon	NNS	t633:NMOD	O
+weapons	t634	24	weapon	O	O	O	O	O	O	O	O	NN2	I-NP	weapon	NNS	t633:NMOD||t635:NMOD	O
 of	t635	24	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t637:PMOD	O
 mass	t636	24	mass	O	O	O	O	O	O	O	O	AJ0	B-NP	mass	NN	O	O
 destruction	t637	24	destruction	O	O	O	O	O	O	O	O	NN1	I-NP	destruction	NN	t636:NMOD	O

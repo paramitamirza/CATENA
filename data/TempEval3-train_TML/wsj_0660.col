@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Montedison	t1	1	Montedison	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	montedison	NNP	O	O
 S.p.A.	t2	1	S.p.A.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	s.p.a.	NNP	t1:NAME	O
@@ -136,7 +136,7 @@ laws	t127	7	law	O	O	O	O	O	O	O	O	NN2	I-NP	laws	NNS	t126:NMOD||t128:NMOD||t132:P||
 of	t128	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t131:PMOD	O
 the	t129	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Netherlands	t130	7	Netherlands	O	O	O	O	O	O	O	O	NP0	I-NP	netherlands	NNPS	O	O
-Antilles	t131	7	Antilles	O	O	O	O	O	O	O	O	NP0	I-NP	antilles	NNPS	t129:NAME||t130:NAME	O
+Antilles	t131	7	Antilles	O	O	O	O	O	O	O	O	NP0	I-NP	antilles	NNPS	t129:NMOD||t130:NAME	O
 ,	t132	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 under	t133	7	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t134:PMOD	O
 which	t134	7	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O

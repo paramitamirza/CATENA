@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Travelers	t1	1	Travelers	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	traveler	NNP	t2:POSTHON||t3:SUFFIX	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -94,8 +94,8 @@ result	t88	4	result	e10	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	result	VB	t
 in	t89	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t93:PMOD	O
 a	t90	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 fourth-quarter	t91	4	fourth-quarter	O	O	O	tmx48	DATE	1989-Q4	O	O	NN1	I-NP	fourth-quarter	NN	O	O
-pre-tax	t92	4	pre-tax	O	O	O	O	O	O	O	O	NN1	I-NP	pre-tax	JJ	O	O
-charge	t93	4	charge	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	charge	NN	t90:NMOD||t91:NMOD||t92:NMOD||t94:NMOD	O
+pre-tax	t92	4	pre-tax	O	O	O	O	O	O	O	O	NN1	I-NP	pre-tax	NN	t91:NMOD	O
+charge	t93	4	charge	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	charge	NN	t90:NMOD||t92:NMOD||t94:NMOD	O
 of	t94	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t97:PMOD	O
 less	t95	4	less	O	O	O	O	O	O	O	O	AV0	B-NP	less	JJR	O	O
 than	t96	4	than	O	O	O	O	O	O	O	O	AV0	I-NP	than	IN	O	O
@@ -110,8 +110,8 @@ insurer	t102	5	insurer	O	O	O	O	O	O	O	O	NN1	I-NP	insurer	NN	t101:NMOD||t103:SUFFI
 earnings	t104	5	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t102:NMOD||t105:NMOD	O
 from	t105	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t108:PMOD	O
 commercial	t106	5	commercial	O	O	O	O	O	O	O	O	AJ0	B-NP	commercial	JJ	O	O
-property/casualty	t107	5	property/casualty	O	O	O	O	O	O	O	O	NN1	I-NP	property/casualty	NN	O	O
-lines	t108	5	line	O	O	O	O	O	O	O	O	NN2	I-NP	line	NNS	t106:NMOD||t107:NMOD	O
+property/casualty	t107	5	property/casualty	O	O	O	O	O	O	O	O	NN1	I-NP	property/casualty	NN	t106:NMOD	O
+lines	t108	5	line	O	O	O	O	O	O	O	O	NN2	I-NP	line	NNS	t107:NMOD	O
 fell	t109	5	fall	e12	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t104:SBJ||t111:EXT||t112:TMP||t116:P||t117:ADV||t139:P	mainVb
 59	t110	5	59	O	O	O	O	O	O	O	O	CRD	B-NP	59	CD	O	O
 %	t111	5	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t110:NMOD	O
@@ -168,8 +168,8 @@ million	t159	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 compared	t161	6	compare	O	O	O	O	O	O	O	O	VVN	B-PP	compare	VBN	t162:PMOD	O
 with	t162	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t164:PMOD	O
 a	t163	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-loss	t164	6	loss	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t163:NMOD||t165:NMOD||t170:TMP	O
-of	t165	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t166:PMOD	O
+loss	t164	6	loss	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t163:NMOD||t165:NMOD	O
+of	t165	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t166:PMOD||t170:TMP	O
 $	t166	6	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t167:DEP||t168:DEP	O
 3	t167	6	3	O	O	O	O	O	O	O	O	CRD	I-NP	3	CD	O	O
 million	t168	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -204,7 +204,7 @@ period	t195	7	period	O	O	O	tmx59	DATE	1988	O	O	NN1	I-NP	period	NN	t193:NMOD||t19
 .	t196	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t197	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-year-ago	t198	8	year-ago	O	O	O	tmx60	DATE	1988	O	O	NN1	I-NP	year-ago	NN	O	O
+year-ago	t198	8	year-ago	O	O	O	tmx60	DATE	1988	O	O	NN1	I-NP	year-ago	JJ	O	O
 results	t199	8	result	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t197:NMOD||t198:NMOD	O
 included	t200	8	include	O	O	O	O	O	O	O	O	VVD	B-VP	include	VBD	t199:SBJ||t205:OBJ||t218:P	mainVb
 a	t201	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -217,12 +217,12 @@ the	t207	8	the	O	O	O	tmx62	DATE	1988-Q2	O	O	AT0	B-NP	the	DT	O	O
 1988	t208	8	1988	O	O	O	tmx62	DATE	1988-Q2	O	O	CRD	I-NP	1988	CD	O	O
 second	t209	8	second	O	O	O	tmx62	DATE	1988-Q2	O	O	ORD	I-NP	second	JJ	O	O
 quarter	t210	8	quarter	O	O	O	tmx62	DATE	1988-Q2	O	O	NN1	I-NP	quarter	NN	t207:NMOD||t208:NMOD||t209:NMOD	O
-for	t211	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t217:PMOD	O
-underperforming	t212	8	underperform	O	O	O	O	O	O	O	O	VVG	B-VP	underperform	VBG	O	O
+for	t211	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t212:PMOD	O
+underperforming	t212	8	underperform	O	O	O	O	O	O	O	O	VVG	B-VP	underperform	VBG	t217:OBJ	O
 real	t213	8	real	O	O	O	O	O	O	O	O	AJ0	B-NP	real	JJ	O	O
 estate	t214	8	estate	O	O	O	O	O	O	O	O	NN1	I-NP	estate	NN	t213:NMOD||t215:COORD	O
 and	t215	8	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t216:CONJ	O
 mortgage	t216	8	mortgage	O	O	O	O	O	O	O	O	NN1	I-NP	mortgage	NN	O	O
-loans	t217	8	loan	O	O	O	O	O	O	O	O	NN2	I-NP	loan	NNS	t212:NMOD||t214:NMOD	O
+loans	t217	8	loan	O	O	O	O	O	O	O	O	NN2	I-NP	loan	NNS	t214:NMOD	O
 .	t218	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

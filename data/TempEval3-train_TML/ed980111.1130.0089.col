@@ -1,4 +1,4 @@
-DCT_1998-01-11	O	O	O	O	O	O	tmx0	DATE	1998-01-11	O	O	NN1	B-NP	dct_1998-01-11	SYM	O	O
+DCT_1998-01-11	O	O	O	O	O	O	tmx0	DATE	1998-01-11	O	O	NN1	B-NP	dct_1998-01-11	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 lights	t2	1	light	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	light	NNS	t1:NMOD	O
@@ -17,17 +17,17 @@ are	t14	1	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t13:SBJ||t15:ADV||t16:PRD	O
 not	t15	1	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
 likely	t16	1	likely	e25	STATE	PRESENT+NONE+NEG	O	O	O	O	O	AJ0	B-ADJP	likely	JJ	t17:AMOD	O
 to	t17	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t18:IM	O
-change	t18	1	change	e1	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	change	VB	t19:EXT||t20:TMP	O
+change	t18	1	change	e1	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	change	VB	t19:ADV||t20:TMP||t25:ADV	O
 much	t19	1	much	O	O	O	O	O	O	O	O	AV0	B-ADVP	much	RB	O	O
 over	t20	1	over	O	O	O	O	O	O	O	O	PRP	B-PP	over	IN	t24:PMOD	O
 the	t21	1	the	O	O	O	tmx15	DURATION	PXD	O	O	AT0	B-NP	the	DT	O	O
 next	t22	1	next	O	O	O	tmx15	DURATION	PXD	O	O	ORD	I-NP	next	JJ	O	O
 several	t23	1	several	O	O	O	tmx15	DURATION	PXD	O	O	DT0	I-NP	several	DT	O	O
-days	t24	1	day	O	O	O	tmx15	DURATION	PXD	O	O	NN2	I-NP	days	NNS	t21:NMOD||t22:NMOD||t23:NMOD||t25:NMOD	O
+days	t24	1	day	O	O	O	tmx15	DURATION	PXD	O	O	NN2	I-NP	days	NNS	t21:NMOD||t22:NMOD||t23:NMOD	O
 for	t25	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t28:PMOD	O
 p	t26	1	p	O	O	O	O	O	O	O	O	ZZ0	B-NP	p	NN	t27:HYPH	O
 -	t27	1	-	O	O	O	O	O	O	O	O	PUN	O	-	HYPH	O	O
-people	t28	1	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	t26:HMOD||t29:NMOD	O
+people	t28	1	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	t26:HMOD||t29:LOC	O
 in	t29	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t30:PMOD	O
 parts	t30	1	part	O	O	O	O	O	O	O	O	NN2	B-NP	parts	NNS	t31:NMOD	O
 of	t31	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t34:PMOD	O
@@ -53,10 +53,10 @@ grip	t47	2	grip	e27	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	grip	NN	t46:NMOD	O
 Yesterday	t49	3	yesterday	O	O	O	tmx16	DATE	1998-01-10	O	O	AV0	B-NP	yesterday	NN	O	O
 New	t50	3	New	O	O	O	O	O	O	O	O	NP0	I-NP	new	NNP	O	O
 York	t51	3	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t50:NAME	O
-governor	t52	3	governor	O	O	O	O	O	O	O	O	NN1	I-NP	governor	NN	t51:NMOD||t54:APPO	O
+governor	t52	3	governor	O	O	O	O	O	O	O	O	NN1	I-NP	governor	NN	t49:NMOD||t51:NMOD||t54:APPO	O
 George	t53	3	George	O	O	O	O	O	O	O	O	NP0	I-NP	george	NNP	O	O
 Pataki	t54	3	Pataki	O	O	O	O	O	O	O	O	NP0	I-NP	pataki	NNP	t53:NAME	O
-toured	t55	3	tour	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tour	VBD	t49:TMP||t52:SBJ||t57:OBJ||t67:P	mainVb
+toured	t55	3	tour	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	tour	VBD	t52:SBJ||t57:OBJ||t67:P	mainVb
 five	t56	3	five	O	O	O	O	O	O	O	O	CRD	B-NP	five	CD	O	O
 counties	t57	3	county	O	O	O	O	O	O	O	O	NN2	I-NP	county	NNS	t56:NMOD||t59:NMOD	O
 that	t58	3	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
@@ -79,16 +79,16 @@ today	t72	4	today	O	O	O	tmx17	DATE	1998-01-11	O	O	AV0	B-ADVP	today	NN	O	O
 
 Helicopters	t74	5	Helicopters	O	O	O	O	O	O	O	O	NN2	B-NP	helicopter	NNS	O	O
 are	t75	5	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t74:SBJ||t76:VC||t93:P	mainVb
-flying	t76	5	fly	e7	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	fly	VBG	t77:ADV||t82:ADV	mainVb
+flying	t76	5	fly	e7	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	fly	VBG	t77:ADV||t81:TMP||t82:OPRD	mainVb
 over	t77	5	over	O	O	O	O	O	O	O	O	AVP	B-PP	over	IN	t80:PMOD	O
 northern	t78	5	northern	O	O	O	O	O	O	O	O	AJ0	B-NP	northern	JJ	O	O
 New	t79	5	New	O	O	O	O	O	O	O	O	NP0	I-NP	new	NNP	O	O
 York	t80	5	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t78:NMOD||t79:NAME	O
 today	t81	5	today	O	O	O	tmx18	DATE	1998-01-11	O	O	AV0	B-NP	today	NN	O	O
-trying	t82	5	try	e8	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-NP	try	VBG	t81:TMP||t83:OPRD	O
+trying	t82	5	try	e8	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-NP	try	VBG	t83:OPRD	O
 to	t83	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t84:IM	O
-locate	t84	5	locate	e9	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	locate	VB	t85:OBJ||t86:OPRD	O
-people	t85	5	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+locate	t84	5	locate	e9	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	locate	VB	t85:OBJ	O
+people	t85	5	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	t86:APPO	O
 stranded	t86	5	strand	e10	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	strand	VBD	t87:ADV	O
 without	t87	5	without	O	O	O	O	O	O	O	O	PRP	B-PP	without	IN	t88:PMOD	O
 food	t88	5	food	O	O	O	O	O	O	O	O	NN1	B-NP	food	NN	t89:P||t90:COORD	O
@@ -103,11 +103,11 @@ Maine	t95	6	Maine	O	O	O	O	O	O	O	O	NP0	B-NP	maine	NNP	O	O
 ,	t96	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 about	t97	6	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	O	O
 a	t98	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	t97:DEP	O
-half	t99	6	half	O	O	O	O	O	O	O	O	DT0	I-NP	half	CD	O	O
-million	t100	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t99:DEP	O
-people	t101	6	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t98:NMOD||t100:NMOD	O
+half	t99	6	half	O	O	O	O	O	O	O	O	DT0	I-NP	half	CD	t100:DEP	O
+million	t100	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
+people	t101	6	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t98:NMOD||t99:NMOD	O
 still	t102	6	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
-do	t103	6	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t94:LOC||t96:P||t101:SBJ||t102:ADV||t104:ADV||t105:VC||t107:COORD||t120:P	mainVb
+do	t103	6	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t94:LOC||t96:P||t101:SBJ||t102:TMP||t104:ADV||t105:VC||t107:COORD||t120:P	mainVb
 n't	t104	6	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
 have	t105	6	have	e32	STATE	PRESENT+NONE+NEG	O	O	O	O	O	VHI	I-VP	have	VB	t106:OBJ	mainVb
 power	t106	6	power	O	O	O	O	O	O	O	O	NN1	B-NP	power	NN	O	O

@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Control	t1	1	Control	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	control	NNP	O	O
 Data	t2	1	Data	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	data	NNP	t1:NAME||t3:POSTHON||t4:P||t9:NMOD||t12:P	O
@@ -52,18 +52,18 @@ prosperity	t48	2	prosperity	O	O	O	O	O	O	O	O	NN1	B-NP	prosperity	NN	t49:LOC	O
 in	t49	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t52:PMOD	O
 what	t50	2	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
 it	t51	2	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-calls	t52	2	call	O	O	O	O	O	O	O	O	VVZ	B-VP	call	VBZ	t50:OBJ||t51:SBJ||t53:OBJ||t57:OPRD	O
+calls	t52	2	call	O	O	O	O	O	O	O	O	VVZ	B-VP	call	VBZ	t50:OBJ||t51:SBJ||t53:OBJ||t56:OPRD	O
 "	t53	2	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	PRP	O	O
 the	t54	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 data	t55	2	datum	O	O	O	O	O	O	O	O	NN0	I-NP	data	NNS	O	O
-solutions	t56	2	solution	O	O	O	O	O	O	O	O	NN2	I-NP	solution	NNS	t54:NMOD||t55:NMOD	O
-"	t57	2	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	VBP	t56:SBJ||t58:OBJ	O
-business	t58	2	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	O	O
+solutions	t56	2	solution	O	O	O	O	O	O	O	O	NN2	I-NP	solution	NNS	t54:NMOD||t55:NMOD||t58:OBJ	O
+"	t57	2	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	VBP	O	O
+business	t58	2	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t57:NMOD	O
 .	t59	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t60	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+"	t60	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t61	3	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-'m	t62	3	be	O	O	O	O	O	O	O	O	VBB	B-VP	'm	VBP	t61:SBJ||t63:ADV||t64:VC||t68:P||t69:COORD	O
+'m	t62	3	be	O	O	O	O	O	O	O	O	VBB	B-VP	'm	VBP	t60:DEP||t61:SBJ||t63:ADV||t64:VC||t68:P||t69:COORD	O
 not	t63	3	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 saying	t64	3	say	O	O	O	O	O	O	O	O	VVG	I-VP	say	VBG	t66:OBJ	O
 everything	t65	3	everything	O	O	O	O	O	O	O	O	PNI	B-NP	everything	NN	O	O
@@ -77,25 +77,25 @@ completed	t72	3	complete	e15	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP
 the	t73	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 transition	t74	3	transition	e16	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	transition	NN	t73:NMOD	O
 ,	t75	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t76	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t76	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 Robert	t77	3	Robert	O	O	O	O	O	O	O	O	NP0	B-NP	robert	NNP	O	O
 M.	t78	3	M.	O	O	O	O	O	O	O	O	NP0	I-NP	m.	NNP	O	O
-Price	t79	3	Price	O	O	O	O	O	O	O	O	NP0	I-NP	price	NNP	t76:NAME||t77:NAME||t78:NAME||t80:P||t81:APPO||t85:P	O
+Price	t79	3	Price	O	O	O	O	O	O	O	O	NP0	I-NP	price	NNP	t76:TITLE||t77:NAME||t78:NAME||t80:P||t81:APPO||t85:P	O
 ,	t80	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 chairman	t81	3	chairman	O	O	O	O	O	O	O	O	NN1	B-NP	chairman	NN	t82:COORD	O
 and	t82	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t84:CONJ	O
 chief	t83	3	chief	O	O	O	O	O	O	O	O	AJ0	B-NP	chief	JJ	O	O
 executive	t84	3	executive	O	O	O	O	O	O	O	O	NN1	I-NP	executive	NN	t83:NMOD	O
 ,	t85	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t86	3	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t60:P||t62:OBJ||t75:P||t79:SBJ||t87:LOC||t90:P	mainVb
+said	t86	3	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t62:OBJ||t75:P||t79:SBJ||t87:LOC||t90:P	mainVb
 in	t87	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t89:PMOD	O
 an	t88	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 interview	t89	3	interview	e18	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	interview	NN	t88:NMOD	O
 .	t90	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t91	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-Transition	t92	4	transition	O	O	O	O	O	O	O	O	NN1	B-NP	transition	NNP	O	O
-"	t93	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	t91:NAME||t92:NAME	O
+"	t91	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+Transition	t92	4	transition	O	O	O	O	O	O	O	O	NN1	B-NP	transition	NN	t91:NMOD	O
+"	t93	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t92:NMOD	O
 is	t94	4	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t93:SBJ||t96:PRD||t104:P	mainVb
 a	t95	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 reference	t96	4	reference	O	O	O	O	O	O	O	O	NN1	I-NP	reference	NN	t95:NMOD||t97:NMOD	O
@@ -130,10 +130,10 @@ following	t122	6	follow	O	O	O	O	O	O	O	O	VVG	B-PP	follow	VBG	t124:PMOD	O
 asset	t123	6	asset	O	O	O	O	O	O	O	O	NN1	B-NP	asset	NN	O	O
 sales	t124	6	sale	O	O	O	O	O	O	O	O	NN0	I-NP	sales	NNS	t123:NMOD||t126:NMOD	O
 that	t125	6	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
-shrank	t126	6	shrink	e26	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	shrink	VBD	t125:SBJ||t127:OBJ||t128:ADV||t133:TMP	O
+shrank	t126	6	shrink	e26	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	shrink	VBD	t125:SBJ||t127:OBJ||t128:EXT||t133:TMP	O
 revenue	t127	6	revenue	O	O	O	O	O	O	O	O	NN1	B-NP	revenue	NN	O	O
 by	t128	6	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t129:PMOD	O
-more	t129	6	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	t130:NMOD	O
+more	t129	6	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	t130:AMOD	O
 than	t130	6	than	O	O	O	O	O	O	O	O	AV0	I-NP	than	IN	t131:PMOD	O
 one-third	t131	6	one-third	O	O	O	O	O	O	O	O	CRD	I-NP	one-third	JJ	O	O
 this	t132	6	this	O	O	O	tmx2110	DATE	1989	O	O	DT0	B-NP	this	DT	O	O
@@ -175,9 +175,9 @@ next	t166	7	next	O	O	O	tmx218	DATE	1990	O	O	ORD	B-NP	next	IN	O	O
 year	t167	7	year	O	O	O	tmx218	DATE	1990	O	O	NN1	I-NP	year	NN	t166:NMOD	O
 .	t168	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t169	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t169	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t170	8	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-'d	t171	8	would	O	O	O	O	O	O	O	O	VM0	B-VP	'd	MD	t169:TMP||t170:SBJ||t172:VC	O
+'d	t171	8	would	O	O	O	O	O	O	O	O	VM0	B-VP	'd	MD	t169:P||t170:SBJ||t172:VC||t179:P	O
 like	t172	8	like	e221	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	like	VB	t173:OPRD	O
 to	t173	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t174:IM	O
 continue	t174	8	continue	e33	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t175:OPRD	O
@@ -185,10 +185,10 @@ to	t175	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t176:IM	O
 reduce	t176	8	reduce	e35	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reduce	VB	t177:OBJ	O
 debt	t177	8	debt	O	O	O	O	O	O	O	O	NN1	B-NP	debt	NN	O	O
 ,	t178	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t179	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t179	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 President	t180	8	President	O	O	O	O	O	O	O	O	NP0	B-NP	president	NN	O	O
 Lawrence	t181	8	Lawrence	O	O	O	O	O	O	O	O	NP0	I-NP	lawrence	NNP	O	O
-Perlman	t182	8	Perlman	O	O	O	O	O	O	O	O	NP0	I-NP	perlman	NNP	t179:NAME||t180:NAME||t181:NAME	O
+Perlman	t182	8	Perlman	O	O	O	O	O	O	O	O	NP0	I-NP	perlman	NNP	t180:TITLE||t181:NAME	O
 said	t183	8	say	e36	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t171:OBJ||t178:P||t182:SBJ||t184:P	mainVb
 .	t184	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -199,7 +199,7 @@ company	t188	9	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t187:NMOD	O
 is	t189	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t188:SBJ||t190:VC	O
 offering	t190	9	offer	e38	I_ACTION	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	offer	VBG	t191:OPRD	O
 to	t191	9	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t192:IM	O
-buy	t192	9	buy	e40	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t193:PRT||t194:OBJ	O
+buy	t192	9	buy	e40	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t193:ADV||t194:OBJ	O
 back	t193	9	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RP	O	O
 $	t194	9	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t195:DEP||t196:DEP||t197:NMOD	O
 154.2	t195	9	154.2	O	O	O	O	O	O	O	O	CRD	I-NP	154.2	CD	O	O
@@ -254,10 +254,10 @@ also	t241	11	also	O	O	O	O	O	O	O	O	AV0	I-VP	also	RB	O	O
 acting	t242	11	act	O	O	O	O	O	O	O	O	VVG	I-VP	act	VBG	O	O
 chief	t243	11	chief	O	O	O	O	O	O	O	O	AJ0	B-NP	chief	NN	O	O
 financial	t244	11	financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	NN	O	O
-officer	t245	11	officer	O	O	O	O	O	O	O	O	NN1	I-NP	officer	NN	t242:NMOD||t243:NMOD||t244:NMOD||t246:COORD||t249:NMOD	O
+officer	t245	11	officer	O	O	O	O	O	O	O	O	NN1	I-NP	officer	NN	t242:NMOD||t243:NMOD||t244:NMOD||t246:COORD	O
 and	t246	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t248:CONJ	O
 the	t247	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-odds-on	t248	11	odds-on	O	O	O	O	O	O	O	O	NN1	I-NP	odds-on	NN	t247:NMOD	O
+odds-on	t248	11	odds-on	O	O	O	O	O	O	O	O	NN1	I-NP	odds-on	NN	t247:NMOD||t249:APPO	O
 favorite	t249	11	favorite	O	O	O	O	O	O	O	O	NN1	I-NP	favorite	VBP	t250:OPRD	O
 to	t250	11	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t251:IM	O
 become	t251	11	become	O	O	O	O	O	O	O	O	VVI	I-VP	become	VB	t255:PRD	O
@@ -284,8 +284,8 @@ we	t271	11	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 expect	t272	11	expect	e60	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	expect	VBP	t271:SBJ||t273:OBJ||t274:OPRD	O
 that	t273	11	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	DT	O	O
 to	t274	11	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t275:IM	O
-continue	t275	11	continue	e62	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t276:DIR||t279:OBJ	O
-into	t276	11	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t277:PMOD	O
+continue	t275	11	continue	e62	ASPECTUAL	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	continue	VB	t276:DIR	O
+into	t276	11	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t277:PMOD||t279:PMOD	O
 1990	t277	11	1990	O	O	O	tmx224	DATE	1990	O	O	CRD	B-NP	1990	CD	O	O
 .	t278	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t279	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
@@ -294,16 +294,16 @@ He	t280	12	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 said	t281	12	say	e63	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t280:SBJ||t284:OBJ||t300:P	mainVb
 the	t282	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t283	12	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t282:NMOD	O
-has	t284	12	have	e64	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHZ	B-VP	have	VBZ	t283:SBJ||t286:OBJ	O
+has	t284	12	have	e64	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHZ	B-VP	have	VBZ	t283:SBJ||t286:OBJ||t293:VC	O
 no	t285	12	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
 intention	t286	12	intention	O	O	O	O	O	O	O	O	NN1	I-NP	intention	NN	t285:NMOD||t287:NMOD	O
 of	t287	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t288:PMOD	O
-tapping	t288	12	tap	e66	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	tap	VBG	t292:OBJ||t294:ADV	O
+tapping	t288	12	tap	e66	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	tap	VBG	t292:OBJ	O
 its	t289	12	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 short-term	t290	12	short-term	O	O	O	O	O	O	O	O	AJ0	I-NP	short-term	JJ	O	O
 bank	t291	12	bank	O	O	O	O	O	O	O	O	NN1	I-NP	bank	NN	O	O
-lines	t292	12	line	O	O	O	O	O	O	O	O	NN2	I-NP	line	NNS	t289:NMOD||t290:NMOD||t291:NMOD||t293:P	O
-"	t293	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+lines	t292	12	line	O	O	O	O	O	O	O	O	NN2	I-NP	line	NNS	t289:NMOD||t290:NMOD||t291:NMOD	O
+"	t293	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBP	t294:ADV	O
 for	t294	12	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t297:PMOD	O
 a	t295	12	a	O	O	O	tmx228	DATE	1990	O	O	AT0	B-NP	a	DT	O	O
 good	t296	12	good	O	O	O	tmx228	DATE	1990	O	O	AJ0	I-NP	good	JJ	O	O
@@ -319,8 +319,8 @@ year	t304	13	year	O	O	O	tmx229	DATE	1990	O	O	NN1	I-NP	year	NN	t302:NMOD||t303:NM
 ,	t305	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Control	t306	13	Control	O	O	O	O	O	O	O	O	NP0	B-NP	control	NNP	O	O
 Data	t307	13	Data	O	O	O	O	O	O	O	O	NP0	I-NP	data	NNP	t306:NAME	O
-will	t308	13	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t304:TMP||t305:P||t307:SBJ||t309:ADV||t310:VC	O
-"	t309	13	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	RB	O	O
+will	t308	13	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t304:TMP||t305:P||t307:SBJ||t309:VC	O
+"	t309	13	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	VB	t310:OPRD	O
 develop	t310	13	develop	e68	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	develop	VB	t314:OBJ	O
 a	t311	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 new	t312	13	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
@@ -397,14 +397,14 @@ test	t380	15	test	O	O	O	O	O	O	O	O	NN1	I-NP	test	NN	t376:NMOD||t377:NMOD||t379:NM
 .	t381	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Last	t382	16	last	O	O	O	tmx238	DATE	1989-WXX	O	O	ORD	B-NP	last	JJ	O	O
-week	t383	16	week	O	O	O	tmx238	DATE	1989-WXX	O	O	NN1	I-NP	week	NN	O	O
-Control	t384	16	Control	O	O	O	O	O	O	O	O	NP0	I-NP	control	NN	t383:NMOD	O
-Data	t385	16	Data	O	O	O	O	O	O	O	O	NP0	I-NP	data	NN	t382:NMOD||t384:NMOD	O
-reported	t386	16	report	e80	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t385:SBJ||t388:OBJ||t406:P	mainVb
+week	t383	16	week	O	O	O	tmx238	DATE	1989-WXX	O	O	NN1	I-NP	week	NN	t382:NMOD	O
+Control	t384	16	Control	O	O	O	O	O	O	O	O	NP0	I-NP	control	NNP	O	O
+Data	t385	16	Data	O	O	O	O	O	O	O	O	NP0	I-NP	data	NNP	t384:NAME	O
+reported	t386	16	report	e80	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t383:TMP||t385:SBJ||t388:OBJ||t406:P	mainVb
 third-quarter	t387	16	third-quarter	O	O	O	tmx239	DATE	1989-Q3	O	O	AJC	B-NP	third-quarter	NN	O	O
-earnings	t388	16	earnings	e240	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	earnings	NNS	t387:NMOD||t389:NMOD||t400:NMOD	O
+earnings	t388	16	earnings	e240	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	earnings	NNS	t387:NMOD||t389:NMOD||t399:P||t400:NMOD	O
 of	t389	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t390:PMOD	O
-$	t390	16	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t391:DEP||t392:DEP||t393:P||t394:COORD||t399:P	O
+$	t390	16	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t391:DEP||t392:DEP||t393:P||t394:COORD	O
 9.8	t391	16	9.8	O	O	O	O	O	O	O	O	CRD	I-NP	9.8	CD	O	O
 million	t392	16	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t393	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -462,7 +462,7 @@ the	t442	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 sports	t443	18	sport	O	O	O	O	O	O	O	O	NN2	I-NP	sport	NNS	t444:COORD	O
 and	t444	18	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t445:CONJ	O
 entertainment	t445	18	entertainment	O	O	O	O	O	O	O	O	NN1	I-NP	entertainment	NN	O	O
-ticketing	t446	18	ticket	O	O	O	O	O	O	O	O	VVG	B-VP	ticket	VBG	t443:AMOD	O
+ticketing	t446	18	ticket	O	O	O	O	O	O	O	O	VVG	B-VP	ticket	VBG	t443:HMOD	O
 portion	t447	18	portion	O	O	O	O	O	O	O	O	NN1	B-NP	portion	NN	t442:NMOD||t446:NMOD||t448:NMOD	O
 of	t448	18	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t453:PMOD	O
 the	t449	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -484,9 +484,9 @@ of	t464	18	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t465:PMOD	O
 strategy	t465	18	strategy	O	O	O	O	O	O	O	O	NN1	B-NP	strategy	NN	O	O
 .	t466	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t467	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+"	t467	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 We	t468	19	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-do	t469	19	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t467:P||t468:SBJ||t470:ADV||t471:VC||t474:P||t475:P	mainVb
+do	t469	19	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t467:GAP-PRD||t468:SBJ||t470:ADV||t471:VC||t474:P||t475:P	mainVb
 n't	t470	19	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	mainVb
 need	t471	19	need	e91	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	need	VB	t473:OBJ	mainVb
 the	t472	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -497,8 +497,8 @@ cash	t473	19	cash	O	O	O	O	O	O	O	O	NN1	I-NP	cash	NN	t472:NMOD	O
 Ticketron	t476	20	Ticketron	O	O	O	O	O	O	O	O	NP0	B-NP	ticketron	NNP	t477:SUFFIX	O
 's	t477	20	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 automated	t478	20	automate	O	O	O	O	O	O	O	O	AJ0	I-NP	automate	VBN	O	O
-wagering	t479	20	wagering	O	O	O	O	O	O	O	O	AJ0	I-NP	wagering	NN	O	O
-business	t480	20	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t476:NMOD||t478:NMOD||t479:NMOD||t481:P||t483:NMOD||t490:P	O
+wagering	t479	20	wagering	O	O	O	O	O	O	O	O	AJ0	I-NP	wagering	NN	t478:NMOD	O
+business	t480	20	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t476:NMOD||t479:NMOD||t481:P||t483:NMOD||t490:P	O
 ,	t481	20	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t482	20	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 operates	t483	20	operate	O	O	O	O	O	O	O	O	VVZ	B-VP	operate	VBZ	t482:SBJ||t484:OBJ	O
@@ -527,7 +527,7 @@ said	t504	21	say	e101	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t501:P|
 ,	t505	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Control	t506	21	Control	O	O	O	O	O	O	O	O	NP0	B-NP	control	NNP	O	O
 Data	t507	21	Data	O	O	O	O	O	O	O	O	NP0	I-NP	data	NNP	t506:NAME	O
-intends	t508	21	intend	e102	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	intend	VBZ	t500:ADV||t507:SBJ||t509:OPRD||t517:COORD||t537:P||t538:P	O
+intends	t508	21	intend	e102	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	intend	VBZ	t500:ADV||t507:SBJ||t509:OPRD||t517:COORD||t537:P	O
 to	t509	21	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t510:IM	O
 bid	t510	21	bid	e104	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	bid	VB	t511:ADV	O
 for	t511	21	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t516:PMOD	O
@@ -555,9 +555,9 @@ interest	t532	21	interest	O	O	O	O	O	O	O	O	NN1	I-NP	interest	NN	t531:NMOD||t533:N
 in	t533	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t534:PMOD	O
 games	t534	21	game	O	O	O	O	O	O	O	O	NN2	B-NP	game	NNS	t535:NMOD	O
 of	t535	21	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t536:PMOD	O
-skill	t536	21	skill	O	O	O	O	O	O	O	O	NN1	B-NP	skill	NN	O	O
+skill	t536	21	skill	O	O	O	O	O	O	O	O	NN1	B-NP	skill	NN	t538:NMOD	O
 .	t537	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t538	21	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t538	21	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 He	t539	22	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 would	t540	22	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t539:SBJ||t541:ADV||t542:VC||t543:P	mainVb
@@ -781,7 +781,7 @@ integration	t748	30	integration	O	O	O	O	O	O	O	O	NN1	I-NP	integration	NN	t747:NMO
 
 "	t750	31	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t751	31	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-think	t752	31	think	e161	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VBP	t750:P||t751:SBJ||t754:OBJ	O
+think	t752	31	think	e161	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VBP	t751:SBJ||t754:OBJ	O
 we	t753	31	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 're	t754	31	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t753:SBJ||t755:VC	O
 getting	t755	31	get	e162	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	get	VBG	t758:OBJ	O
@@ -795,16 +795,16 @@ dollars	t762	31	dollar	O	O	O	O	O	O	O	O	NN2	B-VP	dollar	NNS	t760:NMOD||t761:NMOD|
 our	t763	31	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 customers	t764	31	customer	O	O	O	O	O	O	O	O	NN2	I-NP	customer	NNS	t763:NMOD	O
 are	t765	31	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t764:SBJ||t766:VC	O
-spending	t766	31	spend	e164	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	spend	VBG	t768:OBJ	O
+spending	t766	31	spend	e164	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	spend	VBG	O	O
 ,	t767	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t768	31	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t768	31	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t769	31	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t770	31	say	e165	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t752:OBJ||t767:P||t769:SBJ||t771:P	mainVb
+said	t770	31	say	e165	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t750:P||t752:OBJ||t767:P||t768:P||t769:SBJ||t771:P	mainVb
 .	t771	31	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t772	32	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+"	t772	32	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t773	32	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-'re	t774	32	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t773:SBJ||t775:LOC-PRD||t788:P	O
+'re	t774	32	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t772:P||t773:SBJ||t775:LOC-PRD||t788:P||t789:P	mainVb
 in	t775	32	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t776:PMOD	O
 environments	t776	32	environment	O	O	O	O	O	O	O	O	NN2	B-NP	environment	NNS	t778:NMOD	O
 that	t777	32	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
@@ -819,13 +819,13 @@ money	t785	32	money	O	O	O	O	O	O	O	O	NN1	B-NP	money	NN	O	O
 on	t786	32	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t787:PMOD	O
 that	t787	32	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 .	t788	32	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t789	32	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t772:DEP||t774:APPO	mainVb
+"	t789	32	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Control	t790	33	Control	O	O	O	O	O	O	O	O	NN1	B-NP	control	NNP	O	O
 Data	t791	33	Data	O	O	O	O	O	O	O	O	NP0	I-NP	data	NNP	t790:NAME	O
 mainframes	t792	33	mainframe	O	O	O	O	O	O	O	O	NN2	I-NP	mainframe	NNS	t791:NMOD	O
 are	t793	33	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t792:SBJ||t794:VC||t810:P	mainVb
-designed	t794	33	design	O	O	O	O	O	O	O	O	VVN	I-VP	design	VBN	t795:PRP	mainVb
+designed	t794	33	design	O	O	O	O	O	O	O	O	VVN	I-VP	design	VBN	t795:ADV	mainVb
 for	t795	33	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t799:PMOD	O
 numerically	t796	33	numerically	O	O	O	O	O	O	O	O	AV0	B-NP	numerically	RB	O	O
 intensive	t797	33	intensive	O	O	O	O	O	O	O	O	AJ0	I-NP	intensive	JJ	t796:AMOD	O
@@ -875,12 +875,12 @@ its	t838	35	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 own	t839	35	own	O	O	O	O	O	O	O	O	DT0	I-NP	own	JJ	t838:NMOD	O
 .	t840	35	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t841	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
-Absolutely	t842	36	absolutely	O	O	O	O	O	O	O	O	AV0	B-ADVP	absolutely	RB	t841:NMOD	O
+"	t841	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+Absolutely	t842	36	absolutely	O	O	O	O	O	O	O	O	AV0	B-ADVP	absolutely	RB	O	O
 ,	t843	36	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t844	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	EX	O	O
+"	t844	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t845	36	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t846	36	say	O	O	O	O	O	O	O	O	VVD	B-VP	say	VBD	t842:ADV||t843:P||t844:LOC-PRD||t845:SBJ||t847:P	mainVb
+said	t846	36	say	O	O	O	O	O	O	O	O	VVD	B-VP	say	VBD	t841:SBJ||t842:ADV||t843:P||t844:P||t845:SBJ||t847:P	mainVb
 .	t847	36	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 But	t848	37	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
@@ -918,9 +918,9 @@ hostile	t879	37	hostile	O	O	O	O	O	O	O	O	AJ0	I-NP	hostile	JJ	O	O
 takeover	t880	37	takeover	e187	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	takeover	NN	t878:NMOD||t879:NMOD	O
 .	t881	37	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t882	38	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+"	t882	38	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t883	38	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-'ve	t884	38	have	O	O	O	O	O	O	O	O	VHB	B-VP	've	VBP	t883:SBJ||t885:VC	O
+'ve	t884	38	have	O	O	O	O	O	O	O	O	VHB	B-VP	've	VBP	t882:P||t883:SBJ||t885:VC	O
 been	t885	38	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t886:VC	O
 listed	t886	38	list	e188	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	list	VBN	t887:ADV||t890:TMP	O
 as	t887	38	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t889:PMOD	O
@@ -936,8 +936,8 @@ worth	t896	38	worth	O	O	O	O	O	O	O	O	PRP	B-ADJP	worth	JJ	t897:AMOD	O
 worrying	t897	38	worry	O	O	O	O	O	O	O	O	AJ0	B-ADJP	worry	VBG	t898:ADV	O
 about	t898	38	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	O	O
 ,	t899	38	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t900	38	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t901	38	say	e190	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t882:P||t884:OBJ||t899:P||t900:SBJ||t903:OBJ||t904:P	mainVb
+"	t900	38	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+said	t901	38	say	e190	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t884:OBJ||t899:P||t900:SBJ||t903:OBJ||t904:P	mainVb
 Mr.	t902	38	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Price	t903	38	Price	O	O	O	O	O	O	O	O	NP0	I-NP	price	NNP	t902:TITLE	O
 .	t904	38	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

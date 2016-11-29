@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Philip	t1	1	Philip	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	philip	NNP	O	O
 Morris	t2	1	Morris	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	morris	NNP	t1:NAME||t3:POSTHON	O
@@ -105,7 +105,7 @@ outstanding	t97	5	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 
 In	t99	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t101:PMOD	O
 composite	t100	6	composite	O	O	O	O	O	O	O	O	AJ0	B-NP	composite	JJ	O	O
-trading	t101	6	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t100:NMOD||t102:LOC	O
+trading	t101	6	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t100:NMOD	O
 on	t102	6	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t107:PMOD	O
 the	t103	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 New	t104	6	New	O	O	O	O	O	O	O	O	NP0	I-NP	new	NNP	O	O
@@ -116,7 +116,7 @@ Exchange	t107	6	Exchange	O	O	O	O	O	O	O	O	NP0	I-NP	exchange	NNP	t103:NMOD||t105:N
 Philip	t109	6	Philip	O	O	O	O	O	O	O	O	NP0	B-NP	philip	NNP	O	O
 Morris	t110	6	Morris	O	O	O	O	O	O	O	O	NP0	I-NP	morris	NNP	t109:NAME	O
 shares	t111	6	share	O	O	O	O	O	O	O	O	VVZ	I-NP	share	NNS	t110:NMOD	O
-closed	t112	6	close	e20	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-VP	close	VBD	t99:LOC||t108:P||t111:SBJ||t113:TMP||t114:ADV||t118:P||t119:ADV||t122:P	mainVb
+closed	t112	6	close	e20	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-VP	close	VBD	t99:LOC||t102:LOC||t108:P||t111:SBJ||t113:TMP||t114:ADV||t118:P||t119:ADV||t122:P	mainVb
 yesterday	t113	6	yesterday	O	O	O	tmx26	DATE	1989-10-25	O	O	AV0	B-NP	yesterday	NN	O	O
 at	t114	6	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t115:PMOD	O
 $	t115	6	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t116:NMOD||t117:ADV	O

@@ -1,4 +1,4 @@
-DCT_1998-05-01	O	O	O	O	O	O	tmx0	DATE	1998-05-01	O	O	NP0	B-NP	dct_1998-05-01	SYM	O	O
+DCT_1998-05-01	O	O	O	O	O	O	tmx0	DATE	1998-05-01	O	O	NP0	B-NP	dct_1998-05-01	LS	O	O
 
 Israeli	t1	1	israeli	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	israeli	JJ	O	O
 Prime	t2	1	Prime	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	prime	NN	O	O
@@ -75,10 +75,10 @@ but	t70	3	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t72:CONJ	O
 he	t71	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 said	t72	3	say	e7	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t71:SBJ||t74:OBJ	O
 he	t73	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-expects	t74	3	expect	e8	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t73:SBJ||t77:OBJ||t78:ADV	O
+expects	t74	3	expect	e8	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	expect	VBZ	t73:SBJ||t77:OBJ	O
 an	t75	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 equal	t76	3	equal	O	O	O	O	O	O	O	O	AJ0	I-NP	equal	JJ	O	O
-effort	t77	3	effort	e27	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	effort	NN	t75:NMOD||t76:NMOD	O
+effort	t77	3	effort	e27	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	effort	NN	t75:NMOD||t76:NMOD||t78:NMOD	O
 from	t78	3	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t80:PMOD	O
 the	t79	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Palestinians	t80	3	Palestinians	O	O	O	O	O	O	O	O	NN2	I-NP	palestinians	JJ	t79:NMOD	O
@@ -104,7 +104,7 @@ concerns	t98	4	concern	O	O	O	O	O	O	O	O	VVZ	I-NP	concern	NNS	t96:NMOD||t97:NMOD	O
 ,	t99	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 then	t100	4	then	O	O	O	O	O	O	O	O	AV0	B-ADVP	then	RB	O	O
 we	t101	4	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-must	t102	4	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t82:ADV||t99:P||t100:TMP||t101:SBJ||t103:VC||t111:P	mainVb
+must	t102	4	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t82:ADV||t99:P||t100:ADV||t101:SBJ||t103:VC||t111:P	mainVb
 see	t103	4	see	e12	PERCEPTION	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t106:OBJ	mainVb
 an	t104	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 equal	t105	4	equal	O	O	O	O	O	O	O	O	AJ0	I-NP	equal	JJ	O	O

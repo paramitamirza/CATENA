@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	LS	O	O
 
 A	t1	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 group	t2	1	group	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	group	NN	t1:NMOD||t3:NMOD||t5:APPO	O
@@ -208,9 +208,9 @@ stock	t196	9	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t194:NMOD	O
 
 Rally	t198	10	Rally	O	O	O	O	O	O	O	O	AV0	B-NP	rally	NNP	O	O
 officials	t199	10	official	O	O	O	O	O	O	O	O	NN2	I-NP	official	NNS	t198:NMOD	O
-were	t200	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t199:SBJ||t201:ADV||t202:PRD||t203:PRP||t206:TMP||t207:P	mainVb
+were	t200	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t199:SBJ||t201:ADV||t202:PRD||t206:TMP||t207:P	mainVb
 n't	t201	10	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
-available	t202	10	available	e34	STATE	PAST+NONE+NEG	O	O	O	O	O	AJ0	B-ADJP	available	JJ	O	O
+available	t202	10	available	e34	STATE	PAST+NONE+NEG	O	O	O	O	O	AJ0	B-ADJP	available	JJ	t203:AMOD	O
 to	t203	10	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t204:IM	O
 comment	t204	10	comment	e24	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	NN1	B-NP	comment	VB	O	O
 late	t205	10	late	O	O	O	tmx37	DATE	1989-10-26	O	O	AV0	B-NP	late	JJ	O	O

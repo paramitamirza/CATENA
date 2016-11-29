@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Finnish	t2	1	finnish	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	finnish	JJ	O	O
@@ -11,8 +11,8 @@ bankrupt	t8	1	bankrupt	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	bankrupt	JJ	O	O
 shipyard	t9	1	shipyard	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	shipyard	NN	t8:NMOD||t13:APPO	O
 Waertsilae	t10	1	Waertsilae	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	waertsilae	NNP	O	O
 Marine	t11	1	Marine	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	marine	NNP	O	O
-Industries	t12	1	Industries	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	industry	NNP	t11:NAME	O
-Oy	t13	1	Oy	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	oy	NNP	t10:NAME||t12:NAME	O
+Industries	t12	1	Industries	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	industry	NNP	O	O
+Oy	t13	1	Oy	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	oy	NNP	t10:NAME||t11:NAME||t12:NAME	O
 agreed	t14	1	agree	e1	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	agree	VBD	t3:SBJ||t15:ADV||t17:OPRD||t34:P	mainVb
 in	t15	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t16:PMOD	O
 principle	t16	1	principle	O	O	O	O	O	O	O	O	NN1	B-NP	principle	NN	O	O
@@ -51,10 +51,10 @@ participants	t47	2	participant	O	O	O	O	O	O	O	O	NN2	B-NP	participant	NNS	O	O
 said	t48	2	say	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t38:OBJ||t46:P||t47:SBJ||t49:P	mainVb
 .	t49	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t50	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t50	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t51	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 situation	t52	3	situation	O	O	O	O	O	O	O	O	NN1	I-NP	situation	NN	t51:NMOD	O
-is	t53	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t50:TMP||t52:SBJ||t54:PRD||t65:P	mainVb
+is	t53	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t50:P||t52:SBJ||t54:PRD||t65:P	mainVb
 that	t54	3	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t58:SUB	O
 the	t55	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bankruptcy	t56	3	bankruptcy	O	O	O	O	O	O	O	O	NN1	I-NP	bankruptcy	NN	O	O
@@ -79,7 +79,7 @@ new	t73	4	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 company	t74	4	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t72:NMOD||t73:NMOD	O
 ,	t75	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t76	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t77	4	say	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t67:OBJ||t75:P||t76:SBJ||t79:OBJ||t93:P	mainVb
+said	t77	4	say	e9	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t67:OBJ||t75:P||t76:SBJ||t79:SBJ||t93:P	mainVb
 Christian	t78	4	Christian	O	O	O	O	O	O	O	O	AJ0	B-NP	christian	NNP	O	O
 Andersson	t79	4	Andersson	O	O	O	O	O	O	O	O	NP0	I-NP	andersson	NNP	t78:NAME||t80:P||t83:APPO	O
 ,	t80	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -108,10 +108,10 @@ new	t101	5	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
 company	t102	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t100:NMOD||t101:NMOD	O
 will	t103	5	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t94:TMP||t99:P||t102:SBJ||t104:VC||t118:P	mainVb
 open	t104	5	open	e40	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	open	VB	t105:OBJ	mainVb
-talks	t105	5	talk	e41	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	talks	NNS	t106:NMOD||t109:NMOD	O
+talks	t105	5	talk	e41	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	talks	NNS	t106:NMOD	O
 with	t106	5	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t108:PMOD	O
 state-appointed	t107	5	state-appointed	O	O	O	O	O	O	O	O	AJ0	B-NP	state-appoint	VBN	O	O
-receivers	t108	5	receiver	O	O	O	O	O	O	O	O	NN2	I-NP	receiver	NNS	t107:NMOD	O
+receivers	t108	5	receiver	O	O	O	O	O	O	O	O	NN2	I-NP	receiver	NNS	t107:NMOD||t109:NMOD	O
 to	t109	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t110:IM	O
 buy	t110	5	buy	e12	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	buy	VB	t111:COORD||t117:OBJ	O
 or	t111	5	or	O	O	O	O	O	O	O	O	CJC	I-VP	or	CC	t112:CONJ	O
@@ -139,12 +139,12 @@ management	t131	6	management	O	O	O	O	O	O	O	O	NN1	I-NP	management	NN	t130:NMOD	O
 is	t132	6	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t128:SBJ||t133:VC	O
 expected	t133	6	expect	e14	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	expect	VBN	t134:OPRD	O
 to	t134	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t135:IM	O
-avert	t135	6	avert	e15	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	avert	VB	t137:OBJ||t141:ADV	O
+avert	t135	6	avert	e15	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	avert	VB	t137:OBJ	O
 an	t136	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 exodus	t137	6	exodus	e46	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	exodus	NN	t136:NMOD||t138:NMOD	O
 of	t138	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t140:PMOD	O
 skilled	t139	6	skilled	O	O	O	O	O	O	O	O	AJ0	B-NP	skilled	JJ	O	O
-workers	t140	6	worker	O	O	O	O	O	O	O	O	NN2	I-NP	worker	NNS	t139:NMOD	O
+workers	t140	6	worker	O	O	O	O	O	O	O	O	NN2	I-NP	worker	NNS	t139:NMOD||t141:NMOD	O
 from	t141	6	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t147:PMOD	O
 Waertsilae	t142	6	Waertsilae	O	O	O	O	O	O	O	O	NP0	B-NP	waertsilae	NNP	O	O
 Marine	t143	6	Marine	O	O	O	O	O	O	O	O	NP0	I-NP	marine	NNP	t142:NAME||t144:SUFFIX	O
@@ -178,31 +178,31 @@ shareholders	t169	7	shareholder	O	O	O	O	O	O	O	O	NN2	I-NP	shareholder	NNS	t168:NM
 in	t170	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t173:PMOD	O
 the	t171	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 new	t172	7	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
-company	t173	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t171:NMOD||t172:NMOD||t174:P||t180:APPO	O
+company	t173	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t171:NMOD||t172:NMOD||t174:P||t185:APPO	O
 ,	t174	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 each	t175	7	each	O	O	O	O	O	O	O	O	DT0	B-NP	each	DT	O	O
-injecting	t176	7	inject	e20	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	AJ0	I-NP	inject	VBG	O	O
+injecting	t176	7	inject	e20	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	AJ0	I-NP	inject	VBG	t178:OBJ	O
 100	t177	7	100	O	O	O	O	O	O	O	O	CRD	I-NP	100	CD	O	O
 million	t178	7	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t177:DEP	O
 Finnish	t179	7	finnish	O	O	O	O	O	O	O	O	AJ0	I-NP	finnish	JJ	O	O
-markkaa	t180	7	markkaa	O	O	O	O	O	O	O	O	NN1	I-NP	markkaa	NN	t175:NMOD||t176:NMOD||t178:NMOD||t179:NMOD||t185:APPO	O
--LRB-	t181	7	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NNP	O	O
+markkaa	t180	7	markkaa	O	O	O	O	O	O	O	O	NN1	I-NP	markkaa	NN	t179:NMOD	O
+-LRB-	t181	7	-lrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-lrb-	NN	t180:NMOD	O
 $	t182	7	$	O	O	O	O	O	O	O	O	UNC	I-NP	$	$	t183:DEP||t184:DEP	O
 23.5	t183	7	23.5	O	O	O	O	O	O	O	O	CRD	I-NP	23.5	CD	O	O
 million	t184	7	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t185	7	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t181:NAME||t182:NMOD	O
+-RRB-	t185	7	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t175:NMOD||t176:NMOD||t181:NMOD||t182:NMOD	O
 .	t186	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Oy	t187	8	Oy	O	O	O	O	O	O	O	O	NP0	B-NP	oy	NNP	O	O
 Waertsilae	t188	8	Waertsilae	O	O	O	O	O	O	O	O	NP0	I-NP	waertsilae	NNP	t187:NAME	O
 is	t189	8	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t188:SBJ||t190:VC||t212:P	mainVb
 to	t190	8	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t191:IM	mainVb
-contribute	t191	8	contribute	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	contribute	VB	t194:OBJ||t195:P||t196:OBJ||t199:ADV||t202:P||t203:COORD	mainVb
+contribute	t191	8	contribute	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	contribute	VB	t194:OBJ||t195:P||t196:MNR||t202:P||t203:COORD	mainVb
 200	t192	8	200	O	O	O	O	O	O	O	O	CRD	B-NP	200	CD	O	O
 million	t193	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t192:DEP	O
 markkaa	t194	8	markkaa	O	O	O	O	O	O	O	O	NN1	I-NP	markkaa	NN	t193:NMOD	O
 ,	t195	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-most	t196	8	most	O	O	O	O	O	O	O	O	DT0	B-NP	most	DT	t197:NMOD	O
+most	t196	8	most	O	O	O	O	O	O	O	O	DT0	B-NP	most	DT	t197:NMOD||t199:NMOD	O
 of	t197	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t198:PMOD	O
 it	t198	8	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 as	t199	8	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t201:PMOD	O

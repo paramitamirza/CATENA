@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NN1	B-NP	dct_1989-10-27	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 government	t2	1	government	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	government	NN	t1:NMOD	O
@@ -32,7 +32,7 @@ that	t28	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t30:SUB	O
 they	t29	2	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 wo	t30	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	wo	MD	t29:SBJ||t31:ADV||t32:VC	O
 n't	t31	2	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-stick	t32	2	stick	e9	OCCURRENCE	FUTURE+NONE+NEG	O	O	O	O	O	VVI	I-VP	stick	VB	t33:ADV||t34:ADV	O
+stick	t32	2	stick	e9	OCCURRENCE	FUTURE+NONE+NEG	O	O	O	O	O	VVI	I-VP	stick	VB	t33:PRT||t34:ADV	O
 around	t33	2	around	O	O	O	O	O	O	O	O	AVP	B-ADVP	around	RB	O	O
 if	t34	2	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t36:SUB	O
 they	t35	2	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
@@ -101,7 +101,7 @@ warning	t95	4	warning	e27	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	warning	NN
 by	t96	4	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t101:PMOD	O
 the	t97	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 U.S.	t98	4	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
-attorney	t99	4	attorney	O	O	O	O	O	O	O	O	NN1	I-NP	attorney	NNP	t97:NMOD||t98:NAME||t100:SUFFIX	O
+attorney	t99	4	attorney	O	O	O	O	O	O	O	O	NN1	I-NP	attorney	NN	t97:NMOD||t98:NMOD||t100:SUFFIX	O
 's	t100	4	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 office	t101	4	office	O	O	O	O	O	O	O	O	NN1	I-NP	office	NN	t99:NMOD	O
 follows	t102	4	follow	O	O	O	O	O	O	O	O	VVZ	B-VP	follow	VBZ	t95:SBJ||t104:OBJ||t112:P	mainVb
@@ -222,7 +222,7 @@ to	t213	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t214:PMOD	O
 drugs	t214	7	drug	O	O	O	O	O	O	O	O	NN2	B-NP	drug	NNS	O	O
 .	t215	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t216	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	IN	t225:COORD	O
+"	t216	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t217	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 people	t218	8	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t217:NMOD||t220:NMOD	O
 who	t219	8	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
@@ -231,7 +231,7 @@ in	t221	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t224:PMOD	O
 the	t222	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 short	t223	8	short	O	O	O	O	O	O	O	O	AJ0	I-NP	short	JJ	O	O
 run	t224	8	run	O	O	O	O	O	O	O	O	NN1	I-NP	run	NN	t222:NMOD||t223:NMOD	O
-are	t225	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t218:SBJ||t226:PRD||t227:P||t228:COORD	O
+are	t225	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t216:P||t218:SBJ||t226:PRD||t227:P||t228:COORD	O
 defendants	t226	8	defendant	O	O	O	O	O	O	O	O	NN2	B-NP	defendant	NNS	O	O
 ,	t227	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 but	t228	8	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t237:CONJ	O
@@ -265,8 +265,8 @@ Bill	t255	8	Bill	O	O	O	O	O	O	O	O	NN1	I-NP	bill	NNP	t254:NMOD||t256:NMOD	O
 of	t256	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t257:PMOD	O
 Rights	t257	8	Rights	O	O	O	O	O	O	O	O	NN2	B-NP	right	NNPS	O	O
 ,	t258	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t259	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-says	t260	8	say	e66	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t216:PRP||t258:P||t259:SBJ||t262:SBJ||t283:P	mainVb
+"	t259	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+says	t260	8	say	e66	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t225:OBJ||t258:P||t259:P||t262:SBJ||t283:P	mainVb
 Gerald	t261	8	Gerald	O	O	O	O	O	O	O	O	NP0	B-NP	gerald	NNP	O	O
 Lefcourt	t262	8	Lefcourt	O	O	O	O	O	O	O	O	NP0	I-NP	lefcourt	NNP	t261:NAME||t263:P||t267:APPO	O
 ,	t263	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -330,7 +330,7 @@ Racketeer	t318	10	Racketeer	O	O	O	O	O	O	O	O	NP0	I-NP	racketeer	NNP	O	O
 Influenced	t319	10	Influenced	O	O	O	O	O	O	O	O	NP0	I-NP	influenced	NNP	t318:NAME||t320:COORD	O
 and	t320	10	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t321:CONJ	O
 Corrupt	t321	10	Corrupt	O	O	O	O	O	O	O	O	NP0	I-NP	corrupt	NNP	O	O
-Organizations	t322	10	Organizations	O	O	O	O	O	O	O	O	NN2	I-NP	organization	NNPS	t319:NAME	O
+Organizations	t322	10	Organizations	O	O	O	O	O	O	O	O	NN2	I-NP	organization	NNP	t319:NAME	O
 law	t323	10	law	O	O	O	O	O	O	O	O	NN1	I-NP	law	NN	t317:NMOD||t322:NMOD||t324:P||t325:COORD||t327:P	O
 ,	t324	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t325	10	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t326:CONJ	O
@@ -434,11 +434,11 @@ that	t419	13	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t421:SUB	O
 they	t420	13	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 believe	t421	13	believe	e107	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	believe	VBP	t420:SBJ||t428:OBJ	O
 Mr.	t422	13	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
-Antar	t423	13	Antar	O	O	O	O	O	O	O	O	NP0	I-NP	antar	NNP	t422:TITLE	O
+Antar	t423	13	Antar	O	O	O	O	O	O	O	O	NP0	I-NP	antar	NNP	t422:TITLE||t424:SUFFIX	O
 's	t424	13	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 allegedly	t425	13	allegedly	O	O	O	O	O	O	O	O	AV0	I-NP	allegedly	RB	O	O
-ill-gotten	t426	13	ill-gotten	O	O	O	O	O	O	O	O	AJ0	I-NP	ill-gotten	VBN	t425:AMOD	O
-gains	t427	13	gain	O	O	O	O	O	O	O	O	NN2	I-NP	gain	NNS	t423:NMOD||t424:SUFFIX||t426:NMOD	O
+ill-gotten	t426	13	ill-gotten	O	O	O	O	O	O	O	O	AJ0	I-NP	ill-get	VBN	t425:AMOD	O
+gains	t427	13	gain	O	O	O	O	O	O	O	O	NN2	I-NP	gain	NNS	t423:NMOD||t426:NMOD	O
 are	t428	13	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t427:SBJ||t430:PRD	O
 so	t429	13	so	O	O	O	O	O	O	O	O	AV0	B-ADJP	so	RB	O	O
 great	t430	13	great	O	O	O	O	O	O	O	O	AJ0	I-ADJP	great	JJ	t429:AMOD||t431:AMOD	O
@@ -471,7 +471,7 @@ from	t455	14	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t457:PMOD	O
 the	t456	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 lawyers	t457	14	lawyer	O	O	O	O	O	O	O	O	NN2	I-NP	lawyer	NNS	t456:NMOD	O
 even	t458	14	even	O	O	O	O	O	O	O	O	AV0	B-ADVP	even	RB	O	O
-after	t459	14	after	O	O	O	O	O	O	O	O	CJS	B-SBAR	after	IN	t458:DEP||t461:SUB	O
+after	t459	14	after	O	O	O	O	O	O	O	O	CJS	B-SBAR	after	IN	t458:PMOD||t461:SUB	O
 they	t460	14	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 are	t461	14	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t460:SBJ||t462:VC	O
 paid	t462	14	pay	e118	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	pay	VBN	O	O
@@ -489,7 +489,7 @@ Mr.	t472	15	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Antar	t473	15	Antar	O	O	O	O	O	O	O	O	NP0	I-NP	antar	NNP	t472:TITLE	O
 ,	t474	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 both	t475	15	both	O	O	O	O	O	O	O	O	AV0	B-NP	both	DT	O	O
-declined	t476	15	decline	e119	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-NP	decline	VBD	t465:SBJ||t475:SBJ||t477:OPRD||t482:P	mainVb
+declined	t476	15	decline	e119	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-NP	decline	VBD	t465:SBJ||t475:ADV||t477:OPRD||t482:P	mainVb
 to	t477	15	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t478:IM	O
 comment	t478	15	comment	e121	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	comment	VB	t479:ADV	O
 on	t479	15	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t481:PMOD	O
@@ -500,24 +500,24 @@ matter	t481	15	matter	O	O	O	O	O	O	O	O	NN1	I-NP	matter	NN	t480:NMOD	O
 In	t483	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t484:PMOD	O
 Newark	t484	16	Newark	O	O	O	O	O	O	O	O	NP0	B-NP	newark	NNP	O	O
 ,	t485	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-U.S.	t486	16	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	t499:SUFFIX	O
+U.S.	t486	16	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
 Attorney	t487	16	Attorney	O	O	O	O	O	O	O	O	NP0	I-NP	attorney	NN	t486:NMOD||t490:APPO	O
 Samuel	t488	16	Samuel	O	O	O	O	O	O	O	O	NP0	I-NP	samuel	NNP	O	O
 A.	t489	16	A.	O	O	O	O	O	O	O	O	NP0	I-NP	a.	NNP	O	O
 Alito	t490	16	Alito	O	O	O	O	O	O	O	O	NP0	I-NP	alito	NNP	t488:NAME||t489:NAME	O
-said	t491	16	say	e123	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t483:LOC||t485:P||t487:SBJ||t492:P||t495:OBJ||t513:P||t514:P	mainVb
+said	t491	16	say	e123	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t483:LOC||t485:P||t487:SBJ||t492:P||t493:DTV||t495:OBJ||t513:P||t514:P	mainVb
 ,	t492	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t493	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	WP	O	O
+"	t493	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	TO	O	O
 I	t494	16	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 do	t495	16	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t494:SBJ||t496:ADV||t497:VC	O
 n't	t496	16	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-think	t497	16	think	e124	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	think	VB	t493:OBJ||t502:OBJ	O
+think	t497	16	think	e124	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	think	VB	t499:OBJ	O
 there	t498	16	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-'s	t499	16	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
+'s	t499	16	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t498:SBJ||t502:PRD	O
 any	t500	16	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
 legal	t501	16	legal	O	O	O	O	O	O	O	O	AJ0	I-NP	legal	JJ	O	O
 reason	t502	16	reason	O	O	O	O	O	O	O	O	NN1	I-NP	reason	NN	t500:NMOD||t501:NMOD||t503:NMOD	O
-to	t503	16	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t498:SBJ||t504:IM	O
+to	t503	16	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t504:IM	O
 limit	t504	16	limit	e216	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	limit	VB	t505:OBJ	O
 forfeiture	t505	16	forfeiture	O	O	O	O	O	O	O	O	NN1	B-NP	forfeiture	NN	t506:NMOD||t510:NMOD	O
 of	t506	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t509:PMOD	O
@@ -532,7 +532,7 @@ cases	t512	16	case	O	O	O	O	O	O	O	O	NN2	B-NP	case	NNS	t511:NMOD	O
 
 Mr.	t515	17	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Alito	t516	17	Alito	O	O	O	O	O	O	O	O	NP0	I-NP	alito	NNP	t515:TITLE	O
-said	t517	17	say	e128	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t516:SBJ||t522:OBJ||t552:P	mainVb
+said	t517	17	say	e128	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t516:SBJ||t522:OBJ||t552:P||t553:P	mainVb
 his	t518	17	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 office	t519	17	office	O	O	O	O	O	O	O	O	NN1	I-NP	office	NN	O	O
 "	t520	17	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t518:NMOD||t519:NMOD	O
@@ -565,10 +565,10 @@ it	t545	17	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 although	t547	17	although	O	O	O	O	O	O	O	O	CJS	B-SBAR	although	IN	t549:SUB	O
 we	t548	17	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 reserve	t549	17	reserve	e218	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	reserve	VBP	t548:SBJ||t551:OBJ	O
-that	t550	17	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	IN	O	O
-right	t551	17	right	O	O	O	O	O	O	O	O	NN1	I-NP	right	JJ	t550:AMOD||t553:AMOD	O
+that	t550	17	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
+right	t551	17	right	O	O	O	O	O	O	O	O	NN1	I-NP	right	NN	t550:NMOD	O
 .	t552	17	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t553	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t553	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 Mr.	t554	18	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Antar	t555	18	Antar	O	O	O	O	O	O	O	O	NP0	I-NP	antar	NNP	t554:TITLE	O
@@ -607,7 +607,7 @@ of	t586	19	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t587:PMOD	O
 engaging	t587	19	engage	e144	I_ACTION	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	engage	VBG	t588:ADV||t595:PRP	O
 in	t588	19	in	O	O	O	O	O	O	O	O	AVP	B-PP	in	IN	t594:PMOD	O
 a	t589	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t590	19	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	CD	O	O
+"	t590	19	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
 massive	t591	19	massive	O	O	O	O	O	O	O	O	AJ0	I-NP	massive	JJ	O	O
 financial	t592	19	financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	JJ	O	O
 fraud	t593	19	fraud	e145	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	fraud	NN	t592:NMOD	O

@@ -1,4 +1,4 @@
-DCT_1998-01-15	O	O	O	O	O	O	tmx0	DATE	1998-01-15	O	O	NP0	B-NP	dct_1998-01-15	SYM	O	O
+DCT_1998-01-15	O	O	O	O	O	O	tmx0	DATE	1998-01-15	O	O	NP0	B-NP	dct_1998-01-15	LS	O	O
 
 Former	t1	1	former	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	former	JJ	O	O
 savings	t2	1	savings	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	savings	NNS	t3:COORD	O
@@ -11,9 +11,9 @@ Keating	t8	1	Keating	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	keating	NNP	t7:NAME	O
 ,	t9	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 is	t10	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t5:SBJ||t11:VC||t17:P	mainVb
 facing	t11	1	face	e1	I_STATE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	face	VBG	t14:OBJ	mainVb
-more	t12	1	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	DT	O	O
-legal	t13	1	legal	O	O	O	O	O	O	O	O	AJ0	I-NP	legal	JJ	O	O
-troubles	t14	1	trouble	O	O	O	O	O	O	O	O	NN2	I-NP	trouble	NNS	t12:NMOD||t13:NMOD||t15:LOC	O
+more	t12	1	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	O	O
+legal	t13	1	legal	O	O	O	O	O	O	O	O	AJ0	I-NP	legal	JJ	t12:AMOD	O
+troubles	t14	1	trouble	O	O	O	O	O	O	O	O	NN2	I-NP	trouble	NNS	t13:NMOD||t15:LOC	O
 in	t15	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t16:PMOD	O
 California	t16	1	California	O	O	O	O	O	O	O	O	NP0	B-NP	california	NNP	O	O
 .	t17	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -23,10 +23,10 @@ federal	t19	2	federal	O	O	O	O	O	O	O	O	AJ0	I-NP	federal	JJ	O	O
 appeals	t20	2	appeal	O	O	O	O	O	O	O	O	NN2	I-NP	appeal	NNS	O	O
 court	t21	2	court	O	O	O	O	O	O	O	O	NN1	I-NP	court	NN	t18:NMOD||t19:NMOD||t20:NMOD	O
 has	t22	2	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t21:SBJ||t23:VC||t30:P	mainVb
-reinstated	t23	2	reinstate	e3	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	reinstate	VBN	t26:OBJ	mainVb
+reinstated	t23	2	reinstate	e3	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	reinstate	VBN	t26:OBJ||t27:ADV	mainVb
 his	t24	2	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 state	t25	2	state	O	O	O	O	O	O	O	O	NN1	I-NP	state	NN	O	O
-convictions	t26	2	conviction	e1998	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	conviction	NNS	t24:NMOD||t25:NMOD||t27:NMOD	O
+convictions	t26	2	conviction	e1998	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	conviction	NNS	t24:NMOD||t25:NMOD	O
 for	t27	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t29:PMOD	O
 securities	t28	2	security	O	O	O	O	O	O	O	O	NN2	B-NP	security	NNS	O	O
 fraud	t29	2	fraud	e2000	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	fraud	NN	t28:NMOD	O
@@ -36,9 +36,9 @@ NPR	t31	3	NPR	O	O	O	O	O	O	O	O	NP0	B-NP	npr	NNP	t32:SUFFIX	O
 's	t32	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 Elaine	t33	3	Elaine	O	O	O	O	O	O	O	O	NP0	I-NP	elaine	NNP	O	O
 Corey	t34	3	Corey	O	O	O	O	O	O	O	O	NP0	I-NP	corey	NNP	t31:NMOD||t33:NAME	O
-has	t35	3	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t34:SBJ||t36:OBJ||t37:ADV||t40:P	mainVb
+has	t35	3	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t34:SBJ||t37:DIR||t40:P	mainVb
 more	t36	3	more	O	O	O	O	O	O	O	O	DT0	B-NP	more	RBR	O	O
-from	t37	3	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t39:PMOD	O
+from	t37	3	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t36:PMOD||t39:PMOD	O
 San	t38	3	San	O	O	O	O	O	O	O	O	NP0	B-NP	san	NNP	O	O
 Francisco	t39	3	Francisco	O	O	O	O	O	O	O	O	NP0	I-NP	francisco	NNP	t38:NAME	O
 .	t40	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -49,7 +49,7 @@ ninety-one	t43	4	ninety-one	O	O	O	tmx30	DATE	1991	O	O	CRD	I-NP	ninety-one	NN	t42
 Charles	t44	4	Charles	O	O	O	O	O	O	O	O	NP0	I-NP	charles	NNP	O	O
 Keating	t45	4	Keating	O	O	O	O	O	O	O	O	NP0	I-NP	keating	NNP	t44:NAME	O
 was	t46	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t41:LOC||t45:SBJ||t47:VC||t74:P	mainVb
-convicted	t47	4	convict	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	convict	VBN	t48:LOC||t51:PRP	mainVb
+convicted	t47	4	convict	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	convict	VBN	t48:LOC||t51:ADV	mainVb
 in	t48	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t50:PMOD	O
 state	t49	4	state	O	O	O	O	O	O	O	O	NN1	B-NP	state	NN	O	O
 court	t50	4	court	O	O	O	O	O	O	O	O	NN1	I-NP	court	NN	t49:NMOD	O
@@ -57,7 +57,7 @@ of	t51	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t52:PMOD	O
 helping	t52	4	help	e7	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	help	VBG	t53:OPRD	O
 to	t53	4	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t54:IM	O
 defraud	t54	4	defraud	e8	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	defraud	VB	t55:OBJ	O
-thousands	t55	4	thousand	O	O	O	O	O	O	O	O	CRD	B-NP	thousand	NNS	t56:NMOD	O
+thousands	t55	4	thousand	O	O	O	O	O	O	O	O	CRD	B-NP	thousand	NNS	t56:NMOD||t64:APPO	O
 of	t56	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t57:PMOD	O
 investors	t57	4	investor	O	O	O	O	O	O	O	O	NN2	B-NP	investor	NNS	t59:NMOD	O
 who	t58	4	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
@@ -65,7 +65,7 @@ bought	t59	4	buy	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	buy	VBD	t58:SBJ|
 high	t60	4	high	O	O	O	O	O	O	O	O	AJ0	B-NP	high	JJ	O	O
 risk	t61	4	risk	O	O	O	O	O	O	O	O	NN1	I-NP	risk	NN	t60:NMOD	O
 junk	t62	4	junk	O	O	O	O	O	O	O	O	NN1	I-NP	junk	NN	O	O
-bonds	t63	4	bond	O	O	O	O	O	O	O	O	NN2	I-NP	bond	NNS	t61:NMOD||t62:NMOD||t64:APPO	O
+bonds	t63	4	bond	O	O	O	O	O	O	O	O	NN2	I-NP	bond	NNS	t61:NMOD||t62:NMOD	O
 sold	t64	4	sell	e10	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	sell	VBN	t65:LGS	O
 by	t65	4	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t68:PMOD	O
 Keating	t66	4	Keating	O	O	O	O	O	O	O	O	NP0	B-NP	keating	NNP	t67:SUFFIX	O
@@ -150,20 +150,20 @@ had	t140	8	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t139:SBJ||t141:ADV||t142:VC	O
 not	t141	8	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 been	t142	8	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t143:VC	O
 raised	t143	8	raise	e20	OCCURRENCE	PAST+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	raise	VBN	t144:TMP	O
-before	t144	8	before	O	O	O	O	O	O	O	O	AV0	B-ADVP	before	IN	O	O
+before	t144	8	before	O	O	O	O	O	O	O	O	AV0	B-ADVP	before	RB	O	O
 .	t145	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 That	t146	9	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 means	t147	9	mean	e22	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	mean	VBZ	t146:SBJ||t150:OBJ||t173:P	mainVb
 the	t148	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-convictions	t149	9	conviction	O	O	O	O	O	O	O	O	NN2	I-NP	conviction	NNS	t148:NMOD	O
-stand	t150	9	stand	e23	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	stand	VBP	t149:SBJ||t151:P||t153:ADV	O
+convictions	t149	9	conviction	O	O	O	O	O	O	O	O	NN2	I-NP	conviction	NNS	O	O
+stand	t150	9	stand	e23	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	stand	NN	t148:NMOD||t149:NMOD||t151:P||t153:APPO	O
 ,	t151	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t152	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-ruling	t153	9	ruling	e2039	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AJ0	I-NP	ruling	NN	t152:NMOD||t154:APPO||t166:NMOD	O
+ruling	t153	9	ruling	e2039	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AJ0	I-NP	ruling	NN	t152:NMOD||t154:APPO	O
 likely	t154	9	likely	O	O	O	O	O	O	O	O	AJ0	I-NP	likely	JJ	t155:AMOD	O
 to	t155	9	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t156:IM	O
-send	t156	9	send	e24	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	send	VB	t159:OBJ||t160:DIR	O
+send	t156	9	send	e24	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	send	VB	t159:OBJ||t160:DIR||t166:TMP	O
 Keating	t157	9	Keating	O	O	O	O	O	O	O	O	NP0	B-NP	keating	NNP	t158:SUFFIX	O
 's	t158	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 lawyers	t159	9	lawyer	O	O	O	O	O	O	O	O	NN2	I-NP	lawyer	NNS	t157:NMOD	O
@@ -173,8 +173,8 @@ state	t162	9	state	O	O	O	O	O	O	O	O	VVI	I-VP	state	NN	O	O
 court	t163	9	court	O	O	O	O	O	O	O	O	NN1	B-NP	court	NN	t162:NMOD	O
 where	t164	9	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	O	O
 they	t165	9	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-must	t166	9	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t165:SBJ||t167:VC	O
-start	t167	9	start	e2010	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	start	VB	t164:LOC||t168:PRT||t169:ADV	O
+must	t166	9	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t164:DEP||t165:SBJ||t167:VC	O
+start	t167	9	start	e2010	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	start	VB	t168:PRT||t169:ADV	O
 over	t168	9	over	O	O	O	O	O	O	O	O	AVP	B-PRT	over	RP	O	O
 with	t169	9	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t172:PMOD	O
 a	t170	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -183,10 +183,10 @@ appeal	t172	9	appeal	e2011	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	appeal	NN	t
 .	t173	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Elaine	t174	10	Elaine	O	O	O	O	O	O	O	O	NP0	B-NP	elaine	NNP	O	O
-Corey	t175	10	Corey	O	O	O	O	O	O	O	O	NP0	I-NP	corey	NNP	t174:NAME	O
+Corey	t175	10	Corey	O	O	O	O	O	O	O	O	NP0	I-NP	corey	NNP	t174:NAME||t176:P||t178:COORD||t182:P	mainVb
 ,	t176	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 NPR	t177	10	NPR	O	O	O	O	O	O	O	O	NP0	B-NP	npr	NNP	O	O
-news	t178	10	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	t175:NMOD||t176:P||t177:NMOD||t179:P||t181:APPO||t182:P	mainVb
+news	t178	10	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	t177:NMOD||t179:P||t181:APPO	O
 ,	t179	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 San	t180	10	San	O	O	O	O	O	O	O	O	NP0	B-NP	san	NNP	O	O
 Francisco	t181	10	Francisco	O	O	O	O	O	O	O	O	NP0	I-NP	francisco	NNP	t180:NAME	O

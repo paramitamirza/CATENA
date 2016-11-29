@@ -19,8 +19,8 @@ predicted	t15	2	predict	e1	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	pr
 his	t16	2	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 demise	t17	2	demise	e86	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	demise	NN	t16:NMOD	O
 so	t18	2	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	O	O
-many	t19	2	many	O	O	O	O	O	O	O	O	DT0	B-NP	many	DT	O	O
-times	t20	2	time	O	O	O	O	O	O	O	O	NN2	I-NP	times	NNS	t18:DEP||t19:NMOD	O
+many	t19	2	many	O	O	O	O	O	O	O	O	DT0	B-NP	many	DT	t18:AMOD	O
+times	t20	2	time	O	O	O	O	O	O	O	O	NN2	I-NP	times	NNS	t19:NMOD	O
 ,	t21	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t22	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t25:CONJ	O
 the	t23	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -40,7 +40,7 @@ and	t35	3	and	O	O	O	O	O	O	O	O	AV0	B-ADVP	and	CC	t36:CONJ	O
 again	t36	3	again	O	O	O	O	O	O	O	O	AV0	I-ADVP	again	RB	O	O
 ,	t37	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 he	t38	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-endures	t39	3	endure	e87	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	endure	VBZ	t34:TMP||t37:P||t38:SBJ||t40:P	mainVb
+endures	t39	3	endure	e87	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	endure	VBZ	t34:OBJ||t37:P||t38:SBJ||t40:P	mainVb
 .	t40	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 He	t41	4	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
@@ -83,11 +83,11 @@ The	t74	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 entire	t75	7	entire	O	O	O	O	O	O	O	O	AJ0	I-NP	entire	JJ	O	O
 world	t76	7	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t74:NMOD||t75:NMOD	O
 will	t77	7	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t76:SBJ||t78:VC||t85:P	mainVb
-see	t78	7	see	e15	PERCEPTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t79:OBJ||t83:LOC	mainVb
+see	t78	7	see	e15	PERCEPTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t79:OBJ	mainVb
 images	t79	7	image	O	O	O	O	O	O	O	O	NN2	B-NP	image	NNS	t80:NMOD	O
 of	t80	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t82:PMOD	O
 the	t81	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Pope	t82	7	Pope	O	O	O	O	O	O	O	O	NP0	I-NP	pope	NNP	t81:NMOD	O
+Pope	t82	7	Pope	O	O	O	O	O	O	O	O	NP0	I-NP	pope	NNP	t81:NMOD||t83:LOC	O
 in	t83	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t84:PMOD	O
 Cuba	t84	7	Cuba	O	O	O	O	O	O	O	O	NP0	B-NP	cuba	NNP	O	O
 .	t85	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -96,12 +96,12 @@ They	t86	8	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 'll	t87	8	will	O	O	O	O	O	O	O	O	VM0	B-VP	'll	MD	t86:SBJ||t88:VC||t96:P	mainVb
 see	t88	8	see	e16	PERCEPTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t89:OBJ	mainVb
 images	t89	8	image	O	O	O	O	O	O	O	O	NN2	B-NP	image	NNS	t90:NMOD	O
-of	t90	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t95:PMOD	O
+of	t90	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t92:PMOD	O
 the	t91	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Pope	t92	8	Pope	O	O	O	O	O	O	O	O	NN1	I-NP	pope	NNP	O	O
-with	t93	8	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	O	O
+Pope	t92	8	Pope	O	O	O	O	O	O	O	O	NN1	I-NP	pope	NNP	t91:NMOD||t93:NMOD	O
+with	t93	8	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t95:PMOD	O
 Fidel	t94	8	Fidel	O	O	O	O	O	O	O	O	NP0	B-NP	fidel	NNP	O	O
-Castro	t95	8	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t91:NAME||t92:NAME||t93:NAME||t94:NAME	O
+Castro	t95	8	Castro	O	O	O	O	O	O	O	O	NP0	I-NP	castro	NNP	t94:NAME	O
 .	t96	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 It	t97	9	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
@@ -174,7 +174,7 @@ political	t161	11	political	O	O	O	O	O	O	O	O	AJ0	I-NP	political	JJ	O	O
 embargo	t162	11	embargo	e240	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	embargo	NN	t157:NMOD||t158:NMOD||t159:NMOD||t164:NMOD	O
 which	t163	11	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 has	t164	11	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t163:SBJ||t165:VC	O
-kept	t165	11	keep	e30	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	keep	VBN	t166:OBJ||t167:LOC	O
+kept	t165	11	keep	e30	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	keep	VBN	t166:OBJ||t167:OPRD	O
 Cuba	t166	11	Cuba	O	O	O	O	O	O	O	O	NP0	B-NP	cuba	NNP	O	O
 in	t167	11	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t169:PMOD	O
 a	t168	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -183,7 +183,7 @@ box	t169	11	box	O	O	O	O	O	O	O	O	NN1	I-NP	box	NN	t168:NMOD	O
 
 The	t171	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 main	t172	12	main	O	O	O	O	O	O	O	O	AJ0	I-NP	main	JJ	O	O
-positive	t173	12	positive	O	O	O	O	O	O	O	O	AJ0	I-NP	positive	NN	t171:NMOD||t172:NMOD||t174:NMOD	O
+positive	t173	12	positive	O	O	O	O	O	O	O	O	AJ0	I-NP	positive	JJ	t171:NMOD||t172:NMOD||t174:EXTR	O
 for	t174	12	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t176:SUB	O
 Castro	t175	12	Castro	O	O	O	O	O	O	O	O	NP0	B-NP	castro	NNP	O	O
 to	t176	12	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t175:SBJ||t177:IM	O
@@ -207,17 +207,17 @@ world	t193	12	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t192:NMOD	O
 ,	t194	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 this	t195	12	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 government	t196	12	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t195:NMOD	O
-is	t197	12	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t188:ADV||t194:P||t196:SBJ||t198:ADV||t199:PRD||t201:P||t202:ADV	O
+is	t197	12	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t188:ADV||t194:P||t196:SBJ||t198:ADV||t207:PRD	O
 not	t198	12	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
-as	t199	12	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t200:SUB	O
-closed	t200	12	close	O	O	O	O	O	O	O	O	AJ0	B-ADJP	close	VBN	O	O
+as	t199	12	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t200:SUB||t205:DEP	O
+closed	t200	12	close	O	O	O	O	O	O	O	O	AJ0	B-ADJP	close	VBN	t201:P||t202:ADV||t204:P	O
 ,	t201	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 as	t202	12	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t203:PMOD	O
-intolerant	t203	12	intolerant	O	O	O	O	O	O	O	O	AJ0	B-NP	intolerant	JJ	t204:P||t205:COORD	O
+intolerant	t203	12	intolerant	O	O	O	O	O	O	O	O	AJ0	B-NP	intolerant	JJ	O	O
 ,	t204	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-uh	t205	12	uh	O	O	O	O	O	O	O	O	ITJ	B-NP	uh	JJ	t207:APPO	O
+uh	t205	12	uh	O	O	O	O	O	O	O	O	ITJ	B-NP	uh	UH	O	O
 as	t206	12	as	O	O	O	O	O	O	O	O	AV0	I-NP	as	IN	O	O
-totalitarian	t207	12	totalitarian	O	O	O	O	O	O	O	O	AJ0	I-NP	totalitarian	JJ	t206:AMOD||t208:AMOD	O
+totalitarian	t207	12	totalitarian	O	O	O	O	O	O	O	O	AJ0	I-NP	totalitarian	JJ	t199:AMOD||t206:AMOD||t208:AMOD	O
 as	t208	12	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t210:SUB	O
 some	t209	12	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 make	t210	12	make	e38	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	make	VBP	t209:SBJ||t211:OBJ||t212:PRT||t213:OPRD	O
@@ -249,7 +249,7 @@ led	t234	13	lead	e44	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	lead	VBN	t2
 by	t235	13	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t236:PMOD	O
 Castro	t236	13	Castro	O	O	O	O	O	O	O	O	NP0	B-NP	castro	NNP	O	O
 ,	t237	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-can	t238	13	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t227:NMOD||t230:P||t231:SBJ||t239:VC	O
+can	t238	13	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t227:ADV||t230:P||t231:SBJ||t239:VC	O
 begin	t239	13	begin	e45	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	begin	VB	t243:OBJ	O
 a	t240	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 more	t241	13	more	O	O	O	O	O	O	O	O	AV0	I-NP	more	RBR	O	O
@@ -303,12 +303,12 @@ said	t285	16	say	O	O	O	O	O	O	O	O	VVN	I-VP	say	VBN	t286:OBJ	mainVb
 that	t286	16	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t288:SUB	O
 you	t287	16	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
 can	t288	16	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t287:SBJ||t289:VC	O
-be	t289	16	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t291:PRD||t292:COORD||t293:ADV	O
+be	t289	16	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t291:PRD||t292:COORD	O
 a	t290	16	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 Communist	t291	16	communist	O	O	O	O	O	O	O	O	AJ0	I-NP	communist	JJ	t290:NMOD	O
 and	t292	16	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t294:CONJ	O
 still	t293	16	still	O	O	O	O	O	O	O	O	AV0	I-NP	still	RB	O	O
-be	t294	16	be	O	O	O	O	O	O	O	O	VBI	I-NP	be	VB	t296:PRD	O
+be	t294	16	be	O	O	O	O	O	O	O	O	VBI	I-NP	be	VB	t293:ADV||t296:PRD	O
 a	t295	16	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O
 Christian	t296	16	Christian	O	O	O	O	O	O	O	O	NN1	I-NP	christian	NN	t295:NMOD	O
 .	t297	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -357,7 +357,7 @@ a	t336	19	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 great	t337	19	great	O	O	O	O	O	O	O	O	AJ0	I-NP	great	JJ	t338:AMOD	O
 many	t338	19	many	O	O	O	O	O	O	O	O	DT0	I-NP	many	DT	O	O
 more	t339	19	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	DT	O	O
-Cubans	t340	19	Cubans	O	O	O	O	O	O	O	O	NN2	I-NP	cubans	JJ	t336:NMOD||t337:NMOD||t339:NMOD	O
+Cubans	t340	19	Cubans	O	O	O	O	O	O	O	O	NN2	I-NP	cubans	JJ	t336:NMOD||t337:NMOD||t339:AMOD	O
 to	t341	19	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t342:IM	O
 break	t342	19	break	e66	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	break	VB	t343:ADV	O
 loose	t343	19	loose	O	O	O	O	O	O	O	O	NN1	B-NP	loose	JJ	t344:AMOD	O
@@ -375,7 +375,7 @@ the	t353	20	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Pope	t354	20	Pope	O	O	O	O	O	O	O	O	NP0	I-NP	pope	NNP	t353:NMOD||t355:SUFFIX	O
 's	t355	20	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 visit	t356	20	visit	e67	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	visit	NN	t354:NMOD	O
-would	t357	20	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t349:ADV||t351:P||t352:TMP||t356:SBJ||t358:ADV||t359:VC||t373:P	mainVb
+would	t357	20	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t349:ADV||t351:P||t352:ADV||t356:SBJ||t358:ADV||t359:VC||t373:P	mainVb
 really	t358	20	really	O	O	O	O	O	O	O	O	AV0	I-VP	really	RB	O	mainVb
 open	t359	20	open	e112	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	open	VB	t360:PRT||t363:OBJ||t369:ADV	mainVb
 up	t360	20	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
@@ -398,7 +398,7 @@ the	t375	21	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Cuban	t376	21	cuban	O	O	O	O	O	O	O	O	AJ0	I-NP	cuban	JJ	O	O
 government	t377	21	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t375:NMOD||t376:NMOD	O
 ,	t378	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-that	t379	21	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
+that	t379	21	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	WDT	O	O
 is	t380	21	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t374:ADV||t378:P||t379:SBJ||t382:PRD||t383:P	mainVb
 the	t381	21	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 risk	t382	21	risk	O	O	O	O	O	O	O	O	NN1	I-NP	risk	NN	t381:NMOD	O
@@ -407,7 +407,7 @@ risk	t382	21	risk	O	O	O	O	O	O	O	O	NN1	I-NP	risk	NN	t381:NMOD	O
 At	t384	22	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t386:PMOD	O
 the	t385	22	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 end	t386	22	end	O	O	O	O	O	O	O	O	NN1	I-NP	end	NN	t385:NMOD||t387:NMOD	O
-of	t387	22	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t389:PMOD||t391:TMP	O
+of	t387	22	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t389:PMOD	O
 the	t388	22	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 broadcast	t389	22	broadcast	O	O	O	O	O	O	O	O	NN1	I-NP	broadcast	NN	t388:NMOD	O
 this	t390	22	this	O	O	O	tmx1000	TIME	1998-01-20TEV	O	O	DT0	B-NP	this	DT	O	O
@@ -415,15 +415,15 @@ evening	t391	22	evening	O	O	O	tmx1000	TIME	1998-01-20TEV	O	O	NN1	I-NP	evening	NN
 ,	t392	22	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 one	t393	22	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 more	t394	22	more	O	O	O	O	O	O	O	O	DT0	I-NP	more	DT	O	O
-trip	t395	22	trip	O	O	O	O	O	O	O	O	NN1	I-NP	trip	NN	t393:NMOD||t394:NMOD||t396:NMOD||t398:NMOD	O
+trip	t395	22	trip	O	O	O	O	O	O	O	O	NN1	I-NP	trip	NN	t384:TMP||t391:NMOD||t392:P||t393:NMOD||t394:NMOD||t396:NMOD||t398:NMOD||t409:P	mainVb
 around	t396	22	around	O	O	O	O	O	O	O	O	PRP	B-PP	around	IN	t397:PMOD	O
 Havana	t397	22	Havana	O	O	O	O	O	O	O	O	NP0	B-NP	havana	NNP	O	O
 to	t398	22	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t399:IM	O
-see	t399	22	see	O	O	O	O	O	O	O	O	VVI	I-VP	see	VB	t401:OBJ	O
+see	t399	22	see	O	O	O	O	O	O	O	O	VVI	I-VP	see	VB	t402:OBJ	O
 what	t400	22	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
-it	t401	22	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	t402:SUFFIX	O
-'s	t402	22	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	POS	O	O
-been	t403	22	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t384:TMP||t392:P||t395:SBJ||t404:PRD||t405:TMP||t409:P	mainVb
+it	t401	22	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t402	22	be	O	O	O	O	O	O	O	O	VHZ	B-VP	's	VBZ	t401:SBJ||t403:VC	O
+been	t403	22	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t404:PRD||t405:TMP	O
 like	t404	22	like	O	O	O	O	O	O	O	O	PRP	B-PP	like	IN	t400:PMOD	O
 since	t405	22	since	O	O	O	O	O	O	O	O	PRP	B-PP	since	IN	t408:PMOD	O
 the	t406	22	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O

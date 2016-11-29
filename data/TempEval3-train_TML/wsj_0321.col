@@ -1,11 +1,11 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 StatesWest	t1	1	StatesWest	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	stateswest	NNP	O	O
-Airlines	t2	1	Airlines	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	airline	NNP	t1:NAME||t3:P||t6:APPO||t7:P	O
+Airlines	t2	1	Airlines	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	airline	NNPS	t1:NAME||t3:P||t4:LOC	O
 ,	t3	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-Phoenix	t4	1	Phoenix	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	phoenix	NNP	O	O
+Phoenix	t4	1	Phoenix	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	phoenix	NNP	t5:P||t6:APPO||t7:P	O
 ,	t5	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-Ariz.	t6	1	Ariz.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ariz.	NNP	t4:NMOD||t5:P	O
+Ariz.	t6	1	Ariz.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ariz.	NNP	O	O
 ,	t7	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 said	t8	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t10:OBJ||t45:P	mainVb
 it	t9	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
@@ -15,7 +15,7 @@ offer	t12	1	offer	e3	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t11:NMOD
 to	t13	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t14:IM	O
 acquire	t14	1	acquire	e5	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	t16:OBJ	O
 Mesa	t15	1	Mesa	O	O	O	O	O	O	O	O	NP0	B-NP	mesa	NNP	O	O
-Airlines	t16	1	Airlines	O	O	O	O	O	O	O	O	NP0	I-NP	airline	NNP	t15:NAME	O
+Airlines	t16	1	Airlines	O	O	O	O	O	O	O	O	NP0	I-NP	airline	NNPS	t15:NAME	O
 because	t17	1	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t24:SUB	O
 the	t18	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Farmington	t19	1	Farmington	O	O	O	O	O	O	O	O	NP0	I-NP	farmington	NNP	O	O
@@ -40,7 +40,7 @@ a	t37	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 deadline	t38	1	deadline	O	O	O	O	O	O	O	O	NN1	I-NP	deadline	NN	t37:NMOD||t40:NMOD	O
 StatesWest	t39	1	StatesWest	O	O	O	O	O	O	O	O	NN1	I-NP	stateswest	NNP	O	O
 had	t40	1	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t39:SBJ||t41:VC	O
-set	t41	1	set	e11	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	set	VBN	t42:PRP	O
+set	t41	1	set	e11	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	set	VBN	t42:ADV	O
 for	t42	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t44:PMOD	O
 a	t43	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 response	t44	1	response	O	O	O	O	O	O	O	O	NN1	I-NP	response	NN	t43:NMOD	O

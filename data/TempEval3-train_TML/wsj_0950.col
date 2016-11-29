@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 General	t1	1	General	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	general	NNP	O	O
 Motors	t2	1	Motors	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	motor	NNPS	t1:NAME||t3:POSTHON||t4:SUFFIX	O
@@ -251,7 +251,7 @@ a	t240	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 $	t241	9	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t242:DEP||t243:DEP	O
 24	t242	9	24	O	O	O	O	O	O	O	O	CRD	I-NP	24	CD	O	O
 million	t243	9	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
-one-time	t244	9	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	NN	O	O
+one-time	t244	9	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	JJ	O	O
 charge	t245	9	charge	e91	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	charge	NN	t240:NMOD||t241:NMOD||t244:NMOD||t246:APPO	O
 associated	t246	9	associate	O	O	O	O	O	O	O	O	VVN	B-VP	associate	VBN	t247:ADV	O
 with	t247	9	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t252:PMOD	O
@@ -291,8 +291,8 @@ addition	t278	11	addition	O	O	O	O	O	O	O	O	NN1	B-NP	addition	NN	O	O
 ,	t279	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 GM	t280	11	GM	O	O	O	O	O	O	O	O	NP0	B-NP	gm	NNP	t281:SUFFIX	O
 's	t281	11	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-North	t282	11	north	O	O	O	O	O	O	O	O	NP0	I-NP	north	NNP	O	O
-American	t283	11	american	O	O	O	O	O	O	O	O	AJ0	I-NP	american	NNP	t282:NAME	O
+North	t282	11	north	O	O	O	O	O	O	O	O	NP0	I-NP	north	JJ	O	O
+American	t283	11	american	O	O	O	O	O	O	O	O	AJ0	I-NP	american	JJ	t282:AMOD	O
 vehicle	t284	11	vehicle	O	O	O	O	O	O	O	O	NN1	I-NP	vehicle	NN	O	O
 production	t285	11	production	O	O	O	O	O	O	O	O	NN1	I-NP	production	NN	t280:NMOD||t283:NMOD||t284:NMOD	O
 fell	t286	11	fall	e35	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t277:ADV||t279:P||t285:SBJ||t288:EXT||t289:DIR||t293:P||t295:ADV	O
@@ -597,7 +597,7 @@ accounts	t571	24	account	O	O	O	O	O	O	O	O	NN2	I-NP	account	NNS	t570:NMOD	O
 was	t572	24	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t568:SBJ||t574:PRD||t580:TMP||t585:P||t586:ADV||t593:P	mainVb
 45	t573	24	45	O	O	O	O	O	O	O	O	CRD	B-NP	45	CD	O	O
 %	t574	24	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t573:NMOD||t575:NMOD	O
-of	t575	24	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t579:PMOD	O
+of	t575	24	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t579:TMP	O
 EDS	t576	24	EDS	O	O	O	O	O	O	O	O	NP0	B-NP	eds	NNP	t577:SUFFIX	O
 's	t577	24	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 total	t578	24	total	O	O	O	O	O	O	O	O	AJ0	I-NP	total	JJ	O	O

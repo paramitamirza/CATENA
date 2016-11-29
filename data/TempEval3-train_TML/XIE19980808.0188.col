@@ -1,4 +1,4 @@
-DCT_1998-08-07	O	O	O	O	O	O	tmx0	DATE	1998-08-07	O	O	NP0	B-NP	dct_1998-08-07	SYM	O	O
+DCT_1998-08-07	O	O	O	O	O	O	tmx0	DATE	1998-08-07	O	O	NP0	B-NP	dct_1998-08-07	LS	O	O
 
 HAVANA	t1	1	HAVANA	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	havana	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -12,11 +12,11 @@ The	t9	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Cuban	t10	1	cuban	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	cuban	JJ	O	O
 government	t11	1	government	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	government	NN	t9:NMOD||t10:NMOD	O
 Friday	t12	1	Friday	O	O	O+O+O	tmx2	DATE	1998-08-07	O	O	NP0	B-NP	friday	NNP	O	O
-condemned	t13	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:ADV||t2:P||t7:SBJ||t11:SBJ||t12:TMP||t17:OBJ||t25:P	mainVb
+condemned	t13	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:TMP||t2:P||t7:SBJ||t11:SBJ||t12:TMP||t17:OBJ||t18:ADV||t21:TMP||t25:P	mainVb
 the	t14	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 two	t15	1	two	O	O	O	O	O	O	O	O	CRD	I-NP	two	CD	O	O
 bomb	t16	1	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t15:NMOD	O
-explosions	t17	1	explosion	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	explosion	NNS	t14:NMOD||t16:NMOD||t18:LOC||t21:LOC	O
+explosions	t17	1	explosion	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	explosion	NNS	t14:NMOD||t16:NMOD	O
 near	t18	1	near	O	O	O	O	O	O	O	O	PRP	B-PP	near	IN	t20:PMOD	O
 U.S.	t19	1	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
 embassies	t20	1	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t19:NMOD	O
@@ -90,7 +90,7 @@ and	t84	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t85:CONJ	O
 injuring	t85	4	injure	O	O	O	O	O	O	O	O	VVG	B-VP	injure	VBG	t89:OBJ	O
 more	t86	4	more	O	O	O	O	O	O	O	O	DT0	B-NP	more	RBR	O	O
 than	t87	4	than	O	O	O	O	O	O	O	O	CJS	I-NP	than	IN	O	O
-1,700	t88	4	1,700	O	O	O	O	O	O	O	O	CRD	I-NP	1,700	CD	t86:DEP||t87:DEP	O
+1,700	t88	4	1,700	O	O	O	O	O	O	O	O	CRD	I-NP	1,700	NN	t86:DEP||t87:DEP	O
 others	t89	4	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t88:NMOD	O
 .	t90	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -99,7 +99,7 @@ least	t92	5	least	O	O	O	O	O	O	O	O	AV0	I-NP	least	JJS	O	O
 74	t93	5	74	O	O	O	O	O	O	O	O	CRD	I-NP	74	CD	t91:DEP||t92:DEP||t94:P||t95:NMOD||t98:P	O
 ,	t94	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 including	t95	5	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t96:PMOD	O
-eight	t96	5	eight	O	O	O	O	O	O	O	O	CRD	B-NP	eight	CD	t97:NMOD	O
+eight	t96	5	eight	O	O	O	O	O	O	O	O	CRD	B-NP	eight	CD	t97:AMOD	O
 Americans	t97	5	Americans	O	O	O	O	O	O	O	O	NN2	I-NP	americans	JJ	O	O
 ,	t98	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 were	t99	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t93:SBJ||t100:VC||t108:P||t109:COORD||t115:P	mainVb
@@ -114,9 +114,9 @@ Kenya	t107	5	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
 ,	t108	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t109	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t113:CONJ	O
 more	t110	5	more	O	O	O	O	O	O	O	O	DT0	B-NP	more	RBR	O	O
-then	t111	5	then	O	O	O	O	O	O	O	O	AV0	I-NP	then	RB	t110:AMOD||t112:AMOD	O
+then	t111	5	then	O	O	O	O	O	O	O	O	AV0	I-NP	then	RB	t110:AMOD	O
 1,640	t112	5	1,640	O	O	O	O	O	O	O	O	CRD	I-NP	1,640	CD	O	O
-were	t113	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t111:TMP||t114:VC	O
+were	t113	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t111:TMP||t112:SBJ||t114:VC	O
 wounded	t114	5	wound	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	wound	VBN	O	O
 .	t115	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -130,10 +130,10 @@ in	t122	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t125:PMOD	O
 the	t123	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Tanzanian	t124	6	tanzanian	O	O	O	O	O	O	O	O	AJ0	I-NP	tanzanian	JJ	O	O
 capital	t125	6	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t123:NMOD||t124:NMOD||t126:NMOD	O
-of	t126	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t128:PMOD	O
+of	t126	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t129:PMOD	O
 Dar	t127	6	Dar	O	O	O	O	O	O	O	O	NN1	B-NP	dar	NNP	O	O
-es	t128	6	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t127:SBJ||t129:OBJ	O
-Salaam	t129	6	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NN	O	O
+es	t128	6	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	O	O
+Salaam	t129	6	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	t127:NAME||t128:NAME	O
 ,	t130	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t131	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t134:CONJ	O
 72	t132	6	72	O	O	O	O	O	O	O	O	CRD	B-NP	72	CD	O	O

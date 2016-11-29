@@ -1,8 +1,8 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Columbia	t1	1	Columbia	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	columbia	NNP	O	O
 Savings	t2	1	Savings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	savings	NNP	O	O
-amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	amp	NN	O	O
+amp	t3	1	amp	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
 Loan	t4	1	Loan	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	loan	NNP	O	O
 Association	t5	1	Association	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	association	NNP	t1:NAME||t2:NAME||t3:NAME||t4:NAME	O
 ,	t6	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -43,7 +43,7 @@ share	t39	1	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t38:NMOD	O
 
 For	t41	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t43:PMOD	O
 the	t42	2	the	O	O	O	tmx165	DATE	1988-Q3	O	O	AT0	B-NP	the	DT	O	O
-quarter	t43	2	quarter	O	O	O	tmx165	DATE	1988-Q3	O	O	NN1	I-NP	quarter	NN	t42:NMOD||t46:NMOD	O
+quarter	t43	2	quarter	O	O	O	tmx165	DATE	1988-Q3	O	O	NN1	I-NP	quarter	NN	t42:NMOD||t46:TMP	O
 a	t44	2	a	O	O	O	tmx165	DATE	1988-Q3	O	O	AT0	B-NP	a	DT	O	O
 year	t45	2	year	O	O	O	tmx165	DATE	1988-Q3	O	O	NN1	I-NP	year	NN	t44:NMOD	O
 ago	t46	2	ago	O	O	O	tmx165	DATE	1988-Q3	O	O	AV0	B-ADVP	ago	RB	t45:AMOD	O
@@ -157,7 +157,7 @@ been	t149	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t150:VC	mainVb
 done	t150	6	do	e18	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VDN	B-ADJP	do	VBN	t151:MNR	O
 through	t151	6	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t154:PMOD	O
 the	t152	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-high-yield	t153	6	high-yield	O	O	O	O	O	O	O	O	NN1	I-NP	high-yield	JJ	O	O
+high-yield	t153	6	high-yield	O	O	O	O	O	O	O	O	NN1	I-NP	high-yield	NN	O	O
 department	t154	6	department	O	O	O	O	O	O	O	O	NN1	I-NP	department	NN	t152:NMOD||t153:NMOD||t155:NMOD	O
 of	t155	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t159:PMOD	O
 its	t156	6	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
@@ -243,7 +243,7 @@ million	t232	9	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 to	t233	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t234:PMOD	O
 reserves	t234	9	reserve	O	O	O	O	O	O	O	O	NN2	B-NP	reserves	NNS	t235:NMOD	O
 for	t235	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t236:PMOD	O
-losses	t236	9	loss	e1990	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	losses	NNS	t237:LOC	O
+losses	t236	9	loss	e1990	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	losses	NNS	t237:NMOD	O
 on	t237	9	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t239:PMOD	O
 the	t238	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 portfolio	t239	9	portfolio	O	O	O	O	O	O	O	O	NN1	I-NP	portfolio	NN	t238:NMOD	O
@@ -325,9 +325,9 @@ thrifts	t311	12	thrift	O	O	O	O	O	O	O	O	NN2	B-NP	thrift	NNS	O	O
 to	t312	12	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t313:IM	O
 divest	t313	12	divest	e42	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	divest	VB	t317:OBJ||t318:TMP	O
 all	t314	12	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
-high-yield	t315	12	high-yield	O	O	O	O	O	O	O	O	AJ0	I-NP	high-yield	JJ	O	O
-bond	t316	12	bond	O	O	O	O	O	O	O	O	NN1	I-NP	bond	NN	O	O
-investments	t317	12	investment	O	O	O	O	O	O	O	O	NN2	I-NP	investment	NNS	t314:NMOD||t315:NMOD||t316:NMOD	O
+high-yield	t315	12	high-yield	O	O	O	O	O	O	O	O	AJ0	I-NP	high-yield	NN	O	O
+bond	t316	12	bond	O	O	O	O	O	O	O	O	NN1	I-NP	bond	NN	t315:NMOD	O
+investments	t317	12	investment	O	O	O	O	O	O	O	O	NN2	I-NP	investment	NNS	t314:NMOD||t316:NMOD	O
 by	t318	12	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t319:PMOD	O
 1994	t319	12	1994	O	O	O	tmx1994	DATE	1994	O	O	CRD	B-NP	1994	CD	O	O
 .	t320	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -439,8 +439,8 @@ non-recurring	t421	16	non-recurring	O	O	O	O	O	O	O	O	AJ0	B-NP	non-recurring	JJ	O	
 losses	t422	16	loss	O	O	O	O	O	O	O	O	NN2	I-NP	losses	NNS	t421:NMOD||t423:NMOD	O
 from	t423	16	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t426:PMOD	O
 commercial	t424	16	commercial	O	O	O	O	O	O	O	O	AJ0	B-NP	commercial	JJ	O	O
-real-estate	t425	16	real-estate	O	O	O	O	O	O	O	O	NN1	I-NP	real-estate	JJ	O	O
-activities	t426	16	activity	O	O	O	O	O	O	O	O	NN2	I-NP	activity	NNS	t424:NMOD||t425:NMOD||t427:LOC	O
+real-estate	t425	16	real-estate	O	O	O	O	O	O	O	O	NN1	I-NP	real-estate	NN	t424:NMOD	O
+activities	t426	16	activity	O	O	O	O	O	O	O	O	NN2	I-NP	activity	NNS	t425:NMOD||t427:LOC	O
 in	t427	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t428:PMOD	O
 California	t428	16	California	O	O	O	O	O	O	O	O	NP0	B-NP	california	NNP	O	O
 .	t429	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -459,10 +459,10 @@ statement	t440	17	statement	O	O	O	O	O	O	O	O	NN1	I-NP	statement	NN	t439:NMOD	O
 that	t441	17	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t444:SUB	O
 the	t442	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 thrift	t443	17	thrift	O	O	O	O	O	O	O	O	NN1	I-NP	thrift	NN	t442:NMOD	O
-was	t444	17	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t443:SBJ||t445:VC	O
-"	t445	17	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	VBN	t447:OBJ||t448:LGS	O
-disappointed	t446	17	disappointed	e76	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-VP	disappointed	JJ	O	O
-"	t447	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t446:NMOD	O
+was	t444	17	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t443:SBJ||t446:PRD	O
+"	t445	17	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	NNP	O	O
+disappointed	t446	17	disappointed	e76	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	AJ0	I-VP	disappointed	VBD	t445:SBJ||t447:ADV||t448:LGS	O
+"	t447	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	RP	O	O
 by	t448	17	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t450:PMOD	O
 the	t449	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 effects	t450	17	effect	O	O	O	O	O	O	O	O	NN2	I-NP	effects	NNS	t449:NMOD||t451:NMOD	O
@@ -476,7 +476,7 @@ But	t456	18	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 he	t457	18	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 said	t458	18	say	e78	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t456:DEP||t457:SBJ||t460:OBJ||t485:P	mainVb
 Columbia	t459	18	Columbia	O	O	O	O	O	O	O	O	NP0	B-NP	columbia	NNP	O	O
-remains	t460	18	remain	e79	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t459:SBJ||t462:PRD||t472:P||t473:P||t474:ADV	O
+remains	t460	18	remain	e79	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	remain	VBZ	t459:SBJ||t462:PRD||t472:P||t473:COORD	O
 "	t461	18	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	CD	O	O
 one	t462	18	one	O	O	O	O	O	O	O	O	CRD	I-NP	one	CD	t461:NMOD||t463:NMOD	O
 of	t463	18	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t468:PMOD	O
@@ -489,7 +489,7 @@ in	t469	18	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t471:PMOD	O
 the	t470	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 industry	t471	18	industry	O	O	O	O	O	O	O	O	NN1	I-NP	industry	NN	t470:NMOD	O
 ,	t472	18	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t473	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	,	O	O
+"	t473	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	t474:ADV	O
 based	t474	18	base	O	O	O	O	O	O	O	O	VVN	B-VP	base	VBN	t475:PMOD	O
 on	t475	18	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t478:PMOD	O
 the	t476	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -543,9 +543,9 @@ Columbia	t520	21	Columbia	O	O	O	O	O	O	O	O	NP0	B-NP	columbia	NNP	O	O
 shares	t521	21	share	O	O	O	O	O	O	O	O	VVZ	I-NP	share	NNS	t520:NMOD	O
 has	t522	21	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t518:SBJ||t523:VC||t554:P	mainVb
 been	t523	21	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t524:VC	mainVb
-cut	t524	21	cut	e88	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	cut	VBN	t525:ADV||t526:ADV||t528:TMP||t538:P||t539:TMP	mainVb
+cut	t524	21	cut	e88	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	cut	VBN	t526:ADV||t528:TMP||t538:P||t539:TMP	mainVb
 nearly	t525	21	nearly	O	O	O	O	O	O	O	O	AV0	B-ADVP	nearly	RB	O	O
-in	t526	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t527:PMOD	O
+in	t526	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t525:PMOD||t527:PMOD	O
 half	t527	21	half	O	O	O	O	O	O	O	O	DT0	B-NP	half	CD	O	O
 since	t528	21	since	O	O	O	O	O	O	O	O	PRP	B-PP	since	IN	t529:PMOD	O
 August	t529	21	August	O	O	O	tmx2004	DATE	1989-08	O	O	NP0	B-NP	august	NNP	t530:P||t533:NMOD	O
@@ -639,7 +639,7 @@ separately	t614	23	separately	O	O	O	O	O	O	O	O	AV0	B-NP	separately	RB	O	O
 capitalized	t615	23	capitalized	O	O	O	O	O	O	O	O	AJ0	I-NP	capitalize	VBN	t614:AMOD	O
 subsidiaries	t616	23	subsidiary	O	O	O	O	O	O	O	O	NN2	I-NP	subsidiary	NNS	t615:NMOD	O
 ,	t617	23	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-have	t618	23	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t599:SBJ||t619:ADV||t620:ADV||t621:VC	O
+have	t618	23	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t599:SBJ||t619:ADV||t620:TMP||t621:VC	O
 n't	t619	23	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 yet	t620	23	yet	O	O	O	O	O	O	O	O	AV0	I-VP	yet	RB	O	O
 been	t621	23	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t622:VC	O
@@ -673,7 +673,7 @@ regulatory	t647	24	regulatory	O	O	O	O	O	O	O	O	AJ0	B-NP	regulatory	JJ	O	O
 requirements	t648	24	requirement	O	O	O	O	O	O	O	O	NN2	I-NP	requirement	NNS	t646:NMOD||t647:NMOD||t650:NMOD	O
 that	t649	24	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 should	t650	24	should	O	O	O	O	O	O	O	O	VM0	B-VP	should	MD	t649:SBJ||t651:VC	O
-be	t651	24	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t652:LOC-PRD||t654:TMP	O
+be	t651	24	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t652:PRD||t654:TMP	O
 in	t652	24	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t653:PMOD	O
 place	t653	24	place	O	O	O	O	O	O	O	O	NN1	B-NP	place	NN	O	O
 by	t654	24	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t657:PMOD	O

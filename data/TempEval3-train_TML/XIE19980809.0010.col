@@ -1,6 +1,6 @@
-DCT_1998-08-08	O	O	O	O	O	O	tmx0	DATE	1998-08-08	O	O	NP0	B-NP	dct_1998-08-08	SYM	O	O
+DCT_1998-08-08	O	O	O	O	O	O	tmx0	DATE	1998-08-08	O	O	NP0	B-NP	dct_1998-08-08	LS	O	O
 
-TEHRAN	t1	1	TEHRAN	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	tehran	NNP	O	O
+TEHRAN	t1	1	TEHRAN	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	tehran	NNP	t2:P||t7:COORD	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 August	t3	1	August	O	O	O+O+O	tmx111	DATE	1998-08-08	O	O	NP0	B-NP	august	NNP	t4:NMOD	O
 8	t4	1	8	O	O	O+O+O	tmx111	DATE	1998-08-08	O	O	CRD	I-NP	8	CD	O	O
@@ -10,7 +10,7 @@ Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	xinhua	NNP	O	O
 --	t8	1	--	O	O	O+O+O	O	O	O	O	O	NP0	O	--	:	O	O
 Iran	t9	1	Iran	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	iran	NNP	O	O
 Saturday	t10	1	Saturday	O	O	O+O+O	tmx2	DATE	1998-08-08	O	O	NP0	I-NP	saturday	NNP	t9:NAME	O
-condemned	t11	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:ADV||t2:P||t7:SBJ||t13:OBJ||t17:LOC||t21:P||t22:COORD||t31:P	mainVb
+condemned	t11	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t1:SBJ||t13:OBJ||t17:TMP||t21:P||t22:COORD||t31:P	mainVb
 the	t12	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bombing	t13	1	bombing	e11	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bombing	NN	t12:NMOD||t14:NMOD	O
 of	t14	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t16:PMOD	O
@@ -32,19 +32,19 @@ the	t29	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 victims	t30	1	victim	O	O	O	O	O	O	O	O	NN2	I-NP	victim	NNS	t29:NMOD	O
 .	t31	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Foreign	t32	2	Foreign	O	O	O	O	O	O	O	O	AJ0	B-NP	foreign	JJ	O	O
-Ministry	t33	2	Ministry	O	O	O	O	O	O	O	O	NN1	I-NP	ministry	NNP	O	O
-spokesman	t34	2	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t32:NMOD||t33:NMOD||t36:APPO	O
+Foreign	t32	2	Foreign	O	O	O	O	O	O	O	O	AJ0	B-NP	foreign	NNP	O	O
+Ministry	t33	2	Ministry	O	O	O	O	O	O	O	O	NN1	I-NP	ministry	NNP	t32:NAME	O
+spokesman	t34	2	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t33:NMOD||t36:APPO	O
 Mahmoud	t35	2	Mahmoud	O	O	O	O	O	O	O	O	NP0	I-NP	mahmoud	NNP	O	O
 Mohammadi	t36	2	Mohammadi	O	O	O	O	O	O	O	O	NP0	I-NP	mohammadi	NNP	t35:NAME	O
 said	t37	2	say	e3	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t34:SBJ||t38:OBJ	O
-that	t38	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t40:SUB	O
-Iran	t39	2	Iran	O	O	O	O	O	O	O	O	NP0	B-NP	iran	NNP	O	O
-condemns	t40	2	condemn	e4	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	condemn	VBZ	t39:SBJ||t42:OBJ	O
+that	t38	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t44:SUB	O
+Iran	t39	2	Iran	O	O	O	O	O	O	O	O	NP0	B-NP	iran	JJ	O	O
+condemns	t40	2	condemn	e4	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	condemn	NNS	t39:NMOD	O
 any	t41	2	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
-acts	t42	2	act	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	acts	NNS	t41:NMOD||t44:NMOD	O
+acts	t42	2	act	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	acts	NNS	t40:NMOD||t41:NMOD	O
 which	t43	2	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
-may	t44	2	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t43:SBJ||t45:VC	O
+may	t44	2	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t42:VOC||t43:SBJ||t45:VC	O
 result	t45	2	result	O	O	O	O	O	O	O	O	VVI	I-VP	result	VB	t46:ADV	O
 in	t46	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t48:PMOD	O
 the	t47	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -63,15 +63,15 @@ reported	t58	2	report	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t
 
 He	t60	3	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 expressed	t61	3	express	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	express	VBD	t60:SBJ||t62:OBJ||t78:P	mainVb
-hope	t62	3	hope	O	O	O	O	O	O	O	O	VVB	B-NP	hope	VBP	t66:OBJ	O
+hope	t62	3	hope	O	O	O	O	O	O	O	O	VVB	B-NP	hope	VBP	t68:OBJ	O
 the	t63	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 "	t64	3	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
 sinister	t65	3	sinister	O	O	O	O	O	O	O	O	AJ0	I-NP	sinister	NN	t64:NMOD	O
-terrorism	t66	3	terrorism	O	O	O	O	O	O	O	O	NN1	I-NP	terrorism	NN	t63:NMOD||t65:NMOD||t68:NMOD	O
-"	t67	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	WDT	O	O
+terrorism	t66	3	terrorism	O	O	O	O	O	O	O	O	NN1	I-NP	terrorism	NN	t65:NMOD	O
+"	t67	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t63:NMOD||t66:NMOD	O
 will	t68	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t67:SBJ||t69:VC	O
 be	t69	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t70:VC	O
-uprooted	t70	3	uproot	e20	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	uproot	VBN	t71:MNR||t75:MNR	O
+uprooted	t70	3	uproot	e20	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	uproot	VBN	t71:ADV||t75:MNR	O
 with	t71	3	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t74:PMOD	O
 an	t72	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 all-out	t73	3	all-out	O	O	O	O	O	O	O	O	AJ0	I-NP	all-out	NN	O	O

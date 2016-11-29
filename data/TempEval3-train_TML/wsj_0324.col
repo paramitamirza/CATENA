@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	LS	O	O
 
 QVC	t1	1	QVC	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	qvc	NNP	O	O
 Network	t2	1	Network	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	network	NNP	t1:NAME||t3:POSTHON	O
@@ -50,8 +50,8 @@ largest	t45	3	largest	O	O	O	O	O	O	O	O	AJS	I-NP	large	JJS	O	O
 competitors	t46	3	competitor	O	O	O	O	O	O	O	O	NN2	I-NP	competitor	NNS	t43:NMOD||t44:NMOD||t45:NMOD||t47:NMOD	O
 to	t47	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t50:PMOD	O
 Home	t48	3	Home	O	O	O	O	O	O	O	O	NN1	B-NP	home	NNP	O	O
-Shopping	t49	3	Shopping	O	O	O	O	O	O	O	O	NN1	I-NP	shopping	NNP	O	O
-Network	t50	3	Network	O	O	O	O	O	O	O	O	NN1	I-NP	network	NNP	t48:NAME||t49:NAME||t51:POSTHON||t52:P||t55:NMOD	O
+Shopping	t49	3	Shopping	O	O	O	O	O	O	O	O	NN1	I-NP	shopping	NNP	t48:NAME	O
+Network	t50	3	Network	O	O	O	O	O	O	O	O	NN1	I-NP	network	NNP	t49:NAME||t51:POSTHON||t52:P||t55:NMOD	O
 Inc.	t51	3	Inc.	O	O	O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 ,	t52	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t53	3	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
@@ -86,7 +86,7 @@ of	t80	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t85:PMOD	O
 that	t81	4	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 young	t82	4	young	O	O	O	O	O	O	O	O	AJ0	I-NP	young	JJ	t83:COORD	O
 and	t83	4	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t84:CONJ	O
-fast-growing	t84	4	fast-growing	O	O	O	O	O	O	O	O	AJ0	I-NP	fast-grow	VBG	O	O
+fast-growing	t84	4	fast-growing	O	O	O	O	O	O	O	O	AJ0	I-NP	fast-grow	JJ	O	O
 market	t85	4	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t81:NMOD||t82:NMOD||t86:P||t90:NMOD	O
 ,	t86	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t87	4	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O

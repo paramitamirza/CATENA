@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	UNC	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	UNC	B-NP	dct_1989-10-26	LS	O	O
 
 H.	t1	1	H.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	h.	NNP	O	O
 Marshall	t2	1	Marshall	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	marshall	NNP	O	O
@@ -53,8 +53,8 @@ the	t49	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t50	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t49:NMOD||t51:SUFFIX	O
 's	t51	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 mandatory	t52	2	mandatory	O	O	O	O	O	O	O	O	AJ0	I-NP	mandatory	JJ	O	O
-retirement	t53	2	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	t52:NMOD	O
-age	t54	2	age	O	O	O	O	O	O	O	O	NN1	I-NP	age	NN	t50:NMOD||t53:NMOD||t55:NMOD	O
+retirement	t53	2	retirement	O	O	O	O	O	O	O	O	NN1	I-NP	retirement	NN	O	O
+age	t54	2	age	O	O	O	O	O	O	O	O	NN1	I-NP	age	NN	t50:NMOD||t52:NMOD||t53:NMOD||t55:NMOD	O
 of	t55	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t56:PMOD	O
 65	t56	2	65	O	O	O	O	O	O	O	O	CRD	B-NP	65	CD	O	O
 .	t57	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -101,7 +101,7 @@ U.S.	t95	4	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
 Trust	t96	4	Trust	O	O	O	O	O	O	O	O	NP0	I-NP	trust	NNP	t95:NAME||t97:P||t100:APPO||t113:P	O
 ,	t97	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t98	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-136-year-old	t99	4	136-year-old	O	O	O	O	O	O	O	O	AJ0	I-NP	136-year-old	CD	O	O
+136-year-old	t99	4	136-year-old	O	O	O	O	O	O	O	O	AJ0	I-NP	136-year-old	JJ	O	O
 institution	t100	4	institution	O	O	O	O	O	O	O	O	NN1	I-NP	institution	NN	t98:NMOD||t99:NMOD||t102:NMOD	O
 that	t101	4	that	O	O	O	O	O	O	O	O	AV0	B-NP	that	WDT	O	O
 is	t102	4	be	O	O	O	O	O	O	O	O	AV0	I-NP	be	VBZ	t101:SBJ||t103:PRD	O
@@ -125,14 +125,14 @@ other	t119	4	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
 firms	t120	4	firm	O	O	O	O	O	O	O	O	NN2	I-NP	firm	NNS	t119:NMOD||t122:NMOD	O
 that	t121	4	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 have	t122	4	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t121:SBJ||t123:VC	O
-established	t123	4	establish	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	establish	VBN	t124:P||t125:COORD||t128:P||t129:ADV	O
+established	t123	4	establish	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	establish	VBN	t124:P||t125:COORD||t128:P||t130:OBJ	O
 ,	t124	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t125	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t127:CONJ	O
 heavily	t126	4	heavily	O	O	O	O	O	O	O	O	AV0	B-VP	heavily	RB	O	O
 promoted	t127	4	promote	e13	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	promote	VBN	t126:MNR	O
 ,	t128	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-private-banking	t129	4	private-banking	O	O	O	O	O	O	O	O	VVG	B-VP	private-bank	VBG	t130:OBJ	O
-businesses	t130	4	business	O	O	O	O	O	O	O	O	NN2	B-NP	business	NNS	t131:NMOD	O
+private-banking	t129	4	private-banking	O	O	O	O	O	O	O	O	VVG	B-VP	private-bank	VBG	O	O
+businesses	t130	4	business	O	O	O	O	O	O	O	O	NN2	B-NP	business	NNS	t129:NMOD||t131:NMOD	O
 of	t131	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t133:PMOD	O
 their	t132	4	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 own	t133	4	own	O	O	O	O	O	O	O	O	DT0	I-NP	own	JJ	t132:NMOD	O
@@ -154,7 +154,7 @@ hurt	t145	5	hurt	e16	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	hurt	V
 But	t147	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 Mr.	t148	6	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Schwarz	t149	6	Schwarz	O	O	O	O	O	O	O	O	NP0	I-NP	schwarz	NNP	t148:TITLE	O
-welcomes	t150	6	welcome	e17	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	welcome	VBZ	t147:DEP||t149:SBJ||t152:OBJ||t159:P||t160:ADV||t164:P||t165:P	mainVb
+welcomes	t150	6	welcome	e17	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	welcome	VBZ	t147:DEP||t149:SBJ||t152:OBJ||t159:P||t160:ADV||t164:P	mainVb
 the	t151	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 competition	t152	6	competition	O	O	O	O	O	O	O	O	NN1	I-NP	competition	NN	t151:NMOD||t153:LOC	O
 in	t153	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t158:PMOD	O
@@ -164,12 +164,12 @@ Trust	t155	6	Trust	O	O	O	O	O	O	O	O	NP0	I-NP	trust	NNP	t154:NAME||t156:SUFFIX	O
 flagship	t157	6	flagship	O	O	O	O	O	O	O	O	NN1	I-NP	flagship	NN	O	O
 businesses	t158	6	business	O	O	O	O	O	O	O	O	NN2	I-NP	business	NNS	t155:NMOD||t157:NMOD	O
 ,	t159	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-calling	t160	6	call	e93	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	call	VBG	t161:OBJ||t163:OPRD	O
+calling	t160	6	call	e93	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	call	VBG	t161:OBJ||t163:OPRD||t165:OPRD	O
 it	t161	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 "	t162	6	"	O	O	O	O	O	O	O	O	PUQ	B-VP	"	NNP	O	O
 flattery	t163	6	flattery	O	O	O	O	O	O	O	O	NN1	B-NP	flattery	NN	t162:NMOD	O
 .	t164	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t165	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t165	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Mr.	t166	7	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Schwarz	t167	7	Schwarz	O	O	O	O	O	O	O	O	NP0	I-NP	schwarz	NNP	t166:TITLE	O
@@ -189,9 +189,9 @@ us	t178	7	we	O	O	O	O	O	O	O	O	PNP	B-NP	us	PRP	O	O
 
 Other	t181	8	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
 firms	t182	8	firm	O	O	O	O	O	O	O	O	NN2	I-NP	firm	NNS	t181:NMOD	O
-"	t183	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	WDT	O	O
-are	t184	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t182:SBJ||t183:SBJ||t185:VC||t189:P	mainVb
-dealing	t185	8	deal	e25	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	deal	VBG	t186:ADV	mainVb
+"	t183	8	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBP	t182:SBJ||t184:OBJ||t189:P	mainVb
+are	t184	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t185:VC	O
+dealing	t185	8	deal	e25	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	deal	VBG	t186:ADV	O
 with	t186	8	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t188:PMOD	O
 the	t187	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 masses	t188	8	mass	O	O	O	O	O	O	O	O	NN2	I-NP	masses	NNS	t187:NMOD	O
@@ -206,9 +206,9 @@ have	t195	9	have	e28	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t194:S
 the	t196	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 culture	t197	9	culture	O	O	O	O	O	O	O	O	NN1	I-NP	culture	NN	O	O
 "	t198	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t196:NMOD||t197:NMOD||t199:NMOD	O
-to	t199	9	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t200:ADV||t201:IM	O
+to	t199	9	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t201:IM	O
 adequately	t200	9	adequately	O	O	O	O	O	O	O	O	AV0	I-VP	adequately	RB	O	O
-service	t201	9	service	e29	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	service	VB	t203:OBJ	O
+service	t201	9	service	e29	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	service	VB	t200:MNR||t203:OBJ	O
 high-net-worth	t202	9	high-net-worth	O	O	O	O	O	O	O	O	NN1	B-NP	high-net-worth	JJ	O	O
 individuals	t203	9	individual	O	O	O	O	O	O	O	O	NN2	I-NP	individual	NNS	t202:NMOD	O
 ,	t204	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -251,9 +251,9 @@ million	t238	11	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 level	t239	11	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t235:NMOD||t236:NMOD	O
 .	t240	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t241	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t241	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t242	12	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-have	t243	12	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t241:DEP||t242:SBJ||t244:TMP||t245:VC||t248:P||t249:COORD	O
+have	t243	12	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t241:P||t242:SBJ||t244:TMP||t245:VC||t248:P||t249:COORD	O
 always	t244	12	always	O	O	O	O	O	O	O	O	AV0	I-VP	always	RB	O	O
 taken	t245	12	take	e37	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	take	VBN	t247:OBJ	O
 smaller	t246	12	smaller	O	O	O	O	O	O	O	O	AJC	B-NP	smaller	JJR	O	O
@@ -277,12 +277,12 @@ Schwarz	t263	12	Schwarz	O	O	O	O	O	O	O	O	NP0	I-NP	schwarz	NNP	t261:NAME||t262:TIT
 says	t264	12	say	e42	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t243:OBJ||t260:P||t263:SBJ||t265:P	mainVb
 .	t265	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t266	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t266	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	IN	t268:PMOD	O
 Our	t267	13	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 bread	t268	13	bread	O	O	O	O	O	O	O	O	NN1	I-NP	bread	NN	t267:NMOD||t269:COORD	O
 and	t269	13	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t270:CONJ	O
 butter	t270	13	butter	O	O	O	O	O	O	O	O	NN1	I-NP	butter	NN	O	O
-is	t271	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t268:SBJ||t272:ADV||t281:PRD	O
+is	t271	13	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t266:PRD||t272:TMP||t281:PRD	O
 still	t272	13	still	O	O	O	O	O	O	O	O	AV0	B-ADVP	still	RB	O	O
 the	t273	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 $	t274	13	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t275:DEP||t276:DEP||t277:DEP||t278:DEP||t279:DEP||t280:DEP	O
@@ -296,7 +296,7 @@ account	t281	13	account	O	O	O	O	O	O	O	O	NN1	I-NP	account	NN	t273:NMOD||t274:NMOD
 ,	t282	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t283	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t284	13	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-says	t285	13	say	e2136	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t266:DEP||t271:OBJ||t282:P||t283:P||t284:SBJ||t286:P	mainVb
+says	t285	13	say	e2136	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t271:OBJ||t282:P||t283:P||t284:SBJ||t286:P	mainVb
 .	t286	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t287	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -327,7 +327,7 @@ year	t310	15	year	O	O	O	tmx99	DATE	1989	O	O	NN1	I-NP	year	NN	t308:NMOD||t309:NMO
 has	t311	15	have	O	O	O	O	O	O	O	O	VHZ	I-NP	have	VBZ	t310:SBJ||t312:VC||t328:P	mainVb
 risen	t312	15	rise	e51	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-NP	rise	VBN	t314:ADV	O
 just	t313	15	just	O	O	O	O	O	O	O	O	AV0	B-ADVP	just	RB	O	O
-over	t314	15	over	O	O	O	O	O	O	O	O	AV0	I-ADVP	over	IN	t313:PMOD||t316:PMOD	O
+over	t314	15	over	O	O	O	O	O	O	O	O	AV0	I-ADVP	over	IN	t313:DEP||t316:PMOD	O
 comparable	t315	15	comparable	O	O	O	O	O	O	O	O	AJ0	B-NP	comparable	JJ	O	O
 periods	t316	15	period	O	O	O	O	O	O	O	O	NN2	I-NP	period	NNS	t315:NMOD||t317:TMP	O
 in	t317	15	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t318:PMOD	O
@@ -515,14 +515,14 @@ Roberts	t489	24	Roberts	O	O	O	O	O	O	O	O	NP0	I-NP	roberts	NNP	t487:NAME||t488:NAM
 ,	t490	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 54	t491	24	54	O	O	O	O	O	O	O	O	CRD	B-NP	54	CD	O	O
 ,	t492	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-treasurer	t493	24	treasurer	O	O	O	O	O	O	O	O	NN1	B-NP	treasurer	NN	t489:NMOD||t490:P||t491:NMOD||t492:P||t494:P||t495:COORD||t509:P	O
+treasurer	t493	24	treasurer	O	O	O	O	O	O	O	O	NN1	B-NP	treasurer	NN	t489:NMOD||t490:P||t491:NMOD||t492:P||t494:P||t495:COORD	O
 ,	t494	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t495	24	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t500:CONJ	O
 Frederick	t496	24	Frederick	O	O	O	O	O	O	O	O	NP0	B-NP	frederick	NNP	O	O
 S.	t497	24	S.	O	O	O	O	O	O	O	O	NP0	I-NP	s.	NNP	O	O
 Wonham	t498	24	Wonham	O	O	O	O	O	O	O	O	NP0	I-NP	wonham	NNP	t496:NAME||t497:NAME	O
 ,	t499	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-58	t500	24	58	O	O	O	O	O	O	O	O	CRD	B-NP	58	CD	t498:NMOD||t499:P||t501:P||t503:NMOD	O
+58	t500	24	58	O	O	O	O	O	O	O	O	CRD	B-NP	58	CD	t498:NMOD||t499:P||t501:P||t503:NMOD||t509:P	O
 ,	t501	24	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t502	24	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 takes	t503	24	take	O	O	O	O	O	O	O	O	VVZ	B-VP	take	VBZ	t502:SBJ||t504:OBJ	O

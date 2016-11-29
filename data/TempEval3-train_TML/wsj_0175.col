@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Sony	t1	1	Sony	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	sony	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -21,8 +21,8 @@ tendering	t16	1	tender	e3	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	tender
 of	t19	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t22:PMOD	O
 all	t20	1	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 common	t21	1	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
-shares	t22	1	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t20:NMOD||t21:NMOD||t23:APPO	O
-outstanding	t23	1	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	t24:AMOD	O
+shares	t22	1	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t20:NMOD||t21:NMOD||t23:APPO||t24:NMOD	O
+outstanding	t23	1	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 by	t24	1	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t27:PMOD	O
 the	t25	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Tuesday	t26	1	Tuesday	O	O	O	tmx38	DATE	1989-10-31	O	O	NP0	I-NP	tuesday	NNP	O	O
@@ -58,9 +58,9 @@ said	t54	2	say	e7	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t40:OBJ||t5
 .	t55	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Sony	t56	3	Sony	O	O	O	O	O	O	O	O	NP0	B-NP	sony	NNP	O	O
-is	t57	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t56:SBJ||t58:VC||t79:P	mainVb
+is	t57	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t56:SBJ||t58:VC||t70:COORD||t79:P	mainVb
 paying	t58	3	pay	e8	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	pay	VBG	t59:OBJ	mainVb
-$	t59	3	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t60:NMOD||t62:ADV||t63:P||t64:COORD||t68:P||t69:COORD	O
+$	t59	3	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t60:NMOD||t62:ADV||t63:P||t64:COORD||t68:P||t69:APPO	O
 27	t60	3	27	O	O	O	O	O	O	O	O	CRD	I-NP	27	CD	O	O
 a	t61	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t62	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t61:NMOD	O
@@ -70,7 +70,7 @@ $	t65	3	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t66:DEP||t67:DEP	O
 3.55	t66	3	3.55	O	O	O	O	O	O	O	O	CRD	I-NP	3.55	CD	O	O
 billion	t67	3	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 ,	t68	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-cash	t69	3	cash	O	O	O	O	O	O	O	O	NN1	B-NP	cash	NN	t70:COORD	O
+cash	t69	3	cash	O	O	O	O	O	O	O	O	NN1	B-NP	cash	NN	O	O
 and	t70	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t71:CONJ	O
 is	t71	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t72:VC	O
 assuming	t72	3	assume	e10	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	assume	VBG	t73:OBJ	O
@@ -89,10 +89,10 @@ Sony	t83	4	Sony	O	O	O	O	O	O	O	O	NP0	B-NP	sony	NNP	t84:SUFFIX	O
 's	t84	4	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 effort	t85	4	effort	e11	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	effort	NN	t83:NMOD||t86:NMOD	O
 to	t86	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t87:IM	O
-hire	t87	4	hire	e13	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	hire	VB	t88:OBJ||t90:OPRD||t94:OPRD	O
+hire	t87	4	hire	e13	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	hire	VB	t90:OBJ||t94:OPRD	O
 producers	t88	4	producer	O	O	O	O	O	O	O	O	NN2	B-NP	producer	NNS	O	O
 Jon	t89	4	Jon	O	O	O	O	O	O	O	O	NP0	I-NP	jon	NNP	O	O
-Peters	t90	4	Peters	O	O	O	O	O	O	O	O	VVZ	I-NP	peter	NNP	t89:NAME||t91:COORD	O
+Peters	t90	4	Peters	O	O	O	O	O	O	O	O	VVZ	I-NP	peter	NNP	t88:TITLE||t89:NAME||t91:COORD	O
 and	t91	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t93:CONJ	O
 Peter	t92	4	Peter	O	O	O	O	O	O	O	O	NP0	B-NP	peter	NNP	O	O
 Guber	t93	4	Guber	O	O	O	O	O	O	O	O	NP0	I-NP	guber	NNP	t92:NAME	O
@@ -129,7 +129,7 @@ in	t121	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t122:PMOD	O
 litigation	t122	6	litigation	e21	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	litigation	NN	t123:NMOD	O
 with	t123	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t125:PMOD	O
 Warner	t124	6	Warner	O	O	O	O	O	O	O	O	NP0	B-NP	warner	NNP	O	O
-Communications	t125	6	Communications	O	O	O	O	O	O	O	O	NP0	I-NP	communications	NNP	t124:NAME||t126:POSTHON	O
+Communications	t125	6	Communications	O	O	O	O	O	O	O	O	NP0	I-NP	communications	NNPS	t124:NAME||t126:POSTHON	O
 Inc.	t126	6	Inc.	O	O	O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 in	t127	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t129:PMOD	O
 an	t128	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O

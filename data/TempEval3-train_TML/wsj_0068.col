@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 GOODY	t1	1	GOODY	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	goody	NNP	O	O
 PRODUCTS	t2	1	PRODUCTS	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	products	NNP	t1:NAME||t3:POSTHON	O
@@ -40,7 +40,7 @@ Kearny	t34	3	Kearny	O	O	O	O	O	O	O	O	NP0	I-NP	kearny	NNP	O	O
 N.J.-based	t36	3	n.j.-based	O	O	O	O	O	O	O	O	AJ0	B-NP	n.j.-base	NNP	t34:NAME||t35:P	O
 maker	t37	3	maker	O	O	O	O	O	O	O	O	NN1	I-NP	maker	NN	t33:NMOD||t36:NMOD||t38:NMOD	O
 of	t38	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t40:PMOD	O
-hair	t39	3	hair	O	O	O	O	O	O	O	O	NN1	B-NP	hair	JJ	O	O
+hair	t39	3	hair	O	O	O	O	O	O	O	O	NN1	B-NP	hair	NN	O	O
 accessories	t40	3	accessory	O	O	O	O	O	O	O	O	NN2	I-NP	accessory	NNS	t39:NMOD||t41:COORD	O
 and	t41	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t44:CONJ	O
 other	t42	3	other	O	O	O	O	O	O	O	O	AJ0	B-NP	other	JJ	O	O
@@ -54,7 +54,7 @@ dividend	t49	3	dividend	O	O	O	O	O	O	O	O	NN1	I-NP	dividend	NN	t48:NMOD||t50:NMOD	
 due	t50	3	due	O	O	O	O	O	O	O	O	PRP	B-ADJP	due	JJ	t51:AMOD	O
 to	t51	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t54:PMOD	O
 its	t52	3	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
-third-quarter	t53	3	third-quarter	O	O	O	tmx26	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
+third-quarter	t53	3	third-quarter	O	O	O	tmx26	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
 loss	t54	3	loss	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t52:NMOD||t53:NMOD||t55:NMOD	O
 of	t55	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t56:PMOD	O
 $	t56	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t57:NMOD||t58:P||t59:COORD	O
@@ -69,7 +69,7 @@ share	t63	3	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t62:NMOD	O
 
 In	t65	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t68:PMOD	O
 the	t66	4	the	O	O	O	tmx134	DATE	1988-Q3	O	O	AT0	B-NP	the	DT	O	O
-year-ago	t67	4	year-ago	O	O	O	tmx134	DATE	1988-Q3	O	O	NN1	I-NP	year-ago	NN	O	O
+year-ago	t67	4	year-ago	O	O	O	tmx134	DATE	1988-Q3	O	O	NN1	I-NP	year-ago	JJ	O	O
 quarter	t68	4	quarter	O	O	O	tmx134	DATE	1988-Q3	O	O	NN1	I-NP	quarter	NN	t66:NMOD||t67:NMOD	O
 ,	t69	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t70	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O

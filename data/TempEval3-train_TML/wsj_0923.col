@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Kyle	t1	1	Kyle	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	kyle	NNP	O	O
 Technology	t2	1	Technology	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	technology	NNP	t1:NAME||t3:POSTHON	O

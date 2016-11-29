@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 BLOCKBUSTER	t1	1	BLOCKBUSTER	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	blockbuster	NNP	O	O
 ENTERTAINMENT	t2	1	ENTERTAINMENT	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	entertainment	NNP	t1:NAME||t3:POSTHON	O
@@ -41,7 +41,7 @@ Nov.	t34	2	Nov.	O	O	O	tmx42	DATE	2004-11-01	O	O	NP0	B-NP	nov.	NNP	t35:NMOD	O
 ,	t38	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 will	t39	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t21:SBJ||t40:VC	O
 be	t40	2	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t41:VC	O
-used	t41	2	use	e9	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	use	VBN	t42:OBJ	O
+used	t41	2	use	e9	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	use	VBN	t42:OPRD	O
 to	t42	2	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t43:IM||t46:COORD	O
 reduce	t43	2	reduce	e11	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	reduce	VB	t45:OBJ	O
 existing	t44	2	exist	O	O	O	O	O	O	O	O	AJ0	B-NP	exist	VBG	O	O
@@ -161,7 +161,7 @@ notes	t151	8	note	O	O	O	O	O	O	O	O	NN2	I-NP	note	NNS	t150:NMOD	O
 will	t152	8	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t151:SBJ||t153:VC||t163:P	mainVb
 have	t153	8	have	e44	STATE	FUTURE+NONE+POS	O	O	O	O	O	VHI	I-VP	have	VB	t156:OBJ||t161:TMP	mainVb
 a	t154	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-principal	t155	8	principal	O	O	O	O	O	O	O	O	AJ0	I-NP	principal	JJ	O	O
+principal	t155	8	principal	O	O	O	O	O	O	O	O	AJ0	I-NP	principal	NN	O	O
 amount	t156	8	amount	O	O	O	O	O	O	O	O	NN1	I-NP	amount	NN	t154:NMOD||t155:NMOD||t157:NMOD	O
 of	t157	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t158:PMOD	O
 $	t158	8	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t159:DEP||t160:DEP	O

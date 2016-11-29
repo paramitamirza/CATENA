@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Coleco	t1	1	Coleco	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	coleco	NNP	O	O
 Industries	t2	1	Industries	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	industry	NNP	t1:NAME||t3:POSTHON||t4:P||t9:APPO||t22:P	O
@@ -6,7 +6,7 @@ Inc.	t3	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 ,	t4	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t5	1	a	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 once	t6	1	once	O	O	O+O+O	tmx30	DATE	PAST_REF	O	O	AV0	I-NP	once	RB	O	O
-high-flying	t7	1	high-flying	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	high-fly	VBG	t6:TMP	O
+high-flying	t7	1	high-flying	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	high-fly	VBG	t6:AMOD	O
 toy	t8	1	toy	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	toy	NN	O	O
 maker	t9	1	maker	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	maker	NN	t5:NMOD||t7:NMOD||t8:NMOD||t12:NMOD	O
 whose	t10	1	whose	O	O	O+O+O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
@@ -83,14 +83,14 @@ stock	t78	3	stock	O	O	O	O	O	O	O	O	NN1	B-NP	stock	NN	O	O
 in	t79	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t82:PMOD	O
 the	t80	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 reorganized	t81	3	reorganize	O	O	O	O	O	O	O	O	AJ0	I-NP	reorganized	VBN	O	O
-company	t82	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t80:NMOD||t81:NMOD||t83:P||t85:NMOD||t89:APPO	O
+company	t82	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t80:NMOD||t81:NMOD||t83:P||t85:NMOD	O
 ,	t83	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t84	3	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 will	t85	3	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t84:SBJ||t86:VC	O
 be	t86	3	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t87:VC	O
-named	t87	3	name	e9	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	name	VBN	O	O
+named	t87	3	name	e9	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	name	VBN	t89:OPRD	O
 Ranger	t88	3	Ranger	O	O	O	O	O	O	O	O	NP0	B-NP	ranger	NNP	O	O
-Industries	t89	3	Industries	O	O	O	O	O	O	O	O	NP0	I-NP	industry	NNPS	t88:NAME||t90:POSTHON	O
+Industries	t89	3	Industries	O	O	O	O	O	O	O	O	NP0	I-NP	industry	NNP	t88:NAME||t90:POSTHON	O
 Inc.	t90	3	Inc.	O	O	O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 .	t91	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -123,7 +123,7 @@ company	t115	5	company	O	O	O	O	O	O	O	O	NN1	B-NP	company	NN	t110:NMOD||t113:LOC||
 stock	t117	5	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t115:NMOD	O
 hit	t118	5	hit	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	hit	VBD	t117:SBJ||t120:OBJ||t121:TMP||t123:TMP||t130:P||t131:COORD||t144:P	mainVb
 a	t119	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-high	t120	5	high	O	O	O	O	O	O	O	O	NN1	I-NP	high	JJ	t119:NMOD	O
+high	t120	5	high	O	O	O	O	O	O	O	O	NN1	I-NP	high	NN	t119:NMOD	O
 in	t121	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t122:PMOD	O
 1983	t122	5	1983	O	O	O	tmx27	DATE	1983	O	O	CRD	B-NP	1983	CD	O	O
 after	t123	5	after	O	O	O	O	O	O	O	O	CJS	B-SBAR	after	IN	t125:SUB	O
@@ -151,7 +151,7 @@ plunged	t143	5	plunge	e13	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	plunge	VBD
 
 But	t145	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 Coleco	t146	6	Coleco	O	O	O	O	O	O	O	O	NP0	B-NP	coleco	NNP	O	O
-bounced	t147	6	bounce	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	bounce	VBD	t145:DEP||t146:SBJ||t148:PRT||t149:ADV||t157:P||t160:COORD||t166:P	mainVb
+bounced	t147	6	bounce	e14	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	bounce	VBD	t145:DEP||t146:SBJ||t148:ADV||t149:ADV||t166:P	mainVb
 back	t148	6	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RP	O	O
 with	t149	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t151:PMOD	O
 the	t150	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -160,7 +160,7 @@ of	t152	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t156:PMOD	O
 the	t153	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Cabbage	t154	6	Cabbage	O	O	O	O	O	O	O	O	NN1	I-NP	cabbage	NNP	O	O
 Patch	t155	6	Patch	O	O	O	O	O	O	O	O	NN1	I-NP	patch	NNP	t154:NAME	O
-dolls	t156	6	doll	O	O	O	O	O	O	O	O	NN2	I-NP	doll	NNS	t153:NMOD||t155:NMOD	O
+dolls	t156	6	doll	O	O	O	O	O	O	O	O	NN2	I-NP	doll	NNS	t153:NMOD||t155:NMOD||t157:P||t160:APPO	O
 ,	t157	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 whose	t158	6	whose	O	O	O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
 sales	t159	6	sale	O	O	O	O	O	O	O	O	NN0	I-NP	sales	NNS	t158:NMOD	O

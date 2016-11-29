@@ -1,12 +1,12 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Savin	t1	1	Savin	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	savin	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 reported	t3	1	report	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t1:SBJ||t7:OBJ||t33:P	mainVb
 a	t4	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 third-quarter	t5	1	third-quarter	O	O	O	tmx30	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	RBR	O	O
-net	t6	1	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	t5:AMOD	O
-loss	t7	1	loss	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t4:NMOD||t6:NMOD||t8:NMOD||t18:P||t19:NMOD	O
+net	t6	1	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
+loss	t7	1	loss	e2	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t4:NMOD||t5:NMOD||t6:NMOD||t8:NMOD||t18:P||t19:NMOD	O
 of	t8	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t9:PMOD	O
 $	t9	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t10:DEP||t11:DEP||t12:P||t13:COORD	O
 35.2	t10	1	35.2	O	O	O	O	O	O	O	O	CRD	I-NP	35.2	CD	O	O
@@ -42,7 +42,7 @@ Stamford	t38	2	Stamford	O	O	O	O	O	O	O	O	NP0	I-NP	stamford	NNP	O	O
 ,	t39	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Conn.based	t40	2	conn.based	O	O	O	O	O	O	O	O	AJ0	B-NP	conn.base	NNP	t38:NAME||t39:P	O
 company	t41	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t37:NMOD||t40:NMOD	O
-said	t42	2	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t35:SBJ||t44:OBJ||t54:P||t60:COORD||t82:P||t83:P	mainVb
+said	t42	2	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t35:SBJ||t44:OBJ||t54:P||t60:COORD||t82:P	mainVb
 operations	t43	2	operation	O	O	O	O	O	O	O	O	NN2	B-NP	operations	NNS	O	O
 had	t44	2	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t43:SBJ||t46:OBJ||t51:TMP	O
 a	t45	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -66,24 +66,24 @@ by	t62	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t64:PMOD	O
 nonrecurring	t63	2	nonrecurr	O	O	O	O	O	O	O	O	VVG	B-VP	nonrecurring	VBG	O	O
 charges	t64	2	charge	O	O	O	O	O	O	O	O	NN2	B-NP	charge	NNS	t63:NMOD||t65:APPO	O
 totaling	t65	2	total	O	O	O	O	O	O	O	O	VVG	B-VP	total	VBG	t66:OBJ	O
-$	t66	2	$	O	O	O	O	O	O	O	O	UNC	B-NP	$	$	t67:COORD	O
+$	t66	2	$	O	O	O	O	O	O	O	O	UNC	B-NP	$	$	t67:COORD||t72:DEP||t73:NMOD	O
 23.5	t67	2	23.5	O	O	O	O	O	O	O	O	CRD	I-NP	23.5	CD	t68:COORD	O
 million	t68	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t69:COORD	O
 and	t69	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t70:CONJ	O
-$	t70	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t71:DEP||t72:DEP||t73:NMOD	O
+$	t70	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t71:DEP	O
 8.2	t71	2	8.2	O	O	O	O	O	O	O	O	CRD	I-NP	8.2	CD	O	O
 million	t72	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 in	t73	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t75:PMOD	O
 asset-valuation	t74	2	asset-valuation	O	O	O	O	O	O	O	O	NN1	B-NP	asset-valuation	NN	O	O
 adjustments	t75	2	adjustment	O	O	O	O	O	O	O	O	NN2	I-NP	adjustment	NNS	t74:NMOD||t78:NMOD	O
-that	t76	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	O	O
+that	t76	2	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	WDT	O	O
 he	t77	2	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 described	t78	2	describe	O	O	O	O	O	O	O	O	VVD	B-VP	describe	VBD	t76:OBJ||t77:SBJ||t79:ADV	O
-as	t79	2	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t81:PMOD	O
-"	t80	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	``	O	O
-unusual	t81	2	unusual	O	O	O	O	O	O	O	O	AJ0	B-ADJP	unusual	JJ	t80:P	O
+as	t79	2	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t80:PMOD	O
+"	t80	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t81:NMOD||t83:NMOD	O
+unusual	t81	2	unusual	O	O	O	O	O	O	O	O	AJ0	B-ADJP	unusual	JJ	O	O
 .	t82	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t83	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t83	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 The	t84	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 charges	t85	3	charge	O	O	O	O	O	O	O	O	NN2	I-NP	charge	NNS	t84:NMOD	O
@@ -129,11 +129,11 @@ earlier	t123	4	earlier	O	O	O	tmx38	DATE	1988-Q3	O	O	AV0	B-ADVP	earlier	RBR	t122:
 .	t124	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Savin	t125	5	Savin	O	O	O	O	O	O	O	O	NP0	B-NP	savin	NNP	O	O
-cited	t126	5	cite	e25	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	cite	VBD	t125:SBJ||t127:OBJ	mainVb
-"	t127	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	t130:PMOD	O
+cited	t126	5	cite	e25	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	cite	VBD	t125:SBJ||t130:OBJ||t145:P	mainVb
+"	t127	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	PDT	O	O
 a	t128	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 general	t129	5	general	O	O	O	O	O	O	O	O	AJ0	I-NP	general	JJ	O	O
-softening	t130	5	softening	e137	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	softening	NN	t128:NMOD||t129:NMOD||t131:LOC	O
+softening	t130	5	softening	e137	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	softening	NN	t127:NMOD||t128:NMOD||t129:NMOD||t131:LOC	O
 in	t131	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t133:PMOD	O
 the	t132	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 demand	t133	5	demand	O	O	O	O	O	O	O	O	NN1	I-NP	demand	NN	t132:NMOD||t134:NMOD||t137:LOC	O
@@ -147,7 +147,7 @@ segments	t140	5	segment	O	O	O	O	O	O	O	O	NN2	I-NP	segment	NNS	t138:NMOD||t139:NMO
 in	t141	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t142:PMOD	O
 which	t142	5	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 Savin	t143	5	Savin	O	O	O	O	O	O	O	O	NP0	I-NP	savin	NNP	O	O
-competes	t144	5	compete	O	O	O	O	O	O	O	O	VVZ	B-VP	compete	VBZ	t141:LOC||t143:SBJ||t145:P||t146:GAP-SBJ	O
+competes	t144	5	compete	O	O	O	O	O	O	O	O	VVZ	B-VP	compete	VBZ	t141:LOC||t143:SBJ||t146:OBJ	O
 .	t145	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 "	t146	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 

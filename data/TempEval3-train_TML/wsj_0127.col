@@ -1,9 +1,9 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
-Reed	t1	1	Reed	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	reed	VBP	t4:OBJ||t49:P	mainVb
+Reed	t1	1	Reed	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	reed	NNP	O	O
 International	t2	1	International	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	international	NNP	O	O
-PLC	t3	1	PLC	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	plc	NNP	t2:NAME	O
-said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t3:SBJ||t5:OBJ	O
+PLC	t3	1	PLC	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	plc	NNP	t1:NAME||t2:NAME	O
+said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t3:SBJ||t5:OBJ||t49:P	mainVb
 that	t5	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t15:SUB	O
 net	t6	1	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
 income	t7	1	income	e2014	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	income	NN	t6:NMOD||t8:NMOD	O
@@ -14,10 +14,10 @@ months	t11	1	month	O	O	O	tmx31	DURATION	P6M	O	O	NN2	I-NP	month	NNS	t9:NMOD||t10:
 ended	t12	1	end	e2	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	end	VBN	t14:TMP	O
 Oct.	t13	1	Oct.	O	O	O	tmx25	DATE	1989-10-01	O	O	NP0	B-NP	oct.	NNP	O	O
 1	t14	1	1	O	O	O	tmx25	DATE	1989-10-01	O	O	CRD	I-NP	1	CD	t13:NMOD	O
-slipped	t15	1	slip	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	slip	VBD	t7:SBJ||t17:EXT||t18:DIR||t34:DIR	O
+slipped	t15	1	slip	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	slip	VBD	t7:SBJ||t17:EXT||t18:DIR||t26:PRN||t34:DIR	O
 5	t16	1	5	O	O	O	O	O	O	O	O	CRD	B-NP	5	CD	O	O
 %	t17	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t16:NMOD	O
-to	t18	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t19:PMOD||t26:TMP	O
+to	t18	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t19:PMOD	O
 #	t19	1	#	O	O	O	O	O	O	O	O	UNC	B-NP	#	#	t20:DEP||t21:DEP	O
 89.7	t20	1	89.7	O	O	O	O	O	O	O	O	CRD	I-NP	89.7	CD	O	O
 million	t21	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -81,7 +81,7 @@ While	t76	3	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t78:SUB	O
 there	t77	3	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
 were	t78	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t77:SBJ||t81:PRD||t84:TMP	O
 no	t79	3	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
-one-time	t80	3	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	NN	O	O
+one-time	t80	3	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	JJ	O	O
 gains	t81	3	gain	e2000	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	NN2	I-NP	gain	NNS	t79:NMOD||t80:NMOD||t82:COORD	O
 or	t82	3	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	t83:CONJ	O
 losses	t83	3	loss	e2001	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	NN2	I-NP	losses	NNS	O	O
@@ -91,7 +91,7 @@ latest	t86	3	latest	O	O	O	tmx26	DATE	1989-Q3	O	O	AJS	I-NP	latest	JJS	O	O
 period	t87	3	period	O	O	O	tmx26	DATE	1989-Q3	O	O	NN1	I-NP	period	NN	t85:NMOD||t86:NMOD	O
 ,	t88	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 there	t89	3	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-was	t90	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t76:ADV||t88:P||t89:SBJ||t93:PRD||t98:TMP||t102:P	mainVb
+was	t90	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t76:TMP||t88:P||t89:SBJ||t93:PRD||t98:TMP||t102:P	mainVb
 a	t91	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 one-time	t92	3	one-time	O	O	O	O	O	O	O	O	AJ0	I-NP	one-time	JJ	O	O
 gain	t93	3	gain	e2003	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	gain	NN	t91:NMOD||t92:NMOD||t94:NMOD	O
@@ -143,7 +143,7 @@ from	t135	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t136:PMOD	O
 133	t137	5	133	O	O	O	O	O	O	O	O	CRD	I-NP	133	CD	O	O
 million	t138	5	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 and	t139	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t140:CONJ	O
-was	t140	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t141:PRD	O
+was	t140	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t141:LOC-PRD	O
 below	t141	5	below	O	O	O	O	O	O	O	O	PRP	B-PP	below	IN	t144:PMOD	O
 analysts	t142	5	analyst	O	O	O	O	O	O	O	O	NN2	B-NP	analyst	NNS	t143:SUFFIX	O
 '	t143	5	'	O	O	O	O	O	O	O	O	POS	B-NP	'	POS	O	O
@@ -208,9 +208,9 @@ Earnings	t198	8	earnings	O	O	O	O	O	O	O	O	NN2	B-NP	earnings	NNS	O	O
 were	t199	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t198:SBJ||t200:VC	O
 hurt	t200	8	hurt	e20	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	hurt	VBN	t201:LGS	O
 by	t201	8	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t202:PMOD	O
-disposal	t202	8	disposal	e2136	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	disposal	NN	t203:NMOD	O
+disposal	t202	8	disposal	e2136	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	B-NP	disposal	NN	t203:NMOD||t205:LOC	O
 of	t203	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t204:PMOD	O
-operations	t204	8	operation	O	O	O	O	O	O	O	O	NN2	B-NP	operations	NNS	t205:LOC	O
+operations	t204	8	operation	O	O	O	O	O	O	O	O	NN2	B-NP	operations	NNS	O	O
 in	t205	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t207:PMOD	O
 its	t206	8	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 restructuring	t207	8	restructuring	e2140	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	NN1	I-NP	restructuring	NN	t206:NMOD	O

@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Price	t1	1	Price	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	price	NNP	O	O
 Stern	t2	1	Stern	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	stern	NNP	O	O
@@ -93,7 +93,7 @@ British	t88	3	british	O	O	O	O	O	O	O	O	AJ0	I-NP	british	JJ	O	O
 subsidiary	t89	3	subsidiary	O	O	O	O	O	O	O	O	NN1	I-NP	subsidiary	NN	t85:NMOD||t87:NMOD||t88:NMOD	O
 ,	t90	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t91	3	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t92:CONJ	O
-$	t92	3	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t93:DEP||t94:DEP||t95:NMOD	O
+$	t92	3	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t93:DEP||t94:DEP||t95:NMOD||t103:COORD||t105:APPO	O
 3.7	t93	3	3.7	O	O	O	O	O	O	O	O	CRD	I-NP	3.7	CD	O	O
 million	t94	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 of	t95	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t97:PMOD	O
@@ -103,8 +103,8 @@ the	t98	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t99	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t98:NMOD	O
 said	t100	3	say	e17	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t99:SBJ||t101:OBJ	O
 were	t101	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t102:VC	O
-non-recurring	t102	3	non-recurring	O	O	O	O	O	O	O	O	VVG	I-VP	non-recurring	VBG	t103:COORD	O
-and	t103	3	and	O	O	O	O	O	O	O	O	CJC	I-VP	and	CC	t105:CONJ	O
+non-recurring	t102	3	non-recurring	O	O	O	O	O	O	O	O	VVG	I-VP	non-recur	VBG	O	O
+and	t103	3	and	O	O	O	O	O	O	O	O	CJC	I-VP	and	CC	O	O
 principally	t104	3	principally	O	O	O	O	O	O	O	O	AV0	I-VP	principally	RB	O	O
 related	t105	3	related	O	O	O	O	O	O	O	O	VVN	I-VP	relate	VBN	t104:AMOD||t106:AMOD	O
 to	t106	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t107:PMOD	O
@@ -132,7 +132,7 @@ Donaldson	t126	4	Donaldson	O	O	O	O	O	O	O	O	NP0	B-NP	donaldson	NNP	O	O
 ,	t127	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Lufkin	t128	4	Lufkin	O	O	O	O	O	O	O	O	NP0	B-NP	lufkin	NNP	O	O
 amp	t129	4	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
-Jenrette	t130	4	Jenrette	O	O	O	O	O	O	O	O	NP0	I-NP	jenrette	NNP	t126:NAME||t127:P||t128:NAME||t129:NAME	O
+Jenrette	t130	4	Jenrette	O	O	O	O	O	O	O	O	NP0	I-NP	jenrette	NNP	t126:NAME||t127:NAME||t128:NAME||t129:NAME	O
 Securities	t131	4	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNP	t130:NAME||t132:POSTHON	O
 Inc.	t132	4	Inc.	O	O	O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 to	t133	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t134:IM	O
@@ -223,12 +223,12 @@ year	t214	6	year	O	O	O	tmx53	DATE	1988	O	O	NN1	I-NP	year	NN	t213:NMOD	O
 
 The	t216	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t217	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t216:NMOD	O
-attributed	t218	7	attribute	e31	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	attribute	VBD	t217:SBJ||t220:OBJ||t223:ADV||t266:P	mainVb
+attributed	t218	7	attribute	e31	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	attribute	VBD	t217:SBJ||t220:OBJ||t221:ADV||t223:ADV||t266:P	mainVb
 the	t219	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 decrease	t220	7	decrease	e32	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	decrease	NN	t219:NMOD	O
 in	t221	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t222:PMOD	O
 part	t222	7	part	O	O	O	O	O	O	O	O	NN1	B-NP	part	NN	O	O
-to	t223	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t221:PMOD||t225:PMOD||t251:COORD	O
+to	t223	7	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t225:PMOD||t251:COORD	O
 the	t224	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 exclusion	t225	7	exclusion	O	O	O	O	O	O	O	O	NN1	I-NP	exclusion	NN	t224:NMOD||t226:NMOD||t232:NMOD||t238:NMOD	O
 of	t226	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t231:PMOD	O
@@ -261,9 +261,9 @@ and	t251	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t252:P||t256:CONJ	O
 in	t253	7	in	O	O	O	O	O	O	O	O	AV0	B-ADVP	in	IN	t254:PMOD	O
 part	t254	7	part	O	O	O	O	O	O	O	O	AV0	I-ADVP	part	NN	O	O
 ,	t255	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-to	t256	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t253:ADV||t255:P||t257:IM	O
-lower	t257	7	lower	O	O	O	O	O	O	O	O	VVI	I-VP	lower	VB	t258:OBJ	O
-sales	t258	7	sale	O	O	O	O	O	O	O	O	NN0	B-NP	sales	NNS	t259:LOC	O
+to	t256	7	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t253:PMOD||t255:P||t258:PMOD	O
+lower	t257	7	lower	O	O	O	O	O	O	O	O	VVI	I-VP	lower	NN	O	O
+sales	t258	7	sale	O	O	O	O	O	O	O	O	NN0	B-NP	sales	NNS	t257:NMOD||t259:LOC	O
 in	t259	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t265:PMOD	O
 certain	t260	7	certain	O	O	O	O	O	O	O	O	AJ0	B-NP	certain	JJ	O	O
 key	t261	7	key	O	O	O	O	O	O	O	O	AJ0	I-NP	key	NN	O	O

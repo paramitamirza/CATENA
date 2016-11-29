@@ -1,8 +1,8 @@
-DCT_1998-02-05	O	O	O	O	O	O	tmx0	DATE	1998-02-05	O	O	NP0	B-NP	dct_1998-02-05	SYM	O	O
+DCT_1998-02-05	O	O	O	O	O	O	tmx0	DATE	1998-02-05	O	O	NP0	B-NP	dct_1998-02-05	LS	O	O
 
-Thousands	t1	1	thousand	O	O	O+O+O	O	O	O	O	O	CRD	B-NP	thousand	NNS	t2:NMOD||t4:LOC	O
+Thousands	t1	1	thousand	O	O	O+O+O	O	O	O	O	O	CRD	B-NP	thousand	NNS	t2:NMOD	O
 of	t2	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t3:PMOD	O
-people	t3	1	people	O	O	O+O+O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
+people	t3	1	people	O	O	O+O+O	O	O	O	O	O	NN0	B-NP	people	NN	t4:LOC	O
 in	t4	1	in	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	in	IN	t5:PMOD	O
 Germany	t5	1	Germany	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	germany	NNP	O	O
 have	t6	1	have	O	O	O+O+O	O	O	O	O	O	VHB	B-VP	have	VBP	t1:SBJ||t7:VC||t19:P	mainVb
@@ -12,9 +12,9 @@ today	t9	1	today	O	O	O	tmx38	DATE	1998-02-05	O	O	AV0	B-NP	today	NN	O	O
 against	t10	1	against	O	O	O	O	O	O	O	O	PRP	B-PP	against	IN	t13:PMOD	O
 the	t11	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 high	t12	1	high	O	O	O	O	O	O	O	O	AJ0	I-NP	high	JJ	O	O
-level	t13	1	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t11:NMOD||t12:NMOD||t14:NMOD||t16:LOC	O
+level	t13	1	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t11:NMOD||t12:NMOD||t14:NMOD	O
 of	t14	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t15:PMOD	O
-unemployment	t15	1	unemployment	O	O	O	O	O	O	O	O	NN1	B-NP	unemployment	NN	O	O
+unemployment	t15	1	unemployment	O	O	O	O	O	O	O	O	NN1	B-NP	unemployment	NN	t16:LOC	O
 in	t16	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t18:PMOD	O
 the	t17	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 country	t18	1	country	O	O	O	O	O	O	O	O	NN1	I-NP	country	NN	t17:NMOD	O
@@ -25,13 +25,13 @@ figures	t21	2	figure	O	O	O	O	O	O	O	O	NN2	I-NP	figure	NNS	t20:NMOD	O
 show	t22	2	show	O	O	O	O	O	O	O	O	VVB	B-VP	show	VBP	t21:SBJ||t25:OBJ||t35:P	mainVb
 a	t23	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 sharp	t24	2	sharp	O	O	O	O	O	O	O	O	AJ0	I-NP	sharp	JJ	O	O
-rise	t25	2	rise	e4	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	rise	NN	t23:NMOD||t24:NMOD||t26:P||t27:NMOD||t32:NMOD	O
+rise	t25	2	rise	e4	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	rise	NN	t23:NMOD||t24:NMOD||t26:P||t27:NMOD	O
 ,	t26	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-with	t27	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t28:PMOD	O
-nearly	t28	2	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	RB	t29:DEP||t30:DEP||t31:AMOD	O
+with	t27	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t31:PMOD	O
+nearly	t28	2	nearly	O	O	O	O	O	O	O	O	AV0	B-NP	nearly	RB	t29:DEP||t30:DEP	O
 five	t29	2	five	O	O	O	O	O	O	O	O	CRD	I-NP	five	CD	O	O
 million	t30	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
-Germans	t31	2	Germans	O	O	O	O	O	O	O	O	NN2	I-NP	germans	JJ	O	O
+Germans	t31	2	Germans	O	O	O	O	O	O	O	O	NN2	I-NP	germans	JJ	t28:NMOD||t32:NMOD	O
 out	t32	2	out	O	O	O	O	O	O	O	O	PRP	B-PP	out	IN	t33:PMOD	O
 of	t33	2	of	O	O	O	O	O	O	O	O	PRP	I-PP	of	IN	t34:PMOD	O
 work	t34	2	work	O	O	O	O	O	O	O	O	NN1	B-NP	work	NN	O	O
@@ -46,10 +46,10 @@ Chanting	t40	4	chant	e6	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	chant	VB
 Helmut	t41	4	Helmut	O	O	O	O	O	O	O	O	NP0	B-NP	helmut	NNP	O	O
 Kohl	t42	4	Kohl	O	O	O	O	O	O	O	O	NP0	I-NP	kohl	NNP	t41:NAME	O
 must	t43	4	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t40:SBJ||t44:VC||t63:P	mainVb
-go	t44	4	go	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	go	VB	t47:OBJ	mainVb
+go	t44	4	go	e7	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	go	VB	t46:OBJ	mainVb
 the	t45	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-unemployed	t46	4	unemployed	O	O	O	O	O	O	O	O	AJ0	I-NP	unemployed	JJ	t45:NMOD	O
-took	t47	4	take	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	take	VBD	t46:SBJ||t48:ADV||t57:P||t58:ADV	O
+unemployed	t46	4	unemployed	O	O	O	O	O	O	O	O	AJ0	I-NP	unemployed	JJ	t45:NMOD||t47:COORD	O
+took	t47	4	take	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	take	VBD	t48:ADV||t57:P||t58:ADV	O
 to	t48	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t50:PMOD	O
 the	t49	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 streets	t50	4	street	O	O	O	O	O	O	O	O	NN2	I-NP	street	NNS	t49:NMOD||t51:NMOD	O
@@ -60,14 +60,14 @@ capital	t54	4	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t52:NMOD||t53:NMOD||t5
 ,	t55	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Berlin	t56	4	Berlin	O	O	O	O	O	O	O	O	NP0	B-NP	berlin	NNP	O	O
 ,	t57	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-mirroring	t58	4	mirroring	O	O	O	O	O	O	O	O	VVG	B-VP	mirroring	VBG	t59:OBJ	O
+mirroring	t58	4	mirroring	O	O	O	O	O	O	O	O	VVG	B-VP	mirrore	VBG	t59:OBJ	O
 protests	t59	4	protest	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	protest	NNS	t60:LOC	O
 around	t60	4	around	O	O	O	O	O	O	O	O	PRP	B-PP	around	IN	t62:PMOD	O
 the	t61	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 country	t62	4	country	O	O	O	O	O	O	O	O	NN1	I-NP	country	NN	t61:NMOD	O
 .	t63	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Joblessness	t64	5	joblessness	O	O	O	O	O	O	O	O	NN1	B-NP	joblessness	NNP	O	O
+Joblessness	t64	5	joblessness	O	O	O	O	O	O	O	O	NN1	B-NP	joblessness	NN	O	O
 is	t65	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t64:SBJ||t66:TMP||t67:LOC-PRD||t78:P	mainVb
 now	t66	5	now	O	O	O	tmx42	DATE	PRESENT_REF	O	O	AV0	B-ADVP	now	RB	O	O
 at	t67	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t70:PMOD	O
@@ -138,7 +138,7 @@ of	t128	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t133:PMOD	O
 Europe	t129	8	Europe	O	O	O	O	O	O	O	O	NP0	B-NP	europe	NNP	t130:SUFFIX	O
 's	t130	8	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 longest	t131	8	longest	O	O	O	O	O	O	O	O	AJS	I-NP	long	JJS	O	O
-serving	t132	8	serve	O	O	O	O	O	O	O	O	VVG	I-NP	serve	VBG	O	O
+serving	t132	8	serve	O	O	O	O	O	O	O	O	VVG	I-NP	serve	NN	O	O
 leader	t133	8	leader	O	O	O	O	O	O	O	O	NN1	I-NP	leader	NN	t129:NMOD||t131:NMOD||t132:NMOD	O
 .	t134	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

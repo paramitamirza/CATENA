@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NN1	B-NP	dct_1989-11-01	LS	O	O
 
 I	t1	1	I	O	O	O+O+O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 was	t2	1	be	O	O	O+O+O	O	O	O	O	O	VBD	B-VP	be	VBD	t1:SBJ||t3:PRD||t27:P	mainVb
@@ -66,7 +66,7 @@ century	t60	2	century	O	O	O	tmx40	DATE	19XX	O	O	NN1	I-NP	century	NN	t58:NMOD||t5
 But	t62	3	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 the	t63	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Reserve	t64	3	Reserve	O	O	O	O	O	O	O	O	NN1	I-NP	reserve	NNP	O	O
-Fund	t65	3	Fund	O	O	O	O	O	O	O	O	NN1	I-NP	fund	NNP	t63:NMOD||t64:NAME||t66:P||t71:APPO||t72:P	O
+Fund	t65	3	Fund	O	O	O	O	O	O	O	O	NN1	I-NP	fund	NN	t63:NMOD||t64:NMOD||t66:P||t71:APPO||t72:P	O
 ,	t66	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 America	t67	3	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	t68:SUFFIX	O
 's	t68	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
@@ -109,17 +109,17 @@ certificates	t103	4	certificate	O	O	O	O	O	O	O	O	NN2	I-NP	certificate	NNS	t102:NM
 and	t104	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t110:CONJ	O
 the	t105	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 constant	t106	4	constant	O	O	O	O	O	O	O	O	NN1	I-NP	constant	JJ	O	O
-$	t107	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t108:NMOD	O
+$	t107	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t108:NMOD||t109:AMOD	O
 1	t108	4	1	O	O	O	O	O	O	O	O	CRD	I-NP	1	CD	O	O
-pershare	t109	4	pershare	O	O	O	O	O	O	O	O	NN1	I-NP	pershare	JJ	O	O
-pricing	t110	4	pricing	O	O	O	O	O	O	O	O	VVG	B-VP	pricing	NN	t105:NMOD||t106:NMOD||t107:NMOD||t109:NMOD	O
+pershare	t109	4	pershare	O	O	O	O	O	O	O	O	NN1	I-NP	pershare	NN	O	O
+pricing	t110	4	pricing	O	O	O	O	O	O	O	O	VVG	B-VP	pricing	NN	t105:NMOD||t106:NMOD||t107:NMOD	O
 ,	t111	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 all	t112	4	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	t113:NMOD	O
 of	t113	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t114:PMOD	O
 which	t114	4	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 were	t115	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t112:SBJ||t117:VC	O
 painfully	t116	4	painfully	O	O	O	O	O	O	O	O	AV0	I-VP	painfully	RB	O	O
-thought	t117	4	think	e15	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	think	VBN	t116:MNR||t118:MNR	O
+thought	t117	4	think	e15	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	think	VBN	t116:MNR||t118:PRT	O
 out	t118	4	out	O	O	O	O	O	O	O	O	AVP	B-PRT	out	RB	t119:COORD	O
 and	t119	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t120:CONJ	O
 not	t120	4	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	t122:COORD	O
@@ -136,13 +136,13 @@ the	t130	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 SEC	t131	4	SEC	O	O	O	O	O	O	O	O	NP0	I-NP	sec	NNP	t130:NMOD	O
 .	t132	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-BRUCE	t133	5	BRUCE	O	O	O	O	O	O	O	O	NP0	B-NP	bruce	NN	O	O
-R.	t134	5	R.	O	O	O	O	O	O	O	O	NP0	I-NP	r.	NN	t133:NMOD	O
-BENT	t135	5	BENT	O	O	O	O	O	O	O	O	NP0	I-NP	bent	VBD	t134:SBJ||t141:OBJ	mainVb
+BRUCE	t133	5	BRUCE	O	O	O	O	O	O	O	O	NP0	B-NP	bruce	NNP	O	O
+R.	t134	5	R.	O	O	O	O	O	O	O	O	NP0	I-NP	r.	NNP	O	O
+BENT	t135	5	BENT	O	O	O	O	O	O	O	O	NP0	I-NP	bent	NNP	t133:NAME||t134:NAME	O
 President	t136	5	President	O	O	O	O	O	O	O	O	NN1	I-NP	president	NN	O	O
 The	t137	5	The	O	O	O	O	O	O	O	O	AT0	B-NP	the	NNP	O	O
 Reserve	t138	5	Reserve	O	O	O	O	O	O	O	O	NN1	I-NP	reserve	NNP	t137:NAME	O
-Fund	t139	5	Fund	O	O	O	O	O	O	O	O	NN1	I-NP	fund	NNP	t138:NAME	O
+Fund	t139	5	Fund	O	O	O	O	O	O	O	O	NN1	I-NP	fund	NNP	t136:NAME||t138:NAME	O
 New	t140	5	New	O	O	O	O	O	O	O	O	NP0	I-NP	new	NNP	O	O
-York	t141	5	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t136:TITLE||t139:NMOD||t140:NAME	O
+York	t141	5	York	O	O	O	O	O	O	O	O	NP0	I-NP	york	NNP	t135:NMOD||t139:NMOD||t140:NAME	mainVb
 

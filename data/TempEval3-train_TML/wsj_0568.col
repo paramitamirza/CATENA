@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Unisys	t1	1	Unisys	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	unisys	NNP	t2:POSTHON||t3:SUFFIX	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -112,28 +112,28 @@ the	t106	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t107	4	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t106:NMOD	O
 .	t108	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t109	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t109	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t112:COORD||t122:P	mainVb
 The	t110	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 quarter	t111	5	quarter	O	O	O	O	O	O	O	O	NN1	I-NP	quarter	NN	t110:NMOD	O
-was	t112	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t109:SBJ||t111:SBJ||t113:PRD||t114:P||t115:COORD||t122:P||t123:P	mainVb
+was	t112	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t111:SBJ||t113:PRD||t114:P||t115:COORD	O
 terrible	t113	5	terrible	O	O	O	O	O	O	O	O	AJ0	B-ADJP	terrible	JJ	O	O
 ,	t114	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t115	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t118:CONJ	O
 the	t116	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-future	t117	5	future	O	O	O	O	O	O	O	O	NN1	I-NP	future	JJ	O	O
-looks	t118	5	look	O	O	O	O	O	O	O	O	VVZ	B-VP	look	NNS	t116:NMOD||t117:NMOD||t119:PRD	O
+future	t117	5	future	O	O	O	O	O	O	O	O	NN1	I-NP	future	NN	t116:NMOD	O
+looks	t118	5	look	O	O	O	O	O	O	O	O	VVZ	B-VP	look	VBZ	t117:SBJ||t119:PRD	O
 anything	t119	5	anything	O	O	O	O	O	O	O	O	PNI	B-NP	anything	NN	t120:COORD	O
 but	t120	5	but	O	O	O	O	O	O	O	O	PRP	B-PP	but	CC	t121:CONJ	O
-encouraging	t121	5	encourage	O	O	O	O	O	O	O	O	AJ0	B-NP	encourage	VBG	O	O
+encouraging	t121	5	encourage	O	O	O	O	O	O	O	O	AJ0	B-NP	encourage	VBG	t123:OBJ	O
 .	t122	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t123	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t123	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Unisys	t124	6	Unisys	O	O	O	O	O	O	O	O	NP0	B-NP	unisys	NNP	t125:P||t128:NMOD||t147:P	O
 ,	t125	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 whose	t126	6	whose	O	O	O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
 revenue	t127	6	revenue	O	O	O	O	O	O	O	O	NN1	I-NP	revenue	NN	t126:NMOD	O
-inched	t128	6	inch	e22	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	inch	VBD	t127:SBJ||t129:DIR||t131:EXT||t132:TMP||t135:DIR||t139:DIR	O
-up	t129	6	up	O	O	O	O	O	O	O	O	PRP	B-ADVP	up	RB	O	O
+inched	t128	6	inch	e22	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	inch	VBD	t127:SBJ||t129:DIR||t132:TMP||t135:DIR||t139:DIR	O
+up	t129	6	up	O	O	O	O	O	O	O	O	PRP	B-ADVP	up	RB	t131:AMOD	O
 3.7	t130	6	3.7	O	O	O	O	O	O	O	O	CRD	B-NP	3.7	CD	O	O
 %	t131	6	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t130:NMOD	O
 in	t132	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t134:PMOD	O
@@ -210,10 +210,10 @@ said	t200	8	say	e28	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t199:SBJ|
 a	t201	8	a	O	O	O	tmx228	DATE	1989-09	O	O	AT0	B-NP	a	DT	O	O
 month	t202	8	month	O	O	O	tmx228	DATE	1989-09	O	O	NN1	I-NP	month	NN	t201:NMOD	O
 ago	t203	8	ago	O	O	O	tmx228	DATE	1989-09	O	O	AV0	B-ADVP	ago	RB	t202:AMOD	O
-would	t204	8	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t198:SBJ||t205:VC	O
+would	t204	8	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t205:VC	O
 be	t205	8	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t206:VC	O
 laid	t206	8	lay	e29	STATE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	lay	VBN	t207:PRT	O
-off	t207	8	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	IN	O	O
+off	t207	8	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	IN	t198:PMOD	O
 .	t208	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Unisys	t209	9	Unisys	O	O	O	O	O	O	O	O	NP0	B-NP	unisys	NNP	O	O
@@ -238,9 +238,9 @@ high	t227	9	high	O	O	O	O	O	O	O	O	AJ0	I-NP	high	JJ	O	O
 end	t228	9	end	O	O	O	O	O	O	O	O	NN1	I-NP	end	NN	t226:NMOD||t227:NMOD||t229:NMOD	O
 of	t229	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t233:PMOD	O
 the	t230	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-previously	t231	9	previously	O	O	O	O	O	O	O	O	AV0	I-NP	previously	RB	O	O
-reported	t232	9	report	O	O	O	O	O	O	O	O	AJ0	I-NP	report	VBN	t231:AMOD	O
-range	t233	9	range	O	O	O	O	O	O	O	O	NN1	I-NP	range	NN	t230:NMOD||t232:NMOD||t234:NMOD	O
+previously	t231	9	previously	O	O	O	O	O	O	O	O	AV0	I-NP	previously	RB	t232:AMOD	O
+reported	t232	9	report	O	O	O	O	O	O	O	O	AJ0	I-NP	report	VBN	O	O
+range	t233	9	range	O	O	O	O	O	O	O	O	NN1	I-NP	range	NN	t230:NMOD||t231:NMOD||t234:NMOD	O
 of	t234	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t235:PMOD	O
 $	t235	9	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t236:DEP||t237:DEP||t238:DEP||t239:DEP||t240:DEP||t241:DEP	O
 400	t236	9	400	O	O	O	O	O	O	O	O	CRD	I-NP	400	CD	O	O
@@ -283,7 +283,7 @@ the	t271	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 prospects	t272	10	prospects	O	O	O	O	O	O	O	O	NN2	I-NP	prospect	NNS	t271:NMOD||t273:NMOD	O
 for	t273	10	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t276:PMOD	O
 that	t274	10	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
-slow-growing	t275	10	slow-growing	O	O	O	O	O	O	O	O	AJ0	I-NP	slow-grow	VBG	O	O
+slow-growing	t275	10	slow-growing	O	O	O	O	O	O	O	O	AJ0	I-NP	slow-grow	NN	O	O
 business	t276	10	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t274:NMOD||t275:NMOD	O
 .	t277	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -396,7 +396,7 @@ computer	t380	14	computer	O	O	O	O	O	O	O	O	NN1	B-NP	computer	NN	O	O
 inventories	t381	14	inventory	O	O	O	O	O	O	O	O	VVZ	B-VP	inventory	NNS	t380:NMOD	O
 a	t382	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 further	t383	14	further	O	O	O	O	O	O	O	O	AJC	I-NP	further	JJ	O	O
-$	t384	14	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t382:NMOD||t383:DEP||t385:DEP||t386:DEP	O
+$	t384	14	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t382:NMOD||t383:NMOD||t385:DEP||t386:DEP	O
 100	t385	14	100	O	O	O	O	O	O	O	O	CRD	I-NP	100	CD	O	O
 million	t386	14	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 during	t387	14	during	O	O	O	O	O	O	O	O	PRP	B-PP	during	IN	t389:PMOD	O
@@ -565,9 +565,9 @@ $	t543	19	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t542:DEP||t544:DEP||t545:DEP||t546:P||t
 billion	t545	19	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 ,	t546	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t547	19	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t550:CONJ	O
-about	t548	19	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t549:DEP	O
-50	t549	19	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
-%	t550	19	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t548:NMOD||t551:NMOD	O
+about	t548	19	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
+50	t549	19	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	t548:DEP	O
+%	t550	19	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t549:NMOD||t551:NMOD	O
 of	t551	19	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t553:PMOD	O
 total	t552	19	total	O	O	O	O	O	O	O	O	AJ0	B-NP	total	JJ	O	O
 capitalization	t553	19	capitalization	O	O	O	O	O	O	O	O	NN1	I-NP	capitalization	NN	t552:NMOD	O
@@ -647,8 +647,8 @@ that	t622	23	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t634:SUB	O
 the	t623	23	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 price	t624	23	price	O	O	O	O	O	O	O	O	NN1	I-NP	price	NN	O	O
 wars	t625	23	war	O	O	O	O	O	O	O	O	NN2	I-NP	war	NNS	t623:NMOD||t624:NMOD||t626:APPO	O
-flaring	t626	23	flare	e126	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	flare	VBG	t627:ADV||t628:LOC	O
-up	t627	23	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RB	O	O
+flaring	t626	23	flare	e126	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	flare	VBG	t627:PRT||t628:LOC	O
+up	t627	23	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
 in	t628	23	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t629:PMOD	O
 parts	t629	23	part	O	O	O	O	O	O	O	O	NN2	B-NP	parts	NNS	t630:NMOD	O
 of	t630	23	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t633:PMOD	O
@@ -726,9 +726,9 @@ used	t699	25	use	e145	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	use	V
 to	t700	25	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
 .	t701	25	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t702	26	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+"	t702	26	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t703	26	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-'ve	t704	26	have	O	O	O	O	O	O	O	O	VHB	B-VP	've	VBP	t703:SBJ||t705:VC	O
+'ve	t704	26	have	O	O	O	O	O	O	O	O	VHB	B-VP	've	VBP	t702:P||t703:SBJ||t705:VC	O
 approached	t705	26	approach	e146	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	approach	VBN	t706:OBJ||t707:ADV	O
 this	t706	26	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 not	t707	26	not	O	O	O	O	O	O	O	O	XX0	I-NP	not	RB	t708:COORD	O
@@ -746,30 +746,30 @@ but	t718	26	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t719:CONJ	O
 as	t719	26	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t722:PMOD	O
 a	t720	26	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 fundamental	t721	26	fundamental	O	O	O	O	O	O	O	O	AJ0	I-NP	fundamental	JJ	O	O
-change	t722	26	change	O	O	O	O	O	O	O	O	NN1	I-NP	change	NN	t720:NMOD||t721:NMOD	O
+change	t722	26	change	O	O	O	O	O	O	O	O	NN1	I-NP	change	NN	t720:NMOD||t721:NMOD||t725:NMOD	O
 the	t723	26	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 industry	t724	26	industry	O	O	O	O	O	O	O	O	NN1	I-NP	industry	NN	t723:NMOD	O
-is	t725	26	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t702:DEP||t704:OBJ||t724:SBJ||t726:VC	O
+is	t725	26	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t724:SBJ||t726:VC	O
 going	t726	26	go	O	O	O	O	O	O	O	O	VVG	I-VP	go	VBG	t727:ADV	O
 through	t727	26	through	O	O	O	O	O	O	O	O	AVP	B-ADVP	through	IN	O	O
 ,	t728	26	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t729	26	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Mr.	t730	26	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Unruh	t731	26	Unruh	O	O	O	O	O	O	O	O	NP0	I-NP	unruh	NNP	t729:NAME||t730:TITLE	O
-said	t732	26	say	e152	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t725:OBJ||t728:P||t731:SBJ||t733:P	mainVb
+said	t732	26	say	e152	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t704:OBJ||t728:P||t731:SBJ||t733:P	mainVb
 .	t733	26	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t734	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBG	t737:OBJ	O
+"	t734	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t735	27	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 information-systems	t736	27	information-system	O	O	O	O	O	O	O	O	NN2	I-NP	information-system	NNS	O	O
 industry	t737	27	industry	O	O	O	O	O	O	O	O	NN1	I-NP	industry	NN	t735:NMOD||t736:NMOD	O
-is	t738	27	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t734:SBJ||t739:TMP||t740:VC||t746:P||t747:COORD||t759:P	mainVb
+is	t738	27	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t734:P||t737:SBJ||t739:TMP||t740:VC||t746:P||t747:COORD||t759:P	mainVb
 still	t739	27	still	O	O	O	O	O	O	O	O	AV0	I-VP	still	RB	O	mainVb
 going	t740	27	go	O	O	O	O	O	O	O	O	VVG	I-VP	go	VBG	t741:VC	mainVb
 to	t741	27	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t742:IM	mainVb
 be	t742	27	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t745:PRD	mainVb
 a	t743	27	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-high-growth	t744	27	high-growth	O	O	O	O	O	O	O	O	NN1	I-NP	high-growth	JJ	O	O
+high-growth	t744	27	high-growth	O	O	O	O	O	O	O	O	NN1	I-NP	high-growth	NN	O	O
 business	t745	27	business	e1997	STATE	FUTURE+NONE+POS	O	O	O	O	O	NN1	I-NP	business	NN	t743:NMOD||t744:NMOD	O
 ,	t746	27	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t747	27	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t749:CONJ	O
@@ -777,8 +777,8 @@ we	t748	27	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 're	t749	27	be	O	O	O	O	O	O	O	O	VBB	B-VP	're	VBP	t748:SBJ||t750:PRD	O
 confident	t750	27	confident	e1996	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	confident	JJ	t751:AMOD	O
 that	t751	27	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t753:SUB	O
-we	t752	27	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-have	t753	27	have	e157	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t752:SBJ||t755:OBJ||t756:ADV	O
+we	t752	27	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	t756:NMOD	O
+have	t753	27	have	e157	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t752:SBJ||t755:OBJ	O
 tremendous	t754	27	tremendous	O	O	O	O	O	O	O	O	AJ0	B-NP	tremendous	JJ	O	O
 assets	t755	27	asset	O	O	O	O	O	O	O	O	NN2	I-NP	assets	NNS	t754:NMOD	O
 as	t756	27	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t758:PMOD	O
@@ -833,13 +833,13 @@ this	t801	30	this	O	O	O	tmx2003	DATE	1989	O	O	DT0	B-NP	this	DT	O	O
 year	t802	30	year	O	O	O	tmx2003	DATE	1989	O	O	NN1	I-NP	year	NN	t801:NMOD	O
 ,	t803	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 up	t804	30	up	O	O	O	O	O	O	O	O	AVP	B-ADVP	up	RB	t805:AMOD	O
-from	t805	30	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t811:PMOD	O
+from	t805	30	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t811:PMOD||t815:TMP	O
 last	t806	30	last	O	O	O	tmx2008	DATE	1988	O	O	ORD	B-NP	last	JJ	O	O
 year	t807	30	year	O	O	O	tmx2008	DATE	1988	O	O	NN1	I-NP	year	NN	t806:NMOD||t808:SUFFIX	O
 's	t808	30	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 fully	t809	30	fully	O	O	O	O	O	O	O	O	AV0	I-NP	fully	RB	O	O
 diluted	t810	30	dilute	O	O	O	O	O	O	O	O	VVN	I-NP	dilute	VBN	t809:AMOD	O
-$	t811	30	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t807:NMOD||t810:NMOD||t812:NMOD||t814:ADV||t815:NMOD	O
+$	t811	30	$	O	O	O	O	O	O	O	O	NN0	I-NP	$	$	t807:NMOD||t810:NMOD||t812:NMOD||t814:ADV	O
 3.27	t812	30	3.27	O	O	O	O	O	O	O	O	CRD	I-NP	3.27	CD	O	O
 a	t813	30	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t814	30	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t813:NMOD	O
@@ -882,12 +882,12 @@ $	t848	31	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t849:DEP||t850:DEP||t851:P||t852:COORD	
 million	t850	31	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t851	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t852	31	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t853:CONJ	O
-$	t853	31	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t854:NMOD||t856:ADV||t858:NMOD	O
+$	t853	31	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t854:NMOD||t856:ADV||t858:APPO	O
 2.22	t854	31	2.22	O	O	O	O	O	O	O	O	CRD	I-NP	2.22	CD	O	O
 a	t855	31	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t856	31	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t855:NMOD	O
 fully	t857	31	fully	O	O	O	O	O	O	O	O	AV0	B-ADVP	fully	RB	O	O
-diluted	t858	31	dilute	O	O	O	O	O	O	O	O	VVN	B-VP	dilute	VBD	t857:ADV||t859:P||t860:ADV	O
+diluted	t858	31	dilute	O	O	O	O	O	O	O	O	VVN	B-VP	dilute	VBN	t857:ADV||t859:P||t860:ADV	O
 ,	t859	31	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 as	t860	31	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t862:SUB	O
 revenue	t861	31	revenue	O	O	O	O	O	O	O	O	NN1	B-NP	revenue	NN	O	O
@@ -948,22 +948,22 @@ $	t913	33	$	O	O	O	O	O	O	O	O	ZZ0	B-NP	$	$	t914:NMOD	O
 3	t914	33	3	O	O	O	O	O	O	O	O	CRD	I-NP	3	CD	O	O
 .	t915	33	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t916	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t916	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t917	34	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 was	t918	34	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t917:SBJ||t919:VC	O
 feeling	t919	34	feel	O	O	O	O	O	O	O	O	VVG	I-VP	feel	VBG	t920:OBJ	O
 like	t920	34	like	O	O	O	O	O	O	O	O	PRP	B-PP	like	IN	t922:SUB	O
 I	t921	34	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-was	t922	34	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t921:SBJ||t924:PRD||t925:TMP	O
+was	t922	34	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t921:SBJ||t924:PRD||t925:EXTR	O
 too	t923	34	too	O	O	O	O	O	O	O	O	AV0	B-ADJP	too	RB	O	O
 high	t924	34	high	O	O	O	O	O	O	O	O	AJ0	I-ADJP	high	JJ	t923:AMOD	O
 to	t925	34	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t926:IM	O
-begin	t926	34	begin	O	O	O	O	O	O	O	O	VVI	I-VP	begin	VB	t927:MNR	O
+begin	t926	34	begin	O	O	O	O	O	O	O	O	VVI	I-VP	begin	VB	t927:ADV	O
 with	t927	34	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	RB	O	O
 ,	t928	34	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t929	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t929	34	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t930	34	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t931	34	say	e3001	REPORTING	O	O	O	O	O	O	VVD	B-VP	say	VBD	t916:DEP||t918:OBJ||t928:P||t929:SBJ||t930:SBJ||t932:P	mainVb
+said	t931	34	say	e3001	REPORTING	O	O	O	O	O	O	VVD	B-VP	say	VBD	t916:DEP||t918:OBJ||t928:P||t929:P||t930:SBJ||t932:P	mainVb
 .	t932	34	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Mr.	t933	35	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
@@ -998,24 +998,24 @@ at	t961	35	at	e2794	STATE	PRESENT+NONE+POS	O	O	O	O	O	PRP	B-PP	at	IN	t962:PMOD	O
 risk	t962	35	risk	O	O	O	O	O	O	O	O	NN1	B-NP	risk	NN	O	O
 .	t963	35	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t964	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	IN	t971:SUB	O
+"	t964	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t965	36	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 break-even	t966	36	break-even	O	O	O	O	O	O	O	O	AJ0	I-NP	break-even	NN	O	O
 point	t967	36	point	O	O	O	O	O	O	O	O	NN1	I-NP	point	NN	t965:NMOD||t966:NMOD||t968:NMOD	O
 for	t968	36	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t970:PMOD	O
 next	t969	36	next	O	O	O	tmx2034	DATE	1990	O	O	ORD	B-NP	next	JJ	O	O
 year	t970	36	year	O	O	O	tmx2034	DATE	1990	O	O	NN1	I-NP	year	NN	t969:NMOD	O
-is	t971	36	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t967:SBJ||t973:PRD||t974:P||t975:COORD	O
+is	t971	36	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t964:P||t967:SBJ||t973:PRD||t974:P||t975:COORD||t980:P||t981:P	mainVb
 much	t972	36	much	O	O	O	O	O	O	O	O	AV0	B-ADJP	much	RB	O	O
 lower	t973	36	lower	e2032	STATE	PRESENT+NONE+POS	O	O	O	O	O	AJC	I-ADJP	low	JJR	t972:AMOD	O
 ,	t974	36	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 but	t975	36	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t976:CONJ	O
-is	t976	36	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t977:SBJ||t978:PRD||t980:P	O
+is	t976	36	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t977:SBJ||t978:PRD	O
 it	t977	36	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 low	t978	36	low	e2795	STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	low	JJ	t979:AMOD	O
 enough	t979	36	enough	O	O	O	O	O	O	O	O	AV0	I-ADJP	enough	RB	O	O
 ?	t980	36	?	O	O	O	O	O	O	O	O	PUN	O	?	.	O	O
-"	t981	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	NIL	t964:NMOD	mainVb
+"	t981	36	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 he	t982	37	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 asked	t983	37	ask	e187	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	ask	VBD	t982:SBJ||t984:P	mainVb

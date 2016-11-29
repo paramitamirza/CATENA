@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Norwood	t1	1	Norwood	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	norwood	NNP	O	O
 Partners	t2	1	Partners	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	partner	NNP	O	O
@@ -26,7 +26,7 @@ common	t23	1	common	O	O	O	O	O	O	O	O	AJ0	I-NP	common	JJ	O	O
 shares	t24	1	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t20:NMOD||t23:NMOD	O
 .	t25	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Norwood	t26	2	Norwood	O	O	O	O	O	O	O	O	NP0	B-NP	norwood	NNP	t27:P	O
+Norwood	t26	2	Norwood	O	O	O	O	O	O	O	O	NP0	B-NP	norwood	NNP	O	O
 ,	t27	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Mass.-based	t28	2	mass.-based	O	O	O	O	O	O	O	O	AJ0	B-NP	mass.-base	NNP	O	O
 Phoenix	t29	2	Phoenix	O	O	O	O	O	O	O	O	NN1	I-NP	phoenix	NNP	t28:NAME||t30:P||t33:APPO||t39:P	O
@@ -40,8 +40,8 @@ for	t36	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t38:PMOD	O
 personal	t37	2	personal	O	O	O	O	O	O	O	O	AJ0	B-NP	personal	JJ	O	O
 computers	t38	2	computer	O	O	O	O	O	O	O	O	NN2	I-NP	computer	NNS	t37:NMOD	O
 ,	t39	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-has	t40	2	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t26:SBJ||t41:VC||t49:P	mainVb
-had	t41	2	have	e6	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VHN	B-NP	have	VBD	t29:SBJ||t43:OBJ||t44:TMP	O
+has	t40	2	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t27:P||t29:SBJ||t41:VC||t49:P	mainVb
+had	t41	2	have	e6	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VHN	B-NP	have	VBD	t26:SBJ||t43:OBJ||t44:TMP	O
 substantial	t42	2	substantial	O	O	O	O	O	O	O	O	AJ0	I-NP	substantial	JJ	O	O
 losses	t43	2	loss	e33	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	losses	NNS	t42:NMOD	O
 in	t44	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t48:PMOD	O
@@ -90,8 +90,8 @@ $	t83	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t84:NMOD	O
 ,	t85	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 in	t86	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t89:PMOD	O
 national	t87	4	national	O	O	O	O	O	O	O	O	AJ0	B-NP	national	JJ	O	O
-over-the-counter	t88	4	over-the-counter	O	O	O	O	O	O	O	O	NN1	I-NP	over-the-counter	NN	O	O
-trading	t89	4	trading	e9	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t87:NMOD||t88:NMOD	O
+over-the-counter	t88	4	over-the-counter	O	O	O	O	O	O	O	O	NN1	I-NP	over-the-counter	NN	t87:NMOD	O
+trading	t89	4	trading	e9	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	trading	NN	t88:NMOD	O
 .	t90	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 In	t91	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t97:PMOD	O
@@ -103,10 +103,10 @@ Commission	t96	5	Commission	O	O	O	O	O	O	O	O	NN1	I-NP	commission	NNP	t93:NAME	O
 filing	t97	5	filing	O	O	O	O	O	O	O	O	NN1	I-NP	filing	NN	t92:NAME||t96:NMOD	O
 ,	t98	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Norwood	t99	5	Norwood	O	O	O	O	O	O	O	O	NP0	B-NP	norwood	NNP	O	O
-said	t100	5	say	e11	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t91:LOC||t98:P||t99:SBJ||t103:OBJ||t120:P	mainVb
-it	t101	5	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	t102:SUFFIX	O
-'s	t102	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
-part	t103	5	part	O	O	O	O	O	O	O	O	NN1	B-NP	part	NN	t101:NMOD||t104:NMOD	O
+said	t100	5	say	e11	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t91:LOC||t98:P||t99:SBJ||t102:OBJ||t120:P	mainVb
+it	t101	5	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t102	5	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t101:SBJ||t103:PRD	O
+part	t103	5	part	O	O	O	O	O	O	O	O	NN1	B-NP	part	NN	t104:NMOD	O
 of	t104	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t106:PMOD	O
 a	t105	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 group	t106	5	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t105:NMOD||t108:NMOD	O
@@ -127,14 +127,14 @@ stake	t119	5	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t116:NMOD||t118:NMOD	O
 
 Norwood	t121	6	Norwood	O	O	O	O	O	O	O	O	NP0	B-NP	norwood	NNP	O	O
 has	t122	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t121:SBJ||t123:VC||t128:P||t130:COORD	O
-made	t123	6	make	e14	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	make	VBN	t124:PRT||t127:OBJ||t129:P	O
-"	t124	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	RP	O	O
+made	t123	6	make	e14	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	make	VBN	t124:OBJ||t127:OBJ	O
+"	t124	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 no	t125	6	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
 detailed	t126	6	detailed	O	O	O	O	O	O	O	O	AJ0	I-NP	detail	VBN	O	O
 plans	t127	6	plan	e43	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	plan	NNS	t125:NMOD||t126:NMOD	O
 ,	t128	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t129	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	(	O	O
-but	t130	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t132:CONJ	O
+"	t129	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
+but	t130	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t129:CONJ||t132:CONJ	O
 it	t131	6	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 has	t132	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t131:SBJ||t133:VC	O
 engaged	t133	6	engage	e16	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	engage	VBN	t134:ADV	O
@@ -170,7 +170,7 @@ Reese	t159	8	Reese	O	O	O	O	O	O	O	O	NP0	I-NP	reese	NNP	t157:NAME||t158:NAME	O
 both	t161	8	both	O	O	O	O	O	O	O	O	DT0	B-NP	both	DT	t162:APPO	O
 officers	t162	8	officer	O	O	O	O	O	O	O	O	NN2	I-NP	officer	NNS	t163:NMOD	O
 of	t163	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t167:PMOD	O
-Boston-based	t164	8	boston-based	O	O	O	O	O	O	O	O	AJ0	B-NP	boston-base	NNP	O	O
+Boston-based	t164	8	boston-based	O	O	O	O	O	O	O	O	AJ0	B-NP	boston-based	NNP	O	O
 Oasis	t165	8	Oasis	O	O	O	O	O	O	O	O	NN1	I-NP	oasis	NNP	O	O
 Capital	t166	8	Capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NNP	O	O
 Management	t167	8	Management	O	O	O	O	O	O	O	O	NN1	I-NP	management	NNP	t164:NAME||t165:NAME||t166:NAME||t168:POSTHON||t169:P||t175:APPO	O

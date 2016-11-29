@@ -1,4 +1,4 @@
-DCT_1998-02-27T08:09:00	O	O	O	O	O	O	tmx0	TIME	1998-02-27T08:09:00	O	O	NP0	B-NP	dct_1998-02-27t08:09:00	''	O	O
+DCT_1998-02-27T08:09:00	O	O	O	O	O	O	tmx0	TIME	1998-02-27T08:09:00	O	O	NP0	B-NP	dct_1998-02-27t08:09:00	VBG	O	O
 
 JERUSALEM	t1	1	JERUSALEM	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	jerusalem	NNP	O	O
 -LRB-	t2	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
@@ -107,10 +107,10 @@ rally	t100	4	rally	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	AV0	B-ADVP	rally	NN	t9
 
 Newspaper	t102	5	Newspaper	O	O	O	O	O	O	O	O	NP0	B-NP	newspaper	NN	O	O
 reports	t103	5	report	O	O	O	O	O	O	O	O	NN2	I-NP	report	NNS	t102:NMOD	O
-have	t104	5	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t103:SBJ||t105:VC||t111:COORD||t124:P	mainVb
+have	t104	5	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t103:SBJ||t105:VC||t124:P	mainVb
 said	t105	5	say	e22	REPORTING	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	say	VBN	t107:OBJ	mainVb
 Amir	t106	5	Amir	O	O	O	O	O	O	O	O	NP0	B-NP	amir	NNP	O	O
-was	t107	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t106:SBJ||t108:VC	O
+was	t107	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t106:SBJ||t108:VC||t111:COORD	O
 infatuated	t108	5	infatuate	e23	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	infatuate	VBN	t109:ADV	O
 with	t109	5	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t110:PMOD	O
 Har-Shefi	t110	5	Har-Shefi	O	O	O	O	O	O	O	O	NP0	B-NP	har-shefi	NNP	O	O
@@ -121,7 +121,7 @@ been	t114	5	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t115:VC	O
 trying	t115	5	try	e24	I_ACTION	NONE+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	try	VBG	t116:OPRD	O
 to	t116	5	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t117:IM	O
 impress	t117	5	impress	e25	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	impress	VB	t118:OBJ||t119:MNR	O
-her	t118	5	she	O	O	O	O	O	O	O	O	PNP	B-NP	her	PRP$	O	O
+her	t118	5	she	O	O	O	O	O	O	O	O	PNP	B-NP	her	PRP	O	O
 by	t119	5	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t120:PMOD	O
 killing	t120	5	kill	e26	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	kill	VBG	t123:OBJ	O
 the	t121	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -170,12 +170,12 @@ Israel	t161	7	Israel	O	O	O	O	O	O	O	O	NP0	B-NP	israel	NNP	O	O
 ,	t162	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t163	7	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Israel	t164	7	Israel	O	O	O	O	O	O	O	O	NP0	B-NP	israel	NNP	t163:NAME	O
-radio	t165	7	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	t164:NMOD||t166:COORD	O
-and	t166	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t169:CONJ	O
+radio	t165	7	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	t166:COORD	O
+and	t166	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t167:CONJ	O
 Israel	t167	7	Israel	O	O	O	O	O	O	O	O	NP0	B-NP	israel	NNP	O	O
-army	t168	7	army	O	O	O	O	O	O	O	O	NN1	I-NP	army	NN	O	O
-radio	t169	7	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	t167:NMOD||t168:NMOD	O
-reported	t170	7	report	e37	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t151:OBJ||t162:P||t165:SBJ||t171:P	mainVb
+army	t168	7	army	O	O	O	O	O	O	O	O	NN1	I-NP	army	NN	t164:NMOD||t165:NMOD	O
+radio	t169	7	radio	O	O	O	O	O	O	O	O	NN1	I-NP	radio	NN	t168:NMOD	O
+reported	t170	7	report	e37	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t151:OBJ||t162:P||t169:SBJ||t171:P	mainVb
 .	t171	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Har-Shefi	t172	8	Har-Shefi	O	O	O	O	O	O	O	O	NP0	B-NP	har-shefi	NNP	O	O
@@ -183,7 +183,7 @@ said	t173	8	say	e38	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t172:SBJ|
 she	t174	8	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 heard	t175	8	hear	e39	PERCEPTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	hear	VBD	t174:SBJ||t176:OBJ||t177:OPRD	O
 Amir	t176	8	Amir	O	O	O	O	O	O	O	O	NP0	B-NP	amir	NNP	O	O
-talk	t177	8	talk	e40	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	B-VP	talk	VBP	t178:ADV	O
+talk	t177	8	talk	e40	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	B-VP	talk	VB	t178:ADV	O
 about	t178	8	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t179:PMOD	O
 killing	t179	8	kill	e41	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-NP	kill	VBG	t180:OBJ	O
 Rabin	t180	8	rabin	O	O	O	O	O	O	O	O	NP0	I-NP	rabin	NNP	O	O
@@ -213,10 +213,10 @@ community	t202	9	community	O	O	O	O	O	O	O	O	NN1	I-NP	community	NN	O	O
 rabbi	t203	9	rabbi	O	O	O	O	O	O	O	O	NN1	I-NP	rabbi	NN	t201:NMOD||t202:NMOD	O
 in	t204	9	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t209:PMOD	O
 the	t205	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Jewish	t206	9	jewish	O	O	O	O	O	O	O	O	AJ0	I-NP	jewish	JJ	O	O
+Jewish	t206	9	jewish	O	O	O	O	O	O	O	O	AJ0	I-NP	jewish	NNP	O	O
 West	t207	9	West	O	O	O	O	O	O	O	O	NP0	I-NP	west	NNP	O	O
-Bank	t208	9	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t207:NAME	O
-settlement	t209	9	settlement	O	O	O	O	O	O	O	O	NN1	I-NP	settlement	NN	t205:NMOD||t206:NMOD||t208:NMOD||t210:NMOD	O
+Bank	t208	9	Bank	O	O	O	O	O	O	O	O	NP0	I-NP	bank	NNP	t206:NAME||t207:NAME	O
+settlement	t209	9	settlement	O	O	O	O	O	O	O	O	NN1	I-NP	settlement	NN	t205:NMOD||t208:NMOD||t210:NMOD	O
 of	t210	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t212:PMOD	O
 Beit	t211	9	Beit	O	O	O	O	O	O	O	O	NP0	B-NP	beit	NNP	O	O
 El	t212	9	El	O	O	O	O	O	O	O	O	NP0	I-NP	el	NNP	t211:NAME	O
@@ -231,17 +231,17 @@ statements	t219	9	statement	O	O	O	O	O	O	O	O	NN2	I-NP	statement	NNS	t217:NMOD	O
 
 The	t221	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 rabbi	t222	10	rabbi	O	O	O	O	O	O	O	O	NN1	I-NP	rabbi	NN	t221:NMOD	O
-said	t223	10	say	e48	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t222:SBJ||t224:OBJ||t234:COORD	O
+said	t223	10	say	e48	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t222:SBJ||t224:TMP||t232:P||t233:P||t234:COORD	O
 called	t224	10	call	e49	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	call	VBN	t226:OPRD	O
 the	t225	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-talk	t226	10	talk	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	talk	NN	t225:NMOD||t227:NMOD||t232:P||t233:APPO	O
+talk	t226	10	talk	e50	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	talk	NN	t225:NMOD||t227:NMOD	O
 about	t227	10	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t228:PMOD	O
 killing	t228	10	kill	e51	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	kill	VBG	t231:OBJ	O
 Rabin	t229	10	Rabin	O	O	O	O	O	O	O	O	NP0	B-NP	rabin	NNP	O	O
 "	t230	10	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t229:NAME	O
 nonsense	t231	10	nonsense	O	O	O	O	O	O	O	O	NN1	I-NP	nonsense	NN	t230:NMOD	O
 ,	t232	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t233	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t233	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 and	t234	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t235:CONJ	O
 said	t235	10	say	e53	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t237:OBJ	O
 Jews	t236	10	Jews	O	O	O	O	O	O	O	O	NN2	B-NP	jews	JJ	O	O
@@ -259,11 +259,11 @@ said	t247	10	say	e56	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t223:OBJ
 .	t248	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Har-Shefi	t249	11	Har-Shefi	O	O	O	O	O	O	O	O	NP0	B-NP	har-shefi	NNP	O	O
-described	t250	11	describe	e57	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	describe	VBD	t249:SBJ||t251:OBJ||t252:ADV||t257:P||t258:P||t259:COORD||t266:P	mainVb
+described	t250	11	describe	e57	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	describe	VBD	t249:SBJ||t251:OBJ||t252:ADV||t257:P||t258:P||t266:P	mainVb
 Amir	t251	11	Amir	O	O	O	O	O	O	O	O	NP0	B-NP	amir	NNP	O	O
 as	t252	11	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t256:PMOD	O
 an	t253	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-"	t254	11	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	O	O
+"	t254	11	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	t259:COORD	O
 original	t255	11	original	O	O	O	O	O	O	O	O	AJ0	I-NP	original	JJ	O	O
 thinker	t256	11	thinker	O	O	O	O	O	O	O	O	NN1	I-NP	thinker	NN	t253:NMOD||t254:NMOD||t255:NMOD	O
 ,	t257	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -279,8 +279,8 @@ liar	t265	11	liar	O	O	O	O	O	O	O	O	NN1	I-NP	liar	NN	t264:NMOD	O
 
 She	t267	12	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 also	t268	12	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-denied	t269	12	deny	e58	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	deny	VBD	t267:SBJ||t268:ADV||t270:OBJ||t279:OBJ||t286:P	mainVb
-accusations	t270	12	accusation	e59	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	accusation	NNS	t271:APPO	O
+denied	t269	12	deny	e58	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	deny	VBD	t267:SBJ||t268:ADV||t270:OBJ||t286:P	mainVb
+accusations	t270	12	accusation	e59	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	accusation	NNS	t271:APPO||t279:NMOD	O
 made	t271	12	make	e60	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	make	VBN	t272:LGS	O
 by	t272	12	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t275:PMOD	O
 Amir	t273	12	Amir	O	O	O	O	O	O	O	O	NP0	B-NP	amir	NNP	t274:SUFFIX	O
@@ -293,7 +293,7 @@ that	t279	12	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t281:SUB	O
 she	t280	12	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 joined	t281	12	join	e61	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	join	VBD	t280:SBJ||t285:OBJ	O
 an	t282	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-anti-Arab	t283	12	anti-arab	O	O	O	O	O	O	O	O	AJ0	I-NP	anti-arab	JJ	O	O
+anti-Arab	t283	12	anti-arab	O	O	O	O	O	O	O	O	AJ0	I-NP	anti-arab	NN	O	O
 underground	t284	12	underground	O	O	O	O	O	O	O	O	AJ0	I-NP	underground	JJ	O	O
 movement	t285	12	movement	O	O	O	O	O	O	O	O	NN1	I-NP	movement	NN	t282:NMOD||t283:NMOD||t284:NMOD	O
 .	t286	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -301,13 +301,13 @@ movement	t285	12	movement	O	O	O	O	O	O	O	O	NN1	I-NP	movement	NN	t282:NMOD||t283:N
 She	t287	13	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 said	t288	13	say	e62	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t287:SBJ||t290:OBJ||t315:P	mainVb
 she	t289	13	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-gave	t290	13	give	e63	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	give	VBD	t289:SBJ||t295:OBJ	O
+gave	t290	13	give	e63	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	give	VBD	t289:SBJ||t293:OBJ||t295:OBJ	O
 the	t291	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Amir	t292	13	Amir	O	O	O	O	O	O	O	O	NP0	I-NP	amir	NNP	O	O
-brothers	t293	13	brother	O	O	O	O	O	O	O	O	NN2	I-NP	brother	NNS	t292:NMOD	O
+brothers	t293	13	brother	O	O	O	O	O	O	O	O	NN2	I-NP	brother	NNS	t291:NMOD||t292:NMOD	O
 false	t294	13	false	O	O	O	O	O	O	O	O	AJ0	I-NP	false	JJ	O	O
-information	t295	13	information	O	O	O	O	O	O	O	O	NN1	I-NP	information	NN	t291:NMOD||t293:NMOD||t294:NMOD||t296:APPO	O
-regarding	t296	13	regard	O	O	O	O	O	O	O	O	VVG	B-VP	regard	VBG	t298:PMOD||t307:TMP	O
+information	t295	13	information	O	O	O	O	O	O	O	O	NN1	I-NP	information	NN	t294:NMOD||t296:APPO	O
+regarding	t296	13	regard	O	O	O	O	O	O	O	O	VVG	B-VP	regard	VBG	t298:OBJ||t307:TMP	O
 the	t297	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 location	t298	13	location	O	O	O	O	O	O	O	O	NN1	I-NP	location	NN	t297:NMOD||t299:NMOD	O
 of	t299	13	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t304:PMOD	O
@@ -321,7 +321,7 @@ they	t306	13	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 asked	t307	13	ask	e64	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	ask	VBD	t305:TMP||t306:SBJ||t308:OBJ||t309:OPRD	O
 her	t308	13	she	O	O	O	O	O	O	O	O	PNP	B-NP	her	PRP	O	O
 to	t309	13	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t310:IM	O
-help	t310	13	help	e65	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	help	VB	t311:VC	O
+help	t310	13	help	e65	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	help	VB	t311:OPRD	O
 organize	t311	13	organize	e66	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	organize	VB	t314:OBJ	O
 such	t312	13	such	O	O	O	O	O	O	O	O	DT0	B-NP	such	PDT	O	O
 a	t313	13	a	O	O	O	O	O	O	O	O	AT0	I-NP	a	DT	O	O

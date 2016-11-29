@@ -1,13 +1,13 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Di	t1	1	Di	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	di	NNP	O	O
 Giorgio	t2	1	Giorgio	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	giorgio	NNP	t1:NAME||t3:POSTHON	O
 Corp.	t3	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
-said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t8:OBJ||t15:P||t16:COORD||t24:P	mainVb
-it	t5	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	t6:SUFFIX	O
-'s	t6	1	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	O	O
-continuing	t7	1	continue	e2	ASPECTUAL	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	AJ0	B-NP	continue	VBG	O	O
-talks	t8	1	talk	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	talks	NNS	t5:NMOD||t7:NMOD||t9:NMOD	O
+said	t4	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t5:OBJ||t6:OPRD||t24:P	mainVb
+it	t5	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
+'s	t6	1	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t7:VC||t15:P||t16:COORD	O
+continuing	t7	1	continue	e2	ASPECTUAL	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	AJ0	B-NP	continue	VBG	t8:OBJ	O
+talks	t8	1	talk	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	talks	NNS	t9:NMOD	O
 with	t9	1	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t11:PMOD	O
 potential	t10	1	potential	O	O	O	O	O	O	O	O	AJ0	B-NP	potential	JJ	O	O
 buyers	t11	1	buyer	O	O	O	O	O	O	O	O	NN2	I-NP	buyer	NNS	t10:NMOD||t12:NMOD	O

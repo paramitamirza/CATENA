@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Aetna	t1	1	Aetna	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	aetna	NNP	O	O
 Life	t2	1	Life	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	life	NNP	O	O
@@ -44,13 +44,13 @@ divisions	t40	1	division	O	O	O	O	O	O	O	O	NN2	I-NP	division	NNS	t37:NMOD||t39:NMO
 
 Catastrophe	t42	2	catastrophe	O	O	O	O	O	O	O	O	NN1	B-NP	catastrophe	NN	O	O
 losses	t43	2	loss	e48	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	losses	NNS	t42:NMOD	O
-reduced	t44	2	reduce	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	reduce	VBD	t43:SBJ||t48:OBJ||t49:ADV||t53:P||t54:ADV||t60:P	mainVb
+reduced	t44	2	reduce	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	reduce	VBD	t43:SBJ||t48:OBJ||t49:ADV||t60:P	mainVb
 Aetna	t45	2	Aetna	O	O	O	O	O	O	O	O	NP0	B-NP	aetna	NNP	t46:SUFFIX	O
 's	t46	2	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 net	t47	2	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
 income	t48	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t45:NMOD||t47:NMOD	O
 by	t49	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t50:PMOD	O
-$	t50	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t51:DEP||t52:DEP	O
+$	t50	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t51:DEP||t52:DEP||t53:P||t54:NMOD	O
 50	t51	2	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
 million	t52	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t53	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -101,8 +101,8 @@ change	t93	4	change	e12	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	change	NN	t9
 The	t95	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 insurer	t96	5	insurer	O	O	O	O	O	O	O	O	NN1	I-NP	insurer	NN	t95:NMOD	O
 has	t97	5	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t96:SBJ||t98:VC||t110:P	mainVb
-started	t98	5	start	e13	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	start	VBN	t99:OPRD	mainVb
-processing	t99	5	process	e54	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	process	VBG	t100:OBJ||t109:TMP	mainVb
+started	t98	5	start	e13	ASPECTUAL	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	start	VBN	t99:OPRD||t109:TMP	mainVb
+processing	t99	5	process	e54	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	I-VP	process	VBG	t100:OBJ	mainVb
 claims	t100	5	claim	e14	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	B-NP	claim	NNS	t101:NMOD	O
 from	t101	5	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t105:PMOD	O
 the	t102	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -119,15 +119,15 @@ But	t111	6	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	O	O
 because	t112	6	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t115:SUB	O
 these	t113	6	these	O	O	O	O	O	O	O	O	DT0	B-NP	these	DT	O	O
 claims	t114	6	claim	O	O	O	O	O	O	O	O	NN2	I-NP	claim	NNS	t113:NMOD	O
-are	t115	6	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t114:SBJ||t117:PRD	O
+are	t115	6	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t114:SBJ||t117:PRD||t120:COORD	O
 more	t116	6	more	O	O	O	O	O	O	O	O	AV0	B-ADJP	more	RBR	O	O
 difficult	t117	6	difficult	O	O	O	O	O	O	O	O	AJ0	I-ADJP	difficult	JJ	t116:AMOD||t118:AMOD	O
 to	t118	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t119:IM	O
-evaluate	t119	6	evaluate	O	O	O	O	O	O	O	O	VVI	I-VP	evaluate	VB	t120:COORD	O
+evaluate	t119	6	evaluate	O	O	O	O	O	O	O	O	VVI	I-VP	evaluate	VB	O	O
 and	t120	6	and	O	O	O	O	O	O	O	O	CJC	I-VP	and	CC	t121:CONJ	O
-have	t121	6	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t122:VC	O
+have	t121	6	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VBP	t122:VC	O
 been	t122	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t123:VC	O
-coming	t123	6	come	e18	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	come	VBG	t124:LOC||t126:MNR	O
+coming	t123	6	come	e18	OCCURRENCE	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	come	VBG	t124:DIR||t126:MNR	O
 in	t124	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	RB	O	O
 more	t125	6	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	O	O
 slowly	t126	6	slowly	O	O	O	O	O	O	O	O	AV0	I-NP	slowly	RB	t125:AMOD	O
@@ -144,7 +144,7 @@ of	t136	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t138:PMOD	O
 the	t137	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 earthquake	t138	6	earthquake	e60	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	earthquake	NN	t137:NMOD	O
 on	t139	6	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t141:PMOD	O
-fourth-quarter	t140	6	fourth-quarter	O	O	O	tmx61	DATE	1989-Q4	O	O	NN1	B-NP	fourth-quarter	JJ	O	O
+fourth-quarter	t140	6	fourth-quarter	O	O	O	tmx61	DATE	1989-Q4	O	O	NN1	B-NP	fourth-quarter	NN	O	O
 results	t141	6	result	e22	STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t140:NMOD	O
 .	t142	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

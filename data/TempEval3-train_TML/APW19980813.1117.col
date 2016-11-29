@@ -1,15 +1,15 @@
-DCT_1998-08-13	O	O	O	O	O	O	tmx0	TIME	1998-08-13	O	O	NN1	B-NP	dct_1998-08-13	SYM	O	O
+DCT_1998-08-13	O	O	O	O	O	O	tmx0	TIME	1998-08-13	O	O	NN1	B-NP	dct_1998-08-13	LS	O	O
 
 UNITED	t1	1	UNITED	O	O	O+O+O	O	O	O	O	O	AJ0	B-NP	united	VBN	O	O
 NATIONS	t2	1	NATIONS	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	nations	NNS	t1:NMOD	O
--LRB-	t3	1	-lrb-	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	-lrb-	NNP	O	O
-AP	t4	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t2:NMOD||t3:NAME	O
+-LRB-	t3	1	-lrb-	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	-lrb-	VBP	t2:SBJ||t10:OBJ||t36:P	mainVb
+AP	t4	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
 -RRB-	t5	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
 _	t6	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	O	O
 The	t7	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	NNP	O	O
 Security	t8	1	security	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	security	NNP	O	O
-Council	t9	1	Council	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	council	NNP	t5:NAME||t6:NAME||t7:NAME||t8:NAME	O
-condemned	t10	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t4:TMP||t9:SBJ||t12:OBJ||t17:LOC||t21:TMP||t23:COORD||t36:P	mainVb
+Council	t9	1	Council	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	council	NNP	t4:NAME||t5:NAME||t6:NAME||t7:NAME||t8:NAME	O
+condemned	t10	1	condemn	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t9:SBJ||t12:OBJ||t17:TMP||t21:TMP||t23:COORD	O
 the	t11	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bombing	t12	1	bombing	e16	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	bombing	NN	t11:NMOD||t13:NMOD	O
 of	t13	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t16:PMOD	O
@@ -32,13 +32,13 @@ cooperate	t29	1	cooperate	e3	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	c
 with	t30	1	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t31:PMOD	O
 authorities	t31	1	authority	O	O	O	O	O	O	O	O	NN2	B-NP	authorities	NNS	O	O
 in	t32	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t33:PMOD	O
-finding	t33	1	find	e4	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	find	VBG	t34:OBJ	O
-those	t34	1	those	O	O	O	O	O	O	O	O	DT0	B-NP	those	DT	t35:APPO	O
-responsible	t35	1	responsible	O	O	O	O	O	O	O	O	AJ0	I-NP	responsible	JJ	O	O
+finding	t33	1	find	e4	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	find	VBG	t35:OBJ	O
+those	t34	1	those	O	O	O	O	O	O	O	O	DT0	B-NP	those	DT	O	O
+responsible	t35	1	responsible	O	O	O	O	O	O	O	O	AJ0	I-NP	responsible	JJ	t34:NMOD	O
 .	t36	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t37	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-resolution	t38	2	resolution	e17	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	resolution	NN	t37:NMOD	O
+resolution	t38	2	resolution	e17	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	resolution	NN	t37:NMOD||t39:P||t40:APPO	O
 ,	t39	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 co-sponsored	t40	2	co-sponsor	O	O	O	O	O	O	O	O	VVN	B-VP	co-sponsor	VBN	t41:LGS||t49:COORD	O
 by	t41	2	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t42:PMOD	O
@@ -51,10 +51,10 @@ United	t47	2	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
 States	t48	2	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t46:NMOD||t47:NAME	O
 and	t49	2	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t51:CONJ	O
 unanimously	t50	2	unanimously	O	O	O	O	O	O	O	O	AV0	B-ADJP	unanimously	RB	O	O
-adopted	t51	2	adopt	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-ADJP	adopt	VBD	t38:SBJ||t50:MNR	O
+adopted	t51	2	adopt	e5	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-ADJP	adopt	VBN	t50:MNR	O
 ,	t52	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t53	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-expresses	t54	2	express	e6	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	express	VBZ	t39:P||t40:ADV||t52:P||t53:SBJ||t57:OBJ||t62:ADV||t78:P||t79:P	mainVb
+expresses	t54	2	express	e6	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	express	VBZ	t38:ADV||t52:P||t53:SBJ||t57:OBJ||t62:ADV||t78:P||t79:P	mainVb
 its	t55	2	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 deep	t56	2	deep	O	O	O	O	O	O	O	O	AJ0	I-NP	deep	JJ	O	O
 sorrow	t57	2	sorrow	O	O	O	O	O	O	O	O	NN1	I-NP	sorrow	NN	t55:NMOD||t56:NMOD||t58:P||t59:COORD	O
@@ -64,11 +64,11 @@ and	t60	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t61:CONJ	O
 condolences	t61	2	condolence	O	O	O	O	O	O	O	O	NN2	I-NP	condolence	NNS	O	O
 to	t62	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t64:PMOD	O
 the	t63	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-families	t64	2	family	O	O	O	O	O	O	O	O	NN2	I-NP	family	NNS	t63:NMOD||t65:NMOD	O
+families	t64	2	family	O	O	O	O	O	O	O	O	NN2	I-NP	family	NNS	t63:NMOD||t65:NMOD||t74:TMP	O
 of	t65	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t68:PMOD	O
 the	t66	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 innocent	t67	2	innocent	O	O	O	O	O	O	O	O	AJ0	I-NP	innocent	JJ	O	O
-victims	t68	2	victim	O	O	O	O	O	O	O	O	NN2	I-NP	victim	NNS	t66:NMOD||t67:NMOD||t69:NMOD||t74:TMP	O
+victims	t68	2	victim	O	O	O	O	O	O	O	O	NN2	I-NP	victim	NNS	t66:NMOD||t67:NMOD||t69:NMOD	O
 of	t69	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t73:PMOD	O
 the	t70	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 terrorist	t71	2	terrorist	O	O	O	O	O	O	O	O	NN1	I-NP	terrorist	NN	O	O
@@ -79,7 +79,7 @@ this	t75	2	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 difficult	t76	2	difficult	O	O	O	O	O	O	O	O	AJ0	I-NP	difficult	JJ	O	O
 time	t77	2	time	O	O	O	O	O	O	O	O	NN1	I-NP	time	NN	t75:NMOD||t76:NMOD	O
 .	t78	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t79	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t79	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 It	t80	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 strongly	t81	3	strongly	O	O	O	O	O	O	O	O	AV0	B-ADVP	strongly	RB	O	O
@@ -99,7 +99,7 @@ that	t93	4	that	O	O	O	O	O	O	O	O	DT0	B-SBAR	that	IN	t97:SUB	O
 every	t94	4	every	O	O	O	O	O	O	O	O	AT0	B-NP	every	DT	O	O
 nation	t95	4	nation	O	O	O	O	O	O	O	O	NN1	I-NP	nation	NN	t94:NMOD	O
 "	t96	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	WDT	O	O
-has	t97	4	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t95:SBJ||t96:SBJ||t99:OBJ	O
+has	t97	4	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t95:GAP-TMP||t96:SBJ||t99:OBJ	O
 the	t98	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 duty	t99	4	duty	O	O	O	O	O	O	O	O	NN1	I-NP	duty	NN	t98:NMOD||t100:NMOD	O
 to	t100	4	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t101:IM	O
@@ -134,11 +134,11 @@ embassies	t127	5	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t125:NMOD||t126:NM
 in	t128	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t131:PMOD	O
 Nairobi	t129	5	Nairobi	O	O	O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
 ,	t130	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Kenya	t131	5	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t129:NMOD||t130:P||t132:P||t133:COORD||t139:P	O
+Kenya	t131	5	Kenya	O	O	O	O	O	O	O	O	NP0	B-NP	kenya	NNP	t129:NMOD||t130:P||t132:P||t133:COORD||t138:APPO||t139:P	O
 ,	t132	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t133	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t135:CONJ	O
 Dar	t134	5	Dar	O	O	O	O	O	O	O	O	NN1	B-NP	dar	NNP	O	O
-es	t135	5	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t134:SBJ||t138:OBJ	O
+es	t135	5	e	O	O	O	O	O	O	O	O	PRP	B-PP	e	VBZ	t134:SBJ	O
 Salaam	t136	5	salaam	O	O	O	O	O	O	O	O	NP0	B-NP	salaam	NNP	O	O
 ,	t137	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Tanzania	t138	5	Tanzania	O	O	O	O	O	O	O	O	NP0	B-NP	tanzania	NNP	t136:NAME||t137:P	O
@@ -153,21 +153,21 @@ than	t146	5	than	O	O	O	O	O	O	O	O	CJS	I-NP	than	IN	O	O
 5,500	t147	5	5,500	O	O	O	O	O	O	O	O	CRD	I-NP	5,500	NN	t145:DEP||t146:DEP	O
 .	t148	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t149	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NIL	O	O
+"	t149	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t150	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-incidents	t151	6	incident	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	incident	NNS	t149:NMOD||t150:NMOD||t152:NMOD	O
+incidents	t151	6	incident	e24	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	incident	NNS	t150:NMOD||t152:NMOD	O
 of	t152	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t155:PMOD	O
 Aug.	t153	6	Aug.	O	O	O	tmx3	DATE	1998-08-07	O	O	NP0	B-NP	aug.	NNP	t154:NMOD	O
 7	t154	6	7	O	O	O	tmx3	DATE	1998-08-07	O	O	CRD	I-NP	7	CD	O	O
-underscore	t155	6	underscore	O	O	O	O	O	O	O	O	NN1	I-NP	underscore	NN	t153:NMOD	O
-that	t156	6	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
+underscore	t155	6	underscore	O	O	O	O	O	O	O	O	NN1	I-NP	underscore	NN	t153:NMOD||t156:NMOD	O
+that	t156	6	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	t158:SUB||t161:P||t162:COORD	O
 terrorists	t157	6	terrorist	O	O	O	O	O	O	O	O	VVZ	B-VP	terrorist	NNS	O	O
-know	t158	6	know	O	O	O	O	O	O	O	O	VVB	B-NP	know	VBP	t151:SBJ||t156:OBJ||t157:SBJ||t160:OBJ||t161:P||t162:COORD	O
+know	t158	6	know	O	O	O	O	O	O	O	O	VVB	B-NP	know	VBP	t157:SBJ||t160:OBJ	O
 no	t159	6	no	O	O	O	O	O	O	O	O	AT0	I-NP	no	DT	O	O
 boundaries	t160	6	boundary	O	O	O	O	O	O	O	O	NN2	I-NP	boundary	NNS	t159:NMOD	O
 ,	t161	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t162	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t163:CONJ	O
-that	t163	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t181:SUB	O
+that	t163	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t165:SUB	O
 the	t164	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 suppression	t165	6	suppression	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	suppression	NN	t164:NMOD||t166:NMOD||t169:P||t171:COORD	O
 of	t166	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t168:PMOD	O
@@ -185,7 +185,7 @@ punishment	t177	6	punishment	e29	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	pun
 of	t178	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t180:PMOD	O
 its	t179	6	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 perpetrators	t180	6	perpetrator	O	O	O	O	O	O	O	O	NN2	I-NP	perpetrator	NNS	t179:NMOD	O
-are	t181	6	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t165:SBJ||t182:PRD	O
+are	t181	6	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t151:SBJ||t182:PRD	O
 essential	t182	6	essential	O	O	O	O	O	O	O	O	AJ0	B-ADJP	essential	JJ	t183:AMOD	O
 to	t183	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t185:PMOD	O
 the	t184	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -197,7 +197,7 @@ and	t189	6	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t190:CONJ	O
 security	t190	6	security	O	O	O	O	O	O	O	O	NN1	I-NP	security	NN	O	O
 ,	t191	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t192	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t193	6	say	e15	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t158:OBJ||t191:P||t192:SBJ||t197:SBJ||t200:P	mainVb
+said	t193	6	say	e15	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t149:P||t181:OBJ||t191:P||t192:SBJ||t197:SBJ||t200:P	mainVb
 the	t194	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 U.S.	t195	6	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
 Deputy	t196	6	Deputy	O	O	O	O	O	O	O	O	NN1	I-NP	deputy	NN	O	O

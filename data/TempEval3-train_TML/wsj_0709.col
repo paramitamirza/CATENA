@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Service	t1	1	Service	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	service	NNP	t2:POSTHON||t3:P	mainVb
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -55,27 +55,27 @@ in	t49	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t50:PMOD	O
 December	t50	4	December	O	O	O	tmx28	DATE	1988-12	O	O	NP0	B-NP	december	NNP	O	O
 .	t51	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-In	t52	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t56:PMOD	O
+In	t52	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t60:PMOD	O
 the	t53	5	the	O	O	O	tmx30	DATE	1988-Q2	O	O	AT0	B-NP	the	DT	O	O
 comparable	t54	5	comparable	O	O	O	tmx30	DATE	1988-Q2	O	O	AJ0	I-NP	comparable	JJ	O	O
 year-ago	t55	5	year-ago	O	O	O	tmx30	DATE	1988-Q2	O	O	NN1	I-NP	year-ago	NN	O	O
-quarter	t56	5	quarter	O	O	O	tmx30	DATE	1988-Q2	O	O	NN1	I-NP	quarter	NN	t53:NMOD||t54:NMOD||t55:NMOD||t57:P||t60:APPO||t64:P	O
+quarter	t56	5	quarter	O	O	O	tmx30	DATE	1988-Q2	O	O	NN1	I-NP	quarter	NN	t53:NMOD||t54:NMOD||t55:NMOD	O
 ,	t57	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t58	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 second	t59	5	second	O	O	O	tmx31	DATE	1988-Q2	O	O	ORD	I-NP	second	JJ	O	O
-quarter	t60	5	quarter	O	O	O	tmx31	DATE	1988-Q2	O	O	NN1	I-NP	quarter	NN	t58:NMOD||t59:NMOD||t61:APPO	O
+quarter	t60	5	quarter	O	O	O	tmx31	DATE	1988-Q2	O	O	NN1	I-NP	quarter	NN	t56:NMOD||t57:P||t58:NMOD||t59:NMOD||t61:APPO	O
 ended	t61	5	end	O	O	O	O	O	O	O	O	VVD	B-VP	end	VBN	t63:TMP	O
 Oct.	t62	5	Oct.	O	O	O	tmx32	DATE	1988-10-31	O	O	NP0	B-NP	oct.	NNP	O	O
 31	t63	5	31	O	O	O	tmx32	DATE	1988-10-31	O	O	CRD	I-NP	31	CD	t62:NMOD	O
 ,	t64	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Service	t65	5	Service	O	O	O	O	O	O	O	O	NP0	B-NP	service	NNP	t66:POSTHON	O
 Corp.	t66	5	Corp.	O	O	O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
-had	t67	5	have	e21	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t52:TMP||t65:SBJ||t69:OBJ||t88:P	mainVb
+had	t67	5	have	e21	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t52:TMP||t64:P||t65:SBJ||t69:OBJ||t81:P||t82:ADV||t88:P	mainVb
 a	t68	5	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-loss	t69	5	loss	e13	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t68:NMOD||t70:NMOD||t82:NMOD	O
+loss	t69	5	loss	e13	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t68:NMOD||t70:NMOD	O
 of	t70	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t72:PMOD	O
 about	t71	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
-$	t72	5	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t71:DEP||t73:DEP||t74:DEP||t75:P||t76:COORD||t81:P	O
+$	t72	5	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t71:DEP||t73:DEP||t74:DEP||t75:P||t76:COORD	O
 12.5	t73	5	12.5	O	O	O	O	O	O	O	O	CRD	I-NP	12.5	CD	O	O
 million	t74	5	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t75	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

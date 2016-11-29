@@ -1,4 +1,4 @@
-DCT_2000-02-16	O	O	O	O	O	O	tmx0	TIME	2000-02-16	O	O	NP0	B-NP	dct_2000-02-16	SYM	O	O
+DCT_2000-02-16	O	O	O	O	O	O	tmx0	TIME	2000-02-16	O	O	NP0	B-NP	dct_2000-02-16	LS	O	O
 
 HAVANA	t1	1	HAVANA	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	havana	NNP	O	O
 -LRB-	t2	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
@@ -24,25 +24,25 @@ based	t21	1	base	O	O	O	O	O	O	O	O	VVN	B-VP	base	VBN	t22:LOC	O
 in	t22	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t23:PMOD	O
 Washington	t23	1	Washington	O	O	O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
 to	t24	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t25:IM	O
-meet	t25	1	meet	e5	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVI	I-VP	meet	VB	t26:ADV	O
+meet	t25	1	meet	e5	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVI	I-VP	meet	VB	t26:ADV||t32:COORD	O
 with	t26	1	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t29:PMOD	O
 his	t27	1	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 6-year-old	t28	1	6-year-old	O	O	O	O	O	O	O	O	AJ0	I-NP	6-year-old	JJ	O	O
-son	t29	1	son	O	O	O	O	O	O	O	O	NN1	I-NP	son	NN	t27:NMOD||t28:NMOD||t30:LOC||t32:COORD	O
+son	t29	1	son	O	O	O	O	O	O	O	O	NN1	I-NP	son	NN	t27:NMOD||t28:NMOD||t30:LOC	O
 in	t30	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t31:PMOD	O
 Miami	t31	1	Miami	O	O	O	O	O	O	O	O	NP0	B-NP	miami	NNP	O	O
 and	t32	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t33:CONJ	O
-check	t33	1	check	e54	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVB	B-VP	check	NN	t34:NMOD	O
+check	t33	1	check	e54	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVB	B-VP	check	VB	t34:ADV	O
 on	t34	1	on	O	O	O	O	O	O	O	O	AVP	B-PP	on	IN	t36:PMOD	O
 his	t35	1	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 condition	t36	1	condition	O	O	O	O	O	O	O	O	NN1	I-NP	condition	NN	t35:NMOD	O
 .	t37	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t38	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t40:NMOD	O
+"	t38	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t39	2	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 are	t40	2	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t39:SBJ||t41:VC	O
 worried	t41	2	worry	O	O	O	O	O	O	O	O	AJ0	B-ADJP	worry	VBN	t42:ADV	O
-not	t42	2	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	t43:DEP||t44:CONJ	O
+not	t42	2	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	t43:DEP||t44:AMOD	O
 only	t43	2	only	O	O	O	O	O	O	O	O	AV0	B-ADVP	only	RB	O	O
 about	t44	2	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t47:PMOD	O
 his	t45	2	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
@@ -53,7 +53,7 @@ kidnapping	t47	2	kidnapping	e55	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	kidn
 Juan	t50	2	Juan	O	O	O	O	O	O	O	O	NP0	B-NP	juan	NNP	O	O
 Miguel	t51	2	Miguel	O	O	O	O	O	O	O	O	NP0	I-NP	miguel	NNP	O	O
 Gonzalez	t52	2	Gonzalez	O	O	O	O	O	O	O	O	NP0	I-NP	gonzalez	NNP	t49:NAME||t50:NAME||t51:NAME	O
-wrote	t53	2	write	e6	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	write	VBD	t38:ADV||t48:P||t52:SBJ||t54:LOC||t68:P	mainVb
+wrote	t53	2	write	e6	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	write	VBD	t38:P||t40:OBJ||t48:P||t52:SBJ||t54:LOC||t68:P	mainVb
 in	t54	2	in	O	O	O	O	O	O	O	O	AVP	B-PP	in	IN	t56:PMOD	O
 a	t55	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 letter	t56	2	letter	O	O	O	O	O	O	O	O	NN1	I-NP	letter	NN	t55:NMOD||t57:APPO	O
@@ -66,13 +66,13 @@ of	t62	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t67:PMOD	O
 the	t63	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Communist	t64	2	Communist	O	O	O	O	O	O	O	O	AJ0	I-NP	communist	NNP	O	O
 Party	t65	2	Party	O	O	O	O	O	O	O	O	NN1	I-NP	party	NNP	t64:NAME	O
-daily	t66	2	daily	O	O	O	tmx2	SET	P1D	O	O	AJ0	B-ADVP	daily	RB	t63:NMOD||t65:NMOD	O
-Granma	t67	2	granma	O	O	O	O	O	O	O	O	NP0	B-NP	granma	NNP	t66:NMOD	O
+daily	t66	2	daily	O	O	O	tmx2	SET	P1D	O	O	AJ0	B-ADVP	daily	RB	O	O
+Granma	t67	2	granma	O	O	O	O	O	O	O	O	NP0	B-NP	granma	NNP	t63:NMOD||t65:NAME||t66:NMOD	O
 .	t68	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t69	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t69	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t70	3	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-lack	t71	3	lack	e8	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	lack	VBP	t69:TMP||t70:SBJ||t73:OBJ||t87:P||t88:P	mainVb
+lack	t71	3	lack	e8	OCCURRENCE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	lack	VBP	t69:P||t70:SBJ||t73:OBJ||t87:P||t88:P	mainVb
 direct	t72	3	direct	O	O	O	O	O	O	O	O	AJ0	B-NP	direct	JJ	O	O
 information	t73	3	information	O	O	O	O	O	O	O	O	NN1	I-NP	information	NN	t72:NMOD||t74:NMOD	O
 about	t74	3	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t77:PMOD	O
@@ -89,7 +89,7 @@ his	t84	3	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 daily	t85	3	daily	O	O	O	tmx3	SET	P1D	O	O	AJ0	I-NP	daily	JJ	O	O
 life	t86	3	life	O	O	O	O	O	O	O	O	NN1	I-NP	life	NN	t84:NMOD||t85:NMOD	O
 .	t87	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t88	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t88	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 There	t89	4	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
 was	t90	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t89:SBJ||t93:PRD||t101:P	mainVb
@@ -151,8 +151,8 @@ wrote	t143	6	write	e16	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	write	VBD	t141
 to	t144	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t145:PMOD	O
 Attorney	t145	6	Attorney	O	O	O	O	O	O	O	O	NP0	B-NP	attorney	NN	t148:APPO	O
 General	t146	6	General	O	O	O	O	O	O	O	O	AJ0	I-NP	general	NNP	O	O
-Janet	t147	6	Janet	O	O	O	O	O	O	O	O	NP0	I-NP	janet	NNP	t146:NAME	O
-Reno	t148	6	Reno	O	O	O	O	O	O	O	O	NP0	I-NP	reno	NNP	t147:NAME	O
+Janet	t147	6	Janet	O	O	O	O	O	O	O	O	NP0	I-NP	janet	NNP	O	O
+Reno	t148	6	Reno	O	O	O	O	O	O	O	O	NP0	I-NP	reno	NNP	t146:NAME||t147:NAME	O
 earlier	t149	6	earlier	O	O	O	O	O	O	O	O	AV0	B-NP	earlier	RBR	O	O
 this	t150	6	this	O	O	O	tmx4	DATE	2000-W7	O	O	DT0	I-NP	this	DT	O	O
 week	t151	6	week	O	O	O	tmx4	DATE	2000-W7	O	O	NN1	I-NP	week	NN	t149:NMOD||t150:NMOD	O
@@ -192,9 +192,9 @@ letter	t181	7	letter	O	O	O	O	O	O	O	O	NN1	B-NP	letter	NN	t180:NMOD	O
 Gonzalez	t183	8	Gonzalez	O	O	O	O	O	O	O	O	NP0	B-NP	gonzalez	NNP	t184:SUFFIX	O
 's	t184	8	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 second	t185	8	second	O	O	O	O	O	O	O	O	ORD	I-NP	second	JJ	O	O
-letter	t186	8	letter	O	O	O	O	O	O	O	O	NN1	I-NP	letter	NN	t183:NMOD||t185:NMOD||t187:NMOD||t189:TMP	O
-to	t187	8	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t188:PMOD	O
-Reno	t188	8	Reno	O	O	O	O	O	O	O	O	NP0	B-NP	reno	NNP	O	O
+letter	t186	8	letter	O	O	O	O	O	O	O	O	NN1	I-NP	letter	NN	t183:NMOD||t185:NMOD||t187:NMOD	O
+to	t187	8	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t188:IM	O
+Reno	t188	8	Reno	O	O	O	O	O	O	O	O	NP0	B-NP	reno	VB	t189:TMP	O
 in	t189	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t191:PMOD	O
 two	t190	8	two	O	O	O	tmx5	DURATION	P2W	O	O	CRD	B-NP	two	CD	O	O
 weeks	t191	8	week	O	O	O	tmx5	DURATION	P2W	O	O	NN2	I-NP	week	NNS	t190:NMOD	O
@@ -206,7 +206,7 @@ on	t196	8	on	O	O	O	O	O	O	s2	O	PRP	B-PP	on	IN	t197:PMOD	O
 Tuesday	t197	8	Tuesday	O	O	O	tmx6	DATE	2000-02-15	O	O	NP0	B-NP	tuesday	NNP	O	O
 .	t198	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t199	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t199	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t200	9	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 formally	t201	9	formally	O	O	O	O	O	O	O	O	AV0	B-ADVP	formally	RB	O	O
 object	t202	9	object	e24	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVB	B-VP	object	VBP	t199:DEP||t200:SBJ||t201:MNR||t203:ADV	O
@@ -287,15 +287,15 @@ battle	t273	12	battle	e65	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	NN1	I-NP	battle	NN	
 since	t274	12	since	O	O	O	O	O	O	O	O	CJS	B-SBAR	since	IN	t276:SUB	O
 he	t275	12	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 was	t276	12	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t275:SBJ||t277:VC	O
-found	t277	12	find	e32	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	found	VBN	t278:LOC	O
+found	t277	12	find	e32	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVN	I-VP	found	VBN	t278:LOC||t282:LOC||t286:TMP	O
 on	t278	12	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t281:PMOD	O
 an	t279	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 inner	t280	12	inner	O	O	O	O	O	O	O	O	AJ0	I-NP	inner	JJ	O	O
-tube	t281	12	tube	O	O	O	O	O	O	O	O	NN1	I-NP	tube	NN	t279:NMOD||t280:NMOD||t282:LOC	O
+tube	t281	12	tube	O	O	O	O	O	O	O	O	NN1	I-NP	tube	NN	t279:NMOD||t280:NMOD	O
 off	t282	12	off	O	O	O	O	O	O	O	O	PRP	B-PP	off	IN	t285:PMOD	O
 the	t283	12	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Florida	t284	12	Florida	O	O	O	O	O	O	O	O	NP0	I-NP	florida	NNP	O	O
-coast	t285	12	coast	O	O	O	O	O	O	O	O	NN1	I-NP	coast	NN	t283:NMOD||t284:NMOD||t286:TMP	O
+coast	t285	12	coast	O	O	O	O	O	O	O	O	NN1	I-NP	coast	NN	t283:NMOD||t284:NMOD	O
 on	t286	12	on	O	O	O	O	O	O	s1	O	PRP	B-PP	on	IN	t288:PMOD	O
 Nov.	t287	12	Nov.	O	O	O	tmx8	DATE	1999-11-25	O	O	NP0	B-NP	nov.	NNP	O	O
 25	t288	12	25	O	O	O	tmx8	DATE	1999-11-25	O	O	CRD	I-NP	25	CD	t287:NMOD	O
@@ -316,15 +316,15 @@ boat	t301	13	boat	O	O	O	O	O	O	O	O	NN1	I-NP	boat	NN	t300:NMOD	O
 sank	t302	13	sink	e33	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	sink	VBD	t299:TMP||t301:SBJ||t303:ADV	O
 on	t303	13	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t305:PMOD	O
 the	t304	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-way	t305	13	way	O	O	O	O	O	O	O	O	NN1	I-NP	way	NN	t304:NMOD||t306:NMOD||t308:NMOD	O
-from	t306	13	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t307:PMOD	O
+way	t305	13	way	O	O	O	O	O	O	O	O	NN1	I-NP	way	NN	t304:NMOD||t306:NMOD	O
+from	t306	13	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t307:PMOD||t308:PMOD	O
 Cuba	t307	13	Cuba	O	O	O	O	O	O	O	O	NP0	B-NP	cuba	NNP	O	O
 to	t308	13	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t310:PMOD	O
 the	t309	13	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-UnitedStates	t310	13	UnitedStates	O	O	O	O	O	O	O	O	NN2	I-NP	unitedstates	NNS	t309:NMOD	O
+UnitedStates	t310	13	UnitedStates	O	O	O	O	O	O	O	O	NN2	I-NP	unitedstates	NNPS	t309:NMOD	O
 .	t311	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Elian	t312	14	Elian	O	O	O	O	O	O	O	O	NP0	B-NP	elian	NN	O	O
+Elian	t312	14	Elian	O	O	O	O	O	O	O	O	NP0	B-NP	elian	JJ	O	O
 is	t313	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t312:SBJ||t314:VC||t335:P	mainVb
 staying	t314	14	stay	O	O	O	O	O	O	O	O	VVG	I-VP	stay	VBG	t315:ADV	mainVb
 with	t315	14	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t318:PMOD	O
@@ -362,18 +362,18 @@ died	t345	15	die	e76	OCCURRENCE	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	die	VBD	t344:SB
 to	t346	15	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t347:IM	O
 give	t347	15	give	e38	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVI	I-VP	give	VB	t348:OBJ||t349:OBJ	O
 him	t348	15	he	O	O	O	O	O	O	O	O	PNP	B-NP	him	PRP	O	O
-freedom	t349	15	freedom	O	O	O	O	O	O	O	O	NN1	B-VP	freedom	NN	t350:LOC	O
+freedom	t349	15	freedom	O	O	O	O	O	O	O	O	NN1	B-VP	freedom	VB	t350:LOC	O
 in	t350	15	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t353:PMOD	O
 the	t351	15	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 United	t352	15	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
-States	t353	15	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t351:NAME||t352:NAME	O
+States	t353	15	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t351:NMOD||t352:NAME	O
 ,	t354	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-while	t355	15	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t360:SUB	O
+while	t355	15	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t358:SUB	O
 theCuban	t356	15	thecuban	O	O	O	O	O	O	O	O	AJ0	B-NP	thecuban	JJ	O	O
 government	t357	15	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t356:NMOD	O
-maintains	t358	15	maintain	e39	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	maintain	NNS	t357:NMOD||t359:APPO	O
-Elian	t359	15	Elian	O	O	O	O	O	O	O	O	AJ0	B-ADJP	elian	JJ	O	O
-is	t360	15	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t358:SBJ||t361:VC	O
+maintains	t358	15	maintain	e39	REPORTING	PRESENT+NONE+NEG	O	O	O	O	O	VVZ	B-VP	maintain	VBZ	t357:SBJ||t360:OBJ	O
+Elian	t359	15	Elian	O	O	O	O	O	O	O	O	AJ0	B-ADJP	elian	NNP	O	O
+is	t360	15	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t359:SBJ||t361:VC	O
 being	t361	15	be	O	O	O	O	O	O	O	O	VBG	I-VP	be	VBG	t363:VC	O
 improperly	t362	15	improperly	O	O	O	O	O	O	O	O	AV0	I-VP	improperly	RB	O	O
 kept	t363	15	keep	O	O	O	O	O	O	O	O	VVN	I-VP	keep	VBN	t362:MNR||t364:ADV	O
@@ -382,10 +382,10 @@ his	t365	15	he	O	O	O	O	O	O	O	O	DPS	B-NP	his	PRP$	O	O
 father	t366	15	father	O	O	O	O	O	O	O	O	NN1	I-NP	father	NN	t365:NMOD	O
 .	t367	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t368	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t368	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t370:APPO	O
 Juan	t369	16	Juan	O	O	O	O	O	O	O	O	NP0	B-NP	juan	NNP	O	O
-Miguel	t370	16	Miguel	O	O	O	O	O	O	O	O	NP0	I-NP	miguel	NNP	t368:NAME||t369:NAME	O
-must	t371	16	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t370:SBJ||t372:ADV||t373:VC	O
+Miguel	t370	16	Miguel	O	O	O	O	O	O	O	O	NP0	I-NP	miguel	NNP	t369:NAME	O
+must	t371	16	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t368:SBJ||t372:ADV||t373:VC	O
 not	t372	16	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 have	t373	16	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t374:VC	O
 written	t374	16	write	e41	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	write	VBN	t376:OBJ	O
@@ -393,8 +393,8 @@ the	t375	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 letter	t376	16	letter	O	O	O	O	O	O	O	O	NN1	I-NP	letter	NN	t375:NMOD||t377:APPO	O
 himself	t377	16	himself	O	O	O	O	O	O	O	O	PNX	I-NP	himself	PRP	O	O
 ,	t378	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t379	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t380	16	say	e42	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t371:OBJ||t378:P||t379:SBJ||t382:OBJ||t391:P	mainVb
+"	t379	16	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+said	t380	16	say	e42	REPORTING	PAST+NONE+NEG	O	O	O	O	O	VVD	B-VP	say	VBD	t371:OBJ||t378:P||t379:SBJ||t382:SBJ||t391:P	mainVb
 Armando	t381	16	Armando	O	O	O	O	O	O	O	O	NP0	B-NP	armando	NNP	O	O
 Gutierrez	t382	16	Gutierrez	O	O	O	O	O	O	O	O	NP0	I-NP	gutierrez	NNP	t381:NAME||t383:P||t384:APPO	O
 ,	t383	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -407,9 +407,9 @@ in	t389	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t390:PMOD	O
 Miami	t390	16	Miami	O	O	O	O	O	O	O	O	NP0	B-NP	miami	NNP	O	O
 .	t391	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t392	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
-Castro	t393	17	Castro	O	O	O	O	O	O	O	O	NP0	B-NP	castro	NNP	O	O
-must	t394	17	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t392:DEP||t393:SBJ||t395:VC||t409:P	mainVb
+"	t392	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+Castro	t393	17	Castro	O	O	O	O	O	O	O	O	NP0	B-NP	castro	NNP	t392:NAME	O
+must	t394	17	must	O	O	O	O	O	O	O	O	VM0	B-VP	must	MD	t393:SBJ||t395:VC||t409:P	mainVb
 be	t395	17	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t396:VC	mainVb
 dreaming	t396	17	dream	e43	OCCURRENCE	NONE+PROGRESSIVE+NEG	O	O	O	O	O	VVG	I-VP	dream	VBG	t397:ADV	mainVb
 for	t397	17	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t400:SUB	O
@@ -443,11 +443,11 @@ on	t423	18	on	O	O	O	O	O	O	s3	O	PRP	B-PP	on	IN	t424:PMOD	O
 Monday	t424	18	Monday	O	O	O	tmx9	DATE	2000-02-14	O	O	NP0	B-NP	monday	NNP	O	O
 arguing	t425	18	argue	e46	OCCURRENCE	PRESPART+NONE+NEG	O	O	O	O	O	VVG	B-VP	argue	VBG	t431:OBJ	O
 the	t426	18	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Immigration	t427	18	Immigration	O	O	O	O	O	O	O	O	NN1	I-NP	immigration	NNP	t426:NMOD||t428:COORD	O
-and	t428	18	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t430:CONJ	O
+Immigration	t427	18	Immigration	O	O	O	O	O	O	O	O	NN1	I-NP	immigration	NNP	O	O
+and	t428	18	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	O	O
 Naturalization	t429	18	Naturalization	O	O	O	O	O	O	O	O	NN1	I-NP	naturalization	NNP	O	O
-Service	t430	18	Service	O	O	O	O	O	O	O	O	NN1	I-NP	service	NNP	t429:NAME	O
-can	t431	18	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t427:SBJ||t432:ADV||t433:VC	O
+Service	t430	18	Service	O	O	O	O	O	O	O	O	NN1	I-NP	service	NNP	t426:NAME||t427:NAME||t428:NAME||t429:NAME	O
+can	t431	18	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t430:SBJ||t432:ADV||t433:VC	O
 not	t432	18	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 return	t433	18	return	e47	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	return	VB	t434:MNR||t435:DIR||t437:ADV	O
 Elian	t434	18	Elian	O	O	O	O	O	O	O	O	AJ0	B-ADJP	elian	JJ	O	O
@@ -470,7 +470,7 @@ to	t449	19	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t450:IM	mainVb
 dismiss	t450	19	dismiss	e50	OCCURRENCE	INFINITIVE+NONE+NEG	O	O	O	O	O	VVI	I-VP	dismiss	VB	t455:OBJ	mainVb
 the	t451	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Miami	t452	19	Miami	O	O	O	O	O	O	O	O	NN1	I-NP	miami	NNP	O	O
-relatives	t453	19	relative	O	O	O	O	O	O	O	O	VVZ	B-VP	relative	NNS	t451:NMOD||t452:NAME||t454:SUFFIX	O
+relatives	t453	19	relative	O	O	O	O	O	O	O	O	VVZ	B-VP	relative	NNS	t451:NMOD||t452:NMOD||t454:SUFFIX	O
 '	t454	19	'	O	O	O	O	O	O	O	O	PUQ	B-NP	'	POS	O	O
 lawsuit	t455	19	lawsuit	O	O	O	O	O	O	O	O	NN1	I-NP	lawsuit	NN	t453:NMOD	O
 ,	t456	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

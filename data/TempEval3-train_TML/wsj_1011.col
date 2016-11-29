@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Delta	t1	1	Delta	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	delta	NNP	O	O
 Air	t2	1	Air	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	air	NNP	O	O
@@ -80,11 +80,11 @@ Sept.	t75	3	Sept.	O	O	O	tmx63	DATE	1989-09-30	O	O	NP0	B-NP	sept.	NNP	O	O
 30	t76	3	30	O	O	O	tmx63	DATE	1989-09-30	O	O	CRD	I-NP	30	CD	t75:NMOD	O
 ,	t77	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Delta	t78	3	Delta	O	O	O	O	O	O	O	O	NP0	B-NP	delta	NNP	O	O
-posted	t79	3	post	e15	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t71:TMP||t77:P||t78:SBJ||t81:OBJ||t108:P	mainVb
+posted	t79	3	post	e15	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	post	VBD	t71:ADV||t77:P||t78:SBJ||t81:OBJ||t108:P	mainVb
 net	t80	3	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
-income	t81	3	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t80:NMOD||t82:NMOD||t92:P||t93:NMOD	O
+income	t81	3	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t80:NMOD||t82:NMOD||t93:NMOD	O
 of	t82	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t83:PMOD	O
-$	t83	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t84:DEP||t85:DEP||t86:P||t87:COORD	O
+$	t83	3	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t84:DEP||t85:DEP||t86:P||t87:COORD||t92:P	O
 133.1	t84	3	133.1	O	O	O	O	O	O	O	O	CRD	I-NP	133.1	CD	O	O
 million	t85	3	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t86	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -156,15 +156,15 @@ ownership	t149	5	ownership	O	O	O	O	O	O	O	O	NN1	I-NP	ownership	NN	t148:NMOD	O
 plan	t150	5	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t145:NMOD||t147:NMOD||t149:NMOD	O
 .	t151	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t152	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	VBG	t154:OBJ	O
+"	t152	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 The	t153	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-key	t154	6	key	O	O	O	O	O	O	O	O	NN1	I-NP	key	NN	t153:NMOD||t155:NMOD||t160:NMOD	O
-to	t155	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	O	O
+key	t154	6	key	O	O	O	O	O	O	O	O	NN1	I-NP	key	NN	t153:NMOD||t155:NMOD	O
+to	t155	6	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t159:PMOD	O
 Delta	t156	6	Delta	O	O	O	O	O	O	O	O	NP0	B-NP	delta	NNP	t157:SUFFIX	O
 's	t157	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 record	t158	6	record	O	O	O	O	O	O	O	O	NN1	I-NP	record	NN	O	O
 earnings	t159	6	earnings	O	O	O	O	O	O	O	O	NN2	I-NP	earnings	NNS	t156:NMOD||t158:NMOD	O
-continued	t160	6	continue	e21	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	continue	VBD	t159:SBJ||t161:OPRD	O
+continued	t160	6	continue	e21	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	continue	VBD	t154:SBJ||t161:OPRD	O
 to	t161	6	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t162:IM	O
 be	t162	6	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t166:PRD	O
 excellent	t163	6	excellent	O	O	O	O	O	O	O	O	AJ0	B-NP	excellent	JJ	O	O
@@ -173,7 +173,7 @@ revenue	t165	6	revenue	O	O	O	O	O	O	O	O	NN1	I-NP	revenue	NN	t164:NMOD	O
 growth	t166	6	growth	e95	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	growth	NN	t163:NMOD||t165:NMOD	O
 ,	t167	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t168	6	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-said	t169	6	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t152:ADV||t167:P||t168:SBJ||t171:SBJ||t176:P	mainVb
+said	t169	6	say	e23	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t152:P||t160:OBJ||t167:P||t168:SBJ||t171:SBJ||t176:P	mainVb
 Thomas	t170	6	Thomas	O	O	O	O	O	O	O	O	NP0	B-NP	thomas	NNP	O	O
 Roeck	t171	6	Roeck	O	O	O	O	O	O	O	O	NP0	I-NP	roeck	NNP	t170:NAME||t172:P||t175:APPO	O
 ,	t172	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -226,9 +226,9 @@ Eastern	t215	9	Eastern	O	O	O	O	O	O	O	O	AJ0	B-NP	eastern	NNP	O	O
 is	t216	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t215:SBJ||t217:PRD||t226:TMP	O
 back	t217	9	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RB	t218:AMOD	O
 to	t218	9	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t221:PMOD	O
-about	t219	9	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
-80	t220	9	80	O	O	O	O	O	O	O	O	CRD	I-NP	80	CD	t219:DEP	O
-%	t221	9	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t220:NMOD||t222:NMOD	O
+about	t219	9	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t220:DEP	O
+80	t220	9	80	O	O	O	O	O	O	O	O	CRD	I-NP	80	CD	O	O
+%	t221	9	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t219:NMOD||t222:NMOD	O
 of	t222	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t225:PMOD	O
 its	t223	9	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 pre-strike	t224	9	pre-strike	O	O	O	O	O	O	O	O	AJ0	I-NP	pre-strike	NN	O	O
@@ -258,14 +258,14 @@ Separately	t246	10	separately	O	O	O	O	O	O	O	O	AV0	B-ADVP	separately	RB	O	O
 ,	t247	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 America	t248	10	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	O	O
 West	t249	10	West	O	O	O	O	O	O	O	O	NP0	I-NP	west	NNP	O	O
-Airlines	t250	10	Airlines	O	O	O	O	O	O	O	O	NP0	I-NP	airline	NNP	t248:NAME||t249:NAME||t251:P||t254:APPO||t255:P	O
+Airlines	t250	10	Airlines	O	O	O	O	O	O	O	O	NP0	I-NP	airline	NNPS	t248:NAME||t249:NAME||t251:P||t252:LOC	O
 ,	t251	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Phoenix	t252	10	Phoenix	O	O	O	O	O	O	O	O	NP0	B-NP	phoenix	NNP	O	O
+Phoenix	t252	10	Phoenix	O	O	O	O	O	O	O	O	NP0	B-NP	phoenix	NNP	t253:P||t254:APPO||t255:P	O
 ,	t253	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Ariz.	t254	10	Ariz.	O	O	O	O	O	O	O	O	NP0	B-NP	ariz.	NNP	t252:NMOD||t253:P	O
+Ariz.	t254	10	Ariz.	O	O	O	O	O	O	O	O	NP0	B-NP	ariz.	NNP	O	O
 ,	t255	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 reported	t256	10	report	e34	REPORTING	PAST+NONE+POS	O	O	O	O	O	AJ0	B-VP	report	VBD	t246:ADV||t247:P||t250:SBJ||t259:OBJ||t287:P	mainVb
-third-quarter	t257	10	third-quarter	O	O	O	tmx79	DATE	1989-Q3	O	O	NN1	B-NP	third-quarter	NN	O	O
+third-quarter	t257	10	third-quarter	O	O	O	tmx79	DATE	1989-Q3	O	O	NN1	B-NP	third-quarter	JJ	O	O
 profit	t258	10	profit	O	O	O	O	O	O	O	O	NN1	I-NP	profit	NN	t257:NMOD	O
 jumped	t259	10	jump	e35	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	jump	VBD	t258:SBJ||t261:EXT||t262:DIR||t273:DIR	O
 45	t260	10	45	O	O	O	O	O	O	O	O	CRD	B-NP	45	CD	O	O
@@ -313,7 +313,7 @@ a	t299	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 foreign	t301	11	foreign	O	O	O	O	O	O	O	O	AJ0	I-NP	foreign	JJ	O	O
 entity	t302	11	entity	O	O	O	O	O	O	O	O	NN1	I-NP	entity	NN	t299:NMOD||t300:NMOD||t301:NMOD	O
 .	t303	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t304	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+"	t304	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 America	t305	12	America	O	O	O	O	O	O	O	O	NP0	B-NP	america	NNP	O	O
 West	t306	12	West	O	O	O	O	O	O	O	O	NP0	I-NP	west	NNP	t305:NAME	O
@@ -347,7 +347,7 @@ plane	t333	12	plane	O	O	O	O	O	O	O	O	NN1	I-NP	plane	NN	O	O
 purchases	t334	12	purchase	O	O	O	O	O	O	O	O	NN2	I-NP	purchase	NNS	t332:NMOD||t333:NMOD	O
 .	t335	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Year-earlier	t336	13	year-earlier	O	O	O	tmx80	DATE	1988-Q3	O	O	NP0	B-NP	year-earlier	JJR	O	O
+Year-earlier	t336	13	year-earlier	O	O	O	tmx80	DATE	1988-Q3	O	O	NP0	B-NP	year-earlier	NN	O	O
 results	t337	13	result	e44	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	result	NNS	t336:NMOD	O
 included	t338	13	include	O	O	O	O	O	O	O	O	VVD	B-VP	include	VBD	t337:SBJ||t341:OBJ||t353:P	mainVb
 an	t339	13	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O

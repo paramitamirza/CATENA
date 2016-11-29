@@ -1,12 +1,12 @@
-DCT_1998-08-11	O	O	O	O	O	O	tmx0	DATE	1998-08-11	O	O	NP0	B-NP	dct_1998-08-11	SYM	O	O
+DCT_1998-08-11	O	O	O	O	O	O	tmx0	DATE	1998-08-11	O	O	NP0	B-NP	dct_1998-08-11	LS	O	O
 
-WASHINGTON	t1	1	WASHINGTON	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
+WASHINGTON	t1	1	WASHINGTON	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	washington	NNP	t2:P||t7:COORD	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 August	t3	1	August	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	august	NNP	t4:NMOD	O
 11	t4	1	11	O	O	O+O+O	O	O	O	O	O	CRD	I-NP	11	CD	O	O
 -LRB-	t5	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
 Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	xinhua	NNP	O	O
--RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t3:NMOD||t5:NAME||t6:NAME||t8:P	O
+-RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t3:NMOD||t5:NAME||t6:NAME||t8:P||t14:APPO	O
 --	t8	1	--	O	O	O+O+O	O	O	O	O	O	UNC	O	--	:	O	O
 U.S.	t9	1	U.S.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
 Secretary	t10	1	Secretary	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	secretary	NN	t9:NMOD||t11:NMOD	O
@@ -14,7 +14,7 @@ of	t11	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t12:PMOD	O
 State	t12	1	State	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	state	NNP	O	O
 Madeleine	t13	1	Madeleine	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	madeleine	NNP	O	O
 Albright	t14	1	Albright	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	albright	NNP	t10:NMOD||t13:NAME	O
-said	t15	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t1:ADV||t2:P||t7:SBJ||t14:SBJ||t16:TMP||t18:OBJ||t38:P	mainVb
+said	t15	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t1:SBJ||t16:TMP||t18:OBJ||t38:P	mainVb
 on	t16	1	on	O	O	O	O	O	O	s1	O	PRP	B-PP	on	IN	t17:PMOD	O
 Tuesday	t17	1	Tuesday	O	O	O	tmx2	DATE	1998-08-11	O	O	NP0	B-NP	tuesday	NNP	O	O
 that	t18	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t20:SUB	O
@@ -39,7 +39,7 @@ U.S.	t36	1	U.S.	O	O	O	O	O	O	O	O	NP0	B-NP	u.s.	NNP	O	O
 embassies	t37	1	embassy	O	O	O	O	O	O	O	O	NN2	I-NP	embassy	NNS	t36:NMOD	O
 .	t38	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t39	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	WP	O	O
+"	t39	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 I	t40	2	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
 have	t41	2	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t40:SBJ||t42:VC	O
 been	t42	2	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t43:VC	O
@@ -50,7 +50,7 @@ close	t46	2	close	O	O	O	O	O	O	O	O	AJ0	I-NP	close	JJ	O	O
 cooperation	t47	2	cooperation	e42	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	cooperation	NN	t45:NMOD||t46:NMOD||t49:NMOD	O
 we	t48	2	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 have	t49	2	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t48:SBJ||t50:VC	O
-had	t50	2	have	O	O	O	O	O	O	O	O	VHN	I-VP	have	VBN	t51:ADV||t53:LOC||t57:ADV	O
+had	t50	2	have	O	O	O	O	O	O	O	O	VHN	I-VP	have	VBN	t51:ADV||t53:LOC||t57:TMP	O
 with	t51	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t52:PMOD	O
 authorities	t52	2	authority	O	O	O	O	O	O	O	O	NN2	B-NP	authorities	NNS	O	O
 in	t53	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t54:PMOD	O
@@ -66,11 +66,11 @@ occurred	t62	2	occur	O	O	O	O	O	O	O	O	VVD	B-VP	occur	VBD	t61:SBJ	O
 ,	t63	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t64	2	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
 Albright	t65	2	Albright	O	O	O	O	O	O	O	O	AV0	B-ADVP	albright	NNP	t64:NAME	O
-told	t66	2	tell	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	tell	VBD	t41:OBJ||t63:P||t65:SBJ||t67:OBJ||t70:OBJ||t87:P	mainVb
-ambassadors	t67	2	ambassador	O	O	O	O	O	O	O	O	NN2	B-NP	ambassador	NNS	t68:COORD	O
+told	t66	2	tell	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	tell	VBD	t39:DEP||t41:OBJ||t63:P||t65:SBJ||t67:OBJ||t87:P	mainVb
+ambassadors	t67	2	ambassador	O	O	O	O	O	O	O	O	NN2	B-NP	ambassador	NNS	t68:COORD||t71:NMOD	O
 and	t68	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t69:CONJ	O
-charges	t69	2	charge	O	O	O	O	O	O	O	O	NN2	I-NP	charge	NNS	O	O
-d'affaires	t70	2	d'affaire	O	O	O	O	O	O	O	O	NN2	I-NP	d'affaire	NNS	t71:NMOD	O
+charges	t69	2	charge	O	O	O	O	O	O	O	O	NN2	I-NP	charge	NNS	t70:OBJ	O
+d'affaires	t70	2	d'affaire	O	O	O	O	O	O	O	O	NN2	I-NP	d'affaire	NNS	O	O
 of	t71	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t74:PMOD	O
 30	t72	2	30	O	O	O	O	O	O	O	O	CRD	B-NP	30	CD	O	O
 African	t73	2	african	O	O	O	O	O	O	O	O	AJ0	I-NP	african	JJ	O	O
@@ -80,7 +80,7 @@ Washington	t76	2	Washington	O	O	O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
 ,	t77	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 who	t78	2	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 came	t79	2	come	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	come	VBD	t78:SBJ||t80:DIR||t84:PRP	O
-to	t80	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t39:PMOD||t83:PMOD	O
+to	t80	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t83:PMOD	O
 the	t81	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 State	t82	2	State	O	O	O	O	O	O	O	O	NN1	I-NP	state	NNP	O	O
 Department	t83	2	Department	O	O	O	O	O	O	O	O	NN1	I-NP	department	NNP	t81:NMOD||t82:NAME	O
@@ -89,9 +89,9 @@ offer	t85	2	offer	e7	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	offer	VB	
 condolences	t86	2	condolence	O	O	O	O	O	O	O	O	NN2	B-NP	condolence	NNS	O	O
 .	t87	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t88	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	WP	O	O
+"	t88	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 I	t89	3	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-want	t90	3	want	e8	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	want	VBP	t89:SBJ||t91:OPRD	O
+want	t90	3	want	e8	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	want	VBP	t88:SBJ||t89:SBJ||t91:OPRD	O
 to	t91	3	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t92:IM	O
 thank	t92	3	thank	e9	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	thank	VB	t93:OBJ||t94:ADV	O
 you	t93	3	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
@@ -102,7 +102,7 @@ that	t97	3	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t100:SUB	O
 your	t98	3	you	O	O	O	O	O	O	O	O	DPS	B-NP	your	PRP$	O	O
 governments	t99	3	government	O	O	O	O	O	O	O	O	NN2	I-NP	government	NNS	t98:NMOD	O
 have	t100	3	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t99:SBJ||t101:VC	O
-provided	t101	3	provide	e10	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	provide	VBN	t88:OBJ||t102:MNR	O
+provided	t101	3	provide	e10	OCCURRENCE	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	provide	VBN	t102:MNR	O
 by	t102	3	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t103:PMOD	O
 sharing	t103	3	share	e11	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	share	VBG	t104:OBJ||t105:COORD	O
 information	t104	3	information	O	O	O	O	O	O	O	O	NN1	B-NP	information	NN	O	O
@@ -116,9 +116,9 @@ in	t111	3	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t113:PMOD	O
 recent	t112	3	recent	O	O	O	tmx8	DURATION	PXD	O	O	AJ0	B-NP	recent	JJ	O	O
 days	t113	3	day	O	O	O	tmx8	DURATION	PXD	O	O	NN2	I-NP	days	NNS	t112:NMOD	O
 ,	t114	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t115	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t115	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	TO	O	O
 she	t116	3	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
-said	t117	3	say	e13	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t90:OBJ||t114:P||t115:SBJ||t116:SBJ||t118:P	mainVb
+said	t117	3	say	e13	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t90:OBJ||t114:P||t115:DEP-GAP||t116:SBJ||t118:P	mainVb
 .	t118	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t119	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -137,9 +137,9 @@ than	t131	4	than	O	O	O	O	O	O	O	O	AV0	I-NP	than	IN	O	O
 200	t132	4	200	O	O	O	O	O	O	O	O	CRD	I-NP	200	CD	t130:DEP||t131:DEP	O
 people	t133	4	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t132:NMOD	O
 ,	t134	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-including	t135	4	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t136:PMOD	O
-12	t136	4	12	O	O	O	O	O	O	O	O	CRD	B-NP	12	CD	t137:NMOD	O
-Americans	t137	4	Americans	O	O	O	O	O	O	O	O	NN2	I-NP	americans	JJ	O	O
+including	t135	4	include	O	O	O	O	O	O	O	O	PRP	B-PP	include	VBG	t137:PMOD	O
+12	t136	4	12	O	O	O	O	O	O	O	O	CRD	B-NP	12	CD	O	O
+Americans	t137	4	Americans	O	O	O	O	O	O	O	O	NN2	I-NP	americans	JJ	t136:NMOD	O
 ,	t138	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t139	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t140:CONJ	O
 wounded	t140	4	wound	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	wound	VBD	t141:ADV	O
@@ -162,17 +162,17 @@ the	t155	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 bombings	t156	5	bombing	e47	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	NNS	t155:NMOD	O
 but	t157	5	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t159:CONJ	O
 there	t158	5	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-was	t159	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t158:SBJ||t161:PRD||t162:LOC||t164:TMP	O
+was	t159	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t158:SBJ||t161:PRD||t170:TMP	O
 no	t160	5	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
-word	t161	5	word	O	O	O	O	O	O	O	O	NN1	I-NP	word	NN	t160:NMOD||t166:NMOD	O
+word	t161	5	word	O	O	O	O	O	O	O	O	NN1	I-NP	word	NN	t160:NMOD||t162:LOC||t164:TMP||t166:NMOD	O
 in	t162	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t163:PMOD	O
 Washington	t163	5	Washington	O	O	O	O	O	O	O	O	NP0	B-NP	washington	NNP	O	O
 on	t164	5	on	O	O	O	O	O	O	s2	O	PRP	B-PP	on	IN	t165:PMOD	O
 Tuesday	t165	5	Tuesday	O	O	O	tmx4	DATE	1998-08-11	O	O	NP0	B-NP	tuesday	NNP	O	O
 of	t166	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t169:PMOD	O
 any	t167	5	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
-significant	t168	5	significant	O	O	O	O	O	O	O	O	AJ0	I-NP	significant	JJ	t167:NMOD	O
-leads	t169	5	lead	O	O	O	O	O	O	O	O	NN2	I-NP	lead	VBZ	t168:SBJ||t170:ADV	O
+significant	t168	5	significant	O	O	O	O	O	O	O	O	AJ0	I-NP	significant	JJ	O	O
+leads	t169	5	lead	O	O	O	O	O	O	O	O	NN2	I-NP	lead	NNS	t167:NMOD||t168:NMOD	O
 so	t170	5	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	t171:AMOD	O
 far	t171	5	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	O	O
 .	t172	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -184,12 +184,12 @@ on	t176	6	on	O	O	O	O	O	O	s3	O	PRP	B-PP	on	IN	t177:PMOD	O
 Tuesday	t177	6	Tuesday	O	O	O	tmx5	DATE	1998-08-11	O	O	NP0	B-NP	tuesday	NNP	O	O
 they	t178	6	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 had	t179	6	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t178:SBJ||t180:VC	O
-arrested	t180	6	arrest	e20	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	arrest	VBN	t182:OBJ||t183:TMP||t186:ADV	O
+arrested	t180	6	arrest	e20	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	arrest	VBN	t182:OBJ||t183:TMP	O
 14	t181	6	14	O	O	O	O	O	O	O	O	CRD	B-NP	14	CD	O	O
 foreigners	t182	6	foreigner	O	O	O	O	O	O	O	O	NN2	I-NP	foreigner	NNS	t181:NMOD	O
 in	t183	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t185:PMOD	O
 their	t184	6	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
-search	t185	6	search	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	search	NN	t184:NMOD	O
+search	t185	6	search	e49	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	search	NN	t184:NMOD||t186:NMOD	O
 for	t186	6	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t187:PMOD	O
 bombers	t187	6	bomber	O	O	O	O	O	O	O	O	NN2	B-NP	bomber	NNS	O	O
 .	t188	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -218,7 +218,7 @@ because	t209	7	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t211:SUB	O
 they	t210	7	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 failed	t211	7	fail	e22	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fail	VBD	t210:SBJ||t212:OPRD	O
 to	t212	7	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t213:IM	O
-explain	t213	7	explain	e23	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	explain	VB	t215:OBJ||t216:LOC||t219:TMP	O
+explain	t213	7	explain	e23	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	explain	VB	t215:OBJ||t216:LOC||t219:MNR	O
 their	t214	7	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 presence	t215	7	presence	O	O	O	O	O	O	O	O	NN1	I-NP	presence	NN	t214:NMOD	O
 in	t216	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t218:PMOD	O
@@ -244,7 +244,7 @@ U.S.	t234	8	U.S.	O	O	O	O	O	O	O	O	NN0	I-NP	u.s.	NNP	O	O
 dollars	t235	8	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t233:NMOD||t234:NMOD	O
 for	t236	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t237:PMOD	O
 information	t237	8	information	O	O	O	O	O	O	O	O	NN1	B-NP	information	NN	t238:APPO	O
-leading	t238	8	lead	O	O	O	O	O	O	O	O	VVG	B-VP	lead	VBG	t239:DIR	O
+leading	t238	8	lead	O	O	O	O	O	O	O	O	VVG	B-VP	lead	JJ	t239:AMOD	O
 to	t239	8	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t241:PMOD	O
 the	t240	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 arrest	t241	8	arrest	e52	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	arrest	NN	t240:NMOD||t242:COORD||t244:NMOD	O
@@ -274,10 +274,10 @@ wait	t263	9	wait	e30	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVI	I-VP	wait	VB	t264:TM
 until	t264	9	until	O	O	O	O	O	O	O	O	CJS	B-SBAR	until	IN	t266:SUB	O
 she	t265	9	she	O	O	O	O	O	O	O	O	PNP	B-NP	she	PRP	O	O
 could	t266	9	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t265:SBJ||t267:VC	O
-do	t267	9	do	e62	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VDI	I-VP	do	VB	t268:PRD||t269:ADV	O
+do	t267	9	do	e62	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VDI	I-VP	do	VB	t268:ADV||t269:ADV	O
 so	t268	9	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	O	O
 without	t269	9	without	O	O	O	O	O	O	O	O	PRP	B-PP	without	IN	t270:PMOD	O
-placing	t270	9	place	O	O	O	O	O	O	O	O	VVG	B-VP	place	VBG	t272:OBJ||t273:LOC	O
+placing	t270	9	place	O	O	O	O	O	O	O	O	VVG	B-VP	place	VBG	t272:OBJ||t273:ADV	O
 undue	t271	9	undue	O	O	O	O	O	O	O	O	AJ0	B-NP	undue	JJ	O	O
 burdens	t272	9	burden	O	O	O	O	O	O	O	O	NN2	I-NP	burden	NNS	t271:NMOD	O
 on	t273	9	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t278:PMOD	O
@@ -302,7 +302,7 @@ United	t290	10	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
 States	t291	10	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t289:NMOD||t290:NAME	O
 from	t292	10	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t293:PMOD	O
 building	t293	10	build	O	O	O	O	O	O	O	O	NN1	B-NP	build	VBG	t294:OBJ||t298:OBJ	O
-"	t294	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t294	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 a	t295	10	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 strong	t296	10	strong	O	O	O	O	O	O	O	O	AJ0	I-NP	strong	JJ	O	O
 new	t297	10	new	O	O	O	O	O	O	O	O	AJ0	I-NP	new	JJ	O	O
@@ -327,20 +327,20 @@ the	t314	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 African	t315	11	african	O	O	O	O	O	O	O	O	AJ0	I-NP	african	JJ	O	O
 envoys	t316	11	envoy	O	O	O	O	O	O	O	O	NN2	I-NP	envoy	NNS	t314:NMOD||t315:NMOD	O
 ,	t317	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-condemned	t318	11	condemn	e36	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t320:OBJ||t321:MNR||t328:P	O
+condemned	t318	11	condemn	e36	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	condemn	VBD	t320:OBJ||t328:P	O
 the	t319	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-"	t320	11	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t319:NMOD	O
+"	t320	11	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t319:NMOD||t321:NMOD||t327:APPO	O
 cowardly	t321	11	cowardly	O	O	O	O	O	O	O	O	AV0	B-ADVP	cowardly	RB	t322:P||t323:COORD	O
 ,	t322	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 criminal	t323	11	criminal	O	O	O	O	O	O	O	O	AJ0	B-NP	criminal	JJ	t324:COORD	O
 and	t324	11	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t325:CONJ	O
-tragic	t325	11	tragic	O	O	O	O	O	O	O	O	AJ0	I-NP	tragic	JJ	t327:OBJ	O
+tragic	t325	11	tragic	O	O	O	O	O	O	O	O	AJ0	I-NP	tragic	JJ	O	O
 "	t326	11	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
 bombings	t327	11	bombing	e56	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	bombing	NNS	t326:NMOD	O
 .	t328	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 "	t329	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	DT	O	O
-Terrorism	t330	12	Terrorism	O	O	O	O	O	O	O	O	NN1	B-NP	terrorism	NNP	t329:NMOD	O
+Terrorism	t330	12	Terrorism	O	O	O	O	O	O	O	O	NN1	B-NP	terrorism	NN	t329:NMOD	O
 is	t331	12	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t330:SBJ||t332:PRD	O
 inconsistent	t332	12	inconsistent	O	O	O	O	O	O	O	O	AJ0	B-ADJP	inconsistent	JJ	t333:AMOD	O
 with	t333	12	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t336:PMOD	O
@@ -357,20 +357,20 @@ and	t343	12	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t345:CONJ	O
 our	t344	12	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 beliefs	t345	12	belief	O	O	O	O	O	O	O	O	NN2	I-NP	belief	NNS	t344:NMOD	O
 ,	t346	12	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t347	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t347	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t348	12	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t349	12	say	e37	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t331:OBJ||t346:P||t347:SBJ||t348:SBJ||t350:P	mainVb
+said	t349	12	say	e37	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t331:OBJ||t346:P||t347:P||t348:SBJ||t350:P	mainVb
 .	t350	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t351	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP$	O	O
+"	t351	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 Americans	t352	13	american	O	O	O	O	O	O	O	O	NN2	B-NP	americans	JJ	t353:COORD	O
 and	t353	13	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t354:CONJ	O
 Africans	t354	13	african	O	O	O	O	O	O	O	O	NN2	B-NP	africans	JJ	O	O
-need	t355	13	need	e38	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	need	NN	t351:NMOD||t352:NMOD||t356:NMOD||t367:P	mainVb
+need	t355	13	need	e38	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	need	NN	t351:P||t352:SBJ||t356:NMOD||t367:P	mainVb
 to	t356	13	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t357:IM	mainVb
-strengthen	t357	13	strengthen	e39	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	strengthen	VB	t359:OBJ	mainVb
+strengthen	t357	13	strengthen	e39	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	strengthen	VB	t359:OBJ||t360:LOC	mainVb
 their	t358	13	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
-cooperation	t359	13	cooperation	O	O	O	O	O	O	O	O	NN1	I-NP	cooperation	NN	t358:NMOD||t360:LOC	O
+cooperation	t359	13	cooperation	O	O	O	O	O	O	O	O	NN1	I-NP	cooperation	NN	t358:NMOD	O
 in	t360	13	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t364:PMOD	O
 this	t361	13	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 universal	t362	13	universal	O	O	O	O	O	O	O	O	AJ0	I-NP	universal	JJ	O	O

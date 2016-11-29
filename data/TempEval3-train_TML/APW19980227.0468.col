@@ -1,15 +1,15 @@
-DCT_1998-02-27T07:56:00	O	O	O	O	O	O	tmx0	TIME	1998-02-27T07:56:00	O	O	NP0	B-NP	dct_1998-02-27t07:56:00	NN	O	O
+DCT_1998-02-27T07:56:00	O	O	O	O	O	O	tmx0	TIME	1998-02-27T07:56:00	O	O	NP0	B-NP	dct_1998-02-27t07:56:00	VBG	O	O
 
 MOSCOW	t1	1	MOSCOW	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	moscow	NNP	O	O
 -LRB-	t2	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-lrb-	NNP	O	O
 AP	t3	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
--RRB-	t4	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
-_	t5	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	NNP	t1:NAME||t2:NAME||t3:NAME||t4:NAME	O
+-RRB-	t4	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	t1:NAME||t2:NAME||t3:NAME||t5:P||t7:APPO	O
+_	t5	1	_	O	O	O+O+O	O	O	O	O	O	UNC	B-VP	_	:	O	O
 The	t6	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 mayor	t7	1	mayor	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	mayor	NN	t6:NMOD||t8:NMOD	O
 of	t8	1	of	O	O	O+O+O	O	O	O	O	O	PRF	B-PP	of	IN	t9:PMOD	O
 Moscow	t9	1	Moscow	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	moscow	NNP	O	O
-has	t10	1	have	O	O	O+O+O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t5:VOC||t7:SBJ||t11:VC||t46:P	mainVb
+has	t10	1	have	O	O	O+O+O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t4:SBJ||t11:VC||t46:P	mainVb
 allocated	t11	1	allocate	e1	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	allocate	VBN	t12:OBJ||t13:PRP||t38:P||t39:ADV	mainVb
 funds	t12	1	fund	O	O	O	O	O	O	O	O	NN2	B-NP	funds	NNS	O	O
 to	t13	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t14:IM	O
@@ -54,7 +54,7 @@ AK-47	t50	2	AK-47	O	O	O	O	O	O	O	O	AJ0	I-NP	ak-47	NNP	O	O
 automatic	t51	2	automatic	O	O	O	O	O	O	O	O	AJ0	I-NP	automatic	JJ	O	O
 rifle	t52	2	rifle	O	O	O	O	O	O	O	O	NN1	I-NP	rifle	NN	t49:NMOD||t50:NMOD||t51:NMOD||t53:P||t54:APPO	O
 ,	t53	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-famed	t54	2	famed	O	O	O	O	O	O	O	O	VVD	B-VP	famed	VBD	t55:ADV	O
+famed	t54	2	famed	O	O	O	O	O	O	O	O	VVD	B-VP	famed	VBN	t55:ADV	O
 for	t55	2	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t57:PMOD	O
 its	t56	2	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 reliability	t57	2	reliability	O	O	O	O	O	O	O	O	NN1	I-NP	reliability	NN	t56:NMOD||t58:COORD	O

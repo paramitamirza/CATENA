@@ -1,8 +1,8 @@
-DCT_1998-03-06	O	O	O	O	O	O	tmx0	DATE	1998-03-06	O	O	NN1	B-NP	dct_1998-03-06	SYM	O	O
+DCT_1998-03-06	O	O	O	O	O	O	tmx0	DATE	1998-03-06	O	O	NN1	B-NP	dct_1998-03-06	LS	O	O
 
 For	t1	1	for	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	for	IN	t3:PMOD	O
 The	t2	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-World	t3	1	World	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	world	NNP	t2:NMOD	O
+World	t3	1	World	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	world	NN	t2:NMOD	O
 ,	t4	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 this	t5	1	this	O	O	O+O+O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 is	t6	1	be	O	O	O+O+O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t1:ADV||t4:P||t5:SBJ||t8:PRD||t9:LOC||t16:P	mainVb
@@ -29,7 +29,7 @@ Kosovo	t25	2	Kosovo	O	O	O	O	O	O	O	O	NP0	B-NP	kosovo	NNP	O	O
 .	t26	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 It	t27	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-'s	t28	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t27:SBJ||t31:OBJ||t45:P	mainVb
+'s	t28	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t27:SBJ||t31:PRD||t45:P	mainVb
 the	t29	3	the	O	O	O	tmx31	DATE	1998-03-06	O	O	AT0	B-NP	the	DT	O	O
 second	t30	3	second	O	O	O	tmx31	DATE	1998-03-06	O	O	ORD	I-NP	second	JJ	O	O
 day	t31	3	day	O	O	O	tmx31	DATE	1998-03-06	O	O	NN1	I-NP	day	NN	t29:NMOD||t30:NMOD||t32:NMOD||t35:NMOD	O
@@ -86,13 +86,13 @@ stay	t77	6	stay	e6	I_STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	stay	VB	O	O
 fearing	t79	6	fear	e7	I_STATE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	fear	VBG	t82:OBJ	O
 the	t80	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 forces	t81	6	force	O	O	O	O	O	O	O	O	NN2	I-NP	force	NNS	t80:NMOD	O
-may	t82	6	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t81:SBJ||t83:ADV||t84:VC	O
+may	t82	6	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t81:SBJ||t83:ADV||t84:VC||t88:VC	O
 also	t83	6	also	O	O	O	O	O	O	O	O	AV0	I-VP	also	RB	O	O
-move	t84	6	move	e8	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	move	VB	t86:OBJ||t88:MNR	O
+move	t84	6	move	e8	ASPECTUAL	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	move	VB	t86:OBJ||t87:ADV	O
 their	t85	6	they	O	O	O	O	O	O	O	O	DPS	B-NP	their	PRP$	O	O
 operations	t86	6	operation	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	operations	NNS	t85:NMOD	O
 further	t87	6	further	O	O	O	O	O	O	O	O	AV0	B-ADVP	further	RBR	O	O
-afield	t88	6	afield	O	O	O	O	O	O	O	O	AV0	I-ADVP	afield	RB	t87:AMOD	O
+afield	t88	6	afield	O	O	O	O	O	O	O	O	AV0	I-ADVP	afield	VB	O	O
 .	t89	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 By	t90	7	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t92:PMOD	O
@@ -117,7 +117,7 @@ yet	t108	7	yet	O	O	O	O	O	O	O	O	AV0	I-VP	yet	RB	O	O
 been	t109	7	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t110:VC	O
 confirmed	t110	7	confirm	e11	REPORTING	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	confirm	VBN	t111:ADV	O
 from	t111	7	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t112:PMOD	O
-Belgrade	t112	7	Belgrade	O	O	O	O	O	O	O	O	NP0	B-NP	belgrade	NNP	t113:P||t115:APPO||t125:NMOD	O
+Belgrade	t112	7	Belgrade	O	O	O	O	O	O	O	O	NP0	B-NP	belgrade	NNP	t113:P||t115:APPO	O
 ,	t113	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t114	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 capital	t115	7	capital	O	O	O	O	O	O	O	O	NN1	I-NP	capital	NN	t114:NMOD||t116:NMOD	O
@@ -125,7 +125,7 @@ of	t116	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t117:PMOD	O
 Serbia	t117	7	Serbia	O	O	O	O	O	O	O	O	NP0	B-NP	serbia	NNP	t118:P||t120:NMOD	O
 ,	t118	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t119	7	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
-is	t120	7	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t119:SBJ	O
+is	t120	7	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t119:SBJ||t125:LOC-PRD	O
 where	t121	7	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	O	O
 the	t122	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 whole	t123	7	whole	O	O	O	O	O	O	O	O	AJ0	I-NP	whole	JJ	O	O
@@ -141,12 +141,12 @@ planned	t130	7	plan	e14	I_STATE	PASTPART+NONE+POS	O	O	O	O	O	VVN	I-VP	plan	VBN	t1
 The	t132	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ethnic	t133	8	ethnic	O	O	O	O	O	O	O	O	AJ0	I-NP	ethnic	JJ	O	O
 Albanians	t134	8	albanian	O	O	O	O	O	O	O	O	NN2	I-NP	albanians	JJ	t132:NMOD||t133:NMOD||t135:LOC	O
-here	t135	8	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	t136:AMOD	O
+here	t135	8	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	t136:LOC	O
 in	t136	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t137:PMOD	O
 Kosovo	t137	8	Kosovo	O	O	O	O	O	O	O	O	NP0	B-NP	kosovo	NNP	O	O
 are	t138	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t134:SBJ||t140:PRD||t156:P	mainVb
 considerably	t139	8	considerably	O	O	O	O	O	O	O	O	AV0	B-ADJP	considerably	RB	O	O
-worried	t140	8	worry	e32	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	worry	JJ	t139:AMOD||t141:AMOD	O
+worried	t140	8	worry	e32	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	worry	VBN	t139:MNR||t141:AMOD	O
 about	t141	8	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t143:PMOD	O
 the	t142	8	the	O	O	O	tmx19	DATE	FUTURE_REF	O	O	AT0	B-NP	the	DT	O	O
 future	t143	8	future	O	O	O	tmx19	DATE	FUTURE_REF	O	O	NN1	I-NP	future	NN	t142:NMOD||t144:COORD||t147:NMOD	O
@@ -165,11 +165,11 @@ conflict	t155	8	conflict	e37	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	conflic
 .	t156	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Karyn	t157	9	Karyn	O	O	O	O	O	O	O	O	NP0	B-NP	karyn	NNP	O	O
-Coleman	t158	9	Coleman	O	O	O	O	O	O	O	O	NP0	I-NP	coleman	NNP	t157:NAME||t159:P||t161:APPO	O
+Coleman	t158	9	Coleman	O	O	O	O	O	O	O	O	NP0	I-NP	coleman	NNP	t157:NAME	O
 ,	t159	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 BBC	t160	9	BBC	O	O	O	O	O	O	O	O	NP0	B-NP	bbc	NNP	O	O
-news	t161	9	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	t160:NMOD	O
+news	t161	9	news	O	O	O	O	O	O	O	O	NN1	I-NP	news	NN	t158:NMOD||t159:P||t160:NMOD||t162:P||t163:APPO||t164:P	mainVb
 ,	t162	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Pristina	t163	9	Pristina	O	O	O	O	O	O	O	O	NP0	B-NP	pristina	NNP	t158:NMOD||t162:P||t164:P	mainVb
+Pristina	t163	9	Pristina	O	O	O	O	O	O	O	O	NP0	B-NP	pristina	NNP	O	O
 .	t164	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Xerox	t1	1	Xerox	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	xerox	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -59,7 +59,7 @@ be	t55	2	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t56:VC	O
 centralized	t56	2	centralize	e6	STATE	FUTURE+NONE+POS	O	O	O	O	O	VVN	I-VP	centralize	VBN	t57:ADV	O
 as	t57	2	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t60:PMOD	O
 a	t58	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-cost-cutting	t59	2	cost-cutting	O	O	O	O	O	O	O	O	AJ0	I-NP	cost-cut	NN	O	O
+cost-cutting	t59	2	cost-cutting	O	O	O	O	O	O	O	O	AJ0	I-NP	cost-cut	JJ	O	O
 move	t60	2	move	O	O	O	O	O	O	O	O	NN1	I-NP	move	NN	t58:NMOD||t59:NMOD	O
 .	t61	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -99,8 +99,8 @@ nine	t93	4	nine	O	O	O	tmx24	DURATION	P9M	O	O	CRD	I-NP	nine	CD	O	O
 months	t94	4	month	O	O	O	tmx24	DURATION	P9M	O	O	NN2	I-NP	month	NNS	t91:NMOD||t92:NMOD||t93:NMOD	O
 ,	t95	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Xerox	t96	4	Xerox	O	O	O	O	O	O	O	O	NP0	B-NP	xerox	NNP	O	O
-earned	t97	4	earn	e11	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t87:ADV||t89:P||t90:TMP||t95:P||t96:SBJ||t98:OBJ||t107:P||t108:ADV||t114:P	mainVb
-$	t98	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t99:DEP||t100:DEP||t101:P||t102:COORD	O
+earned	t97	4	earn	e11	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t87:ADV||t89:P||t90:TMP||t95:P||t96:SBJ||t98:OBJ||t108:ADV||t114:P	mainVb
+$	t98	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t99:DEP||t100:DEP||t101:P||t102:COORD||t107:P	O
 492	t99	4	492	O	O	O	O	O	O	O	O	CRD	I-NP	492	CD	O	O
 million	t100	4	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t101	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -132,21 +132,21 @@ but	t125	5	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t127:CONJ	O
 that	t126	5	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
 was	t127	5	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t126:SBJ||t129:PRD-PRP	O
 largely	t128	5	largely	O	O	O	O	O	O	O	O	AV0	B-ADVP	largely	RB	O	O
-because	t129	5	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t128:ADV||t136:SUB	O
+because	t129	5	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t128:ADV||t143:SUB	O
 capital	t130	5	capital	O	O	O	O	O	O	O	O	NN1	B-NP	capital	NN	O	O
 gains	t131	5	gain	O	O	O	O	O	O	O	O	VVZ	I-NP	gain	NNS	t130:NMOD||t132:LOC	O
-at	t132	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t135:PMOD	O
+at	t132	5	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t139:PMOD	O
 Crum	t133	5	Crum	O	O	O	O	O	O	O	O	NP0	B-NP	crum	NNP	O	O
 amp	t134	5	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	O	O
-Forster	t135	5	Forster	O	O	O	O	O	O	O	O	NP0	I-NP	forster	NNP	t133:NAME||t134:NAME	O
-offset	t136	5	offset	e13	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	offset	VBD	t131:SBJ||t139:OBJ||t140:COORD	O
+Forster	t135	5	Forster	O	O	O	O	O	O	O	O	NP0	I-NP	forster	NNP	O	O
+offset	t136	5	offset	e13	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	offset	NNP	O	O
 Hurricane	t137	5	Hurricane	O	O	O	O	O	O	O	O	NP0	I-NP	hurricane	NNP	O	O
-Hugo	t138	5	Hugo	O	O	O	O	O	O	O	O	NP0	I-NP	hugo	NNP	t137:NAME	O
-payments	t139	5	payment	O	O	O	O	O	O	O	O	NN2	I-NP	payment	NNS	t138:NMOD	O
-and	t140	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t143:CONJ	O
+Hugo	t138	5	Hugo	O	O	O	O	O	O	O	O	NP0	I-NP	hugo	NNP	t133:NAME||t134:NAME||t135:NAME||t136:NAME||t137:NAME	O
+payments	t139	5	payment	O	O	O	O	O	O	O	O	NN2	I-NP	payment	NNS	t138:NMOD||t140:COORD	O
+and	t140	5	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t142:CONJ	O
 the	t141	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 reserves	t142	5	reserve	O	O	O	O	O	O	O	O	NN2	I-NP	reserves	NNS	t141:NMOD	O
-set	t143	5	set	O	O	O	O	O	O	O	O	VVN	B-VP	set	VBD	t142:SBJ||t144:PRT||t145:PRP	O
+set	t143	5	set	O	O	O	O	O	O	O	O	VVN	B-VP	set	VBD	t131:SBJ||t144:PRT||t145:PRP	O
 up	t144	5	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
 to	t145	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t146:IM	O
 cover	t146	5	cover	O	O	O	O	O	O	O	O	VVI	I-VP	cover	VB	t148:OBJ	O
@@ -154,13 +154,13 @@ future	t147	5	future	O	O	O	O	O	O	O	O	AJ0	B-NP	future	JJ	O	O
 payments	t148	5	payment	e3000	OCCURRENCE	O	O	O	O	O	O	NN2	I-NP	payment	NNS	t147:NMOD	O
 .	t149	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Property/casualty	t150	6	property/casualty	O	O	O	O	O	O	O	O	NN1	B-NP	property/casualty	JJ	O	O
+Property/casualty	t150	6	property/casualty	O	O	O	O	O	O	O	O	NN1	B-NP	property/casualty	NN	O	O
 insurance	t151	6	insurance	O	O	O	O	O	O	O	O	NN1	I-NP	insurance	NN	t150:NMOD	O
 has	t152	6	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t151:SBJ||t153:VC||t182:P	mainVb
-been	t153	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t156:PRD||t160:P||t161:ADV	mainVb
+been	t153	6	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t156:PRD||t157:TMP||t160:P||t161:ADV	mainVb
 a	t154	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 tough	t155	6	tough	O	O	O	O	O	O	O	O	AJ0	I-NP	tough	JJ	O	O
-business	t156	6	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t154:NMOD||t155:NMOD||t157:LOC	O
+business	t156	6	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t154:NMOD||t155:NMOD	O
 in	t157	6	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t159:PMOD	O
 recent	t158	6	recent	O	O	O	tmx25	DURATION	PXM	O	O	AJ0	B-NP	recent	JJ	O	O
 quarters	t159	6	quarter	O	O	O	tmx25	DURATION	PXM	O	O	NN2	I-NP	quarters	NNS	t158:NMOD	O

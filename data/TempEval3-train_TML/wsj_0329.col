@@ -1,4 +1,4 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 Coda	t1	1	Coda	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	coda	NNP	O	O
 Energy	t2	1	Energy	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	energy	NNP	t1:NAME||t3:POSTHON	O
@@ -167,12 +167,12 @@ repayment	t160	4	repayment	O	O	O	O	O	O	O	O	VVI	I-VP	repayment	NN	O	O
 
 The	t162	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t163	5	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t162:NMOD	O
-put	t164	5	put	e23	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	put	VBD	t163:SBJ||t165:PRT||t166:OBJ||t169:OBJ||t176:ADV	O
+put	t164	5	put	e23	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	put	VBD	t163:SBJ||t165:PRT||t169:OBJ||t176:ADV	O
 up	t165	5	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
-"	t166	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t166	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 virtually	t167	5	virtually	O	O	O	O	O	O	O	O	AV0	B-ADVP	virtually	RB	O	O
 all	t168	5	all	O	O	O	O	O	O	O	O	DT0	I-ADVP	all	DT	O	O
-"	t169	5	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	NN	t167:NMOD||t168:NMOD||t170:NMOD	O
+"	t169	5	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	NN	t166:P||t167:NMOD||t168:NMOD||t170:NMOD	O
 of	t170	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t175:PMOD	O
 its	t171	5	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 oil	t172	5	oil	O	O	O	O	O	O	O	O	NN1	I-NP	oil	NN	t173:COORD	O

@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Cineplex	t1	1	Cineplex	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	cineplex	NNP	O	O
 Odeon	t2	1	Odeon	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	odeon	NNP	t1:NAME	O
@@ -23,11 +23,11 @@ bidding	t19	1	bid	e3	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	bid	VBG	t23:OBJ
 million	t21	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t20:DEP	O
 Canadian	t22	1	canadian	O	O	O	O	O	O	O	O	AJ0	I-NP	canadian	JJ	O	O
 dollars	t23	1	dollar	O	O	O	O	O	O	O	O	NN2	I-NP	dollar	NNS	t21:NMOD||t22:NMOD	O
--LRB-	t24	1	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t25:OBJ	O
-US$	t25	1	us$	O	O	O	O	O	O	O	O	NP0	I-NP	us$	$	t26:DEP||t27:DEP||t28:TMP	O
+-LRB-	t24	1	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	VBP	t28:OBJ	O
+US$	t25	1	us$	O	O	O	O	O	O	O	O	NP0	I-NP	us$	$	t26:DEP||t27:DEP	O
 666	t26	1	666	O	O	O	O	O	O	O	O	CRD	I-NP	666	CD	O	O
 million	t27	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t28	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	O	O
+-RRB-	t28	1	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NNP	t25:NMOD	O
 to	t29	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t30:IM	O
 acquire	t30	1	acquire	e5	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	acquire	VB	t32:OBJ	O
 the	t31	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -108,9 +108,9 @@ Messrs.	t102	4	Messrs.	O	O	O	O	O	O	O	O	NP0	B-NP	messrs.	NNP	O	O
 Drabinsky	t103	4	Drabinsky	O	O	O	O	O	O	O	O	NP0	I-NP	drabinsky	NNP	t102:TITLE||t104:COORD	O
 and	t104	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t105:CONJ	O
 Gottlieb	t105	4	Gottlieb	O	O	O	O	O	O	O	O	NP0	B-NP	gottlieb	NNP	O	O
-mail	t106	4	mail	e176	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	mail	VBP	t103:SBJ||t108:OBJ||t111:TMP	O
+mail	t106	4	mail	e176	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	mail	VBP	t103:SBJ||t108:OBJ||t109:DTV||t111:TMP	O
 an	t107	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-offer	t108	4	offer	e180	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t107:NMOD||t109:NMOD	O
+offer	t108	4	offer	e180	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	offer	NN	t107:NMOD	O
 to	t109	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t110:PMOD	O
 shareholders	t110	4	shareholder	O	O	O	O	O	O	O	O	NN2	B-NP	shareholder	NNS	O	O
 by	t111	4	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t113:PMOD	O
@@ -135,7 +135,7 @@ a	t129	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 bid	t130	4	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t129:NMOD	O
 .	t131	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t132	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
+"	t132	5	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t133	5	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 consider	t134	5	consider	e33	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	consider	VBP	t133:SBJ||t135:OBJ	O
 that	t135	5	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t138:SUB	O
@@ -151,13 +151,13 @@ said	t144	5	say	e36	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t132:P||t
 Sandra	t145	5	Sandra	O	O	O	O	O	O	O	O	NP0	B-NP	sandra	NNP	O	O
 Kolber	t146	5	Kolber	O	O	O	O	O	O	O	O	NP0	I-NP	kolber	NNP	t145:NAME||t147:P||t148:APPO	O
 ,	t147	5	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-spokeswoman	t148	5	spokeswoman	O	O	O	O	O	O	O	O	NN1	B-NP	spokeswoman	NN	t149:NMOD	O
+spokeswoman	t148	5	spokeswoman	O	O	O	O	O	O	O	O	NN1	B-NP	spokeswoman	NN	t149:NMOD||t155:APPO	O
 for	t149	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t154:PMOD	O
 the	t150	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 independent	t151	5	independent	O	O	O	O	O	O	O	O	AJ0	I-NP	independent	JJ	O	O
 directors	t152	5	director	O	O	O	O	O	O	O	O	NN2	I-NP	director	NNS	t150:NMOD||t151:NMOD||t153:SUFFIX	O
 '	t153	5	'	O	O	O	O	O	O	O	O	POS	B-NP	'	POS	O	O
-committee	t154	5	committee	O	O	O	O	O	O	O	O	NN1	I-NP	committee	NN	t152:NMOD||t155:APPO	O
+committee	t154	5	committee	O	O	O	O	O	O	O	O	NN1	I-NP	committee	NN	t152:NMOD	O
 appointed	t155	5	appoint	e37	OCCURRENCE	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	appoint	VBN	t157:TMP||t158:PRP	O
 last	t156	5	last	O	O	O	tmx183	DATE	1989-05	O	O	ORD	B-NP	last	JJ	O	O
 May	t157	5	May	O	O	O	tmx183	DATE	1989-05	O	O	NP0	I-NP	may	NNP	t156:NMOD	O
@@ -194,7 +194,7 @@ Cineplex	t186	6	Cineplex	O	O	O	O	O	O	O	O	NP0	B-NP	cineplex	NNP	t187:SUFFIX	O
 's	t187	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 other	t188	6	other	O	O	O	O	O	O	O	O	AJ0	I-NP	other	JJ	O	O
 major	t189	6	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
-shareholder	t190	6	shareholder	O	O	O	O	O	O	O	O	NN1	I-NP	shareholder	NN	t186:NMOD||t188:NMOD||t189:NMOD||t191:P||t193:COORD||t199:P	O
+shareholder	t190	6	shareholder	O	O	O	O	O	O	O	O	NN1	I-NP	shareholder	NN	t186:NMOD||t188:NMOD||t189:NMOD||t191:P||t193:NMOD||t199:P	O
 ,	t191	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Montreal-based	t192	6	montreal-based	O	O	O	O	O	O	O	O	AJ0	B-NP	montreal-base	NNP	O	O
 financier	t193	6	financier	O	O	O	O	O	O	O	O	NN1	I-NP	financier	NN	t192:NMOD||t195:APPO||t196:COORD	O
@@ -243,16 +243,16 @@ voting	t234	7	voting	O	O	O	O	O	O	O	O	NN1	I-NP	voting	NN	O	O
 rights	t235	7	rights	O	O	O	O	O	O	O	O	NN2	I-NP	right	NNS	t233:NMOD||t234:NMOD	O
 through	t236	7	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t239:PMOD	O
 restricted	t237	7	restricted	O	O	O	O	O	O	O	O	AJ0	B-NP	restrict	VBN	O	O
-voting	t238	7	voting	O	O	O	O	O	O	O	O	NN1	I-NP	voting	NN	t237:NMOD	O
-shares	t239	7	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t238:NMOD	O
+voting	t238	7	voting	O	O	O	O	O	O	O	O	NN1	I-NP	voting	NN	O	O
+shares	t239	7	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t237:NMOD||t238:NMOD	O
 ,	t240	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 while	t241	7	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t244:SUB	O
 Bronfman	t242	7	Bronfman	O	O	O	O	O	O	O	O	NP0	B-NP	bronfman	NNP	O	O
 interests	t243	7	interest	O	O	O	O	O	O	O	O	VVZ	B-VP	interest	NNS	t242:NMOD	O
 hold	t244	7	hold	O	O	O	O	O	O	O	O	NN1	B-NP	hold	VBP	t243:SBJ||t247:OBJ	O
-about	t245	7	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	RB	O	O
-24	t246	7	24	O	O	O	O	O	O	O	O	CRD	I-NP	24	CD	t245:DEP	O
-%	t247	7	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t246:NMOD||t248:NMOD	O
+about	t245	7	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t246:DEP	O
+24	t246	7	24	O	O	O	O	O	O	O	O	CRD	I-NP	24	CD	O	O
+%	t247	7	%	O	O	O	O	O	O	O	O	NN0	I-NP	%	NN	t245:NMOD||t248:NMOD	O
 of	t248	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t252:PMOD	O
 the	t249	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t250	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t249:NMOD||t251:SUFFIX	O
@@ -282,21 +282,21 @@ said	t271	9	say	e61	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t277:OBJ	
 Mr.	t272	9	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Drabinsky	t273	9	Drabinsky	O	O	O	O	O	O	O	O	NP0	I-NP	drabinsky	NNP	t272:TITLE||t274:SUFFIX	O
 's	t274	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-offer	t275	9	offer	O	O	O	O	O	O	O	O	NN1	I-NP	offer	NN	t273:NMOD||t276:APPO	O
-"	t276	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-is	t277	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t275:SBJ||t279:PRD||t280:P||t281:COORD	O
+offer	t275	9	offer	O	O	O	O	O	O	O	O	NN1	I-NP	offer	NN	O	O
+"	t276	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t273:NMOD||t275:NMOD	O
+is	t277	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t276:SBJ||t279:PRD||t280:P||t281:COORD	O
 all	t278	9	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
 cash	t279	9	cash	O	O	O	O	O	O	O	O	NN1	I-NP	cash	NN	t278:NMOD	O
 ,	t280	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t281	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t283:CONJ	O
 it	t282	9	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-'s	t283	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t282:SBJ||t284:ADV	O
-for	t284	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t285:PMOD||t290:PMOD	O
+'s	t283	9	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t282:SBJ||t284:PRD	O
+for	t284	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t285:PMOD	O
 all	t285	9	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	t286:NMOD	O
 of	t286	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t288:PMOD	O
 the	t287	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t288	9	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t287:NMOD	O
-.	t289	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
+.	t289	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	t290:NMOD	O
 "	t290	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Several	t291	10	several	O	O	O	O	O	O	O	O	DT0	B-NP	several	DT	O	O
@@ -324,13 +324,13 @@ the	t312	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t313	10	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t312:NMOD	O
 .	t314	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t315	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t318:NMOD	O
-All	t316	11	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	PDT	O	O
-this	t317	11	this	O	O	O	O	O	O	O	O	DT0	I-NP	this	DT	t316:NMOD	O
+"	t315	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
+All	t316	11	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	PDT	t318:NMOD	O
+this	t317	11	this	O	O	O	O	O	O	O	O	DT0	I-NP	this	DT	O	O
 has	t318	11	have	O	O	O	O	O	O	O	O	VHZ	I-NP	have	VBZ	t317:SBJ||t319:ADV||t320:VC	O
 really	t319	11	really	O	O	O	O	O	O	O	O	AV0	B-ADVP	really	RB	O	O
 established	t320	11	establish	O	O	O	O	O	O	O	O	VVN	B-VP	establish	VBN	O	O
-is	t321	11	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t315:SBJ||t322:PRD	O
+is	t321	11	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t315:SBJ||t316:SBJ||t322:PRD	O
 that	t322	11	that	O	O	O	O	O	O	O	O	DT0	B-SBAR	that	IN	t327:SUB	O
 MCA	t323	11	MCA	O	O	O	O	O	O	O	O	NP0	B-NP	mca	NNP	t324:COORD	O
 and	t324	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t326:CONJ	O
@@ -349,7 +349,7 @@ be	t336	11	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t337:VC	O
 bought	t337	11	buy	e70	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVN	I-VP	buy	VBN	t332:ADV||t338:PRT	O
 out	t338	11	out	O	O	O	O	O	O	O	O	AVP	B-PRT	out	RP	O	O
 ,	t339	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t340	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t340	11	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 said	t341	11	say	e72	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t321:OBJ||t339:P||t340:SBJ||t343:SBJ||t354:P	mainVb
 Jeffery	t342	11	Jeffery	O	O	O	O	O	O	O	O	NP0	B-NP	jeffery	NNP	O	O
 Logsdon	t343	11	Logsdon	O	O	O	O	O	O	O	O	NP0	I-NP	logsdon	NNP	t342:NAME||t344:P||t346:APPO	O
@@ -365,7 +365,7 @@ Los	t352	11	Los	O	O	O	O	O	O	O	O	NP0	B-NP	los	NNP	O	O
 Angeles	t353	11	Angeles	O	O	O	O	O	O	O	O	NP0	I-NP	angeles	NNP	t352:NAME	O
 .	t354	11	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t355	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t355	12	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 If	t356	12	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t359:SUB	O
 a	t357	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 bid	t358	12	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t357:NMOD	O
@@ -531,7 +531,7 @@ offer	t510	16	offer	O	O	O	O	O	O	O	O	NN1	I-NP	offer	NN	t509:NMOD	O
 This	t513	17	this	O	O	O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 is	t514	17	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t512:SBJ||t513:SBJ||t515:VC	O
 being	t515	17	be	O	O	O	O	O	O	O	O	VBG	I-VP	be	VBG	t516:VC	O
-done	t516	17	do	e106	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VDN	I-VP	do	VBN	t517:LOC||t529:P||t530:PRP	O
+done	t516	17	do	e106	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VDN	I-VP	do	VBN	t517:PRP||t529:P||t530:PRP	O
 at	t517	17	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t519:PMOD||t525:COORD	O
 the	t518	17	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 suggestion	t519	17	suggestion	e107	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	suggestion	NN	t518:NMOD||t520:NMOD	O
@@ -565,7 +565,7 @@ directors	t545	18	director	O	O	O	O	O	O	O	O	NN2	I-NP	director	NNS	t544:NMOD	O
 said	t546	18	say	e115	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t541:ADV||t543:P||t545:SBJ||t557:OBJ||t585:P	mainVb
 if	t547	18	if	O	O	O	O	O	O	O	O	CJS	B-SBAR	if	IN	t553:SUB	O
 a	t548	18	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-bid	t549	18	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t548:NMOD||t550:NMOD	O
+bid	t549	18	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t548:NMOD||t550:LGS	O
 by	t550	18	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t552:PMOD	O
 Mr.	t551	18	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Drabinsky	t552	18	Drabinsky	O	O	O	O	O	O	O	O	NP0	I-NP	drabinsky	NNP	t551:TITLE	O
@@ -622,11 +622,11 @@ involvement	t601	19	involvement	O	O	O	O	O	O	O	O	NN1	I-NP	involvement	NN	O	O
 "	t602	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t598:NMOD||t600:NMOD||t601:NMOD	O
 would	t603	19	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t602:SBJ||t604:ADV||t605:VC	O
 n't	t604	19	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-exceed	t605	19	exceed	e126	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	VVI	I-VP	exceed	VB	t606:OBJ||t609:TMP	O
+exceed	t605	19	exceed	e126	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	VVI	I-VP	exceed	VB	t609:OBJ	O
 $	t606	19	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t607:DEP||t608:DEP	O
 100	t607	19	100	O	O	O	O	O	O	O	O	CRD	I-NP	100	CD	O	O
 million	t608	19	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
-"	t609	19	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	O	O
+"	t609	19	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t606:NMOD	O
 but	t610	19	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t611:CONJ	O
 declined	t611	19	decline	e129	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	decline	VBD	t612:OPRD	O
 to	t612	19	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t613:IM	O
@@ -709,13 +709,13 @@ C$	t684	22	c$	O	O	O	O	O	O	O	O	NN1	I-NP	c$	$	t685:NMOD	O
 level	t686	22	level	O	O	O	O	O	O	O	O	NN1	I-NP	level	NN	t683:NMOD||t684:NMOD	O
 .	t687	22	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t688	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
-Where	t689	23	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	t688:SBJ||t692:ADV||t694:P	mainVb
-'s	t690	23	be	O	O	O	O	O	O	O	O	VBZ	B-NP	's	POS	O	O
+"	t688	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+Where	t689	23	where	O	O	O	O	O	O	O	O	AVQ	B-ADVP	where	WRB	O	O
+'s	t690	23	be	O	O	O	O	O	O	O	O	VBZ	B-NP	's	POS	t688:P||t689:LOC-PRD||t692:SBJ||t693:P||t694:P	mainVb
 the	t691	23	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-bid	t692	23	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t690:NAME||t691:NMOD	O
+bid	t692	23	bid	O	O	O	O	O	O	O	O	NN1	I-NP	bid	NN	t691:NMOD	O
 ?	t693	23	?	O	O	O	O	O	O	O	O	PUN	O	?	.	O	O
-"	t694	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	t693:P	O
+"	t694	23	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 
 asked	t695	24	ask	O	O	O	O	O	O	O	O	VVD	B-VP	ask	VBD	t697:SBJ||t711:P	mainVb
 Pierre	t696	24	Pierre	O	O	O	O	O	O	O	O	NP0	B-NP	pierre	NNP	O	O
@@ -737,7 +737,7 @@ Ltd.	t710	24	Ltd.	O	O	O	O	O	O	O	O	AJ0	I-NP	ltd.	NNP	O	O
 
 Mr.	t712	25	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Panet-Raymond	t713	25	Panet-Raymond	O	O	O	O	O	O	O	O	NP0	I-NP	panet-raymond	NNP	t712:TITLE	O
-said	t714	25	say	e144	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t713:SBJ||t716:OBJ||t727:P||t746:P	mainVb
+said	t714	25	say	e144	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t713:SBJ||t716:OBJ||t724:P||t746:P	mainVb
 he	t715	25	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 does	t716	25	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t715:SBJ||t717:ADV||t718:VC||t731:COORD	O
 n't	t717	25	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
@@ -746,11 +746,11 @@ Messrs.	t719	25	Messrs.	O	O	O	O	O	O	O	O	NP0	B-NP	messrs.	NNP	O	O
 Drabinsky	t720	25	Drabinsky	O	O	O	O	O	O	O	O	NP0	I-NP	drabinsky	NNP	t719:TITLE||t721:COORD	O
 and	t721	25	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t722:CONJ	O
 Gottlieb	t722	25	Gottlieb	O	O	O	O	O	O	O	O	NP0	B-NP	gottlieb	NNP	O	O
-are	t723	25	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t720:SBJ||t725:PRD	O
-"	t724	25	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	NNP	O	O
-anywhere	t725	25	anywhere	O	O	O	O	O	O	O	O	AV0	B-ADJP	anywhere	RB	t724:NAME||t726:AMOD||t728:AMOD	O
-close	t726	25	close	e147	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	close	RB	O	O
-"	t727	25	"	O	O	O	O	O	O	O	O	PUQ	O	"	.	O	O
+are	t723	25	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t720:SBJ||t726:PRD	O
+"	t724	25	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	:	O	O
+anywhere	t725	25	anywhere	O	O	O	O	O	O	O	O	AV0	B-ADJP	anywhere	RB	O	O
+close	t726	25	close	e147	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	AJ0	I-ADJP	close	RB	t725:NMOD||t727:SBJ||t728:AMOD	O
+"	t727	25	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
 to	t728	25	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t729:PMOD	O
 arranging	t729	25	arrange	e148	I_ACTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVG	B-VP	arrange	VBG	t730:OBJ	O
 financing	t730	25	financing	e149	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	financing	NN	O	O

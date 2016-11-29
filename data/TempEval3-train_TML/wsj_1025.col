@@ -1,8 +1,8 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Sotheby	t1	1	Sotheby	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	sotheby	NNP	t2:SUFFIX	O
 's	t2	1	's	O	O	O+O+O	O	O	O	O	O	POS	B-NP	's	POS	O	O
-Holdings	t3	1	Holdings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	holding	NNPS	t1:NMOD||t4:POSTHON||t5:P||t7:APPO||t14:P	O
+Holdings	t3	1	Holdings	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	holding	NNP	t1:NMOD||t4:POSTHON||t5:P||t7:APPO||t14:P	O
 Inc.	t4	1	Inc.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	inc.	NNP	O	O
 ,	t5	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t6	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -43,9 +43,9 @@ York-based	t39	2	york-based	O	O	O	O	O	O	O	O	AJ0	I-NP	york-base	NNP	t38:NAME	O
 company	t40	2	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t37:NMOD||t39:NMOD	O
 reported	t41	2	report	e7	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t40:SBJ||t45:OBJ||t73:P	mainVb
 a	t42	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t43	2	third-quarter	O	O	O	tmx36	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	RBR	O	O
-net	t44	2	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	t43:AMOD	O
-loss	t45	2	loss	e8	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t42:NMOD||t44:NMOD||t46:NMOD||t56:P||t57:NMOD	O
+third-quarter	t43	2	third-quarter	O	O	O	tmx36	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
+net	t44	2	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
+loss	t45	2	loss	e8	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t42:NMOD||t43:NMOD||t44:NMOD||t46:NMOD||t56:P||t57:NMOD	O
 of	t46	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t47:PMOD	O
 $	t47	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t48:DEP||t49:DEP||t50:P||t51:COORD	O
 5.1	t48	2	5.1	O	O	O	O	O	O	O	O	CRD	I-NP	5.1	CD	O	O
@@ -61,8 +61,8 @@ compared	t57	2	compare	O	O	O	O	O	O	O	O	VVN	B-PP	compare	VBN	t58:PMOD	O
 with	t58	2	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t62:PMOD	O
 a	t59	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 year-earlier	t60	2	year-earlier	O	O	O	tmx37	DATE	1988-Q3	O	O	AJC	I-NP	year-earlier	RBR	O	O
-net	t61	2	net	O	O	O	O	O	O	O	O	AJ0	I-NP	net	JJ	t60:AMOD	O
-loss	t62	2	loss	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t59:NMOD||t61:NMOD||t63:NMOD	O
+net	t61	2	net	O	O	O	O	O	O	O	O	AJ0	I-NP	net	JJ	O	O
+loss	t62	2	loss	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t59:NMOD||t60:NMOD||t61:NMOD||t63:NMOD	O
 of	t63	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t64:PMOD	O
 $	t64	2	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t65:DEP||t66:DEP||t67:P||t68:COORD	O
 6.2	t65	2	6.2	O	O	O	O	O	O	O	O	CRD	I-NP	6.2	CD	O	O
@@ -118,8 +118,8 @@ the	t112	4	the	O	O	O	tmx42	DATE	1989-Q4	O	O	AT0	B-NP	the	DT	O	O
 current	t113	4	current	O	O	O	tmx42	DATE	1989-Q4	O	O	AJ0	I-NP	current	JJ	O	O
 quarter	t114	4	quarter	O	O	O	tmx42	DATE	1989-Q4	O	O	NN1	I-NP	quarter	NN	t112:NMOD||t113:NMOD	O
 having	t115	4	have	O	O	O	O	O	O	O	O	VHG	B-VP	have	VBG	t114:SBJ||t116:VC	O
-begun	t116	4	begin	e43	ASPECTUAL	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	begin	VBN	t117:OBJ||t118:MNR	O
-"	t117	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+begun	t116	4	begin	e43	ASPECTUAL	PAST+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	begin	VBN	t117:P||t118:MNR	O
+"	t117	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 extremely	t118	4	extremely	O	O	O	O	O	O	O	O	AV0	B-ADVP	extremely	RB	t119:AMOD	O
 well	t119	4	well	O	O	O	O	O	O	O	O	AV0	I-ADVP	well	RB	O	O
 .	t120	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O

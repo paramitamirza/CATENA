@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Sun	t1	1	Sun	O	O	O+O+O	O	O	O	O	O	NN1	B-NP	sun	NNP	O	O
 Microsystems	t2	1	Microsystems	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	microsystems	NNP	t1:NAME||t3:POSTHON||t4:P||t7:APPO||t8:P	O

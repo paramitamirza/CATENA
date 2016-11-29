@@ -1,4 +1,4 @@
-DCT_1998-01-21	O	O	O	O	O	O	tmx0	DATE	1998-01-21	O	O	NP0	B-NP	dct_1998-01-21	SYM	O	O
+DCT_1998-01-21	O	O	O	O	O	O	tmx0	DATE	1998-01-21	O	O	NP0	B-NP	dct_1998-01-21	LS	O	O
 
 Now	t1	1	now	O	O	O+O+O	O	O	O	O	O	AV0	B-ADVP	now	RB	t2:AMOD||t7:P	mainVb
 for	t2	1	for	O	O	O+O+O	O	O	O	O	O	PRP	B-PP	for	IN	t6:PMOD	O
@@ -48,11 +48,11 @@ The	t41	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 city	t42	5	city	O	O	O	O	O	O	O	O	NN1	I-NP	city	NN	t41:NMOD	O
 could	t43	5	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t42:SBJ||t44:VC||t58:P	mainVb
 have	t44	5	have	O	O	O	O	O	O	O	O	VHI	I-VP	have	VB	t45:VC	mainVb
-used	t45	5	use	e6	I_ACTION	NONE+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVN	I-VP	use	VBN	t48:OBJ||t49:LOC	mainVb
+used	t45	5	use	e6	I_ACTION	NONE+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVN	I-VP	use	VBN	t48:OBJ||t49:TMP||t56:TMP	mainVb
 some	t46	5	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 special	t47	5	special	O	O	O	O	O	O	O	O	AJ0	I-NP	special	JJ	O	O
 protection	t48	5	protection	O	O	O	O	O	O	O	O	NN1	I-NP	protection	NN	t46:NMOD||t47:NMOD	O
-in	t49	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t51:PMOD||t56:TMP	O
+in	t49	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t51:PMOD	O
 nineteen	t50	5	nineteen	O	O	O	tmx34	DATE	1979	O	O	CRD	B-NP	nineteen	CD	O	O
 seventy-nine	t51	5	seventy-nine	O	O	O	tmx34	DATE	1979	O	O	CRD	I-NP	seventy-nine	CD	t50:NMOD	O
 when	t52	5	when	O	O	O	O	O	O	O	O	AVQ	B-ADVP	when	WRB	O	O
@@ -89,8 +89,8 @@ centuries	t79	6	century	O	O	O	tmx1982	DURATION	PXC	O	O	NN2	B-NP	century	NNS	O	O
 The	t81	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 people	t82	7	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t81:NMOD||t83:LOC	O
 here	t83	7	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
-are	t84	7	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t82:SBJ||t85:PRD||t97:P||t99:ADV||t100:P	mainVb
-famous	t85	7	famous	O	O	O	O	O	O	O	O	AJ0	B-ADJP	famous	JJ	t86:AMOD||t89:AMOD	O
+are	t84	7	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t82:SBJ||t85:PRD||t86:LOC||t89:ADV||t97:P||t99:ADV||t100:P	mainVb
+famous	t85	7	famous	O	O	O	O	O	O	O	O	AJ0	B-ADJP	famous	JJ	O	O
 throughout	t86	7	throughout	O	O	O	O	O	O	O	O	PRP	B-PP	throughout	IN	t88:PMOD	O
 central	t87	7	central	O	O	O	O	O	O	O	O	AJ0	B-NP	central	JJ	O	O
 Asia	t88	7	Asia	O	O	O	O	O	O	O	O	NP0	I-NP	asia	NNP	t87:NMOD	O
@@ -104,7 +104,7 @@ and	t95	7	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t96:CONJ	O
 tile	t96	7	tile	O	O	O	O	O	O	O	O	NN1	I-NP	tile	NN	O	O
 ,	t97	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 glass	t98	7	glass	O	O	O	O	O	O	O	O	NN1	B-NP	glass	NN	O	O
-too	t99	7	too	O	O	O	O	O	O	O	O	AV0	B-ADVP	too	RB	t98:SBJ	O
+too	t99	7	too	O	O	O	O	O	O	O	O	AV0	B-ADVP	too	RB	t98:NMOD	O
 .	t100	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Some	t101	8	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
@@ -118,9 +118,9 @@ secrets	t108	8	secret	O	O	O	O	O	O	O	O	NN2	B-NP	secret	NNS	O	O
 for	t109	8	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t114:PMOD	O
 more	t110	8	more	O	O	O	tmx1991	DURATION	P2L	O	O	AV0	B-NP	more	RBR	O	O
 than	t111	8	than	O	O	O	tmx1991	DURATION	P2L	O	O	AV0	I-NP	than	IN	O	O
-two	t112	8	two	O	O	O	tmx1991	DURATION	P2L	O	O	CRD	I-NP	two	CD	O	O
-thousand	t113	8	thousand	O	O	O	tmx1991	DURATION	P2L	O	O	CRD	I-NP	thousand	CD	t110:DEP||t111:DEP||t112:NMOD	O
-years	t114	8	year	O	O	O	tmx1991	DURATION	P2L	O	O	NN2	I-NP	years	NNS	t113:NMOD	O
+two	t112	8	two	O	O	O	tmx1991	DURATION	P2L	O	O	CRD	I-NP	two	CD	t110:DEP||t111:DEP	O
+thousand	t113	8	thousand	O	O	O	tmx1991	DURATION	P2L	O	O	CRD	I-NP	thousand	CD	O	O
+years	t114	8	year	O	O	O	tmx1991	DURATION	P2L	O	O	NN2	I-NP	years	NNS	t112:NMOD||t113:NMOD	O
 .	t115	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Even	t116	9	even	O	O	O	O	O	O	O	O	CJS	B-SBAR	even	RB	O	O
@@ -134,7 +134,7 @@ Afghanistan	t122	9	Afghanistan	O	O	O	O	O	O	O	O	NP0	B-NP	afghanistan	NNP	O	O
 most	t124	9	most	O	O	O	O	O	O	O	O	DT0	B-NP	most	DT	O	O
 people	t125	9	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t124:NMOD||t126:LOC	O
 here	t126	9	here	O	O	O	O	O	O	O	O	AV0	B-ADVP	here	RB	O	O
-speak	t127	9	speak	e19	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	speak	VBP	t117:ADV||t123:P||t125:TMP||t129:OBJ||t134:P||t135:COORD||t144:P	mainVb
+speak	t127	9	speak	e19	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	speak	VBP	t117:ADV||t123:P||t125:SBJ||t129:OBJ||t134:P||t135:COORD||t144:P	mainVb
 a	t128	9	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 dialect	t129	9	dialect	O	O	O	O	O	O	O	O	NN1	I-NP	dialect	NN	t128:NMOD||t130:NMOD	O
 of	t130	9	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t133:PMOD	O
@@ -145,12 +145,12 @@ language	t133	9	language	O	O	O	O	O	O	O	O	NN1	I-NP	language	NN	t131:NMOD||t132:NM
 and	t135	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t136:CONJ	O
 have	t136	9	have	e22	STATE	PRESENT+NONE+POS	O	O	O	O	O	VHB	B-VP	have	VBP	t140:OBJ	O
 long	t137	9	long	O	O	O	O	O	O	O	O	AJ0	B-NP	long	JJ	O	O
-standing	t138	9	standing	O	O	O	O	O	O	O	O	NN1	I-NP	stand	JJ	O	O
+standing	t138	9	standing	O	O	O	O	O	O	O	O	NN1	I-NP	stand	VBG	O	O
 cultural	t139	9	cultural	O	O	O	O	O	O	O	O	AJ0	I-NP	cultural	JJ	O	O
 ties	t140	9	tie	O	O	O	O	O	O	O	O	NN2	I-NP	tie	NNS	t137:NMOD||t138:NMOD||t139:NMOD||t141:NMOD	O
-with	t141	9	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t142:PMOD	O
-neighboring	t142	9	neighbor	O	O	O	O	O	O	O	O	AJ0	B-NP	neighboring	VBG	t143:OBJ	O
-Iran	t143	9	Iran	O	O	O	O	O	O	O	O	NP0	I-NP	iran	NNP	O	O
+with	t141	9	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t143:PMOD	O
+neighboring	t142	9	neighbor	O	O	O	O	O	O	O	O	AJ0	B-NP	neighbor	VBG	O	O
+Iran	t143	9	Iran	O	O	O	O	O	O	O	O	NP0	I-NP	iran	NNP	t142:NMOD	O
 .	t144	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Think	t145	10	think	e25	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	think	VB	t147:OBJ||t149:P	mainVb

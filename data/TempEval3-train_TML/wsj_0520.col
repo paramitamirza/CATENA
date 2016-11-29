@@ -1,9 +1,9 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 Nashua	t1	1	Nashua	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	nashua	NNP	t2:POSTHON||t3:P||t4:APPO||t12:P	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 ,	t3	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-rumored	t4	1	rumor	e1	STATE	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	rumor	VBN	t8:OPRD||t9:TMP	O
+rumored	t4	1	rumor	e1	STATE	PASTPART+NONE+POS	O	O	O	O	O	VVD	B-VP	rumor	VBN	t8:OBJ||t9:TMP	O
 a	t5	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 potential	t6	1	potential	O	O	O	O	O	O	O	O	AJ0	I-NP	potential	JJ	O	O
 takeover	t7	1	takeover	O	O	O	O	O	O	O	O	NN1	I-NP	takeover	NN	O	O
@@ -70,7 +70,7 @@ Nashua	t64	3	Nashua	O	O	O	O	O	O	O	O	NP0	B-NP	nashua	NNP	t65:P||t69:NMOD||t78:P	O
 whose	t66	3	whose	O	O	O	O	O	O	O	O	DTQ	B-NP	whose	WP$	O	O
 major	t67	3	major	O	O	O	O	O	O	O	O	AJ0	I-NP	major	JJ	O	O
 business	t68	3	business	O	O	O	O	O	O	O	O	NN1	I-NP	business	NN	t66:NMOD||t67:NMOD	O
-is	t69	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t68:SBJ||t70:VC	O
+is	t69	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t68:SBJ||t70:PRD	O
 selling	t70	3	sell	O	O	O	O	O	O	O	O	VVG	I-VP	sell	VBG	t71:OBJ	O
 copiers	t71	3	copier	O	O	O	O	O	O	O	O	NN2	B-NP	copier	NNS	t72:P||t74:COORD	O
 ,	t72	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -86,13 +86,13 @@ amp	t81	3	amp	O	O	O	O	O	O	O	O	NN1	I-NP	amp	NNP	t80:NAME||t82:POSTHON	O
 Co.	t82	3	Co.	O	O	O	O	O	O	O	O	NN1	I-NP	co.	NNP	O	O
 .	t83	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-B.V.	t84	4	B.V.	O	O	O	O	O	O	O	O	NP0	B-NP	b.v.	NNP	t85:NMOD	O
+B.V.	t84	4	B.V.	O	O	O	O	O	O	O	O	NP0	B-NP	b.v.	NN	t85:NMOD	O
 of	t85	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t87:PMOD	O
 the	t86	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Netherlands	t87	4	Netherlands	O	O	O	O	O	O	O	O	NP0	I-NP	netherlands	NNP	t86:NMOD	O
-filed	t88	4	file	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	file	VBD	t84:SBJ||t90:OBJ||t91:ADV||t96:LOC||t118:P	mainVb
+filed	t88	4	file	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	file	VBD	t84:SBJ||t90:OBJ||t91:ADV||t96:LOC||t100:PRP||t118:P	mainVb
 a	t89	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-request	t90	4	request	O	O	O	O	O	O	O	O	NN1	I-NP	request	NN	t89:NMOD||t100:NMOD	O
+request	t90	4	request	O	O	O	O	O	O	O	O	NN1	I-NP	request	NN	t89:NMOD	O
 with	t91	4	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t95:PMOD	O
 the	t92	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Federal	t93	4	Federal	O	O	O	O	O	O	O	O	AJ0	I-NP	federal	NNP	O	O
@@ -100,7 +100,7 @@ Trade	t94	4	Trade	O	O	O	O	O	O	O	O	NN1	I-NP	trade	NNP	O	O
 Commission	t95	4	Commission	O	O	O	O	O	O	O	O	NN1	I-NP	commission	NNP	t92:NMOD||t93:NAME||t94:NAME	O
 under	t96	4	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t99:PMOD	O
 the	t97	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Hart-Scott-Rodino	t98	4	Hart-Scott-Rodino	O	O	O	O	O	O	O	O	NN1	I-NP	hart-scott-rodino	NN	O	O
+Hart-Scott-Rodino	t98	4	Hart-Scott-Rodino	O	O	O	O	O	O	O	O	NN1	I-NP	hart-scott-rodino	NNP	O	O
 Act	t99	4	Act	O	O	O	O	O	O	O	O	NN1	I-NP	act	NN	t97:NMOD||t98:NMOD	O
 for	t100	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t101:PMOD	O
 permission	t101	4	permission	O	O	O	O	O	O	O	O	NN1	B-NP	permission	NN	t102:NMOD	O
@@ -285,7 +285,7 @@ closed	t273	9	close	e38	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	close	VBD	t27
 
 Mr.	t275	10	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Junius	t276	10	Junius	O	O	O	O	O	O	O	O	NP0	I-NP	junius	NNP	t275:TITLE	O
-said	t277	10	say	e39	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t276:SBJ||t282:OBJ||t289:P||t290:P	mainVb
+said	t277	10	say	e39	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t276:SBJ||t282:OBJ||t289:P	mainVb
 Nashua	t278	10	Nashua	O	O	O	O	O	O	O	O	NP0	B-NP	nashua	NNP	t279:SUFFIX	O
 's	t279	10	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 "	t280	10	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	JJ	O	O
@@ -296,9 +296,9 @@ remain	t284	10	remain	e41	STATE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	remain	VB
 an	t285	10	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 independent	t286	10	independent	O	O	O	O	O	O	O	O	AJ0	I-NP	independent	JJ	O	O
 public	t287	10	public	O	O	O	O	O	O	O	O	AJ0	I-NP	public	JJ	O	O
-company	t288	10	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t285:NMOD||t286:NMOD||t287:NMOD	O
+company	t288	10	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t285:NMOD||t286:NMOD||t287:NMOD||t290:NMOD	O
 .	t289	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t290	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t290	10	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 The	t291	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t292	11	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t291:NMOD	O
@@ -359,11 +359,11 @@ purchase	t345	12	purchase	e54	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	purcha
 of	t346	12	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t353:PMOD	O
 up	t347	12	up	O	O	O	O	O	O	O	O	AV0	B-ADVP	up	CD	O	O
 to	t348	12	to	O	O	O	O	O	O	O	O	AV0	I-ADVP	to	CD	O	O
-an	t349	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	t347:DEP||t348:DEP||t350:DEP	O
+an	t349	12	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	t347:DEP||t348:DEP	O
 additional	t350	12	additional	O	O	O	O	O	O	O	O	AJ0	I-NP	additional	CD	O	O
 one	t351	12	one	O	O	O	O	O	O	O	O	PNI	I-NP	one	CD	O	O
 million	t352	12	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t351:DEP	O
-shares	t353	12	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t349:NMOD||t352:NMOD	O
+shares	t353	12	share	O	O	O	O	O	O	O	O	NN2	I-NP	share	NNS	t349:NMOD||t350:NMOD||t352:NMOD	O
 .	t354	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Under	t355	13	under	O	O	O	O	O	O	O	O	PRP	B-PP	under	IN	t357:PMOD	O
@@ -400,9 +400,9 @@ an	t384	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
 analyst	t385	14	analyst	O	O	O	O	O	O	O	O	NN1	I-NP	analyst	NN	t384:NMOD||t386:LOC	O
 at	t386	14	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t388:PMOD	O
 Prudential-Bache	t387	14	Prudential-Bache	O	O	O	O	O	O	O	O	NP0	B-NP	prudential-bache	NNP	O	O
-Securities	t388	14	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNPS	t387:NAME||t403:P	O
+Securities	t388	14	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNPS	t387:NAME	O
 ,	t389	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t390	14	say	e60	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t382:SBJ||t391:OBJ||t426:P	mainVb
+said	t390	14	say	e60	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t382:SBJ||t391:OBJ||t426:P||t427:P	mainVb
 that	t391	14	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t407:SUB	O
 while	t392	14	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t398:SUB	O
 Nashua	t393	14	Nashua	O	O	O	O	O	O	O	O	NP0	B-NP	nashua	NNP	t394:SUFFIX	O
@@ -411,35 +411,35 @@ performance	t395	14	performance	O	O	O	O	O	O	O	O	NN1	I-NP	performance	NN	t393:NMO
 this	t396	14	this	O	O	O	tmx112	DATE	1989	O	O	DT0	B-NP	this	DT	O	O
 year	t397	14	year	O	O	O	tmx112	DATE	1989	O	O	NN1	I-NP	year	NN	t395:NMOD||t396:NMOD	O
 has	t398	14	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t397:SBJ||t399:VC	O
-been	t399	14	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t400:VC	O
-"	t400	14	"	O	O	O	O	O	O	O	O	PUQ	B-ADJP	"	VBN	t401:OPRD	O
-atrocious	t401	14	atrocious	O	O	O	O	O	O	O	O	AJ0	I-ADJP	atrocious	JJ	O	O
+been	t399	14	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t401:PRD	O
+"	t400	14	"	O	O	O	O	O	O	O	O	PUQ	B-ADJP	"	PRP	O	O
+atrocious	t401	14	atrocious	O	O	O	O	O	O	O	O	AJ0	I-ADJP	atrocious	JJ	t400:NMOD	O
 ,	t402	14	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 "	t403	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 the	t404	14	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t405	14	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t404:NMOD	O
 nonetheless	t406	14	nonetheless	O	O	O	O	O	O	O	O	AV0	B-ADVP	nonetheless	RB	O	O
-is	t407	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t392:ADV||t402:P||t405:SBJ||t406:ADV||t408:PRD||t415:PRP	O
+is	t407	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t392:ADV||t402:P||t403:P||t405:SBJ||t406:ADV||t408:PRD||t415:PRP	O
 attractive	t408	14	attractive	O	O	O	O	O	O	O	O	AJ0	B-ADJP	attractive	JJ	t409:AMOD	O
 as	t409	14	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t414:PMOD	O
 a	t410	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t411	14	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t427:APPO	O
+"	t411	14	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	O	O
 classic	t412	14	classic	O	O	O	O	O	O	O	O	AJ0	I-NP	classic	JJ	O	O
 breakup	t413	14	breakup	O	O	O	O	O	O	O	O	NN1	I-NP	breakup	NN	O	O
 candidate	t414	14	candidate	O	O	O	O	O	O	O	O	NN1	I-NP	candidate	NN	t410:NMOD||t411:NMOD||t412:NMOD||t413:NMOD	O
 because	t415	14	because	O	O	O	O	O	O	O	O	CJS	B-SBAR	because	IN	t417:SUB	O
 there	t416	14	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-'s	t417	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t416:SBJ||t419:OBJ	O
+'s	t417	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t416:SBJ||t419:PRD	O
 no	t418	14	no	O	O	O	O	O	O	O	O	AT0	B-NP	no	DT	O	O
 similarity	t419	14	similarity	O	O	O	O	O	O	O	O	NN1	I-NP	similarity	NN	t418:NMOD||t420:LOC	O
 between	t420	14	between	O	O	O	O	O	O	O	O	PRP	B-PP	between	IN	t425:PMOD	O
 its	t421	14	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
--LCB-	t422	14	-lcb-	O	O	O	O	O	O	O	O	AJ0	I-NP	-lcb-	NNP	O	O
-four	t423	14	four	O	O	O	O	O	O	O	O	CRD	I-NP	four	CD	t422:NAME	O
+-LCB-	t422	14	-lcb-	O	O	O	O	O	O	O	O	AJ0	I-NP	-lcb-	NN	O	O
+four	t423	14	four	O	O	O	O	O	O	O	O	CRD	I-NP	four	CD	t422:NMOD	O
 -RCB-	t424	14	-rcb-	O	O	O	O	O	O	O	O	AJ0	I-NP	-rcb-	NNP	O	O
 businesses	t425	14	business	O	O	O	O	O	O	O	O	NN2	I-NP	business	NNS	t421:NMOD||t423:NMOD||t424:NMOD	O
 .	t426	14	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t427	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	#	O	O
+"	t427	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	)	O	O
 
 He	t428	15	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 estimated	t429	15	estimate	e65	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	estimate	VBD	t428:SBJ||t432:OBJ||t433:ADV||t438:P	mainVb
@@ -456,15 +456,15 @@ share	t437	15	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t436:NMOD	O
 In	t439	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t440:PMOD	O
 addition	t440	16	addition	O	O	O	O	O	O	O	O	PRP	B-NP	addition	NN	t441:NMOD	O
 to	t441	16	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t442:PMOD	O
-selling	t442	16	sell	O	O	O	O	O	O	O	O	VVG	B-VP	sell	VBG	t444:OBJ||t448:LOC||t450:COORD	O
+selling	t442	16	sell	O	O	O	O	O	O	O	O	VVG	B-VP	sell	VBG	t444:OBJ||t453:LOC	O
 Japanese-made	t443	16	japanese-made	O	O	O	O	O	O	O	O	NP0	B-NP	japanese-made	JJ	O	O
 photocopiers	t444	16	photocopier	O	O	O	O	O	O	O	O	NN2	I-NP	photocopier	NNS	t443:NMOD||t445:COORD	O
 and	t445	16	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t447:CONJ	O
 facsimile	t446	16	facsimile	O	O	O	O	O	O	O	O	NN1	B-NP	facsimile	NN	O	O
-machines	t447	16	machine	O	O	O	O	O	O	O	O	NN2	I-NP	machine	NNS	t446:NMOD	O
+machines	t447	16	machine	O	O	O	O	O	O	O	O	NN2	I-NP	machine	NNS	t446:NMOD||t448:LOC||t450:COORD	O
 in	t448	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t449:PMOD	O
 Europe	t449	16	Europe	O	O	O	O	O	O	O	O	NP0	B-NP	europe	NNP	O	O
-and	t450	16	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t452:GAP-OBJ||t453:GAP-LOC	O
+and	t450	16	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t452:CONJ	O
 copier	t451	16	copier	O	O	O	O	O	O	O	O	NN1	I-NP	copier	NN	O	O
 supplies	t452	16	supplies	O	O	O	O	O	O	O	O	NN2	I-NP	supply	NNS	t451:NMOD	O
 in	t453	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t455:PMOD	O

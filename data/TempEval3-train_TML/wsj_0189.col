@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NP0	B-NP	dct_1989-11-02	LS	O	O
 
 Ralston	t1	1	Ralston	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	ralston	NNP	O	O
 Purina	t2	1	Purina	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	purina	NNP	t1:NAME||t3:POSTHON	O
@@ -89,7 +89,7 @@ Sept.	t83	4	Sept.	O	O	O	tmx40	DATE	1989-09-30	O	O	NP0	B-NP	sept.	NNP	O	O
 30	t84	4	30	O	O	O	tmx40	DATE	1989-09-30	O	O	CRD	I-NP	30	CD	t83:NMOD	O
 ,	t85	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Ralston	t86	4	Ralston	O	O	O	O	O	O	O	O	NP0	B-NP	ralston	NNP	O	O
-earned	t87	4	earn	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t79:TMP||t85:P||t86:SBJ||t88:OBJ||t98:ADV||t111:P	mainVb
+earned	t87	4	earn	e6	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t79:ADV||t85:P||t86:SBJ||t88:OBJ||t98:ADV||t111:P	mainVb
 $	t88	4	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t89:DEP||t90:DEP||t91:P||t92:COORD||t97:P	O
 422.5	t89	4	422.5	O	O	O	O	O	O	O	O	CRD	I-NP	422.5	CD	O	O
 million	t90	4	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
@@ -182,9 +182,9 @@ in	t173	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t174:PMOD	O
 Cincinnati	t174	7	Cincinnati	O	O	O	O	O	O	O	O	NP0	B-NP	cincinnati	NNP	O	O
 and	t175	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t177:CONJ	O
 a	t176	7	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-reduction	t177	7	reduction	e1998	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	reduction	NN	t176:NMOD||t178:NMOD	O
+reduction	t177	7	reduction	e1998	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	reduction	NN	t176:NMOD||t178:NMOD||t180:TMP	O
 in	t178	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t179:PMOD	O
-staff	t179	7	staff	O	O	O	O	O	O	O	O	NN0	B-NP	staff	NN	t180:LOC	O
+staff	t179	7	staff	O	O	O	O	O	O	O	O	NN0	B-NP	staff	NN	O	O
 throughout	t180	7	throughout	O	O	O	O	O	O	O	O	PRP	B-PP	throughout	IN	t182:PMOD	O
 the	t181	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t182	7	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t181:NMOD	O
@@ -198,11 +198,11 @@ which	t188	8	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 makes	t189	8	make	e13	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	make	VBZ	t188:SBJ||t196:OBJ	O
 rechargeable	t190	8	rechargeable	O	O	O	O	O	O	O	O	AJ0	B-NP	rechargeable	JJ	O	O
 nickel	t191	8	nickel	O	O	O	O	O	O	O	O	NN1	I-NP	nickel	NN	O	O
-cadmium	t192	8	cadmium	O	O	O	O	O	O	O	O	NN1	I-NP	cadmium	NN	t191:NMOD||t193:COORD	O
+cadmium	t192	8	cadmium	O	O	O	O	O	O	O	O	NN1	I-NP	cadmium	NN	t190:NMOD||t191:NMOD||t193:COORD	O
 and	t193	8	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t195:CONJ	O
 carbon	t194	8	carbon	O	O	O	O	O	O	O	O	NN1	I-NP	carbon	NN	O	O
 zinc	t195	8	zinc	O	O	O	O	O	O	O	O	NN1	I-NP	zinc	NN	t194:NMOD	O
-products	t196	8	product	O	O	O	O	O	O	O	O	NN2	I-NP	product	NNS	t190:NMOD||t192:NMOD	O
+products	t196	8	product	O	O	O	O	O	O	O	O	NN2	I-NP	product	NNS	t192:NMOD	O
 ,	t197	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 will	t198	8	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t186:SBJ||t199:VC	O
 be	t199	8	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t200:VC	O
@@ -253,8 +253,8 @@ the	t241	10	the	O	O	O	tmx48	DATE	1989	O	O	AT0	B-NP	the	DT	O	O
 year	t242	10	year	O	O	O	tmx48	DATE	1989	O	O	NN1	I-NP	year	NN	t241:NMOD	O
 ,	t243	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 pet	t244	10	pet	O	O	O	O	O	O	O	O	VVB	B-VP	pet	NN	O	O
-food	t245	10	food	O	O	O	O	O	O	O	O	NN1	B-NP	food	NN	t244:NMOD	O
-volume	t246	10	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	t245:NMOD	O
+food	t245	10	food	O	O	O	O	O	O	O	O	NN1	B-NP	food	NN	O	O
+volume	t246	10	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	t244:NMOD||t245:NMOD	O
 was	t247	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t240:ADV||t243:P||t246:SBJ||t248:PRD	O
 flat	t248	10	flat	e2154	STATE	PAST+NONE+POS	O	O	O	O	O	AJ0	B-ADJP	flat	JJ	O	O
 ,	t249	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -274,9 +274,9 @@ on	t261	11	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t263:PMOD	O
 volume	t262	11	volume	O	O	O	O	O	O	O	O	NN1	B-NP	volume	NN	O	O
 increases	t263	11	increase	e21	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	increase	NNS	t262:NMOD	O
 ,	t264	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-but	t265	11	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t267:CONJ	O
+but	t265	11	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t266:COORD||t267:CONJ	O
 also	t266	11	also	O	O	O	O	O	O	O	O	AV0	B-ADVP	also	RB	O	O
-spent	t267	11	spend	e2006	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	spend	VBD	t266:ADV||t268:OBJ||t269:ADV	O
+spent	t267	11	spend	e2006	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	spend	VBD	t268:OBJ||t269:ADV	O
 more	t268	11	more	O	O	O	O	O	O	O	O	AV0	B-ADVP	more	RBR	O	O
 on	t269	11	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t270:PMOD	O
 promotion	t270	11	promotion	O	O	O	O	O	O	O	O	NN1	B-NP	promotion	NN	O	O

@@ -1,20 +1,20 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	NN1	B-NP	dct_1989-11-02	LS	O	O
 
 RMS	t1	1	RMS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	rms	NNP	O	O
-International	t2	1	International	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	international	NNP	t1:NAME||t3:POSTHON||t4:P||t8:LOC||t14:P	O
+International	t2	1	International	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	international	NNP	t1:NAME||t3:POSTHON||t4:P||t8:LOC	O
 Inc.	t3	1	Inc.	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 ,	t4	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Hasbrouk	t5	1	Hasbrouk	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	hasbrouk	NNP	O	O
 Heights	t6	1	Heights	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	heights	NNP	t5:NAME	O
 ,	t7	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
-N.J.	t8	1	N.J.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	n.j.	NNP	t6:NMOD||t7:P||t9:P||t10:APPO	O
+N.J.	t8	1	N.J.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	n.j.	NNP	t6:NMOD||t7:P	O
 ,	t9	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 facing	t10	1	face	e1	I_ACTION	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	face	VBG	t13:OBJ	O
 a	t11	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 cash-flow	t12	1	cash-flow	O	O	O	O	O	O	O	O	AJ0	I-NP	cash-flow	NN	O	O
 squeeze	t13	1	squeeze	e1989	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	squeeze	NN	t11:NMOD||t12:NMOD	O
 ,	t14	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-said	t15	1	say	e2	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t17:OBJ||t27:P	mainVb
+said	t15	1	say	e2	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t2:SBJ||t9:P||t10:ADV||t14:P||t17:OBJ||t27:P	mainVb
 it	t16	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 is	t17	1	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t16:SBJ||t18:VC	O
 seeking	t18	1	seek	e3	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	seek	VBG	t21:OBJ||t24:ADV	O
@@ -71,11 +71,11 @@ displays	t64	3	display	O	O	O	O	O	O	O	O	NN2	I-NP	display	NNS	t63:NMOD	O
 RMS	t66	4	RMS	O	O	O	O	O	O	O	O	NP0	B-NP	rms	NNP	O	O
 said	t67	4	say	e12	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t66:SBJ||t69:OBJ||t101:P	mainVb
 it	t68	4	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-had	t69	4	have	e1994	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t68:SBJ||t71:OBJ||t82:TMP||t86:P||t87:ADV	O
+had	t69	4	have	e1994	STATE	PAST+NONE+POS	O	O	O	O	O	VHD	B-VP	have	VBD	t68:SBJ||t71:OBJ||t81:P||t82:TMP||t86:P||t87:ADV	O
 a	t70	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 loss	t71	4	loss	e3000	STATE	O	O	O	O	O	O	NN1	I-NP	loss	NN	t70:NMOD||t72:NMOD	O
 of	t72	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t73:PMOD	O
-$	t73	4	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t74:NMOD||t75:P||t76:COORD||t81:P	O
+$	t73	4	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t74:NMOD||t75:P||t76:COORD	O
 158,666	t74	4	158,666	O	O	O	O	O	O	O	O	CRD	I-NP	158,666	CD	O	O
 ,	t75	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t76	4	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t78:CONJ	O
@@ -140,7 +140,7 @@ share	t132	6	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t131:NMOD	O
 ,	t133	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 compared	t134	6	compare	O	O	O	O	O	O	O	O	VVN	B-PP	compare	VBN	t135:PMOD	O
 with	t135	6	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t138:PMOD	O
-year-earlier	t136	6	year-earlier	O	O	O	tmx24	DATE	1988	O	O	AJC	B-NP	year-earlier	JJR	O	O
+year-earlier	t136	6	year-earlier	O	O	O	tmx24	DATE	1988	O	O	AJC	B-NP	year-earlier	JJ	O	O
 net	t137	6	net	O	O	O	O	O	O	O	O	AJ0	I-NP	net	JJ	O	O
 income	t138	6	income	e1998	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	income	NN	t136:NMOD||t137:NMOD||t139:NMOD	O
 of	t139	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t140:PMOD	O

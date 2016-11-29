@@ -1,4 +1,4 @@
-DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	SYM	O	O
+DCT_1989-10-30	O	O	O	O	O	O	tmx0	DATE	1989-10-30	O	O	NP0	B-NP	dct_1989-10-30	LS	O	O
 
 This	t1	1	this	O	O	O+O+O	O	O	O	O	O	DT0	B-NP	this	DT	O	O
 has	t2	1	have	O	O	O+O+O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t1:SBJ||t3:ADV||t4:VC||t9:P	mainVb
@@ -29,7 +29,7 @@ The	t24	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 company	t25	3	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t24:NMOD||t26:SUFFIX	O
 's	t26	3	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 president	t27	3	president	O	O	O	O	O	O	O	O	NN1	I-NP	president	NN	t25:NMOD	O
-quit	t28	3	quit	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	quit	VBD	t27:SBJ||t29:MNR||t30:P	mainVb
+quit	t28	3	quit	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN1	I-NP	quit	VBD	t27:SBJ||t29:ADV||t30:P	mainVb
 suddenly	t29	3	suddenly	O	O	O	O	O	O	O	O	AV0	B-ADVP	suddenly	RB	O	O
 .	t30	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -133,8 +133,8 @@ $	t124	7	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t125:DEP||t126:DEP	O
 6	t125	7	6	O	O	O	O	O	O	O	O	CRD	I-NP	6	CD	O	O
 billion	t126	7	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	O	O
 ready-to-eat	t127	7	ready-to-eat	O	O	O	O	O	O	O	O	NN1	I-NP	ready-to-eat	JJ	O	O
-cereal	t128	7	cereal	O	O	O	O	O	O	O	O	AJ0	I-NP	cereal	NN	O	O
-market	t129	7	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t123:NMOD||t124:NMOD||t127:NMOD||t128:NMOD	O
+cereal	t128	7	cereal	O	O	O	O	O	O	O	O	AJ0	I-NP	cereal	NN	t127:NMOD	O
+market	t129	7	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	t123:NMOD||t124:NMOD||t128:NMOD	O
 .	t130	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Kellogg	t131	8	Kellogg	O	O	O	O	O	O	O	O	NP0	B-NP	kellogg	NNP	t132:SUFFIX	O
@@ -155,17 +155,17 @@ Mills	t145	8	Mills	O	O	O	O	O	O	O	O	NP0	I-NP	mills	NNP	t144:NAME||t146:SUFFIX	O
 '	t146	8	'	O	O	O	O	O	O	O	O	POS	B-NP	'	POS	O	O
 share	t147	8	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t145:NMOD	O
 is	t148	8	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t147:SBJ||t151:PRD	O
-about	t149	8	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
-27	t150	8	27	O	O	O	O	O	O	O	O	CRD	I-NP	27	CD	t149:DEP	O
-%	t151	8	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t150:NMOD	O
+about	t149	8	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t150:DEP	O
+27	t150	8	27	O	O	O	O	O	O	O	O	CRD	I-NP	27	CD	O	O
+%	t151	8	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t149:NMOD	O
 .	t152	8	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Led	t153	9	lead	e22	STATE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	lead	VBN	t154:ADV	O
+Led	t153	9	lead	e22	STATE	PASTPART+NONE+POS	O	O	O	O	O	VVN	B-VP	lead	VBN	t154:LGS	O
 by	t154	9	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t158:PMOD	O
 its	t155	9	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 oat-based	t156	9	oat-based	O	O	O	O	O	O	O	O	AJ0	I-NP	oat-base	VBN	O	O
-Cheerios	t157	9	Cheerios	O	O	O	O	O	O	O	O	NP0	I-NP	cheerio	NNPS	t156:NMOD	O
-line	t158	9	line	O	O	O	O	O	O	O	O	NN1	I-NP	line	NN	t155:NMOD||t157:NMOD	O
+Cheerios	t157	9	Cheerios	O	O	O	O	O	O	O	O	NP0	I-NP	cheerio	NNPS	O	O
+line	t158	9	line	O	O	O	O	O	O	O	O	NN1	I-NP	line	NN	t155:NMOD||t156:NMOD||t157:NMOD	O
 ,	t159	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 General	t160	9	General	O	O	O	O	O	O	O	O	AJ0	B-NP	general	NNP	O	O
 Mills	t161	9	Mills	O	O	O	O	O	O	O	O	NP0	I-NP	mills	NNP	t160:NAME	O
@@ -210,20 +210,20 @@ Kellogg	t197	11	Kellogg	O	O	O	O	O	O	O	O	NP0	B-NP	kellogg	NNP	t198:SUFFIX	O
 's	t198	11	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 erosion	t199	11	erosion	e204	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	erosion	NN	t197:NMOD	O
 has	t200	11	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t195:SBJ||t201:VC	O
-been	t201	11	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t202:LOC-PRD	O
+been	t201	11	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t202:PRD	O
 in	t202	11	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t205:PMOD	O
 such	t203	11	such	O	O	O	O	O	O	O	O	DT0	B-NP	such	DT	O	O
 core	t204	11	core	O	O	O	O	O	O	O	O	NN1	I-NP	core	NN	O	O
 brands	t205	11	brand	O	O	O	O	O	O	O	O	NN2	I-NP	brand	NNS	t203:NMOD||t204:NMOD||t206:NMOD||t215:P||t217:NMOD	O
 as	t206	11	as	O	O	O	O	O	O	O	O	CJS	B-PP	as	IN	t208:PMOD	O
 Corn	t207	11	Corn	O	O	O	O	O	O	O	O	NP0	B-NP	corn	NNP	O	O
-Flakes	t208	11	Flakes	O	O	O	O	O	O	O	O	NP0	I-NP	flake	NNP	t207:NAME||t209:P||t211:COORD	O
+Flakes	t208	11	Flakes	O	O	O	O	O	O	O	O	NP0	I-NP	flake	NNPS	t207:NAME||t209:P||t211:COORD	O
 ,	t209	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Rice	t210	11	Rice	O	O	O	O	O	O	O	O	NP0	B-NP	rice	NNP	O	O
-Krispies	t211	11	Krispies	O	O	O	O	O	O	O	O	NP0	I-NP	krispies	NNP	t210:NAME||t212:COORD	O
+Krispies	t211	11	Krispies	O	O	O	O	O	O	O	O	NP0	I-NP	krispies	NNPS	t210:NAME||t212:COORD	O
 and	t212	11	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t214:CONJ	O
 Frosted	t213	11	Frosted	O	O	O	O	O	O	O	O	AJ0	B-NP	frosted	NNP	O	O
-Flakes	t214	11	Flakes	O	O	O	O	O	O	O	O	NN2	I-NP	flake	NNPS	t213:NAME	O
+Flakes	t214	11	Flakes	O	O	O	O	O	O	O	O	NN2	I-NP	flake	NNP	t213:NAME	O
 ,	t215	11	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 which	t216	11	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 represent	t217	11	represent	O	O	O	O	O	O	O	O	VVB	B-VP	represent	VBP	t216:SBJ||t219:OBJ	O
@@ -264,13 +264,13 @@ sources	t250	12	source	O	O	O	O	O	O	O	O	NN2	I-NP	source	NNS	t249:NMOD	O
 say	t251	12	say	e35	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	say	VBP	t226:OBJ||t248:P||t250:SBJ||t252:P	mainVb
 .	t252	12	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t253	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
-Cheerios	t254	13	Cheerios	O	O	O	O	O	O	O	O	NP0	B-NP	cheerio	NNPS	t253:NAME||t255:COORD	O
+"	t253	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
+Cheerios	t254	13	Cheerios	O	O	O	O	O	O	O	O	NP0	B-NP	cheerio	NNPS	t255:COORD	O
 and	t255	13	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t258:CONJ	O
 Honey	t256	13	Honey	O	O	O	O	O	O	O	O	NN1	B-NP	honey	NNP	O	O
 Nut	t257	13	Nut	O	O	O	O	O	O	O	O	NN1	I-NP	nut	NNP	O	O
 Cheerios	t258	13	Cheerios	O	O	O	O	O	O	O	O	NP0	I-NP	cheerio	NNPS	t256:NAME||t257:NAME	O
-have	t259	13	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t254:SBJ||t260:VC	O
+have	t259	13	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t253:P||t254:SBJ||t260:VC	O
 eaten	t260	13	eat	e36	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	eat	VBN	t261:PRT||t262:OBJ||t271:PRP	O
 away	t261	13	away	O	O	O	O	O	O	O	O	AV0	B-ADVP	away	RP	O	O
 sales	t262	13	sale	O	O	O	O	O	O	O	O	NN0	B-VP	sales	NNS	t264:APPO	O
@@ -289,7 +289,7 @@ made	t274	13	make	e40	STATE	PRESENT+NONE+POS	O	O	O	O	O	VVN	I-VP	make	VBN	t275:AD
 of	t275	13	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t276:PMOD	O
 oats	t276	13	oats	O	O	O	O	O	O	O	O	NN2	B-NP	oat	NNS	O	O
 ,	t277	13	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t278	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	,	O	O
+"	t278	13	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 says	t279	13	say	e41	REPORTING	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	say	VBZ	t259:OBJ||t277:P||t278:P||t283:SBJ||t286:P	mainVb
 Merrill	t280	13	Merrill	O	O	O	O	O	O	O	O	NP0	B-NP	merrill	NNP	O	O
 Lynch	t281	13	Lynch	O	O	O	O	O	O	O	O	NP0	I-NP	lynch	NNP	t280:NAME	O
@@ -301,8 +301,8 @@ Maguire	t285	13	Maguire	O	O	O	O	O	O	O	O	NP0	I-NP	maguire	NNP	t284:NAME	O
 
 "	t287	14	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 They	t288	14	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
-are	t289	14	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t288:SBJ||t290:ADV||t293:PRD||t296:LOC||t299:TMP||t301:P||t302:P	mainVb
-not	t290	14	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	t287:OBJ	O
+are	t289	14	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t287:TMP||t288:SBJ||t290:ADV||t293:PRD||t296:LOC||t299:TMP||t301:P||t302:P	mainVb
+not	t290	14	not	O	O	O	O	O	O	O	O	XX0	O	not	RB	O	O
 a	t291	14	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 happy	t292	14	happy	e1051	STATE	PRESENT+NONE+NEG	O	O	O	O	O	AJ0	I-NP	happy	JJ	O	O
 group	t293	14	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t291:NMOD||t292:NMOD||t294:NMOD	O
@@ -339,17 +339,17 @@ world	t322	15	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t321:NMOD	O
 .	t323	15	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Another	t324	16	another	O	O	O	O	O	O	O	O	DT0	B-NP	another	DT	O	O
-analyst	t325	16	analyst	O	O	O	O	O	O	O	O	NN1	I-NP	analyst	NN	t324:NMOD||t326:P||t329:APPO||t333:P||t335:APPO||t340:P	O
+analyst	t325	16	analyst	O	O	O	O	O	O	O	O	NN1	I-NP	analyst	NN	t324:NMOD||t326:P||t329:APPO||t340:P	O
 ,	t326	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 John	t327	16	John	O	O	O	O	O	O	O	O	NP0	B-NP	john	NNP	O	O
 C.	t328	16	C.	O	O	O	O	O	O	O	O	NP0	I-NP	c.	NNP	O	O
 Maxwell	t329	16	Maxwell	O	O	O	O	O	O	O	O	NP0	I-NP	maxwell	NNP	t327:NAME||t328:NAME||t330:POSTHON||t331:NMOD	O
 Jr.	t330	16	Jr.	O	O	O	O	O	O	O	O	NN1	I-NP	jr.	NNP	O	O
-of	t331	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t332:PMOD	O
+of	t331	16	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t335:PMOD	O
 Wheat	t332	16	Wheat	O	O	O	O	O	O	O	O	NP0	B-NP	wheat	NNP	O	O
-,	t333	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
+,	t333	16	,	O	O	O	O	O	O	O	O	PUN	O	,	NNP	O	O
 First	t334	16	First	O	O	O	O	O	O	O	O	ORD	B-NP	first	NNP	O	O
-Securities	t335	16	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNP	t334:NAME||t336:LOC	O
+Securities	t335	16	Securities	O	O	O	O	O	O	O	O	NN2	I-NP	security	NNP	t332:NAME||t333:NAME||t334:NAME||t336:LOC	O
 in	t336	16	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t339:PMOD	O
 Richmond	t337	16	Richmond	O	O	O	O	O	O	O	O	NP0	B-NP	richmond	NNP	O	O
 ,	t338	16	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -359,7 +359,7 @@ recently	t341	16	recently	O	O	O	tmx210	DATE	PAST_REF	O	O	AV0	B-ADVP	recently	RB	
 went	t342	16	go	e1061	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t325:SBJ||t341:TMP||t343:DIR||t371:P	mainVb
 to	t343	16	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t348:PMOD	O
 a	t344	16	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-"	t345	16	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	O	O
+"	t345	16	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	O	O
 sell	t346	16	sell	O	O	O	O	O	O	O	O	NN1	I-NP	sell	NN	t344:NMOD||t345:NMOD||t347:SUFFIX	O
 "	t347	16	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	POS	O	O
 recommendation	t348	16	recommendation	O	O	O	O	O	O	O	O	NN1	I-NP	recommendation	NN	t346:NMOD||t349:NMOD	O
@@ -387,12 +387,12 @@ composite	t369	16	composite	O	O	O	O	O	O	O	O	AJ0	I-NP	composite	JJ	O	O
 trading	t370	16	trading	O	O	O	O	O	O	O	O	NN1	I-NP	trading	NN	t368:NMOD||t369:NMOD	O
 .	t371	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t372	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+"	t372	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 I	t373	17	I	O	O	O	O	O	O	O	O	PNP	B-NP	i	PRP	O	O
-do	t374	17	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t372:SBJ||t373:SBJ||t375:ADV||t376:VC	O
+do	t374	17	do	O	O	O	O	O	O	O	O	VDB	B-VP	do	VBP	t373:SBJ||t375:ADV||t376:VC	O
 n't	t375	17	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 think	t376	17	think	e49	I_STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	think	VB	t378:OBJ	O
-Kellogg	t377	17	Kellogg	O	O	O	O	O	O	O	O	NP0	B-NP	kellogg	NNP	O	O
+Kellogg	t377	17	Kellogg	O	O	O	O	O	O	O	O	NP0	B-NP	kellogg	NNP	t372:TITLE	O
 can	t378	17	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t377:SBJ||t379:VC	O
 get	t379	17	get	e51	I_STATE	NONE+NONE+NEG	O	O	O	O	O	VVI	I-VP	get	VB	t380:ADV||t385:TMP	O
 back	t380	17	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RB	t381:AMOD	O
@@ -402,9 +402,9 @@ to	t381	17	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t383:PMOD	O
 this	t384	17	this	O	O	O	tmx214	DATE	1989	O	O	DT0	I-NP	this	DT	O	O
 year	t385	17	year	O	O	O	tmx214	DATE	1989	O	O	NN1	I-NP	year	NN	t384:NMOD	O
 ,	t386	17	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t387	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t387	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t388	17	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t389	17	say	e53	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t374:OBJ||t386:P||t387:SBJ||t388:SBJ||t390:P	mainVb
+said	t389	17	say	e53	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t374:OBJ||t386:P||t387:P||t388:SBJ||t390:P	mainVb
 .	t390	17	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 "	t391	18	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	O	O
@@ -412,13 +412,13 @@ Kellogg	t392	18	Kellogg	O	O	O	O	O	O	O	O	NP0	B-NP	kellogg	NNP	t393:SUFFIX	O
 's	t393	18	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 main	t394	18	main	O	O	O	O	O	O	O	O	AJ0	I-NP	main	JJ	O	O
 problem	t395	18	problem	O	O	O	O	O	O	O	O	NN1	I-NP	problem	NN	t392:NMOD||t394:NMOD	O
-is	t396	18	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t391:DEP||t395:SBJ||t398:PRD||t399:P	mainVb
+is	t396	18	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t391:ADV||t395:SBJ||t398:PRD||t399:P	mainVb
 life	t397	18	life	O	O	O	O	O	O	O	O	NN1	B-NP	life	NN	O	O
 style	t398	18	style	O	O	O	O	O	O	O	O	NN1	I-NP	style	NN	t397:NMOD	O
 .	t399	18	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 People	t400	19	people	O	O	O	O	O	O	O	O	NN0	B-NP	people	NN	O	O
-are	t401	19	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t400:SBJ||t402:VC||t421:P||t422:P	mainVb
+are	t401	19	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t400:SBJ||t402:VC||t421:P	mainVb
 reading	t402	19	read	e215	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	read	VBG	t404:OBJ||t405:COORD	mainVb
 the	t403	19	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 boxes	t404	19	box	O	O	O	O	O	O	O	O	NN2	I-NP	box	NNS	t403:NMOD	O
@@ -426,9 +426,9 @@ and	t405	19	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t406:CONJ	O
 deciding	t406	19	decide	e55	I_ACTION	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	decide	VBG	t408:OBJ	O
 they	t407	19	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
 want	t408	19	want	e56	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	want	VBP	t407:SBJ||t420:OBJ	O
-something	t409	19	something	O	O	O	O	O	O	O	O	PNI	B-NP	something	NN	t411:NMOD	O
+something	t409	19	something	O	O	O	O	O	O	O	O	PNI	B-NP	something	NN	O	O
 that	t410	19	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	WDT	O	O
-'s	t411	19	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	POS	t410:SBJ||t413:PRD	O
+'s	t411	19	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t410:SBJ||t413:PRD	O
 `	t412	19	`	O	O	O	O	O	O	O	O	PUQ	B-ADJP	`	``	O	O
 healthy	t413	19	healthy	O	O	O	O	O	O	O	O	AJ0	I-ADJP	healthy	JJ	t412:P||t414:P||t415:AMOD	O
 '	t414	19	'	O	O	O	O	O	O	O	O	PUQ	O	'	''	O	O
@@ -437,9 +437,9 @@ you	t416	19	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
 --	t417	19	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
 oats	t418	19	oats	O	O	O	O	O	O	O	O	NN2	B-NP	oat	NNS	O	O
 ,	t419	19	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-bran	t420	19	bran	O	O	O	O	O	O	O	O	NN1	B-NP	bran	NN	t409:NMOD||t417:P||t418:NMOD||t419:P	O
+bran	t420	19	bran	O	O	O	O	O	O	O	O	NN1	B-NP	bran	NN	t409:NMOD||t411:NMOD||t417:P||t418:NMOD||t419:P||t422:OBJ	O
 .	t421	19	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t422	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
+"	t422	19	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 Mr.	t423	20	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Maxwell	t424	20	Maxwell	O	O	O	O	O	O	O	O	NP0	I-NP	maxwell	NNP	t423:TITLE	O
@@ -466,9 +466,9 @@ share	t444	20	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t442:NMOD	O
 increased	t445	20	increase	e62	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	increase	VBD	t433:TMP||t440:P||t444:SBJ||t446:DIR	O
 to	t446	20	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t448:PMOD	O
 30	t447	20	30	O	O	O	O	O	O	O	O	CRD	B-NP	30	CD	O	O
-%	t448	20	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t447:NMOD||t449:COORD	O
-or	t449	20	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	t450:CONJ	O
-more	t450	20	more	O	O	O	O	O	O	O	O	AV0	I-NP	more	DT	O	O
+%	t448	20	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t447:NMOD||t450:NMOD	O
+or	t449	20	or	O	O	O	O	O	O	O	O	CJC	I-NP	or	CC	O	O
+more	t450	20	more	O	O	O	O	O	O	O	O	AV0	I-NP	more	DT	t449:DEP	O
 .	t451	20	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 In	t452	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t453:PMOD	O
@@ -482,23 +482,23 @@ Chairman	t459	21	Chairman	O	O	O	O	O	O	O	O	NP0	I-NP	chairman	NN	O	O
 William	t460	21	William	O	O	O	O	O	O	O	O	NP0	I-NP	william	NNP	O	O
 E.	t461	21	E.	O	O	O	O	O	O	O	O	NP0	I-NP	e.	NNP	O	O
 LaMothe	t462	21	LaMothe	O	O	O	O	O	O	O	O	NP0	I-NP	lamothe	NNP	t458:NAME||t459:NAME||t460:NAME||t461:NAME	O
-said	t463	21	say	e65	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t452:ADV||t457:P||t462:SBJ||t464:P||t472:OBJ||t480:P	mainVb
+said	t463	21	say	e65	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t457:P||t462:SBJ||t464:P||t472:OBJ||t480:P	mainVb
 ,	t464	21	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t465	21	"	O	O	O	O	O	O	O	O	PUQ	O	"	$	O	O
-Cereal	t466	21	cereal	O	O	O	O	O	O	O	O	AJ0	B-NP	cereal	NN	O	O
-volume	t467	21	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	t466:NMOD	O
-growth	t468	21	growth	e224	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	growth	NN	t465:NMOD||t467:NMOD||t469:LOC	O
+"	t465	21	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+Cereal	t466	21	cereal	O	O	O	O	O	O	O	O	AJ0	B-NP	cereal	NNP	t465:NAME	O
+volume	t467	21	volume	O	O	O	O	O	O	O	O	NN1	I-NP	volume	NN	O	O
+growth	t468	21	growth	e224	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	growth	NN	t466:NMOD||t467:NMOD||t469:LOC	O
 in	t469	21	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t471:PMOD	O
 the	t470	21	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 U.S.	t471	21	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	t470:NMOD	O
-has	t472	21	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t468:SBJ||t473:ADV||t474:VC	O
+has	t472	21	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t452:LOC||t468:SBJ||t473:ADV||t474:VC	O
 not	t473	21	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 met	t474	21	meet	e66	OCCURRENCE	PRESENT+PERFECTIVE+NEG	O	O	O	O	O	VVN	I-VP	meet	VBN	t476:OBJ	O
 our	t475	21	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 expectations	t476	21	expectation	e223	I_STATE	NONE+NONE+POS	O	O	O	O	O	NN2	I-NP	expectation	NNS	t475:NMOD||t477:NMOD	O
 for	t477	21	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t479:PMOD	O
 1989	t478	21	1989	O	O	O	tmx226	DATE	1989	O	O	CRD	B-NP	1989	CD	O	O
-"	t479	21	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NNP	t478:NMOD	O
+"	t479	21	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	NN	t478:NMOD	O
 .	t480	21	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 He	t481	22	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
@@ -552,11 +552,11 @@ Building	t524	24	building	O	O	O	O	O	O	O	O	NN1	B-NP	building	NNP	O	O
 which	t527	24	which	O	O	O	O	O	O	O	O	DTQ	B-NP	which	WDT	O	O
 is	t528	24	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t527:SBJ||t529:VC	O
 to	t529	24	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t530:IM	O
-add	t530	24	add	e81	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	add	VB	t534:OBJ||t536:TMP	O
-bran-processing	t531	24	bran-processing	O	O	O	O	O	O	O	O	VVG	I-VP	bran-processing	VBG	t532:COORD	O
+add	t530	24	add	e81	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	add	VB	t531:OBJ||t536:TMP	O
+bran-processing	t531	24	bran-processing	O	O	O	O	O	O	O	O	VVG	I-VP	bran-processing	VBG	t532:COORD||t534:OBJ	O
 and	t532	24	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t533:CONJ	O
 rice-processing	t533	24	rice-processing	O	O	O	O	O	O	O	O	AJ0	B-NP	rice-process	VBG	O	O
-capacity	t534	24	capacity	O	O	O	O	O	O	O	O	NN1	I-NP	capacity	NN	t531:NMOD	O
+capacity	t534	24	capacity	O	O	O	O	O	O	O	O	NN1	I-NP	capacity	NN	O	O
 next	t535	24	next	O	O	O	tmx230	DATE	1990	O	O	ORD	B-NP	next	IN	O	O
 year	t536	24	year	O	O	O	tmx230	DATE	1990	O	O	NN1	I-NP	year	NN	t535:NMOD	O
 .	t537	24	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -614,27 +614,27 @@ said	t585	27	say	e91	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t576:SBJ
 the	t586	27	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Memphis	t587	27	Memphis	O	O	O	O	O	O	O	O	NN1	I-NP	memphis	NNP	O	O
 project	t588	27	project	O	O	O	O	O	O	O	O	NN1	I-NP	project	NN	t586:NMOD||t587:NMOD	O
-was	t589	27	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t588:SBJ||t590:PRD||t591:VC	O
+was	t589	27	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t588:SBJ||t591:PRD	O
 "	t590	27	"	O	O	O	O	O	O	O	O	PUQ	I-VP	"	NNP	O	O
-pulled	t591	27	pull	e235	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	pull	VBD	t592:PRT||t593:PRP||t598:P||t601:OBJ	O
+pulled	t591	27	pull	e235	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	pull	VBD	t590:SBJ||t592:PRT||t593:PRP	O
 in	t592	27	in	O	O	O	O	O	O	O	O	AVP	B-PRT	in	RP	O	O
 for	t593	27	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t595:PMOD	O
 a	t594	27	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-reconsideration	t595	27	reconsideration	e93	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	reconsideration	NN	t594:NMOD||t596:NMOD	O
+reconsideration	t595	27	reconsideration	e93	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	reconsideration	NN	t594:NMOD||t596:NMOD||t598:P||t599:COORD	O
 of	t596	27	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t597:PMOD	O
 costs	t597	27	cost	O	O	O	O	O	O	O	O	NN2	B-NP	costs	NNS	O	O
 ,	t598	27	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t599	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	PDT	O	O
+"	t599	27	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	t601:CONJ	O
 an	t600	27	a	O	O	O	O	O	O	O	O	AT0	B-NP	an	DT	O	O
-indication	t601	27	indication	O	O	O	O	O	O	O	O	NN1	I-NP	indication	NN	t599:NMOD||t600:NMOD||t602:NMOD	O
+indication	t601	27	indication	O	O	O	O	O	O	O	O	NN1	I-NP	indication	NN	t600:NMOD||t602:NMOD	O
 that	t602	27	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t606:SUB	O
 the	t603	27	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ambitious	t604	27	ambitious	O	O	O	O	O	O	O	O	AJ0	I-NP	ambitious	JJ	O	O
 plans	t605	27	plan	O	O	O	O	O	O	O	O	NN2	I-NP	plan	NNS	t603:NMOD||t604:NMOD	O
 might	t606	27	might	O	O	O	O	O	O	O	O	VM0	B-VP	might	MD	t605:SBJ||t607:VC	O
 be	t607	27	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t608:VC	O
-scaled	t608	27	scale	e95	OCCURRENCE	NONE+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	scale	VBN	t609:ADV||t610:LOC	O
-back	t609	27	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RB	O	O
+scaled	t608	27	scale	e95	OCCURRENCE	NONE+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	scale	VBN	t609:PRT||t610:LOC	O
+back	t609	27	back	O	O	O	O	O	O	O	O	AVP	B-ADVP	back	RP	O	O
 in	t610	27	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t613:PMOD	O
 any	t611	27	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
 future	t612	27	future	O	O	O	O	O	O	O	O	AJ0	I-NP	future	JJ	O	O
@@ -673,16 +673,16 @@ company	t642	29	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	O	O
 spokesman	t643	29	spokesman	O	O	O	O	O	O	O	O	NN1	I-NP	spokesman	NN	t641:NMOD||t642:NMOD	O
 said	t644	29	say	e104	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t643:SBJ||t646:OBJ||t662:P	mainVb
 it	t645	29	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-was	t646	29	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t645:SBJ||t648:PRD	O
+was	t646	29	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t645:SBJ||t648:PRD||t655:EXTR	O
 "	t647	29	"	O	O	O	O	O	O	O	O	PUQ	B-ADJP	"	RBR	O	O
-possible	t648	29	possible	O	O	O	O	O	O	O	O	AJ0	I-ADJP	possible	JJ	t647:AMOD||t649:P||t650:COORD	O
+possible	t648	29	possible	O	O	O	O	O	O	O	O	AJ0	I-ADJP	possible	JJ	t647:AMOD||t649:P||t650:COORD||t653:P||t654:SBJ	O
 ,	t649	29	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 but	t650	29	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t652:CONJ	O
 highly	t651	29	highly	O	O	O	O	O	O	O	O	AV0	B-ADJP	highly	RB	O	O
-unlikely	t652	29	unlikely	O	O	O	O	O	O	O	O	AJ0	I-ADJP	unlikely	JJ	t651:AMOD||t653:P||t655:AMOD	O
+unlikely	t652	29	unlikely	O	O	O	O	O	O	O	O	AJ0	I-ADJP	unlikely	JJ	t651:AMOD	O
 ,	t653	29	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t654	29	"	O	O	O	O	O	O	O	O	PUQ	O	"	(	O	O
-that	t655	29	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t654:P||t658:SUB	O
+"	t654	29	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP	O	O
+that	t655	29	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t658:SUB	O
 the	t656	29	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 plant	t657	29	plant	O	O	O	O	O	O	O	O	NN1	I-NP	plant	NN	t656:NMOD	O
 might	t658	29	might	O	O	O	O	O	O	O	O	VM0	B-VP	might	MD	t657:SBJ||t659:TMP||t660:VC	O
@@ -691,7 +691,7 @@ be	t660	29	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t661:VC	O
 built	t661	29	build	e105	OCCURRENCE	NONE+NONE+NEG	O	O	O	O	O	VVN	I-VP	build	VBN	O	O
 .	t662	29	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t663	30	"	O	O	O	O	O	O	O	O	PUQ	O	"	LS	O	O
+"	t663	30	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 As	t664	30	as	O	O	O	O	O	O	O	O	CJS	B-SBAR	as	IN	t666:SUB||t674:P||t675:COORD	O
 we	t665	30	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 regain	t666	30	regain	e107	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	regain	VBP	t665:SBJ||t669:OBJ	O
@@ -720,8 +720,8 @@ additional	t688	30	additional	O	O	O	O	O	O	O	O	AJ0	B-NP	additional	JJ	O	O
 capacity	t689	30	capacity	O	O	O	O	O	O	O	O	NN1	I-NP	capacity	NN	t688:NMOD	O
 ,	t690	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 we	t691	30	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-will	t692	30	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t663:DEP||t664:TMP||t690:P||t691:SBJ||t693:VC	O
-look	t693	30	look	e114	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	look	VB	t694:ADV	O
+will	t692	30	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t663:P||t664:TMP||t690:P||t691:SBJ||t693:VC	O
+look	t693	30	look	e114	I_ACTION	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	look	VB	t694:ADV||t702:ADV	O
 at	t694	30	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t695:PMOD	O
 resuming	t695	30	resume	e116	ASPECTUAL	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	resume	VBG	t697:OBJ	O
 our	t696	30	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
@@ -730,9 +730,9 @@ with	t698	30	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t700:PMOD	O
 our	t699	30	we	O	O	O	O	O	O	O	O	DPS	B-NP	our	PRP$	O	O
 plan	t700	30	plan	O	O	O	O	O	O	O	O	NN1	I-NP	plan	NN	t699:NMOD	O
 ,	t701	30	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t702	30	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t702	30	"	O	O	O	O	O	O	O	O	PUQ	O	"	TO	O	O
 he	t703	30	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t704	30	say	e118	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t692:OBJ||t701:P||t702:SBJ||t703:SBJ||t705:P	mainVb
+said	t704	30	say	e118	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t692:OBJ||t701:P||t703:SBJ||t705:P	mainVb
 .	t705	30	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t706	31	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -893,11 +893,11 @@ volume	t853	37	volume	O	O	O	O	O	O	O	O	NN1	B-NP	volume	NN	t852:NMOD	O
 
 Although	t855	38	although	O	O	O	O	O	O	O	O	CJS	B-SBAR	although	IN	t857:SUB	O
 he	t856	38	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-called	t857	38	call	e261	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	call	VBD	t856:SBJ||t860:OBJ||t861:OPRD	O
+called	t857	38	call	e261	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	call	VBD	t856:SBJ||t860:OBJ||t861:OPRD||t863:OPRD	O
 current	t858	38	current	O	O	O	O	O	O	O	O	AJ0	B-NP	current	JJ	O	O
 market	t859	38	market	O	O	O	O	O	O	O	O	NN1	I-NP	market	NN	O	O
 conditions	t860	38	condition	O	O	O	O	O	O	O	O	NN2	I-NP	condition	NNS	t858:NMOD||t859:NMOD	O
-"	t861	38	"	O	O	O	O	O	O	O	O	PUQ	B-VP	"	VBP	t863:PRD	O
+"	t861	38	"	O	O	O	O	O	O	O	O	PUQ	B-VP	"	VBP	O	O
 highly	t862	38	highly	O	O	O	O	O	O	O	O	AV0	B-ADJP	highly	RB	O	O
 competitive	t863	38	competitive	O	O	O	O	O	O	O	O	AJ0	I-ADJP	competitive	JJ	t862:AMOD	O
 ,	t864	38	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

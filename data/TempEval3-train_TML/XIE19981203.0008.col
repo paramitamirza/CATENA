@@ -1,12 +1,12 @@
-DCT_1998-12-03	O	O	O	O	O	O	tmx0	DATE	1998-12-03	O	O	AJ0	B-ADVP	dct_1998-12-03	SYM	O	O
+DCT_1998-12-03	O	O	O	O	O	O	tmx0	DATE	1998-12-03	O	O	AJ0	B-ADVP	dct_1998-12-03	JJ	O	O
 
-BRUSSELS	t1	1	BRUSSELS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	brussels	NNS	O	O
+BRUSSELS	t1	1	BRUSSELS	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	brussels	NNS	t2:P||t4:APPO||t8:P	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 December	t3	1	December	O	O	O+O+O	tmx111	DATE	1998-12-02	O	O	NP0	B-NP	december	NNP	O	O
-2	t4	1	2	O	O	O+O+O	tmx111	DATE	1998-12-02	O	O	CRD	I-NP	2	CD	t3:NMOD	O
+2	t4	1	2	O	O	O+O+O	tmx111	DATE	1998-12-02	O	O	CRD	I-NP	2	CD	t3:NMOD||t7:APPO	O
 -LRB-	t5	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
 Xinhua	t6	1	Xinhua	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	xinhua	NNP	O	O
--RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t4:NMOD||t5:NAME||t6:NAME||t8:P||t11:APPO	O
+-RRB-	t7	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t5:NAME||t6:NAME	O
 --	t8	1	--	O	O	O+O+O	O	O	O	O	O	NP0	O	--	:	O	O
 The	t9	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ratification	t10	1	ratification	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	ratification	NN	O	O
@@ -14,13 +14,13 @@ process	t11	1	process	e8	STATE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	process	NN	t9:NM
 of	t12	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t14:PMOD	O
 NATO	t13	1	NATO	O	O	O	O	O	O	O	O	NP0	B-NP	nato	NNP	O	O
 enlargement	t14	1	enlargement	O	O	O	O	O	O	O	O	NN1	I-NP	enlargement	NN	t13:NMOD	O
-concluded	t15	1	conclude	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	conclude	VBD	t2:P||t7:SBJ||t16:TMP||t18:TMP||t24:P	mainVb
+concluded	t15	1	conclude	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	conclude	VBD	t1:SBJ||t11:SBJ||t16:TMP||t18:TMP||t24:P	mainVb
 on	t16	1	on	O	O	O	O	O	O	s1	O	PRP	B-PP	on	IN	t17:PMOD	O
 Wednesday	t17	1	Wednesday	O	O	O	tmx2	DATE	1998-12-02	O	O	NP0	B-NP	wednesday	NNP	O	O
 after	t18	1	after	O	O	O	O	O	O	s2	O	PRP	B-PP	after	IN	t21:SUB	O
 the	t19	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Netherlands	t20	1	Netherlands	O	O	O	O	O	O	O	O	NP0	I-NP	netherlands	NNP	t19:NMOD	O
-gave	t21	1	give	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	give	VBD	t1:SBJ||t20:SBJ||t23:OBJ	O
+gave	t21	1	give	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	give	VBD	t20:SBJ||t23:OBJ	O
 its	t22	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 go-ahead	t23	1	go-ahead	O	O	O	O	O	O	O	O	NN1	I-NP	go-ahead	NN	t22:NMOD	O
 .	t24	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -33,8 +33,8 @@ the	t29	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Czech	t30	2	Czech	O	O	O	O	O	O	O	O	AJ0	I-NP	czech	NNP	O	O
 Republic	t31	2	Republic	O	O	O	O	O	O	O	O	NN1	I-NP	republic	NNP	t29:NMOD||t30:NAME	O
 have	t32	2	have	O	O	O	O	O	O	O	O	VHB	B-VP	have	VBP	t25:SBJ||t33:VC||t56:P	mainVb
-been	t33	2	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t34:VC	mainVb
-accepted	t34	2	accept	e3	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	accept	VBN	t35:ADV||t42:TMP	mainVb
+been	t33	2	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t34:VC||t42:TMP	mainVb
+accepted	t34	2	accept	e3	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	accept	VBN	t35:ADV	mainVb
 as	t35	2	as	O	O	O	O	O	O	O	O	PRP	B-PP	as	IN	t36:PMOD	O
 members	t36	2	member	O	O	O	O	O	O	O	O	NN2	B-NP	member	NNS	t37:NMOD	O
 of	t37	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t41:PMOD	O
@@ -50,7 +50,7 @@ of	t46	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t49:PMOD	O
 the	t47	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Dutch	t48	2	dutch	O	O	O	O	O	O	O	O	AJ0	I-NP	dutch	JJ	O	O
 parliament	t49	2	parliament	O	O	O	O	O	O	O	O	NN1	I-NP	parliament	NN	t47:NMOD||t48:NMOD	O
-voted	t50	2	vote	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	vote	VBD	t45:SBJ||t51:MNR	O
+voted	t50	2	vote	e4	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	vote	VBD	t45:SBJ||t51:ADV	O
 in	t51	2	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t52:PMOD	O
 favor	t52	2	favor	O	O	O	O	O	O	O	O	PRP	B-NP	favor	NN	t53:NMOD	O
 of	t53	2	of	O	O	O	O	O	O	O	O	PRP	B-PP	of	IN	t55:PMOD	O
@@ -72,7 +72,7 @@ the	t67	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 exception	t68	3	exception	O	O	O	O	O	O	O	O	NN1	I-NP	exception	NN	t67:NMOD||t69:NMOD	O
 of	t69	3	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t71:PMOD	O
 the	t70	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Greens	t71	3	Greens	O	O	O	O	O	O	O	O	NN2	I-NP	greens	NNS	t70:NMOD	O
+Greens	t71	3	Greens	O	O	O	O	O	O	O	O	NN2	I-NP	greens	NNP	t70:NMOD	O
 ,	t72	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 agreed	t73	3	agree	e5	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	agree	VBD	t60:SBJ||t65:P||t66:ADV||t72:P||t74:ADV||t78:P||t79:ADV||t84:P	mainVb
 on	t74	3	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t77:PMOD	O
@@ -91,7 +91,7 @@ The	t85	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 lower	t86	4	lower	O	O	O	O	O	O	O	O	AJC	I-NP	low	JJR	O	O
 house	t87	4	house	O	O	O	O	O	O	O	O	NN1	I-NP	house	NN	t85:NMOD||t86:NMOD	O
 already	t88	4	already	O	O	O	O	O	O	O	O	AV0	B-ADVP	already	RB	O	O
-approved	t89	4	approve	e7	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	approve	VBD	t87:SBJ||t88:ADV||t92:OBJ||t97:TMP||t98:P	mainVb
+approved	t89	4	approve	e7	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	approve	VBD	t87:SBJ||t88:TMP||t92:OBJ||t97:TMP||t98:P	mainVb
 the	t90	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 enlargement	t91	4	enlargement	O	O	O	O	O	O	O	O	NN1	I-NP	enlargement	NN	O	O
 move	t92	4	move	e10	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	move	NN	t90:NMOD||t91:NMOD||t93:LOC	O
@@ -116,8 +116,8 @@ being	t109	5	be	e13	STATE	PRESPART+NONE+POS	O	O	O	O	O	VBG	B-VP	be	VBG	t108:SBJ||
 the	t110	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 first	t111	5	first	O	O	O	O	O	O	O	O	ORD	I-NP	first	JJ	O	O
 NATO	t112	5	NATO	O	O	O	O	O	O	O	O	NP0	I-NP	nato	NNP	O	O
-member	t113	5	member	O	O	O	O	O	O	O	O	NN1	I-NP	member	NN	t111:NMOD||t112:NMOD	O
-state	t114	5	state	O	O	O	O	O	O	O	O	NN1	I-NP	state	NN	t110:NMOD||t113:NMOD||t115:APPO	O
+member	t113	5	member	O	O	O	O	O	O	O	O	NN1	I-NP	member	NN	t112:NMOD	O
+state	t114	5	state	O	O	O	O	O	O	O	O	NN1	I-NP	state	NN	t110:NMOD||t111:NMOD||t113:NMOD||t115:APPO	O
 starting	t115	5	start	e14	ASPECTUAL	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	start	VBG	t118:OBJ	O
 the	t116	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 ratification	t117	5	ratification	O	O	O	O	O	O	O	O	NN1	I-NP	ratification	NN	O	O
@@ -146,9 +146,9 @@ Britain	t138	6	Britain	O	O	O	O	O	O	O	O	NP0	B-NP	britain	NNP	t139:P||t144:COORD	O
 ,	t139	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t140	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 United	t141	6	United	O	O	O	O	O	O	O	O	NP0	I-NP	united	NNP	O	O
-States	t142	6	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t140:NMOD||t141:NAME	O
+States	t142	6	States	O	O	O	O	O	O	O	O	NP0	I-NP	state	NNPS	t141:NAME	O
 ,	t143	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-Iceland	t144	6	Iceland	O	O	O	O	O	O	O	O	NP0	B-NP	iceland	NNP	t142:NMOD||t143:P||t145:P||t146:COORD	O
+Iceland	t144	6	Iceland	O	O	O	O	O	O	O	O	NP0	B-NP	iceland	NNP	t140:NMOD||t142:NMOD||t143:P||t145:P||t146:COORD	O
 ,	t145	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Belgium	t146	6	Belgium	O	O	O	O	O	O	O	O	NP0	B-NP	belgium	NNP	t147:P||t148:COORD	O
 ,	t147	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -160,7 +160,7 @@ Turkey	t152	6	Turkey	O	O	O	O	O	O	O	O	NP0	I-NP	turkey	NNP	O	O
 .	t153	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 NATO	t154	7	NATO	O	O	O	O	O	O	O	O	NP0	B-NP	nato	NNP	O	O
-decided	t155	7	decide	e17	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	decide	VBD	t154:SBJ||t156:ADV||t162:OPRD||t173:P	mainVb
+decided	t155	7	decide	e17	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	decide	VBD	t154:SBJ||t156:LOC||t162:OPRD||t173:P	mainVb
 at	t156	7	at	O	O	O	O	O	O	O	O	AV0	B-ADVP	at	IN	t161:PMOD	O
 last	t157	7	last	O	O	O	tmx5	DATE	1997	O	O	AV0	I-ADVP	last	JJ	O	O
 year	t158	7	year	O	O	O	tmx5	DATE	1997	O	O	NN1	B-NP	year	NN	t157:NMOD||t159:SUFFIX	O

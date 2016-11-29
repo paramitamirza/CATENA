@@ -1,4 +1,4 @@
-DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	UNC	B-NP	dct_1989-11-02	SYM	O	O
+DCT_1989-11-02	O	O	O	O	O	O	tmx0	DATE	1989-11-02	O	O	UNC	B-NP	dct_1989-11-02	LS	O	O
 
 N.V.	t1	1	N.V.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	n.v.	NNP	O	O
 DSM	t2	1	DSM	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	dsm	NNP	t1:NAME	O
@@ -34,17 +34,17 @@ chemical	t30	2	chemical	O	O	O	O	O	O	O	O	AJ0	I-NP	chemical	NN	O	O
 group	t31	2	group	O	O	O	O	O	O	O	O	NN1	I-NP	group	NN	t28:NMOD||t29:NMOD||t30:NMOD	O
 said	t32	2	say	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t31:SBJ||t35:OBJ||t66:P	mainVb
 net	t33	2	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
-income	t34	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t33:NMOD||t40:NMOD	O
+income	t34	2	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t33:NMOD	O
 gained	t35	2	gain	e7	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	gain	VBD	t34:SBJ||t36:DIR||t52:DIR	O
-to	t36	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t41:PMOD	O
+to	t36	2	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t40:IM	O
 235	t37	2	235	O	O	O	O	O	O	O	O	CRD	B-NP	235	CD	O	O
 million	t38	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t37:DEP	O
 guilders	t39	2	guilder	O	O	O	O	O	O	O	O	NN2	I-NP	guilders	NNS	t38:NMOD	O
 -LRB-	t40	2	-lrb-	O	O	O	O	O	O	O	O	NN0	I-NP	-lrb-	VBP	t39:SBJ||t44:OBJ	O
-$	t41	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t42:DEP||t43:DEP||t45:P||t46:COORD||t51:P	O
+$	t41	2	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t42:DEP||t43:DEP	O
 113.2	t42	2	113.2	O	O	O	O	O	O	O	O	CRD	I-NP	113.2	CD	O	O
 million	t43	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
--RRB-	t44	2	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	O	O
+-RRB-	t44	2	-rrb-	O	O	O	O	O	O	O	O	UNC	I-NP	-rrb-	NN	t41:NMOD||t45:P||t46:COORD||t51:P	O
 ,	t45	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t46	2	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t48:CONJ	O
 6.70	t47	2	6.70	O	O	O	O	O	O	O	O	CRD	B-NP	6.70	CD	O	O
@@ -52,10 +52,10 @@ guilders	t48	2	guilder	O	O	O	O	O	O	O	O	NN2	I-NP	guilders	NNS	t47:NMOD||t50:ADV	O
 a	t49	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t50	2	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t49:NMOD	O
 ,	t51	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-from	t52	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t55:PMOD||t65:TMP	O
+from	t52	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t55:PMOD||t62:P||t65:TMP	O
 144	t53	2	144	O	O	O	O	O	O	O	O	CRD	B-NP	144	CD	O	O
 million	t54	2	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t53:DEP	O
-guilders	t55	2	guilder	O	O	O	O	O	O	O	O	NN2	I-NP	guilders	NNS	t54:NMOD||t56:P||t57:COORD||t62:P	O
+guilders	t55	2	guilder	O	O	O	O	O	O	O	O	NN2	I-NP	guilders	NNS	t54:NMOD||t56:P||t57:COORD	O
 ,	t56	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 or	t57	2	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t59:CONJ	O
 4.10	t58	2	4.10	O	O	O	O	O	O	O	O	CRD	B-NP	4.10	CD	O	O
@@ -152,16 +152,16 @@ company	t144	6	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t143:NMOD||t145:SUFFI
 's	t145	6	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 ability	t146	6	ability	O	O	O	O	O	O	O	O	NN1	I-NP	ability	NN	t144:NMOD||t147:NMOD	O
 to	t147	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t148:IM	O
-cut	t148	6	cut	e24	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	cut	VB	t151:OBJ||t152:EXT	O
+cut	t148	6	cut	e24	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	cut	VB	t151:OBJ||t152:EXT||t154:DIR	O
 net	t149	6	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
 financing	t150	6	financing	O	O	O	O	O	O	O	O	NN1	I-NP	financing	NN	O	O
 spending	t151	6	spending	O	O	O	O	O	O	O	O	VVG	B-VP	spending	NN	t149:NMOD||t150:NMOD	O
-by	t152	6	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t158:PMOD	O
+by	t152	6	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t153:PMOD	O
 half	t153	6	half	O	O	O	O	O	O	O	O	DT0	B-NP	half	CD	O	O
-to	t154	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	O	O
+to	t154	6	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t158:PMOD	O
 around	t155	6	around	O	O	O	O	O	O	O	O	AV0	B-ADVP	around	IN	O	O
 15	t156	6	15	O	O	O	O	O	O	O	O	CRD	B-NP	15	CD	O	O
-million	t157	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t153:DEP||t154:DEP||t155:DEP||t156:DEP	O
+million	t157	6	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t155:DEP||t156:DEP	O
 guilders	t158	6	guilder	O	O	O	O	O	O	O	O	NN2	I-NP	guilders	NNS	t157:NMOD	O
 .	t159	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -197,7 +197,7 @@ however	t187	8	however	O	O	O	O	O	O	O	O	AV0	B-ADVP	however	RB	O	O
 ,	t188	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 were	t189	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t185:SBJ||t186:P||t187:ADV||t188:P||t191:VC||t202:P	mainVb
 little	t190	8	little	O	O	O	O	O	O	O	O	AJ0	B-ADJP	little	RB	O	O
-changed	t191	8	change	e31	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-ADJP	change	VBN	t190:AMOD||t192:LOC	O
+changed	t191	8	change	e31	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-ADJP	change	VBN	t190:AMOD||t192:ADV	O
 at	t192	8	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t195:PMOD	O
 2.46	t193	8	2.46	O	O	O	O	O	O	O	O	CRD	B-NP	2.46	CD	O	O
 billion	t194	8	billion	O	O	O	O	O	O	O	O	CRD	I-NP	billion	CD	t193:DEP	O

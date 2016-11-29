@@ -1,12 +1,12 @@
-DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	SYM	O	O
+DCT_1989-11-01	O	O	O	O	O	O	tmx0	DATE	1989-11-01	O	O	NP0	B-NP	dct_1989-11-01	LS	O	O
 
 UNIFIRST	t1	1	UNIFIRST	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	unifirst	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
 declared	t3	1	declare	e1	I_ACTION	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	declare	VBD	t1:SBJ||t7:OBJ||t8:P	mainVb
 a	t4	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 2-for-1	t5	1	2-for-1	O	O	O	O	O	O	O	O	AJ0	I-NP	2-for-1	CD	O	O
-stock	t6	1	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	O	O
-split	t7	1	split	e1989	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	split	NN	t4:NMOD||t5:NMOD||t6:NMOD	O
+stock	t6	1	stock	O	O	O	O	O	O	O	O	NN1	I-NP	stock	NN	t5:NMOD	O
+split	t7	1	split	e1989	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	split	NN	t4:NMOD||t6:NMOD	O
 .	t8	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t9	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -77,15 +77,15 @@ of	t70	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t71:PMOD	O
 shares	t71	5	share	O	O	O	O	O	O	O	O	NN2	B-NP	share	NNS	t72:APPO	O
 outstanding	t72	5	outstanding	O	O	O	O	O	O	O	O	VVG	B-VP	outstanding	JJ	O	O
 to	t73	5	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t76:PMOD	O
-about	t74	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	O	O
+about	t74	5	about	O	O	O	O	O	O	O	O	AV0	B-NP	about	IN	t75:DEP	O
 10.2	t75	5	10.2	O	O	O	O	O	O	O	O	CRD	I-NP	10.2	CD	O	O
-million	t76	5	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t74:DEP||t75:NMOD	O
+million	t76	5	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	t74:NMOD	O
 .	t77	5	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 Separately	t78	6	separately	O	O	O	O	O	O	O	O	AV0	B-ADVP	separately	RB	O	O
 ,	t79	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 UniFirst	t80	6	UniFirst	O	O	O	O	O	O	O	O	NP0	B-NP	unifirst	NNP	O	O
-reported	t81	6	report	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t78:ADV||t79:P||t80:SBJ||t82:OBJ||t102:P||t103:ADV||t110:P	mainVb
+reported	t81	6	report	e6	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD	t78:ADV||t79:P||t80:SBJ||t82:OBJ||t110:P	mainVb
 that	t82	6	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t85:SUB	O
 net	t83	6	net	O	O	O	O	O	O	O	O	AJ0	B-NP	net	JJ	O	O
 income	t84	6	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t83:NMOD	O
@@ -102,7 +102,7 @@ or	t93	6	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t95:CONJ	O
 cents	t95	6	cent	O	O	O	O	O	O	O	O	NN2	I-NP	cent	NNS	t94:NMOD||t97:ADV||t98:APPO	O
 a	t96	6	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 share	t97	6	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t96:NMOD	O
-adjusted	t98	6	adjust	O	O	O	O	O	O	O	O	VVN	B-VP	adjust	VBN	t99:ADV	O
+adjusted	t98	6	adjust	O	O	O	O	O	O	O	O	VVN	B-VP	adjust	VBN	t99:ADV||t102:P||t103:ADV	O
 for	t99	6	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t101:PMOD	O
 the	t100	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 split	t101	6	split	e2065	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	split	NN	t100:NMOD	O
@@ -118,7 +118,7 @@ Aug.	t108	6	Aug.	O	O	O	tmx19	DATE	1989-08-26	O	O	NP0	B-NP	aug.	NNP	O	O
 
 A	t111	7	a	O	O	O	tmx2096	DATE	1988-11-01	O	O	AT0	B-NP	a	DT	O	O
 year	t112	7	year	O	O	O	tmx2096	DATE	1988-11-01	O	O	NN1	I-NP	year	NN	t111:NMOD	O
-earlier	t113	7	earlier	O	O	O	tmx2096	DATE	1988-11-01	O	O	AV0	B-NP	earlier	RBR	t112:AMOD	O
+earlier	t113	7	earlier	O	O	O	tmx2096	DATE	1988-11-01	O	O	AV0	B-NP	earlier	RB	t112:AMOD	O
 UniFirst	t114	7	UniFirst	O	O	O	O	O	O	O	O	NP0	I-NP	unifirst	NNP	O	O
 earned	t115	7	earn	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	earn	VBD	t113:TMP||t114:SBJ||t116:OBJ||t129:P	mainVb
 $	t116	7	$	O	O	O	O	O	O	O	O	CRD	B-NP	$	$	t117:DEP||t118:DEP||t119:P||t120:COORD	O

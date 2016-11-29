@@ -1,14 +1,14 @@
-DCT_1998-08-07	O	O	O	O	O	O	tmx0	TIME	1998-08-07	O	O	NP0	B-NP	dct_1998-08-07	SYM	O	O
+DCT_1998-08-07	O	O	O	O	O	O	tmx0	TIME	1998-08-07	O	O	NP0	B-NP	dct_1998-08-07	LS	O	O
 
 NAIROBI	t1	1	NAIROBI	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	nairobi	NNP	O	O
 ,	t2	1	,	O	O	O+O+O	O	O	O	O	O	PUN	O	,	,	O	O
 Kenya	t3	1	Kenya	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	kenya	NNP	O	O
--LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	O	O
+-LRB-	t4	1	-lrb-	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	t3:NAME	O
+AP	t5	1	AP	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ap	NNP	t4:NAME	O
 -RRB-	t6	1	-rrb-	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	-rrb-	NNP	O	O
-_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	O	O
-Suspected	t8	1	suspected	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	suspect	NNP	O	O
-bombs	t9	1	bomb	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	bomb	NNS	t3:NAME||t4:NAME||t5:NAME||t6:NAME||t7:NAME||t8:NAME	O
+_	t7	1	_	O	O	O+O+O	O	O	O	O	O	UNC	I-NP	_	NNP	t6:NAME	O
+Suspected	t8	1	suspected	O	O	O+O+O	O	O	O	O	O	AJ0	I-NP	suspect	NNP	t5:NAME||t7:NAME	O
+bombs	t9	1	bomb	O	O	O+O+O	O	O	O	O	O	NN2	I-NP	bomb	NNS	t8:NMOD	O
 exploded	t10	1	explode	e1	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	explode	VBD	t1:ADV||t2:P||t9:SBJ||t11:LOC||t15:LOC||t21:TMP||t22:P||t23:ADV	O
 outside	t11	1	outside	O	O	O	O	O	O	O	O	PRP	B-PP	outside	IN	t14:PMOD	O
 the	t12	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -49,13 +49,13 @@ said	t44	2	say	e4	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t36:OBJ||t4
 
 "	t46	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 It	t47	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-was	t48	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t47:SBJ||t49:ADV||t51:PRD||t52:P	O
+was	t48	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t47:SBJ||t49:ADV||t51:PRD	O
 definitely	t49	3	definitely	O	O	O	O	O	O	O	O	AV0	B-ADVP	definitely	RB	O	O
 a	t50	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 bomb	t51	3	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t50:NMOD	O
 ,	t52	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t53	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	t46:DEP||t48:OBJ	O
-said	t54	3	say	e5	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t53:SBJ||t58:SBJ||t67:P	mainVb
+"	t53	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+said	t54	3	say	e5	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t46:DEP||t48:OBJ||t52:P||t53:SBJ||t58:SBJ||t67:P	mainVb
 a	t55	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 U.S.	t56	3	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
 Embassy	t57	3	Embassy	O	O	O	O	O	O	O	O	NP0	I-NP	embassy	NNP	t56:NAME	O
@@ -70,9 +70,9 @@ identify	t65	3	identify	e7	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	ide
 himself	t66	3	himself	O	O	O	O	O	O	O	O	PNX	B-NP	himself	PRP	O	O
 .	t67	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t68	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
+"	t68	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	SYM	O	O
 You	t69	4	you	O	O	O	O	O	O	O	O	PNP	B-NP	you	PRP	O	O
-can	t70	4	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t68:GAP-OBJ||t69:SBJ||t71:VC	O
+can	t70	4	can	O	O	O	O	O	O	O	O	VM0	B-VP	can	MD	t69:SBJ||t71:VC	O
 see	t71	4	see	e8	PERCEPTION	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t74:OBJ||t78:P||t79:COORD	O
 a	t72	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 huge	t73	4	huge	O	O	O	O	O	O	O	O	AJ0	I-NP	huge	JJ	O	O
@@ -84,7 +84,7 @@ building	t77	4	building	O	O	O	O	O	O	O	O	NN1	I-NP	building	NN	t76:NMOD	O
 and	t79	4	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t82:CONJ	O
 a	t80	4	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 bomb	t81	4	bomb	O	O	O	O	O	O	O	O	NN1	I-NP	bomb	NN	t80:NMOD	O
-went	t82	4	go	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t81:SBJ||t83:DIR||t84:LOC||t87:TMP||t89:TMP	O
+went	t82	4	go	e9	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	go	VBD	t68:DEP||t81:SBJ||t83:PRT||t84:LOC||t87:TMP||t89:TMP	O
 off	t83	4	off	O	O	O	O	O	O	O	O	AVP	B-PRT	off	RP	O	O
 at	t84	4	at	O	O	O	O	O	O	O	O	PRP	B-PP	at	IN	t86:PMOD	O
 the	t85	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -96,8 +96,8 @@ the	t90	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 same	t91	4	same	O	O	O	O	O	O	O	O	DT0	I-NP	same	JJ	O	O
 time	t92	4	time	O	O	O	O	O	O	O	O	NN1	I-NP	time	NN	t90:NMOD||t91:NMOD	O
 ,	t93	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t94	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t94	4	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t95	4	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t96	4	say	e10	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t70:OBJ||t93:P||t94:SBJ||t95:SBJ||t97:P	mainVb
+said	t96	4	say	e10	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t70:OBJ||t93:P||t94:P||t95:SBJ||t97:P	mainVb
 .	t97	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

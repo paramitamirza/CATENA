@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Compaq	t1	1	Compaq	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	compaq	NNP	O	O
 Computer	t2	1	Computer	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	computer	NNP	t1:NAME||t3:POSTHON	O
@@ -109,7 +109,7 @@ share	t103	4	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t102:NMOD	O
 ,	t104	4	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 in	t105	4	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t108:PMOD	O
 the	t106	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-carrying	t107	4	carry	O	O	O	O	O	O	O	O	AJ0	I-NP	carry	VBG	O	O
+carrying	t107	4	carry	O	O	O	O	O	O	O	O	AJ0	I-NP	carrying	VBG	O	O
 value	t108	4	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t106:NMOD||t107:NMOD||t109:NMOD	O
 of	t109	4	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t113:PMOD	O
 the	t110	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -215,7 +215,7 @@ share	t206	7	share	O	O	O	O	O	O	O	O	NN1	I-NP	share	NN	t205:NMOD	O
 ,	t207	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 in	t208	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t211:PMOD	O
 the	t209	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-carrying	t210	7	carry	O	O	O	O	O	O	O	O	AJ0	I-NP	carry	VBG	O	O
+carrying	t210	7	carry	O	O	O	O	O	O	O	O	AJ0	I-NP	carrying	VBG	O	O
 value	t211	7	value	O	O	O	O	O	O	O	O	NN1	I-NP	value	NN	t209:NMOD||t210:NMOD||t212:NMOD	O
 of	t212	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t215:PMOD	O
 the	t213	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -276,9 +276,9 @@ couple	t265	9	couple	O	O	O	tmx86	DURATION	P2Y	O	O	NN1	I-NP	couple	NN	t263:NMOD||
 of	t266	9	of	O	O	O	tmx86	DURATION	P2Y	O	O	PRF	B-PP	of	IN	t267:PMOD	O
 years	t267	9	year	O	O	O	tmx86	DURATION	P2Y	O	O	NN2	B-NP	years	NNS	O	O
 we	t268	9	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
-would	t269	9	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t268:SBJ||t270:ADV||t271:VC	O
+would	t269	9	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t261:VC||t268:SBJ||t270:ADV||t271:VC	O
 not	t270	9	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
-be	t271	9	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t261:SBJ||t272:PRD	O
+be	t271	9	be	O	O	O	O	O	O	O	O	VBI	I-VP	be	VB	t272:VC	O
 surprised	t272	9	surprise	e29	I_STATE	NONE+NONE+NEG	O	O	O	O	O	AJ0	B-ADJP	surprise	VBN	t273:AMOD	O
 to	t273	9	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t274:IM	O
 see	t274	9	see	e33	PERCEPTION	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	see	VB	t279:OBJ	O
@@ -297,9 +297,9 @@ company	t286	9	company	O	O	O	O	O	O	O	O	NN1	I-NP	company	NN	t285:NMOD||t287:SUFFI
 's	t287	9	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 revenues	t288	9	revenue	O	O	O	O	O	O	O	O	NN2	I-NP	revenue	NNS	t286:NMOD	O
 ,	t289	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t290	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	NNP	O	O
+"	t290	9	"	O	O	O	O	O	O	O	O	PUQ	O	"	''	O	O
 he	t291	9	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
-said	t292	9	say	e35	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t269:OBJ||t289:P||t290:SBJ||t291:SBJ||t293:P	mainVb
+said	t292	9	say	e35	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t269:OBJ||t289:P||t290:P||t291:SBJ||t293:P	mainVb
 .	t293	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 During	t294	10	during	O	O	O	O	O	O	O	O	PRP	B-PP	during	IN	t297:PMOD	O

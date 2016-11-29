@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Esselte	t1	1	Esselte	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	esselte	NNP	O	O
 AB	t2	1	AB	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	ab	NNP	t1:NAME||t3:P||t8:APPO	O
@@ -22,14 +22,14 @@ it	t19	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 does	t20	1	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t19:SBJ||t21:ADV||t22:VC	O
 n't	t21	1	not	O	O	O	O	O	O	O	O	XX0	I-VP	not	RB	O	O
 own	t22	1	own	e52	STATE	PRESENT+NONE+NEG	O	O	O	O	O	VVI	I-VP	own	VB	O	O
-of	t23	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t26:PMOD	O
+of	t23	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t30:PMOD	O
 its	t24	1	its	O	O	O	O	O	O	O	O	DPS	B-NP	its	PRP$	O	O
 U.S.	t25	1	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	O	O
-unit	t26	1	unit	O	O	O	O	O	O	O	O	NN1	I-NP	unit	NN	t24:NMOD||t25:NMOD||t27:P||t30:APPO	O
+unit	t26	1	unit	O	O	O	O	O	O	O	O	NN1	I-NP	unit	NN	t24:NMOD||t25:NMOD	O
 ,	t27	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Esselte	t28	1	Esselte	O	O	O	O	O	O	O	O	NP0	B-NP	esselte	NNP	O	O
 Business	t29	1	Business	O	O	O	O	O	O	O	O	NP0	I-NP	business	NNP	O	O
-Systems	t30	1	Systems	O	O	O	O	O	O	O	O	NN2	I-NP	system	NNPS	t28:NAME||t29:NAME||t31:POSTHON	O
+Systems	t30	1	Systems	O	O	O	O	O	O	O	O	NN2	I-NP	system	NNPS	t26:NMOD||t27:P||t28:NAME||t29:NAME||t31:POSTHON	O
 Inc.	t31	1	Inc.	O	O	O	O	O	O	O	O	NN1	I-NP	inc.	NNP	O	O
 .	t32	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
@@ -183,11 +183,11 @@ reported	t173	8	report	e24	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	report	VBD
 third-quarter	t174	8	third-quarter	O	O	O	tmx162	DATE	1989-Q3	O	O	AJC	B-NP	third-quarter	RBR	O	O
 net	t175	8	net	O	O	O	O	O	O	O	O	NN1	I-NP	net	JJ	O	O
 income	t176	8	income	O	O	O	O	O	O	O	O	NN1	I-NP	income	NN	t174:NMOD||t175:NMOD	O
-fell	t177	8	fall	e25	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t176:SBJ||t179:EXT||t180:DIR||t191:DIR	O
+fell	t177	8	fall	e25	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t176:SBJ||t179:EXT||t180:DIR||t190:P||t191:DIR	O
 5.9	t178	8	5.9	O	O	O	O	O	O	O	O	CRD	B-NP	5.9	CD	O	O
 %	t179	8	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t178:NMOD	O
 to	t180	8	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t181:PMOD	O
-$	t181	8	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t182:DEP||t183:DEP||t184:P||t185:COORD||t190:P	O
+$	t181	8	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t182:DEP||t183:DEP||t184:P||t185:COORD	O
 9.5	t182	8	9.5	O	O	O	O	O	O	O	O	CRD	I-NP	9.5	CD	O	O
 million	t183	8	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t184	8	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O

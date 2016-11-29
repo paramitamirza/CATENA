@@ -1,4 +1,4 @@
-DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	SYM	O	O
+DCT_1989-10-26	O	O	O	O	O	O	tmx0	DATE	1989-10-26	O	O	NP0	B-NP	dct_1989-10-26	LS	O	O
 
 Benjamin	t1	1	Benjamin	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	benjamin	NNP	O	O
 Franklin	t2	1	Franklin	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	franklin	NNP	O	O
@@ -9,18 +9,18 @@ Loan	t6	1	Loan	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	loan	NNP	O	O
 Association	t7	1	Association	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	association	NNP	t1:NAME||t2:NAME||t3:NAME||t4:NAME||t5:NAME||t6:NAME	O
 said	t8	1	say	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t7:SBJ||t10:OBJ||t40:P	mainVb
 it	t9	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-plans	t10	1	plan	e2	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	plan	VBZ	t9:SBJ||t11:OPRD||t13:LOC	O
+plans	t10	1	plan	e2	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	plan	VBZ	t9:SBJ||t11:OPRD	O
 to	t11	1	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t12:IM	O
-restructure	t12	1	restructure	e4	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	restructure	VB	O	O
+restructure	t12	1	restructure	e4	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	restructure	VB	t13:ADV	O
 in	t13	1	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t15:PMOD	O
 the	t14	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 wake	t15	1	wake	O	O	O	O	O	O	O	O	NN1	I-NP	wake	NN	t14:NMOD||t16:NMOD	O
 of	t16	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t19:PMOD	O
 a	t17	1	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-third-quarter	t18	1	third-quarter	O	O	O	tmx59	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	JJ	O	O
-loss	t19	1	loss	e6	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t17:NMOD||t18:NMOD||t20:NMOD||t30:P||t31:APPO	O
+third-quarter	t18	1	third-quarter	O	O	O	tmx59	DATE	1989-Q3	O	O	NN1	I-NP	third-quarter	NN	O	O
+loss	t19	1	loss	e6	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	loss	NN	t17:NMOD||t18:NMOD||t20:NMOD||t31:APPO	O
 of	t20	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t21:PMOD	O
-$	t21	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t22:DEP||t23:DEP||t24:P||t25:COORD	O
+$	t21	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t22:DEP||t23:DEP||t24:P||t25:COORD||t30:P	O
 7.7	t22	1	7.7	O	O	O	O	O	O	O	O	CRD	I-NP	7.7	CD	O	O
 million	t23	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t24	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -36,9 +36,9 @@ $	t33	1	$	O	O	O	O	O	O	O	O	CRD	I-NP	$	$	t34:DEP||t35:DEP	O
 11	t34	1	11	O	O	O	O	O	O	O	O	CRD	I-NP	11	CD	O	O
 million	t35	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 addition	t36	1	addition	e8	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	addition	NN	t32:NMOD||t33:NMOD||t37:NMOD	O
-to	t37	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t38:IM	O
-loan-loss	t38	1	loan-loss	O	O	O	O	O	O	O	O	VVI	I-VP	loan-loss	VB	t39:OBJ	O
-reserves	t39	1	reserve	O	O	O	O	O	O	O	O	NN2	B-NP	reserves	NNS	O	O
+to	t37	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t39:PMOD	O
+loan-loss	t38	1	loan-loss	O	O	O	O	O	O	O	O	VVI	I-VP	loan-loss	NN	O	O
+reserves	t39	1	reserve	O	O	O	O	O	O	O	O	NN2	B-NP	reserves	NNS	t38:NMOD	O
 .	t40	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t41	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
@@ -61,12 +61,12 @@ from	t57	2	from	O	O	O	O	O	O	O	O	PRP	B-PP	from	IN	t66:PMOD	O
 the	t58	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 Financial	t59	2	Financial	O	O	O	O	O	O	O	O	AJ0	I-NP	financial	NNP	O	O
 Institution	t60	2	Institution	O	O	O	O	O	O	O	O	NN1	I-NP	institution	NNP	t59:NAME	O
-Reform	t61	2	Reform	O	O	O	O	O	O	O	O	NN1	I-NP	reform	NNP	t60:NAME	O
+Reform	t61	2	Reform	O	O	O	O	O	O	O	O	NN1	I-NP	reform	NNP	t60:NAME||t62:P||t63:COORD	O
 ,	t62	2	,	O	O	O	O	O	O	O	O	PUN	O	,	NN	O	O
-Recovery	t63	2	Recovery	O	O	O	O	O	O	O	O	NN1	B-NP	recovery	NN	t61:NMOD||t62:NMOD||t64:COORD	O
+Recovery	t63	2	Recovery	O	O	O	O	O	O	O	O	NN1	B-NP	recovery	NN	t64:COORD	O
 and	t64	2	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t65:CONJ	O
 Enforcement	t65	2	Enforcement	O	O	O	O	O	O	O	O	NN1	I-NP	enforcement	NN	O	O
-Act	t66	2	Act	O	O	O	O	O	O	O	O	NN1	I-NP	act	NN	t58:NMOD||t63:NMOD	O
+Act	t66	2	Act	O	O	O	O	O	O	O	O	NN1	I-NP	act	NN	t58:NMOD||t61:NAME	O
 .	t67	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t68	3	a	O	O	O	tmx96	DATE	1988	O	O	AT0	B-NP	a	DT	O	O
@@ -128,15 +128,15 @@ The	t120	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 plan	t121	6	plan	e131	I_ACTION	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	plan	NN	t120:NMOD	O
 may	t122	6	may	O	O	O	O	O	O	O	O	VM0	B-VP	may	MD	t121:SBJ||t123:VC||t143:P	mainVb
 include	t123	6	include	e20	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	include	VB	t124:OPRD	mainVb
-selling	t124	6	sell	e22	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	sell	VBG	t125:OBJ||t126:P||t127:COORD	mainVb
+selling	t124	6	sell	e22	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	I-VP	sell	VBG	t125:OBJ||t126:P||t127:COORD||t131:P||t132:COORD	mainVb
 branches	t125	6	branch	O	O	O	O	O	O	O	O	NN2	B-NP	branch	NNS	O	O
 ,	t126	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 consolidating	t127	6	consolidate	e23	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	consolidate	VBG	t128:COORD||t130:OBJ	O
-or	t128	6	or	O	O	O	O	O	O	O	O	CJC	I-VP	or	CC	t131:P||t132:CONJ	O
+or	t128	6	or	O	O	O	O	O	O	O	O	CJC	I-VP	or	CC	t129:CONJ	O
 eliminating	t129	6	eliminate	O	O	O	O	O	O	O	O	VVG	I-VP	eliminate	VBG	O	O
 departments	t130	6	department	O	O	O	O	O	O	O	O	NN2	B-NP	department	NNS	O	O
 ,	t131	6	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-and	t132	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t129:COORD||t133:CONJ	O
+and	t132	6	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t133:CONJ	O
 winding	t133	6	wind	e25	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVG	B-VP	wind	VBG	t134:PRT||t135:COORD||t139:OBJ||t140:TMP	O
 down	t134	6	down	O	O	O	O	O	O	O	O	AVP	B-ADVP	down	RP	O	O
 or	t135	6	or	O	O	O	O	O	O	O	O	CJC	O	or	CC	t136:CONJ	O

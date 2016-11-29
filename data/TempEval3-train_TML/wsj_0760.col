@@ -1,4 +1,4 @@
-DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	SYM	O	O
+DCT_1989-10-27	O	O	O	O	O	O	tmx0	DATE	1989-10-27	O	O	NP0	B-NP	dct_1989-10-27	LS	O	O
 
 Norton	t1	1	Norton	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	norton	NNP	t2:POSTHON	O
 Co.	t2	1	Co.	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	co.	NNP	O	O
@@ -9,11 +9,11 @@ for	t6	1	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t9:PMOD	O
 the	t7	1	the	O	O	O	tmx50	DATE	1989-Q3	O	O	AT0	B-NP	the	DT	O	O
 third	t8	1	third	O	O	O	tmx50	DATE	1989-Q3	O	O	ORD	I-NP	third	JJ	O	O
 quarter	t9	1	quarter	O	O	O	tmx50	DATE	1989-Q3	O	O	NN1	I-NP	quarter	NN	t7:NMOD||t8:NMOD	O
-fell	t10	1	fall	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t5:SBJ||t12:EXT||t13:DIR||t24:DIR	O
+fell	t10	1	fall	e2	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	fell	VBD	t5:SBJ||t12:EXT||t13:DIR||t23:P||t24:DIR	O
 6	t11	1	6	O	O	O	O	O	O	O	O	CRD	B-NP	6	CD	O	O
 %	t12	1	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t11:NMOD	O
 to	t13	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t14:PMOD	O
-$	t14	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t15:DEP||t16:DEP||t17:P||t18:COORD||t23:P	O
+$	t14	1	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t15:DEP||t16:DEP||t17:P||t18:COORD	O
 20.6	t15	1	20.6	O	O	O	O	O	O	O	O	CRD	I-NP	20.6	CD	O	O
 million	t16	1	million	O	O	O	O	O	O	O	O	CRD	I-NP	million	CD	O	O
 ,	t17	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
@@ -188,7 +188,7 @@ held	t178	8	hold	O	O	O	O	O	O	O	O	VVN	B-VP	hold	VBD	t182:OBJ||t185:LOC	O
 a	t179	8	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 50	t180	8	50	O	O	O	O	O	O	O	O	CRD	I-NP	50	CD	O	O
 %	t181	8	%	O	O	O	O	O	O	O	O	UNC	I-NP	%	NN	t180:NMOD	O
-stake	t182	8	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t179:NMOD||t181:NMOD||t183:LOC	O
+stake	t182	8	stake	O	O	O	O	O	O	O	O	NN1	I-NP	stake	NN	t179:NMOD||t181:NMOD||t183:NMOD	O
 in	t183	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t184:PMOD	O
 Eastman	t184	8	Eastman	O	O	O	O	O	O	O	O	NP0	B-NP	eastman	NNP	O	O
 in	t185	8	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t188:PMOD	O
@@ -224,7 +224,7 @@ nine	t212	10	nine	O	O	O	tmx57	DURATION	P9M	O	O	CRD	I-NP	nine	CD	O	O
 months	t213	10	month	O	O	O	tmx57	DURATION	P9M	O	O	NN2	I-NP	month	NNS	t211:NMOD||t212:NMOD	O
 ,	t214	10	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 Norton	t215	10	Norton	O	O	O	O	O	O	O	O	NP0	B-NP	norton	NNP	O	O
-had	t216	10	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t210:TMP||t214:P||t215:SBJ||t217:OBJ||t237:P	mainVb
+had	t216	10	have	O	O	O	O	O	O	O	O	VHD	B-VP	have	VBD	t210:ADV||t214:P||t215:SBJ||t217:OBJ||t237:P	mainVb
 net	t217	10	net	O	O	O	O	O	O	O	O	NN1	B-NP	net	NN	t218:NMOD||t228:P||t229:COORD	O
 of	t218	10	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t219:PMOD	O
 $	t219	10	$	O	O	O	O	O	O	O	O	NN0	B-NP	$	$	t220:DEP||t221:DEP||t222:P||t223:COORD	O
