@@ -285,6 +285,9 @@ public class TimeMLParser {
 			CausalRelation cl = new CausalRelation(source, target);
 			cl.setSourceType(sourceType); cl.setTargetType(targetType);
 			clinkArr.add(cl);
+			
+			d.getClinkTypes().put(source+","+target, "CLINK");
+			d.getClinkTypes().put(target+","+source, CausalRelation.getInverseRelation("CLINK"));
 		}
 	}
 	

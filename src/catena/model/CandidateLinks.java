@@ -12,6 +12,7 @@ import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.feature.FeatureEnum.PairType;
+import catena.parser.entities.CausalRelation;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
@@ -19,6 +20,7 @@ import catena.parser.entities.Sentence;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.Timex;
 import catena.parser.entities.Token;
+import catena.parser.entities.Event;
 
 public class CandidateLinks {
 	
@@ -102,6 +104,74 @@ public class CandidateLinks {
 						mainEvId = eid;
 						mainEvType = eType;
 					}
+				}
+			}
+		}
+	}
+	
+	private static String getClinkType(String sourceId, String targetId, Doc doc) {
+		if (doc.getClinkTypes().containsKey(sourceId + "," + targetId)) {
+			return doc.getTlinkTypes().get(sourceId + "," + targetId);
+		} 
+		return "NONE";
+	}
+	
+	public static void setCandidateClinks(Doc doc) {
+		doc.setCandidateClinks(new ArrayList<CausalRelation>());
+		ArrayList<CausalRelation> clinkArr = doc.getCandidateClinks();
+		
+		for (int s=0; s<doc.getSentenceArr().size(); s++) {
+			Sentence s1 = doc.getSentences().get(doc.getSentenceArr().get(s));
+			
+			Entity e1, e2;
+			String pair = null;
+			for (int i = 0; i < s1.getEntityArr().size(); i++) {
+				e1 = doc.getEntities().get(s1.getEntityArr().get(i));
+				
+				//candidate pairs within the same sentence
+//				if (isContainCausalSignal(s1, doc) || isContainCausalVerb(s1, doc)) {
+					if (i < s1.getEntityArr().size()-1) {
+						for (int j = i+1; j < s1.getEntityArr().size(); j++) {
+							e2 = doc.getEntities().get(s1.getEntityArr().get(j));
+							if (e1 instanceof Event && e2 instanceof Event) {
+								CausalRelation cl = new CausalRelation(e1.getID(), e2.getID());
+								cl.setSourceType("Event"); cl.setTargetType("Event");
+								clinkArr.add(cl);
+								
+								
+								
+								pair = e1.getID() + "-" + e2.getID();
+								if (clinks.containsKey(pair)) {
+									candidates.put(pair, clinks.get(pair));
+								} else {
+									candidates.put(pair, "NONE");
+								}
+							}
+						}
+					}
+				
+//				}
+				
+				//candidate pairs in consecutive sentences
+				if (s < doc.getSentenceArr().size()-1) {
+//					if (doc.getTokens().get(e1.getStartTokID()).isMainVerb()) {
+						Sentence s2 = doc.getSentences().get(doc.getSentenceArr().get(s+1));
+//						if (isContainCausalSignal(s2, doc)) {
+						
+							for (int j = 0; j < s2.getEntityArr().size(); j++) {
+								e2 = doc.getEntities().get(s2.getEntityArr().get(j));
+								if (e1 instanceof Event && e2 instanceof Event) {
+									pair = e1.getID() + "-" + e2.getID();
+									if (clinks.containsKey(pair)) {
+										numClink ++;
+										candidates.put(pair, clinks.get(pair));
+									} else {
+										candidates.put(pair, "NONE");
+									}
+								}
+							}
+//						}
+//					}
 				}
 			}
 		}

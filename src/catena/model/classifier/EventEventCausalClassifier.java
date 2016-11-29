@@ -12,29 +12,19 @@ import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.Doc;
 import catena.model.classifier.PairClassifier;
+import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.TemporalSignalList;
 import catena.model.rule.EventEventTemporalRule;
-import catena.model.rule.EventTimexTemporalRule;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.Event;
 import catena.parser.entities.TemporalRelation;
-import catena.parser.entities.Timex;
 import catena.evaluator.PairEvaluator;
 
 import de.bwaldvogel.liblinear.*;
-import libsvm.*;
-import model.classifier.PairClassifier.VectorClassifier;
-import model.feature.Marker;
-import parser.TXPParser;
-import parser.TimeMLParser;
 
 public class EventEventCausalClassifier extends PairClassifier {
-	
-	private String[] label = {"CLINK", "CLINK-R", "NONE"};
 	
 	private void initFeatureVector() {
 		
@@ -263,7 +253,12 @@ public class EventEventCausalClassifier extends PairClassifier {
 		int nInstances = vectors.size();
 		int nFeatures = vectors.get(0).getVectors().size()-1;
 		
-		if (classifier.equals(VectorClassifier.liblinear)) {
+		System.err.println("Number of instances: " + nInstances);
+		System.err.println("Number of features: " + vectors.get(0).getVectors().size());
+		
+		if (classifier.equals(VectorClassifier.liblinear)
+				|| classifier.equals(VectorClassifier.logit)
+				) {
 			//Prepare training data
 			Feature[][] instances = new Feature[nInstances][nFeatures];
 			double[] labels = new double[nInstances];
@@ -288,9 +283,14 @@ public class EventEventCausalClassifier extends PairClassifier {
 			problem.y = labels;
 			problem.bias = 1.0;
 			
-			SolverType solver = SolverType.L2R_L2LOSS_SVC_DUAL; // -s 1
+			SolverType solver = SolverType.L2R_L2LOSS_SVC_DUAL; // SVM, by default
+			
 			double C = 1.0;    // cost of constraints violation
 			double eps = 0.01; // stopping criteria
+			
+			if (classifier.equals(VectorClassifier.logit)) {
+				solver = SolverType.L2R_LR_DUAL; // Logistic Regression
+			}
 
 			Parameter parameter = new Parameter(solver, C, eps);
 			Model model = Linear.train(problem, parameter);
@@ -300,61 +300,15 @@ public class EventEventCausalClassifier extends PairClassifier {
 		}
 	}
 	
-	public svm_model trainSVM(List<PairFeatureVector> vectors) throws Exception {
-		
-		System.err.println("Train model...");
+	public void evaluate(List<PairFeatureVector> vectors, 
+			String modelPath, String[] relTypes) throws Exception {
 
 		int nInstances = vectors.size();
 		int nFeatures = vectors.get(0).getVectors().size()-1;
 		
-		if (classifier.equals(VectorClassifier.libsvm)) {
-			//Prepare training data
-			svm_problem prob = new svm_problem();
-			prob.l = nInstances;
-			prob.x = new svm_node[nInstances][nFeatures];
-			prob.y = new double[nInstances];
-			
-			int row = 0;
-			for (PairFeatureVector fv : vectors) {				
-				int idx = 1, col = 0;
-				for (int i=0; i<nFeatures; i++) {
-					svm_node node = new svm_node();
-					node.index = idx;
-					node.value = Double.valueOf(fv.getVectors().get(i));
-					prob.x[row][col] = node;
-					idx ++;
-					col ++;
-				}
-				prob.y[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-				row ++;
-			}
-			
-			//Train
-			svm_parameter param = new svm_parameter();
-		    param.probability = 1;
-		    param.gamma = 0.5;
-//		    param.nu = 0.5;
-		    param.C = 1;
-		    param.svm_type = svm_parameter.C_SVC;
-		    param.kernel_type = svm_parameter.POLY; 
-		    param.degree = 2;
-		    param.cache_size = 20000;
-		    param.eps = 0.001;
-		    
-		    svm_model model = svm.svm_train(prob, param);
-		    return model;
-		}
-		return null;
-	}
-	
-	public void evaluate(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-		System.err.println("Evaluate model...");
-
-		int nInstances = vectors.size();
-		int nFeatures = vectors.get(0).getVectors().size()-1;
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
+		if (classifier.equals(VectorClassifier.liblinear)
+				|| classifier.equals(VectorClassifier.logit)
+				) {
 			//Prepare evaluation data
 			Feature[][] instances = new Feature[nInstances][nFeatures];
 			double[] labels = new double[nInstances];
@@ -387,62 +341,12 @@ public class EventEventCausalClassifier extends PairClassifier {
 			}
 			
 			PairEvaluator pe = new PairEvaluator(result);
-			pe.evaluatePerLabelIdx(label);
+			pe.evaluatePerLabelIdx(relTypes);
 		}
 	}
 	
-	public void evaluate(List<PairFeatureVector> vectors, svm_model model) throws Exception {
-		
-		System.err.println("Evaluate model...");
-
-		int nInstances = vectors.size();
-		int nFeatures = vectors.get(0).getVectors().size()-1;
-		
-		if (classifier.equals(VectorClassifier.libsvm)) {
-			//Prepare evaluation data
-			svm_node[][] instances = new svm_node[nInstances][nFeatures];
-			double[] labels = new double[nInstances];
-			
-			int row = 0;
-			for (PairFeatureVector fv : vectors) {				
-				int idx = 1, col = 0;
-				for (int i=0; i<nFeatures; i++) {
-					svm_node node = new svm_node();
-					node.index = idx;
-					node.value = Double.valueOf(fv.getVectors().get(i));
-					instances[row][col] = node;
-					idx ++;
-					col ++;
-				}
-				labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-				row ++;
-			}
-			
-			//Test
-			int totalClasses = 3;
-			double[] predictions = new double[nInstances];
-			int p = 0;
-			for (svm_node[] instance : instances) {
-				int[] classes = new int[totalClasses];
-		        svm.svm_get_labels(model, classes);
-		        double[] probs = new double[totalClasses];
-				predictions[p] = svm.svm_predict_probability(model, instance, probs);
-				p ++;
-			}
-			
-			List<String> result = new ArrayList<String>();
-			for (int i=0; i<labels.length; i++) {
-				result.add(((int)labels[i]) + "\t" + ((int)predictions[i]));
-			}
-			
-			PairEvaluator pe = new PairEvaluator(result);
-			pe.evaluatePerLabelIdx(label);
-		}
-	}
-	
-	public List<String> predict(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-		System.err.println("Test model...");
+	public List<String> predict(List<PairFeatureVector> vectors, 
+			String modelPath, String[] relTypes) throws Exception {
 		
 		List<String> predictionLabels = new ArrayList<String>();
 		
@@ -451,7 +355,9 @@ public class EventEventCausalClassifier extends PairClassifier {
 			int nInstances = vectors.size();
 			int nFeatures = vectors.get(0).getVectors().size()-1;
 			
-			if (classifier.equals(VectorClassifier.liblinear)) {
+			if (classifier.equals(VectorClassifier.liblinear)
+					|| classifier.equals(VectorClassifier.logit)
+					) {
 				//Prepare test data
 				Feature[][] instances = new Feature[nInstances][nFeatures];
 				double[] labels = new double[nInstances];
@@ -472,54 +378,7 @@ public class EventEventCausalClassifier extends PairClassifier {
 				File modelFile = new File(modelPath);
 				Model model = Model.load(modelFile);
 				for (Feature[] instance : instances) {
-					predictionLabels.add(label[(int)Linear.predict(model, instance)-1]);
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predict(List<PairFeatureVector> vectors, svm_model model) throws Exception {
-		
-		System.err.println("Test model...");
-
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;
-		
-			if (classifier.equals(VectorClassifier.libsvm)) {
-				//Prepare test data
-				svm_node[][] instances = new svm_node[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {				
-					int idx = 1, col = 0;
-					for (int i=0; i<nFeatures; i++) {
-						svm_node node = new svm_node();
-						node.index = idx;
-						node.value = Double.valueOf(fv.getVectors().get(i));
-						instances[row][col] = node;
-						idx ++;
-						col ++;
-					}
-					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-					row ++;
-				}
-				
-				//Test
-				int totalClasses = 3;
-				double[] predictions = new double[nInstances];
-				
-				for (svm_node[] instance : instances) {
-					int[] classes = new int[totalClasses];
-			        svm.svm_get_labels(model, classes);
-			        double[] probs = new double[totalClasses];
-			        predictionLabels.add(label[((int)svm.svm_predict_probability(model, instance, probs))-1]);
+					predictionLabels.add(relTypes[(int)Linear.predict(model, instance)-1]);
 				}
 			}
 		}

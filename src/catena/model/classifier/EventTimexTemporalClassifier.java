@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 import de.bwaldvogel.liblinear.*;
-import libsvm.*;
 
 import catena.evaluator.PairEvaluator;
 import catena.model.feature.CausalSignalList;
@@ -26,11 +25,6 @@ import catena.parser.entities.Timex;
 
 
 public class EventTimexTemporalClassifier extends PairClassifier {
-	
-	protected String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-	protected String[] labelDense = {"BEFORE", "AFTER", "SIMULTANEOUS", 
-			"INCLUDES", "IS_INCLUDED", "VAGUE"};
 	
 	protected void initFeatureVector() {
 		
@@ -277,8 +271,6 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 	}
 	
 	public void train2(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-		System.err.println("Train model...");
 
 		int nInstances = vectors.size();
 		int nFeatures = vectors.get(0).getFeatures().length-1;
@@ -328,56 +320,8 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 		}
 	}
 	
-	public svm_model trainSVM(List<PairFeatureVector> vectors) throws Exception {
-		
-		System.err.println("Train model...");
-
-		int nInstances = vectors.size();
-		int nFeatures = vectors.get(0).getVectors().size()-1;
-		
-		if (classifier.equals(VectorClassifier.libsvm)) {
-			//Prepare training data
-			svm_problem prob = new svm_problem();
-			prob.l = nInstances;
-			prob.x = new svm_node[nInstances][nFeatures];
-			prob.y = new double[nInstances];
-			
-			int row = 0;
-			for (PairFeatureVector fv : vectors) {				
-				int idx = 1, col = 0;
-				for (int i=0; i<nFeatures; i++) {
-					svm_node node = new svm_node();
-					node.index = idx;
-					node.value = Double.valueOf(fv.getVectors().get(i));
-					prob.x[row][col] = node;
-					idx ++;
-					col ++;
-				}
-				prob.y[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-				row ++;
-			}
-			
-			//Train
-			svm_parameter param = new svm_parameter();
-		    param.probability = 1;
-		    param.gamma = 0.125;
-//		    param.nu = 0.5;
-		    param.C = 8;
-		    param.svm_type = svm_parameter.C_SVC;
-		    param.kernel_type = svm_parameter.RBF; 
-		    param.degree = 2;
-		    param.cache_size = 20000;
-		    param.eps = 0.001;
-		    
-		    svm_model model = svm.svm_train(prob, param);
-		    return model;
-		}
-		return null;
-	}
-	
-	public void evaluate(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-		System.err.println("Evaluate model...");
+	public void evaluate(List<PairFeatureVector> vectors, 
+			String modelPath, String[] relTypes) throws Exception {
 		
 		if (vectors.size() > 0) {
 
@@ -419,7 +363,7 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 				}
 				
 				PairEvaluator pe = new PairEvaluator(result);
-				pe.evaluatePerLabelIdx(label);
+				pe.evaluatePerLabelIdx(relTypes);
 			}
 		}
 	}
@@ -465,10 +409,8 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 		return predictionLabels;
 	}
 	
-	public List<String> predict2(List<PairFeatureVector> vectors, String modelPath,
-			String[] arrLabel) throws Exception {
-		
-//		System.err.println("Test model...");
+	public List<String> predict2(List<PairFeatureVector> vectors, 
+			String modelPath, String[] arrLabel) throws Exception {
 
 		List<String> predictionLabels = new ArrayList<String>();
 		
@@ -501,141 +443,6 @@ public class EventTimexTemporalClassifier extends PairClassifier {
 				Model model = Model.load(modelFile);
 				for (Feature[] instance : instances) {
 					predictionLabels.add(arrLabel[(int)Linear.predict(model, instance)-1]);
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predict(List<PairFeatureVector> vectors, svm_model model) throws Exception {
-		
-		System.err.println("Test model...");
-		
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;
-			
-			if (classifier.equals(VectorClassifier.libsvm)) {
-				//Prepare test data
-				svm_node[][] instances = new svm_node[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {				
-					int idx = 1, col = 0;
-					for (int i=0; i<nFeatures; i++) {
-						svm_node node = new svm_node();
-						node.index = idx;
-						node.value = Double.valueOf(fv.getVectors().get(i));
-						instances[row][col] = node;
-						idx ++;
-						col ++;
-					}
-					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-					row ++;
-				}
-				
-				//Test
-				int totalClasses = 3;
-				double[] predictions = new double[nInstances];
-				
-				for (svm_node[] instance : instances) {
-					int[] classes = new int[totalClasses];
-			        svm.svm_get_labels(model, classes);
-			        double[] probs = new double[totalClasses];
-			        predictionLabels.add(label[((int)svm.svm_predict_probability(model, instance, probs))-1]);
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predictDense(List<PairFeatureVector> vectors, String modelPath) throws Exception {
-		
-		System.err.println("Test model...");
-		
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;		
-			
-			if (classifier.equals(VectorClassifier.liblinear)
-					|| classifier.equals(VectorClassifier.logit)) {
-				//Prepare test data
-				Feature[][] instances = new Feature[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {				
-					int idx = 1, col = 0;
-					for (int i=0; i<nFeatures; i++) {
-						labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-						instances[row][col] = new FeatureNode(idx, Double.valueOf(fv.getVectors().get(i)));
-						idx ++;
-						col ++;
-					}
-					row ++;
-				}
-				
-				//Test
-				File modelFile = new File(modelPath);
-				Model model = Model.load(modelFile);
-				for (Feature[] instance : instances) {
-					predictionLabels.add(labelDense[(int)Linear.predict(model, instance)-1]);
-				}
-			}
-		}
-		
-		return predictionLabels;
-	}
-	
-	public List<String> predictDense(List<PairFeatureVector> vectors, svm_model model) throws Exception {
-		
-		System.err.println("Test model...");
-
-		List<String> predictionLabels = new ArrayList<String>();
-		
-		if (vectors.size() > 0) {
-
-			int nInstances = vectors.size();
-			int nFeatures = vectors.get(0).getVectors().size()-1;
-			
-			if (classifier.equals(VectorClassifier.libsvm)) {
-				//Prepare test data
-				svm_node[][] instances = new svm_node[nInstances][nFeatures];
-				double[] labels = new double[nInstances];
-				
-				int row = 0;
-				for (PairFeatureVector fv : vectors) {				
-					int idx = 1, col = 0;
-					for (int i=0; i<nFeatures; i++) {
-						svm_node node = new svm_node();
-						node.index = idx;
-						node.value = Double.valueOf(fv.getVectors().get(i));
-						instances[row][col] = node;
-						idx ++;
-						col ++;
-					}
-					labels[row] = Double.valueOf(fv.getVectors().get(nFeatures));	//last column is label
-					row ++;
-				}
-				
-				//Test
-				int totalClasses = labelDense.length;
-				double[] predictions = new double[nInstances];
-				
-				for (svm_node[] instance : instances) {
-					int[] classes = new int[totalClasses];
-			        svm.svm_get_labels(model, classes);
-			        double[] probs = new double[totalClasses];
-			        predictionLabels.add(labelDense[((int)svm.svm_predict_probability(model, instance, probs))-1]);
 				}
 			}
 		}

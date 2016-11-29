@@ -55,7 +55,7 @@ public class Temporal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		String task = "te3-c-rel";
+		String task = "te3-c";
 		
 		switch(task) {
 		
@@ -186,12 +186,12 @@ public class Temporal {
 				true, true);
 		
 		// TRAIN
-		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+//		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+//		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+//		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+//		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+//		relTypeMappingTrain.put("IAFTER", "AFTER");
+//		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
 		
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
@@ -345,7 +345,7 @@ public class Temporal {
 //				List<String> columns = tmlToCol.convert(tmlFile, false);
 //				Doc doc = colParser.parseLines(columns);
 				
-				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
@@ -417,7 +417,7 @@ public class Temporal {
 //		List<String> columns = tmlToCol.convert(tmlFile, false);
 //		Doc doc = colParser.parseLines(columns);
 		
-		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc);
@@ -613,7 +613,7 @@ public class Temporal {
 //				List<String> columns = tmlToCol.convert(tmlFile, false);
 //				Doc doc = colParser.parseLines(columns);
 				
-				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
@@ -700,7 +700,7 @@ public class Temporal {
 //		List<String> columns = tmlToCol.convert(tmlFile, false);
 //		Doc doc = colParser.parseLines(columns);
 		
-		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc, tlinks);

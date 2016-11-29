@@ -20,8 +20,12 @@ public class Doc {
 	private Timex dct;
 	private Map<String, String> instances;
 	private Map<String, String> instancesInv;
+	
 	private Map<String, String> tlinkTypes;
+	private Map<String, String> clinkTypes;
+	
 	private ArrayList<TemporalRelation> candidateTlinks;
+	private ArrayList<CausalRelation> candidateClinks;
 	
 	private int tokIdx;
 	private int sentIdx;
@@ -44,48 +48,20 @@ public class Doc {
 		setInstances(new HashMap<String, String>());
 		setInstancesInv(new HashMap<String, String>());
 		setTlinkTypes(new HashMap<String, String>());
+		setClinkTypes(new HashMap<String, String>());
 		setCandidateTlinks(new ArrayList<TemporalRelation>());
+		setCandidateClinks(new ArrayList<CausalRelation>());
 	}
 	
 	public Doc(EntityEnum.Language lang) {
+		this();
 		this.setLang(lang);
-		setTokens(new HashMap<String, Token>());
-		setSentences(new HashMap<String, Sentence>());
-		setEntities(new HashMap<String, Entity>());
-		setTokIdx(0);
-		setSentIdx(0);
-		setEntIdx(0);
-		setTokenArr(new ArrayList<String>());
-		setSentenceArr(new ArrayList<String>());
-		setTemporalSignals(new HashMap<String, TemporalSignal>());
-		setCausalSignals(new HashMap<String, CausalSignal>());
-		setTlinks(new ArrayList<TemporalRelation>());
-		setClinks(new ArrayList<CausalRelation>());
-		setInstances(new HashMap<String, String>());
-		setInstancesInv(new HashMap<String, String>());
-		setTlinkTypes(new HashMap<String, String>());
-		setCandidateTlinks(new ArrayList<TemporalRelation>());
 	}
 	
 	public Doc(EntityEnum.Language lang, String filename) {
+		this();
 		this.setLang(lang);
 		this.setFilename(filename);
-		setTokens(new HashMap<String, Token>());
-		setSentences(new HashMap<String, Sentence>());
-		setEntities(new HashMap<String, Entity>());
-		setTokIdx(0);
-		setSentIdx(0);
-		setEntIdx(0);
-		setTokenArr(new ArrayList<String>());
-		setSentenceArr(new ArrayList<String>());
-		setTemporalSignals(new HashMap<String, TemporalSignal>());
-		setCausalSignals(new HashMap<String, CausalSignal>());
-		setTlinks(new ArrayList<TemporalRelation>());
-		setClinks(new ArrayList<CausalRelation>());
-		setInstances(new HashMap<String, String>());
-		setInstancesInv(new HashMap<String, String>());
-		setTlinkTypes(new HashMap<String, String>());
-		setCandidateTlinks(new ArrayList<TemporalRelation>());
 	}
 
 	public String getFilename() {
@@ -232,11 +208,27 @@ public class Doc {
 		this.tlinkTypes = tlinkTypes;
 	}
 
+	public Map<String, String> getClinkTypes() {
+		return clinkTypes;
+	}
+
+	public void setClinkTypes(Map<String, String> clinkTypes) {
+		this.clinkTypes = clinkTypes;
+	}
+
 	public ArrayList<TemporalRelation> getCandidateTlinks() {
 		return candidateTlinks;
 	}
 
 	public void setCandidateTlinks(ArrayList<TemporalRelation> candidateTlinks) {
 		this.candidateTlinks = candidateTlinks;
+	}
+
+	public ArrayList<CausalRelation> getCandidateClinks() {
+		return candidateClinks;
+	}
+
+	public void setCandidateClinks(ArrayList<CausalRelation> candidateClinks) {
+		this.candidateClinks = candidateClinks;
 	}
 }
