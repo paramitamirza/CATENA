@@ -1,4 +1,4 @@
-DCT_2013-03-21	O	O	O	O	O	O	tmx0	DATE	2013-03-21	O	O	NP0	B-NP	dct_2013-03-21	SYM	O	O
+DCT_2013-03-21	O	O	O	O	O	O	tmx0	DATE	2013-03-21	O	O	NP0	B-NP	dct_2013-03-21	LS	O	O
 
 Former	t1	1	Former	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	former	NNP	O	O
 President	t2	1	President	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	president	NN	O	O
@@ -19,12 +19,12 @@ whether	t16	1	whether	O	O	O	O	O	O	O	O	CJS	B-SBAR	whether	IN	t18:SUB	O
 he	t17	1	he	O	O	O	O	O	O	O	O	PNP	B-NP	he	PRP	O	O
 abused	t18	1	abuse	e3	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	abuse	VBD	t17:SBJ||t20:OBJ	O
 the	t19	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-frailty	t20	1	frailty	O	O	O	O	O	O	O	O	NN1	I-NP	frailty	NN	t19:NMOD||t21:NMOD	O
+frailty	t20	1	frailty	O	O	O	O	O	O	O	O	NN1	I-NP	frailty	NN	t19:NMOD||t21:NMOD||t39:NMOD	O
 of	t21	1	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t25:PMOD	O
 Liliane	t22	1	Liliane	O	O	O	O	O	O	O	O	NP0	B-NP	liliane	NNP	O	O
 Bettencourt	t23	1	Bettencourt	O	O	O	O	O	O	O	O	NP0	I-NP	bettencourt	NNP	t22:NAME	O
 ,	t24	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-90	t25	1	90	O	O	O	O	O	O	O	O	CRD	B-NP	90	CD	t23:NMOD||t24:P||t26:P||t28:APPO	O
+90	t25	1	90	O	O	O	O	O	O	O	O	CRD	B-NP	90	CD	t23:NMOD||t24:P||t26:P||t28:APPO||t38:P	O
 ,	t26	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 the	t27	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 heiress	t28	1	heiress	O	O	O	O	O	O	O	O	NN1	I-NP	heiress	NN	t27:NMOD||t29:NMOD	O
@@ -36,7 +36,7 @@ and	t33	1	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t37:CONJ	O
 France	t34	1	France	O	O	O	O	O	O	O	O	NP0	B-NP	france	NNP	t35:SUFFIX	O
 's	t35	1	's	O	O	O	O	O	O	O	O	POS	B-NP	's	POS	O	O
 richest	t36	1	richest	O	O	O	O	O	O	O	O	AJS	I-NP	rich	JJS	O	O
-woman	t37	1	woman	O	O	O	O	O	O	O	O	NN1	I-NP	woman	NN	t34:NMOD||t36:NMOD||t38:P||t39:NMOD	O
+woman	t37	1	woman	O	O	O	O	O	O	O	O	NN1	I-NP	woman	NN	t34:NMOD||t36:NMOD	O
 ,	t38	1	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 to	t39	1	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t40:IM	O
 get	t40	1	get	e4	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	get	VB	t41:OBJ	O
@@ -51,8 +51,8 @@ campaign	t46	1	campaign	e1000	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	campai
 Mr.	t48	2	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Sarkozy	t49	2	Sarkozy	O	O	O	O	O	O	O	O	NP0	I-NP	sarkozy	NNP	t48:TITLE	O
 has	t50	2	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t49:SBJ||t51:VC||t80:P	mainVb
-denied	t51	2	deny	e5	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	deny	VBN	t52:OPRD||t59:P||t60:ADV||t73:P||t74:ADV	mainVb
-accepting	t52	2	accept	e6	I_ACTION	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	accept	VBG	t55:OBJ||t56:ADV	mainVb
+denied	t51	2	deny	e5	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	deny	VBN	t52:OPRD	mainVb
+accepting	t52	2	accept	e6	I_ACTION	PRESENT+PERFECTIVE_PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	accept	VBG	t55:OBJ||t56:ADV||t59:P||t60:ADV||t73:P||t74:ADV	mainVb
 illegal	t53	2	illegal	O	O	O	O	O	O	O	O	AJ0	B-NP	illegal	JJ	O	O
 campaign	t54	2	campaign	O	O	O	O	O	O	O	O	NN1	I-NP	campaign	NN	O	O
 funds	t55	2	fund	O	O	O	O	O	O	O	O	NN2	I-NP	funds	NNS	t53:NMOD||t54:NMOD	O
@@ -102,22 +102,22 @@ that	t97	3	that	O	O	O	O	O	O	O	O	DT0	B-SBAR	that	IN	t100:SUB	O
 the	t98	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 judge	t99	3	judge	O	O	O	O	O	O	O	O	NN1	I-NP	judge	NN	t98:NMOD	O
 believes	t100	3	believe	e11	I_STATE	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	believe	VBZ	t99:SBJ||t101:OBJ	O
-that	t101	3	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t105:SUB	O
+that	t101	3	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t105:SUB||t108:P||t109:COORD	O
 Mr.	t102	3	Mr.	O	O	O	O	O	O	O	O	NP0	B-NP	mr.	NNP	O	O
 Sarkozy	t103	3	Sarkozy	O	O	O	O	O	O	O	O	NP0	I-NP	sarkozy	NNP	t102:TITLE	O
 probably	t104	3	probably	O	O	O	O	O	O	O	O	AV0	B-ADVP	probably	RB	O	O
 committed	t105	3	commit	O	O	O	O	O	O	O	O	VVN	B-VP	commit	VBD	t103:SBJ||t104:ADV||t107:OBJ	O
 a	t106	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-crime	t107	3	crime	e23	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	crime	NN	t106:NMOD||t108:P||t111:COORD	O
+crime	t107	3	crime	e23	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	crime	NN	t106:NMOD	O
 ,	t108	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-"	t109	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	PRP$	O	O
+"	t109	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	CC	t111:CONJ	O
 incoherent	t110	3	incoherent	O	O	O	O	O	O	O	O	AJ0	B-VP	incoherent	JJ	O	O
-"	t111	3	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	NN	t109:NMOD||t110:NMOD||t112:COORD	O
-and	t112	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t113:CONJ	O
-"	t113	3	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	$	t114:NMOD||t116:NMOD	O
+"	t111	3	"	O	O	O	O	O	O	O	O	PUQ	B-NP	"	NN	t110:NMOD||t112:COORD	O
+and	t112	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t113:P||t114:CONJ||t116:GAP-TMP	O
+"	t113	3	"	O	O	O	O	O	O	O	O	PUQ	I-NP	"	:	O	O
 unjust	t114	3	unjust	O	O	O	O	O	O	O	O	AJ0	I-NP	unjust	JJ	O	O
 .	t115	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
-"	t116	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	$	O	O
+"	t116	3	"	O	O	O	O	O	O	O	O	PUQ	O	"	NN	O	O
 
 The	t117	4	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 lawyer	t118	4	lawyer	O	O	O	O	O	O	O	O	NN1	I-NP	lawyer	NN	t117:NMOD	O

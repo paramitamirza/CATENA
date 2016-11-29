@@ -1,4 +1,4 @@
-DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NN1	B-NP	dct_2013-03-22	SYM	O	O
+DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NN1	B-NP	dct_2013-03-22	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 flu	t2	1	flu	O	O	O+O+O	O	O	O	O	O	NN1	I-NP	flu	NN	O	O
@@ -14,9 +14,9 @@ killed	t11	1	kill	e2	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	kill	V
 105	t12	1	105	O	O	O	O	O	O	O	O	CRD	B-NP	105	CD	O	O
 children	t13	1	child	O	O	O	O	O	O	O	O	NN2	I-NP	child	NNS	t12:NMOD	O
 so	t14	1	so	O	O	O	O	O	O	O	O	AV0	B-ADVP	so	RB	t15:AMOD	O
-far	t15	1	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	t16:HYPH||t17:NMOD||t20:DEP	O
+far	t15	1	far	O	O	O	O	O	O	O	O	AV0	I-ADVP	far	RB	t16:HYPH||t17:NMOD	O
 -	t16	1	-	O	O	O	O	O	O	O	O	PUN	O	-	HYPH	O	O
-about	t17	1	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	O	O
+about	t17	1	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	t20:PMOD	O
 the	t18	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 average	t19	1	average	O	O	O	O	O	O	O	O	AJ0	I-NP	average	JJ	O	O
 toll	t20	1	toll	O	O	O	O	O	O	O	O	NN1	I-NP	toll	NN	t18:NMOD||t19:NMOD	O
@@ -24,19 +24,19 @@ toll	t20	1	toll	O	O	O	O	O	O	O	O	NN1	I-NP	toll	NN	t18:NMOD||t19:NMOD	O
 
 The	t22	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 season	t23	2	season	O	O	O	O	O	O	O	O	NN1	I-NP	season	NN	t22:NMOD	O
-started	t24	2	start	e3	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	start	VBD	t23:SBJ||t28:TMP||t43:P	mainVb
+started	t24	2	start	e3	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	start	VBD	t23:SBJ||t28:TMP||t31:P||t32:ADV||t43:P	mainVb
 about	t25	2	about	O	O	O	O	O	O	O	O	PRP	B-PP	about	IN	O	O
-a	t26	2	a	O	O	O	tmx1	DURATION	P1M	O	O	AT0	B-NP	a	DT	t25:DEP	O
-month	t27	2	month	O	O	O	tmx1	DURATION	P1M	O	O	NN1	I-NP	month	NN	t26:NMOD	O
-earlier	t28	2	earlier	O	O	O	O	O	O	O	O	AV0	B-ADVP	earlier	RBR	t27:AMOD||t29:AMOD||t40:AMOD	O
-than	t29	2	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t33:PMOD	O
+a	t26	2	a	O	O	O	tmx1	DURATION	P1M	O	O	AT0	B-NP	a	DT	O	O
+month	t27	2	month	O	O	O	tmx1	DURATION	P1M	O	O	NN1	I-NP	month	NN	t25:NMOD||t26:NMOD	O
+earlier	t28	2	earlier	O	O	O	O	O	O	O	O	AV0	B-ADVP	earlier	RBR	t27:AMOD||t29:AMOD	O
+than	t29	2	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t30:PMOD	O
 usual	t30	2	usual	O	O	O	O	O	O	O	O	AJ0	B-ADJP	usual	JJ	O	O
 ,	t31	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-sparking	t32	2	spark	e4	ASPECTUAL	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	spark	JJ	O	O
-concerns	t33	2	concern	O	O	O	O	O	O	O	O	NN2	B-NP	concern	NNS	t30:NMOD||t31:P||t32:NMOD||t35:NMOD	O
+sparking	t32	2	spark	e4	ASPECTUAL	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	spark	VBG	t33:OBJ||t35:OBJ	O
+concerns	t33	2	concern	O	O	O	O	O	O	O	O	NN2	B-NP	concern	NNS	O	O
 it	t34	2	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 might	t35	2	might	O	O	O	O	O	O	O	O	VM0	B-VP	might	MD	t34:SBJ||t36:VC	O
-turn	t36	2	turn	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	turn	VB	t37:ADV	O
+turn	t36	2	turn	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	VVI	I-VP	turn	VB	t37:ADV||t40:TMP	O
 into	t37	2	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t39:PMOD	O
 the	t38	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 worst	t39	2	worst	O	O	O	O	O	O	O	O	AJS	I-NP	worst	JJS	t38:NMOD	O
@@ -46,7 +46,7 @@ decade	t42	2	decade	O	O	O	tmx1000	DURATION	P10Y	O	O	NN1	I-NP	decade	NN	t41:NMOD	
 .	t43	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 It	t44	3	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
-ended	t45	3	end	e6	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	end	VBD	t44:SBJ||t46:PRT||t47:OPRD||t53:P||t54:COORD||t69:P	mainVb
+ended	t45	3	end	e6	ASPECTUAL	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	end	VBD	t44:SBJ||t46:PRT||t47:OPRD||t53:P||t54:COORD||t59:P||t60:ADV||t69:P	mainVb
 up	t46	3	up	O	O	O	O	O	O	O	O	AVP	B-PRT	up	RP	O	O
 being	t47	3	be	O	O	O	O	O	O	O	O	VBG	B-VP	be	VBG	t48:MNR||t50:LOC-PRD	O
 very	t48	3	very	O	O	O	O	O	O	O	O	AV0	B-ADJP	very	RB	t49:AMOD	O
@@ -56,18 +56,18 @@ the	t51	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 elderly	t52	3	elderly	O	O	O	O	O	O	O	O	AJ0	I-NP	elderly	NN	t51:NMOD	O
 ,	t53	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 but	t54	3	but	O	O	O	O	O	O	O	O	CJC	O	but	CC	t55:CONJ	O
-was	t55	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t58:PRD||t59:P||t60:ADV	O
+was	t55	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t57:PRD||t58:ADV	O
 moderately	t56	3	moderately	O	O	O	O	O	O	O	O	AV0	B-ADJP	moderately	RB	O	O
 severe	t57	3	severe	O	O	O	O	O	O	O	O	AJ0	I-ADJP	severe	JJ	t56:AMOD	O
-overall	t58	3	overall	O	O	O	O	O	O	O	O	NN1	B-NP	overall	NN	t57:NMOD	O
+overall	t58	3	overall	O	O	O	O	O	O	O	O	NN1	B-NP	overall	RB	O	O
 ,	t59	3	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 according	t60	3	accord	e7	REPORTING	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	PRP	B-PP	accord	VBG	t61:PMOD	O
-to	t61	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t66:PMOD	O
+to	t61	3	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t64:PMOD	O
 the	t62	3	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-Centers	t63	3	Centers	O	O	O	O	O	O	O	O	NN2	I-NP	center	NNPS	O	O
-for	t64	3	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	O	O
+Centers	t63	3	Centers	O	O	O	O	O	O	O	O	NN2	I-NP	center	NNPS	t62:NMOD	O
+for	t64	3	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t63:NMOD||t66:PMOD	O
 Disease	t65	3	Disease	O	O	O	O	O	O	O	O	NN1	B-NP	disease	NNP	O	O
-Control	t66	3	Control	O	O	O	O	O	O	O	O	NN1	I-NP	control	NNP	t62:NAME||t63:NAME||t64:NAME||t65:NAME||t67:COORD	O
+Control	t66	3	Control	O	O	O	O	O	O	O	O	NN1	I-NP	control	NNP	t65:NAME||t67:COORD	O
 and	t67	3	and	O	O	O	O	O	O	O	O	CJC	I-NP	and	CC	t68:CONJ	O
 Prevention	t68	3	Prevention	O	O	O	O	O	O	O	O	NN1	I-NP	prevention	NNP	O	O
 .	t69	3	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
@@ -119,9 +119,9 @@ One	t111	6	one	O	O	O	O	O	O	O	O	CRD	B-NP	one	CD	O	O
 exception	t112	6	exception	O	O	O	O	O	O	O	O	NN1	I-NP	exception	NN	t111:NMOD	O
 was	t113	6	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t112:SBJ||t117:PRD||t127:P	mainVb
 the	t114	6	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-swine	t115	6	swine	O	O	O	O	O	O	O	O	NN1	I-NP	swine	NN	O	O
-flu	t116	6	flu	O	O	O	O	O	O	O	O	NN1	I-NP	flu	NN	t115:NMOD	O
-pandemic	t117	6	pandemic	e1000032	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	pandemic	NN	t114:NMOD||t116:NMOD||t118:NMOD	O
+swine	t115	6	swine	O	O	O	O	O	O	O	O	NN1	I-NP	swine	JJ	O	O
+flu	t116	6	flu	O	O	O	O	O	O	O	O	NN1	I-NP	flu	NN	O	O
+pandemic	t117	6	pandemic	e1000032	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	pandemic	NN	t114:NMOD||t115:NMOD||t116:NMOD||t118:NMOD	O
 of	t118	6	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t119:PMOD	O
 2009	t119	6	2009	O	O	O	tmx4	DATE	2009	O	O	CRD	B-NP	2009	CD	t120:COORD	O
 -	t120	6	-	O	O	O	O	O	O	O	O	PUN	O	-	HYPH	t121:CONJ	O
@@ -138,13 +138,13 @@ CDC	t129	7	CDC	O	O	O	O	O	O	O	O	NP0	I-NP	cdc	NNP	t128:NMOD	O
 recommends	t130	7	recommend	e13	I_ACTION	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	recommend	VBZ	t129:SBJ||t131:OBJ||t157:P	mainVb
 that	t131	7	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t139:SUB	O
 all	t132	7	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	O	O
-children	t133	7	child	O	O	O	O	O	O	O	O	NN2	I-NP	child	NNS	t132:NMOD||t136:APPO	O
-ages	t134	7	age	O	O	O	O	O	O	O	O	NN2	I-NP	age	NNS	O	O
+children	t133	7	child	O	O	O	O	O	O	O	O	NN2	I-NP	child	NNS	t132:NMOD	O
+ages	t134	7	age	O	O	O	O	O	O	O	O	NN2	I-NP	age	VBZ	t136:OBJ	O
 6	t135	7	6	O	O	O	O	O	O	O	O	CRD	I-NP	6	CD	O	O
-months	t136	7	month	O	O	O	O	O	O	O	O	NN2	I-NP	month	NNS	t134:NMOD||t135:NMOD||t137:COORD	O
+months	t136	7	month	O	O	O	O	O	O	O	O	NN2	I-NP	month	NNS	t135:NMOD||t137:COORD	O
 and	t137	7	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t138:CONJ	O
 older	t138	7	older	O	O	O	O	O	O	O	O	AJC	B-NP	older	JJR	O	O
-be	t139	7	be	O	O	O	O	O	O	O	O	VBI	I-NP	be	VB	t133:SBJ||t140:VC	O
+be	t139	7	be	O	O	O	O	O	O	O	O	VBI	I-NP	be	VB	t133:SBJ||t134:SBJ||t140:VC	O
 vaccinated	t140	7	vaccinate	e2001	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVN	B-VP	vaccinate	VBN	t141:ADV||t144:TMP||t145:P||t146:ADV	O
 against	t141	7	against	O	O	O	O	O	O	O	O	PRP	B-PP	against	IN	t142:PMOD	O
 flu	t142	7	flu	O	O	O	O	O	O	O	O	NN1	B-NP	flu	NN	O	O
@@ -164,12 +164,12 @@ nasal	t155	7	nasal	O	O	O	O	O	O	O	O	AJ0	B-NP	nasal	JJ	O	O
 spray	t156	7	spray	O	O	O	O	O	O	O	O	NN1	I-NP	spray	NN	t155:NMOD	O
 .	t157	7	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-All	t158	8	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	t159:NMOD||t161:NMOD	O
-but	t159	8	but	O	O	O	O	O	O	O	O	AV0	I-NP	but	CC	t160:CONJ	O
+All	t158	8	all	O	O	O	O	O	O	O	O	DT0	B-NP	all	DT	t159:NMOD||t161:NMOD||t165:NMOD	O
+but	t159	8	but	O	O	O	O	O	O	O	O	AV0	I-NP	but	CC	t160:PMOD	O
 four	t160	8	four	O	O	O	O	O	O	O	O	CRD	I-NP	four	CD	O	O
 of	t161	8	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t163:PMOD	O
 the	t162	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-children	t163	8	child	O	O	O	O	O	O	O	O	NN2	I-NP	child	NNS	t162:NMOD||t165:NMOD	O
+children	t163	8	child	O	O	O	O	O	O	O	O	NN2	I-NP	child	NNS	t162:NMOD	O
 who	t164	8	who	O	O	O	O	O	O	O	O	PNQ	B-NP	who	WP	O	O
 died	t165	8	die	e16	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	die	VBD	t164:SBJ	O
 were	t166	8	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t158:SBJ||t167:PRD||t172:P||t173:COORD	O
@@ -219,27 +219,27 @@ people	t206	9	people	O	O	O	O	O	O	O	O	NN0	I-NP	people	NN	t205:NMOD	O
 And	t208	10	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	O	O
 the	t209	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 dominant	t210	10	dominant	O	O	O	O	O	O	O	O	AJ0	I-NP	dominant	JJ	O	O
-flu	t211	10	flu	O	O	O	O	O	O	O	O	NN1	I-NP	flu	NN	t209:NMOD||t210:NMOD||t212:LOC	O
-strain	t212	10	strain	O	O	O	O	O	O	O	O	NN1	I-NP	strain	VBP	t213:TMP	O
+flu	t211	10	flu	O	O	O	O	O	O	O	O	NN1	I-NP	flu	NN	O	O
+strain	t212	10	strain	O	O	O	O	O	O	O	O	NN1	I-NP	strain	NN	t209:NMOD||t210:NMOD||t211:NMOD||t213:TMP	O
 early	t213	10	early	O	O	O	O	O	O	O	O	AV0	B-ADVP	early	RB	t214:AMOD	O
 in	t214	10	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t216:PMOD	O
 the	t215	10	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 season	t216	10	season	e2002	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	season	NN	t215:NMOD	O
-was	t217	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t208:DEP||t211:SBJ||t218:PRD||t226:P	mainVb
+was	t217	10	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t208:DEP||t212:SBJ||t218:PRD||t226:P	mainVb
 one	t218	10	one	O	O	O	O	O	O	O	O	PNI	B-NP	one	CD	t220:NMOD	O
 that	t219	10	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 tends	t220	10	tend	O	O	O	O	O	O	O	O	VVZ	B-VP	tend	VBZ	t219:SBJ||t221:OPRD	O
 to	t221	10	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t222:IM	O
 cause	t222	10	cause	O	O	O	O	O	O	O	O	VVI	I-VP	cause	VB	t225:OBJ	O
-more	t223	10	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	DT	O	O
-severe	t224	10	severe	O	O	O	O	O	O	O	O	AJ0	I-NP	severe	JJ	O	O
-illness	t225	10	illness	O	O	O	O	O	O	O	O	NN1	I-NP	illness	NN	t223:NMOD||t224:NMOD	O
+more	t223	10	more	O	O	O	O	O	O	O	O	AV0	B-NP	more	RBR	O	O
+severe	t224	10	severe	O	O	O	O	O	O	O	O	AJ0	I-NP	severe	JJ	t223:AMOD	O
+illness	t225	10	illness	O	O	O	O	O	O	O	O	NN1	I-NP	illness	NN	t224:NMOD	O
 .	t226	10	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 The	t227	11	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 government	t228	11	government	O	O	O	O	O	O	O	O	NN1	I-NP	government	NN	t227:NMOD	O
 only	t229	11	only	O	O	O	O	O	O	O	O	AV0	B-ADVP	only	RB	O	O
-does	t230	11	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t228:SBJ||t229:ADV||t235:SBJ||t238:P	mainVb
+does	t230	11	do	O	O	O	O	O	O	O	O	VDZ	B-VP	do	VBZ	t228:SBJ||t229:ADV||t235:OBJ||t238:P	mainVb
 a	t231	11	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 national	t232	11	national	O	O	O	O	O	O	O	O	AJ0	I-NP	national	JJ	O	O
 flu	t233	11	flu	O	O	O	O	O	O	O	O	NN1	I-NP	flu	NN	O	O
@@ -291,12 +291,12 @@ months	t276	13	month	O	O	O	tmx8	DURATION	PXM	O	O	NN2	I-NP	month	NNS	t273:NMOD||t
 .	t277	13	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 That	t278	14	that	O	O	O	O	O	O	O	O	DT0	B-NP	that	DT	O	O
-'s	t279	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t278:SBJ||t283:OBJ||t290:P	mainVb
-more	t280	14	more	O	O	O	O	O	O	O	O	DT0	B-ADJP	more	RBR	O	O
-than	t281	14	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	O	O
+'s	t279	14	be	O	O	O	O	O	O	O	O	VBZ	B-VP	's	VBZ	t278:SBJ||t284:PRD||t290:P	mainVb
+more	t280	14	more	O	O	O	O	O	O	O	O	DT0	B-ADJP	more	RBR	t281:AMOD	O
+than	t281	14	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t283:PMOD	O
 2 1/2	t282	14	2 1/2	O	O	O	O	O	O	O	O	AJ0	B-NP	2 1/2	JJ	O	O
-times	t283	14	time	O	O	O	O	O	O	O	O	NN2	I-NP	times	NNS	t280:DEP||t281:DEP||t282:DEP||t284:AMOD||t285:AMOD	O
-higher	t284	14	higher	O	O	O	O	O	O	O	O	AJC	B-ADJP	higher	JJR	O	O
+times	t283	14	time	O	O	O	O	O	O	O	O	NN2	I-NP	times	NNS	t282:NMOD	O
+higher	t284	14	higher	O	O	O	O	O	O	O	O	AJC	B-ADJP	higher	JJR	t280:AMOD||t285:AMOD	O
 than	t285	14	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t289:PMOD	O
 any	t286	14	any	O	O	O	O	O	O	O	O	DT0	B-NP	any	DT	O	O
 other	t287	14	other	O	O	O	O	O	O	O	O	AJ0	I-NP	other	JJ	O	O
@@ -314,12 +314,12 @@ December	t297	15	December	O	O	O	tmx9	DATE	2012-12	O	O	NP0	I-NP	december	NNP	t296
 ,	t298	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 a	t299	15	a	O	O	O	tmx10	DURATION	P1M	O	O	AT0	B-NP	a	DT	O	O
 month	t300	15	month	O	O	O	tmx10	DURATION	P1M	O	O	NN1	I-NP	month	NN	t299:NMOD	O
-earlier	t301	15	earlier	O	O	O	O	O	O	O	O	AV0	B-ADVP	earlier	RBR	t300:AMOD||t302:AMOD	O
+earlier	t301	15	earlier	O	O	O	O	O	O	O	O	AV0	B-ADVP	earlier	RB	t300:AMOD||t302:AMOD	O
 than	t302	15	than	O	O	O	O	O	O	O	O	CJS	B-PP	than	IN	t303:PMOD	O
 usual	t303	15	usual	O	O	O	O	O	O	O	O	AJ0	B-ADJP	usual	JJ	O	O
 ,	t304	15	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 and	t305	15	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t306:CONJ	O
-peaked	t306	15	peak	e1000035	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	peak	VBN	t307:TMP	O
+peaked	t306	15	peak	e1000035	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	B-VP	peak	VBD	t307:TMP	O
 by	t307	15	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t309:PMOD	O
 the	t308	15	the	O	O	O	tmx11	DATE	2012	O	O	AT0	B-NP	the	DT	O	O
 end	t309	15	end	O	O	O	tmx11	DATE	2012	O	O	NN1	I-NP	end	NN	t308:NMOD||t310:NMOD	O
@@ -341,7 +341,7 @@ the	t323	16	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 country	t324	16	country	O	O	O	O	O	O	O	O	NN1	I-NP	country	NN	t323:NMOD	O
 .	t325	16	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-"	t326	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	``	O	O
+"	t326	17	"	O	O	O	O	O	O	O	O	PUQ	O	"	:	O	O
 We	t327	17	we	O	O	O	O	O	O	O	O	PNP	B-NP	we	PRP	O	O
 appear	t328	17	appear	e29	PERCEPTION	PRESENT+NONE+POS	O	O	O	O	O	VVB	B-VP	appear	VBP	t327:SBJ||t329:OPRD	O
 to	t329	17	to	O	O	O	O	O	O	O	O	TO0	I-VP	to	TO	t330:IM	O

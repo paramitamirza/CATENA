@@ -1,4 +1,4 @@
-DCT_2013-03-18	O	O	O	O	O	O	tmx0	DATE	2013-03-18	O	O	NP0	B-NP	dct_2013-03-18	SYM	O	O
+DCT_2013-03-18	O	O	O	O	O	O	tmx0	DATE	2013-03-18	O	O	NP0	B-NP	dct_2013-03-18	VBG	O	O
 
 Microsoft	t1	1	Microsoft	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	microsoft	NNP	t2:POSTHON	O
 Corp.	t2	1	Corp.	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	corp.	NNP	O	O
@@ -60,7 +60,7 @@ gaming	t55	2	gaming	O	O	O	O	O	O	O	O	NN1	B-NP	gaming	NN	O	O
 
 Microsoft	t57	3	Microsoft	O	O	O	O	O	O	O	O	NP0	B-NP	microsoft	NNP	O	O
 is	t58	3	be	O	O	O	O	O	O	O	O	VBZ	B-VP	be	VBZ	t57:SBJ||t59:VC||t87:P	mainVb
-expanding	t59	3	expand	e9	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	expand	VBG	t60:DIR||t62:MNR	mainVb
+expanding	t59	3	expand	e9	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	I-VP	expand	VBG	t60:DIR||t62:ADV	mainVb
 into	t60	3	into	O	O	O	O	O	O	O	O	PRP	B-PP	into	IN	t61:PMOD	O
 China	t61	3	China	O	O	O	O	O	O	O	O	NP0	B-NP	china	NNP	O	O
 with	t62	3	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t66:PMOD	O
@@ -97,7 +97,7 @@ U.S.	t90	4	U.S.	O	O	O	O	O	O	O	O	NP0	I-NP	u.s.	NNP	t89:NMOD	O
 11	t92	4	11	O	O	O	O	O	O	O	O	CRD	B-NP	11	CD	O	O
 companies	t93	4	company	O	O	O	O	O	O	O	O	NN2	I-NP	company	NNS	t92:NMOD	O
 were	t94	4	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t88:LOC||t91:P||t93:SBJ||t95:VC||t113:P	mainVb
-selected	t95	4	select	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	select	VBN	t97:TMP||t98:PRP||t107:P||t108:ADV	mainVb
+selected	t95	4	select	e10	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	select	VBN	t97:TMP||t98:ADV||t107:P||t108:ADV	mainVb
 last	t96	4	last	O	O	O	tmx2	DATE	2012	O	O	ORD	B-NP	last	JJ	O	O
 year	t97	4	year	O	O	O	tmx2	DATE	2012	O	O	NN1	I-NP	year	NN	t96:NMOD	O
 for	t98	4	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t104:PMOD	O
@@ -121,13 +121,13 @@ Microsoft	t114	5	Microsoft	O	O	O	O	O	O	O	O	NP0	B-NP	microsoft	NNP	O	O
 said	t115	5	say	e11	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t114:SBJ||t117:OBJ||t129:P	mainVb
 it	t116	5	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 has	t117	5	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t116:SBJ||t118:VC	O
-identified	t118	5	identify	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	identify	VBN	t120:OBJ||t121:PRP	O
+identified	t118	5	identify	e12	OCCURRENCE	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	identify	VBN	t120:OBJ||t121:PRP||t125:PRP	O
 three	t119	5	three	O	O	O	O	O	O	O	O	CRD	B-NP	three	CD	O	O
 companies	t120	5	company	O	O	O	O	O	O	O	O	NN2	I-NP	company	NNS	t119:NMOD	O
 for	t121	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t124:PMOD	O
 the	t122	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 China	t123	5	China	O	O	O	O	O	O	O	O	NP0	I-NP	china	NNP	O	O
-program	t124	5	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t122:NMOD||t123:NMOD||t125:NMOD	O
+program	t124	5	program	O	O	O	O	O	O	O	O	NN1	I-NP	program	NN	t122:NMOD||t123:NMOD	O
 to	t125	5	to	O	O	O	O	O	O	O	O	TO0	B-VP	to	TO	t126:IM	O
 run	t126	5	run	e13	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVI	I-VP	run	VB	t127:TMP	O
 through	t127	5	through	O	O	O	O	O	O	O	O	PRP	B-PP	through	IN	t128:PMOD	O
@@ -191,13 +191,13 @@ What	t181	8	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
 Microsoft	t182	8	Microsoft	O	O	O	O	O	O	O	O	NP0	I-NP	microsoft	NNP	O	O
 gets	t183	8	get	e19	ASPECTUAL	PRESENT+NONE+POS	O	O	O	O	O	VVZ	B-VP	get	VBZ	t181:OBJ||t182:SBJ	O
 are	t184	8	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t183:SBJ||t185:PRD||t224:P	mainVb
-developers	t185	8	developer	O	O	O	O	O	O	O	O	NN2	B-NP	developer	NNS	t186:LOC||t193:NMOD	O
+developers	t185	8	developer	O	O	O	O	O	O	O	O	NN2	B-NP	developer	NNS	t186:LOC	O
 around	t186	8	around	O	O	O	O	O	O	O	O	PRP	B-PP	around	IN	t188:PMOD	O
 the	t187	8	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 world	t188	8	world	O	O	O	O	O	O	O	O	NN1	I-NP	world	NN	t187:NMOD||t189:APPO	O
 working	t189	8	work	e20	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	work	VBG	t190:ADV	O
 on	t190	8	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t191:PMOD	O
-ideas	t191	8	idea	O	O	O	O	O	O	O	O	NN2	B-NP	idea	NNS	O	O
+ideas	t191	8	idea	O	O	O	O	O	O	O	O	NN2	B-NP	idea	NNS	t193:NMOD	O
 that	t192	8	that	O	O	O	O	O	O	O	O	CJT	B-NP	that	WDT	O	O
 could	t193	8	could	O	O	O	O	O	O	O	O	VM0	B-VP	could	MD	t192:SBJ||t194:ADV||t195:VC	O
 potentially	t194	8	potentially	O	O	O	O	O	O	O	O	AV0	I-VP	potentially	RB	O	O
@@ -264,14 +264,14 @@ Microsoft	t253	9	Microsoft	O	O	O	O	O	O	O	O	NP0	B-NP	microsoft	NNP	O	O
 ,	t254	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 more	t255	9	more	O	O	O	O	O	O	O	O	AV0	B-ADVP	more	RBR	O	O
 than	t256	9	than	O	O	O	O	O	O	O	O	AV0	I-ADVP	than	IN	O	O
-twice	t257	9	twice	O	O	O	O	O	O	O	O	AV0	I-ADVP	twice	RB	t255:DEP||t256:DEP||t258:NMOD	O
+twice	t257	9	twice	O	O	O	O	O	O	O	O	AV0	I-ADVP	twice	RB	t255:DEP||t256:DEP	O
 what	t258	9	what	O	O	O	O	O	O	O	O	DTQ	B-NP	what	WP	O	O
 Microsoft	t259	9	Microsoft	O	O	O	O	O	O	O	O	NP0	I-NP	microsoft	NNP	O	O
-charges	t260	9	charge	O	O	O	O	O	O	O	O	VVZ	B-VP	charge	NNS	t253:NMOD||t254:P||t257:NMOD||t259:NMOD||t261:NMOD	O
+charges	t260	9	charge	O	O	O	O	O	O	O	O	VVZ	B-VP	charge	NNS	t253:NMOD||t254:P||t257:NMOD||t258:OBJ||t259:NMOD||t261:NMOD	O
 for	t261	9	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t265:PMOD	O
 the	t262	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-gaming-only	t263	9	gaming-only	O	O	O	O	O	O	O	O	AJ0	I-NP	gaming-only	JJ	O	O
-Xbox	t264	9	xbox	O	O	O	O	O	O	O	O	NP0	I-NP	xbox	NNP	O	O
-version	t265	9	version	O	O	O	O	O	O	O	O	NN1	I-NP	version	NN	t262:NMOD||t263:NMOD||t264:NMOD	O
+gaming-only	t263	9	gaming-only	O	O	O	O	O	O	O	O	AJ0	I-NP	gaming-only	NN	O	O
+Xbox	t264	9	xbox	O	O	O	O	O	O	O	O	NP0	I-NP	xbox	NN	t263:NMOD	O
+version	t265	9	version	O	O	O	O	O	O	O	O	NN1	I-NP	version	NN	t262:NMOD||t264:NMOD	O
 .	t266	9	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 

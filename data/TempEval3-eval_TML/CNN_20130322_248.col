@@ -1,4 +1,4 @@
-DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NN1	B-NP	dct_2013-03-22	SYM	O	O
+DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NN1	B-NP	dct_2013-03-22	LS	O	O
 
 The	t1	1	the	O	O	O+O+O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 FAA	t2	1	FAA	O	O	O+O+O	O	O	O	O	O	NP0	I-NP	faa	NNP	t1:NMOD	O
@@ -7,21 +7,21 @@ Friday	t4	1	Friday	O	O	O+O+O	tmx1	DATE	2013-03-22	O	O	NP0	B-NP	friday	NNP	O	O
 announced	t5	1	announce	e1	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	announce	VBD	t2:SBJ||t3:TMP||t7:OBJ||t31:P	mainVb
 it	t6	1	it	O	O	O	O	O	O	O	O	PNP	B-NP	it	PRP	O	O
 will	t7	1	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t6:SBJ||t8:VC	O
-close	t8	1	close	e2	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	close	VB	t13:OBJ||t14:PRP	O
+close	t8	1	close	e2	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	close	VB	t13:OBJ||t14:PRP||t19:P||t20:ADV	O
 149	t9	1	149	O	O	O	O	O	O	O	O	CRD	B-NP	149	CD	O	O
 regional	t10	1	regional	O	O	O	O	O	O	O	O	AJ0	I-NP	regional	JJ	O	O
 airport	t11	1	airport	O	O	O	O	O	O	O	O	NN1	I-NP	airport	NN	O	O
-control	t12	1	control	O	O	O	O	O	O	O	O	NN1	I-NP	control	NN	t9:NMOD||t10:NMOD||t11:NMOD	O
-towers	t13	1	tower	O	O	O	O	O	O	O	O	NN2	I-NP	tower	VBZ	t12:SBJ	O
+control	t12	1	control	O	O	O	O	O	O	O	O	NN1	I-NP	control	NN	t11:NMOD	O
+towers	t13	1	tower	O	O	O	O	O	O	O	O	NN2	I-NP	tower	NNS	t9:NMOD||t10:NMOD||t12:NMOD	O
 because	t14	1	because	O	O	O	O	O	O	O	O	PRP	B-PP	because	IN	t15:DEP||t18:PMOD	O
 of	t15	1	of	O	O	O	O	O	O	O	O	PRP	I-PP	of	IN	O	O
 forced	t16	1	forced	O	O	O	O	O	O	O	O	AJ0	B-NP	force	VBN	O	O
 spending	t17	1	spending	O	O	O	O	O	O	O	O	NN1	I-NP	spending	NN	O	O
-cuts	t18	1	cut	e102	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN2	I-NP	cut	NNS	t16:NMOD||t17:NMOD||t20:APPO||t23:NMOD	O
+cuts	t18	1	cut	e102	OCCURRENCE	PAST+NONE+POS	O	O	O	O	O	NN2	I-NP	cut	NNS	t16:NMOD||t17:NMOD	O
 --	t19	1	--	O	O	O	O	O	O	O	O	UNC	O	--	:	O	O
-sparing	t20	1	spare	e3	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	spar	VBG	t19:P||t22:OBJ	O
+sparing	t20	1	spare	e3	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	spar	VBG	t22:OBJ	O
 40	t21	1	40	O	O	O	O	O	O	O	O	CRD	B-NP	40	CD	O	O
-others	t22	1	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t21:NMOD	O
+others	t22	1	other	O	O	O	O	O	O	O	O	NN2	I-NP	others	NNS	t21:NMOD||t23:NMOD	O
 that	t23	1	that	O	O	O	O	O	O	O	O	CJT	B-SBAR	that	IN	t26:SUB	O
 the	t24	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 FAA	t25	1	FAA	O	O	O	O	O	O	O	O	NP0	I-NP	faa	NNP	t24:NMOD	O
@@ -33,16 +33,16 @@ shutter	t30	1	shutter	e45	OCCURRENCE	INFINITIVE+NONE+POS	O	O	O	O	O	VVI	I-VP	shut
 .	t31	1	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 A	t32	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
-four-week	t33	2	four-week	O	O	O	tmx15	DURATION	P4W	O	O	AJ0	I-NP	four-week	NN	t32:NMOD||t34:P||t36:APPO	O
+four-week	t33	2	four-week	O	O	O	tmx15	DURATION	P4W	O	O	AJ0	I-NP	four-week	NN	t32:NMOD||t34:P	O
 ,	t34	2	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
-phased	t35	2	phased	O	O	O	O	O	O	O	O	AJ0	B-NP	phase	VBD	O	O
+phased	t35	2	phased	O	O	O	O	O	O	O	O	AJ0	B-NP	phase	VBD	t33:SBJ	O
 closure	t36	2	closure	e5	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	closure	NN	t35:NMOD||t37:NMOD	O
 of	t37	2	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t41:PMOD	O
 the	t38	2	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 149	t39	2	149	O	O	O	O	O	O	O	O	CRD	I-NP	149	CD	O	O
 control	t40	2	control	O	O	O	O	O	O	O	O	NN1	I-NP	control	NN	t39:NMOD	O
 towers	t41	2	tower	O	O	O	O	O	O	O	O	NN2	I-NP	tower	NNS	t38:NMOD||t40:NMOD	O
-will	t42	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t33:SBJ||t43:VC	O
+will	t42	2	will	O	O	O	O	O	O	O	O	VM0	B-VP	will	MD	t36:SBJ||t43:VC	O
 begin	t43	2	begin	e6	ASPECTUAL	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	begin	VB	t44:TMP	O
 on	t44	2	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t46:PMOD	O
 April	t45	2	April	O	O	O	tmx2	DATE	2013-04-07	O	O	NP0	B-NP	april	NNP	O	O

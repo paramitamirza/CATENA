@@ -1,4 +1,4 @@
-DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NP0	B-NP	dct_2013-03-22	SYM	O	O
+DCT_2013-03-22	O	O	O	O	O	O	tmx0	DATE	2013-03-22	O	O	NP0	B-NP	dct_2013-03-22	LS	O	O
 
 Heavy	t1	1	heavy	O	O	O+O+O	O	O	O	O	O	NP0	B-NP	heavy	JJ	O	O
 snow	t2	1	snow	e1	OCCURRENCE	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	NN1	I-NP	snow	NN	t1:NMOD	O
@@ -14,8 +14,8 @@ UK	t10	1	UK	O	O	O	O	O	O	O	O	NP0	I-NP	uk	NNP	t9:NMOD	O
 with	t12	1	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t15:PMOD	O
 heavy	t13	1	heavy	O	O	O	O	O	O	O	O	AJ0	B-NP	heavy	JJ	O	O
 rainfall	t14	1	rainfall	e1000	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	NN1	I-NP	rainfall	NN	t13:NMOD	O
-bringing	t15	1	bring	e5	ASPECTUAL	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	bring	VBG	t14:SBJ||t16:ADV	O
-flooding	t16	1	flooding	e1001	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVG	I-VP	flood	VBG	t17:ADV	O
+bringing	t15	1	bring	e5	ASPECTUAL	PRESENT+PROGRESSIVE+POS	O	O	O	O	O	VVG	B-VP	bring	VBG	t14:NMOD||t16:OBJ||t17:ADV	O
+flooding	t16	1	flooding	e1001	OCCURRENCE	PRESENT+NONE+POS	O	O	O	O	O	VVG	I-VP	flood	NN	O	O
 to	t17	1	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t19:PMOD	O
 the	t18	1	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 south-west	t19	1	south-west	O	O	O	O	O	O	O	O	NN1	I-NP	south-west	JJS	t18:NMOD||t20:NMOD	O
@@ -48,11 +48,11 @@ a	t44	2	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
 body	t45	2	body	O	O	O	O	O	O	O	O	NN1	I-NP	body	NN	t44:NMOD	O
 .	t46	2	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
-Over	t47	3	over	O	O	O	O	O	O	O	O	AV0	B-NP	over	IN	t48:PMOD	O
-200,000	t48	3	200,000	O	O	O	O	O	O	O	O	CRD	I-NP	200,000	CD	O	O
+Over	t47	3	over	O	O	O	O	O	O	O	O	AV0	B-NP	over	IN	O	O
+200,000	t48	3	200,000	O	O	O	O	O	O	O	O	CRD	I-NP	200,000	CD	t47:DEP	O
 Belfast	t49	3	Belfast	O	O	O	O	O	O	O	O	NP0	I-NP	belfast	NNP	O	O
-customers	t50	3	customer	O	O	O	O	O	O	O	O	NN2	I-NP	customer	NNS	t49:NMOD	O
-were	t51	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t47:TMP||t50:SBJ||t52:VC||t56:COORD||t63:P	mainVb
+customers	t50	3	customer	O	O	O	O	O	O	O	O	NN2	I-NP	customer	NNS	t48:NMOD||t49:NMOD	O
+were	t51	3	be	O	O	O	O	O	O	O	O	VBD	B-VP	be	VBD	t50:SBJ||t52:VC||t56:COORD||t63:P	mainVb
 affected	t52	3	affect	e10	I_STATE	PAST+NONE+POS	O	O	O	O	O	VVN	I-VP	affect	VBN	t53:LGS	mainVb
 by	t53	3	by	O	O	O	O	O	O	O	O	PRP	B-PP	by	IN	t55:PMOD	O
 a	t54	3	a	O	O	O	O	O	O	O	O	AT0	B-NP	a	DT	O	O
@@ -76,11 +76,11 @@ with	t70	4	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t71:PMOD	O
 Russia	t71	4	Russia	O	O	O	O	O	O	O	O	NP0	B-NP	russia	NNP	O	O
 has	t72	4	have	O	O	O	O	O	O	O	O	VHZ	B-VP	have	VBZ	t69:SBJ||t73:VC||t83:P	mainVb
 been	t73	4	be	O	O	O	O	O	O	O	O	VBN	I-VP	be	VBN	t74:VC	mainVb
-postponed	t74	4	postpone	e13	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	postpone	VBN	t75:TMP	mainVb
-until	t75	4	until	O	O	O	O	O	O	O	O	PRP	B-PP	until	IN	t78:PMOD	O
+postponed	t74	4	postpone	e13	I_ACTION	PRESENT+PERFECTIVE+POS	O	O	O	O	O	VVN	I-VP	postpone	VBN	t75:TMP||t78:TMP||t79:PRP	mainVb
+until	t75	4	until	O	O	O	O	O	O	O	O	PRP	B-PP	until	IN	t77:PMOD	O
 15:00	t76	4	15:00	O	O	O	tmx1000	TIME	2013-03-23T15:00	O	O	CRD	B-NP	15:00	CD	O	O
-GMT	t77	4	GMT	O	O	O	tmx1000	TIME	2013-03-23T15:00	O	O	NP0	I-NP	gmt	NNP	O	O
-Saturday	t78	4	Saturday	O	O	O	tmx1000	TIME	2013-03-23T15:00	O	O	NP0	I-NP	saturday	NNP	t76:NMOD||t77:NAME||t79:NMOD	O
+GMT	t77	4	GMT	O	O	O	tmx1000	TIME	2013-03-23T15:00	O	O	NP0	I-NP	gmt	NNP	t76:NMOD	O
+Saturday	t78	4	Saturday	O	O	O	tmx1000	TIME	2013-03-23T15:00	O	O	NP0	I-NP	saturday	NNP	O	O
 due	t79	4	due	O	O	O	O	O	O	O	O	PRP	B-ADJP	due	JJ	t80:AMOD	O
 to	t80	4	to	O	O	O	O	O	O	O	O	PRP	B-PP	to	TO	t82:PMOD	O
 heavy	t81	4	heavy	O	O	O	O	O	O	O	O	AJ0	B-NP	heavy	JJ	O	O
@@ -88,10 +88,10 @@ snow	t82	4	snow	O	O	O	O	O	O	O	O	NN1	I-NP	snow	NN	t81:NMOD	O
 .	t83	4	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 There	t84	5	there	O	O	O	O	O	O	O	O	EX0	B-NP	there	EX	O	O
-are	t85	5	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t84:SBJ||t88:PRD||t105:P	mainVb
+are	t85	5	be	O	O	O	O	O	O	O	O	VBB	B-VP	be	VBP	t84:SBJ||t88:PRD||t93:P||t94:ADV||t105:P	mainVb
 12	t86	5	12	O	O	O	O	O	O	O	O	CRD	B-NP	12	CD	O	O
 flood	t87	5	flood	O	O	O	O	O	O	O	O	NN1	I-NP	flood	NN	O	O
-warnings	t88	5	warning	O	O	O	O	O	O	O	O	NN2	I-NP	warning	NNS	t86:NMOD||t87:NMOD||t89:LOC||t93:P||t94:NMOD	O
+warnings	t88	5	warning	O	O	O	O	O	O	O	O	NN2	I-NP	warning	NNS	t86:NMOD||t87:NMOD||t89:LOC	O
 in	t89	5	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t92:PMOD	O
 the	t90	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 South	t91	5	South	O	O	O	O	O	O	O	O	NN1	I-NP	south	NNP	O	O
@@ -100,11 +100,11 @@ West	t92	5	West	O	O	O	O	O	O	O	O	NN1	I-NP	west	NNP	t90:NMOD||t91:NAME	O
 with	t94	5	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t97:PMOD	O
 Met	t95	5	Met	O	O	O	O	O	O	O	O	AJ0	B-NP	met	NNP	O	O
 Office	t96	5	Office	O	O	O	O	O	O	O	O	NN1	I-NP	office	NNP	t95:NAME	O
-warnings	t97	5	warning	O	O	O	O	O	O	O	O	NN2	I-NP	warning	NNS	t96:NMOD||t98:NMOD	O
+warnings	t97	5	warning	O	O	O	O	O	O	O	O	NN2	I-NP	warning	NNS	t96:NMOD||t98:NMOD||t100:APPO	O
 for	t98	5	for	O	O	O	O	O	O	O	O	PRP	B-PP	for	IN	t99:PMOD	O
-snow	t99	5	snow	O	O	O	O	O	O	O	O	NN1	B-NP	snow	NN	t100:APPO	O
+snow	t99	5	snow	O	O	O	O	O	O	O	O	NN1	B-NP	snow	NN	O	O
 covering	t100	5	cover	e30	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	cover	VBG	t101:OBJ	O
-much	t101	5	much	O	O	O	O	O	O	O	O	DT0	B-NP	much	NN	t102:NMOD	O
+much	t101	5	much	O	O	O	O	O	O	O	O	DT0	B-NP	much	JJ	t102:NMOD	O
 of	t102	5	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t104:PMOD	O
 the	t103	5	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 UK	t104	5	UK	O	O	O	O	O	O	O	O	NP0	I-NP	uk	NNP	t103:NMOD	O
@@ -126,17 +126,17 @@ Time	t118	6	time	e31	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	time	NNP	t116:N
 .	t119	6	.	O	O	O	O	O	O	O	O	PUN	O	.	.	O	O
 
 BBC	t120	7	BBC	O	O	O	O	O	O	O	O	NP0	B-NP	bbc	NNP	O	O
-forecasters	t121	7	forecaster	O	O	O	O	O	O	O	O	NN2	I-NP	forecaster	NNS	t120:NAME	O
-said	t122	7	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t121:SBJ||t125:OBJ||t147:P	mainVb
+forecasters	t121	7	forecaster	O	O	O	O	O	O	O	O	NN2	I-NP	forecaster	NNS	t120:NMOD	O
+said	t122	7	say	e16	REPORTING	PAST+NONE+POS	O	O	O	O	O	VVD	B-VP	say	VBD	t121:SBJ||t125:OBJ||t137:P||t138:ADV||t147:P	mainVb
 the	t123	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 snow	t124	7	snow	O	O	O	O	O	O	O	O	NN1	I-NP	snow	NN	t123:NMOD	O
 would	t125	7	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t124:SBJ||t126:VC	O
-cause	t126	7	cause	e17	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	cause	VB	t128:OBJ||t129:LOC||t137:P||t138:ADV	O
+cause	t126	7	cause	e17	OCCURRENCE	FUTURE+NONE+POS	O	O	O	O	O	VVI	I-VP	cause	VB	t128:OBJ||t135:TMP	O
 travel	t127	7	travel	O	O	O	O	O	O	O	O	NN1	B-NP	travel	NN	O	O
-disruption	t128	7	disruption	e19	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	disruption	NN	t127:NMOD	O
+disruption	t128	7	disruption	e19	OCCURRENCE	NONE+NONE+POS	O	O	O	O	O	NN1	I-NP	disruption	NN	t127:NMOD||t129:LOC	O
 across	t129	7	across	O	O	O	O	O	O	O	O	PRP	B-PP	across	IN	t131:PMOD	O
 northern	t130	7	northern	O	O	O	O	O	O	O	O	AJ0	B-NP	northern	JJ	O	O
-parts	t131	7	part	O	O	O	O	O	O	O	O	NN2	I-NP	parts	NNS	t130:NMOD||t132:NMOD||t135:TMP	O
+parts	t131	7	part	O	O	O	O	O	O	O	O	NN2	I-NP	parts	NNS	t130:NMOD||t132:NMOD	O
 of	t132	7	of	O	O	O	O	O	O	O	O	PRF	B-PP	of	IN	t134:PMOD	O
 the	t133	7	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
 UK	t134	7	UK	O	O	O	O	O	O	O	O	NP0	I-NP	uk	NNP	t133:NMOD	O
@@ -144,11 +144,11 @@ on	t135	7	on	O	O	O	O	O	O	O	O	PRP	B-PP	on	IN	t136:PMOD	O
 Friday	t136	7	Friday	O	O	O	tmx2	DATE	2013-03-22	O	O	NP0	B-NP	friday	NNP	O	O
 ,	t137	7	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 with	t138	7	with	O	O	O	O	O	O	O	O	PRP	B-PP	with	IN	t144:PMOD	O
-some	t139	7	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	t140:DEP	O
+some	t139	7	some	O	O	O	O	O	O	O	O	DT0	B-NP	some	DT	O	O
 20cm-40cm	t140	7	20cm-40cm	O	O	O	O	O	O	O	O	NP0	I-NP	20cm-40cm	CD	O	O
--LRB-	t141	7	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	NNP	O	O
-8in-16in	t142	7	8in-16in	O	O	O	O	O	O	O	O	NP0	I-NP	8in-16in	NNP	O	O
--RRB-	t143	7	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NNP	t139:NMOD||t141:NAME||t142:NAME	O
+-LRB-	t141	7	-lrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-lrb-	NN	t140:NMOD	O
+8in-16in	t142	7	8in-16in	O	O	O	O	O	O	O	O	NP0	I-NP	8in-16in	NN	O	O
+-RRB-	t143	7	-rrb-	O	O	O	O	O	O	O	O	NP0	I-NP	-rrb-	NN	t139:NMOD||t141:NMOD||t142:NMOD	O
 falling	t144	7	fall	e20	OCCURRENCE	PRESPART+NONE+POS	O	O	O	O	O	VVG	B-VP	fall	VBG	t143:SBJ||t145:LOC	O
 in	t145	7	in	O	O	O	O	O	O	O	O	PRP	B-PP	in	IN	t146:PMOD	O
 places	t146	7	place	O	O	O	O	O	O	O	O	NN2	B-NP	place	NNS	O	O
@@ -188,7 +188,7 @@ Ireland	t177	9	Ireland	O	O	O	O	O	O	O	O	NP0	I-NP	ireland	NNP	t176:NAME	O
 would	t178	9	would	O	O	O	O	O	O	O	O	VM0	B-VP	would	MD	t160:SBJ||t179:VC	O
 be	t179	9	be	e23	STATE	FUTURE+NONE+POS	O	O	O	O	O	VBI	I-VP	be	VB	t181:PRD||t183:P||t184:ADV	O
 the	t180	9	the	O	O	O	O	O	O	O	O	AT0	B-NP	the	DT	O	O
-worst	t181	9	worst	O	O	O	O	O	O	O	O	AJS	I-NP	worst	JJS	t180:NMOD||t182:APPO	O
+worst	t181	9	worst	O	O	O	O	O	O	O	O	AJS	I-NP	worst	NN	t180:NMOD||t182:APPO	O
 affected	t182	9	affect	e1002	I_STATE	PASTPART+NONE+POS	O	O	O	O	O	VVN	I-NP	affect	VBN	O	O
 ,	t183	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 while	t184	9	while	O	O	O	O	O	O	O	O	CJS	B-SBAR	while	IN	t188:SUB	O
@@ -201,7 +201,7 @@ snow	t190	9	snow	O	O	O	O	O	O	O	O	NN1	B-NP	snow	NN	t191:COORD	O
 and	t191	9	and	O	O	O	O	O	O	O	O	CJC	O	and	CC	t192:CONJ	O
 drifts	t192	9	drift	O	O	O	O	O	O	O	O	VVZ	B-VP	drift	NNS	O	O
 across	t193	9	across	O	O	O	O	O	O	O	O	PRP	B-PP	across	IN	t195:PMOD	O
-trans-Pennine	t194	9	trans-pennine	O	O	O	O	O	O	O	O	AJ0	B-NP	trans-pennine	NN	O	O
+trans-Pennine	t194	9	trans-pennine	O	O	O	O	O	O	O	O	AJ0	B-NP	trans-pennine	JJ	O	O
 routes	t195	9	route	O	O	O	O	O	O	O	O	NN2	I-NP	route	NNS	t194:NMOD	O
 ,	t196	9	,	O	O	O	O	O	O	O	O	PUN	O	,	,	O	O
 they	t197	9	they	O	O	O	O	O	O	O	O	PNP	B-NP	they	PRP	O	O
