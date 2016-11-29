@@ -57,7 +57,7 @@ public class Temporal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		String task = "te3-c";
+		String task = "tbdense";
 		
 		switch(task) {
 			case "te3-c-rel" :
