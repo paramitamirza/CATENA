@@ -3489,11 +3489,7 @@ public class PairFeatureVector {
 	}
 	
 	public String toString() {
-		String res = "";
-		for (int i=0; i<getVectors().size()-1; i++) {
-			res += getVectors().get(i) + ",";
-		}
-		return res.substring(0, res.length()-1);
+		return StringUtils.join(getVectors(), ",");
 	}
 	
 	public String toCSVString() {

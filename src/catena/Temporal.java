@@ -2,8 +2,10 @@ package catena;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -154,7 +156,7 @@ public class Temporal {
 		relTypeMapping.put("ENDED_BY", "BEFORE");
 		relTypeMapping.put("DURING", "SIMULTANEOUS");
 		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
-		tlinks = temp.extractRelations("./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -197,7 +199,7 @@ public class Temporal {
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -241,7 +243,7 @@ public class Temporal {
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations("./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
 		
 		// EVALUATE
 		ptt = new PairEvaluator(tlinks.getTT());
@@ -369,7 +371,7 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public Links extractRelations(String tmlDirpath, String[] labels,
+	public Links extractRelations(String taskName, String tmlDirpath, String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
 		Links results = new Links();
 		List<String> tt = new ArrayList<String>();
@@ -384,7 +386,7 @@ public class Temporal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				Links links = extractRelations(tmlFile, labels, relTypeMapping);
+				Links links = extractRelations(taskName, tmlFile, labels, relTypeMapping);
 				tt.addAll(links.getTT());
 				ed.addAll(links.getED());
 				et.addAll(links.getET());
@@ -400,7 +402,7 @@ public class Temporal {
 		return results;
 	}
 	
-	public Links extractRelations(File tmlFile, String[] labels, 
+	public Links extractRelations(String taskName, File tmlFile, String[] labels, 
 			Map<String, String> relTypeMapping) throws Exception {
 		
 		// Init the parsers...
@@ -444,9 +446,9 @@ public class Temporal {
 		if (isClassifierSieve()) {
 			
 			// Init the classifier...
-			EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");
-			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
-			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier("te3", "liblinear");	
+			EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");	
 			
 			//Init the feature vectors...	
 			Map<String, String> ttlinks = null, etlinks = null;
@@ -589,8 +591,8 @@ public class Temporal {
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
 		
 		if (taskName.equals("tbdense")) {	//TimeBank-Dense --- Logistic Regression!
-			edCls = new EventDctTemporalClassifier(taskName, "liblinear");
-			etCls = new EventTimexTemporalClassifier(taskName, "none");
+			edCls = new EventDctTemporalClassifier(taskName, "logit");
+			etCls = new EventTimexTemporalClassifier(taskName, "logit");
 			eeCls = new EventEventTemporalClassifier(taskName, "logit");
 		} 
 		
@@ -626,16 +628,21 @@ public class Temporal {
 			}
 		}
 		
-		for (PairFeatureVector pfv : etFvList) {
-			System.out.println(pfv.toString());
-		}
-		
 		edCls.train(edFvList, getEDModelPath());
 		etCls.train(etFvList, getETModelPath());
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public Links extractRelations(String tmlDirpath, String[] tmlFileNames,
+	public Links extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels) throws Exception {
+		return extractRelations(taskName, tmlDirpath, tmlFileNames,
+				tlinkPerFile,
+				labels,
+				new HashMap<String, String>());
+	}
+	
+	public Links extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
@@ -655,7 +662,7 @@ public class Temporal {
 				
 				// PREDICT
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				Links links = extractRelations(tmlFile, tlinks, labels, relTypeMapping);
+				Links links = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping);
 				tt.addAll(links.getTT());
 				ed.addAll(links.getED());
 				et.addAll(links.getET());
@@ -671,7 +678,7 @@ public class Temporal {
 		return results;
 	}	
 	
-	public Links extractRelations(File tmlFile, Map<String, String> tlinks, 
+	public Links extractRelations(String taskName, File tmlFile, Map<String, String> tlinks, 
 			String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
 		
@@ -716,9 +723,15 @@ public class Temporal {
 		if (isClassifierSieve()) {
 			
 			// Init the classifier...
-			EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");
-			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
-			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier("te3", "liblinear");	
+			EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+			EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+			EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
+			
+			if (taskName.equals("tbdense")) {	//TimeBank-Dense --- Logistic Regression!
+				edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+				etCls = new EventTimexTemporalClassifier(taskName, "logit");
+				eeCls = new EventEventTemporalClassifier(taskName, "logit");
+			} 
 			
 			//Init the feature vectors...	
 			Map<String, String> ttlinks = null, etlinks = null;
