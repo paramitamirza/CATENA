@@ -10,7 +10,10 @@ import java.util.Map;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
+import catena.model.feature.Marker;
+import catena.parser.entities.CausalRelation;
 import catena.parser.entities.Doc;
+import catena.model.CandidateLinks;
 import catena.model.classifier.PairClassifier;
 import catena.model.classifier.PairClassifier.VectorClassifier;
 import catena.model.feature.CausalSignalList;
@@ -107,112 +110,98 @@ public class EventEventCausalClassifier extends PairClassifier {
 		}
 	}
 	
-	public List<PairFeatureVector> getEventEventClinksPerFile(TXPParser txpParser, 
-			File txpFile, TimeMLParser tmlParser, File tmlFile, PairClassifier eeRelCls,
-			boolean train, Map<String, String> tlinks) throws Exception {
+	public static List<PairFeatureVector> getEventEventClinksPerFile(Doc doc, PairClassifier eeRelCls,
+			boolean train, List<String> labelList) throws Exception {
+		return getEventEventClinksPerFile(doc, eeRelCls,
+				train, labelList, 
+				new HashMap<String, String>(),
+				null,
+				null);
+	}
+	
+	public static List<PairFeatureVector> getEventEventClinksPerFile(Doc doc, PairClassifier eeRelCls,
+			boolean train, List<String> labelList, 
+			Map<String, String> relTypeMapping,
+			Map<String, String> tlinks,
+			List<String> tlinkLabels) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
-		
-		Doc docTxp = txpParser.parseDocument(txpFile.getPath());
-		Doc docTml = tmlParser.parseDocument(tmlFile.getPath());
-		
-		Map<String,String> candidates = getCandidatePairs(docTxp);
-		
-		if (train) {
-			tlinks = new HashMap<String, String>();
-			for (TemporalRelation tlink : docTml.getTlinks()) {
-				tlinks.put(tlink.getSourceID()+"-"+tlink.getTargetID(), tlink.getRelType());
-				tlinks.put(tlink.getTargetID()+"-"+tlink.getSourceID(), TemporalRelation.getInverseRelation(tlink.getRelType()));
-			}
-		}
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
 		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
-		
-		String[] tlinksArr = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		List<String> tlinkTypes = Arrays.asList(tlinksArr);
-		
-//		System.err.println(docTxp.getFilename());
 	    
-		for (String clink : candidates.keySet()) {	//for every CLINK in TXP file: candidate pairs
-			Entity e1 = docTxp.getEntities().get(clink.split("-")[0]);
-			Entity e2 = docTxp.getEntities().get(clink.split("-")[1]);
+		List<CausalRelation> candidateClinks = doc.getCandidateClinks();	//candidate pairs
+		
+		for (CausalRelation clink : candidateClinks) {
 			
-			PairFeatureVector fv = new PairFeatureVector(docTxp, e1, e2, candidates.get(clink), tsignalList, csignalList);	
-			EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-			
-			String rule = EventEventTemporalRule.getEventCausalityRule(eefv);
-			if (!rule.equals("O") && !rule.equals("NONE")) {
-				if (rule.contains("-R")) eefv.setPredLabel("CLINK-R");
-				else eefv.setPredLabel("CLINK");
-				if (!train) fvList.add(eefv);
-				
-			} else if (rule.equals("O") 
-					|| rule.equals("NONE")
+			if (!clink.getSourceID().equals(clink.getTargetID())
+					&& doc.getEntities().containsKey(clink.getSourceID())
+					&& doc.getEntities().containsKey(clink.getTargetID())
 					) {
-			
-				if (eeRelCls.classifier.equals(VectorClassifier.yamcha)) {
-					eefv.addToVector(FeatureName.id);
-				}
 				
-				//Add features to feature vector
-				for (FeatureName f : eeRelCls.featureList) {
-					if (eeRelCls.classifier.equals(VectorClassifier.libsvm) ||
-							eeRelCls.classifier.equals(VectorClassifier.liblinear) ||
-							eeRelCls.classifier.equals(VectorClassifier.weka)) {
-						eefv.addBinaryFeatureToVector(f);
-					} else if (eeRelCls.classifier.equals(VectorClassifier.yamcha) ||
-							eeRelCls.classifier.equals(VectorClassifier.none)) {
-						eefv.addToVector(f);
+				Entity e1 = doc.getEntities().get(clink.getSourceID());
+				Entity e2 = doc.getEntities().get(clink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, 
+						CandidateLinks.getClinkType(e1.getID(), e2.getID(), doc), tsignalList, csignalList);
+				
+				if (fv.getPairType().equals(PairType.event_event)) {
+					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+					
+					//Add features to feature vector
+					for (FeatureName f : eeRelCls.featureList) {
+						if (eeRelCls.classifier.equals(VectorClassifier.liblinear) ||
+								eeRelCls.classifier.equals(VectorClassifier.logit)) {								
+							eefv.addBinaryFeatureToVector(f);
+							
+						} else if (eeRelCls.classifier.equals(VectorClassifier.none)) {								
+							eefv.addToVector(f);
+						}
+					}
+					
+					//Add TLINK type feature to feature vector
+					if (tlinks != null) {
+						String tlinkType = "O";
+						if (tlinks.containsKey(eefv.getE1().getID() + "," + eefv.getE2().getID())) 
+							tlinkType = tlinks.get(eefv.getE1().getID() + "," + eefv.getE2().getID());
+						
+						if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
+								eeRelCls.classifier.equals(VectorClassifier.logit)) {
+							eefv.addBinaryFeatureToVector("tlink", tlinkType, tlinkLabels);
+						} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
+							eefv.addToVector("tlink", tlinkType);
+						}
+					}
+					
+					String label = eefv.getLabel();
+					if (relTypeMapping.containsKey(label)) label = relTypeMapping.get(label);
+					if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
+							eeRelCls.classifier.equals(VectorClassifier.logit)) {
+						eefv.addToVector("label", String.valueOf(labelList.indexOf(label)+1));
+						
+					} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
+						eefv.addToVector("label", label);
+					}
+					
+					String depEvPathStr = eefv.getMateDependencyPath();
+					Marker m = fv.getCausalSignal();
+					if ((!m.getDepRelE1().equals("O") || !m.getDepRelE2().equals("O"))
+							&& (!depEvPathStr.equals("SBJ")
+									&& !depEvPathStr.equals("OBJ")
+									&& !depEvPathStr.equals("COORD-CONJ")
+									&& !depEvPathStr.equals("LOC-PMOD")
+									&& !depEvPathStr.equals("VC")
+									&& !depEvPathStr.equals("OPRD")
+									&& !depEvPathStr.equals("OPRD-IM")
+									)
+							&& (eefv.getEntityDistance() < 5
+//									&& eefv.getEntityDistance() >= 0
+									)
+							) {
+					
+						fvList.add(eefv);
 					}
 				}
-				
-				String tlinkType = "NONE";
-				if (tlinks.containsKey(e1.getID()+"-"+e2.getID())) {
-					tlinkType = tlinks.get(e1.getID()+"-"+e2.getID());
-				} 	
-				if (eeRelCls.classifier.equals(VectorClassifier.libsvm) ||
-						eeRelCls.classifier.equals(VectorClassifier.liblinear) ||
-						eeRelCls.classifier.equals(VectorClassifier.weka)) {
-					eefv.addBinaryFeatureToVector("tlink", tlinkType, tlinkTypes);
-				} else if (eeRelCls.classifier.equals(VectorClassifier.yamcha) ||
-						eeRelCls.classifier.equals(VectorClassifier.none)) {
-					eefv.addToVector("tlink", tlinkType);
-				}
-				
-				if (eeRelCls.classifier.equals(VectorClassifier.libsvm) || 
-						eeRelCls.classifier.equals(VectorClassifier.liblinear)) {
-					eefv.addBinaryFeatureToVector(FeatureName.labelCaus);
-				} else if (eeRelCls.classifier.equals(VectorClassifier.yamcha) ||
-						eeRelCls.classifier.equals(VectorClassifier.weka) ||
-						eeRelCls.classifier.equals(VectorClassifier.none)){
-					eefv.addToVector(FeatureName.labelCaus);
-				}
-				
-				if (!eefv.getLabel().equals("NONE"))// && !e1.getID().contains("ec") && !e2.getID().contains("ec"))
-					System.err.println(docTxp.getFilename() + "\t" + e1.getID() + "\t" + e2.getID() + "\t" + eefv.getLabel());
-				
-				String depEvPathStr = eefv.getMateDependencyPath();
-				Marker m = fv.getCausalSignal();
-				if ((!m.getDepRelE1().equals("O") || !m.getDepRelE2().equals("O"))
-						&& (!depEvPathStr.equals("SBJ")
-								&& !depEvPathStr.equals("OBJ")
-								&& !depEvPathStr.equals("COORD-CONJ")
-								&& !depEvPathStr.equals("LOC-PMOD")
-								&& !depEvPathStr.equals("VC")
-								&& !depEvPathStr.equals("OPRD")
-								&& !depEvPathStr.equals("OPRD-IM")
-								)
-						&& (eefv.getEntityDistance() < 5
-//								&& eefv.getEntityDistance() >= 0
-								)
-						) {
-				
-					fvList.add(eefv);
-				}
 			}
-		}
-		
+		}		
 		return fvList;
 	}
 	

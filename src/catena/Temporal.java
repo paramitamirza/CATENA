@@ -30,7 +30,7 @@ import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.FeatureEnum.PairType;
-import catena.parser.entities.Links;
+import catena.parser.entities.TLINK;
 import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.TimeMLDoc;
 import catena.parser.entities.Timex;
@@ -49,6 +49,8 @@ public class Temporal {
 	private String etModelPath;
 	private String eeModelPath;
 	
+	private String[] relTypes;
+	
 	public Temporal() {
 		
 	}
@@ -58,7 +60,6 @@ public class Temporal {
 		String task = "te3-c";
 		
 		switch(task) {
-		
 			case "te3-c-rel" :
 				TempEval3TaskCRelOnly();
 				break;
@@ -70,20 +71,17 @@ public class Temporal {
 			case "tbdense" :
 				TimeBankDense();
 				break;
-		
-		
 		}
-		
 	}
 	
 	public static void TimeBankDense() throws Exception {
 		String[] devDocs = { 
-				"APW19980227.0487.tml", 
-				"CNN19980223.1130.0960.tml", 
-				"NYT19980212.0019.tml",  
-				"PRI19980216.2000.0170.tml", 
-				"ed980111.1130.0089.tml" 
-			};
+			"APW19980227.0487.tml", 
+			"CNN19980223.1130.0960.tml", 
+			"NYT19980212.0019.tml",  
+			"PRI19980216.2000.0170.tml", 
+			"ed980111.1130.0089.tml" 
+		};
 			
 		String[] testDocs = { 
 			"APW19980227.0489.tml",
@@ -127,19 +125,19 @@ public class Temporal {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		Map<String, String> relTypeMapping;
-		Links tlinks;
+		TLINK tlinks;
 		
 		// TimeBank-Dense
 		String[] tbDenseLabel = {"BEFORE", "AFTER", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "VAGUE"};
 		String taskName = "tbdense";
 		
-		temp = new Temporal(true, 
+		temp = new Temporal(true, tbDenseLabel,
 				"./models/" + taskName + "-event-dct.model",
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
 				true, true, true,
-				true, true);
+				true, false);
 		
 		// TRAIN
 		temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel);
@@ -169,7 +167,7 @@ public class Temporal {
 	public static void TempEval3TaskC() throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
-		Links tlinks;
+		TLINK tlinks;
 		
 		// TempEval3 task C
 		String[] te3CLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
@@ -178,20 +176,20 @@ public class Temporal {
 				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 		String taskName = "te3";
 		
-		temp = new Temporal(false, 
+		temp = new Temporal(false, te3CLabelCollapsed,
 				"./models/" + taskName + "-event-dct.model",
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
 				true, true, true,
-				true, true);
+				true, false);
 		
 		// TRAIN
-//		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-//		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-//		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-//		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-//		relTypeMappingTrain.put("IAFTER", "AFTER");
-//		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
 		
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
@@ -213,7 +211,7 @@ public class Temporal {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		Map<String, String> relTypeMapping;
-		Links tlinks;
+		TLINK tlinks;
 		
 		// TempEval3 task C (relation only)
 		String[] te3CRelLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
@@ -222,12 +220,12 @@ public class Temporal {
 				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 		String taskName = "te3";
 		
-		temp = new Temporal(true, 
+		temp = new Temporal(true, te3CLabelCollapsed,
 				"./models/" + taskName + "-event-dct.model",
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
 				true, true, true,
-				true, true);
+				true, false);
 		
 		// TRAIN
 		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
@@ -253,70 +251,9 @@ public class Temporal {
 		pee.evaluatePerLabel(te3CRelLabel);
 	}
 	
-	public Temporal(String edModelPath, String etModelPath, String eeModelPath) {
-		
-		this.setEDModelPath(edModelPath);
-		this.setETModelPath(etModelPath);
-		this.setEEModelPath(eeModelPath);
-		
-		this.setGoldCandidate(true);
-		this.setRuleSieve(true);
-		this.setClassifierSieve(true);
-		this.setReasoner(true);
-		
-		this.setTTFeature(true);
-		this.setETFeature(true);		
-	}
-	
-	public Temporal(boolean goldCandidate,
-			String edModelPath, String etModelPath, String eeModelPath) {
-		
-		this.setEDModelPath(edModelPath);
-		this.setETModelPath(etModelPath);
-		this.setEEModelPath(eeModelPath);
-		
-		this.setGoldCandidate(goldCandidate);
-		this.setRuleSieve(true);
-		this.setClassifierSieve(true);
-		this.setReasoner(true);
-		
-		this.setTTFeature(true);
-		this.setETFeature(true);
-	}
-	
-	public Temporal(boolean goldCandidate,
-			String edModelPath, String etModelPath, String eeModelPath,
-			boolean ruleSieve, boolean classifierSieve, boolean reasoner) {
-		
-		this.setEDModelPath(edModelPath);
-		this.setETModelPath(etModelPath);
-		this.setEEModelPath(eeModelPath);
-		
-		this.setGoldCandidate(goldCandidate);
-		this.setRuleSieve(ruleSieve);
-		this.setClassifierSieve(classifierSieve);
-		this.setReasoner(reasoner);
-		
-		this.setTTFeature(true);
-		this.setETFeature(true);
-	}
-	
-	public Temporal(boolean goldCandidate,
-			String edModelPath, String etModelPath, String eeModelPath,
-			boolean ruleSieve, boolean classifierSieve, boolean reasoner,
-			boolean ttFeature, boolean etFeature) {
-		
-		this.setEDModelPath(edModelPath);
-		this.setETModelPath(etModelPath);
-		this.setEEModelPath(eeModelPath);
-		
-		this.setGoldCandidate(goldCandidate);
-		this.setRuleSieve(ruleSieve);
-		this.setClassifierSieve(classifierSieve);
-		this.setReasoner(reasoner);
-		
-		this.setTTFeature(ttFeature);
-		this.setETFeature(etFeature);
+	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
+		trainModels(taskName, tmlDirpath, labels, 
+				new HashMap<String, String>());
 	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels,
@@ -369,14 +306,14 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public Links extractRelations(String taskName, String tmlDirpath, String[] labels) throws Exception {
+	public TLINK extractRelations(String taskName, String tmlDirpath, String[] labels) throws Exception {
 		return extractRelations(taskName, tmlDirpath, labels,
 				new HashMap<String, String>());
 	}
 	
-	public Links extractRelations(String taskName, String tmlDirpath, String[] labels,
+	public TLINK extractRelations(String taskName, String tmlDirpath, String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
-		Links results = new Links();
+		TLINK results = new TLINK();
 		List<String> tt = new ArrayList<String>();
 		List<String> ed = new ArrayList<String>();
 		List<String> et = new ArrayList<String>();
@@ -389,7 +326,7 @@ public class Temporal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				Links links = extractRelations(taskName, tmlFile, labels, relTypeMapping);
+				TLINK links = extractRelations(taskName, tmlFile, labels, relTypeMapping);
 				tt.addAll(links.getTT());
 				ed.addAll(links.getED());
 				et.addAll(links.getET());
@@ -405,7 +342,7 @@ public class Temporal {
 		return results;
 	}
 	
-	public Links extractRelations(String taskName, File tmlFile, String[] labels, 
+	public TLINK extractRelations(String taskName, File tmlFile, String[] labels, 
 			Map<String, String> relTypeMapping) throws Exception {
 		
 		// Init the parsers...
@@ -514,13 +451,13 @@ public class Temporal {
 		}
 		
 		// Temporal links to string
-		Links links = relationToString(doc, docSieved, relTypeMapping);
+		TLINK links = relationToString(doc, docSieved, relTypeMapping);
 		
 		return links;
 	}
 	
-	public Links relationToString(Doc gold, Doc system, Map<String, String> relTypeMapping) {
-		Links links = new Links();
+	public TLINK relationToString(Doc gold, Doc system, Map<String, String> relTypeMapping) {
+		TLINK links = new TLINK();
 		Set<String> extracted = new HashSet<String>();
 		
 		for (TemporalRelation tlink : system.getTlinks()) {
@@ -642,7 +579,7 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public Links extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
+	public TLINK extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels) throws Exception {
 		return extractRelations(taskName, tmlDirpath, tmlFileNames,
@@ -651,11 +588,11 @@ public class Temporal {
 				new HashMap<String, String>());
 	}
 	
-	public Links extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
+	public TLINK extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
-		Links results = new Links();
+		TLINK results = new TLINK();
 		List<String> tt = new ArrayList<String>();
 		List<String> ed = new ArrayList<String>();
 		List<String> et = new ArrayList<String>();
@@ -671,7 +608,7 @@ public class Temporal {
 				
 				// PREDICT
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				Links links = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping);
+				TLINK links = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping);
 				tt.addAll(links.getTT());
 				ed.addAll(links.getED());
 				et.addAll(links.getET());
@@ -687,7 +624,7 @@ public class Temporal {
 		return results;
 	}	
 	
-	public Links extractRelations(String taskName, File tmlFile, Map<String, String> tlinks, 
+	public TLINK extractRelations(String taskName, File tmlFile, Map<String, String> tlinks, 
 			String[] labels,
 			Map<String, String> relTypeMapping) throws Exception {
 		
@@ -812,7 +749,7 @@ public class Temporal {
 		}
 		
 		// Temporal links to string
-		Links links = relationToString(doc, docSieved, relTypeMapping);
+		TLINK links = relationToString(doc, docSieved, relTypeMapping);
 		
 		return links;
 	}
@@ -852,6 +789,52 @@ public class Temporal {
 		return tlinkPerFile;
 	}
 
+	public Temporal(String[] relTypes, String edModelPath, String etModelPath, String eeModelPath) {
+		
+		this.setRelTypes(relTypes);
+		
+		this.setEDModelPath(edModelPath);
+		this.setETModelPath(etModelPath);
+		this.setEEModelPath(eeModelPath);
+		
+		this.setRuleSieve(true);
+		this.setClassifierSieve(true);
+		this.setReasoner(true);
+		
+		this.setTTFeature(true);
+		this.setETFeature(false);	
+		
+		this.setGoldCandidate(true);
+	}
+	
+	public Temporal(boolean goldCandidate, String[] relTypes, 
+			String edModelPath, String etModelPath, String eeModelPath) {
+		
+		this(relTypes, edModelPath, etModelPath, eeModelPath);
+		this.setGoldCandidate(goldCandidate);
+	}
+	
+	public Temporal(boolean goldCandidate, String[] relTypes, 
+			String edModelPath, String etModelPath, String eeModelPath,
+			boolean ruleSieve, boolean classifierSieve, boolean reasoner) {
+		
+		this(goldCandidate, relTypes, edModelPath, etModelPath, eeModelPath);
+		this.setRuleSieve(ruleSieve);
+		this.setClassifierSieve(classifierSieve);
+		this.setReasoner(reasoner);
+	}
+	
+	public Temporal(boolean goldCandidate, String[] relTypes, 
+			String edModelPath, String etModelPath, String eeModelPath,
+			boolean ruleSieve, boolean classifierSieve, boolean reasoner,
+			boolean ttFeature, boolean etFeature) {
+		
+		this(goldCandidate, relTypes, edModelPath, etModelPath, eeModelPath,
+				ruleSieve, classifierSieve, reasoner);
+		this.setTTFeature(ttFeature);
+		this.setETFeature(etFeature);
+	}
+	
 	public boolean isGoldCandidate() {
 		return goldCandidate;
 	}
@@ -922,5 +905,13 @@ public class Temporal {
 
 	public void setEEModelPath(String eeModelPath) {
 		this.eeModelPath = eeModelPath;
+	}
+
+	public String[] getRelTypes() {
+		return relTypes;
+	}
+
+	public void setRelTypes(String[] relTypes) {
+		this.relTypes = relTypes;
 	}
 }

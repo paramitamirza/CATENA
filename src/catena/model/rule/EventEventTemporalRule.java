@@ -52,11 +52,6 @@ public class EventEventTemporalRule {
 		if (!eventRule.equals("O")) {
 			this.setRelType(eventRule);
 		}
-		
-		if (!identityRel && this.getRelType().equals("IDENTITY")) {
-			this.setRelType("SIMULTANEOUS");
-		}
-		/***** TempEval3 *****/
 		if (this.getRelType().equals("DURING") || this.getRelType().equals("DURING_INV")) {
 			this.setRelType("SIMULTANEOUS");
 		}
@@ -103,8 +98,7 @@ public class EventEventTemporalRule {
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
 					&& doc.getEntities().containsKey(tlink.getSourceID())
 					&& doc.getEntities().containsKey(tlink.getTargetID())
-					&& !tlink.getRelType().equals("NONE")
-					) {	//classifying the relation task
+					) {
 				
 				Entity e1 = doc.getEntities().get(tlink.getSourceID());
 				Entity e2 = doc.getEntities().get(tlink.getTargetID());

@@ -60,8 +60,7 @@ public class TimexTimexTemporalRule {
 			if (!tlink.getSourceID().equals(tlink.getTargetID())
 					&& doc.getEntities().containsKey(tlink.getSourceID())
 					&& doc.getEntities().containsKey(tlink.getTargetID())
-					&& !tlink.getRelType().equals("NONE")
-					) {	//classifying the relation task
+					) {
 				
 				Entity e1 = doc.getEntities().get(tlink.getSourceID());
 				Entity e2 = doc.getEntities().get(tlink.getTargetID());

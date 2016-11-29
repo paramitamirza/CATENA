@@ -3,14 +3,14 @@ package catena.parser.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Links {
+public class TLINK {
 	
 	private List<String> tt;
 	private List<String> ed;
 	private List<String> et;
 	private List<String> ee;
 	
-	public Links() {
+	public TLINK() {
 		setTT(new ArrayList<String>());
 		setED(new ArrayList<String>());
 		setET(new ArrayList<String>());

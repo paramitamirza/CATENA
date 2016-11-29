@@ -109,9 +109,9 @@ public class CandidateLinks {
 		}
 	}
 	
-	private static String getClinkType(String sourceId, String targetId, Doc doc) {
+	public static String getClinkType(String sourceId, String targetId, Doc doc) {
 		if (doc.getClinkTypes().containsKey(sourceId + "," + targetId)) {
-			return doc.getTlinkTypes().get(sourceId + "," + targetId);
+			return doc.getClinkTypes().get(sourceId + "," + targetId);
 		} 
 		return "NONE";
 	}
@@ -137,19 +137,9 @@ public class CandidateLinks {
 								CausalRelation cl = new CausalRelation(e1.getID(), e2.getID());
 								cl.setSourceType("Event"); cl.setTargetType("Event");
 								clinkArr.add(cl);
-								
-								
-								
-								pair = e1.getID() + "-" + e2.getID();
-								if (clinks.containsKey(pair)) {
-									candidates.put(pair, clinks.get(pair));
-								} else {
-									candidates.put(pair, "NONE");
-								}
 							}
 						}
 					}
-				
 //				}
 				
 				//candidate pairs in consecutive sentences
@@ -161,13 +151,9 @@ public class CandidateLinks {
 							for (int j = 0; j < s2.getEntityArr().size(); j++) {
 								e2 = doc.getEntities().get(s2.getEntityArr().get(j));
 								if (e1 instanceof Event && e2 instanceof Event) {
-									pair = e1.getID() + "-" + e2.getID();
-									if (clinks.containsKey(pair)) {
-										numClink ++;
-										candidates.put(pair, clinks.get(pair));
-									} else {
-										candidates.put(pair, "NONE");
-									}
+									CausalRelation cl = new CausalRelation(e1.getID(), e2.getID());
+									cl.setSourceType("Event"); cl.setTargetType("Event");
+									clinkArr.add(cl);
 								}
 							}
 //						}

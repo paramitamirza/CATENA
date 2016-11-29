@@ -1,27 +1,78 @@
 package catena.model.rule;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
-
+import catena.model.CandidateLinks;
+import catena.model.feature.CausalSignalList;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.Marker;
 import catena.model.feature.PairFeatureVector;
+import catena.model.feature.TemporalSignalList;
+import catena.model.feature.FeatureEnum.PairType;
+import catena.parser.entities.CausalRelation;
+import catena.parser.entities.Doc;
+import catena.parser.entities.Entity;
+import catena.parser.entities.EntityEnum;
+import catena.parser.entities.Event;
+import catena.parser.entities.TemporalRelation;
 
 public class EventEventCausalRule {
 	
 	private String relType;
-	private Boolean identityRel=true;
-	public static Integer numReason=0;
-	
-	private static String[] ruleTlinks = {"BEFORE", "AFTER", "SIMULTANEOUS", "INCLUDES", "IS_INCLUDED"};
-	public static List<String> ruleTlinkTypes = Arrays.asList(ruleTlinks);
 	
 	public EventEventCausalRule(PairFeatureVector fv) {
 		
 	}
 	
-	public static String getEventCausalityRule(EventEventFeatureVector eefv) throws Exception {
+	public EventEventCausalRule(EventEventFeatureVector eefv) throws Exception {		
+		this.setRelType("O");
+		String eventRule = getEventCausalityRule(eefv); 
+		if (!eventRule.equals("O") && !eventRule.equals("NONE")) {
+			if (eventRule.contains("-R")) this.setRelType("CLINK-R");
+			else this.setRelType("CLINK");
+		} else {
+			this.setRelType("NONE");
+		}
+	}
+	
+	public static List<String> getEventEventClinksPerFile(Doc doc) throws Exception {
+		List<String> ee = new ArrayList<String>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+	    
+		List<CausalRelation> candidateClinks = doc.getCandidateClinks();	//candidate pairs
+		
+		for (CausalRelation clink : candidateClinks) {
+			
+			if (!clink.getSourceID().equals(clink.getTargetID())
+					&& doc.getEntities().containsKey(clink.getSourceID())
+					&& doc.getEntities().containsKey(clink.getTargetID())
+					) {
+				
+				Entity e1 = doc.getEntities().get(clink.getSourceID());
+				Entity e2 = doc.getEntities().get(clink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, 
+						CandidateLinks.getClinkType(e1.getID(), e2.getID(), doc), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_event)) {
+					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+					EventEventCausalRule eeRule = new EventEventCausalRule(eefv);
+					if (!eeRule.getRelType().equals("NONE")) {
+						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
+								eefv.getLabel() + "\t" + eeRule.getRelType());
+//					} else {
+//						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
+//								eefv.getLabel() + "\tNONE");
+					}
+				}
+			}
+		}
+		return ee;
+	}
+	
+	public String getEventCausalityRule(EventEventFeatureVector eefv) throws Exception {
 		String cVerb = "O", construction = "O";		
 		if (eefv.getE1().getSentID().equals(eefv.getE2().getSentID())) {	//in the same sentence
 			Marker m = eefv.getCausalVerb();
@@ -218,14 +269,6 @@ public class EventEventCausalRule {
 
 	public void setRelType(String relType) {
 		this.relType = relType;
-	}
-
-	public Boolean getIdentityRel() {
-		return identityRel;
-	}
-
-	public void setIdentityRel(Boolean identity) {
-		this.identityRel = identity;
 	}
 
 }
