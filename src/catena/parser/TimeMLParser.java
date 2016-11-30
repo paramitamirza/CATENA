@@ -91,11 +91,13 @@ public class TimeMLParser {
 		dTml.setFilename(tmlFile.getName());
 	}
 	
-	public static void parseTimeML(File tmlFile, Doc dTml, Map<String, String> tlinks) throws ParserConfigurationException, SAXException, IOException {
+	public static void parseTimeML(File tmlFile, Doc dTml, Map<String, String> tlinks, Map<String, String> clinks) throws ParserConfigurationException, SAXException, IOException {
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		setInstances(tmlDoc, dTml);
-		setTlinks(tmlDoc, dTml, tlinks);
-		setClinks(tmlDoc, dTml);
+		if (tlinks == null) setTlinks(tmlDoc, dTml);
+		else setTlinks(tmlDoc, dTml, tlinks);
+		if (clinks == null) setClinks(tmlDoc, dTml);
+		else setClinks(tmlDoc, dTml, clinks);
 		dTml.setFilename(tmlFile.getName());
 	}
 	
@@ -288,6 +290,35 @@ public class TimeMLParser {
 			
 			d.getClinkTypes().put(source+","+target, "CLINK");
 			d.getClinkTypes().put(target+","+source, CausalRelation.getInverseRelation("CLINK"));
+		}
+	}
+	
+	public static void setClinks(TimeMLDoc tmlDoc, Doc d, 
+			Map<String, String> clinks) {
+		ArrayList<CausalRelation> clinkArr = d.getClinks();
+		String source = null, target = null;
+		String sourceType = null, targetType = null;
+		
+		for (String key : clinks.keySet()) {
+			if (clinks.get(key).equals("CLINK")) {
+				source = key.split(",")[0];
+				target = key.split(",")[1];
+				sourceType = "Event";
+				targetType = "Event";
+				
+			} else if (clinks.get(key).equals("CLINK-R")) {
+				source = key.split(",")[1];
+				target = key.split(",")[0];
+				sourceType = "Event";
+				targetType = "Event";
+			}
+			
+			CausalRelation cl = new CausalRelation(source, target);
+			cl.setSourceType(sourceType); cl.setTargetType(targetType);
+			clinkArr.add(cl);
+			
+			d.getClinkTypes().put(source+","+target, "CLINK");
+			d.getClinkTypes().put(target+","+source, "CLINK-R");
 		}
 	}
 	

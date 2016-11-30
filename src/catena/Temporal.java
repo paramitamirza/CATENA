@@ -554,7 +554,7 @@ public class Temporal {
 				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				TimeMLParser.parseTimeML(tmlFile, doc, tlinks);
+				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -640,7 +640,7 @@ public class Temporal {
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
-		TimeMLParser.parseTimeML(tmlFile, doc, tlinks);
+		TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
 		CandidateLinks.setCandidateTlinks(doc);
 		
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);

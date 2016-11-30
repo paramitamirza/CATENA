@@ -172,6 +172,41 @@ public class TimeMLDoc {
 	}
 	
 	public static String timeMLFileToString(Doc doc, File tmlFile,
+			List<String> eeCausalResult) throws Exception {
+		
+		TimeMLDoc tml = new TimeMLDoc(tmlFile);
+		int linkId = 1000;
+		CausalRelation clink = new CausalRelation();
+		
+		for (String eeStr : eeCausalResult) {
+			if (!eeStr.isEmpty()) {
+				String[] cols = eeStr.split("\t");
+				if (!cols[3].equals("NONE")) {
+					if (cols[3].equals("CLINK")) {
+						clink.setSourceID(doc.getInstancesInv().get(cols[0]));
+						clink.setTargetID(doc.getInstancesInv().get(cols[1]));
+						clink.setSourceType("Event");
+						clink.setTargetType("Event");
+						tml.addLink(clink.toTimeMLNode(tml.getDoc(), linkId));
+						linkId += 1;
+						
+					} else if (cols[3].equals("CLINK-R")) {
+						clink.setSourceID(doc.getInstancesInv().get(cols[1]));
+						clink.setTargetID(doc.getInstancesInv().get(cols[0]));
+						clink.setSourceType("Event");
+						clink.setTargetType("Event");
+						tml.addLink(clink.toTimeMLNode(tml.getDoc(), linkId));
+						linkId += 1;
+						
+					}
+				}
+			}
+		}
+		
+		return tml.toString();
+	}
+	
+	public static String timeMLFileToString(Doc doc, File tmlFile,
 			List<String> ttResult, List<String> edResult, 
 			List<String> etResult, List<String> eeResult) throws Exception {
 		
@@ -180,6 +215,8 @@ public class TimeMLDoc {
 
 		int linkId = 1;
 		TemporalRelation tlink = new TemporalRelation();
+		CausalRelation clink = new CausalRelation();
+		
 		for (String ttStr : ttResult) {
 			if (!ttStr.isEmpty()) {
 				String[] cols = ttStr.split("\t");
@@ -244,9 +281,16 @@ public class TimeMLDoc {
 			List<String> ttResult, List<String> edResult, 
 			List<String> etResult, List<String> eeResult) throws Exception {
 		
+		writeTimeMLFile(doc, tmlFile, tmlOutput,
+				ttResult, edResult, etResult, eeResult);
+	}
+	
+	public static void writeTimeMLFile(Doc doc, File tmlFile, File tmlOutput,
+			List<String> eeCausalResult) throws Exception {
+		
 		PrintWriter sysTML = new PrintWriter(tmlOutput.getPath());
 		sysTML.write(timeMLFileToString(doc, tmlFile, 
-				ttResult, edResult, etResult, eeResult));
+				eeCausalResult));
 		sysTML.close();
 	}
 
