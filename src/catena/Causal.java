@@ -190,7 +190,7 @@ public class Causal {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
 				
-				if (tlinks != null) tlinks = doc.getTlinkTypes();
+//				if (tlinks != null) tlinks = doc.getTlinkTypes();
 				
 				// Get the feature vectors
 				eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 

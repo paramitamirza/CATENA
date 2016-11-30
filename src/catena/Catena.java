@@ -6,6 +6,7 @@ import java.util.Map;
 import catena.evaluator.PairEvaluator;
 import catena.parser.entities.CLINK;
 import catena.parser.entities.TLINK;
+import catena.parser.entities.TemporalRelation;
 
 public class Catena {
 	
@@ -86,6 +87,7 @@ public class Catena {
 			for (String s : tlinksRule.getEE()) {
 				String[] cols = s.split("\t");
 				tlinksForClink.put(cols[0]+","+cols[1], cols[3]);
+				tlinksForClink.put(cols[1]+","+cols[0], TemporalRelation.getInverseRelation(cols[3]));
 			}
 		}
 		
