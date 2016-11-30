@@ -113,15 +113,13 @@ public class EventEventCausalClassifier extends PairClassifier {
 	public static List<PairFeatureVector> getEventEventClinksPerFile(Doc doc, PairClassifier eeRelCls,
 			boolean train, List<String> labelList) throws Exception {
 		return getEventEventClinksPerFile(doc, eeRelCls,
-				train, labelList, 
-				new HashMap<String, String>(),
+				train, labelList,
 				null,
 				null);
 	}
 	
 	public static List<PairFeatureVector> getEventEventClinksPerFile(Doc doc, PairClassifier eeRelCls,
-			boolean train, List<String> labelList, 
-			Map<String, String> relTypeMapping,
+			boolean train, List<String> labelList,
 			Map<String, String> tlinks,
 			List<String> tlinkLabels) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
@@ -172,7 +170,6 @@ public class EventEventCausalClassifier extends PairClassifier {
 					}
 					
 					String label = eefv.getLabel();
-					if (relTypeMapping.containsKey(label)) label = relTypeMapping.get(label);
 					if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
 							eeRelCls.classifier.equals(VectorClassifier.logit)) {
 						eefv.addToVector("label", String.valueOf(labelList.indexOf(label)+1));

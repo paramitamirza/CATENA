@@ -13,19 +13,11 @@ import java.util.Set;
 
 import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
-import catena.model.classifier.EventDctTemporalClassifier;
 import catena.model.classifier.EventEventCausalClassifier;
-import catena.model.classifier.EventEventTemporalClassifier;
-import catena.model.classifier.EventTimexTemporalClassifier;
 import catena.model.feature.EventEventFeatureVector;
-import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
 import catena.model.feature.FeatureEnum.PairType;
-import catena.model.rule.EventDctTemporalRule;
 import catena.model.rule.EventEventCausalRule;
-import catena.model.rule.EventEventTemporalRule;
-import catena.model.rule.EventTimexTemporalRule;
-import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -35,9 +27,7 @@ import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
 import catena.parser.entities.TLINK;
-import catena.parser.entities.TemporalRelation;
 import catena.parser.entities.TimeMLDoc;
-import catena.parser.entities.Timex;
 
 public class Causal {
 	
@@ -66,6 +56,34 @@ public class Causal {
 				TimeBankDense();
 				break;
 		}
+	}
+	
+	public static void TempEval3() throws Exception {
+		
+		Map<String, Map<String, String>> clinkPerFile = getCausalTempEval3EvalTlinks("./data/Causal-TempEval3-eval.txt");
+		
+		Causal causal;
+		PairEvaluator pee;
+		CLINK clinks;
+		
+		// TempEval3 task C
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		String[] causalLabelEval = {"CLINK", "NONE"};
+		String taskName = "te3";
+		
+		causal = new Causal(
+				"./models/" + taskName + "-causal-event-event.model",
+				true, true);
+		
+		// TRAIN
+		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel);
+		
+		// PREDICT
+		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel);
+		
+		// EVALUATE
+		pee = new PairEvaluator(clinks.getEE());
+		pee.evaluatePerLabel(causalLabelEval);
 	}
 	
 	public static void TimeBankDense() throws Exception {
@@ -135,38 +153,17 @@ public class Causal {
 		
 		// EVALUATE
 		pee = new PairEvaluator(clinks.getEE());
-		pee.evaluatePerLabel(causalLabel);
-	}
-	
-	public static void TempEval3() throws Exception {
-		
-		Map<String, Map<String, String>> clinkPerFile = getCausalTempEval3EvalTlinks("./data/Causal-TempEval3-eval.txt");
-		
-		Causal causal;
-		PairEvaluator pee;
-		CLINK clinks;
-		
-		// TempEval3 task C
-		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
-		String[] causalLabelEval = {"CLINK", "NONE"};
-		String taskName = "te3";
-		
-		causal = new Causal(
-				"./models/" + taskName + "-causal-event-event.model",
-				true, true);
-		
-		// TRAIN
-		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel);
-		
-		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel);
-		
-		// EVALUATE
-		pee = new PairEvaluator(clinks.getEE());
 		pee.evaluatePerLabel(causalLabelEval);
 	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
+		Map<String, String> tlinks = null;
+		String[] tlinkLabels = null;
+		trainModels(taskName, tmlDirpath, labels, tlinks, tlinkLabels);
+	}
+	
+	public void trainModels(String taskName, String tmlDirpath, String[] labels, 
+			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
@@ -193,12 +190,11 @@ public class Causal {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
 				
-				Map<String, String> tlinks = null;
-				if (isTlinkFeature()) tlinks = doc.getTlinkTypes();
+				if (tlinks != null) tlinks = doc.getTlinkTypes();
 				
 				// Get the feature vectors
 				eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-						true, Arrays.asList(labels)));
+						true, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels)));
 			}
 		}
 
@@ -234,9 +230,6 @@ public class Causal {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
 				
-				Map<String, String> tlinks = null;
-				if (isTlinkFeature()) tlinks = doc.getTlinkTypes();
-				
 				// Get the feature vectors
 				eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
 						true, Arrays.asList(labels)));
@@ -252,13 +245,13 @@ public class Causal {
 		return extractRelations(taskName, tmlDirpath,
 				clinkPerFile,
 				labels,
-				new HashMap<String, String>());
+				null, null);
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			Map<String, Map<String, String>> clinkPerFile,
 			String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -271,7 +264,7 @@ public class Causal {
 				// PREDICT
 				Map<String, String> clinks = new HashMap<String, String>();
 				if (clinkPerFile.containsKey(tmlFile.getName())) clinks = clinkPerFile.get(tmlFile.getName());
-				CLINK links = extractRelations(taskName, tmlFile, clinks, labels, relTypeMapping);
+				CLINK links = extractRelations(taskName, tmlFile, clinks, labels, tlinks, tlinkLabels);
 				ee.addAll(links.getEE());
 			}
 		}
@@ -285,12 +278,12 @@ public class Causal {
 			String[] tmlFileNames, String[] labels) throws Exception {
 		return extractRelations(taskName, tmlDirpath,
 				tmlFileNames, labels, 
-				new HashMap<String, String>());
+				null, null);
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			String[] tmlFileNames, String[] labels, 
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -303,7 +296,7 @@ public class Causal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				CLINK links = extractRelations(taskName, tmlFile, null, labels, relTypeMapping);
+				CLINK links = extractRelations(taskName, tmlFile, null, labels, tlinks, tlinkLabels);
 				ee.addAll(links.getEE());
 			}
 		}
@@ -315,7 +308,7 @@ public class Causal {
 	
 	public CLINK extractRelations(String taskName, File tmlFile, Map<String, String> clinks, 
 			String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -352,7 +345,7 @@ public class Causal {
 			
 			//Init the feature vectors...	
 			List<PairFeatureVector> eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-					false, Arrays.asList(labels));
+					false, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels));
 			
 			List<String> eeClsLabels = eeCls.predict(eeFvList, getCausalModelPath(), labels);
 			

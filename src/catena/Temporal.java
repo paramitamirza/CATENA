@@ -74,6 +74,93 @@ public class Temporal {
 		}
 	}
 	
+	public static void TempEval3TaskC() throws Exception {
+		Temporal temp;
+		PairEvaluator ptt, ped, pet, pee;
+		TLINK tlinks;
+		
+		// TempEval3 task C
+		String[] te3CLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String taskName = "te3";
+		
+		temp = new Temporal(false, te3CLabelCollapsed,
+				"./models/" + taskName + "-event-dct.model",
+				"./models/" + taskName + "-event-timex.model",
+				"./models/" + taskName + "-event-event.model",
+				true, true, true,
+				true, false);
+		
+		// TRAIN
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+		
+		// PREDICT
+		Map<String, String> relTypeMapping = new HashMap<String, String>();
+		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		
+		// EVALUATE
+		ptt = new PairEvaluator(tlinks.getTT());
+		ptt.evaluatePerLabel(te3CLabel);
+		ped = new PairEvaluator(tlinks.getED());
+		ped.evaluatePerLabel(te3CLabel);
+		pet = new PairEvaluator(tlinks.getET());
+		pet.evaluatePerLabel(te3CLabel);
+		pee = new PairEvaluator(tlinks.getEE());
+		pee.evaluatePerLabel(te3CLabel);
+	}
+	
+	public static void TempEval3TaskCRelOnly() throws Exception {
+		Temporal temp;
+		PairEvaluator ptt, ped, pet, pee;
+		Map<String, String> relTypeMapping;
+		TLINK tlinks;
+		
+		// TempEval3 task C (relation only)
+		String[] te3CRelLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String taskName = "te3";
+		
+		temp = new Temporal(true, te3CLabelCollapsed,
+				"./models/" + taskName + "-event-dct.model",
+				"./models/" + taskName + "-event-timex.model",
+				"./models/" + taskName + "-event-event.model",
+				true, true, true,
+				true, false);
+		
+		// TRAIN
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
+		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+		
+		// PREDICT
+		relTypeMapping = new HashMap<String, String>();
+		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		
+		// EVALUATE
+		ptt = new PairEvaluator(tlinks.getTT());
+		ptt.evaluatePerLabel(te3CRelLabel);
+		ped = new PairEvaluator(tlinks.getED());
+		ped.evaluatePerLabel(te3CRelLabel);
+		pet = new PairEvaluator(tlinks.getET());
+		pet.evaluatePerLabel(te3CRelLabel);
+		pee = new PairEvaluator(tlinks.getEE());
+		pee.evaluatePerLabel(te3CRelLabel);
+	}
+	
 	public static void TimeBankDense() throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
@@ -164,93 +251,6 @@ public class Temporal {
 		pee.evaluatePerLabel(tbDenseLabel);
 	}
 	
-	public static void TempEval3TaskC() throws Exception {
-		Temporal temp;
-		PairEvaluator ptt, ped, pet, pee;
-		TLINK tlinks;
-		
-		// TempEval3 task C
-		String[] te3CLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		String taskName = "te3";
-		
-		temp = new Temporal(false, te3CLabelCollapsed,
-				"./models/" + taskName + "-event-dct.model",
-				"./models/" + taskName + "-event-timex.model",
-				"./models/" + taskName + "-event-event.model",
-				true, true, true,
-				true, false);
-		
-		// TRAIN
-		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
-		
-		// PREDICT
-		Map<String, String> relTypeMapping = new HashMap<String, String>();
-		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
-		
-		// EVALUATE
-		ptt = new PairEvaluator(tlinks.getTT());
-		ptt.evaluatePerLabel(te3CLabel);
-		ped = new PairEvaluator(tlinks.getED());
-		ped.evaluatePerLabel(te3CLabel);
-		pet = new PairEvaluator(tlinks.getET());
-		pet.evaluatePerLabel(te3CLabel);
-		pee = new PairEvaluator(tlinks.getEE());
-		pee.evaluatePerLabel(te3CLabel);
-	}
-	
-	public static void TempEval3TaskCRelOnly() throws Exception {
-		Temporal temp;
-		PairEvaluator ptt, ped, pet, pee;
-		Map<String, String> relTypeMapping;
-		TLINK tlinks;
-		
-		// TempEval3 task C (relation only)
-		String[] te3CRelLabel = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		String taskName = "te3";
-		
-		temp = new Temporal(true, te3CLabelCollapsed,
-				"./models/" + taskName + "-event-dct.model",
-				"./models/" + taskName + "-event-timex.model",
-				"./models/" + taskName + "-event-event.model",
-				true, true, true,
-				true, false);
-		
-		// TRAIN
-		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
-		
-		// PREDICT
-		relTypeMapping = new HashMap<String, String>();
-		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
-		
-		// EVALUATE
-		ptt = new PairEvaluator(tlinks.getTT());
-		ptt.evaluatePerLabel(te3CRelLabel);
-		ped = new PairEvaluator(tlinks.getED());
-		ped.evaluatePerLabel(te3CRelLabel);
-		pet = new PairEvaluator(tlinks.getET());
-		pet.evaluatePerLabel(te3CRelLabel);
-		pee = new PairEvaluator(tlinks.getEE());
-		pee.evaluatePerLabel(te3CRelLabel);
-	}
-	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
 		trainModels(taskName, tmlDirpath, labels, 
 				new HashMap<String, String>());
@@ -298,6 +298,70 @@ public class Temporal {
 						true, true, Arrays.asList(labels), relTypeMapping, ttlinks));
 				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
 						true, true, Arrays.asList(labels), relTypeMapping, etlinks));
+			}
+		}
+		
+		edCls.train(edFvList, getEDModelPath());
+		etCls.train(etFvList, getETModelPath());
+		eeCls.train(eeFvList, getEEModelPath());
+	}
+	
+	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels) throws Exception {
+		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Init the classifier...
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
+		
+		if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- Logistic Regression!
+			edCls = new EventDctTemporalClassifier(taskName, "logit");
+			etCls = new EventTimexTemporalClassifier(taskName, "logit");
+			eeCls = new EventEventTemporalClassifier(taskName, "logit");
+		} 
+		
+		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+//				List<String> columns = tmlToCol.convert(tmlFile, false);
+//				Doc doc = colParser.parseLines(columns);
+				
+//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
+				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
+				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
+				
+				Map<String, String> ttlinks = null, etlinks = null;		
+				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
+				if (isETFeature()) {
+					etlinks = doc.getTlinkTypes();
+					if (Arrays.asList(labels).contains("VAGUE"))	//TimeBank-Dense --- etlinks only from E-D rule labels 
+						etlinks = EventDctTemporalRule.getEventDctRuleRelation(doc, true);
+				}
+				
+				// Get the feature vectors
+				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
+						true, true, Arrays.asList(labels)));
+				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
+						true, true, Arrays.asList(labels), ttlinks));
+				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
+						true, true, Arrays.asList(labels), etlinks));
 			}
 		}
 		
@@ -454,129 +518,6 @@ public class Temporal {
 		TLINK links = relationToString(doc, docSieved, relTypeMapping);
 		
 		return links;
-	}
-	
-	public TLINK relationToString(Doc gold, Doc system, Map<String, String> relTypeMapping) {
-		TLINK links = new TLINK();
-		Set<String> extracted = new HashSet<String>();
-		
-		for (TemporalRelation tlink : system.getTlinks()) {
-			
-			Entity e1 = system.getEntities().get(tlink.getSourceID());
-			Entity e2 = system.getEntities().get(tlink.getTargetID());
-			PairFeatureVector fv = new PairFeatureVector(system, e1, e2, tlink.getRelType(), null, null);
-			
-			for (String key : relTypeMapping.keySet()) {
-				fv.setLabel(fv.getLabel().replace(key, relTypeMapping.get(key)));
-			}
-			
-			String label = "NONE";
-			if (gold.getTlinkTypes().containsKey(e1.getID() + "," + e2.getID())) {
-				label = gold.getTlinkTypes().get(e1.getID() + "," + e2.getID());
-			} 
-			
-			if (!label.equals("NONE") && !extracted.contains(e1.getID()+","+e2.getID())) {
-				if (fv.getPairType().equals(PairType.timex_timex)) {
-					links.getTT().add(e1.getID()
-							+ "\t" + e2.getID()
-							+ "\t" + label
-							+ "\t" + fv.getLabel());
-					extracted.add(e1.getID()+","+e2.getID());
-					extracted.add(e2.getID()+","+e1.getID());
-					
-				} else if (fv.getPairType().equals(PairType.event_timex)) {
-					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-					if (((Timex) etfv.getE2()).isDct()) {
-						links.getED().add(e1.getID()
-								+ "\t" + e2.getID()
-								+ "\t" + label
-								+ "\t" + fv.getLabel());
-					} else {
-						links.getET().add(e1.getID()
-								+ "\t" + e2.getID()
-								+ "\t" + label
-								+ "\t" + fv.getLabel());
-					}
-					extracted.add(e1.getID()+","+e2.getID());
-					extracted.add(e2.getID()+","+e1.getID());
-					
-				} else if (fv.getPairType().equals(PairType.event_event)) {
-					links.getEE().add(e1.getID()
-							+ "\t" + e2.getID()
-							+ "\t" + label
-							+ "\t" + fv.getLabel());
-					extracted.add(e1.getID()+","+e2.getID());
-					extracted.add(e2.getID()+","+e1.getID());
-					
-				}
-			}
-		}
-		
-		return links;
-	}
-		
-	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, 
-			Map<String, Map<String, String>> tlinkPerFile,
-			String[] labels) throws Exception {
-		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
-		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
-		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
-		
-		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
-				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
-		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
-		
-		// Init the classifier...
-		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
-		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
-		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
-		
-		if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- Logistic Regression!
-			edCls = new EventDctTemporalClassifier(taskName, "logit");
-			etCls = new EventTimexTemporalClassifier(taskName, "logit");
-			eeCls = new EventEventTemporalClassifier(taskName, "logit");
-		} 
-		
-		List<String> tmlFileList = Arrays.asList(tmlFileNames);
-		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
-			
-			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-				System.out.println("Processing " + tmlFile.getPath());
-				
-				// File pre-processing...
-//				List<String> columns = tmlToCol.convert(tmlFile, false);
-//				Doc doc = colParser.parseLines(columns);
-				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-				
-				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
-				
-				Map<String, String> ttlinks = null, etlinks = null;		
-				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-				if (isETFeature()) {
-					etlinks = doc.getTlinkTypes();
-					if (Arrays.asList(labels).contains("VAGUE"))	//TimeBank-Dense --- etlinks only from E-D rule labels 
-						etlinks = EventDctTemporalRule.getEventDctRuleRelation(doc, true);
-				}
-				
-				// Get the feature vectors
-				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
-						true, true, Arrays.asList(labels)));
-				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
-						true, true, Arrays.asList(labels), ttlinks));
-				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
-						true, true, Arrays.asList(labels), etlinks));
-			}
-		}
-		
-		edCls.train(edFvList, getEDModelPath());
-		etCls.train(etFvList, getETModelPath());
-		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
 	public TLINK extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
@@ -750,6 +691,65 @@ public class Temporal {
 		
 		// Temporal links to string
 		TLINK links = relationToString(doc, docSieved, relTypeMapping);
+		
+		return links;
+	}
+	
+	public TLINK relationToString(Doc gold, Doc system, Map<String, String> relTypeMapping) {
+		TLINK links = new TLINK();
+		Set<String> extracted = new HashSet<String>();
+		
+		for (TemporalRelation tlink : system.getTlinks()) {
+			
+			Entity e1 = system.getEntities().get(tlink.getSourceID());
+			Entity e2 = system.getEntities().get(tlink.getTargetID());
+			PairFeatureVector fv = new PairFeatureVector(system, e1, e2, tlink.getRelType(), null, null);
+			
+			for (String key : relTypeMapping.keySet()) {
+				fv.setLabel(fv.getLabel().replace(key, relTypeMapping.get(key)));
+			}
+			
+			String label = "NONE";
+			if (gold.getTlinkTypes().containsKey(e1.getID() + "," + e2.getID())) {
+				label = gold.getTlinkTypes().get(e1.getID() + "," + e2.getID());
+			} 
+			
+			if (!label.equals("NONE") && !extracted.contains(e1.getID()+","+e2.getID())) {
+				if (fv.getPairType().equals(PairType.timex_timex)) {
+					links.getTT().add(e1.getID()
+							+ "\t" + e2.getID()
+							+ "\t" + label
+							+ "\t" + fv.getLabel());
+					extracted.add(e1.getID()+","+e2.getID());
+					extracted.add(e2.getID()+","+e1.getID());
+					
+				} else if (fv.getPairType().equals(PairType.event_timex)) {
+					EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+					if (((Timex) etfv.getE2()).isDct()) {
+						links.getED().add(e1.getID()
+								+ "\t" + e2.getID()
+								+ "\t" + label
+								+ "\t" + fv.getLabel());
+					} else {
+						links.getET().add(e1.getID()
+								+ "\t" + e2.getID()
+								+ "\t" + label
+								+ "\t" + fv.getLabel());
+					}
+					extracted.add(e1.getID()+","+e2.getID());
+					extracted.add(e2.getID()+","+e1.getID());
+					
+				} else if (fv.getPairType().equals(PairType.event_event)) {
+					links.getEE().add(e1.getID()
+							+ "\t" + e2.getID()
+							+ "\t" + label
+							+ "\t" + fv.getLabel());
+					extracted.add(e1.getID()+","+e2.getID());
+					extracted.add(e2.getID()+","+e1.getID());
+					
+				}
+			}
+		}
 		
 		return links;
 	}
