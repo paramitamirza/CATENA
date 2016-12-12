@@ -41,129 +41,22 @@ public class Causal {
 	public Causal() {
 		
 	}
-
-	public static void main(String[] args) throws Exception {
-		
-		String task = "tbdense";
-		
-		switch(task) {
-		
-			case "te3" :
-				TempEval3();
-				break;
-				
-			case "tbdense" :
-				TimeBankDense();
-				break;
-		}
-	}
-	
-	public static void TempEval3() throws Exception {
-		
-		Map<String, Map<String, String>> clinkPerFile = getCausalTempEval3EvalTlinks("./data/Causal-TempEval3-eval.txt");
-		
-		Causal causal;
-		PairEvaluator pee;
-		CLINK clinks;
-		
-		// TempEval3 task C
-		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
-		String[] causalLabelEval = {"CLINK", "NONE"};
-		String taskName = "te3";
-		
-		causal = new Causal(
-				"./models/" + taskName + "-causal-event-event.model",
-				true, true);
-		
-		// TRAIN
-		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel);
-		
-		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel);
-		
-		// EVALUATE
-		pee = new PairEvaluator(clinks.getEE());
-		pee.evaluatePerLabel(causalLabelEval);
-	}
-	
-	public static void TimeBankDense() throws Exception {
-		String[] devDocs = { 
-			"APW19980227.0487.tml", 
-			"CNN19980223.1130.0960.tml", 
-			"NYT19980212.0019.tml",  
-			"PRI19980216.2000.0170.tml", 
-			"ed980111.1130.0089.tml" 
-		};
-			
-		String[] testDocs = { 
-			"APW19980227.0489.tml",
-			"APW19980227.0494.tml",
-			"APW19980308.0201.tml",
-			"APW19980418.0210.tml",
-			"CNN19980126.1600.1104.tml",
-			"CNN19980213.2130.0155.tml",
-			"NYT19980402.0453.tml",
-			"PRI19980115.2000.0186.tml",
-			"PRI19980306.2000.1675.tml" 
-		};
-		
-		String[] trainDocs = {
-			"APW19980219.0476.tml",
-			"ea980120.1830.0071.tml",
-			"PRI19980205.2000.1998.tml",
-			"ABC19980108.1830.0711.tml",
-			"AP900815-0044.tml",
-			"CNN19980227.2130.0067.tml",
-			"NYT19980206.0460.tml",
-			"APW19980213.1310.tml",
-			"AP900816-0139.tml",
-			"APW19980227.0476.tml",
-			"PRI19980205.2000.1890.tml",
-			"CNN19980222.1130.0084.tml",
-			"APW19980227.0468.tml",
-			"PRI19980213.2000.0313.tml",
-			"ABC19980120.1830.0957.tml",
-			"ABC19980304.1830.1636.tml",
-			"APW19980213.1320.tml",
-			"PRI19980121.2000.2591.tml",
-			"ABC19980114.1830.0611.tml",
-			"APW19980213.1380.tml",
-			"ea980120.1830.0456.tml",
-			"NYT19980206.0466.tml"
-		};
-		
-		Causal causal;
-		PairEvaluator pee;
-		CLINK clinks;
-		
-		// TimeBank-Dense
-		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
-		String[] causalLabelEval = {"CLINK", "NONE"};
-		String taskName = "tbdense";
-		
-		causal = new Causal(
-				"./models/" + taskName + "-causal-event-event.model",
-				true, true);
-		
-		// TRAIN
-		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", trainDocs, causalLabel);
-		
-		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel);
-		
-		// EVALUATE
-		pee = new PairEvaluator(clinks.getEE());
-		pee.evaluatePerLabel(causalLabelEval);
-	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
-		Map<String, String> tlinks = null;
+		Map<String, Map<String, String>> tlinks = null;
 		String[] tlinkLabels = null;
-		trainModels(taskName, tmlDirpath, labels, tlinks, tlinkLabels);
+		trainModels(taskName, tmlDirpath, labels, tlinks, tlinkLabels, new HashMap<String, String>());
 	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels, 
-			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
+		trainModels(taskName, tmlDirpath, labels, 
+				tlinks, tlinkLabels, new HashMap<String, String>());
+	}
+	
+	public void trainModels(String taskName, String tmlDirpath, String[] labels, 
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels, 
+			Map<String, String> relTypeMappingTrain) throws Exception {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
@@ -190,11 +83,19 @@ public class Causal {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
 				
-//				if (tlinks != null) tlinks = doc.getTlinkTypes();
-				
 				// Get the feature vectors
-				eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-						true, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels)));
+				if (tlinkLabels != null) {
+					if (tlinks == null) {
+						eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+								true, Arrays.asList(labels), doc.getTlinkTypes(relTypeMappingTrain), Arrays.asList(tlinkLabels)));
+					} else {
+						eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+								true, Arrays.asList(labels), tlinks.get(doc.getFilename()), Arrays.asList(tlinkLabels)));
+					}
+				} else {
+					eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+							true, Arrays.asList(labels)));
+				}
 			}
 		}
 
@@ -217,7 +118,7 @@ public class Causal {
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
+			if (tmlFile.getName().contains(".tml") && !tmlFileList.contains(tmlFile.getName())) {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
@@ -240,6 +141,41 @@ public class Causal {
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
+			String[] labels) throws Exception {
+		return extractRelations(taskName, tmlDirpath,
+				labels,
+				null, null);
+	}
+	
+	public CLINK extractRelations(String taskName, String tmlDirpath,
+			String[] labels,
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
+		CLINK results = new CLINK();
+		List<String> ee = new ArrayList<String>();
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml")) {
+				System.out.println("Processing " + tmlFile.getPath());
+				
+				// PREDICT				
+				CLINK links;
+				if (tlinks != null) {
+					links = extractRelations(taskName, tmlFile, null, labels, tlinks.get(tmlFile.getName()), tlinkLabels);
+				} else {
+					links = extractRelations(taskName, tmlFile, null, labels, null, null);
+				}
+				ee.addAll(links.getEE());
+			}
+		}
+		
+		results.setEE(ee);
+		
+		return results;
+	}	
+	
+	public CLINK extractRelations(String taskName, String tmlDirpath,
 			Map<String, Map<String, String>> clinkPerFile,
 			String[] labels) throws Exception {
 		return extractRelations(taskName, tmlDirpath,
@@ -251,7 +187,7 @@ public class Causal {
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			Map<String, Map<String, String>> clinkPerFile,
 			String[] labels,
-			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -264,7 +200,13 @@ public class Causal {
 				// PREDICT
 				Map<String, String> clinks = new HashMap<String, String>();
 				if (clinkPerFile.containsKey(tmlFile.getName())) clinks = clinkPerFile.get(tmlFile.getName());
-				CLINK links = extractRelations(taskName, tmlFile, clinks, labels, tlinks, tlinkLabels);
+				
+				CLINK links;
+				if (tlinks != null) {
+					links = extractRelations(taskName, tmlFile, clinks, labels, tlinks.get(tmlFile.getName()), tlinkLabels);
+				} else {
+					links = extractRelations(taskName, tmlFile, clinks, labels, null, null);
+				}
 				ee.addAll(links.getEE());
 			}
 		}
@@ -328,7 +270,7 @@ public class Causal {
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		String tmlString = tmlDoc.toString();
 					
-		// Applying temporal rules...
+		// Applying causal rules...
 		if (isRuleSieve()) {
 			List<String> eeCausalRule = EventEventCausalRule.getEventEventClinksPerFile(doc);
 			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile, eeCausalRule);
@@ -337,15 +279,21 @@ public class Causal {
 		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);
 		
-		//Applying temporal classifiers...
+		//Applying causal classifiers...
 		if (isClassifierSieve()) {
 			
 			// Init the classifier...
 			EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "liblinear");
 			
 			//Init the feature vectors...	
-			List<PairFeatureVector> eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-					false, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels));
+			List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+			if (tlinks != null && tlinkLabels != null) {
+				eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+						false, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels));
+			} else {
+				eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+						false, Arrays.asList(labels), null, null);
+			}
 			
 			List<String> eeClsLabels = eeCls.predict(eeFvList, getCausalModelPath(), labels);
 			
@@ -399,7 +347,8 @@ public class Causal {
 			
 			if (!extracted.contains(e1.getID()+","+e2.getID())) {
 				if (fv.getPairType().equals(PairType.event_event)) {
-					links.getEE().add(e1.getID()
+					links.getEE().add(system.getFilename()
+							+ "\t" + e1.getID()
 							+ "\t" + e2.getID()
 							+ "\t" + label
 							+ "\t" + fv.getLabel());
@@ -418,7 +367,8 @@ public class Causal {
 			
 			if (!extracted.contains(e1.getID()+","+e2.getID())) {
 				if (fv.getPairType().equals(PairType.event_event)) {
-					links.getEE().add(e1.getID()
+					links.getEE().add(system.getFilename()
+							+ "\t" + e1.getID()
 							+ "\t" + e2.getID()
 							+ "\t" + "CLINK"
 							+ "\t" + "NONE");

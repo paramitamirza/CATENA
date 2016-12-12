@@ -203,6 +203,18 @@ public class Doc {
 	public Map<String, String> getTlinkTypes() {
 		return tlinkTypes;
 	}
+	
+	public Map<String, String> getTlinkTypes(Map<String, String> relTypeMapping) {
+		Map<String, String> newTlinkTypes = new HashMap<String, String>();
+		for (String key : tlinkTypes.keySet()) {
+			if (relTypeMapping.containsKey(tlinkTypes.get(key))) {
+				newTlinkTypes.put(key, relTypeMapping.get(tlinkTypes.get(key)));
+			} else {
+				newTlinkTypes.put(key, tlinkTypes.get(key));
+			}
+		}
+		return newTlinkTypes;
+	}
 
 	public void setTlinkTypes(Map<String, String> tlinkTypes) {
 		this.tlinkTypes = tlinkTypes;

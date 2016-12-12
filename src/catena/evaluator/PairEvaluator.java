@@ -133,16 +133,16 @@ public class PairEvaluator {
 		List<String> labelList = Arrays.asList(label);
 		
 		int idxLabel, idxPred;
-		for (String s : pairs) { //e1	e2	label(str)	predicted(str)
+		for (String s : pairs) { //filename		e1	e2	label(str)	predicted(str)
 			if (!s.trim().isEmpty()) {
 				String[] cols = s.split("\t");
-				idxLabel = labelList.indexOf(cols[2]);
-				if (!cols[2].equals("NONE")) total[idxLabel] ++;
-				if (cols[3].equals("NONE")) {
+				idxLabel = labelList.indexOf(cols[3]);
+				if (!cols[3].equals("NONE")) total[idxLabel] ++;
+				if (cols[4].equals("NONE")) {
 					fn[idxLabel] ++;
 				} else {
-					idxPred = labelList.indexOf(cols[3]);
-					if (cols[2].equals("NONE")) fp[idxPred] ++;
+					idxPred = labelList.indexOf(cols[4]);
+					if (cols[3].equals("NONE")) fp[idxPred] ++;
 					else {
 						if (idxPred == idxLabel) tp[idxPred] ++;
 						else fp[idxPred] ++;

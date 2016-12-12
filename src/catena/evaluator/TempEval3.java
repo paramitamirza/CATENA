@@ -8,14 +8,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.python.core.Py;
-import org.python.core.PyClass;
-import org.python.core.PyFunction;
-import org.python.core.PyObject;
-import org.python.core.PyString;
-import org.python.core.PySystemState;
-import org.python.util.PythonInterpreter;
-
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.SftpException;
 
@@ -32,24 +24,6 @@ public class TempEval3 {
 	}
 	
 	public void evaluate() throws IOException, JSchException, SftpException, InterruptedException {
-//		RemoteServer rs = new RemoteServer();
-//		
-//		//Copy gold and system files to remote server
-//		File[] gold = new File(goldPath).listFiles();
-//		File[] system = new File(systemPath).listFiles();
-//		rs.copyFiles(gold, "data/gold/");
-//		rs.copyFiles(system, "data/system/");
-//		
-//		//Run the TempEval3 evaluation tool in remote server
-//		String cdTE3 = "cd ~/tools/TempEval3-evaluation-tool/";
-//		String shTE3 = "sh TempEval3-eval.sh";
-//		List<String> te3Result = rs.executeCommand(cdTE3 + " && " + shTE3);
-//		for (String te3Str : te3Result) {
-//			if (!te3Str.isEmpty()) {
-//				System.out.println(te3Str);
-//			}
-//		}
-//		rs.disconnect();
 		
 		//Run python script
 //		PythonInterpreter interp = new PythonInterpreter(null, new PySystemState());
