@@ -53,6 +53,9 @@ The output will be a list of temporal and/or causal relations, one relation per 
 ```
 
 ###System architecture
+
+![alt tag](https://github.com/paramitamirza/CATENA/blob/master/CATENA.png)
+
 CATENA contains two main modules:
 
 1. **Temporal module**, a combination of rule-based and supervised classifiers, with a temporal reasoner module in between.
