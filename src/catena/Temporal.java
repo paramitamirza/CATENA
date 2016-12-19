@@ -80,11 +80,12 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml")) {
-				System.out.println("Processing " + tmlFile.getPath());
+				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
 				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
+				doc.setFilename(tmlFile.getName());
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 //				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
@@ -139,11 +140,12 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-				System.out.println("Processing " + tmlFile.getPath());
+				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
 				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
+				doc.setFilename(tmlFile.getName());
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 //				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
@@ -200,7 +202,7 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml")) {
-				System.out.println("Processing " + tmlFile.getPath());
+				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
 				List<TLINK> linksList = extractRelations(taskName, tmlFile, labels, relTypeMapping);
@@ -241,6 +243,7 @@ public class Temporal {
 		// File pre-processing...
 		List<String> columns = tmlToCol.convert(tmlFile, true);
 		Doc doc = colParser.parseLines(columns);
+		doc.setFilename(tmlFile.getName());
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 //		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
@@ -271,6 +274,7 @@ public class Temporal {
 		}
 		
 		Doc docSieved = colParser.parseLines(columns);
+		docSieved.setFilename(tmlFile.getName());
 //		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
@@ -383,7 +387,7 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-				System.out.println("Processing " + tmlFile.getPath());
+				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
@@ -426,6 +430,7 @@ public class Temporal {
 		// File pre-processing...
 		List<String> columns = tmlToCol.convert(tmlFile, true);
 		Doc doc = colParser.parseLines(columns);
+		doc.setFilename(tmlFile.getName());
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 //		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
@@ -461,6 +466,7 @@ public class Temporal {
 		}
 		
 		Doc docSieved = colParser.parseLines(columns);
+		docSieved.setFilename(tmlFile.getName());
 //		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
