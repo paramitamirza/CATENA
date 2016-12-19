@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import catena.evaluator.PairEvaluator;
 import catena.parser.entities.CLINK;
 import catena.parser.entities.TLINK;
 import catena.parser.entities.TemporalRelation;

@@ -74,7 +74,7 @@ public class Causal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, false);
+				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
@@ -122,7 +122,7 @@ public class Causal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, false);
+				List<String> columns = tmlToCol.convert(tmlFile, true);
 				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
@@ -258,7 +258,7 @@ public class Causal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		List<String> columns = tmlToCol.convert(tmlFile, false);
+		List<String> columns = tmlToCol.convert(tmlFile, true);
 		Doc doc = colParser.parseLines(columns);
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);

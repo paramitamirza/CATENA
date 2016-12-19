@@ -528,7 +528,7 @@ public class TimeMLToColumns {
 				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);		
 		
 		try {					
-			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), false);
+			List<String> columns = tmlToCol.convert(new File("./data/example_TML/wsj_1014.tml"), true);
 			for (String s : columns) System.out.println(s);
 			System.out.println(columns.get(0).split("\t").length);
 			
