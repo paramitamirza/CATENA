@@ -52,19 +52,15 @@ The output will be a list of temporal and/or causal relations, one relation per 
   CLINK-R				entity_1 IS_CAUSED_BY entity_2
 ```
 
-#####To convert TimeML file(s) to HTML for better viewing
-```
-python python ConvertToHTML.py dir_name [options]        or
-python python ConvertToHTML.py file_name [options]
+###System architecture
+CATENA contains two main modules:
 
-options: -o output_dir_name/file_name (default: dir_path/dir_name_HTML/ for directory and file_path/file_name.html for file)
-```   
+1. **Temporal module**, a combination of rule-based and supervised classifiers, with temporal reasoner in between.
+2. **Causal module**, a combination of a rule-based classifier according to causal verbs, and supervised classifier taken into account syntactic and context features, especially causal signals appearing in the text.
 
-###Modules
-IndoTimex contains two main modules:
-
-1. **Timex recognition**, a finite state transducer (FST) to recognize temporal expressions and their types (based on the TimeML standard, i.e. DATE, DURATION, TIME and SET). The complete FST can be seen in [`lib/fst/timex.pdf`](https://github.com/paramitamirza/IndoTimex/blob/master/lib/fst/timex.pdf) (minimized and drawn with [OpenFST](http://www.openfst.org/)).
-2. **Timex normalization**, an extension of [TimeNorm](https://github.com/bethard/timenorm), a library for normalizing the values of temporal expressions (based on the ISO 8601 standard) using synchronous context free grammars, for Indonesian language. To run the timex normalizer: `java -jar ./lib/timenorm-id-0.9.2-jar-with-dependencies.jar ./lib/id.grammar`.
+The two modules interact, based on the assumption that the notion of causality is tightly connected with the temporal dimension:
+(i) TLINK labels for event-event pairs, resulting from the rule-based sieve + temporal reasoner, are used for the CLINK classifier, and
+(ii) CLINK labels are used as a post-editing method for correcting the wrongly labelled event pairs by the Temporal module.
  
 #####Publication
 Paramita Mirza and Sara Tonelli. 2016. *CATENA: CAusal and TEmporal relation extraction from NAtural language texts.* In Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: Technical Papers, Osaka, Japan, December. [[pdf]](https://aclweb.org/anthology/C/C16/C16-1007.pdf)
@@ -77,8 +73,8 @@ Paramita Mirza and Sara Tonelli. 2016. *CATENA: CAusal and TEmporal relation ext
 
 _! Whenever making reference to this resource please cite the paper in the Publication section. !_
 
-###Demo
-The online demo is available at [http://paramitamirza.ml/indotimex/](http://paramitamirza.ml/indotimex/).
+###Web Service
+Soon!
 
 ###Contact
-For more information please contact [Paramita Mirza](http://paramitopia.com/about/) (paramita@fbk.eu).
+For more information please contact [Paramita Mirza](http://paramitamirza.com/) (paramita135@gmail.com).
