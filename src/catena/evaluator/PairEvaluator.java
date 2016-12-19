@@ -1,12 +1,9 @@
 package catena.evaluator;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import catena.parser.ColumnParser;
-import catena.parser.TimeMLParser;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.Timex;

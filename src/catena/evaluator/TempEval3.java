@@ -8,9 +8,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.SftpException;
-
 public class TempEval3 {
 	
 	private String goldPath;
@@ -23,7 +20,7 @@ public class TempEval3 {
 		this.setSystemPath(system);
 	}
 	
-	public void evaluate() throws IOException, JSchException, SftpException, InterruptedException {
+	public void evaluate() throws Exception {
 		
 		//Run python script
 //		PythonInterpreter interp = new PythonInterpreter(null, new PySystemState());

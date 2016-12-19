@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
 import catena.model.classifier.EventDctTemporalClassifier;
 import catena.model.classifier.EventEventTemporalClassifier;

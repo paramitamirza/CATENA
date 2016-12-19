@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
 import catena.model.classifier.EventEventCausalClassifier;
 import catena.model.feature.EventEventFeatureVector;
@@ -26,7 +25,6 @@ import catena.parser.entities.CausalRelation;
 import catena.parser.entities.Doc;
 import catena.parser.entities.Entity;
 import catena.parser.entities.EntityEnum;
-import catena.parser.entities.TLINK;
 import catena.parser.entities.TimeMLDoc;
 
 public class Causal {
