@@ -16,6 +16,10 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 * [WS4J](https://github.com/Sciss/ws4j) -- APIs for several semantic relatedness algorithms for, in theory, any WordNet instance.
 * [Jersey](https://jersey.java.net/) -- RESTful Web Service in Java. It is required to access temporal closure module in http://hixwg.univaq.it/TERENCE-reasoner.
 * [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/) - an API for parsing command line options passed to programs.
+
+#####Other resources:
+* Temporal and causal signal lists, available in `resource/`. This folder must be placed within the root folder of the project.
+* Classification models, available in `models/`, including: `catena-event-timex.model`, `catena-event-dct.model`, `catena-event-event.model` and `catena-causal-event-event.model`.
  
 ###Usage
 _! The input file(s) must be in the [TimeML annotation format](http://www.timeml.org/site/index.html) !_
@@ -39,13 +43,13 @@ usage: Catena
  -u,--causcorpus <arg>   (optional) TimeML directory path for training causal
                          classifier     
 ```   
-The output will be a list of temporal and/or causal relations in the format:
+The output will be a list of temporal and/or causal relations, one relation per line, in the format of:
 ```
-<filename>	<entity_id_1>	<entity_id_2>	<TLINK_type/CLINK/CLINK-R>
+<filename>	<entity_1>	<entity_2>	<TLINK_type/CLINK/CLINK-R>
   
-  TLINK_type			One of TLINK types according to TimeML
-  CLINK					entity_id_1 CAUSE entity_id_2
-  CLINK-R				entity_id_1 IS CAUSED BY entity_id_2
+  TLINK_type			One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS, etc.
+  CLINK					entity_1 CAUSE entity_2
+  CLINK-R				entity_1 IS_CAUSED_BY entity_2
 ```
 
 #####To convert TimeML file(s) to HTML for better viewing
@@ -63,10 +67,13 @@ IndoTimex contains two main modules:
 2. **Timex normalization**, an extension of [TimeNorm](https://github.com/bethard/timenorm), a library for normalizing the values of temporal expressions (based on the ISO 8601 standard) using synchronous context free grammars, for Indonesian language. To run the timex normalizer: `java -jar ./lib/timenorm-id-0.9.2-jar-with-dependencies.jar ./lib/id.grammar`.
  
 #####Publication
-Paramita Mirza. 2015. **Recognizing and Normalizing Temporal Expressions in Indonesian Texts**. *(to appear) In Proceedings of the Conference of the Pacific Association for Computational Linguistics (PACLING 2015)*, Bali, Indonesia, May. [pdf]
+Paramita Mirza and Sara Tonelli. 2016. *CATENA: CAusal and TEmporal relation extraction from NAtural language texts.* In Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: Technical Papers, Osaka, Japan, December. [[pdf]](https://aclweb.org/anthology/C/C16/C16-1007.pdf)
 
 #####Dataset
-The dataset for development and evaluation phases of the system is available in `dataset/`, comprising 75 news articles taken from www.kompas.com.
+* Training data for the Temporal module is taken from the [TempEval-3](https://www.cs.york.ac.uk/semeval-2013/task1/index.php%3Fid=data.html) shared task, particularly the combination of TBAQ-cleaned (English training data) and TE3-platinum (English test data).
+* Training data for the Causal module is [Causal-TimeBank](http://hlt-nlp.fbk.eu/technologies/causal-timebank), the TimeBank corpus annotated with causal information.
+* [TimeBank-Dense](https://www.usna.edu/Users/cs/nchamber/caevo/#corpus) corpus is used in one of the evaluation schemes for temporal relation extraction. 
+* `Causal-TempEval3-eval.txt` (available in `data/`) is used in one of the evaluation schemes for causal relation extraction.
 
 _! Whenever making reference to this resource please cite the paper in the Publication section. !_
 
