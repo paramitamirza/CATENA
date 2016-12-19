@@ -74,11 +74,11 @@ public class Causal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-//				List<String> columns = tmlToCol.convert(tmlFile, false);
-//				Doc doc = colParser.parseLines(columns);
+				List<String> columns = tmlToCol.convert(tmlFile, false);
+				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
@@ -122,11 +122,11 @@ public class Causal {
 				System.out.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-//				List<String> columns = tmlToCol.convert(tmlFile, false);
-//				Doc doc = colParser.parseLines(columns);
+				List<String> columns = tmlToCol.convert(tmlFile, false);
+				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
@@ -258,11 +258,11 @@ public class Causal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-//		List<String> columns = tmlToCol.convert(tmlFile, false);
-//		Doc doc = colParser.parseLines(columns);
+		List<String> columns = tmlToCol.convert(tmlFile, false);
+		Doc doc = colParser.parseLines(columns);
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+//		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc, null, clinks);
 		CandidateLinks.setCandidateClinks(doc);
@@ -276,7 +276,8 @@ public class Causal {
 			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile, eeCausalRule);
 		}
 		
-		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		Doc docSieved = colParser.parseLines(columns);
+//		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);
 		
 		//Applying causal classifiers...
