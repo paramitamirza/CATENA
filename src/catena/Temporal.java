@@ -575,7 +575,9 @@ public class Temporal {
 					label = gold.getTlinkTypes().get(e1.getID() + "," + e2.getID());
 				} 
 				
-				if (!label.equals("NONE") && !extracted.contains(e1.getID()+","+e2.getID())) {
+				if (!extracted.contains(e1.getID()+","+e2.getID())
+//						&& !label.equals("NONE")
+						) {
 					if (fv.getPairType().equals(PairType.timex_timex)) {
 						links.getTT().add(system.getFilename()
 								+ "\t" + e1.getID()
