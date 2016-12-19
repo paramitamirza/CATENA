@@ -4,10 +4,11 @@
 
 ###Requirements
 * Java Runtime Environment (JRE) 1.7.x or higher
-####Text processing tools:
+
+#####Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools
 * [TextPro](http://textpro.fbk.eu/) -- Text Processing Tools from FBK
-* [Mate-tools](https://code.google.com/archive/p/mate-tools/) -- Tools for Natural Language Analysis.
+* [Mate-tools](https://code.google.com/archive/p/mate-tools/) -- Tools for Natural Language Analysis
  
 ###Usage
 _! The input file(s) must be in the [TimeML annotation format](http://www.timeml.org/site/index.html) !_
