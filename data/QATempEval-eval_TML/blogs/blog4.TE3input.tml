@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
-<Title>108212.female.27.Student.Taurus.xml</Title>
-<DCT><TIMEX3 tid="t0" type="TIME" value="2004-06-20" temporalFunction="false" functionInDocument="CREATION_TIME">20,June,2004</TIMEX3></DCT>
-<TEXT>
-UPS came yesterday and <EVENT eid="e1">left</EVENT> a slip stating that they attempted to deliver a package which required a signature. It said DKNY. I figured it was my watch. I left work early, too! We probably just missed them by a few minutes. Brian was saying that if he would have come home straight from work, instead of <EVENT eid="e2">taking</EVENT> me to lunch, he could have been home to accept the package. Darn it. The slip did state that a second attempt would be made the following day, <TIMEX3 tid="t1">Friday</TIMEX3> (today). I <EVENT eid="e3">stayed</EVENT> home from work even though I could not afford it, to ensure that I would be home to accept my package. They <EVENT eid="e4">came</EVENT> a little earlier than stated, but I was thrilled to finally <EVENT eid="e5">have</EVENT> it. I saw it in the catalog two weeks ago and just had to have it. Actually a lot of people at work are going on shopping sprees because after our call center <EVENT eid="e6">closes</EVENT> on May 17th and everyone is <EVENT eid="e7">laid off</EVENT>, we won't be able to <EVENT eid="e8">avail</EVENT> of our 30% merchandise discount any longer.
-</TEXT>
-</TimeML>

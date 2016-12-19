@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
-<Title>1119650.female.23.Student.Cancer.xml</Title>
-<DCT><TIMEX3 tid="t0" type="TIME" value="2003-05-09" temporalFunction="false" functionInDocument="CREATION_TIME">09,May,2003</TIMEX3></DCT>
-<TEXT>
-Mindless Mush I had a really great <TIMEX3 tid="t1">weekend</TIMEX3>. I got to see a lot of people I don't normally hang out with which was great. I <EVENT eid="e1">took</EVENT> my mom out for <TIMEX3 tid="t2">Mother's Day</TIMEX3>. We went into Manhattan and <EVENT eid="e2">saw</EVENT> "Movin' Out", the Billy Joel musical. It was actually really, REALLY good! Then my brother <EVENT eid="e3">treated</EVENT> her and I to Ruth's Chris steaks for dinner. That was extremely yum. It was so cute because at the end of the night she started crying and <EVENT eid="e4">thanking</EVENT> us for "the best mother's day ever". It was tres cute. I'm thinking of <EVENT eid="e5">getting</EVENT> an apartment about 20 mins away from where I live now with my best friend from high school. I dunno how it will work out, but we're both employed full time and we've <EVENT eid="e6">lived</EVENT> together before, so hopefully it wont be that bad. Plus we would have the cutest, best, most awesome apartment. Woo hoo to that. I'm also <EVENT eid="e7">stoked</EVENT> because I get to do a focus group. Its like only an hour and its about facial cleansers and they're gonna <EVENT eid="e8">pay</EVENT> me $50. Suhweet! She also told me she would keep me on the list and call me when she needed people. W00t, w00tarini! Oh, I also got new emo/ashleigh banfield glasses. Yay!
-</TEXT>
-</TimeML>

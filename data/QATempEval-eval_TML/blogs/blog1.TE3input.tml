@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
-<Title>112265.female.23.indUnk.Taurus.xml</Title>
-<DCT><TIMEX3 tid="t0" type="TIME" value="2000-12-15" temporalFunction="false" functionInDocument="CREATION_TIME">15,December,2000</TIMEX3></DCT>
-<TEXT> 
-So i <EVENT eid="e1">went</EVENT> to ikea <TIMEX3 tid="t1">last night</TIMEX3>. Talk about consumerism. I spent $165, and i'm sort of kicking myself. It's one of those things where you walk along and put stuff in the cart, <EVENT eid="e2">thinking</EVENT>, 'oh that is a good deal' or 'i should buy this for xxx'. Then when you <EVENT eid="e3">get</EVENT> to the checkout, it's $165.87 and you go 'how did that happen?' i don't know. I will admit i like to shop, but i am torn about consumerism. It's bad. and that directly conflicts with my affinity for shopping. hm. What to do? I don't know. Keep shopping? This whole website thing is my attempt to jump on the bandwagon. I'm just following suit -- many of my friends have already done this. So i feel like sort of a copy cat. But it's fun anyway. Well, i have to go <EVENT eid="e4">check</EVENT> on dinner. It's <EVENT eid="e5">cooking</EVENT> (and probably burning) as i <EVENT eid="e6">write</EVENT> this. I <EVENT eid="e7">set off</EVENT> the smoke alarm the <TIMEX3 tid="t2">other night</TIMEX3>. I would like to think i'm domestic, but not really. I guess domesticity takes effort which i'm not willing to make. Adieu till later.
-</TEXT>
-</TimeML>
