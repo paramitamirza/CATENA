@@ -55,7 +55,7 @@ The output will be a list of temporal and/or causal relations, one relation per 
 ###System architecture
 CATENA contains two main modules:
 
-1. **Temporal module**, a combination of rule-based and supervised classifiers, with temporal reasoner in between.
+1. **Temporal module**, a combination of rule-based and supervised classifiers, with a temporal reasoner module in between.
 2. **Causal module**, a combination of a rule-based classifier according to causal verbs, and supervised classifier taken into account syntactic and context features, especially causal signals appearing in the text.
 
 The two modules interact, based on the assumption that the notion of causality is tightly connected with the temporal dimension:
