@@ -41,35 +41,6 @@ public class EventEventCausalClassifier extends PairClassifier {
 			};
 			featureList = Arrays.asList(eeFeatures);
 			
-		} else if (classifier.equals(VectorClassifier.yamcha)) {
-			FeatureName[] eeFeatures = {
-					/*FeatureName.token,*/ /*FeatureName.lemma,*/
-//					FeatureName.supersense,
-					FeatureName.pos, /*FeatureName.mainpos,*/
-					FeatureName.samePos, /*FeatureName.sameMainPos,*/
-					FeatureName.chunk,
-					FeatureName.entDistance, FeatureName.sentDistance,
-					FeatureName.eventClass, FeatureName.tense, FeatureName.aspect, FeatureName.polarity,
-//					FeatureName.sameEventClass, FeatureName.sameTenseAspect, /*FeatureName.sameAspect,*/ FeatureName.samePolarity,
-					FeatureName.depEvPath,				
-					FeatureName.mainVerb,
-					FeatureName.tempSignalClusText,
-					FeatureName.tempSignalPos,
-					FeatureName.tempSignalDep1Dep2,
-					FeatureName.causSignalClusText,
-					FeatureName.causSignalPos, 
-					FeatureName.causSignalDep1Dep2,
-//					FeatureName.causSignal1ClusText,
-//					FeatureName.causSignal1Pos,
-//					FeatureName.causSignal2ClusText,
-//					FeatureName.causSignal2Pos,
-//					FeatureName.causVerbClusText,
-//					FeatureName.causVerbPos,
-//					FeatureName.coref,
-					FeatureName.wnSim
-			};
-			featureList = Arrays.asList(eeFeatures);
-			
 		} else {
 			FeatureName[] eeFeatures = {
 //					FeatureName.lemma,
