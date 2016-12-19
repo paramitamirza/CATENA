@@ -1,6 +1,6 @@
 # CATENA
 ## CAusal and TEmporal relation extraction from NAtural language texts 
-
+CATENA is a sieve-based system to perform temporal and causal relation extraction and classification from English texts, exploiting the interaction between the temporal and the causal model. The system requires pre-annotated text with EVENT and TIMEX3 tags according to the TimeML annotation standard, as these annotation are used as features to extract the relations.
 
 ###Requirements
 * Java Runtime Environment (JRE) 1.7.x or higher
@@ -15,16 +15,38 @@
 * [liblinear-java](http://liblinear.bwaldvogel.de/) -- Java port of the [original liblinear C++ sources](http://www.csie.ntu.edu.tw/~cjlin/liblinear/).
 * [WS4J](https://github.com/Sciss/ws4j) -- APIs for several semantic relatedness algorithms for, in theory, any WordNet instance.
 * [Jersey](https://jersey.java.net/) -- RESTful Web Service in Java. It is required to access temporal closure module in http://hixwg.univaq.it/TERENCE-reasoner.
+* [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/) - an API for parsing command line options passed to programs.
  
 ###Usage
 _! The input file(s) must be in the [TimeML annotation format](http://www.timeml.org/site/index.html) !_
 ```
-python python TimexExtraction.py dir_name [options]        or
-python python TimexExtraction.py file_name [options]
-
-options: -o output_dir_name/file_name (default: dir_path/dir_name_Timex/ for directory and file_path/file_name_timex.tml for file)
+usage: Catena
+ -i,--input <arg>        Input TimeML file/directory path
+        
+ -x,--textpro <arg>      TextPro directory path
+ -l,--matelemma <arg>    Mate tools' lemmatizer model path   
+ -g,--matetagger <arg>   Mate tools' PoS tagger model path
+ -p,--mateparser <arg>   Mate tools' parser model path      
+ 
+ -t,--ettemporal <arg>   CATENA model path for E-T temporal classifier    
+ -d,--edtemporal <arg>   CATENA model path for E-D temporal classifier                       
+ -e,--eetemporal <arg>   CATENA model path for E-E temporal classifier
+ -c,--eecausal <arg>     CATENA model path for E-E causal classifier
+ 
+ -b,--train              (optional) Train the models
+ -m,--tempcorpus <arg>   (optional) TimeML directory path for training temporal
+                         classifiers
+ -u,--causcorpus <arg>   (optional) TimeML directory path for training causal
+                         classifier     
 ```   
-The output file(s) will be a TimeML document annotated with temporal expressions (TIMEX3 tags).
+The output will be a list of temporal and/or causal relations in the format:
+```
+<filename>	<entity_id_1>	<entity_id_2>	<TLINK_type/CLINK/CLINK-R>
+  
+  TLINK_type			One of TLINK types according to TimeML
+  CLINK					entity_id_1 CAUSE entity_id_2
+  CLINK-R				entity_id_1 IS CAUSED BY entity_id_2
+```
 
 #####To convert TimeML file(s) to HTML for better viewing
 ```
