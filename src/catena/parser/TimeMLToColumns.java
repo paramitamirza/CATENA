@@ -471,7 +471,7 @@ public class TimeMLToColumns {
 		
 		// Parse TimeML document			
 		List<String> columns = parse(tmlFile);
-//		for (String s : columns) System.out.println(s);			
+//		for (String s : columns) System.out.println(s);
 		
 		// Print in CoNLL format as the input for the Mate tools
 		printToConllFile(columns, tmlFile.getPath().replace(".tml", ".conll"));

@@ -82,12 +82,13 @@ public class Temporal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, true);
-				Doc doc = colParser.parseLines(columns);
-				doc.setFilename(tmlFile.getName());
+//				List<String> columns = tmlToCol.convert(tmlFile, true);
+//				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
+				doc.setFilename(tmlFile.getName());
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				
@@ -142,12 +143,13 @@ public class Temporal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, true);
-				Doc doc = colParser.parseLines(columns);
-				doc.setFilename(tmlFile.getName());
+//				List<String> columns = tmlToCol.convert(tmlFile, true);
+//				Doc doc = colParser.parseLines(columns);
 				
 //				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				
+				doc.setFilename(tmlFile.getName());				
 				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
 				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
@@ -240,12 +242,12 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		List<String> columns = tmlToCol.convert(tmlFile, true);
-		Doc doc = colParser.parseLines(columns);
-		doc.setFilename(tmlFile.getName());
+//		List<String> columns = tmlToCol.convert(tmlFile, true);
+//		Doc doc = colParser.parseLines(columns);
+//		doc.setFilename(tmlFile.getName());
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		
 		TimeMLParser.parseTimeML(tmlFile, doc);
 		CandidateLinks.setCandidateTlinks(doc);
@@ -257,8 +259,8 @@ public class Temporal {
 		List<TLINK> resultList = new ArrayList<TLINK>();
 					
 		// Applying temporal rules...
-		if (isRuleSieve()) {
-			List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
+		List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
+		if (isRuleSieve()) {			
 			List<String> edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
 			List<String> etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
 			List<String> eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
@@ -272,9 +274,9 @@ public class Temporal {
 			tmlString = r.deduceTlinksPerFile(tmlString);
 		}
 		
-		Doc docSieved = colParser.parseLines(columns);
+//		Doc docSieved = colParser.parseLines(columns);
+		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		docSieved.setFilename(tmlFile.getName());
-//		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
 		resultList.add(relationToString(doc, docSieved, relTypeMapping));
@@ -427,12 +429,13 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		List<String> columns = tmlToCol.convert(tmlFile, true);
-		Doc doc = colParser.parseLines(columns);
-		doc.setFilename(tmlFile.getName());
+//		List<String> columns = tmlToCol.convert(tmlFile, true);
+//		Doc doc = colParser.parseLines(columns);
 		
 //		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		
+		doc.setFilename(tmlFile.getName());
 		
 		TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
 		CandidateLinks.setCandidateTlinks(doc);
@@ -444,19 +447,23 @@ public class Temporal {
 		List<TLINK> resultList = new ArrayList<TLINK>();
 					
 		// Applying temporal rules...
+		List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
+		List<String> edRule = new ArrayList<String>();
+		List<String> etRule = new ArrayList<String>();
+		List<String> eeRule = new ArrayList<String>();
+		
 		if (isRuleSieve()) {
-			List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
+			edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
+			etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
+			eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
 			
 			if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- special VAGUE rules for E-D and E-T
 				edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate(), true);
 				etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate(), true);
 			}
-			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
-					ttRule, edRule, etRule, eeRule);
 		}
+		tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
+				ttRule, edRule, etRule, eeRule);
 		
 		//Applying temporal reasoner...
 		if (isReasoner()) {			
@@ -464,9 +471,9 @@ public class Temporal {
 			tmlString = r.deduceTlinksPerFile(tmlString);
 		}
 		
-		Doc docSieved = colParser.parseLines(columns);
+//		Doc docSieved = colParser.parseLines(columns);
+		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		docSieved.setFilename(tmlFile.getName());
-//		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
 		resultList.add(relationToString(doc, docSieved, relTypeMapping));
