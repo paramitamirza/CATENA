@@ -96,8 +96,13 @@ public class TestEventEventTemporalClassifierTempEval3 {
 		
 		// TRAIN
 		String trainTmlDirpath = "./data/TempEval3-train_TML/";
+		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+		relTypeMappingTrain.put("IBEFORE", "BEFORE");
+		relTypeMappingTrain.put("IAFTER", "AFTER");
 		List<PairFeatureVector> trainFvList = test.getEventEventTlinks(trainTmlDirpath, tmlToCol, colParser,
-				eeCls, true, goldCandidate, etFeature);
+				eeCls, true, goldCandidate, relTypeMappingTrain, etFeature);
 		eeCls.train(trainFvList, "./models/test/te3-ee.model");
 		
 		// PREDICT
@@ -111,7 +116,8 @@ public class TestEventEventTemporalClassifierTempEval3 {
 			String label = eeClsTest.get(i);
 	
 			if (label.equals("IDENTITY")) label = "SIMULTANEOUS";	//TempEval-3 evaluation hack
-			eeTestList.add(eefv.getE1().getID() 
+			eeTestList.add(eefv.getDoc().getFilename()
+					+ "\t" + eefv.getE1().getID() 
 					+ "\t" + eefv.getE2().getID()
 					+ "\t" + eefv.getLabel()
 					+ "\t" + label);

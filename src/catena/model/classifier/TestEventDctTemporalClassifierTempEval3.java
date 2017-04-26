@@ -108,7 +108,8 @@ public class TestEventDctTemporalClassifierTempEval3 {
 			EventTimexFeatureVector edfv = new EventTimexFeatureVector(evalFvList.get(i));
 			String label = edClsTest.get(i);
 	
-			edTestList.add(edfv.getE1().getID() 
+			edTestList.add("test"
+					+ "\t" + edfv.getE1().getID() 
 					+ "\t" + edfv.getE2().getID()
 					+ "\t" + edfv.getLabel()
 					+ "\t" + label);

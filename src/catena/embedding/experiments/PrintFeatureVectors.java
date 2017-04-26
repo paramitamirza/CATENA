@@ -1,4 +1,4 @@
-package catena.model.classifier;
+package catena.embedding.experiments;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 import catena.model.CandidateLinks;
+import catena.model.classifier.EventDctTemporalClassifier;
 import catena.model.classifier.PairClassifier;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
-import catena.model.rule.TimexTimexTemporalRule;
 import catena.parser.ColumnParser;
 import catena.parser.TimeMLParser;
 import catena.parser.TimeMLToColumns;
@@ -20,34 +20,33 @@ import catena.parser.entities.EntityEnum;
 import catena.ParserConfig;
 import catena.evaluator.PairEvaluator;
 
-public class TestEventTimexTemporalClassifierTempEval3 {
+public class PrintFeatureVectors {
 	
 	private String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 	private String[] labelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 	
-	public TestEventTimexTemporalClassifierTempEval3() {
+	public PrintFeatureVectors() {
 		
 	}
 	
-	public List<PairFeatureVector> getEventTimexTlinks(String tmlDirpath, 
+	public List<PairFeatureVector> getEventDctTlinks(String tmlDirpath, 
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			PairClassifier etRelCls, boolean train, 
-			boolean goldCandidate, boolean ttFeature) throws Exception {
-		return getEventTimexTlinks(tmlDirpath, 
+			boolean goldCandidate) throws Exception {
+		return getEventDctTlinks(tmlDirpath, 
 				tmlToCol, colParser, 
-				etRelCls, train, goldCandidate, 
-				new HashMap<String, String>(),
-				ttFeature);
+				etRelCls, train, 
+				goldCandidate,
+				new HashMap<String, String>());
 	}
 	
-	public List<PairFeatureVector> getEventTimexTlinks(String tmlDirpath, 
+	public List<PairFeatureVector> getEventDctTlinks(String tmlDirpath, 
 			TimeMLToColumns tmlToCol, ColumnParser colParser, 
 			PairClassifier etRelCls, boolean train, 
-			boolean goldCandidate, 
-			Map<String, String> relTypeMapping,
-			boolean ttFeature) throws Exception {
+			boolean goldCandidate,
+			Map<String, String> relTypeMapping) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
 		
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
@@ -66,13 +65,10 @@ public class TestEventTimexTemporalClassifierTempEval3 {
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				if (!train) CandidateLinks.setCandidateTlinks(doc);
 				
-				Map<String, String> ttlinks = null;		
-				if (ttFeature) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
-				
 				// Get the feature vectors
 				List<String> labelList = Arrays.asList(labelCollapsed);
-				fvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etRelCls, 
-						train, goldCandidate, labelList, relTypeMapping, ttlinks));
+				fvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, etRelCls, 
+						train, goldCandidate, labelList, relTypeMapping));
 			}
 		}
 		return fvList;
@@ -80,18 +76,17 @@ public class TestEventTimexTemporalClassifierTempEval3 {
 
 	public static void main(String [] args) throws Exception {
 		
-		TestEventTimexTemporalClassifierTempEval3 test = new TestEventTimexTemporalClassifierTempEval3();
+		PrintFeatureVectors test = new PrintFeatureVectors();
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
 				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
-		
+				
 		// Init the classifier...
-		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier("te3", "liblinear");
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier("te3", "liblinear");
 		
-		boolean goldCandidate = false;
-		boolean ttFeature = true;
+		boolean goldCandidate = true;
 		
 		// TRAIN
 		String trainTmlDirpath = "./data/TempEval3-train_TML/";
@@ -100,30 +95,31 @@ public class TestEventTimexTemporalClassifierTempEval3 {
 		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
 		relTypeMappingTrain.put("IBEFORE", "BEFORE");
 		relTypeMappingTrain.put("IAFTER", "AFTER");
-		List<PairFeatureVector> trainFvList = test.getEventTimexTlinks(trainTmlDirpath, tmlToCol, colParser,
-				etCls, true, goldCandidate, relTypeMappingTrain, ttFeature);
-		etCls.train(trainFvList, "./models/test/te3-et.model");
+		List<PairFeatureVector> trainFvList = test.getEventDctTlinks(trainTmlDirpath, tmlToCol, colParser,
+				edCls, true, goldCandidate, relTypeMappingTrain);
+		System.out.println(PairClassifier.printCSVFeatureVector(trainFvList));
 		
 		// PREDICT
 		String evalTmlDirpath = "./data/TempEval3-eval_TML/";
-		List<PairFeatureVector> evalFvList = test.getEventTimexTlinks(evalTmlDirpath, tmlToCol, colParser,
-				etCls, false, goldCandidate, ttFeature);
-		List<String> etClsTest = etCls.predict(evalFvList, "./models/test/te3-et.model", test.labelCollapsed);
-		List<String> etTestList = new ArrayList<String>();
+		List<PairFeatureVector> evalFvList = test.getEventDctTlinks(evalTmlDirpath, tmlToCol, colParser,
+				edCls, false, goldCandidate);
+		
+		List<String> edClsTest = edCls.predict(evalFvList, "./models/test/te3-ed.model", test.labelCollapsed);
+		List<String> edTestList = new ArrayList<String>();
 		for (int i = 0; i < evalFvList.size(); i ++) {
-			EventTimexFeatureVector etfv = new EventTimexFeatureVector(evalFvList.get(i));
-			String label = etClsTest.get(i);
+			EventTimexFeatureVector edfv = new EventTimexFeatureVector(evalFvList.get(i));
+			String label = edClsTest.get(i);
 	
-			etTestList.add(etfv.getDoc().getFilename()
-					+ "\t" + etfv.getE1().getID() 
-					+ "\t" + etfv.getE2().getID()
-					+ "\t" + etfv.getLabel()
+			edTestList.add("test"
+					+ "\t" + edfv.getE1().getID() 
+					+ "\t" + edfv.getE2().getID()
+					+ "\t" + edfv.getLabel()
 					+ "\t" + label);
 		}
 		
 		// EVALUATE
-		PairEvaluator pet = new PairEvaluator(etTestList);
-		pet.evaluatePerLabel(test.label);
+		PairEvaluator ped = new PairEvaluator(edTestList);
+		ped.evaluatePerLabel(test.label);
 		
 	}
 }

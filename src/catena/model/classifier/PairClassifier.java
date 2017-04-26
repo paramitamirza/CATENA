@@ -233,72 +233,72 @@ public class PairClassifier {
 //		}
 //	}
 	
-	private void trainModels(String filepath) throws Exception {
-		String weight = "";
-		if (pairType == PairType.event_event) {
-			weight = "-w1 34 -w2 22 -w5 14 -w6 10 -w7 9 -w8 5";
-		} else if (pairType == PairType.event_timex) {
-			weight = "-w1 298 -w2 61 -w6 11 -w7 130 -w8 421 -w9 34 -w10 4 -w11 4 -w12 13 -w13 12 -w14 10";
-		}
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {	//Train models using LibLINEAR
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\train.exe");
-			command.add("-s"); command.add("7");
-			command.add("-c"); command.add("1.0");
-			command.add("-e"); command.add("0.01");
-			command.add("-B"); command.add("1.0");
-			//for causality
-			//command.add("-w3"); command.add("100");
-			///////////////
-			command.add(filepath + ".libsvm");
-			command.add("models/" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			
-		} 
-	}
-	
-	private void trainModels(String filepath, boolean labelProbs) throws Exception {
-		String weight = "";
-		if (pairType == PairType.event_event) {
-			weight = "-w1 34 -w2 22 -w5 14 -w6 10 -w7 9 -w8 5";
-		} else if (pairType == PairType.event_timex) {
-			weight = "-w1 298 -w2 61 -w6 11 -w7 130 -w8 421 -w9 34 -w10 4 -w11 4 -w12 13 -w13 12 -w14 10";
-		}
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {	//Train models using LibLINEAR
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\train.exe");
-			command.add("-s"); 
-			if (labelProbs) command.add("7");
-			else command.add("1");
-			command.add("-c"); command.add("1.0");
-			command.add("-e"); command.add("0.01");
-			command.add("-B"); command.add("1.0");
-			command.add(filepath + ".libsvm");
-			command.add("models/" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			
-		} 
-	}
+//	private void trainModels(String filepath) throws Exception {
+//		String weight = "";
+//		if (pairType == PairType.event_event) {
+//			weight = "-w1 34 -w2 22 -w5 14 -w6 10 -w7 9 -w8 5";
+//		} else if (pairType == PairType.event_timex) {
+//			weight = "-w1 298 -w2 61 -w6 11 -w7 130 -w8 421 -w9 34 -w10 4 -w11 4 -w12 13 -w13 12 -w14 10";
+//		}
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {	//Train models using LibLINEAR
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\train.exe");
+//			command.add("-s"); command.add("7");
+//			command.add("-c"); command.add("1.0");
+//			command.add("-e"); command.add("0.01");
+//			command.add("-B"); command.add("1.0");
+//			//for causality
+//			//command.add("-w3"); command.add("100");
+//			///////////////
+//			command.add(filepath + ".libsvm");
+//			command.add("models/" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			
+//		} 
+//	}
+//	
+//	private void trainModels(String filepath, boolean labelProbs) throws Exception {
+//		String weight = "";
+//		if (pairType == PairType.event_event) {
+//			weight = "-w1 34 -w2 22 -w5 14 -w6 10 -w7 9 -w8 5";
+//		} else if (pairType == PairType.event_timex) {
+//			weight = "-w1 298 -w2 61 -w6 11 -w7 130 -w8 421 -w9 34 -w10 4 -w11 4 -w12 13 -w13 12 -w14 10";
+//		}
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {	//Train models using LibLINEAR
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\train.exe");
+//			command.add("-s"); 
+//			if (labelProbs) command.add("7");
+//			else command.add("1");
+//			command.add("-c"); command.add("1.0");
+//			command.add("-e"); command.add("0.01");
+//			command.add("-B"); command.add("1.0");
+//			command.add(filepath + ".libsvm");
+//			command.add("models/" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			
+//		} 
+//	}
 	
 //	private void trainModels(RemoteServer rs, String filepath) throws Exception {
 //		String weight = "";
@@ -386,375 +386,378 @@ public class PairClassifier {
 //		}
 //	}
 	
-	private void evaluateModels(String trainFilepath, 
-			String testFilepath) throws Exception {
+//	private void evaluateModels(String trainFilepath, 
+//			String testFilepath) throws Exception {
+//	
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add("models\\" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			List<String> result = new ArrayList<String>();
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				result.add(line.split(" ")[0] 
+//						+ "\t" + lineResult);
+//			}
+//			
+//			PairEvaluator pe = new PairEvaluator(result);
+//			pe.evaluatePerLabelIdx();
+//			
+//		} 
+//	}
+//	
+//	private void evaluateModels(String trainFilepath, 
+//			String testFilepath,
+//			String modelPath) throws Exception {
+//	
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add(modelPath.replace("/", "\\"));
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			List<String> result = new ArrayList<String>();
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				result.add(line.split(" ")[0] 
+//						+ "\t" + lineResult);
+//			}
+//			
+//			PairEvaluator pe = new PairEvaluator(result);
+//			pe.evaluatePerLabelIdx();
+//			
+//		} 
+//	}
+//	
+//	private String testModels(String trainFilepath, 
+//			String testFilepath) throws Exception {
+//		
+//		StringBuilder pairResult = new StringBuilder();
+//		
+//		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+//				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+//		List<String> labelList = Arrays.asList(label);
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add("models\\" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				pairResult.append(line.split(" ")[0] 
+//						+ "\t" + lineResult
+//						+ "\n");
+//			}
+//			
+//		} 
+//		
+//		return pairResult.toString();
+//	}
+//	
+//	private String testModels(String trainFilepath, 
+//			String testFilepath, String[] label) throws Exception {
+//		
+//		StringBuilder pairResult = new StringBuilder();
+//		List<String> labelList = Arrays.asList(label);
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add("models\\" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				pairResult.append(line.split(" ")[0] 
+//						+ "\t" + lineResult
+//						+ "\n");
+//			}
+//			
+//		} 
+//		
+//		return pairResult.toString();
+//	}
+//	
+//	private String testModels(String trainFilepath, 
+//			String testFilepath, boolean labelProbs) throws Exception {
+//		
+//		StringBuilder pairResult = new StringBuilder();
+//		
+//		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+//				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+//		List<String> labelList = Arrays.asList(label);
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			if (labelProbs) {
+//				command.add("-b"); command.add("1");
+//			}
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add("models\\" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			Map<String, Integer> labelIndices = new HashMap<String, Integer>();
+//			if (labelProbs) {
+//				String[] headerCols = readerResult.readLine().split(" ");
+//				for (int i=1; i< headerCols.length; i++) {
+//					labelIndices.put(headerCols[i], i);
+//				}
+//			}
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				List<String> lineResultCols = Arrays.asList(lineResult.split(" "));
+//				pairResult.append(line.split(" ")[0] 
+//						+ "\t" + lineResultCols.get(0));
+//				if (labelProbs)	pairResult.append("\t" + lineResultCols.get(labelIndices.get(lineResultCols.get(0)) + 1));			
+//				pairResult.append("\n");
+//			}
+//			
+//		} 
+//		
+//		return pairResult.toString();
+//	}
+//	
+//	private String testModels(String trainFilepath, 
+//			String testFilepath, boolean labelProbs, String[] label) throws Exception {
+//		
+//		StringBuilder pairResult = new StringBuilder();
+//		
+//		List<String> labelList = Arrays.asList(label);
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			if (labelProbs) {
+//				command.add("-b"); command.add("1");
+//			}
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add("models\\" + name 
+//					+ "-" + getFeatureTypeString() 
+//					+ "-" + labelGrouping
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.model");
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			Map<String, Integer> labelIndices = new HashMap<String, Integer>();
+//			if (labelProbs) {
+//				String[] headerCols = readerResult.readLine().split(" ");
+//				for (int i=1; i< headerCols.length; i++) {
+//					labelIndices.put(headerCols[i], i);
+//				}
+//			}
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				List<String> lineResultCols = Arrays.asList(lineResult.split(" "));
+//				pairResult.append(line.split(" ")[0] 
+//						+ "\t" + lineResultCols.get(0));
+//				if (labelProbs)	pairResult.append("\t" + lineResultCols.get(labelIndices.get(lineResultCols.get(0)) + 1));			
+//				pairResult.append("\n");
+//			}
+//			
+//		} 
+//		
+//		return pairResult.toString();
+//	}
+//	
+//	private String testModels(String trainFilepath, 
+//			String testFilepath,
+//			String modelPath) throws Exception {
+//		
+//		StringBuilder pairResult = new StringBuilder();
+//		
+//		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
+//				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+//		List<String> labelList = Arrays.asList(label);
+//		
+//		if (classifier.equals(VectorClassifier.liblinear)) {
+//			
+//			/*******Windows*******/
+//			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
+//			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
+//			List<String> command = new ArrayList<String>();
+//			command.add(liblinearPath + "windows\\predict.exe");
+//			command.add("-q");
+//			command.add(testFilepath + ".libsvm ");
+//			command.add(modelPath.replace("/", "\\"));
+//			command.add("data\\" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged");
+//			ProcessBuilder builder = new ProcessBuilder(command);
+//			final Process process = builder.start();
+//			process.waitFor();
+//			
+//			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
+//			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
+//					+ "-" + getFeatureTypeString()
+//					+ "-" + labelGrouping 
+//					+ "-" + getPairTypeString() 
+//					+ "-liblinear.tagged"));
+//			String line, lineResult;
+//			while ((line = readerInput.readLine()) != null) {
+//				lineResult = readerResult.readLine();
+//				pairResult.append(line.split(" ")[0] 
+//						+ "\t" + lineResult
+//						+ "\n");
+//			}
+//			
+//		} 
+//		
+//		return pairResult.toString();
+//	}
 	
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add("models\\" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			List<String> result = new ArrayList<String>();
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				result.add(line.split(" ")[0] 
-						+ "\t" + lineResult);
-			}
-			
-			PairEvaluator pe = new PairEvaluator(result);
-			pe.evaluatePerLabelIdx();
-			
-		} 
-	}
-	
-	private void evaluateModels(String trainFilepath, 
-			String testFilepath,
-			String modelPath) throws Exception {
-	
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add(modelPath.replace("/", "\\"));
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			List<String> result = new ArrayList<String>();
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				result.add(line.split(" ")[0] 
-						+ "\t" + lineResult);
-			}
-			
-			PairEvaluator pe = new PairEvaluator(result);
-			pe.evaluatePerLabelIdx();
-			
-		} 
-	}
-	
-	private String testModels(String trainFilepath, 
-			String testFilepath) throws Exception {
-		
-		StringBuilder pairResult = new StringBuilder();
-		
-		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		List<String> labelList = Arrays.asList(label);
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add("models\\" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				pairResult.append(line.split(" ")[0] 
-						+ "\t" + lineResult
-						+ "\n");
-			}
-			
-		} 
-		
-		return pairResult.toString();
-	}
-	
-	private String testModels(String trainFilepath, 
-			String testFilepath, String[] label) throws Exception {
-		
-		StringBuilder pairResult = new StringBuilder();
-		List<String> labelList = Arrays.asList(label);
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add("models\\" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				pairResult.append(line.split(" ")[0] 
-						+ "\t" + lineResult
-						+ "\n");
-			}
-			
-		} 
-		
-		return pairResult.toString();
-	}
-	
-	private String testModels(String trainFilepath, 
-			String testFilepath, boolean labelProbs) throws Exception {
-		
-		StringBuilder pairResult = new StringBuilder();
-		
-		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		List<String> labelList = Arrays.asList(label);
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			if (labelProbs) {
-				command.add("-b"); command.add("1");
-			}
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add("models\\" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			Map<String, Integer> labelIndices = new HashMap<String, Integer>();
-			if (labelProbs) {
-				String[] headerCols = readerResult.readLine().split(" ");
-				for (int i=1; i< headerCols.length; i++) {
-					labelIndices.put(headerCols[i], i);
-				}
-			}
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				List<String> lineResultCols = Arrays.asList(lineResult.split(" "));
-				pairResult.append(line.split(" ")[0] 
-						+ "\t" + lineResultCols.get(0));
-				if (labelProbs)	pairResult.append("\t" + lineResultCols.get(labelIndices.get(lineResultCols.get(0)) + 1));			
-				pairResult.append("\n");
-			}
-			
-		} 
-		
-		return pairResult.toString();
-	}
-	
-	private String testModels(String trainFilepath, 
-			String testFilepath, boolean labelProbs, String[] label) throws Exception {
-		
-		StringBuilder pairResult = new StringBuilder();
-		
-		List<String> labelList = Arrays.asList(label);
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			if (labelProbs) {
-				command.add("-b"); command.add("1");
-			}
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add("models\\" + name 
-					+ "-" + getFeatureTypeString() 
-					+ "-" + labelGrouping
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.model");
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			Map<String, Integer> labelIndices = new HashMap<String, Integer>();
-			if (labelProbs) {
-				String[] headerCols = readerResult.readLine().split(" ");
-				for (int i=1; i< headerCols.length; i++) {
-					labelIndices.put(headerCols[i], i);
-				}
-			}
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				List<String> lineResultCols = Arrays.asList(lineResult.split(" "));
-				pairResult.append(line.split(" ")[0] 
-						+ "\t" + lineResultCols.get(0));
-				if (labelProbs)	pairResult.append("\t" + lineResultCols.get(labelIndices.get(lineResultCols.get(0)) + 1));			
-				pairResult.append("\n");
-			}
-			
-		} 
-		
-		return pairResult.toString();
-	}
-	
-	private String testModels(String trainFilepath, 
-			String testFilepath,
-			String modelPath) throws Exception {
-		
-		StringBuilder pairResult = new StringBuilder();
-		
-		String[] label = {"BEFORE", "AFTER", "IBEFORE", "IAFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "DURING", "DURING_INV", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
-		List<String> labelList = Arrays.asList(label);
-		
-		if (classifier.equals(VectorClassifier.liblinear)) {
-			
-			/*******Windows*******/
-			String liblinearPath = "D:\\GitHub\\EventRelationExtractor\\tools\\liblinear-2.1\\";
-			String projectPath = "D:\\GitHub\\EventRelationExtractor\\";
-			List<String> command = new ArrayList<String>();
-			command.add(liblinearPath + "windows\\predict.exe");
-			command.add("-q");
-			command.add(testFilepath + ".libsvm ");
-			command.add(modelPath.replace("/", "\\"));
-			command.add("data\\" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged");
-			ProcessBuilder builder = new ProcessBuilder(command);
-			final Process process = builder.start();
-			process.waitFor();
-			
-			BufferedReader readerInput = new BufferedReader(new FileReader(testFilepath + ".libsvm"));
-			BufferedReader readerResult = new BufferedReader(new FileReader("data/" + name 
-					+ "-" + getFeatureTypeString()
-					+ "-" + labelGrouping 
-					+ "-" + getPairTypeString() 
-					+ "-liblinear.tagged"));
-			String line, lineResult;
-			while ((line = readerInput.readLine()) != null) {
-				lineResult = readerResult.readLine();
-				pairResult.append(line.split(" ")[0] 
-						+ "\t" + lineResult
-						+ "\n");
-			}
-			
-		} 
-		
-		return pairResult.toString();
-	}
-	
-	public String printFeatureVector(List<PairFeatureVector> vectors) {
+	public static String printFeatureVector(List<PairFeatureVector> vectors) {
 		StringBuilder pairFV = new StringBuilder();
 		for (PairFeatureVector fv : vectors) {
-			if (classifier.equals(VectorClassifier.liblinear)
-					|| classifier.equals(VectorClassifier.logit)) {
-				pairFV.append(fv.printLibSVMVectors() + "\n");
-			} else if (classifier.equals(VectorClassifier.none)) {
-				pairFV.append(fv.printCSVVectors() + "\n");
-			}
+			pairFV.append(fv.printLibSVMVectors() + "\n");
+		}
+		return pairFV.toString();
+	}
+	
+	public static String printCSVFeatureVector(List<PairFeatureVector> vectors) {
+		StringBuilder pairFV = new StringBuilder();
+		for (PairFeatureVector fv : vectors) {
+			pairFV.append(fv.printCSVVectors() + "\n");
 		}
 		return pairFV.toString();
 	}
