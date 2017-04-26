@@ -159,6 +159,7 @@ public class EvaluateTimeBankDenseCrossVal {
 	public static void main(String [] args) throws Exception {
 		
 		String exp = "tbdense";
+		String pair = "ee";
 		String group = "0";
 		int numFold = 10;
 		boolean binary = true;
