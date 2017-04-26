@@ -43,6 +43,12 @@
   		<artifactId>stanford-corenlp</artifactId>
   		<version>3.7.0</version>
   	</dependency>
+  	<dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.7.0</version>
+	    <classifier>models</classifier>
+	</dependency>
   	<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
 	<dependency>
 	    <groupId>com.sun.jersey</groupId>
@@ -60,12 +66,6 @@
 	    <groupId>com.googlecode.mate-tools</groupId>
 	    <artifactId>anna</artifactId>
 	    <version>3.5</version>
-	</dependency>
-	<dependency>
-	    <groupId>edu.stanford.nlp</groupId>
-	    <artifactId>stanford-corenlp</artifactId>
-	    <version>3.7.0</version>
-	    <classifier>models</classifier>
 	</dependency>
   </dependencies>  
 </project>
