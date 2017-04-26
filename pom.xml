@@ -37,12 +37,6 @@
 	    <artifactId>commons-cli</artifactId>
 	    <version>1.3.1</version>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.jdom/jdom -->
-	<dependency>
-	    <groupId>org.jdom</groupId>
-	    <artifactId>jdom</artifactId>
-	    <version>2.0.2</version>
-	</dependency>
 	<!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp -->
   	<dependency>
   		<groupId>edu.stanford.nlp</groupId>
@@ -54,6 +48,24 @@
 	    <groupId>com.sun.jersey</groupId>
 	    <artifactId>jersey-client</artifactId>
 	    <version>1.19</version>
-	</dependency>	  	
-  </dependencies>
+	</dependency>	 
+	<!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
+	<dependency>
+	    <groupId>org.jdom</groupId>
+	    <artifactId>jdom2</artifactId>
+	    <version>2.0.5</version>
+	</dependency> 	
+	<!-- https://mvnrepository.com/artifact/com.googlecode.mate-tools/anna -->
+	<dependency>
+	    <groupId>com.googlecode.mate-tools</groupId>
+	    <artifactId>anna</artifactId>
+	    <version>3.5</version>
+	</dependency>
+	<dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.7.0</version>
+	    <classifier>models</classifier>
+	</dependency>
+  </dependencies>  
 </project>
