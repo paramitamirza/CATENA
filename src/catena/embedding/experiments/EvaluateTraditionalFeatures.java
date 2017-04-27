@@ -12,7 +12,7 @@ public class EvaluateTraditionalFeatures {
 
 	public static void main(String[] args) throws Exception {	
 		
-		String task = "te3-c-rel";
+		String task = "tbdense";
 		boolean colFilesAvailable = true;
 		boolean train = true;
 		
