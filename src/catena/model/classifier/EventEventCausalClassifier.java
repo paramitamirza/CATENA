@@ -85,12 +85,14 @@ public class EventEventCausalClassifier extends PairClassifier {
 			boolean train, List<String> labelList) throws Exception {
 		return getEventEventClinksPerFile(doc, eeRelCls,
 				train, labelList,
+				false,
 				null,
 				null);
 	}
 	
 	public static List<PairFeatureVector> getEventEventClinksPerFile(Doc doc, PairClassifier eeRelCls,
 			boolean train, List<String> labelList,
+			boolean tlinkAsFeature,
 			Map<String, String> tlinks,
 			List<String> tlinkLabels) throws Exception {
 		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
@@ -127,9 +129,9 @@ public class EventEventCausalClassifier extends PairClassifier {
 					}
 					
 					//Add TLINK type feature to feature vector
-					if (tlinks != null) {
+					if (tlinkAsFeature) {
 						String tlinkType = "O";
-						if (tlinks.containsKey(eefv.getE1().getID() + "," + eefv.getE2().getID())) 
+						if (tlinks != null && tlinks.containsKey(eefv.getE1().getID() + "," + eefv.getE2().getID())) 
 							tlinkType = tlinks.get(eefv.getE1().getID() + "," + eefv.getE2().getID());
 						
 						if (eeRelCls.classifier.equals(VectorClassifier.liblinear) || 
@@ -137,7 +139,7 @@ public class EventEventCausalClassifier extends PairClassifier {
 							eefv.addBinaryFeatureToVector("tlink", tlinkType, tlinkLabels);
 						} else if (eeRelCls.classifier.equals(VectorClassifier.none)){
 							eefv.addToVector("tlink", tlinkType);
-						}
+						}	
 					}
 					
 					String label = eefv.getLabel();

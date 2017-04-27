@@ -1,6 +1,7 @@
 package catena;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,13 +41,15 @@ public class Catena {
         String eeModel = cmd.getOptionValue("eetemporal");
         String eecModel = cmd.getOptionValue("eecausal");
         
+        boolean colFilesAvailable = cmd.hasOption("f");
+        
         // ---------- TRAIN CATENA MODELS ---------- //
         boolean train = cmd.hasOption("b");
         String tempCorpus = cmd.getOptionValue("tempcorpus");
         String causCorpus = cmd.getOptionValue("causcorpus");
         if (train) {
         	cat.trainModels(tempCorpus, causCorpus,
-        			edModel, etModel, eeModel, eecModel);
+        			edModel, etModel, eeModel, eecModel, colFilesAvailable);
         }
         				
 		// ---------- TEST CATENA MODELS ---------- //
@@ -59,11 +62,11 @@ public class Catena {
 		File file = new File(input);
 		if (file.isDirectory()) {
 			System.out.println(cat.extractRelations(input, 
-					edModel, etModel, eeModel, eecModel));
+					edModel, etModel, eeModel, eecModel, colFilesAvailable));
 			
 		} else if (file.isFile()) {
 			System.out.println(cat.extractRelations(new File(input),
-					edModel, etModel, eeModel, eecModel));
+					edModel, etModel, eeModel, eecModel, colFilesAvailable));
 		}
 	}
 	
@@ -118,12 +121,17 @@ public class Catena {
         causaltrain.setRequired(false);
         options.addOption(causaltrain);
         
+        Option colFiles = new Option("f", "col", false, "Column (.col) files resulted from converting TimeML files into column format are available in the TimeML directory");
+        colFiles.setRequired(false);
+        options.addOption(colFiles);
+        
         return options;
 	}
 	
 	public String extractRelations(String dirPath,
 			String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel) throws Exception {
+			String eventEventModel, String causalModel,
+			boolean colFilesAvailable) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
 		File[] tmlFiles = new File(dirPath).listFiles();
@@ -134,7 +142,7 @@ public class Catena {
 				
 				results.append(extractRelations(tmlFile,
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel));
+						eventEventModel, causalModel, colFilesAvailable));
 			}
 		}
 		
@@ -143,7 +151,7 @@ public class Catena {
 	
 	public String extractRelations(File tmlFile,
 			String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel) throws Exception {
+			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
 		
 		// ---------- TEMPORAL ---------- //
 		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
@@ -159,7 +167,7 @@ public class Catena {
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		List<TLINK> tlinks = temp.extractRelations("catena", tmlFile, te3CLabelCollapsed, relTypeMapping);
+		List<TLINK> tlinks = temp.extractRelations("catena", tmlFile, te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
 		
 		// ---------- CAUSAL ---------- //
 		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
@@ -171,17 +179,27 @@ public class Catena {
 		// PREDICT
 		CLINK clinks;
 		Map<String, Map<String, String>> tlinksForClinkPerFile = new HashMap<String, Map<String, String>>();
-		if (this.isTlinkFeature()) {			
+		if (this.isTlinkFeature()) {	
+			Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+			relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+			relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+			relTypeMappingTrain.put("IBEFORE", "BEFORE");
+			relTypeMappingTrain.put("IAFTER", "AFTER");
+			
 			for (String s : tlinks.get(0).getEE()) {
 				String[] cols = s.split("\t");
 				if (!tlinksForClinkPerFile.containsKey(cols[0])) tlinksForClinkPerFile.put(cols[0], new HashMap<String, String>());
-				tlinksForClinkPerFile.get(cols[0]).put(cols[1]+","+cols[2], cols[4]);
-				tlinksForClinkPerFile.get(cols[0]).put(cols[2]+","+cols[1], TemporalRelation.getInverseRelation(cols[4]));
+				String label = cols[4];
+				for (String key : relTypeMappingTrain.keySet()) {
+					label = label.replace(key, relTypeMappingTrain.get(key));
+				}
+				tlinksForClinkPerFile.get(cols[0]).put(cols[1]+","+cols[2], label);
+				tlinksForClinkPerFile.get(cols[0]).put(cols[2]+","+cols[1], TemporalRelation.getInverseRelation(label));
 			}
 			clinks = causal.extractRelations("catena", tmlFile, null, causalLabel, 
-					tlinksForClinkPerFile.get(tmlFile.getName()), te3CLabelCollapsed);
+					this.isTlinkFeature(), tlinksForClinkPerFile.get(tmlFile.getName()), te3CLabelCollapsed, colFilesAvailable);
 		} else {
-			clinks = causal.extractRelations("catena", tmlFile, null, causalLabel, null, null);
+			clinks = causal.extractRelations("catena", tmlFile, null, causalLabel, colFilesAvailable);
 		}
 		
 		// POST-EDITING
@@ -209,15 +227,18 @@ public class Catena {
 	}
 	
 	public void trainModels(String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel) throws Exception {
+			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
 		trainModels("./data/Catena-train_TML/", "./data/Causal-TimeBank_TML/",
 				eventDctModel, eventTimexModel,
-				eventEventModel, causalModel);
+				eventEventModel, causalModel,
+				colFilesAvailable);
 	}
 	
 	public void trainModels(String temporalTrainCorpus, String causalTrainCorpus,
 			String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel) throws Exception {
+			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
+		
+		System.err.println("Train CATENA temporal and causal models...");
 		
 		// ---------- TEMPORAL ---------- //
 		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
@@ -236,7 +257,7 @@ public class Catena {
 		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
 		relTypeMappingTrain.put("IBEFORE", "BEFORE");
 		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMappingTrain);
+		temp.trainModels("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
 		
 		// ---------- CAUSAL ---------- //
 		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
@@ -248,9 +269,7 @@ public class Catena {
 		// TRAIN
 		Map<String, Map<String, String>> tlinksForClinkTrainPerFile = new HashMap<String, Map<String, String>>();
 		if (this.isTlinkFeature()) {	
-			Map<String, String> relTypeMapping = new HashMap<String, String>();
-			relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-			List<TLINK> tlinksTrain = temp.extractRelations("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMapping);
+			List<TLINK> tlinksTrain = temp.extractRelations("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
 			for (String s : tlinksTrain.get(0).getEE()) {
 				String[] cols = s.split("\t");
 				if (!tlinksForClinkTrainPerFile.containsKey(cols[0])) tlinksForClinkTrainPerFile.put(cols[0], new HashMap<String, String>());
@@ -259,10 +278,9 @@ public class Catena {
 			}
 			
 			causal.trainModels("catena", causalTrainCorpus, causalLabel, 
-					tlinksForClinkTrainPerFile, te3CLabelCollapsed, relTypeMappingTrain);
+					this.isTlinkFeature(), tlinksForClinkTrainPerFile, te3CLabelCollapsed, colFilesAvailable);
 		} else {
-			causal.trainModels("catena", causalTrainCorpus, causalLabel, 
-					null, null);
+			causal.trainModels("catena", causalTrainCorpus, causalLabel, colFilesAvailable);
 		}
 		
 	}

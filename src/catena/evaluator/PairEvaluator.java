@@ -248,7 +248,7 @@ public class PairEvaluator {
 		}
 		
 		for (int i=0; i<label.length; i++) {
-			System.err.println(label[i] + "\t" +
+			System.out.println(label[i] + "\t" +
 					total[i] + "\t" +
 					tp[i] + "\t" +
 					fp[i] + "\t" +
@@ -256,13 +256,13 @@ public class PairEvaluator {
 					recall[i] + "\t" +
 					f1[i]);
 		}
-		System.err.println("Avg " + totalp/label.length + 
+		System.out.println("Avg " + totalp/label.length + 
 				" " + totalr/label.length +
 				" " + totalf1/label.length);
-		System.err.println("W-Avg " + totalwp/(double)totaltotal + 
+		System.out.println("W-Avg " + totalwp/(double)totaltotal + 
 				" " + totalwr/(double)totaltotal +
 				" " + totalwf1/(double)totaltotal);
-		System.err.println("Accuracy " + totaltp/(double)totaltotal + " (" + totaltp + "/" + totaltotal + ")");
+		System.out.println("Accuracy " + totaltp/(double)totaltotal + " (" + totaltp + "/" + totaltotal + ")");
 	}
 	
 	private void printEvaluation(String[] label,

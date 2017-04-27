@@ -156,300 +156,184 @@ public class EvaluateTimeBankDenseCrossVal {
 		return fvList;
 	}
 	
+	public static List<List<PairFeatureVector>> getEventEventTlinksSub(String embeddingFilePath, int embeddingDimension, List<Map<Integer,Integer>> idxList,
+			String[] arrLabel) throws Exception {
+		
+		List<List<PairFeatureVector>> fvList = new ArrayList<List<PairFeatureVector>>();
+		for(int i=0; i<idxList.size(); i++) fvList.add(new ArrayList<PairFeatureVector>());
+		
+		List<String> fvListAll = new ArrayList<String>();
+		System.setProperty("line.separator", "\n");
+		BufferedReader bremb = new BufferedReader(new FileReader(embeddingFilePath));
+		String line;
+		while ((line = bremb.readLine()) != null) {
+			fvListAll.add(line.trim());
+		}
+		bremb.close();
+		
+		int numCols; String lbl;
+		for (int i=0; i<idxList.size(); i++) {
+			for (Integer idx : idxList.get(i).keySet()) {
+				numCols = fvListAll.get(idx).split(",").length / 2;
+				lbl = arrLabel[idxList.get(i).get(idx)-1];
+				PairFeatureVector fv = new PairFeatureVector(null, null, null, lbl, numCols+1, 
+		    			null, null);
+				int col=0;
+				String[] emb = fvListAll.get(idx).split(",");
+				for (int j=0; j<embeddingDimension; j++) {
+					fv.getFeatures()[col] = Double.parseDouble(emb[j+embeddingDimension]) - Double.parseDouble(emb[j]);	//w2 - w1
+					col++;
+				}
+				fv.getFeatures()[col] = (double) idxList.get(i).get(idx);
+		    	fvList.get(i).add(fv);
+			}
+		}
+		
+		return fvList;
+	}
+	
+	public static List<List<PairFeatureVector>> getEventEventTlinksSum(String embeddingFilePath, int embeddingDimension, List<Map<Integer,Integer>> idxList,
+			String[] arrLabel) throws Exception {
+		
+		List<List<PairFeatureVector>> fvList = new ArrayList<List<PairFeatureVector>>();
+		for(int i=0; i<idxList.size(); i++) fvList.add(new ArrayList<PairFeatureVector>());
+		
+		List<String> fvListAll = new ArrayList<String>();
+		System.setProperty("line.separator", "\n");
+		BufferedReader bremb = new BufferedReader(new FileReader(embeddingFilePath));
+		String line;
+		while ((line = bremb.readLine()) != null) {
+			fvListAll.add(line.trim());
+		}
+		bremb.close();
+		
+		int numCols; String lbl;
+		for (int i=0; i<idxList.size(); i++) {
+			for (Integer idx : idxList.get(i).keySet()) {
+				numCols = fvListAll.get(idx).split(",").length / 2;
+				lbl = arrLabel[idxList.get(i).get(idx)-1];
+				PairFeatureVector fv = new PairFeatureVector(null, null, null, lbl, numCols+1, 
+		    			null, null);
+				int col=0;
+				String[] emb = fvListAll.get(idx).split(",");
+				for (int j=0; j<embeddingDimension; j++) {
+					fv.getFeatures()[col] = Double.parseDouble(emb[j]) + Double.parseDouble(emb[j+embeddingDimension]);	//w1 + w2
+					col++;
+				}
+		    	fv.getFeatures()[col] = (double) idxList.get(i).get(idx);
+		    	fvList.get(i).add(fv);
+			}
+		}
+		
+		return fvList;
+	}
+	
 	public static void main(String [] args) throws Exception {
 		
 		String exp = "tbdense";
-		String pair = "ee";
+		String pair = "ee";			//ee for event-event, ed for event-dct
 		String group = "0";
-		int numFold = 10;
-		boolean binary = true;
+		int numFold = 10;			//number of fold for cross validation
+		boolean binary = true;		//how to write probability for stack learning, binary=[0,1]
+		String feature = "sum";		//conv for conventional features, concat for embeddings concatenated, sub for embeddings subtracted, sum for embeddings summed
+									//for ed pair only conv and concat available
 		
 		String[] arrLabel = new String[0];
-		
-		List<Map<Integer, Integer>> idxListList = new ArrayList<Map<Integer, Integer>>();
-		List<Map<Integer, Integer>> idxDctListList = new ArrayList<Map<Integer, Integer>>();
 		
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(exp+"-stack", "logit");
 		
 		arrLabel = labelDense;
-		idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-ee-train-labels-str.gr"+group+".csv", 
-				numFold);
-		idxDctListList = getEventEventDenseLabels("./data/embedding/"+exp+"-ed-train-labels-str.gr"+group+".csv", 
-				numFold);
-		
-		List<List<PairFeatureVector>> fvListListC = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ee-train-features.csv", 
+		List<Map<Integer, Integer>> idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv", 
+				numFold);		
+		List<List<PairFeatureVector>> fvListList = new ArrayList<List<PairFeatureVector>>();
+		switch (feature) {
+			case "conv": 
+				fvListList = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-features.csv", 
 						idxListList, arrLabel);
-		List<List<PairFeatureVector>> fvListList0 = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp0.csv", 
+				break;
+				
+			case "concat":
+				fvListList = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 
 						idxListList, arrLabel);
-		List<List<PairFeatureVector>> fvListList2 = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp2.csv", 
+				break;
+				
+			case "sub":
+				fvListList = getEventEventTlinksSub("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
 						idxListList, arrLabel);
-		List<List<PairFeatureVector>> fvListList3 = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp3.csv", 
+				break;
+				
+			case "sum":
+				fvListList = getEventEventTlinksSum("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
 						idxListList, arrLabel);
+				break;
+			
+		}
 		
-		List<List<PairFeatureVector>> fvDctListListC = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ed-train-features.csv", 
-						idxDctListList, arrLabel);
-		List<List<PairFeatureVector>> fvDctListList = 
-				getEventEventTlinks("./data/embedding/"+exp+"-ed-train-embedding-word2vec-300.csv", 
-						idxDctListList, arrLabel);
+		BufferedWriter bwProbs = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train-probs."+feature+".csv"));
+		BufferedWriter bwLabels = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train-probs-labels.csv"));
+		BufferedWriter bwFeature = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train."+feature+".csv"));
 		
-		BufferedWriter bwProbsC = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-probs.conv.csv"));
-		BufferedWriter bwProbs0 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-probs.exp0.csv"));
-		BufferedWriter bwProbs2 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-probs.exp2.csv"));
-		BufferedWriter bwProbs3 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-probs.exp3.csv"));
-		BufferedWriter bwLabels = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-probs-labels.csv"));
-		BufferedWriter bwConv = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train-conv-features.csv"));
-		
-		BufferedWriter bwDctProbsC = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train-probs.conv.csv"));
-		BufferedWriter bwDctProbs = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train-probs.csv"));
-		BufferedWriter bwDctLabels = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train-probs-labels.csv"));
-		BufferedWriter bwDctConv = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train-conv-features.csv"));
-		
-		BufferedWriter bwSigC = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train.conv.txt"));
-		BufferedWriter bwSig0 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train.exp0.txt"));
-		BufferedWriter bwSig2 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train.exp2.txt"));
-		BufferedWriter bwSig3 = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ee-train.exp3.txt"));
-		
-		BufferedWriter bwDctSigC = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train.conv.txt"));
-		BufferedWriter bwDctSig = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-ed-train.txt"));
-		
-		System.out.println(fvListList0.size() + "-" + fvListList3.size());
+		// For running significance text
+//		BufferedWriter bwSig = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train."+feature+".txt"));
 		
 		for (int fold=0; fold<numFold; fold++) {
 			
-			System.err.println("Fold " + (fold+1) + "...");
+			List<PairFeatureVector> evalFvList = fvListList.get(fold);
 			
-			List<PairFeatureVector> evalFvListC = fvListListC.get(fold);
-			List<PairFeatureVector> evalFvList0 = fvListList0.get(fold);
-			List<PairFeatureVector> evalFvList2 = fvListList2.get(fold);
-			List<PairFeatureVector> evalFvList3 = fvListList3.get(fold);
-			
-			List<PairFeatureVector> evalDctFvListC = fvDctListListC.get(fold);
-			List<PairFeatureVector> evalDctFvList = fvDctListList.get(fold);
-			
-			List<PairFeatureVector> trainFvListC = new ArrayList<PairFeatureVector>();
-			List<PairFeatureVector> trainFvList0 = new ArrayList<PairFeatureVector>();
-			List<PairFeatureVector> trainFvList2 = new ArrayList<PairFeatureVector>();
-			List<PairFeatureVector> trainFvList3 = new ArrayList<PairFeatureVector>();
-			
-			List<PairFeatureVector> trainDctFvListC = new ArrayList<PairFeatureVector>();
-			List<PairFeatureVector> trainDctFvList = new ArrayList<PairFeatureVector>();
+			List<PairFeatureVector> trainFvList = new ArrayList<PairFeatureVector>();
 			
 			for (int n=0; n<numFold; n++) {
 				if (n != fold) {
-					trainFvListC.addAll(fvListListC.get(n));
-					trainFvList0.addAll(fvListList0.get(n));
-					trainFvList2.addAll(fvListList2.get(n));
-					trainFvList3.addAll(fvListList3.get(n));
-					
-					trainDctFvListC.addAll(fvDctListListC.get(n));
-					trainDctFvList.addAll(fvDctListList.get(n));
+					trainFvList.addAll(fvListList.get(n));
 				}
 			}
 			
 			if (eeCls.classifier.equals(VectorClassifier.logit)) {
-				eeCls.train2(trainFvListC, "models/" + eeCls.getName() + "-conv.model");
-				eeCls.train2(trainFvList0, "models/" + eeCls.getName() + "-exp0.model");
-				eeCls.train2(trainFvList2, "models/" + eeCls.getName() + "-exp2.model");
-				eeCls.train2(trainFvList3, "models/" + eeCls.getName() + "-exp3.model");
+				eeCls.train2(trainFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model");
 				
-				eeCls.train2(trainDctFvListC, "models/" + eeCls.getName() + "-dct-conv.model");
-				eeCls.train2(trainDctFvList, "models/" + eeCls.getName() + "-dct.model");
+				List<String> eeClsTest = eeCls.predictProbs2(evalFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model", arrLabel);
+				List<String> eeTestList = new ArrayList<String>();
 				
-				List<String> eeClsTestC = eeCls.predictProbs2(evalFvListC, "models/" + eeCls.getName() + "-conv.model", arrLabel);
-				List<String> eeClsTest0 = eeCls.predictProbs2(evalFvList0, "models/" + eeCls.getName() + "-exp0.model", arrLabel);
-				List<String> eeClsTest2 = eeCls.predictProbs2(evalFvList2, "models/" + eeCls.getName() + "-exp2.model", arrLabel);
-				List<String> eeClsTest3 = eeCls.predictProbs2(evalFvList3, "models/" + eeCls.getName() + "-exp3.model", arrLabel);
-				
-				List<String> edClsTestC = eeCls.predictProbs2(evalDctFvListC, "models/" + eeCls.getName() + "-dct-conv.model", arrLabel);
-				List<String> edClsTest = eeCls.predictProbs2(evalDctFvList, "models/" + eeCls.getName() + "-dct.model", arrLabel);
-				
-				List<String> eeTestListC = new ArrayList<String>();
-				List<String> eeTestList0 = new ArrayList<String>();
-				List<String> eeTestList2 = new ArrayList<String>();
-				List<String> eeTestList3 = new ArrayList<String>();
-				
-				List<String> edTestListC = new ArrayList<String>();
-				List<String> edTestList = new ArrayList<String>();
-				
-				for (PairFeatureVector fv : evalFvListC) {
+				for (PairFeatureVector fv : evalFvList) {
 					bwLabels.write(fv.getLabel() + "\n");
-					bwConv.write(fv.toCSVString() + "\n");
+					bwFeature.write(fv.toCSVString() + "\n");
 				}
-				for (int i=0; i<eeClsTestC.size(); i++) {
-					eeTestListC.add("-"
+				for (int i=0; i<eeClsTest.size(); i++) {
+					eeTestList.add("-"
 							+ "\t" + "-"
 							+ "\t" + "-"
-							+ "\t" + evalFvListC.get(i).getLabel()
-							+ "\t" + eeClsTestC.get(i).split("#")[0]);
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i).split("#")[0]);
 					if (binary) {
 						String lineLabels = "";
 						for (String l : arrLabel) {
-							if (l.equals(eeClsTestC.get(i).split("#")[0])) lineLabels += "1,";
+							if (l.equals(eeClsTest.get(i).split("#")[0])) lineLabels += "1,";
 							else lineLabels += "0,";
 						}
-						bwProbsC.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
+						bwProbs.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
 					} else {
-//						bwProbsC.write(discretizeProbs(eeClsTestC.get(i).split("#")[1]) + "\n");
-						bwProbsC.write(eeClsTestC.get(i).split("#")[1] + "\n");
+//						bwProbs.write(discretizeProbs(eeClsTest.get(i).split("#")[1]) + "\n");
+						bwProbs.write(eeClsTest.get(i).split("#")[1] + "\n");
 					}
 					
-					if (evalFvListC.get(i).getLabel().equals(eeClsTestC.get(i).split("#")[0])) bwSigC.write("1 1 1\n");
-					else bwSigC.write("0 1 1\n");
+//					if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i).split("#")[0])) bwSig.write("1 1 1\n");
+//					else bwSig.write("0 1 1\n");
 				}
-				for (int i=0; i<eeClsTest0.size(); i++) {
-					eeTestList0.add("-"
-							+ "\t" + "-"
-							+ "\t" + "-"
-							+ "\t" + evalFvList0.get(i).getLabel()
-							+ "\t" + eeClsTest0.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(eeClsTest0.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwProbs0.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwProbs0.write(discretizeProbs(eeClsTest0.get(i).split("#")[1]) + "\n");
-						bwProbs0.write(eeClsTest0.get(i).split("#")[1] + "\n");
-					}
-					
-					if (evalFvList0.get(i).getLabel().equals(eeClsTest0.get(i).split("#")[0])) bwSig0.write("1 1 1\n");
-					else bwSig0.write("0 1 1\n");
-				}
-				for (int i=0; i<eeClsTest2.size(); i++) {
-					eeTestList2.add("-"
-							+ "\t" + "-"
-							+ "\t" + "-"
-							+ "\t" + evalFvList2.get(i).getLabel()
-							+ "\t" + eeClsTest2.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(eeClsTest2.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwProbs2.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwProbs2.write(discretizeProbs(eeClsTest2.get(i).split("#")[1]) + "\n");
-						bwProbs2.write(eeClsTest2.get(i).split("#")[1] + "\n");
-					}
-					
-					if (evalFvList2.get(i).getLabel().equals(eeClsTest2.get(i).split("#")[0])) bwSig2.write("1 1 1\n");
-					else bwSig2.write("0 1 1\n");
-				}
-				for (int i=0; i<eeClsTest3.size(); i++) {
-					eeTestList3.add("-"
-							+ "\t" + "-"
-							+ "\t" + "-"
-							+ "\t" + evalFvList3.get(i).getLabel()
-							+ "\t" + eeClsTest3.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(eeClsTest3.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwProbs3.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwProbs3.write(discretizeProbs(eeClsTest3.get(i).split("#")[1]) + "\n");
-						bwProbs3.write(eeClsTest3.get(i).split("#")[1] + "\n");
-					}
-					
-					if (evalFvList3.get(i).getLabel().equals(eeClsTest3.get(i).split("#")[0])) bwSig3.write("1 1 1\n");
-					else bwSig3.write("0 1 1\n");
-				}
-				
-				for (PairFeatureVector fv : evalDctFvListC) {
-					bwDctLabels.write(fv.getLabel() + "\n");
-					bwDctConv.write(fv.toCSVString() + "\n");
-				}
-				for (int i=0; i<edClsTestC.size(); i++) {
-					edTestListC.add("-"
-							+ "\t" + "-"
-							+ "\t" + "-"
-							+ "\t" + evalDctFvListC.get(i).getLabel()
-							+ "\t" + edClsTestC.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(edClsTestC.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwDctProbsC.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwDctProbsC.write(discretizeProbs(edClsTestC.get(i).split("#")[1]) + "\n");
-						bwDctProbsC.write(edClsTestC.get(i).split("#")[1] + "\n");
-					}
-					
-					if (evalDctFvListC.get(i).getLabel().equals(edClsTestC.get(i).split("#")[0])) bwDctSigC.write("1 1 1\n");
-					else bwDctSigC.write("0 1 1\n");
-				}
-				for (int i=0; i<edClsTest.size(); i++) {
-					edTestList.add("-"
-							+ "\t" + "-" 
-							+ "\t" + "-"
-							+ "\t" + evalDctFvList.get(i).getLabel()
-							+ "\t" + edClsTest.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(edClsTest.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwDctProbs.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwDctProbs.write(discretizeProbs(edClsTest.get(i).split("#")[1]) + "\n");
-						bwDctProbs.write(edClsTest.get(i).split("#")[1] + "\n");
-					}
-					
-					if (evalDctFvList.get(i).getLabel().equals(edClsTest.get(i).split("#")[0])) bwDctSig.write("1 1 1\n");
-					else bwDctSig.write("0 1 1\n");
-				}
-				
 				
 				//Evaluate
-				PairEvaluator peeC = new PairEvaluator(eeTestListC);
+				System.out.println();
+				System.out.println("********** FOLD " + (fold+1) + " **********");
+				PairEvaluator peeC = new PairEvaluator(eeTestList);
 				peeC.evaluatePerLabel(arrLabel);
-				PairEvaluator pee0 = new PairEvaluator(eeTestList0);
-				pee0.evaluatePerLabel(arrLabel);
-				PairEvaluator pee2 = new PairEvaluator(eeTestList2);
-				pee2.evaluatePerLabel(arrLabel);
-				PairEvaluator pee3 = new PairEvaluator(eeTestList3);
-				pee3.evaluatePerLabel(arrLabel);
-				
-				PairEvaluator pedC = new PairEvaluator(edTestListC);
-				pedC.evaluatePerLabel(arrLabel);
-				PairEvaluator ped = new PairEvaluator(edTestList);
-				ped.evaluatePerLabel(arrLabel);
+				System.out.println();
 				
 			}
 		}
 		
 		bwLabels.close();
-		bwConv.close();
-		bwProbsC.close();
-		bwProbs0.close();
-		bwProbs2.close();
-		bwProbs3.close();
-		
-		bwDctLabels.close();
-		bwDctConv.close();
-		bwDctProbsC.close();
-		bwDctProbs.close();
-		
-		bwSigC.close();
-		bwSig0.close();
-		bwSig2.close();
-		bwSig3.close();
-		
-		bwDctSigC.close();
-		bwDctSig.close();
+		bwFeature.close();
+		bwProbs.close();
+//		bwSig.close();
 		
 	}
 

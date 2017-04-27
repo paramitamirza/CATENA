@@ -11,24 +11,26 @@ public class TestTemporal {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "tbdense";
+		String task = "te3-c";
+		boolean colFilesAvailable = true;
+		boolean train = false;
 		
 		switch(task) {
 			case "te3-c-rel" :
-				TempEval3TaskCRelOnly();
+				TempEval3TaskCRelOnly(colFilesAvailable, train);
 				break;
 			
 			case "te3-c" :
-				TempEval3TaskC();
+				TempEval3TaskC(colFilesAvailable, train);
 				break;
 				
 			case "tbdense" :
-				TimeBankDense();
+				TimeBankDense(colFilesAvailable, train);
 				break;
 		}
 	}
 	
-	public static void TempEval3TaskC() throws Exception {
+	public static void TempEval3TaskC(boolean colFilesAvailable, boolean train) throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		List<TLINK> tlinks;
@@ -48,30 +50,41 @@ public static void main(String[] args) throws Exception {
 				true, false);
 		
 		// TRAIN
-		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+		if (train) {
+			Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+			relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+			relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+			relTypeMappingTrain.put("IBEFORE", "BEFORE");
+			relTypeMappingTrain.put("IAFTER", "AFTER");
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+		}
 		
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
 		
 		// EVALUATE
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** TLINK TIMEX-TIMEX ***********");
 		ptt = new PairEvaluator(tlinks.get(1).getTT());
 		ptt.evaluatePerLabel(te3CLabel);
+		System.out.println();
+		System.out.println("*********** TLINK EVENT-DCT ************");
 		ped = new PairEvaluator(tlinks.get(1).getED());
 		ped.evaluatePerLabel(te3CLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-TIMEX ***********");
 		pet = new PairEvaluator(tlinks.get(1).getET());
 		pet.evaluatePerLabel(te3CLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(tlinks.get(1).getEE());
 		pee.evaluatePerLabel(te3CLabel);
 	}
 	
-	public static void TempEval3TaskCRelOnly() throws Exception {
+	public static void TempEval3TaskCRelOnly(boolean colFilesAvailable, boolean train) throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		Map<String, String> relTypeMapping;
@@ -92,30 +105,41 @@ public static void main(String[] args) throws Exception {
 				true, false);
 		
 		// TRAIN
-		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
-		relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
-		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
-		relTypeMappingTrain.put("IBEFORE", "BEFORE");
-		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain);
+		if (train) {
+			Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
+			relTypeMappingTrain.put("DURING", "SIMULTANEOUS");
+			relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
+			relTypeMappingTrain.put("IBEFORE", "BEFORE");
+			relTypeMappingTrain.put("IAFTER", "AFTER");
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+		}
 		
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
 		
 		// EVALUATE
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** TLINK TIMEX-TIMEX ***********");
 		ptt = new PairEvaluator(tlinks.get(1).getTT());
 		ptt.evaluatePerLabel(te3CRelLabel);
+		System.out.println();
+		System.out.println("*********** TLINK EVENT-DCT ************");
 		ped = new PairEvaluator(tlinks.get(1).getED());
 		ped.evaluatePerLabel(te3CRelLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-TIMEX ***********");
 		pet = new PairEvaluator(tlinks.get(1).getET());
 		pet.evaluatePerLabel(te3CRelLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(tlinks.get(1).getEE());
 		pee.evaluatePerLabel(te3CRelLabel);
 	}
 	
-	public static void TimeBankDense() throws Exception {
+	public static void TimeBankDense(boolean colFilesAvailable, boolean train) throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
 			"CNN19980223.1130.0960.tml", 
@@ -181,7 +205,9 @@ public static void main(String[] args) throws Exception {
 				true, false);
 		
 		// TRAIN
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel);
+		if (train) {
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel, colFilesAvailable);
+		}
 		
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
@@ -192,15 +218,24 @@ public static void main(String[] args) throws Exception {
 		relTypeMapping.put("ENDED_BY", "BEFORE");
 		relTypeMapping.put("DURING", "SIMULTANEOUS");
 		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping, colFilesAvailable);
 		
 		// EVALUATE
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** TLINK TIMEX-TIMEX ***********");
 		ptt = new PairEvaluator(tlinks.get(1).getTT());
 		ptt.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("*********** TLINK EVENT-DCT ************");
 		ped = new PairEvaluator(tlinks.get(1).getED());
 		ped.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-TIMEX ***********");
 		pet = new PairEvaluator(tlinks.get(1).getET());
 		pet.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(tlinks.get(1).getEE());
 		pee.evaluatePerLabel(tbDenseLabel);
 	}

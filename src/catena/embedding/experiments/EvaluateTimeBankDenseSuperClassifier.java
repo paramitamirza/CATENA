@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import catena.model.classifier.EventEventTemporalClassifier;
 import catena.evaluator.PairEvaluator;
@@ -17,6 +18,107 @@ public class EvaluateTimeBankDenseSuperClassifier {
 	private static String[] labelDense = {"BEFORE", "AFTER", "SIMULTANEOUS", 
 			"INCLUDES", "IS_INCLUDED", "VAGUE"};
 	private static List<String> labelListDense = Arrays.asList(labelDense);
+	
+	public static List<PairFeatureVector> getEventEventTlinks(String filePath, String labelFilePath,
+			String[] arrLabel) throws Exception {
+		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
+		List<String> listLabel = Arrays.asList(arrLabel);
+		
+		System.setProperty("line.separator", "\n");
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+		BufferedReader brlbl = new BufferedReader(new FileReader(labelFilePath));
+		String line, lbl;
+		int numCols;
+		while ((lbl = brlbl.readLine()) != null) {
+			line = br.readLine().trim();
+			numCols = line.split(",").length;
+	    	
+	    	PairFeatureVector fv = new PairFeatureVector(null, null, null, lbl, numCols+1, 
+	    			null, null);
+	    	int i=0;
+	    	for (String s : line.split(",")) {
+//	    		fv.getVectors().add(s);
+	    		fv.getFeatures()[i] = Double.parseDouble(s);
+	    		i++;
+	    	}
+	    	fv.getFeatures()[i] = (double) listLabel.indexOf(lbl)+1;
+
+	    	fvList.add(fv);
+		}
+		
+		brlbl.close();
+		br.close();
+		
+		return fvList;
+	}
+	
+	public static List<PairFeatureVector> getEventEventTlinksSub(String filePath, int embeddingDimension,
+			String labelFilePath,
+			String[] arrLabel) throws Exception {
+		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
+		List<String> listLabel = Arrays.asList(arrLabel);
+		
+		System.setProperty("line.separator", "\n");
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+		BufferedReader brlbl = new BufferedReader(new FileReader(labelFilePath));
+		String line, lbl;
+		int numCols;
+		while ((lbl = brlbl.readLine()) != null) {
+			line = br.readLine().trim();
+			numCols = line.split(",").length / 2;
+	    	
+	    	PairFeatureVector fv = new PairFeatureVector(null, null, null, lbl, numCols+1, 
+	    			null, null);
+	    	int i=0;
+	    	String[] emb = line.split(",");
+			for (int j=0; j<embeddingDimension; j++) {
+				fv.getFeatures()[i] = Double.parseDouble(emb[j+embeddingDimension]) - Double.parseDouble(emb[j]);	//w2 - w1
+				i++;
+			}
+	    	fv.getFeatures()[i] = (double) listLabel.indexOf(lbl)+1;
+	    	
+	    	fvList.add(fv);
+		}
+		
+		brlbl.close();
+		br.close();
+		
+		return fvList;
+	}
+	
+	public static List<PairFeatureVector> getEventEventTlinksSum(String filePath, int embeddingDimension, 
+			String labelFilePath,
+			String[] arrLabel) throws Exception {
+		List<PairFeatureVector> fvList = new ArrayList<PairFeatureVector>();
+		List<String> listLabel = Arrays.asList(arrLabel);
+		
+		System.setProperty("line.separator", "\n");
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+		BufferedReader brlbl = new BufferedReader(new FileReader(labelFilePath));
+		String line, lbl;
+		int numCols;
+		while ((lbl = brlbl.readLine()) != null) {
+			line = br.readLine().trim();
+			numCols = line.split(",").length / 2;
+	    	
+	    	PairFeatureVector fv = new PairFeatureVector(null, null, null, lbl, numCols+1, 
+	    			null, null);
+	    	int i=0;
+	    	String[] emb = line.split(",");
+			for (int j=0; j<embeddingDimension; j++) {
+				fv.getFeatures()[i] = Double.parseDouble(emb[j+embeddingDimension]) + Double.parseDouble(emb[j]);	//w2 - w1
+				i++;
+			}
+	    	fv.getFeatures()[i] = (double) listLabel.indexOf(lbl)+1;
+	    	
+	    	fvList.add(fv);
+		}
+		
+		brlbl.close();
+		br.close();
+		
+		return fvList;
+	}
 	
 	public static List<PairFeatureVector> getEventEventTlinks(String[] fileList, String labelFilePath,
 			String[] arrLabel) throws Exception {
@@ -43,14 +145,11 @@ public class EvaluateTimeBankDenseSuperClassifier {
 	    			null, null);
 	    	int i=0;
 	    	for (String s : line.split(",")) {
-//	    		fv.getVectors().add(s);
 	    		fv.getFeatures()[i] = Double.parseDouble(s);
 	    		i++;
 	    	}
-//	    	fv.getVectors().add(String.valueOf(labelList.indexOf(lbl)+1));
 	    	fv.getFeatures()[i] = (double) listLabel.indexOf(lbl)+1;
 	    	
-//	    	if (!lbl.equals("VAGUE"))
 	    	fvList.add(fv);
 		}
 		
@@ -67,8 +166,10 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		String exp = "tbdense";
 		String pair = "ee";
 		String group = "0";
-		int numFold = 10;
-		boolean stack = false;
+		boolean binary = true;			//how to write probability for stack learning, binary=[0,1]
+		String feature = "sum";		//conv for conventional features, concat for embeddings concatenated, sub for embeddings subtracted, sum for embeddings summed
+										//for ed pair only conv and concat available
+		String experiment = "combine";	//normal=only 1 set of feature (conv/concat/sub/sum), combine=combine (concatenate) sets of features, stack=stack learning setting for combining features
 		
 		String[] arrLabel = new String[0];
 		
@@ -78,147 +179,194 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		
 		List<PairFeatureVector> trainFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> evalFvList = new ArrayList<PairFeatureVector>();
+		List<String> eeClsTest = new ArrayList<String>();
+		List<String> eeTestList = new ArrayList<String>();
 		
-		if (stack) {
-			switch(pair) {
-				case "ee":
-					String[] trainFileList = {
-							"./data/embedding/"+exp+"-ee-train-conv-features.csv",
-//							"./data/embedding/"+exp+"-ee-train-probs.conv.csv", 
-			                "./data/embedding/"+exp+"-ee-train-probs.exp0.csv", 
-//			                "./data/embedding/"+exp+"-ee-train-probs.exp2.csv", 
-//			                "./data/embedding/"+exp+"-ee-train-probs.exp3.csv"
-							};
-					trainFvList = 
-							getEventEventTlinks(trainFileList, 
-							"./data/embedding/"+exp+"-ee-train-probs-labels.csv",
-							arrLabel);
-					
-					String[] evalFileList = {
-							"./data/embedding/"+exp+"-ee-eval-features.csv", 
-//							"./data/embedding/"+exp+"-ee-eval-probs.conv.csv", 
-							"./data/embedding/"+exp+"-ee-eval-probs.exp0.csv", 
-//			                "./data/embedding/"+exp+"-ee-eval-probs.exp2.csv", 
-//			                "./data/embedding/"+exp+"-ee-eval-probs.exp3.csv"
-							};
-					evalFvList = 
-							getEventEventTlinks(evalFileList, 
-							"./data/embedding/"+exp+"-ee-eval-probs-labels.csv",
-							arrLabel);
-					break;
+		switch (experiment) {
+		
+			case "normal":
+				switch (feature) {
+					case "conv": 
+						trainFvList = getEventEventTlinks(
+								"./data/embedding/"+exp+"-"+pair+"-train-features.csv",
+								"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+								arrLabel);
+						evalFvList = getEventEventTlinks(
+								"./data/embedding/"+exp+"-"+pair+"-eval-features.csv",
+								"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+								arrLabel);
+						
+						break;
+						
+					case "concat": 
+						trainFvList = getEventEventTlinks(
+								"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv",
+								"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+								arrLabel);
+						evalFvList = getEventEventTlinks(
+								"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv",
+								"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+								arrLabel);
+						
+						break;
+						
+					case "sub": 
+						trainFvList = getEventEventTlinksSub(
+								"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300,
+								"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+								arrLabel);
+						evalFvList = getEventEventTlinksSub(
+								"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv", 300,
+								"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+								arrLabel);
+						
+						break;
+						
+					case "sum": 
+						trainFvList = getEventEventTlinksSum(
+								"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300,
+								"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+								arrLabel);
+						evalFvList = getEventEventTlinksSum(
+								"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv", 300,
+								"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+								arrLabel);
+						
+						break;
+						
+				}
 				
-				case "ed":
-					String[] edTrainFileList = {
-							"./data/embedding/"+exp+"-ed-train-conv-features.csv",
-			                "./data/embedding/"+exp+"-ed-train-probs.csv"
-							};
-					trainFvList = 
-							getEventEventTlinks(edTrainFileList, 
-							"./data/embedding/"+exp+"-ed-train-probs-labels.csv",
-							arrLabel);
+				cls.train2(trainFvList, "models/" + cls.getName() + "-"+pair+"-"+feature+"-"+experiment+".model");
+				eeClsTest = cls.predictProbs2(evalFvList, "models/" + cls.getName() + "-"+pair+"-"+feature+"-"+experiment+".model", arrLabel);
+				
+				BufferedWriter bwFeature = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval."+feature+".csv"));
+				BufferedWriter bwProbs = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-probs."+feature+".csv"));
+				
+				for (PairFeatureVector fv : evalFvList) {
+					bwFeature.write(fv.toCSVString() + "\n");
+				}
+				
+				for (int i=0; i<eeClsTest.size(); i++) {
+					eeTestList.add("-"
+							+ "\t" + "-"
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i).split("#")[0]);
+					if (binary) {
+						String lineLabels = "";
+						for (String l : arrLabel) {
+							if (l.equals(eeClsTest.get(i).split("#")[0])) lineLabels += "1,";
+							else lineLabels += "0,";
+						}
+						bwProbs.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
+					} else {
+//						bwProbs.write(discretizeProbs(eeClsTest.get(i).split("#")[1]) + "\n");
+						bwProbs.write(eeClsTest.get(i).split("#")[1] + "\n");
+					}
 					
-					String[] edEvalFileList = {
-							"./data/embedding/"+exp+"-ed-eval-features.csv",
-							"./data/embedding/"+exp+"-ed-eval-probs.csv"
-							};
-					evalFvList = 
-							getEventEventTlinks(edEvalFileList, 
-							"./data/embedding/"+exp+"-ed-eval-probs-labels.csv",
-							arrLabel);
-					break;
+//					if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i).split("#")[0])) bwSig.write("1 1 1\n");
+//					else bwSig.write("0 1 1\n");
+				}
+				
+				bwFeature.close();
+				bwProbs.close();
+				
+				break;
+				
+			case "combine":
+				
+				String[] trainFileList = {
+						"./data/embedding/"+exp+"-"+pair+"-train-features.csv",
+						"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv",
+//		                "./data/embedding/"+exp+"-"+pair+"-train.sub.csv",
+//		                "./data/embedding/"+exp+"-"+pair+"-train.sum.csv",
+						};
+				trainFvList = 
+						getEventEventTlinks(trainFileList, 
+								"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+						arrLabel);
+				
+				String[] evalFileList = {
+						"./data/embedding/"+exp+"-"+pair+"-eval-features.csv",
+		                "./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv",
+//		                "./data/embedding/"+exp+"-"+pair+"-eval.sub.csv",
+//		                "./data/embedding/"+exp+"-"+pair+"-eval.sum.csv",
+						};
+				evalFvList = 
+						getEventEventTlinks(evalFileList, 
+								"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+						arrLabel);
+				
+				cls.train2(trainFvList, "models/" + cls.getName() + ".model");
+				eeClsTest = cls.predict2(evalFvList, "models/" + cls.getName() + ".model", arrLabel);
+						
+				for (int i=0; i<eeClsTest.size(); i++) {
+					eeTestList.add("-"
+							+ "\t" + "-"
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i).split("#")[0]);
+				}
 					
-				case "et":
-					String[] etTrainFileList = {
-							"./data/embedding/"+exp+"-et-train-conv-features.csv",
-			                "./data/embedding/"+exp+"-et-train-probs.csv"
-							};
-					trainFvList = 
-							getEventEventTlinks(etTrainFileList, 
-							"./data/embedding/"+exp+"-et-train-probs-labels.csv",
-							arrLabel);
-					
-					String[] etEvalFileList = {
-							"./data/embedding/"+exp+"-et-eval-features.csv",
-							"./data/embedding/"+exp+"-et-eval-probs.csv"
-							};
-					evalFvList = 
-							getEventEventTlinks(etEvalFileList, 
-							"./data/embedding/"+exp+"-et-eval-probs-labels.csv",
-							arrLabel);
-					break;
-			}
-			
-		} else {
-			switch(pair) {
-				case "ee":
-					String[] trainFileList = {
-							"./data/embedding/"+exp+"-ee-train-features.csv",
-			                "./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp0.csv",
-//			              "./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp2.csv",
-//			              "./data/embedding/"+exp+"-ee-train-embedding-word2vec-300.exp3.csv",
-							};
-					trainFvList = 
-							getEventEventTlinks(trainFileList, 
-							"./data/embedding/"+exp+"-ee-train-labels-str.gr"+group+".csv",
-							arrLabel);
-					
-					String[] evalFileList = {
-							"./data/embedding/"+exp+"-ee-eval-features.csv",
-			                "./data/embedding/"+exp+"-ee-eval-embedding-word2vec-300.exp0.csv",
-//			                "./data/embedding/"+exp+"-ee-eval-embedding-word2vec-300.exp2.csv",
-//			                "./data/embedding/"+exp+"-ee-eval-embedding-word2vec-300.exp3.csv",
-							};
-					evalFvList = 
-							getEventEventTlinks(evalFileList, 
-									"./data/embedding/"+exp+"-ee-eval-labels-str.gr"+group+".csv",
-							arrLabel);
-					break;
-					
-				case "ed":
-					String[] edTrainFileList = {
-							"./data/embedding/"+exp+"-ed-train-features.csv",
-			                "./data/embedding/"+exp+"-ed-train-embedding-word2vec-300.csv"
-							};
-					trainFvList = 
-							getEventEventTlinks(edTrainFileList, 
-							"./data/embedding/"+exp+"-ed-train-labels-str.gr"+group+".csv",
-							arrLabel);
-					
-					String[] edEvalFileList = {
-							"./data/embedding/"+exp+"-ed-eval-features.csv",
-			                "./data/embedding/"+exp+"-ed-eval-embedding-word2vec-300.csv"
-							};
-					evalFvList = 
-							getEventEventTlinks(edEvalFileList, 
-									"./data/embedding/"+exp+"-ed-eval-labels-str.gr"+group+".csv",
-							arrLabel);
-					break;
-					
-				case "et":
-					String[] etTrainFileList = {
-							"./data/embedding/"+exp+"-et-train-features.csv",
-			                "./data/embedding/"+exp+"-et-train-embedding-word2vec-300.csv"
-							};
-					trainFvList = 
-							getEventEventTlinks(etTrainFileList, 
-							"./data/embedding/"+exp+"-et-train-labels-str.gr"+group+".csv",
-							arrLabel);
-					
-					String[] etEvalFileList = {
-							"./data/embedding/"+exp+"-et-eval-features.csv",
-			                "./data/embedding/"+exp+"-et-eval-embedding-word2vec-300.csv"
-							};
-					evalFvList = 
-							getEventEventTlinks(etEvalFileList, 
-									"./data/embedding/"+exp+"-et-eval-labels-str.gr"+group+".csv",
-							arrLabel);
-					break;
-			}
+				break;
+		
 		}
 		
-		cls.train2(trainFvList, "models/" + cls.getName() + ".model");
+		PairEvaluator pees = new PairEvaluator(eeTestList);
+		pees.evaluatePerLabel(arrLabel);
 		
-		List<String> eeClsTest = cls.predict2(evalFvList, "models/" + cls.getName() + ".model", arrLabel);
+//		if (stack) {
+//			String[] trainFileList = {
+//					"./data/embedding/"+exp+"-"+pair+"-train-conv.csv",
+////					"./data/embedding/"+exp+"-"+pair+"-train-probs.conv.csv", 
+//	                "./data/embedding/"+exp+"-"+pair+"-train-probs.exp0.csv", 
+////	                "./data/embedding/"+exp+"-"+pair+"-train-probs.exp2.csv", 
+////	                "./data/embedding/"+exp+"-"+pair+"-train-probs.exp3.csv"
+//					};
+//			trainFvList = 
+//					getEventEventTlinks(trainFileList, 
+//					"./data/embedding/"+exp+"-"+pair+"-train-probs-labels.csv",
+//					arrLabel);
+//			
+//			String[] evalFileList = {
+//					"./data/embedding/"+exp+"-"+pair+"-eval-features.csv", 
+////					"./data/embedding/"+exp+"-"+pair+"-eval-probs.conv.csv", 
+//					"./data/embedding/"+exp+"-"+pair+"-eval-probs.exp0.csv", 
+////	                "./data/embedding/"+exp+"-"+pair+"-eval-probs.exp2.csv", 
+////	                "./data/embedding/"+exp+"-"+pair+"-eval-probs.exp3.csv"
+//					};
+//			evalFvList = 
+//					getEventEventTlinks(evalFileList, 
+//					"./data/embedding/"+exp+"-"+pair+"-eval-probs-labels.csv",
+//					arrLabel);
+//			
+//		} else {
+//			String[] trainFileList = {
+//					"./data/embedding/"+exp+"-"+pair+"-train-features.csv",
+//	                "./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.exp0.csv",
+////	              "./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.exp2.csv",
+////	              "./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.exp3.csv",
+//					};
+//			trainFvList = 
+//					getEventEventTlinks(trainFileList, 
+//					"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+//					arrLabel);
+//			
+//			String[] evalFileList = {
+//					"./data/embedding/"+exp+"-"+pair+"-eval-features.csv",
+//	                "./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.exp0.csv",
+////	                "./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.exp2.csv",
+////	                "./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.exp3.csv",
+//					};
+//			evalFvList = 
+//					getEventEventTlinks(evalFileList, 
+//							"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+//					arrLabel);
+//		}
+		
+//		cls.train2(trainFvList, "models/" + cls.getName() + ".model");
+//		
+//		List<String> eeClsTest = cls.predict2(evalFvList, "models/" + cls.getName() + ".model", arrLabel);
 //		List<String> eeClsTest = 
 //				getMaxProbTlinks(evalFileList, 
 //						"./data/embedding/"+exp+"-ee-eval-probs-labels.csv");
@@ -233,52 +381,52 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		}
 		brSent.close();
 		
-		String combine = "concat";
-		if (stack) combine = "stack";	
+//		String combine = "concat";
+//		if (stack) combine = "stack";	
+//		
+//		BufferedWriter bwSig = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-"+combine+".txt"));
+//		BufferedWriter bwSigSame = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-same-"+combine+".txt"));
+//		BufferedWriter bwSigDiff = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-diff-"+combine+".txt"));
 		
-		BufferedWriter bwSig = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-"+combine+".txt"));
-		BufferedWriter bwSigSame = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-same-"+combine+".txt"));
-		BufferedWriter bwSigDiff = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-eval-diff-"+combine+".txt"));
+//		for (int i=0; i<eeClsTest.size(); i++) {
+//			if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSig.write("1 1 1\n");
+//			else bwSig.write("0 1 1\n");
+//		}
+//		bwSig.close();
 		
-		for (int i=0; i<eeClsTest.size(); i++) {
-			if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSig.write("1 1 1\n");
-			else bwSig.write("0 1 1\n");
-		}
-		bwSig.close();
-		
-		//Same sentence
-		List<String> eeTestListSame = new ArrayList<String>();
-		for (int i=0; i<eeClsTest.size(); i++) {
-			if (sentDistance.get(i) == 0) {
-				eeTestListSame.add("-"
-						+ "\t" + "-"
-						+ "\t" + "-"
-						+ "\t" + evalFvList.get(i).getLabel()
-						+ "\t" + eeClsTest.get(i));
-				if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSigSame.write("1 1 1\n");
-				else bwSigSame.write("0 1 1\n");
-			}
-		}
-		PairEvaluator pees = new PairEvaluator(eeTestListSame);
-		pees.evaluatePerLabel(arrLabel);
-		bwSigSame.close();
-		
-		//Different sentence
-		List<String> eeTestListDiff = new ArrayList<String>();
-		for (int i=0; i<eeClsTest.size(); i++) {
-			if (sentDistance.get(i) != 0) {
-				eeTestListDiff.add("-"
-						+ "\t" + "-"
-						+ "\t" + "-"
-						+ "\t" + evalFvList.get(i).getLabel()
-						+ "\t" + eeClsTest.get(i));
-				if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSigDiff.write("1 1 1\n");
-				else bwSigDiff.write("0 1 1\n");
-			}
-		}
-		PairEvaluator peed = new PairEvaluator(eeTestListDiff);
-		peed.evaluatePerLabel(arrLabel);
-		bwSigDiff.close();
+//		//Same sentence
+//		List<String> eeTestListSame = new ArrayList<String>();
+//		for (int i=0; i<eeClsTest.size(); i++) {
+//			if (sentDistance.get(i) == 0) {
+//				eeTestListSame.add("-"
+//						+ "\t" + "-"
+//						+ "\t" + "-"
+//						+ "\t" + evalFvList.get(i).getLabel()
+//						+ "\t" + eeClsTest.get(i));
+////				if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSigSame.write("1 1 1\n");
+////				else bwSigSame.write("0 1 1\n");
+//			}
+//		}
+//		PairEvaluator pees = new PairEvaluator(eeTestListSame);
+//		pees.evaluatePerLabel(arrLabel);
+////		bwSigSame.close();
+//		
+//		//Different sentence
+//		List<String> eeTestListDiff = new ArrayList<String>();
+//		for (int i=0; i<eeClsTest.size(); i++) {
+//			if (sentDistance.get(i) != 0) {
+//				eeTestListDiff.add("-"
+//						+ "\t" + "-"
+//						+ "\t" + "-"
+//						+ "\t" + evalFvList.get(i).getLabel()
+//						+ "\t" + eeClsTest.get(i));
+////				if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i))) bwSigDiff.write("1 1 1\n");
+////				else bwSigDiff.write("0 1 1\n");
+//			}
+//		}
+//		PairEvaluator peed = new PairEvaluator(eeTestListDiff);
+//		peed.evaluatePerLabel(arrLabel);
+////		bwSigDiff.close();
 		
 	}
 

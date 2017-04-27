@@ -40,21 +40,14 @@ public class Causal {
 		
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
-		Map<String, Map<String, String>> tlinks = null;
-		String[] tlinkLabels = null;
-		trainModels(taskName, tmlDirpath, labels, tlinks, tlinkLabels, new HashMap<String, String>());
+	public void trainModels(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
+		trainModels(taskName, tmlDirpath, labels, false, null, null, colFilesAvailable);
 	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels, 
-			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
-		trainModels(taskName, tmlDirpath, labels, 
-				tlinks, tlinkLabels, new HashMap<String, String>());
-	}
-	
-	public void trainModels(String taskName, String tmlDirpath, String[] labels, 
+			boolean tlinkAsFeature,
 			Map<String, Map<String, String>> tlinks, String[] tlinkLabels, 
-			Map<String, String> relTypeMappingTrain) throws Exception {
+			boolean colFilesAvailable) throws Exception {
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
 		
 		// Init the parsers...
@@ -63,34 +56,37 @@ public class Causal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 		
 		// Init the classifier...
-		EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "liblinear");	
+		EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "logit");	
 		
 		File[] tmlFiles = new File(tmlDirpath).listFiles();
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml")) {
-				System.err.println("Processing " + tmlFile.getPath());
+//				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, true);
-				Doc doc = colParser.parseLines(columns);
-				doc.setFilename(tmlFile.getName());
+				Doc doc;
+				if (colFilesAvailable) {
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+				} else {
+					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+					// OR... Parse TimeML file without saving to .col files
+//					List<String> columns = tmlToCol.convert(tmlFile, true);
+//					doc = colParser.parseLines(columns);
+				}				
 				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				doc.setFilename(tmlFile.getName());
 				
 				TimeMLParser.parseTimeML(tmlFile, doc);
 				CandidateLinks.setCandidateClinks(doc);
 				
 				// Get the feature vectors
-				if (tlinkLabels != null) {
-					if (tlinks == null) {
-						eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-								true, Arrays.asList(labels), doc.getTlinkTypes(relTypeMappingTrain), Arrays.asList(tlinkLabels)));
-					} else {
-						eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-								true, Arrays.asList(labels), tlinks.get(doc.getFilename()), Arrays.asList(tlinkLabels)));
-					}
+				if (tlinkAsFeature) {
+					eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+							true, Arrays.asList(labels), tlinkAsFeature, tlinks.get(doc.getFilename()), Arrays.asList(tlinkLabels)));
 				} else {
 					eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
 							true, Arrays.asList(labels)));
@@ -101,55 +97,19 @@ public class Causal {
 		eeCls.train(eeFvList, getCausalModelPath());
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, String[] labels) throws Exception {
-		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
-		
-		// Init the parsers...
-		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
-				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
-		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
-		
-		// Init the classifier...
-		EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "liblinear");	
-		
-		List<String> tmlFileList = Arrays.asList(tmlFileNames);
-		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
-			
-			if (tmlFile.getName().contains(".tml") && !tmlFileList.contains(tmlFile.getName())) {
-				System.err.println("Processing " + tmlFile.getPath());
-				
-				// File pre-processing...
-				List<String> columns = tmlToCol.convert(tmlFile, true);
-				Doc doc = colParser.parseLines(columns);
-				doc.setFilename(tmlFile.getName());
-				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-				
-				TimeMLParser.parseTimeML(tmlFile, doc);
-				CandidateLinks.setCandidateClinks(doc);
-				
-				// Get the feature vectors
-				eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-						true, Arrays.asList(labels)));
-			}
-		}
-
-		eeCls.train(eeFvList, getCausalModelPath());
-	}
-	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
-			String[] labels) throws Exception {
+			String[] labels, boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath,
 				labels,
-				null, null);
+				false, null, null, 
+				colFilesAvailable);
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			String[] labels,
-			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
+			boolean tlinkAsFeature,
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels,
+			boolean colFilesAvailable) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -160,12 +120,7 @@ public class Causal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT				
-				CLINK links;
-				if (tlinks != null) {
-					links = extractRelations(taskName, tmlFile, null, labels, tlinks.get(tmlFile.getName()), tlinkLabels);
-				} else {
-					links = extractRelations(taskName, tmlFile, null, labels, null, null);
-				}
+				CLINK links = extractRelations(taskName, tmlFile, null, labels, tlinkAsFeature, tlinks.get(tmlFile.getName()), tlinkLabels, colFilesAvailable);
 				ee.addAll(links.getEE());
 			}
 		}
@@ -177,17 +132,20 @@ public class Causal {
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			Map<String, Map<String, String>> clinkPerFile,
-			String[] labels) throws Exception {
+			String[] labels, boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath,
 				clinkPerFile,
 				labels,
-				null, null);
+				false, null, null, 
+				colFilesAvailable);
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			Map<String, Map<String, String>> clinkPerFile,
 			String[] labels,
-			Map<String, Map<String, String>> tlinks, String[] tlinkLabels) throws Exception {
+			boolean tlinkAsFeature,
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels,
+			boolean colFilesAvailable) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -202,10 +160,10 @@ public class Causal {
 				if (clinkPerFile.containsKey(tmlFile.getName())) clinks = clinkPerFile.get(tmlFile.getName());
 				
 				CLINK links;
-				if (tlinks != null) {
-					links = extractRelations(taskName, tmlFile, clinks, labels, tlinks.get(tmlFile.getName()), tlinkLabels);
+				if (tlinkAsFeature) {
+					links = extractRelations(taskName, tmlFile, clinks, labels, tlinkAsFeature, tlinks.get(tmlFile.getName()), tlinkLabels, colFilesAvailable);
 				} else {
-					links = extractRelations(taskName, tmlFile, clinks, labels, null, null);
+					links = extractRelations(taskName, tmlFile, clinks, labels, colFilesAvailable);
 				}
 				ee.addAll(links.getEE());
 			}
@@ -217,15 +175,19 @@ public class Causal {
 	}	
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
-			String[] tmlFileNames, String[] labels) throws Exception {
+			String[] tmlFileNames, String[] labels,
+			boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath,
 				tmlFileNames, labels, 
-				null, null);
+				false, null, null, 
+				colFilesAvailable);
 	}
 	
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			String[] tmlFileNames, String[] labels, 
-			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
+			boolean tlinkAsFeature,
+			Map<String, String> tlinks, String[] tlinkLabels,
+			boolean colFilesAvailable) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
 		
@@ -238,7 +200,7 @@ public class Causal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				CLINK links = extractRelations(taskName, tmlFile, null, labels, tlinks, tlinkLabels);
+				CLINK links = extractRelations(taskName, tmlFile, null, labels, tlinkAsFeature, tlinks, tlinkLabels, colFilesAvailable);
 				ee.addAll(links.getEE());
 			}
 		}
@@ -250,7 +212,18 @@ public class Causal {
 	
 	public CLINK extractRelations(String taskName, File tmlFile, Map<String, String> clinks, 
 			String[] labels,
-			Map<String, String> tlinks, String[] tlinkLabels) throws Exception {
+			boolean colFilesAvailable) throws Exception {
+		return extractRelations(taskName, tmlFile,
+				clinks, labels, 
+				false, null, null, 
+				colFilesAvailable);
+	}
+	
+	public CLINK extractRelations(String taskName, File tmlFile, Map<String, String> clinks, 
+			String[] labels,
+			boolean tlinkAsFeature,
+			Map<String, String> tlinks, String[] tlinkLabels, 
+			boolean colFilesAvailable) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -258,12 +231,20 @@ public class Causal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		List<String> columns = tmlToCol.convert(tmlFile, true);
-		Doc doc = colParser.parseLines(columns);
-		doc.setFilename(tmlFile.getName());
+		Doc doc;
+		if (colFilesAvailable) {
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+		} else {
+			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+			// OR... Parse TimeML file without saving to .col files
+//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			doc = colParser.parseLines(columns);
+		}				
 		
-//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-//		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		doc.setFilename(tmlFile.getName());
 		
 		TimeMLParser.parseTimeML(tmlFile, doc, null, clinks);
 		CandidateLinks.setCandidateClinks(doc);
@@ -277,9 +258,9 @@ public class Causal {
 			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile, eeCausalRule);
 		}
 		
-		Doc docSieved = colParser.parseLines(columns);
+//		Doc docSieved = colParser.parseLines(columns);
+		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		docSieved.setFilename(tmlFile.getName());
-//		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);
 		
 		//Applying causal classifiers...
@@ -288,14 +269,14 @@ public class Causal {
 			// Init the classifier...
 			EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "liblinear");
 			
-			//Init the feature vectors...	
-			List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
-			if (tlinks != null && tlinkLabels != null) {
+			//Init the feature vectors...
+			List<PairFeatureVector> eeFvList;
+			if (tlinkAsFeature) {
 				eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-						false, Arrays.asList(labels), tlinks, Arrays.asList(tlinkLabels));
+						false, Arrays.asList(labels), tlinkAsFeature, tlinks, Arrays.asList(tlinkLabels));
 			} else {
 				eeFvList = EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
-						false, Arrays.asList(labels), null, null);
+						false, Arrays.asList(labels));
 			}
 			
 			List<String> eeClsLabels = eeCls.predict(eeFvList, getCausalModelPath(), labels);
@@ -307,6 +288,10 @@ public class Causal {
 					EventEventFeatureVector eefv = new EventEventFeatureVector(eeFvList.get(i));
 					if (!docSieved.getClinkTypes().containsKey(eefv.getE1().getID() + "," + eefv.getE2().getID())
 							&& !docSieved.getClinkTypes().containsKey(eefv.getE2().getID() + "," + eefv.getE1().getID())) {
+						
+						docSieved.getClinkTypes().put(eefv.getE1().getID() + "," + eefv.getE2().getID(), eeClsLabels.get(i));
+						docSieved.getClinkTypes().put(eefv.getE2().getID() + "," + eefv.getE1().getID(), CausalRelation.getInverseRelation(eeClsLabels.get(i)));
+						
 						if (eeClsLabels.get(i).equals("CLINK")) {
 							docSieved.getClinks().add(new CausalRelation(eefv.getE1().getID(), eefv.getE2().getID()));
 						} else if (eeClsLabels.get(i).equals("CLINK-R")) {
@@ -318,6 +303,10 @@ public class Causal {
 			} else {
 				for (int i = 0; i < eeFvList.size(); i ++) {
 					EventEventFeatureVector eefv = new EventEventFeatureVector(eeFvList.get(i));
+					
+					docSieved.getClinkTypes().put(eefv.getE1().getID() + "," + eefv.getE2().getID(), eeClsLabels.get(i));
+					docSieved.getClinkTypes().put(eefv.getE2().getID() + "," + eefv.getE1().getID(), CausalRelation.getInverseRelation(eeClsLabels.get(i)));
+					
 					if (eeClsLabels.get(i).equals("CLINK")) {
 						docSieved.getClinks().add(new CausalRelation(eefv.getE1().getID(), eefv.getE2().getID()));
 					} else if (eeClsLabels.get(i).equals("CLINK-R")) {
@@ -337,31 +326,6 @@ public class Causal {
 		CLINK links = new CLINK();
 		Set<String> extracted = new HashSet<String>();
 		
-		for (CausalRelation clink : system.getClinks()) {
-			
-			Entity e1 = system.getEntities().get(clink.getSourceID());
-			Entity e2 = system.getEntities().get(clink.getTargetID());
-			PairFeatureVector fv = new PairFeatureVector(system, e1, e2, "CLINK", null, null);
-			
-			String label = "NONE";
-			if (gold.getClinkTypes().containsKey(e1.getID() + "," + e2.getID())) {
-				label = gold.getClinkTypes().get(e1.getID() + "," + e2.getID());
-			} 
-			
-			if (!extracted.contains(e1.getID()+","+e2.getID())) {
-				if (fv.getPairType().equals(PairType.event_event)) {
-					links.getEE().add(system.getFilename()
-							+ "\t" + e1.getID()
-							+ "\t" + e2.getID()
-							+ "\t" + label
-							+ "\t" + fv.getLabel());
-					
-					extracted.add(e1.getID()+","+e2.getID());
-					extracted.add(e2.getID()+","+e1.getID());
-				}
-			}
-		}
-		
 		for (CausalRelation clink : gold.getClinks()) {
 			
 			Entity e1 = system.getEntities().get(clink.getSourceID());
@@ -370,17 +334,47 @@ public class Causal {
 			
 			if (!extracted.contains(e1.getID()+","+e2.getID())) {
 				if (fv.getPairType().equals(PairType.event_event)) {
+					if (system.getClinkTypes().containsKey(e1.getID()+","+e2.getID())) {
+						links.getEE().add(system.getFilename()
+								+ "\t" + e1.getID()
+								+ "\t" + e2.getID()
+								+ "\t" + gold.getClinkTypes().get(e1.getID()+","+e2.getID())
+								+ "\t" + system.getClinkTypes().get(e1.getID()+","+e2.getID()));
+						
+					} else {
+						links.getEE().add(system.getFilename()
+								+ "\t" + e1.getID()
+								+ "\t" + e2.getID()
+								+ "\t" + gold.getClinkTypes().get(e1.getID()+","+e2.getID())
+								+ "\t" + "NONE");
+					}
+					extracted.add(e1.getID()+","+e2.getID());
+					extracted.add(e2.getID()+","+e1.getID());
+				}
+			}
+		}
+		
+		for (CausalRelation clink : system.getClinks()) {
+			
+			Entity e1 = system.getEntities().get(clink.getSourceID());
+			Entity e2 = system.getEntities().get(clink.getTargetID());
+			PairFeatureVector fv = new PairFeatureVector(system, e1, e2, "CLINK", null, null);
+			
+			if (!extracted.contains(e1.getID()+","+e2.getID())) {
+				if (fv.getPairType().equals(PairType.event_event)) {
 					links.getEE().add(system.getFilename()
 							+ "\t" + e1.getID()
 							+ "\t" + e2.getID()
-							+ "\t" + "CLINK"
-							+ "\t" + "NONE");
+							+ "\t" + "NONE"
+							+ "\t" + system.getClinkTypes().get(e1.getID()+","+e2.getID()));
 					
 					extracted.add(e1.getID()+","+e2.getID());
 					extracted.add(e2.getID()+","+e1.getID());
 				}
 			}
 		}
+		
+		
 		
 		return links;
 	}

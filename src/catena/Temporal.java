@@ -54,13 +54,13 @@ public class Temporal {
 		
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] labels) throws Exception {
+	public void trainModels(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
 		trainModels(taskName, tmlDirpath, labels, 
-				new HashMap<String, String>());
+				new HashMap<String, String>(), colFilesAvailable);
 	}
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -79,14 +79,21 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml")) {
-				System.err.println("Processing " + tmlFile.getPath());
+//				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-//				List<String> columns = tmlToCol.convert(tmlFile, true);
-//				Doc doc = colParser.parseLines(columns);
-				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				Doc doc;
+				if (colFilesAvailable) {
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+				} else {
+					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+					// OR... Parse TimeML file without saving to .col files
+//					List<String> columns = tmlToCol.convert(tmlFile, true);
+//					doc = colParser.parseLines(columns);
+				}				
 				
 				doc.setFilename(tmlFile.getName());
 				
@@ -113,7 +120,7 @@ public class Temporal {
 	
 	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, 
 			Map<String, Map<String, String>> tlinkPerFile,
-			String[] labels) throws Exception {
+			String[] labels, boolean colFilesAvailable) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -140,14 +147,21 @@ public class Temporal {
 		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
 			
 			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-				System.err.println("Processing " + tmlFile.getPath());
+//				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-//				List<String> columns = tmlToCol.convert(tmlFile, true);
-//				Doc doc = colParser.parseLines(columns);
-				
-//				tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-				Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+				Doc doc;
+				if (colFilesAvailable) {
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+				} else {
+					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+					// OR... Parse TimeML file without saving to .col files
+//					List<String> columns = tmlToCol.convert(tmlFile, true);
+//					doc = colParser.parseLines(columns);
+				}				
 				
 				doc.setFilename(tmlFile.getName());				
 				
@@ -177,13 +191,13 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels) throws Exception {
+	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath, labels,
-				new HashMap<String, String>());
+				new HashMap<String, String>(), colFilesAvailable);
 	}	
 	
 	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
 		
 		List<TLINK> results = new ArrayList<TLINK>();
 		results.add(new TLINK());
@@ -206,7 +220,7 @@ public class Temporal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				List<TLINK> linksList = extractRelations(taskName, tmlFile, labels, relTypeMapping);
+				List<TLINK> linksList = extractRelations(taskName, tmlFile, labels, relTypeMapping, colFilesAvailable);
 				
 				ttRules.addAll(linksList.get(0).getTT());
 				edRules.addAll(linksList.get(0).getED());
@@ -234,7 +248,7 @@ public class Temporal {
 	}
 	
 	public List<TLINK> extractRelations(String taskName, File tmlFile, String[] labels, 
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -242,12 +256,20 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-//		List<String> columns = tmlToCol.convert(tmlFile, true);
-//		Doc doc = colParser.parseLines(columns);
-//		doc.setFilename(tmlFile.getName());
+		Doc doc;
+		if (colFilesAvailable) {
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+		} else {
+			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+			// OR... Parse TimeML file without saving to .col files
+//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			doc = colParser.parseLines(columns);
+		}				
 		
-//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		doc.setFilename(tmlFile.getName());
 		
 		TimeMLParser.parseTimeML(tmlFile, doc);
 		CandidateLinks.setCandidateTlinks(doc);
@@ -356,17 +378,17 @@ public class Temporal {
 	
 	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
-			String[] labels) throws Exception {
+			String[] labels, boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath, tmlFileNames,
 				tlinkPerFile,
 				labels,
-				new HashMap<String, String>());
+				new HashMap<String, String>(), colFilesAvailable);
 	}
 	
 	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
 		
 		List<TLINK> results = new ArrayList<TLINK>();
 		results.add(new TLINK());
@@ -392,7 +414,7 @@ public class Temporal {
 				
 				// PREDICT
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				List<TLINK> linksList = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping);
+				List<TLINK> linksList = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping, colFilesAvailable);
 				
 				ttRules.addAll(linksList.get(0).getTT());
 				edRules.addAll(linksList.get(0).getED());
@@ -421,7 +443,7 @@ public class Temporal {
 	
 	public List<TLINK> extractRelations(String taskName, File tmlFile, Map<String, String> tlinks, 
 			String[] labels,
-			Map<String, String> relTypeMapping) throws Exception {
+			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -429,11 +451,18 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-//		List<String> columns = tmlToCol.convert(tmlFile, true);
-//		Doc doc = colParser.parseLines(columns);
-		
-//		tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-		Doc doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		Doc doc;
+		if (colFilesAvailable) {
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+		} else {
+			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+			// OR... Parse TimeML file without saving to .col files
+//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			doc = colParser.parseLines(columns);
+		}				
 		
 		doc.setFilename(tmlFile.getName());
 		

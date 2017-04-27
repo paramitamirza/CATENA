@@ -10,11 +10,15 @@ import catena.parser.entities.TLINK;
 
 public class EvaluateTimeBankDense {
 
-	public static void main(String[] args) throws Exception {		
-		TimeBankDense();
+	public static void main(String[] args) throws Exception {	
+		
+		boolean colFilesAvailable = true;
+		boolean train = true;
+		TimeBankDense(colFilesAvailable, train);
+		
 	}
 	
-	public static void TimeBankDense() throws Exception {
+	public static void TimeBankDense(boolean colFilesAvailable, boolean train) throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
 			"CNN19980223.1130.0960.tml", 
@@ -80,7 +84,9 @@ public class EvaluateTimeBankDense {
 				false, false);
 		
 		// TRAIN
-		temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel);
+		if (train) {
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel, colFilesAvailable);
+		}
 		
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
@@ -91,15 +97,24 @@ public class EvaluateTimeBankDense {
 		relTypeMapping.put("ENDED_BY", "BEFORE");
 		relTypeMapping.put("DURING", "SIMULTANEOUS");
 		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping, colFilesAvailable);
 		
 		// EVALUATE
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** TLINK TIMEX-TIMEX ***********");
 		ptt = new PairEvaluator(tlinks.get(1).getTT());
 		ptt.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("*********** TLINK EVENT-DCT ************");
 		ped = new PairEvaluator(tlinks.get(1).getED());
 		ped.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-TIMEX ***********");
 		pet = new PairEvaluator(tlinks.get(1).getET());
 		pet.evaluatePerLabel(tbDenseLabel);
+		System.out.println();
+		System.out.println("********** TLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(tlinks.get(1).getEE());
 		pee.evaluatePerLabel(tbDenseLabel);
 	}

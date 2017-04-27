@@ -10,20 +10,22 @@ public class TestCausal {
 public static void main(String[] args) throws Exception {
 		
 		String task = "te3";
+		boolean colFilesAvailable = true;
+		boolean train = false;
 		
 		switch(task) {
 		
 			case "te3" :
-				TempEval3();
+				TempEval3(colFilesAvailable, train);
 				break;
 				
 			case "tbdense" :
-				TimeBankDense();
+				TimeBankDense(colFilesAvailable, train);
 				break;
 		}
 	}
 	
-	public static void TempEval3() throws Exception {
+	public static void TempEval3(boolean colFilesAvailable, boolean train) throws Exception {
 		
 		Map<String, Map<String, String>> clinkPerFile = Causal.getCausalTempEval3EvalTlinks("./data/Causal-TempEval3-eval.txt");
 		
@@ -33,7 +35,6 @@ public static void main(String[] args) throws Exception {
 		
 		// TempEval3 task C
 		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
-		String[] causalLabelEval = {"CLINK", "NONE"};
 		String taskName = "te3";
 		
 		causal = new Causal(
@@ -41,17 +42,22 @@ public static void main(String[] args) throws Exception {
 				true, true);
 		
 		// TRAIN
-		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel);
+		if (train) {
+			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel, colFilesAvailable);
+		}
 		
 		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel);
+		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel, colFilesAvailable);
 		
 		// EVALUATE
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** CLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(clinks.getEE());
-		pee.evaluatePerLabel(causalLabelEval);
+		pee.evaluatePerLabel(causalLabel);
 	}
 	
-	public static void TimeBankDense() throws Exception {
+	public static void TimeBankDense(boolean colFilesAvailable, boolean train) throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
 			"CNN19980223.1130.0960.tml", 
@@ -111,14 +117,19 @@ public static void main(String[] args) throws Exception {
 				true, true);
 		
 		// TRAIN
-		causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel);
+//		if (train) {
+//			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
+//		}
 		
 		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel);
+//		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
 		
 		// EVALUATE
-		pee = new PairEvaluator(clinks.getEE());
-		pee.evaluatePerLabel(causalLabelEval);
+//		System.out.println("********** EVALUATION RESULTS **********");
+//		System.out.println();
+//		System.out.println("********** CLINK EVENT-EVENT ***********");
+//		pee = new PairEvaluator(clinks.getEE());
+//		pee.evaluatePerLabel(causalLabelEval);
 	}
 	
 }
