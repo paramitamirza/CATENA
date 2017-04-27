@@ -1,8 +1,10 @@
 package catena;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,6 +30,7 @@ import catena.parser.entities.EntityEnum;
 import catena.model.feature.EventEventFeatureVector;
 import catena.model.feature.EventTimexFeatureVector;
 import catena.model.feature.PairFeatureVector;
+import catena.model.feature.FeatureEnum.FeatureName;
 import catena.model.feature.FeatureEnum.PairType;
 import catena.parser.entities.TLINK;
 import catena.parser.entities.TemporalRelation;
@@ -191,6 +194,267 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
+	public void printFeatures(String taskName, String tmlDirpath, String[] labels,
+			Map<String, String> relTypeMapping, 
+			String outputDirPath, boolean train,
+			boolean colFilesAvailable) throws Exception {
+		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Init the classifier...
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");	
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml")) {
+//				System.err.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+				Doc doc;
+				if (colFilesAvailable) {
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+				} else {
+					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+					// OR... Parse TimeML file without saving to .col files
+//					List<String> columns = tmlToCol.convert(tmlFile, true);
+//					doc = colParser.parseLines(columns);
+				}				
+				
+				doc.setFilename(tmlFile.getName());
+				
+				TimeMLParser.parseTimeML(tmlFile, doc);
+				
+				Map<String, String> ttlinks = null, etlinks = null;		
+				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
+				if (isETFeature()) etlinks = doc.getTlinkTypes();
+				
+				// Get the feature vectors
+				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
+						true, true, Arrays.asList(labels), relTypeMapping));
+				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
+						true, true, Arrays.asList(labels), relTypeMapping, ttlinks));
+				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
+						true, true, Arrays.asList(labels), relTypeMapping, etlinks));
+			}
+		}
+		
+		ensureDirectory(new File(outputDirPath));
+		String trainOrEval = "eval";
+		if (train) trainOrEval = "train";
+		
+		BufferedWriter bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features.csv"));
+		BufferedWriter bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features.csv"));
+		BufferedWriter bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write(fv.vecToCSVString() + "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write(fv.vecToCSVString() + "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write(fv.vecToCSVString() + "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-labels-str.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-labels-str.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-labels-str.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write(fv.getLabel() + "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write(fv.getLabel() + "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write(fv.getLabel() + "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-lemmas.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-lemmas.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-lemmas.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features-sent.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features-sent.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
+		
+		for (PairFeatureVector fv : edFvList) {
+			if (fv.isSameSentence()) bwED.write("1\n");
+			else bwED.write("0\n");
+		}
+		for (PairFeatureVector fv : etFvList) {
+			if (fv.isSameSentence()) bwET.write("1\n");
+			else bwET.write("0\n");
+		}
+		for (PairFeatureVector fv : eeFvList) {
+			if (fv.isSameSentence()) bwEE.write("1\n");
+			else bwEE.write("0\n");
+		}
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+	}
+	
+	public void printFeatures(String taskName, String tmlDirpath, String[] tmlFileNames, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels, String outputDirPath, boolean train,
+			boolean colFilesAvailable) throws Exception {
+		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
+		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Init the classifier...
+		EventDctTemporalClassifier edCls = new EventDctTemporalClassifier(taskName, "liblinear");
+		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
+		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");
+		
+		if (Arrays.asList(labels).contains("VAGUE")) {	//TimeBank-Dense --- Logistic Regression!
+			edCls = new EventDctTemporalClassifier(taskName, "logit");
+			etCls = new EventTimexTemporalClassifier(taskName, "logit");
+			eeCls = new EventEventTemporalClassifier(taskName, "logit");
+		} 
+		
+		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
+//				System.err.println("Processing " + tmlFile.getPath());
+				
+				// File pre-processing...
+				Doc doc;
+				if (colFilesAvailable) {
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+				} else {
+					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+					
+					// OR... Parse TimeML file without saving to .col files
+//					List<String> columns = tmlToCol.convert(tmlFile, true);
+//					doc = colParser.parseLines(columns);
+				}				
+				
+				doc.setFilename(tmlFile.getName());				
+				
+				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
+				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
+				
+				Map<String, String> ttlinks = null, etlinks = null;		
+				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
+				if (isETFeature()) {
+					etlinks = doc.getTlinkTypes();
+					if (Arrays.asList(labels).contains("VAGUE"))	//TimeBank-Dense --- etlinks only from E-D rule labels 
+						etlinks = EventDctTemporalRule.getEventDctRuleRelation(doc, true);
+				}
+				
+				// Get the feature vectors
+				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
+						true, true, Arrays.asList(labels)));
+				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
+						true, true, Arrays.asList(labels), ttlinks));
+				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
+						true, true, Arrays.asList(labels), etlinks));
+			}
+		}
+		
+		ensureDirectory(new File(outputDirPath));
+		String trainOrEval = "eval";
+		if (train) trainOrEval = "train";
+		
+		BufferedWriter bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features.csv"));
+		BufferedWriter bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features.csv"));
+		BufferedWriter bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write(fv.vecToCSVString() + "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write(fv.vecToCSVString() + "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write(fv.vecToCSVString() + "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-labels-str.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-labels-str.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-labels-str.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write(fv.getLabel() + "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write(fv.getLabel() + "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write(fv.getLabel() + "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-lemmas.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-lemmas.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-lemmas.csv"));
+		
+		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+				+ "\n");
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+		
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features-sent.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features-sent.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
+		
+		for (PairFeatureVector fv : edFvList) {
+			if (fv.isSameSentence()) bwED.write("1\n");
+			else bwED.write("0\n");
+		}
+		for (PairFeatureVector fv : etFvList) {
+			if (fv.isSameSentence()) bwET.write("1\n");
+			else bwET.write("0\n");
+		}
+		for (PairFeatureVector fv : eeFvList) {
+			if (fv.isSameSentence()) bwEE.write("1\n");
+			else bwEE.write("0\n");
+		}
+		
+		bwED.close();
+		bwET.close();
+		bwEE.close();
+	}
+	
 	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
 		return extractRelations(taskName, tmlDirpath, labels,
 				new HashMap<String, String>(), colFilesAvailable);
@@ -282,13 +546,17 @@ public class Temporal {
 					
 		// Applying temporal rules...
 		List<String> ttRule = TimexTimexTemporalRule.getTimexTimexTlinksPerFile(doc, this.isGoldCandidate());
+		List<String> edRule = new ArrayList<String>();
+		List<String> etRule = new ArrayList<String>();
+		List<String> eeRule = new ArrayList<String>();
+		
 		if (isRuleSieve()) {			
-			List<String> edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
-			List<String> eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
-			tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
-					ttRule, edRule, etRule, eeRule);
+			edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
+			etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
+			eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
 		}
+		tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
+				ttRule, edRule, etRule, eeRule);
 		
 		//Applying temporal reasoner...
 		if (isReasoner()) {			
@@ -816,5 +1084,11 @@ public class Temporal {
 
 	public void setRelTypes(String[] relTypes) {
 		this.relTypes = relTypes;
+	}
+	
+	public static void ensureDirectory(File dir) {
+		if (!dir.exists()) {
+			dir.mkdirs();
+		}
 	}
 }

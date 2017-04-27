@@ -2,6 +2,7 @@ package catena.embedding.experiments;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -228,50 +229,25 @@ public class EvaluateTimeBankDenseCrossVal {
 		return fvList;
 	}
 	
-	public static void main(String [] args) throws Exception {
+	public static void ensureDirectory(File dir) {
+		if (!dir.exists()) {
+			dir.mkdirs();
+		}
+	}
+	
+	public static void runExperiment(String exp, String pair, String feature,
+			int numFold, boolean binary,
+			List<List<PairFeatureVector>> fvListList) throws Exception {
 		
-		String exp = "tbdense";
-		String pair = "ee";			//ee for event-event, ed for event-dct
-		String group = "0";
-		int numFold = 10;			//number of fold for cross validation
-		boolean binary = true;		//how to write probability for stack learning, binary=[0,1]
-		String feature = "sum";		//conv for conventional features, concat for embeddings concatenated, sub for embeddings subtracted, sum for embeddings summed
-									//for ed pair only conv and concat available
-		
-		String[] arrLabel = new String[0];
+		System.out.println();
+		System.out.println("******* EXPERIMENT " + feature + " *******");
 		
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(exp+"-stack", "logit");
 		
-		arrLabel = labelDense;
-		List<Map<Integer, Integer>> idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv", 
-				numFold);		
-		List<List<PairFeatureVector>> fvListList = new ArrayList<List<PairFeatureVector>>();
-		switch (feature) {
-			case "conv": 
-				fvListList = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-features.csv", 
-						idxListList, arrLabel);
-				break;
-				
-			case "concat":
-				fvListList = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 
-						idxListList, arrLabel);
-				break;
-				
-			case "sub":
-				fvListList = getEventEventTlinksSub("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
-						idxListList, arrLabel);
-				break;
-				
-			case "sum":
-				fvListList = getEventEventTlinksSum("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
-						idxListList, arrLabel);
-				break;
-			
-		}
-		
-		BufferedWriter bwProbs = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train-probs."+feature+".csv"));
-		BufferedWriter bwLabels = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train-probs-labels.csv"));
-		BufferedWriter bwFeature = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train."+feature+".csv"));
+		ensureDirectory(new File("./data/embedding/temporary/"));
+		BufferedWriter bwProbs = new BufferedWriter(new FileWriter("./data/embedding/temporary/"+exp+"-"+pair+"-train-probs."+feature+".csv"));
+		BufferedWriter bwLabels = new BufferedWriter(new FileWriter("./data/embedding/temporary/"+exp+"-"+pair+"-train-labels."+feature+".csv"));
+		BufferedWriter bwFeature = new BufferedWriter(new FileWriter("./data/embedding/temporary/"+exp+"-"+pair+"-train."+feature+".csv"));
 		
 		// For running significance text
 //		BufferedWriter bwSig = new BufferedWriter(new FileWriter("./data/embedding/"+exp+"-"+pair+"-train."+feature+".txt"));
@@ -288,52 +264,84 @@ public class EvaluateTimeBankDenseCrossVal {
 				}
 			}
 			
-			if (eeCls.classifier.equals(VectorClassifier.logit)) {
-				eeCls.train2(trainFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model");
-				
-				List<String> eeClsTest = eeCls.predictProbs2(evalFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model", arrLabel);
-				List<String> eeTestList = new ArrayList<String>();
-				
-				for (PairFeatureVector fv : evalFvList) {
-					bwLabels.write(fv.getLabel() + "\n");
-					bwFeature.write(fv.toCSVString() + "\n");
-				}
-				for (int i=0; i<eeClsTest.size(); i++) {
-					eeTestList.add("-"
-							+ "\t" + "-"
-							+ "\t" + "-"
-							+ "\t" + evalFvList.get(i).getLabel()
-							+ "\t" + eeClsTest.get(i).split("#")[0]);
-					if (binary) {
-						String lineLabels = "";
-						for (String l : arrLabel) {
-							if (l.equals(eeClsTest.get(i).split("#")[0])) lineLabels += "1,";
-							else lineLabels += "0,";
-						}
-						bwProbs.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
-					} else {
-//						bwProbs.write(discretizeProbs(eeClsTest.get(i).split("#")[1]) + "\n");
-						bwProbs.write(eeClsTest.get(i).split("#")[1] + "\n");
-					}
-					
-//					if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i).split("#")[0])) bwSig.write("1 1 1\n");
-//					else bwSig.write("0 1 1\n");
-				}
-				
-				//Evaluate
-				System.out.println();
-				System.out.println("********** FOLD " + (fold+1) + " **********");
-				PairEvaluator peeC = new PairEvaluator(eeTestList);
-				peeC.evaluatePerLabel(arrLabel);
-				System.out.println();
-				
+			eeCls.train2(trainFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model");
+			
+			List<String> eeClsTest = eeCls.predictProbs2(evalFvList, "models/" + eeCls.getName() + "-"+pair+"-"+feature+".model", labelDense);
+			List<String> eeTestList = new ArrayList<String>();
+			
+			for (PairFeatureVector fv : evalFvList) {
+				bwLabels.write(fv.getLabel() + "\n");
+				bwFeature.write(fv.toCSVString() + "\n");
 			}
+			for (int i=0; i<eeClsTest.size(); i++) {
+				eeTestList.add("-"
+						+ "\t" + "-"
+						+ "\t" + "-"
+						+ "\t" + evalFvList.get(i).getLabel()
+						+ "\t" + eeClsTest.get(i).split("#")[0]);
+				if (binary) {
+					String lineLabels = "";
+					for (String l : labelDense) {
+						if (l.equals(eeClsTest.get(i).split("#")[0])) lineLabels += "1,";
+						else lineLabels += "0,";
+					}
+					bwProbs.write(lineLabels.substring(0, lineLabels.length()-1) + "\n");
+				} else {
+//					bwProbs.write(discretizeProbs(eeClsTest.get(i).split("#")[1]) + "\n");
+					bwProbs.write(eeClsTest.get(i).split("#")[1] + "\n");
+				}
+				
+//				if (evalFvList.get(i).getLabel().equals(eeClsTest.get(i).split("#")[0])) bwSig.write("1 1 1\n");
+//				else bwSig.write("0 1 1\n");
+			}
+			
+			//Evaluate
+			System.out.println();
+			System.out.println("********** FOLD " + (fold+1) + " **********");
+			PairEvaluator peeC = new PairEvaluator(eeTestList);
+			peeC.evaluatePerLabel(labelDense);
+			System.out.println();
 		}
 		
 		bwLabels.close();
 		bwFeature.close();
 		bwProbs.close();
 //		bwSig.close();
+	}
+	
+	public static void main(String [] args) throws Exception {
+		
+		String exp = "tbdense";
+		String pair = "ed";			//ee for event-event, ed for event-dct
+		String group = "0";
+		int numFold = 10;			//number of fold for cross validation
+		boolean binary = true;		//how to write probability for stack learning, binary=[0,1]
+		
+		// conv for conventional features, 
+		// concat for embeddings concatenated, 
+		// sub for embeddings subtracted, 
+		// sum for embeddings summed
+		
+		List<Map<Integer, Integer>> idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv", 
+				numFold);		
+		List<List<PairFeatureVector>> fvListListConv = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-features.csv", 
+						idxListList, labelDense);
+		List<List<PairFeatureVector>> fvListListConcat = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 
+						idxListList, labelDense);
+		
+		runExperiment(exp, pair, "conv", numFold, binary, fvListListConv);
+		runExperiment(exp, pair, "concat", numFold, binary, fvListListConcat);
+		
+		if (pair.equals("ee")) {
+			List<List<PairFeatureVector>> fvListListSub = getEventEventTlinksSub("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
+							idxListList, labelDense);
+			List<List<PairFeatureVector>> fvListListSum = getEventEventTlinksSum("./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300, 
+							idxListList, labelDense);
+			
+			runExperiment(exp, pair, "sub", numFold, binary, fvListListSub);
+			runExperiment(exp, pair, "sum", numFold, binary, fvListListSum);
+		}	
+		
 		
 	}
 

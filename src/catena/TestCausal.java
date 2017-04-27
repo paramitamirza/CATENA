@@ -43,6 +43,7 @@ public static void main(String[] args) throws Exception {
 		
 		// TRAIN
 		if (train) {
+			System.err.println("Train causal model...");
 			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel, colFilesAvailable);
 		}
 		
@@ -118,6 +119,7 @@ public static void main(String[] args) throws Exception {
 		
 		// TRAIN
 //		if (train) {
+//			System.err.println("Train causal model...");
 //			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
 //		}
 		

@@ -3503,4 +3503,12 @@ public class PairFeatureVector {
 		}
 		return res.substring(0, res.length()-1);
 	}
+	
+	public String vecToCSVString() {
+		String res = "";
+		for (int i=0; i<vectors.size()-1; i++) {
+			res += vectors.get(i) + ",";
+		}
+		return res.substring(0, res.length()-1);
+	}
 }
