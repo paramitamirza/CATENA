@@ -278,18 +278,18 @@ public class Temporal {
 		bwET.close();
 		bwEE.close();
 		
-		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-lemmas.csv"));
-		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-lemmas.csv"));
-		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-lemmas.csv"));
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-tokens.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-tokens.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-tokens.csv"));
 		
-		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
-		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
-		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
 		
 		bwED.close();
@@ -415,18 +415,18 @@ public class Temporal {
 		bwET.close();
 		bwEE.close();
 		
-		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-lemmas.csv"));
-		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-lemmas.csv"));
-		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-lemmas.csv"));
+		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-tokens.csv"));
+		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-tokens.csv"));
+		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-tokens.csv"));
 		
-		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : edFvList) bwED.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
-		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : etFvList) bwET.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
-		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.lemma) + "\""
-				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.lemma) + "\""
+		for (PairFeatureVector fv : eeFvList) bwEE.write("\"" + fv.getTokenAttribute(fv.getE1(), FeatureName.token) + "\""
+				+ "," + "\"" + fv.getTokenAttribute(fv.getE2(), FeatureName.token) + "\""
 				+ "\n");
 		
 		bwED.close();
