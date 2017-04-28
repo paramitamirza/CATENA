@@ -11,7 +11,7 @@ public class TestTemporal {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "te3-c";
+		String task = "tbdense";
 		boolean colFilesAvailable = true;
 		boolean train = true;
 		

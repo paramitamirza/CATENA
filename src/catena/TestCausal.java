@@ -9,9 +9,9 @@ public class TestCausal {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "te3";
+		String task = "tbdense";
 		boolean colFilesAvailable = true;
-		boolean train = false;
+		boolean train = true;
 		
 		switch(task) {
 		
@@ -118,20 +118,20 @@ public static void main(String[] args) throws Exception {
 				true, true);
 		
 		// TRAIN
-//		if (train) {
-//			System.err.println("Train causal model...");
-//			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
-//		}
+		if (train) {
+			System.err.println("Train causal model...");
+			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);	//train causal model, excluding testDocs from CausalTimeBank
+		}
 		
 		// PREDICT
-//		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
+		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
 		
 		// EVALUATE
-//		System.out.println("********** EVALUATION RESULTS **********");
-//		System.out.println();
-//		System.out.println("********** CLINK EVENT-EVENT ***********");
-//		pee = new PairEvaluator(clinks.getEE());
-//		pee.evaluatePerLabel(causalLabelEval);
+		System.out.println("********** EVALUATION RESULTS **********");
+		System.out.println();
+		System.out.println("********** CLINK EVENT-EVENT ***********");
+		pee = new PairEvaluator(clinks.getEE());
+		pee.evaluatePerLabel(causalLabelEval);
 	}
 	
 }

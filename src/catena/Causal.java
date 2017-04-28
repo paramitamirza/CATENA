@@ -40,6 +40,37 @@ public class Causal {
 		
 	}
 	
+	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
+			boolean colFilesAvailable) throws Exception {
+		return filePreprocessing(tmlFile, tmlToCol, colParser,
+				null,
+				colFilesAvailable);
+	}
+	
+	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
+			Map<String, String> clinks,
+			boolean colFilesAvailable) throws Exception {
+		Doc doc;
+		if (colFilesAvailable) {
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+		} else {
+			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+			// OR... Parse TimeML file without saving to .col files
+//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			doc = colParser.parseLines(columns);
+		}				
+		
+		doc.setFilename(tmlFile.getName());
+		if (clinks != null) TimeMLParser.parseTimeML(tmlFile, doc, null, clinks);
+		else TimeMLParser.parseTimeML(tmlFile, doc);
+		CandidateLinks.setCandidateClinks(doc);
+		
+		return doc;
+	}
+	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
 		trainModels(taskName, tmlDirpath, labels, false, null, null, colFilesAvailable);
 	}
@@ -65,23 +96,53 @@ public class Causal {
 //				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				Doc doc;
-				if (colFilesAvailable) {
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
+				
+				// Get the feature vectors
+				if (tlinkAsFeature) {
+					eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+							true, Arrays.asList(labels), tlinkAsFeature, tlinks.get(doc.getFilename()), Arrays.asList(tlinkLabels)));
 				} else {
-					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-					// OR... Parse TimeML file without saving to .col files
-//					List<String> columns = tmlToCol.convert(tmlFile, true);
-//					doc = colParser.parseLines(columns);
-				}				
+					eeFvList.addAll(EventEventCausalClassifier.getEventEventClinksPerFile(doc, eeCls, 
+							true, Arrays.asList(labels)));
+				}
+			}
+		}
+
+		eeCls.train(eeFvList, getCausalModelPath());
+	}
+	
+	public void trainModels(String taskName, String tmlDirpath, String[] excludeTmlFileNames, 
+			String[] labels, boolean colFilesAvailable) throws Exception {
+		trainModels(taskName, tmlDirpath, excludeTmlFileNames, labels, false, null, null, colFilesAvailable);
+	}
+	
+	public void trainModels(String taskName, String tmlDirpath, 
+			String[] excludeTmlFileNames, 
+			String[] labels, 
+			boolean tlinkAsFeature,
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels, 
+			boolean colFilesAvailable) throws Exception {
+		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
+		
+		// Init the parsers...
+		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
+				ParserConfig.mateLemmatizerModel, ParserConfig.mateTaggerModel, ParserConfig.mateParserModel);
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		
+		// Init the classifier...
+		EventEventCausalClassifier eeCls = new EventEventCausalClassifier(taskName, "logit");	
+		
+		List<String> excludeTmlFileList = Arrays.asList(excludeTmlFileNames);
+		
+		File[] tmlFiles = new File(tmlDirpath).listFiles();
+		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+			
+			if (tmlFile.getName().contains(".tml") && !excludeTmlFileList.contains(tmlFile.getName())) {
+//				System.err.println("Processing " + tmlFile.getPath());
 				
-				doc.setFilename(tmlFile.getName());
-				
-				TimeMLParser.parseTimeML(tmlFile, doc);
-				CandidateLinks.setCandidateClinks(doc);
+				// File pre-processing...
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
 				
 				// Get the feature vectors
 				if (tlinkAsFeature) {
@@ -186,7 +247,7 @@ public class Causal {
 	public CLINK extractRelations(String taskName, String tmlDirpath,
 			String[] tmlFileNames, String[] labels, 
 			boolean tlinkAsFeature,
-			Map<String, String> tlinks, String[] tlinkLabels,
+			Map<String, Map<String, String>> tlinks, String[] tlinkLabels,
 			boolean colFilesAvailable) throws Exception {
 		CLINK results = new CLINK();
 		List<String> ee = new ArrayList<String>();
@@ -200,7 +261,11 @@ public class Causal {
 				System.err.println("Processing " + tmlFile.getPath());
 				
 				// PREDICT
-				CLINK links = extractRelations(taskName, tmlFile, null, labels, tlinkAsFeature, tlinks, tlinkLabels, colFilesAvailable);
+				CLINK links;
+				if (tlinks != null)
+					links = extractRelations(taskName, tmlFile, null, labels, tlinkAsFeature, tlinks.get(tmlFile.getName()), tlinkLabels, colFilesAvailable);
+				else
+					links = extractRelations(taskName, tmlFile, null, labels, tlinkAsFeature, null, tlinkLabels, colFilesAvailable);
 				ee.addAll(links.getEE());
 			}
 		}
@@ -232,22 +297,10 @@ public class Causal {
 				
 		// File pre-processing...
 		Doc doc;
-		if (colFilesAvailable) {
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-		} else {
-			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-			// OR... Parse TimeML file without saving to .col files
-//			List<String> columns = tmlToCol.convert(tmlFile, true);
-//			doc = colParser.parseLines(columns);
-		}				
-		
-		doc.setFilename(tmlFile.getName());
-		
-		TimeMLParser.parseTimeML(tmlFile, doc, null, clinks);
-		CandidateLinks.setCandidateClinks(doc);
+		if (clinks != null)
+			doc = filePreprocessing(tmlFile, tmlToCol, colParser, clinks, colFilesAvailable);
+		else
+			doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
 		
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		String tmlString = tmlDoc.toString();

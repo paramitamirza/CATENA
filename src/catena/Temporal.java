@@ -57,6 +57,37 @@ public class Temporal {
 		
 	}
 	
+	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
+			boolean colFilesAvailable) throws Exception {
+		return filePreprocessing(tmlFile, tmlToCol, colParser,
+				null,
+				colFilesAvailable);
+	}
+	
+	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
+			Map<String, String> tlinks,
+			boolean colFilesAvailable) throws Exception {
+		Doc doc;
+		if (colFilesAvailable) {
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+		} else {
+			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			
+			// OR... Parse TimeML file without saving to .col files
+//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			doc = colParser.parseLines(columns);
+		}				
+		
+		doc.setFilename(tmlFile.getName());
+		if (tlinks != null) TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
+		else TimeMLParser.parseTimeML(tmlFile, doc);
+		CandidateLinks.setCandidateTlinks(doc);
+		
+		return doc;
+	}
+	
 	public void trainModels(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
 		trainModels(taskName, tmlDirpath, labels, 
 				new HashMap<String, String>(), colFilesAvailable);
@@ -85,22 +116,7 @@ public class Temporal {
 //				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				Doc doc;
-				if (colFilesAvailable) {
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-				} else {
-					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-					// OR... Parse TimeML file without saving to .col files
-//					List<String> columns = tmlToCol.convert(tmlFile, true);
-//					doc = colParser.parseLines(columns);
-				}				
-				
-				doc.setFilename(tmlFile.getName());
-				
-				TimeMLParser.parseTimeML(tmlFile, doc);
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -153,23 +169,8 @@ public class Temporal {
 //				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				Doc doc;
-				if (colFilesAvailable) {
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-				} else {
-					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-					// OR... Parse TimeML file without saving to .col files
-//					List<String> columns = tmlToCol.convert(tmlFile, true);
-//					doc = colParser.parseLines(columns);
-				}				
-				
-				doc.setFilename(tmlFile.getName());				
-				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);	
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -219,22 +220,7 @@ public class Temporal {
 //				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				Doc doc;
-				if (colFilesAvailable) {
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-				} else {
-					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-					// OR... Parse TimeML file without saving to .col files
-//					List<String> columns = tmlToCol.convert(tmlFile, true);
-//					doc = colParser.parseLines(columns);
-				}				
-				
-				doc.setFilename(tmlFile.getName());
-				
-				TimeMLParser.parseTimeML(tmlFile, doc);
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -343,23 +329,8 @@ public class Temporal {
 //				System.err.println("Processing " + tmlFile.getPath());
 				
 				// File pre-processing...
-				Doc doc;
-				if (colFilesAvailable) {
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-				} else {
-					tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-					doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-					
-					// OR... Parse TimeML file without saving to .col files
-//					List<String> columns = tmlToCol.convert(tmlFile, true);
-//					doc = colParser.parseLines(columns);
-				}				
-				
-				doc.setFilename(tmlFile.getName());				
-				
 				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
+				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -504,23 +475,7 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		Doc doc;
-		if (colFilesAvailable) {
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-		} else {
-			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-			// OR... Parse TimeML file without saving to .col files
-//			List<String> columns = tmlToCol.convert(tmlFile, true);
-//			doc = colParser.parseLines(columns);
-		}				
-		
-		doc.setFilename(tmlFile.getName());
-		
-		TimeMLParser.parseTimeML(tmlFile, doc);
-		CandidateLinks.setCandidateTlinks(doc);
+		Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
 		
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		tmlDoc.removeLinks();
@@ -703,23 +658,7 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		Doc doc;
-		if (colFilesAvailable) {
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-		} else {
-			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-			
-			// OR... Parse TimeML file without saving to .col files
-//			List<String> columns = tmlToCol.convert(tmlFile, true);
-//			doc = colParser.parseLines(columns);
-		}				
-		
-		doc.setFilename(tmlFile.getName());
-		
-		TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
-		CandidateLinks.setCandidateTlinks(doc);
+		Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);
 		
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		tmlDoc.removeLinks();
