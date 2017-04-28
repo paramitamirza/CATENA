@@ -300,12 +300,10 @@ public class Temporal {
 		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
 		
 		for (PairFeatureVector fv : etFvList) {
-			EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-			bwET.write((Integer.parseInt(etfv.getE2().getSentID())-Integer.parseInt(etfv.getE1().getSentID())) + "\n");
+			bwET.write((Integer.parseInt(fv.getE2().getSentID())-Integer.parseInt(fv.getE1().getSentID())) + "\n");
 		}
 		for (PairFeatureVector fv : eeFvList) {
-			EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-			bwET.write((Integer.parseInt(eefv.getE2().getSentID())-Integer.parseInt(eefv.getE1().getSentID())) + "\n");
+			bwEE.write((Integer.parseInt(fv.getE2().getSentID())-Integer.parseInt(fv.getE1().getSentID())) + "\n");
 		}
 		
 		bwET.close();
@@ -431,12 +429,10 @@ public class Temporal {
 		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
 		
 		for (PairFeatureVector fv : etFvList) {
-			EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
-			bwET.write((Integer.parseInt(etfv.getE2().getSentID())-Integer.parseInt(etfv.getE1().getSentID())) + "\n");
+			bwET.write((Integer.parseInt(fv.getE2().getSentID())-Integer.parseInt(fv.getE1().getSentID())) + "\n");
 		}
 		for (PairFeatureVector fv : eeFvList) {
-			EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-			bwET.write((Integer.parseInt(eefv.getE2().getSentID())-Integer.parseInt(eefv.getE1().getSentID())) + "\n");
+			bwEE.write((Integer.parseInt(fv.getE2().getSentID())-Integer.parseInt(fv.getE1().getSentID())) + "\n");
 		}
 		
 		bwET.close();
