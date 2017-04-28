@@ -55,6 +55,8 @@ public class Causal {
 			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 			
 		} else {
+			System.err.println("Convert TimeML files to column format...");
+			
 			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
 			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
 			
