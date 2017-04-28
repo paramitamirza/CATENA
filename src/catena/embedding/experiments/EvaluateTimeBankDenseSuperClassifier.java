@@ -169,7 +169,8 @@ public class EvaluateTimeBankDenseSuperClassifier {
 	}
 	
 	public static void runExperimentNormal(String exp, String pair, String feature, boolean binary,
-			List<PairFeatureVector> trainFvList, List<PairFeatureVector> evalFvList) throws Exception {
+			List<PairFeatureVector> trainFvList, List<PairFeatureVector> evalFvList,
+			List<Integer> sentDistance) throws Exception {
 		
 		System.out.println();
 		System.out.println("******* EXPERIMENT " + feature + " *******");
@@ -220,13 +221,47 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		PairEvaluator pees = new PairEvaluator(eeTestList);
 		pees.evaluatePerLabel(labelDense);
 		
+		if (pair.equals("ee")) {
+			//Same sentence
+			List<String> eeTestListSame = new ArrayList<String>();
+			for (int i=0; i<eeClsTest.size(); i++) {
+				if (sentDistance.get(i) == 0) {
+					eeTestListSame.add("-"
+							+ "\t" + "-" 
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i).split("#")[0]);
+				}
+			}
+			
+			System.out.println("******* SAME SENTENCE *******");
+			pees = new PairEvaluator(eeTestListSame);
+			pees.evaluatePerLabel(labelDense);
+			
+			//Different sentence
+			List<String> eeTestListDiff = new ArrayList<String>();
+			for (int i=0; i<eeClsTest.size(); i++) {
+				if (sentDistance.get(i) != 0) {
+					eeTestListDiff.add("-"
+							+ "\t" + "-" 
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i).split("#")[0]);
+				}
+			}
+			System.out.println("******* DIFF SENTENCE *******");
+			pees = new PairEvaluator(eeTestListDiff);
+			pees.evaluatePerLabel(labelDense);
+		}
+		
 		bwFeature.close();
 		bwLabels.close();
 		bwProbs.close();
 	}
 	
 	public static void runExperiment(String exp, String pair, String combine, 
-			List<PairFeatureVector> trainFvList, List<PairFeatureVector> evalFvList) throws Exception {
+			List<PairFeatureVector> trainFvList, List<PairFeatureVector> evalFvList,
+			List<Integer> sentDistance) throws Exception {
 		
 		System.out.println();
 		System.out.println("******* EXPERIMENT COMBINE ("+combine+") *******");
@@ -249,6 +284,39 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		
 		PairEvaluator pees = new PairEvaluator(eeTestList);
 		pees.evaluatePerLabel(labelDense);
+		
+		if (pair.equals("ee")) {
+			//Same sentence
+			List<String> eeTestListSame = new ArrayList<String>();
+			for (int i=0; i<eeClsTest.size(); i++) {
+				if (sentDistance.get(i) == 0) {
+					eeTestListSame.add("-"
+							+ "\t" + "-" 
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i));
+				}
+			}
+			
+			System.out.println("******* SAME SENTENCE *******");
+			pees = new PairEvaluator(eeTestListSame);
+			pees.evaluatePerLabel(labelDense);
+			
+			//Different sentence
+			List<String> eeTestListDiff = new ArrayList<String>();
+			for (int i=0; i<eeClsTest.size(); i++) {
+				if (sentDistance.get(i) != 0) {
+					eeTestListDiff.add("-"
+							+ "\t" + "-" 
+							+ "\t" + "-"
+							+ "\t" + evalFvList.get(i).getLabel()
+							+ "\t" + eeClsTest.get(i));
+				}
+			}
+			System.out.println("******* DIFF SENTENCE *******");
+			pees = new PairEvaluator(eeTestListDiff);
+			pees.evaluatePerLabel(labelDense);
+		}
 	}
 	
 	public static void main(String [] args) throws Exception {
@@ -257,7 +325,15 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		String pair = "ee";
 		boolean binary = true;			//how to write probability for stack learning, binary=[0,1]
 		
-		boolean stack = false;			//stack learning setting for combining features
+		List<Integer> sentDistance = new ArrayList<Integer>();
+		if (pair.equals("ee")) {
+			BufferedReader brSent = new BufferedReader(new FileReader("./data/embedding/"+exp+"-"+pair+"-eval-features-sent.csv"));
+			String distance;
+			while ((distance = brSent.readLine()) != null) {
+				sentDistance.add(Integer.parseInt(distance));
+			}
+			brSent.close();
+		}
 		
 		// Run experiments of individual feature sets, i.e., conventional feature (conv), 
 		// concatenated embeddings (concat), subtracted embeddings (sub) and
@@ -281,8 +357,8 @@ public class EvaluateTimeBankDenseSuperClassifier {
 				"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 				labelDense);
 		
-		runExperimentNormal(exp, pair, "conv", binary, trainFvListConv, evalFvListConv);
-		runExperimentNormal(exp, pair, "concat", binary, trainFvListConcat, evalFvListConcat);
+		runExperimentNormal(exp, pair, "conv", binary, trainFvListConv, evalFvListConv, sentDistance);
+		runExperimentNormal(exp, pair, "concat", binary, trainFvListConcat, evalFvListConcat, sentDistance);
 		
 		if (pair.equals("ee")) {
 			List<PairFeatureVector> trainFvListSub = getEventEventTlinksSub(
@@ -303,8 +379,8 @@ public class EvaluateTimeBankDenseSuperClassifier {
 					"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 					labelDense);
 			
-			runExperimentNormal(exp, pair, "sub", binary, trainFvListSub, evalFvListSub);
-			runExperimentNormal(exp, pair, "sum", binary, trainFvListSum, evalFvListSum);
+			runExperimentNormal(exp, pair, "sub", binary, trainFvListSub, evalFvListSub, sentDistance);
+			runExperimentNormal(exp, pair, "sum", binary, trainFvListSum, evalFvListSum, sentDistance);
 		}
 		
 		// Run experiments of combining traditional feature sets with embeddings, 
@@ -335,7 +411,7 @@ public class EvaluateTimeBankDenseSuperClassifier {
 						"./data/embedding/temporary/"+exp+"-"+pair+"-eval-labels.csv",
 						labelDense);
 		
-		runExperiment(exp, pair, "concat", trainFvList, evalFvList);
+		runExperiment(exp, pair, "concat", trainFvList, evalFvList, sentDistance);
 			
 		String[] trainFileListStack = {
 				"./data/embedding/temporary/"+exp+"-"+pair+"-train.conv.csv",
@@ -359,7 +435,7 @@ public class EvaluateTimeBankDenseSuperClassifier {
 						"./data/embedding/temporary/"+exp+"-"+pair+"-eval-labels.csv",
 						labelDense);
 		
-		runExperiment(exp, pair, "stack", trainFvList, evalFvList);
+		runExperiment(exp, pair, "stack", trainFvList, evalFvList, sentDistance);
 		
 		
 	}

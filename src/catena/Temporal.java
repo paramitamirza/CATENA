@@ -296,24 +296,18 @@ public class Temporal {
 		bwET.close();
 		bwEE.close();
 		
-		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features-sent.csv"));
 		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features-sent.csv"));
 		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
 		
-		for (PairFeatureVector fv : edFvList) {
-			if (fv.isSameSentence()) bwED.write("1\n");
-			else bwED.write("0\n");
-		}
 		for (PairFeatureVector fv : etFvList) {
-			if (fv.isSameSentence()) bwET.write("1\n");
-			else bwET.write("0\n");
+			EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+			bwET.write((Integer.parseInt(etfv.getE2().getSentID())-Integer.parseInt(etfv.getE1().getSentID())) + "\n");
 		}
 		for (PairFeatureVector fv : eeFvList) {
-			if (fv.isSameSentence()) bwEE.write("1\n");
-			else bwEE.write("0\n");
+			EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+			bwET.write((Integer.parseInt(eefv.getE2().getSentID())-Integer.parseInt(eefv.getE1().getSentID())) + "\n");
 		}
 		
-		bwED.close();
 		bwET.close();
 		bwEE.close();
 	}
@@ -433,24 +427,18 @@ public class Temporal {
 		bwET.close();
 		bwEE.close();
 		
-		bwED = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ed-"+trainOrEval+"-features-sent.csv"));
 		bwET = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-et-"+trainOrEval+"-features-sent.csv"));
 		bwEE = new BufferedWriter(new FileWriter(outputDirPath+taskName+"-ee-"+trainOrEval+"-features-sent.csv"));
 		
-		for (PairFeatureVector fv : edFvList) {
-			if (fv.isSameSentence()) bwED.write("1\n");
-			else bwED.write("0\n");
-		}
 		for (PairFeatureVector fv : etFvList) {
-			if (fv.isSameSentence()) bwET.write("1\n");
-			else bwET.write("0\n");
+			EventTimexFeatureVector etfv = new EventTimexFeatureVector(fv);
+			bwET.write((Integer.parseInt(etfv.getE2().getSentID())-Integer.parseInt(etfv.getE1().getSentID())) + "\n");
 		}
 		for (PairFeatureVector fv : eeFvList) {
-			if (fv.isSameSentence()) bwEE.write("1\n");
-			else bwEE.write("0\n");
+			EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+			bwET.write((Integer.parseInt(eefv.getE2().getSentID())-Integer.parseInt(eefv.getE1().getSentID())) + "\n");
 		}
 		
-		bwED.close();
 		bwET.close();
 		bwEE.close();
 	}
