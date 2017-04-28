@@ -13,7 +13,7 @@ public static void main(String[] args) throws Exception {
 		
 		String task = "te3-c";
 		boolean colFilesAvailable = true;
-		boolean train = false;
+		boolean train = true;
 		
 		switch(task) {
 			case "te3-c-rel" :

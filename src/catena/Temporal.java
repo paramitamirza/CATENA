@@ -964,6 +964,10 @@ public class Temporal {
 		
 		this.setRelTypes(relTypes);
 		
+		ensureDirectory(new File(edModelPath).getParentFile());
+		ensureDirectory(new File(etModelPath).getParentFile());
+		ensureDirectory(new File(eeModelPath).getParentFile());
+		
 		this.setEDModelPath(edModelPath);
 		this.setETModelPath(etModelPath);
 		this.setEEModelPath(eeModelPath);

@@ -404,6 +404,8 @@ public class Causal {
 	
 	public Causal(String causalModelPath) {
 		
+		ensureDirectory(new File(causalModelPath).getParentFile());
+		
 		this.setCausalModelPath(causalModelPath);
 		
 		this.setRuleSieve(true);
@@ -458,5 +460,9 @@ public class Causal {
 		this.causalModelPath = causalModelPath;
 	}
 	
-	
+	public static void ensureDirectory(File dir) {
+		if (!dir.exists()) {
+			dir.mkdirs();
+		}
+	}
 }
