@@ -254,8 +254,7 @@ public class EvaluateTimeBankDenseSuperClassifier {
 	public static void main(String [] args) throws Exception {
 		
 		String exp = "tbdense";
-		String pair = "ed";
-		String group = "0";
+		String pair = "ee";
 		boolean binary = true;			//how to write probability for stack learning, binary=[0,1]
 		
 		boolean stack = false;			//stack learning setting for combining features
@@ -266,20 +265,20 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		
 		List<PairFeatureVector> trainFvListConv = getEventEventTlinks(
 				"./data/embedding/"+exp+"-"+pair+"-train-features.csv",
-				"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+				"./data/embedding/"+exp+"-"+pair+"-train-labels-str.csv",
 				labelDense);
 		List<PairFeatureVector> evalFvListConv = getEventEventTlinks(
 				"./data/embedding/"+exp+"-"+pair+"-eval-features.csv",
-				"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+				"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 				labelDense);
 		
 		List<PairFeatureVector> trainFvListConcat = getEventEventTlinks(
 				"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv",
-				"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+				"./data/embedding/"+exp+"-"+pair+"-train-labels-str.csv",
 				labelDense);
 		List<PairFeatureVector> evalFvListConcat = getEventEventTlinks(
 				"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv",
-				"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+				"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 				labelDense);
 		
 		runExperimentNormal(exp, pair, "conv", binary, trainFvListConv, evalFvListConv);
@@ -288,20 +287,20 @@ public class EvaluateTimeBankDenseSuperClassifier {
 		if (pair.equals("ee")) {
 			List<PairFeatureVector> trainFvListSub = getEventEventTlinksSub(
 					"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300,
-					"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+					"./data/embedding/"+exp+"-"+pair+"-train-labels-str.csv",
 					labelDense);
 			List<PairFeatureVector> evalFvListSub = getEventEventTlinksSub(
 					"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv", 300,
-					"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+					"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 					labelDense);
 			
 			List<PairFeatureVector> trainFvListSum = getEventEventTlinksSum(
 					"./data/embedding/"+exp+"-"+pair+"-train-embedding-word2vec-300.csv", 300,
-					"./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv",
+					"./data/embedding/"+exp+"-"+pair+"-train-labels-str.csv",
 					labelDense);
 			List<PairFeatureVector> evalFvListSum = getEventEventTlinksSum(
 					"./data/embedding/"+exp+"-"+pair+"-eval-embedding-word2vec-300.csv", 300,
-					"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.gr"+group+".csv",
+					"./data/embedding/"+exp+"-"+pair+"-eval-labels-str.csv",
 					labelDense);
 			
 			runExperimentNormal(exp, pair, "sub", binary, trainFvListSub, evalFvListSub);

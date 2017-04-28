@@ -312,8 +312,7 @@ public class EvaluateTimeBankDenseCrossVal {
 	public static void main(String [] args) throws Exception {
 		
 		String exp = "tbdense";
-		String pair = "ed";			//ee for event-event, ed for event-dct
-		String group = "0";
+		String pair = "ee";			//ee for event-event, ed for event-dct
 		int numFold = 10;			//number of fold for cross validation
 		boolean binary = true;		//how to write probability for stack learning, binary=[0,1]
 		
@@ -322,7 +321,7 @@ public class EvaluateTimeBankDenseCrossVal {
 		// sub for embeddings subtracted, 
 		// sum for embeddings summed
 		
-		List<Map<Integer, Integer>> idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-"+pair+"-train-labels-str.gr"+group+".csv", 
+		List<Map<Integer, Integer>> idxListList = getEventEventDenseLabels("./data/embedding/"+exp+"-"+pair+"-train-labels-str.csv", 
 				numFold);		
 		List<List<PairFeatureVector>> fvListListConv = getEventEventTlinks("./data/embedding/"+exp+"-"+pair+"-train-features.csv", 
 						idxListList, labelDense);
