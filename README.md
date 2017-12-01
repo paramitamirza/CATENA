@@ -53,9 +53,8 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
   
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
----
 | `token` | `token-id` | `sentence-id`	|	`lemma` | `event-id` |	`event-class` |	`event-tense+aspect+polarity` | `timex-id` | `timex-type`	| `timex-value` | `signal-id` |	`causal-signal-id` | `pos-tag` | `chunk` | `lemma` | `pos-tag` | `dependencies` | `main-verb` |
----
+
 * `event-id` and `event-class`: TimeML event ID and attributes
 * `timex-id` and `timex-type` and `timex-value`: TimeML timex ID and attributes
 * `signal-id` and `causal-signal-id`: temporal and causal signal ID
