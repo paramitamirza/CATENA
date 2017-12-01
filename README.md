@@ -54,28 +54,27 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
 ```
-| token | token-id |
-0:token			1:token-id			2:sentence-id			3:lemma   
-4:event-id		5:event-class		6:event-tense+aspect+polarity
-7:timex-id		8:timex-type		9:timex-value
-10:signal-id	11:causal-signal-id
-12:pos-tag		13:chunk
-14:lemma		15:pos-tag			16:dependencies			17:main-verb
+| token | token-id | sentence-id	|	lemma | TimeML event-id |	TimeML event-class |	TimeML event-tense+aspect+polarity | TimeML timex-id | TimeML timex-type	| TimeML timex-value | TimeML signal-id |	causal-signal-id | pos-tag | chunk | lemma | pos-tag | dependencies | main-verb |
+
+Note:
+  TimeML event-tense+aspect+polarity: optional attributes of an event, if given "O", CATENA will extract them automatically
+  pos-tag: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
+  dependencies: in the format of _dep1:deprel1||dep2:deprel2||..._, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
 ```
+See for example `data/example_COL/`.
 
 #### Output format
 The output will be a list of temporal and/or causal relations, one relation per line, in the format of:
 ```
-<filename>	<entity_1>	<entity_2>	<TLINK_type/CLINK/CLINK-R>
-  
-  TLINK_type			One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS, etc.
-  CLINK					entity_1 CAUSE entity_2
-  CLINK-R				entity_1 IS_CAUSED_BY entity_2
+_filename_  _entity_1_  _entity_2_  _TLINK_type/CLINK/CLINK-R_
+
+Note:
+  _TLINK_type_: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
+  _CLINK_: entity_1 CAUSE entity_2
+  _CLINK-R_: entity_1 IS_CAUSED_BY entity_2
 ```
 
-
-
-###System architecture
+### System architecture
 
 ![alt tag](https://github.com/paramitamirza/CATENA/blob/master/CATENA.png)
 
@@ -88,10 +87,10 @@ The two modules interact, based on the assumption that the notion of causality i
 (i) TLINK labels for event-event pairs, resulting from the rule-based sieve + temporal reasoner, are used for the CLINK classifier, and
 (ii) CLINK labels are used as a post-editing method for correcting the wrongly labelled event pairs by the Temporal module.
  
-#####Publication
+#### Publication
 Paramita Mirza and Sara Tonelli. 2016. *CATENA: CAusal and TEmporal relation extraction from NAtural language texts.* In Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: Technical Papers, Osaka, Japan, December. [[pdf]](https://aclweb.org/anthology/C/C16/C16-1007.pdf)
 
-#####Dataset
+#### Dataset
 * Training data for the Temporal module is taken from the [TempEval-3](https://www.cs.york.ac.uk/semeval-2013/task1/index.php%3Fid=data.html) shared task, particularly the combination of TBAQ-cleaned (English training data) and TE3-platinum (English test data).
 * Training data for the Causal module is [Causal-TimeBank](http://hlt-nlp.fbk.eu/technologies/causal-timebank), the TimeBank corpus annotated with causal information.
 * [TimeBank-Dense](https://www.usna.edu/Users/cs/nchamber/caevo/#corpus) corpus is used in one of the evaluation schemes for temporal relation extraction. 
@@ -99,8 +98,8 @@ Paramita Mirza and Sara Tonelli. 2016. *CATENA: CAusal and TEmporal relation ext
 
 _! Whenever making reference to this resource please cite the paper in the Publication section. !_
 
-###Web Service
+### Web Service
 Soon!
 
-###Contact
+### Contact
 For more information please contact [Paramita Mirza](http://paramitamirza.com/) (paramita135@gmail.com).
