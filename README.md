@@ -29,6 +29,7 @@ usage: Catena
  -f,--col                (optional) Input files are in column format (.col)
  -tl,--tlinks <arg>      (optional) Input file containing list of gold temporal links
  -cl,--clinks <arg>      (optional) Input file containing list of gold causal links
+ -y,--clinktype          (optional) Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve
         
  -x,--textpro <arg>      TextPro directory path
  -l,--matelemma <arg>    Mate tools' lemmatizer model path   
@@ -52,7 +53,7 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
 ```
   
 #### CoNLL column format
-The input document must be in 'one-token-per-line' format, with each column as:
+The input document must be in tab-separated 'one-token-per-line' format, with each column as:
 | `token` | `token-id` | `sentence-id`	|	`lemma` | `event-id` |	`event-class` |	`event-tense+aspect+polarity` | `timex-id` | `timex-type`	| `timex-value` | `signal-id` |	`causal-signal-id` | `pos-tag` | `chunk` | `lemma` | `pos-tag` | `dependencies` | `main-verb` |
 
 * `event-id` and `event-class`: TimeML event ID and attributes
@@ -70,9 +71,9 @@ The output will be a list of temporal and/or causal relations, one relation per 
 ```
 filename  entity_1  entity_2  TLINK_type/CLINK/CLINK-R
 ```
-* `TLINK_type`: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
-* `CLINK`: entity_1 CAUSE entity_2
-* `CLINK-R`: entity_1 IS_CAUSED_BY entity_2
+* `TLINK_type`: One of TLINK types according to TimeML, e.g., `BEFORE`, `AFTER`, `SIMULTANEOUS`
+* `CLINK`: entity_1 `CAUSE` entity_2
+* `CLINK-R`: entity_1 `IS_CAUSED_BY` entity_2
 
 ### System architecture
 
