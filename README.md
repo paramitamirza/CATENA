@@ -53,26 +53,24 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
   
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
-```
+
 | token | token-id | sentence-id	|	lemma | TimeML event-id |	TimeML event-class |	TimeML event-tense+aspect+polarity | TimeML timex-id | TimeML timex-type	| TimeML timex-value | TimeML signal-id |	causal-signal-id | pos-tag | chunk | lemma | pos-tag | dependencies | main-verb |
 
-Note:
-  TimeML event-tense+aspect+polarity: optional attributes of an event, if given "O", CATENA will extract them automatically
-  pos-tag: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
-  dependencies: in the format of _dep1:deprel1||dep2:deprel2||..._, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
-```
+* TimeML event-tense+aspect+polarity: optional attributes of an event, if given "O", CATENA will extract them automatically
+* pos-tag: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
+* dependencies: in the format of _dep1:deprel1||dep2:deprel2||..._, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
+
 See for example `data/example_COL/`.
 
 #### Output format
 The output will be a list of temporal and/or causal relations, one relation per line, in the format of:
 ```
-_filename_  _entity_1_  _entity_2_  _TLINK_type/CLINK/CLINK-R_
-
-Note:
-  _TLINK_type_: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
-  _CLINK_: entity_1 CAUSE entity_2
-  _CLINK-R_: entity_1 IS_CAUSED_BY entity_2
+filename  entity_1  entity_2  TLINK_type/CLINK/CLINK-R
 ```
+Note:
+  `TLINK_type`: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
+  `CLINK`: entity_1 CAUSE entity_2
+  `CLINK-R`: entity_1 IS_CAUSED_BY entity_2
 
 ### System architecture
 
