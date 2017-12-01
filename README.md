@@ -5,19 +5,19 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 ### Requirements
 * Java Runtime Environment (JRE) 1.7.x or higher
 
-##### Text processing tools:
+#### Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools. The .jar file should be included in the classpath.
 * [TextPro](http://textpro.fbk.eu/) -- Text Processing Tools from FBK. 
 * [Mate-tools](https://code.google.com/archive/p/mate-tools/) -- Tools for Natural Language Analysis. Our system requires [anna-3.3.jar](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/anna-3.3.jar) (transition-based and graph-based dependency parser, tagger, lemmatizer and morphologic tagger - version 3.3), and related models including [CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model), [CoNLL2009-ST-English-ALL.anna-3.3.postagger.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model) and [CoNLL2009-ST-English-ALL.anna-3.3.parser.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.parser.model).
 * [JDOM 2.0.x](http://www.jdom.org/index.html) or higher -- JDOM API for accessing, manipulating and  outputting XML data from Java code. The .jar file should be included in the classpath.
 
-##### Other libraries:
+#### Other libraries:
 * [liblinear-java](http://liblinear.bwaldvogel.de/) -- Java port of the [original liblinear C++ sources](http://www.csie.ntu.edu.tw/~cjlin/liblinear/).
 * [WS4J](https://github.com/Sciss/ws4j) -- APIs for several semantic relatedness algorithms for, in theory, any WordNet instance.
 * [Jersey](https://jersey.java.net/) -- RESTful Web Service in Java. It is required to access temporal closure module in http://hixwg.univaq.it/TERENCE-reasoner.
 * [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/) - an API for parsing command line options passed to programs.
 
-##### Other resources:
+#### Other resources:
 * Temporal and causal signal lists, available in `resource/`. This folder must be placed within the root folder of the project.
 * Classification models, available in `models/`, including: `catena-event-timex.model`, `catena-event-dct.model`, `catena-event-event.model` and `catena-causal-event-event.model`.
  
@@ -26,6 +26,9 @@ _! The input file(s) must be in the [__TimeML annotation format__](http://www.ti
 ```
 usage: Catena
  -i,--input <arg>        Input TimeML file/directory path
+ -f,--col                (optional) Input files are in column format (.col)
+ -tl,--tlinks <arg>      (optional) Input file containing list of gold temporal links
+ -cl,--clinks <arg>      (optional) Input file containing list of gold causal links
         
  -x,--textpro <arg>      TextPro directory path
  -l,--matelemma <arg>    Mate tools' lemmatizer model path   
@@ -42,7 +45,33 @@ usage: Catena
                          classifiers
  -u,--causcorpus <arg>   (optional) TimeML directory path for training causal
                          classifier     
-```   
+``` 
+For example
+```
+-i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt 
+-l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model 
+-g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model 
+-p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model 
+-x ./tools/TextPro2.0/ 
+-d ./models/catena-event-dct.model 
+-t ./models/catena-event-timex.model 
+-e ./models/catena-event-event.model 
+-c ./models/catena-causal-event-event.model 
+-b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
+```
+  
+#### CoNLL column format
+The input document must be in 'one-token-per-line' format, with each column as:
+```
+0:token				1:token-id			2:sentence-id			3:lemma   
+4:event-id			5:event-class		6:event-tense+aspect+polarity
+7:timex-id			8:timex-type		9:timex-value
+10:signal-id		11:causal-signal-id
+12:pos-tag	        13:chunk
+14:lemma		    15:pos-tag		    16:dependencies			17:main-verb
+```
+
+#### Output format
 The output will be a list of temporal and/or causal relations, one relation per line, in the format of:
 ```
 <filename>	<entity_1>	<entity_2>	<TLINK_type/CLINK/CLINK-R>
@@ -51,6 +80,8 @@ The output will be a list of temporal and/or causal relations, one relation per 
   CLINK					entity_1 CAUSE entity_2
   CLINK-R				entity_1 IS_CAUSED_BY entity_2
 ```
+
+
 
 ###System architecture
 
