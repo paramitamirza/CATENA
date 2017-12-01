@@ -48,27 +48,18 @@ usage: Catena
 ``` 
 For example
 ```
--i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt 
--l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model 
--g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model 
--p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model 
--x ./tools/TextPro2.0/ 
--d ./models/catena-event-dct.model 
--t ./models/catena-event-timex.model 
--e ./models/catena-event-event.model 
--c ./models/catena-causal-event-event.model 
--b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
+java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt -l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model -g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model -p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model -x ./tools/TextPro2.0/ -d ./models/catena-event-dct.model -t ./models/catena-event-timex.model -e ./models/catena-event-event.model -c ./models/catena-causal-event-event.model -b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
 ```
   
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
 ```
-0:token				1:token-id			2:sentence-id			3:lemma   
-4:event-id			5:event-class		6:event-tense+aspect+polarity
-7:timex-id			8:timex-type		9:timex-value
-10:signal-id		11:causal-signal-id
-12:pos-tag	        13:chunk
-14:lemma		    15:pos-tag		    16:dependencies			17:main-verb
+0:token			1:token-id			2:sentence-id			3:lemma   
+4:event-id		5:event-class		6:event-tense+aspect+polarity
+7:timex-id		8:timex-type		9:timex-value
+10:signal-id	11:causal-signal-id
+12:pos-tag		13:chunk
+14:lemma		15:pos-tag			16:dependencies			17:main-verb
 ```
 
 #### Output format
