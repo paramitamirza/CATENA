@@ -54,6 +54,7 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
 ```
+| token | token-id |
 0:token			1:token-id			2:sentence-id			3:lemma   
 4:event-id		5:event-class		6:event-tense+aspect+polarity
 7:timex-id		8:timex-type		9:timex-value
