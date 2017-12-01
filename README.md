@@ -53,12 +53,16 @@ java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEva
   
 #### CoNLL column format
 The input document must be in 'one-token-per-line' format, with each column as:
-
-| token | token-id | sentence-id	|	lemma | TimeML event-id |	TimeML event-class |	TimeML event-tense+aspect+polarity | TimeML timex-id | TimeML timex-type	| TimeML timex-value | TimeML signal-id |	causal-signal-id | pos-tag | chunk | lemma | pos-tag | dependencies | main-verb |
-
-* TimeML event-tense+aspect+polarity: optional attributes of an event, if given "O", CATENA will extract them automatically
-* pos-tag: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
-* dependencies: in the format of _dep1:deprel1||dep2:deprel2||..._, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
+---
+| `token` | `token-id` | `sentence-id`	|	`lemma` | `event-id` |	`event-class` |	`event-tense+aspect+polarity` | `timex-id` | `timex-type`	| `timex-value` | `signal-id` |	`causal-signal-id` | `pos-tag` | `chunk` | `lemma` | `pos-tag` | `dependencies` | `main-verb` |
+---
+* `event-id` and `event-class`: TimeML event ID and attributes
+* `timex-id` and `timex-type` and `timex-value`: TimeML timex ID and attributes
+* `signal-id` and `causal-signal-id`: temporal and causal signal ID
+* `event-tense+aspect+polarity`: optional attributes of an event, if given `O`, CATENA will extract them automatically
+* `pos-tag`: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
+* `chunk`: 
+* `dependencies`: in the format of `dep1:deprel1||dep2:deprel2||...`, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
 
 See for example `data/example_COL/`.
 
@@ -67,10 +71,9 @@ The output will be a list of temporal and/or causal relations, one relation per 
 ```
 filename  entity_1  entity_2  TLINK_type/CLINK/CLINK-R
 ```
-Note:
-  `TLINK_type`: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
-  `CLINK`: entity_1 CAUSE entity_2
-  `CLINK-R`: entity_1 IS_CAUSED_BY entity_2
+* `TLINK_type`: One of TLINK types according to TimeML, e.g., BEFORE, AFTER, SIMULTANEOUS
+* `CLINK`: entity_1 CAUSE entity_2
+* `CLINK-R`: entity_1 IS_CAUSED_BY entity_2
 
 ### System architecture
 
