@@ -11,18 +11,18 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 * [Mate-tools](https://code.google.com/archive/p/mate-tools/) -- Tools for Natural Language Analysis. Our system requires [anna-3.3.jar](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/anna-3.3.jar) (transition-based and graph-based dependency parser, tagger, lemmatizer and morphologic tagger - version 3.3), and related models including [CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model), [CoNLL2009-ST-English-ALL.anna-3.3.postagger.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model) and [CoNLL2009-ST-English-ALL.anna-3.3.parser.model](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/CoNLL2009-ST-English-ALL.anna-3.3.parser.model).
 * [JDOM 2.0.x](http://www.jdom.org/index.html) or higher -- JDOM API for accessing, manipulating and  outputting XML data from Java code. The .jar file should be included in the classpath.
 
-#####Other libraries:
+##### Other libraries:
 * [liblinear-java](http://liblinear.bwaldvogel.de/) -- Java port of the [original liblinear C++ sources](http://www.csie.ntu.edu.tw/~cjlin/liblinear/).
 * [WS4J](https://github.com/Sciss/ws4j) -- APIs for several semantic relatedness algorithms for, in theory, any WordNet instance.
 * [Jersey](https://jersey.java.net/) -- RESTful Web Service in Java. It is required to access temporal closure module in http://hixwg.univaq.it/TERENCE-reasoner.
 * [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/) - an API for parsing command line options passed to programs.
 
-#####Other resources:
+##### Other resources:
 * Temporal and causal signal lists, available in `resource/`. This folder must be placed within the root folder of the project.
 * Classification models, available in `models/`, including: `catena-event-timex.model`, `catena-event-dct.model`, `catena-event-event.model` and `catena-causal-event-event.model`.
  
-###Usage
-_! The input file(s) must be in the [TimeML annotation format](http://www.timeml.org/site/index.html) !_
+### Usage
+_! The input file(s) must be in the [__TimeML annotation format__](http://www.timeml.org/site/index.html) or __CoNLL column format__ (one token per line) !_
 ```
 usage: Catena
  -i,--input <arg>        Input TimeML file/directory path
