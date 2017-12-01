@@ -36,7 +36,22 @@ public class EventEventCausalRule {
 		}
 	}
 	
-	public static List<String> getEventEventClinksPerFile(Doc doc) throws Exception {
+	public EventEventCausalRule(EventEventFeatureVector eefv, boolean CVerb) throws Exception {		
+		this.setRelType("O");
+		String eventRule = getEventCausalityRule(eefv); 
+		if (!eventRule.equals("O") && !eventRule.equals("NONE")) {
+			if (CVerb) {
+				this.setRelType(eventRule);
+			} else {
+				if (eventRule.contains("-R")) this.setRelType("CLINK-R");
+				else this.setRelType("CLINK");
+			}
+		} else {
+			this.setRelType("NONE");
+		}
+	}
+	
+	public static List<String> getEventEventClinksPerFile(Doc doc, boolean CVerb) throws Exception {
 		List<String> ee = new ArrayList<String>();
 		
 		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
@@ -58,7 +73,8 @@ public class EventEventCausalRule {
 				
 				if (fv.getPairType().equals(PairType.event_event)) {
 					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
-					EventEventCausalRule eeRule = new EventEventCausalRule(eefv);
+					EventEventCausalRule eeRule = new EventEventCausalRule(eefv, CVerb);
+					
 					if (!eeRule.getRelType().equals("NONE")) {
 						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
 								eefv.getLabel() + "\t" + eeRule.getRelType());

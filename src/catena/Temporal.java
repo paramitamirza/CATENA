@@ -57,46 +57,57 @@ public class Temporal {
 		
 	}
 	
-	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
-			boolean colFilesAvailable) throws Exception {
-		return filePreprocessing(tmlFile, tmlToCol, colParser,
+	public Doc filePreprocessing(File file, TimeMLToColumns tmlToCol, ColumnParser colParser,
+			boolean columnFormat) throws Exception {
+		return filePreprocessing(file, tmlToCol, colParser,
 				null,
-				colFilesAvailable);
+				columnFormat);
 	}
 	
-	public Doc filePreprocessing(File tmlFile, TimeMLToColumns tmlToCol, ColumnParser colParser,
+	public Doc filePreprocessing(File file, TimeMLToColumns tmlToCol, ColumnParser colParser,
 			Map<String, String> tlinks,
-			boolean colFilesAvailable) throws Exception {
+			boolean columnFormat) throws Exception {
 		Doc doc;
-		if (colFilesAvailable) {
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+		if (columnFormat) {
+			doc = colParser.parseDocument(new File(file.getPath()), false);
 			
 		} else {
 			System.err.println("Convert TimeML files to column format...");
 			
-			tmlToCol.convert(tmlFile, new File(tmlFile.getPath().replace(".tml", ".col")), true);
-			doc = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
+			tmlToCol.convert(file, new File(file.getPath().replace(".tml", ".col")), true);
+			doc = colParser.parseDocument(new File(file.getPath().replace(".tml", ".col")), false);
 			
 			// OR... Parse TimeML file without saving to .col files
-//			List<String> columns = tmlToCol.convert(tmlFile, true);
+//			List<String> columns = tmlToCol.convert(file, true);
 //			doc = colParser.parseLines(columns);
 		}				
 		
-		doc.setFilename(tmlFile.getName());
-		if (tlinks != null) TimeMLParser.parseTimeML(tmlFile, doc, tlinks, null);
-		else TimeMLParser.parseTimeML(tmlFile, doc);
+		doc.setFilename(file.getName());
+		if (columnFormat) {
+			if (tlinks != null) TimeMLParser.setTlinks(tlinks, doc);
+			else TimeMLParser.parseTimeML(new File(file.getPath().replace("COL", "TML").replace(".col", ".tml")), doc);
+		} else {
+			if (tlinks != null) TimeMLParser.parseTimeML(file, doc, tlinks, null);
+			else TimeMLParser.parseTimeML(file, doc);
+		}
 		CandidateLinks.setCandidateTlinks(doc);
 		
 		return doc;
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
-		trainModels(taskName, tmlDirpath, labels, 
-				new HashMap<String, String>(), colFilesAvailable);
+	public void trainModels(String taskName, String dirpath, String[] labels, boolean columnFormat) throws Exception {
+		trainModels(taskName, dirpath, null, labels, 
+				new HashMap<String, String>(), columnFormat);
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] labels,
-			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
+	public void trainModels(String taskName, String dirpath, String[] labels, Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
+		trainModels(taskName, dirpath, null, labels, 
+				relTypeMapping, columnFormat);
+	}
+	
+	public void trainModels(String taskName, String dirPath, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels, Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -111,14 +122,17 @@ public class Temporal {
 		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");	
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml")) {
-//				System.err.println("Processing " + tmlFile.getPath());
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+//				System.err.println("Processing " + file.getPath());
 				
 				// File pre-processing...
-				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
+				Map<String, String> tlinks = null;
+				if (tlinkPerFile != null) tlinks = tlinkPerFile.get(file.getName());
+				Doc	doc = filePreprocessing(file, tmlToCol, colParser, tlinks, columnFormat);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -139,9 +153,9 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public void trainModels(String taskName, String tmlDirpath, String[] tmlFileNames, 
+	public void trainModels(String taskName, String dirpath, String[] fileNames, 
 			Map<String, Map<String, String>> tlinkPerFile,
-			String[] labels, boolean colFilesAvailable) throws Exception {
+			String[] labels, Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -162,17 +176,24 @@ public class Temporal {
 			eeCls = new EventEventTemporalClassifier(taskName, "logit");
 		} 
 		
-		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		List<String> fileList = Arrays.asList(fileNames);
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirpath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-//				System.err.println("Processing " + tmlFile.getPath());
+			if ((fileList.contains(file.getName())
+					|| fileList.contains(file.getName().replace(".col", ".tml"))
+					|| fileList.contains(file.getName().replace(".tml", ".col"))
+				) &&
+				((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml")))
+				) {
+//				System.err.println("Processing " + file.getPath());
 				
 				// File pre-processing...
-				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);	
+				Map<String, String> tlinks = null;
+				if (tlinkPerFile != null) tlinks = tlinkPerFile.get(file.getName());
+				Doc	doc = filePreprocessing(file, tmlToCol, colParser, tlinks, columnFormat);	
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -184,11 +205,11 @@ public class Temporal {
 				
 				// Get the feature vectors
 				edFvList.addAll(EventDctTemporalClassifier.getEventDctTlinksPerFile(doc, edCls, 
-						true, true, Arrays.asList(labels)));
+						true, true, Arrays.asList(labels), relTypeMapping));
 				etFvList.addAll(EventTimexTemporalClassifier.getEventTimexTlinksPerFile(doc, etCls, 
-						true, true, Arrays.asList(labels), ttlinks));
+						true, true, Arrays.asList(labels), relTypeMapping, ttlinks));
 				eeFvList.addAll(EventEventTemporalClassifier.getEventEventTlinksPerFile(doc, eeCls, 
-						true, true, Arrays.asList(labels), etlinks));
+						true, true, Arrays.asList(labels), relTypeMapping, etlinks));
 			}
 		}
 		
@@ -197,10 +218,10 @@ public class Temporal {
 		eeCls.train(eeFvList, getEEModelPath());
 	}
 	
-	public void printFeatures(String taskName, String tmlDirpath, String[] labels,
+	public void printFeatures(String taskName, String dirPath, String[] labels,
 			Map<String, String> relTypeMapping, 
 			String outputDirPath, boolean train,
-			boolean colFilesAvailable) throws Exception {
+			boolean columnFormat) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -215,14 +236,16 @@ public class Temporal {
 		EventTimexTemporalClassifier etCls = new EventTimexTemporalClassifier(taskName, "liblinear");
 		EventEventTemporalClassifier eeCls = new EventEventTemporalClassifier(taskName, "liblinear");	
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml")) {
-//				System.err.println("Processing " + tmlFile.getPath());
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))
+					) {
+//				System.err.println("Processing " + file.getPath());
 				
 				// File pre-processing...
-				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
+				Doc doc = filePreprocessing(file, tmlToCol, colParser, columnFormat);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -298,10 +321,10 @@ public class Temporal {
 		bwEE.close();
 	}
 	
-	public void printFeatures(String taskName, String tmlDirpath, String[] tmlFileNames, 
+	public void printFeatures(String taskName, String dirpath, String[] fileNames, 
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels, String outputDirPath, boolean train,
-			boolean colFilesAvailable) throws Exception {
+			boolean columnFormat) throws Exception {
 		List<PairFeatureVector> edFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> etFvList = new ArrayList<PairFeatureVector>();
 		List<PairFeatureVector> eeFvList = new ArrayList<PairFeatureVector>();
@@ -322,17 +345,23 @@ public class Temporal {
 			eeCls = new EventEventTemporalClassifier(taskName, "logit");
 		} 
 		
-		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		List<String> fileList = Arrays.asList(fileNames);
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirpath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-//				System.err.println("Processing " + tmlFile.getPath());
+			if ((fileList.contains(file.getName())
+					|| fileList.contains(file.getName().replace(".col", ".tml"))
+					|| fileList.contains(file.getName().replace(".tml", ".col"))
+				) &&
+				((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml")))
+				) {
+//				System.err.println("Processing " + file.getPath());
 				
 				// File pre-processing...
-				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);
+				Map<String, String> tlinks = tlinkPerFile.get(file.getName());
+				Doc doc = filePreprocessing(file, tmlToCol, colParser, tlinks, columnFormat);
 				
 				Map<String, String> ttlinks = null, etlinks = null;		
 				if (isTTFeature()) ttlinks = TimexTimexTemporalRule.getTimexTimexRuleRelation(doc);
@@ -412,13 +441,29 @@ public class Temporal {
 		bwEE.close();
 	}
 	
-	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels, boolean colFilesAvailable) throws Exception {
-		return extractRelations(taskName, tmlDirpath, labels,
-				new HashMap<String, String>(), colFilesAvailable);
-	}	
+	public List<TLINK> extractRelations(String taskName, String dirpath, 
+			String[] labels, Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
+		return extractRelations(taskName, dirpath, null, labels,
+				relTypeMapping, columnFormat);
+	}
 	
-	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] labels,
-			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
+	public List<TLINK> extractRelations(String taskName, String dirpath, 
+			String[] labels, boolean columnFormat) throws Exception {
+		return extractRelations(taskName, dirpath, null, labels,
+				new HashMap<String, String>(), columnFormat);
+	}
+	
+	public List<TLINK> extractRelations(String taskName, String dirpath, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels, boolean columnFormat) throws Exception {
+		return extractRelations(taskName, dirpath, tlinkPerFile, labels,
+				new HashMap<String, String>(), columnFormat);
+	}
+	
+	public List<TLINK> extractRelations(String taskName, String dirpath, 
+			Map<String, Map<String, String>> tlinkPerFile,
+			String[] labels,
+			Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		
 		List<TLINK> results = new ArrayList<TLINK>();
 		results.add(new TLINK());
@@ -434,14 +479,18 @@ public class Temporal {
 		List<String> et = new ArrayList<String>();
 		List<String> ee = new ArrayList<String>();
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirpath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml")) {
-				System.err.println("Processing " + tmlFile.getPath());
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))
+					) {
+				System.err.println("Processing " + file.getPath());
 				
 				// PREDICT
-				List<TLINK> linksList = extractRelations(taskName, tmlFile, labels, relTypeMapping, colFilesAvailable);
+				Map<String, String> tlinks = null;
+				if (tlinkPerFile != null) tlinks = tlinkPerFile.get(file.getName());
+				List<TLINK> linksList = extractRelations(taskName, file, tlinks, labels, relTypeMapping, columnFormat);
 				
 				ttRules.addAll(linksList.get(0).getTT());
 				edRules.addAll(linksList.get(0).getED());
@@ -468,8 +517,8 @@ public class Temporal {
 		return results;
 	}
 	
-	public List<TLINK> extractRelations(String taskName, File tmlFile, String[] labels, 
-			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
+	public List<TLINK> extractRelations(String taskName, File file, String[] labels, 
+			Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -477,10 +526,15 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, colFilesAvailable);
+		Doc doc = filePreprocessing(file, tmlToCol, colParser, columnFormat);
 		
-		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
-		tmlDoc.removeLinks();
+		TimeMLDoc tmlDoc = null;
+		if (columnFormat) {
+			tmlDoc = doc.toTimeMLDoc(false, false);
+		} else {
+			tmlDoc = new TimeMLDoc(file);
+			tmlDoc.removeLinks();
+		}
 		String tmlString = tmlDoc.toString();
 		
 		List<TLINK> resultList = new ArrayList<TLINK>();
@@ -495,9 +549,15 @@ public class Temporal {
 			edRule = EventTimexTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate());
 			etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate());
 			eeRule = EventEventTemporalRule.getEventEventTlinksPerFile(doc, this.isGoldCandidate());
+			
+			if (columnFormat) {
+				tmlDoc = doc.toTimeMLDoc(ttRule, edRule, etRule, eeRule);
+				tmlString = tmlDoc.toString();
+			} else { 
+				tmlString = TimeMLDoc.timeMLFileToString(doc, file,
+						ttRule, edRule, etRule, eeRule);
+			}
 		}
-		tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
-				ttRule, edRule, etRule, eeRule);
 		
 		//Applying temporal reasoner...
 		if (isReasoner()) {			
@@ -506,8 +566,13 @@ public class Temporal {
 		}
 		
 //		Doc docSieved = colParser.parseLines(columns);
-		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-		docSieved.setFilename(tmlFile.getName());
+		Doc docSieved = null;
+		if (columnFormat) {
+			docSieved = colParser.parseDocument(new File(file.getPath()), false);
+		} else {
+			docSieved = colParser.parseDocument(new File(file.getPath().replace(".tml", ".col")), false);
+		}
+		docSieved.setFilename(file.getName());
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
 		resultList.add(relationToString(doc, docSieved, relTypeMapping));
@@ -585,19 +650,19 @@ public class Temporal {
 		return resultList;
 	}
 	
-	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
+	public List<TLINK> extractRelations(String taskName, String dirpath, String[] fileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
-			String[] labels, boolean colFilesAvailable) throws Exception {
-		return extractRelations(taskName, tmlDirpath, tmlFileNames,
+			String[] labels, boolean columnFormat) throws Exception {
+		return extractRelations(taskName, dirpath, fileNames,
 				tlinkPerFile,
 				labels,
-				new HashMap<String, String>(), colFilesAvailable);
+				new HashMap<String, String>(), columnFormat);
 	}
 	
-	public List<TLINK> extractRelations(String taskName, String tmlDirpath, String[] tmlFileNames,
+	public List<TLINK> extractRelations(String taskName, String dirpath, String[] fileNames,
 			Map<String, Map<String, String>> tlinkPerFile,
 			String[] labels,
-			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
+			Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		
 		List<TLINK> results = new ArrayList<TLINK>();
 		results.add(new TLINK());
@@ -613,17 +678,23 @@ public class Temporal {
 		List<String> et = new ArrayList<String>();
 		List<String> ee = new ArrayList<String>();
 		
-		List<String> tmlFileList = Arrays.asList(tmlFileNames);
+		List<String> fileList = Arrays.asList(fileNames);
 		
-		File[] tmlFiles = new File(tmlDirpath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirpath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml") && tmlFileList.contains(tmlFile.getName())) {
-				System.err.println("Processing " + tmlFile.getPath());
+			if ((fileList.contains(file.getName())
+						|| fileList.contains(file.getName().replace(".col", ".tml"))
+						|| fileList.contains(file.getName().replace(".tml", ".col"))
+					) &&
+					((columnFormat && file.getName().contains(".col"))
+						|| (!columnFormat && file.getName().contains(".tml")))
+					) {
+				System.err.println("Processing " + file.getPath());
 				
 				// PREDICT
-				Map<String, String> tlinks = tlinkPerFile.get(tmlFile.getName());
-				List<TLINK> linksList = extractRelations(taskName, tmlFile, tlinks, labels, relTypeMapping, colFilesAvailable);
+				Map<String, String> tlinks = tlinkPerFile.get(file.getName());
+				List<TLINK> linksList = extractRelations(taskName, file, tlinks, labels, relTypeMapping, columnFormat);
 				
 				ttRules.addAll(linksList.get(0).getTT());
 				edRules.addAll(linksList.get(0).getED());
@@ -650,9 +721,9 @@ public class Temporal {
 		return results;
 	}	
 	
-	public List<TLINK> extractRelations(String taskName, File tmlFile, Map<String, String> tlinks, 
+	public List<TLINK> extractRelations(String taskName, File file, Map<String, String> tlinks, 
 			String[] labels,
-			Map<String, String> relTypeMapping, boolean colFilesAvailable) throws Exception {
+			Map<String, String> relTypeMapping, boolean columnFormat) throws Exception {
 		
 		// Init the parsers...
 		TimeMLToColumns tmlToCol = new TimeMLToColumns(ParserConfig.textProDirpath, 
@@ -660,10 +731,15 @@ public class Temporal {
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
 				
 		// File pre-processing...
-		Doc doc = filePreprocessing(tmlFile, tmlToCol, colParser, tlinks, colFilesAvailable);
+		Doc doc = filePreprocessing(file, tmlToCol, colParser, tlinks, columnFormat);
 		
-		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
-		tmlDoc.removeLinks();
+		TimeMLDoc tmlDoc = null;
+		if (columnFormat) {
+			tmlDoc = doc.toTimeMLDoc(false, false);
+		} else {
+			tmlDoc = new TimeMLDoc(file);
+			tmlDoc.removeLinks();
+		}
 		String tmlString = tmlDoc.toString();
 		
 		List<TLINK> resultList = new ArrayList<TLINK>();
@@ -683,9 +759,15 @@ public class Temporal {
 				edRule = EventDctTemporalRule.getEventDctTlinksPerFile(doc, this.isGoldCandidate(), true);
 				etRule = EventTimexTemporalRule.getEventTimexTlinksPerFile(doc, this.isGoldCandidate(), true);
 			}
+			
+			if (columnFormat) {
+				tmlDoc = doc.toTimeMLDoc(ttRule, edRule, etRule, eeRule);
+				tmlString = tmlDoc.toString();
+			} else { 
+				tmlString = TimeMLDoc.timeMLFileToString(doc, file,
+						ttRule, edRule, etRule, eeRule);
+			}
 		}
-		tmlString = TimeMLDoc.timeMLFileToString(doc, tmlFile,
-				ttRule, edRule, etRule, eeRule);
 		
 		//Applying temporal reasoner...
 		if (isReasoner()) {			
@@ -694,8 +776,13 @@ public class Temporal {
 		}
 		
 //		Doc docSieved = colParser.parseLines(columns);
-		Doc docSieved = colParser.parseDocument(new File(tmlFile.getPath().replace(".tml", ".col")), false);
-		docSieved.setFilename(tmlFile.getName());
+		Doc docSieved = null;
+		if (columnFormat) {
+			docSieved = colParser.parseDocument(new File(file.getPath()), false);
+		} else {
+			docSieved = colParser.parseDocument(new File(file.getPath().replace(".tml", ".col")), false);
+		}
+		docSieved.setFilename(file.getName());
 		TimeMLParser.parseTimeML(tmlString, docSieved.getFilename(), docSieved);	
 		
 		resultList.add(relationToString(doc, docSieved, relTypeMapping));
@@ -861,7 +948,32 @@ public class Temporal {
 		}
 	}
 	
-	public static Map<String, Map<String, String>> getTimeBankDenseTlinks(String tlinkPath) throws Exception {
+//	public static Map<String, Map<String, String>> getTimeBankDenseTlinks(String tlinkPath, boolean columnFormat) throws Exception {
+//		Map<String, Map<String, String>> tlinkPerFile = new HashMap<String, Map<String, String>>();
+//		
+//		BufferedReader br = new BufferedReader(new FileReader(new File(tlinkPath)));
+//		String line;
+//		String filename, e1, e2, tlink;
+//	    while ((line = br.readLine()) != null) {
+//	    	String[] cols = line.split("\t");
+//	    	filename = cols[0] + ".tml";
+//	    	if (columnFormat) filename = cols[0] + ".col";
+//	    	e1 = cols[1]; e2 = cols[2];
+//	    	if (e1.startsWith("t")) e1 = e1.replace("t", "tmx");
+//	    	if (e2.startsWith("t")) e2 = e2.replace("t", "tmx");
+//	    	tlink = getRelTypeTimeBankDense(cols[3]);
+//	    	
+//	    	if (!tlinkPerFile.containsKey(filename)) {
+//	    		tlinkPerFile.put(filename, new HashMap<String, String>());
+//	    	}
+//    		tlinkPerFile.get(filename).put(e1+","+e2, tlink);
+//	    }
+//	    br.close();
+//		
+//		return tlinkPerFile;
+//	}
+	
+	public static Map<String, Map<String, String>> getLinksFromFile(String tlinkPath) throws Exception {
 		Map<String, Map<String, String>> tlinkPerFile = new HashMap<String, Map<String, String>>();
 		
 		BufferedReader br = new BufferedReader(new FileReader(new File(tlinkPath)));
@@ -869,11 +981,9 @@ public class Temporal {
 		String filename, e1, e2, tlink;
 	    while ((line = br.readLine()) != null) {
 	    	String[] cols = line.split("\t");
-	    	filename = cols[0] + ".tml";
+	    	filename = cols[0];
 	    	e1 = cols[1]; e2 = cols[2];
-	    	if (e1.startsWith("t")) e1 = e1.replace("t", "tmx");
-	    	if (e2.startsWith("t")) e2 = e2.replace("t", "tmx");
-	    	tlink = getRelTypeTimeBankDense(cols[3]);
+	    	tlink = cols[3];
 	    	
 	    	if (!tlinkPerFile.containsKey(filename)) {
 	    		tlinkPerFile.put(filename, new HashMap<String, String>());

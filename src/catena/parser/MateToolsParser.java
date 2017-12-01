@@ -1,6 +1,7 @@
 package catena.parser;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
@@ -16,11 +17,19 @@ public class MateToolsParser {
 	private String mateLemmatizerModel;
 	private String mateTaggerModel;
 	private String mateParserModel;
+	private String mateSrlModel;
 	
 	private EntityEnum.Language language;
 	
 	public MateToolsParser() {
 		
+	}
+	
+	public MateToolsParser(String mateLemmatizerModelPath, String mateTaggerModelPath, String mateParserModelPath, String mateSrlModelPath) {
+		this.setMateLemmatizerModel(mateLemmatizerModelPath);
+		this.setMateTaggerModel(mateTaggerModelPath);
+		this.setMateParserModel(mateParserModelPath);
+		this.setMateSrlModel(mateSrlModelPath);
 	}
 	
 	public MateToolsParser(String mateLemmatizerModelPath, String mateTaggerModelPath, String mateParserModelPath) {
@@ -97,6 +106,48 @@ public class MateToolsParser {
 		return result;
 	}
 	
+	public void runFullPipeline(File inputFile, File outputFile) throws Exception {
+		
+//		PrintStream originalOutStream = System.out;
+//		PrintStream originalErrStream = System.err;
+//		PrintStream dummyStream    = new PrintStream(new OutputStream(){
+//		    public void write(int b) {
+//		        //NO-OP
+//		    }
+//		});
+//		System.setOut(dummyStream);
+//		System.setErr(dummyStream);
+		
+		String[] fullPipelineArgs = {"eng",
+				"-test", inputFile.getPath(),
+				"-out", outputFile.getPath(),
+				"-lemma", this.getMateLemmatizerModel(),
+				"-tagger", this.getMateTaggerModel(),
+				"-parser", this.getMateParserModel(),
+				"-srl", this.getMateSrlModel()
+				};
+		se.lth.cs.srl.CompletePipeline.main(fullPipelineArgs);
+		
+//		System.setOut(originalOutStream);
+//		System.setErr(originalErrStream);
+	}
+	
+	public static String toConllString(List<String> words) throws IOException {
+		String conll = "";
+		int idx = 1;
+		for (String s : words) {
+			conll += idx + "\t" + s;
+			for (int i = 0; i < 13; i ++) {
+				conll += "\t_";
+			}
+			conll += "\n";
+			idx ++;
+		}
+		conll += "\n";
+		
+		return conll;
+	}
+	
 	public static void main(String[] args) {
 		
 		try {
@@ -134,5 +185,13 @@ public class MateToolsParser {
 
 	public void setMateParserModel(String mateParserModel) {
 		this.mateParserModel = mateParserModel;
+	}
+
+	public String getMateSrlModel() {
+		return mateSrlModel;
+	}
+
+	public void setMateSrlModel(String mateSrlModel) {
+		this.mateSrlModel = mateSrlModel;
 	}
 }

@@ -387,7 +387,6 @@ public class TimeMLToColumns {
 					if (!dependencies.get(tmlcols[1]).isEmpty())
 						depRel = String.join("||", dependencies.get(tmlcols[1]));
 				}
-				
 				columns.add(timeMLCols.get(i) 
 						+ "\t" + txpCols[1]		// TextPro - PoS tag
 						+ "\t" + txpCols[2]		// TextPro - Chunk (shallow parsing)
@@ -489,7 +488,6 @@ public class TimeMLToColumns {
 			TextProParser textpro = new TextProParser(this.getTextProDirpath());
 			String[] annotations = {"token", "pos", "chunk"};	
 			List<String> textProColumns = textpro.run(annotations, new File(tmlFile.getPath().replace(".tml", ".txt")), true);
-//			for (String s : textProColumns) System.out.println(s);	
 			
 			// Merge tagged columns (PoS and chunk tags from TextPro, and 
 			// dependency from Mate-tools) into the TimeML annotated columns

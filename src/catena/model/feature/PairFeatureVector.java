@@ -84,7 +84,7 @@ public class PairFeatureVector {
 	private String[] temp_dense_rel_type = {"BEFORE", "AFTER", "SIMULTANEOUS", "INCLUDES", "IS_INCLUDED", "VAGUE"};
 	private List<String> temp_dense_rel_type_list = Arrays.asList(temp_dense_rel_type);
 	
-	private String[] modals = {"will", "can", "may", "shall", "should"};
+	private String[] modals = {"will", "would", "can", "could", "may", "might", "shall", "should", "must"};
 	private List<String> modalVerbs = Arrays.asList(modals);
 	
 	public PairFeatureVector() {
@@ -440,12 +440,26 @@ public class PairFeatureVector {
 				} else if (doc.getTokens().get(e.getStartTokID()).getMainPos().equals("adj")) {
 					relatedTid = getMateVerbFromAdj(e.getStartTokID());
 				}
-				if (relatedTid != null) {
-					if (feature == FeatureName.tense) return doc.getTokens().get(relatedTid).getTense();
-					else if (feature == FeatureName.aspect) return doc.getTokens().get(relatedTid).getAspect();
-					else if (feature == FeatureName.polarity) return doc.getTokens().get(relatedTid).getPolarity();
+				if (feature == FeatureName.tense) {
+					String tense = getTense(e.getStartTokID());
+					if (tense.equals("NONE")) {
+						if (relatedTid != null) return getTense(relatedTid);
+						else return "NONE";
+					} else {
+						return tense;
+					}
+				} else if (feature == FeatureName.aspect) {
+					String aspect = getAspect(e.getStartTokID());
+					if (aspect.equals("NONE")) {
+						if (relatedTid != null) return getAspect(relatedTid);
+						else return "NONE";
+					} else {
+						return aspect;
+					}
+				} else if (feature == FeatureName.polarity) {
+					return getPolarity(e.getStartTokID());
 				}
-				return "NONE";
+				
 			} else {
 				return ((Event)e).getAttribute(feature);
 			}
@@ -464,7 +478,9 @@ public class PairFeatureVector {
 				if (doc.getTokens().get(tok).getDependencyRel().keySet().contains(tokID)
 						&& doc.getTokens().get(tok).getDependencyRel().get(tokID).equals("VC") 
 						&& tokenArr.indexOf(tok) < tokenArr.indexOf(tokID)) {
-					if (modalVerbs.contains(doc.getTokens().get(tok).getLemma())) {
+					if (modalVerbs.contains(doc.getTokens().get(tok).getLemma())
+							|| doc.getTokens().get(tok).getPos().equals("VM0")
+							) {
 						return doc.getTokens().get(tok).getLemma();
 					} else {
 						return getMateModalVerb(tok);
@@ -475,13 +491,121 @@ public class PairFeatureVector {
 		return modal;
 	}
 	
+	protected String getTense(String tokID) {
+		String headTokID = getMateHeadVerb(tokID);
+		String posHeadTokID = doc.getTokens().get(headTokID).getPos();
+		String lemmaHeadTokID = doc.getTokens().get(getMateHeadVerb(tokID)).getLemma();
+		if (lemmaHeadTokID.equals("to") && posHeadTokID.startsWith("TO")) {
+			return "INFINITIVE";
+		} else if (posHeadTokID.equals("VB")
+				|| posHeadTokID.equals("VB")
+				|| posHeadTokID.equals("VBI")
+				|| posHeadTokID.equals("VDI")
+				|| posHeadTokID.equals("VHI")
+				|| posHeadTokID.equals("VVI")
+				) {
+			return "INFINITIVE";
+		} else if (posHeadTokID.equals("VBZ") || posHeadTokID.equals("VBP")
+				|| posHeadTokID.equals("VBB")
+				|| posHeadTokID.equals("VDZ") || posHeadTokID.equals("VDB")
+				|| posHeadTokID.equals("VHZ") || posHeadTokID.equals("VHB")
+				|| posHeadTokID.equals("VVZ") || posHeadTokID.equals("VVB")
+				) {
+			if (lemmaHeadTokID.equals("be")) {
+				ArrayList<String> tokenArr = getTokenIDArr(headTokID, tokID);
+				for (String tok : tokenArr) {
+					if (doc.getTokens().get(tok).getLemma().equals("go") &&
+							(doc.getTokens().get(tok).getPos().equals("VBG") 
+									|| doc.getTokens().get(tok).getPos().equals("VVG"))
+							) {
+						return "FUTURE";
+					}
+				}
+			}
+			return "PRESENT";
+		} else if (posHeadTokID.equals("VBD")
+				|| posHeadTokID.equals("VDD")
+				|| posHeadTokID.equals("VHD")
+				|| posHeadTokID.equals("VVD")
+				) {
+			return "PAST";
+		} else if ((posHeadTokID.equals("MD") || posHeadTokID.equals("VM0"))
+				&& (lemmaHeadTokID.equals("will") || lemmaHeadTokID.equals("shall"))) {
+			return "FUTURE";
+		} else if (posHeadTokID.equals("VBG")
+				|| posHeadTokID.equals("VDG")
+				|| posHeadTokID.equals("VHG")
+				|| posHeadTokID.equals("VVG")
+				) {
+			return "PRESPART";
+		} else if (posHeadTokID.equals("VBN")
+				|| posHeadTokID.equals("VDN")
+				|| posHeadTokID.equals("VHN")
+				|| posHeadTokID.equals("VVN")
+				) {
+			return "PASTPART";
+		} 
+		return "NONE";
+	}
+	
+	protected String getAspect(String tokID) {		
+		String headTokID = getMateHeadVerb(tokID);
+		ArrayList<String> tokenArr = getTokenIDArr(headTokID, tokID);
+		String aspect = "";
+		if (getTense(tokID).equals("PRESPART")
+				&& !doc.getTokens().get(headTokID).getLemma().equals("have")) {
+			return "NONE";
+		} else {
+			for (String tok : tokenArr) {
+				if (!tok.equals(tokID)) {
+					if (doc.getTokens().get(tok).getLemma().equals("have") || 
+							doc.getTokens().get(tok).getPos().startsWith("VH")
+							) {
+						aspect = "PERFECTIVE";
+					} else if (doc.getTokens().get(tok).getLemma().equals("be")
+							&& doc.getTokens().get(tok).getPos().equals("VBG")
+							) {
+						if (aspect.equals("PERFECTIVE")) aspect += "_PROGRESSIVE";
+						else aspect = "PROGRESSIVE";
+					} 
+				} else {
+					if (doc.getTokens().get(tok).getPos().equals("VBG")
+							|| doc.getTokens().get(tok).getPos().equals("VVG")) {
+						if (aspect.equals("PERFECTIVE")) aspect += "_PROGRESSIVE";
+						else aspect = "PROGRESSIVE";
+					}
+					if (aspect.equals("")) aspect = "NONE";
+					return aspect;
+				} 
+			}
+		}
+		return "NONE";
+	}
+	
+	protected String getPolarity(String tokID) {		
+		String headTokID = getMateHeadVerb(tokID);
+		ArrayList<String> tokenArr = getTokenIDArr(headTokID, tokID);
+		String polarity = "POS";
+		for (String tok : tokenArr) {
+			if (!tok.equals(tokID)) {
+				if (doc.getTokens().get(tok).getPos().equals("XX0")
+						|| doc.getTokens().get(tok).getLemma().equals("not")) {
+					return "NEG";
+				}
+			} 
+		}
+		return polarity;
+	}
+	
 	protected String getMateHeadVerb(String tokID) {
 		Sentence s = doc.getSentences().get(doc.getTokens().get(tokID).getSentID());
 		ArrayList<String> tokenArr = getTokenIDArr(s.getStartTokID(), s.getEndTokID());
 		for (String tok : tokenArr) {
 			if (!tokID.equals(tok) && doc.getTokens().get(tok).getDependencyRel() != null) {
 				if (doc.getTokens().get(tok).getDependencyRel().keySet().contains(tokID)
-						&& doc.getTokens().get(tok).getDependencyRel().get(tokID).equals("VC") 
+						&& (doc.getTokens().get(tok).getDependencyRel().get(tokID).equals("VC")
+								|| doc.getTokens().get(tok).getDependencyRel().get(tokID).equals("IM") 
+								)
 						&& tokenArr.indexOf(tok) < tokenArr.indexOf(tokID)) {
 					return getMateHeadVerb(tok);
 				} 

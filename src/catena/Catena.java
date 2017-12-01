@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import catena.parser.entities.CLINK;
+import catena.parser.entities.ExtractedLinks;
 import catena.parser.entities.TLINK;
 import catena.parser.entities.TemporalRelation;
 
@@ -41,15 +42,27 @@ public class Catena {
         String eeModel = cmd.getOptionValue("eetemporal");
         String eecModel = cmd.getOptionValue("eecausal");
         
-        boolean colFilesAvailable = cmd.hasOption("f");
+        boolean columnFormat = cmd.hasOption("f");
         
         // ---------- TRAIN CATENA MODELS ---------- //
         boolean train = cmd.hasOption("b");
         String tempCorpus = cmd.getOptionValue("tempcorpus");
         String causCorpus = cmd.getOptionValue("causcorpus");
+        
         if (train) {
-        	cat.trainModels(tempCorpus, causCorpus,
-        			edModel, etModel, eeModel, eecModel, colFilesAvailable);
+        	if (columnFormat) {
+        		if (!cmd.hasOption("tlinks") || !cmd.hasOption("clinks")) {
+        			System.err.println("Input files containing gold TLINKs and CLINKs are missing!");
+        			return;
+        		} else {
+        			cat.trainModels(tempCorpus, causCorpus,
+        					cmd.getOptionValue("tlinks"), cmd.getOptionValue("clinks"),  
+    	        			edModel, etModel, eeModel, eecModel, columnFormat);
+        		}
+        	} else {
+	        	cat.trainModels(tempCorpus, causCorpus,
+	        			edModel, etModel, eeModel, eecModel, columnFormat);
+        	}
         }
         				
 		// ---------- TEST CATENA MODELS ---------- //
@@ -58,24 +71,48 @@ public class Catena {
 		ParserConfig.mateTaggerModel = cmd.getOptionValue("matetagger");
 		ParserConfig.mateParserModel = cmd.getOptionValue("mateparser");
 		
+		boolean clinkType = cmd.hasOption("y");		//Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve
+		
 		String input = cmd.getOptionValue("input");
 		File file = new File(input);
+		String tlinkFilepath = "";
+		if (cmd.hasOption("tlinks")) tlinkFilepath = cmd.getOptionValue("tlinks"); 
+		String clinkFilepath = "";
+		if (cmd.hasOption("clinks")) clinkFilepath = cmd.getOptionValue("clinks");
 		if (file.isDirectory()) {
-			System.out.println(cat.extractRelations(input, 
-					edModel, etModel, eeModel, eecModel, colFilesAvailable));
+			System.out.println(cat.extractRelationsString(input, 
+					tlinkFilepath, clinkFilepath, 
+					edModel, etModel, eeModel, eecModel, columnFormat, clinkType));
 			
 		} else if (file.isFile()) {
-			System.out.println(cat.extractRelations(new File(input),
-					edModel, etModel, eeModel, eecModel, colFilesAvailable));
+			System.out.println(cat.extractRelationsString(new File(input),
+					tlinkFilepath, clinkFilepath,
+					edModel, etModel, eeModel, eecModel, columnFormat, clinkType));
 		}
 	}
 	
 	public Options getCatenaOptions() {
 		Options options = new Options();
 		
-		Option input = new Option("i", "input", true, "Input TimeML file/directory path");
+		Option input = new Option("i", "input", true, "Input file/directory path (.tml or .col)");
 		input.setRequired(true);
         options.addOption(input);
+        
+        Option inputTlinks = new Option("tl", "tlinks", true, "Input file containing list of temporal links");
+        inputTlinks.setRequired(false);
+        options.addOption(inputTlinks);
+        
+        Option inputClinks = new Option("cl", "clinks", true, "Input file containing list of causal links");
+        inputClinks.setRequired(false);
+        options.addOption(inputClinks);
+        
+        Option colFiles = new Option("f", "col", false, "Input files are in column (.col) format resulted from converting TimeML files into column format");
+        colFiles.setRequired(false);
+        options.addOption(colFiles);
+        
+        Option clinkType = new Option("y", "clinktype", false, "Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve");
+        clinkType.setRequired(false);
+        options.addOption(clinkType);
 
         Option textpro = new Option("x", "textpro", true, "TextPro directory path");
         textpro.setRequired(true);
@@ -113,61 +150,319 @@ public class Catena {
         trainmodels.setRequired(false);
         options.addOption(trainmodels);
         
-        Option temporaltrain = new Option("m", "tempcorpus", true, "TimeML directory path for training temporal classifiers");
+        Option temporaltrain = new Option("m", "tempcorpus", true, "Directory path (containing .tml or .col files) for training temporal classifiers");
         temporaltrain.setRequired(false);
         options.addOption(temporaltrain);
         
-        Option causaltrain = new Option("u", "causcorpus", true, "TimeML directory path for training causal classifier");
+        Option causaltrain = new Option("u", "causcorpus", true, "Directory path (containing .tml or .col files) for training causal classifier");
         causaltrain.setRequired(false);
         options.addOption(causaltrain);
-        
-        Option colFiles = new Option("f", "col", false, "Column (.col) files resulted from converting TimeML files into column format are available in the TimeML directory");
-        colFiles.setRequired(false);
-        options.addOption(colFiles);
         
         return options;
 	}
 	
-	public String extractRelations(String dirPath,
+	public String extractRelationsString(String dirPath,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean colFilesAvailable) throws Exception {
+			boolean columnFormat, boolean clinkType) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
-		File[] tmlFiles = new File(dirPath).listFiles();
-		for (File tmlFile : tmlFiles) {	//assuming that there is no sub-directory
+		File[] files = new File(dirPath).listFiles();
+		
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		for (File file : files) {	//assuming that there is no sub-directory
 			
-			if (tmlFile.getName().contains(".tml")) {
-				System.err.println("Processing " + tmlFile.getPath());
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+				System.err.println("Processing " + file.getPath());
 				
-				results.append(extractRelations(tmlFile,
+				results.append(extractRelationsString(file,
+						"", "",
+						te3CLabelCollapsed, causalLabel, 
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, colFilesAvailable));
+						eventEventModel, causalModel, columnFormat, clinkType));
 			}
 		}
 		
 		return results.toString();
 	}
 	
-	public String extractRelations(File tmlFile,
+	public String extractRelationsString(String dirPath,
+			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
 		
-		// ---------- TEMPORAL ---------- //
+		StringBuilder results = new StringBuilder();
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.append(extractRelationsString(file,
+						"", "",
+						tempLabels, causLabels, 
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, columnFormat, clinkType));
+			}
+		}
+		
+		return results.toString();
+	}
+	
+	public String extractRelationsString(String dirPath,
+			String tlinkFilepath, String clinkFilepath,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		StringBuilder results = new StringBuilder();
+		File[] files = new File(dirPath).listFiles();
+		
 		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
 		
-		Temporal temp = new Temporal(false, te3CLabelCollapsed,
-				eventDctModel,
-				eventTimexModel,
-				eventEventModel,
-				true, true, true,
-				true, false);
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.append(extractRelationsString(file,
+						tlinkFilepath, clinkFilepath,
+						te3CLabelCollapsed, causalLabel,
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, columnFormat, clinkType));
+			}
+		}
+		
+		return results.toString();
+	}
+	
+	public String extractRelationsString(String dirPath,
+			String tlinkFilepath, String clinkFilepath,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		StringBuilder results = new StringBuilder();
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.append(extractRelationsString(file,
+						tlinkFilepath, clinkFilepath,
+						tempLabels, causLabels,
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, columnFormat, clinkType));
+			}
+		}
+		
+		return results.toString();
+	}
+	
+	public String extractRelationsString(String dirPath,
+			String[] fileNames, 
+			String tlinkFilepath, String clinkFilepath,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		List<String> fileList = Arrays.asList(fileNames);
+		StringBuilder results = new StringBuilder();
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((fileList.contains(file.getName())
+					|| fileList.contains(file.getName().replace(".col", ".tml"))
+					|| fileList.contains(file.getName().replace(".tml", ".col"))
+				) &&
+				((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml")))
+				) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.append(extractRelationsString(file,
+						tlinkFilepath, clinkFilepath,
+						tempLabels, causLabels,
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, columnFormat, clinkType));
+			}
+		}
+		
+		return results.toString();
+	}
+	
+	public ExtractedLinks extractRelations(String dirPath,
+			String tlinkFilepath, String clinkFilepath,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		ExtractedLinks results = new ExtractedLinks();
+		File[] files = new File(dirPath).listFiles();
+		
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml"))) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.appendLinks(extractRelations(file,
+						tlinkFilepath, clinkFilepath,
+						te3CLabelCollapsed, causalLabel,
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, 
+						columnFormat, clinkType));
+			}
+		}
+		
+		return results;
+	}
+	
+	public ExtractedLinks extractRelations(String dirPath,
+			String[] fileNames, 
+			String tlinkFilepath, String clinkFilepath,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel,
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		List<String> fileList = Arrays.asList(fileNames);
+		ExtractedLinks results = new ExtractedLinks();
+		File[] files = new File(dirPath).listFiles();
+		for (File file : files) {	//assuming that there is no sub-directory
+			
+			if ((fileList.contains(file.getName())
+					|| fileList.contains(file.getName().replace(".col", ".tml"))
+					|| fileList.contains(file.getName().replace(".tml", ".col"))
+				) &&
+				((columnFormat && file.getName().contains(".col"))
+					|| (!columnFormat && file.getName().contains(".tml")))
+				) {
+				System.err.println("Processing " + file.getPath());
+				
+				results.appendLinks(extractRelations(file,
+						tlinkFilepath, clinkFilepath,
+						tempLabels, causLabels,
+						eventDctModel, eventTimexModel,
+						eventEventModel, causalModel, 
+						columnFormat, clinkType));
+			}
+		}
+		
+		return results;
+	}
+	
+	public String extractRelationsString(File file,
+			String tlinkFilepath, String clinkFilepath,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, 
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		ExtractedLinks rl = extractRelations(file,
+				tlinkFilepath, clinkFilepath,
+				te3CLabelCollapsed, causalLabel,
+				eventDctModel, eventTimexModel,
+				eventEventModel, causalModel, 
+				columnFormat, clinkType);
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(rl.getTlink().TTLinksToString());
+		sb.append(rl.getTlink().EDLinksToString());
+		sb.append(rl.getTlink().ETLinksToString());
+		sb.append(rl.getTlink().EELinksToString());
+		sb.append(rl.getClink().EELinksToString());
+		return sb.toString();
+	}
+	
+	public String extractRelationsString(File file,
+			String tlinkFilepath, String clinkFilepath,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, 
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		ExtractedLinks rl = extractRelations(file,
+				tlinkFilepath, clinkFilepath,
+				tempLabels, causLabels,
+				eventDctModel, eventTimexModel,
+				eventEventModel, causalModel, 
+				columnFormat, clinkType);
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(rl.getTlink().TTLinksToString());
+		sb.append(rl.getTlink().EDLinksToString());
+		sb.append(rl.getTlink().ETLinksToString());
+		sb.append(rl.getTlink().EELinksToString());
+		sb.append(rl.getClink().EELinksToString());
+		return sb.toString();
+	}
+	
+	public ExtractedLinks extractRelations(File file,
+			String tlinkFilepath, String clinkFilepath,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, 
+			boolean columnFormat, boolean clinkType) throws Exception {
+		
+		// ---------- TEMPORAL ---------- //
+//		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+//				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		
+		Temporal temp;
+		if (Arrays.asList(tempLabels).contains("VAGUE")) {
+			temp = new Temporal(true, tempLabels,
+					eventDctModel,
+					eventTimexModel,
+					eventEventModel,
+					true, true, true,
+					true, false);
+		} else {
+			temp = new Temporal(false, tempLabels,
+					eventDctModel,
+					eventTimexModel,
+					eventEventModel,
+					true, true, true,
+					true, false);
+		}
+		
+		Map<String, String> tlinkPerFile = null;
+		if (!tlinkFilepath.equals("")) {
+			tlinkPerFile = Temporal.getLinksFromFile(tlinkFilepath).get(file.getName());
+		}
 		
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		List<TLINK> tlinks = temp.extractRelations("catena", tmlFile, te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
+		if (Arrays.asList(tempLabels).contains("VAGUE")) {
+			relTypeMapping.put("BEGINS", "BEFORE");				//TimebankDense specific!
+			relTypeMapping.put("BEGUN_BY", "AFTER");			//TimebankDense specific!
+			relTypeMapping.put("ENDS", "AFTER");				//TimebankDense specific!
+			relTypeMapping.put("ENDED_BY", "BEFORE");			//TimebankDense specific!
+			relTypeMapping.put("DURING", "SIMULTANEOUS");		//TimebankDense specific!
+			relTypeMapping.put("DURING_INV", "SIMULTANEOUS");	//TimebankDense specific!
+		}
+		List<TLINK> tlinks = temp.extractRelations("catena", file, tlinkPerFile, tempLabels, relTypeMapping, columnFormat);
 		
 		// ---------- CAUSAL ---------- //
 		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
@@ -175,6 +470,11 @@ public class Catena {
 		Causal causal = new Causal(
 				causalModel,
 				true, true);
+		
+		Map<String, String> clinkPerFile = null;
+		if (!clinkFilepath.equals("")) {
+			clinkPerFile = Causal.getLinksFromFile(clinkFilepath).get(file.getName());
+		}
 		
 		// PREDICT
 		CLINK clinks;
@@ -196,10 +496,12 @@ public class Catena {
 				tlinksForClinkPerFile.get(cols[0]).put(cols[1]+","+cols[2], label);
 				tlinksForClinkPerFile.get(cols[0]).put(cols[2]+","+cols[1], TemporalRelation.getInverseRelation(label));
 			}
-			clinks = causal.extractRelations("catena", tmlFile, null, causalLabel, 
-					this.isTlinkFeature(), tlinksForClinkPerFile.get(tmlFile.getName()), te3CLabelCollapsed, colFilesAvailable);
+			clinks = causal.extractRelations("catena", file, clinkPerFile, causalLabel, 
+					this.isTlinkFeature(), 
+					tlinksForClinkPerFile.get(file.getName()), 
+					tempLabels, columnFormat, clinkType);
 		} else {
-			clinks = causal.extractRelations("catena", tmlFile, null, causalLabel, colFilesAvailable);
+			clinks = causal.extractRelations("catena", file, clinkPerFile, causalLabel, columnFormat, clinkType);
 		}
 		
 		// POST-EDITING
@@ -217,39 +519,109 @@ public class Catena {
 			}
 		}
 		
-		StringBuilder sb = new StringBuilder();
-		sb.append(tlinks.get(1).TTLinksToString());
-		sb.append(tlinks.get(1).EDLinksToString());
-		sb.append(tlinks.get(1).ETLinksToString());
-		sb.append(tlinks.get(1).EELinksToString());
-		sb.append(clinks.EELinksToString());
-		return sb.toString();
+		ExtractedLinks rl = new ExtractedLinks(tlinks.get(1), clinks);
+		return rl;
 	}
 	
 	public void trainModels(String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
-		trainModels("./data/Catena-train_TML/", "./data/Causal-TimeBank_TML/",
+			String eventEventModel, String causalModel, boolean columnFormat) throws Exception {
+		String temporalTrainCorpus = "./data/Catena-train_TML/";
+		String causalTrainCorpus = "./data/Causal-TimeBank_TML/";
+		String tlinkFilepath = "";
+		String clinkFilePath = "";
+		if (columnFormat) {
+			temporalTrainCorpus = "./data/Catena-train_COL/";
+			causalTrainCorpus = "./data/Causal-TimeBank_COL/";
+		}
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		trainModels(temporalTrainCorpus, causalTrainCorpus,
+				null, null, 
+				tlinkFilepath, clinkFilePath, 
+				te3CLabelCollapsed, causalLabel, 
 				eventDctModel, eventTimexModel,
 				eventEventModel, causalModel,
-				colFilesAvailable);
+				columnFormat);
 	}
 	
 	public void trainModels(String temporalTrainCorpus, String causalTrainCorpus,
 			String eventDctModel, String eventTimexModel,
-			String eventEventModel, String causalModel, boolean colFilesAvailable) throws Exception {
+			String eventEventModel, String causalModel, boolean columnFormat) throws Exception {
+		if (columnFormat) {
+			System.err.println("Input files containing gold TLINKs and CLINKs are missing!");
+			return;
+		}
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		trainModels(temporalTrainCorpus, causalTrainCorpus,
+				null, null, 
+				"", "", 
+				te3CLabelCollapsed, causalLabel,
+				eventDctModel, eventTimexModel,
+				eventEventModel, causalModel, columnFormat);
+	}
+	
+	public void trainModels(String temporalTrainCorpus, String causalTrainCorpus,
+			String[] tempLabels, String[] causLabels,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, boolean columnFormat) throws Exception {
+		if (columnFormat) {
+			System.err.println("Input files containing gold TLINKs and CLINKs are missing!");
+			return;
+		}
+		trainModels(temporalTrainCorpus, causalTrainCorpus,
+				null, null, 
+				"", "", 
+				tempLabels, causLabels,
+				eventDctModel, eventTimexModel,
+				eventEventModel, causalModel, columnFormat);
+	}
+	
+	public void trainModels(String temporalTrainCorpus, String causalTrainCorpus,
+			String tlinkFilepath, String clinkFilepath,
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, boolean columnFormat) throws Exception {
+		
+		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		
+		trainModels(temporalTrainCorpus, causalTrainCorpus,
+				null, null, 
+				tlinkFilepath, clinkFilepath, 
+				te3CLabelCollapsed, causalLabel,
+				eventDctModel, eventTimexModel,
+				eventEventModel, causalModel, columnFormat);
+	}
+	
+	public void trainModels(String temporalTrainCorpus, String causalTrainCorpus,
+			String[] temporalFileNames, String[] causalFileNames,
+			String tlinkFilepath, String clinkFilepath, 
+			String[] tempLabels, String[] causLabels, 
+			String eventDctModel, String eventTimexModel,
+			String eventEventModel, String causalModel, boolean columnFormat) throws Exception {
 		
 		System.err.println("Train CATENA temporal and causal models...");
 		
 		// ---------- TEMPORAL ---------- //
-		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
-				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
+//		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
+//				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
 		
-		Temporal temp = new Temporal(false, te3CLabelCollapsed,
+		Temporal temp = new Temporal(false, tempLabels,
 				eventDctModel,
 				eventTimexModel,
 				eventEventModel,
 				true, true, true,
 				true, false);
+		
+		Map<String, Map<String, String>> tlinkPerFile = null;
+		if (!tlinkFilepath.equals("")) {
+			tlinkPerFile = Temporal.getLinksFromFile(tlinkFilepath);
+		}
 		
 		// TRAIN
 		Map<String, String> relTypeMappingTrain = new HashMap<String, String>();
@@ -257,19 +629,48 @@ public class Catena {
 		relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
 		relTypeMappingTrain.put("IBEFORE", "BEFORE");
 		relTypeMappingTrain.put("IAFTER", "AFTER");
-		temp.trainModels("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+		
+		if (temporalFileNames != null) {
+//			if (Arrays.asList(tempLabels).contains("VAGUE")) {
+//				temp.trainModels("catena", temporalTrainCorpus, temporalFileNames, tlinkPerFile, tempLabels, new HashMap<String, String>(), columnFormat);
+//			} else {
+				temp.trainModels("catena", temporalTrainCorpus, temporalFileNames, tlinkPerFile, tempLabels, relTypeMappingTrain, columnFormat);
+//			}
+		} else {
+			temp.trainModels("catena", temporalTrainCorpus, tlinkPerFile, tempLabels, relTypeMappingTrain, columnFormat);
+		}
 		
 		// ---------- CAUSAL ---------- //
-		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+//		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
 		
 		Causal causal = new Causal(
 				causalModel,
 				true, true);
 		
+		Map<String, Map<String, String>> clinkPerFile = null;
+		if (!clinkFilepath.equals("")) {
+			clinkPerFile = Causal.getLinksFromFile(clinkFilepath);
+		}
+		
 		// TRAIN
 		Map<String, Map<String, String>> tlinksForClinkTrainPerFile = new HashMap<String, Map<String, String>>();
-		if (this.isTlinkFeature()) {	
-			List<TLINK> tlinksTrain = temp.extractRelations("catena", temporalTrainCorpus, te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+		if (this.isTlinkFeature()) {
+			Map<String, String> relTypeMapping = new HashMap<String, String>();
+			relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
+			if (Arrays.asList(tempLabels).contains("VAGUE")) {
+				relTypeMapping.put("BEGINS", "BEFORE");				//TimebankDense specific!
+				relTypeMapping.put("BEGUN_BY", "AFTER");			//TimebankDense specific!
+				relTypeMapping.put("ENDS", "AFTER");				//TimebankDense specific!
+				relTypeMapping.put("ENDED_BY", "BEFORE");			//TimebankDense specific!
+				relTypeMapping.put("DURING", "SIMULTANEOUS");		//TimebankDense specific!
+				relTypeMapping.put("DURING_INV", "SIMULTANEOUS");	//TimebankDense specific!
+			}
+			List<TLINK> tlinksTrain;
+			if (temporalFileNames != null) {
+				tlinksTrain = temp.extractRelations("catena", temporalTrainCorpus, temporalFileNames, tlinkPerFile, tempLabels, relTypeMapping, columnFormat);
+			} else {
+				tlinksTrain = temp.extractRelations("catena", temporalTrainCorpus, tlinkPerFile, tempLabels, relTypeMapping, columnFormat);
+			}
 			for (String s : tlinksTrain.get(0).getEE()) {
 				String[] cols = s.split("\t");
 				if (!tlinksForClinkTrainPerFile.containsKey(cols[0])) tlinksForClinkTrainPerFile.put(cols[0], new HashMap<String, String>());
@@ -277,10 +678,10 @@ public class Catena {
 				tlinksForClinkTrainPerFile.get(cols[0]).put(cols[2]+","+cols[1], TemporalRelation.getInverseRelation(cols[3]));
 			}
 			
-			causal.trainModels("catena", causalTrainCorpus, causalLabel, 
-					this.isTlinkFeature(), tlinksForClinkTrainPerFile, te3CLabelCollapsed, colFilesAvailable);
+			causal.trainModels("catena", causalTrainCorpus, clinkPerFile, causLabels, 
+					this.isTlinkFeature(), tlinksForClinkTrainPerFile, tempLabels, columnFormat);
 		} else {
-			causal.trainModels("catena", causalTrainCorpus, causalLabel, colFilesAvailable);
+			causal.trainModels("catena", causalTrainCorpus, causLabels, columnFormat);
 		}
 		
 	}

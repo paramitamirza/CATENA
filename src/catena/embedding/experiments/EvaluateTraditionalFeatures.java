@@ -13,26 +13,26 @@ public class EvaluateTraditionalFeatures {
 	public static void main(String[] args) throws Exception {	
 		
 		String task = "tbdense";
-		boolean colFilesAvailable = true;
+		boolean columnFormat = true;
 		boolean train = true;
 		
 		switch(task) {
 			case "te3-c-rel" :
-				TempEval3TaskCRelOnly(colFilesAvailable, train);
+				TempEval3TaskCRelOnly(columnFormat, train);
 				break;
 			
 			case "te3-c" :
-				TempEval3TaskC(colFilesAvailable, train);
+				TempEval3TaskC(columnFormat, train);
 				break;
 				
 			case "tbdense" :
-				TimeBankDense(colFilesAvailable, train);
+				TimeBankDense(columnFormat, train);
 				break;
 		}
 		
 	}
 	
-	public static void TempEval3TaskC(boolean colFilesAvailable, boolean train) throws Exception {
+	public static void TempEval3TaskC(boolean columnFormat, boolean train) throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		List<TLINK> tlinks;
@@ -60,17 +60,17 @@ public class EvaluateTraditionalFeatures {
 			relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
 			relTypeMappingTrain.put("IBEFORE", "BEFORE");
 			relTypeMappingTrain.put("IAFTER", "AFTER");
-			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, columnFormat);
 			temp.printFeatures(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, 
-					"./data/embedding/raw/", true, colFilesAvailable);
+					"./data/embedding/raw/", true, columnFormat);
 		}
 		
 		// PREDICT
 		Map<String, String> relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, columnFormat);
 		temp.printFeatures(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, new HashMap<String, String>(), 
-				"./data/embedding/raw/", false, colFilesAvailable);
+				"./data/embedding/raw/", false, columnFormat);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");
@@ -92,7 +92,7 @@ public class EvaluateTraditionalFeatures {
 		pee.evaluatePerLabel(te3CLabel);
 	}
 	
-	public static void TempEval3TaskCRelOnly(boolean colFilesAvailable, boolean train) throws Exception {
+	public static void TempEval3TaskCRelOnly(boolean columnFormat, boolean train) throws Exception {
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
 		Map<String, String> relTypeMapping;
@@ -121,17 +121,17 @@ public class EvaluateTraditionalFeatures {
 			relTypeMappingTrain.put("DURING_INV", "SIMULTANEOUS");
 			relTypeMappingTrain.put("IBEFORE", "BEFORE");
 			relTypeMappingTrain.put("IAFTER", "AFTER");
-			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, colFilesAvailable);
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, columnFormat);
 			temp.printFeatures(taskName, "./data/TempEval3-train_TML/", te3CLabelCollapsed, relTypeMappingTrain, 
-					"./data/embedding/raw/", true, colFilesAvailable);
+					"./data/embedding/raw/", true, columnFormat);
 		}
 		
 		// PREDICT
 		relTypeMapping = new HashMap<String, String>();
 		relTypeMapping.put("IDENTITY", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, colFilesAvailable);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, relTypeMapping, columnFormat);
 		temp.printFeatures(taskName, "./data/TempEval3-eval_TML/", te3CLabelCollapsed, new HashMap<String, String>(), 
-				"./data/embedding/raw/", false, colFilesAvailable);
+				"./data/embedding/raw/", false, columnFormat);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");
@@ -153,7 +153,7 @@ public class EvaluateTraditionalFeatures {
 		pee.evaluatePerLabel(te3CRelLabel);
 	}
 	
-	public static void TimeBankDense(boolean colFilesAvailable, boolean train) throws Exception {
+	public static void TimeBankDense(boolean columnFormat, boolean train) throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
 			"CNN19980223.1130.0960.tml", 
@@ -199,7 +199,7 @@ public class EvaluateTraditionalFeatures {
 			"NYT19980206.0466.tml"
 		};
 		
-		Map<String, Map<String, String>> tlinkPerFile = Temporal.getTimeBankDenseTlinks("./data/TimebankDense.T3.txt");
+		Map<String, Map<String, String>> tlinkPerFile = Temporal.getLinksFromFile("./data/TimebankDense.TLINK.txt");
 		
 		Temporal temp;
 		PairEvaluator ptt, ped, pet, pee;
@@ -222,9 +222,9 @@ public class EvaluateTraditionalFeatures {
 		if (train) {
 			System.err.println("Train temporal models...");
 			
-			temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel, colFilesAvailable);
+			temp.trainModels(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel, new HashMap<String, String>(), columnFormat);
 			temp.printFeatures(taskName, "./data/TempEval3-train_TML/", trainDocs, tlinkPerFile, tbDenseLabel, 
-					"./data/embedding/raw/", true, colFilesAvailable);
+					"./data/embedding/raw/", true, columnFormat);
 		}
 		
 		// PREDICT
@@ -236,9 +236,9 @@ public class EvaluateTraditionalFeatures {
 		relTypeMapping.put("ENDED_BY", "BEFORE");
 		relTypeMapping.put("DURING", "SIMULTANEOUS");
 		relTypeMapping.put("DURING_INV", "SIMULTANEOUS");
-		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping, colFilesAvailable);
+		tlinks = temp.extractRelations(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, relTypeMapping, columnFormat);
 		temp.printFeatures(taskName, "./data/TempEval3-train_TML/", testDocs, tlinkPerFile, tbDenseLabel, 
-				"./data/embedding/raw/", false, colFilesAvailable);
+				"./data/embedding/raw/", false, columnFormat);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");

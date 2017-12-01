@@ -23,6 +23,7 @@ public class Token {
 	private String discourseConn;
 	private Boolean mainVerb;
 	private Map<String, String> dependencyRel;
+	private String incomingDep;
 	private String eventID;
 	private String timexID;
 	private String tSignalID;
@@ -238,5 +239,13 @@ public class Token {
 
 	public void setPolarity(String polarity) {
 		this.polarity = polarity;
+	}
+
+	public String getIncomingDep() {
+		return incomingDep;
+	}
+
+	public void setIncomingDep(String incomingDep) {
+		this.incomingDep = incomingDep;
 	}
 }

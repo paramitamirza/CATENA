@@ -1,33 +1,44 @@
 package catena;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.List;
 import java.util.Map;
 
 import catena.evaluator.PairEvaluator;
+import catena.model.CandidateLinks;
+import catena.model.rule.EventEventCausalRule;
+import catena.parser.ColumnParser;
 import catena.parser.entities.CLINK;
+import catena.parser.entities.Doc;
+import catena.parser.entities.EntityEnum;
 
 public class TestCausal {
 
 public static void main(String[] args) throws Exception {
 		
 		String task = "tbdense";
-		boolean colFilesAvailable = true;
-		boolean train = true;
+		boolean columnFormat = false;
+		boolean train = false;
 		
 		switch(task) {
 		
 			case "te3" :
-				TempEval3(colFilesAvailable, train);
+				TempEval3(columnFormat, train);
 				break;
 				
 			case "tbdense" :
-				TimeBankDense(colFilesAvailable, train);
+				TimeBankDense(columnFormat, train);
+				break;
+				
+			case "science" :
+				Science(true, false);
 				break;
 		}
 	}
 	
-	public static void TempEval3(boolean colFilesAvailable, boolean train) throws Exception {
-		
-		Map<String, Map<String, String>> clinkPerFile = Causal.getCausalTempEval3EvalTlinks("./data/Causal-TempEval3-eval.txt");
+	public static void TempEval3(boolean columnFormat, boolean train) throws Exception {
 		
 		Causal causal;
 		PairEvaluator pee;
@@ -41,14 +52,24 @@ public static void main(String[] args) throws Exception {
 				"./models/" + taskName + "-causal-event-event.model",
 				true, true);
 		
+		Map<String, Map<String, String>> clinkPerFile = Causal.getLinksFromFile("./data/Causal-TempEval3-eval.txt");
+		String trainDirpath = "./data/Causal-TimeBank_TML/";
+		String evalDirpath = "./data/TempEval3-eval_TML/";
+		if (columnFormat) {
+			trainDirpath = "./data/Causal-TimeBank_COL/";
+			evalDirpath = "./data/TempEval3-eval_COL/";
+			clinkPerFile = Causal.getLinksFromFile("./data/Causal-TimeBank.CLINK.txt");
+		}
+		
 		// TRAIN
 		if (train) {
 			System.err.println("Train causal model...");
-			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel, colFilesAvailable);
+			if (columnFormat) causal.trainModels(taskName, trainDirpath, clinkPerFile, causalLabel, columnFormat);
+			else causal.trainModels(taskName, trainDirpath, causalLabel, columnFormat);
 		}
 		
 		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel, colFilesAvailable);
+		clinks = causal.extractRelations(taskName, evalDirpath, clinkPerFile, causalLabel, columnFormat);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");
@@ -58,7 +79,7 @@ public static void main(String[] args) throws Exception {
 		pee.evaluatePerLabel(causalLabel);
 	}
 	
-	public static void TimeBankDense(boolean colFilesAvailable, boolean train) throws Exception {
+	public static void TimeBankDense(boolean columnFormat, boolean train) throws Exception {
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
 			"CNN19980223.1130.0960.tml", 
@@ -117,14 +138,24 @@ public static void main(String[] args) throws Exception {
 				"./models/" + taskName + "-causal-event-event.model",
 				true, true);
 		
+		Map<String, Map<String, String>> clinkPerFile = Causal.getLinksFromFile("./data/Causal-TimeBank.CLINK.tml.txt");
+		String trainDirpath = "./data/Causal-TimeBank_TML/";
+		if (columnFormat) {
+			trainDirpath = "./data/Causal-TimeBank_COL/";
+			clinkPerFile = Causal.getLinksFromFile("./data/Causal-TimeBank.CLINK.txt");
+			for (int i=0; i<devDocs.length; i++) { devDocs[i] = devDocs[i].replace(".tml", ".col"); }
+			for (int i=0; i<testDocs.length; i++) { testDocs[i] = testDocs[i].replace(".tml", ".col"); }
+			for (int i=0; i<trainDocs.length; i++) { trainDocs[i] = trainDocs[i].replace(".tml", ".col"); }
+		}
+		
 		// TRAIN
 		if (train) {
 			System.err.println("Train causal model...");
-			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);	//train causal model, excluding testDocs from CausalTimeBank
+			causal.trainModels(taskName, trainDirpath, causalLabel, columnFormat, testDocs);	//train causal model, excluding testDocs from CausalTimeBank
 		}
 		
 		// PREDICT
-		clinks = causal.extractRelations(taskName, "./data/Causal-TimeBank_TML/", testDocs, causalLabel, colFilesAvailable);
+		clinks = causal.extractRelations(taskName, trainDirpath, testDocs, causalLabel, columnFormat);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");
@@ -132,6 +163,53 @@ public static void main(String[] args) throws Exception {
 		System.out.println("********** CLINK EVENT-EVENT ***********");
 		pee = new PairEvaluator(clinks.getEE());
 		pee.evaluatePerLabel(causalLabelEval);
+	}
+	
+public static void Science(boolean columnFormat, boolean train) throws Exception {
+		
+		Map<String, Map<String, String>> clinkPerFile = Causal.getLinksFromFile("./data/Causal-TempEval3-eval.txt");
+		
+		Causal causal;
+		PairEvaluator pee;
+		CLINK clinks;
+		
+		// TempEval3 task C
+		String[] causalLabel = {"CLINK", "CLINK-R", "NONE"};
+		String taskName = "science";
+		
+		causal = new Causal(
+				"./models/" + taskName + "-causal-event-event.model",
+				true, false);
+		
+		// TRAIN
+//		if (train) {
+//			System.err.println("Train causal model...");
+//			causal.trainModels(taskName, "./data/Causal-TimeBank_TML/", causalLabel, columnFormat);
+//		}
+		
+		// PREDICT
+//		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel, columnFormat);
+		
+		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
+		for (int i=0; i<=55; i++) {
+			Doc doc = colParser.parseDocument(new File("./data/Science/science-sentences_" + i + ".col"), false);
+			CandidateLinks.setCandidateClinks(doc);
+			List<String> eeCausalRule = EventEventCausalRule.getEventEventClinksPerFile(doc, true);
+			
+			BufferedWriter bw = new BufferedWriter(new FileWriter("./data/Science/science-sentences_" + i + ".clink"));
+			for (String s : eeCausalRule) {
+				bw.write(s + "\n");
+			}
+			bw.close();
+		}
+		
+		
+		// EVALUATE
+//		System.out.println("********** EVALUATION RESULTS **********");
+//		System.out.println();
+//		System.out.println("********** CLINK EVENT-EVENT ***********");
+//		pee = new PairEvaluator(clinks.getEE());
+//		pee.evaluatePerLabel(causalLabel);
 	}
 	
 }

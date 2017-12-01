@@ -95,9 +95,9 @@ public class TimeMLParser {
 		TimeMLDoc tmlDoc = new TimeMLDoc(tmlFile);
 		setInstances(tmlDoc, dTml);
 		if (tlinks == null) setTlinks(tmlDoc, dTml);
-		else setTlinks(tmlDoc, dTml, tlinks);
+		else setTlinks(tlinks, dTml);
 		if (clinks == null) setClinks(tmlDoc, dTml);
-		else setClinks(tmlDoc, dTml, clinks);
+		else setClinks(clinks, dTml);
 		dTml.setFilename(tmlFile.getName());
 	}
 	
@@ -228,11 +228,12 @@ public class TimeMLParser {
 			
 			d.getTlinkTypes().put(source+","+target, relType);
 			d.getTlinkTypes().put(target+","+source, TemporalRelation.getInverseRelation(relType));
+			
+//			System.out.println(d.getFilename() + "\t" + source + "\t" + target + "\t" + relType);
 		}
 	}
 	
-	public static void setTlinks(TimeMLDoc tmlDoc, Doc d, 
-			Map<String, String> tlinks) {
+	public static void setTlinks(Map<String, String> tlinks, Doc d) {
 		ArrayList<TemporalRelation> tlinkArr = d.getTlinks();
 		String source = null, target = null, relType = null;
 		String sourceType = null, targetType = null;
@@ -290,11 +291,12 @@ public class TimeMLParser {
 			
 			d.getClinkTypes().put(source+","+target, "CLINK");
 			d.getClinkTypes().put(target+","+source, CausalRelation.getInverseRelation("CLINK"));
+			
+//			System.out.println(d.getFilename() + "\t" + source + "\t" + target + "\t" + "CLINK");
 		}
 	}
 	
-	public static void setClinks(TimeMLDoc tmlDoc, Doc d, 
-			Map<String, String> clinks) {
+	public static void setClinks(Map<String, String> clinks, Doc d) {
 		ArrayList<CausalRelation> clinkArr = d.getClinks();
 		String source = null, target = null;
 		String sourceType = null, targetType = null;

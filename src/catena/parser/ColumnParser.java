@@ -74,6 +74,27 @@ public class ColumnParser {
 			parseLine(line, doc);
 		}
 		
+		//Add the last entity (if any)
+		if (currTimex != null) {
+			currTimex.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
+			currTimex.setSentID(currSentence.getID());
+			doc.getEntities().put(currTimex.getID(), currTimex);	
+			currSentence.getEntityArr().add(currTimex.getID());
+			currTimex = null;
+		} else if (currEvent != null) {
+			currEvent.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
+			currEvent.setSentID(currSentence.getID());
+			doc.getEntities().put(currEvent.getID(), currEvent);
+			currSentence.getEntityArr().add(currEvent.getID());
+			currEvent = null;
+		} else if (currTSignal != null) {
+			doc.getTemporalSignals().put(currTSignal.getID(), ((TemporalSignal)currTSignal));
+			currTSignal = null;
+		} else if (currCSignal != null) {
+			doc.getCausalSignals().put(currCSignal.getID(), ((CausalSignal)currCSignal));
+			currCSignal = null;
+		}
+		
 		//Add the last sentence
 		currSentence.setIndex(doc.getSentIdx()); doc.setSentIdx(doc.getSentIdx() + 1);
 		doc.getSentenceArr().add(currSentence.getID());
@@ -123,21 +144,30 @@ public class ColumnParser {
 	}
 	
 	private String getMainPosFromPos(String pos) {
-        if (pos.charAt(0) == 'V') return "v";
+		if (pos.charAt(0) == 'V' && pos.charAt(1) == 'M') return "mod";
+		else if (pos.charAt(0) == 'M') return "mod";
+		else if (pos.charAt(0) == 'V') return "v";
         else if (pos.charAt(0) == 'N') return "n";
         else if (pos.charAt(0) == 'A' && pos.charAt(1) == 'T') return "art";
         else if (pos.charAt(0) == 'D') return "det";
         else if (pos.charAt(0) == 'A' && pos.charAt(1) == 'J') return "adj";
+        else if (pos.charAt(0) == 'J' && pos.charAt(1) == 'J') return "adj";
         else if (pos.charAt(0) == 'A' && pos.charAt(1) == 'V') return "adv";
+        else if (pos.charAt(0) == 'R' && pos.charAt(1) == 'B') return "adv";
         else if (pos.charAt(0) == 'C' && pos.charAt(1) == 'J') return "conj";
+        else if (pos.charAt(0) == 'C' && pos.charAt(1) == 'C') return "conj";
         else if (pos.charAt(0) == 'C' && pos.charAt(1) == 'R' && pos.charAt(2) == 'D') return "crd";
+        else if (pos.charAt(0) == 'C' && pos.charAt(1) == 'D') return "crd";
         else if (pos.charAt(0) == 'O' && pos.charAt(1) == 'R' && pos.charAt(2) == 'D') return "ord";
         else if (pos.charAt(0) == 'P' && pos.charAt(1) == 'N') return "pron";
         else if (pos.charAt(0) == 'P' && pos.charAt(1) == 'R') return "prep";
+        else if (pos.charAt(0) == 'I' && pos.charAt(1) == 'N') return "prep";
         else if (pos.charAt(0) == 'T' && pos.charAt(1) == 'O') return "to";
         else if (pos.charAt(0) == 'P' && pos.charAt(1) == 'O' && pos.charAt(2) == 'S') return "pos";
         else if (pos.charAt(0) == 'P' && pos.charAt(1) == 'U') return "punc";
         else if (pos.charAt(0) == 'X') return "neg";
+        else if (pos.charAt(0) == 'E') return "ext";
+        else if (pos.charAt(0) == 'F') return "foreign";
         return "O";
 	}
 	
@@ -221,6 +251,7 @@ public class ColumnParser {
 			}
 			if (getIndex(Field.pos) != -1) {
 				tok.setPos(cols.get(getIndex(Field.pos)));
+//				tok.setPos(cols.get(getIndex(Field.mate_pos)));
 				tok.setMainPos(getMainPosFromPos(cols.get(getIndex(Field.pos))));
 			}
 			if (getIndex(Field.chunk) != -1) {
@@ -287,6 +318,27 @@ public class ColumnParser {
 				currSentence.setIndex(doc.getSentIdx()); doc.setSentIdx(doc.getSentIdx() + 1);
 				doc.getSentenceArr().add(currSentence.getID());
 				doc.getSentences().put(currSentence.getID(), currSentence);
+				
+				if (currTimex != null) {
+					currTimex.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
+					currTimex.setSentID(currSentence.getID());
+					doc.getEntities().put(currTimex.getID(), currTimex);	
+					currSentence.getEntityArr().add(currTimex.getID());
+					currTimex = null;
+				} else if (currEvent != null) {
+					currEvent.setIndex(doc.getEntIdx()); doc.setEntIdx(doc.getEntIdx() + 1);
+					currEvent.setSentID(currSentence.getID());
+					doc.getEntities().put(currEvent.getID(), currEvent);
+					currSentence.getEntityArr().add(currEvent.getID());
+					currEvent = null;
+				} else if (currTSignal != null) {
+					doc.getTemporalSignals().put(currTSignal.getID(), ((TemporalSignal)currTSignal));
+					currTSignal = null;
+				} else if (currCSignal != null) {
+					doc.getCausalSignals().put(currCSignal.getID(), ((CausalSignal)currCSignal));
+					currCSignal = null;
+				}
+				
 				currSentence = new Sentence(sent_id, tok_id, tok_id);
 			}
 			
@@ -397,7 +449,7 @@ public class ColumnParser {
 				} else if (currTSignal != null && currTSignal instanceof TemporalSignal && 
 						!tsig_id.equals(currTSignal.getID()) &&
 						tsig_id.equals("O")) {
-					doc.getTemporalSignals().put(tsig_id, ((TemporalSignal)currTSignal));
+					doc.getTemporalSignals().put(currTSignal.getID(), ((TemporalSignal)currTSignal));
 					currTSignal = null;
 				} else if (currTSignal != null && currTSignal instanceof TemporalSignal && 
 						!tsig_id.equals(currTSignal.getID()) &&
@@ -418,12 +470,12 @@ public class ColumnParser {
 				} else if (currCSignal != null && currCSignal instanceof CausalSignal && 
 						!csig_id.equals(currCSignal.getID()) &&
 						csig_id.equals("O")) {
-					doc.getCausalSignals().put(csig_id, ((CausalSignal)currCSignal));
+					doc.getCausalSignals().put(currCSignal.getID(), ((CausalSignal)currCSignal));
 					currCSignal = null;
 				} else if (currCSignal != null && currCSignal instanceof CausalSignal && 
 						!csig_id.equals(currCSignal.getID()) &&
 						!csig_id.equals("O")) {
-					tok.setcSignalID(tsig_id);
+					tok.setcSignalID(csig_id);
 					currCSignal = new CausalSignal(csig_id, tok_id, tok_id);
 				}
 			}
@@ -477,7 +529,7 @@ public class ColumnParser {
 				}
 			}
 			
-		}			
+		} 
 
 	}
 	
