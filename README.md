@@ -5,6 +5,16 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 ### Requirements
 * Java Runtime Environment (JRE) 1.7.x or higher
 
+#### Maven 
+CATENA is now available on [Maven Central](https://repo1.maven.org/maven2/com/github/paramitamirza/CATENA/1.0.1/). Please add the following dependency in your `pom.xml`.
+```
+<dependency>
+  <groupId>com.github.paramitamirza</groupId>
+  <artifactId>CATENA</artifactId>
+  <version>1.0.1</version>
+</dependency>
+```
+
 #### Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools. The .jar file should be included in the classpath.
 * [TextPro](http://textpro.fbk.eu/) -- Text Processing Tools from FBK. 
