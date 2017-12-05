@@ -2,12 +2,21 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.paramitamirza</groupId>
   <artifactId>CATENA</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2</version>
   <packaging>jar</packaging>
  
   <name>CATENA</name>
   <description>CAusal and TEmporal relation extraction from NAtural language texts</description>
   <url>https://github.com/paramitamirza/CATENA</url>
+
+  <developers>
+    <developer>
+      <name>Paramita Mirza</name>
+      <email>paramita135@gmail.com</email>
+      <organization>MPII</organization>
+      <organizationUrl>http://people.mpi-inf.mpg.de/~paramita/</organizationUrl>
+    </developer>
+  </developers>
  
   <licenses>
     <license>
@@ -18,9 +27,10 @@
   </licenses>
  
   <scm>
+    <url>https://github.com/paramitamirza/CATENA.git</url>
     <connection>scm:git:https://github.com/paramitamirza/CATENA.git</connection>
     <developerConnection>scm:git:https://github.com/paramitamirza/CATENA.git</developerConnection>
-    <tag>CATENA-1.0.1</tag>
+    <tag>CATENA-1.0.2</tag>
   </scm>
   
   	<distributionManagement>
@@ -61,6 +71,9 @@
     <autoVersionSubmodules>true</autoVersionSubmodules>
     <useReleaseProfile>false</useReleaseProfile>
     <releaseProfiles>release</releaseProfiles>
+        <checkModificationExcludes>
+            <checkModificationExclude>pom.xml</checkModificationExclude>
+        </checkModificationExcludes>
     <goals>deploy</goals>
   </configuration>
 </plugin>
@@ -101,6 +114,20 @@
 		     <autoReleaseAfterClose>true</autoReleaseAfterClose>
 		  </configuration>
 		</plugin>
+     <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <version>1.5</version>
+      <executions>
+        <execution>
+          <id>sign-artifacts</id>
+          <phase>verify</phase>
+          <goals>
+            <goal>sign</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
     </plugins>
   </build>
   <dependencies>

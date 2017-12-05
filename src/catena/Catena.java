@@ -686,7 +686,7 @@ public class Catena {
 		
 	}
 	
-	Catena (boolean tlinkFeature, boolean clinkPostEditing) {
+	public Catena (boolean tlinkFeature, boolean clinkPostEditing) {
 		setTlinkFeature(tlinkFeature);
 		setClinkPostEditing(clinkPostEditing);
 	}
