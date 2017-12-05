@@ -1,7 +1,12 @@
 package catena.model.rule;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 import catena.model.CandidateLinks;
 import catena.model.feature.CausalSignalList;
@@ -78,6 +83,59 @@ public class EventEventCausalRule {
 					if (!eeRule.getRelType().equals("NONE")) {
 						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
 								eefv.getLabel() + "\t" + eeRule.getRelType());
+//					} else {
+//						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
+//								eefv.getLabel() + "\tNONE");
+					}
+				}
+			}
+		}
+		return ee;
+	}
+	
+	public static Map<Integer, Set<String>> getEventEventClinksPerFileCombined(Doc doc, boolean CVerb) throws Exception {
+		Map<Integer, Set<String>> ee = new TreeMap<Integer, Set<String>>();
+		
+		TemporalSignalList tsignalList = new TemporalSignalList(EntityEnum.Language.EN);
+		CausalSignalList csignalList = new CausalSignalList(EntityEnum.Language.EN);
+	    
+		List<CausalRelation> candidateClinks = doc.getCandidateClinks();	//candidate pairs
+		
+		for (CausalRelation clink : candidateClinks) {
+			
+			if (!clink.getSourceID().equals(clink.getTargetID())
+					&& doc.getEntities().containsKey(clink.getSourceID())
+					&& doc.getEntities().containsKey(clink.getTargetID())
+					) {
+				
+				Entity e1 = doc.getEntities().get(clink.getSourceID());
+				Entity e2 = doc.getEntities().get(clink.getTargetID());
+				PairFeatureVector fv = new PairFeatureVector(doc, e1, e2, 
+						CandidateLinks.getClinkType(e1.getID(), e2.getID(), doc), tsignalList, csignalList);	
+				
+				if (fv.getPairType().equals(PairType.event_event)) {
+					EventEventFeatureVector eefv = new EventEventFeatureVector(fv);
+					EventEventCausalRule eeRule = new EventEventCausalRule(eefv, CVerb);
+					
+					if (!eeRule.getRelType().equals("NONE")) {
+						String sentID = eefv.getE1().getSentID();
+						if (eeRule.getRelType().endsWith("-R")) sentID = eefv.getE2().getSentID(); 
+								
+						if (!ee.containsKey(Integer.parseInt(sentID))) ee.put(Integer.parseInt(sentID), new HashSet<String>());
+						
+						if (eeRule.getRelType().endsWith("-R")) {
+							ee.get(Integer.parseInt(sentID)).add(
+									eefv.getE2().getID() 
+									+ " " + CausalRelation.getInverseRelation(eeRule.getRelType())
+									+ " " + eefv.getE1().getID()
+									);
+						} else {
+							ee.get(Integer.parseInt(sentID)).add(
+									eefv.getE1().getID() 
+									+ " " + eeRule.getRelType()
+									+ " " + eefv.getE2().getID()
+									);
+						}
 //					} else {
 //						ee.add(eefv.getE1().getID() + "\t" + eefv.getE2().getID() + "\t" + 
 //								eefv.getLabel() + "\tNONE");

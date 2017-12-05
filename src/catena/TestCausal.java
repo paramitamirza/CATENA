@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import catena.evaluator.PairEvaluator;
 import catena.model.CandidateLinks;
@@ -18,7 +19,7 @@ public class TestCausal {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "tbdense";
+		String task = "science";
 		boolean columnFormat = false;
 		boolean train = false;
 		
@@ -191,17 +192,20 @@ public static void Science(boolean columnFormat, boolean train) throws Exception
 //		clinks = causal.extractRelations(taskName, "./data/TempEval3-eval_TML/", clinkPerFile, causalLabel, columnFormat);
 		
 		ColumnParser colParser = new ColumnParser(EntityEnum.Language.EN);
-		for (int i=0; i<=55; i++) {
-			Doc doc = colParser.parseDocument(new File("./data/Science/science-sentences_" + i + ".col"), false);
+//		for (int i=0; i<=55; i++) {
+//			Doc doc = colParser.parseDocument(new File("./data/Science/science-sentences_" + i + ".col"), false);
+			Doc doc = colParser.parseDocument(new File("./data/Science/science-sentences.col"), false);
 			CandidateLinks.setCandidateClinks(doc);
-			List<String> eeCausalRule = EventEventCausalRule.getEventEventClinksPerFile(doc, true);
+			Map<Integer, Set<String>> eeCausalRule = EventEventCausalRule.getEventEventClinksPerFileCombined(doc, true);
 			
-			BufferedWriter bw = new BufferedWriter(new FileWriter("./data/Science/science-sentences_" + i + ".clink"));
-			for (String s : eeCausalRule) {
-				bw.write(s + "\n");
+			BufferedWriter bw = new BufferedWriter(new FileWriter("./data/Science/science-sentences.clink"));
+			for (Integer sent : eeCausalRule.keySet()) {
+				String links = "";
+				for (String link : eeCausalRule.get(sent)) links += "\t" + link;
+				bw.write(sent + links + "\n");
 			}
 			bw.close();
-		}
+//		}
 		
 		
 		// EVALUATE
