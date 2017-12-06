@@ -3,3 +3,6 @@
 .project
 /target/
 /tools/
+/dependency-reduced-pom.xml
+/release.properties
+/settings.xml
