@@ -87,6 +87,18 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>catena.Catena</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
@@ -212,6 +224,13 @@
 			<groupId>de.sciss</groupId>
 			<artifactId>jawjaw</artifactId>
 			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.cmu.lti</groupId>
+			<artifactId>ws4j</artifactId>
+			<version>1.0.1</version>
+			<!-- <scope>system</scope> -->
+			<!-- <systemPath>${basedir}/lib/ws4j-1.0.1.jar</systemPath> -->
 		</dependency>
 	</dependencies>
 </project>
