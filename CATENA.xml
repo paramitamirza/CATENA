@@ -5,7 +5,7 @@
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="/local/home/paramita/workspace"/>
-    <property name="dir.jarfile" value="/local/home/paramita"/>
+    <property name="dir.jarfile" value="${basedir}"/>
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/CATENA.jar" filesetmanifest="mergewithoutmain">
             <manifest>
