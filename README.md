@@ -14,9 +14,9 @@ CATENA is now available on [Maven Central](https://search.maven.org/#artifactdet
   <version>1.0.2</version>
 </dependency>
 ```
-To build the fat (executable) .jar:
+To build the fat (executable) JAR:
 * Install the WS4J library in your local Maven repo, e.g., `mvn install:install-file -Dfile=./lib/ws4j-1.0.1.jar -DgroupId=edu.cmu.lti -DartifactId=ws4j -Dversion=1.0.1 -Dpackaging=jar`
-* Run `mvn package` to build the executable .jar file (in `target/CATENA-<version>.jar`).
+* Run `mvn package` to build the executable JAR file (in `target/CATENA-<version>.jar`).
 
 #### Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools.
