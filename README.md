@@ -72,7 +72,7 @@ The input document must be in tab-separated 'one-token-per-line' format, with ea
 * `event-id` and `event-class`: TimeML event ID and attributes
 * `timex-id` and `timex-type` and `timex-value`: TimeML timex ID and attributes
 * `signal-id` and `causal-signal-id`: temporal and causal signal ID
-* `event-tense+aspect+polarity`: optional attributes of an event, if given `O`, CATENA will extract them automatically
+* `event-tense+aspect+polarity`: optional attributes of an event, if given `O`, CATENA will infer them automatically according to PoS tags and dependency relations
 * `pos-tag`: BNC tagset (default tagset uset to build the models) or Penn Treebank tagset
 * `chunk`: 
 * `dependencies`: in the format of `dep1:deprel1||dep2:deprel2||...`, dependency relations are resulted from [Mate-tools](https://code.google.com/archive/p/mate-tools/)
