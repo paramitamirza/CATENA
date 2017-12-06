@@ -62,7 +62,7 @@ usage: Catena
 ``` 
 For example
 ```
-java -Xmx2G -jar CATENA-1.0.2.jar -i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt -l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model -g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model -p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model -x ./tools/TextPro2.0/ -d ./models/catena-event-dct.model -t ./models/catena-event-timex.model -e ./models/catena-event-event.model -c ./models/catena-causal-event-event.model -b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
+java -Xmx2G -jar ./target/CATENA-1.0.2.jar -i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt -l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model -g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model -p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model -x ./tools/TextPro2.0/ -d ./models/catena-event-dct.model -t ./models/catena-event-timex.model -e ./models/catena-event-event.model -c ./models/catena-causal-event-event.model -b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
 ```
   
 #### CoNLL column format
