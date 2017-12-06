@@ -14,7 +14,7 @@ CATENA is now available on [Maven Central](https://search.maven.org/#artifactdet
   <version>1.0.2</version>
 </dependency>
 ```
-Run 'mvn package' to build the executable .jar file (in `target/CATENA-<version>.jar`).
+Run `mvn package` to build the executable .jar file (in `target/CATENA-<version>.jar`).
 
 #### Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools. The .jar file should be included in the classpath.
