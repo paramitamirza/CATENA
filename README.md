@@ -6,7 +6,7 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 * Java Runtime Environment (JRE) 1.7.x or higher
 
 #### Maven 
-CATENA is now available on [Maven Central](https://repo1.maven.org/maven2/com/github/paramitamirza/CATENA/1.0.2/). Please add the following dependency in your `pom.xml`.
+CATENA is now available on [Maven Central](https://search.maven.org/#artifactdetails%7Ccom.github.paramitamirza%7CCATENA%7C1.0.2%7Cjar). Please add the following dependency in your `pom.xml`.
 ```
 <dependency>
   <groupId>com.github.paramitamirza</groupId>
@@ -14,6 +14,7 @@ CATENA is now available on [Maven Central](https://repo1.maven.org/maven2/com/gi
   <version>1.0.2</version>
 </dependency>
 ```
+Run 'mvn package' to build the executable .jar file (in `target/CATENA-<version>.jar`).
 
 #### Text processing tools:
 * [Stanford CoreNLP 3.7.x](http://stanfordnlp.github.io/CoreNLP/) or higher -- a suite of core NLP tools. The .jar file should be included in the classpath.
@@ -59,7 +60,7 @@ usage: Catena
 ``` 
 For example
 ```
-java -Xmx2G -jar CATENA.jar -i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt -l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model -g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model -p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model -x ./tools/TextPro2.0/ -d ./models/catena-event-dct.model -t ./models/catena-event-timex.model -e ./models/catena-event-event.model -c ./models/catena-causal-event-event.model -b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
+java -Xmx2G -jar CATENA-1.0.2.jar -i ./data/example_COL/ --col --tlinks ./data/TempEval3.TLINK.txt --clinks ./data/Causal-TimeBank.CLINK.txt -l ./models/CoNLL2009-ST-English-ALL.anna-3.3.lemmatizer.model -g ./models/CoNLL2009-ST-English-ALL.anna-3.3.postagger.model -p ./models/CoNLL2009-ST-English-ALL.anna-3.3.parser.model -x ./tools/TextPro2.0/ -d ./models/catena-event-dct.model -t ./models/catena-event-timex.model -e ./models/catena-event-event.model -c ./models/catena-causal-event-event.model -b -m ./data/Catena-train_COL/ -u ./data/Causal-TimeBank_COL/
 ```
   
 #### CoNLL column format
