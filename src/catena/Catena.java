@@ -71,6 +71,7 @@ public class Catena {
 		ParserConfig.mateTaggerModel = cmd.getOptionValue("matetagger");
 		ParserConfig.mateParserModel = cmd.getOptionValue("mateparser");
 		
+		boolean goldCandidate = cmd.hasOption("gold");
 		boolean clinkType = cmd.hasOption("y");		//Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve
 		
 		String input = cmd.getOptionValue("input");
@@ -82,12 +83,12 @@ public class Catena {
 		if (file.isDirectory()) {
 			System.out.println(cat.extractRelationsString(input, 
 					tlinkFilepath, clinkFilepath, 
-					edModel, etModel, eeModel, eecModel, columnFormat, clinkType));
+					edModel, etModel, eeModel, eecModel, columnFormat, goldCandidate, clinkType));
 			
 		} else if (file.isFile()) {
 			System.out.println(cat.extractRelationsString(new File(input),
 					tlinkFilepath, clinkFilepath,
-					edModel, etModel, eeModel, eecModel, columnFormat, clinkType));
+					edModel, etModel, eeModel, eecModel, columnFormat, goldCandidate, clinkType));
 		}
 	}
 	
@@ -109,6 +110,10 @@ public class Catena {
         Option colFiles = new Option("f", "col", false, "Input files are in column (.col) format resulted from converting TimeML files into column format");
         colFiles.setRequired(false);
         options.addOption(colFiles);
+        
+        Option goldCandidate = new Option("gl", "gold", false, "Gold candidate pairs to be classified are given");
+        goldCandidate.setRequired(false);
+        options.addOption(goldCandidate);
         
         Option clinkType = new Option("y", "clinktype", false, "Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve");
         clinkType.setRequired(false);
@@ -164,7 +169,8 @@ public class Catena {
 	public String extractRelationsString(String dirPath,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
 		File[] files = new File(dirPath).listFiles();
@@ -183,7 +189,8 @@ public class Catena {
 						"", "",
 						te3CLabelCollapsed, causalLabel, 
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, columnFormat, clinkType));
+						eventEventModel, causalModel, columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -194,7 +201,8 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
 		File[] files = new File(dirPath).listFiles();
@@ -208,7 +216,8 @@ public class Catena {
 						"", "",
 						tempLabels, causLabels, 
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, columnFormat, clinkType));
+						eventEventModel, causalModel, columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -219,7 +228,8 @@ public class Catena {
 			String tlinkFilepath, String clinkFilepath,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
 		File[] files = new File(dirPath).listFiles();
@@ -238,7 +248,8 @@ public class Catena {
 						tlinkFilepath, clinkFilepath,
 						te3CLabelCollapsed, causalLabel,
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, columnFormat, clinkType));
+						eventEventModel, causalModel, columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -250,7 +261,8 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		StringBuilder results = new StringBuilder();
 		File[] files = new File(dirPath).listFiles();
@@ -264,7 +276,8 @@ public class Catena {
 						tlinkFilepath, clinkFilepath,
 						tempLabels, causLabels,
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, columnFormat, clinkType));
+						eventEventModel, causalModel, columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -277,7 +290,8 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		List<String> fileList = Arrays.asList(fileNames);
 		StringBuilder results = new StringBuilder();
@@ -297,7 +311,8 @@ public class Catena {
 						tlinkFilepath, clinkFilepath,
 						tempLabels, causLabels,
 						eventDctModel, eventTimexModel,
-						eventEventModel, causalModel, columnFormat, clinkType));
+						eventEventModel, causalModel, columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -308,7 +323,8 @@ public class Catena {
 			String tlinkFilepath, String clinkFilepath,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate, 
+			boolean clinkType) throws Exception {
 		
 		ExtractedLinks results = new ExtractedLinks();
 		File[] files = new File(dirPath).listFiles();
@@ -328,7 +344,8 @@ public class Catena {
 						te3CLabelCollapsed, causalLabel,
 						eventDctModel, eventTimexModel,
 						eventEventModel, causalModel, 
-						columnFormat, clinkType));
+						columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -341,7 +358,8 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel,
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		List<String> fileList = Arrays.asList(fileNames);
 		ExtractedLinks results = new ExtractedLinks();
@@ -362,7 +380,8 @@ public class Catena {
 						tempLabels, causLabels,
 						eventDctModel, eventTimexModel,
 						eventEventModel, causalModel, 
-						columnFormat, clinkType));
+						columnFormat, goldCandidate,
+						clinkType));
 			}
 		}
 		
@@ -373,7 +392,8 @@ public class Catena {
 			String tlinkFilepath, String clinkFilepath,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel, 
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
 				"INCLUDES", "IS_INCLUDED", "BEGINS", "BEGUN_BY", "ENDS", "ENDED_BY"};
@@ -384,7 +404,8 @@ public class Catena {
 				te3CLabelCollapsed, causalLabel,
 				eventDctModel, eventTimexModel,
 				eventEventModel, causalModel, 
-				columnFormat, clinkType);
+				columnFormat, goldCandidate,
+				clinkType);
 		
 		StringBuilder sb = new StringBuilder();
 		sb.append(rl.getTlink().TTLinksToString());
@@ -400,14 +421,16 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel, 
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		ExtractedLinks rl = extractRelations(file,
 				tlinkFilepath, clinkFilepath,
 				tempLabels, causLabels,
 				eventDctModel, eventTimexModel,
 				eventEventModel, causalModel, 
-				columnFormat, clinkType);
+				columnFormat, goldCandidate,
+				clinkType);
 		
 		StringBuilder sb = new StringBuilder();
 		sb.append(rl.getTlink().TTLinksToString());
@@ -423,7 +446,8 @@ public class Catena {
 			String[] tempLabels, String[] causLabels,
 			String eventDctModel, String eventTimexModel,
 			String eventEventModel, String causalModel, 
-			boolean columnFormat, boolean clinkType) throws Exception {
+			boolean columnFormat, boolean goldCandidate,
+			boolean clinkType) throws Exception {
 		
 		// ---------- TEMPORAL ---------- //
 //		String[] te3CLabelCollapsed = {"BEFORE", "AFTER", "IDENTITY", "SIMULTANEOUS", 
@@ -438,7 +462,7 @@ public class Catena {
 					true, true, true,
 					true, false);
 		} else {
-			temp = new Temporal(false, tempLabels,
+			temp = new Temporal(goldCandidate, tempLabels,
 					eventDctModel,
 					eventTimexModel,
 					eventEventModel,

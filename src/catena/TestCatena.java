@@ -7,24 +7,25 @@ public class TestCatena {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "tbdense";
-		boolean columnFormat = false;
+		String task = "te3";
+		boolean columnFormat = true;
 		boolean train = false;
+		boolean goldCandidate = true;
 		
 		switch(task) {
 		
 			case "te3" :
-				TempEval3(columnFormat, train);
+				TempEval3(columnFormat, train, goldCandidate);
 				break;
 				
 			case "tbdense" :
-				TimeBankDense(columnFormat, train);
+				TimeBankDense(columnFormat, train, goldCandidate);
 				break;
 		}
 		
 	}
 	
-	public static void TempEval3(boolean columnFormat, boolean train) throws Exception {
+	public static void TempEval3(boolean columnFormat, boolean train, boolean goldCandidate) throws Exception {
 		
 		String taskName = "te3";
 		Catena cat = new Catena(true, true);
@@ -84,7 +85,7 @@ public static void main(String[] args) throws Exception {
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
 				"./models/" + taskName + "-causal-event-event.model", 
-				columnFormat, clinkType);
+				columnFormat, goldCandidate, clinkType);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");
@@ -110,7 +111,7 @@ public static void main(String[] args) throws Exception {
 		peec.evaluatePerLabel(causalLabel);
 	}
 	
-	public static void TimeBankDense(boolean columnFormat, boolean train) throws Exception {
+	public static void TimeBankDense(boolean columnFormat, boolean train, boolean goldCandidate) throws Exception {
 		
 		String[] devDocs = { 
 			"APW19980227.0487.tml", 
@@ -204,7 +205,7 @@ public static void main(String[] args) throws Exception {
 				"./models/" + taskName + "-event-timex.model",
 				"./models/" + taskName + "-event-event.model",
 				"./models/" + taskName + "-causal-event-event.model", 
-				columnFormat, clinkType);
+				columnFormat, goldCandidate, clinkType);
 		
 		// EVALUATE
 		System.out.println("********** EVALUATION RESULTS **********");

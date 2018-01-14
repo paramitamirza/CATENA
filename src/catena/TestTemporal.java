@@ -11,8 +11,8 @@ public class TestTemporal {
 
 public static void main(String[] args) throws Exception {
 		
-		String task = "tbdense";
-		boolean columnFormat = false;
+		String task = "te3-c-rel";
+		boolean columnFormat = true;
 		boolean train = false;
 		
 		switch(task) {
