@@ -42,6 +42,7 @@ usage: Catena
  -f,--col                (optional) Input files are in column format (.col)
  -tl,--tlinks <arg>      (optional) Input file containing list of gold temporal links
  -cl,--clinks <arg>      (optional) Input file containing list of gold causal links
+ -gl,--gold              (optional) Gold candidate pairs to be classified are given
  -y,--clinktype          (optional) Output the type of CLINK (ENABLE, PREVENT, etc.) from the rule-based sieve
         
  -x,--textpro <arg>      TextPro directory path
