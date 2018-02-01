@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+
+<DOCID>bbc_20130322_721</DOCID>
+
+<DCT><TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="2013-03-22">2013-03-22</TIMEX3></DCT>
+
+<TITLE>Russian police raid rights group Memorial and other NGOs</TITLE>
+
+<TEXT>
+
+Russian police and tax inspectors have raided the offices of the human rights group Memorial and other civil society groups which get foreign funding.
+
+Memorial is famous for documenting human rights abuses in Russia.
+
+The US embassy in Moscow has voiced concern and asked the Russian government for an explanation.
+
+A new Russian law says foreign-funded non-governmental groups (NGOs) linked to politics must register as "foreign agents" - a term which suggests spying.
+
+In the worst repressions of the Soviet period the label "foreign agents" was used to denounce dissidents - or simply political rivals of Joseph Stalin - and could lead to execution.
+
+Memorial says inspectors returned to its Moscow offices on Friday, having already seized 600 documents including accounts on Thursday.
+
+</TEXT>
+
+
+</TimeML>
