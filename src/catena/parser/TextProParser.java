@@ -53,7 +53,7 @@ public class TextProParser {
 		this.language = language;
 	}
 	
-	public void run(String[] annotations, boolean tokenized) throws IOException, InterruptedException {
+	public void run(String filepath, String[] annotations, boolean tokenized) throws IOException, InterruptedException {
 		List<String> annotationList = Arrays.asList(annotations);
 		ProcessBuilder pb;
 		if (tokenized) {
@@ -64,7 +64,7 @@ public class TextProParser {
 	//				"-n", outputFilePath,
 					"-d", "tokenization+sentence",
 					"-y",
-					"temp");
+					filepath);
 		} else {
 			pb = new ProcessBuilder("/bin/sh",
 					"textpro.sh", "-v", 
@@ -72,7 +72,7 @@ public class TextProParser {
 					"-c", String.join("+", annotationList), 
 	//				"-n", outputFilePath,
 					"-y",
-					"temp");
+					filepath);
 		}
 		Map<String, String> env = pb.environment();
 		pb.directory(new File(getTextProPath()));
@@ -86,7 +86,7 @@ public class TextProParser {
 		out.write(inputText);
 		out.close();
 		
-		run(annotations, tokenized);
+		run("temp", annotations, tokenized);
 		
 		StringBuilder sb = new StringBuilder();
 		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
@@ -105,15 +105,17 @@ public class TextProParser {
 	
 	public void run(String[] annotations, File inputFile, File outputFile, boolean tokenized) throws IOException, InterruptedException {
 		
-		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
+		String inputName = inputFile.getName();
 		
-		run(annotations, tokenized);
+		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp_" + inputName).toPath(), StandardCopyOption.REPLACE_EXISTING);
+		
+		run("temp_" + inputName, annotations, tokenized);
 		
 		//Copy the output file as it is
 //		Files.copy(new File(getTextProPath() + "temp.txp").toPath(), new File(outputFilePath).toPath(), StandardCopyOption.REPLACE_EXISTING);
 
 		//Copy the output file without the first four lines
-		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
+		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp_" + inputName + ".txp"));
 		fileScanner.nextLine();
 		fileScanner.nextLine();
 		fileScanner.nextLine();
@@ -130,11 +132,13 @@ public class TextProParser {
 	public List<String> run(String[] annotations, File inputFile, boolean tokenized) throws IOException, InterruptedException {
 		List<String> result = new ArrayList<String>();
 		
-		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp").toPath(), StandardCopyOption.REPLACE_EXISTING);
+		String inputName = inputFile.getName();
 		
-		run(annotations, tokenized);
+		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp_" + inputName).toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
-		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp.txp"));
+		run("temp_" + inputName, annotations, tokenized);
+		
+		Scanner fileScanner = new Scanner(new File(getTextProPath() + "temp_" + inputName + ".txp"));
 		fileScanner.nextLine();
 		fileScanner.nextLine();
 		fileScanner.nextLine();
