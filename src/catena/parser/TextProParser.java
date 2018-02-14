@@ -109,8 +109,7 @@ public class TextProParser {
 		
 		Files.copy(inputFile.toPath(), new File(getTextProPath() + "temp_" + inputName).toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
-		run("temp_" + inputName, annotations, tokenized);
-		
+		run("temp_" + inputName, annotations, tokenized);   		
 		//Copy the output file as it is
 //		Files.copy(new File(getTextProPath() + "temp.txp").toPath(), new File(outputFilePath).toPath(), StandardCopyOption.REPLACE_EXISTING);
 
