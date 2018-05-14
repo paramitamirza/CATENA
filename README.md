@@ -56,10 +56,8 @@ usage: Catena
  -c,--eecausal <arg>     CATENA model path for E-E causal classifier
  
  -b,--train              (optional) Train the models
- -m,--tempcorpus <arg>   (optional) TimeML directory path for training temporal
-                         classifiers
- -u,--causcorpus <arg>   (optional) TimeML directory path for training causal
-                         classifier     
+ -m,--tempcorpus <arg>   (optional) Directory path (containing .tml or .col files) for training temporal classifiers
+ -u,--causcorpus <arg>   (optional) Directory path (containing .tml or .col files) for training causal classifier     
 ``` 
 For example
 ```
