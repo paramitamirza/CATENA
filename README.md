@@ -6,12 +6,12 @@ CATENA is a sieve-based system to perform temporal and causal relation extractio
 * Java Runtime Environment (JRE) 1.7.x or higher
 
 #### Maven 
-CATENA is now available on [Maven Central](https://search.maven.org/#artifactdetails%7Ccom.github.paramitamirza%7CCATENA%7C1.0.2%7Cjar). Please add the following dependency in your `pom.xml`.
+CATENA is now available on [Maven Central](https://search.maven.org/artifact/com.github.paramitamirza/CATENA/1.0.3/jar). Please add the following dependency in your `pom.xml`.
 ```
 <dependency>
   <groupId>com.github.paramitamirza</groupId>
   <artifactId>CATENA</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 To build the fat (executable) JAR:
